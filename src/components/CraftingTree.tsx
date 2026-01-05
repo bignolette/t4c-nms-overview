@@ -21,26 +21,31 @@ const resolveFullTree = (item: RecipeItem, depth = 0, seen = new Set<string>()):
 
   const recipe = findRecipe(item.name);
   
+  // Toujours essayer de récupérer la source de la définition globale si l'item local n'en a pas
+  const enrichedItem = {
+    ...item,
+    source: item.source || recipe?.source
+  };
+
   if (recipe && recipe.ingredients) {
     return {
-      ...item,
-      source: item.source || recipe.source,
+      ...enrichedItem,
       ingredients: [...recipe.ingredients]
         .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }))
         .map(ing => resolveFullTree(ing, depth + 1, newSeen))
     };
   }
 
-  if (item.ingredients) {
+  if (enrichedItem.ingredients) {
     return {
-      ...item,
-      ingredients: [...item.ingredients]
+      ...enrichedItem,
+      ingredients: [...enrichedItem.ingredients]
         .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }))
         .map(ing => resolveFullTree(ing, depth + 1, newSeen))
     };
   }
 
-  return item;
+  return enrichedItem;
 };
 
 const calculateRawMaterials = (
