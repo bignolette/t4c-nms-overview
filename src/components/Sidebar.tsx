@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, Hammer, Skull, Package, User, ShieldCheck } from 'lucide-react';
+import { Menu, X, Home, Hammer, Skull, Package, User } from 'lucide-react';
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -72,8 +72,6 @@ const Sidebar = () => {
 
           {/* Footer */}
           <div className="p-4 border-t border-slate-800 text-center text-xs text-slate-600">
-              v1.0.0 • par Bignole
-              <br/>
               Les donn&eacute;es proviennent du Wiki T4C NMS et du site NMS Révolution
               <br/>
               Cr&eacute;dit images : DialSoft
