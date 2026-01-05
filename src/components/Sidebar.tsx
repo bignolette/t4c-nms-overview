@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, Hammer, Skull, Package, User, ShieldCheck } from 'lucide-react';
+import { Menu, X, Home, Hammer, Skull, Package, User, ShieldCheck, Calculator } from 'lucide-react';
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,6 +8,7 @@ const Sidebar = () => {
 
   const navItems = [
     { name: 'Accueil', icon: Home, path: '/' },
+    { name: 'Simulateur', icon: Calculator, path: '/planner' },
     { name: 'Equipable', icon: User, path: '/equipable' },
     { name: 'Métiers', icon: Hammer, path: '/wiki/metiers' },
     { name: 'Bestiaire', icon: Skull, path: '/wiki/bestiary' },
