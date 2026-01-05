@@ -28,7 +28,8 @@ const Footer = () => {
           <div className="hidden md:block w-px h-4 bg-slate-800" />
           
           <p className="text-xs max-w-[300px] text-center md:text-right leading-tight italic">
-            Projet communautaire non-officiel lié au serveur T4C NMS.
+            Projet communautaire non-officiel. <br/>
+            T4C est une marque déposée de Dialsoft LLC.
           </p>
         </div>
       </div>

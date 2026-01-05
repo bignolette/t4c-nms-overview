@@ -54,7 +54,7 @@ L'application exploite une structure organisée pour les ressources visuelles :
 
 *   **Auteur** : Bignole
 *   **Sources des données** : Wiki T4C NMS, NMS Révolution.
-*   **Propriété** : T4C est une marque déposée de Dialsoft Inc.
+*   **Propriété** : T4C est une marque déposée de Dialsoft LLC.
 
 ---
 *Ce projet est un outil tiers créé par la communauté et n'est pas officiellement affilié à Dialsoft ou aux opérateurs du serveur.*
