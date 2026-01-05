@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, Hammer, Skull, Package, User } from 'lucide-react';
+import { Menu, X, Home, Hammer, Skull, Package, User, ShieldCheck } from 'lucide-react';
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);

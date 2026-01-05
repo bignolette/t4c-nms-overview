@@ -3,6 +3,7 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import WikiPage from './pages/WikiPage';
 import EquipablePage from './pages/EquipablePage';
+import Legal from './pages/Legal';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/wiki/:id" element={<WikiPage />} />
           <Route path="/equipable" element={<EquipablePage />} />
+          <Route path="/legal" element={<Legal />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </Layout>

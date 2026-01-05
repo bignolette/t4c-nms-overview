@@ -12,7 +12,8 @@ const Home = () => {
               T4C NMS Overview
             </h1>
             <p className="text-slate-300 text-xl font-medium leading-relaxed mb-8">
-                Vue d'ensemble sur les donn&eacute;es proviennent du Wiki T4C NMS et du site NMS Révolution
+                Vue d'ensemble sur les donn&eacute;es proviennent du Wiki T4C NMS et du site NMS Révolution.
+                Crédit images : DialSoft
             </p>
           </div>
         </div>

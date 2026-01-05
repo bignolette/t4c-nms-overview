@@ -35,11 +35,11 @@ const MonsterBackground = () => {
           key={currentMonster}
           src={`/t4c-nms-overview/img/monstres/${currentMonster}`}
           alt=""
-          initial={{ opacity: 0, scale: 0.95, filter: 'blur(20px) grayscale(1)' }}
-          animate={{ opacity: 0.15, scale: 1, filter: 'blur(0px) grayscale(0.8)' }}
-          exit={{ opacity: 0, scale: 1.05, filter: 'blur(20px) grayscale(1)' }}
-          transition={{ duration: 3, ease: "easeInOut" }}
-          className="w-auto h-auto max-w-full max-h-full object-contain brightness-110 contrast-110"
+          initial={{ opacity: 0, scale: 0.9, filter: 'blur(30px) saturate(0.5)' }}
+          animate={{ opacity: 0.5, scale: 1, filter: 'blur(0px) saturate(1.6)' }}
+          exit={{ opacity: 0, scale: 1.1, filter: 'blur(30px) saturate(0.5)' }}
+          transition={{ duration: 4, ease: "easeInOut" }}
+          className="w-auto h-auto max-w-full max-h-full object-contain brightness-110 contrast-125 drop-shadow-[0_0_30px_rgba(0,0,0,0.5)]"
         />
       </AnimatePresence>
     </div>
