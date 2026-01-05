@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Hammer, ExternalLink, Skull, Shield, ShieldCheck } from 'lucide-react';
+import { Hammer, ExternalLink, Skull, Shield, ShieldCheck, Calculator } from 'lucide-react';
 
 const Home = () => {
   return (
@@ -23,6 +23,20 @@ const Home = () => {
       {/* Quick Access Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <QuickCard 
+          title="Simulateur" 
+          description="Planifiez l'évolution de votre personnage et optimisez vos points de caractéristiques."
+          icon={Calculator}
+          to="/planner"
+          color="text-amber-500"
+        />
+        <QuickCard 
+          title="Equipable" 
+          description="Simulateur d'équipement et prérequis de personnage."
+          icon={Shield}
+          to="/equipable"
+          color="text-emerald-500"
+        />
+        <QuickCard 
           title="Artisanat" 
           description="Encyclopédie des recettes, ingrédients et sources de farm."
           icon={Hammer}
@@ -35,13 +49,6 @@ const Home = () => {
           icon={ExternalLink}
           to="/wiki/items"
           color="text-blue-500"
-        />
-        <QuickCard 
-          title="Equipable" 
-          description="Simulateur d'équipement et prérequis de personnage."
-          icon={Shield}
-          to="/equipable"
-          color="text-emerald-500"
         />
         <QuickCard 
           title="Bestiaire" 

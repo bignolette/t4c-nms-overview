@@ -78,7 +78,10 @@ const StatPlanner = () => {
     setLevelPoints({ str: 0, end: 0, dex: 0, int: 0, wis: 0 });
   };
 
-  useEffect(() => { resetAll(); }, [renaissance]);
+  // Déclencher le reset complet à chaque changement de renaissance
+  useEffect(() => { 
+    resetAll(); 
+  }, [renaissance]);
 
   const updateSeraphStat = (type: 'stat' | 'power' | 'resist', key: string, amount: number) => {
     let currentVal = 0;
@@ -110,6 +113,12 @@ const StatPlanner = () => {
         <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-2xl relative overflow-hidden border-t-amber-500/50 text-center">
           <span className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em]">Niveau Requis</span>
           <div className="text-7xl font-black text-white my-2">{requiredLevel}</div>
+          
+          <div className="bg-slate-950/50 rounded-xl py-3 px-4 mb-4 border border-slate-800/50">
+            <span className="text-[9px] font-black text-slate-500 uppercase block mb-1 tracking-wider">Points de niveau investis</span>
+            <span className="text-3xl font-black text-amber-500">{totalLevelPointsSpent}</span>
+          </div>
+
           <div className="w-full h-1.5 bg-slate-800 rounded-full mt-4 overflow-hidden">
             <div className="h-full bg-amber-500 transition-all" style={{ width: `${((totalLevelPointsSpent % 5) / 5) * 100}%` }} />
           </div>
@@ -125,7 +134,6 @@ const StatPlanner = () => {
                </div>
                <div className="text-xl font-black text-amber-500">{remainingSeraphPoints} <span className="text-slate-600 text-xs">/ {totalSeraphPoints}</span></div>
             </div>
-            <p className="text-[9px] text-slate-500 italic mb-4 text-center text-balance">Les Résistances coûtent x2 et rapportent +10</p>
             <div className="w-full h-1.5 bg-slate-800 rounded-full overflow-hidden">
                <div className="h-full bg-amber-500 transition-all" style={{ width: `${Math.min(100, (spentSeraphPoints / totalSeraphPoints) * 100)}%` }} />
             </div>
