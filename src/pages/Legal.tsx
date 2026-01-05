@@ -25,8 +25,7 @@ const Legal = () => {
           </div>
           <div className="text-sm text-slate-400 space-y-2">
             <p>Le présent site est édité à titre non-professionnel par :</p>
-            <p className="font-bold text-slate-200 uppercase tracking-wide">Bignole (Pseudo Discord)</p>
-            <p>Contact : mourad7130</p>
+            <p className="font-bold text-slate-200 uppercase tracking-wide">Bignole</p>
             <p className="italic mt-4">
               Conformément à l'article 6, III, 2° de la loi n° 2004-575 du 21 juin 2004, l'éditeur a choisi 
               de rester anonyme. Les informations d'identification personnelle ont été transmises à l'hébergeur.
