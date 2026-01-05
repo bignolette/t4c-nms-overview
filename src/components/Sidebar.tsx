@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, Hammer, Skull, Package, User } from 'lucide-react';
+import { Menu, X, Home, Hammer, Skull, Package, User, ShieldCheck } from 'lucide-react';
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,6 +12,7 @@ const Sidebar = () => {
     { name: 'Métiers', icon: Hammer, path: '/wiki/metiers' },
     { name: 'Bestiaire', icon: Skull, path: '/wiki/bestiary' },
     { name: 'Objets', icon: Package, path: '/wiki/items' },
+    { name: 'Mentions Légales', icon: ShieldCheck, path: '/legal' },
   ];
 
   const isActive = (path: string) => location.pathname === path;

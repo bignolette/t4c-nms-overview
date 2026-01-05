@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Hammer, ExternalLink, Skull, Shield } from 'lucide-react';
+import { Hammer, ExternalLink, Skull, Shield, ShieldCheck } from 'lucide-react';
 
 const Home = () => {
   return (
@@ -20,7 +20,7 @@ const Home = () => {
       </div>
 
       {/* Quick Access Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <QuickCard 
           title="Artisanat" 
           description="Encyclopédie des recettes, ingrédients et sources de farm."
@@ -48,6 +48,13 @@ const Home = () => {
           icon={Skull}
           to="/wiki/bestiary"
           color="text-red-500"
+        />
+        <QuickCard 
+          title="Mentions Légales" 
+          description="Informations sur l'édition, l'hébergement et la protection des données."
+          icon={ShieldCheck}
+          to="/legal"
+          color="text-slate-400"
         />
       </div>
     </div>
