@@ -1,79 +1,60 @@
 # T4C NMS Overview
 
-Application de vue d'ensemble pour le serveur **T4C NMS** (The 4th Coming). Cette application centralise les informations provenant du Wiki T4C NMS et du site NMS Révolution pour offrir une interface moderne et fluide aux joueurs.
+Application de vue d'ensemble moderne et immersive pour le serveur **T4C NMS** (The 4th Coming). Cette "Fan-App" centralise et stylise les données issues de la communauté pour offrir une expérience utilisateur fluide et visuellement riche.
 
 ## 🌟 Fonctionnalités
 
-L'application propose plusieurs modules pour aider les joueurs dans leur aventure :
+L'application est divisée en plusieurs modules spécialisés :
 
-*   **🛡️ Équipable (Simulateur)** : Un outil permettant de filtrer et visualiser les objets équipables en fonction des statistiques de votre personnage.
-*   **🔨 Métiers (Artisanat)** : Encyclopédie complète des recettes d'artisanat, incluant les ingrédients nécessaires et leurs sources de farm.
-*   **📦 Objets** : Catalogue complet des équipements, armes, orbes et matériaux disponibles en jeu.
-*   **💀 Bestiaire** : Liste exhaustive des créatures classées par zone, avec le détail de leurs butins (drops).
-*   **🔮 Visualisation 3D** : Interface enrichie avec des éléments 3D interactifs (via Three.js).
+*   **🛡️ Équipable (Simulateur)** : Un constructeur avancé pour filtrer les objets que vous pouvez porter selon vos statistiques (FOR, END, DEX, INT, SAG). Chaque objet affiche son icône pixelisée fidèle au jeu.
+*   **🔨 Métiers (Artisanat)** : Une encyclopédie interactive des recettes. Visualisez les arbres de dépendances complets pour chaque objet craftable, incluant les monstres qui lâchent les ingrédients de base.
+*   **📦 Catalogue d'Objets** : Un wiki exhaustif des équipements, armes et matériaux, enrichi par une reconnaissance intelligente des types pour l'affichage des visuels originaux.
+*   **💀 Bestiaire** : Liste des créatures par zone avec leurs statistiques (XP, Or) et le détail visuel de leurs butins (drops).
+*   **⚖️ Mentions Légales** : Page conforme à la législation française (LCEN) pour les éditeurs non-professionnels.
+
+## 🎨 Design & Immersion
+
+*   **Background Dynamique** : Un champ d'étoiles interactif en 3D (WebGL) qui réagit aux mouvements de la souris.
+*   **Ambiance Spectrale** : Affichage aléatoire et cyclique de créatures mythiques en arrière-plan avec des effets de transition (flou, opacité, saturation vive).
+*   **Rendu Pixel-Art** : Utilisation de la propriété `image-rendering: pixelated` pour conserver l'aspect nostalgique et net des icônes T4C originales.
 
 ## 🛠️ Stack Technique
 
-Ce projet est construit avec des technologies web modernes pour assurer performance et maintenabilité :
+*   **Frontend** : React 19 + Vite
+*   **Langage** : TypeScript
+*   **Styles & UI** : Tailwind CSS + Lucide Icons
+*   **Animations** : Framer Motion
+*   **Moteur 3D** : Three.js + React Three Fiber
+*   **Navigation** : React Router v7
 
-*   **Framework** : [React 19](https://react.dev/)
-*   **Build Tool** : [Vite](https://vitejs.dev/)
-*   **Langage** : [TypeScript](https://www.typescriptlang.org/)
-*   **Styles** : [Tailwind CSS](https://tailwindcss.com/)
-*   **Routing** : [React Router v7](https://reactrouter.com/)
-*   **Icons** : [Lucide React](https://lucide.dev/)
-*   **Animation** : [Framer Motion](https://www.framer.com/motion/)
-*   **3D** : [React Three Fiber](https://docs.pmnd.rs/react-three-fiber) / [Three.js](https://threejs.org/)
+## 🚀 Installation et Développement
 
-## 🚀 Installation et Démarrage
-
-Pour lancer le projet localement, suivez ces étapes :
-
-### Prérequis
-
-*   Node.js (version récente recommandée)
-*   npm ou yarn
-
-### Étapes
-
-1.  **Cloner le dépôt**
-    ```bash
-    git clone <votre-url-de-depot>
-    cd t4c-nms-overview
-    ```
-
-2.  **Installer les dépendances**
+1.  **Installation**
     ```bash
     npm install
     ```
 
-3.  **Lancer le serveur de développement**
+2.  **Lancement (Dev)**
     ```bash
     npm run dev
     ```
-    L'application sera accessible à l'adresse indiquée dans le terminal (généralement `http://localhost:5173`).
 
-## 📦 Construction (Build)
+3.  **Build (Prod)**
+    ```bash
+    npm run build
+    ```
 
-Pour générer la version de production (dossier `dist`) :
+## 📦 Structure des Médias
 
-```bash
-npm run build
-```
+L'application exploite une structure organisée pour les ressources visuelles :
+*   `/public/img/items/` : Armes, Armures et Bijoux classés par catégories.
+*   `/public/img/monstres/` : Illustrations haute résolution pour l'ambiance du background.
 
-Pour prévisualiser la version de production localement :
-
-```bash
-npm run preview
-```
-
-## ℹ️ Crédits et Informations
+## ℹ️ Crédits
 
 *   **Auteur** : Bignole
-*   **Sources des données** : 
-    *   Wiki T4C NMS
-    *   Site NMS Révolution
-*   **Version** : 1.0.0
+*   **Sources des données** : Wiki T4C NMS, NMS Révolution.
+*   **Propriété** : T4C est une marque déposée de Dialsoft Inc.
 
 ---
 *Ce projet est un outil tiers créé par la communauté et n'est pas officiellement affilié à Dialsoft ou aux opérateurs du serveur.*
