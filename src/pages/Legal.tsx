@@ -54,9 +54,14 @@ const Legal = () => {
           <div className="text-sm text-slate-400 space-y-4 leading-relaxed text-justify">
             <p>
               <strong>The 4th Coming (T4C)</strong> est une marque déposée et une propriété intellectuelle de 
-              <strong> Dialsoft Inc</strong>. Tous les visuels, noms d'objets, statistiques de sorts et de monstres 
+              <span className="text-amber-500 font-bold"> Dialsoft Inc</span>. Tous les visuels, noms d'objets, statistiques de sorts et de monstres 
               issus du jeu original ou de ses extensions sont la propriété exclusive de leurs auteurs respectifs.
             </p>
+            <div className="bg-amber-500/10 border border-amber-500/20 p-4 rounded-xl">
+              <p className="text-amber-500 font-bold text-center uppercase tracking-widest text-xs">
+                Cr&eacute;dits images : DialSoft
+              </p>
+            </div>
             <p>
               Ce site est une "Fan-App" non officielle et n'est en aucun cas affilié, approuvé ou soutenu par 
               Dialsoft ou les exploitants officiels des serveurs T4C.
