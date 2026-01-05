@@ -44,8 +44,10 @@ const Sidebar = () => {
         <div className="flex flex-col h-full">
           {/* Header */}
           <div className="p-6 border-b border-slate-800">
-            <h1 className="text-2xl font-bold text-amber-500 tracking-wider">T4C NMS Overview</h1>
-            <p className="text-xs text-slate-400 mt-1">La 4ème Prophétie</p>
+            <h1 className="text-2xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-br from-amber-200 via-amber-500 to-amber-700 drop-shadow-sm">
+              T4C NMS Overview
+            </h1>
+            <p className="text-[10px] font-bold text-slate-500 uppercase tracking-[0.2em] mt-1">La 4ème Prophétie</p>
           </div>
 
           {/* Navigation */}
@@ -73,8 +75,7 @@ const Sidebar = () => {
 
           <div className="p-4 border-t border-slate-800 text-center text-[10px] text-slate-600">
               Les donn&eacute;es proviennent du Wiki T4C NMS et du site NMS Révolution
-              <br/>
-              <span className="text-amber-500/80 font-bold uppercase tracking-widest mt-1 inline-block">Cr&eacute;dits images : DialSoft</span>
+
           </div>
         </div>
       </div>

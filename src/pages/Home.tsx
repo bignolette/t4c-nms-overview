@@ -14,9 +14,7 @@ const Home = () => {
             <p className="text-slate-300 text-xl font-medium leading-relaxed mb-8">
                 Vue d'ensemble sur les donn&eacute;es proviennent du Wiki T4C NMS et du site NMS Révolution.
                 <br/>
-                <span className="text-sm bg-amber-500/10 border border-amber-500/20 text-amber-500 px-3 py-1 rounded-full mt-4 inline-block font-bold">
-                  Cr&eacute;dits images : DialSoft
-                </span>
+                
             </p>
           </div>
         </div>
