@@ -1,0 +1,304 @@
+import { useState, useMemo } from 'react';
+import { Link } from 'react-router-dom';
+import { itemsData } from '../data/items';
+import type { RecipeItem } from '../data/types';
+import { fastNormalize } from '../data/utils';
+import { Search, Shield, Sword, Crown, Shirt, Footprints, Hand, Hexagon, Circle, Package, Link2, GripHorizontal, Columns2, Sparkles, Medal, type LucideIcon } from 'lucide-react';
+
+// Types
+interface Stats {
+  str: number;
+  end: number;
+  dex: number;
+  int: number;
+  wis: number;
+}
+
+const StatBadge = ({ label, value, color }: { label: string, value: string | number, color: string }) => (
+  <div className="flex items-center gap-1.5 bg-slate-950 border border-slate-800 px-2 py-0.5 rounded-md">
+    <span className={`text-[9px] font-black uppercase tracking-tighter ${color}`}>{label}</span>
+    <span className="text-[10px] font-bold text-slate-200">{value}</span>
+  </div>
+);
+
+// Mapping logic to unify source field from items.ts to our UI slots
+const mapSourceToSlot = (source: string | undefined): string | null => {
+  if (!source) return null;
+  switch (source) {
+    case 'Heaume': return 'Tete';
+    case 'Amulette': return 'Amulette';
+    case 'Bracelet': return 'Bracelet';
+    case 'Anneau':
+    case 'Bijou': return 'Anneaux';
+    case 'Robe':
+    case 'Armure':
+    case 'Plastron':
+    case 'Torse': return 'Torse';
+    case 'Cape':
+    case 'Orbe': return 'Cape';
+    case 'Arme':
+    case 'Arc': return 'Arme';
+    case 'Bouclier':
+    case 'Focus':
+    case 'Flèches': return 'Bouclier';
+    case 'Gant': return 'Gant';
+    case 'Ceinture': return 'Ceinture';
+    case 'Jambière': return 'Jambière';
+    case 'Botte': return 'Botte';
+    default: return null;
+  }
+};
+
+const SLOTS = [
+  { id: 'Tete', label: 'Tête', icon: Crown },
+  { id: 'Amulette', label: 'Amulette', icon: Medal },
+  { id: 'Bracelet', label: 'Bracelet', icon: Link2 },
+  { id: 'Anneaux', label: 'Anneaux', icon: Circle },
+  { id: 'Torse', label: 'Torse', icon: Shirt },
+  { id: 'Cape', label: 'Cape / Orbe', icon: Sparkles }, 
+  { id: 'Arme', label: 'Arme', icon: Sword },
+  { id: 'Bouclier', label: 'Bouclier / Focus', icon: Shield },
+  { id: 'Gant', label: 'Gants', icon: Hand },
+  { id: 'Ceinture', label: 'Ceinture', icon: GripHorizontal },
+  { id: 'Jambière', label: 'Jambières', icon: Columns2 }, 
+  { id: 'Botte', label: 'Bottes', icon: Footprints },
+];
+
+const EquipableBuilder = () => {
+  const [stats, setStats] = useState<Stats>({
+    str: 50,
+    end: 50,
+    dex: 50,
+    int: 50,
+    wis: 50
+  });
+
+  const [hideNoReqs, setHideNoReqs] = useState(true);
+  const [selectedSlot, setSelectedSlot] = useState(SLOTS[0]);
+  const [searchTerm, setSearchTerm] = useState('');
+
+  // Index items by slot once to boost performance
+  const itemsBySlot = useMemo(() => {
+    const map: Record<string, RecipeItem[]> = {};
+    itemsData.forEach(item => {
+      const slot = mapSourceToSlot(item.source);
+      if (slot) {
+        if (!map[slot]) map[slot] = [];
+        map[slot].push(item);
+      }
+    });
+    return map;
+  }, []);
+
+  const updateStat = (key: keyof Stats, value: string) => {
+    let num = parseInt(value, 10);
+    if (isNaN(num)) num = 0;
+    if (num > 65535) num = 65535;
+    setStats(prev => ({ ...prev, [key]: num }));
+  };
+
+  const availableItems = useMemo(() => {
+    const itemsInSlot = itemsBySlot[selectedSlot.id] || [];
+    const normalizedSearch = fastNormalize(searchTerm);
+
+    const filtered = itemsInSlot.filter((item) => {
+      // 1. Prerequisites Check
+      const reqs = item.prerequisites || {};
+      const sReq = parseInt(reqs.str || '0');
+      const eReq = parseInt(reqs.end || '0');
+      const dReq = parseInt(reqs.dex || '0');
+      const iReq = parseInt(reqs.int || '0');
+      const wReq = parseInt(reqs.wis || '0');
+      
+      const reqSum = sReq + eReq + dReq + iReq + wReq;
+      if (hideNoReqs && reqSum === 0) return false;
+
+      if (stats.str < sReq) return false;
+      if (stats.end < eReq) return false;
+      if (stats.dex < dReq) return false;
+      if (stats.int < iReq) return false;
+      if (stats.wis < wReq) return false;
+
+      // 2. Search Term
+      if (normalizedSearch && !fastNormalize(item.name).includes(normalizedSearch)) return false;
+
+      return true;
+    });
+
+    return filtered.sort((a, b) => {
+      const getSum = (i: RecipeItem) => {
+        const r = i.prerequisites || {};
+        return parseInt(r.str || '0') + parseInt(r.end || '0') + parseInt(r.dex || '0') + parseInt(r.int || '0') + parseInt(r.wis || '0');
+      };
+      const sumA = getSum(a);
+      const sumB = getSum(b);
+      
+      if (sumA > 0 && sumB === 0) return -1;
+      if (sumA === 0 && sumB > 0) return 1;
+      if (sumA !== sumB) return sumB - sumA;
+      return a.name.localeCompare(b.name);
+    });
+  }, [stats, selectedSlot, searchTerm, hideNoReqs, itemsBySlot]);
+
+  return (
+    <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      {/* Left Column: Stats */}
+      <div className="lg:col-span-3 bg-slate-900/50 p-6 rounded-lg border border-slate-800 backdrop-blur-sm h-fit">
+        <h2 className="text-xl font-bold text-amber-500 mb-6 flex items-center gap-2">
+          <Hexagon size={20} /> Vos Stats
+        </h2>
+        
+        <div className="space-y-4">
+          {(['str', 'end', 'dex', 'int', 'wis'] as const).map((key) => (
+            <div key={key} className="flex flex-col gap-1">
+              <label className="text-xs font-bold text-slate-500 uppercase">
+                {key === 'str' ? 'Force' : key === 'end' ? 'Endurance' : key === 'dex' ? 'Dextérité' : key === 'int' ? 'Intelligence' : 'Sagesse'}
+              </label>
+              <input
+                type="number"
+                min="8"
+                max="65535"
+                value={stats[key]}
+                onChange={(e) => updateStat(key, e.target.value)}
+                className="bg-slate-800 border border-slate-700 text-slate-100 rounded px-3 py-2 focus:ring-2 focus:ring-amber-500 focus:outline-none"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Middle Column: Slot Selection Visual */}
+      <div className="lg:col-span-4 bg-slate-900/50 p-6 rounded-lg border border-slate-800 backdrop-blur-sm flex flex-col items-center h-fit">
+        <h2 className="text-xl font-bold text-amber-500 mb-8 flex items-center gap-2 text-center">
+          <Crown size={20} /> Emplacement
+        </h2>
+
+        <div className="flex flex-col gap-4 w-full max-w-[320px] items-center">
+          <div className="flex justify-center">
+             <div 
+               onClick={() => setSelectedSlot(SLOTS[0])}
+               className={`w-24 h-24 rounded-xl border-2 flex flex-col items-center justify-center cursor-pointer transition-all relative group ${selectedSlot.id === 'Tete' ? 'border-amber-500 bg-amber-500/10 shadow-[0_0_20px_rgba(245,158,11,0.3)]' : 'border-slate-700 bg-slate-800/30 hover:border-slate-500 hover:bg-slate-800/50'}`}
+             >
+               <Crown size={40} className={selectedSlot.id === 'Tete' ? 'text-amber-500' : 'text-slate-600 group-hover:text-slate-500'} />
+               <span className={`text-xs mt-1 uppercase tracking-wider font-bold ${selectedSlot.id === 'Tete' ? 'text-amber-500' : 'text-slate-600'}`}>Tête</span>
+             </div>
+          </div>
+
+          <div className="grid grid-cols-3 gap-3 w-full">
+            <SlotBtn def={SLOTS[1]} isActive={selectedSlot.id === 'Amulette'} onClick={() => setSelectedSlot(SLOTS[1])} />
+            <SlotBtn def={SLOTS[2]} isActive={selectedSlot.id === 'Bracelet'} onClick={() => setSelectedSlot(SLOTS[2])} />
+            <SlotBtn def={SLOTS[3]} isActive={selectedSlot.id === 'Anneaux'} onClick={() => setSelectedSlot(SLOTS[3])} />
+          </div>
+
+          <div className="grid grid-cols-2 gap-3 w-3/4">
+            <SlotBtn def={SLOTS[4]} isActive={selectedSlot.id === 'Torse'} onClick={() => setSelectedSlot(SLOTS[4])} />
+            <SlotBtn def={SLOTS[5]} isActive={selectedSlot.id === 'Cape'} onClick={() => setSelectedSlot(SLOTS[5])} />
+          </div>
+
+          <div className="grid grid-cols-2 gap-3 w-3/4">
+            <SlotBtn def={SLOTS[6]} isActive={selectedSlot.id === 'Arme'} onClick={() => setSelectedSlot(SLOTS[6])} />
+            <SlotBtn def={SLOTS[7]} isActive={selectedSlot.id === 'Bouclier'} onClick={() => setSelectedSlot(SLOTS[7])} />
+          </div>
+
+          <div className="grid grid-cols-4 gap-2 w-full">
+            <SlotBtn def={SLOTS[8]} isActive={selectedSlot.id === 'Gant'} onClick={() => setSelectedSlot(SLOTS[8])} />
+            <SlotBtn def={SLOTS[9]} isActive={selectedSlot.id === 'Ceinture'} onClick={() => setSelectedSlot(SLOTS[9])} />
+            <SlotBtn def={SLOTS[10]} isActive={selectedSlot.id === 'Jambière'} onClick={() => setSelectedSlot(SLOTS[10])} />
+            <SlotBtn def={SLOTS[11]} isActive={selectedSlot.id === 'Botte'} onClick={() => setSelectedSlot(SLOTS[11])} />
+          </div>
+        </div>
+      </div>
+
+      {/* Right Column: Filtered Items List */}
+      <div className="lg:col-span-5 bg-slate-900/50 rounded-lg border border-slate-800 backdrop-blur-sm flex flex-col overflow-hidden">
+        <div className="p-4 border-b border-slate-800 bg-slate-800/30">
+          <h3 className="text-lg font-bold text-amber-500 mb-4 flex items-center justify-between">
+            <span>{selectedSlot.label} disponibles</span>
+            <span className="text-xs text-slate-500 font-normal">{availableItems.length} objets</span>
+          </h3>
+          <div className="relative">
+            <Search className="absolute left-3 top-2.5 text-slate-500" size={18} />
+            <input 
+              type="text" 
+              placeholder="Filtrer par nom..." 
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="w-full bg-slate-950 border border-slate-700 rounded pl-10 pr-4 py-2 text-slate-200 focus:outline-none focus:border-amber-500 text-sm"
+            />
+          </div>
+          <div className="mt-3">
+            <label className="flex items-center gap-3 cursor-pointer group">
+              <div className="relative">
+                <input type="checkbox" className="sr-only" checked={hideNoReqs} onChange={(e) => setHideNoReqs(e.target.checked)} />
+                <div className={`w-10 h-5 rounded-full transition-colors ${hideNoReqs ? 'bg-amber-500' : 'bg-slate-700'}`}></div>
+                <div className={`absolute left-1 top-1 w-3 h-3 bg-white rounded-full transition-transform ${hideNoReqs ? 'translate-x-5' : ''}`}></div>
+              </div>
+              <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider group-hover:text-slate-300 transition-colors">Ignorer sans pré-requis</span>
+            </label>
+          </div>
+        </div>
+
+        <div className="flex-1 overflow-y-auto p-4 space-y-4 max-h-[700px]">
+          {availableItems.length === 0 ? (
+            <div className="text-center py-12 text-slate-500">
+              <p>Aucun objet trouvé.</p>
+              <p className="text-xs mt-1">Vérifiez vos statistiques.</p>
+            </div>
+          ) : (
+            availableItems.map((item, idx) => (
+              <div key={idx} className="w-full p-4 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col gap-4 hover:border-slate-700 transition-all group">
+                <div className="flex justify-between items-start">
+                   <h4 className="font-bold text-slate-100 group-hover:text-amber-500 transition-colors">{item.name}</h4>
+                   <Link to={`/wiki/items?search=${encodeURIComponent(item.name)}`} className="p-1.5 bg-slate-800 rounded-lg text-slate-400 hover:text-amber-500 transition-colors">
+                     <Package size={14} />
+                   </Link>
+                </div>
+
+                <div className="space-y-1.5">
+                  <span className="text-[9px] font-bold text-slate-500 uppercase tracking-widest block">Pré-requis</span>
+                  <div className="flex flex-wrap gap-1.5">
+                    {item.prerequisites?.str && <StatBadge label="FOR" value={item.prerequisites.str} color="text-red-400" />}
+                    {item.prerequisites?.end && <StatBadge label="END" value={item.prerequisites.end} color="text-orange-400" />}
+                    {item.prerequisites?.dex && <StatBadge label="DEX" value={item.prerequisites.dex} color="text-emerald-400" />}
+                    {item.prerequisites?.int && <StatBadge label="INT" value={item.prerequisites.int} color="text-blue-400" />}
+                    {item.prerequisites?.wis && <StatBadge label="SAG" value={item.prerequisites.wis} color="text-purple-400" />}
+                  </div>
+                </div>
+
+                {(item.bonuses || item.bonusText) && (
+                  <div className="space-y-1.5">
+                    <span className="text-[9px] font-bold text-emerald-500/80 uppercase tracking-widest block">Bonus</span>
+                    <div className="flex flex-wrap gap-1.5">
+                      {item.bonuses && Object.entries(item.bonuses).map(([k, v]) => (
+                        <div key={k} className="px-2 py-0.5 rounded bg-emerald-500/5 border border-emerald-500/10 text-[10px] text-emerald-400/90 font-medium">
+                          {k.toUpperCase()}: {v}
+                        </div>
+                      ))}
+                      {item.bonusText && (
+                        <p className="text-[10px] text-emerald-400/70 italic leading-tight w-full mt-1 line-clamp-2">{item.bonusText}</p>
+                      )}
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))
+          )}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+interface SlotDef { id: string; label: string; icon: LucideIcon; }
+
+const SlotBtn = ({ def, isActive, onClick }: { def: SlotDef, isActive: boolean, onClick: () => void }) => {
+  const Icon = def.icon;
+  return (
+    <div onClick={onClick} className={`aspect-square rounded-lg border-2 flex flex-col items-center justify-center cursor-pointer transition-all relative group ${isActive ? 'border-amber-500 bg-amber-500/10 shadow-[0_0_15px_rgba(245,158,11,0.2)]' : 'border-slate-700 bg-slate-800/30 hover:border-slate-500 hover:bg-slate-800/50'}`}>
+      <Icon size={24} className={isActive ? 'text-amber-500' : 'text-slate-600 group-hover:text-slate-500'} />
+      <span className={`text-[9px] mt-1 uppercase tracking-wider font-bold ${isActive ? 'text-amber-500' : 'text-slate-600'}`}>{def.label}</span>
+    </div>
+  );
+};
+
+export default EquipableBuilder;

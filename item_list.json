@@ -1,0 +1,9922 @@
+[
+  {
+    "id": "46",
+    "name": "Bouclier triplicite du mage-50-350100Bouclier"
+  },
+  {
+    "id": "90",
+    "name": "Epée du froid53----Arme"
+  },
+  {
+    "id": "136",
+    "name": "Epée du froid de main gauche53----Arme"
+  },
+  {
+    "id": "182",
+    "name": "Masse de l'Ogre-----Arme"
+  },
+  {
+    "id": "192",
+    "name": "Épée incrustée de glace140----Arme"
+  },
+  {
+    "id": "193",
+    "name": "Épée incrustée de glace de main gauche140----Arme"
+  },
+  {
+    "id": "194",
+    "name": "Bouclier du froid-120---Bouclier"
+  },
+  {
+    "id": "207",
+    "name": "Bottes de lézard blanc-60-13018Botte"
+  },
+  {
+    "id": "215",
+    "name": "Bouclier de Liridell-370---Bouclier"
+  },
+  {
+    "id": "277",
+    "name": "Arc de glace enchanté118-282--Arc"
+  },
+  {
+    "id": "278",
+    "name": "Chapeau de glace---60321Heaume"
+  },
+  {
+    "id": "279",
+    "name": "Epée de glace incrustée de saphir320----Arme"
+  },
+  {
+    "id": "280",
+    "name": "Epée de glace incrustée de saphir de main gauche320----Arme"
+  },
+  {
+    "id": "282",
+    "name": "Masque de Gobelin glacé-45---Heaume"
+  },
+  {
+    "id": "396",
+    "name": "Heaume d'armure d'Aquilon140200450--Heaume"
+  },
+  {
+    "id": "401",
+    "name": "Bouclier triplicite du prêtre-50-100350Bouclier"
+  },
+  {
+    "id": "515",
+    "name": "Bouclier maudit de Liridell-370---Bouclier"
+  },
+  {
+    "id": "516",
+    "name": "Bouclier de Liridell de qualité-370---Bouclier"
+  },
+  {
+    "id": "517",
+    "name": "Bouclier cabossé de Liridell-370---Bouclier"
+  },
+  {
+    "id": "592",
+    "name": "Robe liche bleue-----Robe"
+  },
+  {
+    "id": "593",
+    "name": "Robe liche noire-----Robe"
+  },
+  {
+    "id": "594",
+    "name": "Robe liche jaune-----Robe"
+  },
+  {
+    "id": "595",
+    "name": "Robe liche verte-----Robe"
+  },
+  {
+    "id": "596",
+    "name": "Robe liche grise-----Robe"
+  },
+  {
+    "id": "597",
+    "name": "Robe liche rose-----Robe"
+  },
+  {
+    "id": "598",
+    "name": "Robe liche rouge-----Robe"
+  },
+  {
+    "id": "599",
+    "name": "Robe liche blanche-----Robe"
+  },
+  {
+    "id": "600",
+    "name": "Cape noire-----Cape"
+  },
+  {
+    "id": "601",
+    "name": "Cape bleue-----Cape"
+  },
+  {
+    "id": "602",
+    "name": "Cape jaune-----Cape"
+  },
+  {
+    "id": "603",
+    "name": "Cape verte-----Cape"
+  },
+  {
+    "id": "604",
+    "name": "Cape orange-----Cape"
+  },
+  {
+    "id": "605",
+    "name": "Cape rose-----Cape"
+  },
+  {
+    "id": "606",
+    "name": "Cape violette-----Cape"
+  },
+  {
+    "id": "607",
+    "name": "Cape rouge-----Cape"
+  },
+  {
+    "id": "608",
+    "name": "Cape blanche-----Cape"
+  },
+  {
+    "id": "630",
+    "name": "Manteau des brumes de minuit finement tissé-59-75022Robe"
+  },
+  {
+    "id": "631",
+    "name": "Robe tressée par le vent finement tissée-31-175175Robe"
+  },
+  {
+    "id": "632",
+    "name": "Robe de l'Archimage finement tissée-27-19015Robe"
+  },
+  {
+    "id": "633",
+    "name": "Manteau des bénédictions infinies finement tissé-31-17347Robe"
+  },
+  {
+    "id": "634",
+    "name": "Manteau des élements finement tissé-75-297238Robe"
+  },
+  {
+    "id": "635",
+    "name": "Robe en humus finement tissée-31-29321Robe"
+  },
+  {
+    "id": "636",
+    "name": "Cape de la forêt finement tissée-35-8080Cape"
+  },
+  {
+    "id": "637",
+    "name": "Cape de la nuit finement tissée-60225--Cape"
+  },
+  {
+    "id": "638",
+    "name": "Cape de puissance finement tissée130220757575Cape"
+  },
+  {
+    "id": "639",
+    "name": "Cape d'Elemendil finement tissée25050---Cape"
+  },
+  {
+    "id": "641",
+    "name": "Robe du grand froid finement tissée-31-33119Robe"
+  },
+  {
+    "id": "669",
+    "name": "Chapeau en feuilles---4168Heaume"
+  },
+  {
+    "id": "687",
+    "name": "Tissu-----Cape"
+  },
+  {
+    "id": "717",
+    "name": "Bouclier jaune-----Bouclier"
+  },
+  {
+    "id": "719",
+    "name": "Bouclier noir-----Bouclier"
+  },
+  {
+    "id": "720",
+    "name": "Bouclier bleu-----Bouclier"
+  },
+  {
+    "id": "721",
+    "name": "Bouclier vert-----Bouclier"
+  },
+  {
+    "id": "722",
+    "name": "Bouclier rouge-----Bouclier"
+  },
+  {
+    "id": "723",
+    "name": "Bouclier rose-----Bouclier"
+  },
+  {
+    "id": "725",
+    "name": "Bouclier orange-----Bouclier"
+  },
+  {
+    "id": "755",
+    "name": "Bouclier métrolite350220---Bouclier"
+  },
+  {
+    "id": "822",
+    "name": "Tête de citrouille-----Heaume"
+  },
+  {
+    "id": "847",
+    "name": "Canne de Noël-----Arme"
+  },
+  {
+    "id": "848",
+    "name": "Canne de Noël longue-----Arme"
+  },
+  {
+    "id": "856",
+    "name": "Canne de Noël longue-----Arme"
+  },
+  {
+    "id": "881",
+    "name": "Tissu noir-----Cape"
+  },
+  {
+    "id": "2537",
+    "name": "Chapeau blanc-----Heaume"
+  },
+  {
+    "id": "2544",
+    "name": "Orbe de fortification90110455050Orbe"
+  },
+  {
+    "id": "2545",
+    "name": "Orbe de la forêt-35-8080Orbe"
+  },
+  {
+    "id": "2546",
+    "name": "Orbe de la nuit-60225--Orbe"
+  },
+  {
+    "id": "2547",
+    "name": "Orbe de puissance130220757575Orbe"
+  },
+  {
+    "id": "2548",
+    "name": "Orbe doré140100-7575Orbe"
+  },
+  {
+    "id": "2549",
+    "name": "Orbe d'Elemendil25050---Orbe"
+  },
+  {
+    "id": "2550",
+    "name": "Orbe humterre5010075--Orbe"
+  },
+  {
+    "id": "2551",
+    "name": "Orbe des voyelles---7070Orbe"
+  },
+  {
+    "id": "2552",
+    "name": "Orbe du bouffon70-70--Orbe"
+  },
+  {
+    "id": "2553",
+    "name": "Orbe de résistance au feu---4535Orbe"
+  },
+  {
+    "id": "2555",
+    "name": "Orbe orné de runes-50---Orbe"
+  },
+  {
+    "id": "2556",
+    "name": "Orbe de l'écorché-25---Orbe"
+  },
+  {
+    "id": "2557",
+    "name": "Orbe rouge-25---Orbe"
+  },
+  {
+    "id": "2558",
+    "name": "Orbe du bourgeois-50---Orbe"
+  },
+  {
+    "id": "2636",
+    "name": "__NM_Test Armure Orange-----Heaume"
+  },
+  {
+    "id": "2644",
+    "name": "__NM_Test Armure Orange-----Armure"
+  },
+  {
+    "id": "2731",
+    "name": "Faux spectrale-----Arme"
+  },
+  {
+    "id": "2748",
+    "name": "Glaive de main gauche-----Arme"
+  },
+  {
+    "id": "2753",
+    "name": "Hache de main gauche-----Arme"
+  },
+  {
+    "id": "2754",
+    "name": "Hache de main gauche-----Arme"
+  },
+  {
+    "id": "2776",
+    "name": "Arc de glace-----Arc"
+  },
+  {
+    "id": "2801",
+    "name": "Glaive-----Arme"
+  },
+  {
+    "id": "2803",
+    "name": "Masque de Gobelin de glace-----Heaume"
+  },
+  {
+    "id": "2828",
+    "name": "Heaume-----Heaume"
+  },
+  {
+    "id": "2829",
+    "name": "Plastron-----Plastron"
+  },
+  {
+    "id": "2830",
+    "name": "Plastron-----Plastron"
+  },
+  {
+    "id": "2831",
+    "name": "Bottes-----Botte"
+  },
+  {
+    "id": "2832",
+    "name": "Bottes-----Botte"
+  },
+  {
+    "id": "2833",
+    "name": "Gants-----Gant"
+  },
+  {
+    "id": "2834",
+    "name": "Gants-----Gant"
+  },
+  {
+    "id": "2835",
+    "name": "Jambières-----Jambière"
+  },
+  {
+    "id": "2836",
+    "name": "Jambières-----Jambière"
+  },
+  {
+    "id": "2842",
+    "name": "Bouclier-----Bouclier"
+  },
+  {
+    "id": "2843",
+    "name": "Bouclier-----Bouclier"
+  },
+  {
+    "id": "2863",
+    "name": "Chapeau-----Heaume"
+  },
+  {
+    "id": "2915",
+    "name": "Oeuf de Rez-----Orbe"
+  },
+  {
+    "id": "2918",
+    "name": "Bottes de Lutin rouges-----Botte"
+  },
+  {
+    "id": "2919",
+    "name": "Bottes de Lutin vertes-----Botte"
+  },
+  {
+    "id": "2936",
+    "name": "Cuir d'Orc tanné-----Cape"
+  },
+  {
+    "id": "3071",
+    "name": "Robe des flammes ardentes-38-69723Robe"
+  },
+  {
+    "id": "3072",
+    "name": "Cape des flammèches-60-75634Cape"
+  },
+  {
+    "id": "3076",
+    "name": "Cape givrée-60-75634Cape"
+  },
+  {
+    "id": "3080",
+    "name": "Cape du levant-60-403403Cape"
+  },
+  {
+    "id": "3084",
+    "name": "Cape des sables-60-34756Cape"
+  },
+  {
+    "id": "3087",
+    "name": "Cape du trépas4060-90629Cape"
+  },
+  {
+    "id": "3091",
+    "name": "Plastron du templier-340--445Plastron"
+  },
+  {
+    "id": "3092",
+    "name": "Bottes du templier-340--445Botte"
+  },
+  {
+    "id": "3093",
+    "name": "Egide du templier-340--445Bouclier"
+  },
+  {
+    "id": "3095",
+    "name": "Gants du templier-340--445Gant"
+  },
+  {
+    "id": "3097",
+    "name": "Jambières du templier-340--445Jambière"
+  },
+  {
+    "id": "3101",
+    "name": "Ecaille de Dragon-----Bouclier"
+  },
+  {
+    "id": "3114",
+    "name": "Coiffe d'Olphen-----Heaume"
+  },
+  {
+    "id": "3174",
+    "name": "Cape de mauvais augure190808007575Cape"
+  },
+  {
+    "id": "3193",
+    "name": "Cape du loup blanc87560---Cape"
+  },
+  {
+    "id": "3302",
+    "name": "Hachette d'acier fin de main gauche155----Arme"
+  },
+  {
+    "id": "3362",
+    "name": "Orbe secret de Falyel-----Orbe"
+  },
+  {
+    "id": "3363",
+    "name": "Orbe secret de Gorodek-----Orbe"
+  },
+  {
+    "id": "3364",
+    "name": "Orbe secret de Miryden-----Orbe"
+  },
+  {
+    "id": "3365",
+    "name": "Orbe secret de Jalaam-----Orbe"
+  },
+  {
+    "id": "3366",
+    "name": "Orbe secret d'Amaëlle-----Orbe"
+  },
+  {
+    "id": "3367",
+    "name": "Orbe secret de Xordiv-----Orbe"
+  },
+  {
+    "id": "3368",
+    "name": "Orbe secret d'Isilaë-----Orbe"
+  },
+  {
+    "id": "3369",
+    "name": "Orbe secret de Klauzar-----Orbe"
+  },
+  {
+    "id": "3370",
+    "name": "Orbe secret de Silvius-----Orbe"
+  },
+  {
+    "id": "3371",
+    "name": "Orbe secret de Valmar-----Orbe"
+  },
+  {
+    "id": "3404",
+    "name": "Orbe de mauvais augure190808007575Orbe"
+  },
+  {
+    "id": "3405",
+    "name": "Orbe des flammèches-60-75634Orbe"
+  },
+  {
+    "id": "3406",
+    "name": "Orbe des sables-60-34756Orbe"
+  },
+  {
+    "id": "3407",
+    "name": "Orbe du levant-60-403403Orbe"
+  },
+  {
+    "id": "3408",
+    "name": "Orbe du loup blanc87560---Orbe"
+  },
+  {
+    "id": "3409",
+    "name": "Orbe givrée-60-75634Orbe"
+  },
+  {
+    "id": "3410",
+    "name": "Orbe du trépas-60-90629Orbe"
+  },
+  {
+    "id": "3411",
+    "name": "Orbe vierge de petite taille-----Orbe"
+  },
+  {
+    "id": "3412",
+    "name": "Orbe vierge de taille moyenne-----Orbe"
+  },
+  {
+    "id": "3413",
+    "name": "Orbe vierge de grande taille-----Orbe"
+  },
+  {
+    "id": "3427",
+    "name": "Minerais de fer-----Divers"
+  },
+  {
+    "id": "3428",
+    "name": "Minerais de plomb-----Divers"
+  },
+  {
+    "id": "3432",
+    "name": "Minerais de cuivre-----Divers"
+  },
+  {
+    "id": "3433",
+    "name": "Minerais d'argent-----Divers"
+  },
+  {
+    "id": "3434",
+    "name": "Minerais de mithril-----Divers"
+  },
+  {
+    "id": "3435",
+    "name": "Minerais d'adamantite-----Divers"
+  },
+  {
+    "id": "3436",
+    "name": "Minerais d'or-----Divers"
+  },
+  {
+    "id": "3437",
+    "name": "Minerais de métrolite-----Divers"
+  },
+  {
+    "id": "3443",
+    "name": "Perle de neige éternelle-----Orbe"
+  },
+  {
+    "id": "3496",
+    "name": "Corindon des profondeurs-----Divers"
+  },
+  {
+    "id": "3499",
+    "name": "Souffle solidifié-----Orbe"
+  },
+  {
+    "id": "3519",
+    "name": "Perle de courage-----Orbe"
+  },
+  {
+    "id": "3527",
+    "name": "Eclat d'âme factice-----Orbe"
+  },
+  {
+    "id": "3540",
+    "name": "Aune de toile de chanvre-----Cape"
+  },
+  {
+    "id": "3541",
+    "name": "Aune de toile de coton-----Cape"
+  },
+  {
+    "id": "3542",
+    "name": "Aune de toile de soie-----Cape"
+  },
+  {
+    "id": "3543",
+    "name": "Aune de toile de soie elfe-----Cape"
+  },
+  {
+    "id": "3546",
+    "name": "Feutre d'antilope-----Cape"
+  },
+  {
+    "id": "3547",
+    "name": "Feutre de Minotaure-----Cape"
+  },
+  {
+    "id": "3548",
+    "name": "Feutre de Centaure-----Cape"
+  },
+  {
+    "id": "3549",
+    "name": "Feutre de Sintelle-----Cape"
+  },
+  {
+    "id": "3550",
+    "name": "Cuir de Profundus tanné-----Cape"
+  },
+  {
+    "id": "3551",
+    "name": "Cuir de Skraug tanné-----Cape"
+  },
+  {
+    "id": "3552",
+    "name": "Cuir de B'Ronkhan tanné-----Cape"
+  },
+  {
+    "id": "3565",
+    "name": "Soie d'araignée-----Cape"
+  },
+  {
+    "id": "3568",
+    "name": "Cape de fortification finement tissée90110455050Cape"
+  },
+  {
+    "id": "3569",
+    "name": "Cape humterre finement tissée50100755050Cape"
+  },
+  {
+    "id": "3570",
+    "name": "Cape dorée finement tissée140100-7575Cape"
+  },
+  {
+    "id": "3571",
+    "name": "Cape des voyelles finement tissée---7070Cape"
+  },
+  {
+    "id": "3572",
+    "name": "Cape du bouffon finement tissée70-70--Cape"
+  },
+  {
+    "id": "3573",
+    "name": "Manteau des abysses finement tissé---35080Robe"
+  },
+  {
+    "id": "3574",
+    "name": "Cape du bourgeois finement tissée-50---Cape"
+  },
+  {
+    "id": "3658",
+    "name": "Bouclier ancien de la garde d'Orkanis-65-2825Bouclier"
+  },
+  {
+    "id": "3741",
+    "name": "Cape de protection contre la terre-30-4545Cape"
+  },
+  {
+    "id": "3742",
+    "name": "Orbe de protection contre la terre-30-4545Orbe"
+  },
+  {
+    "id": "3743",
+    "name": "Cape de protection contre l'eau-30-4545Cape"
+  },
+  {
+    "id": "3744",
+    "name": "Orbe de protection contre l'eau-30-4545Orbe"
+  },
+  {
+    "id": "3745",
+    "name": "Cape de protection contre l'air-30-4545Cape"
+  },
+  {
+    "id": "3746",
+    "name": "Orbe de protection contre l'air-30-4545Orbe"
+  },
+  {
+    "id": "3747",
+    "name": "Orbe de l'invocateur-32-5555Orbe"
+  },
+  {
+    "id": "3748",
+    "name": "Cape de l'invocateur-32-5555Cape"
+  },
+  {
+    "id": "3805",
+    "name": "Ruban obscur-----Cape"
+  },
+  {
+    "id": "3843",
+    "name": "Feuille d'or-----Cape"
+  },
+  {
+    "id": "3846",
+    "name": "Suaire du Phoenix-38-23697Robe"
+  },
+  {
+    "id": "3859",
+    "name": "Gravillons d'énergie-----Divers"
+  },
+  {
+    "id": "3862",
+    "name": "Fragment rocailleux-----Divers"
+  },
+  {
+    "id": "3867",
+    "name": "Minerais de saphir-----Divers"
+  },
+  {
+    "id": "3893",
+    "name": "Freibergite-----Divers"
+  },
+  {
+    "id": "3913",
+    "name": "Metal sulfuré-----Divers"
+  },
+  {
+    "id": "3920",
+    "name": "Petite boule de cristal-----Orbe"
+  },
+  {
+    "id": "3921",
+    "name": "Silice de la fange-----Divers"
+  },
+  {
+    "id": "3929",
+    "name": "Minerais de diamant-----Divers"
+  },
+  {
+    "id": "3930",
+    "name": "Minerais de rubis-----Divers"
+  },
+  {
+    "id": "3931",
+    "name": "Minerais d'émeraude-----Divers"
+  },
+  {
+    "id": "3932",
+    "name": "Minerais de titane-----Divers"
+  },
+  {
+    "id": "3939",
+    "name": "Lambeaux en peau de rejeton-----Cape"
+  },
+  {
+    "id": "3942",
+    "name": "Cailloux-----Divers"
+  },
+  {
+    "id": "3952",
+    "name": "Cailloux bien formés-----Divers"
+  },
+  {
+    "id": "3957",
+    "name": "Cailloux excellemment bien formés-----Divers"
+  },
+  {
+    "id": "3968",
+    "name": "Cailloux exceptionnellement bien formés-----Divers"
+  },
+  {
+    "id": "4013",
+    "name": "Robe des fournaises-31-33119Robe"
+  },
+  {
+    "id": "4014",
+    "name": "Manteau d'inlandsis-38-69723Robe"
+  },
+  {
+    "id": "4015",
+    "name": "Manteau de sève mystique-38-23697Robe"
+  },
+  {
+    "id": "4018",
+    "name": "Cape des âmes oubliées3060-53926Cape"
+  },
+  {
+    "id": "4019",
+    "name": "Orbe des âmes oubliées3060-53926Orbe"
+  },
+  {
+    "id": "4020",
+    "name": "Manteau du Khamsin-38-360360Robe"
+  },
+  {
+    "id": "4025",
+    "name": "Drapée de l'intrépide16060909090Cape"
+  },
+  {
+    "id": "4026",
+    "name": "Orbe de l'intrépide16060909090Orbe"
+  },
+  {
+    "id": "4087",
+    "name": "Plastron protecteur de Théopold-340-139182Plastron"
+  },
+  {
+    "id": "4093",
+    "name": "Dépot magnétique-----Divers"
+  },
+  {
+    "id": "4094",
+    "name": "Écaille de vipère-----Bouclier"
+  },
+  {
+    "id": "4099",
+    "name": "Électrum-----Divers"
+  },
+  {
+    "id": "4121",
+    "name": "Orbe de pureté-----Orbe"
+  },
+  {
+    "id": "4129",
+    "name": "Étoffe translucide-----Cape"
+  },
+  {
+    "id": "4130",
+    "name": "Oeil de verre-----Orbe"
+  },
+  {
+    "id": "4132",
+    "name": "Lien éthéré-----Orbe"
+  },
+  {
+    "id": "4141",
+    "name": "Glaive terrestre894--36138Arme"
+  },
+  {
+    "id": "4142",
+    "name": "Glaive virevoltant894--8787Arme"
+  },
+  {
+    "id": "4143",
+    "name": "Glaive de givre894--13836Arme"
+  },
+  {
+    "id": "4144",
+    "name": "Glaive flamboyant894--13836Arme"
+  },
+  {
+    "id": "4145",
+    "name": "Hallebarde flamboyante909--13836Arme"
+  },
+  {
+    "id": "4146",
+    "name": "Hallebarde de givre909--13836Arme"
+  },
+  {
+    "id": "4147",
+    "name": "Hallebarde virevoltante909--8787Arme"
+  },
+  {
+    "id": "4148",
+    "name": "Hallebarde terrestre909--36138Arme"
+  },
+  {
+    "id": "4168",
+    "name": "Orbe de mystification45235274--Orbe"
+  },
+  {
+    "id": "4169",
+    "name": "Cape de mystification45235274--Cape"
+  },
+  {
+    "id": "4172",
+    "name": "Plastron de rejet-340-95-Plastron"
+  },
+  {
+    "id": "4273",
+    "name": "Manteau d'apparat jaune-----Robe"
+  },
+  {
+    "id": "4274",
+    "name": "Manteau d'apparat vert-----Robe"
+  },
+  {
+    "id": "4275",
+    "name": "Manteau d'apparat tacheté-----Robe"
+  },
+  {
+    "id": "4276",
+    "name": "Manteau d'apparat rose-----Robe"
+  },
+  {
+    "id": "4277",
+    "name": "Manteau d'apparat rouge-----Robe"
+  },
+  {
+    "id": "4278",
+    "name": "Manteau d'apparat blanc-----Robe"
+  },
+  {
+    "id": "4279",
+    "name": "Manteau d'apparat noir-----Robe"
+  },
+  {
+    "id": "4280",
+    "name": "Manteau d'apparat bleu-----Robe"
+  },
+  {
+    "id": "4281",
+    "name": "Cape d'apparat blanche-----Cape"
+  },
+  {
+    "id": "4282",
+    "name": "Cape d'apparat rouge-----Cape"
+  },
+  {
+    "id": "4283",
+    "name": "Cape d'apparat violette-----Cape"
+  },
+  {
+    "id": "4284",
+    "name": "Cape d'apparat rose-----Cape"
+  },
+  {
+    "id": "4285",
+    "name": "Cape d'apparat orange-----Cape"
+  },
+  {
+    "id": "4286",
+    "name": "Cape d'apparat verte-----Cape"
+  },
+  {
+    "id": "4287",
+    "name": "Cape d'apparat jaune-----Cape"
+  },
+  {
+    "id": "4288",
+    "name": "Cape d'apparat bleue-----Cape"
+  },
+  {
+    "id": "4289",
+    "name": "Cape d'apparat noire-----Cape"
+  },
+  {
+    "id": "4298",
+    "name": "Chapeau d'apparat vert-----Heaume"
+  },
+  {
+    "id": "4300",
+    "name": "Chapeau d'apparat blanc-----Heaume"
+  },
+  {
+    "id": "4372",
+    "name": "Chapeau festif-----Heaume"
+  },
+  {
+    "id": "4402",
+    "name": "Coiffe d'Olphen jaune-----Heaume"
+  },
+  {
+    "id": "4403",
+    "name": "Coiffe d'Olphen grise-----Heaume"
+  },
+  {
+    "id": "4404",
+    "name": "Coiffe d'Olphen mauve-----Heaume"
+  },
+  {
+    "id": "4405",
+    "name": "Coiffe d'Olphen noire-----Heaume"
+  },
+  {
+    "id": "4406",
+    "name": "Coiffe d'Olphen orange-----Heaume"
+  },
+  {
+    "id": "4407",
+    "name": "Coiffe d'Olphen rose-----Heaume"
+  },
+  {
+    "id": "4408",
+    "name": "Coiffe d'Olphen verte-----Heaume"
+  },
+  {
+    "id": "4440",
+    "name": "Bouclier des Ères rose d'apparat-----Bouclier"
+  },
+  {
+    "id": "4769",
+    "name": "Manteau du croisé42010097100463Cape"
+  },
+  {
+    "id": "4770",
+    "name": "Ecu du croisé46922095120350Bouclier"
+  },
+  {
+    "id": "4782",
+    "name": "Bouclier du pourfendeur de mage5521009710634Bouclier"
+  },
+  {
+    "id": "4800",
+    "name": "Masque de cancre-----Heaume"
+  },
+  {
+    "id": "4801",
+    "name": "Masque de clown-----Heaume"
+  },
+  {
+    "id": "4802",
+    "name": "Chapeau de diplômé-----Heaume"
+  },
+  {
+    "id": "4837",
+    "name": "Bonbon canne à sucre-----Arme"
+  },
+  {
+    "id": "4952",
+    "name": "Pierre de feu-----Orbe"
+  },
+  {
+    "id": "4953",
+    "name": "Pierre d'air-----Orbe"
+  },
+  {
+    "id": "4954",
+    "name": "Pierre d'eau-----Orbe"
+  },
+  {
+    "id": "4955",
+    "name": "Pierre sombre-----Orbe"
+  },
+  {
+    "id": "4956",
+    "name": "Pierre de terre-----Orbe"
+  },
+  {
+    "id": "3",
+    "name": "Lame enchantée320-40--Arme"
+  },
+  {
+    "id": "8",
+    "name": "Bracelet des sables36054956363Bracelet"
+  },
+  {
+    "id": "10",
+    "name": "Bracelet humterre50100-7575Bracelet"
+  },
+  {
+    "id": "14",
+    "name": "Cape humterre50100755050Cape"
+  },
+  {
+    "id": "16",
+    "name": "Pierre des sables-----Divers"
+  },
+  {
+    "id": "19",
+    "name": "Fléau enchanté270-40-248Arme"
+  },
+  {
+    "id": "20",
+    "name": "Anneau de feu---12560Anneau"
+  },
+  {
+    "id": "25",
+    "name": "Bouclier des abysses-80-4545Bouclier"
+  },
+  {
+    "id": "26",
+    "name": "Manteau des abysses---35080Robe"
+  },
+  {
+    "id": "29",
+    "name": "Sceptre du néant-----Arme"
+  },
+  {
+    "id": "30",
+    "name": "Sceptre des abysses43--32960Arme"
+  },
+  {
+    "id": "33",
+    "name": "Plastron de ciel argent90140370--Plastron"
+  },
+  {
+    "id": "35",
+    "name": "Heaume de ciel argent90140370--Heaume"
+  },
+  {
+    "id": "36",
+    "name": "Bottes de ciel argent90140370--Botte"
+  },
+  {
+    "id": "37",
+    "name": "Ceinture de ciel argent90140370--Ceinture"
+  },
+  {
+    "id": "38",
+    "name": "Gants de ciel argent90140370--Gant"
+  },
+  {
+    "id": "40",
+    "name": "Plastron triplicite du mage-50-350100Plastron"
+  },
+  {
+    "id": "41",
+    "name": "Bottes triplicite du mage-50-350100Botte"
+  },
+  {
+    "id": "42",
+    "name": "Ceinture triplicite du mage-50-350100Ceinture"
+  },
+  {
+    "id": "43",
+    "name": "Gants triplicite du mage-50-350100Gant"
+  },
+  {
+    "id": "48",
+    "name": "Plastron d'armure métrolite350220---Plastron"
+  },
+  {
+    "id": "49",
+    "name": "Bottes d'armure métrolite350220---Botte"
+  },
+  {
+    "id": "50",
+    "name": "Ceinture d'armure métrolite350220---Ceinture"
+  },
+  {
+    "id": "51",
+    "name": "Gants d'armure métrolite350220---Gant"
+  },
+  {
+    "id": "52",
+    "name": "Heaume d'armure métrolite350220---Heaume"
+  },
+  {
+    "id": "53",
+    "name": "Jambières d'armure métrolite350220---Jambière"
+  },
+  {
+    "id": "59",
+    "name": "Epée de diamants532----Arme"
+  },
+  {
+    "id": "79",
+    "name": "Bottes de cuir enchanté39060---Botte"
+  },
+  {
+    "id": "80",
+    "name": "Gants de cuir enchanté39060---Gant"
+  },
+  {
+    "id": "81",
+    "name": "Armure de cuir enchanté39060---Plastron"
+  },
+  {
+    "id": "82",
+    "name": "Casque de cuir enchanté39060---Heaume"
+  },
+  {
+    "id": "94",
+    "name": "Bouclier démoniaque50160-6615Bouclier"
+  },
+  {
+    "id": "101",
+    "name": "Bouclier des Hautes Créatures24030080--Bouclier"
+  },
+  {
+    "id": "102",
+    "name": "Lune étoilée94-372--Arc"
+  },
+  {
+    "id": "104",
+    "name": "Fléau Liridell260---206Arme"
+  },
+  {
+    "id": "110",
+    "name": "Cape noire-25---Cape"
+  },
+  {
+    "id": "111",
+    "name": "Red cape-25---Cape"
+  },
+  {
+    "id": "122",
+    "name": "Cape de la nuit-60225--Cape"
+  },
+  {
+    "id": "123",
+    "name": "Cape de la forêt-35-8080Cape"
+  },
+  {
+    "id": "124",
+    "name": "Cape de puissance130220757575Cape"
+  },
+  {
+    "id": "125",
+    "name": "Fragment de Météorite-----Divers"
+  },
+  {
+    "id": "127",
+    "name": "Anneau étoilé---90115Anneau"
+  },
+  {
+    "id": "128",
+    "name": "Pierre étoilée---6060Divers"
+  },
+  {
+    "id": "130",
+    "name": "Parcelle d'étoile-----Divers"
+  },
+  {
+    "id": "131",
+    "name": "Cape dorée140100-7575Cape"
+  },
+  {
+    "id": "133",
+    "name": "Armure en Lambeaux80140-6060Armure"
+  },
+  {
+    "id": "135",
+    "name": "Fléau enchanté de main gauche270-40-248Arme"
+  },
+  {
+    "id": "137",
+    "name": "Lame enchantée de main gauche320-40--Arme"
+  },
+  {
+    "id": "140",
+    "name": "Robe verte-----Robe"
+  },
+  {
+    "id": "142",
+    "name": "Robe jaune-----Robe"
+  },
+  {
+    "id": "143",
+    "name": "Robe bleue-----Robe"
+  },
+  {
+    "id": "145",
+    "name": "Robe bleue-----Robe"
+  },
+  {
+    "id": "146",
+    "name": "Robe violette-----Robe"
+  },
+  {
+    "id": "147",
+    "name": "Robe rose-----Robe"
+  },
+  {
+    "id": "148",
+    "name": "Robe grise-----Robe"
+  },
+  {
+    "id": "149",
+    "name": "Robe mauve-----Robe"
+  },
+  {
+    "id": "150",
+    "name": "Robe orange-----Robe"
+  },
+  {
+    "id": "151",
+    "name": "Robe sombre-----Robe"
+  },
+  {
+    "id": "167",
+    "name": "Chapeau brun-75501612Heaume"
+  },
+  {
+    "id": "169",
+    "name": "Anneau de force-----Anneau"
+  },
+  {
+    "id": "170",
+    "name": "Anneau d'endurance-----Anneau"
+  },
+  {
+    "id": "171",
+    "name": "Anneau de dextérité-----Anneau"
+  },
+  {
+    "id": "172",
+    "name": "Anneau de sagesse-----Anneau"
+  },
+  {
+    "id": "173",
+    "name": "Anneau d'intelligence-----Anneau"
+  },
+  {
+    "id": "174",
+    "name": "Anneau de résistance-----Anneau"
+  },
+  {
+    "id": "176",
+    "name": "Masque Gobelin-30---Heaume"
+  },
+  {
+    "id": "184",
+    "name": "Robe Orangée-12-2828Robe"
+  },
+  {
+    "id": "185",
+    "name": "Robe Bleutée-12-2828Robe"
+  },
+  {
+    "id": "186",
+    "name": "Robe Ensoleillée-12-2828Robe"
+  },
+  {
+    "id": "187",
+    "name": "Robe Brunie-12-2828Robe"
+  },
+  {
+    "id": "188",
+    "name": "Robe de Rose-12-2828Robe"
+  },
+  {
+    "id": "195",
+    "name": "Robe du grand froid-31-33119Robe"
+  },
+  {
+    "id": "196",
+    "name": "Cape ornée de runes-50---Cape"
+  },
+  {
+    "id": "197",
+    "name": "Cape de l'écorché-25---Cape"
+  },
+  {
+    "id": "198",
+    "name": "Plastron d'argent-160---Plastron"
+  },
+  {
+    "id": "200",
+    "name": "Épée d'argent71----Arme"
+  },
+  {
+    "id": "211",
+    "name": "Robe tressée par le vent-31-175175Robe"
+  },
+  {
+    "id": "212",
+    "name": "Robe en humus-31-29321Robe"
+  },
+  {
+    "id": "213",
+    "name": "Plastron de Liridell de qualité-370---Plastron"
+  },
+  {
+    "id": "214",
+    "name": "Bottes de Liridell-370---Botte"
+  },
+  {
+    "id": "216",
+    "name": "Ceinture de Liridell-370---Ceinture"
+  },
+  {
+    "id": "217",
+    "name": "Gants de Liridell de qualité-370---Gant"
+  },
+  {
+    "id": "218",
+    "name": "Heaume de Liridell-370---Heaume"
+  },
+  {
+    "id": "219",
+    "name": "Jambières de Liridell de qualité-370---Jambière"
+  },
+  {
+    "id": "221",
+    "name": "Epée de Liridell590----Arme"
+  },
+  {
+    "id": "222",
+    "name": "Hache de Liridell590----Arme"
+  },
+  {
+    "id": "223",
+    "name": "Arc de Liridell138-590--Arc"
+  },
+  {
+    "id": "224",
+    "name": "Fléau brisé de Liridell334---285Arme"
+  },
+  {
+    "id": "226",
+    "name": "Masque de loup27-41--Heaume"
+  },
+  {
+    "id": "281",
+    "name": "Masque de Gobelin-45---Heaume"
+  },
+  {
+    "id": "286",
+    "name": "Chapeau de Noël-----Heaume"
+  },
+  {
+    "id": "289",
+    "name": "Plastron de plaques incrustées d'émeraudes-140---Plastron"
+  },
+  {
+    "id": "290",
+    "name": "Protecteur en plaques incrustée d'émeraudes-140---Ceinture"
+  },
+  {
+    "id": "291",
+    "name": "Jambières de plaques incrustées d'émeraudes-140---Jambière"
+  },
+  {
+    "id": "292",
+    "name": "Heaume de plaques incrustées d'émeraudes-140---Heaume"
+  },
+  {
+    "id": "293",
+    "name": "Gantelets de plaques incrustées d'émeraudes-140---Gant"
+  },
+  {
+    "id": "294",
+    "name": "Bottes de plaques incrustées d'émeraudes-140---Botte"
+  },
+  {
+    "id": "295",
+    "name": "Emeraude reluisante-----Divers"
+  },
+  {
+    "id": "320",
+    "name": "Ceinture de cuir enchanté39060---Ceinture"
+  },
+  {
+    "id": "322",
+    "name": "Bouquet de fleurs-----Divers"
+  },
+  {
+    "id": "323",
+    "name": "Chapeau de cuir-----Heaume"
+  },
+  {
+    "id": "361",
+    "name": "Bottes de la tortue-60---Botte"
+  },
+  {
+    "id": "392",
+    "name": "Plastron d'armure d'Aquilon140200450--Plastron"
+  },
+  {
+    "id": "393",
+    "name": "Bottes d'armure d'Aquilon140200450--Botte"
+  },
+  {
+    "id": "394",
+    "name": "Ceinture d'armure d'Aquilon140200450--Ceinture"
+  },
+  {
+    "id": "395",
+    "name": "Gants d'armure d'Aquilon140200450--Gant"
+  },
+  {
+    "id": "397",
+    "name": "Jambières d'armure d'Aquilon140200450--Jambière"
+  },
+  {
+    "id": "399",
+    "name": "Plastron triplicite du prêtre-50-100350Plastron"
+  },
+  {
+    "id": "400",
+    "name": "Bottes triplicite du prêtre-50-100350Botte"
+  },
+  {
+    "id": "402",
+    "name": "Ceinture triplicite du prêtre-50-100350Ceinture"
+  },
+  {
+    "id": "403",
+    "name": "Gants triplicite du prêtre-50-100350Gant"
+  },
+  {
+    "id": "406",
+    "name": "Plastron de la dynastie de la lumière250200--190Plastron"
+  },
+  {
+    "id": "407",
+    "name": "Bottes de la dynastie de la lumière250200--190Botte"
+  },
+  {
+    "id": "408",
+    "name": "Gants de la dynastie de la lumière250200--190Gant"
+  },
+  {
+    "id": "409",
+    "name": "Ceinture de la dynastie de la lumière250200--190Ceinture"
+  },
+  {
+    "id": "410",
+    "name": "Couronne de la dynastie de la lumière250200--190Heaume"
+  },
+  {
+    "id": "411",
+    "name": "Jambières de la dynastie de la lumière250200--190Jambière"
+  },
+  {
+    "id": "415",
+    "name": "Cape de fortification90110455050Cape"
+  },
+  {
+    "id": "419",
+    "name": "Gemme enchantée-----Divers"
+  },
+  {
+    "id": "420",
+    "name": "Perle de pluie-----Focus"
+  },
+  {
+    "id": "422",
+    "name": "Cape du bourgeois-50---Cape"
+  },
+  {
+    "id": "425",
+    "name": "Arc recourbé en mélèze116-677--Arc"
+  },
+  {
+    "id": "427",
+    "name": "Arc composite en érable161-706--Arc"
+  },
+  {
+    "id": "430",
+    "name": "Arc composite du foehn étoilé161-706--Arc"
+  },
+  {
+    "id": "431",
+    "name": "Arc composite du foehn161-706--Arc"
+  },
+  {
+    "id": "432",
+    "name": "Arc à poulies en mélèze d'Angélus138-691--Arc"
+  },
+  {
+    "id": "437",
+    "name": "Arc long des maîtres étoilés109-445--Arc"
+  },
+  {
+    "id": "448",
+    "name": "Arc composite de l'harmattan étoilé178-793--Arc"
+  },
+  {
+    "id": "477",
+    "name": "Flèches perceuses d'armure89-349--Arc"
+  },
+  {
+    "id": "478",
+    "name": "Flèches de glace94-37210931Arc"
+  },
+  {
+    "id": "479",
+    "name": "Diadème volcanique---60321Heaume"
+  },
+  {
+    "id": "483",
+    "name": "Epée bâtarde des ancêtres677----Arme"
+  },
+  {
+    "id": "485",
+    "name": "Epée bâtarde des ancêtres runique677----Arme"
+  },
+  {
+    "id": "489",
+    "name": "Lame des chimères706----Arme"
+  },
+  {
+    "id": "490",
+    "name": "Hache large des ancêtres735----Arme"
+  },
+  {
+    "id": "493",
+    "name": "Ecimeuse735----Arme"
+  },
+  {
+    "id": "494",
+    "name": "Ecimeuse incrustée d'étoiles735----Arme"
+  },
+  {
+    "id": "495",
+    "name": "Flèches du vent31-1847169Arc"
+  },
+  {
+    "id": "496",
+    "name": "Flèches de la terre94-18438102Arc"
+  },
+  {
+    "id": "497",
+    "name": "Flèches lumineuses31-1841772Arc"
+  },
+  {
+    "id": "498",
+    "name": "Flèches assommantes89-349--Arc"
+  },
+  {
+    "id": "500",
+    "name": "Bottes de Liridell de qualité-370---Botte"
+  },
+  {
+    "id": "501",
+    "name": "Bottes de Liridell cabossées-370---Botte"
+  },
+  {
+    "id": "502",
+    "name": "Bottes de Liridell enchantées-370---Botte"
+  },
+  {
+    "id": "503",
+    "name": "Gants de Liridell-370---Gant"
+  },
+  {
+    "id": "504",
+    "name": "Gants de Liridell enchantés-370---Gant"
+  },
+  {
+    "id": "505",
+    "name": "Gants de Liridell cabossés-370---Gant"
+  },
+  {
+    "id": "506",
+    "name": "Heaume de Liridell cabossé-370---Heaume"
+  },
+  {
+    "id": "507",
+    "name": "Heaume de Liridell enchanté-370---Heaume"
+  },
+  {
+    "id": "508",
+    "name": "Heaume de Liridell de qualité-370---Heaume"
+  },
+  {
+    "id": "509",
+    "name": "Jambières de Liridell enchantées-370---Jambière"
+  },
+  {
+    "id": "510",
+    "name": "Jambières de Liridell cabossées-370---Jambière"
+  },
+  {
+    "id": "511",
+    "name": "Jambières de Liridell-370---Jambière"
+  },
+  {
+    "id": "512",
+    "name": "Plastron de Liridell enchanté-370---Plastron"
+  },
+  {
+    "id": "513",
+    "name": "Plastron de Liridell-370---Plastron"
+  },
+  {
+    "id": "514",
+    "name": "Plastron de Liridell cabossé-370---Plastron"
+  },
+  {
+    "id": "520",
+    "name": "Cape des voyelles---7070Cape"
+  },
+  {
+    "id": "525",
+    "name": "Cape du bouffon70-70--Cape"
+  },
+  {
+    "id": "528",
+    "name": "Epée des braves677----Arme"
+  },
+  {
+    "id": "529",
+    "name": "Epée tueuse de Dragons749----Arme"
+  },
+  {
+    "id": "530",
+    "name": "Cimeterre incrusté d'émeraudes662----Arme"
+  },
+  {
+    "id": "534",
+    "name": "Lame de perdition enchantée372----Arme"
+  },
+  {
+    "id": "535",
+    "name": "Lame de perdition runique372----Arme"
+  },
+  {
+    "id": "536",
+    "name": "Eventreuse372----Arme"
+  },
+  {
+    "id": "537",
+    "name": "Eventreuse étoilé372----Arme"
+  },
+  {
+    "id": "538",
+    "name": "Arc recourbé catabatique116-677--Arc"
+  },
+  {
+    "id": "539",
+    "name": "Arc à poulies du Joran138-691--Arc"
+  },
+  {
+    "id": "549",
+    "name": "Bottes rouges-----Botte"
+  },
+  {
+    "id": "550",
+    "name": "Bottes bleues-----Botte"
+  },
+  {
+    "id": "551",
+    "name": "Bottes vertes-----Botte"
+  },
+  {
+    "id": "552",
+    "name": "Bottes violettes-----Botte"
+  },
+  {
+    "id": "556",
+    "name": "Jambières bleues-----Jambière"
+  },
+  {
+    "id": "557",
+    "name": "Jambières émeraudes-----Jambière"
+  },
+  {
+    "id": "558",
+    "name": "Jambières rouges-----Jambière"
+  },
+  {
+    "id": "560",
+    "name": "Jambières violettes-----Jambière"
+  },
+  {
+    "id": "562",
+    "name": "Gants bleus-----Gant"
+  },
+  {
+    "id": "564",
+    "name": "Gants rouges-----Gant"
+  },
+  {
+    "id": "570",
+    "name": "Casque rouge-----Heaume"
+  },
+  {
+    "id": "572",
+    "name": "Casque violet-----Heaume"
+  },
+  {
+    "id": "574",
+    "name": "Plastron bleu-----Plastron"
+  },
+  {
+    "id": "575",
+    "name": "Plastron émeraude-----Plastron"
+  },
+  {
+    "id": "576",
+    "name": "Plastron rouge-----Plastron"
+  },
+  {
+    "id": "578",
+    "name": "Plastron violet-----Plastron"
+  },
+  {
+    "id": "582",
+    "name": "Livre de chance-----Divers"
+  },
+  {
+    "id": "583",
+    "name": "Parchemin d'expérience de dix minutes-----Divers"
+  },
+  {
+    "id": "589",
+    "name": "Parchemin d'expérience d'une heure-----Divers"
+  },
+  {
+    "id": "627",
+    "name": "Scalpel du chirurgien poli30--3050Arme"
+  },
+  {
+    "id": "642",
+    "name": "Lame des chimères étoilée706----Arme"
+  },
+  {
+    "id": "649",
+    "name": "Lambeaux de troll ensanglantés-25---Armure"
+  },
+  {
+    "id": "650",
+    "name": "Sceptre arrondi de Zlüg3555-6060Arme"
+  },
+  {
+    "id": "652",
+    "name": "Cape violette-----Cape"
+  },
+  {
+    "id": "656",
+    "name": "Robe d'Elentir50-1406080Robe"
+  },
+  {
+    "id": "667",
+    "name": "Lance-----Arme"
+  },
+  {
+    "id": "670",
+    "name": "Marteau des Nains-----Arme"
+  },
+  {
+    "id": "671",
+    "name": "Martelet-----Arme"
+  },
+  {
+    "id": "672",
+    "name": "Prisme d'entrainement-----Divers"
+  },
+  {
+    "id": "673",
+    "name": "Pierre d'entrainement-----Divers"
+  },
+  {
+    "id": "675",
+    "name": "Etincelle de lumière---48583Heaume"
+  },
+  {
+    "id": "684",
+    "name": "Cristal des Saints-----Divers"
+  },
+  {
+    "id": "696",
+    "name": "Couvre chef9415372--Heaume"
+  },
+  {
+    "id": "702",
+    "name": "Poulet-----Divers"
+  },
+  {
+    "id": "703",
+    "name": "Dinde rotie-----Divers"
+  },
+  {
+    "id": "709",
+    "name": "Epée de la Rose Noire de main gauche242----Arme"
+  },
+  {
+    "id": "710",
+    "name": "Lime à ongles-----Arme"
+  },
+  {
+    "id": "761",
+    "name": "Une rose noire-----Divers"
+  },
+  {
+    "id": "769",
+    "name": "Un laissez-passer de la Rose Noire-----Divers"
+  },
+  {
+    "id": "787",
+    "name": "Bouclier flocon-----Bouclier"
+  },
+  {
+    "id": "791",
+    "name": "Plastron d'Orc en cuir clouté-60---Plastron"
+  },
+  {
+    "id": "792",
+    "name": "Ceinture d'Orc en cuir clouté-60---Ceinture"
+  },
+  {
+    "id": "793",
+    "name": "Bottes d'Orc en cuir clouté-60---Botte"
+  },
+  {
+    "id": "794",
+    "name": "Gants d'Orc en cuir clouté-60---Gant"
+  },
+  {
+    "id": "795",
+    "name": "Heaume d'Orc en cuir clouté-60---Heaume"
+  },
+  {
+    "id": "798",
+    "name": "Gemme Rouge-----Divers"
+  },
+  {
+    "id": "800",
+    "name": "Gemme Bleue-----Divers"
+  },
+  {
+    "id": "803",
+    "name": "Gemme Violette-----Divers"
+  },
+  {
+    "id": "813",
+    "name": "Flèches d'ébène empoisonnées19-7628-Arc"
+  },
+  {
+    "id": "820",
+    "name": "Trèfle à quatre feuilles-----Divers"
+  },
+  {
+    "id": "877",
+    "name": "Cristal du renouveau-----Divers"
+  },
+  {
+    "id": "879",
+    "name": "Oeil de confusion-----Focus"
+  },
+  {
+    "id": "907",
+    "name": "Lettre du marchand-----Divers"
+  },
+  {
+    "id": "908",
+    "name": "Torche-----Divers"
+  },
+  {
+    "id": "912",
+    "name": "Casque de cuir-25---Heaume"
+  },
+  {
+    "id": "913",
+    "name": "Gants de cuir-25---Gant"
+  },
+  {
+    "id": "915",
+    "name": "Bottes de cuir-25---Botte"
+  },
+  {
+    "id": "916",
+    "name": "Armure de cuir-25---Plastron"
+  },
+  {
+    "id": "917",
+    "name": "Armure de cuir enchantée-25---Plastron"
+  },
+  {
+    "id": "918",
+    "name": "Casque de cuir clouté-45---Heaume"
+  },
+  {
+    "id": "919",
+    "name": "Gants de cuir clouté-45---Gant"
+  },
+  {
+    "id": "921",
+    "name": "Bottes de cuir clouté-45---Botte"
+  },
+  {
+    "id": "922",
+    "name": "Armure de cuir clouté-45---Plastron"
+  },
+  {
+    "id": "923",
+    "name": "Cotte de maille-80---Plastron"
+  },
+  {
+    "id": "924",
+    "name": "Cotte d'anneaux-60---Plastron"
+  },
+  {
+    "id": "925",
+    "name": "Armure d'écailles-100---Armure"
+  },
+  {
+    "id": "932",
+    "name": "Bracelet d'or---2124Bracelet"
+  },
+  {
+    "id": "933",
+    "name": "Bracelet de puissance---2429Bracelet"
+  },
+  {
+    "id": "934",
+    "name": "Bracelet de saphir---3333Bracelet"
+  },
+  {
+    "id": "974",
+    "name": "Gants de voleur-15-30-Gant"
+  },
+  {
+    "id": "976",
+    "name": "Bottes de Sept Lieux-25-2020Botte"
+  },
+  {
+    "id": "979",
+    "name": "Livre de Feylor-----Divers"
+  },
+  {
+    "id": "987",
+    "name": "Armure gobeline en cuir-25-1718Plastron"
+  },
+  {
+    "id": "990",
+    "name": "Gants du duelliste-45-2733Gant"
+  },
+  {
+    "id": "992",
+    "name": "Sachet de poudre jaune-----Divers"
+  },
+  {
+    "id": "993",
+    "name": "Casque de Commandement-30--30Heaume"
+  },
+  {
+    "id": "1000",
+    "name": "Boucle passe-partout-25-3030Ceinture"
+  },
+  {
+    "id": "1002",
+    "name": "Armure d'Angélus-46---Plastron"
+  },
+  {
+    "id": "1007",
+    "name": "Armure en peau humaine-67-30-Plastron"
+  },
+  {
+    "id": "1015",
+    "name": "Protecteur scarabée-100-5340Ceinture"
+  },
+  {
+    "id": "1022",
+    "name": "Bottes de mailles-80---Botte"
+  },
+  {
+    "id": "1023",
+    "name": "Gantelets de mailles-80---Gant"
+  },
+  {
+    "id": "1024",
+    "name": "Heaume de mailles-80---Heaume"
+  },
+  {
+    "id": "1026",
+    "name": "Bottes de plaques-125---Botte"
+  },
+  {
+    "id": "1027",
+    "name": "Gantelets de plaques-125---Gant"
+  },
+  {
+    "id": "1028",
+    "name": "Heaume de plaques-125---Heaume"
+  },
+  {
+    "id": "1030",
+    "name": "Armure de plaques-125---Plastron"
+  },
+  {
+    "id": "1032",
+    "name": "Chapeau elfique-----Heaume"
+  },
+  {
+    "id": "1036",
+    "name": "Cape rouge-25---Cape"
+  },
+  {
+    "id": "1038",
+    "name": "Veste de toile-----Plastron"
+  },
+  {
+    "id": "1041",
+    "name": "Nécessaire à écriture runique-----Divers"
+  },
+  {
+    "id": "1042",
+    "name": "Parchemin magique vierge-----Divers"
+  },
+  {
+    "id": "1045",
+    "name": "Parchemin d'enchantement-----Divers"
+  },
+  {
+    "id": "1051",
+    "name": "Pourpier-----Divers"
+  },
+  {
+    "id": "1066",
+    "name": "Parchemin vierge-----Divers"
+  },
+  {
+    "id": "1074",
+    "name": "Plans orcs-----Divers"
+  },
+  {
+    "id": "1081",
+    "name": "Couronne du bouffon morbide---1921Heaume"
+  },
+  {
+    "id": "1098",
+    "name": "Livre de l'Art de la guerre-----Divers"
+  },
+  {
+    "id": "1103",
+    "name": "Cotte de mailles en mithril-150---Plastron"
+  },
+  {
+    "id": "1104",
+    "name": "Heaume de mailles en mithril-150---Heaume"
+  },
+  {
+    "id": "1105",
+    "name": "Heaume de plaques de Nain-160---Heaume"
+  },
+  {
+    "id": "1106",
+    "name": "Armure de plaques de Nain-160---Plastron"
+  },
+  {
+    "id": "1109",
+    "name": "Gantelets de mailles en mithril-150---Gant"
+  },
+  {
+    "id": "1110",
+    "name": "Cimeterre en acier trempé runique155----Arme"
+  },
+  {
+    "id": "1112",
+    "name": "Bottes de mailles en mithril-150---Botte"
+  },
+  {
+    "id": "1116",
+    "name": "Lame vipérine300----Arme"
+  },
+  {
+    "id": "1118",
+    "name": "Gantelets de plaques de Nain-160---Gant"
+  },
+  {
+    "id": "1120",
+    "name": "Lame ancienne runique300----Arme"
+  },
+  {
+    "id": "1131",
+    "name": "Prisme de mana-----Divers"
+  },
+  {
+    "id": "1140",
+    "name": "Pierre de mana-----Divers"
+  },
+  {
+    "id": "1157",
+    "name": "Dague en acier trempé97----Arme"
+  },
+  {
+    "id": "1162",
+    "name": "Hache en acier trempé155----Arme"
+  },
+  {
+    "id": "1165",
+    "name": "Gantelets d'anneaux-60---Gant"
+  },
+  {
+    "id": "1170",
+    "name": "Dague en acier trempé enchantée97----Arme"
+  },
+  {
+    "id": "1171",
+    "name": "Bottes ciselées des Haut-Elfes-300---Botte"
+  },
+  {
+    "id": "1173",
+    "name": "Dague d'Obscurantis97----Arme"
+  },
+  {
+    "id": "1174",
+    "name": "Dague en acier trempé runique97----Arme"
+  },
+  {
+    "id": "1175",
+    "name": "Hache en acier trempé enchantée155----Arme"
+  },
+  {
+    "id": "1176",
+    "name": "Épée bâtarde de qualité242----Arme"
+  },
+  {
+    "id": "1179",
+    "name": "Gantelets ciselés des Haut-Elfes-300---Gant"
+  },
+  {
+    "id": "1180",
+    "name": "Plastron ciselé des Haut-Elfes-300---Plastron"
+  },
+  {
+    "id": "1181",
+    "name": "Bottes de plaques en adamantite-230---Botte"
+  },
+  {
+    "id": "1182",
+    "name": "Lame de mithril184----Arme"
+  },
+  {
+    "id": "1193",
+    "name": "Bottes de mailles elfiques-110---Botte"
+  },
+  {
+    "id": "1198",
+    "name": "Gantelets de mailles elfiques-110---Gant"
+  },
+  {
+    "id": "1200",
+    "name": "Bottes d'écailles-100---Botte"
+  },
+  {
+    "id": "1201",
+    "name": "Casque d'écailles-100---Heaume"
+  },
+  {
+    "id": "1205",
+    "name": "Hache en acier trempé runique155----Arme"
+  },
+  {
+    "id": "1206",
+    "name": "Heaume ciselé des Haut-Elfes-300---Heaume"
+  },
+  {
+    "id": "1208",
+    "name": "Cimeterre en acier trempé155----Arme"
+  },
+  {
+    "id": "1215",
+    "name": "Heaume de mailles elfique-110---Heaume"
+  },
+  {
+    "id": "1232",
+    "name": "Épée bâtarde de qualité runique242----Arme"
+  },
+  {
+    "id": "1235",
+    "name": "Épée de la Rose Noire242----Arme"
+  },
+  {
+    "id": "1236",
+    "name": "Épée bâtarde de qualité enchantée242----Arme"
+  },
+  {
+    "id": "1241",
+    "name": "Cimeterre du Zéphyr155----Arme"
+  },
+  {
+    "id": "1244",
+    "name": "Masse en acier trempé90---79Arme"
+  },
+  {
+    "id": "1245",
+    "name": "Casque de cuir elfique-75---Heaume"
+  },
+  {
+    "id": "1246",
+    "name": "Armure de cuir elfique-75---Plastron"
+  },
+  {
+    "id": "1247",
+    "name": "Gants de cuir elfique-75---Gant"
+  },
+  {
+    "id": "1249",
+    "name": "Lame de mithril runique184----Arme"
+  },
+  {
+    "id": "1254",
+    "name": "Lame de mithril enchantée184----Arme"
+  },
+  {
+    "id": "1258",
+    "name": "Cimeterre en acier trempé enchanté155----Arme"
+  },
+  {
+    "id": "1260",
+    "name": "Heaume de plaques en adamantite-230---Heaume"
+  },
+  {
+    "id": "1262",
+    "name": "Dague de l'Assassin184----Arme"
+  },
+  {
+    "id": "1263",
+    "name": "Bottes de cuir elfique-75---Botte"
+  },
+  {
+    "id": "1267",
+    "name": "Bottes d'anneaux-60---Botte"
+  },
+  {
+    "id": "1269",
+    "name": "Gantelets d'écailles-100---Gant"
+  },
+  {
+    "id": "1280",
+    "name": "Gantelets de plaques en adamantite-230---Gant"
+  },
+  {
+    "id": "1283",
+    "name": "Armure de plaques en adamantite-230---Plastron"
+  },
+  {
+    "id": "1286",
+    "name": "Bottes de plaques de Nain-160---Botte"
+  },
+  {
+    "id": "1298",
+    "name": "Pierre verte d'esprit de la forêt-----Divers"
+  },
+  {
+    "id": "1300",
+    "name": "Pierre bleue-----Divers"
+  },
+  {
+    "id": "1301",
+    "name": "Pierre rouge-----Divers"
+  },
+  {
+    "id": "1302",
+    "name": "Pierre jaune-----Divers"
+  },
+  {
+    "id": "1303",
+    "name": "Pierre verte-----Divers"
+  },
+  {
+    "id": "1309",
+    "name": "Casque d'anneaux-60---Heaume"
+  },
+  {
+    "id": "1318",
+    "name": "Saphir-----Divers"
+  },
+  {
+    "id": "1322",
+    "name": "Parchemin de mauvaise action-----Divers"
+  },
+  {
+    "id": "1326",
+    "name": "Armure d'écailles de Dragon-180---Armure"
+  },
+  {
+    "id": "1327",
+    "name": "Heaume d'écailles de Dragon-180---Heaume"
+  },
+  {
+    "id": "1329",
+    "name": "Gantelets d'écailles de Dragon-180---Gant"
+  },
+  {
+    "id": "1330",
+    "name": "Bottes d'écailles de Dragon-180---Botte"
+  },
+  {
+    "id": "1338",
+    "name": "Sachet d'hamamélis-----Divers"
+  },
+  {
+    "id": "1339",
+    "name": "Sachet de graines à chapelet-----Divers"
+  },
+  {
+    "id": "1340",
+    "name": "Sachet de gingembre sauvage-----Divers"
+  },
+  {
+    "id": "1341",
+    "name": "Sachet de douces-amères-----Divers"
+  },
+  {
+    "id": "1343",
+    "name": "Bottes noires en peau de lézard-75-3025Botte"
+  },
+  {
+    "id": "1351",
+    "name": "Sachet de feuilles de pissenlit-----Divers"
+  },
+  {
+    "id": "1372",
+    "name": "Bracelet d'orc-35-3238Bracelet"
+  },
+  {
+    "id": "1373",
+    "name": "Cape de résistance au feu---4535Cape"
+  },
+  {
+    "id": "1374",
+    "name": "Sachet d'écorce de saule-----Divers"
+  },
+  {
+    "id": "1376",
+    "name": "Sachet de baies de genièvre-----Divers"
+  },
+  {
+    "id": "1428",
+    "name": "Masse en acier trempé sacrée90---79Arme"
+  },
+  {
+    "id": "1429",
+    "name": "Masse à ailettes enchantée90---79Arme"
+  },
+  {
+    "id": "1451",
+    "name": "Ceinturon de courage---2628Ceinture"
+  },
+  {
+    "id": "1452",
+    "name": "Bracelet de force d'ogre---4053Bracelet"
+  },
+  {
+    "id": "1461",
+    "name": "Ceinture de survie en cuir-25---Ceinture"
+  },
+  {
+    "id": "1466",
+    "name": "Ceinture de cuir-25---Ceinture"
+  },
+  {
+    "id": "1467",
+    "name": "Ceinturon de cuir clouté-45---Ceinture"
+  },
+  {
+    "id": "1468",
+    "name": "Ceinturon d'anneaux-60---Ceinture"
+  },
+  {
+    "id": "1469",
+    "name": "Ceinture de cuir elfique-75---Ceinture"
+  },
+  {
+    "id": "1470",
+    "name": "Ceinturon de mailles-80---Ceinture"
+  },
+  {
+    "id": "1471",
+    "name": "Protecteur fait d'écailles-100---Ceinture"
+  },
+  {
+    "id": "1472",
+    "name": "Ceinturon de mailles elfique-110---Ceinture"
+  },
+  {
+    "id": "1473",
+    "name": "Protecteur en plaques-125---Ceinture"
+  },
+  {
+    "id": "1474",
+    "name": "Ceinturon de mailles en mithril-150---Ceinture"
+  },
+  {
+    "id": "1475",
+    "name": "Protecteur en plaques de Nain-160---Ceinture"
+  },
+  {
+    "id": "1476",
+    "name": "Protecteur en écailles de Dragon-180---Ceinture"
+  },
+  {
+    "id": "1477",
+    "name": "Protecteur de plaques en adamantite-230---Ceinture"
+  },
+  {
+    "id": "1478",
+    "name": "Protecteur ciselé des Haut-Elfes-300---Ceinture"
+  },
+  {
+    "id": "1479",
+    "name": "Ceinture de chasteté-----Ceinture"
+  },
+  {
+    "id": "1481",
+    "name": "Cotte de mailles bénie-80-4053Plastron"
+  },
+  {
+    "id": "1487",
+    "name": "Acanthe-----Divers"
+  },
+  {
+    "id": "1488",
+    "name": "Quatre-épices-----Divers"
+  },
+  {
+    "id": "1495",
+    "name": "Parchemin de Lighthaven-----Divers"
+  },
+  {
+    "id": "1502",
+    "name": "Copal-----Divers"
+  },
+  {
+    "id": "1504",
+    "name": "Eucalyptus-----Divers"
+  },
+  {
+    "id": "1507",
+    "name": "Gardénia-----Divers"
+  },
+  {
+    "id": "1508",
+    "name": "Géranium-----Divers"
+  },
+  {
+    "id": "1511",
+    "name": "Hydrangea-----Divers"
+  },
+  {
+    "id": "1512",
+    "name": "Hysope-----Divers"
+  },
+  {
+    "id": "1513",
+    "name": "Baies de genièvre-----Divers"
+  },
+  {
+    "id": "1515",
+    "name": "Laurier-----Divers"
+  },
+  {
+    "id": "1519",
+    "name": "Racine de mandragore-----Divers"
+  },
+  {
+    "id": "1525",
+    "name": "Pomme grenade-----Divers"
+  },
+  {
+    "id": "1527",
+    "name": "Sorbier-----Divers"
+  },
+  {
+    "id": "1529",
+    "name": "Safran-----Divers"
+  },
+  {
+    "id": "1533",
+    "name": "Tormentille-----Divers"
+  },
+  {
+    "id": "1537",
+    "name": "Plante grimpante-----Divers"
+  },
+  {
+    "id": "1539",
+    "name": "Armoise-----Divers"
+  },
+  {
+    "id": "1540",
+    "name": "Millefeuille-----Divers"
+  },
+  {
+    "id": "1569",
+    "name": "Plastron d'armure céleste-100-5050Plastron"
+  },
+  {
+    "id": "1571",
+    "name": "Gantelets d'armure céleste-100-5050Gant"
+  },
+  {
+    "id": "1572",
+    "name": "Bottes d'armure céleste-100-5050Botte"
+  },
+  {
+    "id": "1573",
+    "name": "Protecteur d'armure céleste-100-5050Ceinture"
+  },
+  {
+    "id": "1574",
+    "name": "Heaume d'armure céleste-100-5050Heaume"
+  },
+  {
+    "id": "1618",
+    "name": "Tome magique vierge-----Divers"
+  },
+  {
+    "id": "1619",
+    "name": "Nécessaire d'écriture magique-----Divers"
+  },
+  {
+    "id": "1621",
+    "name": "Livre des sorts rouges-----Divers"
+  },
+  {
+    "id": "1626",
+    "name": "Sceptre d'espoir110--23131Arme"
+  },
+  {
+    "id": "1683",
+    "name": "Tome de Destruction de Drake---6553565535Divers"
+  },
+  {
+    "id": "1735",
+    "name": "76-----Divers"
+  },
+  {
+    "id": "1738",
+    "name": "79-----Divers"
+  },
+  {
+    "id": "1824",
+    "name": "Flèches en bois-----Arc"
+  },
+  {
+    "id": "1825",
+    "name": "Flèches d'ébène-----Arc"
+  },
+  {
+    "id": "1826",
+    "name": "Flèches en os-----Arc"
+  },
+  {
+    "id": "1827",
+    "name": "Flèches en argent-----Arc"
+  },
+  {
+    "id": "1828",
+    "name": "Arc droit en frêne-----Arc"
+  },
+  {
+    "id": "1829",
+    "name": "Arc droit en frêne d'Angélus-----Arc"
+  },
+  {
+    "id": "1830",
+    "name": "Arc droit en frêne féerique-----Arc"
+  },
+  {
+    "id": "1831",
+    "name": "Grand arc en frêne13-24--Arc"
+  },
+  {
+    "id": "1832",
+    "name": "Grand arc en frêne d'Angélus13-24--Arc"
+  },
+  {
+    "id": "1833",
+    "name": "Grand arc en frêne féerique13-24--Arc"
+  },
+  {
+    "id": "1834",
+    "name": "Arc courbé en frêne17-39--Arc"
+  },
+  {
+    "id": "1835",
+    "name": "Arc courbé en frêne d'Angélus17-39--Arc"
+  },
+  {
+    "id": "1836",
+    "name": "Arc courbé en frêne féerique17-39--Arc"
+  },
+  {
+    "id": "1837",
+    "name": "Arc en os du désert17-39--Arc"
+  },
+  {
+    "id": "1838",
+    "name": "Arc droit en orme15-53--Arc"
+  },
+  {
+    "id": "1839",
+    "name": "Arc droit en orme d'Angélus15-53--Arc"
+  },
+  {
+    "id": "1840",
+    "name": "Arc droit en orme féerique15-53--Arc"
+  },
+  {
+    "id": "1841",
+    "name": "Grand arc en orme18-68--Arc"
+  },
+  {
+    "id": "1842",
+    "name": "Grand arc en orme d'Angélus18-68--Arc"
+  },
+  {
+    "id": "1843",
+    "name": "Grand arc en orme féerique18-68--Arc"
+  },
+  {
+    "id": "1844",
+    "name": "Arc courbé en orme22-82--Arc"
+  },
+  {
+    "id": "1845",
+    "name": "Arc courbé en orme d'Angélus22-82--Arc"
+  },
+  {
+    "id": "1846",
+    "name": "Arc courbé en orme féerique22-82--Arc"
+  },
+  {
+    "id": "1847",
+    "name": "Arc recourbé en orme29-97--Arc"
+  },
+  {
+    "id": "1848",
+    "name": "Arc recourbé en orme d'Angélus29-97--Arc"
+  },
+  {
+    "id": "1849",
+    "name": "Arc recourbé en orme féerique29-97--Arc"
+  },
+  {
+    "id": "1850",
+    "name": "Vibrevent29-97--Arc"
+  },
+  {
+    "id": "1851",
+    "name": "Arc droit en noyer blanc22-126--Arc"
+  },
+  {
+    "id": "1852",
+    "name": "Arc droit en noyer blanc d'Angélus22-126--Arc"
+  },
+  {
+    "id": "1853",
+    "name": "Arc droit en noyer blanc féerique22-126--Arc"
+  },
+  {
+    "id": "1854",
+    "name": "Grand arc en noyer blanc27-140--Arc"
+  },
+  {
+    "id": "1855",
+    "name": "Grand arc en noyer blanc d'Angélus27-140--Arc"
+  },
+  {
+    "id": "1856",
+    "name": "Grand arc en noyer blanc féerique27-140--Arc"
+  },
+  {
+    "id": "1857",
+    "name": "Arc courbé en noyer blanc31-155--Arc"
+  },
+  {
+    "id": "1858",
+    "name": "Arc courbé en noyer blanc d'Angélus31-155--Arc"
+  },
+  {
+    "id": "1859",
+    "name": "Arc courbé en noyer blanc féerique31-155--Arc"
+  },
+  {
+    "id": "1860",
+    "name": "Arc recourbé en noyer blanc40-169--Arc"
+  },
+  {
+    "id": "1861",
+    "name": "Arc recourbé en noyer blanc d'Angélus40-169--Arc"
+  },
+  {
+    "id": "1862",
+    "name": "Arc recourbé en noyer blanc féerique40-169--Arc"
+  },
+  {
+    "id": "1863",
+    "name": "Arc à poulies en noyer blanc49-184--Arc"
+  },
+  {
+    "id": "1864",
+    "name": "Arc à poulies en noyer blanc d'Angélus49-184--Arc"
+  },
+  {
+    "id": "1865",
+    "name": "Arc à poulies en noyer blanc féerique49-184--Arc"
+  },
+  {
+    "id": "1866",
+    "name": "Porteveuve49-184--Arc"
+  },
+  {
+    "id": "1867",
+    "name": "Arc droit en chêne31-213--Arc"
+  },
+  {
+    "id": "1868",
+    "name": "Arc droit en chêne d'Angélus31-213--Arc"
+  },
+  {
+    "id": "1869",
+    "name": "Arc droit en chêne féerique31-213--Arc"
+  },
+  {
+    "id": "1870",
+    "name": "Grand arc en chêne36-227--Arc"
+  },
+  {
+    "id": "1871",
+    "name": "Grand arc en chêne d'Angélus36-227--Arc"
+  },
+  {
+    "id": "1872",
+    "name": "Grand arc en chêne féerique36-227--Arc"
+  },
+  {
+    "id": "1873",
+    "name": "Arc courbé en chêne42-242--Arc"
+  },
+  {
+    "id": "1874",
+    "name": "Arc courbé en chêne d'Angélus42-242--Arc"
+  },
+  {
+    "id": "1875",
+    "name": "Arc courbé en chêne féerique42-242--Arc"
+  },
+  {
+    "id": "1876",
+    "name": "Arc recourbé en chêne53-256--Arc"
+  },
+  {
+    "id": "1877",
+    "name": "Arc recourbé en chêne d'Angélus53-256--Arc"
+  },
+  {
+    "id": "1878",
+    "name": "Arc recourbé en chêne féerique53-256--Arc"
+  },
+  {
+    "id": "1879",
+    "name": "Arc à poulies en chêne64-271--Arc"
+  },
+  {
+    "id": "1880",
+    "name": "Arc à poulies en chêne d'Angélus64-271--Arc"
+  },
+  {
+    "id": "1881",
+    "name": "Arc à poulies en chêne féerique64-271--Arc"
+  },
+  {
+    "id": "1882",
+    "name": "Arc composite en chêne77-285--Arc"
+  },
+  {
+    "id": "1883",
+    "name": "Arc composite en chêne d'Angélus77-285--Arc"
+  },
+  {
+    "id": "1884",
+    "name": "Arc composite en chêne féerique77-285--Arc"
+  },
+  {
+    "id": "1885",
+    "name": "Zéphyr bleuté77-285--Arc"
+  },
+  {
+    "id": "1887",
+    "name": "Grand arc en cèdre d'Angélus46-314--Arc"
+  },
+  {
+    "id": "1888",
+    "name": "Grand arc en cèdre féerique46-314--Arc"
+  },
+  {
+    "id": "1891",
+    "name": "Arc courbé en cèdre féerique53-329--Arc"
+  },
+  {
+    "id": "1893",
+    "name": "Arc recourbé en cèdre d'Angélus66-343--Arc"
+  },
+  {
+    "id": "1894",
+    "name": "Arc recourbé en cèdre féerique66-343--Arc"
+  },
+  {
+    "id": "1895",
+    "name": "Arc à poulies en cèdre80-358--Arc"
+  },
+  {
+    "id": "1897",
+    "name": "Arc à poulies en cèdre féerique80-358--Arc"
+  },
+  {
+    "id": "1898",
+    "name": "Arc composite en cèdre94-372--Arc"
+  },
+  {
+    "id": "1899",
+    "name": "Arc composite en cèdre d'Angélus94-372--Arc"
+  },
+  {
+    "id": "1900",
+    "name": "Arc composite en cèdre féerique94-372--Arc"
+  },
+  {
+    "id": "1901",
+    "name": "Vipère argentée94-372--Arc"
+  },
+  {
+    "id": "1902",
+    "name": "Arc courbé en oxandre62-401--Arc"
+  },
+  {
+    "id": "1904",
+    "name": "Arc courbé en oxandre féerique62-401--Arc"
+  },
+  {
+    "id": "1907",
+    "name": "Arc recourbé en oxandre féerique77-416--Arc"
+  },
+  {
+    "id": "1911",
+    "name": "Arc composite en oxandre109-445--Arc"
+  },
+  {
+    "id": "1912",
+    "name": "Arc composite en oxandre d'Angélus109-445--Arc"
+  },
+  {
+    "id": "1913",
+    "name": "Arc composite en oxandre féerique109-445--Arc"
+  },
+  {
+    "id": "1914",
+    "name": "Arc long des Etoiles109-445--Arc"
+  },
+  {
+    "id": "1916",
+    "name": "Arc recourbé en févier épineux d'Angélus90-503--Arc"
+  },
+  {
+    "id": "1918",
+    "name": "Arc à poulies en févier épineux113-546--Arc"
+  },
+  {
+    "id": "1920",
+    "name": "Arc à poulies en févier épineux féerique113-546--Arc"
+  },
+  {
+    "id": "1924",
+    "name": "Arc composite des Hauts-Elfes138-590--Arc"
+  },
+  {
+    "id": "1947",
+    "name": "Bandeau mystique du vent---76115Heaume"
+  },
+  {
+    "id": "1948",
+    "name": "Diadème de pouvoir arcanique---26515Heaume"
+  },
+  {
+    "id": "1949",
+    "name": "Diadème de malachite couvert de runes---98108Heaume"
+  },
+  {
+    "id": "1950",
+    "name": "Tiare d'or incrustée d'émeraude---28190Heaume"
+  },
+  {
+    "id": "1951",
+    "name": "Rubis focus de pouvoir---7815Robe"
+  },
+  {
+    "id": "1952",
+    "name": "Saphir focus de pouvoir---6528Focus"
+  },
+  {
+    "id": "1953",
+    "name": "Diamant focus de pouvoir---4646Focus"
+  },
+  {
+    "id": "1954",
+    "name": "Emeraude focus de pouvoir---2865Focus"
+  },
+  {
+    "id": "1958",
+    "name": "Fluide visqueux essentiel de Zorglub-----Divers"
+  },
+  {
+    "id": "1964",
+    "name": "Nécessaire d'alchimie-----Divers"
+  },
+  {
+    "id": "1968",
+    "name": "Opale brute-----Divers"
+  },
+  {
+    "id": "1969",
+    "name": "Amethyste brute-----Divers"
+  },
+  {
+    "id": "1970",
+    "name": "Agate brute-----Divers"
+  },
+  {
+    "id": "1971",
+    "name": "Malachite brute-----Divers"
+  },
+  {
+    "id": "1972",
+    "name": "Rubis brut-----Divers"
+  },
+  {
+    "id": "1973",
+    "name": "Saphir Brut-----Divers"
+  },
+  {
+    "id": "1974",
+    "name": "Diamant brut-----Divers"
+  },
+  {
+    "id": "1975",
+    "name": "Grenat brut-----Divers"
+  },
+  {
+    "id": "1976",
+    "name": "Aigue-marine brute-----Divers"
+  },
+  {
+    "id": "1977",
+    "name": "Pierre de lune brute-----Divers"
+  },
+  {
+    "id": "1978",
+    "name": "Morceau de calcaire brut-----Divers"
+  },
+  {
+    "id": "1979",
+    "name": "Opale finement taillée-----Divers"
+  },
+  {
+    "id": "1980",
+    "name": "Amethyste finement taillée-----Divers"
+  },
+  {
+    "id": "1981",
+    "name": "Agate finement taillée-----Divers"
+  },
+  {
+    "id": "1982",
+    "name": "Malachite finement taillée-----Divers"
+  },
+  {
+    "id": "1983",
+    "name": "Rubis finement taillé-----Divers"
+  },
+  {
+    "id": "1984",
+    "name": "Saphir finement taillé-----Divers"
+  },
+  {
+    "id": "1985",
+    "name": "Diamant finement taillé-----Divers"
+  },
+  {
+    "id": "1986",
+    "name": "Emeraude finement taillée-----Divers"
+  },
+  {
+    "id": "1987",
+    "name": "Grenat finement taillé-----Divers"
+  },
+  {
+    "id": "1988",
+    "name": "Aigue-marine finement taillée-----Divers"
+  },
+  {
+    "id": "1989",
+    "name": "Pierre de lune finement taillée-----Divers"
+  },
+  {
+    "id": "1990",
+    "name": "Morceau de calcaire finement taillé-----Divers"
+  },
+  {
+    "id": "1995",
+    "name": "Ame d'Artherk-----Heaume"
+  },
+  {
+    "id": "1996",
+    "name": "Parchemin de Haine-----Divers"
+  },
+  {
+    "id": "2001",
+    "name": "Cantiques perdu d'Artherk p.1-----Divers"
+  },
+  {
+    "id": "2002",
+    "name": "Cantiques perdu d'Artherk p.2-----Divers"
+  },
+  {
+    "id": "2003",
+    "name": "Cantiques perdu d'Artherk p.3-----Divers"
+  },
+  {
+    "id": "2004",
+    "name": "Cantiques perdu d'Artherk p.4-----Divers"
+  },
+  {
+    "id": "2005",
+    "name": "Cantiques perdu d'Artherk p.5-----Divers"
+  },
+  {
+    "id": "2029",
+    "name": "Ceinture de force skraug-100-2025Ceinture"
+  },
+  {
+    "id": "2030",
+    "name": "Livre du collectionneur-----Divers"
+  },
+  {
+    "id": "2033",
+    "name": "Oeil du tigre---115113Focus"
+  },
+  {
+    "id": "2036",
+    "name": "Note de remerciement-----Divers"
+  },
+  {
+    "id": "2042",
+    "name": "Arc pourfendeur de centaures27-140--Arc"
+  },
+  {
+    "id": "2044",
+    "name": "Gemme Sombre-----Divers"
+  },
+  {
+    "id": "2056",
+    "name": "Heaume Spectral---9119Heaume"
+  },
+  {
+    "id": "2057",
+    "name": "Parchemin de rappel-----Divers"
+  },
+  {
+    "id": "2058",
+    "name": "Parchemin de révélation-----Divers"
+  },
+  {
+    "id": "2101",
+    "name": "Bracelets du barbare---1416Bracelet"
+  },
+  {
+    "id": "2104",
+    "name": "Heaume hurlant d'Ogrimar---10254Heaume"
+  },
+  {
+    "id": "2110",
+    "name": "Bracelets de Guerre25-204550Bracelet"
+  },
+  {
+    "id": "2111",
+    "name": "Gantelets de choc-125-2025Gant"
+  },
+  {
+    "id": "2112",
+    "name": "Corde de mensonge--401716Ceinture"
+  },
+  {
+    "id": "2113",
+    "name": "Arc skraug primitif40351692025Arc"
+  },
+  {
+    "id": "2116",
+    "name": "Heaume perdu du dragon-150-3046Heaume"
+  },
+  {
+    "id": "2118",
+    "name": "Document secret-----Divers"
+  },
+  {
+    "id": "2119",
+    "name": "Certificat de reconnaissance-----Divers"
+  },
+  {
+    "id": "2204",
+    "name": "Plastron d'armure océane150125---Plastron"
+  },
+  {
+    "id": "2206",
+    "name": "Protecteur d'armure océane150125---Ceinture"
+  },
+  {
+    "id": "2207",
+    "name": "Gantelets d'armure océane150125---Gant"
+  },
+  {
+    "id": "2208",
+    "name": "Bottes d'armure océane150125---Botte"
+  },
+  {
+    "id": "2209",
+    "name": "Heaume d'armure océane150125---Heaume"
+  },
+  {
+    "id": "2225",
+    "name": "Emeraude brute-----Divers"
+  },
+  {
+    "id": "2230",
+    "name": "Autorisation J4-----Divers"
+  },
+  {
+    "id": "2231",
+    "name": "Autorisation C1-----Divers"
+  },
+  {
+    "id": "2232",
+    "name": "Autorisation J1-----Divers"
+  },
+  {
+    "id": "2233",
+    "name": "Autorisation C5-----Divers"
+  },
+  {
+    "id": "2234",
+    "name": "Autorisation A3-----Divers"
+  },
+  {
+    "id": "2235",
+    "name": "Autorisation B1-----Divers"
+  },
+  {
+    "id": "2236",
+    "name": "Autorisation C2-----Divers"
+  },
+  {
+    "id": "2237",
+    "name": "Autorisation D4-----Divers"
+  },
+  {
+    "id": "2238",
+    "name": "Autorisation E5-----Divers"
+  },
+  {
+    "id": "2239",
+    "name": "Autorisation F1-----Divers"
+  },
+  {
+    "id": "2240",
+    "name": "Autorisation G4-----Divers"
+  },
+  {
+    "id": "2241",
+    "name": "Autorisation H2-----Divers"
+  },
+  {
+    "id": "2242",
+    "name": "Autorisation I4-----Divers"
+  },
+  {
+    "id": "2243",
+    "name": "Autorisation J3-----Divers"
+  },
+  {
+    "id": "2261",
+    "name": "Heaume de clairvoyance---2654Heaume"
+  },
+  {
+    "id": "2266",
+    "name": "Couronne du visionnaire---4750Heaume"
+  },
+  {
+    "id": "2270",
+    "name": "Camisole de force-45---Plastron"
+  },
+  {
+    "id": "2271",
+    "name": "Chapeau de camouflage de Madrigan-75501612Heaume"
+  },
+  {
+    "id": "2292",
+    "name": "Parchemin de protection-----Divers"
+  },
+  {
+    "id": "2293",
+    "name": "Parchemin de barrière-----Divers"
+  },
+  {
+    "id": "2294",
+    "name": "Parchemin de la force de la terre-----Divers"
+  },
+  {
+    "id": "2295",
+    "name": "Parchemin de résistance au feu-----Divers"
+  },
+  {
+    "id": "2296",
+    "name": "Parchemin de résistance au froid-----Divers"
+  },
+  {
+    "id": "2297",
+    "name": "Parchemin de peau de pierre-----Divers"
+  },
+  {
+    "id": "2298",
+    "name": "Parchemin d'Instinct de combat majeur-----Divers"
+  },
+  {
+    "id": "2299",
+    "name": "Parchemin d'Instinct mineur-----Divers"
+  },
+  {
+    "id": "2300",
+    "name": "Parchemin de Bouclier de mana-----Divers"
+  },
+  {
+    "id": "2302",
+    "name": "Parchemin de la détection de l'invisible-----Divers"
+  },
+  {
+    "id": "2303",
+    "name": "Parchemin de detection de la dissimulation-----Divers"
+  },
+  {
+    "id": "2304",
+    "name": "Parchemin d'invisibilité-----Divers"
+  },
+  {
+    "id": "2306",
+    "name": "Gemme de la Lune-----Divers"
+  },
+  {
+    "id": "2307",
+    "name": "Gemme du Soleil-----Divers"
+  },
+  {
+    "id": "2308",
+    "name": "Gemme des Etoiles-----Divers"
+  },
+  {
+    "id": "2317",
+    "name": "Cape des Ancients assassins-13481835Cape"
+  },
+  {
+    "id": "2320",
+    "name": "Goutte de pluie-----Divers"
+  },
+  {
+    "id": "2354",
+    "name": "Cape d'Elemendil25050---Cape"
+  },
+  {
+    "id": "2355",
+    "name": "Bracelet de la Manticore10050503030Bracelet"
+  },
+  {
+    "id": "2356",
+    "name": "Bracelet de Fierté10050---Bracelet"
+  },
+  {
+    "id": "2357",
+    "name": "Bracelet de Turquoise10050---Bracelet"
+  },
+  {
+    "id": "2358",
+    "name": "Bracelet d'Hypogriffe doré10050---Bracelet"
+  },
+  {
+    "id": "2359",
+    "name": "Bracelet de Feuilles10050---Bracelet"
+  },
+  {
+    "id": "2374",
+    "name": "Vieux parchemin orange-----Divers"
+  },
+  {
+    "id": "2385",
+    "name": "Coffre fermé-----Divers"
+  },
+  {
+    "id": "2407",
+    "name": "Jambonneau-----Divers"
+  },
+  {
+    "id": "2408",
+    "name": "Saucisse-----Divers"
+  },
+  {
+    "id": "2409",
+    "name": "Saucisse cocktail-----Divers"
+  },
+  {
+    "id": "2410",
+    "name": "Cuissot-----Divers"
+  },
+  {
+    "id": "2411",
+    "name": "Pouletos-----Divers"
+  },
+  {
+    "id": "2412",
+    "name": "Croquette-----Divers"
+  },
+  {
+    "id": "2413",
+    "name": "Planche à gateaux-----Divers"
+  },
+  {
+    "id": "2414",
+    "name": "Bol d'eau-----Divers"
+  },
+  {
+    "id": "2436",
+    "name": "Grand seau-----Divers"
+  },
+  {
+    "id": "2437",
+    "name": "Seau avec legumes-----Divers"
+  },
+  {
+    "id": "2440",
+    "name": "Grande Boîte-----Divers"
+  },
+  {
+    "id": "2458",
+    "name": "Grimoire ouvert-----Divers"
+  },
+  {
+    "id": "2460",
+    "name": "Sachet-----Divers"
+  },
+  {
+    "id": "2461",
+    "name": "Corde-----Divers"
+  },
+  {
+    "id": "2496",
+    "name": "Carquois de stabilité20-110--Arc"
+  },
+  {
+    "id": "2498",
+    "name": "Bracelet de vigueur60-50--Bracelet"
+  },
+  {
+    "id": "2499",
+    "name": "Ceinture de sagesse---6060Ceinture"
+  },
+  {
+    "id": "2501",
+    "name": "Carquois de stabilité30-220--Arc"
+  },
+  {
+    "id": "2516",
+    "name": "Pierre spirituelle de Hel-----Divers"
+  },
+  {
+    "id": "2517",
+    "name": "Pierre spirituelle de Jormungand-----Divers"
+  },
+  {
+    "id": "2518",
+    "name": "Pierre spirituelle de Fenrir-----Divers"
+  },
+  {
+    "id": "2554",
+    "name": "Cape de l'écorché-25---Cape"
+  },
+  {
+    "id": "2589",
+    "name": "Anneau du chasseur1010101010Anneau"
+  },
+  {
+    "id": "2657",
+    "name": "Dague en acier trempé enchantée de main gauche97----Arme"
+  },
+  {
+    "id": "2658",
+    "name": "Dague en acier trempé runique de main gauche97----Arme"
+  },
+  {
+    "id": "2659",
+    "name": "Dague d'obscurantis de main gauche97----Arme"
+  },
+  {
+    "id": "2660",
+    "name": "Dague en acier trempé de main gauche97----Arme"
+  },
+  {
+    "id": "2661",
+    "name": "Hache en acier trempé de main gauche155----Arme"
+  },
+  {
+    "id": "2662",
+    "name": "Hache en acier trempé enchantée de main gauche155----Arme"
+  },
+  {
+    "id": "2663",
+    "name": "Hache en acier trempé runique de main gauche155----Arme"
+  },
+  {
+    "id": "2664",
+    "name": "Masse en acier trempé de main gauche90---79Arme"
+  },
+  {
+    "id": "2665",
+    "name": "Masse en acier trempé bénie de main gauche90---79Arme"
+  },
+  {
+    "id": "2666",
+    "name": "Masse en acier trempé sacrée de main gauche90---79Arme"
+  },
+  {
+    "id": "2667",
+    "name": "Masse à ailettes enchantée de main gauche90---79Arme"
+  },
+  {
+    "id": "2668",
+    "name": "Cimeterre en acier trempé de main gauche155----Arme"
+  },
+  {
+    "id": "2669",
+    "name": "Cimeterre en acier trempé enchanté de main gauche155----Arme"
+  },
+  {
+    "id": "2670",
+    "name": "Cimeterre en acier trempé runique de main gauche155----Arme"
+  },
+  {
+    "id": "2671",
+    "name": "Cimeterre du Zéphyr de main gauche155----Arme"
+  },
+  {
+    "id": "2672",
+    "name": "Epée bâtarde de qualité de main gauche242----Arme"
+  },
+  {
+    "id": "2673",
+    "name": "Epée bâtarde de qualité enchantée de main gauche242----Arme"
+  },
+  {
+    "id": "2675",
+    "name": "Lame de mithril de main gauche184----Arme"
+  },
+  {
+    "id": "2676",
+    "name": "Lame de mithril enchantée de main gauche184----Arme"
+  },
+  {
+    "id": "2677",
+    "name": "Lame de mithril runique de main gauche184----Arme"
+  },
+  {
+    "id": "2678",
+    "name": "Dague de l'assassin de main gauche184----Arme"
+  },
+  {
+    "id": "2682",
+    "name": "Lame viperine de main gauche300----Arme"
+  },
+  {
+    "id": "2735",
+    "name": "Epée de main gauche-----Arme"
+  },
+  {
+    "id": "2736",
+    "name": "Epée de main gauche-----Arme"
+  },
+  {
+    "id": "2737",
+    "name": "Epée de main gauche-----Arme"
+  },
+  {
+    "id": "2738",
+    "name": "Claymore de main gauche-----Arme"
+  },
+  {
+    "id": "2739",
+    "name": "Claymore de main gauche-----Arme"
+  },
+  {
+    "id": "2740",
+    "name": "Dague de main gauche-----Arme"
+  },
+  {
+    "id": "2741",
+    "name": "Dague de main gauche-----Arme"
+  },
+  {
+    "id": "2742",
+    "name": "Dague de main gauche-----Arme"
+  },
+  {
+    "id": "2743",
+    "name": "Dague de main gauche-----Arme"
+  },
+  {
+    "id": "2744",
+    "name": "Dague de main gauche-----Arme"
+  },
+  {
+    "id": "2745",
+    "name": "Dague de main gauche-----Arme"
+  },
+  {
+    "id": "2746",
+    "name": "Glaive de main gauche-----Arme"
+  },
+  {
+    "id": "2747",
+    "name": "Glaive de main gauche-----Arme"
+  },
+  {
+    "id": "2749",
+    "name": "Hache de main gauche-----Arme"
+  },
+  {
+    "id": "2750",
+    "name": "Hache de main gauche-----Arme"
+  },
+  {
+    "id": "2751",
+    "name": "Hache de main gauche-----Arme"
+  },
+  {
+    "id": "2752",
+    "name": "Hache de main gauche-----Arme"
+  },
+  {
+    "id": "2755",
+    "name": "Marteau de main gauche-----Arme"
+  },
+  {
+    "id": "2756",
+    "name": "Marteau de main gauche-----Arme"
+  },
+  {
+    "id": "2757",
+    "name": "Epée de main gauche-----Arme"
+  },
+  {
+    "id": "2758",
+    "name": "Epée de main gauche-----Arme"
+  },
+  {
+    "id": "2759",
+    "name": "Epée de main gauche-----Arme"
+  },
+  {
+    "id": "2760",
+    "name": "Epée de main gauche-----Arme"
+  },
+  {
+    "id": "2761",
+    "name": "Epée de main gauche-----Arme"
+  },
+  {
+    "id": "2762",
+    "name": "Epée de main gauche-----Arme"
+  },
+  {
+    "id": "2763",
+    "name": "Epée de main gauche-----Arme"
+  },
+  {
+    "id": "2764",
+    "name": "Epée de main gauche-----Arme"
+  },
+  {
+    "id": "2765",
+    "name": "Epée de main gauche-----Arme"
+  },
+  {
+    "id": "2766",
+    "name": "Epée de main gauche-----Arme"
+  },
+  {
+    "id": "2767",
+    "name": "Epée de main gauche-----Arme"
+  },
+  {
+    "id": "2768",
+    "name": "Epée de main gauche-----Arme"
+  },
+  {
+    "id": "2769",
+    "name": "Epée de main gauche-----Arme"
+  },
+  {
+    "id": "2770",
+    "name": "Epée de main gauche-----Arme"
+  },
+  {
+    "id": "2771",
+    "name": "Arc-----Arc"
+  },
+  {
+    "id": "2772",
+    "name": "Arc-----Arc"
+  },
+  {
+    "id": "2773",
+    "name": "Arc-----Arc"
+  },
+  {
+    "id": "2774",
+    "name": "Arc-----Arc"
+  },
+  {
+    "id": "2775",
+    "name": "Arc-----Arc"
+  },
+  {
+    "id": "2777",
+    "name": "Arc-----Arc"
+  },
+  {
+    "id": "2778",
+    "name": "Arc-----Arc"
+  },
+  {
+    "id": "2779",
+    "name": "Arc-----Arc"
+  },
+  {
+    "id": "2780",
+    "name": "Arc-----Arc"
+  },
+  {
+    "id": "2781",
+    "name": "Arc-----Arc"
+  },
+  {
+    "id": "2782",
+    "name": "Epée-----Arme"
+  },
+  {
+    "id": "2783",
+    "name": "Epée-----Arme"
+  },
+  {
+    "id": "2784",
+    "name": "Epée-----Arme"
+  },
+  {
+    "id": "2789",
+    "name": "Claymore-----Arme"
+  },
+  {
+    "id": "2790",
+    "name": "Claymore-----Arme"
+  },
+  {
+    "id": "2791",
+    "name": "Chapeau de Noël-----Heaume"
+  },
+  {
+    "id": "2792",
+    "name": "Dague-----Arme"
+  },
+  {
+    "id": "2793",
+    "name": "Dague-----Arme"
+  },
+  {
+    "id": "2794",
+    "name": "Dague-----Arme"
+  },
+  {
+    "id": "2795",
+    "name": "Dague-----Arme"
+  },
+  {
+    "id": "2796",
+    "name": "Dague-----Arme"
+  },
+  {
+    "id": "2797",
+    "name": "Dague-----Arme"
+  },
+  {
+    "id": "2798",
+    "name": "Bouquet de fleurs-----Divers"
+  },
+  {
+    "id": "2799",
+    "name": "Glaive-----Arme"
+  },
+  {
+    "id": "2800",
+    "name": "Glaive-----Arme"
+  },
+  {
+    "id": "2802",
+    "name": "Masque de Gobelin-----Heaume"
+  },
+  {
+    "id": "2804",
+    "name": "Hache 01-----Arme"
+  },
+  {
+    "id": "2805",
+    "name": "Hache 02-----Arme"
+  },
+  {
+    "id": "2806",
+    "name": "Hache 03-----Arme"
+  },
+  {
+    "id": "2807",
+    "name": "Hache 04-----Arme"
+  },
+  {
+    "id": "2808",
+    "name": "Hache 05-----Arme"
+  },
+  {
+    "id": "2809",
+    "name": "Hache 06-----Arme"
+  },
+  {
+    "id": "2810",
+    "name": "Hache 07-----Arme"
+  },
+  {
+    "id": "2811",
+    "name": "Hache 08-----Arme"
+  },
+  {
+    "id": "2812",
+    "name": "Hache 09-----Arme"
+  },
+  {
+    "id": "2813",
+    "name": "Hache 10-----Arme"
+  },
+  {
+    "id": "2814",
+    "name": "Hache 11-----Arme"
+  },
+  {
+    "id": "2816",
+    "name": "Marteau-----Arme"
+  },
+  {
+    "id": "2817",
+    "name": "Marteau-----Arme"
+  },
+  {
+    "id": "2818",
+    "name": "Marteau-----Arme"
+  },
+  {
+    "id": "2819",
+    "name": "Marteau-----Arme"
+  },
+  {
+    "id": "2820",
+    "name": "Marteau-----Arme"
+  },
+  {
+    "id": "2821",
+    "name": "Marteau-----Arme"
+  },
+  {
+    "id": "2822",
+    "name": "Marteau-----Arme"
+  },
+  {
+    "id": "2823",
+    "name": "Chapeau-----Heaume"
+  },
+  {
+    "id": "2824",
+    "name": "Heaume-----Heaume"
+  },
+  {
+    "id": "2825",
+    "name": "Heaume-----Heaume"
+  },
+  {
+    "id": "2826",
+    "name": "Heaume-----Heaume"
+  },
+  {
+    "id": "2827",
+    "name": "Heaume-----Heaume"
+  },
+  {
+    "id": "2837",
+    "name": "Masque de loup-----Heaume"
+  },
+  {
+    "id": "2839",
+    "name": "Sceptre-----Arme"
+  },
+  {
+    "id": "2840",
+    "name": "Sceptre-----Arme"
+  },
+  {
+    "id": "2841",
+    "name": "Sceptre-----Arme"
+  },
+  {
+    "id": "2844",
+    "name": "Bouclier-----Bouclier"
+  },
+  {
+    "id": "2845",
+    "name": "Epée-----Arme"
+  },
+  {
+    "id": "2846",
+    "name": "Epée-----Arme"
+  },
+  {
+    "id": "2847",
+    "name": "Epée-----Arme"
+  },
+  {
+    "id": "2848",
+    "name": "Epée-----Arme"
+  },
+  {
+    "id": "2849",
+    "name": "Epée-----Arme"
+  },
+  {
+    "id": "2850",
+    "name": "Epée-----Arme"
+  },
+  {
+    "id": "2851",
+    "name": "Epée-----Arme"
+  },
+  {
+    "id": "2852",
+    "name": "Epée-----Arme"
+  },
+  {
+    "id": "2853",
+    "name": "Epée-----Arme"
+  },
+  {
+    "id": "2854",
+    "name": "Epée-----Arme"
+  },
+  {
+    "id": "2855",
+    "name": "Epée-----Arme"
+  },
+  {
+    "id": "2856",
+    "name": "Epée-----Arme"
+  },
+  {
+    "id": "2857",
+    "name": "Epée-----Arme"
+  },
+  {
+    "id": "2858",
+    "name": "Epée-----Arme"
+  },
+  {
+    "id": "2859",
+    "name": "Epée-----Arme"
+  },
+  {
+    "id": "2923",
+    "name": "Sachet de poudre blanche-----Divers"
+  },
+  {
+    "id": "2927",
+    "name": "Sachet de poudre rouge-----Divers"
+  },
+  {
+    "id": "2928",
+    "name": "Sachet de poudre bleue-----Divers"
+  },
+  {
+    "id": "2931",
+    "name": "Lanière en cuir d'Orc-----Ceinture"
+  },
+  {
+    "id": "2963",
+    "name": "Parchemin d'expérience de 30 minutes-----Divers"
+  },
+  {
+    "id": "3073",
+    "name": "Anneau incendiaire40603057420Anneau"
+  },
+  {
+    "id": "3074",
+    "name": "Bracelet volcanique20100-49719Bracelet"
+  },
+  {
+    "id": "3079",
+    "name": "Bracelet d'hibernation30100-47361Bracelet"
+  },
+  {
+    "id": "3081",
+    "name": "Bracelet de Subsolanus20100-284284Bracelet"
+  },
+  {
+    "id": "3083",
+    "name": "Anneau d'Aquilon132605452846Anneau"
+  },
+  {
+    "id": "3085",
+    "name": "Anneau des séismes406030101623Anneau"
+  },
+  {
+    "id": "3086",
+    "name": "Bracelet de terre sacrée20100-123421Bracelet"
+  },
+  {
+    "id": "3090",
+    "name": "Cake au fruit-----Divers"
+  },
+  {
+    "id": "3094",
+    "name": "Cordelette du templier-340--445Ceinture"
+  },
+  {
+    "id": "3096",
+    "name": "Heaume du templier-340--445Heaume"
+  },
+  {
+    "id": "3109",
+    "name": "Flèches de puanteur23-392617Arc"
+  },
+  {
+    "id": "3126",
+    "name": "Sachet de poudre rose-----Divers"
+  },
+  {
+    "id": "3128",
+    "name": "Flèches à pointes de verre138200649--Arc"
+  },
+  {
+    "id": "3129",
+    "name": "Flèches d'ébonite109-445--Arc"
+  },
+  {
+    "id": "3130",
+    "name": "Flèches elfiques94-372--Arc"
+  },
+  {
+    "id": "3131",
+    "name": "Flèches sifflantes94-372--Arc"
+  },
+  {
+    "id": "3132",
+    "name": "Flèches naines94-372--Arc"
+  },
+  {
+    "id": "3134",
+    "name": "Flèches de rejet94-3727575Arc"
+  },
+  {
+    "id": "3163",
+    "name": "Haubert d'armure légendaire de Jander19080800--Armure"
+  },
+  {
+    "id": "3165",
+    "name": "Bottes d'armure légendaire de Jander19080800--Botte"
+  },
+  {
+    "id": "3166",
+    "name": "Gantelets d'armure légendaire de Jander19080800--Gant"
+  },
+  {
+    "id": "3167",
+    "name": "Cabasset d'armure légendaire de Jander19080800--Heaume"
+  },
+  {
+    "id": "3168",
+    "name": "Ceinturon d'armure légendaire de Jander19080800--Ceinture"
+  },
+  {
+    "id": "3175",
+    "name": "Anneau de liberté154606073153Anneau"
+  },
+  {
+    "id": "3176",
+    "name": "Anneau d'Obéron40-30423423Anneau"
+  },
+  {
+    "id": "3178",
+    "name": "Casque du combattant163200611--Heaume"
+  },
+  {
+    "id": "3180",
+    "name": "Protecteur d'armure légendaire de Jander19080800--Ceinture"
+  },
+  {
+    "id": "3183",
+    "name": "Anneau de l'endurant299300--351Anneau"
+  },
+  {
+    "id": "3185",
+    "name": "Bracelet en or pur400100-176299Bracelet"
+  },
+  {
+    "id": "3186",
+    "name": "Cuirasse du barbare102560---Plastron"
+  },
+  {
+    "id": "3187",
+    "name": "Bottes du barbare102560---Botte"
+  },
+  {
+    "id": "3189",
+    "name": "Ceinture du barbare102560---Ceinture"
+  },
+  {
+    "id": "3190",
+    "name": "Protecteur du barbare39060---Ceinture"
+  },
+  {
+    "id": "3191",
+    "name": "Gants du barbare102560---Gant"
+  },
+  {
+    "id": "3196",
+    "name": "Chevalière des héros65020085--Anneau"
+  },
+  {
+    "id": "3197",
+    "name": "Anneau en ivoire d'Agamaoth190408503659Anneau"
+  },
+  {
+    "id": "3312",
+    "name": "Fleur d'arnica-----Divers"
+  },
+  {
+    "id": "3313",
+    "name": "Racine de ginseng-----Divers"
+  },
+  {
+    "id": "3335",
+    "name": "Sachet de poudre verte-----Divers"
+  },
+  {
+    "id": "3337",
+    "name": "Sachet de poussière d'étoile-----Divers"
+  },
+  {
+    "id": "3338",
+    "name": "Fleur d'immortelle-----Divers"
+  },
+  {
+    "id": "3341",
+    "name": "Fleur de cactus-----Divers"
+  },
+  {
+    "id": "3343",
+    "name": "Cerise d'acérola-----Divers"
+  },
+  {
+    "id": "3344",
+    "name": "Fleur de colchique-----Divers"
+  },
+  {
+    "id": "3349",
+    "name": "Queue de rat pestiféré-----Divers"
+  },
+  {
+    "id": "3353",
+    "name": "Prisme de mana finement taillé-----Divers"
+  },
+  {
+    "id": "3354",
+    "name": "Parchemin de dissipation de la résistance à l'air-----Divers"
+  },
+  {
+    "id": "3355",
+    "name": "Parchemin de dissipation de la résistance terre-----Divers"
+  },
+  {
+    "id": "3356",
+    "name": "Parchemin de dissipation de la résistance à l'eau-----Divers"
+  },
+  {
+    "id": "3357",
+    "name": "Parchemin de dissipation de la résistance nécro-----Divers"
+  },
+  {
+    "id": "3358",
+    "name": "Parchemin de dissipation de la résistance au feu-----Divers"
+  },
+  {
+    "id": "3359",
+    "name": "Parchemin de dissipation de la bénédiction-----Divers"
+  },
+  {
+    "id": "3360",
+    "name": "Parchemin de confusion-----Divers"
+  },
+  {
+    "id": "3361",
+    "name": "Parchemin d'anxiété-----Divers"
+  },
+  {
+    "id": "3377",
+    "name": "Excréments de larve sanglante-----Divers"
+  },
+  {
+    "id": "3379",
+    "name": "Langue de flamboyant-----Divers"
+  },
+  {
+    "id": "3383",
+    "name": "Oeil du Cerberus-----Focus"
+  },
+  {
+    "id": "3386",
+    "name": "Parchemin d'aveuglement-----Divers"
+  },
+  {
+    "id": "3387",
+    "name": "Parchemin de dissipation des protections de terre-----Divers"
+  },
+  {
+    "id": "3388",
+    "name": "Parchemin de dissipation des protections d'eau-----Divers"
+  },
+  {
+    "id": "3391",
+    "name": "Parchemin de vulnérabilité-----Divers"
+  },
+  {
+    "id": "3392",
+    "name": "Parchemin d'immobilisation-----Divers"
+  },
+  {
+    "id": "3393",
+    "name": "Parchemin de mobilité-----Divers"
+  },
+  {
+    "id": "3394",
+    "name": "Parchemin de fatigue physique-----Divers"
+  },
+  {
+    "id": "3395",
+    "name": "Parchemin de fatigue mentale-----Divers"
+  },
+  {
+    "id": "3396",
+    "name": "Parchemin de dissipation de la fatigue physique-----Divers"
+  },
+  {
+    "id": "3397",
+    "name": "Parchemin de dissipation de la fatigue mentale-----Divers"
+  },
+  {
+    "id": "3398",
+    "name": "Parchemin de dynamisme-----Divers"
+  },
+  {
+    "id": "3399",
+    "name": "Parchemin de dissipation de l'invisibilité-----Divers"
+  },
+  {
+    "id": "3400",
+    "name": "Parchemin d'inhibition des soins-----Divers"
+  },
+  {
+    "id": "3401",
+    "name": "Parchemin de dissipation de l'inhibition des soins-----Divers"
+  },
+  {
+    "id": "3402",
+    "name": "Parchemin d'invisibilité supérieure-----Divers"
+  },
+  {
+    "id": "3429",
+    "name": "Manuel d'instructions de Jander-----Divers"
+  },
+  {
+    "id": "3430",
+    "name": "Morceau de charbon-----Divers"
+  },
+  {
+    "id": "3439",
+    "name": "Rune protectrice-----Divers"
+  },
+  {
+    "id": "3450",
+    "name": "Pierre des héros-----Divers"
+  },
+  {
+    "id": "3451",
+    "name": "Quart d'anneau brisé-----Anneau"
+  },
+  {
+    "id": "3452",
+    "name": "Dictionnaire de langue humaine-----Divers"
+  },
+  {
+    "id": "3453",
+    "name": "Recueil du savoir des temps anciens-----Divers"
+  },
+  {
+    "id": "3454",
+    "name": "Mojo de purification-----Divers"
+  },
+  {
+    "id": "3455",
+    "name": "Gravure providentielle-----Divers"
+  },
+  {
+    "id": "3458",
+    "name": "Poudre secrète d'Amaëlle-----Divers"
+  },
+  {
+    "id": "3459",
+    "name": "Poudre secrète de Falyel-----Divers"
+  },
+  {
+    "id": "3460",
+    "name": "Poudre secrète de Gorodek-----Divers"
+  },
+  {
+    "id": "3461",
+    "name": "Poudre secrète d'Isilaë-----Divers"
+  },
+  {
+    "id": "3462",
+    "name": "Poudre secrète de Jalaam-----Divers"
+  },
+  {
+    "id": "3463",
+    "name": "Poudre secrète de Klauzar-----Divers"
+  },
+  {
+    "id": "3464",
+    "name": "Poudre secrète de Miryden-----Divers"
+  },
+  {
+    "id": "3465",
+    "name": "Poudre secrète de Silvius-----Divers"
+  },
+  {
+    "id": "3466",
+    "name": "Poudre secrète de Valmar-----Divers"
+  },
+  {
+    "id": "3467",
+    "name": "Poudre secrète de Xordiv-----Divers"
+  },
+  {
+    "id": "3485",
+    "name": "Etincelle de lumière---48583Heaume"
+  },
+  {
+    "id": "3486",
+    "name": "Manteau de la bruine-27-19015Robe"
+  },
+  {
+    "id": "3487",
+    "name": "Lopin de terre de l'hiberné-----Divers"
+  },
+  {
+    "id": "3491",
+    "name": "Parchemin de purification de l'or-----Divers"
+  },
+  {
+    "id": "3492",
+    "name": "Capture d'esprit taciturne-----Divers"
+  },
+  {
+    "id": "3497",
+    "name": "Pulsar miniature-----Divers"
+  },
+  {
+    "id": "3498",
+    "name": "Flocon ambré des sommets-----Divers"
+  },
+  {
+    "id": "3500",
+    "name": "Guide du mentor-----Divers"
+  },
+  {
+    "id": "3501",
+    "name": "Cornaline-----Divers"
+  },
+  {
+    "id": "3507",
+    "name": "Oeil vigilant-----Focus"
+  },
+  {
+    "id": "3508",
+    "name": "Parchemin de scellement-----Divers"
+  },
+  {
+    "id": "3509",
+    "name": "Ciselure ésotérique-----Divers"
+  },
+  {
+    "id": "3511",
+    "name": "Nerf de B'Zerillis-----Divers"
+  },
+  {
+    "id": "3516",
+    "name": "Tison Sintelle-----Divers"
+  },
+  {
+    "id": "3518",
+    "name": "Pierre de majesté-----Divers"
+  },
+  {
+    "id": "3523",
+    "name": "Pierre de dérobade-----Divers"
+  },
+  {
+    "id": "3525",
+    "name": "Globe oculaire-----Focus"
+  },
+  {
+    "id": "3526",
+    "name": "Nerf sciatique-----Divers"
+  },
+  {
+    "id": "3538",
+    "name": "Gants d'influence élémentaire-20-3835Gant"
+  },
+  {
+    "id": "3539",
+    "name": "Cordon d'apaisement-22-1433Ceinture"
+  },
+  {
+    "id": "3545",
+    "name": "Poigne de fer4255---Gant"
+  },
+  {
+    "id": "3554",
+    "name": "Chapeau à larges bords-18-4933Heaume"
+  },
+  {
+    "id": "3556",
+    "name": "Bracelet en peau de Troll-68-3937Bracelet"
+  },
+  {
+    "id": "3557",
+    "name": "Ceinturon d'immunisation aux poisons mineurs-25-4333Ceinture"
+  },
+  {
+    "id": "3558",
+    "name": "Carquois en cuir d'Orc vide-----Arc"
+  },
+  {
+    "id": "3564",
+    "name": "Veine de Troll-----Divers"
+  },
+  {
+    "id": "3566",
+    "name": "Sangle du balafré-----Ceinture"
+  },
+  {
+    "id": "3607",
+    "name": "Flèches empoisonnées28-445322Arc"
+  },
+  {
+    "id": "3608",
+    "name": "Flèches puissamment empoisonnées47-1618827Arc"
+  },
+  {
+    "id": "3609",
+    "name": "Flèches mortellement empoisonnées96-42513137Arc"
+  },
+  {
+    "id": "3612",
+    "name": "Pierre à aiguiser-----Divers"
+  },
+  {
+    "id": "3618",
+    "name": "Morceau de nacre-----Divers"
+  },
+  {
+    "id": "3625",
+    "name": "Cuissot en iridium-----Jambière"
+  },
+  {
+    "id": "3629",
+    "name": "Grève en iridium-----Jambière"
+  },
+  {
+    "id": "3630",
+    "name": "Brassard en cuir d'Orc-----Gant"
+  },
+  {
+    "id": "3631",
+    "name": "Brassard en cuir de Minotaure-----Gant"
+  },
+  {
+    "id": "3632",
+    "name": "Brassard en plaque de Centaure-----Gant"
+  },
+  {
+    "id": "3633",
+    "name": "Brassard en iridium-----Gant"
+  },
+  {
+    "id": "3634",
+    "name": "Brigandine en cuir d'Orc-----Plastron"
+  },
+  {
+    "id": "3635",
+    "name": "Brigandine en cuir de Minotaure-----Plastron"
+  },
+  {
+    "id": "3636",
+    "name": "Brigandine en plaque de Centaure-----Plastron"
+  },
+  {
+    "id": "3637",
+    "name": "Brigandine en iridium-----Plastron"
+  },
+  {
+    "id": "3639",
+    "name": "Spalière en iridium-----Plastron"
+  },
+  {
+    "id": "3640",
+    "name": "Soleret en iridium-----Botte"
+  },
+  {
+    "id": "3641",
+    "name": "Cubitière en iridium-----Plastron"
+  },
+  {
+    "id": "3642",
+    "name": "Genouillère en iridium-----Jambière"
+  },
+  {
+    "id": "3653",
+    "name": "Bottes reluisantes-40---Botte"
+  },
+  {
+    "id": "3654",
+    "name": "Gants reluisants-40---Gant"
+  },
+  {
+    "id": "3655",
+    "name": "Casque de rassemblement de la milice d'Anwynn-65---Heaume"
+  },
+  {
+    "id": "3657",
+    "name": "Cotte de maille reluisante-40---Anneau"
+  },
+  {
+    "id": "3659",
+    "name": "Gants d'acier des monts de Righul6055---Gant"
+  },
+  {
+    "id": "3660",
+    "name": "Ceinturon de légèreté-115---Ceinture"
+  },
+  {
+    "id": "3661",
+    "name": "Gants de légèreté-115---Gant"
+  },
+  {
+    "id": "3662",
+    "name": "Brodequins de légèreté-115---Botte"
+  },
+  {
+    "id": "3663",
+    "name": "Calot de légèreté-115---Heaume"
+  },
+  {
+    "id": "3665",
+    "name": "Broigne de légèreté-115---Armure"
+  },
+  {
+    "id": "3667",
+    "name": "Email nacré de Gobelin jaune-----Divers"
+  },
+  {
+    "id": "3668",
+    "name": "Schéma secret de Sylistïs Vaëlas-----Divers"
+  },
+  {
+    "id": "3671",
+    "name": "Corde en boyaux d'antilope-----Divers"
+  },
+  {
+    "id": "3672",
+    "name": "Corde en boyaux d'horreur railleuse-----Divers"
+  },
+  {
+    "id": "3673",
+    "name": "Corde en boyaux de loup-----Divers"
+  },
+  {
+    "id": "3674",
+    "name": "Corde en boyaux d'apocalypse des sables-----Divers"
+  },
+  {
+    "id": "3699",
+    "name": "Flèches de l'éclaireur21-35-12Arc"
+  },
+  {
+    "id": "3700",
+    "name": "Flèches en frêne19-28--Arc"
+  },
+  {
+    "id": "3701",
+    "name": "Torche incandescente-----Divers"
+  },
+  {
+    "id": "3706",
+    "name": "Lance de parade en orme60-35--Arme"
+  },
+  {
+    "id": "3708",
+    "name": "Masque en bois de la forêt de Mato-25-3028Heaume"
+  },
+  {
+    "id": "3709",
+    "name": "Flèches paralysantes27-413331Arc"
+  },
+  {
+    "id": "3710",
+    "name": "Boyaux d'antilope-----Divers"
+  },
+  {
+    "id": "3711",
+    "name": "Boyaux d'horreur railleuse-----Divers"
+  },
+  {
+    "id": "3712",
+    "name": "Boyaux de loup-----Divers"
+  },
+  {
+    "id": "3713",
+    "name": "Boyaux d'apocalypse des sables-----Divers"
+  },
+  {
+    "id": "3714",
+    "name": "Boyaux de gargouille-----Divers"
+  },
+  {
+    "id": "3715",
+    "name": "Chroniques de Ruikuk l'éclaireur-----Divers"
+  },
+  {
+    "id": "3720",
+    "name": "Epée à deux mains en titane474-85--Arme"
+  },
+  {
+    "id": "3724",
+    "name": "Cimeterre en métrolite doré807----Arme"
+  },
+  {
+    "id": "3728",
+    "name": "Epée une main et demi vibrante822----Arme"
+  },
+  {
+    "id": "3732",
+    "name": "Lame de l'infatigable836----Arme"
+  },
+  {
+    "id": "3736",
+    "name": "Cimeterre en métrolite robuste880----Arme"
+  },
+  {
+    "id": "3740",
+    "name": "Exterminatrice894----Arme"
+  },
+  {
+    "id": "3754",
+    "name": "Gants du manipulateur d'orage-20-3835Gant"
+  },
+  {
+    "id": "3756",
+    "name": "Ceinturon d'immunisation aux poisons-35-10282Ceinture"
+  },
+  {
+    "id": "3757",
+    "name": "Carquois en cuir de Profundus vide-----Arc"
+  },
+  {
+    "id": "3761",
+    "name": "Robe terreuse-27-20185Robe"
+  },
+  {
+    "id": "3763",
+    "name": "Ceinturon d'immunisation aux poisons majeurs-45-11495Ceinture"
+  },
+  {
+    "id": "3766",
+    "name": "Bottes étincelantes-80---Botte"
+  },
+  {
+    "id": "3767",
+    "name": "Gants étincelants-80---Gant"
+  },
+  {
+    "id": "3769",
+    "name": "Plastron étincelant-80---Anneau"
+  },
+  {
+    "id": "3773",
+    "name": "Claymore d'extinction909----Arme"
+  },
+  {
+    "id": "3792",
+    "name": "Rondache du froid intense-125-11134Bouclier"
+  },
+  {
+    "id": "3793",
+    "name": "Tunique de feu-160-15629Armure"
+  },
+  {
+    "id": "3808",
+    "name": "Sabots rafistolés-85---Botte"
+  },
+  {
+    "id": "3810",
+    "name": "Flèches en noyer21-67--Arc"
+  },
+  {
+    "id": "3811",
+    "name": "Flèches à pointes d'acier21-84--Arc"
+  },
+  {
+    "id": "3812",
+    "name": "Flèches en chêne22-95--Arc"
+  },
+  {
+    "id": "3815",
+    "name": "Lance d'alourdissement70--4240Arme"
+  },
+  {
+    "id": "3816",
+    "name": "Semelle de taulard-----Botte"
+  },
+  {
+    "id": "3819",
+    "name": "Rose des sables-----Divers"
+  },
+  {
+    "id": "3820",
+    "name": "Intestins en putréfaction-----Divers"
+  },
+  {
+    "id": "3822",
+    "name": "Rune chargée de magie-----Focus"
+  },
+  {
+    "id": "3825",
+    "name": "Lance d'alourdissement important80--5643Arme"
+  },
+  {
+    "id": "3828",
+    "name": "Bottes capricieuses-130-2841Botte"
+  },
+  {
+    "id": "3829",
+    "name": "Plastron capricieux-130-2841Plastron"
+  },
+  {
+    "id": "3830",
+    "name": "Casque capricieux-130-2841Heaume"
+  },
+  {
+    "id": "3831",
+    "name": "Ceinture capricieuse-130-2841Ceinture"
+  },
+  {
+    "id": "3832",
+    "name": "Gants capricieux-130-2841Gant"
+  },
+  {
+    "id": "3833",
+    "name": "Jambières capricieuses-130-2841Jambière"
+  },
+  {
+    "id": "3842",
+    "name": "Parchemin du village Centaure-----Divers"
+  },
+  {
+    "id": "3861",
+    "name": "Parchemin de l'Académie-----Divers"
+  },
+  {
+    "id": "3866",
+    "name": "Sceptre de luminescence22--1362Arme"
+  },
+  {
+    "id": "3868",
+    "name": "Poings du pugiliste175--7839Gant"
+  },
+  {
+    "id": "3870",
+    "name": "Heaume de Serisiss-8065-122Heaume"
+  },
+  {
+    "id": "3873",
+    "name": "Canon de maille de fureur berserker236----Bracelet"
+  },
+  {
+    "id": "3874",
+    "name": "Plastron du pommier-105-6666Plastron"
+  },
+  {
+    "id": "3886",
+    "name": "Ecaillures de serpent-----Divers"
+  },
+  {
+    "id": "3898",
+    "name": "Inscription secrète d'Amaëlle-----Divers"
+  },
+  {
+    "id": "3899",
+    "name": "Inscription secrète de Falyel-----Divers"
+  },
+  {
+    "id": "3900",
+    "name": "Inscription secrète de Gorodek-----Divers"
+  },
+  {
+    "id": "3901",
+    "name": "Inscription secrète de d'Isilaë-----Divers"
+  },
+  {
+    "id": "3902",
+    "name": "Inscription secrète de Jalaam-----Divers"
+  },
+  {
+    "id": "3903",
+    "name": "Inscription secrète de Klauzar-----Divers"
+  },
+  {
+    "id": "3904",
+    "name": "Inscription secrète de Miryden-----Divers"
+  },
+  {
+    "id": "3905",
+    "name": "Inscription secrète de Silvius-----Divers"
+  },
+  {
+    "id": "3906",
+    "name": "Inscription secrète de Valmar-----Divers"
+  },
+  {
+    "id": "3907",
+    "name": "Inscription secrète de Xordiv-----Divers"
+  },
+  {
+    "id": "3914",
+    "name": "Eventreuse de main gauche372----Arme"
+  },
+  {
+    "id": "3915",
+    "name": "Cimeterre de rubis de main gauche459----Arme"
+  },
+  {
+    "id": "3916",
+    "name": "Kandjar de destinée317----Arme"
+  },
+  {
+    "id": "3924",
+    "name": "Germe sanieux-----Divers"
+  },
+  {
+    "id": "3926",
+    "name": "Epée de diamants de main gauche532----Arme"
+  },
+  {
+    "id": "3927",
+    "name": "Cimeterre incrusté d'émeraudes de main gauche662----Arme"
+  },
+  {
+    "id": "3928",
+    "name": "Epée des braves de main gauche677----Arme"
+  },
+  {
+    "id": "3940",
+    "name": "Pioche du mineur18----Arme"
+  },
+  {
+    "id": "3941",
+    "name": "Hache du bûcheron18----Arme"
+  },
+  {
+    "id": "3951",
+    "name": "Pioche du mineur expérimenté23----Arme"
+  },
+  {
+    "id": "3953",
+    "name": "Hache du bûcheron expérimenté23----Arme"
+  },
+  {
+    "id": "3962",
+    "name": "Pioche du mineur expert28----Arme"
+  },
+  {
+    "id": "3963",
+    "name": "Hache du bûcheron expert28----Arme"
+  },
+  {
+    "id": "3965",
+    "name": "Pioche du mineur reconnu33----Arme"
+  },
+  {
+    "id": "3966",
+    "name": "Hache du bûcheron reconnu33----Arme"
+  },
+  {
+    "id": "3969",
+    "name": "Estampe secrète d'Amaëlle-----Divers"
+  },
+  {
+    "id": "3970",
+    "name": "Estampe secrète de Falyel-----Divers"
+  },
+  {
+    "id": "3971",
+    "name": "Estampe secrète de Gorodek-----Divers"
+  },
+  {
+    "id": "3972",
+    "name": "Estampe secrète d'Isilaë-----Divers"
+  },
+  {
+    "id": "3973",
+    "name": "Estampe secrète de Jalaam-----Divers"
+  },
+  {
+    "id": "3974",
+    "name": "Estampe secrète de Klauzar-----Divers"
+  },
+  {
+    "id": "3975",
+    "name": "Estampe secrète de Miryden-----Divers"
+  },
+  {
+    "id": "3976",
+    "name": "Estampe secrète de Silvius-----Divers"
+  },
+  {
+    "id": "3977",
+    "name": "Estampe secrète de Valmar-----Divers"
+  },
+  {
+    "id": "3978",
+    "name": "Estampe secrète de Xordiv-----Divers"
+  },
+  {
+    "id": "3979",
+    "name": "Marque secrète d'Amaëlle-----Divers"
+  },
+  {
+    "id": "3980",
+    "name": "Marque secrète de Falyel-----Divers"
+  },
+  {
+    "id": "3981",
+    "name": "Marque secrète de Gorodek-----Divers"
+  },
+  {
+    "id": "3982",
+    "name": "Marque secrète d'Isilaë-----Divers"
+  },
+  {
+    "id": "3983",
+    "name": "Marque secrète de Jalaam-----Divers"
+  },
+  {
+    "id": "3984",
+    "name": "Marque secrète de Klauzar-----Divers"
+  },
+  {
+    "id": "3985",
+    "name": "Marque secrète de Miryden-----Divers"
+  },
+  {
+    "id": "3986",
+    "name": "Marque secrète de Silvius-----Divers"
+  },
+  {
+    "id": "3987",
+    "name": "Marque secrète de Valmar-----Divers"
+  },
+  {
+    "id": "3988",
+    "name": "Marque secrète de Xordiv-----Divers"
+  },
+  {
+    "id": "4016",
+    "name": "Bracelet incrusté d'ampélites30100-82346Bracelet"
+  },
+  {
+    "id": "4017",
+    "name": "Bracelet en ivoire incrusté de perles30100-29673Bracelet"
+  },
+  {
+    "id": "4029",
+    "name": "Anneau climatérique---185120Anneau"
+  },
+  {
+    "id": "4031",
+    "name": "Claymore d'extinction étoilée909----Arme"
+  },
+  {
+    "id": "4032",
+    "name": "Arc composite du Notos étoilé196-880--Arc"
+  },
+  {
+    "id": "4034",
+    "name": "Parchemin des ténèbres-----Divers"
+  },
+  {
+    "id": "4078",
+    "name": "Flèches incendiaires1384061010326Arc"
+  },
+  {
+    "id": "4079",
+    "name": "Flèches terrestres1384061026103Arc"
+  },
+  {
+    "id": "4080",
+    "name": "Flèches glacées1384061010326Arc"
+  },
+  {
+    "id": "4081",
+    "name": "Flèches de décharges1384061010326Arc"
+  },
+  {
+    "id": "4086",
+    "name": "Barbute des arènes18112093--Heaume"
+  },
+  {
+    "id": "4088",
+    "name": "Gants de noblesse-25-2525Gant"
+  },
+  {
+    "id": "4090",
+    "name": "Brandon du désert-----Divers"
+  },
+  {
+    "id": "4096",
+    "name": "Ampélite-----Divers"
+  },
+  {
+    "id": "4100",
+    "name": "Flèches pestilentielles1384061011215Arc"
+  },
+  {
+    "id": "4101",
+    "name": "Flèches de certitude94403728080Arc"
+  },
+  {
+    "id": "4102",
+    "name": "Flèches à pointes de diamant17860840--Arc"
+  },
+  {
+    "id": "4104",
+    "name": "Sceptre de l'ascète69--23715Arme"
+  },
+  {
+    "id": "4106",
+    "name": "Ornement d'émeraude-----Divers"
+  },
+  {
+    "id": "4107",
+    "name": "Ornement de saphir-----Divers"
+  },
+  {
+    "id": "4108",
+    "name": "Ornement de diamant-----Divers"
+  },
+  {
+    "id": "4109",
+    "name": "Ornement de rubis-----Divers"
+  },
+  {
+    "id": "4116",
+    "name": "Prisme énigmatique-----Divers"
+  },
+  {
+    "id": "4117",
+    "name": "Reste d'étoffe-----Plastron"
+  },
+  {
+    "id": "4118",
+    "name": "Gants primitifs-----Gant"
+  },
+  {
+    "id": "4124",
+    "name": "Bracelet coruscant-----Bracelet"
+  },
+  {
+    "id": "4128",
+    "name": "Prisme méphistophélétique-----Divers"
+  },
+  {
+    "id": "4131",
+    "name": "Esprit naturel-----Heaume"
+  },
+  {
+    "id": "4134",
+    "name": "Diamant à pointe finement acérée-----Divers"
+  },
+  {
+    "id": "4137",
+    "name": "Énergie infernale-----Divers"
+  },
+  {
+    "id": "4138",
+    "name": "Ornement turbulent-----Divers"
+  },
+  {
+    "id": "4175",
+    "name": "Langue de Cerberus-----Divers"
+  },
+  {
+    "id": "4209",
+    "name": "Manteau de sève mystique brodé-38-23697Robe"
+  },
+  {
+    "id": "4210",
+    "name": "Manteau d'inlandsis brodé-38-69723Robe"
+  },
+  {
+    "id": "4211",
+    "name": "Manteau du Khamsin brodé-38-360360Robe"
+  },
+  {
+    "id": "4226",
+    "name": "Maillet du maudit30--29-Arme"
+  },
+  {
+    "id": "4227",
+    "name": "Maillet du profane60--54-Arme"
+  },
+  {
+    "id": "4228",
+    "name": "Maillet du malin90--78-Arme"
+  },
+  {
+    "id": "4229",
+    "name": "Maillet du damné110--94-Arme"
+  },
+  {
+    "id": "4230",
+    "name": "Marteau du maudit140--117-Arme"
+  },
+  {
+    "id": "4231",
+    "name": "Marteau du profane170--139-Arme"
+  },
+  {
+    "id": "4234",
+    "name": "Marteau d'armes renforcé du maudit310--242-Arme"
+  },
+  {
+    "id": "4235",
+    "name": "Marteau d'armes renforcé du profane360--277-Arme"
+  },
+  {
+    "id": "4236",
+    "name": "Marteau d'armes renforcé du malin400--305-Arme"
+  },
+  {
+    "id": "4237",
+    "name": "Bottes du décrépit180220-220-Botte"
+  },
+  {
+    "id": "4238",
+    "name": "Ceinture du décrépit180220-220-Ceinture"
+  },
+  {
+    "id": "4239",
+    "name": "Gants du décrépit180220-220-Gant"
+  },
+  {
+    "id": "4240",
+    "name": "Heaume du décrépit180220-220-Heaume"
+  },
+  {
+    "id": "4241",
+    "name": "Jambières du décrépit180220-220-Jambière"
+  },
+  {
+    "id": "4242",
+    "name": "Plastron du décrépit180220-220-Plastron"
+  },
+  {
+    "id": "4243",
+    "name": "Mjölnir du damné420--349-Arme"
+  },
+  {
+    "id": "4245",
+    "name": "Parchemin ancien-----Divers"
+  },
+  {
+    "id": "4262",
+    "name": "Robe d'apparat bleu clair-----Robe"
+  },
+  {
+    "id": "4263",
+    "name": "Robe d'apparat bleu foncé-----Robe"
+  },
+  {
+    "id": "4268",
+    "name": "Robe d'apparat grise-----Robe"
+  },
+  {
+    "id": "4269",
+    "name": "Robe d'apparat mauve-----Robe"
+  },
+  {
+    "id": "4270",
+    "name": "Robe d'apparat violette-----Robe"
+  },
+  {
+    "id": "4271",
+    "name": "Robe d'apparat rose-----Robe"
+  },
+  {
+    "id": "4272",
+    "name": "Robe d'apparat jaune-----Robe"
+  },
+  {
+    "id": "4290",
+    "name": "Cape d'apparat froissée cyan-----Cape"
+  },
+  {
+    "id": "4291",
+    "name": "Cape d'apparat froissée noire-----Cape"
+  },
+  {
+    "id": "4292",
+    "name": "Cape d'apparat froissée bleue-----Cape"
+  },
+  {
+    "id": "4293",
+    "name": "Cape d'apparat froissée grise-----Cape"
+  },
+  {
+    "id": "4294",
+    "name": "Cape d'apparat froissée jaune-----Cape"
+  },
+  {
+    "id": "4295",
+    "name": "Cape d'apparat froissée rouge-----Cape"
+  },
+  {
+    "id": "4322",
+    "name": "Seau vide-----Divers"
+  },
+  {
+    "id": "4323",
+    "name": "Seau d'eau-----Divers"
+  },
+  {
+    "id": "4324",
+    "name": "Seau de légumes-----Divers"
+  },
+  {
+    "id": "4325",
+    "name": "Panier fermé-----Divers"
+  },
+  {
+    "id": "4326",
+    "name": "Panier ouvert-----Divers"
+  },
+  {
+    "id": "4329",
+    "name": "Fournitures Roleplay-----Divers"
+  },
+  {
+    "id": "4370",
+    "name": "Carotte-----Divers"
+  },
+  {
+    "id": "4412",
+    "name": "Nougat à la chair de Kobold-----Divers"
+  },
+  {
+    "id": "4413",
+    "name": "Barre chocolatée-----Divers"
+  },
+  {
+    "id": "4455",
+    "name": "Robe d'apparat beige-----Robe"
+  },
+  {
+    "id": "4456",
+    "name": "Robe d'apparat marron foncé-----Robe"
+  },
+  {
+    "id": "4457",
+    "name": "Robe d'apparat vert pomme-----Robe"
+  },
+  {
+    "id": "4458",
+    "name": "Robe d'apparat orange-----Robe"
+  },
+  {
+    "id": "4465",
+    "name": "Bracelet d'obsidiennne33310085300-Bracelet"
+  },
+  {
+    "id": "4466",
+    "name": "Rondache des damnés42010095420-Bouclier"
+  },
+  {
+    "id": "4753",
+    "name": "Effluve cristallisée-----Divers"
+  },
+  {
+    "id": "4764",
+    "name": "Fléau du preux642-98-340Arme"
+  },
+  {
+    "id": "4765",
+    "name": "Anneau du sans peur1009609511462Anneau"
+  },
+  {
+    "id": "4766",
+    "name": "Fléau du croisé469---483Arme"
+  },
+  {
+    "id": "4768",
+    "name": "Chevalière du croisé40010093110417Anneau"
+  },
+  {
+    "id": "4771",
+    "name": "Protège poignet d'archer160807802714Bracelet"
+  },
+  {
+    "id": "4773",
+    "name": "Bracelet du preux430340908686Bracelet"
+  },
+  {
+    "id": "4774",
+    "name": "Joyau reluisant-----Divers"
+  },
+  {
+    "id": "4780",
+    "name": "Couteau du collecté-----Arme"
+  },
+  {
+    "id": "4781",
+    "name": "Livre de sorts de l'apprenti-----Divers"
+  },
+  {
+    "id": "4783",
+    "name": "Couronne de la liche---92021Heaume"
+  },
+  {
+    "id": "4785",
+    "name": "Bracelet catalyseur de puissance5945-282282Bracelet"
+  },
+  {
+    "id": "4787",
+    "name": "Bon d'un autre monde-----Divers"
+  },
+  {
+    "id": "4788",
+    "name": "Bracelet des gens heureux-----Bracelet"
+  },
+  {
+    "id": "4790",
+    "name": "Chapeau des espérances multiples-----Heaume"
+  },
+  {
+    "id": "4799",
+    "name": "Cartable à surprises-----Divers"
+  },
+  {
+    "id": "4804",
+    "name": "Conte des dragons-----Divers"
+  },
+  {
+    "id": "4805",
+    "name": "Histoire de la race centaurine-----Divers"
+  },
+  {
+    "id": "4809",
+    "name": "Hache légendaire40----Arme"
+  },
+  {
+    "id": "4835",
+    "name": "Cadeau de Noël-----Divers"
+  },
+  {
+    "id": "4840",
+    "name": "Parcelle d'étoile-----Divers"
+  },
+  {
+    "id": "4856",
+    "name": "Parchemin de dynamisme d'entrainement-----Divers"
+  },
+  {
+    "id": "4872",
+    "name": "Parchemin de fatigue mentale d'entrainement-----Divers"
+  },
+  {
+    "id": "4873",
+    "name": "Parchemin de fatigue physique d'entrainement-----Divers"
+  },
+  {
+    "id": "4880",
+    "name": "Parchemin Olphenique-----Divers"
+  },
+  {
+    "id": "4931",
+    "name": "Pioche du mineur légendaire28----Arme"
+  },
+  {
+    "id": "4949",
+    "name": "Ceinture de noblesse-25-2525Ceinture"
+  },
+  {
+    "id": "4961",
+    "name": "Laissez-passer de Corynthia (Jorfer)-----Divers"
+  },
+  {
+    "id": "4964",
+    "name": "Parchemin d'Astoriel-----Divers"
+  },
+  {
+    "id": "4965",
+    "name": "Parchemin du refuge de l'embouchure-----Divers"
+  },
+  {
+    "id": "5128",
+    "name": "Manteau de sève mystique en soie-38-23697Robe"
+  },
+  {
+    "id": "5137",
+    "name": "Boîte de démolécularisation supérieure-----Divers"
+  },
+  {
+    "id": "5159",
+    "name": "Prisme rouge-----Robe"
+  },
+  {
+    "id": "5160",
+    "name": "Prisme embrasé-----Robe"
+  },
+  {
+    "id": "5162",
+    "name": "Gemme incandescente-----Divers"
+  },
+  {
+    "id": "5186",
+    "name": "Fraises-----Divers"
+  },
+  {
+    "id": "5419",
+    "name": "Oeil de gobelin-----Focus"
+  },
+  {
+    "id": "4",
+    "name": "Pile d'Arbre S'intelle-----Divers"
+  },
+  {
+    "id": "5",
+    "name": "Essence de B'zurkhan-----Divers"
+  },
+  {
+    "id": "13",
+    "name": "Robe de mariée-----Robe"
+  },
+  {
+    "id": "15",
+    "name": "Crâne de Demon Inculte-----Divers"
+  },
+  {
+    "id": "17",
+    "name": "Bague ténébreuse---4949Anneau"
+  },
+  {
+    "id": "18",
+    "name": "Amulette Ténébreuse-30-4949Amulette"
+  },
+  {
+    "id": "31",
+    "name": "Potion de Guérison Extrême-----Divers"
+  },
+  {
+    "id": "32",
+    "name": "Améthyste focus de pouvoir---2897Focus"
+  },
+  {
+    "id": "34",
+    "name": "Jambières de ciel argent90140370--Jambière"
+  },
+  {
+    "id": "39",
+    "name": "Robe triplicite du mage-50-350100Robe"
+  },
+  {
+    "id": "44",
+    "name": "Heaume triplicite du mage-50-350100Heaume"
+  },
+  {
+    "id": "45",
+    "name": "Jambières triplicite du mage-50-350100Jambière"
+  },
+  {
+    "id": "47",
+    "name": "Reste d'acier métrolite-----Bouclier"
+  },
+  {
+    "id": "56",
+    "name": "Epée bâtarde d'adamantium387----Arme"
+  },
+  {
+    "id": "60",
+    "name": "Cimeterre de rubis459----Arme"
+  },
+  {
+    "id": "62",
+    "name": "Hachette d'acier fin155----Arme"
+  },
+  {
+    "id": "77",
+    "name": "Dague finement polie53----Arme"
+  },
+  {
+    "id": "83",
+    "name": "Jambières de cuir enchanté39060---Jambière"
+  },
+  {
+    "id": "86",
+    "name": "Bouclier B'Ronkhanique350220---Bouclier"
+  },
+  {
+    "id": "92",
+    "name": "Anneau du froid---4215Anneau"
+  },
+  {
+    "id": "93",
+    "name": "Epée de Diamant532----Arme"
+  },
+  {
+    "id": "97",
+    "name": "Gourdin renforcé clouté30---34Arme"
+  },
+  {
+    "id": "100",
+    "name": "Fléau des artisans nains170---139Arme"
+  },
+  {
+    "id": "103",
+    "name": "Pied d'innocent-----Divers"
+  },
+  {
+    "id": "112",
+    "name": "Morceau de peau blanche rude-----Divers"
+  },
+  {
+    "id": "116",
+    "name": "Bave de Zart-----Divers"
+  },
+  {
+    "id": "126",
+    "name": "Glaive Étoilé brisé459----Arme"
+  },
+  {
+    "id": "138",
+    "name": "Robe blanche-----Robe"
+  },
+  {
+    "id": "141",
+    "name": "Robe rouge-----Robe"
+  },
+  {
+    "id": "199",
+    "name": "Chapeau du jeune magicien---3025Heaume"
+  },
+  {
+    "id": "202",
+    "name": "Sang de dragon-----Divers"
+  },
+  {
+    "id": "206",
+    "name": "Oeuf de Yeridaj-----Divers"
+  },
+  {
+    "id": "220",
+    "name": "Crâne de Liridell fendu-----Divers"
+  },
+  {
+    "id": "324",
+    "name": "Clef du coffre à surprises-----Divers"
+  },
+  {
+    "id": "325",
+    "name": "Pomme juteuse-----Divers"
+  },
+  {
+    "id": "398",
+    "name": "Robe triplicite du prêtre-50-100350Robe"
+  },
+  {
+    "id": "404",
+    "name": "Heaume triplicite du prêtre-50-100350Heaume"
+  },
+  {
+    "id": "405",
+    "name": "Jambières triplicite du prêtre-50-100350Jambière"
+  },
+  {
+    "id": "416",
+    "name": "Anneau du cimmérien23860853030Anneau"
+  },
+  {
+    "id": "417",
+    "name": "Présent des Alvors80352234040Amulette"
+  },
+  {
+    "id": "418",
+    "name": "Peau de ver-----Divers"
+  },
+  {
+    "id": "421",
+    "name": "Potion de premiers secours-----Divers"
+  },
+  {
+    "id": "436",
+    "name": "Night étoilé brisé210---169Arme"
+  },
+  {
+    "id": "464",
+    "name": "Fléau en acier poli310---238Arme"
+  },
+  {
+    "id": "465",
+    "name": "Fléau en acier poli béni310---238Arme"
+  },
+  {
+    "id": "466",
+    "name": "Fléau en acier poli sacré310---238Arme"
+  },
+  {
+    "id": "467",
+    "name": "Fléau d'armes du jugement310---238Arme"
+  },
+  {
+    "id": "468",
+    "name": "Fléau en acier forgé360---272Arme"
+  },
+  {
+    "id": "471",
+    "name": "Fléau d'armes du destin360---272Arme"
+  },
+  {
+    "id": "472",
+    "name": "Fléau d'adamantite400---299Arme"
+  },
+  {
+    "id": "475",
+    "name": "Fléau d'armes de l'éternité400---299Arme"
+  },
+  {
+    "id": "480",
+    "name": "Cimeterre des ancêtres662----Arme"
+  },
+  {
+    "id": "526",
+    "name": "Fléau d'arme du jugement brisé310---238Arme"
+  },
+  {
+    "id": "540",
+    "name": "Pile de bois-----Divers"
+  },
+  {
+    "id": "541",
+    "name": "Baie sauvage-----Divers"
+  },
+  {
+    "id": "542",
+    "name": "Bouteille d'alcool-----Divers"
+  },
+  {
+    "id": "543",
+    "name": "Morceau de fer-----Divers"
+  },
+  {
+    "id": "544",
+    "name": "Morceau d'adamandite-----Divers"
+  },
+  {
+    "id": "545",
+    "name": "Morceau d'or-----Divers"
+  },
+  {
+    "id": "546",
+    "name": "Marteau à forger-----Arme"
+  },
+  {
+    "id": "547",
+    "name": "Sablier d'or-----Divers"
+  },
+  {
+    "id": "548",
+    "name": "Pomme magique-----Divers"
+  },
+  {
+    "id": "579",
+    "name": "Anneau du pilleur5032656263Anneau"
+  },
+  {
+    "id": "584",
+    "name": "Teinture verte-----Divers"
+  },
+  {
+    "id": "585",
+    "name": "Teinture rouge-----Divers"
+  },
+  {
+    "id": "586",
+    "name": "Teinture rose-----Divers"
+  },
+  {
+    "id": "587",
+    "name": "Teinture violet-----Divers"
+  },
+  {
+    "id": "588",
+    "name": "Teinture bleue-----Divers"
+  },
+  {
+    "id": "628",
+    "name": "Dague du crâne ensanglantée12--4315Arme"
+  },
+  {
+    "id": "640",
+    "name": "Pelote de laine-----Divers"
+  },
+  {
+    "id": "655",
+    "name": "Massue-----Arme"
+  },
+  {
+    "id": "658",
+    "name": "Potion sombre-----Divers"
+  },
+  {
+    "id": "659",
+    "name": "Amulette de chance---8080Amulette"
+  },
+  {
+    "id": "668",
+    "name": "Sombre chapeau---12021Heaume"
+  },
+  {
+    "id": "674",
+    "name": "Potion critique d'entraînement-----Divers"
+  },
+  {
+    "id": "678",
+    "name": "Clé du Pantin-----Divers"
+  },
+  {
+    "id": "681",
+    "name": "Médaillon du croyant-----Amulette"
+  },
+  {
+    "id": "682",
+    "name": "Cierge de compassion-----Divers"
+  },
+  {
+    "id": "683",
+    "name": "Calice d'expiation-----Divers"
+  },
+  {
+    "id": "686",
+    "name": "Fil de couture-----Divers"
+  },
+  {
+    "id": "700",
+    "name": "Bière fraîche-----Divers"
+  },
+  {
+    "id": "701",
+    "name": "Bouteille d'alcool-----Divers"
+  },
+  {
+    "id": "711",
+    "name": "Bâton orné d'une pierre verte20--10035Arme"
+  },
+  {
+    "id": "746",
+    "name": "Clef de l'hospice-----Divers"
+  },
+  {
+    "id": "776",
+    "name": "Potion de Dronus-----Divers"
+  },
+  {
+    "id": "796",
+    "name": "Jambières d'Orc en cuir clouté-60---Jambière"
+  },
+  {
+    "id": "804",
+    "name": "Pépite d'or-----Divers"
+  },
+  {
+    "id": "805",
+    "name": "Fiole de bile de Démonicon-----Divers"
+  },
+  {
+    "id": "808",
+    "name": "Morceau de peau d'Orc-----Divers"
+  },
+  {
+    "id": "809",
+    "name": "Bobine de fil d'or-----Divers"
+  },
+  {
+    "id": "810",
+    "name": "Robe lumineuse-13-2943Robe"
+  },
+  {
+    "id": "811",
+    "name": "Os d'Orc-----Divers"
+  },
+  {
+    "id": "816",
+    "name": "Potion du veinard-----Divers"
+  },
+  {
+    "id": "817",
+    "name": "Potion de faible endurance magique-----Divers"
+  },
+  {
+    "id": "818",
+    "name": "Epée courte d'Orkanis53----Arme"
+  },
+  {
+    "id": "819",
+    "name": "Dent de Démonicon-----Divers"
+  },
+  {
+    "id": "843",
+    "name": "Bière pleine-----Divers"
+  },
+  {
+    "id": "846",
+    "name": "Bouteille de rhum-----Divers"
+  },
+  {
+    "id": "853",
+    "name": "Chapeau du bonhomme de neige-----Heaume"
+  },
+  {
+    "id": "878",
+    "name": "Fiole de sang de Drake Vigrator-----Divers"
+  },
+  {
+    "id": "880",
+    "name": "Croc de désolation-----Divers"
+  },
+  {
+    "id": "883",
+    "name": "Fève de cuivre-----Divers"
+  },
+  {
+    "id": "884",
+    "name": "Fève de bronze-----Divers"
+  },
+  {
+    "id": "885",
+    "name": "Fève d'argent-----Divers"
+  },
+  {
+    "id": "886",
+    "name": "Fève d'or-----Divers"
+  },
+  {
+    "id": "887",
+    "name": "Fève de platine-----Divers"
+  },
+  {
+    "id": "897",
+    "name": "Philtre d'amour-----Divers"
+  },
+  {
+    "id": "898",
+    "name": "Fiole de liquide bleuté-----Divers"
+  },
+  {
+    "id": "899",
+    "name": "Potion de mana-----Divers"
+  },
+  {
+    "id": "900",
+    "name": "Feuille d'arbre rose-----Divers"
+  },
+  {
+    "id": "901",
+    "name": "Pomme-----Divers"
+  },
+  {
+    "id": "902",
+    "name": "Pierre de vie-----Divers"
+  },
+  {
+    "id": "905",
+    "name": "Gourdin du Troll79----Arme"
+  },
+  {
+    "id": "909",
+    "name": "Dent de dragon-----Divers"
+  },
+  {
+    "id": "910",
+    "name": "Amulette de Jarko---2815Amulette"
+  },
+  {
+    "id": "911",
+    "name": "Bouclier de Windhowl-60-2623Bouclier"
+  },
+  {
+    "id": "914",
+    "name": "Jambières de cuir-25---Jambière"
+  },
+  {
+    "id": "920",
+    "name": "Jambières de cuir clouté-45---Jambière"
+  },
+  {
+    "id": "927",
+    "name": "Anneau de fer---1718Anneau"
+  },
+  {
+    "id": "928",
+    "name": "Anneau d'or---2226Anneau"
+  },
+  {
+    "id": "929",
+    "name": "Anneau de l'ours---2023Anneau"
+  },
+  {
+    "id": "930",
+    "name": "Anneau de lumière---2525Anneau"
+  },
+  {
+    "id": "931",
+    "name": "Anneau de cerfeuil---2020Anneau"
+  },
+  {
+    "id": "936",
+    "name": "Collier de diamants---2929Amulette"
+  },
+  {
+    "id": "938",
+    "name": "Gri-gri Yjglinien---2223Amulette"
+  },
+  {
+    "id": "939",
+    "name": "Pic à Glace-----Arme"
+  },
+  {
+    "id": "940",
+    "name": "Sceptre de fer12--21-Arme"
+  },
+  {
+    "id": "941",
+    "name": "Gourdin-----Arme"
+  },
+  {
+    "id": "947",
+    "name": "Fleuret53----Arme"
+  },
+  {
+    "id": "949",
+    "name": "Hache d'argent71----Arme"
+  },
+  {
+    "id": "952",
+    "name": "Lame des ténèbres68--1921Arme"
+  },
+  {
+    "id": "954",
+    "name": "Fléau de stabilité40---41Arme"
+  },
+  {
+    "id": "956",
+    "name": "Dague perceuse d'armure39--1921Arme"
+  },
+  {
+    "id": "957",
+    "name": "Lame de gobelin53----Arme"
+  },
+  {
+    "id": "958",
+    "name": "Épée de la nuit65--3025Arme"
+  },
+  {
+    "id": "959",
+    "name": "Anneau de confiance---1731Anneau"
+  },
+  {
+    "id": "967",
+    "name": "Clef des ténèbres-----Divers"
+  },
+  {
+    "id": "969",
+    "name": "Clé de fer-----Divers"
+  },
+  {
+    "id": "977",
+    "name": "Anneau du sorcier---5315Anneau"
+  },
+  {
+    "id": "978",
+    "name": "Épée du chaos53----Arme"
+  },
+  {
+    "id": "980",
+    "name": "Diamant-----Divers"
+  },
+  {
+    "id": "981",
+    "name": "Ailes de chauve-souris putrides-----Divers"
+  },
+  {
+    "id": "991",
+    "name": "Os humain-----Divers"
+  },
+  {
+    "id": "999",
+    "name": "Amulette d'esquive---2119Amulette"
+  },
+  {
+    "id": "1001",
+    "name": "Solaris53--2525Arme"
+  },
+  {
+    "id": "1003",
+    "name": "Amulette de précision---2726Amulette"
+  },
+  {
+    "id": "1005",
+    "name": "Défenderesse68--2530Arme"
+  },
+  {
+    "id": "1009",
+    "name": "Potion de fureur-----Divers"
+  },
+  {
+    "id": "1011",
+    "name": "Potion de guérison divine-----Divers"
+  },
+  {
+    "id": "1012",
+    "name": "Anneau de platine---3741Anneau"
+  },
+  {
+    "id": "1013",
+    "name": "Bouclier de bois-45---Bouclier"
+  },
+  {
+    "id": "1014",
+    "name": "Bouclier rond-60---Bouclier"
+  },
+  {
+    "id": "1016",
+    "name": "Amulette de lumière---2728Amulette"
+  },
+  {
+    "id": "1017",
+    "name": "Manteau du chaman-18-5068Robe"
+  },
+  {
+    "id": "1025",
+    "name": "Jambières de mailles-80---Jambière"
+  },
+  {
+    "id": "1029",
+    "name": "Jambières de plaques-125---Jambière"
+  },
+  {
+    "id": "1031",
+    "name": "Robe de sorcier-30-4040Robe"
+  },
+  {
+    "id": "1033",
+    "name": "Bouclier orc-80---Bouclier"
+  },
+  {
+    "id": "1034",
+    "name": "Pantalon de toile-----Jambière"
+  },
+  {
+    "id": "1039",
+    "name": "Fiole de venin d'araignée-----Divers"
+  },
+  {
+    "id": "1040",
+    "name": "Plume-----Divers"
+  },
+  {
+    "id": "1043",
+    "name": "Fiole de sang de gobelin-----Divers"
+  },
+  {
+    "id": "1046",
+    "name": "Lame obscure-----Arme"
+  },
+  {
+    "id": "1047",
+    "name": "Potion d'héroïsme-----Divers"
+  },
+  {
+    "id": "1048",
+    "name": "Lame démoniaque213----Arme"
+  },
+  {
+    "id": "1050",
+    "name": "Potion de premiers secours-----Divers"
+  },
+  {
+    "id": "1057",
+    "name": "Fiole d'eau cristalline-----Divers"
+  },
+  {
+    "id": "1062",
+    "name": "Bouclier de la Tour-125---Bouclier"
+  },
+  {
+    "id": "1065",
+    "name": "Épée de fureur59--2124Arme"
+  },
+  {
+    "id": "1069",
+    "name": "Chope de bière vide-----Divers"
+  },
+  {
+    "id": "1070",
+    "name": "Poisson mort-----Divers"
+  },
+  {
+    "id": "1071",
+    "name": "Sablier-----Divers"
+  },
+  {
+    "id": "1072",
+    "name": "Dent de tigre-----Divers"
+  },
+  {
+    "id": "1073",
+    "name": "Feuille de guérison-----Divers"
+  },
+  {
+    "id": "1075",
+    "name": "Oeuf d'un Kraanian-----Divers"
+  },
+  {
+    "id": "1076",
+    "name": "Élixir de pureté-----Divers"
+  },
+  {
+    "id": "1077",
+    "name": "Lame d'acuité82--2023Arme"
+  },
+  {
+    "id": "1078",
+    "name": "Clef de Reynen-----Divers"
+  },
+  {
+    "id": "1089",
+    "name": "Clef de pierre-----Divers"
+  },
+  {
+    "id": "1090",
+    "name": "Pourfendeur de Gobelins97--2023Arme"
+  },
+  {
+    "id": "1107",
+    "name": "Épée courte en acier trempé runique111----Arme"
+  },
+  {
+    "id": "1108",
+    "name": "Jambières de mailles en mithril-150---Jambière"
+  },
+  {
+    "id": "1111",
+    "name": "Glaive de qualité213----Arme"
+  },
+  {
+    "id": "1113",
+    "name": "Glaive poli enchanté82----Arme"
+  },
+  {
+    "id": "1114",
+    "name": "Épée courte en acier trempé enchantée111----Arme"
+  },
+  {
+    "id": "1115",
+    "name": "Hachette rouillée enchantée39----Arme"
+  },
+  {
+    "id": "1117",
+    "name": "Épée longue en acier trempé runique126----Arme"
+  },
+  {
+    "id": "1119",
+    "name": "Élixir de mana-----Divers"
+  },
+  {
+    "id": "1122",
+    "name": "Épée longue polie68----Arme"
+  },
+  {
+    "id": "1123",
+    "name": "Épée courte polie53----Arme"
+  },
+  {
+    "id": "1124",
+    "name": "Épée longue rouillée24----Arme"
+  },
+  {
+    "id": "1125",
+    "name": "Épée courte rouillée-----Arme"
+  },
+  {
+    "id": "1126",
+    "name": "Épée courte rouillée runique-----Arme"
+  },
+  {
+    "id": "1127",
+    "name": "Bouclier des Ères-300---Bouclier"
+  },
+  {
+    "id": "1129",
+    "name": "Épée antique des Haut-Elfes590----Arme"
+  },
+  {
+    "id": "1132",
+    "name": "Épée bâtarde ancienne enchantée532----Arme"
+  },
+  {
+    "id": "1133",
+    "name": "Cimeterre ancien runique459----Arme"
+  },
+  {
+    "id": "1134",
+    "name": "Potion de guérison-----Divers"
+  },
+  {
+    "id": "1135",
+    "name": "Cimeterre de qualité227----Arme"
+  },
+  {
+    "id": "1136",
+    "name": "Grand bouclier-100---Bouclier"
+  },
+  {
+    "id": "1137",
+    "name": "Bouclier de mithril-150---Bouclier"
+  },
+  {
+    "id": "1139",
+    "name": "Épée bâtarde ancienne runique532----Arme"
+  },
+  {
+    "id": "1141",
+    "name": "Bouclier d'adamantite-230---Bouclier"
+  },
+  {
+    "id": "1142",
+    "name": "Épée bâtarde de mithril runique314----Arme"
+  },
+  {
+    "id": "1144",
+    "name": "Épée bâtarde de mithril enchantée314----Arme"
+  },
+  {
+    "id": "1145",
+    "name": "Épée longue de mithril runique271----Arme"
+  },
+  {
+    "id": "1150",
+    "name": "Glaive poli runique82----Arme"
+  },
+  {
+    "id": "1151",
+    "name": "Épée courte de qualité enchantée184----Arme"
+  },
+  {
+    "id": "1152",
+    "name": "Sabre à crosse de nacre82----Arme"
+  },
+  {
+    "id": "1153",
+    "name": "Glaive en acier trempé enchanté140----Arme"
+  },
+  {
+    "id": "1154",
+    "name": "Hachette de qualité enchantée242----Arme"
+  },
+  {
+    "id": "1155",
+    "name": "Dague de qualité126----Arme"
+  },
+  {
+    "id": "1159",
+    "name": "Hachette de qualité242----Arme"
+  },
+  {
+    "id": "1160",
+    "name": "Marteau de guerre renforcé40---41Arme"
+  },
+  {
+    "id": "1161",
+    "name": "Hache de guerre en acier trempé184----Arme"
+  },
+  {
+    "id": "1163",
+    "name": "Hachette polie97----Arme"
+  },
+  {
+    "id": "1164",
+    "name": "Hachette rouillée39----Arme"
+  },
+  {
+    "id": "1166",
+    "name": "Hache de guerre Baatorienne184----Arme"
+  },
+  {
+    "id": "1167",
+    "name": "Poignard rouillé-----Arme"
+  },
+  {
+    "id": "1168",
+    "name": "Hyperpotion de rage-----Divers"
+  },
+  {
+    "id": "1169",
+    "name": "Cimeterre ancien enchanté459----Arme"
+  },
+  {
+    "id": "1172",
+    "name": "Jambières ciselées des Haut-Elfes-300---Jambière"
+  },
+  {
+    "id": "1177",
+    "name": "Épée longue polie enchantée68----Arme"
+  },
+  {
+    "id": "1178",
+    "name": "Cognée de bucheron39----Arme"
+  },
+  {
+    "id": "1184",
+    "name": "Épée courte en acier trempé111----Arme"
+  },
+  {
+    "id": "1185",
+    "name": "Glaive poli82----Arme"
+  },
+  {
+    "id": "1186",
+    "name": "Hache de guerre en acier trempé runique184----Arme"
+  },
+  {
+    "id": "1187",
+    "name": "Hachette polie runique97----Arme"
+  },
+  {
+    "id": "1188",
+    "name": "Dague en ivoire24----Arme"
+  },
+  {
+    "id": "1189",
+    "name": "Dague polie68----Arme"
+  },
+  {
+    "id": "1190",
+    "name": "Poignard rouillé runique-----Arme"
+  },
+  {
+    "id": "1191",
+    "name": "Épée courte rouillée enchantée-----Arme"
+  },
+  {
+    "id": "1194",
+    "name": "Hachette polie enchantée97----Arme"
+  },
+  {
+    "id": "1195",
+    "name": "Merlin en Acier de Qualité97----Arme"
+  },
+  {
+    "id": "1196",
+    "name": "Glaive en acier trempé140----Arme"
+  },
+  {
+    "id": "1197",
+    "name": "Jambières d'écailles-100---Jambière"
+  },
+  {
+    "id": "1203",
+    "name": "Poignard poli runique53----Arme"
+  },
+  {
+    "id": "1204",
+    "name": "Dague rouillée runique24----Arme"
+  },
+  {
+    "id": "1211",
+    "name": "Dague polie enchantée68----Arme"
+  },
+  {
+    "id": "1212",
+    "name": "Dague polie runique68----Arme"
+  },
+  {
+    "id": "1213",
+    "name": "Couteau de cuisine Nain68----Arme"
+  },
+  {
+    "id": "1216",
+    "name": "Épée longue de qualité198----Arme"
+  },
+  {
+    "id": "1217",
+    "name": "Poignard rouillé enchanté-----Arme"
+  },
+  {
+    "id": "1219",
+    "name": "Hache de guerre en acier trempé enchantée184----Arme"
+  },
+  {
+    "id": "1220",
+    "name": "Bouclier gothique-180---Bouclier"
+  },
+  {
+    "id": "1221",
+    "name": "Hachette rouillée runique39----Arme"
+  },
+  {
+    "id": "1222",
+    "name": "Épée bâtarde d'adamantite runique387----Arme"
+  },
+  {
+    "id": "1223",
+    "name": "Épée d'adamantite à deux mains runique401----Arme"
+  },
+  {
+    "id": "1225",
+    "name": "Poignard poli enchanté53----Arme"
+  },
+  {
+    "id": "1226",
+    "name": "Glaive de qualité enchanté213----Arme"
+  },
+  {
+    "id": "1227",
+    "name": "Épée bâtarde de mithril314----Arme"
+  },
+  {
+    "id": "1228",
+    "name": "Épée longue rouillée runique24----Arme"
+  },
+  {
+    "id": "1229",
+    "name": "Fléau de qualité140---116Arme"
+  },
+  {
+    "id": "1230",
+    "name": "Épée longue de qualité enchantée198----Arme"
+  },
+  {
+    "id": "1231",
+    "name": "Épée courte polie enchantée53----Arme"
+  },
+  {
+    "id": "1234",
+    "name": "Cimeterre de qualité runique227----Arme"
+  },
+  {
+    "id": "1237",
+    "name": "Épée longue de mithril271----Arme"
+  },
+  {
+    "id": "1238",
+    "name": "Rapière du Bretteur24----Arme"
+  },
+  {
+    "id": "1239",
+    "name": "Épée longue en acier trempé enchantée126----Arme"
+  },
+  {
+    "id": "1240",
+    "name": "Glaive en acier trempé runique140----Arme"
+  },
+  {
+    "id": "1242",
+    "name": "Épée longue polie runique68----Arme"
+  },
+  {
+    "id": "1248",
+    "name": "Dague de jade126----Arme"
+  },
+  {
+    "id": "1250",
+    "name": "Dague de qualité runique126----Arme"
+  },
+  {
+    "id": "1251",
+    "name": "Dague de qualité enchantée126----Arme"
+  },
+  {
+    "id": "1252",
+    "name": "Dague de mithril enchantée155----Arme"
+  },
+  {
+    "id": "1253",
+    "name": "Dague de mithril runique155----Arme"
+  },
+  {
+    "id": "1255",
+    "name": "Lame d'adamantite242----Arme"
+  },
+  {
+    "id": "1256",
+    "name": "Épée bâtarde ancienne532----Arme"
+  },
+  {
+    "id": "1257",
+    "name": "Cimeterre ancien459----Arme"
+  },
+  {
+    "id": "1259",
+    "name": "Jambières de plaques en adamantite-230---Jambière"
+  },
+  {
+    "id": "1261",
+    "name": "Épée d'adamantite incrustée de saphirs401----Arme"
+  },
+  {
+    "id": "1266",
+    "name": "Jambières d'anneaux-60---Jambière"
+  },
+  {
+    "id": "1268",
+    "name": "Lame du Héron242----Arme"
+  },
+  {
+    "id": "1270",
+    "name": "Jambières de cuir elfique-75---Jambière"
+  },
+  {
+    "id": "1271",
+    "name": "Claymore en Mithril329----Arme"
+  },
+  {
+    "id": "1272",
+    "name": "Poignard poli53----Arme"
+  },
+  {
+    "id": "1273",
+    "name": "Épée courte de qualité184----Arme"
+  },
+  {
+    "id": "1275",
+    "name": "Épée bâtarde d'adamantite enchantée387----Arme"
+  },
+  {
+    "id": "1276",
+    "name": "Glaive de qualité runique213----Arme"
+  },
+  {
+    "id": "1277",
+    "name": "Épée longue rouillée enchantée24----Arme"
+  },
+  {
+    "id": "1278",
+    "name": "Masse de qualité110---94Arme"
+  },
+  {
+    "id": "1279",
+    "name": "Cimeterre de qualité enchanté227----Arme"
+  },
+  {
+    "id": "1281",
+    "name": "Glaive d'adamantite runique358----Arme"
+  },
+  {
+    "id": "1282",
+    "name": "Jambières de plaques de Nain-160---Jambière"
+  },
+  {
+    "id": "1285",
+    "name": "Cimeterre d'adamantite runique372----Arme"
+  },
+  {
+    "id": "1287",
+    "name": "Épée courte de qualité runique184----Arme"
+  },
+  {
+    "id": "1288",
+    "name": "Dague de mithril155----Arme"
+  },
+  {
+    "id": "1289",
+    "name": "Épée longue en acier trempé126----Arme"
+  },
+  {
+    "id": "1290",
+    "name": "Glaive de mithril285----Arme"
+  },
+  {
+    "id": "1291",
+    "name": "Fléau d'armes ancien260---206Arme"
+  },
+  {
+    "id": "1292",
+    "name": "Fléau de mithril170---139Arme"
+  },
+  {
+    "id": "1294",
+    "name": "Épée longue de qualité runique198----Arme"
+  },
+  {
+    "id": "1295",
+    "name": "Épée courte polie runique53----Arme"
+  },
+  {
+    "id": "1296",
+    "name": "Dague rouillée24----Arme"
+  },
+  {
+    "id": "1304",
+    "name": "Crâne du bouffon morbide-----Divers"
+  },
+  {
+    "id": "1306",
+    "name": "Habits de feuilles-20-15115Robe"
+  },
+  {
+    "id": "1307",
+    "name": "Robe de grand prêtre-25-25155Robe"
+  },
+  {
+    "id": "1308",
+    "name": "Marteau de guerre en acier trempé60---56Arme"
+  },
+  {
+    "id": "1312",
+    "name": "Gourdin renforcé30---34Arme"
+  },
+  {
+    "id": "1313",
+    "name": "Hache de qualité à deux tranchants300----Arme"
+  },
+  {
+    "id": "1314",
+    "name": "Potion de tranquillité-----Divers"
+  },
+  {
+    "id": "1315",
+    "name": "Potion d'esprit clair-----Divers"
+  },
+  {
+    "id": "1317",
+    "name": "Pomme de cire-----Divers"
+  },
+  {
+    "id": "1319",
+    "name": "Pomme empoisonnée-----Divers"
+  },
+  {
+    "id": "1320",
+    "name": "Cire de guêpe-----Divers"
+  },
+  {
+    "id": "1321",
+    "name": "Peau d'antilope tannée-----Divers"
+  },
+  {
+    "id": "1328",
+    "name": "Jambières d'écailles de Dragon-180---Jambière"
+  },
+  {
+    "id": "1331",
+    "name": "Bouclier de corail-180-9065Bouclier"
+  },
+  {
+    "id": "1336",
+    "name": "Yeux de tarentule-----Divers"
+  },
+  {
+    "id": "1337",
+    "name": "Feuille d'arbre démoniaque-----Divers"
+  },
+  {
+    "id": "1342",
+    "name": "Anneau de foi---1565Anneau"
+  },
+  {
+    "id": "1344",
+    "name": "Calice d'or-----Divers"
+  },
+  {
+    "id": "1345",
+    "name": "Os de squelette-----Divers"
+  },
+  {
+    "id": "1346",
+    "name": "Dague de sang-----Arme"
+  },
+  {
+    "id": "1348",
+    "name": "Tesson brillant-----Divers"
+  },
+  {
+    "id": "1349",
+    "name": "Tambour de Baldric-----Divers"
+  },
+  {
+    "id": "1350",
+    "name": "Amulette éthérée---7555Amulette"
+  },
+  {
+    "id": "1352",
+    "name": "Potion de faible résistance au feu-----Divers"
+  },
+  {
+    "id": "1353",
+    "name": "Potion de faible résistance à la terre-----Divers"
+  },
+  {
+    "id": "1354",
+    "name": "Potion de faible résistance à l'eau-----Divers"
+  },
+  {
+    "id": "1355",
+    "name": "Potion de faible résistance à l'air-----Divers"
+  },
+  {
+    "id": "1356",
+    "name": "Potion de faible protection contre le Mal-----Divers"
+  },
+  {
+    "id": "1357",
+    "name": "Potion de résistance partielle au feu-----Divers"
+  },
+  {
+    "id": "1358",
+    "name": "Potion de résistance partielle à l'eau-----Divers"
+  },
+  {
+    "id": "1359",
+    "name": "Potion de résistance partielle à la terre-----Divers"
+  },
+  {
+    "id": "1360",
+    "name": "Potion de résistance partielle à l'air-----Divers"
+  },
+  {
+    "id": "1361",
+    "name": "Potion de protection partielle contre le Mal-----Divers"
+  },
+  {
+    "id": "1362",
+    "name": "Potion de grande résistance au feu-----Divers"
+  },
+  {
+    "id": "1363",
+    "name": "Potion de grande résistance à la terre-----Divers"
+  },
+  {
+    "id": "1364",
+    "name": "Potion de grande résistance à l'eau-----Divers"
+  },
+  {
+    "id": "1365",
+    "name": "Potion de grande résistance à l'air-----Divers"
+  },
+  {
+    "id": "1366",
+    "name": "Potion de grande protection contre le Mal-----Divers"
+  },
+  {
+    "id": "1367",
+    "name": "Potion de guérison divine-----Divers"
+  },
+  {
+    "id": "1368",
+    "name": "Potion de guérison critique-----Divers"
+  },
+  {
+    "id": "1369",
+    "name": "Potion de guérison des blessures graves-----Divers"
+  },
+  {
+    "id": "1370",
+    "name": "Potion de guérison légère-----Divers"
+  },
+  {
+    "id": "1371",
+    "name": "Bandelettes de momie-----Arme"
+  },
+  {
+    "id": "1375",
+    "name": "Ailes d'une chauve-souris vampire-----Divers"
+  },
+  {
+    "id": "1377",
+    "name": "Fléau d'armes du soleil140---201Arme"
+  },
+  {
+    "id": "1379",
+    "name": "Collier de dents de loup-----Amulette"
+  },
+  {
+    "id": "1380",
+    "name": "Pied humain-----Divers"
+  },
+  {
+    "id": "1382",
+    "name": "Anneau de sorcellerie en jade---9065Anneau"
+  },
+  {
+    "id": "1383",
+    "name": "Hachette de qualité runique242----Arme"
+  },
+  {
+    "id": "1385",
+    "name": "Hache de guerre de qualité runique271----Arme"
+  },
+  {
+    "id": "1388",
+    "name": "Hache Lormyrienne300----Arme"
+  },
+  {
+    "id": "1392",
+    "name": "Hache à deux tranchants en mithril runique416----Arme"
+  },
+  {
+    "id": "1393",
+    "name": "Francisque en Fer Ancien416----Arme"
+  },
+  {
+    "id": "1396",
+    "name": "Hache antique des Haut-Elfes590----Arme"
+  },
+  {
+    "id": "1397",
+    "name": "Sceptre de bois-----Arme"
+  },
+  {
+    "id": "1399",
+    "name": "Sceptre de bois de puissance-----Arme"
+  },
+  {
+    "id": "1400",
+    "name": "Sceptre de fer magique12--21-Arme"
+  },
+  {
+    "id": "1401",
+    "name": "Sceptre de fer de puissance12--21-Arme"
+  },
+  {
+    "id": "1402",
+    "name": "Bâton de combat13--30-Arme"
+  },
+  {
+    "id": "1403",
+    "name": "Bâton de combat magique13--30-Arme"
+  },
+  {
+    "id": "1404",
+    "name": "Bâton de combat de puissance13--30-Arme"
+  },
+  {
+    "id": "1405",
+    "name": "Sceptre d'épines14--39-Arme"
+  },
+  {
+    "id": "1406",
+    "name": "Sceptre d'épines magique14--39-Arme"
+  },
+  {
+    "id": "1407",
+    "name": "Sceptre d'épines de puissance14--39-Arme"
+  },
+  {
+    "id": "1408",
+    "name": "Bo15--47-Arme"
+  },
+  {
+    "id": "1409",
+    "name": "Bo magique15--47-Arme"
+  },
+  {
+    "id": "1410",
+    "name": "Bo de puissance15--47-Arme"
+  },
+  {
+    "id": "1411",
+    "name": "Rang-kwan16--56-Arme"
+  },
+  {
+    "id": "1412",
+    "name": "Rang-kwan magique16--56-Arme"
+  },
+  {
+    "id": "1413",
+    "name": "Rang-kwan de puissance16--56-Arme"
+  },
+  {
+    "id": "1414",
+    "name": "Tetsubo17--68-Arme"
+  },
+  {
+    "id": "1415",
+    "name": "Tetsubo magique17--68-Arme"
+  },
+  {
+    "id": "1416",
+    "name": "Tetsubo de puissance17--68-Arme"
+  },
+  {
+    "id": "1418",
+    "name": "Gourdin sacré-----Arme"
+  },
+  {
+    "id": "1419",
+    "name": "Gourdin de Gob'-----Arme"
+  },
+  {
+    "id": "1420",
+    "name": "Gourdin renforcé béni30---34Arme"
+  },
+  {
+    "id": "1421",
+    "name": "Gourdin renforcé sacré30---34Arme"
+  },
+  {
+    "id": "1422",
+    "name": "Marteau de guerre renforcé béni40---41Arme"
+  },
+  {
+    "id": "1423",
+    "name": "Marteau de guerre renforcé sacré40---41Arme"
+  },
+  {
+    "id": "1424",
+    "name": "Masse des Ogres40---41Arme"
+  },
+  {
+    "id": "1425",
+    "name": "Marteau de guerre en acier trempé béni60---56Arme"
+  },
+  {
+    "id": "1426",
+    "name": "Marteau de guerre en acier trempé sacré60---56Arme"
+  },
+  {
+    "id": "1430",
+    "name": "Masse de qualité bénie110---94Arme"
+  },
+  {
+    "id": "1431",
+    "name": "Masse de qualité sacrée110---94Arme"
+  },
+  {
+    "id": "1432",
+    "name": "Fléau de qualité béni140---116Arme"
+  },
+  {
+    "id": "1433",
+    "name": "Fléau de qualité sacré140---116Arme"
+  },
+  {
+    "id": "1434",
+    "name": "Fléau de Guerre du Roy Theopold140---116Arme"
+  },
+  {
+    "id": "1435",
+    "name": "Fléau de mithril béni170---139Arme"
+  },
+  {
+    "id": "1436",
+    "name": "Fléau de mithril sacré170---139Arme"
+  },
+  {
+    "id": "1437",
+    "name": "Fléau d'armes en mithril béni210---169Arme"
+  },
+  {
+    "id": "1438",
+    "name": "Fléau d'armes en mithril sacré210---169Arme"
+  },
+  {
+    "id": "1439",
+    "name": "Etoile de l'Aube210---169Arme"
+  },
+  {
+    "id": "1441",
+    "name": "Fléau d'armes ancien sacré260---206Arme"
+  },
+  {
+    "id": "1442",
+    "name": "Fléau antique des Haut-Elfes260---206Arme"
+  },
+  {
+    "id": "1443",
+    "name": "Collier de soumission-----Amulette"
+  },
+  {
+    "id": "1444",
+    "name": "Anneau de fiançailles en argent-----Anneau"
+  },
+  {
+    "id": "1445",
+    "name": "Bague de diamant-----Anneau"
+  },
+  {
+    "id": "1446",
+    "name": "Alliance en or-----Anneau"
+  },
+  {
+    "id": "1448",
+    "name": "Potion de courage-----Divers"
+  },
+  {
+    "id": "1449",
+    "name": "Potion de dextérité-----Divers"
+  },
+  {
+    "id": "1453",
+    "name": "Collier orc rudimentaire---2936Amulette"
+  },
+  {
+    "id": "1454",
+    "name": "Anneau d'onyx---2931Anneau"
+  },
+  {
+    "id": "1455",
+    "name": "Anneau de pierre de lune---1946Anneau"
+  },
+  {
+    "id": "1456",
+    "name": "Anneau de pierre de sang---3018Anneau"
+  },
+  {
+    "id": "1457",
+    "name": "Anneau de précision---2929Anneau"
+  },
+  {
+    "id": "1458",
+    "name": "Collier de pierres de sang---4421Amulette"
+  },
+  {
+    "id": "1459",
+    "name": "Anneau du clan des minotaures---2733Anneau"
+  },
+  {
+    "id": "1460",
+    "name": "Talisman de protection contre le Mal---4053Amulette"
+  },
+  {
+    "id": "1462",
+    "name": "Sceptre Thanataire-----Arme"
+  },
+  {
+    "id": "1464",
+    "name": "Infusion à l'écorce de saule-----Divers"
+  },
+  {
+    "id": "1465",
+    "name": "Crâne de démon-----Divers"
+  },
+  {
+    "id": "1482",
+    "name": "Anneau des ténèbres-----Anneau"
+  },
+  {
+    "id": "1483",
+    "name": "Anneau des Initiés---2325Anneau"
+  },
+  {
+    "id": "1484",
+    "name": "Dague du crâne12--4315Arme"
+  },
+  {
+    "id": "1485",
+    "name": "Scalpel de chirurgien30--3050Arme"
+  },
+  {
+    "id": "1541",
+    "name": "Fiole vide-----Divers"
+  },
+  {
+    "id": "1542",
+    "name": "Hyperpotion d'esprit clair-----Divers"
+  },
+  {
+    "id": "1543",
+    "name": "Hyperpotion de tranquillité-----Divers"
+  },
+  {
+    "id": "1544",
+    "name": "Hyperpotion de fureur-----Divers"
+  },
+  {
+    "id": "1545",
+    "name": "Hyperpotion de dextérité-----Divers"
+  },
+  {
+    "id": "1546",
+    "name": "Hyperpotion de courage-----Divers"
+  },
+  {
+    "id": "1560",
+    "name": "Poing d'Artherk210--15169Arme"
+  },
+  {
+    "id": "1570",
+    "name": "Jambières d'armure céleste-100-5050Jambière"
+  },
+  {
+    "id": "1577",
+    "name": "Sabre sacré120----Arme"
+  },
+  {
+    "id": "1578",
+    "name": "Sceptre de vigueur tordu25--10020Arme"
+  },
+  {
+    "id": "1579",
+    "name": "Anneau béni des Hauts Althéens---10075Anneau"
+  },
+  {
+    "id": "1583",
+    "name": "Fouetteur180----Arme"
+  },
+  {
+    "id": "1587",
+    "name": "Poing d'Artherk200----Arme"
+  },
+  {
+    "id": "1603",
+    "name": "P15-----Divers"
+  },
+  {
+    "id": "1613",
+    "name": "Pile de bois d'un arbre démoniaque-----Divers"
+  },
+  {
+    "id": "1614",
+    "name": "Pierre de courage-----Divers"
+  },
+  {
+    "id": "1615",
+    "name": "Cristal brut-----Focus"
+  },
+  {
+    "id": "1617",
+    "name": "Clef du chaos-----Divers"
+  },
+  {
+    "id": "1620",
+    "name": "Lame de majesté184----Arme"
+  },
+  {
+    "id": "1622",
+    "name": "Lame d'héroïsme155----Arme"
+  },
+  {
+    "id": "1623",
+    "name": "Anneau de vraie foi---1590Anneau"
+  },
+  {
+    "id": "1624",
+    "name": "Fiole d'eau bénite-----Divers"
+  },
+  {
+    "id": "1625",
+    "name": "Graal de pureté-----Divers"
+  },
+  {
+    "id": "1627",
+    "name": "Symbole d'espoir---2568Amulette"
+  },
+  {
+    "id": "1628",
+    "name": "Perle de la sagesse-----Anneau"
+  },
+  {
+    "id": "1629",
+    "name": "Perle en forme de larme-----Anneau"
+  },
+  {
+    "id": "1632",
+    "name": "Chandelle de l'éternité-----Divers"
+  },
+  {
+    "id": "1633",
+    "name": "Talisman de contrôle de la pensée-----Amulette"
+  },
+  {
+    "id": "1636",
+    "name": "Pierre immortelle-----Divers"
+  },
+  {
+    "id": "1637",
+    "name": "Sablier essentiel-----Divers"
+  },
+  {
+    "id": "1638",
+    "name": "Tambour finement ciselé-----Divers"
+  },
+  {
+    "id": "1696",
+    "name": "37-----Divers"
+  },
+  {
+    "id": "1731",
+    "name": "72-----Divers"
+  },
+  {
+    "id": "1741",
+    "name": "82-----Divers"
+  },
+  {
+    "id": "1771",
+    "name": "116-----Divers"
+  },
+  {
+    "id": "1788",
+    "name": "143-----Divers"
+  },
+  {
+    "id": "1789",
+    "name": "144-----Divers"
+  },
+  {
+    "id": "1790",
+    "name": "145-----Divers"
+  },
+  {
+    "id": "1794",
+    "name": "Robe blanche brillante-12-2035Robe"
+  },
+  {
+    "id": "1795",
+    "name": "Robe des elfes en soie d'argent-16-2073Robe"
+  },
+  {
+    "id": "1796",
+    "name": "Robe des âmes purifiées-18-15103Robe"
+  },
+  {
+    "id": "1797",
+    "name": "Manteau des bénédictions infinies-31-17347Robe"
+  },
+  {
+    "id": "1798",
+    "name": "Robe des bois-12-2828Robe"
+  },
+  {
+    "id": "1799",
+    "name": "Robe de protection ornée de runes-16-4350Robe"
+  },
+  {
+    "id": "1800",
+    "name": "Manteau du renouveau-25-106112Robe"
+  },
+  {
+    "id": "1801",
+    "name": "Robe noire flottante-12-4015Robe"
+  },
+  {
+    "id": "1802",
+    "name": "Cape de tromperie-16-7815Robe"
+  },
+  {
+    "id": "1803",
+    "name": "Costume des morts-21-12815Robe"
+  },
+  {
+    "id": "1804",
+    "name": "Manteau de la mort-25-20115Robe"
+  },
+  {
+    "id": "1805",
+    "name": "Manteau des brumes de minuit-59-75022Robe"
+  },
+  {
+    "id": "1806",
+    "name": "Manteau du prestidigitateur-20-11020Robe"
+  },
+  {
+    "id": "1807",
+    "name": "Manteau des éléments-75-297238Robe"
+  },
+  {
+    "id": "1808",
+    "name": "Robe d'ArchMagi-27-19015Robe"
+  },
+  {
+    "id": "1935",
+    "name": "Clef de l'Ame en peine-----Divers"
+  },
+  {
+    "id": "1936",
+    "name": "Clef du Banni-----Divers"
+  },
+  {
+    "id": "1937",
+    "name": "Clef de l'Oublié-----Divers"
+  },
+  {
+    "id": "1938",
+    "name": "Clef tordue-----Divers"
+  },
+  {
+    "id": "1945",
+    "name": "Clef d'Ascension-----Divers"
+  },
+  {
+    "id": "1946",
+    "name": "Clef d'os poli-----Divers"
+  },
+  {
+    "id": "1956",
+    "name": "Clef d'Artherk-----Divers"
+  },
+  {
+    "id": "1957",
+    "name": "Clef d'Ogrimar-----Divers"
+  },
+  {
+    "id": "1959",
+    "name": "Crâne de malfrat-----Divers"
+  },
+  {
+    "id": "1961",
+    "name": "Esprit d'Artherk-----Anneau"
+  },
+  {
+    "id": "1963",
+    "name": "Croc de tarentule-----Divers"
+  },
+  {
+    "id": "1965",
+    "name": "Venin d'araignée-----Divers"
+  },
+  {
+    "id": "1966",
+    "name": "Venin nephilien-----Divers"
+  },
+  {
+    "id": "1991",
+    "name": "Coeur d'Artherk-----Amulette"
+  },
+  {
+    "id": "1992",
+    "name": "Crâne d'Ogrimar-----Divers"
+  },
+  {
+    "id": "1993",
+    "name": "Sang d'Ogrimar-----Divers"
+  },
+  {
+    "id": "1994",
+    "name": "Os d'Ogrimar-----Divers"
+  },
+  {
+    "id": "1997",
+    "name": "Crâne du mal-----Divers"
+  },
+  {
+    "id": "1998",
+    "name": "Sang de démon-----Divers"
+  },
+  {
+    "id": "1999",
+    "name": "Potion fétide-----Divers"
+  },
+  {
+    "id": "2000",
+    "name": "Dague de sacrifice sanglante-----Arme"
+  },
+  {
+    "id": "2009",
+    "name": "Coeur de Jafo-10-95110Amulette"
+  },
+  {
+    "id": "2010",
+    "name": "Anneau du roublard--305241Anneau"
+  },
+  {
+    "id": "2011",
+    "name": "Bague-araignée-10-11330Anneau"
+  },
+  {
+    "id": "2012",
+    "name": "Peau d'antilope-----Divers"
+  },
+  {
+    "id": "2014",
+    "name": "Anneau d'agilité de Jander---6355Anneau"
+  },
+  {
+    "id": "2025",
+    "name": "Anneau du duelliste30-5015-Anneau"
+  },
+  {
+    "id": "2026",
+    "name": "Anneau du ranger--501713Anneau"
+  },
+  {
+    "id": "2027",
+    "name": "Scalp de Moon Tug-----Divers"
+  },
+  {
+    "id": "2028",
+    "name": "masse de Skraugbashor280-252025Arme"
+  },
+  {
+    "id": "2031",
+    "name": "Anneau du lion3022262525Anneau"
+  },
+  {
+    "id": "2032",
+    "name": "Epée de puissance de Crystal251-215350Arme"
+  },
+  {
+    "id": "2034",
+    "name": "Grande hache du corbeau242-432525Arme"
+  },
+  {
+    "id": "2035",
+    "name": "Cape d'Armagueddon-37-17570Robe"
+  },
+  {
+    "id": "2037",
+    "name": "Lame perdue du dragon242----Arme"
+  },
+  {
+    "id": "2039",
+    "name": "Lame Assassine110-6515-Arme"
+  },
+  {
+    "id": "2040",
+    "name": "Sinistre lame de guerre266-35-35Arme"
+  },
+  {
+    "id": "2041",
+    "name": "Robe des enfers-28-12385Robe"
+  },
+  {
+    "id": "2045",
+    "name": "Lame-Gemme Sombre242--5343Arme"
+  },
+  {
+    "id": "2046",
+    "name": "Bâton de langueur20--8335Arme"
+  },
+  {
+    "id": "2047",
+    "name": "Manteau de l'Archer25-703040Robe"
+  },
+  {
+    "id": "2051",
+    "name": "Anneau de révélation-----Anneau"
+  },
+  {
+    "id": "2055",
+    "name": "Mirroir magique-----Divers"
+  },
+  {
+    "id": "2059",
+    "name": "Potion de guérison du poison-----Divers"
+  },
+  {
+    "id": "2060",
+    "name": "Potion de guérison de la rage-----Divers"
+  },
+  {
+    "id": "2061",
+    "name": "Potion de guérison de maladie-----Divers"
+  },
+  {
+    "id": "2062",
+    "name": "Test White Robe-----Robe"
+  },
+  {
+    "id": "2109",
+    "name": "Bouclier du Damné-175-6060Bouclier"
+  },
+  {
+    "id": "2115",
+    "name": "Clef de coffre-fort d'acier-----Divers"
+  },
+  {
+    "id": "2117",
+    "name": "Robe céleste-28-73135Robe"
+  },
+  {
+    "id": "2123",
+    "name": "Rapière au pommeau incrusté de saphir198--4043Arme"
+  },
+  {
+    "id": "2124",
+    "name": "Lame prismatique126----Arme"
+  },
+  {
+    "id": "2126",
+    "name": "Bâton de Bastet, l'Esprit des Chats20--7373Arme"
+  },
+  {
+    "id": "2133",
+    "name": "Clef de métal brillant-----Divers"
+  },
+  {
+    "id": "2134",
+    "name": "Clef de fer noircie-----Divers"
+  },
+  {
+    "id": "2135",
+    "name": "Clef en os taillé-----Divers"
+  },
+  {
+    "id": "2166",
+    "name": "Vin fin-----Divers"
+  },
+  {
+    "id": "2168",
+    "name": "Ambroisie-----Divers"
+  },
+  {
+    "id": "2190",
+    "name": "Anneau du soigneur----50Anneau"
+  },
+  {
+    "id": "2193",
+    "name": "Collier d'Athena---2634Amulette"
+  },
+  {
+    "id": "2194",
+    "name": "Anneau du templier---1466Anneau"
+  },
+  {
+    "id": "2202",
+    "name": "Clef de fer noircie-----Divers"
+  },
+  {
+    "id": "2203",
+    "name": "Anneau du berserker---2025Anneau"
+  },
+  {
+    "id": "2205",
+    "name": "Jambières d'armure océane150125---Jambière"
+  },
+  {
+    "id": "2222",
+    "name": "Clef métallique couverte de rosée-----Divers"
+  },
+  {
+    "id": "2223",
+    "name": "Clef en os effritée-----Divers"
+  },
+  {
+    "id": "2224",
+    "name": "Luth magique-----Divers"
+  },
+  {
+    "id": "2226",
+    "name": "Collier du Coeur Noir-----Amulette"
+  },
+  {
+    "id": "2247",
+    "name": "Clef de Madrigan-----Divers"
+  },
+  {
+    "id": "2255",
+    "name": "Balais-----Divers"
+  },
+  {
+    "id": "2256",
+    "name": "Bougie-----Divers"
+  },
+  {
+    "id": "2257",
+    "name": "Fourchette-----Divers"
+  },
+  {
+    "id": "2258",
+    "name": "Cuillère-----Bouclier"
+  },
+  {
+    "id": "2259",
+    "name": "Rouleau à pâtisserie-----Divers"
+  },
+  {
+    "id": "2260",
+    "name": "Bâton de marche tordu17--68-Arme"
+  },
+  {
+    "id": "2262",
+    "name": "Cuillère d'argent du Prophète-----Bouclier"
+  },
+  {
+    "id": "2263",
+    "name": "Epée d'Os du berserker141-222025Arme"
+  },
+  {
+    "id": "2264",
+    "name": "Epée large ensanglantée82----Arme"
+  },
+  {
+    "id": "2265",
+    "name": "Anneau de l'assassin-----Anneau"
+  },
+  {
+    "id": "2267",
+    "name": "Buveur de sang68----Arme"
+  },
+  {
+    "id": "2268",
+    "name": "Casse-tête60---56Arme"
+  },
+  {
+    "id": "2269",
+    "name": "Manteau du Voyeur-12-3520Robe"
+  },
+  {
+    "id": "2272",
+    "name": "Marteau de Révélation60---56Arme"
+  },
+  {
+    "id": "2279",
+    "name": "Gourdin-----Arme"
+  },
+  {
+    "id": "2280",
+    "name": "Couteau de boucher-----Arme"
+  },
+  {
+    "id": "2283",
+    "name": "Bouclier de Skraug-----Bouclier"
+  },
+  {
+    "id": "2285",
+    "name": "Heaume squelette-----Heaume"
+  },
+  {
+    "id": "2286",
+    "name": "Skeleton shield-----Bouclier"
+  },
+  {
+    "id": "2287",
+    "name": "Epée squelette-----Arme"
+  },
+  {
+    "id": "2290",
+    "name": "Anneau du forestier--601515Anneau"
+  },
+  {
+    "id": "2342",
+    "name": "Couvercle de poubelle-----Bouclier"
+  },
+  {
+    "id": "2349",
+    "name": "Anneau de l'adepte----25Anneau"
+  },
+  {
+    "id": "2350",
+    "name": "Anneau du prêtre----75Anneau"
+  },
+  {
+    "id": "2352",
+    "name": "Anneau du Gladiateur108-752025Anneau"
+  },
+  {
+    "id": "2353",
+    "name": "Amulette de Héros8035634040Amulette"
+  },
+  {
+    "id": "2360",
+    "name": "Bouclier de Sombrebois150180---Bouclier"
+  },
+  {
+    "id": "2361",
+    "name": "Hallebarde runique425150---Arme"
+  },
+  {
+    "id": "2363",
+    "name": "Clef cuivre-----Divers"
+  },
+  {
+    "id": "2364",
+    "name": "Clef d'argent-----Divers"
+  },
+  {
+    "id": "2365",
+    "name": "Clef d'emeraude-----Divers"
+  },
+  {
+    "id": "2369",
+    "name": "Bière pleine-----Divers"
+  },
+  {
+    "id": "2370",
+    "name": "Bière pleine avec mousse-----Divers"
+  },
+  {
+    "id": "2381",
+    "name": "Goblet en cuivre-----Divers"
+  },
+  {
+    "id": "2382",
+    "name": "Goblet en argent-----Divers"
+  },
+  {
+    "id": "2383",
+    "name": "Coupe en or-----Divers"
+  },
+  {
+    "id": "2384",
+    "name": "Coupe en bois-----Divers"
+  },
+  {
+    "id": "2387",
+    "name": "Vasque-----Divers"
+  },
+  {
+    "id": "2388",
+    "name": "Un lingot d'or-----Divers"
+  },
+  {
+    "id": "2389",
+    "name": "Des lingots d'or-----Divers"
+  },
+  {
+    "id": "2393",
+    "name": "Des lingots d'argent-----Divers"
+  },
+  {
+    "id": "2394",
+    "name": "Rateau-----Divers"
+  },
+  {
+    "id": "2396",
+    "name": "Balais-----Divers"
+  },
+  {
+    "id": "2398",
+    "name": "Ciseaux-----Divers"
+  },
+  {
+    "id": "2399",
+    "name": "Balance-----Divers"
+  },
+  {
+    "id": "2400",
+    "name": "Sablier-----Divers"
+  },
+  {
+    "id": "2401",
+    "name": "Grandes fioles de l'alchimiste-----Divers"
+  },
+  {
+    "id": "2402",
+    "name": "Petites fioles de l'alchimiste-----Divers"
+  },
+  {
+    "id": "2403",
+    "name": "Fiole de l'alchimiste pauvre-----Divers"
+  },
+  {
+    "id": "2404",
+    "name": "Rondin-----Divers"
+  },
+  {
+    "id": "2405",
+    "name": "Pile de rondins-----Divers"
+  },
+  {
+    "id": "2406",
+    "name": "Branches-----Divers"
+  },
+  {
+    "id": "2415",
+    "name": "Canne à pêche-----Divers"
+  },
+  {
+    "id": "2416",
+    "name": "Poisson-----Divers"
+  },
+  {
+    "id": "2421",
+    "name": "Arbalette-----Arc"
+  },
+  {
+    "id": "2422",
+    "name": "Banjo-----Divers"
+  },
+  {
+    "id": "2423",
+    "name": "Tambour-----Divers"
+  },
+  {
+    "id": "2424",
+    "name": "Carte d'Arakas-----Divers"
+  },
+  {
+    "id": "2425",
+    "name": "Scie-----Divers"
+  },
+  {
+    "id": "2430",
+    "name": "Pelle-----Divers"
+  },
+  {
+    "id": "2431",
+    "name": "Fiole rouge-----Divers"
+  },
+  {
+    "id": "2432",
+    "name": "Fiole bleue-----Divers"
+  },
+  {
+    "id": "2433",
+    "name": "Fiole noire-----Divers"
+  },
+  {
+    "id": "2434",
+    "name": "Fiole jaune-----Divers"
+  },
+  {
+    "id": "2435",
+    "name": "Fiole grise-----Divers"
+  },
+  {
+    "id": "2441",
+    "name": "Bol en pierre-----Arc"
+  },
+  {
+    "id": "2443",
+    "name": "Cuillière en bois-----Divers"
+  },
+  {
+    "id": "2444",
+    "name": "Coutelas-----Divers"
+  },
+  {
+    "id": "2445",
+    "name": "Rouleau à patisserie pour faire des bons gateaux qui sont bons-----Divers"
+  },
+  {
+    "id": "2447",
+    "name": "Chandelier triple-----Divers"
+  },
+  {
+    "id": "2448",
+    "name": "Mirroir enchanté de la Mère LULU-----Divers"
+  },
+  {
+    "id": "2449",
+    "name": "Bâton à bout vert-----Arme"
+  },
+  {
+    "id": "2452",
+    "name": "Hache a deux mains-----Arme"
+  },
+  {
+    "id": "2453",
+    "name": "Hachette-----Arme"
+  },
+  {
+    "id": "2454",
+    "name": "Epée à pommeau-----Arme"
+  },
+  {
+    "id": "2455",
+    "name": "Hallebarde-----Arme"
+  },
+  {
+    "id": "2462",
+    "name": "Panier de fruit avec gros couvercle-----Divers"
+  },
+  {
+    "id": "2463",
+    "name": "Panier de fruit avec petit couvercle et verdure-----Divers"
+  },
+  {
+    "id": "2464",
+    "name": "Panier de fruit avec petit couvercle-----Divers"
+  },
+  {
+    "id": "2465",
+    "name": "Pomme-----Divers"
+  },
+  {
+    "id": "2470",
+    "name": "Anneau Feu Follet-----Anneau"
+  },
+  {
+    "id": "2526",
+    "name": "Mouchoir de consolation-----Arme"
+  },
+  {
+    "id": "2559",
+    "name": "Amulette attractive---5050Amulette"
+  },
+  {
+    "id": "2560",
+    "name": "Amulette de fortune---110102Amulette"
+  },
+  {
+    "id": "2563",
+    "name": "Potion de faible puissance en feu-----Divers"
+  },
+  {
+    "id": "2564",
+    "name": "Potion de faible puissance en eau-----Divers"
+  },
+  {
+    "id": "2565",
+    "name": "Potion de faible puissance en air-----Divers"
+  },
+  {
+    "id": "2566",
+    "name": "Potion de faible puissance en lumière-----Divers"
+  },
+  {
+    "id": "2567",
+    "name": "Potion de faible puissance en nécromancie-----Divers"
+  },
+  {
+    "id": "2568",
+    "name": "Potion de puissance partielle en air-----Divers"
+  },
+  {
+    "id": "2569",
+    "name": "Potion de puissance partielle en eau-----Divers"
+  },
+  {
+    "id": "2570",
+    "name": "Potion de puissance partielle en feu-----Divers"
+  },
+  {
+    "id": "2571",
+    "name": "Potion de puissance partielle en lumière-----Divers"
+  },
+  {
+    "id": "2573",
+    "name": "Potion de puissance partielle en terre-----Divers"
+  },
+  {
+    "id": "2574",
+    "name": "Potion de faible puissance en terre-----Divers"
+  },
+  {
+    "id": "2575",
+    "name": "Potion de forte puissance en air-----Divers"
+  },
+  {
+    "id": "2576",
+    "name": "Potion de forte puissance en eau-----Divers"
+  },
+  {
+    "id": "2577",
+    "name": "Potion de forte puissance en feu-----Divers"
+  },
+  {
+    "id": "2578",
+    "name": "Potion de forte puissance en lumière-----Divers"
+  },
+  {
+    "id": "2579",
+    "name": "Potion de forte puissance en nécromancie-----Divers"
+  },
+  {
+    "id": "2580",
+    "name": "Potion de forte puissance en terre-----Divers"
+  },
+  {
+    "id": "2581",
+    "name": "Potion du chanceux-----Divers"
+  },
+  {
+    "id": "2583",
+    "name": "Fiole de soufre-----Divers"
+  },
+  {
+    "id": "2588",
+    "name": "Sautoir éclatant1010101010Amulette"
+  },
+  {
+    "id": "2785",
+    "name": "Ailes de papillon bleues-25---Divers"
+  },
+  {
+    "id": "2786",
+    "name": "Ailes de papillon oranges-25---Divers"
+  },
+  {
+    "id": "2787",
+    "name": "Ailes de papillon roses-25---Divers"
+  },
+  {
+    "id": "2788",
+    "name": "Ailes de papillon vertes-25---Divers"
+  },
+  {
+    "id": "2815",
+    "name": "Jambon-----Divers"
+  },
+  {
+    "id": "2860",
+    "name": "Chapeau-----Heaume"
+  },
+  {
+    "id": "2861",
+    "name": "Chapeau-----Heaume"
+  },
+  {
+    "id": "2862",
+    "name": "Chapeau-----Heaume"
+  },
+  {
+    "id": "2887",
+    "name": "Venin de serpent-----Divers"
+  },
+  {
+    "id": "2893",
+    "name": "Branche de noyer-----Divers"
+  },
+  {
+    "id": "2899",
+    "name": "Branche de chêne-----Divers"
+  },
+  {
+    "id": "2900",
+    "name": "Branche de cèdre-----Divers"
+  },
+  {
+    "id": "2901",
+    "name": "Branche d'oxandre-----Divers"
+  },
+  {
+    "id": "2906",
+    "name": "Branche de bois mort-----Divers"
+  },
+  {
+    "id": "2907",
+    "name": "Branche de frêne-----Divers"
+  },
+  {
+    "id": "2908",
+    "name": "Branche d'orme-----Divers"
+  },
+  {
+    "id": "2909",
+    "name": "Une fiole verte à l'odeur suspecte-----Divers"
+  },
+  {
+    "id": "2926",
+    "name": "Oeuf d'horreur railleuse-----Divers"
+  },
+  {
+    "id": "2930",
+    "name": "Fiole de puissant poison-----Divers"
+  },
+  {
+    "id": "2939",
+    "name": "Pépite de mithril-----Divers"
+  },
+  {
+    "id": "2950",
+    "name": "Pointes de flèches en fer-----Arme"
+  },
+  {
+    "id": "2959",
+    "name": "Chope de bière naine-----Divers"
+  },
+  {
+    "id": "3075",
+    "name": "Amulette de pyrolyse30--45620Amulette"
+  },
+  {
+    "id": "3077",
+    "name": "Anneau d'hibernation40603053818Anneau"
+  },
+  {
+    "id": "3078",
+    "name": "Echarpe-30-132123Amulette"
+  },
+  {
+    "id": "3082",
+    "name": "Amulette en plumes-30-146110Amulette"
+  },
+  {
+    "id": "3088",
+    "name": "Lingot d'iridium-----Divers"
+  },
+  {
+    "id": "3089",
+    "name": "Morceau d'ivoire d'Agamaoth-----Divers"
+  },
+  {
+    "id": "3105",
+    "name": "Aile de gargouille-----Divers"
+  },
+  {
+    "id": "3115",
+    "name": "Oeuf de Pâques-----Divers"
+  },
+  {
+    "id": "3116",
+    "name": "Oeuf de Jezikos-----Divers"
+  },
+  {
+    "id": "3136",
+    "name": "Potion d'inertie mineure-----Divers"
+  },
+  {
+    "id": "3137",
+    "name": "Potion d'inertie-----Divers"
+  },
+  {
+    "id": "3138",
+    "name": "Potion d'inertie majeure-----Divers"
+  },
+  {
+    "id": "3139",
+    "name": "Potion de dissipation de la téléportation-----Divers"
+  },
+  {
+    "id": "3140",
+    "name": "Potion de dissipation du glas-----Divers"
+  },
+  {
+    "id": "3141",
+    "name": "Potion d'immunisation mineure au glas-----Divers"
+  },
+  {
+    "id": "3142",
+    "name": "Potion d'immunisation au glas-----Divers"
+  },
+  {
+    "id": "3143",
+    "name": "Potion d'immunisation majeure au glas-----Divers"
+  },
+  {
+    "id": "3158",
+    "name": "Potion de dissipation du saturnisme-----Divers"
+  },
+  {
+    "id": "3164",
+    "name": "Jambières d'armure légendaire de Jander19080800--Jambière"
+  },
+  {
+    "id": "3170",
+    "name": "Pépite de cuivre-----Divers"
+  },
+  {
+    "id": "3172",
+    "name": "Pépite de fer-----Divers"
+  },
+  {
+    "id": "3173",
+    "name": "Pépite d'argent-----Divers"
+  },
+  {
+    "id": "3177",
+    "name": "Ancienne amulette elfe190-850--Amulette"
+  },
+  {
+    "id": "3181",
+    "name": "Bouclier du preux40034080-300Bouclier"
+  },
+  {
+    "id": "3182",
+    "name": "Anneau de combat centaure42010077-338Anneau"
+  },
+  {
+    "id": "3184",
+    "name": "Joyau du brave294140836060Amulette"
+  },
+  {
+    "id": "3188",
+    "name": "Cervelière du barbare102560---Heaume"
+  },
+  {
+    "id": "3192",
+    "name": "Jambières du barbare102560---Jambière"
+  },
+  {
+    "id": "3194",
+    "name": "Targe40020080300-Bouclier"
+  },
+  {
+    "id": "3195",
+    "name": "Collier en dents d'ours850-9055-Amulette"
+  },
+  {
+    "id": "3200",
+    "name": "Sceptre de déflagration68--60321Arme"
+  },
+  {
+    "id": "3201",
+    "name": "Fiole de poison-----Divers"
+  },
+  {
+    "id": "3202",
+    "name": "Décoction de mandragore-----Divers"
+  },
+  {
+    "id": "3204",
+    "name": "Sceptre de déferlante68--60321Arme"
+  },
+  {
+    "id": "3276",
+    "name": "Crin de Licorne-----Divers"
+  },
+  {
+    "id": "3279",
+    "name": "Venin melforien-----Divers"
+  },
+  {
+    "id": "3305",
+    "name": "Feuille de Consoude-----Divers"
+  },
+  {
+    "id": "3310",
+    "name": "Potion du Centaure-----Divers"
+  },
+  {
+    "id": "3315",
+    "name": "Décoction de ginseng-----Divers"
+  },
+  {
+    "id": "3316",
+    "name": "Décoction d'arnica-----Divers"
+  },
+  {
+    "id": "3317",
+    "name": "Décoction de ciguë-----Divers"
+  },
+  {
+    "id": "3318",
+    "name": "Fiole d'absolution-----Divers"
+  },
+  {
+    "id": "3319",
+    "name": "Antidote contre l'empoisonnement-----Divers"
+  },
+  {
+    "id": "3320",
+    "name": "Feuille de ciguë-----Divers"
+  },
+  {
+    "id": "3322",
+    "name": "Potion d'obscurité-----Divers"
+  },
+  {
+    "id": "3323",
+    "name": "Décoction d'immortelle-----Divers"
+  },
+  {
+    "id": "3324",
+    "name": "Décoction de maté-----Divers"
+  },
+  {
+    "id": "3325",
+    "name": "Décoction de datura-----Divers"
+  },
+  {
+    "id": "3326",
+    "name": "Décoction de fleur de cactus-----Divers"
+  },
+  {
+    "id": "3327",
+    "name": "Antidote contre l'empoisonnement sévère-----Divers"
+  },
+  {
+    "id": "3328",
+    "name": "Potion de faible régénération-----Divers"
+  },
+  {
+    "id": "3329",
+    "name": "Décoction de consoude-----Divers"
+  },
+  {
+    "id": "3330",
+    "name": "Décoction d'acérola-----Divers"
+  },
+  {
+    "id": "3331",
+    "name": "Décoction de colchique-----Divers"
+  },
+  {
+    "id": "3332",
+    "name": "Décoction de boldo-----Divers"
+  },
+  {
+    "id": "3333",
+    "name": "Fiole de poison mortel-----Divers"
+  },
+  {
+    "id": "3334",
+    "name": "Antidote contre l'empoisonnement mortel-----Divers"
+  },
+  {
+    "id": "3336",
+    "name": "Résidu éthéré-----Divers"
+  },
+  {
+    "id": "3339",
+    "name": "Feuille de maté-----Divers"
+  },
+  {
+    "id": "3340",
+    "name": "Feuille de datura-----Divers"
+  },
+  {
+    "id": "3342",
+    "name": "Rate de Troll-----Divers"
+  },
+  {
+    "id": "3345",
+    "name": "Feuille de boldo-----Divers"
+  },
+  {
+    "id": "3346",
+    "name": "Poil de Centaure-----Divers"
+  },
+  {
+    "id": "3347",
+    "name": "Rate de Troll érudit-----Divers"
+  },
+  {
+    "id": "3348",
+    "name": "Fiole d'éther-----Divers"
+  },
+  {
+    "id": "3350",
+    "name": "Potion de régénération-----Divers"
+  },
+  {
+    "id": "3351",
+    "name": "Potion du fortuné-----Divers"
+  },
+  {
+    "id": "3352",
+    "name": "Fer à cheval-----Amulette"
+  },
+  {
+    "id": "3372",
+    "name": "Extrait d'énergie pure-----Divers"
+  },
+  {
+    "id": "3373",
+    "name": "Ailes de gargouille-----Divers"
+  },
+  {
+    "id": "3374",
+    "name": "Chair décomposée-----Divers"
+  },
+  {
+    "id": "3375",
+    "name": "Cervelle de lérot-----Divers"
+  },
+  {
+    "id": "3376",
+    "name": "Patte de scolopendre-----Divers"
+  },
+  {
+    "id": "3378",
+    "name": "Essence spectrale-----Divers"
+  },
+  {
+    "id": "3381",
+    "name": "Ecume de larve toxique-----Divers"
+  },
+  {
+    "id": "3382",
+    "name": "Pustule de furonclus-----Divers"
+  },
+  {
+    "id": "3384",
+    "name": "Braises démoniaques-----Divers"
+  },
+  {
+    "id": "3385",
+    "name": "Infusion de mana-----Divers"
+  },
+  {
+    "id": "3389",
+    "name": "Potion de régénération majeure-----Divers"
+  },
+  {
+    "id": "3390",
+    "name": "Potion d'invincibilité-----Divers"
+  },
+  {
+    "id": "3403",
+    "name": "Fiole du Démon-----Divers"
+  },
+  {
+    "id": "3414",
+    "name": "Pépite d'adamantite-----Divers"
+  },
+  {
+    "id": "3415",
+    "name": "Pépite de métrolite-----Divers"
+  },
+  {
+    "id": "3416",
+    "name": "Pépite de plomb-----Divers"
+  },
+  {
+    "id": "3417",
+    "name": "Pépite d'acier-----Divers"
+  },
+  {
+    "id": "3418",
+    "name": "Lingot de fer-----Divers"
+  },
+  {
+    "id": "3419",
+    "name": "Lingot de plomb-----Divers"
+  },
+  {
+    "id": "3420",
+    "name": "Lingot d'acier-----Divers"
+  },
+  {
+    "id": "3421",
+    "name": "Lingot de cuivre-----Divers"
+  },
+  {
+    "id": "3422",
+    "name": "Lingot de mithril-----Divers"
+  },
+  {
+    "id": "3423",
+    "name": "Lingot d'argent-----Divers"
+  },
+  {
+    "id": "3424",
+    "name": "Lingot d'adamantite-----Divers"
+  },
+  {
+    "id": "3425",
+    "name": "Lingot d'or-----Divers"
+  },
+  {
+    "id": "3426",
+    "name": "Lingot de métrolite-----Divers"
+  },
+  {
+    "id": "3431",
+    "name": "Vertèbre de Kraanian-----Divers"
+  },
+  {
+    "id": "3440",
+    "name": "Bandelette éraflée-----Arme"
+  },
+  {
+    "id": "3441",
+    "name": "Feuille de protecteur-----Divers"
+  },
+  {
+    "id": "3442",
+    "name": "Scorie de l'incendiaire-----Divers"
+  },
+  {
+    "id": "3444",
+    "name": "Couenne de rampilios-----Divers"
+  },
+  {
+    "id": "3445",
+    "name": "Coeur vaillant-----Divers"
+  },
+  {
+    "id": "3446",
+    "name": "Source d'obscurité-----Divers"
+  },
+  {
+    "id": "3447",
+    "name": "Alliage de confection skraug-----Divers"
+  },
+  {
+    "id": "3448",
+    "name": "Mousse mystique-----Divers"
+  },
+  {
+    "id": "3449",
+    "name": "Opisthosome virulent-----Divers"
+  },
+  {
+    "id": "3456",
+    "name": "Moelle du bouffon morbide-----Divers"
+  },
+  {
+    "id": "3457",
+    "name": "Boîte à secrets-----Divers"
+  },
+  {
+    "id": "3480",
+    "name": "Bol du dragon-----Arc"
+  },
+  {
+    "id": "3481",
+    "name": "Braise de Bzerillis-----Divers"
+  },
+  {
+    "id": "3488",
+    "name": "Liquide amniotique de Kraanian gelé-----Divers"
+  },
+  {
+    "id": "3489",
+    "name": "Naseaux calcinés-----Divers"
+  },
+  {
+    "id": "3490",
+    "name": "Butin de la corruption-----Divers"
+  },
+  {
+    "id": "3493",
+    "name": "Tentacule oculaire-----Divers"
+  },
+  {
+    "id": "3494",
+    "name": "Flamme persistante-----Divers"
+  },
+  {
+    "id": "3495",
+    "name": "Graisse apocalyptique-----Divers"
+  },
+  {
+    "id": "3502",
+    "name": "Plume passe-partout-----Divers"
+  },
+  {
+    "id": "3503",
+    "name": "Chaînon brisé-----Anneau"
+  },
+  {
+    "id": "3504",
+    "name": "Sceau d'éternité-----Divers"
+  },
+  {
+    "id": "3505",
+    "name": "Osselet du traître-----Divers"
+  },
+  {
+    "id": "3506",
+    "name": "Sabot de Centaure-----Amulette"
+  },
+  {
+    "id": "3510",
+    "name": "Vitalité de Troll-----Divers"
+  },
+  {
+    "id": "3512",
+    "name": "Patte des ténèbres-----Divers"
+  },
+  {
+    "id": "3513",
+    "name": "Plume chargée d'énergie maléfique-----Divers"
+  },
+  {
+    "id": "3514",
+    "name": "Mâchoire chapardée-----Divers"
+  },
+  {
+    "id": "3515",
+    "name": "Source de vigueur-----Divers"
+  },
+  {
+    "id": "3517",
+    "name": "Souche enchantée-----Divers"
+  },
+  {
+    "id": "3521",
+    "name": "Morceau de peau du loup solitaire-----Divers"
+  },
+  {
+    "id": "3522",
+    "name": "Eclats de glace-----Divers"
+  },
+  {
+    "id": "3524",
+    "name": "Bulbe de l'éveillé-----Divers"
+  },
+  {
+    "id": "3528",
+    "name": "Sueur de confusion-----Divers"
+  },
+  {
+    "id": "3529",
+    "name": "Griffe du Cerberus-----Divers"
+  },
+  {
+    "id": "3531",
+    "name": "Bobine de fil de chanvre-----Divers"
+  },
+  {
+    "id": "3532",
+    "name": "Bobine de fil métallisé-----Divers"
+  },
+  {
+    "id": "3533",
+    "name": "Bobine de fil de cuivre-----Divers"
+  },
+  {
+    "id": "3534",
+    "name": "Bobine de fil de coton-----Divers"
+  },
+  {
+    "id": "3535",
+    "name": "Bobine de fil d'argent-----Divers"
+  },
+  {
+    "id": "3536",
+    "name": "Bobine de fil de soie-----Divers"
+  },
+  {
+    "id": "3537",
+    "name": "Bobine de fil de soie elfe-----Divers"
+  },
+  {
+    "id": "3544",
+    "name": "Bénard capteur de magie-20-3538Jambière"
+  },
+  {
+    "id": "3553",
+    "name": "Col de satin noir-18-5624Amulette"
+  },
+  {
+    "id": "3555",
+    "name": "Coiffe malicieuse-12-4139Heaume"
+  },
+  {
+    "id": "3559",
+    "name": "Chapeau du nomade d'Arakas-----Heaume"
+  },
+  {
+    "id": "3560",
+    "name": "Gerbe de chanvre-----Divers"
+  },
+  {
+    "id": "3561",
+    "name": "Feuille de charme-----Divers"
+  },
+  {
+    "id": "3562",
+    "name": "Aiguille à coudre-----Divers"
+  },
+  {
+    "id": "3563",
+    "name": "Poil de rat brun-----Divers"
+  },
+  {
+    "id": "3567",
+    "name": "Fluide de démolécularisation-----Divers"
+  },
+  {
+    "id": "3575",
+    "name": "Courte lame de fer-----Arme"
+  },
+  {
+    "id": "3576",
+    "name": "Courte lame d'acier-----Arme"
+  },
+  {
+    "id": "3577",
+    "name": "Courte lame d'adamantite-----Arme"
+  },
+  {
+    "id": "3578",
+    "name": "Courte lame de mithril-----Arme"
+  },
+  {
+    "id": "3579",
+    "name": "Longue lame de fer-----Arme"
+  },
+  {
+    "id": "3580",
+    "name": "Longue lame d'acier-----Arme"
+  },
+  {
+    "id": "3581",
+    "name": "Longue lame d'adamantite-----Arme"
+  },
+  {
+    "id": "3582",
+    "name": "Longue lame de mithril-----Arme"
+  },
+  {
+    "id": "3583",
+    "name": "Lame courbée de fer-----Arme"
+  },
+  {
+    "id": "3584",
+    "name": "Lame courbée d'acier-----Arme"
+  },
+  {
+    "id": "3585",
+    "name": "Lame courbée d'adamantite-----Arme"
+  },
+  {
+    "id": "3586",
+    "name": "Lame courbée de mithril-----Arme"
+  },
+  {
+    "id": "3587",
+    "name": "Hampe de fer-----Arme"
+  },
+  {
+    "id": "3588",
+    "name": "Hampe d'acier-----Arme"
+  },
+  {
+    "id": "3589",
+    "name": "Hampe d'adamantite-----Arme"
+  },
+  {
+    "id": "3590",
+    "name": "Hampe de mithril-----Arme"
+  },
+  {
+    "id": "3591",
+    "name": "Poulie en fer-----Amulette"
+  },
+  {
+    "id": "3592",
+    "name": "Poulie en acier-----Amulette"
+  },
+  {
+    "id": "3593",
+    "name": "Poulie en adamantite-----Amulette"
+  },
+  {
+    "id": "3594",
+    "name": "Poulie en mithril-----Amulette"
+  },
+  {
+    "id": "3595",
+    "name": "Pointes de flèches en acier-----Arme"
+  },
+  {
+    "id": "3596",
+    "name": "Pointes de flèches en adamantite-----Arme"
+  },
+  {
+    "id": "3597",
+    "name": "Pointes de flèches en mithril-----Arme"
+  },
+  {
+    "id": "3598",
+    "name": "Boule à pointes en fer-----Arme"
+  },
+  {
+    "id": "3599",
+    "name": "Boule à pointes en acier-----Arme"
+  },
+  {
+    "id": "3600",
+    "name": "Boule à pointes en adamantite-----Arme"
+  },
+  {
+    "id": "3601",
+    "name": "Boule à pointes en mithril-----Arme"
+  },
+  {
+    "id": "3602",
+    "name": "Chaîne de fer-----Arme"
+  },
+  {
+    "id": "3603",
+    "name": "Chaîne d'acier-----Arme"
+  },
+  {
+    "id": "3604",
+    "name": "Chaîne d'adamantite-----Arme"
+  },
+  {
+    "id": "3605",
+    "name": "Chaîne de mithril-----Arme"
+  },
+  {
+    "id": "3606",
+    "name": "Cimeterre à pommeau isolant33----Arme"
+  },
+  {
+    "id": "3610",
+    "name": "Corne de Gobelin-----Divers"
+  },
+  {
+    "id": "3611",
+    "name": "Pommeau de rapière rouillé-----Arme"
+  },
+  {
+    "id": "3613",
+    "name": "Côte d'ivoire-----Divers"
+  },
+  {
+    "id": "3614",
+    "name": "Crâne de Guurk-----Divers"
+  },
+  {
+    "id": "3615",
+    "name": "Défense d'Ogre-----Divers"
+  },
+  {
+    "id": "3616",
+    "name": "Ecusson d'Orkanis-----Bouclier"
+  },
+  {
+    "id": "3617",
+    "name": "Médaillon de Rhykin Dhin-----Amulette"
+  },
+  {
+    "id": "3619",
+    "name": "Fût en frêne-----Arme"
+  },
+  {
+    "id": "3620",
+    "name": "Sécrétions putrides-----Divers"
+  },
+  {
+    "id": "3622",
+    "name": "Cuissot en cuir d'Orc-----Jambière"
+  },
+  {
+    "id": "3623",
+    "name": "Cuissot en cuir de Minotaure-----Jambière"
+  },
+  {
+    "id": "3624",
+    "name": "Cuissot en plaque de Centaure-----Jambière"
+  },
+  {
+    "id": "3626",
+    "name": "Grève en cuir d'Orc-----Jambière"
+  },
+  {
+    "id": "3627",
+    "name": "Grève en cuir de Minotaure-----Jambière"
+  },
+  {
+    "id": "3628",
+    "name": "Grève en plaque de Centaure-----Jambière"
+  },
+  {
+    "id": "3643",
+    "name": "Rondelle d'iridium-----Divers"
+  },
+  {
+    "id": "3644",
+    "name": "Anneau en fer forgé-----Anneau"
+  },
+  {
+    "id": "3645",
+    "name": "Anneau en plomb-----Anneau"
+  },
+  {
+    "id": "3646",
+    "name": "Anneau en acier-----Anneau"
+  },
+  {
+    "id": "3647",
+    "name": "Anneau en cuivre-----Anneau"
+  },
+  {
+    "id": "3648",
+    "name": "Anneau en mithril-----Anneau"
+  },
+  {
+    "id": "3649",
+    "name": "Anneau en argent-----Anneau"
+  },
+  {
+    "id": "3650",
+    "name": "Anneau en adamantite-----Anneau"
+  },
+  {
+    "id": "3651",
+    "name": "Anneau en or forgé-----Anneau"
+  },
+  {
+    "id": "3652",
+    "name": "Anneau en métrolite-----Anneau"
+  },
+  {
+    "id": "3656",
+    "name": "Jambières reluisantes-40---Anneau"
+  },
+  {
+    "id": "3664",
+    "name": "Pantalon de légèreté-115---Jambière"
+  },
+  {
+    "id": "3666",
+    "name": "Pendule du pillard-----Divers"
+  },
+  {
+    "id": "3669",
+    "name": "Substance acide-----Divers"
+  },
+  {
+    "id": "3670",
+    "name": "Hyoïde surdimensionné-----Divers"
+  },
+  {
+    "id": "3675",
+    "name": "Fût en orme-----Arme"
+  },
+  {
+    "id": "3676",
+    "name": "Fût en noyer-----Arme"
+  },
+  {
+    "id": "3677",
+    "name": "Fût en chêne-----Arme"
+  },
+  {
+    "id": "3678",
+    "name": "Fût en cèdre-----Arme"
+  },
+  {
+    "id": "3679",
+    "name": "Fût en oxandre-----Arme"
+  },
+  {
+    "id": "3680",
+    "name": "Fût en févier épineux-----Arme"
+  },
+  {
+    "id": "3681",
+    "name": "Fût en mélèze-----Arme"
+  },
+  {
+    "id": "3682",
+    "name": "Fût en cyprès-----Arme"
+  },
+  {
+    "id": "3683",
+    "name": "Manche en os-----Divers"
+  },
+  {
+    "id": "3684",
+    "name": "Manche en orme-----Arme"
+  },
+  {
+    "id": "3685",
+    "name": "Manche en noyer-----Arme"
+  },
+  {
+    "id": "3686",
+    "name": "Manche en chêne-----Arme"
+  },
+  {
+    "id": "3687",
+    "name": "Manche en cèdre-----Arme"
+  },
+  {
+    "id": "3688",
+    "name": "Manche en oxandre-----Arme"
+  },
+  {
+    "id": "3689",
+    "name": "Manche en févier épineux-----Arme"
+  },
+  {
+    "id": "3690",
+    "name": "Manche en mélèze-----Arme"
+  },
+  {
+    "id": "3691",
+    "name": "Manche en cyprès-----Arme"
+  },
+  {
+    "id": "3692",
+    "name": "Bâton en orme-----Arme"
+  },
+  {
+    "id": "3693",
+    "name": "Bâton en chêne-----Arme"
+  },
+  {
+    "id": "3694",
+    "name": "Bâton en oxandre-----Arme"
+  },
+  {
+    "id": "3695",
+    "name": "Bâton en mélèze-----Arme"
+  },
+  {
+    "id": "3697",
+    "name": "Sceptre de rafale68--310314Arme"
+  },
+  {
+    "id": "3698",
+    "name": "Sceptre de ravage68--21603Arme"
+  },
+  {
+    "id": "3702",
+    "name": "Casque en frêne-30---Heaume"
+  },
+  {
+    "id": "3703",
+    "name": "Pointes de flèches en frêne taillé-----Arme"
+  },
+  {
+    "id": "3704",
+    "name": "Targe en frêne-40---Bouclier"
+  },
+  {
+    "id": "3705",
+    "name": "Protège-nuque en orme-32-2427Amulette"
+  },
+  {
+    "id": "3707",
+    "name": "Rondache en orme-45---Bouclier"
+  },
+  {
+    "id": "3716",
+    "name": "Glande nauséabonde-----Divers"
+  },
+  {
+    "id": "3717",
+    "name": "Ecorce de vénérable centenaire de Mato-----Divers"
+  },
+  {
+    "id": "3718",
+    "name": "Sève de qualité séculaire-----Divers"
+  },
+  {
+    "id": "3719",
+    "name": "Macération macabre-----Divers"
+  },
+  {
+    "id": "3749",
+    "name": "Morceau de peau de loup tannée-----Divers"
+  },
+  {
+    "id": "3750",
+    "name": "Braies du don de soi-40--71Jambière"
+  },
+  {
+    "id": "3751",
+    "name": "Coiffe sardonique-12-3941Heaume"
+  },
+  {
+    "id": "3752",
+    "name": "Bande isolante à la magie-----Arme"
+  },
+  {
+    "id": "3755",
+    "name": "Voile de pestilence-15-12317Heaume"
+  },
+  {
+    "id": "3758",
+    "name": "Chapeau du nomade de Raven's Dust-----Heaume"
+  },
+  {
+    "id": "3759",
+    "name": "Robe stochastique-35-168143Robe"
+  },
+  {
+    "id": "3760",
+    "name": "Robe des orages-27-103102Robe"
+  },
+  {
+    "id": "3762",
+    "name": "Manteau de bonne foi-27-15190Robe"
+  },
+  {
+    "id": "3764",
+    "name": "Chapeau du nomade de Stoneheim-----Heaume"
+  },
+  {
+    "id": "3765",
+    "name": "Chapeau du nomade de Drake Island-----Heaume"
+  },
+  {
+    "id": "3768",
+    "name": "Jambières étincelantes-80---Anneau"
+  },
+  {
+    "id": "3784",
+    "name": "Fleur de coton-----Arme"
+  },
+  {
+    "id": "3785",
+    "name": "Catalyseur de puissance orc-----Divers"
+  },
+  {
+    "id": "3786",
+    "name": "Morceau de peau de Minotaure-----Divers"
+  },
+  {
+    "id": "3787",
+    "name": "Morceau de peau de Centaure-----Divers"
+  },
+  {
+    "id": "3788",
+    "name": "Prestine athermane-----Divers"
+  },
+  {
+    "id": "3789",
+    "name": "Dard toxique-----Divers"
+  },
+  {
+    "id": "3790",
+    "name": "Pus infectieux-----Divers"
+  },
+  {
+    "id": "3791",
+    "name": "Morceau de peau de Profundus-----Divers"
+  },
+  {
+    "id": "3794",
+    "name": "Bâton du sourcier-----Arme"
+  },
+  {
+    "id": "3795",
+    "name": "Ornement prestigieux-----Divers"
+  },
+  {
+    "id": "3796",
+    "name": "Sceptre de sagesse16---48Arme"
+  },
+  {
+    "id": "3797",
+    "name": "Sceptre d'intelligence16--48-Arme"
+  },
+  {
+    "id": "3798",
+    "name": "Sceptre de résistance16--3939Arme"
+  },
+  {
+    "id": "3799",
+    "name": "Pointe affûtée-----Arme"
+  },
+  {
+    "id": "3800",
+    "name": "Eperon de jade-----Divers"
+  },
+  {
+    "id": "3801",
+    "name": "Enduit de Rampilios-----Divers"
+  },
+  {
+    "id": "3802",
+    "name": "Pellicule glissant au vent-----Divers"
+  },
+  {
+    "id": "3803",
+    "name": "Chaîne de l'au-delà-----Arme"
+  },
+  {
+    "id": "3804",
+    "name": "Sceau de Goldmoon-----Divers"
+  },
+  {
+    "id": "3806",
+    "name": "Bol en bois-----Arc"
+  },
+  {
+    "id": "3807",
+    "name": "Vase en bois-----Divers"
+  },
+  {
+    "id": "3809",
+    "name": "Casque du mirage-65371414Heaume"
+  },
+  {
+    "id": "3813",
+    "name": "Brèche éthérée-90-5426Bouclier"
+  },
+  {
+    "id": "3814",
+    "name": "Bâton du maudit22--7218Arme"
+  },
+  {
+    "id": "3817",
+    "name": "Sabot de Minotaure-----Amulette"
+  },
+  {
+    "id": "3818",
+    "name": "Baguette tordue-----Arme"
+  },
+  {
+    "id": "3821",
+    "name": "Ongle crochu de damnation-----Divers"
+  },
+  {
+    "id": "3823",
+    "name": "Marcassite-----Divers"
+  },
+  {
+    "id": "3824",
+    "name": "Pointes de flèches en métal disparu-----Arme"
+  },
+  {
+    "id": "3826",
+    "name": "Bâton des ombres22--6213Arme"
+  },
+  {
+    "id": "3827",
+    "name": "Bâton de dilapidation22-345639Arme"
+  },
+  {
+    "id": "3835",
+    "name": "Cocon de soie-----Divers"
+  },
+  {
+    "id": "3836",
+    "name": "Zeste de peau d'Orc-----Divers"
+  },
+  {
+    "id": "3837",
+    "name": "Fil de Yoggoth-----Divers"
+  },
+  {
+    "id": "3838",
+    "name": "Glande séricigène-----Divers"
+  },
+  {
+    "id": "3839",
+    "name": "Poil de Skraug Moon Tug-----Divers"
+  },
+  {
+    "id": "3840",
+    "name": "Morceau de peau de Skraug-----Divers"
+  },
+  {
+    "id": "3841",
+    "name": "Toxine de la ruche-----Divers"
+  },
+  {
+    "id": "3844",
+    "name": "Braises animées-----Divers"
+  },
+  {
+    "id": "3845",
+    "name": "Givre rocheux-----Divers"
+  },
+  {
+    "id": "3847",
+    "name": "Fibre végétale de Sintelle-----Divers"
+  },
+  {
+    "id": "3848",
+    "name": "Blason secret d'Amaëlle-----Divers"
+  },
+  {
+    "id": "3849",
+    "name": "Blason secret de Falyel-----Divers"
+  },
+  {
+    "id": "3850",
+    "name": "Blason secret de Gorodek-----Divers"
+  },
+  {
+    "id": "3851",
+    "name": "Blason secret d'Isilaë-----Divers"
+  },
+  {
+    "id": "3852",
+    "name": "Blason secret de Jalaam-----Divers"
+  },
+  {
+    "id": "3853",
+    "name": "Blason secret de Klauzar-----Divers"
+  },
+  {
+    "id": "3854",
+    "name": "Blason secret de Miryden-----Divers"
+  },
+  {
+    "id": "3855",
+    "name": "Blason secret de Silvius-----Divers"
+  },
+  {
+    "id": "3856",
+    "name": "Blason secret de Valmar-----Divers"
+  },
+  {
+    "id": "3857",
+    "name": "Blason secret de Xordiv-----Divers"
+  },
+  {
+    "id": "3858",
+    "name": "Morceau de peau de B'Ronkhan-----Divers"
+  },
+  {
+    "id": "3860",
+    "name": "Corpuscule de résurrection-----Divers"
+  },
+  {
+    "id": "3863",
+    "name": "Bâton de déprédation24-436552Arme"
+  },
+  {
+    "id": "3864",
+    "name": "Sceptre de drain de vie2647-13415Arme"
+  },
+  {
+    "id": "3865",
+    "name": "Sceptre de drain de mana2647-8762Arme"
+  },
+  {
+    "id": "3869",
+    "name": "Pavois de Serisiss-140---Bouclier"
+  },
+  {
+    "id": "3871",
+    "name": "Jambières de stabilité-125---Jambière"
+  },
+  {
+    "id": "3872",
+    "name": "Jambières des alvors-150---Jambière"
+  },
+  {
+    "id": "3875",
+    "name": "Trognon de pomme-----Divers"
+  },
+  {
+    "id": "3876",
+    "name": "Masse marquée-----Divers"
+  },
+  {
+    "id": "3877",
+    "name": "Emprunte de Démon-----Divers"
+  },
+  {
+    "id": "3881",
+    "name": "Soupir effervescent-----Divers"
+  },
+  {
+    "id": "3882",
+    "name": "Patène du preux-----Arc"
+  },
+  {
+    "id": "3883",
+    "name": "Corde vocale de terreur-----Divers"
+  },
+  {
+    "id": "3884",
+    "name": "Brin de pénombre-----Divers"
+  },
+  {
+    "id": "3885",
+    "name": "Paume de Troll-----Divers"
+  },
+  {
+    "id": "3887",
+    "name": "Doigt du malfrat-----Divers"
+  },
+  {
+    "id": "3888",
+    "name": "Parure prestigieuse-----Divers"
+  },
+  {
+    "id": "3889",
+    "name": "Dent de drainage-----Divers"
+  },
+  {
+    "id": "3890",
+    "name": "Canine régénératrice-----Divers"
+  },
+  {
+    "id": "3891",
+    "name": "Mandibule d'absorption de la vie-----Divers"
+  },
+  {
+    "id": "3892",
+    "name": "Empennage des temps anciens-----Divers"
+  },
+  {
+    "id": "3894",
+    "name": "Bague de rejet spirituel-----Anneau"
+  },
+  {
+    "id": "3895",
+    "name": "Fût en ébonite-----Arme"
+  },
+  {
+    "id": "3896",
+    "name": "Pointes de flèches en tungstène-----Arme"
+  },
+  {
+    "id": "3897",
+    "name": "Branche de févier épineux-----Divers"
+  },
+  {
+    "id": "3909",
+    "name": "Capture de nuage électrique-----Divers"
+  },
+  {
+    "id": "3910",
+    "name": "Bobine de fil spirituel-----Divers"
+  },
+  {
+    "id": "3911",
+    "name": "Branche en mélèze-----Divers"
+  },
+  {
+    "id": "3917",
+    "name": "Fleuret de défaillance324--10519Arme"
+  },
+  {
+    "id": "3918",
+    "name": "Lame perfide-----Arme"
+  },
+  {
+    "id": "3919",
+    "name": "Phalange de fatalité-----Divers"
+  },
+  {
+    "id": "3922",
+    "name": "Lame d'artisanat skraug-----Arme"
+  },
+  {
+    "id": "3923",
+    "name": "Lame brisée de champion-----Arme"
+  },
+  {
+    "id": "3925",
+    "name": "Exuvie de Cobra-----Divers"
+  },
+  {
+    "id": "3933",
+    "name": "Moustache vibratoire-----Divers"
+  },
+  {
+    "id": "3934",
+    "name": "Breuvage énergisant-----Divers"
+  },
+  {
+    "id": "3935",
+    "name": "Lame de métrolite-----Arme"
+  },
+  {
+    "id": "3936",
+    "name": "Effluve du trépas-----Divers"
+  },
+  {
+    "id": "3937",
+    "name": "Lame en acier métrolite-----Arme"
+  },
+  {
+    "id": "3938",
+    "name": "Manche en acier métrolite-----Arme"
+  },
+  {
+    "id": "3943",
+    "name": "Feuille-----Divers"
+  },
+  {
+    "id": "3948",
+    "name": "Feuille de qualité-----Divers"
+  },
+  {
+    "id": "3956",
+    "name": "Feuille d'excellente qualité-----Divers"
+  },
+  {
+    "id": "3967",
+    "name": "Feuille de qualité exceptionnelle-----Divers"
+  },
+  {
+    "id": "4027",
+    "name": "Bague comminatoire165-927570Anneau"
+  },
+  {
+    "id": "4028",
+    "name": "Chevalière de stagnation136-958580Anneau"
+  },
+  {
+    "id": "4085",
+    "name": "Targe du belluaire736340---Bouclier"
+  },
+  {
+    "id": "4089",
+    "name": "Cristaux de glace-----Divers"
+  },
+  {
+    "id": "4091",
+    "name": "Copeaux osseux-----Divers"
+  },
+  {
+    "id": "4092",
+    "name": "Phéromone de défiance-----Divers"
+  },
+  {
+    "id": "4095",
+    "name": "Croc de vipère-----Divers"
+  },
+  {
+    "id": "4097",
+    "name": "Trichobothrie-----Divers"
+  },
+  {
+    "id": "4098",
+    "name": "Flacon de givre énergétique-----Divers"
+  },
+  {
+    "id": "4103",
+    "name": "Sceptre des arts occultes69--71523Arme"
+  },
+  {
+    "id": "4105",
+    "name": "Nova420---342Arme"
+  },
+  {
+    "id": "4110",
+    "name": "Lingot de titane-----Divers"
+  },
+  {
+    "id": "4111",
+    "name": "Bâton en cyprès-----Arme"
+  },
+  {
+    "id": "4112",
+    "name": "Essence de regret-----Divers"
+  },
+  {
+    "id": "4113",
+    "name": "Glande de l'enragé-----Divers"
+  },
+  {
+    "id": "4114",
+    "name": "Patte baladeuse-----Divers"
+  },
+  {
+    "id": "4115",
+    "name": "Peau de lézard-----Divers"
+  },
+  {
+    "id": "4119",
+    "name": "Pièce d'acier renforcé-----Bouclier"
+  },
+  {
+    "id": "4120",
+    "name": "Mucus de l'intouchable-----Divers"
+  },
+  {
+    "id": "4122",
+    "name": "Viscères du profane-----Divers"
+  },
+  {
+    "id": "4123",
+    "name": "Fragment incandescent-----Divers"
+  },
+  {
+    "id": "4125",
+    "name": "Chevelure électrostatique-----Divers"
+  },
+  {
+    "id": "4126",
+    "name": "Médaillon des rois oubliés-----Amulette"
+  },
+  {
+    "id": "4127",
+    "name": "Catalyseur d'énergie-----Divers"
+  },
+  {
+    "id": "4133",
+    "name": "Venin de scorpion-----Divers"
+  },
+  {
+    "id": "4135",
+    "name": "Essence des vents-----Divers"
+  },
+  {
+    "id": "4136",
+    "name": "Empennage antique-----Divers"
+  },
+  {
+    "id": "4139",
+    "name": "Reste de mana purifié-----Divers"
+  },
+  {
+    "id": "4140",
+    "name": "Bobine de fil spirituel éthéré-----Divers"
+  },
+  {
+    "id": "4170",
+    "name": "Tégument du Cerberus-----Divers"
+  },
+  {
+    "id": "4171",
+    "name": "Branche de cyprès-----Divers"
+  },
+  {
+    "id": "4173",
+    "name": "Côte de Cerberus-----Divers"
+  },
+  {
+    "id": "4174",
+    "name": "Flamberge ancestrale1050--112101Arme"
+  },
+  {
+    "id": "4176",
+    "name": "Ligaments de Cerberus-----Arme"
+  },
+  {
+    "id": "4212",
+    "name": "Suaire du Phoenix brodé-38-23697Robe"
+  },
+  {
+    "id": "4213",
+    "name": "Robe des flammes ardentes brodée-38-69723Robe"
+  },
+  {
+    "id": "4214",
+    "name": "Robe des fournaises brodée-31-33119Robe"
+  },
+  {
+    "id": "4232",
+    "name": "Marteau du malin210--169-Arme"
+  },
+  {
+    "id": "4233",
+    "name": "Marteau du damné260--206-Arme"
+  },
+  {
+    "id": "4247",
+    "name": "Clef ancienne-----Divers"
+  },
+  {
+    "id": "4264",
+    "name": "Robe d'apparat noire-----Robe"
+  },
+  {
+    "id": "4265",
+    "name": "Robe d'apparat blanche-----Robe"
+  },
+  {
+    "id": "4266",
+    "name": "Robe d'apparat verte-----Robe"
+  },
+  {
+    "id": "4267",
+    "name": "Robe d'apparat rouge-----Robe"
+  },
+  {
+    "id": "4296",
+    "name": "Chapeau d'apparat rouge-----Heaume"
+  },
+  {
+    "id": "4297",
+    "name": "Chapeau d'apparat noir-----Heaume"
+  },
+  {
+    "id": "4299",
+    "name": "Chapeau de fête-----Heaume"
+  },
+  {
+    "id": "4301",
+    "name": "Balance-----Divers"
+  },
+  {
+    "id": "4302",
+    "name": "Bandage-----Arme"
+  },
+  {
+    "id": "4303",
+    "name": "Banjo-----Divers"
+  },
+  {
+    "id": "4304",
+    "name": "Balai-----Divers"
+  },
+  {
+    "id": "4305",
+    "name": "Bougie-----Divers"
+  },
+  {
+    "id": "4306",
+    "name": "Eprouvette-----Divers"
+  },
+  {
+    "id": "4307",
+    "name": "Eprouvettes x3-----Divers"
+  },
+  {
+    "id": "4308",
+    "name": "Eprouvettes x6-----Divers"
+  },
+  {
+    "id": "4309",
+    "name": "Canne à pêche-----Divers"
+  },
+  {
+    "id": "4310",
+    "name": "Sablier-----Divers"
+  },
+  {
+    "id": "4311",
+    "name": "Bol-----Arc"
+  },
+  {
+    "id": "4312",
+    "name": "Fourchette-----Divers"
+  },
+  {
+    "id": "4313",
+    "name": "Couteau-----Divers"
+  },
+  {
+    "id": "4314",
+    "name": "Rouleau à pâtisserie-----Divers"
+  },
+  {
+    "id": "4315",
+    "name": "Cuiller-----Bouclier"
+  },
+  {
+    "id": "4316",
+    "name": "Miroir-----Divers"
+  },
+  {
+    "id": "4317",
+    "name": "Scie-----Divers"
+  },
+  {
+    "id": "4318",
+    "name": "Pelle-----Divers"
+  },
+  {
+    "id": "4319",
+    "name": "Panier de citrons-----Divers"
+  },
+  {
+    "id": "4320",
+    "name": "Panier de tomates-----Divers"
+  },
+  {
+    "id": "4321",
+    "name": "Panier de haricots-----Divers"
+  },
+  {
+    "id": "4327",
+    "name": "Tambour-----Divers"
+  },
+  {
+    "id": "4328",
+    "name": "Téléscope-----Divers"
+  },
+  {
+    "id": "4337",
+    "name": "Oeuf de B'Zerillis-----Divers"
+  },
+  {
+    "id": "4338",
+    "name": "Oeuf de B'Zurkhan-----Divers"
+  },
+  {
+    "id": "4414",
+    "name": "Oeufs à la liqueur-----Divers"
+  },
+  {
+    "id": "4415",
+    "name": "Patte de lapin en chocolat-----Divers"
+  },
+  {
+    "id": "4461",
+    "name": "Amulette du Maudit39010093513-Amulette"
+  },
+  {
+    "id": "4462",
+    "name": "Amulette du Damné48510098420-Amulette"
+  },
+  {
+    "id": "4463",
+    "name": "Cercle d'obsidienne400100100500-Anneau"
+  },
+  {
+    "id": "4464",
+    "name": "Sceau du Seigneur de Guerre51010095400-Anneau"
+  },
+  {
+    "id": "4467",
+    "name": "Bouclier du décrépit120100-95-Bouclier"
+  },
+  {
+    "id": "4767",
+    "name": "Talisman du croisé42012089100401Amulette"
+  },
+  {
+    "id": "4772",
+    "name": "Résidus de mana stable-----Divers"
+  },
+  {
+    "id": "4775",
+    "name": "Plume du chapeau de Quaran-----Divers"
+  },
+  {
+    "id": "4776",
+    "name": "Symbole de piété-----Amulette"
+  },
+  {
+    "id": "4777",
+    "name": "Calice sacré-----Divers"
+  },
+  {
+    "id": "4778",
+    "name": "Symbole du vaillant-----Divers"
+  },
+  {
+    "id": "4779",
+    "name": "Relique d'un autre temps-----Divers"
+  },
+  {
+    "id": "4789",
+    "name": "Bouclier Porte Bonheur-----Bouclier"
+  },
+  {
+    "id": "4792",
+    "name": "Clef en acier-----Divers"
+  },
+  {
+    "id": "4793",
+    "name": "Malédiction en bouteille-----Divers"
+  },
+  {
+    "id": "4836",
+    "name": "Lait de poule-----Divers"
+  },
+  {
+    "id": "4941",
+    "name": "Feuille d'Echninocactus-----Divers"
+  },
+  {
+    "id": "4942",
+    "name": "Feuille de Nénuphar-----Divers"
+  },
+  {
+    "id": "4943",
+    "name": "Feuille de Souci-----Divers"
+  },
+  {
+    "id": "4944",
+    "name": "Feuille de Coriandre-----Divers"
+  },
+  {
+    "id": "4951",
+    "name": "Potion de protection contre le venin d'Ambrane-----Divers"
+  },
+  {
+    "id": "4960",
+    "name": "Fiole résistante-----Divers"
+  },
+  {
+    "id": "4981",
+    "name": "Bague en argent ornée de trèfles-----Anneau"
+  },
+  {
+    "id": "4988",
+    "name": "Plume étincelante-----Divers"
+  },
+  {
+    "id": "4992",
+    "name": "Fiole de protection contre la terreur-----Divers"
+  },
+  {
+    "id": "5051",
+    "name": "Anneau de l'apprenti forgeron-----Anneau"
+  },
+  {
+    "id": "5079",
+    "name": "Anneau de l'apprenti armurier-----Anneau"
+  },
+  {
+    "id": "5081",
+    "name": "Ration de soin-----Divers"
+  },
+  {
+    "id": "5082",
+    "name": "Anneau de l'apprenti apothicaire-----Anneau"
+  },
+  {
+    "id": "5083",
+    "name": "Anneau de l'apprenti bijoutier-----Anneau"
+  },
+  {
+    "id": "5084",
+    "name": "Anneau de l'apprenti couturier-----Anneau"
+  },
+  {
+    "id": "5085",
+    "name": "Anneau de l'apprenti ébéniste-----Anneau"
+  },
+  {
+    "id": "5136",
+    "name": "Fluide de démolécularisation supérieur-----Divers"
+  },
+  {
+    "id": "5161",
+    "name": "Fiole de lave-----Divers"
+  },
+  {
+    "id": "5191",
+    "name": "Insigne de l'académie-----Divers"
+  }
+]
