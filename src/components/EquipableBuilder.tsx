@@ -29,7 +29,7 @@ const mapSourceToSlot = (source: string | undefined): string | null => {
     case 'Amulette': return 'Amulette';
     case 'Bracelet': return 'Bracelet';
     case 'Anneau':
-    case 'Bijou': return 'Anneaux';
+    case 'Bijou': return 'Anneau';
     case 'Robe':
     case 'Armure':
     case 'Plastron':
@@ -53,7 +53,7 @@ const SLOTS = [
   { id: 'Tete', label: 'Tête', icon: Crown },
   { id: 'Amulette', label: 'Amulette', icon: Medal },
   { id: 'Bracelet', label: 'Bracelet', icon: Link2 },
-  { id: 'Anneaux', label: 'Anneaux', icon: Circle },
+  { id: 'Anneau', label: 'Anneau', icon: Circle },
   { id: 'Torse', label: 'Torse', icon: Shirt },
   { id: 'Cape', label: 'Cape / Orbe', icon: Sparkles }, 
   { id: 'Arme', label: 'Arme', icon: Sword },
@@ -187,7 +187,7 @@ const EquipableBuilder = () => {
           <div className="grid grid-cols-3 gap-3 w-full">
             <SlotBtn def={SLOTS[1]} isActive={selectedSlot.id === 'Amulette'} onClick={() => setSelectedSlot(SLOTS[1])} />
             <SlotBtn def={SLOTS[2]} isActive={selectedSlot.id === 'Bracelet'} onClick={() => setSelectedSlot(SLOTS[2])} />
-            <SlotBtn def={SLOTS[3]} isActive={selectedSlot.id === 'Anneaux'} onClick={() => setSelectedSlot(SLOTS[3])} />
+            <SlotBtn def={SLOTS[3]} isActive={selectedSlot.id === 'Anneau'} onClick={() => setSelectedSlot(SLOTS[3])} />
           </div>
 
           <div className="grid grid-cols-2 gap-3 w-3/4">
