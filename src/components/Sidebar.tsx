@@ -72,7 +72,11 @@ const Sidebar = () => {
 
           {/* Footer */}
           <div className="p-4 border-t border-slate-800 text-center text-xs text-slate-600">
-            v1.0.0 • par Bignole (Les donn&eacute;es proviennent du Wiki T4C NMS et du site NMS Révolution)
+              v1.0.0 • par Bignole
+              <br/>
+              Les donn&eacute;es proviennent du Wiki T4C NMS et du site NMS Révolution
+              <br/>
+              Cr&eacute;dit images : DialSoft
           </div>
         </div>
       </div>
