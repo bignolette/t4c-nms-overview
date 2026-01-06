@@ -64,7 +64,6 @@ const getSourceIcon = (source: string | undefined, name?: string) => {
   }
 };
 
-
 const PROF_COLORS: Record<string, string> = {
   'Apothicaire': 'bg-emerald-500/10 text-emerald-500 border-emerald-500/20',
   'Bijoutier': 'bg-blue-500/10 text-blue-500 border-blue-500/20',
@@ -155,7 +154,6 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
                 <h3 className="text-xl font-bold text-slate-100 group-hover:text-amber-500 transition-colors mb-1">{recipe.name}</h3>
               </div>
 
-
               <div className="space-y-4">
                 {recipe.description && (
                   <p className="text-sm text-slate-400 leading-relaxed border-l-2 border-amber-500/30 pl-3 py-1">
@@ -165,7 +163,7 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
                 
                 {/* Prerequisites Section */}
                 <div className="space-y-2">
-                  <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block">prérequis</span>
+                  <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block">Pré-requis</span>
                   {recipe.prerequisites && Object.values(recipe.prerequisites).some(v => v) ? (
                     <div className="flex flex-wrap gap-2">
                       {recipe.prerequisites.str && <StatBadge label="FOR" value={recipe.prerequisites.str} color="text-red-400" />}
@@ -175,7 +173,7 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
                       {recipe.prerequisites.wis && <StatBadge label="SAG" value={recipe.prerequisites.wis} color="text-purple-400" />}
                     </div>
                   ) : (
-                    <span className="text-xs text-slate-600 italic">Pas de prérequis</span>
+                    <span className="text-xs text-slate-600 italic">Pas de pré-requis</span>
                   )}
                 </div>
 
@@ -334,8 +332,6 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
     return ITEM_TYPES.filter(t => t !== 'Matériau');
   }, [isItemsPage]);
 
-
-
   // Handle URL parameter changes
   useEffect(() => {
     if (urlSearch !== activeSearchTerm) {
@@ -414,8 +410,6 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
       
       if (!matchesProf || !matchesLevel || !matchesFav || !matchesBaseToggle || !matchesType) return false;
       if (normalizedSearch === '') return true;
-
-
 
       const checkMatch = (r: RecipeItem, search: string, seen = new Set<string>()): boolean => {
         if (seen.has(r.name)) return false;
@@ -594,7 +588,6 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
               </>
             )}
           </div>
-
         </div>
 
         {/* Sorting & Toggles */}

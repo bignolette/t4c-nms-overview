@@ -39,9 +39,6 @@ const getSourceIcon = (source: string | undefined) => {
   }
 };
 
-
-
-
 const findItemData = (name: string) => {
   if (!name) return null;
   const searchNormalized = fastNormalize(name);
@@ -71,7 +68,6 @@ const resolveFullTree = (item: RecipeItem, depth = 0, seen = new Set<string>()):
   const recipe = findRecipe(item.name);
   const itemData = findItemData(item.name);
   
-  // Toujours essayer de récupérer la source de la définition globale si l'item local n'en a pas
   const enrichedItem = {
     ...item,
     source: item.source || recipe?.source || itemData?.source,
@@ -100,7 +96,6 @@ const resolveFullTree = (item: RecipeItem, depth = 0, seen = new Set<string>()):
 
   return enrichedItem;
 };
-
 
 const calculateRawMaterials = (
   item: RecipeItem, 
@@ -167,294 +162,129 @@ const ResourceSummary = memo(({ totals }: { totals: Record<string, number> }) =>
 });
 
 const RecipeNode = memo(({ item, isRoot = false, expandedItems, onToggle }: { 
-
   item: RecipeItem, 
-
   isRoot?: boolean,
-
   expandedItems: Set<string>,
-
   onToggle: (name: string) => void
-
 }) => {
-
   const [visibleCount, setVisibleCount] = useState(3);
-
   const [isHovered, setIsHovered] = useState(false);
-
   const [tooltipPos, setTooltipPos] = useState({ top: 0, left: 0 });
-
   const nodeRef = useRef<HTMLDivElement>(null);
-
   
-
   const isExpanded = expandedItems.has(item.name);
-
   const hasIngredients = item.ingredients && item.ingredients.length > 0;
-
   
-
-  // An item is craftable only if it has a known recipe WITH ingredients or already has ingredients
-
   const isReallyCraftable = useMemo(() => {
-
     if (hasIngredients) return true;
-
     const recipe = findRecipe(item.name);
-
     return !!(recipe && recipe.ingredients && recipe.ingredients.length > 0);
-
   }, [item.name, hasIngredients]);
 
-
-
   const droppingMonsters = useMemo(() => {
-
     const normalized = fastNormalize(item.name);
-
     return itemMonsterMap[normalized] || [];
-
   }, [item.name]);
-
-
 
   const monstersToDisplay = droppingMonsters.slice(0, visibleCount);
 
-
-
   const equippableSources = [
-
     'Amulette', 'Anneau', 'Arc', 'Arme', 'Botte', 'Bouclier', 'Bracelet', 
-
     'Cape', 'Ceinture', 'Flèches', 'Focus', 'Gant', 'Heaume', 'Jambière', 
-
     'Orbe', 'Plastron', 'Robe'
-
   ];
-
   const isEquippable = item.source && equippableSources.includes(item.source);
-
   const hasInfo = isEquippable || !!(item.prerequisites || item.bonuses || item.bonusText);
 
-
-
   const handleMouseEnter = () => {
-
     if (nodeRef.current) {
-
       const rect = nodeRef.current.getBoundingClientRect();
-
       setTooltipPos({
-
         top: rect.top,
-
         left: rect.right + 16
-
       });
-
     }
-
     setIsHovered(true);
-
   };
 
-
-
   return (
-
     <div className={`relative ${!isRoot ? 'pl-6 ml-2 border-l border-slate-800' : ''}`}>
-
       {!isRoot && (
-
         <div className="absolute top-5 -left-[1px] w-4 h-[1px] bg-slate-800"></div>
-
       )}
 
-
-
       <div className="py-1.5">
-
         <div 
-
           ref={nodeRef}
-
           onMouseEnter={handleMouseEnter}
-
           onMouseLeave={() => setIsHovered(false)}
-
           className={`
-
             group relative inline-flex flex-col items-start gap-1 px-3 py-2 rounded-lg border transition-all duration-300
-
             ${isRoot 
-
               ? 'bg-slate-800/60 border-amber-500/50 text-amber-100 shadow-[0_0_20px_rgba(245,158,11,0.1)]' 
-
               : 'bg-slate-950/40 border-slate-800/80 text-slate-300 hover:border-slate-500/50 hover:bg-slate-900/60'}
-
           `}
-
         >
-
-                              {/* Tooltip via Portal */}
-
-                              {hasInfo && isHovered && createPortal(
-
-                                            <div 
-
-                                              style={{ 
-
-                                                position: 'fixed',
-
-                                                top: Math.min(tooltipPos.top, window.innerHeight - 300), // Basic screen boundary check
-
-                                                left: tooltipPos.left,
-
-                                                zIndex: 9999,
-
-                                                pointerEvents: 'none'
-
-                                              }}
-
-                                              className="w-72 bg-slate-900 border border-slate-700 rounded-xl shadow-2xl p-4 animate-in fade-in zoom-in-95 duration-200"
-
-                                            >
-
-                                              {item.source && (
-
-                                                <div className="flex justify-end mb-3">
-
-                                                  <span className="text-[9px] px-1.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-400 font-bold uppercase tracking-tighter">
-
-                                                    {item.source}
-
-                                                  </span>
-
-                                                </div>
-
-                                              )}
-
-                                  
-
-                                                {/* Prerequisites section */}
-
-                                  
-
-                                                {(isEquippable || (item.prerequisites && Object.values(item.prerequisites).some(v => v))) && (
-
-                                  
-
-                                                  <div className="mb-4">
-
-                                  
-
-                                                    <div className="text-[10px] text-slate-500 font-bold uppercase tracking-wider mb-2">Pré-requis</div>
-
-                                  
-
-                                                    {item.prerequisites && Object.values(item.prerequisites).some(v => v) ? (
-
-                                  
-
-                                                      <div className="flex flex-wrap gap-2">
-
-                                  
-
-                                                        {item.prerequisites.str && <StatBadge label="FOR" value={item.prerequisites.str} color="text-red-400" />}
-
-                                  
-
-                                                        {item.prerequisites.end && <StatBadge label="END" value={item.prerequisites.end} color="text-orange-400" />}
-
-                                  
-
-                                                        {item.prerequisites.dex && <StatBadge label="DEX" value={item.prerequisites.dex} color="text-emerald-400" />}
-
-                                  
-
-                                                        {item.prerequisites.int && <StatBadge label="INT" value={item.prerequisites.int} color="text-blue-400" />}
-
-                                  
-
-                                                        {item.prerequisites.wis && <StatBadge label="SAG" value={item.prerequisites.wis} color="text-purple-400" />}
-
-                                  
-
-                                                      </div>
-
-                                  
-
-                                                    ) : (
-
-                                  
-
-                                                      <div className="text-xs text-slate-600 italic">Pas de pré-requis</div>
-
-                                  
-
-                                                    )}
-
-                                  
-
-                                                  </div>
-
-                                  
-
-                                                )}
-
-                                  
-
-                                  
-
-
-
-              {(item.bonuses || item.bonusText) && (
-
-                <div>
-
-                  <div className="text-[10px] text-slate-500 font-bold uppercase tracking-wider mb-2">Bonus & Effets</div>
-
-                  <div className="flex flex-wrap gap-2 mb-2">
-
-                    {item.bonuses?.str && <StatBadge label="+FOR" value={item.bonuses.str} color="text-red-400" />}
-
-                    {item.bonuses?.end && <StatBadge label="+END" value={item.bonuses.end} color="text-orange-400" />}
-
-                    {item.bonuses?.dex && <StatBadge label="+DEX" value={item.bonuses.dex} color="text-emerald-400" />}
-
-                    {item.bonuses?.int && <StatBadge label="+INT" value={item.bonuses.int} color="text-blue-400" />}
-
-                    {item.bonuses?.wis && <StatBadge label="+SAG" value={item.bonuses.wis} color="text-purple-400" />}
-
-                    {item.bonuses?.ca && <StatBadge label="CA" value={item.bonuses.ca} color="text-slate-200" />}
-
-                  </div>
-
-                  {item.bonusText && (
-
-                    <p className="text-[11px] text-emerald-400/90 font-medium leading-relaxed italic bg-emerald-500/5 border border-emerald-500/10 rounded-lg p-2 mt-2">
-
-                      {item.bonusText}
-
-                    </p>
-
-                  )}
-
+          {/* Tooltip via Portal */}
+          {hasInfo && isHovered && createPortal(
+            <div 
+              style={{ 
+                position: 'fixed',
+                top: Math.min(tooltipPos.top, window.innerHeight - 300),
+                left: tooltipPos.left,
+                zIndex: 9999,
+                pointerEvents: 'none'
+              }}
+              className="w-72 bg-slate-900 border border-slate-700 rounded-xl shadow-2xl p-4 animate-in fade-in zoom-in-95 duration-200"
+            >
+              {item.source && (
+                <div className="flex justify-end mb-3">
+                  <span className="text-[9px] px-1.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-400 font-bold uppercase tracking-tighter">
+                    {item.source}
+                  </span>
                 </div>
-
+              )}
+              
+              {(isEquippable || (item.prerequisites && Object.values(item.prerequisites).some(v => v))) && (
+                <div className="mb-4">
+                  <div className="text-[10px] text-slate-500 font-bold uppercase tracking-wider mb-2">Pré-requis</div>
+                  {item.prerequisites && Object.values(item.prerequisites).some(v => v) ? (
+                    <div className="flex flex-wrap gap-2">
+                      {item.prerequisites.str && <StatBadge label="FOR" value={item.prerequisites.str} color="text-red-400" />}
+                      {item.prerequisites.end && <StatBadge label="END" value={item.prerequisites.end} color="text-orange-400" />}
+                      {item.prerequisites.dex && <StatBadge label="DEX" value={item.prerequisites.dex} color="text-emerald-400" />}
+                      {item.prerequisites.int && <StatBadge label="INT" value={item.prerequisites.int} color="text-blue-400" />}
+                      {item.prerequisites.wis && <StatBadge label="SAG" value={item.prerequisites.wis} color="text-purple-400" />}
+                    </div>
+                  ) : (
+                    <div className="text-xs text-slate-600 italic">Pas de pré-requis</div>
+                  )}
+                </div>
               )}
 
+              {(item.bonuses || item.bonusText) && (
+                <div>
+                  <div className="text-[10px] text-slate-500 font-bold uppercase tracking-wider mb-2">Bonus & Effets</div>
+                  <div className="flex flex-wrap gap-2 mb-2">
+                    {item.bonuses?.str && <StatBadge label="+FOR" value={item.bonuses.str} color="text-red-400" />}
+                    {item.bonuses?.end && <StatBadge label="+END" value={item.bonuses.end} color="text-orange-400" />}
+                    {item.bonuses?.dex && <StatBadge label="+DEX" value={item.bonuses.dex} color="text-emerald-400" />}
+                    {item.bonuses?.int && <StatBadge label="+INT" value={item.bonuses.int} color="text-blue-400" />}
+                    {item.bonuses?.wis && <StatBadge label="+SAG" value={item.bonuses.wis} color="text-purple-400" />}
+                    {item.bonuses?.ca && <StatBadge label="CA" value={item.bonuses.ca} color="text-slate-200" />}
+                  </div>
+                  {item.bonusText && (
+                    <p className="text-[11px] text-emerald-400/90 font-medium leading-relaxed italic bg-emerald-500/5 border border-emerald-500/10 rounded-lg p-2 mt-2">
+                      {item.bonusText}
+                    </p>
+                  )}
+                </div>
+              )}
             </div>,
-
             document.body
-
           )}
 
-
-
           <div className="flex items-center gap-2 whitespace-nowrap">
-
-
             {isReallyCraftable && (
               <button 
                 onClick={() => onToggle(item.name)} 
@@ -472,7 +302,6 @@ const RecipeNode = memo(({ item, isRoot = false, expandedItems, onToggle }: {
             <span className={`font-medium ${isRoot ? 'text-base' : 'text-sm'}`}>
               {item.name}
             </span>
-
 
             <span className={`
               ml-2 px-1.5 py-0.5 rounded font-bold text-[10px] tracking-tight
@@ -493,7 +322,6 @@ const RecipeNode = memo(({ item, isRoot = false, expandedItems, onToggle }: {
             </span>
           </div>
 
-          
           <div className="flex flex-col gap-1 pl-6">
             {item.source && (
               <div className="flex items-center gap-1 text-[10px] text-green-500/80 italic">
