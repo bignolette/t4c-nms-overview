@@ -1,0 +1,402 @@
+[
+  {
+    "id": "93",
+    "name": "Orbe vierge de petite taille"
+  },
+  {
+    "id": "94",
+    "name": "Pépite de fer"
+  },
+  {
+    "id": "95",
+    "name": "Orbe rouge"
+  },
+  {
+    "id": "96",
+    "name": "Anneau des Initiés"
+  },
+  {
+    "id": "97",
+    "name": "Pépite de plomb"
+  },
+  {
+    "id": "98",
+    "name": "Bracelet d'or"
+  },
+  {
+    "id": "99",
+    "name": "Anneau d'agilité de Jander"
+  },
+  {
+    "id": "102",
+    "name": "Anneau d'onyx"
+  },
+  {
+    "id": "101",
+    "name": "Orbe de l'écorché"
+  },
+  {
+    "id": "100",
+    "name": "Pépite d'acier"
+  },
+  {
+    "id": "103",
+    "name": "Lingot de fer"
+  },
+  {
+    "id": "104",
+    "name": "Anneau d'endurance"
+  },
+  {
+    "id": "105",
+    "name": "Anneau de dextérité"
+  },
+  {
+    "id": "108",
+    "name": "Anneau d'intelligence"
+  },
+  {
+    "id": "107",
+    "name": "Anneau de sagesse"
+  },
+  {
+    "id": "106",
+    "name": "Lingot de plomb"
+  },
+  {
+    "id": "109",
+    "name": "Lingot d'acier"
+  },
+  {
+    "id": "110",
+    "name": "Anneau de force"
+  },
+  {
+    "id": "111",
+    "name": "Anneau de résistance"
+  },
+  {
+    "id": "112",
+    "name": "Amulette attractive"
+  },
+  {
+    "id": "113",
+    "name": "Orbe vierge de taille moyenne"
+  },
+  {
+    "id": "116",
+    "name": "Anneau de platine"
+  },
+  {
+    "id": "115",
+    "name": "Orbe de résistance au feu"
+  },
+  {
+    "id": "114",
+    "name": "Pépite de cuivre"
+  },
+  {
+    "id": "117",
+    "name": "Pépite de mithril"
+  },
+  {
+    "id": "118",
+    "name": "Anneau de cerfeuil"
+  },
+  {
+    "id": "119",
+    "name": "Anneau du berserker"
+  },
+  {
+    "id": "122",
+    "name": "Anneau béni des Hauts Althéens"
+  },
+  {
+    "id": "121",
+    "name": "Orbe orné de runes"
+  },
+  {
+    "id": "120",
+    "name": "Pépite d'argent"
+  },
+  {
+    "id": "123",
+    "name": "Lingot de cuivre"
+  },
+  {
+    "id": "124",
+    "name": "Orbe de protection contre la terre"
+  },
+  {
+    "id": "125",
+    "name": "Orbe de protection contre l'air"
+  },
+  {
+    "id": "128",
+    "name": "Orbe de l'invocateur"
+  },
+  {
+    "id": "127",
+    "name": "Orbe de protection contre l'eau"
+  },
+  {
+    "id": "126",
+    "name": "Lingot de mithril"
+  },
+  {
+    "id": "129",
+    "name": "Lingot d'argent"
+  },
+  {
+    "id": "130",
+    "name": "Anneau du froid"
+  },
+  {
+    "id": "131",
+    "name": "Orbe d'Elemendil"
+  },
+  {
+    "id": "132",
+    "name": "Amulette de chance"
+  },
+  {
+    "id": "133",
+    "name": "Orbe vierge de grande taille"
+  },
+  {
+    "id": "136",
+    "name": "Orbe de la nuit"
+  },
+  {
+    "id": "135",
+    "name": "Orbe de puissance"
+  },
+  {
+    "id": "134",
+    "name": "Pépite d'adamantite"
+  },
+  {
+    "id": "137",
+    "name": "Pépite d'or"
+  },
+  {
+    "id": "138",
+    "name": "Orbe de fortification"
+  },
+  {
+    "id": "139",
+    "name": "Orbe de la forêt"
+  },
+  {
+    "id": "140",
+    "name": "Pépite de métrolite"
+  },
+  {
+    "id": "141",
+    "name": "Orbe humterre"
+  },
+  {
+    "id": "142",
+    "name": "Anneau de feu"
+  },
+  {
+    "id": "145",
+    "name": "Bracelet d'hibernation"
+  },
+  {
+    "id": "144",
+    "name": "Chevalière des héros"
+  },
+  {
+    "id": "143",
+    "name": "Lingot d'adamantite"
+  },
+  {
+    "id": "146",
+    "name": "Lingot d'or"
+  },
+  {
+    "id": "147",
+    "name": "Orbe des voyelles"
+  },
+  {
+    "id": "148",
+    "name": "Orbe du bouffon"
+  },
+  {
+    "id": "151",
+    "name": "Bracelet de Subsolanus"
+  },
+  {
+    "id": "150",
+    "name": "Bracelet volcanique"
+  },
+  {
+    "id": "149",
+    "name": "Lingot de métrolite"
+  },
+  {
+    "id": "152",
+    "name": "Orbe du bourgeois"
+  },
+  {
+    "id": "153",
+    "name": "Anneau d'hibernation"
+  },
+  {
+    "id": "154",
+    "name": "Amulette de pyrolyse"
+  },
+  {
+    "id": "155",
+    "name": "Bracelet en or pur"
+  },
+  {
+    "id": "156",
+    "name": "Anneau d'Obéron"
+  },
+  {
+    "id": "157",
+    "name": "Orbe des flammèches"
+  },
+  {
+    "id": "158",
+    "name": "Anneau des séismes"
+  },
+  {
+    "id": "159",
+    "name": "Orbe givrée"
+  },
+  {
+    "id": "160",
+    "name": "Anneau d'Aquilon"
+  },
+  {
+    "id": "161",
+    "name": "Orbe doré"
+  },
+  {
+    "id": "162",
+    "name": "Anneau de liberté"
+  },
+  {
+    "id": "163",
+    "name": "Ancienne amulette elfe"
+  },
+  {
+    "id": "164",
+    "name": "Anneau de combat centaure"
+  },
+  {
+    "id": "165",
+    "name": "Orbe du trépas"
+  },
+  {
+    "id": "166",
+    "name": "Orbe des sables"
+  },
+  {
+    "id": "167",
+    "name": "Anneau de l'endurant"
+  },
+  {
+    "id": "168",
+    "name": "Orbe de mauvais augure"
+  },
+  {
+    "id": "169",
+    "name": "Joyau du brave"
+  },
+  {
+    "id": "170",
+    "name": "Anneau incendiaire"
+  },
+  {
+    "id": "544",
+    "name": "Amulette du Damné"
+  },
+  {
+    "id": "171",
+    "name": "Bracelet de terre sacrée"
+  },
+  {
+    "id": "553",
+    "name": "Présent des Alvors"
+  },
+  {
+    "id": "172",
+    "name": "Amulette de fortune"
+  },
+  {
+    "id": "173",
+    "name": "Collier en dents d'ours"
+  },
+  {
+    "id": "174",
+    "name": "Anneau en ivoire d'Agamaoth"
+  },
+  {
+    "id": "545",
+    "name": "Sceau du Seigneur de Guerre"
+  },
+  {
+    "id": "175",
+    "name": "Orbe du loup blanc"
+  },
+  {
+    "id": "554",
+    "name": "Talisman du croisé"
+  },
+  {
+    "id": "176",
+    "name": "Bracelet en ivoire incrusté de perles"
+  },
+  {
+    "id": "563",
+    "name": "Bracelet du preux"
+  },
+  {
+    "id": "555",
+    "name": "Chevalière du croisé"
+  },
+  {
+    "id": "177",
+    "name": "Orbe du levant"
+  },
+  {
+    "id": "178",
+    "name": "Bracelet incrusté d'ampélites"
+  },
+  {
+    "id": "564",
+    "name": "Anneau du sans peur"
+  },
+  {
+    "id": "565",
+    "name": "Bracelet catalyseur de puissance"
+  },
+  {
+    "id": "179",
+    "name": "Sautoir éclatant"
+  },
+  {
+    "id": "180",
+    "name": "Orbe des âmes oubliées"
+  },
+  {
+    "id": "590",
+    "name": "Orbe du croisé"
+  },
+  {
+    "id": "181",
+    "name": "Orbe de mystification"
+  },
+  {
+    "id": "182",
+    "name": "Anneau du chasseur"
+  },
+  {
+    "id": "591",
+    "name": "Orbe des damnés"
+  }
+]

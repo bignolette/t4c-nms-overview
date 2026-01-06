@@ -1,0 +1,362 @@
+[
+  {
+    "id": "453",
+    "name": "Corde en boyaux d'antilope"
+  },
+  {
+    "id": "454",
+    "name": "Torche incandescente"
+  },
+  {
+    "id": "455",
+    "name": "Casque en frêne"
+  },
+  {
+    "id": "456",
+    "name": "Fût en frêne"
+  },
+  {
+    "id": "457",
+    "name": "Pointes de flèches en frêne taillé"
+  },
+  {
+    "id": "458",
+    "name": "Flèches en frêne"
+  },
+  {
+    "id": "459",
+    "name": "Manche en os"
+  },
+  {
+    "id": "460",
+    "name": "Targe en frêne"
+  },
+  {
+    "id": "461",
+    "name": "Flèches de l'éclaireur"
+  },
+  {
+    "id": "462",
+    "name": "Arc en os du désert"
+  },
+  {
+    "id": "463",
+    "name": "Bâton en orme"
+  },
+  {
+    "id": "464",
+    "name": "Protège-nuque en orme"
+  },
+  {
+    "id": "465",
+    "name": "Lance de parade en orme"
+  },
+  {
+    "id": "466",
+    "name": "Fût en orme"
+  },
+  {
+    "id": "467",
+    "name": "Rondache en orme"
+  },
+  {
+    "id": "468",
+    "name": "Flèches de puanteur"
+  },
+  {
+    "id": "469",
+    "name": "Manche en orme"
+  },
+  {
+    "id": "470",
+    "name": "Masque en bois de la forêt de Mato"
+  },
+  {
+    "id": "471",
+    "name": "Flèches paralysantes"
+  },
+  {
+    "id": "472",
+    "name": "Vibrevent"
+  },
+  {
+    "id": "473",
+    "name": "Corde en boyaux d'horreur railleuse"
+  },
+  {
+    "id": "474",
+    "name": "Sabots rafistolés"
+  },
+  {
+    "id": "475",
+    "name": "Bol en bois"
+  },
+  {
+    "id": "476",
+    "name": "Fût en noyer"
+  },
+  {
+    "id": "477",
+    "name": "Casque du mirage"
+  },
+  {
+    "id": "478",
+    "name": "Flèches en noyer"
+  },
+  {
+    "id": "479",
+    "name": "Manche en noyer"
+  },
+  {
+    "id": "480",
+    "name": "Brèche éthérée"
+  },
+  {
+    "id": "481",
+    "name": "Flèches à pointes d'acier"
+  },
+  {
+    "id": "482",
+    "name": "Porteveuve"
+  },
+  {
+    "id": "483",
+    "name": "Bâton en chêne"
+  },
+  {
+    "id": "484",
+    "name": "Vase en bois"
+  },
+  {
+    "id": "485",
+    "name": "Bâton du maudit"
+  },
+  {
+    "id": "486",
+    "name": "Fût en chêne"
+  },
+  {
+    "id": "487",
+    "name": "Bâton du sourcier"
+  },
+  {
+    "id": "488",
+    "name": "Flèches en chêne"
+  },
+  {
+    "id": "489",
+    "name": "Manche en chêne"
+  },
+  {
+    "id": "490",
+    "name": "Lance d'alourdissement"
+  },
+  {
+    "id": "491",
+    "name": "Flèches naines"
+  },
+  {
+    "id": "492",
+    "name": "Zéphyr bleuté"
+  },
+  {
+    "id": "493",
+    "name": "Corde en boyaux de loup"
+  },
+  {
+    "id": "494",
+    "name": "Rouleau à patisserie pour faire des bons gateaux qui sont bons"
+  },
+  {
+    "id": "495",
+    "name": "Sceptre de drain de mana"
+  },
+  {
+    "id": "496",
+    "name": "Fût en cèdre"
+  },
+  {
+    "id": "497",
+    "name": "Sceptre de luminescence"
+  },
+  {
+    "id": "498",
+    "name": "Flèches sifflantes"
+  },
+  {
+    "id": "499",
+    "name": "Manche en cèdre"
+  },
+  {
+    "id": "500",
+    "name": "Bâton des ombres"
+  },
+  {
+    "id": "501",
+    "name": "Flèches assommantes"
+  },
+  {
+    "id": "502",
+    "name": "Vipère argentée"
+  },
+  {
+    "id": "503",
+    "name": "Bâton en oxandre"
+  },
+  {
+    "id": "504",
+    "name": "Bâton de dilapidation"
+  },
+  {
+    "id": "505",
+    "name": "Sceptre de drain de vie"
+  },
+  {
+    "id": "506",
+    "name": "Fût en oxandre"
+  },
+  {
+    "id": "507",
+    "name": "Banjo"
+  },
+  {
+    "id": "508",
+    "name": "Flèches elfiques"
+  },
+  {
+    "id": "509",
+    "name": "Manche en oxandre"
+  },
+  {
+    "id": "510",
+    "name": "Lance d'alourdissement important"
+  },
+  {
+    "id": "511",
+    "name": "Flèches de rejet"
+  },
+  {
+    "id": "512",
+    "name": "Arc long des Etoiles"
+  },
+  {
+    "id": "513",
+    "name": "Corde en boyaux d'apocalypse des sables"
+  },
+  {
+    "id": "514",
+    "name": "Flèches d'ébonite"
+  },
+  {
+    "id": "515",
+    "name": "Flèches perceuses d'armure"
+  },
+  {
+    "id": "516",
+    "name": "Fût en févier épineux"
+  },
+  {
+    "id": "517",
+    "name": "Flèches terrestres"
+  },
+  {
+    "id": "518",
+    "name": "Flèches glacées"
+  },
+  {
+    "id": "519",
+    "name": "Manche en févier épineux"
+  },
+  {
+    "id": "520",
+    "name": "Flèches de décharges"
+  },
+  {
+    "id": "521",
+    "name": "Flèches incendiaires"
+  },
+  {
+    "id": "522",
+    "name": "Arc de Liridell"
+  },
+  {
+    "id": "523",
+    "name": "Bâton en mélèze"
+  },
+  {
+    "id": "524",
+    "name": "Sceptre de déflagration"
+  },
+  {
+    "id": "525",
+    "name": "Sceptre de déferlante"
+  },
+  {
+    "id": "526",
+    "name": "Fût en mélèze"
+  },
+  {
+    "id": "527",
+    "name": "Sceptre de rafale"
+  },
+  {
+    "id": "528",
+    "name": "Sceptre de ravage"
+  },
+  {
+    "id": "529",
+    "name": "Manche en mélèze"
+  },
+  {
+    "id": "530",
+    "name": "Flèches pestilentielles"
+  },
+  {
+    "id": "531",
+    "name": "Flèches de certitude"
+  },
+  {
+    "id": "532",
+    "name": "Arc composite de l'harmattan étoilé"
+  },
+  {
+    "id": "533",
+    "name": "Corde en boyaux de gargouille"
+  },
+  {
+    "id": "534",
+    "name": "Bâton en cyprès"
+  },
+  {
+    "id": "535",
+    "name": "Bâton de déprédation"
+  },
+  {
+    "id": "536",
+    "name": "Fût en cyprès"
+  },
+  {
+    "id": "537",
+    "name": "Flèches à pointes de verre"
+  },
+  {
+    "id": "538",
+    "name": "Sceptre de l'ascète"
+  },
+  {
+    "id": "539",
+    "name": "Manche en cyprès"
+  },
+  {
+    "id": "540",
+    "name": "Sceptre des arts occultes"
+  },
+  {
+    "id": "541",
+    "name": "Flèches à pointes de diamant"
+  },
+  {
+    "id": "542",
+    "name": "Arc composite du Notos étoilé"
+  }
+]

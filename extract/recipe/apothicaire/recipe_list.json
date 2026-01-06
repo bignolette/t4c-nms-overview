@@ -1,0 +1,374 @@
+[
+  {
+    "id": "3",
+    "name": "Décoction d'arnica"
+  },
+  {
+    "id": "4",
+    "name": "Potion de guérison"
+  },
+  {
+    "id": "5",
+    "name": "Décoction de ginseng"
+  },
+  {
+    "id": "6",
+    "name": "Élixir de mana"
+  },
+  {
+    "id": "7",
+    "name": "Décoction de ciguë"
+  },
+  {
+    "id": "8",
+    "name": "Fiole de poison"
+  },
+  {
+    "id": "10",
+    "name": "Antidote contre l'empoisonnement"
+  },
+  {
+    "id": "9",
+    "name": "Décoction de mandragore"
+  },
+  {
+    "id": "11",
+    "name": "Fiole d'absolution"
+  },
+  {
+    "id": "12",
+    "name": "Sachet de poudre jaune"
+  },
+  {
+    "id": "18",
+    "name": "Potion de faible puissance en lumière"
+  },
+  {
+    "id": "17",
+    "name": "Potion de faible puissance en nécromancie"
+  },
+  {
+    "id": "16",
+    "name": "Potion de faible puissance en feu"
+  },
+  {
+    "id": "15",
+    "name": "Potion de faible puissance en eau"
+  },
+  {
+    "id": "14",
+    "name": "Potion de faible puissance en terre"
+  },
+  {
+    "id": "13",
+    "name": "Potion de faible puissance en air"
+  },
+  {
+    "id": "19",
+    "name": "Potion d'obscurité"
+  },
+  {
+    "id": "20",
+    "name": "Sachet de poudre rose"
+  },
+  {
+    "id": "21",
+    "name": "Potion de guérison de maladie"
+  },
+  {
+    "id": "22",
+    "name": "Potion du veinard"
+  },
+  {
+    "id": "24",
+    "name": "Potion de guérison des blessures graves"
+  },
+  {
+    "id": "23",
+    "name": "Décoction d'immortelle"
+  },
+  {
+    "id": "25",
+    "name": "Décoction de maté"
+  },
+  {
+    "id": "26",
+    "name": "Pierre de mana"
+  },
+  {
+    "id": "27",
+    "name": "Décoction de datura"
+  },
+  {
+    "id": "28",
+    "name": "Fiole de puissant poison"
+  },
+  {
+    "id": "30",
+    "name": "Antidote contre l'empoisonnement sévère"
+  },
+  {
+    "id": "29",
+    "name": "Décoction de fleur de cactus"
+  },
+  {
+    "id": "31",
+    "name": "Sachet de poudre bleue"
+  },
+  {
+    "id": "32",
+    "name": "Fiole de liquide bleuté"
+  },
+  {
+    "id": "38",
+    "name": "Potion de puissance partielle en feu"
+  },
+  {
+    "id": "37",
+    "name": "Potion de puissance partielle en eau"
+  },
+  {
+    "id": "36",
+    "name": "Potion de puissance partielle en terre"
+  },
+  {
+    "id": "35",
+    "name": "Potion de puissance partielle en air"
+  },
+  {
+    "id": "34",
+    "name": "Potion de puissance partielle en nécromancie"
+  },
+  {
+    "id": "33",
+    "name": "Potion de puissance partielle en lumière"
+  },
+  {
+    "id": "39",
+    "name": "Sachet de poudre rouge"
+  },
+  {
+    "id": "40",
+    "name": "Potion d'héroïsme"
+  },
+  {
+    "id": "41",
+    "name": "Potion de faible régénération"
+  },
+  {
+    "id": "42",
+    "name": "Potion du chanceux"
+  },
+  {
+    "id": "44",
+    "name": "Potion de guérison critique"
+  },
+  {
+    "id": "43",
+    "name": "Décoction de consoude"
+  },
+  {
+    "id": "45",
+    "name": "Décoction d'acérola"
+  },
+  {
+    "id": "46",
+    "name": "Prisme de mana"
+  },
+  {
+    "id": "47",
+    "name": "Sachet de poudre blanche"
+  },
+  {
+    "id": "48",
+    "name": "Décoction de colchique"
+  },
+  {
+    "id": "49",
+    "name": "Fiole de poison mortel"
+  },
+  {
+    "id": "51",
+    "name": "Antidote contre l'empoisonnement mortel"
+  },
+  {
+    "id": "50",
+    "name": "Décoction de boldo"
+  },
+  {
+    "id": "52",
+    "name": "Sachet de poudre verte"
+  },
+  {
+    "id": "58",
+    "name": "Potion de forte puissance en feu"
+  },
+  {
+    "id": "57",
+    "name": "Potion de forte puissance en eau"
+  },
+  {
+    "id": "56",
+    "name": "Potion de forte puissance en air"
+  },
+  {
+    "id": "55",
+    "name": "Potion de forte puissance en terre"
+  },
+  {
+    "id": "54",
+    "name": "Potion de forte puissance en lumière"
+  },
+  {
+    "id": "53",
+    "name": "Potion de forte puissance en nécromancie"
+  },
+  {
+    "id": "59",
+    "name": "Potion du Centaure"
+  },
+  {
+    "id": "60",
+    "name": "Sachet de poussière d'étoile"
+  },
+  {
+    "id": "61",
+    "name": "Potion de régénération"
+  },
+  {
+    "id": "62",
+    "name": "Potion du fortuné"
+  },
+  {
+    "id": "63",
+    "name": "Potion de Guérison Extrême"
+  },
+  {
+    "id": "64",
+    "name": "Prisme de mana finement taillé"
+  },
+  {
+    "id": "69",
+    "name": "Parchemin de dissipation de la résistance au feu"
+  },
+  {
+    "id": "68",
+    "name": "Parchemin de dissipation de la résistance nécro"
+  },
+  {
+    "id": "67",
+    "name": "Parchemin de dissipation de la résistance à l'eau"
+  },
+  {
+    "id": "66",
+    "name": "Parchemin de dissipation de la résistance terre"
+  },
+  {
+    "id": "65",
+    "name": "Parchemin de dissipation de la résistance à l'air"
+  },
+  {
+    "id": "70",
+    "name": "Parchemin de dissipation de la bénédiction"
+  },
+  {
+    "id": "71",
+    "name": "Parchemin de confusion"
+  },
+  {
+    "id": "72",
+    "name": "Parchemin d'anxiété"
+  },
+  {
+    "id": "73",
+    "name": "Potion de guérison divine"
+  },
+  {
+    "id": "74",
+    "name": "Infusion de mana"
+  },
+  {
+    "id": "75",
+    "name": "Parchemin d'aveuglement"
+  },
+  {
+    "id": "76",
+    "name": "Parchemin de dissipation des protections de terre"
+  },
+  {
+    "id": "77",
+    "name": "Parchemin de dissipation des protections d'eau"
+  },
+  {
+    "id": "78",
+    "name": "Parchemin de vulnérabilité"
+  },
+  {
+    "id": "79",
+    "name": "Potion de régénération majeure"
+  },
+  {
+    "id": "80",
+    "name": "Parchemin de mobilité"
+  },
+  {
+    "id": "82",
+    "name": "Parchemin de dissipation de la fatigue mentale"
+  },
+  {
+    "id": "81",
+    "name": "Parchemin de dissipation de la fatigue physique"
+  },
+  {
+    "id": "589",
+    "name": "Fiole de protection contre la terreur"
+  },
+  {
+    "id": "83",
+    "name": "Potion d'invincibilité"
+  },
+  {
+    "id": "84",
+    "name": "Parchemin d'immobilisation"
+  },
+  {
+    "id": "85",
+    "name": "Parchemin de fatigue physique"
+  },
+  {
+    "id": "86",
+    "name": "Parchemin de fatigue mentale"
+  },
+  {
+    "id": "87",
+    "name": "Parchemin de dynamisme"
+  },
+  {
+    "id": "88",
+    "name": "Parchemin de dissipation de l'invisibilité"
+  },
+  {
+    "id": "89",
+    "name": "Parchemin d'invisibilité supérieure"
+  },
+  {
+    "id": "90",
+    "name": "Parchemin de dissipation de l'inhibition des soins"
+  },
+  {
+    "id": "91",
+    "name": "Parchemin d'inhibition des soins"
+  },
+  {
+    "id": "92",
+    "name": "Fiole du Démon"
+  },
+  {
+    "id": "566",
+    "name": "Potion de protection contre le venin d'Ambrane"
+  },
+  {
+    "id": "603",
+    "name": "Fluide de démolécularisation supérieur"
+  }
+]

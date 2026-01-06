@@ -1,0 +1,418 @@
+[
+  {
+    "id": "363",
+    "name": "Aiguille à coudre"
+  },
+  {
+    "id": "364",
+    "name": "Gourdin de Gob'"
+  },
+  {
+    "id": "365",
+    "name": "Courte lame de fer"
+  },
+  {
+    "id": "366",
+    "name": "Rapière du Bretteur"
+  },
+  {
+    "id": "367",
+    "name": "Hampe de fer"
+  },
+  {
+    "id": "368",
+    "name": "Dague en ivoire"
+  },
+  {
+    "id": "369",
+    "name": "Longue lame de fer"
+  },
+  {
+    "id": "370",
+    "name": "Cimeterre à pommeau isolant"
+  },
+  {
+    "id": "371",
+    "name": "Lame courbée de fer"
+  },
+  {
+    "id": "372",
+    "name": "Cognée de bucheron"
+  },
+  {
+    "id": "373",
+    "name": "Dague du crâne"
+  },
+  {
+    "id": "374",
+    "name": "Masse des Ogres"
+  },
+  {
+    "id": "375",
+    "name": "Pointes de flèches en fer"
+  },
+  {
+    "id": "376",
+    "name": "Epée courte d'Orkanis"
+  },
+  {
+    "id": "377",
+    "name": "Poulie en fer"
+  },
+  {
+    "id": "378",
+    "name": "Couteau de cuisine Nain"
+  },
+  {
+    "id": "379",
+    "name": "Boule à pointes en fer"
+  },
+  {
+    "id": "380",
+    "name": "Sabre à crosse de nacre"
+  },
+  {
+    "id": "381",
+    "name": "Chaîne de fer"
+  },
+  {
+    "id": "382",
+    "name": "Flèches empoisonnées"
+  },
+  {
+    "id": "383",
+    "name": "Masse à ailettes enchantée"
+  },
+  {
+    "id": "384",
+    "name": "Masse à ailettes enchantée de main gauche"
+  },
+  {
+    "id": "385",
+    "name": "Courte lame d'acier"
+  },
+  {
+    "id": "386",
+    "name": "Dague d'Obscurantis"
+  },
+  {
+    "id": "387",
+    "name": "Hampe d'acier"
+  },
+  {
+    "id": "388",
+    "name": "Dague d'obscurantis de main gauche"
+  },
+  {
+    "id": "389",
+    "name": "Longue lame d'acier"
+  },
+  {
+    "id": "390",
+    "name": "Sceptre de sagesse"
+  },
+  {
+    "id": "391",
+    "name": "Lame courbée d'acier"
+  },
+  {
+    "id": "392",
+    "name": "Sceptre d'intelligence"
+  },
+  {
+    "id": "393",
+    "name": "Dague de jade"
+  },
+  {
+    "id": "394",
+    "name": "Merlin en Acier de Qualité"
+  },
+  {
+    "id": "395",
+    "name": "Pointes de flèches en acier"
+  },
+  {
+    "id": "396",
+    "name": "Sceptre de résistance"
+  },
+  {
+    "id": "397",
+    "name": "Poulie en acier"
+  },
+  {
+    "id": "398",
+    "name": "Cimeterre du Zéphyr"
+  },
+  {
+    "id": "399",
+    "name": "Boule à pointes en acier"
+  },
+  {
+    "id": "400",
+    "name": "Fléau de Guerre du Roy Theopold"
+  },
+  {
+    "id": "401",
+    "name": "Chaîne d'acier"
+  },
+  {
+    "id": "402",
+    "name": "Flèches puissamment empoisonnées"
+  },
+  {
+    "id": "403",
+    "name": "Cimeterre du Zéphyr de main gauche"
+  },
+  {
+    "id": "404",
+    "name": "Hachette d'acier fin"
+  },
+  {
+    "id": "405",
+    "name": "Courte lame d'adamantite"
+  },
+  {
+    "id": "406",
+    "name": "Hachette d'acier fin de main gauche"
+  },
+  {
+    "id": "407",
+    "name": "Hampe d'adamantite"
+  },
+  {
+    "id": "408",
+    "name": "Dague de l'assassin de main gauche"
+  },
+  {
+    "id": "409",
+    "name": "Longue lame d'adamantite"
+  },
+  {
+    "id": "410",
+    "name": "Hache de guerre Baatorienne"
+  },
+  {
+    "id": "411",
+    "name": "Lame courbée d'adamantite"
+  },
+  {
+    "id": "412",
+    "name": "Epée de la Rose Noire de main gauche"
+  },
+  {
+    "id": "413",
+    "name": "Lame viperine de main gauche"
+  },
+  {
+    "id": "414",
+    "name": "Kandjar de destinée"
+  },
+  {
+    "id": "415",
+    "name": "Pointes de flèches en adamantite"
+  },
+  {
+    "id": "416",
+    "name": "Fleuret de défaillance"
+  },
+  {
+    "id": "417",
+    "name": "Poulie en adamantite"
+  },
+  {
+    "id": "418",
+    "name": "Lame enchantée de main gauche"
+  },
+  {
+    "id": "419",
+    "name": "Boule à pointes en adamantite"
+  },
+  {
+    "id": "420",
+    "name": "Eventreuse de main gauche"
+  },
+  {
+    "id": "421",
+    "name": "Chaîne d'adamantite"
+  },
+  {
+    "id": "422",
+    "name": "Flèches mortellement empoisonnées"
+  },
+  {
+    "id": "423",
+    "name": "Cimeterre de rubis de main gauche"
+  },
+  {
+    "id": "424",
+    "name": "Epée à deux mains en titane"
+  },
+  {
+    "id": "425",
+    "name": "Courte lame de mithril"
+  },
+  {
+    "id": "426",
+    "name": "Fléau enchanté de main gauche"
+  },
+  {
+    "id": "427",
+    "name": "Hampe de mithril"
+  },
+  {
+    "id": "428",
+    "name": "Epée de diamants de main gauche"
+  },
+  {
+    "id": "429",
+    "name": "Longue lame de mithril"
+  },
+  {
+    "id": "430",
+    "name": "Cimeterre incrusté d'émeraudes de main gauche"
+  },
+  {
+    "id": "431",
+    "name": "Lame courbée de mithril"
+  },
+  {
+    "id": "432",
+    "name": "Epée des braves de main gauche"
+  },
+  {
+    "id": "671",
+    "name": "Cimeterre en métrolite doré de main gauche"
+  },
+  {
+    "id": "433",
+    "name": "Cimeterre en métrolite doré"
+  },
+  {
+    "id": "434",
+    "name": "Epée une main et demi vibrante"
+  },
+  {
+    "id": "435",
+    "name": "Pointes de flèches en mithril"
+  },
+  {
+    "id": "436",
+    "name": "Lame de l'infatigable"
+  },
+  {
+    "id": "437",
+    "name": "Poulie en mithril"
+  },
+  {
+    "id": "438",
+    "name": "Cimeterre en métrolite robuste"
+  },
+  {
+    "id": "670",
+    "name": "Cimeterre en métrolite robuste de main gauche"
+  },
+  {
+    "id": "439",
+    "name": "Boule à pointes en mithril"
+  },
+  {
+    "id": "440",
+    "name": "Exterminatrice"
+  },
+  {
+    "id": "441",
+    "name": "Chaîne de mithril"
+  },
+  {
+    "id": "442",
+    "name": "Claymore d'extinction"
+  },
+  {
+    "id": "443",
+    "name": "Nova"
+  },
+  {
+    "id": "570",
+    "name": "Glaive terrestre mauve"
+  },
+  {
+    "id": "444",
+    "name": "Glaive terrestre"
+  },
+  {
+    "id": "445",
+    "name": "Hallebarde terrestre"
+  },
+  {
+    "id": "446",
+    "name": "Glaive virevoltant"
+  },
+  {
+    "id": "447",
+    "name": "Hallebarde virevoltante"
+  },
+  {
+    "id": "448",
+    "name": "Glaive de givre"
+  },
+  {
+    "id": "572",
+    "name": "Glaive flamboyant mauve"
+  },
+  {
+    "id": "573",
+    "name": "Glaive virevoltant mauve"
+  },
+  {
+    "id": "562",
+    "name": "Couronne de la liche"
+  },
+  {
+    "id": "571",
+    "name": "Glaive de givre mauve"
+  },
+  {
+    "id": "569",
+    "name": "Glaive de givre jaune"
+  },
+  {
+    "id": "449",
+    "name": "Hallebarde de givre"
+  },
+  {
+    "id": "576",
+    "name": "Hallebarde terrestre mauve"
+  },
+  {
+    "id": "577",
+    "name": "Hallebarde virevoltante mauve"
+  },
+  {
+    "id": "575",
+    "name": "Hallebarde flamboyante mauve"
+  },
+  {
+    "id": "574",
+    "name": "Hallebarde de givre mauve"
+  },
+  {
+    "id": "450",
+    "name": "Glaive flamboyant"
+  },
+  {
+    "id": "560",
+    "name": "Fléau du croisé"
+  },
+  {
+    "id": "561",
+    "name": "Fléau du preux"
+  },
+  {
+    "id": "451",
+    "name": "Hallebarde flamboyante"
+  },
+  {
+    "id": "452",
+    "name": "Flamberge ancestrale"
+  }
+]
