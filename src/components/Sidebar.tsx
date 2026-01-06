@@ -10,7 +10,7 @@ const Sidebar = () => {
     { name: 'Accueil', icon: Home, path: '/' },
     { name: 'Simulateur', icon: Calculator, path: '/planner' },
     { name: 'Equipable', icon: User, path: '/equipable' },
-    { name: 'Métiers', icon: Hammer, path: '/wiki/metiers' },
+    { name: 'Artisanat', icon: Hammer, path: '/wiki/metiers' },
     { name: 'Bestiaire', icon: Skull, path: '/wiki/bestiary' },
     { name: 'Objets', icon: Package, path: '/wiki/items' },
     { name: 'Mentions Légales', icon: ShieldCheck, path: '/legal' },

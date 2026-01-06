@@ -19,6 +19,12 @@ export interface ItemStats {
   ca?: string;
 }
 
+export type ItemSource = 
+  | 'Amulette' | 'Anneau' | 'Arc' | 'Arme' | 'Botte' | 'Bouclier' | 'Bracelet' 
+  | 'Cape' | 'Ceinture' | 'Flèches' | 'Focus' | 'Gant' | 'Heaume' | 'Jambière' 
+  | 'Orbe' | 'Plastron' | 'Robe' | 'Matériau' | 'Divers' | 'Récolte' | 'Mine'
+  | string; // Fallback for specific strings like "Mine: Cave..."
+
 export interface RecipeItem {
   name: string;
   quantity: number;
@@ -26,7 +32,7 @@ export interface RecipeItem {
   level?: number;
   icon?: string;
   ingredients?: RecipeItem[];
-  source?: string;
+  source?: ItemSource;
   learnedFrom?: string;
   coordinates?: string;
   locationPrecision?: string;
@@ -44,8 +50,9 @@ export interface RecipeItem {
 export interface PageContent {
   id: string;
   title: string;
-  category: 'zone' | 'class' | 'general' | 'spell' | 'profession' | 'guide' | 'bestiary';
+  category: 'zone' | 'class' | 'items' | 'spell' | 'profession' | 'guide' | 'bestiary';
   description: string;
   monsters?: Monster[];
   recipes?: RecipeItem[];
 }
+

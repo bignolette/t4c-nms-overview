@@ -163,7 +163,7 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
                 
                 {/* Prerequisites Section */}
                 <div className="space-y-2">
-                  <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block">Pré-requis</span>
+                  <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block">Prérequis</span>
                   {recipe.prerequisites && Object.values(recipe.prerequisites).some(v => v) ? (
                     <div className="flex flex-wrap gap-2">
                       {recipe.prerequisites.str && <StatBadge label="FOR" value={recipe.prerequisites.str} color="text-red-400" />}
@@ -542,7 +542,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
             ) : (
               <>
                 <div className="w-full lg:w-1/3 space-y-2">
-                  <label className="text-xs font-bold text-slate-500 uppercase tracking-widest ml-1">Profession</label>
+                  <label className="text-xs font-bold text-slate-500 uppercase tracking-widest ml-1">Artisanat</label>
                   <div className="relative">
                     <Filter className="absolute left-3 top-3 text-slate-500" size={20} />
                     <select

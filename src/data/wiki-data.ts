@@ -18,7 +18,7 @@ export const wikiData: PageContent[] = [
   },
   {
     id: 'metiers',
-    title: 'Métiers',
+    title: 'Artisanat',
     category: 'profession',
     description: "L'intégralité des recettes d'artisanat de T4C NMS. Chaque item est détaillé avec ses composants et sa localisation.",
     recipes: recipesData
@@ -26,7 +26,7 @@ export const wikiData: PageContent[] = [
   {
     id: 'items',
     title: 'Objets',
-    category: 'general',
+    category: 'items',
     description: "Retrouvez ici la liste complète des équipements, armes et composants d'Althéa. Utilisez la recherche pour trouver un objet spécifique ou ses sources d'obtention.",
     recipes: itemsData
   }

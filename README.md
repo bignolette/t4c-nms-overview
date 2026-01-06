@@ -1,48 +1,65 @@
 # T4C NMS Overview
 
-Application compagnon moderne pour le serveur **T4C NMS** (The 4th Coming). Cette "Fan-App" centralise les données de la communauté pour aider les joueurs à mieux se repérer, optimiser leurs personnages et naviguer dans l'univers du jeu.
+Une application compagnon ultra-performante et moderne conçue spécifiquement pour les joueurs du serveur **T4C NMS Revolution** (The 4th Coming). Cet outil centralise, organise et sublime les données essentielles du jeu pour offrir une expérience de navigation fluide et des outils d'optimisation avancés.
 
-## 🌟 Fonctionnalités
+## 🚀 Fonctionnalités Majeures
 
-L'application propose des outils d'aide à la décision et à l'orientation :
+### 🔨 Métiers & Artisanat (Crafting)
+L'outil de craft le plus avancé pour T4C NMS :
+*   **Arbre de Dépendances Interactif** : Visualisez l'intégralité de la chaîne de fabrication pour les objets complexes.
+*   **Calculateur de Ressources Brutes** : Identifiez instantanément le total cumulé des composants de base nécessaires pour fabriquer un item, en tenant compte des sous-crafts.
+*   **Localisation d'Apprentissage** : Nom des PNJ, coordonnées exactes et descriptions précises des lieux pour chaque recette.
+*   **Système de Favoris** : Enregistrez vos recettes prioritaires pour un accès rapide.
 
-*   **🛡️ Équipable (Simulateur)** : Un constructeur avancé pour filtrer les objets que vous pouvez porter selon vos statistiques (FOR, END, DEX, INT, SAG).
-*   **🔨 Métiers (Artisanat)** : Une encyclopédie interactive des recettes pour planifier vos crafts et identifier les composants nécessaires.
-*   **📦 Catalogue d'Objets** : Un wiki exhaustif des équipements, armes et matériaux avec leurs statistiques détaillées.
-*   **💀 Bestiaire** : Liste des créatures par zone avec leurs statistiques (XP, Or) et les tables de butins (drops).
-*   **⚖️ Mentions Légales** : Page conforme à la législation française (LCEN).
+### 📦 Base de Données d'Objets
+Un catalogue exhaustif de tous les items du serveur :
+*   **Filtres Intelligents** : Filtrez par type (Anneau, Cape, Arme, etc.) et par niveau.
+*   **Statistiques Détaillées** : Pré-requis complets (FOR, END, DEX, INT, SAG) et bonus détaillés (CA, Puissances, Résistances).
+*   **Icônes Spécifiques** : Identification visuelle rapide grâce à un set d'icônes RPG dédié.
 
-## 🎨 Design & Expérience
+### 💀 Bestiaire Interactif
+Explorez la faune d'Althéa, Raven's Dust, Stoneheim et au-delà :
+*   **Tables de Butins (Drops)** : Liens directs entre les monstres et les objets qu'ils lâchent.
+*   **Données de Combat** : Points d'expérience, or, faiblesses élémentaires et résistances.
+*   **Géolocalisation** : Coordonnées précises pour chaque créature.
 
-*   **Interface Épurée** : Focus sur la lisibilité des données et la rapidité d'accès aux informations essentielles.
-*   **Background Dynamique** : Un champ d'étoiles interactif en 3D (WebGL) pour une immersion spatiale discrète.
-*   **Navigation Intuitive** : Structure pensée pour être utilisée en parallèle de vos sessions de jeu.
+### 🛡️ Simulateur d'Équipement (Planner)
+Un outil pour planifier votre progression :
+*   **Filtrage par Statistiques** : Entrez vos statistiques actuelles pour voir instantanément quels objets vous pouvez équiper.
+*   **Gestion des Emplacements** : Organisation par slots (Tête, Torse, Bijoux, etc.).
 
-## 🛠️ Stack Technique
+## 🛠️ Excellence Technique
 
-*   **Frontend** : React 19 + Vite
-*   **Langage** : TypeScript
-*   **Styles & UI** : Tailwind CSS + Lucide Icons
-*   **Animations** : Framer Motion
-*   **Moteur 3D** : Three.js + React Three Fiber
+*   **Performance Optimisée** : Utilisation de maps d'indexation pré-calculées pour des recherches instantanées sans latence.
+*   **Recherche Linguistique** : Algorithme de recherche intelligent ignorant la casse, les accents et les articles (ex: "d'arnica" match avec "Arnica").
+*   **UI Avancée** :
+    *   **React Portals** : Infobulles garanties sans clipping, s'affichant toujours au-dessus des zones de défilement.
+    *   **WebGL Background** : Immersion visuelle avec un fond étoilé 3D interactif (Three.js).
+*   **Stack Moderne** : React 19, TypeScript, Vite, Tailwind CSS, Lucide-React, Framer Motion.
 
-## 🚀 Installation et Développement
+## 🚀 Installation
 
-1.  **Installation**
+1.  **Clonage et Installation**
     ```bash
+    git clone [repository-url]
     npm install
     ```
 
-2.  **Lancement (Dev)**
+2.  **Développement**
     ```bash
     npm run dev
     ```
 
-## ℹ️ Crédits
+3.  **Build Production**
+    ```bash
+    npm run build
+    ```
+
+## ℹ️ Informations Légales & Crédits
 
 *   **Auteur** : Bignole
-*   **Sources des données** : Wiki T4C NMS, NMS Révolution.
-*   **Propriété** : T4C est une marque déposée de Dialsoft LLC.
+*   **Sources des données** : NMSRévolution, Wiki communautaire.
+*   **Propriété Intellectuelle** : T4C est une marque déposée de Dialsoft LLC. Les données du jeu appartiennent à leurs auteurs respectifs.
 
 ---
-*Ce projet est un outil tiers créé par la communauté et n'est pas officiellement affilié à Dialsoft ou aux opérateurs du serveur.*
+*Projet indépendant créé par la communauté pour la communauté. Non affilié à Dialsoft LLC.*
