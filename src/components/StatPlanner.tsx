@@ -60,23 +60,39 @@ const StatPlanner = () => {
     return { powers, resists };
   }, [seraphPowers, seraphResists]);
 
-  const totalLevelPointsSpent = useMemo(() => Object.values(levelPoints).reduce((a, b) => a + (b || 0), 0), [levelPoints]);
-  const requiredLevel = useMemo(() => 1 + Math.ceil(totalLevelPointsSpent / POINTS_PER_LEVEL), [totalLevelPointsSpent]);
+      const totalLevelPointsSpent = useMemo(() => Object.values(levelPoints).reduce((a, b) => a + (b || 0), 0), [levelPoints]);
 
-  const derivedStats = useMemo(() => ({
-    // Formule PV calibrée sur vos données réelles :
-    // 100 END lvl 198 -> 2396 PV | 180 END lvl 216 -> 3455 PV
-    hp: Math.floor(30 + (requiredLevel * (finalStats.end * 0.04884 + 7.065))),
-    // Formule Mana pondérée (INT > SAG) - Précision 99% sur vos données
-    mana: Math.floor(10 + (requiredLevel * ( (finalStats.int * 0.0249) + (finalStats.wis * 0.0155) )))
-  }), [finalStats, requiredLevel]);
+      
 
-  const resetAll = () => {
-    setSeraphStats({ str: 0, end: 0, dex: 0, int: 0, wis: 0 });
-    setSeraphPowers({ 'Feu': 0, 'Eau': 0, 'Air': 0, 'Terre': 0, 'Lumière': 0, 'Nécromancie': 0 });
-    setSeraphResists({ 'Feu': 0, 'Eau': 0, 'Air': 0, 'Terre': 0, 'Lumière': 0, 'Nécromancie': 0 });
-    setLevelPoints({ str: 0, end: 0, dex: 0, int: 0, wis: 0 });
-  };
+      const requiredLevel = useMemo(() => {
+
+        return 1 + Math.ceil(totalLevelPointsSpent / POINTS_PER_LEVEL);
+
+      }, [totalLevelPointsSpent, POINTS_PER_LEVEL]);
+
+    
+
+      const derivedStats = useMemo(() => ({
+
+        hp: Math.floor(30 + (requiredLevel * (finalStats.end * 0.04884 + 7.065))),
+
+        mana: Math.floor(10 + (requiredLevel * ( (finalStats.int * 0.0249) + (finalStats.wis * 0.0155) )))
+
+      }), [finalStats, requiredLevel]);
+
+    
+
+      const resetAll = () => {
+
+        setSeraphStats({ str: 0, end: 0, dex: 0, int: 0, wis: 0 });
+
+        setSeraphPowers({ 'Feu': 0, 'Eau': 0, 'Air': 0, 'Terre': 0, 'Lumière': 0, 'Nécromancie': 0 });
+
+        setSeraphResists({ 'Feu': 0, 'Eau': 0, 'Air': 0, 'Terre': 0, 'Lumière': 0, 'Nécromancie': 0 });
+
+        setLevelPoints({ str: 0, end: 0, dex: 0, int: 0, wis: 0 });
+
+      };
 
   // Déclencher le reset complet à chaque changement de renaissance
   useEffect(() => { 
@@ -103,6 +119,13 @@ const StatPlanner = () => {
 
   const updateLevelStat = (key: keyof Stats, amount: number) => {
     if ((levelPoints[key] || 0) + amount < 0) return;
+    
+    if (amount > 0) {
+      const nextTotal = totalLevelPointsSpent + amount;
+      const nextLevel = 1 + Math.ceil(nextTotal / POINTS_PER_LEVEL);
+      if (nextLevel > 260) return;
+    }
+
     setLevelPoints(prev => ({ ...prev, [key]: (prev[key] || 0) + amount }));
   };
 
@@ -120,7 +143,7 @@ const StatPlanner = () => {
           </div>
 
           <div className="w-full h-1.5 bg-slate-800 rounded-full mt-4 overflow-hidden">
-            <div className="h-full bg-amber-500 transition-all" style={{ width: `${((totalLevelPointsSpent % 5) / 5) * 100}%` }} />
+            <div className="h-full bg-amber-500 transition-all" style={{ width: `${((totalLevelPointsSpent % POINTS_PER_LEVEL) / POINTS_PER_LEVEL) * 100}%` }} />
           </div>
           <Award className="absolute -bottom-6 -right-6 text-slate-800/20" size={160} />
         </div>
