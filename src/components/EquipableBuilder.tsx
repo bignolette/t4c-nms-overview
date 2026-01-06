@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { itemsData } from '../data/items';
 import type { RecipeItem } from '../data/types';
 import { fastNormalize } from '../data/utils';
-import { Search, Shield, Sword, Crown, Shirt, Footprints, Hand, Hexagon, Circle, Package, Link2, GripHorizontal, Columns2, Sparkles, Medal, type LucideIcon } from 'lucide-react';
+import { Search, Shield, Sword, Crown, Shirt, Footprints, Hand, Hexagon, Circle, Package, Link2, GripHorizontal, Columns2, Medal, ArrowUpRight, ArrowRight, Wind, type LucideIcon } from 'lucide-react';
 
 // Types
 interface Stats {
@@ -55,7 +55,7 @@ const SLOTS = [
   { id: 'Bracelet', label: 'Bracelet', icon: Link2 },
   { id: 'Anneau', label: 'Anneau', icon: Circle },
   { id: 'Torse', label: 'Torse', icon: Shirt },
-  { id: 'Cape', label: 'Cape / Orbe', icon: Sparkles }, 
+  { id: 'Cape', label: 'Cape / Orbe', icon: Wind }, 
   { id: 'Arme', label: 'Arme', icon: Sword },
   { id: 'Bouclier', label: 'Bouclier / Focus', icon: Shield },
   { id: 'Gant', label: 'Gants', icon: Hand },
@@ -63,6 +63,7 @@ const SLOTS = [
   { id: 'Jambière', label: 'Jambières', icon: Columns2 }, 
   { id: 'Botte', label: 'Bottes', icon: Footprints },
 ];
+
 
 const EquipableBuilder = () => {
   const [stats, setStats] = useState<Stats>({
@@ -233,7 +234,7 @@ const EquipableBuilder = () => {
                 <div className={`w-10 h-5 rounded-full transition-colors ${hideNoReqs ? 'bg-amber-500' : 'bg-slate-700'}`}></div>
                 <div className={`absolute left-1 top-1 w-3 h-3 bg-white rounded-full transition-transform ${hideNoReqs ? 'translate-x-5' : ''}`}></div>
               </div>
-              <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider group-hover:text-slate-300 transition-colors">Ignorer sans pré-requis</span>
+              <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider group-hover:text-slate-300 transition-colors">Ignorer sans prérequis</span>
             </label>
           </div>
         </div>
@@ -255,7 +256,7 @@ const EquipableBuilder = () => {
                 </div>
 
                 <div className="space-y-1.5">
-                  <span className="text-[9px] font-bold text-slate-500 uppercase tracking-widest block">Pré-requis</span>
+                  <span className="text-[9px] font-bold text-slate-500 uppercase tracking-widest block">prérequis</span>
                   <div className="flex flex-wrap gap-1.5">
                     {item.prerequisites?.str && <StatBadge label="FOR" value={item.prerequisites.str} color="text-red-400" />}
                     {item.prerequisites?.end && <StatBadge label="END" value={item.prerequisites.end} color="text-orange-400" />}

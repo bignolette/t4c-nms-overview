@@ -1,13 +1,46 @@
 import { type RecipeItem, fastNormalize, itemMonsterMap } from '../data/wiki-data';
 import { wikiData } from '../data/wiki-data';
-import { Hammer, Package, Calculator, ShoppingBag, MapPin, ChevronDown, ChevronRight, Skull } from 'lucide-react';
+import { 
+  Hammer, Package, Calculator, ShoppingBag, MapPin, ChevronDown, ChevronRight, Skull,
+  Shield, Sword, Crown, Shirt, Footprints, Hand, Circle, Link2, GripHorizontal, Columns2, Medal,
+  ArrowUpRight, ArrowRight, Wind
+} from 'lucide-react';
 import { useState, useMemo, memo, useCallback, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { createPortal } from 'react-dom';
 
-
 const allRecipes = wikiData.find(p => p.id === 'metiers')?.recipes || [];
 const allItems = wikiData.find(p => p.id === 'items')?.recipes || [];
+
+const getSourceIcon = (source: string | undefined) => {
+  if (!source) return Package;
+  switch (source) {
+    case 'Heaume': return Crown;
+    case 'Amulette': return Medal;
+    case 'Bracelet': return Link2;
+    case 'Anneau':
+    case 'Bijou': return Circle;
+    case 'Robe': return Shirt;
+    case 'Armure':
+    case 'Plastron':
+    case 'Torse': return Shirt;
+    case 'Cape': return Wind;
+    case 'Orbe': return Wind; 
+    case 'Arme': return Sword;
+    case 'Arc': return ArrowUpRight;
+    case 'Bouclier':
+    case 'Focus': return Shield;
+    case 'Flèches': return ArrowRight;
+    case 'Gant': return Hand;
+    case 'Ceinture': return GripHorizontal;
+    case 'Jambière': return Columns2; 
+    case 'Botte': return Footprints;
+    default: return Package;
+  }
+};
+
+
+
 
 const findItemData = (name: string) => {
   if (!name) return null;
@@ -263,71 +296,115 @@ const RecipeNode = memo(({ item, isRoot = false, expandedItems, onToggle }: {
 
         >
 
-                    {/* Tooltip via Portal */}
+                              {/* Tooltip via Portal */}
 
-                    {hasInfo && isHovered && createPortal(
+                              {hasInfo && isHovered && createPortal(
 
-                      <div 
+                                            <div 
 
-                        style={{ 
+                                              style={{ 
 
-                          position: 'fixed',
+                                                position: 'fixed',
 
-                          top: Math.min(tooltipPos.top, window.innerHeight - 300), // Basic screen boundary check
+                                                top: Math.min(tooltipPos.top, window.innerHeight - 300), // Basic screen boundary check
 
-                          left: tooltipPos.left,
+                                                left: tooltipPos.left,
 
-                          zIndex: 9999,
+                                                zIndex: 9999,
 
-                          pointerEvents: 'none'
+                                                pointerEvents: 'none'
 
-                        }}
+                                              }}
 
-                        className="w-72 bg-slate-900 border border-slate-700 rounded-xl shadow-2xl p-4 animate-in fade-in zoom-in-95 duration-200"
+                                              className="w-72 bg-slate-900 border border-slate-700 rounded-xl shadow-2xl p-4 animate-in fade-in zoom-in-95 duration-200"
 
-                      >
+                                            >
 
-                        {item.source && (
+                                              {item.source && (
 
-                          <div className="flex justify-end mb-3">
+                                                <div className="flex justify-end mb-3">
 
-                            <span className="text-[9px] px-1.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-400 font-bold uppercase tracking-tighter">
+                                                  <span className="text-[9px] px-1.5 py-0.5 rounded bg-slate-800 border border-slate-700 text-slate-400 font-bold uppercase tracking-tighter">
 
-                              {item.source}
+                                                    {item.source}
 
-                            </span>
+                                                  </span>
 
-                          </div>
+                                                </div>
 
-                        )}
+                                              )}
 
-                        
+                                  
 
-                        {item.prerequisites && Object.values(item.prerequisites).some(v => v) && (
+                                                {/* Prerequisites section */}
 
-          
+                                  
 
-                <div className="mb-4">
+                                                {(isEquippable || (item.prerequisites && Object.values(item.prerequisites).some(v => v))) && (
 
-                  <div className="text-[10px] text-slate-500 font-bold uppercase tracking-wider mb-2">Pré-requis</div>
+                                  
 
-                  <div className="flex flex-wrap gap-2">
+                                                  <div className="mb-4">
 
-                    {item.prerequisites.str && <StatBadge label="FOR" value={item.prerequisites.str} color="text-red-400" />}
+                                  
 
-                    {item.prerequisites.end && <StatBadge label="END" value={item.prerequisites.end} color="text-orange-400" />}
+                                                    <div className="text-[10px] text-slate-500 font-bold uppercase tracking-wider mb-2">Pré-requis</div>
 
-                    {item.prerequisites.dex && <StatBadge label="DEX" value={item.prerequisites.dex} color="text-emerald-400" />}
+                                  
 
-                    {item.prerequisites.int && <StatBadge label="INT" value={item.prerequisites.int} color="text-blue-400" />}
+                                                    {item.prerequisites && Object.values(item.prerequisites).some(v => v) ? (
 
-                    {item.prerequisites.wis && <StatBadge label="SAG" value={item.prerequisites.wis} color="text-purple-400" />}
+                                  
 
-                  </div>
+                                                      <div className="flex flex-wrap gap-2">
 
-                </div>
+                                  
 
-              )}
+                                                        {item.prerequisites.str && <StatBadge label="FOR" value={item.prerequisites.str} color="text-red-400" />}
+
+                                  
+
+                                                        {item.prerequisites.end && <StatBadge label="END" value={item.prerequisites.end} color="text-orange-400" />}
+
+                                  
+
+                                                        {item.prerequisites.dex && <StatBadge label="DEX" value={item.prerequisites.dex} color="text-emerald-400" />}
+
+                                  
+
+                                                        {item.prerequisites.int && <StatBadge label="INT" value={item.prerequisites.int} color="text-blue-400" />}
+
+                                  
+
+                                                        {item.prerequisites.wis && <StatBadge label="SAG" value={item.prerequisites.wis} color="text-purple-400" />}
+
+                                  
+
+                                                      </div>
+
+                                  
+
+                                                    ) : (
+
+                                  
+
+                                                      <div className="text-xs text-slate-600 italic">Pas de pré-requis</div>
+
+                                  
+
+                                                    )}
+
+                                  
+
+                                                  </div>
+
+                                  
+
+                                                )}
+
+                                  
+
+                                  
 
 
 
@@ -387,11 +464,15 @@ const RecipeNode = memo(({ item, isRoot = false, expandedItems, onToggle }: {
               </button>
             )}
             
-            <Package size={isRoot ? 18 : 14} className={isRoot ? 'text-amber-500' : isReallyCraftable ? 'text-amber-500' : 'text-slate-600'} />
+            {(() => {
+              const Icon = getSourceIcon(item.source);
+              return <Icon size={isRoot ? 18 : 14} className={isRoot ? 'text-amber-500' : isReallyCraftable ? 'text-amber-500' : 'text-slate-600'} />;
+            })()}
             
             <span className={`font-medium ${isRoot ? 'text-base' : 'text-sm'}`}>
               {item.name}
             </span>
+
 
             <span className={`
               ml-2 px-1.5 py-0.5 rounded font-bold text-[10px] tracking-tight

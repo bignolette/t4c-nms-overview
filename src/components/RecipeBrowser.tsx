@@ -1,9 +1,13 @@
 import { useState, useMemo, useEffect, memo } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
-import { itemMonsterMap, ingredientProfessionMap, fastNormalize as normalizeSearch } from '../data/wiki-data';
+import { wikiData, itemMonsterMap, ingredientProfessionMap, fastNormalize as normalizeSearch } from '../data/wiki-data';
 import type { RecipeItem } from '../data/wiki-data';
 import CraftingTree from './CraftingTree';
-import { Search, Filter, ChevronLeft, ChevronRight, ArrowUpDown, Star, X, RotateCcw, Package, Zap, Skull, MapPin } from 'lucide-react';
+import { 
+  Search, Filter, ChevronLeft, ChevronRight, ArrowUpDown, Star, X, RotateCcw, Package, Zap, Skull, MapPin,
+  Shield, Sword, Crown, Shirt, Footprints, Hand, Circle, Link2, GripHorizontal, Columns2, Medal,
+  ArrowUpRight, ArrowRight, Wind
+} from 'lucide-react';
 
 interface RecipeBrowserProps {
   recipes: RecipeItem[];
@@ -11,7 +15,55 @@ interface RecipeBrowserProps {
 }
 
 const PROFESSIONS = ['Tous', 'Apothicaire', 'Bijoutier', 'Couturier', 'Armurier', 'Forgeron', 'Ebéniste'];
+const ITEM_TYPES = [
+  'Tous', 'Amulette', 'Anneau', 'Arc', 'Arme', 'Botte', 'Bouclier', 'Bracelet', 
+  'Cape', 'Ceinture', 'Flèches', 'Focus', 'Gant', 'Heaume', 'Jambière', 
+  'Orbe', 'Plastron', 'Robe', 'Matériau', 'Divers'
+];
 const DEFAULT_LEVEL_RANGE: [number, number] = [0, 250];
+
+const allItems = wikiData.find(p => p.id === 'items')?.recipes || [];
+
+const findItemSource = (name: string) => {
+  const normalized = normalizeSearch(name);
+  const item = allItems.find(i => normalizeSearch(i.name) === normalized);
+  return item?.source;
+};
+
+const getSourceIcon = (source: string | undefined, name?: string) => {
+  let resolvedSource = source;
+  if (!resolvedSource && name) {
+    resolvedSource = findItemSource(name);
+  }
+  
+  if (!resolvedSource) return Package;
+  switch (resolvedSource) {
+    case 'Heaume': return Crown;
+    case 'Amulette': return Medal;
+    case 'Bracelet': return Link2;
+    case 'Anneau':
+    case 'Bijou': return Circle;
+    case 'Robe': return Shirt;
+    case 'Armure':
+    case 'Plastron':
+    case 'Torse': return Shirt;
+    case 'Cape': return Wind;
+    case 'Orbe': return Wind; 
+    case 'Arme': return Sword;
+    case 'Arc': return ArrowUpRight;
+    case 'Bouclier':
+    case 'Focus': return Shield;
+    case 'Flèches': return ArrowRight;
+    case 'Gant': return Hand;
+    case 'Ceinture': return GripHorizontal;
+    case 'Jambière': return Columns2; 
+    case 'Botte': return Footprints;
+    case 'Matériau':
+    case 'Divers': return Package;
+    default: return Package;
+  }
+};
+
 
 const PROF_COLORS: Record<string, string> = {
   'Apothicaire': 'bg-emerald-500/10 text-emerald-500 border-emerald-500/20',
@@ -93,9 +145,16 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
         <div className="bg-slate-900/40 border border-slate-800 rounded-2xl p-6 shadow-xl hover:border-slate-700 transition-all">
           <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
             <div className="space-y-3">
-              <div>
+              <div className="flex items-center gap-3">
+                <div className="p-2 bg-slate-800 rounded-xl text-amber-500 border border-slate-700/50">
+                  {(() => {
+                    const Icon = getSourceIcon(recipe.source, recipe.name);
+                    return <Icon size={20} />;
+                  })()}
+                </div>
                 <h3 className="text-xl font-bold text-slate-100 group-hover:text-amber-500 transition-colors mb-1">{recipe.name}</h3>
               </div>
+
 
               <div className="space-y-4">
                 {recipe.description && (
@@ -106,7 +165,7 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
                 
                 {/* Prerequisites Section */}
                 <div className="space-y-2">
-                  <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block">Pré-requis</span>
+                  <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block">prérequis</span>
                   {recipe.prerequisites && Object.values(recipe.prerequisites).some(v => v) ? (
                     <div className="flex flex-wrap gap-2">
                       {recipe.prerequisites.str && <StatBadge label="FOR" value={recipe.prerequisites.str} color="text-red-400" />}
@@ -116,7 +175,7 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
                       {recipe.prerequisites.wis && <StatBadge label="SAG" value={recipe.prerequisites.wis} color="text-purple-400" />}
                     </div>
                   ) : (
-                    <span className="text-xs text-slate-600 italic">Pas de pré-requis</span>
+                    <span className="text-xs text-slate-600 italic">Pas de prérequis</span>
                   )}
                 </div>
 
@@ -271,9 +330,11 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
 
   // Get unique types for filtering
   const itemTypes = useMemo(() => {
-    const types = new Set(recipes.map(r => r.source).filter((s): s is string => !!s));
-    return ['Tous', ...Array.from(types).sort()];
-  }, [recipes]);
+    if (isItemsPage) return ITEM_TYPES;
+    return ITEM_TYPES.filter(t => t !== 'Matériau');
+  }, [isItemsPage]);
+
+
 
   // Handle URL parameter changes
   useEffect(() => {
@@ -337,8 +398,10 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
     const normalizedSearch = normalizeSearch(activeSearchTerm);
     
     let result = recipes.filter(recipe => {
+      const resolvedType = recipe.source || findItemSource(recipe.name);
+      const matchesType = selectedType === 'Tous' || resolvedType === selectedType;
+
       if (isItemsPage) {
-        const matchesType = selectedType === 'Tous' || recipe.source === selectedType;
         const matchesSearch = normalizedSearch === '' || normalizeSearch(recipe.name).includes(normalizedSearch);
         return matchesType && matchesSearch;
       }
@@ -349,8 +412,10 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
       const matchesFav = !showOnlyFavs || favorites.includes(recipe.name);
       const matchesBaseToggle = showBaseComponents || !isBaseComponent || normalizedSearch !== '';
       
-      if (!matchesProf || !matchesLevel || !matchesFav || !matchesBaseToggle) return false;
+      if (!matchesProf || !matchesLevel || !matchesFav || !matchesBaseToggle || !matchesType) return false;
       if (normalizedSearch === '') return true;
+
+
 
       const checkMatch = (r: RecipeItem, search: string, seen = new Set<string>()): boolean => {
         if (seen.has(r.name)) return false;
@@ -482,7 +547,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
               </div>
             ) : (
               <>
-                <div className="w-full lg:w-64 space-y-2">
+                <div className="w-full lg:w-1/3 space-y-2">
                   <label className="text-xs font-bold text-slate-500 uppercase tracking-widest ml-1">Profession</label>
                   <div className="relative">
                     <Filter className="absolute left-3 top-3 text-slate-500" size={20} />
@@ -496,7 +561,21 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
                   </div>
                 </div>
 
-                <div className="w-full lg:w-48 space-y-2">
+                <div className="w-full lg:w-1/3 space-y-2">
+                  <label className="text-xs font-bold text-slate-500 uppercase tracking-widest ml-1">Type d'objet</label>
+                  <div className="relative">
+                    <Package className="absolute left-3 top-3 text-slate-500" size={20} />
+                    <select
+                      value={selectedType}
+                      onChange={(e) => {setSelectedType(e.target.value); setCurrentPage(1);}}
+                      className="w-full bg-slate-950 border border-slate-700 rounded-xl py-3 pl-11 pr-4 text-slate-100 focus:border-amber-500 outline-none appearance-none cursor-pointer"
+                    >
+                      {itemTypes.map(t => <option key={t} value={t}>{t}</option>)}
+                    </select>
+                  </div>
+                </div>
+
+                <div className="w-full lg:w-1/3 space-y-2">
                   <label className="text-xs font-bold text-slate-500 uppercase tracking-widest ml-1">Niveau</label>
                   <div className="flex items-center gap-2 bg-slate-950 border border-slate-700 rounded-xl px-4 py-3">
                     <input 
@@ -515,6 +594,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
               </>
             )}
           </div>
+
         </div>
 
         {/* Sorting & Toggles */}
