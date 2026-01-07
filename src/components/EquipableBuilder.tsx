@@ -1,9 +1,9 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { itemsData } from '../data/items';
 import type { RecipeItem } from '../data/types';
-import { fastNormalize } from '../data/utils';
-import { Search, Shield, Sword, Crown, Shirt, Footprints, Hand, Hexagon, Circle, Package, Link2, GripHorizontal, Columns2, Medal, Wind, User, type LucideIcon } from 'lucide-react';
+import { fastNormalize, mapSourceToSlot } from '../data/utils';
+import { Search, Shield, Sword, Crown, Shirt, Footprints, Hand, Hexagon, Circle, Package, Link2, GripHorizontal, Columns2, Medal, Wind, Save, User, ChevronDown, type LucideIcon } from 'lucide-react';
 
 // Types
 interface Stats {
@@ -25,34 +25,6 @@ const StatBadge = ({ label, value, color }: { label: string, value: string | num
     <span className="text-[10px] font-bold text-slate-200">{value}</span>
   </div>
 );
-
-// Mapping logic to unify source field from items.ts to our UI slots
-const mapSourceToSlot = (source: string | undefined): string | null => {
-  if (!source) return null;
-  switch (source) {
-    case 'Heaume': return 'Tete';
-    case 'Amulette': return 'Amulette';
-    case 'Bracelet': return 'Bracelet';
-    case 'Anneau':
-    case 'Bijou': return 'Anneau';
-    case 'Robe':
-    case 'Armure':
-    case 'Plastron':
-    case 'Torse': return 'Torse';
-    case 'Cape':
-    case 'Orbe': return 'Cape';
-    case 'Arme':
-    case 'Arc': return 'Arme';
-    case 'Bouclier':
-    case 'Focus':
-    case 'Flèches': return 'Bouclier';
-    case 'Gant': return 'Gant';
-    case 'Ceinture': return 'Ceinture';
-    case 'Jambière': return 'Jambière';
-    case 'Botte': return 'Botte';
-    default: return null;
-  }
-};
 
 const SLOTS = [
   { id: 'Tete', label: 'Tête', icon: Crown },
@@ -97,6 +69,26 @@ const EquipableBuilder = () => {
     setShowImportToast(true);
     setTimeout(() => setShowImportToast(false), 3000);
   };
+
+  const importQuickStats = useCallback(() => {
+    const saved = localStorage.getItem('t4c-planner-stats');
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        setStats({
+          str: parsed.str || 50,
+          end: parsed.end || 50,
+          dex: parsed.dex || 50,
+          int: parsed.int || 50,
+          wis: parsed.wis || 50
+        });
+        setShowImportToast(true);
+        setTimeout(() => setShowImportToast(false), 3000);
+      } catch (e) {
+        console.error("Erreur lors de l'import des stats", e);
+      }
+    }
+  }, []);
 
   // Index items by slot once to boost performance
   const itemsBySlot = useMemo(() => {

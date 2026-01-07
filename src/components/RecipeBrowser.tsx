@@ -1,6 +1,7 @@
-import { useState, useMemo, useEffect, memo } from 'react';
+import { useState, useMemo, useEffect, memo, useCallback } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
-import { wikiData, itemMonsterMap, ingredientProfessionMap, fastNormalize as normalizeSearch } from '../data/wiki-data';
+import { wikiData, itemMonsterMap, ingredientProfessionMap } from '../data/wiki-data';
+import { fastNormalize } from '../data/utils';
 import type { RecipeItem } from '../data/wiki-data';
 import CraftingTree from './CraftingTree';
 import { 
@@ -25,8 +26,8 @@ const DEFAULT_LEVEL_RANGE: [number, number] = [0, 250];
 const allItems = wikiData.find(p => p.id === 'items')?.recipes || [];
 
 const findItemSource = (name: string) => {
-  const normalized = normalizeSearch(name);
-  const item = allItems.find(i => normalizeSearch(i.name) === normalized);
+  const normalized = fastNormalize(name);
+  const item = allItems.find(i => fastNormalize(i.name) === normalized);
   return item?.source;
 };
 
@@ -104,7 +105,7 @@ const StatBadge = ({ label, value, color }: { label: string, value: string, colo
 const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, toggleFavorite, getMatchingIngredients }: any) => {
   const [visibleCount, setVisibleCount] = useState(6);
   const matchingIngs = getMatchingIngredients(recipe, activeSearchTerm);
-  const normalizedName = normalizeSearch(recipe.name);
+  const normalizedName = fastNormalize(recipe.name);
   const droppedBy = itemMonsterMap[normalizedName] || [];
   const usedBy = Array.from(ingredientProfessionMap[normalizedName] || []);
   
@@ -391,14 +392,14 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
   };
 
   const filteredRecipes = useMemo(() => {
-    const normalizedSearch = normalizeSearch(activeSearchTerm);
+    const normalizedSearch = fastNormalize(activeSearchTerm);
     
     let result = recipes.filter(recipe => {
       const resolvedType = recipe.source || findItemSource(recipe.name);
       const matchesType = selectedType === 'Tous' || resolvedType === selectedType;
 
       if (isItemsPage) {
-        const matchesSearch = normalizedSearch === '' || normalizeSearch(recipe.name).includes(normalizedSearch);
+        const matchesSearch = normalizedSearch === '' || fastNormalize(recipe.name).includes(normalizedSearch);
         return matchesType && matchesSearch;
       }
 
@@ -414,11 +415,11 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
       const checkMatch = (r: RecipeItem, search: string, seen = new Set<string>()): boolean => {
         if (seen.has(r.name)) return false;
         seen.add(r.name);
-        if (normalizeSearch(r.name).includes(search)) return true;
+        if (fastNormalize(r.name).includes(search)) return true;
         if (r.ingredients) {
           for (const ing of r.ingredients) {
-            if (normalizeSearch(ing.name).includes(search)) return true;
-            const ingRecipe = recipes.find(subR => normalizeSearch(subR.name) === normalizeSearch(ing.name));
+            if (fastNormalize(ing.name).includes(search)) return true;
+            const ingRecipe = recipes.find(subR => fastNormalize(subR.name) === fastNormalize(ing.name));
             if (ingRecipe && checkMatch(ingRecipe, search, seen)) return true;
           }
         }
@@ -440,16 +441,16 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
   const getMatchingIngredients = (recipe: RecipeItem, search: string) => {
     if (!search || isItemsPage) return [];
     const matches: string[] = [];
-    const normalizedSearch = normalizeSearch(search);
+    const normalizedSearch = fastNormalize(search);
     const walk = (r: RecipeItem, seen = new Set<string>()) => {
       if (seen.has(r.name)) return;
       seen.add(r.name);
       if (r.ingredients) {
         for (const ing of r.ingredients) {
-          if (normalizeSearch(ing.name).includes(normalizedSearch)) {
+          if (fastNormalize(ing.name).includes(normalizedSearch)) {
             if (!matches.includes(ing.name)) matches.push(ing.name);
           }
-          const ingRecipe = recipes.find(subR => normalizeSearch(subR.name) === normalizeSearch(ing.name));
+          const ingRecipe = recipes.find(subR => fastNormalize(subR.name) === fastNormalize(ing.name));
           if (ingRecipe) walk(ingRecipe, seen);
         }
       }

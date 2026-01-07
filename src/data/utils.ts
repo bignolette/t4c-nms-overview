@@ -1,9 +1,14 @@
 /**
- * Normalizes text for consistent lookups
+ * Highly optimized normalization for search and lookups.
+ * Memoizes results to avoid re-processing same strings.
  */
+const cache: Record<string, string> = {};
+
 export const fastNormalize = (text: string): string => {
   if (!text) return "";
-  return text
+  if (cache[text]) return cache[text];
+
+  const result = text
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
@@ -12,4 +17,37 @@ export const fastNormalize = (text: string): string => {
     .replace(/\b(le|la|les|de|du|des|d|un|une|au|aux)\b/g, "")
     .replace(/\s+/g, " ")
     .trim();
+
+  cache[text] = result;
+  return result;
+};
+
+/**
+ * Common Slot mapping for equipment
+ */
+export const mapSourceToSlot = (source: string | undefined): string | null => {
+  if (!source) return null;
+  switch (source) {
+    case 'Heaume': return 'Tete';
+    case 'Amulette': return 'Amulette';
+    case 'Bracelet': return 'Bracelet';
+    case 'Anneau':
+    case 'Bijou': return 'Anneau';
+    case 'Robe':
+    case 'Armure':
+    case 'Plastron':
+    case 'Torse': return 'Torse';
+    case 'Cape':
+    case 'Orbe': return 'Cape';
+    case 'Arme':
+    case 'Arc': return 'Arme';
+    case 'Bouclier':
+    case 'Focus':
+    case 'Flèches': return 'Bouclier';
+    case 'Gant': return 'Gant';
+    case 'Ceinture': return 'Ceinture';
+    case 'Jambière': return 'Jambière';
+    case 'Botte': return 'Botte';
+    default: return null;
+  }
 };

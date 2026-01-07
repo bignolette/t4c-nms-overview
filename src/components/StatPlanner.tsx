@@ -517,7 +517,7 @@ const StatPlanner = () => {
                     <button onClick={() => { if (modal.onConfirm) modal.onConfirm(); }} className="flex-1 py-3 px-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-900 font-black uppercase tracking-wider shadow-lg transition-all">Confirmer</button>
                   </>
                 ) : (
-                  <button onClick={() => setModal(prev => ({ ...prev, show: false }))} className="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-black uppercase tracking-wider transition-all shadow-lg">J'ai compris</button>
+                  <button onClick={() => setModal(prev => ({ ...prev, show: false }))} className="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-black uppercase tracking-wider transition-all shadow-lg">OK</button>
                 )}
               </div>
             </div>
