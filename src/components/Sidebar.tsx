@@ -54,26 +54,26 @@ const Sidebar = ({ isOpen = true, onToggle }: SidebarProps) => {
 
       {/* Sidebar Container */}
       <div className={`
-        fixed md:relative inset-y-0 left-0 z-40 bg-slate-950 border-r border-slate-800/50 
+        fixed md:relative inset-y-0 left-0 z-40 bg-slate-950 border-r border-slate-800/60 
         transform transition-all duration-500 cubic-bezier(0.4, 0, 0.2, 1)
         ${isMobileOpen ? 'translate-x-0' : '-translate-x-full'}
         md:translate-x-0
-        ${isOpen ? 'md:w-72' : 'md:w-0 md:border-none md:overflow-hidden'}
-        flex flex-col h-full shadow-[10px_0_30px_-15px_rgba(0,0,0,0.5)]
+        ${isOpen ? 'md:w-80' : 'md:w-0 md:border-none md:overflow-hidden'}
+        flex flex-col h-full shadow-[15px_0_40px_-15px_rgba(0,0,0,0.6)]
       `}>
         {/* Subtle Background Decoration */}
-        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/50 to-transparent pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/40 to-transparent pointer-events-none" />
         
         {/* Inner Container to prevent content squishing during transition */}
-        <div className={`relative flex flex-col h-full w-72 transition-all duration-300 ${isOpen ? 'opacity-100' : 'md:opacity-0 md:translate-x-[-20px]'}`}>
+        <div className={`relative flex flex-col h-full w-80 transition-all duration-300 ${isOpen ? 'opacity-100' : 'md:opacity-0 md:translate-x-[-30px]'}`}>
           {/* Header */}
-          <div className="py-14 px-8 border-b border-slate-800/50">
-            <div className="flex items-center justify-between mb-2">
-              <div className="flex items-center gap-3">
-                <div className="p-2.5 bg-amber-500/10 rounded-xl border border-amber-500/20">
-                  <Shield className="text-amber-500" size={24} />
+          <div className="py-16 px-10 border-b border-slate-800/50">
+            <div className="flex items-center justify-between mb-3">
+              <div className="flex items-center gap-4">
+                <div className="p-3 bg-amber-500/10 rounded-2xl border border-amber-500/20 shadow-inner">
+                  <Shield className="text-amber-500" size={28} />
                 </div>
-                <h1 className="text-3xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600">
+                <h1 className="text-3xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-amber-100 via-amber-400 to-amber-600">
                   T4C NMS
                 </h1>
               </div>
@@ -81,18 +81,18 @@ const Sidebar = ({ isOpen = true, onToggle }: SidebarProps) => {
               {/* Desktop Close Button */}
               <button
                 onClick={onToggle}
-                className="hidden md:flex text-slate-500 hover:text-amber-500 p-2 rounded-xl hover:bg-slate-900 transition-all group"
+                className="hidden md:flex text-slate-500 hover:text-amber-500 p-2.5 rounded-xl hover:bg-slate-900 transition-all group"
                 title="Masquer le menu"
               >
-                <PanelLeftClose size={22} className="group-hover:-translate-x-0.5 transition-transform" />
+                <PanelLeftClose size={24} className="group-hover:-translate-x-1 transition-transform" />
               </button>
             </div>
-            <p className="text-[11px] font-bold text-slate-500 uppercase tracking-[0.4em] ml-14">Wiki Overview</p>
+            <p className="text-[12px] font-black text-slate-500 uppercase tracking-[0.5em] ml-[60px]">Overview</p>
           </div>
 
           {/* Navigation */}
-          <nav className="flex-1 overflow-y-auto py-10 px-5 custom-scrollbar">
-            <ul className="space-y-4">
+          <nav className="flex-1 overflow-y-auto py-12 px-6 custom-scrollbar">
+            <ul className="space-y-5">
               {navItems.map((item) => {
                 const active = isActive(item.path);
                 return (
@@ -101,20 +101,20 @@ const Sidebar = ({ isOpen = true, onToggle }: SidebarProps) => {
                       to={item.path}
                       onClick={() => setIsMobileOpen(false)}
                       className={`
-                        flex items-center gap-5 px-5 py-5 rounded-2xl transition-all duration-300 group relative overflow-hidden
+                        flex items-center gap-5 px-6 py-5 rounded-[24px] transition-all duration-300 group relative overflow-hidden
                         ${active 
-                          ? 'bg-amber-500/10 text-amber-500 border border-amber-500/20 shadow-[0_0_30px_rgba(245,158,11,0.08)]' 
-                          : 'text-slate-400 hover:text-slate-100 hover:bg-slate-900/80 border border-transparent'}
+                          ? 'bg-amber-500/10 text-amber-500 border border-amber-500/30 shadow-[0_0_40px_rgba(245,158,11,0.1)] scale-[1.02]' 
+                          : 'text-slate-400 hover:text-slate-100 hover:bg-slate-900 border border-transparent'}
                       `}
                     >
                       {/* Active indicator bar */}
-                      {active && <div className="absolute left-0 top-4 bottom-4 w-1.5 bg-amber-500 rounded-full" />}
+                      {active && <div className="absolute left-0 top-4 bottom-4 w-2 bg-amber-500 rounded-full" />}
                       
-                      <item.icon size={24} className={`shrink-0 transition-transform duration-300 ${active ? 'scale-110' : 'group-hover:scale-110 group-hover:text-amber-400'}`} />
-                      <span className={`font-black text-sm uppercase tracking-wide ${active ? 'text-amber-400' : ''}`}>{item.name}</span>
+                      <item.icon size={26} className={`shrink-0 transition-transform duration-300 ${active ? 'scale-110 shadow-amber-500/50' : 'group-hover:scale-110 group-hover:text-amber-400'}`} />
+                      <span className={`font-black text-[15px] uppercase tracking-wider ${active ? 'text-amber-400' : ''}`}>{item.name}</span>
                       
                       {active && (
-                        <div className="ml-auto w-2 h-2 rounded-full bg-amber-500 animate-pulse shadow-[0_0_10px_rgba(245,158,11,0.8)]" />
+                        <div className="ml-auto w-2.5 h-2.5 rounded-full bg-amber-500 animate-pulse shadow-[0_0_12px_rgba(245,158,11,1)]" />
                       )}
                     </Link>
                   </li>
