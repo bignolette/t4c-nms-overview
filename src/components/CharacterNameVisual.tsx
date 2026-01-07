@@ -1,0 +1,78 @@
+import React, { useMemo } from 'react';
+import { Save } from 'lucide-react';
+
+interface Props {
+  name: string | null;
+  onUpdate?: () => void;
+}
+
+const CharacterNameVisual: React.FC<Props> = ({ name, onUpdate }) => {
+  const displayName = name || "SÉLECTIONNEZ UN PERSONNAGE";
+
+  // Générer des particules aléatoires pour l'effet de fond
+  const particles = useMemo(() => {
+    return Array.from({ length: 20 }).map((_, i) => ({
+      id: i,
+      left: `${Math.random() * 100}%`,
+      top: `${Math.random() * 100}%`,
+      size: Math.random() * 3 + 1,
+      duration: Math.random() * 3 + 2,
+      delay: Math.random() * 2,
+    }));
+  }, [name]);
+
+  return (
+    <div className="relative w-full py-6 flex items-center justify-center overflow-hidden rounded-2xl bg-slate-950/40 border border-amber-500/20 mb-2 group">
+      {/* Particules d'arrière-plan */}
+      {particles.map((p) => (
+        <div
+          key={p.id}
+          className="absolute bg-amber-500/20 rounded-full animate-pulse"
+          style={{
+            left: p.left,
+            top: p.top,
+            width: `${p.size}px`,
+            height: `${p.size}px`,
+            animationDuration: `${p.duration}s`,
+            animationDelay: `${p.delay}s`,
+          }}
+        />
+      ))}
+
+      {/* Lueur centrale */}
+      <div className="absolute inset-0 bg-gradient-to-r from-transparent via-amber-500/5 to-transparent animate-shimmer" />
+
+      {/* Texte avec effet de masque et brillance */}
+      <div className="relative flex flex-col items-center">
+        <span className="text-[10px] font-black text-amber-500/60 uppercase tracking-[0.4em] mb-1">
+          {name ? "Personnage sélectionné" : "En attente de chargement"}
+        </span>
+        <h1 className={`text-4xl md:text-5xl font-black italic uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-amber-200 to-amber-500 drop-shadow-[0_0_15px_rgba(245,158,11 ignor-case).5)] text-center ${!name ? 'opacity-20 grayscale' : ''}`}>
+          {displayName}
+        </h1>
+        
+        {onUpdate && (
+          <button 
+            onClick={onUpdate}
+            disabled={!name}
+            title={name ? `Enregistrer les modifications pour ${name}` : "Sélectionnez un personnage pour mettre à jour"}
+            className={`mt-4 flex items-center gap-2 px-6 py-2 rounded-full transition-all group/btn border z-10 ${
+              name 
+              ? "bg-amber-500 text-slate-900 border-amber-400 shadow-[0_0_15px_rgba(245,158,11,0.4)] hover:bg-amber-400 hover:scale-105" 
+              : "bg-slate-900/50 text-slate-600 border-slate-800 cursor-not-allowed opacity-50"
+            }`}
+          >
+            <Save size={16} className={name ? "animate-pulse" : ""} />
+            <span className="text-[11px] font-black uppercase tracking-widest">
+              {name ? "Enregistrer les modifications" : "Aucun personnage actif"}
+            </span>
+          </button>
+        )}
+
+        <div className="w-24 h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent mt-2 rounded-full opacity-50" />
+      </div>
+    </div>
+  );
+};
+
+export default CharacterNameVisual;

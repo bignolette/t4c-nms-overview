@@ -1,9 +1,9 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { itemsData } from '../data/items';
 import type { RecipeItem } from '../data/types';
 import { fastNormalize } from '../data/utils';
-import { Search, Shield, Sword, Crown, Shirt, Footprints, Hand, Hexagon, Circle, Package, Link2, GripHorizontal, Columns2, Medal, Wind, type LucideIcon } from 'lucide-react';
+import { Search, Shield, Sword, Crown, Shirt, Footprints, Hand, Hexagon, Circle, Package, Link2, GripHorizontal, Columns2, Medal, Wind, User, type LucideIcon } from 'lucide-react';
 
 // Types
 interface Stats {
@@ -12,6 +12,11 @@ interface Stats {
   dex: number;
   int: number;
   wis: number;
+}
+
+interface SavedCharacter {
+  name: string;
+  finalStats: Stats;
 }
 
 const StatBadge = ({ label, value, color }: { label: string, value: string | number, color: string }) => (
@@ -77,6 +82,21 @@ const EquipableBuilder = () => {
   const [hideNoReqs, setHideNoReqs] = useState(true);
   const [selectedSlot, setSelectedSlot] = useState(SLOTS[0]);
   const [searchTerm, setSearchTerm] = useState('');
+  const [showImportToast, setShowImportToast] = useState(false);
+  const [savedChars, setSavedChars] = useState<SavedCharacter[]>([]);
+  const [showLoadModal, setShowLoadModal] = useState(false);
+
+  useEffect(() => {
+    const saved = localStorage.getItem('t4c-characters');
+    if (saved) setSavedChars(JSON.parse(saved));
+  }, []);
+
+  const loadSavedChar = (char: SavedCharacter) => {
+    setStats(char.finalStats);
+    setShowLoadModal(false);
+    setShowImportToast(true);
+    setTimeout(() => setShowImportToast(false), 3000);
+  };
 
   // Index items by slot once to boost performance
   const itemsBySlot = useMemo(() => {
@@ -144,10 +164,71 @@ const EquipableBuilder = () => {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
       {/* Left Column: Stats */}
-      <div className="lg:col-span-3 bg-slate-900/50 p-6 rounded-lg border border-slate-800 backdrop-blur-sm h-fit">
-        <h2 className="text-xl font-bold text-amber-500 mb-6 flex items-center gap-2">
-          <Hexagon size={20} /> Vos Stats
-        </h2>
+      <div className="lg:col-span-3 bg-slate-900/50 p-6 rounded-lg border border-slate-800 backdrop-blur-sm h-fit relative">
+        <div className="flex items-center justify-between mb-6">
+          <h2 className="text-xl font-bold text-amber-500 flex items-center gap-2">
+            <Hexagon size={20} /> Vos Stats
+          </h2>
+          <div className="flex gap-1 relative">
+            <button 
+              onClick={() => setShowLoadModal(true)}
+              title="Charger un personnage"
+              className="px-3 py-2 bg-amber-500 hover:bg-amber-400 text-slate-900 rounded-lg border border-amber-600 shadow-[0_0_15px_rgba(245,158,11,0.2)] transition-all group flex items-center gap-2 font-bold text-[11px] uppercase tracking-wider"
+            >
+              <User size={16} />
+              CHARGER
+            </button>
+            {showImportToast && (
+              <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-emerald-500 text-white text-[10px] py-1 px-2 rounded whitespace-nowrap animate-bounce z-50">
+                Stats importées !
+              </span>
+            )}
+          </div>
+        </div>
+
+        {/* LOAD MODAL */}
+        {showLoadModal && (
+          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+            <div className="absolute inset-0 bg-slate-950/80 backdrop-blur-sm" onClick={() => setShowLoadModal(false)}></div>
+            <div className="bg-slate-900 border border-slate-800 w-full max-w-md rounded-2xl shadow-2xl relative overflow-hidden animate-in zoom-in-95 duration-200">
+              <div className="p-6 border-b border-slate-800 flex justify-between items-center">
+                 <h3 className="text-amber-500 font-black flex items-center gap-2 uppercase tracking-tighter italic">
+                   <User size={20} /> Charger un Personnage
+                 </h3>
+                 <button onClick={() => setShowLoadModal(false)} className="text-slate-500 hover:text-white transition-colors">✕</button>
+              </div>
+              <div className="p-6 space-y-3">
+                {savedChars.length === 0 ? (
+                  <div className="text-center py-8 text-slate-500 italic text-sm">
+                    Aucun personnage trouvé dans le Stat Planner.
+                  </div>
+                ) : (
+                  savedChars.map(char => (
+                    <button
+                      key={char.name}
+                      onClick={() => loadSavedChar(char)}
+                      className="w-full group bg-slate-950/50 hover:bg-amber-500 border border-slate-800 hover:border-amber-400 p-4 rounded-xl transition-all flex items-center justify-between"
+                    >
+                      <div className="flex flex-col items-start">
+                        <span className="text-slate-100 group-hover:text-slate-900 font-black uppercase text-sm tracking-wider">{char.name}</span>
+                        <div className="flex gap-2 mt-1">
+                          <span className="text-[9px] text-slate-500 group-hover:text-slate-800 font-bold uppercase tracking-tighter">FOR {char.finalStats.str}</span>
+                          <span className="text-[9px] text-slate-500 group-hover:text-slate-800 font-bold uppercase tracking-tighter">INT {char.finalStats.int}</span>
+                        </div>
+                      </div>
+                      <div className="p-2 rounded-lg bg-slate-900 group-hover:bg-slate-900/20 text-amber-500 group-hover:text-slate-900 transition-colors">
+                        <User size={18} />
+                      </div>
+                    </button>
+                  ))
+                )}
+              </div>
+              <div className="p-4 bg-slate-950/50 text-center">
+                <p className="text-[10px] text-slate-500 uppercase font-bold tracking-widest">Sélectionnez un personnage pour mettre à jour vos prérequis</p>
+              </div>
+            </div>
+          </div>
+        )}
         
         <div className="space-y-4">
           {(['str', 'end', 'dex', 'int', 'wis'] as const).map((key) => (
