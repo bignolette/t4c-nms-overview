@@ -1,9 +1,9 @@
-import { useState, useMemo, useEffect, useCallback } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { itemsData } from '../data/items';
 import type { RecipeItem } from '../data/types';
 import { fastNormalize, mapSourceToSlot } from '../data/utils';
-import { Search, Shield, Sword, Crown, Shirt, Footprints, Hand, Hexagon, Circle, Package, Link2, GripHorizontal, Columns2, Medal, Wind, Save, User, ChevronDown, type LucideIcon } from 'lucide-react';
+import { Search, Shield, Sword, Crown, Shirt, Footprints, Hand, Hexagon, Circle, Package, Link2, GripHorizontal, Columns2, Medal, Wind, User, type LucideIcon } from 'lucide-react';
 
 // Types
 interface Stats {
@@ -69,26 +69,6 @@ const EquipableBuilder = () => {
     setShowImportToast(true);
     setTimeout(() => setShowImportToast(false), 3000);
   };
-
-  const importQuickStats = useCallback(() => {
-    const saved = localStorage.getItem('t4c-planner-stats');
-    if (saved) {
-      try {
-        const parsed = JSON.parse(saved);
-        setStats({
-          str: parsed.str || 50,
-          end: parsed.end || 50,
-          dex: parsed.dex || 50,
-          int: parsed.int || 50,
-          wis: parsed.wis || 50
-        });
-        setShowImportToast(true);
-        setTimeout(() => setShowImportToast(false), 3000);
-      } catch (e) {
-        console.error("Erreur lors de l'import des stats", e);
-      }
-    }
-  }, []);
 
   // Index items by slot once to boost performance
   const itemsBySlot = useMemo(() => {

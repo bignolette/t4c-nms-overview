@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect, memo, useCallback } from 'react';
+import { useState, useMemo, useEffect, memo } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 import { wikiData, itemMonsterMap, ingredientProfessionMap } from '../data/wiki-data';
 import { fastNormalize } from '../data/utils';
