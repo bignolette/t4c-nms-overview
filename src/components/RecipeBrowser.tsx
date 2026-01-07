@@ -1,13 +1,13 @@
 import { useState, useMemo, useEffect, memo } from 'react';
-import { useSearchParams, Link } from 'react-router-dom';
-import { wikiData, itemMonsterMap, ingredientProfessionMap } from '../data/wiki-data';
+import { useSearchParams } from 'react-router-dom';
+import { wikiData } from '../data/wiki-data';
 import { fastNormalize } from '../data/utils';
 import type { RecipeItem } from '../data/wiki-data';
 import CraftingTree from './CraftingTree';
 import { 
-  Search, Filter, ChevronLeft, ChevronRight, ArrowUpDown, Star, X, RotateCcw, Package, Zap, Skull, MapPin,
+  Search, ChevronLeft, ChevronRight, ArrowUpDown, Star, X, RotateCcw, Package, MapPin,
   Shield, Sword, Crown, Shirt, Footprints, Hand, Circle, Link2, GripHorizontal, Columns2, Medal,
-  ArrowUpRight, ArrowRight, Wind, Users, ArrowRightCircle, User
+  ArrowUpRight, ArrowRight, Wind, Users, ArrowRightCircle, User, LayoutGrid, List, ChevronDown, ChevronUp
 } from 'lucide-react';
 
 interface RecipeBrowserProps {
@@ -66,12 +66,12 @@ const getSourceIcon = (source: string | undefined, name?: string) => {
 };
 
 const PROF_COLORS: Record<string, string> = {
-  'Apothicaire': 'bg-emerald-500/10 text-emerald-500 border-emerald-500/20',
-  'Bijoutier': 'bg-blue-500/10 text-blue-500 border-blue-500/20',
-  'Couturier': 'bg-pink-500/10 text-pink-500 border-pink-500/20',
-  'Armurier': 'bg-orange-500/10 text-orange-500 border-orange-500/20',
-  'Forgeron': 'bg-red-500/10 text-red-500 border-red-500/20',
-  'Ebéniste': 'bg-amber-700/10 text-amber-600 border-amber-700/20',
+  'Apothicaire': 'bg-emerald-500 text-emerald-500 border-emerald-500/20',
+  'Bijoutier': 'bg-blue-500 text-blue-500 border-blue-500/20',
+  'Couturier': 'bg-pink-500 text-pink-500 border-pink-500/20',
+  'Armurier': 'bg-orange-500 text-orange-500 border-orange-500/20',
+  'Forgeron': 'bg-red-500 text-red-500 border-red-500/20',
+  'Ebéniste': 'bg-amber-700 text-amber-600 border-amber-700/20',
 };
 
 const TYPE_COLORS: Record<string, string> = {
@@ -86,9 +86,6 @@ const TYPE_COLORS: Record<string, string> = {
   'Récolte': 'bg-green-500/10 text-green-400 border-green-500/20',
 };
 
-/**
- * Ensures bonus values have exactly one '+' or '-' sign
- */
 const formatBonus = (value: string | undefined) => {
   if (!value) return "";
   if (value.startsWith('+') || value.startsWith('-')) return value;
@@ -96,21 +93,46 @@ const formatBonus = (value: string | undefined) => {
 };
 
 const StatBadge = ({ label, value, color }: { label: string, value: string, color: string }) => (
-  <div className="flex items-center gap-1.5 bg-slate-950 border border-slate-800 px-2.5 py-1 rounded-lg">
-    <span className={`text-[10px] font-black uppercase tracking-tighter ${color}`}>{label}</span>
-    <span className="text-xs font-bold text-slate-200">{value}</span>
+  <div className="flex items-center gap-1.5 bg-slate-950 border border-slate-800 px-2 py-0.5 rounded-lg">
+    <span className={`text-[9px] font-black uppercase tracking-tighter ${color}`}>{label}</span>
+    <span className="text-[11px] font-bold text-slate-200">{value}</span>
   </div>
 );
 
-const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, toggleFavorite, getMatchingIngredients }: any) => {
-  const [visibleCount, setVisibleCount] = useState(6);
+const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, toggleFavorite, getMatchingIngredients, viewMode }: any) => {
   const matchingIngs = getMatchingIngredients ? getMatchingIngredients(recipe, activeSearchTerm) : [];
-  const normalizedName = fastNormalize(recipe.name);
-  const droppedBy = itemMonsterMap[normalizedName] || [];
-  const usedBy = Array.from(ingredientProfessionMap[normalizedName] || []);
   
-  const monsterLimit = 6;
-  const monstersToDisplay = droppedBy.slice(0, visibleCount);
+  if (viewMode === 'grid' && isItemsPage) {
+    return (
+      <div className="bg-slate-900/40 border border-slate-800 rounded-2xl p-4 flex flex-col gap-3 hover:border-slate-600 transition-all group">
+        <div className="flex items-start justify-between">
+          <div className="p-2 bg-slate-800 rounded-xl text-amber-500 border border-slate-700/50 group-hover:bg-amber-500 group-hover:text-slate-900 transition-all">
+            {(() => {
+              const Icon = getSourceIcon(recipe.source, recipe.name);
+              return <Icon size={18} />;
+            })()}
+          </div>
+          <button 
+            onClick={() => toggleFavorite(recipe.name)}
+            className={`p-1.5 rounded-full border transition-all ${favorites.includes(recipe.name) ? 'bg-yellow-500 border-yellow-400 text-slate-950 scale-110' : 'bg-slate-800 border-slate-700 text-slate-500 hover:text-yellow-500'}`}
+          >
+            <Star size={12} fill={favorites.includes(recipe.name) ? 'currentColor' : 'none'} />
+          </button>
+        </div>
+        
+        <div>
+          <h3 className="font-bold text-slate-100 group-hover:text-amber-500 transition-colors text-sm line-clamp-2 min-h-[40px]">{recipe.name}</h3>
+          <span className="text-[10px] text-slate-500 uppercase font-black tracking-tighter">{recipe.source}</span>
+        </div>
+
+        <div className="flex flex-wrap gap-1.5 mt-auto">
+          {recipe.bonuses?.ca && <StatBadge label="CA" value={formatBonus(recipe.bonuses.ca)} color="text-slate-400" />}
+          {recipe.bonuses?.str && <StatBadge label="FOR" value={formatBonus(recipe.bonuses.str)} color="text-red-400" />}
+          {recipe.bonuses?.int && <StatBadge label="INT" value={formatBonus(recipe.bonuses.int)} color="text-blue-400" />}
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="group relative">
@@ -135,7 +157,7 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
           </span>
         )}
         {!isItemsPage && recipe.profession && (
-          <span className={`px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter border shadow-lg ${PROF_COLORS[recipe.profession]}`}>
+          <span className={`px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter border shadow-lg ${PROF_COLORS[recipe.profession]?.replace('text-', 'text-opacity-90 text-') || 'bg-slate-800 text-slate-400'}`}>
             {recipe.profession} • LVL {recipe.level}
           </span>
         )}
@@ -162,7 +184,6 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
                   </p>
                 )}
                 
-                {/* Prerequisites Section */}
                 <div className="space-y-2">
                   <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block">Prérequis</span>
                   {recipe.prerequisites && Object.values(recipe.prerequisites).some(v => v) ? (
@@ -178,7 +199,6 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
                   )}
                 </div>
 
-                {/* Bonuses Section */}
                 {(recipe.bonuses && Object.values(recipe.bonuses).some(v => v)) || recipe.bonusText ? (
                   <div className="space-y-2">
                     <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block text-emerald-500/80">Bonus</span>
@@ -197,106 +217,19 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
                     )}
                   </div>
                 ) : null}
-
-                {/* Proc Effects Section */}
-                {recipe.proc && (
-                  <div className="space-y-2">
-                    <span className="text-[10px] font-bold text-blue-400 uppercase tracking-widest block flex items-center gap-2">
-                      <Zap size={10} className="fill-current" />
-                      Effet d'activation
-                    </span>
-                    <div className="bg-blue-500/5 border border-blue-500/20 rounded-xl p-3 relative overflow-hidden group/proc">
-                      <div className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/5 to-blue-500/0 translate-x-[-100%] group-hover/proc:translate-x-[100%] transition-transform duration-1000" />
-                      <div className="flex justify-between items-start mb-1">
-                        <span className="text-xs font-black text-blue-300 uppercase tracking-tight">{recipe.proc.effect}</span>
-                        <span className="text-[10px] font-bold bg-blue-500/20 text-blue-200 px-1.5 py-0.5 rounded">{recipe.proc.chance}</span>
-                      </div>
-                      <p className="text-[11px] text-slate-400 leading-snug">{recipe.proc.description}</p>
-                    </div>
-                  </div>
-                )}
               </div>
             </div>
             
             <div className="flex flex-col gap-6 w-full md:w-64 lg:w-80 shrink-0">
-              {(droppedBy.length > 0 || recipe.learnedFrom) && (
+              {recipe.learnedFrom && (
                 <div className="space-y-3">
-                  {recipe.learnedFrom && (
-                    <div className="bg-blue-500/5 border border-blue-500/20 rounded-xl p-3">
-                      <span className="text-[10px] font-bold text-blue-400 uppercase tracking-widest block mb-1">Apprentissage</span>
-                      <div className="flex items-center gap-2 text-xs font-bold text-slate-200">
-                        <MapPin size={12} className="text-blue-500" />
-                        <span>{recipe.learnedFrom}</span>
-                      </div>
-                      <div className="text-[10px] text-slate-500 ml-5 font-mono">{recipe.coordinates}</div>
-                      {recipe.locationPrecision && (
-                        <div className="text-[12px] text-slate-300 ml-5 mt-1.5 italic leading-snug border-l border-blue-500/30 pl-2">
-                          {recipe.locationPrecision}
-                        </div>
-                      )}
+                  <div className="bg-blue-500/5 border border-blue-500/20 rounded-xl p-3">
+                    <span className="text-[10px] font-bold text-blue-400 uppercase tracking-widest block mb-1">Apprentissage</span>
+                    <div className="flex items-center gap-2 text-xs font-bold text-slate-200">
+                      <MapPin size={12} className="text-blue-500" />
+                      <span>{recipe.learnedFrom}</span>
                     </div>
-                  )}
-
-                  {droppedBy.length > 0 && (
-                    <div className="space-y-2">
-                      <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block">Droppé par</span>
-                      <div className="flex flex-wrap gap-1.5">
-                        {monstersToDisplay.map((m: any, i: number) => (
-                          <Link 
-                            key={i} 
-                            to={`/wiki/bestiary?search=${encodeURIComponent(m.name)}`}
-                            className="px-2 py-1 rounded bg-slate-800 text-slate-300 text-[10px] hover:bg-amber-500 hover:text-slate-900 transition-all font-medium border border-slate-700 whitespace-nowrap flex items-center gap-1"
-                          >
-                            <Skull size={10} className="text-amber-600/70" />
-                            {m.name}
-                          </Link>
-                        ))}
-                        {droppedBy.length > monsterLimit && (
-                          <div className="flex gap-2 mt-1">
-                            {visibleCount < droppedBy.length ? (
-                              <>
-                                <button 
-                                  onClick={() => setVisibleCount(prev => Math.min(prev + 10, droppedBy.length))}
-                                  className="text-amber-500 hover:text-amber-400 text-[10px] font-bold px-2 py-1 rounded bg-amber-500/5 border border-amber-500/20 transition-all"
-                                >
-                                  Afficher plus (+{droppedBy.length - visibleCount})
-                                </button>
-                                <button 
-                                  onClick={() => setVisibleCount(droppedBy.length)}
-                                  className="text-slate-400 hover:text-slate-200 text-[10px] font-bold px-2 py-1 rounded bg-slate-800 border border-slate-700 transition-all"
-                                >
-                                  Tout voir
-                                </button>
-                              </>
-                            ) : (
-                              <button 
-                                onClick={() => setVisibleCount(monsterLimit)}
-                                className="text-slate-500 hover:text-slate-300 text-[10px] font-bold px-2 py-1 rounded bg-slate-800 border border-slate-700 transition-all"
-                              >
-                                Réduire
-                              </button>
-                            )}
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                  )}
-                </div>
-              )}
-              
-              {usedBy.length > 0 && (
-                <div className="space-y-2">
-                  <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block">Utilisé par</span>
-                  <div className="flex flex-wrap gap-1.5">
-                    {usedBy.map((p: any, i: number) => (
-                      <Link 
-                        key={i} 
-                        to={`/wiki/metiers?search=${encodeURIComponent(recipe.name)}`}
-                        className={`px-2 py-1 rounded text-[10px] font-bold border transition-all ${PROF_COLORS[p] || 'bg-slate-800 text-slate-400 border-slate-700'} whitespace-nowrap`}
-                      >
-                        {p}
-                      </Link>
-                    ))}
+                    <div className="text-[10px] text-slate-500 ml-5 font-mono">{recipe.coordinates}</div>
                   </div>
                 </div>
               )}
@@ -316,20 +249,28 @@ const NPCGroupedView = ({
   favorites,
   selectedProf,
   onSelectProf,
-  onNavigateToRecipe
+  onNavigateToRecipe,
+  showOnlyFavs,
+  onToggleFavs
 }: { 
   recipes: RecipeItem[], 
   toggleFavorite: (name: string) => void, 
   favorites: string[],
   selectedProf: string,
   onSelectProf: (p: string) => void,
-  onNavigateToRecipe: (name: string) => void
+  onNavigateToRecipe: (name: string) => void,
+  showOnlyFavs: boolean,
+  onToggleFavs: () => void
 }) => {
+  const [expandedNPCs, setExpandedNPCs] = useState<string[]>([]);
+
   const grouped = useMemo(() => {
     const g: Record<string, Record<string, RecipeItem[]>> = {};
     
     recipes.forEach(r => {
       if (!r.profession) return;
+      if (showOnlyFavs && !favorites.includes(r.name)) return;
+      
       if (!g[r.profession]) g[r.profession] = {};
       const npc = r.learnedFrom || 'Appris automatiquement / Inconnu';
       if (!g[r.profession][npc]) g[r.profession][npc] = [];
@@ -343,7 +284,7 @@ const NPCGroupedView = ({
     });
     
     return g;
-  }, [recipes]);
+  }, [recipes, showOnlyFavs, favorites]);
 
   const sortedProfessions = Object.keys(grouped).sort((a, b) => {
     const idxA = PROFESSIONS.indexOf(a);
@@ -354,106 +295,127 @@ const NPCGroupedView = ({
     return idxA - idxB;
   }).filter(p => selectedProf === 'Tous' || p === selectedProf);
 
+  const toggleNPC = (npc: string) => {
+    setExpandedNPCs(prev => prev.includes(npc) ? prev.filter(n => n !== npc) : [...prev, npc]);
+  };
+
+  const expandAll = (npcs: string[]) => setExpandedNPCs(prev => Array.from(new Set([...prev, ...npcs])));
+  const collapseAll = (npcs: string[]) => setExpandedNPCs(prev => prev.filter(n => !npcs.includes(n)));
+
   return (
-    <div className="space-y-8 animate-fade-in">
-      {/* Profession Filters */}
-      <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl relative overflow-hidden">
-        <div className="flex flex-col md:flex-row items-center gap-6">
-          <div className="flex items-center gap-3 shrink-0">
-            <Filter className="text-amber-500" size={20} />
-            <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">Filtrer par métier</span>
-          </div>
-          <div className="flex flex-wrap gap-2">
-            {PROFESSIONS.map(p => (
-              <button
-                key={p}
-                onClick={() => onSelectProf(p)}
-                className={`px-4 py-2 rounded-xl text-xs font-bold border transition-all ${
-                  selectedProf === p 
-                    ? 'bg-amber-500 text-slate-950 border-amber-500 shadow-lg shadow-amber-500/20 scale-105' 
-                    : 'bg-slate-950 text-slate-500 border-slate-800 hover:border-slate-600 hover:text-slate-300'
-                }`}
-              >
-                {p}
-              </button>
-            ))}
-          </div>
-        </div>
+    <div className="space-y-6 animate-fade-in">
+      {/* Navigation Tabs */}
+      <div className="bg-slate-900 border border-slate-800 rounded-2xl p-2 shadow-xl flex flex-wrap gap-1 sticky top-4 z-30 backdrop-blur-xl">
+        {PROFESSIONS.map(p => (
+          <button
+            key={p}
+            onClick={() => onSelectProf(p)}
+            className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center gap-2 ${
+              selectedProf === p 
+                ? 'bg-amber-500 text-slate-950 shadow-lg' 
+                : 'text-slate-400 hover:bg-slate-800 hover:text-slate-200'
+            }`}
+          >
+            {p === 'Tous' ? <Users size={14} /> : <div className={`w-2 h-2 rounded-full ${PROF_COLORS[p]?.split(' ')[0]}`} />}
+            {p}
+          </button>
+        ))}
+        <div className="flex-1 min-w-[20px]" />
+        <button 
+          onClick={onToggleFavs}
+          className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold transition-all ${
+            showOnlyFavs ? 'bg-yellow-500 text-slate-950' : 'text-slate-500 hover:text-yellow-500'
+          }`}
+        >
+          <Star size={14} fill={showOnlyFavs ? 'currentColor' : 'none'} />
+          Favoris
+        </button>
       </div>
 
       {sortedProfessions.map((prof) => {
         const npcs = grouped[prof];
-        const sortedNPCs = Object.keys(npcs).sort();
+        const npcNames = Object.keys(npcs).sort();
 
         return (
-          <div key={prof} className="bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
-            <div className={`px-6 py-4 border-b border-slate-800 flex items-center gap-3 ${PROF_COLORS[prof]?.replace('text-', 'text-opacity-80 text-') || 'bg-slate-800'}`}>
-               <div className={`w-3 h-8 rounded-full ${PROF_COLORS[prof]?.split(' ')[0] || 'bg-slate-700'}`}></div>
-               <h2 className="text-xl font-black uppercase tracking-wider text-slate-100">{prof}</h2>
+          <div key={prof} className="space-y-4">
+            <div className="flex items-center justify-between px-2">
+              <h2 className="text-xl font-black uppercase tracking-wider text-slate-100 flex items-center gap-3">
+                <div className={`w-1 h-6 rounded-full ${PROF_COLORS[prof]?.split(' ')[0]}`} />
+                {prof}
+              </h2>
+              <div className="flex gap-2">
+                <button onClick={() => expandAll(npcNames)} className="text-[10px] font-bold text-slate-500 hover:text-amber-500 uppercase tracking-widest">Tout déplier</button>
+                <span className="text-slate-800">|</span>
+                <button onClick={() => collapseAll(npcNames)} className="text-[10px] font-bold text-slate-500 hover:text-amber-500 uppercase tracking-widest">Tout replier</button>
+              </div>
             </div>
-            <div className="p-6 grid gap-8">
-              {sortedNPCs.map((npc) => {
-                const npcRecipes = npcs[npc];
-                return (
-                  <div key={npc} className="space-y-4">
-                    <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 pb-2 border-b border-slate-800/50">
-                       <div className="flex items-center gap-3">
-                          <User className="text-amber-500" size={18} />
-                          <h3 className="text-lg font-bold text-amber-500">{npc}</h3>
-                       </div>
-                       
-                       <div className="flex flex-wrap items-center gap-2">
-                          <span className="text-[10px] text-slate-500 font-bold bg-slate-950 px-2 py-1 rounded-md border border-slate-800">
-                            {npcRecipes.length} recettes
-                          </span>
-                          
-                          {npcRecipes[0]?.coordinates && (
-                            <div className="flex items-center gap-1.5 bg-blue-500/10 border border-blue-500/20 px-2 py-1 rounded-lg text-blue-400 font-mono text-[11px] font-bold">
-                              <MapPin size={10} className="text-blue-500" />
-                              {npcRecipes[0].coordinates}
-                            </div>
-                          )}
 
-                          {npcRecipes[0]?.locationPrecision && (
-                            <span className="text-[11px] text-slate-400 italic bg-slate-800/50 px-2 py-1 rounded-lg border border-slate-700/50">
-                              {npcRecipes[0].locationPrecision}
-                            </span>
-                          )}
-                       </div>
-                    </div>
-                    
-                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-3">
-                      {npcRecipes.map((recipe) => (
-                         <div key={recipe.name} className="group relative bg-slate-950 border border-slate-800 rounded-xl p-3 flex items-center justify-between hover:border-slate-600 transition-all hover:shadow-lg">
-                            <div className="flex items-center gap-3 overflow-hidden">
-                               <div className={`w-10 h-10 shrink-0 rounded-lg flex items-center justify-center text-slate-300 font-bold text-sm border border-slate-800 bg-slate-900 group-hover:bg-slate-800 transition-colors`}>
+            <div className="grid gap-4">
+              {npcNames.map((npc) => {
+                const npcRecipes = npcs[npc];
+                const isExpanded = expandedNPCs.includes(npc);
+                return (
+                  <div key={npc} className={`bg-slate-900/50 border rounded-2xl overflow-hidden transition-all duration-300 ${isExpanded ? 'border-amber-500/30 ring-1 ring-amber-500/10' : 'border-slate-800'}`}>
+                    {/* NPC Header */}
+                    <button 
+                      onClick={() => toggleNPC(npc)}
+                      className="w-full flex flex-col md:flex-row md:items-center justify-between p-4 gap-4 text-left hover:bg-slate-800/50 transition-colors"
+                    >
+                      <div className="flex items-center gap-4 flex-1">
+                        <div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-amber-500 border border-slate-700">
+                          <User size={20} />
+                        </div>
+                        <div>
+                          <h3 className="font-bold text-slate-100">{npc}</h3>
+                          <div className="flex items-center gap-3 mt-0.5">
+                            {npcRecipes[0]?.coordinates && (
+                              <span className="flex items-center gap-1 text-[11px] font-mono text-blue-400">
+                                <MapPin size={10} /> {npcRecipes[0].coordinates}
+                              </span>
+                            )}
+                            {npcRecipes[0]?.locationPrecision && (
+                              <span className="text-[11px] text-slate-500 italic">{npcRecipes[0].locationPrecision}</span>
+                            )}
+                          </div>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-4 shrink-0">
+                        <span className="bg-slate-950 border border-slate-800 text-[10px] font-bold text-slate-400 px-3 py-1 rounded-full uppercase tracking-tighter">
+                          {npcRecipes.length} recettes
+                        </span>
+                        {isExpanded ? <ChevronUp size={20} className="text-slate-600" /> : <ChevronDown size={20} className="text-slate-600" />}
+                      </div>
+                    </button>
+
+                    {/* NPC Content */}
+                    {isExpanded && (
+                      <div className="p-4 pt-0 border-t border-slate-800/50 bg-slate-950/20">
+                        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 mt-4 animate-in slide-in-from-top-2 duration-300">
+                          {npcRecipes.map((recipe) => (
+                            <div key={recipe.name} className="group flex items-center justify-between bg-slate-950 border border-slate-800 rounded-xl p-2.5 hover:border-slate-600 transition-all">
+                              <div className="flex items-center gap-3 min-w-0">
+                                <div className="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-xs font-bold text-slate-400 group-hover:text-amber-500 transition-colors">
                                   {recipe.level}
-                               </div>
-                               <div className="flex flex-col min-w-0">
-                                  <button 
-                                    onClick={() => onNavigateToRecipe(recipe.name)}
-                                    className="font-bold text-slate-200 group-hover:text-amber-500 transition-colors text-sm truncate pr-2 text-left flex items-center gap-1.5"
-                                  >
-                                    {recipe.name}
-                                    <ArrowRightCircle size={12} className="opacity-0 group-hover:opacity-100 transition-opacity text-amber-500" />
-                                  </button>
-                                  {recipe.ingredients && (
-                                    <span className="text-[10px] text-slate-500 truncate">
-                                      {recipe.ingredients.length} ingrédients
-                                    </span>
-                                  )}
-                               </div>
+                                </div>
+                                <button 
+                                  onClick={() => onNavigateToRecipe(recipe.name)}
+                                  className="text-xs font-bold text-slate-200 group-hover:text-amber-500 truncate text-left flex items-center gap-1.5"
+                                >
+                                  {recipe.name}
+                                  <ArrowRightCircle size={10} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                                </button>
+                              </div>
+                              <button 
+                                onClick={() => toggleFavorite(recipe.name)}
+                                className={`p-1 rounded-md transition-all ${favorites.includes(recipe.name) ? 'text-yellow-500' : 'text-slate-700 hover:text-slate-400'}`}
+                              >
+                                <Star size={14} fill={favorites.includes(recipe.name) ? 'currentColor' : 'none'} />
+                              </button>
                             </div>
-                            
-                            <button 
-                              onClick={() => toggleFavorite(recipe.name)}
-                              className={`shrink-0 p-1.5 rounded-full border transition-all ${favorites.includes(recipe.name) ? 'bg-yellow-500 border-yellow-400 text-slate-950 opacity-100' : 'bg-slate-900 border-slate-800 text-slate-600 opacity-0 group-hover:opacity-100 hover:text-yellow-500'}`}
-                            >
-                              <Star size={12} fill={favorites.includes(recipe.name) ? 'currentColor' : 'none'} />
-                            </button>
-                         </div>
-                      ))}
-                    </div>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 );
               })}
@@ -461,12 +423,6 @@ const NPCGroupedView = ({
           </div>
         );
       })}
-      
-      {sortedProfessions.length === 0 && (
-         <div className="text-center py-20">
-           <p className="text-slate-500">Aucune recette trouvée pour ce métier.</p>
-         </div>
-      )}
     </div>
   );
 };
@@ -476,7 +432,8 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
   const [searchParams, setSearchParams] = useSearchParams();
   const urlSearch = searchParams.get('search') || '';
 
-  const [viewMode, setViewMode] = useState<'search' | 'npc'>('search');
+  const [viewMode, setViewMode] = useState<'search' | 'npc'>(isItemsPage ? 'search' : 'search');
+  const [layoutMode, setLayoutMode] = useState<'list' | 'grid'>('list');
   const [isExactSearch, setIsExactSearch] = useState(false);
 
   const [searchInput, setSearchInput] = useState(urlSearch);
@@ -490,7 +447,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
   const [showBaseComponents, setShowBaseComponents] = useState(false);
   const [favorites, setFavorites] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = 8;
+  const itemsPerPage = layoutMode === 'grid' ? 12 : 8;
 
   const itemTypes = useMemo(() => {
     if (isItemsPage) return ITEM_TYPES;
@@ -503,7 +460,6 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
       setActiveSearchTerm(urlSearch);
       setCurrentPage(1);
       if (urlSearch && !isItemsPage) setShowBaseComponents(true);
-      // Reset exact search when URL changes externally or if not coming from our navigation
     }
   }, [urlSearch, isItemsPage]);
 
@@ -522,7 +478,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
 
   const handleSearch = () => {
     setActiveSearchTerm(searchInput);
-    setIsExactSearch(false); // Manual search disables exact mode
+    setIsExactSearch(false);
     setSearchParams(prev => {
       if (searchInput) prev.set('search', searchInput);
       else prev.delete('search');
@@ -580,10 +536,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
       if (!matchesProf || !matchesLevel || !matchesFav || !matchesBaseToggle || !matchesType) return false;
       if (normalizedSearch === '') return true;
 
-      // Exact Search Mode for NPC Navigation
-      if (isExactSearch) {
-        return fastNormalize(recipe.name) === normalizedSearch;
-      }
+      if (isExactSearch) return fastNormalize(recipe.name) === normalizedSearch;
 
       const checkMatch = (r: RecipeItem, search: string, seen = new Set<string>()): boolean => {
         if (seen.has(r.name)) return false;
@@ -654,7 +607,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
   const navigateToRecipe = (name: string) => {
     setSearchInput(name);
     setActiveSearchTerm(name);
-    setIsExactSearch(true); // Enable exact search mode
+    setIsExactSearch(true);
     setSearchParams(prev => {
       prev.set('search', name);
       return prev;
@@ -666,32 +619,51 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
 
   return (
     <div className="space-y-6">
-      {!isItemsPage && (
-        <div className="flex bg-slate-900/50 p-1 rounded-xl border border-slate-800 w-fit">
-          <button
-            onClick={() => setViewMode('search')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold transition-all ${
-              viewMode === 'search' 
-                ? 'bg-amber-500 text-slate-950 shadow-lg' 
-                : 'text-slate-400 hover:text-slate-200'
-            }`}
-          >
-            <Search size={16} />
-            Recherche
-          </button>
-          <button
-            onClick={() => setViewMode('npc')}
-            className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-bold transition-all ${
-              viewMode === 'npc' 
-                ? 'bg-amber-500 text-slate-950 shadow-lg' 
-                : 'text-slate-400 hover:text-slate-200'
-            }`}
-          >
-            <Users size={16} />
-            Par PNJ
-          </button>
-        </div>
-      )}
+      <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+        {!isItemsPage && (
+          <div className="flex bg-slate-900/50 p-1 rounded-xl border border-slate-800 w-fit backdrop-blur-xl shadow-lg">
+            <button
+              onClick={() => setViewMode('search')}
+              className={`flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-bold transition-all ${
+                viewMode === 'search' 
+                  ? 'bg-amber-500 text-slate-950 shadow-lg scale-105' 
+                  : 'text-slate-400 hover:text-slate-200'
+              }`}
+            >
+              <Search size={16} />
+              Recherche
+            </button>
+            <button
+              onClick={() => setViewMode('npc')}
+              className={`flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-bold transition-all ${
+                viewMode === 'npc' 
+                  ? 'bg-amber-500 text-slate-950 shadow-lg scale-105' 
+                  : 'text-slate-400 hover:text-slate-200'
+              }`}
+            >
+              <Users size={16} />
+              Maîtres Artisans
+            </button>
+          </div>
+        )}
+
+        {viewMode === 'search' && isItemsPage && (
+          <div className="flex bg-slate-900/50 p-1 rounded-xl border border-slate-800 w-fit ml-auto">
+            <button
+              onClick={() => setLayoutMode('list')}
+              className={`p-2 rounded-lg transition-all ${layoutMode === 'list' ? 'bg-slate-800 text-amber-500' : 'text-slate-500 hover:text-slate-300'}`}
+            >
+              <List size={20} />
+            </button>
+            <button
+              onClick={() => setLayoutMode('grid')}
+              className={`p-2 rounded-lg transition-all ${layoutMode === 'grid' ? 'bg-slate-800 text-amber-500' : 'text-slate-500 hover:text-slate-300'}`}
+            >
+              <LayoutGrid size={20} />
+            </button>
+          </div>
+        )}
+      </div>
 
       {viewMode === 'search' ? (
         <>
@@ -700,56 +672,40 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
             
             <div className="space-y-6 relative z-10">
               <div className="w-full space-y-2">
-                <label className="text-xs font-bold text-slate-500 uppercase tracking-widest ml-1">Recherche</label>
                 <div className="flex gap-2">
-                  <div className="relative flex-1">
-                    <Search className="absolute left-3 top-3 text-slate-500" size={20} />
+                  <div className="relative flex-1 group">
+                    <Search className="absolute left-4 top-3.5 text-slate-500 group-focus-within:text-amber-500 transition-colors" size={20} />
                     <input
                       type="text"
                       placeholder={isItemsPage ? "Rechercher un objet..." : "Ex: Potion, Lingot, Épée..."}
                       value={searchInput}
                       onChange={(e) => {
                         setSearchInput(e.target.value);
-                        if (isExactSearch) setIsExactSearch(false); // Disable exact search if user edits
+                        if (isExactSearch) setIsExactSearch(false);
                       }}
                       onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
-                      className="w-full bg-slate-950 border border-slate-700 rounded-xl py-3 pl-11 pr-10 text-slate-100 focus:border-amber-500 outline-none transition-all focus:ring-4 focus:ring-amber-500/10"
+                      className="w-full bg-slate-950 border border-slate-700 rounded-2xl py-3.5 pl-12 pr-10 text-slate-100 focus:border-amber-500 outline-none transition-all focus:ring-4 focus:ring-amber-500/10 shadow-inner"
                     />
                     {searchInput && (
-                      <button 
-                        onClick={handleClearSearch}
-                        className="absolute right-3 top-3 text-slate-500 hover:text-slate-300 transition-colors"
-                      >
-                        <X size={20} />
-                      </button>
+                      <button onClick={handleClearSearch} className="absolute right-4 top-3.5 text-slate-500 hover:text-slate-300"><X size={20} /></button>
                     )}
                   </div>
-                  <button 
-                    onClick={handleSearch}
-                    className="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-6 py-3 rounded-xl transition-all shadow-lg shadow-amber-500/20 active:scale-95"
-                  >
-                    Chercher
-                  </button>
+                  <button onClick={handleSearch} className="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-8 py-3.5 rounded-2xl transition-all shadow-lg shadow-amber-500/20 active:scale-95">Chercher</button>
                 </div>
               </div>
 
-              <div className="flex flex-col lg:flex-row gap-6 items-end">
+              <div className="flex flex-col lg:flex-row gap-6 items-end border-t border-slate-800/50 pt-6">
                 {isItemsPage ? (
-                  <div className="w-full space-y-2">
-                    <label className="text-xs font-bold text-slate-500 uppercase tracking-widest ml-1">Filtrer par Type</label>
+                  <div className="w-full space-y-3">
+                    <label className="text-[10px] font-bold text-slate-500 uppercase tracking-[0.2em] ml-1">Catégorie d'objet</label>
                     <div className="flex flex-wrap gap-2">
                       {itemTypes.map(t => (
                         <button
                           key={t}
                           onClick={() => {setSelectedType(t); setCurrentPage(1);}}
-                          className={`
-                            px-4 py-2 rounded-xl text-xs font-bold border transition-all flex items-center gap-2
-                            ${selectedType === t 
-                              ? (TYPE_COLORS[t] || 'bg-amber-500 text-slate-950 border-amber-500') 
-                              : 'bg-slate-950 text-slate-500 border-slate-800 hover:border-slate-600 hover:text-slate-300'}
-                          `}
+                          className={`px-4 py-2 rounded-xl text-xs font-bold border transition-all flex items-center gap-2 ${selectedType === t ? (TYPE_COLORS[t] || 'bg-amber-500 text-slate-950 border-amber-500 shadow-md') : 'bg-slate-950 text-slate-500 border-slate-800 hover:border-slate-600'}`}
                         >
-                          <span className={`w-2 h-2 rounded-full ${TYPE_COLORS[t]?.split(' ')[0] || 'bg-slate-500'}`} />
+                          <span className={`w-1.5 h-1.5 rounded-full ${TYPE_COLORS[t]?.split(' ')[0] || 'bg-slate-500'}`} />
                           {t}
                         </button>
                       ))}
@@ -758,47 +714,39 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
                 ) : (
                   <>
                     <div className="w-full lg:w-1/3 space-y-2">
-                      <label className="text-xs font-bold text-slate-500 uppercase tracking-widest ml-1">Artisanat</label>
+                      <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest ml-1">Profession</label>
                       <div className="relative">
-                        <Filter className="absolute left-3 top-3 text-slate-500" size={20} />
                         <select
                           value={selectedProf}
                           onChange={(e) => {setSelectedProf(e.target.value); setCurrentPage(1);}}
-                          className="w-full bg-slate-950 border border-slate-700 rounded-xl py-3 pl-11 pr-4 text-slate-100 focus:border-amber-500 outline-none appearance-none cursor-pointer"
+                          className="w-full bg-slate-950 border border-slate-700 rounded-xl py-3 px-4 text-slate-100 focus:border-amber-500 outline-none appearance-none cursor-pointer"
                         >
                           {PROFESSIONS.map(p => <option key={p} value={p}>{p}</option>)}
                         </select>
+                        <ChevronDown className="absolute right-3 top-3.5 text-slate-500 pointer-events-none" size={16} />
                       </div>
                     </div>
 
                     <div className="w-full lg:w-1/3 space-y-2">
-                      <label className="text-xs font-bold text-slate-500 uppercase tracking-widest ml-1">Type d'objet</label>
+                      <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest ml-1">Type</label>
                       <div className="relative">
-                        <Package className="absolute left-3 top-3 text-slate-500" size={20} />
                         <select
                           value={selectedType}
                           onChange={(e) => {setSelectedType(e.target.value); setCurrentPage(1);}}
-                          className="w-full bg-slate-950 border border-slate-700 rounded-xl py-3 pl-11 pr-4 text-slate-100 focus:border-amber-500 outline-none appearance-none cursor-pointer"
+                          className="w-full bg-slate-950 border border-slate-700 rounded-xl py-3 px-4 text-slate-100 focus:border-amber-500 outline-none appearance-none cursor-pointer"
                         >
                           {itemTypes.map(t => <option key={t} value={t}>{t}</option>)}
                         </select>
+                        <ChevronDown className="absolute right-3 top-3.5 text-slate-500 pointer-events-none" size={16} />
                       </div>
                     </div>
 
                     <div className="w-full lg:w-1/3 space-y-2">
-                      <label className="text-xs font-bold text-slate-500 uppercase tracking-widest ml-1">Niveau</label>
-                      <div className="flex items-center gap-2 bg-slate-950 border border-slate-700 rounded-xl px-4 py-3">
-                        <input 
-                          type="number" value={levelRange[0]} 
-                          onChange={(e) => {setLevelRange([parseInt(e.target.value) || 0, levelRange[1]]); setCurrentPage(1);}}
-                          className="w-full bg-transparent text-center text-sm font-bold text-amber-500 outline-none"
-                        />
-                        <span className="text-slate-600">-</span>
-                        <input 
-                          type="number" value={levelRange[1]} 
-                          onChange={(e) => {setLevelRange([levelRange[0], parseInt(e.target.value) || 250]); setCurrentPage(1);}}
-                          className="w-full bg-transparent text-center text-sm font-bold text-amber-500 outline-none"
-                        />
+                      <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest ml-1">Niveau</label>
+                      <div className="flex items-center gap-2 bg-slate-950 border border-slate-700 rounded-xl px-4 py-2.5">
+                        <input type="number" value={levelRange[0]} onChange={(e) => {setLevelRange([parseInt(e.target.value) || 0, levelRange[1]]); setCurrentPage(1);}} className="w-full bg-transparent text-center text-sm font-bold text-amber-500 outline-none" />
+                        <span className="text-slate-700 font-bold">-</span>
+                        <input type="number" value={levelRange[1]} onChange={(e) => {setLevelRange([levelRange[0], parseInt(e.target.value) || 250]); setCurrentPage(1);}} className="w-full bg-transparent text-center text-sm font-bold text-amber-500 outline-none" />
                       </div>
                     </div>
                   </>
@@ -808,51 +756,30 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
 
             <div className="flex flex-wrap gap-3 mt-6 pt-6 border-t border-slate-800/50">
               {!isItemsPage && (
-                <button 
-                  onClick={() => toggleSort('level')}
-                  className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold border transition-all ${sortBy === 'level' ? 'bg-amber-500 text-slate-950 border-amber-500' : 'bg-slate-800 text-slate-400 border-slate-700 hover:text-slate-200'}`}
-                >
-                  <ArrowUpDown size={14} /> Niveau {sortBy === 'level' && (sortOrder === 'asc' ? '↑' : '↓')}
+                <button onClick={() => toggleSort('level')} className={`flex items-center gap-2 px-4 py-2 rounded-full text-[11px] font-bold border transition-all ${sortBy === 'level' ? 'bg-amber-500 text-slate-950 border-amber-500' : 'bg-slate-800 text-slate-400 border-slate-700'}`}>
+                  <ArrowUpDown size={12} /> Niveau {sortBy === 'level' && (sortOrder === 'asc' ? '↑' : '↓')}
                 </button>
               )}
-              <button 
-                onClick={() => toggleSort('name')}
-                className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold border transition-all ${sortBy === 'name' ? 'bg-amber-500 text-slate-950 border-amber-500' : 'bg-slate-800 text-slate-400 border-slate-700 hover:text-slate-200'}`}
-              >
-                <ArrowUpDown size={14} /> Nom {sortBy === 'name' && (sortOrder === 'asc' ? '↑' : '↓')}
+              <button onClick={() => toggleSort('name')} className={`flex items-center gap-2 px-4 py-2 rounded-full text-[11px] font-bold border transition-all ${sortBy === 'name' ? 'bg-amber-500 text-slate-950 border-amber-500' : 'bg-slate-800 text-slate-400 border-slate-700'}`}>
+                <ArrowUpDown size={12} /> Nom {sortBy === 'name' && (sortOrder === 'asc' ? '↑' : '↓')}
               </button>
               
               {!isItemsPage && (
                 <>
-                  <button 
-                    onClick={() => {setShowOnlyFavs(!showOnlyFavs); setCurrentPage(1);}}
-                    className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold border transition-all ${showOnlyFavs ? 'bg-yellow-500 text-slate-950 border-yellow-500' : 'bg-slate-800 text-slate-400 border-slate-700 hover:text-slate-200'}`}
-                  >
-                    <Star size={14} fill={showOnlyFavs ? 'currentColor' : 'none'} /> Favoris ({favorites.length})
+                  <button onClick={() => {setShowOnlyFavs(!showOnlyFavs); setCurrentPage(1);}} className={`flex items-center gap-2 px-4 py-2 rounded-full text-[11px] font-bold border transition-all ${showOnlyFavs ? 'bg-yellow-500 text-slate-950' : 'bg-slate-800 text-slate-400 border-slate-700'}`}>
+                    <Star size={12} fill={showOnlyFavs ? 'currentColor' : 'none'} /> Favoris ({favorites.length})
                   </button>
-
-                  <button 
-                    onClick={() => {setShowBaseComponents(!showBaseComponents); setCurrentPage(1);}}
-                    className={`flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold border transition-all ${showBaseComponents ? 'bg-blue-500 text-slate-950 border-blue-500' : 'bg-slate-800 text-slate-400 border-slate-700 hover:text-slate-200'}`}
-                  >
-                    <Package size={14} /> Composants de base
+                  <button onClick={() => {setShowBaseComponents(!showBaseComponents); setCurrentPage(1);}} className={`flex items-center gap-2 px-4 py-2 rounded-full text-[11px] font-bold border transition-all ${showBaseComponents ? 'bg-blue-500 text-slate-950' : 'bg-slate-800 text-slate-400 border-slate-700'}`}>
+                    <Package size={12} /> Composants
                   </button>
                 </>
               )}
 
-              <button 
-                onClick={handleReset}
-                className="flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold border bg-slate-800 text-slate-400 border-slate-700 hover:text-rose-400 hover:border-rose-500/30 transition-all"
-              >
-                <RotateCcw size={14} /> Réinitialiser
-              </button>
-
-              <div className="flex-1"></div>
-              <span className="text-xs text-slate-500 self-center">{filteredRecipes.length} objets</span>
+              <button onClick={handleReset} className="ml-auto flex items-center gap-2 px-4 py-2 rounded-full text-[11px] font-bold text-slate-500 hover:text-rose-400 transition-colors"><RotateCcw size={12} /> Réinitialiser</button>
             </div>
           </div>
 
-          <div className="space-y-6">
+          <div className={`${layoutMode === 'grid' && isItemsPage ? 'grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4' : 'space-y-6'}`}>
             {currentRecipes.map((recipe, idx) => (
               <RecipeItemRow 
                 key={idx}
@@ -862,35 +789,27 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
                 favorites={favorites}
                 toggleFavorite={toggleFavorite}
                 getMatchingIngredients={getMatchingIngredients}
+                viewMode={layoutMode}
               />
             ))}
-
-            {filteredRecipes.length === 0 && (
-              <div className="text-center py-20 bg-slate-900/30 rounded-2xl border border-dashed border-slate-800">
-                <Search size={48} className="mx-auto text-slate-700 mb-4" />
-                <p className="text-slate-500 font-medium">Aucun résultat pour cette sélection.</p>
-              </div>
-            )}
           </div>
+
+          {filteredRecipes.length === 0 && (
+            <div className="text-center py-20 bg-slate-900/30 rounded-2xl border border-dashed border-slate-800">
+              <Search size={48} className="mx-auto text-slate-700 mb-4" />
+              <p className="text-slate-500 font-medium">Aucun résultat pour cette sélection.</p>
+            </div>
+          )}
 
           {totalPages > 1 && (
             <div className="flex justify-center items-center gap-2 pt-10">
-              <PaginationButton onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1}>
-                <ChevronLeft size={20} />
-              </PaginationButton>
-              
+              <PaginationButton onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1}><ChevronLeft size={20} /></PaginationButton>
               <div className="flex gap-1">
                 {[...Array(totalPages)].map((_, i) => {
                   const page = i + 1;
                   if (page === 1 || page === totalPages || (page >= currentPage - 1 && page <= currentPage + 1)) {
                     return (
-                      <button
-                        key={page}
-                        onClick={() => handlePageChange(page)}
-                        className={`w-10 h-10 rounded-xl font-bold text-sm transition-all ${currentPage === page ? 'bg-amber-500 text-slate-950 shadow-lg shadow-amber-500/20 scale-110' : 'bg-slate-900 text-slate-500 hover:bg-slate-800 hover:text-slate-200'}`}
-                      >
-                        {page}
-                      </button>
+                      <button key={page} onClick={() => handlePageChange(page)} className={`w-10 h-10 rounded-xl font-bold text-sm transition-all ${currentPage === page ? 'bg-amber-500 text-slate-950 shadow-lg' : 'bg-slate-900 text-slate-500 hover:bg-slate-800'}`}>{page}</button>
                     );
                   } else if (page === currentPage - 2 || page === currentPage + 2) {
                     return <span key={page} className="text-slate-700 self-center px-1">...</span>;
@@ -898,10 +817,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
                   return null;
                 })}
               </div>
-
-              <PaginationButton onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages}>
-                <ChevronRight size={20} />
-              </PaginationButton>
+              <PaginationButton onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages}><ChevronRight size={20} /></PaginationButton>
             </div>
           )}
         </>
@@ -913,6 +829,8 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
           selectedProf={selectedProf}
           onSelectProf={setSelectedProf}
           onNavigateToRecipe={navigateToRecipe}
+          showOnlyFavs={showOnlyFavs}
+          onToggleFavs={() => setShowOnlyFavs(!showOnlyFavs)}
         />
       )}
     </div>
@@ -923,7 +841,7 @@ const PaginationButton = ({ children, onClick, disabled }: any) => (
   <button
     onClick={onClick}
     disabled={disabled}
-    className="w-10 h-10 flex items-center justify-center rounded-xl border border-slate-800 bg-slate-900 text-slate-400 hover:bg-slate-800 disabled:opacity-20 disabled:cursor-not-allowed transition-all"
+    className="w-10 h-10 flex items-center justify-center rounded-xl border border-slate-800 bg-slate-900 text-slate-400 hover:bg-slate-800 disabled:opacity-20 transition-all"
   >
     {children}
   </button>
