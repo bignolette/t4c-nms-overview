@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, Hammer, Skull, Package, User, ShieldCheck, Calculator, PanelLeftClose, PanelLeftOpen } from 'lucide-react';
+import { Menu, X, Home, Hammer, Skull, Package, User, ShieldCheck, Calculator, PanelLeftClose, PanelLeftOpen, Shield } from 'lucide-react';
 
 interface SidebarProps {
   isOpen?: boolean;
@@ -28,7 +28,7 @@ const Sidebar = ({ isOpen = true, onToggle }: SidebarProps) => {
       {/* Mobile Toggle */}
       <button 
         onClick={() => setIsMobileOpen(!isMobileOpen)}
-        className="fixed top-4 left-4 z-50 p-2 bg-slate-800 rounded-md md:hidden text-white border border-slate-700 shadow-lg"
+        className="fixed top-4 left-4 z-50 p-2 bg-slate-800 rounded-xl md:hidden text-white border border-slate-700 shadow-2xl"
       >
         {isMobileOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
@@ -37,77 +37,97 @@ const Sidebar = ({ isOpen = true, onToggle }: SidebarProps) => {
       {!isOpen && (
         <button
           onClick={onToggle}
-          className="hidden md:flex fixed top-6 left-6 z-50 p-2 bg-slate-900 rounded-lg text-slate-400 hover:text-amber-500 border border-slate-700 shadow-xl transition-all hover:scale-105"
+          className="hidden md:flex fixed top-6 left-6 z-50 p-3 bg-slate-900/80 backdrop-blur-md rounded-xl text-amber-500 border border-amber-500/20 shadow-2xl transition-all hover:scale-110 hover:bg-slate-800 active:scale-95"
           title="Afficher le menu"
         >
-          <PanelLeftOpen size={20} />
+          <PanelLeftOpen size={24} />
         </button>
       )}
 
       {/* Sidebar Overlay (Mobile) */}
       {isMobileOpen && (
         <div 
-          className="fixed inset-0 bg-black/50 z-40 md:hidden backdrop-blur-sm"
+          className="fixed inset-0 bg-black/60 z-40 md:hidden backdrop-blur-sm animate-fade-in"
           onClick={() => setIsMobileOpen(false)}
         />
       )}
 
       {/* Sidebar Container */}
       <div className={`
-        fixed md:relative inset-y-0 left-0 z-40 bg-slate-900 border-r border-slate-800 
-        transform transition-all duration-300 ease-in-out
+        fixed md:relative inset-y-0 left-0 z-40 bg-slate-950 border-r border-slate-800/50 
+        transform transition-all duration-500 cubic-bezier(0.4, 0, 0.2, 1)
         ${isMobileOpen ? 'translate-x-0' : '-translate-x-full'}
         md:translate-x-0
-        ${isOpen ? 'md:w-64' : 'md:w-0 md:border-none md:overflow-hidden'}
-        flex flex-col h-full
+        ${isOpen ? 'md:w-72' : 'md:w-0 md:border-none md:overflow-hidden'}
+        flex flex-col h-full shadow-[10px_0_30px_-15px_rgba(0,0,0,0.5)]
       `}>
+        {/* Subtle Background Decoration */}
+        <div className="absolute inset-0 bg-gradient-to-b from-slate-900/50 to-transparent pointer-events-none" />
+        
         {/* Inner Container to prevent content squishing during transition */}
-        <div className={`flex flex-col h-full w-64 transition-opacity duration-200 ${isOpen ? 'opacity-100' : 'md:opacity-0'}`}>
+        <div className={`relative flex flex-col h-full w-72 transition-all duration-300 ${isOpen ? 'opacity-100' : 'md:opacity-0 md:translate-x-[-20px]'}`}>
           {/* Header */}
-          <div className="p-6 border-b border-slate-800 flex items-center justify-between">
-            <div>
-              <h1 className="text-2xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-br from-amber-200 via-amber-500 to-amber-700 drop-shadow-sm">
-                T4C NMS
-              </h1>
-              <p className="text-[10px] font-bold text-slate-500 uppercase tracking-[0.2em] mt-1">Overview</p>
+          <div className="py-14 px-8 border-b border-slate-800/50">
+            <div className="flex items-center justify-between mb-2">
+              <div className="flex items-center gap-3">
+                <div className="p-2.5 bg-amber-500/10 rounded-xl border border-amber-500/20">
+                  <Shield className="text-amber-500" size={24} />
+                </div>
+                <h1 className="text-3xl font-black tracking-tighter bg-clip-text text-transparent bg-gradient-to-r from-amber-200 via-amber-400 to-amber-600">
+                  T4C NMS
+                </h1>
+              </div>
+              
+              {/* Desktop Close Button */}
+              <button
+                onClick={onToggle}
+                className="hidden md:flex text-slate-500 hover:text-amber-500 p-2 rounded-xl hover:bg-slate-900 transition-all group"
+                title="Masquer le menu"
+              >
+                <PanelLeftClose size={22} className="group-hover:-translate-x-0.5 transition-transform" />
+              </button>
             </div>
-            
-            {/* Desktop Close Button */}
-            <button
-              onClick={onToggle}
-              className="hidden md:block text-slate-500 hover:text-slate-300 p-1 rounded hover:bg-slate-800 transition-colors"
-              title="Masquer le menu"
-            >
-              <PanelLeftClose size={18} />
-            </button>
+            <p className="text-[11px] font-bold text-slate-500 uppercase tracking-[0.4em] ml-14">Wiki Overview</p>
           </div>
 
           {/* Navigation */}
-          <nav className="flex-1 overflow-y-auto py-4 mt-2">
-            <ul className="space-y-1 px-3">
-              {navItems.map((item) => (
-                <li key={item.path}>
-                  <Link
-                    to={item.path}
-                    onClick={() => setIsMobileOpen(false)}
-                    className={`
-                      flex items-center gap-3 px-4 py-3 rounded-lg transition-all duration-200 group
-                      ${isActive(item.path) 
-                        ? 'bg-amber-500/10 text-amber-500 border border-amber-500/20 shadow-lg shadow-amber-500/5' 
-                        : 'text-slate-400 hover:bg-slate-800 hover:text-slate-100 hover:pl-5'}
-                    `}
-                  >
-                    <item.icon size={20} className={isActive(item.path) ? "animate-pulse" : "group-hover:scale-110 transition-transform"} />
-                    <span className="font-medium">{item.name}</span>
-                  </Link>
-                </li>
-              ))}
+          <nav className="flex-1 overflow-y-auto py-10 px-5 custom-scrollbar">
+            <ul className="space-y-4">
+              {navItems.map((item) => {
+                const active = isActive(item.path);
+                return (
+                  <li key={item.path}>
+                    <Link
+                      to={item.path}
+                      onClick={() => setIsMobileOpen(false)}
+                      className={`
+                        flex items-center gap-5 px-5 py-5 rounded-2xl transition-all duration-300 group relative overflow-hidden
+                        ${active 
+                          ? 'bg-amber-500/10 text-amber-500 border border-amber-500/20 shadow-[0_0_30px_rgba(245,158,11,0.08)]' 
+                          : 'text-slate-400 hover:text-slate-100 hover:bg-slate-900/80 border border-transparent'}
+                      `}
+                    >
+                      {/* Active indicator bar */}
+                      {active && <div className="absolute left-0 top-4 bottom-4 w-1.5 bg-amber-500 rounded-full" />}
+                      
+                      <item.icon size={24} className={`shrink-0 transition-transform duration-300 ${active ? 'scale-110' : 'group-hover:scale-110 group-hover:text-amber-400'}`} />
+                      <span className={`font-black text-sm uppercase tracking-wide ${active ? 'text-amber-400' : ''}`}>{item.name}</span>
+                      
+                      {active && (
+                        <div className="ml-auto w-2 h-2 rounded-full bg-amber-500 animate-pulse shadow-[0_0_10px_rgba(245,158,11,0.8)]" />
+                      )}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </nav>
 
-          <div className="p-4 border-t border-slate-800 bg-slate-950/30">
-              <p className="text-[10px] text-slate-600 text-center leading-relaxed">
-                Les données proviennent du <a href="#" className="hover:text-amber-500 underline">Wiki T4C NMS</a> et du site <a href="#" className="hover:text-amber-500 underline">NMS Révolution</a>
+          {/* Footer Info */}
+          <div className="p-6 border-t border-slate-800/50 bg-slate-950/50 backdrop-blur-sm">
+              <p className="text-[10px] text-slate-500 text-center leading-relaxed font-medium">
+                Données : <br/>
+                <a href="#" className="text-slate-400 hover:text-amber-500 transition-colors underline decoration-slate-700 underline-offset-4">Wiki T4C NMS</a> & <a href="#" className="text-slate-400 hover:text-amber-500 transition-colors underline decoration-slate-700 underline-offset-4">NMS Révolution</a>
               </p>
           </div>
         </div>

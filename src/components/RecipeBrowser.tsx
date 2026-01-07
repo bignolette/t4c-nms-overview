@@ -66,12 +66,22 @@ const getSourceIcon = (source: string | undefined, name?: string) => {
 };
 
 const PROF_COLORS: Record<string, string> = {
-  'Apothicaire': 'bg-emerald-500 text-emerald-500 border-emerald-500/20',
-  'Bijoutier': 'bg-blue-500 text-blue-500 border-blue-500/20',
-  'Couturier': 'bg-pink-500 text-pink-500 border-pink-500/20',
-  'Armurier': 'bg-orange-500 text-orange-500 border-orange-500/20',
-  'Forgeron': 'bg-red-500 text-red-500 border-red-500/20',
-  'Ebéniste': 'bg-amber-700 text-amber-600 border-amber-700/20',
+  'Apothicaire': 'bg-emerald-500/10 text-emerald-500 border-emerald-500/20',
+  'Bijoutier': 'bg-blue-500/10 text-blue-500 border-blue-500/20',
+  'Couturier': 'bg-pink-500/10 text-pink-500 border-pink-500/20',
+  'Armurier': 'bg-orange-500/10 text-orange-500 border-orange-500/20',
+  'Forgeron': 'bg-red-500/10 text-red-500 border-red-500/20',
+  'Ebéniste': 'bg-amber-700/10 text-amber-600 border-amber-700/20',
+};
+
+const VIBRANT_PROF_COLORS: Record<string, string> = {
+  'Apothicaire': 'bg-emerald-600 border-emerald-500 shadow-emerald-500/20',
+  'Bijoutier': 'bg-blue-600 border-blue-500 shadow-blue-500/20',
+  'Couturier': 'bg-pink-600 border-pink-500 shadow-pink-500/20',
+  'Armurier': 'bg-orange-600 border-orange-500 shadow-orange-500/20',
+  'Forgeron': 'bg-red-600 border-red-500 shadow-red-500/20',
+  'Ebéniste': 'bg-amber-700 border-amber-600 shadow-amber-600/20',
+  'Tous': 'bg-slate-100 text-slate-900 border-white shadow-white/10'
 };
 
 const TYPE_COLORS: Record<string, string> = {
@@ -114,7 +124,7 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
           </div>
           <button 
             onClick={() => toggleFavorite(recipe.name)}
-            className={`p-1.5 rounded-full border transition-all ${favorites.includes(recipe.name) ? 'bg-yellow-500 border-yellow-400 text-slate-950 scale-110' : 'bg-slate-800 border-slate-700 text-slate-500 hover:text-yellow-500'}`}
+            className={`p-1.5 rounded-full border shadow-lg transition-all ${favorites.includes(recipe.name) ? 'bg-yellow-500 border-yellow-400 text-slate-950 scale-110' : 'bg-slate-800 border-slate-700 text-slate-500 hover:text-yellow-500'}`}
           >
             <Star size={12} fill={favorites.includes(recipe.name) ? 'currentColor' : 'none'} />
           </button>
@@ -306,25 +316,34 @@ const NPCGroupedView = ({
     <div className="space-y-6 animate-fade-in">
       {/* Navigation Tabs */}
       <div className="bg-slate-900 border border-slate-800 rounded-2xl p-2 shadow-xl flex flex-wrap gap-1 sticky top-4 z-30 backdrop-blur-xl">
-        {PROFESSIONS.map(p => (
-          <button
-            key={p}
-            onClick={() => onSelectProf(p)}
-            className={`px-4 py-2.5 rounded-xl text-xs font-bold transition-all flex items-center gap-2 ${
-              selectedProf === p 
-                ? 'bg-amber-500 text-slate-950 shadow-lg' 
-                : 'text-slate-400 hover:bg-slate-800 hover:text-slate-200'
-            }`}
-          >
-            {p === 'Tous' ? <Users size={14} /> : <div className={`w-2 h-2 rounded-full ${PROF_COLORS[p]?.split(' ')[0]}`} />}
-            {p}
-          </button>
-        ))}
+        {PROFESSIONS.map(p => {
+          const isSelected = selectedProf === p;
+          return (
+            <button
+              key={p}
+              onClick={() => onSelectProf(p)}
+              className={`px-4 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all flex items-center gap-2 border ${
+                isSelected 
+                  ? `${VIBRANT_PROF_COLORS[p] || 'bg-amber-500 text-slate-950'} text-white shadow-lg scale-105 z-10` 
+                  : 'bg-slate-950 text-slate-500 border-slate-800 hover:border-slate-600 hover:text-slate-200'
+              }`}
+            >
+              {p === 'Tous' ? (
+                <Users size={14} className={isSelected ? 'text-slate-900' : 'text-slate-500'} />
+              ) : (
+                <div className={`w-2 h-2 rounded-full ${isSelected ? 'bg-white' : (VIBRANT_PROF_COLORS[p]?.split(' ')[0])}`} />
+              )}
+              {p}
+            </button>
+          );
+        })}
         <div className="flex-1 min-w-[20px]" />
         <button 
           onClick={onToggleFavs}
-          className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold transition-all ${
-            showOnlyFavs ? 'bg-yellow-500 text-slate-950' : 'text-slate-500 hover:text-yellow-500'
+          className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all ${
+            showOnlyFavs 
+              ? 'bg-yellow-500 text-slate-950 shadow-lg shadow-yellow-500/20 scale-105' 
+              : 'bg-slate-950 text-slate-500 border border-slate-800 hover:border-yellow-500/50 hover:text-yellow-500'
           }`}
         >
           <Star size={14} fill={showOnlyFavs ? 'currentColor' : 'none'} />
@@ -340,7 +359,7 @@ const NPCGroupedView = ({
           <div key={prof} className="space-y-4">
             <div className="flex items-center justify-between px-2">
               <h2 className="text-xl font-black uppercase tracking-wider text-slate-100 flex items-center gap-3">
-                <div className={`w-1 h-6 rounded-full ${PROF_COLORS[prof]?.split(' ')[0]}`} />
+                <div className={`w-1.5 h-6 rounded-full ${VIBRANT_PROF_COLORS[prof]?.split(' ')[0]}`} />
                 {prof}
               </h2>
               <div className="flex gap-2">
