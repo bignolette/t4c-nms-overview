@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { itemsData } from '../data/items';
 import type { RecipeItem } from '../data/types';
 import { fastNormalize, mapSourceToSlot, formatStatValue } from '../data/utils';
-import { Search, Shield, Sword, Crown, Shirt, Footprints, Hand, Hexagon, Circle, Package, Link2, GripHorizontal, Columns2, Medal, Wind, User, Tag, type LucideIcon } from 'lucide-react';
+import { Search, Shield, Sword, Crown, Shirt, Footprints, Hand, Hexagon, Circle, Package, Link2, GripHorizontal, Columns2, Medal, Wind, User, Tag, Zap, Trophy, ChevronDown, type LucideIcon } from 'lucide-react';
 
 // Types
 interface Stats {
@@ -55,7 +55,6 @@ const SLOTS = [
   { id: 'Botte', label: 'Bottes', icon: Footprints },
 ];
 
-
 const EquipableBuilder = () => {
   const [stats, setStats] = useState<Stats>({
     str: 50,
@@ -66,6 +65,8 @@ const EquipableBuilder = () => {
   });
 
   const [hideNoReqs, setHideNoReqs] = useState(true);
+  const [isBiSMode, setIsBiSMode] = useState(false);
+  const [bisFocus, setBisFocus] = useState('Puissance Feu');
   const [selectedSlot, setSelectedSlot] = useState(SLOTS[0]);
   const [searchTerm, setSearchTerm] = useState('');
   const [showImportToast, setShowImportToast] = useState(false);
@@ -84,7 +85,6 @@ const EquipableBuilder = () => {
     setTimeout(() => setShowImportToast(false), 3000);
   };
 
-  // Index items by slot once to boost performance
   const itemsBySlot = useMemo(() => {
     const map: Record<string, RecipeItem[]> = {};
     itemsData.forEach(item => {
@@ -104,12 +104,21 @@ const EquipableBuilder = () => {
     setStats(prev => ({ ...prev, [key]: num }));
   };
 
+  const bisOptions = useMemo(() => {
+    const options = new Set<string>();
+    itemsData.forEach(item => {
+      if (item.secondary) {
+        Object.keys(item.secondary).forEach(k => options.add(k));
+      }
+    });
+    return Array.from(options).sort();
+  }, []);
+
   const availableItems = useMemo(() => {
     const itemsInSlot = itemsBySlot[selectedSlot.id] || [];
     const normalizedSearch = fastNormalize(searchTerm);
 
     const filtered = itemsInSlot.filter((item) => {
-      // 1. Prerequisites Check
       const reqs = item.prerequisites || {};
       const sReq = parseInt(reqs.str || '0');
       const eReq = parseInt(reqs.end || '0');
@@ -126,11 +135,21 @@ const EquipableBuilder = () => {
       if (stats.int < iReq) return false;
       if (stats.wis < wReq) return false;
 
-      // 2. Search Term
       if (normalizedSearch && !fastNormalize(item.name).includes(normalizedSearch)) return false;
 
       return true;
     });
+
+    if (isBiSMode) {
+      return filtered.sort((a, b) => {
+        const getVal = (i: RecipeItem) => {
+          const focusKey = bisFocus.toLowerCase() as keyof typeof i.bonuses;
+          const s = i.secondary?.[bisFocus] || (i.bonuses ? i.bonuses[focusKey] : "0") || "0";
+          return parseInt(String(s).replace(/[^0-9-]/g, '')) || 0;
+        };
+        return getVal(b) - getVal(a);
+      });
+    }
 
     return filtered.sort((a, b) => {
       const getSum = (i: RecipeItem) => {
@@ -145,7 +164,7 @@ const EquipableBuilder = () => {
       if (sumA !== sumB) return sumB - sumA;
       return a.name.localeCompare(b.name);
     });
-  }, [stats, selectedSlot, searchTerm, hideNoReqs, itemsBySlot]);
+  }, [stats, selectedSlot, searchTerm, hideNoReqs, itemsBySlot, isBiSMode, bisFocus]);
 
   return (
     <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
@@ -158,7 +177,6 @@ const EquipableBuilder = () => {
           <div className="flex gap-1 relative">
             <button 
               onClick={() => setShowLoadModal(true)}
-              title="Charger un personnage"
               className="px-3 py-2 bg-amber-500 hover:bg-amber-400 text-slate-900 rounded-lg border border-amber-600 shadow-[0_0_15px_rgba(245,158,11,0.2)] transition-all group flex items-center gap-2 font-bold text-[11px] uppercase tracking-wider"
             >
               <User size={16} />
@@ -183,10 +201,10 @@ const EquipableBuilder = () => {
                  </h3>
                  <button onClick={() => setShowLoadModal(false)} className="text-slate-500 hover:text-white transition-colors">✕</button>
               </div>
-              <div className="p-6 space-y-3">
+              <div className="p-6 space-y-3 max-h-[400px] overflow-y-auto">
                 {savedChars.length === 0 ? (
                   <div className="text-center py-8 text-slate-500 italic text-sm">
-                    Aucun personnage trouvé dans le Stat Planner.
+                    Aucun personnage trouvé.
                   </div>
                 ) : (
                   savedChars.map(char => (
@@ -195,7 +213,7 @@ const EquipableBuilder = () => {
                       onClick={() => loadSavedChar(char)}
                       className="w-full group bg-slate-950/50 hover:bg-amber-500 border border-slate-800 hover:border-amber-400 p-4 rounded-xl transition-all flex items-center justify-between"
                     >
-                      <div className="flex flex-col items-start">
+                      <div className="flex flex-col items-start text-left">
                         <span className="text-slate-100 group-hover:text-slate-900 font-black uppercase text-sm tracking-wider">{char.name}</span>
                         <div className="flex gap-2 mt-1">
                           <span className="text-[9px] text-slate-500 group-hover:text-slate-800 font-bold uppercase tracking-tighter">FOR {char.finalStats.str}</span>
@@ -208,9 +226,6 @@ const EquipableBuilder = () => {
                     </button>
                   ))
                 )}
-              </div>
-              <div className="p-4 bg-slate-950/50 text-center">
-                <p className="text-[10px] text-slate-500 uppercase font-bold tracking-widest">Sélectionnez un personnage pour mettre à jour vos prérequis</p>
               </div>
             </div>
           </div>
@@ -235,9 +250,9 @@ const EquipableBuilder = () => {
         </div>
       </div>
 
-      {/* Middle Column: Slot Selection Visual */}
+      {/* Middle Column: Slot Selection */}
       <div className="lg:col-span-4 bg-slate-900/50 p-6 rounded-lg border border-slate-800 backdrop-blur-sm flex flex-col items-center h-fit">
-        <h2 className="text-xl font-bold text-amber-500 mb-8 flex items-center gap-2 text-center">
+        <h2 className="text-xl font-bold text-amber-500 mb-8 flex items-center gap-2">
           <Crown size={20} /> Emplacement
         </h2>
 
@@ -277,89 +292,123 @@ const EquipableBuilder = () => {
         </div>
       </div>
 
-      {/* Right Column: Filtered Items List */}
-      <div className="lg:col-span-5 bg-slate-900/50 rounded-lg border border-slate-800 backdrop-blur-sm flex flex-col overflow-hidden">
+      {/* Right Column: Items List */}
+      <div className="lg:col-span-5 bg-slate-900/50 rounded-lg border border-slate-800 backdrop-blur-sm flex flex-col overflow-hidden h-[800px]">
         <div className="p-4 border-b border-slate-800 bg-slate-800/30">
           <h3 className="text-lg font-bold text-amber-500 mb-4 flex items-center justify-between">
-            <span>{selectedSlot.label} disponibles</span>
+            <span>{selectedSlot.label}</span>
             <span className="text-xs text-slate-500 font-normal">{availableItems.length} objets</span>
           </h3>
-          <div className="relative">
+          
+          <div className="relative mb-4">
             <Search className="absolute left-3 top-2.5 text-slate-500" size={18} />
             <input 
               type="text" 
               placeholder="Filtrer par nom..." 
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full bg-slate-950 border border-slate-700 rounded pl-10 pr-4 py-2 text-slate-200 focus:outline-none focus:border-amber-500 text-sm"
+              className="w-full bg-slate-950 border border-slate-700 rounded-xl pl-10 pr-4 py-2 text-slate-200 focus:outline-none focus:border-amber-500 text-sm"
             />
           </div>
-          <div className="mt-3">
+
+          <div className="space-y-3">
             <label className="flex items-center gap-3 cursor-pointer group">
               <div className="relative">
                 <input type="checkbox" className="sr-only" checked={hideNoReqs} onChange={(e) => setHideNoReqs(e.target.checked)} />
                 <div className={`w-10 h-5 rounded-full transition-colors ${hideNoReqs ? 'bg-amber-500' : 'bg-slate-700'}`}></div>
                 <div className={`absolute left-1 top-1 w-3 h-3 bg-white rounded-full transition-transform ${hideNoReqs ? 'translate-x-5' : ''}`}></div>
               </div>
-              <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider group-hover:text-slate-300 transition-colors">Ignorer sans prérequis</span>
+              <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Ignorer sans prérequis</span>
             </label>
+
+            <div className="pt-3 border-t border-slate-800">
+              <label className="flex items-center gap-3 cursor-pointer group mb-3">
+                <div className="relative">
+                  <input type="checkbox" className="sr-only" checked={isBiSMode} onChange={(e) => setIsBiSMode(e.target.checked)} />
+                  <div className={`w-10 h-5 rounded-full transition-colors ${isBiSMode ? 'bg-emerald-500' : 'bg-slate-700'}`}></div>
+                  <div className={`absolute left-1 top-1 w-3 h-3 bg-white rounded-full transition-transform ${isBiSMode ? 'translate-x-5' : ''}`}></div>
+                </div>
+                <span className="text-[11px] font-bold text-emerald-500 uppercase tracking-widest flex items-center gap-2">
+                  <Zap size={12} /> Optimisation BiS
+                </span>
+              </label>
+
+              {isBiSMode && (
+                <div className="relative">
+                  <select 
+                    value={bisFocus}
+                    onChange={(e) => setBisFocus(e.target.value)}
+                    className="w-full bg-slate-950 border border-slate-700 rounded-xl py-2 pl-3 pr-8 text-[10px] font-bold uppercase tracking-wider text-slate-300 focus:outline-none focus:border-emerald-500 appearance-none cursor-pointer"
+                  >
+                    {bisOptions.map(opt => <option key={opt} value={opt}>{opt}</option>)}
+                  </select>
+                  <ChevronDown size={14} className="absolute right-2 top-2 text-slate-500 pointer-events-none" />
+                </div>
+              )}
+            </div>
           </div>
         </div>
 
-        <div className="flex-1 overflow-y-auto p-4 space-y-4 max-h-[700px]">
+        <div className="flex-1 overflow-y-auto p-4 space-y-4 custom-scrollbar">
           {availableItems.length === 0 ? (
-            <div className="text-center py-12 text-slate-500">
-              <p>Aucun objet trouvé.</p>
-              <p className="text-xs mt-1">Vérifiez vos statistiques.</p>
-            </div>
+            <div className="text-center py-12 text-slate-500 italic">Aucun objet trouvé.</div>
           ) : (
-            availableItems.map((item, idx) => (
-              <div key={idx} className="w-full p-4 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col gap-4 hover:border-slate-700 transition-all group">
-                <div className="flex justify-between items-start">
-                   <div className="flex flex-col gap-1">
-                     <h4 className="font-bold text-slate-100 group-hover:text-amber-500 transition-colors">{item.name}</h4>
-                     {item.typeSource && (
-                       <div className="flex items-center gap-1 text-[9px] text-emerald-500 uppercase font-black tracking-tighter">
-                         <Tag size={10} />
-                         <span>{item.typeSource}</span>
-                       </div>
-                     )}
-                   </div>
-                   <Link to={`/wiki/items?search=${encodeURIComponent(item.name)}`} className="p-1.5 bg-slate-800 rounded-lg text-slate-400 hover:text-amber-500 transition-colors">
-                     <Package size={14} />
-                   </Link>
-                </div>
-
-                <div className="space-y-1.5">
-                  <span className="text-[9px] font-bold text-slate-500 uppercase tracking-widest block">prérequis</span>
-                  <div className="flex flex-wrap gap-1.5">
-                    {item.prerequisites?.str && <StatBadge label="FOR" value={formatStatValue(item.prerequisites.str)} type="str" />}
-                    {item.prerequisites?.end && <StatBadge label="END" value={formatStatValue(item.prerequisites.end)} type="end" />}
-                    {item.prerequisites?.dex && <StatBadge label="DEX" value={formatStatValue(item.prerequisites.dex)} type="dex" />}
-                    {item.prerequisites?.int && <StatBadge label="INT" value={formatStatValue(item.prerequisites.int)} type="int" />}
-                    {item.prerequisites?.wis && <StatBadge label="SAG" value={formatStatValue(item.prerequisites.wis)} type="wis" />}
-                  </div>
-                </div>
-
-                {(item.bonuses || item.secondary) && (
-                  <div className="space-y-1.5">
-                    <span className="text-[9px] font-bold text-emerald-500/80 uppercase tracking-widest block">Bonus</span>
-                    <div className="flex flex-wrap gap-1.5">
-                      {item.bonuses?.ca && <StatBadge label="CA" value={formatStatValue(item.bonuses.ca)} type="ca" />}
-                      {item.bonuses?.str && <StatBadge label="FOR" value={formatStatValue(item.bonuses.str)} type="str" />}
-                      {item.bonuses?.end && <StatBadge label="END" value={formatStatValue(item.bonuses.end)} type="end" />}
-                      {item.bonuses?.dex && <StatBadge label="DEX" value={formatStatValue(item.bonuses.dex)} type="dex" />}
-                      {item.bonuses?.int && <StatBadge label="INT" value={formatStatValue(item.bonuses.int)} type="int" />}
-                      {item.bonuses?.wis && <StatBadge label="SAG" value={formatStatValue(item.bonuses.wis)} type="wis" />}
-                      
-                      {item.secondary && Object.entries(item.secondary).map(([label, value]) => (
-                        <StatBadge key={label} label={label} value={formatStatValue(value as string)} type="secondary" />
-                      ))}
+            availableItems.map((item, idx) => {
+              const isTopBiS = isBiSMode && idx < 3;
+              return (
+                <div key={idx} className={`w-full p-4 rounded-2xl bg-slate-900/60 border transition-all relative ${isTopBiS ? 'border-emerald-500/50 shadow-[0_0_20px_rgba(16,185,129,0.1)]' : 'border-slate-800'}`}>
+                  {isTopBiS && (
+                    <div className="absolute -top-2 -right-2 bg-emerald-500 text-slate-950 p-1.5 rounded-lg shadow-lg rotate-12">
+                      <Trophy size={14} />
                     </div>
+                  )}
+                  
+                  <div className="flex justify-between items-start mb-4">
+                    <div className="flex flex-col gap-1">
+                      <h4 className={`font-bold ${isTopBiS ? 'text-emerald-400' : 'text-slate-100'}`}>{item.name}</h4>
+                      {item.typeSource && (
+                        <div className="flex items-center gap-1 text-[9px] text-emerald-500 uppercase font-black">
+                          <Tag size={10} /> {item.typeSource}
+                        </div>
+                      )}
+                    </div>
+                    <Link to={`/wiki/items?search=${encodeURIComponent(item.name)}`} className="p-1.5 bg-slate-800 rounded-lg text-slate-400 hover:text-amber-500">
+                      <Package size={14} />
+                    </Link>
                   </div>
-                )}
-              </div>
-            ))
+
+                  <div className="space-y-3">
+                    <div>
+                      <span className="text-[9px] font-bold text-slate-500 uppercase tracking-widest block mb-1.5">Prérequis</span>
+                      <div className="flex flex-wrap gap-1.5">
+                        {item.prerequisites?.str && <StatBadge label="FOR" value={formatStatValue(item.prerequisites.str)} type="str" />}
+                        {item.prerequisites?.end && <StatBadge label="END" value={formatStatValue(item.prerequisites.end)} type="end" />}
+                        {item.prerequisites?.dex && <StatBadge label="DEX" value={formatStatValue(item.prerequisites.dex)} type="dex" />}
+                        {item.prerequisites?.int && <StatBadge label="INT" value={formatStatValue(item.prerequisites.int)} type="int" />}
+                        {item.prerequisites?.wis && <StatBadge label="SAG" value={formatStatValue(item.prerequisites.wis)} type="wis" />}
+                      </div>
+                    </div>
+
+                    {(item.bonuses || item.secondary) && (
+                      <div>
+                        <span className="text-[9px] font-bold text-emerald-500/80 uppercase tracking-widest block mb-1.5">Bonus</span>
+                        <div className="flex flex-wrap gap-1.5">
+                          {item.bonuses?.ca && <StatBadge label="CA" value={formatStatValue(item.bonuses.ca)} type="ca" />}
+                          {item.bonuses?.str && <StatBadge label="FOR" value={formatStatValue(item.bonuses.str)} type="str" />}
+                          {item.bonuses?.end && <StatBadge label="END" value={formatStatValue(item.bonuses.end)} type="end" />}
+                          {item.bonuses?.dex && <StatBadge label="DEX" value={formatStatValue(item.bonuses.dex)} type="dex" />}
+                          {item.bonuses?.int && <StatBadge label="INT" value={formatStatValue(item.bonuses.int)} type="int" />}
+                          {item.bonuses?.wis && <StatBadge label="SAG" value={formatStatValue(item.bonuses.wis)} type="wis" />}
+                          {item.secondary && Object.entries(item.secondary).map(([label, value]) => (
+                            <StatBadge key={label} label={label} value={formatStatValue(value as string)} type="secondary" />
+                          ))}
+                        </div>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              );
+            })
           )}
         </div>
       </div>
@@ -367,13 +416,12 @@ const EquipableBuilder = () => {
   );
 };
 
-interface SlotDef { id: string; label: string; icon: LucideIcon; }
-
-const SlotBtn = ({ def, isActive, onClick }: { def: SlotDef, isActive: boolean, onClick: () => void }) => {
+interface SlotBtnProps { def: { id: string, label: string, icon: LucideIcon }, isActive: boolean, onClick: () => void }
+const SlotBtn = ({ def, isActive, onClick }: SlotBtnProps) => {
   const Icon = def.icon;
   return (
-    <div onClick={onClick} className={`aspect-square rounded-lg border-2 flex flex-col items-center justify-center cursor-pointer transition-all relative group ${isActive ? 'border-amber-500 bg-amber-500/10 shadow-[0_0_15px_rgba(245,158,11,0.2)]' : 'border-slate-700 bg-slate-800/30 hover:border-slate-500 hover:bg-slate-800/50'}`}>
-      <Icon size={24} className={isActive ? 'text-amber-500' : 'text-slate-600 group-hover:text-slate-500'} />
+    <div onClick={onClick} className={`aspect-square rounded-xl border-2 flex flex-col items-center justify-center cursor-pointer transition-all relative group ${isActive ? 'border-amber-500 bg-amber-500/10 shadow-[0_0_20px_rgba(245,158,11,0.2)]' : 'border-slate-700 bg-slate-800/30 hover:border-slate-500'}`}>
+      <Icon size={24} className={isActive ? 'text-amber-500' : 'text-slate-600'} />
       <span className={`text-[9px] mt-1 uppercase tracking-wider font-bold ${isActive ? 'text-amber-500' : 'text-slate-600'}`}>{def.label}</span>
     </div>
   );
