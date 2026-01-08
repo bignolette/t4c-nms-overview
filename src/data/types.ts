@@ -25,6 +25,11 @@ export type ItemSource =
   | 'Orbe' | 'Plastron' | 'Robe' | 'Matériau' | 'Divers' | 'Récolte' | 'Mine'
   | string; // Fallback for specific strings like "Mine: Cave..."
 
+export interface ItemLocation {
+  label: string;
+  coordinates: string;
+}
+
 export interface RecipeItem {
   name: string;
   quantity: number;
@@ -33,6 +38,8 @@ export interface RecipeItem {
   icon?: string;
   ingredients?: RecipeItem[];
   source?: ItemSource;
+  typeSource?: string;
+  locations?: ItemLocation[];
   learnedFrom?: string;
   coordinates?: string;
   locationPrecision?: string;

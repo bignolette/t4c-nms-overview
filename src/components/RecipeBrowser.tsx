@@ -140,9 +140,18 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
         
         <div>
           <h3 className="font-bold text-slate-100 group-hover:text-amber-500 transition-colors text-sm line-clamp-2 min-h-[40px]">{recipe.name}</h3>
-          <div className="flex items-center gap-1 mt-1 text-[10px] text-slate-500 uppercase font-black tracking-tighter">
-            <Tag size={10} className="text-slate-600" />
-            <span>{recipe.source}</span>
+          <div className="flex flex-col gap-1 mt-1">
+            {recipe.typeSource ? (
+              <div className="flex items-center gap-1 text-[10px] text-emerald-500 uppercase font-black tracking-tighter">
+                <Tag size={10} />
+                <span>{recipe.typeSource} {recipe.locations?.[0] ? `• ${recipe.locations[0].label}` : ''}</span>
+              </div>
+            ) : recipe.source && (
+              <div className="flex items-center gap-1 text-[10px] text-slate-500 uppercase font-black tracking-tighter">
+                <Tag size={10} className="text-slate-600" />
+                <span>{recipe.source}</span>
+              </div>
+            )}
           </div>
         </div>
 
@@ -177,9 +186,9 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
             <MapPin size={10} /> {zone}
           </span>
         ))}
-        {isItemsPage && recipe.source && (
-          <span className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter border shadow-lg ${TYPE_COLORS[recipe.source] || 'bg-slate-800 text-slate-400'}`}>
-            <Tag size={10} className="opacity-70" /> {recipe.source}
+        {isItemsPage && (recipe.typeSource || recipe.source) && (
+          <span className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter border shadow-lg ${recipe.typeSource ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20' : (TYPE_COLORS[recipe.source as string] || 'bg-slate-800 text-slate-400')}`}>
+            <Tag size={10} className="opacity-70" /> {recipe.typeSource || recipe.source}
           </span>
         )}
         {!isItemsPage && recipe.profession && (
@@ -202,9 +211,19 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-slate-100 group-hover:text-amber-500 transition-colors mb-1">{recipe.name}</h3>
-                  <div className="flex items-center gap-1.5 px-2 py-0.5 rounded bg-slate-800 border border-slate-700 w-fit">
-                    <Tag size={10} className="text-slate-500" />
-                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">{recipe.source}</span>
+                  <div className="flex flex-wrap gap-2">
+                    {recipe.typeSource && (
+                      <div className="flex items-center gap-1.5 px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20 w-fit">
+                        <Tag size={10} className="text-emerald-500" />
+                        <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-tighter">{recipe.typeSource}</span>
+                      </div>
+                    )}
+                    {recipe.source && (
+                      <div className="flex items-center gap-1.5 px-2 py-0.5 rounded bg-slate-800 border border-slate-700 w-fit">
+                        <Tag size={10} className="text-slate-500" />
+                        <span className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">{recipe.source}</span>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
@@ -266,6 +285,27 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
                         <span className="font-black tracking-tight">{recipe.coordinates}</span>
                       </div>
                     )}
+                  </div>
+                </div>
+              )}
+
+              {recipe.locations && recipe.locations.length > 0 && (
+                <div className="space-y-3">
+                  <div className="bg-emerald-500/5 border border-emerald-500/20 rounded-xl p-3">
+                    <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest block mb-2">Gisements / Récoltes</span>
+                    <div className="space-y-3">
+                      {recipe.locations.map((loc: {label: string, coordinates: string}, idx: number) => (
+                        <div key={idx} className="flex flex-col gap-1">
+                          <span className="text-xs font-bold text-slate-200">{loc.label}</span>
+                          {loc.coordinates && (
+                            <div className="flex items-center gap-2 text-xs text-amber-400 font-mono bg-amber-400/5 px-2 py-1 rounded border border-amber-400/10 w-fit">
+                              <MapPin size={12} className="text-amber-500" />
+                              <span className="font-black tracking-tight">{loc.coordinates}</span>
+                            </div>
+                          )}
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               )}

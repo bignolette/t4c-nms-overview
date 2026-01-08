@@ -316,7 +316,15 @@ const EquipableBuilder = () => {
             availableItems.map((item, idx) => (
               <div key={idx} className="w-full p-4 rounded-xl bg-slate-900/80 border border-slate-800 flex flex-col gap-4 hover:border-slate-700 transition-all group">
                 <div className="flex justify-between items-start">
-                   <h4 className="font-bold text-slate-100 group-hover:text-amber-500 transition-colors">{item.name}</h4>
+                   <div className="flex flex-col gap-1">
+                     <h4 className="font-bold text-slate-100 group-hover:text-amber-500 transition-colors">{item.name}</h4>
+                     {item.typeSource && (
+                       <div className="flex items-center gap-1 text-[9px] text-emerald-500 uppercase font-black tracking-tighter">
+                         <Tag size={10} />
+                         <span>{item.typeSource}</span>
+                       </div>
+                     )}
+                   </div>
                    <Link to={`/wiki/items?search=${encodeURIComponent(item.name)}`} className="p-1.5 bg-slate-800 rounded-lg text-slate-400 hover:text-amber-500 transition-colors">
                      <Package size={14} />
                    </Link>

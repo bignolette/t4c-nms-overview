@@ -86,6 +86,8 @@ const resolveFullTree = (item: RecipeItem, depth = 0, seen = new Set<string>()):
   const enrichedItem = {
     ...item,
     source: item.source || recipe?.source || itemData?.source,
+    typeSource: item.typeSource || recipe?.typeSource || itemData?.typeSource,
+    locations: item.locations || recipe?.locations || itemData?.locations,
     prerequisites: itemData?.prerequisites,
     bonuses: itemData?.bonuses,
     secondary: itemData?.secondary
@@ -336,7 +338,30 @@ const RecipeNode = memo(({ item, isRoot = false, expandedItems, onToggle }: {
           </div>
 
           <div className="flex flex-col gap-1 pl-6">
-            {item.source && (
+            {item.typeSource && (
+              <div className="flex items-center gap-1 text-[10px] text-green-500/80 italic font-bold uppercase tracking-wider">
+                <Tag size={10} />
+                <span>{item.typeSource}</span>
+              </div>
+            )}
+
+            {item.locations && item.locations.length > 0 && (
+              <div className="flex flex-col gap-1.5 mt-1 ml-1 border-l border-slate-800 pl-3">
+                {item.locations.map((loc: {label: string, coordinates: string}, idx: number) => (
+                  <div key={idx} className="flex flex-col gap-0.5">
+                    <span className="text-[10px] text-slate-400 font-bold uppercase tracking-tight">{loc.label}</span>
+                    {loc.coordinates && (
+                      <div className="flex items-center gap-1.5 text-xs text-amber-400 font-black font-mono mt-0.5 bg-amber-400/5 px-2 py-0.5 rounded border border-amber-400/10 w-fit">
+                        <MapPin size={12} className="text-amber-500" />
+                        <span className="tracking-tight">{loc.coordinates}</span>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
+
+            {item.source && !item.typeSource && (
               <div className="flex items-center gap-1 text-[10px] text-green-500/80 italic">
                 <Tag size={10} />
                 <span>{item.source}</span>
