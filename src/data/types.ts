@@ -36,6 +36,7 @@ export interface RecipeItem {
   learnedFrom?: string;
   coordinates?: string;
   locationPrecision?: string;
+  zones?: string[];
   description?: string;
   prerequisites?: ItemStats;
   bonuses?: ItemStats;

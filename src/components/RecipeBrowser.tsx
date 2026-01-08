@@ -7,7 +7,7 @@ import CraftingTree from './CraftingTree';
 import { 
   Search, ChevronLeft, ChevronRight, ArrowUpDown, Star, X, RotateCcw, Package, MapPin,
   Shield, Sword, Crown, Shirt, Footprints, Hand, Circle, Link2, GripHorizontal, Columns2, Medal,
-  ArrowUpRight, ArrowRight, Wind, Users, ArrowRightCircle, User, LayoutGrid, List, ChevronDown, ChevronUp
+  ArrowUpRight, ArrowRight, Wind, Users, ArrowRightCircle, User, LayoutGrid, List, ChevronDown, ChevronUp, Map
 } from 'lucide-react';
 
 interface RecipeBrowserProps {
@@ -146,7 +146,7 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
 
   return (
     <div className="group relative">
-      <div className="absolute -top-3 right-6 z-10 flex items-center gap-2">
+      <div className="absolute -top-3 right-6 z-10 flex flex-wrap items-center gap-2 justify-end max-w-[80%]">
         {matchingIngs.length > 0 && (
           <div className="hidden md:flex items-center gap-1 bg-slate-950 border border-amber-500/30 px-3 py-1 rounded-full text-[10px] text-amber-500 font-bold shadow-xl animate-in fade-in zoom-in duration-300">
             <Search size={10} />
@@ -161,6 +161,11 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
             <Star size={14} fill={favorites.includes(recipe.name) ? 'currentColor' : 'none'} />
           </button>
         )}
+        {recipe.zones && recipe.zones.map((zone: string) => (
+          <span key={zone} className="flex items-center gap-1 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter border shadow-lg bg-indigo-500/10 text-indigo-400 border-indigo-500/20">
+            <MapPin size={10} /> {zone}
+          </span>
+        ))}
         {isItemsPage && recipe.source && (
           <span className={`px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter border shadow-lg ${TYPE_COLORS[recipe.source] || 'bg-slate-800 text-slate-400'}`}>
             {recipe.source}
@@ -261,7 +266,10 @@ const NPCGroupedView = ({
   onSelectProf,
   onNavigateToRecipe,
   showOnlyFavs,
-  onToggleFavs
+  onToggleFavs,
+  selectedZone,
+  onSelectZone,
+  allZones
 }: { 
   recipes: RecipeItem[], 
   toggleFavorite: (name: string) => void, 
@@ -270,31 +278,46 @@ const NPCGroupedView = ({
   onSelectProf: (p: string) => void,
   onNavigateToRecipe: (name: string) => void,
   showOnlyFavs: boolean,
-  onToggleFavs: () => void
+  onToggleFavs: () => void,
+  selectedZone: string,
+  onSelectZone: (z: string) => void,
+  allZones: string[]
 }) => {
+  const [expandedZones, setExpandedZones] = useState<string[]>([]);
   const [expandedNPCs, setExpandedNPCs] = useState<string[]>([]);
 
+  // Group by Profession -> Zone -> NPC
   const grouped = useMemo(() => {
-    const g: Record<string, Record<string, RecipeItem[]>> = {};
+    const g: Record<string, Record<string, Record<string, RecipeItem[]>>> = {};
     
     recipes.forEach(r => {
       if (!r.profession) return;
       if (showOnlyFavs && !favorites.includes(r.name)) return;
       
+      const zoneName = (r.zones && r.zones.length > 0) ? r.zones[0] : 'Inconnu / Divers';
+      if (selectedZone !== 'Toutes' && zoneName !== selectedZone) return;
+
       if (!g[r.profession]) g[r.profession] = {};
+      
+      if (!g[r.profession][zoneName]) g[r.profession][zoneName] = {};
+
       const npc = r.learnedFrom || 'Appris automatiquement / Inconnu';
-      if (!g[r.profession][npc]) g[r.profession][npc] = [];
-      g[r.profession][npc].push(r);
+      if (!g[r.profession][zoneName][npc]) g[r.profession][zoneName][npc] = [];
+      
+      g[r.profession][zoneName][npc].push(r);
     });
     
+    // Sort recipes by level within each NPC group
     Object.keys(g).forEach(prof => {
-      Object.keys(g[prof]).forEach(npc => {
-        g[prof][npc].sort((a, b) => (a.level || 0) - (b.level || 0));
+      Object.keys(g[prof]).forEach(zone => {
+        Object.keys(g[prof][zone]).forEach(npc => {
+          g[prof][zone][npc].sort((a, b) => (a.level || 0) - (b.level || 0));
+        });
       });
     });
     
     return g;
-  }, [recipes, showOnlyFavs, favorites]);
+  }, [recipes, showOnlyFavs, favorites, selectedZone]);
 
   const sortedProfessions = Object.keys(grouped).sort((a, b) => {
     const idxA = PROFESSIONS.indexOf(a);
@@ -305,134 +328,183 @@ const NPCGroupedView = ({
     return idxA - idxB;
   }).filter(p => selectedProf === 'Tous' || p === selectedProf);
 
-  const toggleNPC = (npc: string) => {
-    setExpandedNPCs(prev => prev.includes(npc) ? prev.filter(n => n !== npc) : [...prev, npc]);
+  const toggleZone = (zoneKey: string) => {
+    setExpandedZones(prev => prev.includes(zoneKey) ? prev.filter(z => z !== zoneKey) : [...prev, zoneKey]);
   };
 
-  const expandAll = (npcs: string[]) => setExpandedNPCs(prev => Array.from(new Set([...prev, ...npcs])));
-  const collapseAll = (npcs: string[]) => setExpandedNPCs(prev => prev.filter(n => !npcs.includes(n)));
+  const toggleNPC = (npcKey: string) => {
+    setExpandedNPCs(prev => prev.includes(npcKey) ? prev.filter(n => n !== npcKey) : [...prev, npcKey]);
+  };
 
   return (
     <div className="space-y-6 animate-fade-in">
       {/* Navigation Tabs */}
-      <div className="bg-slate-900 border border-slate-800 rounded-2xl p-2 shadow-xl flex flex-wrap gap-1 sticky top-4 z-30 backdrop-blur-xl">
-        {PROFESSIONS.map(p => {
-          const isSelected = selectedProf === p;
-          return (
-            <button
-              key={p}
-              onClick={() => onSelectProf(p)}
-              className={`px-4 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all flex items-center gap-2 border ${
-                isSelected 
-                  ? `${VIBRANT_PROF_COLORS[p] || 'bg-amber-500 text-slate-950'} text-white shadow-lg scale-105 z-10` 
-                  : 'bg-slate-950 text-slate-500 border-slate-800 hover:border-slate-600 hover:text-slate-200'
-              }`}
+      <div className="bg-slate-900 border border-slate-800 rounded-2xl p-2 shadow-xl flex flex-wrap gap-2 sticky top-4 z-30 backdrop-blur-xl items-center">
+        <div className="flex flex-wrap gap-1">
+          {PROFESSIONS.map(p => {
+            const isSelected = selectedProf === p;
+            return (
+              <button
+                key={p}
+                onClick={() => onSelectProf(p)}
+                className={`px-4 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all flex items-center gap-2 border ${
+                  isSelected 
+                    ? `${VIBRANT_PROF_COLORS[p] || 'bg-amber-500 text-slate-950'} text-white shadow-lg scale-105 z-10` 
+                    : 'bg-slate-950 text-slate-500 border-slate-800 hover:border-slate-600 hover:text-slate-200'
+                }`}
+              >
+                {p === 'Tous' ? (
+                  <Users size={14} className={isSelected ? 'text-slate-900' : 'text-slate-500'} />
+                ) : (
+                  <div className={`w-2 h-2 rounded-full ${isSelected ? 'bg-white' : (VIBRANT_PROF_COLORS[p]?.split(' ')[0])}`} />
+                )}
+                {p}
+              </button>
+            );
+          })}
+        </div>
+        
+        <div className="flex-1" />
+        
+        <div className="flex items-center gap-2 w-full md:w-auto">
+          {/* Zone Dropdown */}
+          <div className="relative flex-1 md:min-w-[180px]">
+            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <MapPin size={14} className="text-slate-500" />
+            </div>
+            <select
+              value={selectedZone}
+              onChange={(e) => onSelectZone(e.target.value)}
+              className="w-full pl-9 pr-8 py-2.5 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-bold uppercase tracking-wider rounded-xl hover:border-slate-600 focus:border-amber-500 focus:outline-none appearance-none cursor-pointer transition-colors"
             >
-              {p === 'Tous' ? (
-                <Users size={14} className={isSelected ? 'text-slate-900' : 'text-slate-500'} />
-              ) : (
-                <div className={`w-2 h-2 rounded-full ${isSelected ? 'bg-white' : (VIBRANT_PROF_COLORS[p]?.split(' ')[0])}`} />
-              )}
-              {p}
-            </button>
-          );
-        })}
-        <div className="flex-1 min-w-[20px]" />
-        <button 
-          onClick={onToggleFavs}
-          className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all ${
-            showOnlyFavs 
-              ? 'bg-yellow-500 text-slate-950 shadow-lg shadow-yellow-500/20 scale-105' 
-              : 'bg-slate-950 text-slate-500 border border-slate-800 hover:border-yellow-500/50 hover:text-yellow-500'
-          }`}
-        >
-          <Star size={14} fill={showOnlyFavs ? 'currentColor' : 'none'} />
-          Favoris
-        </button>
+              {allZones.map(z => <option key={z} value={z}>{z}</option>)}
+            </select>
+            <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
+              <ChevronDown size={14} className="text-slate-500" />
+            </div>
+          </div>
+
+          <button 
+            onClick={onToggleFavs}
+            className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all ${
+              showOnlyFavs 
+                ? 'bg-yellow-500 text-slate-950 shadow-lg shadow-yellow-500/20 scale-105' 
+                : 'bg-slate-950 text-slate-500 border border-slate-800 hover:border-yellow-500/50 hover:text-yellow-500'
+            }`}
+          >
+            <Star size={14} fill={showOnlyFavs ? 'currentColor' : 'none'} />
+            <span className="hidden md:inline">Favoris</span>
+          </button>
+        </div>
       </div>
 
       {sortedProfessions.map((prof) => {
-        const npcs = grouped[prof];
-        const npcNames = Object.keys(npcs).sort();
+        const zones = grouped[prof];
+        const zoneNames = Object.keys(zones).sort(); // Sort zones alphabetically
+
+        if (zoneNames.length === 0) return null;
 
         return (
           <div key={prof} className="space-y-4">
-            <div className="flex items-center justify-between px-2">
-              <h2 className="text-xl font-black uppercase tracking-wider text-slate-100 flex items-center gap-3">
-                <div className={`w-1.5 h-6 rounded-full ${VIBRANT_PROF_COLORS[prof]?.split(' ')[0]}`} />
-                {prof}
-              </h2>
-              <div className="flex gap-2">
-                <button onClick={() => expandAll(npcNames)} className="text-[10px] font-bold text-slate-500 hover:text-amber-500 uppercase tracking-widest">Tout déplier</button>
-                <span className="text-slate-800">|</span>
-                <button onClick={() => collapseAll(npcNames)} className="text-[10px] font-bold text-slate-500 hover:text-amber-500 uppercase tracking-widest">Tout replier</button>
-              </div>
-            </div>
+            <h2 className="text-xl font-black uppercase tracking-wider text-slate-100 flex items-center gap-3 px-2">
+              <div className={`w-1.5 h-6 rounded-full ${VIBRANT_PROF_COLORS[prof]?.split(' ')[0]}`} />
+              {prof}
+            </h2>
 
             <div className="grid gap-4">
-              {npcNames.map((npc) => {
-                const npcRecipes = npcs[npc];
-                const isExpanded = expandedNPCs.includes(npc);
+              {zoneNames.map((zone) => {
+                const zoneKey = `${prof}-${zone}`;
+                const isZoneExpanded = expandedZones.includes(zoneKey);
+                const npcs = zones[zone];
+                const npcNames = Object.keys(npcs).sort(); // Sort NPCs alphabetically
+
                 return (
-                  <div key={npc} className={`bg-slate-900/50 border rounded-2xl overflow-hidden transition-all duration-300 ${isExpanded ? 'border-amber-500/30 ring-1 ring-amber-500/10' : 'border-slate-800'}`}>
-                    {/* NPC Header */}
+                  <div key={zoneKey} className={`bg-slate-900/30 border border-slate-800 rounded-2xl overflow-hidden`}>
+                    {/* Zone Header */}
                     <button 
-                      onClick={() => toggleNPC(npc)}
-                      className="w-full flex flex-col md:flex-row md:items-center justify-between p-4 gap-4 text-left hover:bg-slate-800/50 transition-colors"
+                      onClick={() => toggleZone(zoneKey)}
+                      className="w-full flex items-center justify-between p-4 hover:bg-slate-800/50 transition-colors"
                     >
-                      <div className="flex items-center gap-4 flex-1">
-                        <div className="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center text-amber-500 border border-slate-700">
-                          <User size={20} />
+                      <div className="flex items-center gap-3">
+                        <div className="p-2 bg-slate-800 rounded-lg text-indigo-400">
+                          <Map size={18} />
                         </div>
-                        <div>
-                          <h3 className="font-bold text-slate-100">{npc}</h3>
-                          <div className="flex items-center gap-3 mt-0.5">
-                            {npcRecipes[0]?.coordinates && (
-                              <span className="flex items-center gap-1 text-[11px] font-mono text-blue-400">
-                                <MapPin size={10} /> {npcRecipes[0].coordinates}
-                              </span>
-                            )}
-                            {npcRecipes[0]?.locationPrecision && (
-                              <span className="text-[11px] text-slate-500 italic">{npcRecipes[0].locationPrecision}</span>
-                            )}
-                          </div>
-                        </div>
+                        <h3 className="font-bold text-slate-200">{zone}</h3>
+                        <span className="text-xs text-slate-500">({npcNames.length} PNJ)</span>
                       </div>
-                      <div className="flex items-center gap-4 shrink-0">
-                        <span className="bg-slate-950 border border-slate-800 text-[10px] font-bold text-slate-400 px-3 py-1 rounded-full uppercase tracking-tighter">
-                          {npcRecipes.length} recettes
-                        </span>
-                        {isExpanded ? <ChevronUp size={20} className="text-slate-600" /> : <ChevronDown size={20} className="text-slate-600" />}
-                      </div>
+                      {isZoneExpanded ? <ChevronUp size={18} className="text-slate-500" /> : <ChevronDown size={18} className="text-slate-500" />}
                     </button>
 
-                    {/* NPC Content */}
-                    {isExpanded && (
-                      <div className="p-4 pt-0 border-t border-slate-800/50 bg-slate-950/20">
-                        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 mt-4 animate-in slide-in-from-top-2 duration-300">
-                          {npcRecipes.map((recipe) => (
-                            <div key={recipe.name} className="group flex items-center justify-between bg-slate-950 border border-slate-800 rounded-xl p-2.5 hover:border-slate-600 transition-all">
-                              <div className="flex items-center gap-3 min-w-0">
-                                <div className="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-xs font-bold text-slate-400 group-hover:text-amber-500 transition-colors">
-                                  {recipe.level}
-                                </div>
-                                <button 
-                                  onClick={() => onNavigateToRecipe(recipe.name)}
-                                  className="text-xs font-bold text-slate-200 group-hover:text-amber-500 truncate text-left flex items-center gap-1.5"
-                                >
-                                  {recipe.name}
-                                  <ArrowRightCircle size={10} className="opacity-0 group-hover:opacity-100 transition-opacity" />
-                                </button>
-                              </div>
+                    {/* Zone Content: List of NPCs */}
+                    {isZoneExpanded && (
+                      <div className="p-4 pt-0 space-y-3 border-t border-slate-800/50">
+                        {npcNames.map(npc => {
+                          const npcKey = `${zoneKey}-${npc}`;
+                          const npcRecipes = npcs[npc];
+                          const isNpcExpanded = expandedNPCs.includes(npcKey);
+
+                          return (
+                            <div key={npcKey} className={`bg-slate-950/50 border rounded-xl overflow-hidden transition-all duration-300 ${isNpcExpanded ? 'border-amber-500/30' : 'border-slate-800'}`}>
+                              {/* NPC Header */}
                               <button 
-                                onClick={() => toggleFavorite(recipe.name)}
-                                className={`p-1 rounded-md transition-all ${favorites.includes(recipe.name) ? 'text-yellow-500' : 'text-slate-700 hover:text-slate-400'}`}
+                                onClick={() => toggleNPC(npcKey)}
+                                className="w-full flex flex-col md:flex-row md:items-center justify-between p-3 gap-3 text-left hover:bg-slate-800/30 transition-colors"
                               >
-                                <Star size={14} fill={favorites.includes(recipe.name) ? 'currentColor' : 'none'} />
+                                <div className="flex items-center gap-3 flex-1">
+                                  <div className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-amber-500 border border-slate-700">
+                                    <User size={16} />
+                                  </div>
+                                  <div>
+                                    <h4 className="font-bold text-slate-200 text-sm">{npc}</h4>
+                                    <div className="flex items-center gap-2 mt-0.5">
+                                      {npcRecipes[0]?.coordinates && (
+                                        <span className="flex items-center gap-1 text-[10px] font-mono text-blue-400">
+                                          <MapPin size={10} /> {npcRecipes[0].coordinates}
+                                        </span>
+                                      )}
+                                    </div>
+                                  </div>
+                                </div>
+                                <div className="flex items-center gap-3 shrink-0">
+                                  <span className="bg-slate-900 border border-slate-700 text-[10px] font-bold text-slate-400 px-2 py-0.5 rounded-full uppercase tracking-tighter">
+                                    {npcRecipes.length} recettes
+                                  </span>
+                                  {isNpcExpanded ? <ChevronUp size={16} className="text-slate-600" /> : <ChevronDown size={16} className="text-slate-600" />}
+                                </div>
                               </button>
+
+                              {/* NPC Content: Recipes */}
+                              {isNpcExpanded && (
+                                <div className="p-3 pt-0 border-t border-slate-800/50 bg-slate-950/20">
+                                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-3 animate-in slide-in-from-top-2 duration-300">
+                                    {npcRecipes.map((recipe) => (
+                                      <div key={recipe.name} className="group flex items-center justify-between bg-slate-900 border border-slate-800 rounded-lg p-2 hover:border-slate-600 transition-all">
+                                        <div className="flex items-center gap-2 min-w-0">
+                                          <div className="w-6 h-6 rounded bg-slate-950 border border-slate-800 flex items-center justify-center text-[10px] font-bold text-slate-400 group-hover:text-amber-500 transition-colors">
+                                            {recipe.level}
+                                          </div>
+                                          <button 
+                                            onClick={() => onNavigateToRecipe(recipe.name)}
+                                            className="text-xs font-bold text-slate-300 group-hover:text-amber-500 truncate text-left flex items-center gap-1"
+                                          >
+                                            {recipe.name}
+                                            <ArrowRightCircle size={10} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                                          </button>
+                                        </div>
+                                        <button 
+                                          onClick={() => toggleFavorite(recipe.name)}
+                                          className={`p-1 rounded transition-all ${favorites.includes(recipe.name) ? 'text-yellow-500' : 'text-slate-700 hover:text-slate-400'}`}
+                                        >
+                                          <Star size={12} fill={favorites.includes(recipe.name) ? 'currentColor' : 'none'} />
+                                        </button>
+                                      </div>
+                                    ))}
+                                  </div>
+                                </div>
+                              )}
                             </div>
-                          ))}
-                        </div>
+                          );
+                        })}
                       </div>
                     )}
                   </div>
@@ -459,6 +531,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
   const [activeSearchTerm, setActiveSearchTerm] = useState(urlSearch);
   const [selectedProf, setSelectedProf] = useState('Tous');
   const [selectedType, setSelectedType] = useState('Tous');
+  const [selectedZone, setSelectedZone] = useState('Toutes');
   const [levelRange, setLevelRange] = useState<[number, number]>(DEFAULT_LEVEL_RANGE);
   const [sortBy, setSortBy] = useState<'name' | 'level'>(isItemsPage ? 'name' : 'level');
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc');
@@ -472,6 +545,17 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
     if (isItemsPage) return ITEM_TYPES;
     return ITEM_TYPES.filter(t => t !== 'Matériau');
   }, [isItemsPage]);
+
+  // Extract all unique zones from recipes
+  const allZones = useMemo(() => {
+    const zones = new Set<string>();
+    recipes.forEach(r => {
+      if (r.zones) {
+        r.zones.forEach(z => zones.add(z));
+      }
+    });
+    return ['Toutes', ...Array.from(zones).sort()];
+  }, [recipes]);
 
   useEffect(() => {
     if (urlSearch !== activeSearchTerm) {
@@ -512,6 +596,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
     setIsExactSearch(false);
     setSelectedProf('Tous');
     setSelectedType('Tous');
+    setSelectedZone('Toutes');
     setLevelRange(DEFAULT_LEVEL_RANGE);
     setSortBy(isItemsPage ? 'name' : 'level');
     setSortOrder('asc');
@@ -551,8 +636,9 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
       const matchesLevel = (recipe.level || 0) >= levelRange[0] && (recipe.level || 0) <= levelRange[1];
       const matchesFav = !showOnlyFavs || favorites.includes(recipe.name);
       const matchesBaseToggle = showBaseComponents || !isBaseComponent || normalizedSearch !== '';
+      const matchesZone = selectedZone === 'Toutes' || (recipe.zones && recipe.zones.includes(selectedZone));
       
-      if (!matchesProf || !matchesLevel || !matchesFav || !matchesBaseToggle || !matchesType) return false;
+      if (!matchesProf || !matchesLevel || !matchesFav || !matchesBaseToggle || !matchesType || !matchesZone) return false;
       if (normalizedSearch === '') return true;
 
       if (isExactSearch) return fastNormalize(recipe.name) === normalizedSearch;
@@ -581,7 +667,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
       }
     });
     return result;
-  }, [recipes, activeSearchTerm, selectedProf, selectedType, levelRange, sortBy, sortOrder, showOnlyFavs, showBaseComponents, favorites, isItemsPage, viewMode, isExactSearch]);
+  }, [recipes, activeSearchTerm, selectedProf, selectedType, selectedZone, levelRange, sortBy, sortOrder, showOnlyFavs, showBaseComponents, favorites, isItemsPage, viewMode, isExactSearch]);
 
   const getMatchingIngredients = (recipe: RecipeItem, search: string) => {
     if (!search || isItemsPage || isExactSearch) return [];
@@ -732,40 +818,56 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
                   </div>
                 ) : (
                   <>
-                    <div className="w-full lg:w-1/3 space-y-2">
-                      <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest ml-1">Profession</label>
-                      <div className="relative">
-                        <select
-                          value={selectedProf}
-                          onChange={(e) => {setSelectedProf(e.target.value); setCurrentPage(1);}}
-                          className="w-full bg-slate-950 border border-slate-700 rounded-xl py-3 px-4 text-slate-100 focus:border-amber-500 outline-none appearance-none cursor-pointer"
-                        >
-                          {PROFESSIONS.map(p => <option key={p} value={p}>{p}</option>)}
-                        </select>
-                        <ChevronDown className="absolute right-3 top-3.5 text-slate-500 pointer-events-none" size={16} />
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
+                      <div className="space-y-2">
+                        <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest ml-1">Profession</label>
+                        <div className="relative">
+                          <select
+                            value={selectedProf}
+                            onChange={(e) => {setSelectedProf(e.target.value); setCurrentPage(1);}}
+                            className="w-full bg-slate-950 border border-slate-700 rounded-xl py-3 px-4 text-slate-100 focus:border-amber-500 outline-none appearance-none cursor-pointer"
+                          >
+                            {PROFESSIONS.map(p => <option key={p} value={p}>{p}</option>)}
+                          </select>
+                          <ChevronDown className="absolute right-3 top-3.5 text-slate-500 pointer-events-none" size={16} />
+                        </div>
                       </div>
-                    </div>
 
-                    <div className="w-full lg:w-1/3 space-y-2">
-                      <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest ml-1">Type</label>
-                      <div className="relative">
-                        <select
-                          value={selectedType}
-                          onChange={(e) => {setSelectedType(e.target.value); setCurrentPage(1);}}
-                          className="w-full bg-slate-950 border border-slate-700 rounded-xl py-3 px-4 text-slate-100 focus:border-amber-500 outline-none appearance-none cursor-pointer"
-                        >
-                          {itemTypes.map(t => <option key={t} value={t}>{t}</option>)}
-                        </select>
-                        <ChevronDown className="absolute right-3 top-3.5 text-slate-500 pointer-events-none" size={16} />
+                      <div className="space-y-2">
+                        <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest ml-1">Zone</label>
+                        <div className="relative">
+                          <select
+                            value={selectedZone}
+                            onChange={(e) => {setSelectedZone(e.target.value); setCurrentPage(1);}}
+                            className="w-full bg-slate-950 border border-slate-700 rounded-xl py-3 px-4 text-slate-100 focus:border-amber-500 outline-none appearance-none cursor-pointer"
+                          >
+                            {allZones.map(z => <option key={z} value={z}>{z}</option>)}
+                          </select>
+                          <ChevronDown className="absolute right-3 top-3.5 text-slate-500 pointer-events-none" size={16} />
+                        </div>
                       </div>
-                    </div>
 
-                    <div className="w-full lg:w-1/3 space-y-2">
-                      <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest ml-1">Niveau</label>
-                      <div className="flex items-center gap-2 bg-slate-950 border border-slate-700 rounded-xl px-4 py-2.5">
-                        <input type="number" value={levelRange[0]} onChange={(e) => {setLevelRange([parseInt(e.target.value) || 0, levelRange[1]]); setCurrentPage(1);}} className="w-full bg-transparent text-center text-sm font-bold text-amber-500 outline-none" />
-                        <span className="text-slate-700 font-bold">-</span>
-                        <input type="number" value={levelRange[1]} onChange={(e) => {setLevelRange([levelRange[0], parseInt(e.target.value) || 250]); setCurrentPage(1);}} className="w-full bg-transparent text-center text-sm font-bold text-amber-500 outline-none" />
+                      <div className="space-y-2">
+                        <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest ml-1">Type</label>
+                        <div className="relative">
+                          <select
+                            value={selectedType}
+                            onChange={(e) => {setSelectedType(e.target.value); setCurrentPage(1);}}
+                            className="w-full bg-slate-950 border border-slate-700 rounded-xl py-3 px-4 text-slate-100 focus:border-amber-500 outline-none appearance-none cursor-pointer"
+                          >
+                            {itemTypes.map(t => <option key={t} value={t}>{t}</option>)}
+                          </select>
+                          <ChevronDown className="absolute right-3 top-3.5 text-slate-500 pointer-events-none" size={16} />
+                        </div>
+                      </div>
+
+                      <div className="space-y-2">
+                        <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest ml-1">Niveau</label>
+                        <div className="flex items-center gap-2 bg-slate-950 border border-slate-700 rounded-xl px-4 py-2.5">
+                          <input type="number" value={levelRange[0]} onChange={(e) => {setLevelRange([parseInt(e.target.value) || 0, levelRange[1]]); setCurrentPage(1);}} className="w-full bg-transparent text-center text-sm font-bold text-amber-500 outline-none" />
+                          <span className="text-slate-700 font-bold">-</span>
+                          <input type="number" value={levelRange[1]} onChange={(e) => {setLevelRange([levelRange[0], parseInt(e.target.value) || 250]); setCurrentPage(1);}} className="w-full bg-transparent text-center text-sm font-bold text-amber-500 outline-none" />
+                        </div>
                       </div>
                     </div>
                   </>
@@ -850,6 +952,9 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
           onNavigateToRecipe={navigateToRecipe}
           showOnlyFavs={showOnlyFavs}
           onToggleFavs={() => setShowOnlyFavs(!showOnlyFavs)}
+          selectedZone={selectedZone}
+          onSelectZone={setSelectedZone}
+          allZones={allZones}
         />
       )}
     </div>
