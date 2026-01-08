@@ -1,13 +1,14 @@
 import { type RecipeItem, fastNormalize, itemMonsterMap } from '../data/wiki-data';
 import { wikiData } from '../data/wiki-data';
 import { 
-  Hammer, Package, Calculator, ShoppingBag, MapPin, ChevronDown, ChevronRight, Skull,
+  Hammer, Package, Calculator, ShoppingBag, MapPin, ChevronDown, ChevronRight, User, Skull,
   Shield, Sword, Crown, Shirt, Footprints, Hand, Circle, Link2, GripHorizontal, Columns2, Medal,
-  ArrowUpRight, ArrowRight, Wind
+  ArrowUpRight, ArrowRight, Wind, Tag
 } from 'lucide-react';
 import { useState, useMemo, memo, useCallback, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { createPortal } from 'react-dom';
+import { formatStatValue } from '../data/utils';
 
 const allRecipes = wikiData.find(p => p.id === 'metiers')?.recipes || [];
 const allItems = wikiData.find(p => p.id === 'items')?.recipes || [];
@@ -52,12 +53,26 @@ const findRecipe = (name: string) => {
   return allRecipes.find(r => fastNormalize(r.name) === searchNormalized);
 };
 
-const StatBadge = ({ label, value, color }: { label: string, value: string, color: string }) => (
-  <div className={`flex items-center gap-1.5 px-2 py-1 rounded bg-slate-900 border border-slate-800/50 shadow-sm ${color}`}>
-    <span className="text-[10px] font-black opacity-50">{label}</span>
-    <span className="text-xs font-bold font-mono tracking-tight">{value}</span>
-  </div>
-);
+const StatBadge = ({ label, value, type }: { label: string, value: string | number, type: 'str' | 'end' | 'dex' | 'int' | 'wis' | 'ca' | 'secondary' }) => {
+  const configs = {
+    str: { color: 'text-rose-400', bg: 'bg-rose-500/10', border: 'border-rose-500/20' },
+    end: { color: 'text-orange-400', bg: 'bg-orange-500/10', border: 'border-orange-500/20' },
+    dex: { color: 'text-emerald-400', bg: 'bg-emerald-500/10', border: 'border-emerald-500/20' },
+    int: { color: 'text-sky-400', bg: 'bg-sky-500/10', border: 'border-sky-500/20' },
+    wis: { color: 'text-purple-400', bg: 'bg-purple-500/10', border: 'border-purple-500/20' },
+    ca: { color: 'text-slate-300', bg: 'bg-slate-100/10', border: 'border-slate-100/20' },
+    secondary: { color: 'text-emerald-400', bg: 'bg-emerald-500/5', border: 'border-emerald-500/10' }
+  };
+  
+  const config = configs[type] || configs.secondary;
+  
+  return (
+    <div className={`flex items-center gap-1.5 px-2 py-0.5 rounded-md border ${config.bg} ${config.border} backdrop-blur-sm`}>
+      <span className={`text-[9px] font-black uppercase tracking-wider ${config.color} opacity-80`}>{label}</span>
+      <span className="text-[11px] font-bold text-slate-100 font-mono tracking-tighter">{value}</span>
+    </div>
+  );
+};
 
 const resolveFullTree = (item: RecipeItem, depth = 0, seen = new Set<string>()): RecipeItem => {
   if (depth > 10 || seen.has(item.name)) return item;
@@ -73,7 +88,7 @@ const resolveFullTree = (item: RecipeItem, depth = 0, seen = new Set<string>()):
     source: item.source || recipe?.source || itemData?.source,
     prerequisites: itemData?.prerequisites,
     bonuses: itemData?.bonuses,
-    bonusText: itemData?.bonusText
+    secondary: itemData?.secondary
   };
 
   if (recipe && recipe.ingredients) {
@@ -193,11 +208,10 @@ const RecipeNode = memo(({ item, isRoot = false, expandedItems, onToggle }: {
     'Cape', 'Ceinture', 'Flèches', 'Focus', 'Gant', 'Heaume', 'Jambière', 
     'Orbe', 'Plastron', 'Robe'
   ];
-  const isEquippable = item.source && equippableSources.includes(item.source);
-  const hasInfo = isEquippable || !!(item.prerequisites || item.bonuses || item.bonusText);
-
-  const handleMouseEnter = () => {
-    if (nodeRef.current) {
+                  const isEquippable = item.source && equippableSources.includes(item.source);
+                  const hasInfo = isEquippable || !!(item.prerequisites || item.bonuses || item.secondary);
+                
+                  const handleMouseEnter = () => {    if (nodeRef.current) {
       const rect = nodeRef.current.getBoundingClientRect();
       setTooltipPos({
         top: rect.top,
@@ -250,11 +264,11 @@ const RecipeNode = memo(({ item, isRoot = false, expandedItems, onToggle }: {
                   <div className="text-[10px] text-slate-500 font-bold uppercase tracking-wider mb-2">Pré-requis</div>
                   {item.prerequisites && Object.values(item.prerequisites).some(v => v) ? (
                     <div className="flex flex-wrap gap-2">
-                      {item.prerequisites.str && <StatBadge label="FOR" value={item.prerequisites.str} color="text-red-400" />}
-                      {item.prerequisites.end && <StatBadge label="END" value={item.prerequisites.end} color="text-orange-400" />}
-                      {item.prerequisites.dex && <StatBadge label="DEX" value={item.prerequisites.dex} color="text-emerald-400" />}
-                      {item.prerequisites.int && <StatBadge label="INT" value={item.prerequisites.int} color="text-blue-400" />}
-                      {item.prerequisites.wis && <StatBadge label="SAG" value={item.prerequisites.wis} color="text-purple-400" />}
+                      {item.prerequisites.str && <StatBadge label="FOR" value={formatStatValue(item.prerequisites.str)} type="str" />}
+                      {item.prerequisites.end && <StatBadge label="END" value={formatStatValue(item.prerequisites.end)} type="end" />}
+                      {item.prerequisites.dex && <StatBadge label="DEX" value={formatStatValue(item.prerequisites.dex)} type="dex" />}
+                      {item.prerequisites.int && <StatBadge label="INT" value={formatStatValue(item.prerequisites.int)} type="int" />}
+                      {item.prerequisites.wis && <StatBadge label="SAG" value={formatStatValue(item.prerequisites.wis)} type="wis" />}
                     </div>
                   ) : (
                     <div className="text-xs text-slate-600 italic">Pas de pré-requis</div>
@@ -262,22 +276,21 @@ const RecipeNode = memo(({ item, isRoot = false, expandedItems, onToggle }: {
                 </div>
               )}
 
-              {(item.bonuses || item.bonusText) && (
+              {(item.bonuses || item.secondary) && (
                 <div>
                   <div className="text-[10px] text-slate-500 font-bold uppercase tracking-wider mb-2">Bonus & Effets</div>
                   <div className="flex flex-wrap gap-2 mb-2">
-                    {item.bonuses?.str && <StatBadge label="+FOR" value={item.bonuses.str} color="text-red-400" />}
-                    {item.bonuses?.end && <StatBadge label="+END" value={item.bonuses.end} color="text-orange-400" />}
-                    {item.bonuses?.dex && <StatBadge label="+DEX" value={item.bonuses.dex} color="text-emerald-400" />}
-                    {item.bonuses?.int && <StatBadge label="+INT" value={item.bonuses.int} color="text-blue-400" />}
-                    {item.bonuses?.wis && <StatBadge label="+SAG" value={item.bonuses.wis} color="text-purple-400" />}
-                    {item.bonuses?.ca && <StatBadge label="CA" value={item.bonuses.ca} color="text-slate-200" />}
+                    {item.bonuses?.ca && <StatBadge label="CA" value={formatStatValue(item.bonuses.ca)} type="ca" />}
+                    {item.bonuses?.str && <StatBadge label="FOR" value={formatStatValue(item.bonuses.str)} type="str" />}
+                    {item.bonuses?.end && <StatBadge label="END" value={formatStatValue(item.bonuses.end)} type="end" />}
+                    {item.bonuses?.dex && <StatBadge label="DEX" value={formatStatValue(item.bonuses.dex)} type="dex" />}
+                    {item.bonuses?.int && <StatBadge label="INT" value={formatStatValue(item.bonuses.int)} type="int" />}
+                    {item.bonuses?.wis && <StatBadge label="SAG" value={formatStatValue(item.bonuses.wis)} type="wis" />}
+                    
+                    {item.secondary && Object.entries(item.secondary).map(([label, value]) => (
+                      <StatBadge key={label} label={label} value={formatStatValue(value as string)} type="secondary" />
+                    ))}
                   </div>
-                  {item.bonusText && (
-                    <p className="text-[11px] text-emerald-400/90 font-medium leading-relaxed italic bg-emerald-500/5 border border-emerald-500/10 rounded-lg p-2 mt-2">
-                      {item.bonusText}
-                    </p>
-                  )}
                 </div>
               )}
             </div>,
@@ -325,7 +338,7 @@ const RecipeNode = memo(({ item, isRoot = false, expandedItems, onToggle }: {
           <div className="flex flex-col gap-1 pl-6">
             {item.source && (
               <div className="flex items-center gap-1 text-[10px] text-green-500/80 italic">
-                <MapPin size={10} />
+                <Tag size={10} />
                 <span>{item.source}</span>
               </div>
             )}
@@ -333,11 +346,17 @@ const RecipeNode = memo(({ item, isRoot = false, expandedItems, onToggle }: {
             {isReallyCraftable && item.learnedFrom && (
               <div className="flex flex-col gap-0.5">
                 <div className="flex items-center gap-1 text-[10px] text-blue-400 font-bold uppercase tracking-tight">
-                  <Skull size={10} className="text-blue-500" />
-                  <span>APPRIS DE : {item.learnedFrom} ({item.coordinates})</span>
+                  <User size={10} className="text-blue-500" />
+                  <span>ENSEIGNÉ PAR : {item.learnedFrom}</span>
                 </div>
+                {item.coordinates && (
+                  <div className="flex items-center gap-1.5 text-xs text-amber-400 font-black font-mono ml-3 mt-0.5 bg-amber-400/5 px-2 py-0.5 rounded border border-amber-400/10 w-fit">
+                    <MapPin size={12} className="text-amber-500" />
+                    <span className="tracking-tight">{item.coordinates}</span>
+                  </div>
+                )}
                 {item.locationPrecision && (
-                  <div className="pl-4 text-[11px] text-slate-400 italic leading-tight">
+                  <div className="pl-4 text-[11px] text-slate-400 italic leading-tight mt-0.5">
                     {item.locationPrecision}
                   </div>
                 )}

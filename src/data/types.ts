@@ -40,7 +40,7 @@ export interface RecipeItem {
   description?: string;
   prerequisites?: ItemStats;
   bonuses?: ItemStats;
-  bonusText?: string;
+  secondary?: Record<string, string>;
   proc?: {
     chance: string;
     effect: string;

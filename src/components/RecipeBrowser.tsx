@@ -1,13 +1,13 @@
 import { useState, useMemo, useEffect, memo } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { wikiData } from '../data/wiki-data';
-import { fastNormalize } from '../data/utils';
+import { fastNormalize, formatStatValue } from '../data/utils';
 import type { RecipeItem } from '../data/wiki-data';
 import CraftingTree from './CraftingTree';
 import { 
   Search, ChevronLeft, ChevronRight, ArrowUpDown, Star, X, RotateCcw, Package, MapPin,
   Shield, Sword, Crown, Shirt, Footprints, Hand, Circle, Link2, GripHorizontal, Columns2, Medal,
-  ArrowUpRight, ArrowRight, Wind, Users, ArrowRightCircle, User, LayoutGrid, List, ChevronDown, ChevronUp, Map
+  ArrowUpRight, ArrowRight, Wind, Users, ArrowRightCircle, User, LayoutGrid, List, ChevronDown, ChevronUp, Map, Tag
 } from 'lucide-react';
 
 interface RecipeBrowserProps {
@@ -96,18 +96,26 @@ const TYPE_COLORS: Record<string, string> = {
   'Récolte': 'bg-green-500/10 text-green-400 border-green-500/20',
 };
 
-const formatBonus = (value: string | undefined) => {
-  if (!value) return "";
-  if (value.startsWith('+') || value.startsWith('-')) return value;
-  return `+${value}`;
+const StatBadge = ({ label, value, type }: { label: string, value: string | number, type: 'str' | 'end' | 'dex' | 'int' | 'wis' | 'ca' | 'secondary' }) => {
+  const configs = {
+    str: { color: 'text-rose-400', bg: 'bg-rose-500/10', border: 'border-rose-500/20' },
+    end: { color: 'text-orange-400', bg: 'bg-orange-500/10', border: 'border-orange-500/20' },
+    dex: { color: 'text-emerald-400', bg: 'bg-emerald-500/10', border: 'border-emerald-500/20' },
+    int: { color: 'text-sky-400', bg: 'bg-sky-500/10', border: 'border-sky-500/20' },
+    wis: { color: 'text-purple-400', bg: 'bg-purple-500/10', border: 'border-purple-500/20' },
+    ca: { color: 'text-slate-300', bg: 'bg-slate-100/10', border: 'border-slate-100/20' },
+    secondary: { color: 'text-emerald-400', bg: 'bg-emerald-500/5', border: 'border-emerald-500/10' }
+  };
+  
+  const config = configs[type] || configs.secondary;
+  
+  return (
+    <div className={`flex items-center gap-1.5 px-2 py-0.5 rounded-md border ${config.bg} ${config.border} backdrop-blur-sm`}>
+      <span className={`text-[9px] font-black uppercase tracking-wider ${config.color} opacity-80`}>{label}</span>
+      <span className="text-[11px] font-bold text-slate-100 font-mono tracking-tighter">{value}</span>
+    </div>
+  );
 };
-
-const StatBadge = ({ label, value, color }: { label: string, value: string, color: string }) => (
-  <div className="flex items-center gap-1.5 bg-slate-950 border border-slate-800 px-2 py-0.5 rounded-lg">
-    <span className={`text-[9px] font-black uppercase tracking-tighter ${color}`}>{label}</span>
-    <span className="text-[11px] font-bold text-slate-200">{value}</span>
-  </div>
-);
 
 const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, toggleFavorite, getMatchingIngredients, viewMode }: any) => {
   const matchingIngs = getMatchingIngredients ? getMatchingIngredients(recipe, activeSearchTerm) : [];
@@ -132,13 +140,16 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
         
         <div>
           <h3 className="font-bold text-slate-100 group-hover:text-amber-500 transition-colors text-sm line-clamp-2 min-h-[40px]">{recipe.name}</h3>
-          <span className="text-[10px] text-slate-500 uppercase font-black tracking-tighter">{recipe.source}</span>
+          <div className="flex items-center gap-1 mt-1 text-[10px] text-slate-500 uppercase font-black tracking-tighter">
+            <Tag size={10} className="text-slate-600" />
+            <span>{recipe.source}</span>
+          </div>
         </div>
 
         <div className="flex flex-wrap gap-1.5 mt-auto">
-          {recipe.bonuses?.ca && <StatBadge label="CA" value={formatBonus(recipe.bonuses.ca)} color="text-slate-400" />}
-          {recipe.bonuses?.str && <StatBadge label="FOR" value={formatBonus(recipe.bonuses.str)} color="text-red-400" />}
-          {recipe.bonuses?.int && <StatBadge label="INT" value={formatBonus(recipe.bonuses.int)} color="text-blue-400" />}
+          {recipe.bonuses?.ca && <StatBadge label="CA" value={formatStatValue(recipe.bonuses.ca)} type="ca" />}
+          {recipe.bonuses?.str && <StatBadge label="FOR" value={formatStatValue(recipe.bonuses.str)} type="str" />}
+          {recipe.bonuses?.int && <StatBadge label="INT" value={formatStatValue(recipe.bonuses.int)} type="int" />}
         </div>
       </div>
     );
@@ -167,8 +178,8 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
           </span>
         ))}
         {isItemsPage && recipe.source && (
-          <span className={`px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter border shadow-lg ${TYPE_COLORS[recipe.source] || 'bg-slate-800 text-slate-400'}`}>
-            {recipe.source}
+          <span className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter border shadow-lg ${TYPE_COLORS[recipe.source] || 'bg-slate-800 text-slate-400'}`}>
+            <Tag size={10} className="opacity-70" /> {recipe.source}
           </span>
         )}
         {!isItemsPage && recipe.profession && (
@@ -189,7 +200,13 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
                     return <Icon size={20} />;
                   })()}
                 </div>
-                <h3 className="text-xl font-bold text-slate-100 group-hover:text-amber-500 transition-colors mb-1">{recipe.name}</h3>
+                <div>
+                  <h3 className="text-xl font-bold text-slate-100 group-hover:text-amber-500 transition-colors mb-1">{recipe.name}</h3>
+                  <div className="flex items-center gap-1.5 px-2 py-0.5 rounded bg-slate-800 border border-slate-700 w-fit">
+                    <Tag size={10} className="text-slate-500" />
+                    <span className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">{recipe.source}</span>
+                  </div>
+                </div>
               </div>
 
               <div className="space-y-4">
@@ -203,33 +220,32 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
                   <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block">Prérequis</span>
                   {recipe.prerequisites && Object.values(recipe.prerequisites).some(v => v) ? (
                     <div className="flex flex-wrap gap-2">
-                      {recipe.prerequisites.str && <StatBadge label="FOR" value={recipe.prerequisites.str} color="text-red-400" />}
-                      {recipe.prerequisites.end && <StatBadge label="END" value={recipe.prerequisites.end} color="text-orange-400" />}
-                      {recipe.prerequisites.dex && <StatBadge label="DEX" value={recipe.prerequisites.dex} color="text-emerald-400" />}
-                      {recipe.prerequisites.int && <StatBadge label="INT" value={recipe.prerequisites.int} color="text-blue-400" />}
-                      {recipe.prerequisites.wis && <StatBadge label="SAG" value={recipe.prerequisites.wis} color="text-purple-400" />}
+                      {recipe.prerequisites.str && <StatBadge label="FOR" value={formatStatValue(recipe.prerequisites.str)} type="str" />}
+                      {recipe.prerequisites.end && <StatBadge label="END" value={formatStatValue(recipe.prerequisites.end)} type="end" />}
+                      {recipe.prerequisites.dex && <StatBadge label="DEX" value={formatStatValue(recipe.prerequisites.dex)} type="dex" />}
+                      {recipe.prerequisites.int && <StatBadge label="INT" value={formatStatValue(recipe.prerequisites.int)} type="int" />}
+                      {recipe.prerequisites.wis && <StatBadge label="SAG" value={formatStatValue(recipe.prerequisites.wis)} type="wis" />}
                     </div>
                   ) : (
                     <span className="text-xs text-slate-600 italic">Pas de pré-requis</span>
                   )}
                 </div>
 
-                {(recipe.bonuses && Object.values(recipe.bonuses).some(v => v)) || recipe.bonusText ? (
+                {(recipe.bonuses && Object.values(recipe.bonuses).some(v => v)) || recipe.secondary ? (
                   <div className="space-y-2">
                     <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block text-emerald-500/80">Bonus</span>
                     <div className="flex flex-wrap gap-2">
-                      {recipe.bonuses?.ca && <StatBadge label="CA" value={formatBonus(recipe.bonuses.ca)} color="text-slate-400" />}
-                      {recipe.bonuses?.str && <StatBadge label="FOR" value={formatBonus(recipe.bonuses.str)} color="text-red-400" />}
-                      {recipe.bonuses?.end && <StatBadge label="END" value={formatBonus(recipe.bonuses.end)} color="text-orange-400" />}
-                      {recipe.bonuses?.dex && <StatBadge label="DEX" value={formatBonus(recipe.bonuses.dex)} color="text-emerald-400" />}
-                      {recipe.bonuses?.int && <StatBadge label="INT" value={formatBonus(recipe.bonuses.int)} color="text-blue-400" />}
-                      {recipe.bonuses?.wis && <StatBadge label="SAG" value={formatBonus(recipe.bonuses.wis)} color="text-purple-400" />}
+                      {recipe.bonuses?.ca && <StatBadge label="CA" value={formatStatValue(recipe.bonuses.ca)} type="ca" />}
+                      {recipe.bonuses?.str && <StatBadge label="FOR" value={formatStatValue(recipe.bonuses.str)} type="str" />}
+                      {recipe.bonuses?.end && <StatBadge label="END" value={formatStatValue(recipe.bonuses.end)} type="end" />}
+                      {recipe.bonuses?.dex && <StatBadge label="DEX" value={formatStatValue(recipe.bonuses.dex)} type="dex" />}
+                      {recipe.bonuses?.int && <StatBadge label="INT" value={formatStatValue(recipe.bonuses.int)} type="int" />}
+                      {recipe.bonuses?.wis && <StatBadge label="SAG" value={formatStatValue(recipe.bonuses.wis)} type="wis" />}
+                      
+                      {recipe.secondary && Object.entries(recipe.secondary).map(([label, value]) => (
+                        <StatBadge key={label} label={label} value={formatStatValue(value as string)} type="secondary" />
+                      ))}
                     </div>
-                    {recipe.bonusText && (
-                      <p className="text-xs text-emerald-400/90 font-medium leading-relaxed italic bg-emerald-500/5 border border-emerald-500/10 rounded-lg p-2 mt-1">
-                        {recipe.bonusText}
-                      </p>
-                    )}
                   </div>
                 ) : null}
               </div>
@@ -239,12 +255,17 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
               {recipe.learnedFrom && (
                 <div className="space-y-3">
                   <div className="bg-blue-500/5 border border-blue-500/20 rounded-xl p-3">
-                    <span className="text-[10px] font-bold text-blue-400 uppercase tracking-widest block mb-1">Apprentissage</span>
+                    <span className="text-[10px] font-bold text-blue-400 uppercase tracking-widest block mb-2">Enseignement</span>
                     <div className="flex items-center gap-2 text-xs font-bold text-slate-200">
-                      <MapPin size={12} className="text-blue-500" />
+                      <User size={12} className="text-blue-500" />
                       <span>{recipe.learnedFrom}</span>
                     </div>
-                    <div className="text-[10px] text-slate-500 ml-5 font-mono">{recipe.coordinates}</div>
+                    {recipe.coordinates && (
+                      <div className="flex items-center gap-2 text-xs text-amber-400 mt-2 font-mono bg-amber-400/5 px-2 py-1 rounded border border-amber-400/10 w-fit">
+                        <MapPin size={14} className="text-amber-500" />
+                        <span className="font-black tracking-tight">{recipe.coordinates}</span>
+                      </div>
+                    )}
                   </div>
                 </div>
               )}
@@ -455,11 +476,11 @@ const NPCGroupedView = ({
                                     <User size={16} />
                                   </div>
                                   <div>
-                                    <h4 className="font-bold text-slate-200 text-sm">{npc}</h4>
-                                    <div className="flex items-center gap-2 mt-0.5">
+                                    <h4 className="font-bold text-slate-200 text-sm italic uppercase tracking-tighter">ENSEIGNÉ PAR : {npc}</h4>
+                                    <div className="flex items-center gap-2 mt-1">
                                       {npcRecipes[0]?.coordinates && (
-                                        <span className="flex items-center gap-1 text-[10px] font-mono text-blue-400">
-                                          <MapPin size={10} /> {npcRecipes[0].coordinates}
+                                        <span className="flex items-center gap-1.5 text-xs font-mono font-black text-amber-400 bg-amber-400/5 px-2 py-0.5 rounded border border-amber-400/10">
+                                          <MapPin size={12} className="text-amber-500" /> {npcRecipes[0].coordinates}
                                         </span>
                                       )}
                                     </div>

@@ -2,7 +2,7 @@ import { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { itemsData } from '../data/items';
 import type { RecipeItem } from '../data/types';
-import { fastNormalize, mapSourceToSlot } from '../data/utils';
+import { fastNormalize, mapSourceToSlot, formatStatValue } from '../data/utils';
 import { Search, Shield, Sword, Crown, Shirt, Footprints, Hand, Hexagon, Circle, Package, Link2, GripHorizontal, Columns2, Medal, Wind, User, type LucideIcon } from 'lucide-react';
 
 // Types
@@ -19,12 +19,26 @@ interface SavedCharacter {
   finalStats: Stats;
 }
 
-const StatBadge = ({ label, value, color }: { label: string, value: string | number, color: string }) => (
-  <div className="flex items-center gap-1.5 bg-slate-950 border border-slate-800 px-2 py-0.5 rounded-md">
-    <span className={`text-[9px] font-black uppercase tracking-tighter ${color}`}>{label}</span>
-    <span className="text-[10px] font-bold text-slate-200">{value}</span>
-  </div>
-);
+const StatBadge = ({ label, value, type }: { label: string, value: string | number, type: 'str' | 'end' | 'dex' | 'int' | 'wis' | 'ca' | 'secondary' }) => {
+  const configs = {
+    str: { color: 'text-rose-400', bg: 'bg-rose-500/10', border: 'border-rose-500/20' },
+    end: { color: 'text-orange-400', bg: 'bg-orange-500/10', border: 'border-orange-500/20' },
+    dex: { color: 'text-emerald-400', bg: 'bg-emerald-500/10', border: 'border-emerald-500/20' },
+    int: { color: 'text-sky-400', bg: 'bg-sky-500/10', border: 'border-sky-500/20' },
+    wis: { color: 'text-purple-400', bg: 'bg-purple-500/10', border: 'border-purple-500/20' },
+    ca: { color: 'text-slate-300', bg: 'bg-slate-100/10', border: 'border-slate-100/20' },
+    secondary: { color: 'text-emerald-400', bg: 'bg-emerald-500/5', border: 'border-emerald-500/10' }
+  };
+  
+  const config = configs[type] || configs.secondary;
+  
+  return (
+    <div className={`flex items-center gap-1.5 px-2 py-0.5 rounded-md border ${config.bg} ${config.border} backdrop-blur-sm`}>
+      <span className={`text-[9px] font-black uppercase tracking-wider ${config.color} opacity-80`}>{label}</span>
+      <span className="text-[11px] font-bold text-slate-100 font-mono tracking-tighter">{value}</span>
+    </div>
+  );
+};
 
 const SLOTS = [
   { id: 'Tete', label: 'Tête', icon: Crown },
@@ -311,26 +325,28 @@ const EquipableBuilder = () => {
                 <div className="space-y-1.5">
                   <span className="text-[9px] font-bold text-slate-500 uppercase tracking-widest block">prérequis</span>
                   <div className="flex flex-wrap gap-1.5">
-                    {item.prerequisites?.str && <StatBadge label="FOR" value={item.prerequisites.str} color="text-red-400" />}
-                    {item.prerequisites?.end && <StatBadge label="END" value={item.prerequisites.end} color="text-orange-400" />}
-                    {item.prerequisites?.dex && <StatBadge label="DEX" value={item.prerequisites.dex} color="text-emerald-400" />}
-                    {item.prerequisites?.int && <StatBadge label="INT" value={item.prerequisites.int} color="text-blue-400" />}
-                    {item.prerequisites?.wis && <StatBadge label="SAG" value={item.prerequisites.wis} color="text-purple-400" />}
+                    {item.prerequisites?.str && <StatBadge label="FOR" value={formatStatValue(item.prerequisites.str)} type="str" />}
+                    {item.prerequisites?.end && <StatBadge label="END" value={formatStatValue(item.prerequisites.end)} type="end" />}
+                    {item.prerequisites?.dex && <StatBadge label="DEX" value={formatStatValue(item.prerequisites.dex)} type="dex" />}
+                    {item.prerequisites?.int && <StatBadge label="INT" value={formatStatValue(item.prerequisites.int)} type="int" />}
+                    {item.prerequisites?.wis && <StatBadge label="SAG" value={formatStatValue(item.prerequisites.wis)} type="wis" />}
                   </div>
                 </div>
 
-                {(item.bonuses || item.bonusText) && (
+                {(item.bonuses || item.secondary) && (
                   <div className="space-y-1.5">
                     <span className="text-[9px] font-bold text-emerald-500/80 uppercase tracking-widest block">Bonus</span>
                     <div className="flex flex-wrap gap-1.5">
-                      {item.bonuses && Object.entries(item.bonuses).map(([k, v]) => (
-                        <div key={k} className="px-2 py-0.5 rounded bg-emerald-500/5 border border-emerald-500/10 text-[10px] text-emerald-400/90 font-medium">
-                          {k.toUpperCase()}: {v}
-                        </div>
+                      {item.bonuses?.ca && <StatBadge label="CA" value={formatStatValue(item.bonuses.ca)} type="ca" />}
+                      {item.bonuses?.str && <StatBadge label="FOR" value={formatStatValue(item.bonuses.str)} type="str" />}
+                      {item.bonuses?.end && <StatBadge label="END" value={formatStatValue(item.bonuses.end)} type="end" />}
+                      {item.bonuses?.dex && <StatBadge label="DEX" value={formatStatValue(item.bonuses.dex)} type="dex" />}
+                      {item.bonuses?.int && <StatBadge label="INT" value={formatStatValue(item.bonuses.int)} type="int" />}
+                      {item.bonuses?.wis && <StatBadge label="SAG" value={formatStatValue(item.bonuses.wis)} type="wis" />}
+                      
+                      {item.secondary && Object.entries(item.secondary).map(([label, value]) => (
+                        <StatBadge key={label} label={label} value={formatStatValue(value as string)} type="secondary" />
                       ))}
-                      {item.bonusText && (
-                        <p className="text-[10px] text-emerald-400/70 italic leading-tight w-full mt-1 line-clamp-2">{item.bonusText}</p>
-                      )}
                     </div>
                   </div>
                 )}

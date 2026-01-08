@@ -51,3 +51,14 @@ export const mapSourceToSlot = (source: string | undefined): string | null => {
     default: return null;
   }
 };
+
+/**
+ * Standardizes the display of stat values (e.g. adding + if missing)
+ */
+export const formatStatValue = (value: string | number | undefined): string => {
+  if (value === undefined || value === null) return "";
+  const s = String(value).trim();
+  if (s.startsWith('+') || s.startsWith('-')) return s;
+  if (/^\d/.test(s)) return `+${s}`;
+  return s;
+};
