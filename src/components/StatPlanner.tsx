@@ -177,19 +177,12 @@ const StatPlanner = () => {
   };
 
   const loadCharacter = (char: SavedCharacter) => {
-    showConfirm(
-      "Charger ce personnage ?", 
-      `Voulez-vous charger ${char.name} ? Vos statistiques actuelles non sauvegardées seront perdues.`,
-      () => {
-        setRenaissance(char.renaissance);
-        setSeraphStats(char.seraphStats);
-        setSeraphPowers(char.seraphPowers);
-        setSeraphResists(char.seraphResists);
-        setLevelPoints(char.levelPoints);
-        setActiveCharName(char.name);
-        setModal({ show: false, title: '', message: '', type: 'info' });
-      }
-    );
+    setRenaissance(char.renaissance);
+    setSeraphStats(char.seraphStats);
+    setSeraphPowers(char.seraphPowers);
+    setSeraphResists(char.seraphResists);
+    setLevelPoints(char.levelPoints);
+    setActiveCharName(char.name);
   };
 
   const deleteCharacter = (name: string) => {
@@ -217,7 +210,11 @@ const StatPlanner = () => {
   const handleRenaissanceChange = (r: number) => {
     if (r !== renaissance) {
       setRenaissance(r);
-      resetAll();
+      // Reset only points, NOT the active character selection
+      setSeraphStats({ str: 0, end: 0, dex: 0, int: 0, wis: 0 });
+      setSeraphPowers({ 'Feu': 0, 'Eau': 0, 'Air': 0, 'Terre': 0, 'Lumière': 0, 'Nécromancie': 0 });
+      setSeraphResists({ 'Feu': 0, 'Eau': 0, 'Air': 0, 'Terre': 0, 'Lumière': 0, 'Nécromancie': 0 });
+      setLevelPoints({ str: 0, end: 0, dex: 0, int: 0, wis: 0 });
     }
   };
 
