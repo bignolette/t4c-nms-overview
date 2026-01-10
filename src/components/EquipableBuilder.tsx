@@ -215,9 +215,12 @@ const EquipableBuilder = () => {
                     >
                       <div className="flex flex-col items-start text-left">
                         <span className="text-slate-100 group-hover:text-slate-900 font-black uppercase text-sm tracking-wider">{char.name}</span>
-                        <div className="flex gap-2 mt-1">
+                        <div className="flex flex-wrap gap-2 mt-1">
                           <span className="text-[9px] text-slate-500 group-hover:text-slate-800 font-bold uppercase tracking-tighter">FOR {char.finalStats.str}</span>
+                          <span className="text-[9px] text-slate-500 group-hover:text-slate-800 font-bold uppercase tracking-tighter">END {char.finalStats.end}</span>
+                          <span className="text-[9px] text-slate-500 group-hover:text-slate-800 font-bold uppercase tracking-tighter">DEX {char.finalStats.dex}</span>
                           <span className="text-[9px] text-slate-500 group-hover:text-slate-800 font-bold uppercase tracking-tighter">INT {char.finalStats.int}</span>
+                          <span className="text-[9px] text-slate-500 group-hover:text-slate-800 font-bold uppercase tracking-tighter">SAG {char.finalStats.wis}</span>
                         </div>
                       </div>
                       <div className="p-2 rounded-lg bg-slate-900 group-hover:bg-slate-900/20 text-amber-500 group-hover:text-slate-900 transition-colors">

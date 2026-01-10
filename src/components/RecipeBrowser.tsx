@@ -158,7 +158,10 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
         <div className="flex flex-wrap gap-1.5 mt-auto">
           {recipe.bonuses?.ca && <StatBadge label="CA" value={formatStatValue(recipe.bonuses.ca)} type="ca" />}
           {recipe.bonuses?.str && <StatBadge label="FOR" value={formatStatValue(recipe.bonuses.str)} type="str" />}
+          {recipe.bonuses?.end && <StatBadge label="END" value={formatStatValue(recipe.bonuses.end)} type="end" />}
+          {recipe.bonuses?.dex && <StatBadge label="DEX" value={formatStatValue(recipe.bonuses.dex)} type="dex" />}
           {recipe.bonuses?.int && <StatBadge label="INT" value={formatStatValue(recipe.bonuses.int)} type="int" />}
+          {recipe.bonuses?.wis && <StatBadge label="SAG" value={formatStatValue(recipe.bonuses.wis)} type="wis" />}
         </div>
       </div>
     );
