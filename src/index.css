@@ -2,6 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100;
+  }
+
+  /* Custom Scrollbar Styles */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-900/50 rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-b from-amber-600 to-amber-800 rounded-full border-2 border-slate-900 hover:from-amber-500 hover:to-amber-700 transition-colors cursor-pointer;
+  }
+
+  /* Firefox Scrollbar */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #d97706 #0f172a;
+  }
+}
+
+@layer components {
+  .npc-keyword {
+    @apply inline-block px-2 py-0.5 rounded-md bg-amber-500/20 border border-amber-500/40 text-amber-400 font-black italic shadow-[0_0_10px_rgba(245,158,11,0.15)] transition-all hover:scale-105 hover:bg-amber-500/30 cursor-help mx-0.5;
+  }
+
+  .keyword-highlight {
+    @apply text-amber-400 font-bold drop-shadow-[0_0_8px_rgba(251,191,36,0.2)];
+  }
+
+  .coords-trigger {
+    @apply hover:scale-105 inline-block transform transition-transform active:scale-95;
+  }
+
+  .quest-description p {
+    @apply mb-4;
+  }
+
+  .quest-description b, .quest-description strong {
+    @apply text-slate-100 font-bold;
+  }
+
+  .quest-description ul {
+    @apply list-disc list-inside mb-4 space-y-1 text-slate-300;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+
 @layer utilities {
   .animate-shimmer {
     animation: shimmer 3s infinite linear;

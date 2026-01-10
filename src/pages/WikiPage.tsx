@@ -5,8 +5,8 @@ import Bestiary from '../components/Bestiary';
 import { AlertCircle } from 'lucide-react';
 
 const WikiPage = () => {
-  const { id } = useParams();
-  const data = wikiData.find(p => p.id === id);
+  const { slug } = useParams();
+  const data = wikiData.find(p => p.id === slug);
 
   if (!data) {
     return (
@@ -34,8 +34,8 @@ const WikiPage = () => {
       </div>
 
       {/* Professions & Items Browser */}
-      {(id === 'metiers' || id === 'items') && data.recipes && (
-        <RecipeBrowser recipes={data.recipes} isItemsPage={id === 'items'} />
+      {(slug === 'metiers' || slug === 'items') && data.recipes && (
+        <RecipeBrowser recipes={data.recipes} isItemsPage={slug === 'items'} />
       )}
 
       {/* Bestiary Browser */}

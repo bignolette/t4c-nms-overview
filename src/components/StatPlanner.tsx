@@ -1,6 +1,7 @@
 import { useState, useMemo, useEffect } from 'react';
-import { User, Zap, ChevronUp, ChevronDown, RotateCcw, Award, Heart, Sparkles, Star, Shield, Flame, Save, Trash2, HelpCircle, Info, X } from 'lucide-react';
+import { User, Zap, ChevronUp, ChevronDown, RotateCcw, Award, Heart, Sparkles, Star, Shield, Flame, Save, Trash2, HelpCircle, Info, X, BookOpen } from 'lucide-react';
 import CharacterNameVisual from './CharacterNameVisual';
+import { spellPowerConfig } from '../data/spell_power';
 
 interface Stats {
   str: number; end: number; dex: number; int: number; wis: number;
@@ -98,6 +99,19 @@ const StatPlanner = () => {
     hp: Math.floor(30 + (requiredLevel * (finalStats.end * 0.04884 + 7.065))),
     mana: Math.floor(10 + (requiredLevel * ( (finalStats.int * 0.0249) + (finalStats.wis * 0.0155) )))
   }), [finalStats, requiredLevel]);
+
+  const magicTiers = useMemo(() => {
+    const intRank = spellPowerConfig.simulation.calculateBaseRank(finalStats.int, 0);
+    const wisRank = spellPowerConfig.simulation.calculateBaseRank(0, finalStats.wis);
+    
+    const nextInt = (intRank + 1) * spellPowerConfig.simulation.palierSize;
+    const nextWis = (wisRank + 1) * spellPowerConfig.simulation.palierSize;
+
+    return {
+      int: { rank: intRank, next: nextInt, needed: nextInt - finalStats.int },
+      wis: { rank: wisRank, next: nextWis, needed: nextWis - finalStats.wis }
+    };
+  }, [finalStats]);
 
   // 3. FONCTIONS
   const showConfirm = (title: string, message: string, onConfirm: () => void) => {
@@ -210,7 +224,6 @@ const StatPlanner = () => {
   const handleRenaissanceChange = (r: number) => {
     if (r !== renaissance) {
       setRenaissance(r);
-      // Reset only points, NOT the active character selection
       setSeraphStats({ str: 0, end: 0, dex: 0, int: 0, wis: 0 });
       setSeraphPowers({ 'Feu': 0, 'Eau': 0, 'Air': 0, 'Terre': 0, 'Lumière': 0, 'Nécromancie': 0 });
       setSeraphResists({ 'Feu': 0, 'Eau': 0, 'Air': 0, 'Terre': 0, 'Lumière': 0, 'Nécromancie': 0 });
@@ -281,24 +294,24 @@ const StatPlanner = () => {
             </div>
           </div>
 
-          <div className="w-full space-y-1 overflow-hidden">
-            <label className="text-[9px] font-black text-slate-500 uppercase tracking-widest ml-1 text-left block">Mes Profils Enregistrés</label>
-            <div className="flex flex-wrap gap-2 max-h-[120px] overflow-y-auto p-3 bg-slate-950/30 border border-slate-800/50 rounded-xl">
+          <div className="w-full space-y-2">
+            <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1 text-left block">Mes Profils Enregistrés</label>
+            <div className="flex flex-wrap gap-3 p-4 bg-slate-950/30 border border-slate-800/50 rounded-2xl">
               {savedChars.length === 0 ? (
-                <div className="text-[10px] text-slate-600 italic px-2 py-1 w-full text-center">Aucun personnage enregistré</div>
+                <div className="text-xs text-slate-600 italic px-2 py-4 w-full text-center">Aucun personnage enregistré</div>
               ) : (
                 savedChars.map((char) => {
                   const isActive = activeCharName === char.name;
                   return (
-                    <div key={char.name} onClick={() => loadCharacter(char)} className={`flex items-center gap-3 px-3 py-1.5 rounded-lg border transition-all cursor-pointer ${isActive ? 'bg-amber-500/20 border-amber-500 shadow-[0_0_10px_rgba(245,158,11,0.2)]' : 'bg-slate-900 border-slate-800 hover:border-amber-500/50'}`}>
-                      <div className="flex flex-col">
-                        <span className={`text-[11px] font-black uppercase leading-tight ${isActive ? 'text-amber-500' : 'text-slate-200'}`}>{char.name}</span>
-                        <span className="text-[10px] font-black italic tracking-tighter text-slate-500">
+                    <div key={char.name} onClick={() => loadCharacter(char)} className={`flex items-center gap-4 px-4 py-2.5 rounded-xl border transition-all cursor-pointer shadow-sm ${isActive ? 'bg-amber-500/20 border-amber-500 shadow-[0_0_15px_rgba(245,158,11,0.25)] scale-[1.02]' : 'bg-slate-900 border-slate-800 hover:border-amber-500/50 hover:scale-[1.02]'}`}>
+                      <div className="flex flex-col min-w-[80px]">
+                        <span className={`text-xs font-black uppercase leading-tight tracking-tight ${isActive ? 'text-amber-500' : 'text-slate-200'}`}>{char.name}</span>
+                        <span className="text-[10px] font-bold italic tracking-wider text-slate-500 mt-0.5">
                           {char.renaissance === 0 ? "Humain" : `RN x${char.renaissance}`}
                         </span>
                       </div>
-                      <div onClick={(e) => e.stopPropagation()}>
-                        <button onClick={() => deleteCharacter(char.name)} className="p-1 text-slate-500 hover:text-red-500 transition-colors"><Trash2 size={12} /></button>
+                      <div onClick={(e) => e.stopPropagation()} className="pl-2 border-l border-slate-800">
+                        <button onClick={() => deleteCharacter(char.name)} className="p-1.5 text-slate-600 hover:text-red-500 transition-colors"><Trash2 size={14} /></button>
                       </div>
                     </div>
                   );
@@ -310,8 +323,9 @@ const StatPlanner = () => {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-        {/* SIDEBAR */}
-        <div className="lg:col-span-3 space-y-6">
+        {/* COLONNE GAUCHE (Plus large pour les attributs) */}
+        <div className="lg:col-span-6 space-y-6">
+          {/* Renaissance */}
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-center shadow-xl overflow-hidden relative group">
             <h2 className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2 flex items-center justify-center gap-2"><Zap size={14}/> Renaissance</h2>
             <div className="text-3xl font-black text-amber-500 mb-6 drop-shadow-[0_0_10px_rgba(245,158,11,0.3)] group-hover:scale-110 transition-transform uppercase italic">
@@ -326,96 +340,119 @@ const StatPlanner = () => {
             </div>
             <Zap className="absolute -bottom-4 -left-4 text-slate-800/20" size={80} />
           </div>
-          <button onClick={resetAll} className="w-full py-4 bg-slate-800 hover:bg-red-500/10 text-slate-400 rounded-2xl border border-slate-700 transition-all font-black uppercase text-xs tracking-widest flex items-center justify-center gap-2"><RotateCcw size={16} /> Reset Build</button>
-        </div>
 
-        {/* MAIN */}
-        <div className="lg:col-span-9 space-y-6">
-          <CharacterNameVisual name={activeCharName} onUpdate={updateActiveCharacter} />
-          
+          <button onClick={resetAll} className="w-full py-4 bg-slate-800 hover:bg-red-500/10 text-slate-400 rounded-2xl border border-slate-700 transition-all font-black uppercase text-xs tracking-widest flex items-center justify-center gap-2"><RotateCcw size={16} /> Reset Build</button>
+
+          {/* Attributs & Progression */}
           <div className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl relative">
             <div className="absolute top-0 left-0 w-full h-1 bg-slate-800">
               <div className="h-full bg-amber-500 transition-all duration-500" style={{ width: `${((totalLevelPointsSpent % POINTS_PER_LEVEL) / POINTS_PER_LEVEL) * 100}%` }} />
             </div>
 
-            <div className="p-4 border-b border-slate-800 bg-slate-900/50 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="p-4 border-b border-slate-800 bg-slate-900/50 flex flex-col items-center justify-between gap-4 text-center sm:text-left sm:flex-row">
                <div className="flex items-center gap-2">
                   <User className="text-amber-500" size={18} /> 
-                  <h2 className="text-sm font-black text-slate-100 uppercase tracking-tight">Attributs & Progression</h2>
+                  <h2 className="text-sm font-black text-slate-100 uppercase tracking-tight">Attributs de base</h2>
                </div>
-               <div className="text-right">
+               <div>
                  <span className="text-[8px] font-black text-slate-500 uppercase block leading-none tracking-widest">Points Investis</span>
                  <span className="text-xl font-black text-amber-500 leading-none">{totalLevelPointsSpent}</span>
                </div>
             </div>
 
-            <div className="flex flex-col md:flex-row">
-              {/* COLONNE STATS VITALES */}
-              <div className="w-full md:w-48 bg-slate-950/50 p-6 border-b md:border-b-0 md:border-r border-slate-800 flex flex-col justify-center gap-6">
+            <div className="flex flex-col">
+              {/* STATS VITALES - Stackées en haut */}
+              <div className="bg-slate-950/50 p-6 border-b border-slate-800 flex flex-col sm:flex-row items-center justify-around gap-6">
                 <div className="text-center">
-                  <span className="text-[8px] font-black text-slate-500 uppercase block leading-none tracking-[0.2em] mb-1">Niveau Requis</span>
+                  <span className="text-[9px] font-black text-slate-500 uppercase block leading-none tracking-[0.2em] mb-2">Niveau Requis</span>
                   <div className="flex items-center justify-center gap-2">
-                    <Award className="text-amber-500" size={16} />
-                    <span className="text-4xl font-black text-white leading-none">{requiredLevel}</span>
+                    <Award className="text-amber-500" size={20} />
+                    <span className="text-5xl font-black text-white leading-none tracking-tighter">{requiredLevel}</span>
                   </div>
                 </div>
 
-                <div className="h-px bg-slate-800 w-1/2 mx-auto" />
-
-                <div className="space-y-4">
+                <div className="flex gap-8">
                   <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-red-500/10 flex items-center justify-center"><Heart className="text-red-500" size={16} /></div>
+                    <div className="w-10 h-10 rounded-lg bg-red-500/10 flex items-center justify-center border border-red-500/20 shrink-0"><Heart className="text-red-500" size={18} /></div>
                     <div>
-                      <div className="text-lg font-black text-red-400 leading-none">{derivedStats.hp}</div>
-                      <div className="text-[8px] font-bold text-slate-500 uppercase tracking-tighter">PV (Est.)</div>
+                      <div className="text-xl font-black text-red-400 leading-none">{derivedStats.hp}</div>
+                      <div className="text-[9px] font-bold text-slate-500 uppercase tracking-widest mt-1">PV (Est.)</div>
                     </div>
                   </div>
                   <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-blue-500/10 flex items-center justify-center"><Sparkles className="text-blue-500" size={16} /></div>
+                    <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center border border-blue-500/20 shrink-0"><Sparkles className="text-blue-500" size={18} /></div>
                     <div>
-                      <div className="text-lg font-black text-blue-400 leading-none">{derivedStats.mana}</div>
-                      <div className="text-[8px] font-bold text-slate-500 uppercase tracking-tighter">Mana (Est.)</div>
+                      <div className="text-xl font-black text-blue-400 leading-none">{derivedStats.mana}</div>
+                      <div className="text-[9px] font-bold text-slate-500 uppercase tracking-widest mt-1">Mana (Est.)</div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* LISTE DES ATTRIBUTS */}
-              <div className="flex-1 divide-y divide-slate-800/50">
+              {/* LISTE DES ATTRIBUTS - Format Compact Vertical */}
+              <div className="divide-y divide-slate-800/50">
                 {(['str', 'end', 'dex', 'int', 'wis'] as (keyof Stats)[]).map((k) => {
                   const labels: Record<string, string> = { str: 'Force', end: 'Endurance', dex: 'Dextérité', int: 'Intelligence', wis: 'Sagesse' };
+                  const shortLabels: Record<string, string> = { str: 'FOR', end: 'END', dex: 'DEX', int: 'INT', wis: 'SAG' };
                   const colors: Record<string, string> = { str: 'text-red-400', end: 'text-orange-400', dex: 'text-emerald-400', int: 'text-blue-400', wis: 'text-purple-400' };
                   const curS = seraphStats[k] || 0;
+                  const magicInfo = k === 'int' ? magicTiers.int : k === 'wis' ? magicTiers.wis : null;
+
                   return (
-                      <div key={k} className="px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-6 hover:bg-white/[0.02] transition-colors">
-                        <div className="flex items-center gap-4 w-full sm:w-40">
-                          <div className="w-12 h-12 rounded-xl bg-slate-800 flex items-center justify-center font-black text-xs text-slate-400 border border-slate-700 uppercase shadow-inner">{k}</div>
-                          <div>
-                            <div className="font-black text-slate-400 text-[11px] uppercase tracking-wider leading-none mb-1">{labels[k]}</div>
-                            <div className={`text-2xl font-black ${colors[k]} drop-shadow-md`}>{finalStats[k]}</div>
-                          </div>
-                        </div>
-                        <div className="flex flex-1 items-center justify-end gap-6 w-full">
-                          <div className="flex flex-col items-center gap-1.5">
-                            <span className="text-[9px] font-black text-slate-600 uppercase tracking-widest">Points Niveau</span>
-                            <div className="flex items-center gap-1.5 bg-slate-950 p-1.5 rounded-xl border border-slate-800 shadow-inner">
-                               <button onClick={() => updateLevelStat(k, -100)} className="px-2.5 h-8 text-[10px] font-black rounded-lg bg-slate-900 border border-slate-800 text-slate-500 hover:text-white hover:border-slate-600 transition-all">-100</button>
-                               <button onClick={() => updateLevelStat(k, -10)} className="px-2.5 h-8 text-[10px] font-black rounded-lg bg-slate-900 border border-slate-800 text-slate-500 hover:text-white hover:border-slate-600 transition-all">-10</button>
-                               <button onClick={() => updateLevelStat(k, -1)} className="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all" disabled={(levelPoints[k] || 0) <= 0}><ChevronDown size={16}/></button>
-                               <span className="w-12 text-center text-lg font-black text-white">{levelPoints[k] || 0}</span>
-                               <button onClick={() => updateLevelStat(k, 1)} className="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all"><ChevronUp size={16}/></button>
-                               <button onClick={() => updateLevelStat(k, 10)} className="px-2.5 h-8 text-[10px] font-black rounded-lg bg-slate-900 border border-slate-800 text-slate-500 hover:text-white hover:border-slate-600 transition-all">+10</button>
-                               <button onClick={() => updateLevelStat(k, 100)} className="px-2.5 h-8 text-[10px] font-black rounded-lg bg-slate-900 border border-slate-800 text-slate-500 hover:text-white hover:border-slate-600 transition-all">+100</button>
+                      <div key={k} className="px-4 py-4 flex flex-col gap-4 hover:bg-white/[0.02] transition-colors group/stat">
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center gap-3">
+                            <div className="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center font-black text-[10px] text-slate-400 border border-slate-700 uppercase shadow-lg group-hover/stat:border-slate-500 transition-colors">
+                              {shortLabels[k]}
+                            </div>
+                            <div>
+                              <div className="font-black text-slate-500 text-[10px] uppercase tracking-[0.15em] leading-none mb-1">{labels[k]}</div>
+                              <div className="flex items-center gap-2">
+                                  <div className={`text-xl font-black ${colors[k]} drop-shadow-lg tracking-tighter`}>{finalStats[k]}</div>
+                                  {magicInfo && (
+                                      <div className="flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-amber-500/10 border border-amber-500/20 shadow-sm" title={`Rang ${magicInfo.rank}`}>
+                                          <Sparkles size={10} className="text-amber-400" />
+                                          <span className="text-[9px] font-black text-amber-200 uppercase whitespace-nowrap">R{magicInfo.rank}</span>
+                                      </div>
+                                  )}
+                              </div>
                             </div>
                           </div>
-                          {renaissance > 0 && (
-                            <div className="flex flex-col items-center gap-1.5">
-                              <span className="text-[9px] font-black text-amber-600 uppercase tracking-widest">Points RN</span>
-                              <div className="flex items-center gap-1.5 bg-slate-950 p-1.5 rounded-xl border border-amber-500/20 shadow-inner">
-                                 <button onClick={() => updateSeraphStat('stat', k, -1)} className="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-800 text-slate-400 hover:text-amber-500 transition-all" disabled={curS <= 0}>-</button>
-                                 <span className="w-8 text-center text-sm font-black text-amber-500">{curS}</span>
-                                 <button onClick={() => updateSeraphStat('stat', k, 1)} className="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-800 text-slate-400 hover:text-amber-500 transition-all" disabled={remainingSeraphPoints < (curS + 1)}>+</button>
+                          {magicInfo && (
+                              <div className="text-[9px] font-black text-slate-500 uppercase tracking-widest text-right">
+                                  Next: <span className="text-slate-300 font-bold">{magicInfo.next}</span> 
+                                  <div className="text-amber-500/70">-{magicInfo.needed} pts</div>
                               </div>
+                          )}
+                        </div>
+                        
+                        <div className="flex flex-col gap-3">
+                          <div className="flex items-center justify-between bg-slate-950 p-1.5 rounded-xl border border-slate-800 shadow-xl w-full">
+                             <div className="flex gap-1">
+                               <button onClick={() => updateLevelStat(k, -100)} className="w-8 h-7 text-[9px] font-black rounded-md bg-slate-900 border border-slate-800 text-slate-500 hover:text-white transition-all">-100</button>
+                               <button onClick={() => updateLevelStat(k, -10)} className="w-8 h-7 text-[9px] font-black rounded-md bg-slate-900 border border-slate-800 text-slate-500 hover:text-white transition-all">-10</button>
+                             </div>
+                             
+                             <div className="flex items-center gap-2">
+                               <button onClick={() => updateLevelStat(k, -1)} className="w-7 h-7 flex items-center justify-center rounded-md bg-slate-800 text-slate-400 hover:text-white transition-all shadow-sm" disabled={(levelPoints[k] || 0) <= 0}><ChevronDown size={14}/></button>
+                               <span className="w-10 text-center text-lg font-black text-white tabular-nums">{levelPoints[k] || 0}</span>
+                               <button onClick={() => updateLevelStat(k, 1)} className="w-7 h-7 flex items-center justify-center rounded-md bg-slate-800 text-slate-400 hover:text-white transition-all shadow-sm"><ChevronUp size={14}/></button>
+                             </div>
+
+                             <div className="flex gap-1">
+                               <button onClick={() => updateLevelStat(k, 10)} className="w-8 h-7 text-[9px] font-black rounded-md bg-slate-900 border border-slate-800 text-slate-500 hover:text-white transition-all">+10</button>
+                               <button onClick={() => updateLevelStat(k, 100)} className="w-8 h-7 text-[9px] font-black rounded-md bg-slate-900 border border-slate-800 text-slate-500 hover:text-white transition-all">+100</button>
+                             </div>
+                          </div>
+                          
+                          {renaissance > 0 && (
+                            <div className="flex items-center justify-between bg-slate-950 p-1.5 rounded-xl border border-amber-500/20 shadow-xl w-full">
+                               <span className="text-[8px] font-black text-amber-600 uppercase tracking-widest ml-2">PTS RN</span>
+                               <div className="flex items-center gap-2">
+                                 <button onClick={() => updateSeraphStat('stat', k, -1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-amber-500 transition-all shadow-sm disabled:opacity-20" disabled={curS <= 0}>-</button>
+                                 <span className="w-8 text-center text-md font-black text-amber-500 tabular-nums">{curS}</span>
+                                 <button onClick={() => updateSeraphStat('stat', k, 1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-amber-500 transition-all shadow-sm disabled:opacity-20" disabled={remainingSeraphPoints < (curS + 1)}>+</button>
+                               </div>
                             </div>
                           )}
                         </div>
@@ -425,73 +462,121 @@ const StatPlanner = () => {
               </div>
             </div>
           </div>
+        </div>
 
+        {/* MAIN (Colonne droite) */}
+        <div className="lg:col-span-6 space-y-6">
+          <CharacterNameVisual name={activeCharName} onUpdate={updateActiveCharacter} />
+          
           {renaissance > 0 && (
-            <div className="bg-slate-900 border border-amber-500/20 rounded-2xl p-4 shadow-xl flex items-center justify-between">
-              <div className="flex items-center gap-4">
-                 <div className="flex items-center gap-2 text-amber-500"><Star size={18} fill="currentColor" /><h2 className="text-[10px] font-black uppercase tracking-widest">Points Séraphe</h2></div>
-                 <div className="w-48 h-1.5 bg-slate-800 rounded-full overflow-hidden"><div className="h-full bg-amber-500 transition-all duration-500" style={{ width: `${Math.min(100, (spentSeraphPoints / totalSeraphPoints) * 100)}%` }} /></div>
+            <div className="bg-slate-900 border border-amber-500/20 rounded-3xl p-6 shadow-2xl flex items-center justify-between overflow-hidden relative">
+              <div className="flex items-center gap-6 relative z-10">
+                 <div className="flex items-center gap-3 text-amber-500"><Star size={24} fill="currentColor" className="drop-shadow-[0_0_10px_rgba(245,158,11,0.5)]" /><h2 className="text-xs font-black uppercase tracking-[0.3em]">Points Séraphe</h2></div>
+                 <div className="w-64 h-2 bg-slate-800 rounded-full overflow-hidden border border-slate-700/50"><div className="h-full bg-gradient-to-r from-amber-600 to-amber-400 transition-all duration-700 shadow-[0_0_15px_rgba(245,158,11,0.4)]" style={{ width: `${Math.min(100, (spentSeraphPoints / totalSeraphPoints) * 100)}%` }} /></div>
               </div>
-              <div className="text-xl font-black text-amber-500">{remainingSeraphPoints} <span className="text-slate-600 text-xs">/ {totalSeraphPoints}</span></div>
+              <div className="text-3xl font-black text-amber-500 relative z-10">{remainingSeraphPoints} <span className="text-slate-600 text-sm font-bold">/ {totalSeraphPoints}</span></div>
+              <Star className="absolute -right-4 -bottom-4 text-amber-500/5 rotate-12" size={120} />
             </div>
           )}
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-             <div className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
-                <div className="p-4 border-b border-slate-800 bg-emerald-500/5 flex items-center gap-2">
-                   <Flame className="text-emerald-500" size={18} />
-                   <h2 className="text-xs font-black text-slate-100 uppercase tracking-widest">Puissances (+5)</h2>
+          <div className="grid grid-cols-1 gap-6">
+             <div className="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden shadow-2xl">
+                <div className="p-5 border-b border-slate-800 bg-emerald-500/5 flex items-center gap-3">
+                   <Flame className="text-emerald-500" size={22} />
+                   <h2 className="text-sm font-black text-slate-100 uppercase tracking-widest">Puissances Magiques</h2>
                 </div>
-                <div className="p-4 space-y-3">
+                <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
                    {ELEMENTS.map(el => {
                      const cur = seraphPowers[el] || 0;
                      return (
-                       <div key={el} className="flex items-center justify-between bg-slate-950/50 p-3 rounded-xl border border-slate-800/50 hover:border-emerald-500/30 transition-colors group">
-                          <div className="flex items-center gap-4">
-                            <div className="w-px h-8 bg-emerald-500/20 group-hover:bg-emerald-500/50 transition-colors" />
-                            <div>
-                              <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider block mb-0.5">{el}</span>
-                              <span className="text-xl font-black text-emerald-400 leading-none">{finalMagic.powers[el]}</span>
+                       <div key={el} className="flex items-center justify-between bg-slate-950/40 p-4 rounded-2xl border border-slate-800/50 hover:border-emerald-500/30 transition-all group">
+                          <div className="flex items-center gap-4 min-w-0">
+                            <div className="w-1.5 h-10 bg-emerald-500/20 rounded-full group-hover:bg-emerald-500/50 transition-colors shrink-0" />
+                            <div className="min-w-0">
+                              <span className="text-[10px] font-black text-slate-500 uppercase tracking-[0.15em] block mb-1 truncate">{el}</span>
+                              <span className="text-2xl font-black text-emerald-400 leading-none drop-shadow-md">{finalMagic.powers[el]}</span>
                             </div>
                           </div>
-                          <div className="flex items-center gap-2 bg-slate-900 p-1.5 rounded-xl border border-slate-800 shadow-inner">
-                             <button onClick={() => updateSeraphStat('power', el, -1)} className="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-800 text-slate-500 hover:text-white hover:bg-slate-700 transition-all" disabled={cur <= 0}>-</button>
-                             <div className="w-8 text-center text-xs font-black text-amber-500/50">{cur}</div>
-                             <button onClick={() => updateSeraphStat('power', el, 1)} className="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-800 text-slate-500 hover:text-white hover:bg-slate-700 transition-all" disabled={remainingSeraphPoints < (cur + 1)}>+</button>
+                          <div className="flex items-center gap-2 bg-slate-900/80 p-1.5 rounded-2xl border border-slate-800 shadow-inner shrink-0">
+                             <button onClick={() => updateSeraphStat('power', el, -1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all shadow-sm disabled:opacity-20" disabled={cur <= 0}>-</button>
+                             <div className="w-8 text-center text-xs font-black text-amber-500/70">{cur}</div>
+                             <button onClick={() => updateSeraphStat('power', el, 1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all shadow-sm disabled:opacity-20" disabled={remainingSeraphPoints < (cur + 1)}>+</button>
                           </div>
                        </div>
                      );
                    })}
                 </div>
              </div>
-             <div className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl">
-                <div className="p-4 border-b border-slate-800 bg-blue-500/5 flex items-center gap-2">
-                   <Shield className="text-blue-500" size={18} />
-                   <h2 className="text-xs font-black text-slate-100 uppercase tracking-widest">Résistances (+10)</h2>
+             <div className="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden shadow-2xl">
+                <div className="p-5 border-b border-slate-800 bg-blue-500/5 flex items-center gap-3">
+                   <Shield className="text-blue-500" size={22} />
+                   <h2 className="text-sm font-black text-slate-100 uppercase tracking-widest">Résistances Magiques</h2>
                 </div>
-                <div className="p-4 space-y-3">
+                <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
                    {ELEMENTS.map(el => {
                      const cur = seraphResists[el] || 0;
                      const nextCost = (cur + 1) * 2;
                      return (
-                       <div key={el} className="flex items-center justify-between bg-slate-950/50 p-3 rounded-xl border border-slate-800/50 hover:border-blue-500/30 transition-colors group">
-                          <div className="flex items-center gap-4">
-                            <div className="w-px h-8 bg-blue-500/20 group-hover:bg-blue-500/50 transition-colors" />
-                            <div>
-                              <span className="text-[10px] font-bold text-slate-500 uppercase tracking-wider block mb-0.5">{el}</span>
-                              <span className="text-xl font-black text-blue-400 leading-none">{finalMagic.resists[el]}</span>
+                       <div key={el} className="flex items-center justify-between bg-slate-950/40 p-4 rounded-2xl border border-slate-800/50 hover:border-blue-500/30 transition-all group">
+                          <div className="flex items-center gap-4 min-w-0">
+                            <div className="w-1.5 h-10 bg-blue-500/20 rounded-full group-hover:bg-blue-500/50 transition-colors shrink-0" />
+                            <div className="min-w-0">
+                              <span className="text-[10px] font-black text-slate-500 uppercase tracking-[0.15em] block mb-1 truncate">{el}</span>
+                              <span className="text-2xl font-black text-blue-400 leading-none drop-shadow-md">{finalMagic.resists[el]}</span>
                             </div>
                           </div>
-                          <div className="flex items-center gap-2 bg-slate-900 p-1.5 rounded-xl border border-slate-800 shadow-inner">
-                             <button onClick={() => updateSeraphStat('resist', el, -1)} className="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-800 text-slate-500 hover:text-white hover:bg-slate-700 transition-all" disabled={cur <= 0}>-</button>
-                             <div className="w-8 text-center text-xs font-black text-amber-500/50">{cur}</div>
-                             <button onClick={() => updateSeraphStat('resist', el, 1)} className="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-800 text-slate-500 hover:text-white hover:bg-slate-700 transition-all" disabled={remainingSeraphPoints < nextCost}>+</button>
+                          <div className="flex items-center gap-2 bg-slate-900/80 p-1.5 rounded-2xl border border-slate-800 shadow-inner shrink-0">
+                             <button onClick={() => updateSeraphStat('resist', el, -1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all shadow-sm disabled:opacity-20" disabled={cur <= 0}>-</button>
+                             <div className="w-8 text-center text-xs font-black text-amber-500/70">{cur}</div>
+                             <button onClick={() => updateSeraphStat('resist', el, 1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all shadow-sm disabled:opacity-20" disabled={remainingSeraphPoints < nextCost}>+</button>
                           </div>
                        </div>
                      );
                    })}
                 </div>
              </div>
+          </div>
+
+          {/* RÉCAPITULATIF PUISSANCE MAGIQUE */}
+          <div className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl mt-6">
+            <div className="p-4 border-b border-slate-800 bg-amber-500/5 flex items-center gap-2">
+                <BookOpen className="text-amber-500" size={18} />
+                <h2 className="text-xs font-black text-slate-100 uppercase tracking-widest">Comprendre la Puissance Magique</h2>
+            </div>
+            <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 className="text-sm font-bold text-slate-300 mb-3 uppercase tracking-tight">Paliers de Puissance Brute</h3>
+                    <p className="text-xs text-slate-400 leading-relaxed mb-4">
+                        {spellPowerConfig.guide.summary}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                        {spellPowerConfig.paliers.map(p => (
+                            <div key={p.rank} className={`px-2.5 py-1.5 rounded-lg border text-[10px] font-black transition-all ${
+                                (magicTiers.int.rank >= p.rank || magicTiers.wis.rank >= p.rank)
+                                ? 'bg-amber-500/20 border-amber-500 text-amber-400 shadow-[0_0_10px_rgba(245,158,11,0.1)]'
+                                : 'bg-slate-950 border-slate-800 text-slate-600'
+                            }`}>
+                                R{p.rank} : {p.threshold}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+                <div className="space-y-4">
+                    <h3 className="text-sm font-bold text-slate-300 uppercase tracking-tight">Conseils & Optimisation</h3>
+                    <ul className="space-y-2">
+                        {spellPowerConfig.guide.tips.map((tip, i) => (
+                            <li key={i} className="flex gap-2 text-xs text-slate-400 leading-relaxed">
+                                <span className="text-amber-500 font-bold">•</span>
+                                {tip}
+                            </li>
+                        ))}
+                    </ul>
+                    <div className="p-3 rounded-xl bg-blue-500/5 border border-blue-500/10 text-[10px] text-blue-400 leading-relaxed italic">
+                        <Info size={12} className="inline mr-1 mb-0.5" />
+                        {spellPowerConfig.guide.stagnation}
+                    </div>
+                </div>
+            </div>
           </div>
         </div>
       </div>

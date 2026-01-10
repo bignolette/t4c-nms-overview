@@ -47,7 +47,7 @@ const CharacterNameVisual: React.FC<Props> = ({ name, onUpdate }) => {
         <span className="text-[10px] font-black text-amber-500/60 uppercase tracking-[0.4em] mb-1">
           {name ? "Personnage sélectionné" : "En attente de chargement"}
         </span>
-        <h1 className={`text-4xl md:text-5xl font-black italic uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-amber-200 to-amber-500 drop-shadow-[0_0_15px_rgba(245,158,11 ignor-case).5)] text-center ${!name ? 'opacity-20 grayscale' : ''}`}>
+        <h1 className={`text-2xl sm:text-3xl md:text-5xl font-black italic uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-amber-200 to-amber-500 drop-shadow-[0_0_15px_rgba(245,158,11,0.5)] text-center px-4 ${!name ? 'opacity-20 grayscale' : ''}`}>
           {displayName}
         </h1>
         
