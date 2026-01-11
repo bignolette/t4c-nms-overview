@@ -86,11 +86,20 @@ export const findItemsInQuest = (quest: Quest): string[] => {
 export const highlightKeywords = (html: string): string => {
   if (!html) return html;
 
+  let processed = html;
+
+  // 1. Handle "Vous avez dit : <b>Keyword</b>" pattern (unquoted bold text)
+  // We explicitly add quotes and style it
+  processed = processed.replace(/Vous avez dit\s*:\s*<(b|strong)>([^<]+)<\/\1>/gi, (_match, _tag, text) => {
+    return `Vous avez dit : <span class='npc-keyword'><span class='text-amber-500'>"</span><span class='text-slate-100 font-bold'>${text}</span><span class='text-amber-500'>"</span></span>`;
+  });
+
+  // 2. Handle standard triggers followed by quoted text
   // Regex to find triggers followed by quoted text
   // Triggers: parlez/dites/répondez/dire/mots-clés/demandez/puis/ou...
-  const triggerPattern = /(parlez(?:[- ]lui)?|dites(?:[- ](?:lui|directement))?|r[ée]pondez(?:[- ]lui)?|dire|mots?[- ]cl[ée]s?|demandez(?:[- ]lui)?|puis|ou(?: (?:simplement|m[êe]me|encore))?)\s*[:,-]?\s*((?:[«"“][^"»”]+[»"”][\s,:;-]*(?:\b(?:ou|et|soit|sinon|simplement|m[êe]me|bien|alors|puis|encore)\b[\s,:;-]*)*)+)/gi;
+  const triggerPattern = /(parlez(?:[- ]lui)?|dites(?:[- ](?:lui|directement|une (?:derni[èe]re )?fois))?|r[ée]pondez(?:[- ]lui)?|dire|mots?[- ]cl[ée]s?|demandez(?:[- ]lui)?|puis|ou(?: (?:simplement|m[êe]me|encore))?)\s*[:,-]?\s*((?:[«"“][^"»”]+[»"”][\s,:;-]*(?:\b(?:ou|et|soit|sinon|simplement|m[êe]me|bien|alors|puis|encore)\b[\s,:;-]*)*)+)/gi;
 
-  return html.replace(triggerPattern, (_match, trigger, content) => {
+  return processed.replace(triggerPattern, (_match, trigger, content) => {
     // Style the content parts
     // We look for quotes within the content and style them
     const styledContent = content.replace(/([«"“])([^"»”]+)([»"”])/g, (_m: string, q1: string, text: string, q2: string) => {
@@ -107,6 +116,26 @@ export const cleanTitle = (title: string): string => {
   if (!title) return title;
   // Remove starting hyphen followed by optional digits and optional space
   return title.replace(/^-\d*\s*/, '');
+};
+
+export const cleanHtml = (html: string): string => {
+  if (!html) return html;
+  let cleaned = html;
+
+  // 1. Remove "superfluous" formatting tags but keep their content
+  // Strips: big, small, font, center, span, div, style
+  cleaned = cleaned.replace(/<\/?(?:big|small|font|center|span|div|style)[^>]*>/gi, '');
+
+  // 2. Clean attributes from common structural tags (p, b, i, strong, em, u)
+  // This removes inline styles, classes, aligns, etc.
+  cleaned = cleaned.replace(/<(p|b|i|strong|em|u|h[1-6])\s+[^>]+>/gi, '<$1>');
+
+  // 3. Remove empty paragraph/formatting tags (containing only whitespace or &nbsp;)
+  // We do this a couple of times to catch nested empty tags
+  cleaned = cleaned.replace(/<(p|b|i|strong|em|u|h[1-6])>\s*(?:&nbsp;)*\s*<\/\1>/gi, '');
+  cleaned = cleaned.replace(/<(p|b|i|strong|em|u|h[1-6])>\s*(?:&nbsp;)*\s*<\/\1>/gi, '');
+
+  return cleaned.trim();
 };
 
 export const formatLists = (html: string): string => {
