@@ -58,11 +58,13 @@ const Legal = () => {
               et tout autre élément issu de l'univers du jeu sont la propriété exclusive de leurs auteurs respectifs.
             </p>
             <p>
-              Ce site est une "Fan-App" non officielle à but purement informatif. Il ne contient aucun asset visuel original du jeu (images, textures, icônes) et n'est en aucun cas affilié, approuvé ou soutenu par 
+              Ce site est une "Fan-App" non officielle à but purement informatif. Il contient des assets visuels originaux du jeu (images, textures, icônes) issus des fichiers du jeu, et n'est en aucun cas affilié, approuvé ou soutenu par 
               Dialsoft ou les exploitants officiels des serveurs T4C.
             </p>
             <p>
-              Les données textuelles proviennent du <strong>Wiki T4C NMS</strong> et du site <strong>NMS Révolution</strong>. 
+              Une grande partie des données textuelles, quêtes et informations ont été reprises et adaptées des sites 
+              <strong> <a href="https://nmsrevolution.com" target="_blank" rel="noopener noreferrer" className="text-amber-500 hover:underline">T4C Wiki NMS</a></strong> et 
+              <strong> <a href="https://nmsrevolution.com" target="_blank" rel="noopener noreferrer" className="text-amber-500 hover:underline">T4C NMS Révolution</a></strong>.
               Le code source de l'application est mis à disposition à des fins éducatives et communautaires.
             </p>
           </div>

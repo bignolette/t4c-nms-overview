@@ -58,8 +58,9 @@ Un outil pour planifier votre progression :
 ## ℹ️ Informations Légales & Crédits
 
 *   **Auteur** : Bignole
-*   **Sources des données** : NMSRévolution, Wiki communautaire.
-*   **Propriété Intellectuelle** : T4C est une marque déposée de Dialsoft LLC. Les données du jeu appartiennent à leurs auteurs respectifs.
+*   **Sources des données** : Les informations, quêtes et données textuelles ont été reprises et adaptées des sites **T4C Wiki NMS** et **NMS Révolution**.
+*   **Assets Visuels** : L'application utilise des assets visuels originaux du jeu (images, textures, icônes).
+*   **Propriété Intellectuelle** : T4C est une marque déposée de Dialsoft LLC. Les données du jeu et les assets originaux appartiennent à leurs auteurs respectifs.
 
 ---
 *Projet indépendant créé par la communauté pour la communauté. Non affilié à Dialsoft LLC.*

@@ -206,7 +206,7 @@ const Sidebar = ({ isOpen = true, onToggle }: SidebarProps) => {
           <div className="p-6 border-t border-slate-800/50 bg-slate-950/50 backdrop-blur-sm">
               <p className="text-[10px] text-slate-500 text-center leading-relaxed font-medium">
                 Données : <br/>
-                <a href="#" className="text-slate-400 hover:text-amber-500 transition-colors underline decoration-slate-700 underline-offset-4">Wiki T4C NMS</a> & <a href="#" className="text-slate-400 hover:text-amber-500 transition-colors underline decoration-slate-700 underline-offset-4">NMS Révolution</a>
+                <a href="https://t4c.fandom.com/fr/wiki/The_4th_Coming" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-amber-500 transition-colors underline decoration-slate-700 underline-offset-4">Wiki T4C NMS</a> & <a href="https://nmsrevolution.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-amber-500 transition-colors underline decoration-slate-700 underline-offset-4">T4C NMS Révolution</a>
               </p>
           </div>
         </div>
