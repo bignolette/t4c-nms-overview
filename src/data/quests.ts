@@ -113,109 +113,109 @@ export const quests: Quest[] = [
         "order": 2
       },
       {
-        "title": "- Quête du chant pour les 2 grelots",
+        "title": "Quête du chant pour les 2 grelots",
         "description": "<p>Un jour, Flocon vous demandera de lui amener 2 grelots pour les reines du Père-Noël et pour ce faire, il vous demandera de suivre la musique. Le défi se passe sur LH, parlez à Rémi Façol qui se trouve au Nord-Est de la banque, ce dernier vous proposera de chanter en choeur. Suivez les mots clefs, il commencera les vocalises, il vous suffira de terminer la dernière phrase sans faute d'orthographe et sans déformer la chanson. Ces dernières arrivent aléatoirement, il vous faut répondre correctement à trois chansons, valable même si vous échouez après une ou deux gagnées. </p><ul><li>S'il chante ( '....Boule de neige et jour de l'an et' ) répondre : <ul><li>Bonne année grand-mère</li></ul></li></ul><ul><li>Bonne année grand-mère</li></ul><ul><li>S'il chante ( 'Petit papa Noël, avec des jouets par milliers n'oublie pas' ) répondre : <ul><li>Mon petit soulier</li></ul></li></ul><ul><li>Mon petit soulier</li></ul><ul><li>S'il chante ( 'Il est né le Divin enfant chantons tous' ) répondre : <ul><li>Son avènement</li></ul></li></ul><ul><li>Son avènement</li></ul><ul><li>S'il chante ( '....Mais avant de partir, il faudra bien te couvrir, dehors tu vas' ) répondre : <ul><li>Avoir si froid</li></ul></li></ul><ul><li>Avoir si froid</li></ul><ul><li>S'il chante ( 'Mon beau sapin roi des forêts tu' ) répondre : <ul><li>Gardes ta parure</li></ul></li></ul><ul><li>Gardes ta parure</li></ul><ul><li>S'il chante ( '...Quand par l'hiver...bois et guérets...sont dépouillés de leur attraits... Mon beau sapin' ) répondre : <ul><li>Roi des forêts</li></ul></li></ul><ul><li>Roi des forêts</li></ul><ul><li>S'il chante ( '...Dans les cieux ! L'astre luit ... Le mystère' ) répondre : <ul><li>Annoncé s'accomplit</li></ul></li></ul><ul><li>Annoncé s'accomplit</li></ul><ul><li>S'il chante ( '...Au son des cloches des églises ta' ) répondre : <ul><li>Distribution de surprises</li></ul></li></ul><ul><li>Distribution de surprises</li></ul><ul><li>S'il chante ( 'Vive le vent.....qui s'en va sifflant soufflant dans les' ) répondre : <ul><li>Grands sapins verts</li></ul></li></ul><ul><li>Grands sapins verts</li></ul><ul><li>S'il chante ( 'Et les yeux levés vers le ciel, à genoux, les petits enfants, avant de fermer les paupières font' ) répondre : <ul><li>Une dernière prière</li></ul></li></ul><ul><li>Une dernière prière</li></ul><p>Récompense : 1 grelot pour 3 chansons réussies. Attention Flocon vous en demandera 2 avant de vous donner votre cadeau ! </p>",
         "images": [],
         "order": 3
       },
       {
-        "title": "- Quête des habits de Lutin",
+        "title": "Quête des habits de Lutin",
         "description": "<p>Un autre jour, Flocon vous demandera de faire confectionner un vêtement pour l'un des lutins du Père Noël, car ils sont actuellement en guenilles. Pour cela, achetez : </p><ul><li>5 pommes à Fali, la vendeuse de LH</li></ul><ul><li>1 paire de bottes de cuir, à son collègue dans le même magasin.</li></ul><ul><li>Ensuite, chantez avec Rémi Façol (au Nord de la banque de LH) afin de gagner 1 grelot.</li> <li>Enfin, ramassez 2 pièces de coton rouge en tuant les(2024 pillards). Ils sont nombreux du côté des orcs solitaires de WH.</li> <li>Puis, rendez-vous au marchand d'armes +2, vers le Nord d'Arakas , et après le pont des démonicons vers l'ouest (2160,515).</li> <li>Engagez le dialogue avec Moradinne, l'assistante de la couturière, grâce au mot clef '<b>trava</b><b>il</b>'. Elle vous dira qu'elle est costumière passionnée et qu'elle adore Noël. Poursuivez la discussion et au mot clef '<b>tout</b>', elle prendra vos produits et vous donnera un vêtement pour lutin.</li></ul><p>Avec ce dernier, repartez pour la place de LH et reparlez à Flocon. </p><p>Récompense : 1 cadeau de Noël. </p>",
         "images": [],
         "order": 4
       },
       {
-        "title": "- Quête du ruban soyeux rouge",
+        "title": "Quête du ruban soyeux rouge",
         "description": "<p>Flocon vous demandera de lui apporter non pas 'des' mais 1 ruban rouge pour nouer les cadeaux de Noël. Pour ce faire, descendez dans les profondeurs du sous-sol du temple de LH jusqu'au -2 et recherchez des araignées géantes. Petit conseil équipez-vous en chance, dans l'objectif de leur faire droper le plus rapidement possible 2 cocons de soie d'araignée. </p><p>Puis, munissez-vous d'une clef de coffre à surprise et allez parler à Cloriande de Bollour, située dans une maison au Nord-Est du temple (près de Rémi Façol). Pour aller au plus pressé, dites-lui '<b>clef</b>', elle vous échangera votre clef contre une fiole de colorant rouge. </p><p>Ensuite, direction le quartier des métiers de LH, dirigez-vous vers la maison des deux couturières (maison au Sud avec des quenouilles) et engagez le dialogue avec Bergénie. Pour abréger la conversation, dites '<b>ruban rouge</b>' et alors, contre les 2 cocons de soie d'araignée et le colorant rouge, elle vous remettra des rubans soyeux de couleur rouge. </p><p>Enfin, repassez voir Flocon le lutin pour les lui donner. </p><p>Récompense : 1 cadeau de Noël. </p>",
         "images": [],
         "order": 5
       },
       {
-        "title": "- Quête de la corde",
+        "title": "Quête de la corde",
         "description": "<p>Flocon vous demande de faire une corde pour le Père Noël </p><ul><li>Aller voir Pomme près de l'écurie à WH qui demande 3 crins de juments (indropables)</li> <li>Aller au Krakra et trouver les juments sauvages un peu partout sur l'ile des Krakra.</li> <li>Pos: 2134,641,0 et aussi 2212,670,0</li> <li>Pos: 2213,671,0 et aussi 1891,945,0</li> <li>Pos: 1934,817,0 et aussi 1746,823,0</li> <li>Pos: 1821,663,0 et aussi 2011,586,0</li> <li>Pos: 1850,844,0 et aussi 1919,660,0</li> <li>Pos:2029,945,0 et aussi 1791,752,0</li> <li>Faire dropper 3 crins, rapporter le tout à Pomme pour lui faire faire la corde.</li> <li>Retourner voir Flocon.</li></ul><p>Récompense : 1 cadeau de Noël. </p>",
         "images": [],
         "order": 6
       },
       {
-        "title": "- Quête du sapin majestueux",
+        "title": "Quête du sapin majestueux",
         "description": "<p>En parlant à Flocon, vous serez téléporté sur une île où vous devrez couper des sapins (hache du bûcheron d'Arakas, RD, SH, DI, peu importe) jusqu’à obtenir un \"sapin majestueux \" . Je vous conseille fortement d'aller couper les sapins au Nord de l’île qui semblent en droper beaucoup plus vite (merci à Melandria pour l'astuce). </p><p>Quelques positions : ces 5 là sont dans le même coin Nord gauche en contournant le rocher à gauche. </p><ul><li>Pos: 2290,2780,0</li> <li>Pos: 2427,2892,0</li> <li>Pos: 2364,2893,0</li> <li>Pos: 2413,2700,0</li> <li>Pos :2280,2720,0</li> <li>Regardez s'il tombe des feuilles c'est le bon.</li> <li>Et si vous trouvez d'autres positions dites-le moi.</li></ul><p>Récompense : 1 cadeau de Noël. </p>",
         "images": [],
         "order": 7
       },
       {
-        "title": "- Quête du bois d'érable",
+        "title": "Quête du bois d'érable",
         "description": "<p>Pour cette quête, vous devrez abattre, avec n'importe quelle hache de bûcheron, des érables, sur Arakas, jusqu'à obtenir 3 bûches d'érable. Les arbres droppent à chaque fois !!! </p><p>Voici quelques positions à vérifier : </p><ol><li>2390,915,0</li> <li>2306,1024,0</li> <li>2396,1055,0</li> <li>2432,1170,0</li> <li>2399,1263,0</li> <li class=\"mw-empty-elt\"></li> <li>Si vous trouvez de nouvelles positions me le dire</li> <li class=\"mw-empty-elt\"></li></ol><p>Récompense : 1 cadeau de Noël. </p>",
         "images": [],
         "order": 8
       },
       {
-        "title": "- Quête du sucre d'orge",
+        "title": "Quête du sucre d'orge",
         "description": "<p>Flocon vous demandera de l'aide afin de récolter un sucre d'orge. Pour créer cet objet, il vous faudra 2 betteraves, ainsi que 2 sachets de grains d'orge. </p><p>Au Troll d'Arakas les bettraves </p><ul><li>Emplacements des plants de betterave. 20 min solo 10 min à 2 <ul><li>1484,246,0</li> <li>1565,140,0</li> <li>1604,270,0</li> <li>1628,203,0</li></ul></li></ul><ul><li>1484,246,0</li> <li>1565,140,0</li> <li>1604,270,0</li> <li>1628,203,0</li></ul><p>Au territoire Kraanian l'orge </p><ul><li>Emplacements des plants d'orge. 20 min solo 10 min à 2 <ul><li>1976,715,0</li> <li>2019,632,0</li> <li>2094,640,0</li> <li>2114,750,0</li></ul></li></ul><ul><li>1976,715,0</li> <li>2019,632,0</li> <li>2094,640,0</li> <li>2114,750,0</li></ul><p>Le taux de drop doit être 20 à 25%. </p><p>Une fois ces 4 objets obtenus, rendez-vous chez le vieil Ermite a la cave des brigands (voleurs). Parlez à Alfrid Bécher et dites lui \"orge\". Il transformera vos deux sachets de grains en une décoction d'orge perlée. </p><p>Ensuite, allez à WH pour parler à Pomme Deschamps près de l'écurie de WH et dites-lui \"sucre\" afin qu'elle vous donne un sachet de sucre cristallisé en échange de vos deux betteraves. </p><p>Localisez Florentin, le boulanger, dans une maison au Sud-Ouest de WH travail\".</li></ul><p>Récompense : 1 cadeau de Noël. </p>",
         "images": [],
         "order": 15
       },
       {
-        "title": "- Quête : faire voler le traineau du père Noël",
+        "title": "Quête : faire voler le traineau du père Noël",
         "description": "<ul><li>1 rune du vent aux Kobolds au Nord avant la montagne de Jarko.</li> <li>3 plumes</li> <li>1 parchemin magique vierge (acheter un parchemin vierge tour des mages de WH et le transformer chez Araknor).</li> <li>Aller à la tour des mages de LH pour faire enchanter le tout par Eronys.</li></ul><p>Récompense : 1 cadeau de Noël. </p>",
         "images": [],
         "order": 16
       },
       {
-        "title": "- Quête : trouver les 6 Rennes",
+        "title": "Quête : trouver les 6 Rennes",
         "description": "<p>Flocon vous envoie sur une île. Positions de l'an passé qui peuvent avoir changé cette année : </p><ul><li>Pos: 2890,1370</li> <li>Pos: 2790,1200</li> <li>Pos: 2935,1090</li> <li>Pos: 2965,1185</li> <li>Pos: 2985,1360</li> <li>Pos: 2989,1130</li></ul><p>Retournez voir Flocon. </p><p>Récompense : 1 cadeau de Noël. </p>",
         "images": [],
         "order": 17
       },
       {
-        "title": "- Quête du Chapeau du père Noël",
+        "title": "Quête du Chapeau du père Noël",
         "description": "<ul><li>Trouvez la couturière Moradinne au marchand d'arme+2 de AR, vers le Nord d'Arakas , et après le pont des Démonicons vers l'Ouest (2160,515)..</li> <li>Dites <span class=\"npc-keyword\">\"pompon\"</span> à Moradinne et courez trouver son fils Juju au Camp Orc (pos: 2770,575,0) à qui vous direz également \"pompon\". Attention c'est chronométré !</li> <li>Trouvez 2 pièces de coton rouge sur (ajout 2024: les pillards) ( par exemple sortie WH et vers les orcs solitaires au Nord de WH ou vers l'Est).</li> <li>Amenez le tout à Moradinne et dites lui \"chapeau\".</li> <li>Apportez le chapeau à Flocon, à la fontaine de LH.</li></ul><p>Récompense : 1 cadeau de Noël. </p>",
         "images": [],
         "order": 18
       },
       {
-        "title": "- Quête des lettres perdues au père Noël",
+        "title": "Quête des lettres perdues au père Noël",
         "description": "<p>Quête assez longue :) </p><ul><li>Très important : n'oubliez pas de parler à Flocon en 1er sinon Noémie ne voudra pas vous donner le sac à moitié plein</li> <li>Allez voir Noémie chez Antonian RST de AR.</li> <li>Ensuite prenez 5 parchemins vierges (\"acheter\" à R'yleth Cth à la tour des mages de WH), entre 1 à 5 plumes et de l'encre. A faire entre 1 à 5 fois à droite d'Araknor chez Cloriande de Bellour avec des clefs à surprise (mot clef: encre).</li> <li>PS: Parfois l'encre se renverse et la plume se brise, donc dépendamment de votre chance irl pour l'encre et la plume.</li> <li>Ensuite récupérez 5 lettres. Mot clef \"lettre\" pour tous.</li> <li>Cannelle maison du culte (Nord LH une maison à droite d'Araknor) chez Luderik à l'étage.</li> <li>Pimprenelle à Wh. pos:1665,1260</li> <li>Arthur aux druides maison d'Audrey pour les robes. pos: 2930,150</li> <li>Mini Gorben gob vert aux Monts Rigul, pos: 2012,431</li> <li>Juju il est à droite au camp orc , pos: 2765,570,0</li> <li>Quand vous avez les 5 lettres aller voir Noémie elle vous dira qu'elle en a la moitié.</li> <li>Go vers Zélina au temple LH et lui dire Ness Croc. Elle vous donnera une dague à remettre à Ness Croc.</li> <li>Go à la ville des voleurs voir Ness Croc qui donnera un sac de lettres.</li> <li>Et go voir Flocon.</li></ul><p>Récompense : 1 cadeau de Noël. </p>",
         "images": [],
         "order": 19
       },
       {
-        "title": "- Quête du costume du Père Noël",
+        "title": "Quête du costume du Père Noël",
         "description": "<ul><li>Parlez à Flocon puis il vous faudra :</li> <li>3 pièces de coton rouge dropées par ( 2024 sur les pillards et le gros ceinturon aussi). Vous en trouverez beaucoup sortie de WH, vers les orcs solitaires ou vers l'Est.</li> <li>1 paire de bottes de cuir à acheter au marchand Rolph de LH (à côté de Fali).</li> <li>Cet année on peu avoir le gros ceinturon sur les pillard à WH (c'est bon).</li> <li><s><u>((pas besoin cet année IMPORTANT:</u> avant d'aller au Troll du -4 il faut avoir parlé à Flocon.</s></li> <li><s>1 gros ceinturon de cuir et 150,000 po. Allez sous sol -4 de LH et trouvez un troll La Fripouille ds une petite salle près de Balork, pos: 246,527. Il faut le défier pour qu'il attaque sinon il drope pas le ceinturon: mot clef \"ceinturon\" et \"défier\" et là il attaque. Tuez-le et vous recevrez direct le ceinturon dans le sac (repop 15-20 mn)))</s></li> <li>Ensuite emmenez le tout à Moradinne au marchand d'armes +2 Arakas (à l'Ouest après le pont des Démonicons).</li> <li>Et go voir Flocon.</li></ul><p>Récompense : 1 cadeau de Noël. </p>",
         "images": [],
         "order": 20
       },
       {
-        "title": "- Quête : faire un sac solide et renforcé  du Père Noël",
+        "title": "Quête : faire un sac solide et renforcé  du Père Noël",
         "description": "<p>Items nécessaires : </p><ul><li>2 peaux d'antilope</li> <li>1 morceau de peau d'orc</li> <li>1 crin de jument (elles sont sous le lac situé au centre du territoire kraanians)</li> <li>1 bracelet gobelin (y en a 2 c'est celui qui est indropable, à trouver sur les shamans gobelin au Nord de la RST AR).</li></ul><p>Ce qu'il vous faudra faire </p><ul><li>Allez voir Bergénie au quartier métier LH et dites-lui \"sac\".</li> <li>NE TUEZ PAS L'ORC SVP !!!</li> <li>Muni de vos peaux et de votre bracelet gobelin, allez dire <span class=\"npc-keyword\">\"sac\"</span> à Grumphyrog au village nain (après le laby AR) pour faire le sac en toile (pos : 2720,380)</li> <li>Allez apporter le sac à Flocon. Il vous demandera un sac plus solide.</li> <li>Retournez voir Bergénie et dites-lui \"sac\". Elle vous enverra à WH.</li> <li>Dites <span class=\"npc-keyword\">\"fil\"</span> à Pomme (proche de l'écurie) qui, en utilisant un crin de jument, vous fera un fil à tisser.</li> <li>Retourner voir Bergénie et lui dire <span class=\"npc-keyword\">\"sac\"</span>, elle vous fera un sac finement tissé.</li> <li>Aller porter le sac à Flocon.</li></ul><p>Récompense : 1 cadeau de Noël. </p>",
         "images": [],
         "order": 21
       },
       {
-        "title": "- Quête : réenchanter le sac du Père Noël",
+        "title": "Quête : réenchanter le sac du Père Noël",
         "description": "<ul><li>Parler à Flocon <ul><li>Aller voir le mage Eronys à la tour des mage LH et lui dire <u>\"sac enchanté\"</u>. il va demander une rune de terre pour pouvoir enchanter le sac.</li></ul></li> <li>Aller tuer l'orc Grumphyrog (pos: 2720.375) au village nain (après le laby), lui dire <u>sac</u> avant de le tuer une fois, il drope 1 rune (ne sert à rien le tuer 2 fois, il en drope juste une) (repop 10 mn)</li> <li>Retourner voir le mage Eronys et lui dire <u>\"sac enchanté\"</u>. Hélas il va rater et il va vous demander une 2ème rune, retourner tuer l'orc.</li> <li>Retourner voir le mage avec la 2ème rune et il va réussir à enchanter votre sac.</li> <li>Aller porter à Flocon (<u>après avoir revu Eronys</u> sinon c'est cuit !!).</li></ul><ul><li>Aller voir le mage Eronys à la tour des mage LH et lui dire <u>\"sac enchanté\"</u>. il va demander une rune de terre pour pouvoir enchanter le sac.</li></ul><p>N.B. IMPORTANT : Si votre personnage n'a pas encore accès à Raven's Dust (et même Stoneheim), l'enchantement marchera du premier coup. </p><p>Récompense : 1 cadeau de Noël. </p>",
         "images": [],
         "order": 22
       },
       {
-        "title": "- Quête du sablier enchanté",
+        "title": "Quête du sablier enchanté",
         "description": "<ul><li>1 sachet de sable blanc au Mont Righul sur la plage du haut 3 places (skin cactus) et 2 sur la plage du troll. <ul><li>Pos: 1680,240 = 1712,145 = 1985,120 plage monts Righul.</li> <li>Pos: 1590,102 plage du troll nord est 1440,259 plage du troll sud ouest.</li></ul></li> <li>1 bois d'érable sur les érables en bas de la rst d'Arakas.</li> <li>1 Pièce de verre à la cave Krakra aux minerais de verre pos 484,1297. 3 gisements.</li> <li>Dans la cave Krakra se trouve aussi le pnj pour le sablier Dworkin 140,1316. Lui dire sablier (il faut tous les items).</li> <li>Ensuite munissez-vous d'un parchemin magique vierge et go à la tour des mages LH voir Eronys pour l'enchanter. Mot clef: sablier</li> <li>Retour Flocon</li></ul><ul><li>Pos: 1680,240 = 1712,145 = 1985,120 plage monts Righul.</li> <li>Pos: 1590,102 plage du troll nord est 1440,259 plage du troll sud ouest.</li></ul><p>Récompense : 1 cadeau de Noël. </p>",
         "images": [],
         "order": 23
       },
       {
-        "title": "- Quête de la pelle à neige",
+        "title": "Quête de la pelle à neige",
         "description": "<ul><li>Parlez à Flocon 2 fois la 2eme fois pelle a neige.</li> <li>Ensuite allez acheter la pelle à neige près de Lance Silversmith chez Tonar Mastard.</li> <li>Ensuite mettez vous en ctrl+c et allez pelleter 10 tas de <u><b>neige glissante</b></u> à LH sur les trottoirs et retournez voir Flocon.</li> <li>Vous pouvez aller voir Cloriande à la fin, à droite de Araknor ds une maison, celle qui faisait l'encre. Elle vous donne une tasse de vin chaud (pas obligatoire).</li></ul><p>Récompense : 1 cadeau de Noël. </p>",
         "images": [],
         "order": 24
       },
       {
-        "title": "- Quête : préparer le repas",
+        "title": "Quête : préparer le repas",
         "description": "<ul><li>Parlez à Flocon</li> <li>Aller voir Léonidor à LH (travail...), dans une maison à droite d'Araknor 3025,1090</li> <li>Pommes de terre chez Hector sous la taverne de LH, acheter 2 sacs de pommes de terre.</li> <li>1 Sac de marrons au Druides d'Arakas sur les Marronniers. les spots : <ul><li>2780,231</li> <li>2762,128</li> <li>2715,187</li> <li>2803,288</li> <li>2828.124</li> <li>2870,280</li> <li>2900,164</li> <li>2988,207</li></ul></li> <li>Enfin 1 dinde à WH dans le foin parler à Albertin pos: 1750,1340. Lui dire <span class=\"npc-keyword\">\"dinde\"</span> pour entrer dans le champ et tuer les dindes. Ca drop après quelques unes de tuées. Si la dinde est dehors, dire <span class=\"npc-keyword\">\"sortir\"</span>.</li> <li class=\"mw-empty-elt\"></li> <li>Retourner chez Léonidor et lui dire <span class=\"npc-keyword\">\"préparer\"</span> 2 fois pour recevoir le panier du repas des fêtes.</li> <li>Enfin retour chez Flocon</li></ul><ul><li>2780,231</li> <li>2762,128</li> <li>2715,187</li> <li>2803,288</li> <li>2828.124</li> <li>2870,280</li> <li>2900,164</li> <li>2988,207</li></ul><p>Récompense : 1 cadeau de Noël. </p><p>Ps: la quête dure 2 jours. </p><p>Joyeuses Fêtes !!! </p>",
         "images": [],
         "order": 25
       },
       {
-        "title": "- Quête du livre de recettes (Hospice)",
+        "title": "Quête du livre de recettes (Hospice)",
         "description": "<p>Premièrement parler à Flocons (2x aide et livre de recettes) </p><p>Aller à WH acheter du chocolat à Florentin . 1690, 1340 </p><p>Aller voir Alphonse à LH la maison en haut du marchand Sigfried. 2900, 980 </p><p>Il s'agit maintenant de débloquer progressivement chaque PNJ dans l'ordre </p><p>Note: dire tous les mots clefs (en blanc) sans exception au pnj (écoutez ses deux histoires). Si un PNJ vous laisse tomber reprenez par le mot suivant... </p><ul><li>1er Isidore : travail, dire <u><b>ou</b>i</u> (oubliez pas de dire <span class=\"npc-keyword\">\"oui\"</span> à histoires) et <u>tous</u> les mots en blanc, même dans le désordre et ensuite : <ul><li>Puis : Isidore, Arlette, Theolette, Gamin, Ulgere, Eugenie, friandise, chocolat, livre de recettes</li></ul></li></ul><ul><li>Puis : Isidore, Arlette, Theolette, Gamin, Ulgere, Eugenie, friandise, chocolat, livre de recettes</li></ul><ul><li>2 ème Donatien : travail et <u>tous</u> les mots en blanc <ul><li>Puis : Isidore, Arlette, Theolette, Gamin, souris, Ulgere, friandise, chocolat, Eugenie, livre de recettes.</li></ul></li></ul><ul><li>Puis : Isidore, Arlette, Theolette, Gamin, souris, Ulgere, friandise, chocolat, Eugenie, livre de recettes.</li></ul><ul><li>3 ème Theolette : travail et <u>tous</u> les mots en blanc <ul><li>Puis : Arlette, Donatien, Gamin, souris, hurlant, Ulgere, Eugenie, friandise, chocolat, livre de recettes.</li></ul></li></ul><ul><li>Puis : Arlette, Donatien, Gamin, souris, hurlant, Ulgere, Eugenie, friandise, chocolat, livre de recettes.</li></ul><ul><li>4 ème Arlette : travail et <u>tous</u> les mots en blanc <ul><li>Puis : Theolette, Donatien, Gamin, souris, Delilah, Ulgere, Eugenie, friandise, chocolat, livre de recettes.</li></ul></li></ul><ul><li>Puis : Theolette, Donatien, Gamin, souris, Delilah, Ulgere, Eugenie, friandise, chocolat, livre de recettes.</li></ul><ul><li>5 ème Ulgere : travail et <u>tous</u> les mots clefs <ul><li>Puis : Chef, Eugenie, chasseur,Leonidor, livre de recettes ( il doit vous parle d'Eugenie)</li></ul></li></ul><ul><li>Puis : Chef, Eugenie, chasseur,Leonidor, livre de recettes ( il doit vous parle d'Eugenie)</li></ul><ul><li>6 ème Eugenie: travail et <u>tous</u> les mots clefs, chocolat, Ulgere, livre de recettes et Leonidor. Assurez-vous qu'elle vous dit qu'il a été banni. <ul><li>Puis : tous les mots clefs pour ne pas aller pour rien à la cave des voleurs.</li></ul></li></ul><ul><li>Puis : tous les mots clefs pour ne pas aller pour rien à la cave des voleurs.</li></ul><ul><li>7 ème Leonidor : En passant par la cave des brigands, go à la cave des voleurs (au milieu de la ville des voleurs) prenez l'escalier, allez au sous-sol et trouvez-le et dites-lui \"livre de recettes\" (insister, faut lui parler au moins 3 fois) et il devrait enfin vous donner le livre de recettes et voilà. Allez le porter à Flocon qui sera tout content.</li></ul><p>Bonne chance!!! </p><p>Récompense: 1 cadeau de Noël. </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
         "images": [],
         "order": 26
