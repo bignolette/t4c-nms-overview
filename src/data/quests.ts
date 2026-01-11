@@ -39,7 +39,7 @@ export const quests: Quest[] = [
         "order": 3
       },
       {
-        "title": "3 ) Professeur Ensiklopèdy épreuve d'histoire (chronométrée)",
+        "title": "Professeur Ensiklopèdy épreuve d'histoire (chronométrée)",
         "description": "<p>Réponse selon la question posée:<br>1<span style=\"mso-spacerun:yes\"> </span>Quel est le nom du <b>lieu</b> actuel ou vivent les dragons?: Firesky<br>2<span style=\"mso-spacerun:yes\"> </span>Qui a tué le roy d'Orkanis ?: Mhorgwloth<br>3<span style=\"mso-spacerun:yes\"> </span>Nom du vieil ermite : theorn lemnearan<br>4<span style=\"mso-spacerun:yes\"> </span>Qui a banni Balork : artherk<br>5<span style=\"mso-spacerun:yes\"> </span>Nom du précédent roi de goldmoon : Théopold 1er </p>",
         "images": [],
         "order": 4
