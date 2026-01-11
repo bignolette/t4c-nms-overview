@@ -2467,46 +2467,6 @@ export const quests: Quest[] = [
     ]
   },
   {
-    "title": "Accès oracle good",
-    "slug": "acces-oracle-good",
-    "zone": "Oracle",
-    "prerequisites": [],
-    "rewards": [],
-    "npcs": [],
-    "gold": "",
-    "steps": [
-      {
-        "title": "L'accès Oracle Good",
-        "description": "<p>L'accès Oracle Good comporte 4 parties </p><ul><li>Vous devez commencer par faire l'allégeance à Artherk.</li> <li>Obtenez ensuite le Coeur d'Artherk.</li> <li>Vous pouvez mener de front l'obtention de l'Ame d'Artherk.</li></ul><ul><li>Mais vous devez posséder le Coeur et l'Ame avant de débuter l'Esprit d'Artherk.</li></ul><p>Cela fait, il vous reste la traversée de l'Oracle pour renaître. </p><p><b><big>Liste des items nécessaires pour l'accès good :</big></b> </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
-        "images": [],
-        "order": 0
-      }
-    ],
-    "credits": [
-      "T4C NMS Révolution wiki"
-    ]
-  },
-  {
-    "title": "Accès oracle evil",
-    "slug": "acces-oracle-evil",
-    "zone": "Oracle",
-    "prerequisites": [],
-    "rewards": [],
-    "npcs": [],
-    "gold": "",
-    "steps": [
-      {
-        "title": "Accès Oracle Evil",
-        "description": "<p>L'accès Oracle Evil comporte 4 parties : </p><ul><li>Vous devez commencer par faire allégeance à Ogrimar.</li> <li>Obtenez ensuite Le Crâne d'Ogrimar.</li> <li>Vous pouvez mener de front Le sang d'Ogrimar.</li></ul><ul><li>Mais vous devez posséder le Crâne et le Sang avant de débuter Les Os d'Ogrimar.</li></ul><p>Une fois en possession de votre Clé, il vous restera La traversée de l'Oracle pour arriver à l'Oracle et renaître. </p><p><b><big>Liste complète des items nécessaires pour l'accès evil :</big></b> </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
-        "images": [],
-        "order": 0
-      }
-    ],
-    "credits": [
-      "T4C NMS Révolution wiki"
-    ]
-  },
-  {
     "title": "La traversée de l'Oracle",
     "slug": "la-traversee-de-loracle",
     "zone": "Oracle",

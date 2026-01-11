@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom';
 import type { Quest } from '../data/quests';
 import { findItemsInQuest, linkItemsInHtml, highlightKeywords, formatLists, cleanTitle, cleanHtml } from '../data/quest-item-link';
 import { 
-  ChevronDown, ChevronUp, MapPin, Coins, Trophy, 
+  ChevronDown, MapPin, Coins, Trophy, 
   Scroll, Users, CheckCircle, Copy, ImageIcon,
-  Award, Maximize2, Package
+  Maximize2, Package, Sparkles, ArrowRight,
+  Shield
 } from 'lucide-react';
 import ImageModal from './ImageModal';
 
@@ -67,233 +68,315 @@ const QuestCard: React.FC<QuestCardProps> = ({ quest }) => {
     setModalData({ images: stepImages, index: initialIndex });
   };
 
+  const progressPercentage = Math.round((completedSteps.length / quest.steps.length) * 100);
+  const isComplete = progressPercentage === 100;
+
   return (
     <div className={`
-      bg-slate-800/40 backdrop-blur-xl border rounded-2xl overflow-hidden shadow-2xl mb-8 
-      transition-all duration-500 group
-      ${isOpen ? 'border-amber-500/50 ring-1 ring-amber-500/20' : 'border-slate-700 hover:border-slate-500'}
+      relative mb-8 rounded-2xl transition-all duration-500 overflow-hidden group
+      ${isOpen 
+        ? 'bg-slate-900/80 ring-1 ring-amber-500/30 shadow-[0_0_50px_rgba(245,158,11,0.1)]' 
+        : 'bg-slate-900/40 hover:bg-slate-800/60 border border-slate-800 hover:border-slate-600'}
     `}>
-      {/* Header */}
+      {/* Background Decor */}
+      <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/5 rounded-full blur-3xl -mr-32 -mt-32 pointer-events-none" />
+      
+      {/* Header Section */}
       <div 
-        className="p-5 cursor-pointer flex justify-between items-center bg-gradient-to-r from-slate-900/80 to-transparent hover:from-slate-800/80 transition-all"
+        className="relative p-6 cursor-pointer select-none"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <div className="flex items-center gap-5">
+        <div className="flex items-start gap-6">
+          {/* Icon Badge */}
           <div className={`
-            p-3 rounded-xl transition-all duration-500 transform
-            ${isOpen ? 'bg-amber-500 text-slate-900 rotate-12 scale-110 shadow-lg shadow-amber-500/20' : 'bg-slate-700 text-slate-400 group-hover:text-slate-200'}
+            relative shrink-0 w-14 h-14 rounded-xl flex items-center justify-center border transition-all duration-500
+            ${isComplete 
+              ? 'bg-emerald-500/10 border-emerald-500/50 text-emerald-400 shadow-lg shadow-emerald-500/20' 
+              : isOpen 
+                ? 'bg-amber-500/10 border-amber-500/50 text-amber-500 shadow-lg shadow-amber-500/20'
+                : 'bg-slate-800 border-slate-700 text-slate-500'}
           `}>
-            <Scroll size={28} />
+            {isComplete ? <CheckCircle size={28} /> : <Scroll size={28} />}
+            
+            {/* Completion Badge */}
+            {completedSteps.length > 0 && !isComplete && (
+              <div className="absolute -bottom-2 -right-2 bg-slate-900 text-amber-500 text-[10px] font-bold px-2 py-0.5 rounded-full border border-amber-500/30 shadow-sm">
+                {progressPercentage}%
+              </div>
+            )}
           </div>
-          <div>
-            <h3 className="text-2xl font-black tracking-tight text-slate-100 group-hover:text-amber-400 transition-colors">
-              {quest.title}
-            </h3>
-            <div className="flex items-center gap-4 text-sm font-medium text-slate-400 mt-1">
-              <span className="flex items-center gap-1.5 bg-slate-900/50 px-2.5 py-0.5 rounded-full border border-slate-700">
-                <MapPin size={14} className="text-rose-400" />
-                {quest.zone}
+
+          <div className="flex-1 min-w-0">
+            <div className="flex items-center gap-3 mb-1">
+              <span className={`
+                inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[10px] font-black uppercase tracking-widest border
+                ${isComplete 
+                  ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20' 
+                  : 'bg-slate-800/50 text-slate-400 border-slate-700'}
+              `}>
+                <MapPin size={10} /> {quest.zone}
               </span>
-              <span className="text-slate-500">•</span>
-              <span className="text-amber-500/80">{quest.steps.length} étapes</span>
-              {completedSteps.length > 0 && (
-                <>
-                  <span className="text-slate-500">•</span>
-                  <span className="text-emerald-400 font-bold">{Math.round((completedSteps.length / quest.steps.length) * 100)}% complété</span>
-                </>
+              {quest.gold && (
+                <span className="hidden sm:inline-flex items-center gap-1.5 text-[10px] font-bold text-amber-400/80 uppercase tracking-widest">
+                  <Coins size={10} /> {quest.gold} PO
+                </span>
               )}
             </div>
+            
+            <h3 className={`
+              text-xl md:text-2xl font-black tracking-tight transition-colors duration-300
+              ${isComplete ? 'text-emerald-400' : isOpen ? 'text-slate-100' : 'text-slate-200'}
+            `}>
+              {quest.title}
+            </h3>
+
+            {/* Micro-preview of next step if closed */}
+            {!isOpen && !isComplete && (
+              <p className="text-sm text-slate-500 mt-2 truncate font-medium">
+                <span className="text-amber-500/70 mr-2">Objectif actuel :</span>
+                {processedSteps[completedSteps.length]?.title || "Terminer la quête"}
+              </p>
+            )}
+          </div>
+
+          <div className={`
+            p-2 rounded-full transition-all duration-300
+            ${isOpen ? 'bg-slate-800 text-amber-500 rotate-180' : 'text-slate-600 hover:text-slate-400'}
+          `}>
+            <ChevronDown size={20} />
           </div>
         </div>
-        <div className="flex items-center gap-3">
-          {isOpen ? <ChevronUp size={24} className="text-amber-500" /> : <ChevronDown size={24} className="text-slate-500" />}
-        </div>
+        
+        {/* Progress Bar (Bottom of header) */}
+        {isOpen && (
+          <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-slate-800">
+            <div 
+              className="h-full bg-gradient-to-r from-amber-600 to-amber-400 transition-all duration-500"
+              style={{ width: `${progressPercentage}%` }}
+            />
+          </div>
+        )}
       </div>
 
       {/* Expanded Content */}
       {isOpen && (
-        <div className="p-8 border-t border-slate-700/50 bg-slate-900/20">
+        <div className="animate-in slide-in-from-top-4 fade-in duration-300">
           
-          {/* Subtle Community Note */}
-          <div className="mb-8 flex justify-center">
-            <div className="bg-slate-800/50 border border-slate-700 px-4 py-1.5 rounded-full flex items-center gap-2 text-[11px] font-bold text-slate-400 uppercase tracking-widest">
-              <div className="w-1.5 h-1.5 rounded-full bg-cyan-500 animate-pulse" />
-              Un oubli ? Une erreur ? Signalez-le à la communauté
-            </div>
-          </div>
-          
-          {/* Metadata Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mb-12">
-            {quest.prerequisites.length > 0 && (
-              <div className="bg-slate-900/40 p-4 rounded-xl border border-slate-700/30 hover:border-amber-500/30 transition-colors">
-                <div className="flex items-center gap-2 text-amber-400 mb-3 font-bold uppercase tracking-widest text-xs">
-                  <CheckCircle size={16} /> Prérequis
-                </div>
-                <ul className="text-sm text-slate-300 space-y-2">
-                  {quest.prerequisites.map((req, i) => (
-                    <li key={i} className="flex gap-2 leading-relaxed">
-                      <span className="text-amber-500/50">•</span> {req}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
+          {/* Quick Stats / Loot Bar */}
+          <div className="px-8 py-6 bg-slate-950/30 border-b border-slate-800/50 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             
+            {/* XP / Gold */}
             {(quest.gold || quest.rewards.length > 0) && (
-              <div className="bg-slate-900/40 p-4 rounded-xl border border-slate-700/30 hover:border-emerald-500/30 transition-colors">
-                <div className="flex items-center gap-2 text-emerald-400 mb-3 font-bold uppercase tracking-widest text-xs">
-                  <Trophy size={16} /> Butins & XP
+              <div className="col-span-1 md:col-span-2 p-3 rounded-xl bg-slate-900/50 border border-slate-800 flex items-start gap-3">
+                <div className="p-2 bg-emerald-500/10 rounded-lg text-emerald-500">
+                  <Trophy size={18} />
                 </div>
-                <ul className="text-sm text-slate-300 space-y-2">
-                  {quest.gold && (
-                    <li className="flex items-center gap-2 text-yellow-400 font-bold italic">
-                      <Coins size={14} /> {quest.gold} po
-                    </li>
-                  )}
-                  {quest.rewards.map((rew, i) => (
-                    <li key={i} className="flex gap-2 leading-relaxed">
-                      <span className="text-emerald-500/50">•</span> {rew}
-                    </li>
-                  ))}
-                </ul>
+                <div>
+                  <div className="text-[10px] font-bold text-emerald-500/70 uppercase tracking-widest mb-1">Récompenses</div>
+                  <div className="text-xs text-slate-300 space-y-1">
+                    {quest.gold && <div className="flex items-center gap-1.5"><Coins size={12} className="text-amber-400"/> {quest.gold} pièces d'or</div>}
+                    {quest.rewards.map((r, i) => (
+                      <div key={i} className="flex items-center gap-1.5"><Sparkles size={12} className="text-purple-400"/> {r}</div>
+                    ))}
+                  </div>
+                </div>
               </div>
             )}
 
+            {/* Related Items */}
             {relatedItems.length > 0 && (
-              <div className="bg-slate-900/40 p-4 rounded-xl border border-slate-700/30 hover:border-indigo-500/30 transition-colors">
-                <div className="flex items-center gap-2 text-indigo-400 mb-3 font-bold uppercase tracking-widest text-xs">
-                  <Package size={16} /> Objets mentionnés
+              <div className="col-span-1 md:col-span-2 p-3 rounded-xl bg-slate-900/50 border border-slate-800 flex items-start gap-3">
+                <div className="p-2 bg-indigo-500/10 rounded-lg text-indigo-500">
+                  <Package size={18} />
                 </div>
-                <div className="flex flex-wrap gap-2">
-                  {relatedItems.map((item, i) => (
-                    <Link 
-                      key={i} 
-                      to={`/wiki/items?search=${encodeURIComponent(item)}`}
-                      className="text-xs bg-indigo-500/10 text-indigo-300 px-2 py-1 rounded border border-indigo-500/20 hover:bg-indigo-500/20 hover:text-indigo-200 transition-colors"
-                    >
-                      {item}
-                    </Link>
-                  ))}
+                <div>
+                  <div className="text-[10px] font-bold text-indigo-500/70 uppercase tracking-widest mb-1">Objets Requis / Cités</div>
+                  <div className="flex flex-wrap gap-1.5">
+                    {relatedItems.map((item, i) => (
+                      <Link 
+                        key={i} 
+                        to={`/wiki/items?search=${encodeURIComponent(item)}`}
+                        className="text-[10px] font-bold px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 hover:bg-indigo-500/20 hover:text-white transition-colors"
+                      >
+                        {item}
+                      </Link>
+                    ))}
+                  </div>
                 </div>
               </div>
             )}
 
-            {quest.npcs.length > 0 && (
-              <div className="bg-slate-900/40 p-4 rounded-xl border border-slate-700/30 hover:border-blue-500/30 transition-colors">
-                <div className="flex items-center gap-2 text-blue-400 mb-3 font-bold uppercase tracking-widest text-xs">
-                  <Users size={16} /> Personnages
+            {/* Prerequisites */}
+            {quest.prerequisites.length > 0 && (
+              <div className="col-span-1 md:col-span-2 p-3 rounded-xl bg-slate-900/50 border border-slate-800 flex items-start gap-3">
+                 <div className="p-2 bg-rose-500/10 rounded-lg text-rose-500">
+                  <Shield size={18} />
                 </div>
-                 <div className="flex flex-wrap gap-2">
-                  {quest.npcs.map((npc, i) => (
-                    <span key={i} className="text-xs bg-blue-500/10 text-blue-300 px-2 py-1 rounded border border-blue-500/20">
-                      {npc}
-                    </span>
-                  ))}
+                <div>
+                  <div className="text-[10px] font-bold text-rose-500/70 uppercase tracking-widest mb-1">Prérequis</div>
+                  <ul className="text-xs text-slate-300 space-y-1">
+                    {quest.prerequisites.map((req, i) => (
+                      <li key={i} className="flex items-start gap-1.5">
+                        <span className="text-rose-500 mt-0.5">•</span> {req}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            )}
+             
+             {/* NPCs */}
+             {quest.npcs.length > 0 && (
+              <div className="col-span-1 md:col-span-2 p-3 rounded-xl bg-slate-900/50 border border-slate-800 flex items-start gap-3">
+                 <div className="p-2 bg-blue-500/10 rounded-lg text-blue-500">
+                  <Users size={18} />
+                </div>
+                <div>
+                  <div className="text-[10px] font-bold text-blue-500/70 uppercase tracking-widest mb-1">Personnages</div>
+                  <div className="flex flex-wrap gap-1.5">
+                    {quest.npcs.map((npc, i) => (
+                      <span key={i} className="text-[10px] font-medium px-2 py-0.5 rounded bg-slate-800 text-slate-400">
+                        {npc}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             )}
           </div>
 
-          {/* Timeline */}
-          <div className="relative border-l border-slate-700/50 ml-4 space-y-16 pl-10">
-            {processedSteps.map((step, idx) => (
-              <div key={idx} className={`relative group/step transition-all duration-500 ${completedSteps.includes(idx) ? 'opacity-40 grayscale blur-[0.5px]' : 'opacity-100'}`}>
-                {/* Checkbox / Marker */}
-                <button 
-                  onClick={() => toggleStep(idx)}
-                  className={`
-                    absolute -left-[57px] top-0 flex h-10 w-10 items-center justify-center rounded-xl border-2 transition-all duration-300
-                    ${completedSteps.includes(idx) 
-                      ? 'bg-emerald-500 border-emerald-500 text-slate-900 rotate-[360deg]' 
-                      : 'bg-slate-800 border-slate-600 text-slate-400 hover:border-amber-500 hover:text-amber-500'}
-                  `}
-                >
-                  {completedSteps.includes(idx) ? <CheckCircle size={20} /> : <span className="font-black text-sm">{idx + 1}</span>}
-                </button>
-                
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                  {/* Left: Content */}
-                  <div className={`${step.images.length > 0 ? 'lg:col-span-7' : 'lg:col-span-12'}`}>
-                    <h4 className={`text-xl font-bold mb-4 transition-colors ${completedSteps.includes(idx) ? 'text-slate-500 line-through' : 'text-slate-100'}`}>
-                      {step.title}
-                    </h4>
-                    
-                    <div 
-                      className="quest-description text-slate-300 text-base leading-relaxed mb-6 prose prose-invert max-w-none"
-                      onClick={handleContentClick}
-                      dangerouslySetInnerHTML={{ __html: step.description }} 
-                    />
-                  </div>
+          {/* Timeline Section */}
+          <div className="p-8 relative">
+            {/* Vertical Connector Line */}
+            <div className="absolute left-[54px] top-8 bottom-8 w-[2px] bg-slate-800">
+              <div 
+                className="w-full bg-gradient-to-b from-amber-500 to-amber-700 transition-all duration-700 ease-out"
+                style={{ height: `${(completedSteps.length / Math.max(1, quest.steps.length - 1)) * 100}%` }}
+              />
+            </div>
 
-                  {/* Right: Gallery Rail */}
-                  {step.images.length > 0 && (
-                    <div className="lg:col-span-5 space-y-4">
-                      <div className="flex items-center justify-between text-slate-500 text-[10px] font-bold uppercase tracking-widest px-1">
-                        <span className="flex items-center gap-1.5"><ImageIcon size={12} /> {step.images.length} visuel{step.images.length > 1 ? 's' : ''}</span>
-                        <span className="flex items-center gap-1">cliquer pour agrandir</span>
-                      </div>
-                      
-                      <div className={`
-                        grid gap-3
-                        ${step.images.length === 1 ? 'grid-cols-1' : 'grid-cols-2'}
-                      `}>
-                        {step.images.map((img, i) => (
-                          <div 
-                            key={i} 
-                            className={`
-                              relative group/img overflow-hidden rounded-xl border border-slate-700/50 bg-slate-950 shadow-inner
-                              ${step.images.length === 1 ? 'aspect-video' : 'aspect-square'}
-                              cursor-zoom-in transition-all duration-300 hover:border-amber-500/50
-                            `}
-                            onClick={() => openGallery(step.images, i)}
-                          >
-                            <img 
-                              src={img} 
-                              alt={`Visuel ${i + 1}`} 
-                              className="w-full h-full object-cover transition-transform duration-700 group-hover/img:scale-110"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent opacity-0 group-hover/img:opacity-100 transition-opacity flex items-end justify-end p-3">
-                              <div className="p-1.5 bg-amber-500 rounded-lg text-slate-900 shadow-xl transform translate-y-4 group-hover/img:translate-y-0 transition-transform duration-300">
-                                <Maximize2 size={16} />
-                              </div>
-                            </div>
+            <div className="space-y-12">
+              {processedSteps.map((step, idx) => {
+                const isStepComplete = completedSteps.includes(idx);
+                const isNext = !isStepComplete && (idx === 0 || completedSteps.includes(idx - 1));
+
+                return (
+                  <div key={idx} className={`relative flex gap-8 group ${isStepComplete ? 'opacity-60 hover:opacity-100 transition-opacity' : ''}`}>
+                    
+                    {/* Timeline Node */}
+                    <div className="relative z-10 shrink-0">
+                      <button 
+                        onClick={() => toggleStep(idx)}
+                        className={`
+                          w-14 h-14 flex items-center justify-center rounded-xl border-2 transform rotate-45 transition-all duration-300 shadow-xl
+                          ${isStepComplete 
+                            ? 'bg-amber-500 border-amber-400 text-slate-900 scale-90' 
+                            : isNext 
+                              ? 'bg-slate-900 border-amber-500/50 text-amber-500 scale-100 animate-pulse-slow' 
+                              : 'bg-slate-950 border-slate-700 text-slate-600 scale-90'}
+                        `}
+                      >
+                        <div className="-rotate-45 font-black text-lg">
+                          {isStepComplete ? <CheckCircle size={24} /> : idx + 1}
+                        </div>
+                      </button>
+                    </div>
+
+                    {/* Content Card */}
+                    <div className={`
+                      flex-1 min-w-0 bg-slate-900/50 border rounded-2xl p-6 transition-all duration-300
+                      ${isNext ? 'border-amber-500/30 ring-1 ring-amber-500/10 bg-gradient-to-br from-slate-900/50 to-amber-900/5' : 'border-slate-800'}
+                    `}>
+                      {/* Step Header */}
+                      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4 border-b border-slate-800/50 pb-4">
+                        <h4 className={`text-lg font-bold ${isStepComplete ? 'text-slate-500 line-through decoration-slate-600' : isNext ? 'text-amber-100' : 'text-slate-300'}`}>
+                          {step.title}
+                        </h4>
+                        
+                        {step.images.length > 0 && (
+                          <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-slate-500 bg-slate-950/50 px-3 py-1 rounded-full border border-slate-800">
+                            <ImageIcon size={12} /> {step.images.length} Image{step.images.length > 1 ? 's' : ''}
                           </div>
-                        ))}
+                        )}
+                      </div>
+
+                      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                        {/* Narrative Content */}
+                        <div className={`${step.images.length > 0 ? 'lg:col-span-8' : 'lg:col-span-12'}`}>
+                           <div 
+                            className={`
+                              prose prose-invert prose-sm max-w-none 
+                              prose-p:text-slate-300 prose-p:leading-relaxed prose-p:mb-4
+                              prose-strong:text-slate-100 prose-strong:font-black
+                              prose-li:text-slate-300 prose-ul:my-2
+                            `}
+                            onClick={handleContentClick}
+                            dangerouslySetInnerHTML={{ __html: step.description }} 
+                          />
+                        </div>
+
+                        {/* Gallery Preview */}
+                        {step.images.length > 0 && (
+                          <div className="lg:col-span-4 space-y-3">
+                            {step.images.map((img, i) => (
+                              <div 
+                                key={i}
+                                onClick={() => openGallery(step.images, i)}
+                                className="group/img relative aspect-video rounded-lg overflow-hidden border border-slate-700 bg-slate-950 cursor-zoom-in hover:border-amber-500/50 transition-all"
+                              >
+                                <img src={img} alt="" className="w-full h-full object-cover opacity-80 group-hover/img:opacity-100 transition-opacity" />
+                                <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover/img:opacity-100 transition-opacity">
+                                  <Maximize2 className="text-white drop-shadow-md" size={20} />
+                                </div>
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+
+                      {/* Step Footer Actions */}
+                      <div className="mt-6 flex justify-end">
+                        <button
+                          onClick={() => toggleStep(idx)}
+                          className={`
+                            flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-widest transition-all
+                            ${isStepComplete 
+                              ? 'text-slate-500 hover:text-slate-300' 
+                              : 'bg-amber-500 text-slate-900 hover:bg-amber-400 shadow-lg shadow-amber-500/20'}
+                          `}
+                        >
+                          {isStepComplete ? 'Marquer comme inachevé' : 'Terminer l\'étape'}
+                          {!isStepComplete && <ArrowRight size={14} />}
+                        </button>
                       </div>
                     </div>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Footer - Credits */}
-          {quest.credits && quest.credits.length > 0 && (
-            <div className="mt-20 pt-8 border-t border-slate-700/50 flex flex-col items-center gap-4">
-              <div className="flex items-center gap-2 text-slate-500 text-xs font-bold uppercase tracking-[0.4em]">
-                <Award size={16} className="text-amber-500/50" /> Rédacteurs
-              </div>
-              <div className="flex flex-wrap justify-center gap-6">
-                {quest.credits.map((credit, i) => (
-                  <span key={i} className="text-sm italic text-slate-400 font-semibold bg-slate-800/50 px-4 py-1.5 rounded-full border border-slate-700">
-                    {credit}
-                  </span>
-                ))}
-              </div>
+                  </div>
+                );
+              })}
             </div>
+          </div>
+          
+          {/* Credits */}
+          {quest.credits && quest.credits.length > 0 && (
+             <div className="bg-slate-950/50 py-6 text-center border-t border-slate-800">
+               <p className="text-[10px] text-slate-600 font-bold uppercase tracking-[0.2em] mb-2">Contributeurs</p>
+               <div className="flex justify-center gap-2">
+                 {quest.credits.map((c, i) => (
+                   <span key={i} className="text-xs text-slate-500">{c}</span>
+                 ))}
+               </div>
+             </div>
           )}
-
         </div>
       )}
 
-      {/* Floating Notification for Coords */}
+      {/* Utilities */}
       {copyStatus && (
-        <div className="fixed bottom-12 left-1/2 -translate-x-1/2 bg-cyan-500 text-slate-950 px-8 py-4 rounded-2xl font-black shadow-2xl shadow-cyan-500/40 animate-bounce z-[110] flex items-center gap-3 border-2 border-white/20">
-          <Copy size={20} /> COORDONNÉES {copyStatus} COPIÉES !
+        <div className="fixed bottom-12 left-1/2 -translate-x-1/2 bg-cyan-500 text-slate-950 px-6 py-3 rounded-xl font-bold shadow-xl shadow-cyan-500/20 animate-bounce z-[110] flex items-center gap-3 border-2 border-white/10">
+          <Copy size={18} /> {copyStatus}
         </div>
       )}
 
-      {/* Image Gallery Modal */}
       {modalData && (
         <ImageModal 
           images={modalData.images}
