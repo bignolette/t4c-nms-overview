@@ -1982,8 +1982,8 @@ export const quests: Quest[] = [
     ],
     "credits": [
       "T4C NMS Révolution wiki",
-        "Anvar",
-        "Syll"
+      "Anvar",
+      "Syll"
     ]
   },
   {
@@ -2805,25 +2805,25 @@ export const quests: Quest[] = [
     "steps": [
       {
         "title": "Introduction",
-        "description": "<p>La quête d'accès à l'Académie permet d'obtenir <b>3 récompenses différentes</b>.</p><br/><p>Vous pouvez la faire partiellement- même en humain mais il faut être sur SH - <b>pour l'xp qu'elle rapporte (les 8 mobs faisables seul vous montent level 54).</b></p><br/><ul><li><b>de l'XP</b> : Après chaque monstre vous gagnerez beaucoup d'XP : elle est calculée comme suit pour les 16 premiers : <ul><li>500K + (100K * (numDuMob-1). Par ex: 500k + 100*(<b>2-1</b>) = 600k pour le rejet du monde.</li> <li>Soit environ 27M d'xp sur SH et encore environ 37M d'xp sur DI (sans compter le Cerberus). Pas de level minimum mais vous devez être sur SH bien sûr.</li></ul></li></ul><ul><li>500K + (100K * (numDuMob-1). Par ex: 500k + 100*(<b>2-1</b>) = 600k pour le rejet du monde.</li> <li>Soit environ 27M d'xp sur SH et encore environ 37M d'xp sur DI (sans compter le Cerberus). Pas de level minimum mais vous devez être sur SH bien sûr.</li></ul><ul><li><b>L'Aura des Sages</b> <ul><li>Une fois votre dernière renaissance projetée atteinte, essayez d'obtenir l'aura des sages avant le level 150 car elle est très intéressante.</li> <li>C'est une aura permanente qui remplace avantageusement tout les items 1.25 de la Crimsonscale. De plus, plus besoin de switcher vos bijoux ni d'activer des items.</li> <li>Vous devez avoir capturé les 19 premiers monstres et aussi <b>complété la Crimsonscale lors de votre renaissance actuelle</b> (amulette, bracelet immortel et ceinture instable) <b>sauf si vous avez acheté des renaissances même niveau!!</b> En parlant alors à Pelkor Zirus au salon de jeu, ces items disparaîtront et vous obtiendrez à leur place une aura permanente, l'aura des Sage, qui vous donnera de meilleurs bonus. De plus les emplacements libérés peuvent être utilisés pour porter d'autres items.</li> <li>Vous devez être sur Drake Island bien sûr sinon pas de level minimum mais être aux alentours de 120 semble raisonnable.</li></ul></li> <li><b>L'accès à l'Académie</b> <ul><li>Après avoir capturé les 19 premiers monstres, jusqu'à la liche ancestrale et finalisé l'accès, vous aurez accès à l'Académie si vous êtes level 150. Dites une dernière fois \"proie\" puis \"partir\" à Pelkor Zyrus.</li></ul></li> <li><b>TIPS à lire</b> <ul><li><b>Une bénédiction</b> est indispensable pour avoir suffisamment d'attaque pour toucher le mob avec le sceptre.</li> <li>Si vous faites le début jusqu'au Cellenium (8ème mob), faisable seul avec une bonne béné, cela vous rapportera déjà 7M XP et vous mènera au level 54. Et l'ensemble des mobs jusqu'à SH vous permettra d'atteindre le level 62 !</li> <li><b>Prêtres lumières :</b> Le 9ème mob (soldat égaré) est encore faisable pour vous en utilisant \"<b>repouss</b>\". Si vous êtes d'une autre classe, la seule solution sera de refaire au moins un plein de potions pour arriver à le finir !!</li> <li><b>Prêtres</b> : Vous serez alors level 55 et pourrez apprendre \"<b>guérison</b>\" chez l'évêque s'il est en bonne santé (sinon sachez qu'il change spontanément d'état après 3 heures sans changement).</li></ul></li></ul><ul><li>Une fois votre dernière renaissance projetée atteinte, essayez d'obtenir l'aura des sages avant le level 150 car elle est très intéressante.</li> <li>C'est une aura permanente qui remplace avantageusement tout les items 1.25 de la Crimsonscale. De plus, plus besoin de switcher vos bijoux ni d'activer des items.</li> <li>Vous devez avoir capturé les 19 premiers monstres et aussi <b>complété la Crimsonscale lors de votre renaissance actuelle</b> (amulette, bracelet immortel et ceinture instable) <b>sauf si vous avez acheté des renaissances même niveau!!</b> En parlant alors à Pelkor Zirus au salon de jeu, ces items disparaîtront et vous obtiendrez à leur place une aura permanente, l'aura des Sage, qui vous donnera de meilleurs bonus. De plus les emplacements libérés peuvent être utilisés pour porter d'autres items.</li> <li>Vous devez être sur Drake Island bien sûr sinon pas de level minimum mais être aux alentours de 120 semble raisonnable.</li></ul><ul><li>Après avoir capturé les 19 premiers monstres, jusqu'à la liche ancestrale et finalisé l'accès, vous aurez accès à l'Académie si vous êtes level 150. Dites une dernière fois \"proie\" puis \"partir\" à Pelkor Zyrus.</li></ul><ul><li><b>Une bénédiction</b> est indispensable pour avoir suffisamment d'attaque pour toucher le mob avec le sceptre.</li> <li>Si vous faites le début jusqu'au Cellenium (8ème mob), faisable seul avec une bonne béné, cela vous rapportera déjà 7M XP et vous mènera au level 54. Et l'ensemble des mobs jusqu'à SH vous permettra d'atteindre le level 62 !</li> <li><b>Prêtres lumières :</b> Le 9ème mob (soldat égaré) est encore faisable pour vous en utilisant \"<b>repouss</b>\". Si vous êtes d'une autre classe, la seule solution sera de refaire au moins un plein de potions pour arriver à le finir !!</li> <li><b>Prêtres</b> : Vous serez alors level 55 et pourrez apprendre \"<b>guérison</b>\" chez l'évêque s'il est en bonne santé (sinon sachez qu'il change spontanément d'état après 3 heures sans changement).</li></ul>",
+        "description": "<p>La quête d'accès à l'Académie permet d'obtenir <b>3 récompenses différentes</b>. </p><p>Vous pouvez la faire partiellement- même en humain mais il faut être sur SH - <b>pour l'xp qu'elle rapporte (les 8 mobs faisables seul vous montent level 54).</b> </p><ul><li><b>de l'XP</b> : Après chaque monstre vous gagnerez beaucoup d'XP : elle est calculée comme suit pour les 16 premiers : <ul><li>500K + (100K * (numDuMob-1). Par ex: 500k + 100*(2-1) = 600k pour le rejet du monde.</li> <li>Soit environ 27M d'xp sur SH et encore environ 37M d'xp sur DI (sans compter le Cerberus). Pas de level minimum mais vous devez être sur SH bien sûr.</li></ul></li></ul><ul><li>500K + (100K * (numDuMob-1). Par ex: 500k + 100*(2-1) = 600k pour le rejet du monde.</li> <li>Soit environ 27M d'xp sur SH et encore environ 37M d'xp sur DI (sans compter le Cerberus). Pas de level minimum mais vous devez être sur SH bien sûr.</li></ul><ul><li><b>L'Aura des Sages</b> <ul><li>Une fois votre dernière renaissance projetée atteinte, essayez d'obtenir l'aura des sages avant le level 150 car elle est très intéressante.</li> <li>C'est une aura permanente qui remplace avantageusement tout les items 1.25 de la Crimsonscale. De plus, plus besoin de switcher vos bijoux ni d'activer des items.</li> <li>Vous devez avoir capturé les 19 premiers monstres et aussi <b>complété la Crimsonscale lors de votre renaissance actuelle</b> (amulette, bracelet immortel et ceinture instable) <b>sauf si vous avez acheté des renaissances même niveau!!</b> En parlant alors à Pelkor Zirus au salon de jeu, ces items disparaîtront et vous obtiendrez à leur place une aura permanente, l'aura des Sage, qui vous donnera de meilleurs bonus. De plus les emplacements libérés peuvent être utilisés pour porter d'autres items.</li> <li>Vous devez être sur Drake Island bien sûr sinon pas de level minimum mais être aux alentours de 120 semble raisonnable.</li></ul></li> <li><b>L'accès à l'Académie</b> <ul><li>Après avoir capturé les 19 premiers monstres, jusqu'à la liche ancestrale et finalisé l'accès, vous aurez accès à l'Académie si vous êtes level 150. Dites une dernière fois <span class=\"text-amber-400 font-bold\">\"proie\"</span> puis <span class=\"text-amber-400 font-bold\">\"partir\"</span> à Pelkor Zyrus.</li></ul></li> <li><b>TIPS à lire</b> <ul><li><b>Une bénédiction</b> est indispensable pour avoir suffisamment d'attaque pour toucher le mob avec le sceptre.</li> <li>Si vous faites le début jusqu'au Cellenium (8ème mob), faisable seul avec une bonne béné, cela vous rapportera déjà 7M XP et vous mènera au level 54. Et l'ensemble des mobs jusqu'à SH vous permettra d'atteindre le level 62 !</li> <li><b>Prêtres lumières :</b> Le 9ème mob ( soldat égaré) est encore faisable pour vous en utilisant <span class=\"text-amber-400 font-bold\">\"<b>repouss</b>\"</span>. Si vous êtes d'une autre classe, la seule solution sera de refaire au moins un plein de potions pour arriver à le finir !!</li> <li><b>Prêtres</b> : Vous serez alors level 55 et pourrez apprendre <span class=\"text-amber-400 font-bold\">\"<b>guérison</b>\"</span> chez l'évêque s'il est en bonne santé (sinon sachez qu'il change spontanément d'état après 3 heures sans changement).</li></ul></li></ul><ul><li>Une fois votre dernière renaissance projetée atteinte, essayez d'obtenir l'aura des sages avant le level 150 car elle est très intéressante.</li> <li>C'est une aura permanente qui remplace avantageusement tout les items 1.25 de la Crimsonscale. De plus, plus besoin de switcher vos bijoux ni d'activer des items.</li> <li>Vous devez avoir capturé les 19 premiers monstres et aussi <b>complété la Crimsonscale lors de votre renaissance actuelle</b> (amulette, bracelet immortel et ceinture instable) <b>sauf si vous avez acheté des renaissances même niveau!!</b> En parlant alors à Pelkor Zirus au salon de jeu, ces items disparaîtront et vous obtiendrez à leur place une aura permanente, l'aura des Sage, qui vous donnera de meilleurs bonus. De plus les emplacements libérés peuvent être utilisés pour porter d'autres items.</li> <li>Vous devez être sur Drake Island bien sûr sinon pas de level minimum mais être aux alentours de 120 semble raisonnable.</li></ul><ul><li>Après avoir capturé les 19 premiers monstres, jusqu'à la liche ancestrale et finalisé l'accès, vous aurez accès à l'Académie si vous êtes level 150. Dites une dernière fois <span class=\"text-amber-400 font-bold\">\"proie\"</span> puis <span class=\"text-amber-400 font-bold\">\"partir\"</span> à Pelkor Zyrus.</li></ul><ul><li><b>Une bénédiction</b> est indispensable pour avoir suffisamment d'attaque pour toucher le mob avec le sceptre.</li> <li>Si vous faites le début jusqu'au Cellenium (8ème mob), faisable seul avec une bonne béné, cela vous rapportera déjà 7M XP et vous mènera au level 54. Et l'ensemble des mobs jusqu'à SH vous permettra d'atteindre le level 62 !</li> <li><b>Prêtres lumières :</b> Le 9ème mob ( soldat égaré) est encore faisable pour vous en utilisant <span class=\"text-amber-400 font-bold\">\"<b>repouss</b>\"</span>. Si vous êtes d'une autre classe, la seule solution sera de refaire au moins un plein de potions pour arriver à le finir !!</li> <li><b>Prêtres</b> : Vous serez alors level 55 et pourrez apprendre <span class=\"text-amber-400 font-bold\">\"<b>guérison</b>\"</span> chez l'évêque s'il est en bonne santé (sinon sachez qu'il change spontanément d'état après 3 heures sans changement).</li></ul>",
         "images": [],
         "order": 0
       },
       {
         "title": "Démarrer la quête",
-        "description": "<ul><li>Rendez vous au Salon de Jeux de Stoneheim (anciennement Colisée, au nord-est de Stonecrest).</li> <li>Traversez le bâtiment jusqu'à tomber sur Pelkor Zyrus, le <b>PNJ</b> placé derrière des grilles.</li> <li>Engagez la discussion en disant <span class=\"npc-keyword\">\"travail\"</span> (elle se veut être très longue...).</li> <li>Il vous remettra un sceptre afin de capturer des monstres.</li> <li>Après chaque capture, revenez le voir afin qu'il vous donne votre <b>récompense</b> en XP puis dites-lui \"proie\". En réponse, il vous indiquera votre prochaine proie et vous donnera une indication - pas toujours très claire - concernant le <b>lieu</b> où la trouver.</li></ul><br/><p><br></p><br/><ul><li><b>Tip1 :</b> Il faut affaiblir les monstres avec vos sorts/armes standard jusqu'à ce qu'il leur reste très peu de points de vie puis équiper le sceptre (si vous êtes guerrier/archer) et les frapper avec (<b>pour le rat prenez le sceptre directement</b>). N'oubliez pas votre sort \"force\".</li> <li><b>Tip2 :</b> Les mobs sont de plus en plus forts et le temps de respawn est de plus en plus long (10 min pour le rat, 18 min pour le soldat égaré, 30 min pour le Drake Dixtor Supérieur).</li> <li><b>Tip3 : </b>A partir du 3ème ou 4ème monstre, <b>vous devrez être béni</b> pour augmenter votre attaque et pouvoir toucher le monstre avec le sceptre.</li> <li><b>Tip4 :</b> A partir du 9ème monstre, vous devrez vous faire aider par un GB. Autrement vous risquez fort d'y laisser votre peau (sauf en prêtre lulu qui peut encore vaincre le 9ème au repouss).</li></ul><br/><p><br></p>",
+        "description": "<ul><li>Rendez vous au Salon de Jeux de Stoneheim (anciennement Colisée, au nord-est de Stonecrest).</li> <li>Traversez le bâtiment jusqu'à tomber sur Pelkor Zyrus, le PNJ placé derrière des grilles.</li> <li>Engagez la discussion en disant <span class=\"text-amber-400 font-bold\">\"travail\"</span> (elle se veut être très longue...).</li> <li>Il vous remettra un sceptre afin de capturer des monstres.</li> <li>Après chaque capture, revenez le voir afin qu'il vous donne votre récompense en XP puis dites-lui <span class=\"text-amber-400 font-bold\">\"proie\"</span>. En réponse, il vous indiquera votre prochaine proie et vous donnera une indication - pas toujours très claire - concernant le lieu où la trouver.</li></ul><p><br> </p><ul><li><b>Tip1 :</b> Il faut affaiblir les monstres avec vos sorts/armes standard jusqu'à ce qu'il leur reste très peu de points de vie puis équiper le sceptre (si vous êtes guerrier/archer) et les frapper avec (<b>pour le rat prenez le sceptre directement</b>). N'oubliez pas votre sort <span class=\"text-amber-400 font-bold\">\"force\"</span>.</li> <li><b>Tip2 :</b> Les mobs sont de plus en plus forts et le temps de respawn est de plus en plus long (10 min pour le rat, 18 min pour le soldat égaré, 30 min pour le Drake Dixtor Supérieur).</li> <li><b>Tip3 : </b>A partir du 3ème ou 4ème monstre, <b>vous devrez être béni</b> pour augmenter votre attaque et pouvoir toucher le monstre avec le sceptre.</li> <li><b>Tip4 :</b> A partir du 9ème monstre, vous devrez vous faire aider par un GB. Autrement vous risquez fort d'y laisser votre peau (sauf en prêtre lulu qui peut encore vaincre le 9ème au repouss ).</li></ul><p><br> </p>",
         "images": [],
         "order": 1
       },
       {
         "title": "Les monstres",
-        "description": "<p><b>(pour vous orienter en jeu, la carte \"ctrl W\" et petite flèche bleue en bas à droite pour choisir l'île ou bien utilisez la carte locale par Ctrl + Tab)</b></p>",
+        "description": "<p><b>(pour vous orienter en jeu, la carte <span class=\"text-amber-400 font-bold\">\"ctrl W\"</span> et petite flèche bleue en bas à droite pour choisir l'île ou bien utilisez la carte locale par Ctrl + Tab)</b> </p>",
         "images": [],
         "order": 2
       },
       {
         "title": "1. Rat affamé",
-        "description": "<p>Arakas : Sous-sol niveau -2 du temple LH, vers l'Ouest - <b>180,118,1</b> =&gt; <b>500K xp </b></p>",
+        "description": "<p>Arakas : Sous-sol niveau -2 du temple LH, vers l'Ouest - 180,118,1 =&gt; <b>500K xp </b> </p>",
         "images": [
           "/t4c-nms-overview/assets/quests/quete-dacces-a-lacademie/img_3_0.jpg"
         ],
@@ -2831,7 +2831,7 @@ export const quests: Quest[] = [
       },
       {
         "title": "2. Rejet du monde",
-        "description": "<p>Arakas : Dans la cave du vieil ermite, au Sud-ouest - <b>140,1050, 2</b> =&gt; <b>600K xp</b></p>",
+        "description": "<p>Arakas : Dans la cave du vieil ermite, au Sud-ouest - 140,1050, 2 =&gt; <b>600K xp</b> </p>",
         "images": [
           "/t4c-nms-overview/assets/quests/quete-dacces-a-lacademie/img_4_0.jpg"
         ],
@@ -2839,7 +2839,7 @@ export const quests: Quest[] = [
       },
       {
         "title": "3. Chef de guerre Kobold",
-        "description": "<p>Arakas : Nord-est des montagnes Jarko - <b>2174,152,0</b> =&gt; <span style=\"font-style: normal;\"><b>700k xp</b></span></p><br/><p>Passez le<span style=\"font-style: normal;\"> pont menant aux monts de Righul/Jarko puis plein Nord. </span></p>",
+        "description": "<p>Arakas : Nord-est des montagnes Jarko - 2174,152,0 =&gt; <span ><b>700k xp</b></span> </p><p>Passez le<span > pont menant aux monts de Righul/Jarko puis plein Nord. </span> </p>",
         "images": [
           "/t4c-nms-overview/assets/quests/quete-dacces-a-lacademie/img_5_0.jpg"
         ],
@@ -2847,54 +2847,122 @@ export const quests: Quest[] = [
       },
       {
         "title": "4. Rampilius",
-        "description": "<p>Arakas : Labyrinthe d'Arakas - <b>765,186,1</b> =&gt; <b>800k xp</b></p><br/><p>L'entrée est à l'ouest du petit lac qui termine vers le sud la rivière voisine de la RST.</p>",
-        "images": [
-          "/t4c-nms-overview/assets/quests/quete-dacces-a-lacademie/img_6_0.jpg",
-          "/t4c-nms-overview/assets/quests/quete-dacces-a-lacademie/img_6_0.jpg"
-        ],
+        "description": "<p>Arakas : Labyrinthe d'Arakas - 765,186,1 =&gt; <b>800k xp</b> </p><p>L'entrée est à l'ouest du petit lac qui termine vers le sud la rivière voisine de la RST. </p>",
+        "images": [],
         "order": 6
       },
       {
         "title": "5. Agrenarok",
-        "description": "<p>Arakas : Cité perdue (<i>Ville des Nains</i>) - <b>2640,340,0</b> =&gt;<b>900k xp</b></p><br/><p>Passez le labyrinthe d'Arakas, allez au delà de la sortie du labyrinthe, direction nord-ouest.</p>",
-        "images": [
-          "/t4c-nms-overview/assets/quests/quete-dacces-a-lacademie/img_7_0.jpg"
-        ],
+        "description": "<p>Arakas : Cité perdue (<i>Ville des Nains</i>) - 2640,340,0 =&gt;<b>900k xp</b> </p><p>Passez le labyrinthe d'Arakas, allez au delà de la sortie du labyrinthe, direction nord-ouest. </p>",
+        "images": [],
         "order": 7
       },
       {
         "title": "6. Rampilios",
-        "description": "<p>Raven's Dust : Cave d'Anrak - <b>1169,263,2</b> =&gt; <b>1M xp</b></p><br/><p>L'entrée de la cave se trouve au sous-sol de la maison d'Anrak située au Nord-Nord-Est de la RST de Raven's Dust : <b>597,1763</b>.0.</p><br/><p><i>Sortilège lancé par le monstre Rampilios :</i></p>",
-        "images": [
-          "/t4c-nms-overview/assets/quests/quete-dacces-a-lacademie/img_8_0.jpg",
-          "/t4c-nms-overview/assets/quests/quete-dacces-a-lacademie/img_8_0.jpg",
-          "/t4c-nms-overview/assets/quests/quete-dacces-a-lacademie/img_8_0.jpg"
-        ],
+        "description": "<p>Raven's Dust : Cave d'Anrak - 1169,263,2 =&gt; <b>1M xp</b> </p><p>L'entrée de la cave se trouve au sous-sol de la maison d'Anrak située au Nord-Nord-Est de la RST de Raven's Dust : 597,1763.0. </p><p><i>Sortilège lancé par le monstre Rampilios :</i> </p>",
+        "images": [],
         "order": 8
       },
       {
         "title": "7. Soldat disparu",
-        "description": "<p>Arakas : Cave B dans les montagnes Jarko - <b>280,2350,2</b> =&gt; <b>1,1</b>M xp</b></p><br/><p>Pas facile de trouver la cave B =&gt; sagesse\". Poursuivez donc le dialogue dans cette voie en suivant les mots-clefs. Au mot-clef <span class=\"npc-keyword\">\"récompense\"</span>, il vous transformera toutes vos perles de pluie en potions de premier secours, et ceci en une fois.<br>Une fois les potions en main, direction Raven's Dust, au Nord-Ouest des montagnes entourant la tour de Zhakar. Vous trouverez Hably Cover sur une petite plage. Dîtes-lui \"potion\" et elle vous proposera de résoudre une énigme plutôt loufoque. Vous devrez proposer un nombre au hasard et vous obtiendrez diverses récompenses.</p><br/><p>Après <b>80, 81</b> ou 82 tentatives infructueuses, vous aurez le Présent des Alvors à coup sûr avec le meme perso !!! (j ais rarement vu plus de 82) Apres la quete se remet a 0 donc vous pouvez recommencer indéfiniment.</p>",
-        "images": [
-          "/t4c-nms-overview/assets/quests/quete-du-present-des-alvors/img_0_t0.jpg"
-        ],
-        "order": 0
+        "description": "<p>Arakas : Cave B dans les montagnes Jarko - 280,2350,2 =&gt; <b>1,1M xp</b> </p><p>Pas facile de trouver la cave B =&gt; <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(1765,370,0)</span> </p>",
+        "images": [],
+        "order": 9
       },
       {
-        "title": "Récompenses",
-        "description": "<ul><li><b>Le Présent des Alvors</b> (Amulette des Héros version archer)</li> <li>De l'or (en général 500po multiplié par votre lvl)</li> <li>Épée d'argent (épée pour noob à 71 force)</li> <li>Potion de régénération (valeur de 90kpo/unité à la revente chez un marchand)</li> <li>Paire de ciseaux !</li> <li>Rien *la fille part dans ses pensées*</li> <li>Un petit tour sur RD</li> <li>un petit retour a son sanctuaire</li> <li>Lingot d'iridium</li> <li>Pomme</li> <li>Livre de cuisine</li> <li>Cake aux fruits</li> <li>?...</li></ul>",
+        "title": "8. Celleniem",
+        "description": "<p>Raven's Dust : Après la tour de Zahkar - 328,2008,0 =&gt; <b>1,2M xp</b> </p><p>Poursuivez au-delà de la tour de Zakhar en longeant le canal par le haut. Dès que vous le pouvez, tournez deux fois à droite - skin railleuse. </p>",
         "images": [],
-        "order": 1
+        "order": 10
       },
       {
-        "title": "Conseils",
-        "description": "<p>Essayez d'échanger ces perles une fois haut niveau, elles vous rapporteront plus d'or.</p><br/><p><br></p><br/><p></p>",
+        "title": "9. Soldat égaré",
+        "description": "<p>Raven's Dust : Crypte RD niveau -2 - 550,2230,1 =&gt; <b>1,4M xp</b> </p>",
         "images": [],
-        "order": 2
+        "order": 11
+      },
+      {
+        "title": "10. Fracasseur",
+        "description": "<p>Raven's Dust :Cave Minotaures - 360,980,1 =&gt; <b>1,5M xp</b> </p><p>Pour rentrer dans la cave des minotaures, suivez vers le Sud la ligne de coordonnée 287 (en partant du double palmier, celui qui est blanc) </p>",
+        "images": [],
+        "order": 12
+      },
+      {
+        "title": "11. Yéti féroce",
+        "description": "<p>Raven's Dust : Plaine de Niève - 1409,344,4 =&gt; <b>1,6M xp</b> </p>",
+        "images": [],
+        "order": 13
+      },
+      {
+        "title": "12. Drake Dixtor",
+        "description": "<p>Raven's Dust : Sud-ouest du Désert - 215,2655,0 =&gt; <b>1,8M xp</b> </p>",
+        "images": [],
+        "order": 14
+      },
+      {
+        "title": "13. Squelette équestre",
+        "description": "<p>Raven's Dust : Cave de l'Aveugle - 787,1836,2 =&gt; <b>1,9M xp</b> </p>",
+        "images": [],
+        "order": 15
+      },
+      {
+        "title": "14. Yéti Adulte (repop 26-28 mn)",
+        "description": "<p>Raven's Dust : Plaine de Niève - 1585,250,4 =&gt; <b>2M xp</b> </p>",
+        "images": [],
+        "order": 16
+      },
+      {
+        "title": "15. Drake Dixtor Supérieur",
+        "description": "<p>Stoneheim : Cave Skraugs Roses - 1836,1040,2 =&gt; <b>2,25M xp</b> </p><p><br> </p>",
+        "images": [],
+        "order": 17
+      },
+      {
+        "title": "16. Golem de pierre",
+        "description": "<p>Stoneheim : Sud de la RST SH - 470,1170,0 =&gt; <b>2,5 M xp </b> </p><p ><i>By Mëyli</i></p>",
+        "images": [],
+        "order": 18
+      },
+      {
+        "title": "17. Golem glacial",
+        "description": "<p>Raven's Dust : Plaine de Niève - 1655,355,4 =&gt; <b>5 M xp </b><i><b></b></i> </p>",
+        "images": [],
+        "order": 19
+      },
+      {
+        "title": "18. Golem embrasé",
+        "description": "<p ><i>By Mëyli</i></p>",
+        "images": [],
+        "order": 20
+      },
+      {
+        "title": "19. Liche ancestrale",
+        "description": "<p ><i>By Mëyli</i><b></b><i></i></p>",
+        "images": [],
+        "order": 21
+      },
+      {
+        "title": "Récompenses lorsque vous retournez voir le PNJ Pelkor",
+        "description": "<ul><li><b>de l'XP</b> : Après chaque monstre vous gagnerez beaucoup d'XP : elle est calculée comme suit pour les 16 premiers : <ul><li>500K + (100K * (numDuMob-1). Par ex: 500k + 100*(2-1) = 600k pour le rejet du monde.</li></ul></li></ul><ul><li>500K + (100K * (numDuMob-1). Par ex: 500k + 100*(2-1) = 600k pour le rejet du monde.</li></ul><ul><li><b>L'Aura des Sages</b> (après avoir finalisé l'accès même avant le level 150) : C'est une aura permanente qui remplace avantageusement tout les items 1.25 de la Crimsonscale. De plus, plus besoin de switcher vos bijoux ni d'activer des items.</li></ul><ul><li><b>L'accès à l'académie</b> : Après avoir capturé les 19 premiers monstres, jusqu'à la liche ancestrale et finalisé l'accès, vous aurez accès à l'Académie si vous êtes level 150. Dites une dernière fois <span class=\"text-amber-400 font-bold\">\"proie\"</span> puis <span class=\"text-amber-400 font-bold\">\"partir\"</span> à Pelkor Zyrus.</li></ul>",
+        "images": [],
+        "order": 22
+      },
+      {
+        "title": "Pour finir l'accès",
+        "description": "<p><b>Pour finaliser l'accès à l'Académie : </b> </p><p><b>il vous faut avoir fait toutes les quêtes 1.25 <u>lors de la renaissance en cours</u> ): </b> </p><ul><li><b>Crimsonscale jusqu'à la fin (mort de Gluriurl)</b></li> <li><b>Ceinture instable </b></li> <li><b>Bracelet immortel </b></li></ul><p><b>Vous devrez déséquiper tous les items relatifs à ces quêtes au moment de reparler à Pelkor.</b> </p><p><b>Tip</b> : Petits indices pour savoir ou vous en êtes dans la quête Crimson : La tablette de pierre runique, la gemme sombre et la Caledbog sont supprimées aux renaissances. Il est impossible de supprimer la Caledbog donc si vous avez la gemme sombre et pas la Caledbog, il y a des chances que vous en soyez aux adorateurs ou peu avant. Si vous avez la Caledbog, allez parler au grand prêtre de LH puis à Efnisien. </p>",
+        "images": [],
+        "order": 23
+      },
+      {
+        "title": "20. Cerberus (repop 4 heures)",
+        "description": "<p>Académie niveau -4 =&gt; <b> à la capture : 10 Giga xp et 10 parchemins d'expérience doublée d'une heure. </b> </p><p>Le level 200 est requis pour accéder au -4 à l'aide d'une quête. Il vous faudra ensuite faire toutes les clés de chair (de 1 à 22) pour accéder enfin à l'antre du Cerberus. </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [],
+        "order": 24
       }
     ],
     "credits": [
-      "T4C NMS Révolution wiki"
+      "By Mëyli",
+      "BY Mëyli"
     ]
   },
   {
@@ -3256,5 +3324,1421 @@ export const quests: Quest[] = [
     "credits": [
       "T4C NMS Révolution wiki"
     ]
+  },
+  {
+    "title": "Accès à l'Asile Déchu",
+    "slug": "acces-a-lasile-dechu",
+    "zone": "Inconnue",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "Accès à l'asile et début de la quête de la fiole de magie",
+        "description": "<p>Vous devez être déchu pour réaliser cette quête. </p><p>Pour commencer, allez à l'asile et parlez à Forbin, qui est juste à côté du gardien. Il vous remettra la clé d'entrée de l'asile. </p><p>Il vous demandera aussi de tuer Bouniak le traître. Entrez dans l'asile et tuez Bouniak (robe et chapeau rouges). Retournez voir Forbin qui vous récompensera d'une <u><b>Fiole de Sang de Forbin </b></u>(cette fiole vous sera utile auprès de Dronus). </p><p>Forbin vous demandera ensuite d'aller voir ce personnage nommé Dronus. Vous le trouverez dans une maison à côté du Mausolée <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(761, 1354, 0)</span>. Pour mémoire, le Mausolée est accessible depuis la cave de l'aveugle laquelle est située tout au nord de RD. </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [],
+        "order": 0
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "Accès niveaux -2 -3 -4 Académie",
+    "slug": "acces-niveaux-2-3-4-academie",
+    "zone": "Académie",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "Accès à la zone lvl 175 - 200 du Niveau -1",
+        "description": "<ul><li>Vous devez avoir accès à l'Académie.</li> <li>Il vous suffit ensuite d'atteindre le niveau 175 pour pouvoir franchir une des 4 portes qui mènent chacune à une des 4 zones 175+.</li> <li>Facile ... non ?</li></ul>",
+        "images": [],
+        "order": 0
+      },
+      {
+        "title": "Quête d'accès à l'Académie Niveau -2 (le chevalier ténébreux)",
+        "description": "<ul><li>Vous devez avoir accès à l'Académie niveau -1.</li> <li>Trouvez un coffre dans une des zones pour niveau 175+ (il y en a un dans chaque zone), vous devez le camper jusqu'à obtenir un <span class=\"text-amber-400 font-bold\">\"Parchemin des ténèbres\"</span> (vous avez le temps entre les niveaux 175 et 200).</li> <li>Quand vous utiliserez le parchemin (vers le level 200), il fera apparaître le <span class=\"text-amber-400 font-bold\">\"Chevalier Ténébreux\"</span> dans la zone ou vous êtes. Faites vous aider.</li> <li><b>Avec l'aide d'un petit groupe solide</b>, attaquez-le (collez-le bien et faites le ménage d'abord). Quand vous l'aurez tué il réapparaîtra automatiquement dans les autres zones. Vous devrez le tuer dans les 4 zones (un seul parchemin suffit).</li> <li>Lorsque vous tuez le Chevalier ténébreux un message apparaît : <span class=\"text-amber-400 font-bold\">\"Le chevalier ténébreux s'empare de votre Ame...\"</span>. Vous devez voir ce message dans chaque zone pour que la quête soit complète. S'il n'apparaît pas dans une zone, tuez à nouveau le Chevalier dans la zone concernée suffira, même si c'est avec un autre groupe.</li> <li>Une fois le Chevalier Ténébreux tué dans les 4 zones, rendez vous au milieu de l'Académie et cliquez sur le Puits. <ul><li><span class=\"text-amber-400 font-bold\">\"Le puits absorbe les ténèbres de votre âme.....\"</span></li></ul></li> <li>Vous avez désormais accès au 2ème niveau de l'Académie, les escaliers pour y descendre se trouvent au bout de chaque salle d'XP des zones 175+. Vous devez être niveau 200 pour franchir la porte.</li></ul><ul><li><span class=\"text-amber-400 font-bold\">\"Le puits absorbe les ténèbres de votre âme.....\"</span></li></ul><p>N.B 1 : Vous pouvez réaliser la quête en groupe, tous les membres du groupe participants aux combats contre le Chevalier Ténébreux auront accès à L'Académie niveau -2. </p><p>N.B.2 : Pour les soigneurs du groupe : Vous devez obligatoirement frapper au moins une fois le Chevalier dans chaque zone pour que la quête vous soit validée. </p><p>N.B.3 : Les Chevaliers disparaissent au bout d'une heure s'il ne sont pas tués. </p>",
+        "images": [],
+        "order": 1
+      },
+      {
+        "title": "Quête d'accès à l'Académie Niveau -3",
+        "description": "<ul><li>Vous devez avoir accès à l'Académie niveau -2.</li></ul><ul><li>Allez parler au PNJ Ataniel Claren situé dans une maison aux Yétis de la serre <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(410,2750,6)</span>, il vous demandera de tuer des douzaines de montres.</li> <li>Allez tuer environ 50 monstres du niveau -2 puis retournez parler à Ataniel qui vous remettra la Baguette d'Ataniel afin de tuer l'Atrocité mutante (skin Rejeton du Chaos).</li> <li>Faites une macro avec la baguette d'Ataniel. Cela vous permettra de lancer le sort de la baguette.</li> <li>L'atrocité est située dans la zone des vipères (à l'Est des yétis). Montez vers le Nord après l'entrée (560,2595,6 environ). Pour la tuer, vous devez utiliser la macro <b>de loin</b> rapidement et plusieurs fois.</li> <li><b>Attention :</b> dès que vous la voyez ne traînez pas car <b>elle dépop rapidement si vous ne l'attaquez pas</b>.</li> <li><b>Attention</b> : <b>lancez le sort <u>de loin</u> avec votre macro</b> jusqu'à ce qu'elle soit morte ! Si vous vous approchez trop près vous serez téléporté à votre sanctuaire (vivant) et l'atrocité dépopera (respawn environ 20 minutes).</li></ul><ul><li>Retournez voir Ataniel Claren pour votre récompense : <ul><li>accès à l'Académie niveau -3</li> <li><b>3G xp</b>.</li></ul></li></ul><ul><li>accès à l'Académie niveau -3</li> <li><b>3G xp</b>.</li></ul>",
+        "images": [],
+        "order": 2
+      },
+      {
+        "title": "Quête d'accès à l'Académie Niveau -4",
+        "description": "<ul><li>Vous devez avoir accès à l'Académie niveau -3.</li> <li>Munissez-vous d'un parchemin de rappel puis allez parler au PNJ Dradus situé dans une maison aux Yétis de la serre <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(450,2730,6)</span>. Dites lui <span class=\"text-amber-400 font-bold\">\"mur\"</span> puis poursuivez le dialogue jusqu'à lui remettre le parchemin pour qu'il puisse s'échapper.</li> <li>Parlez ensuite à Kelmar Taniel dans la même maison. Il vous demandera alors de lui rapporter les ingrédients suivants :</li></ul><p><i>- Bulbe de l'éveillé (drop Larve sanglante)</i> </p><p><i>- Ecume de larve toxique (drop Larve toxique)</i> </p><p><i>- Globe oculaire (drop Lérot)</i> </p><p><i>- Nerf sciatique (drop Scolopendre)</i> </p><p><i>- Pierre de dérobade (drop Soldat d'outre-tombe)</i> </p><ul><li>Une fois les 5 objets en votre possession, rendez-vous près de Kelmar, cliquez simplement dessus puis cliquez tout de suite sur Dradus. Vous serez téléporté dans sa cellule. Attaquez-le de suite.</li> <li><b>Attention ! Vous devrez le tuer en moins de 3 minutes</b> (prenez soin d'avoir avec vous des potions Hyper pour vous booster - surtout en paladin/guerrier -, ainsi que des potions critiques).</li> <li>Si vous dépassez le temps, vous aurez une quête supplémentaire à effectuer : <ul><li>Rapporter 1 moustache vibratoire, 1 corpuscule de résurrection, 1 venin de scorpion, 1 aile de gargouille, 1 pierre de majesté. Puis toujours en moins de 3 minutes tuer Dradus.... Bon courage...</li></ul></li> <li>Une fois Dradus tué, reparlez à Kelmar, il vous demandera d'aller tuer Iliana Valress. Elle va apparaître à ce moment sur son spot.</li> <li>Allez aux Vipères Terrifiantes, au nord-est du petit lac <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(630,2585,6)</span>, trouvez Iliana Valress (si vous ne la trouvez pas sur place, cherchez-la au Sud ou encore au Nord-Ouest, elle bouge beaucoup) cliquez sur elle puis tuez la. Le médaillon d'accès se retrouvera alors dans votre inventaire. Faites vous aider, surtout pour nettoyer la zone.</li> <li>Retournez parler à Kelmar puis cliquez sur Dradus, vous obtiendrez votre récompense : <ul><li><b>Accès au niveau -4 de l'Académie</b></li> <li><b>10G xp</b></li> <li><b>5M de pièces d'or</b></li></ul></li> <li>Pour vous rendre au -4, allez dans l'octogone au centre du -3. Puis, en sortant par la porte nord-ouest, cliquez sur la statue.</li></ul><ul><li>Rapporter 1 moustache vibratoire, 1 corpuscule de résurrection, 1 venin de scorpion, 1 aile de gargouille, 1 pierre de majesté. Puis toujours en moins de 3 minutes tuer Dradus.... Bon courage...</li></ul><ul><li><b>Accès au niveau -4 de l'Académie</b></li> <li><b>10G xp</b></li> <li><b>5M de pièces d'or</b></li></ul><p >T4C NMS Révolution, Accès -4 les deux boss</p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [
+          "/t4c-nms-overview/assets/quests/acces-niveaux-2-3-4-academie/img_3_0.jpg"
+        ],
+        "order": 3
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "Armure de plaque incrustée d'émeraudes",
+    "slug": "armure-de-plaque-incrustee-demeraudes",
+    "zone": "Inconnue",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "Présentation",
+        "description": "<p>Avec 140 endurance et +41 de CA, cette armure est plutôt destinée aux jeteurs de sort car elle donne un bonus de +10 dans toutes les puissances. Elle n'est pas trop à la mode car on pourra lui préférer les vêtements ou armures spécialisés. </p>",
+        "images": [],
+        "order": 0
+      },
+      {
+        "title": "Obtention",
+        "description": "<p>Ramassez des émeraudes reluisantes sur les golems d'émeraudes que vous trouverez sur les terres des skraugs rouges ou bien sur leur île, au nord des skraugs verts. Au nord de cette petite île, vous trouverez un homme en armure de plaque verte, il vous proposera de forger une partie de l'armure en échange de 80k et de 1 à 3 émeraudes reluisantes. Pour ce faire annoncer le nombre d'émeraude que vous souhaitez fournir pour la fabrication. Moins vous en donnerez, plus la fabrication a de chance d'échouer. </p><p>Afin d'obtenir les jambieres ou le plastron, il est nécessaire de lui fournir 3 émeraudes reluisantes. </p><p><b><span class=\"text-amber-400 font-bold\">\"Balzak\"</span> donne 1M XP en récompense de la fabrication d'une pièce d'armure émeraude.</b> </p><p>Taux de réussite, environ 30% en donnant 3 émeraudes. Si échec vous perdez l'or et pas d'XP. </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [],
+        "order": 1
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "Armure Métrolite",
+    "slug": "armure-metrolite",
+    "zone": "Inconnue",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "Armure Métrolite",
+        "description": "<p>Parlez à Eiden. Vous le trouverez en face du temple, dans une échoppe située près de Veronica la marchande de potions de DI, il vous expliquera qu'il peut vous fabriquer cette armure au prix de 200 000 pièces d'or et de 1 à 3 restes d'acier métrolite par partie. Vous aurez un morceau aléatoire de l'armure si la confection réussit. </p><p>La différence entre <span class=\"text-amber-400 font-bold\">\"un\"</span> et <span class=\"text-amber-400 font-bold\">\"deux\"</span> est le taux de réussite (supérieur avec deux). En effet, il est tout à fait possible qu'Eiden ne réussisse pas à tirer quoi que ce soit des restes d'acier métrolite que vous lui rapporterez. Si vous en fournissez trois, le taux de réussite est encore supérieur mais vous pouvez aussi obtenir le plastron ou les jambières (ce qui n'est pas le cas avec les options précédentes). </p><p>Chaque essai, que ce soit avec un, deux ou trois restes, vous coûtera 200 000 pièces d'or. Vous trouverez les restes en tuant les B'Zurkhans (autour d'un lac à l'Ouest de RedWall). </p><p>La quête peut être effectuée à volonté. </p><p>Récompense : </p><ul><li>Soit plastron d'armure métrolite.</li> <li>Soit jambières d'armure métrolite.</li> <li>Soit gants d'armure métrolite.</li> <li>Soit heaume d'armure métrolite.</li> <li>Soit ceinture d'armure métrolite.</li> <li>Soit bottes d'armure métrolite.</li> <li>Soit rien du tout.</li></ul>",
+        "images": [],
+        "order": 0
+      },
+      {
+        "title": "Bouclier Métrolite",
+        "description": "<p>Pour le bouclier Métrolite, vous aurez besoin de 4 morceaux d'or (drop des démons incultes) et 5 restes d'acier métrolite (drop des B'Zurkhans) et d'un bouclier B'Ronkhanique (drop des drakes B'Ronkhans). </p><p>Dites <span class=\"text-amber-400 font-bold\">\"bouclier\"</span> à Eiden. Si l'opération réussit, le skin de votre bouclier sera accordé à votre armure (personnellement je ne l'aime pas trop). En cas d'échec, vous récupérez votre bouclier d'origine. </p><p><b>Eiden vous donnera 10M XP s'il réussit la fabrication d'une partie d'armure métrolite.</b> </p><p><b>Note :</b> Vous remarquerez, si ce n'est déjà fait, que les boosts sont les mêmes. Vous échangerez donc le B'Ronkhanique contre le Métrolite uniquement pour le look. Ci-contre les deux descriptions identiques avec leur skin respectif. A vous de choisir. </p><p><br> </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [
+          "/t4c-nms-overview/assets/quests/armure-metrolite/img_1_0.jpg",
+          "/t4c-nms-overview/assets/quests/armure-metrolite/img_1_1.jpg"
+        ],
+        "order": 1
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "Audrey la couturière",
+    "slug": "audrey-la-couturiere",
+    "zone": "Inconnue",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "La quête d'Audrey la couturière (robe de couleur)",
+        "description": "<p>Cette quête permet d'obtenir une robe de couleur ainsi que 80.000 xp (quête non répétable). </p><ul><li>10 potions de guérison légère</li> <li>5 potions de mana</li> <li>2 diamants (vous trouverez un coffre dropant un diamant chez le bourgmestre de Windhowl et un second aux Druides, au Nord-Est du camp du commandant Owain, au bord de l'eau)</li> <li>25 000 pièces d'or</li></ul><p>Il faudra aussi que le garde soit distrait par vous ou par un comparse : </p>",
+        "images": [
+          "/t4c-nms-overview/assets/quests/audrey-la-couturiere/img_0_0.jpg",
+          "/t4c-nms-overview/assets/quests/audrey-la-couturiere/img_0_1.jpg"
+        ],
+        "order": 0
+      },
+      {
+        "title": "Méthode Solo",
+        "description": "<p>Préparez les mots-clefs (<span class=\"text-amber-400 font-bold\">\"Nécessaire\"</span>, <span class=\"text-amber-400 font-bold\">\"Distraire\"</span>). Dites le mot-clef <b><span class=\"text-amber-400 font-bold\">\"Distraire\"</span></b> au gardien. A partir de ce moment il vous reste 5 secondes avant d'être téléporté(e) en prison. Dites le mot-clef <b><span class=\"text-amber-400 font-bold\">\"nécessaire\"</span></b> à Audrey. A ce moment si vous avez les ingrédients sur vous, vous gagnez 80.000 xp et Audrey vous remet la robe, puis vous allez en prison. Vous devez être rapide pour que cela fonctionne en solo mais c'est faisable. Entrez les mots-clefs avant de commencer et utilisez <b>CTRL+HAUT</b> pour les répéter rapidement. </p>",
+        "images": [],
+        "order": 1
+      },
+      {
+        "title": "Méthode Coopérative",
+        "description": "<p>Vous aurez besoin de l'aide d'un comparse qui distraira le garde en lui disant le mot-clef <b><span class=\"text-amber-400 font-bold\">\"Distraire\"</span></b>, et c'est lui qui sera téléporté en prison pendant 10 minutes, il pourra tout de même s'échapper immédiatement s'il le désire grâce à la RST, Mot de rappel ou un Parchemin. Dites ensuite les mot-clefs <b><span class=\"text-amber-400 font-bold\">\"Nécessaire\"</span></b> puis <b><span class=\"text-amber-400 font-bold\">\"oui\"</span> </b>à Audrey (en moins de 5 secondes là aussi), elle vous remettra une robe si vous avez les ingrédients et l'or sur vous. </p><p><b>Récompenses:</b> Une robe de couleur aléatoire parmi Brunie, Rose, Bleutée, Jaune ou Orangée (<u>Bonus</u> : +5 Int +5 Sag +2 CA -25 Esquive, <u>Prérequis</u> 12 End 28 Sag 28 Int) . </p><p>Vous gagnerez aussi 80.000 xp de récompense. </p><p><br> <b>P.S.</b> Si vous avez envie de calmer les nerfs du garde après avoir eu la robe, vous pouvez compléter la quête <span class=\"text-amber-400 font-bold\">\"Le Gardien et les yeux de tarentules\"</span>! </p><p><b>Cette quête ne peut être effectuée qu'une seule fois.</b> </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [],
+        "order": 2
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "Coffres de l'Académie",
+    "slug": "coffres-de-lacademie",
+    "zone": "Académie",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "Académie - 1",
+        "description": "<p>4 coffres sont situés niveau Académie -1 (repop ?) </p><p>Ils dropent : </p><ul><li>Parchemin des ténèbres (pour la quête d'accès Académie-2)</li> <li>Potions</li></ul>",
+        "images": [],
+        "order": 0
+      },
+      {
+        "title": "Académie - 2",
+        "description": "<p><b>Le coffre de l'Académie -2 est situé aux embaumés</b> (repop 15 minutes seul / 30 minutes à deux) : </p><p>-Items RP (balai, ciseaux....)<br>-Perle de pluie (environ une fois sur deux)<br>-Parchemin d'xp de 10 minutes (rare) </p>",
+        "images": [],
+        "order": 1
+      },
+      {
+        "title": "Académie -4",
+        "description": "<p>En plus des nombreux coffres du donjon du Cerberus, vous trouverez au -4 les coffres iridium et les coffres ivoire </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [],
+        "order": 2
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "Crypte de Stonecrest",
+    "slug": "crypte-de-stonecrest",
+    "zone": "Stoneheim",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "La crypte du Lord Stonecrest",
+        "description": "<p>Le Lord Stonecrest permet d'obtenir toutes les parties de l'<b>Armure de Plaque Océane</b> (125 endu), le <b>Coeur de l'Océan</b> ainsi que l'<b>Amulette du Héros</b>. </p><p>Les invocations du Lord dropent parfois une <b>Cape d'Élémendil</b> (le Lord invoque lorsqu'il attaqué au corps à corps). </p>",
+        "images": [],
+        "order": 0
+      },
+      {
+        "title": "Cheminement à suivre",
+        "description": "<p>Il suffit de suivre les numéros (1 à 13) des <b>flèches vertes</b> dans l'ordre pour arriver au puits qui vous mènera vers le tombeau du Lord. </p><p>Les flèches jaunes quant à elles servent uniquement à se rendre aux différents coffres (sans grand intérêt). </p><p>Une fois arrivé au puits (situé niveau gris au point 13 des flèches vertes), cliquez sur celui-ci. </p><p>Vous recevrez <b>1 Clef couverte de rosée</b>. </p><p>Au même moment, vous serez téléporté au niveau du tombeau du Lord Stonecrest, dans une salle contenant 5 coffres. </p>",
+        "images": [],
+        "order": 1
+      },
+      {
+        "title": "Option particulière à NMS",
+        "description": "<p><b>Attention : ici, si vous êtes venus pour conserver la clé de rosée pour la vendre à un autre joueur (elle peut servir à ouvrir un coffre ivoire), il faut à ce moment quitter la crypte et déposer la clé de rosée (par exemple dans votre coffre de SH) avant de recommencer la prochaine tournée.</b> </p><p>Suite habituelle : Si vous poursuivez l'accès au Lord, la clef pour accéder au Lord Stonecrest est cachée aléatoirement dans 1 des 5 coffres. </p><p>Votre <b>Clef couverte de rosée</b> peut ouvrir seulement 1 de ces 5 coffres et se réduira en poussière après utilisation. </p><p>La clef en os effritée permettant d’accéder au tombeau du Lord restera dans le même coffre jusqu'à ce qu'un joueur la trouve. </p><p>Une fois la clé trouvée rendez-vous au au tombeau du Lord, ouvrez-le pour faire apparaître le Lord, combattez-le (éventuellement au CAC pour ne pas le tuer trop vite et le faire invoquer si vous cherchez la cape <b>d'Élémendil</b> ) et espérez des drops !! </p><p>Le temps de respawn du Lord est de 30 minutes. </p>",
+        "images": [],
+        "order": 2
+      },
+      {
+        "title": "Niveau Gris",
+        "description": "<p><br> </p>",
+        "images": [
+          "/t4c-nms-overview/assets/quests/crypte-de-stonecrest/img_3_0.jpg"
+        ],
+        "order": 3
+      },
+      {
+        "title": "Niveau Vert",
+        "description": "<p><br> </p>",
+        "images": [
+          "/t4c-nms-overview/assets/quests/crypte-de-stonecrest/img_4_0.jpg"
+        ],
+        "order": 4
+      },
+      {
+        "title": "Niveau Violet",
+        "description": "<p><br> </p>",
+        "images": [
+          "/t4c-nms-overview/assets/quests/crypte-de-stonecrest/img_5_0.jpg"
+        ],
+        "order": 5
+      },
+      {
+        "title": "Niveau Bleu",
+        "description": "<p><br> </p>",
+        "images": [],
+        "order": 6
+      },
+      {
+        "title": "Tombeau du Lord",
+        "description": "<p><br> </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [],
+        "order": 7
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "Donjon du Cerberus",
+    "slug": "donjon-du-cerberus",
+    "zone": "Inconnue",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "Présentation",
+        "description": "<p>Dans le donjon du CERBERUS, votre but sera d'obtenir les 22 clefs qui permettront d'accéder à la salle du Boss ultime CERBERUS, puis de le capturer (le tuer avec le sceptre de capture) pour -enfin- terminer la quête de l'Académie et obtenir la récompense finale : 10G d'xp et 10 parchemins d'xp doublée d'1 heure. </p><p>Il drope aussi des items très intéressants... </p><p>Dans ce donjon original vous allez vous éclater avec les 22 épreuves à passer pour obtenir les 22 clés qui permettent de franchir le portail d'accès au CERBERUS. </p>",
+        "images": [],
+        "order": 0
+      },
+      {
+        "title": "Le plan du Donjon du CERBERUS",
+        "description": "",
+        "images": [
+          "/t4c-nms-overview/assets/quests/donjon-du-cerberus/img_1_0.jpg"
+        ],
+        "order": 1
+      },
+      {
+        "title": "Les potions d'Evalcian",
+        "description": "<p>Evalcian vend diverses potions dont plusieurs seront utiles durant votre quête. Elles vous éviteront d'être malade, téléporté ou même de mourir. </p><p>Evalcian vend aussi des potions de guérison extrêmes. Elles soignent deux fois plus que les critiques mais pèsent deux fois plus lourd .... </p><p><u>Attention</u> : Si vous voulez boire une seconde potion d'immunisation identique à celle en cours, il vaut mieux, pour qu'elle soit prise en compte, attendre que la précédente soit terminée. Mais n'oubliez pas de quitter la salle dangereuse un instant ! </p><p>- <b>Inertie : salle clé 10</b> : Si vous n'avez pas bu une '<u>Potion d'inertie</u>' alors votre personnage sera téléporté à l'entrée du niveau -4 après 10 secondes. </p><p><u>Attention</u> : Si vous voulez boire une seconde potion d'immunisation (ou d'inertie) identique à la première, il vaut mieux, pour être certain qu'elle soit prise en compte, attendre que la première soit terminée. Mais n'oubliez pas de quitter la salle dangereuse un instant ! </p><p><b>Les durées d'efficacité sont les suivantes :</b> </p><p><u>Mineure</u> = 60 secondes. <u>Standard</u> = 30 minutes. <u>Majeure</u> = 60 minutes. </p>",
+        "images": [
+          "/t4c-nms-overview/assets/quests/donjon-du-cerberus/img_2_0.jpg",
+          "/t4c-nms-overview/assets/quests/donjon-du-cerberus/img_2_1.jpg"
+        ],
+        "order": 2
+      },
+      {
+        "title": "Les 22 Clefs",
+        "description": "<p>Là on s'attaque au principal ! Vous devez obtenir les clefs de chair de 1 à 22 pour pouvoir passer le portail d'accès au Cerberus situé en salle de la clé de chair #22. </p><p><br> </p>",
+        "images": [],
+        "order": 3
+      },
+      {
+        "title": "Clef de chair durcie #1",
+        "description": "<p>Juste après l'entrée du donjon, vous trouverez des baffreurs qui n'ont qu'une envie, vous abreuvez de flèches très douloureuses ! Tuez les jusqu'à obtenir la clef 1. Attention c'est facile à dire mais ils sont forts et se multiplient vite. Un peu d'aide sera vite bien utile... </p><p><br> </p>",
+        "images": [],
+        "order": 4
+      },
+      {
+        "title": "Clef de chair durcie #2",
+        "description": "<p>Entrez maintenant dans la salle au SE des baffreurs. Passez juste la porte sans avancer plus. Un minimum de dextérité dans la manipulation du pavé numérique sera nécessaire !! </p><p>Donc, sur ce pavé numérique (en mode déplacement - utilisez la touche <span class=\"text-amber-400 font-bold\">\"verr num\"</span> ou <span class=\"text-amber-400 font-bold\">\"num lock\"</span> pour passer du mode numérique au mode déplacement , et inversement) tapez la combinaison suivante jusqu’à arriver au coffre : </p><p>9 - 8 - 9 </p><p>Attention il faut être bien placé au départ sinon vous vous retrouvez au milieu des baffreurs qui ne vont pas chômer et vous attaquer !! <br>Une fois à côté du coffre SURTOUT ne bougez plus :) Cliquez sur le coffre et la clef #2 (ou plus généralement une potion - hélas) tombera au sol. Le Repop du coffre est de 20 minutes (irl) seul, et de 10 minutes (irl) à 2. </p><p><br> </p><p >Clé de chair 3 (by TELLAH)</p>",
+        "images": [],
+        "order": 5
+      },
+      {
+        "title": "Clef de chair durcie #3",
+        "description": "<p>Pour cette clé vous serez toujours voisin de ces charmants baffreurs. </p><p>Entrez dans la salle au NO desdits baffreurs. </p><p>Vous y trouverez 7 coffres. Deux cartes différentes sont là pour vous aider à ouvrir les coffres dans le bon ordre sans déraper ! </p><p><u>1ère solution</u> : Ouvrez les coffres l'un après l'autre en prenant le chemin marqué en rouge menant à chacun des coffres, numérotés de 1 à 7. Un éclair apparaît si vous avez bien ouvert le bon coffre. La clef de chair #3 tombera directement dans votre inventaire après ouverture du septième coffre. </p><p >Sauvé du forum by UQBAR</p><p>Vous devrez vous déplacer contre le mur en périphérie de la pièce (attention il y a un piège en haut à gauche) sous peine de vous retrouver au milieu des baffreurs et de déguster leurs flèches!! Idem si vous déviez des chemins indiqués en rouges (prévoyez d'avoir toujours vos protections). </p><p><br> </p><p><u>2ème solution</u> : Si vous avez le sens de l'orientation, utilisez la boussole et la carte détaillée ci-dessous qui donne les positions exactes par lesquelles il faut passer.<br><br><b>Carte Clef #3 détaillée</b> </p><p>Cette deuxième carte vous donne avec précision toutes les cases par lesquelles vous devez passer pour arriver au plus près de chaque coffre pour l'ouvrir; et ceci sans déraper et vous retrouver au milieux des terribles baffreurs. </p><p>Par exemple, pour le coffre 3 il faut démarrer de 160,458... </p><p>Bravo si vous faites cette clé sans mourir... </p><p>C'est quasi impossible si vous allé seul au casse-pipe !!<br><br><br><br> </p><p><br><br> </p><p >Clé de chair 4 (by ARTEMYS)</p>",
+        "images": [],
+        "order": 6
+      },
+      {
+        "title": "Clef de chair durcie #4",
+        "description": "<p>Un clé simple si vous ne faites pas d'erreur (évidemment) </p><p>Il faut cliquer sur les bons portails dans le bon ordre (voir plan ci-contre). </p><p>1 - Portail sous les rochers<br>2 - Portail au nord-est<br>3 - Portail le plus à l'ouest<br>4 - Portail en face de la porte par laquelle on arrive avec la clef de chair durcie #3<br>5 - Portail au sud-est du premier. </p><p>Si vous vous trompez , ne reprenez pas au début mais à celui que vous avez loupé ! </p><p>Attention : si vous cliquez au mauvais moment sur le portail N°1 vous serez téléportés à votre sanctuaire. Et d'autres portails sont piégés (sort de feu). </p><p><br> </p>",
+        "images": [],
+        "order": 7
+      },
+      {
+        "title": "Clef de chair durcie #5",
+        "description": "<p>Gare aux baffreurs... les vers sont moins méchants mais méfiez-vous. </p><p>Entrez légèrement dans la salle de la clé #2 puis rendez vous dans la salle au SE : </p><p>faites 1-7-7-2-6 ou 4-7-7-2-6 au pavé numérique selon votre position initiale </p><p>Si vous allez trop loin ou si votre position initiale est mauvaise... vous êtes bon pour une visite aux baffreurs !! </p><p>Une fois arrivé dans la salle au SE, Il vous faut tuer des vers enfouis pour récupérer la clef #5 au sol.<br>Attention, il faut les tuer à distance sinon ils explosent. A faire en petit groupe. Une aide est même obligatoire pour les CAC qui ne savent pas tuer à distance. </p><p><br> </p>",
+        "images": [],
+        "order": 8
+      },
+      {
+        "title": "Clef de chair durcie #6",
+        "description": "<p>Gare aux baffreurs... les vers sont moins méchants mais méfiez-vous. </p><p>Allez dans la salle de la clef de chair #3, puis se rendre (en longeant les murs côté nord) dans la salle au NO. Attention à rester bien collé au mur sinon visite aux baffreurs !! </p><p>Ensuite tuez des vers enfouis pour récupérer la clef #6 au sol.<br>Attention, il faut les tuer de près, pas facile non plus. Pour activer le repop des vers, sortez de la salle et switchez de perso. Reswitchez pour revenir. Ensuite attendez sagement derrière la porte qu'ils se regroupent au plus près avant d'entrer dans la salle, ce qui évitera de les faire exploser. </p><p><br> </p>",
+        "images": [],
+        "order": 9
+      },
+      {
+        "title": "Clef de chair durcie #7",
+        "description": "<p>Ici pas de baffreurs mais un anneau !! </p><p>Il faut avoir la clef #6 et un anneau de cerfeuil. L'anneau se drope sur les Démonicons, sur la petite île au dessus du camp gob d'Arakas (ancienne île aux deux ponts). Il peut aussi être crafté par un bijoutier (recette level 18, un bijoutier vous fera ça si vous trouvez les ingrédients), et enfin vous pouvez l'obtenir en échange de 3000 fèves de bronze au salon de jeu, idéalement en mage feu pour mieux massacrer le Celleniem.<br>Parlez à Evalcian. Mot clef : <span class=\"text-amber-400 font-bold\">\"trésor\"</span> </p><p>Une clé hyper facile .... si vous avez un anneau de cerfeuil.... sinon voyez votre guilde/famille car les Démonicons droppent cet anneau tous les 107 ans (environ)... et 3000 fèves c'est beaucoup !! Vous pouvez aussi réunir les ingrédients ... </p><p><br> </p><p><b><u>Clef de chair durcie #8</u></b> </p><p>Une clé collaborative... (vous pouvez commencer par la 9 si tout est bloqué à la 8). </p><p>Le principe de base est d'activer les trois leviers de la salle pour déverrouiller le coffre. Un même joueur ne peut activer un levier qu'une fois par heure IG (que ce soit pour clé #8 ou clé #9) mais si vous êtes 3, les trois leviers peuvent être activés directement... </p><p>Cliquez d'abord sur le coffre.<br>Cliquez ensuite chacun sur un des 3 leviers l'un après l'autre. Un message s'affiche pour chaque levier : </p><ul><li><span class=\"text-amber-400 font-bold\">\"Le levier semble bloqué...\"</span> -&gt; il faut attendre 1 heure IG ou le faire ouvrir par un autre joueur (vous aurez aussi ce message quand la clé est disponible mais vous avez oublié de cliquer sur le coffre).</li> <li><span class=\"text-amber-400 font-bold\">\"Vous actionnez le levier mais rien ne se produit\"</span> -&gt; il est activé mais tous ne sont pas activés.</li> <li>\"Vous actionnez le levier ce qui semble enclencher un mécanisme -&gt; le 3ème levier est activé (celui près de la porte) et c'est tout bon.</li></ul><p><br>Enfin recliquez sur le coffre pour obtenir la clef #8 directement dans votre inventaire. </p><p><b>IMPORTANT</b> : Comme vous le savez, il y a deux salles de 3 leviers chacune (voir clef #9). Seulement il y a un petit hic sinon ce ne serait pas drôle. Les deux salles sont en fait connectées et <b>lorsque un levier est activé dans la salle clef #8, ça en désactive un dans la salle clé #9 et vice-versa</b>. Amusant non ? </p><p><br> </p>",
+        "images": [],
+        "order": 10
+      },
+      {
+        "title": "Clef de chair durcie #9",
+        "description": "<p>Une clé collaborative... </p><p>Comme pour la clef 8, le principe de base est d'activer les trois leviers de la salle pour déverrouiller le coffre. Un même joueur ne peut activer un levier qu'une fois par heure IG mais si vous êtes trois, les trois leviers peuvent être activés directement. Cela vaut pour les deux salles donc <b>si vous venez d'activer un levier pour la clé #8 il vous faudra attendre 1 heure IG même pour la clé #9 et vice-versa.</b><br>Cliquez d'abord sur le coffre. Cliquez sur les 3 leviers l'un après l'autre. Un message s'affiche pour chaque levier : </p><ul><li><span class=\"text-amber-400 font-bold\">\"Le levier semble bloqué...\"</span> -&gt; il faut attendre 1 heure IG ou le faire ouvrir par un autre joueur (vous aurez aussi ce message quand la clé est disponible mais vous avez oublié de cliquer sur le coffre).</li> <li><span class=\"text-amber-400 font-bold\">\"Vous actionnez le levier mais rien ne se produit\"</span> -&gt; il est activé mais tous ne sont pas activés.</li> <li>\"Vous actionnez le levier ce qui semble enclencher un mécanisme -&gt; Le 3ème levier est activé et c'est tout bon.</li></ul><p><br>Enfin recliquez sur le coffre pour obtenir la clef 9 directement dans votre inventaire. </p>",
+        "images": [],
+        "order": 11
+      },
+      {
+        "title": "Clef de chair durcie #10",
+        "description": "<p>Un peu de camping... </p><p><b>Attention !</b> Vous devez être immunisé contre la téléportation (potion d'inertie ou d'inertie majeure d'Evalcian) pour rentrer dans cette salle au NO de la salle aux 3 leviers de la clé 8 (sinon vous êtes téléporté au début du -4).<br>Il faut camper les trois petits coffres pour avoir les clefs rouillées du donjon 1 puis 2 puis 3 pour enfin ouvrir le coffre au milieu et faire tomber (peut-être) au sol la clé #10.<br>Temps de repop : petits coffres 10 minutes / gros coffre 20 minutes (seul), 10 minutes (à deux). </p><p><u>Attention</u> : Si vous voulez boire une seconde potion identique, il vaut mieux, pour qu'elle soit prise en compte, attendre que la précédente soit terminée. Mais n'oubliez pas de quitter la salle dangereuse un instant ! </p><p><br> </p>",
+        "images": [],
+        "order": 12
+      },
+      {
+        "title": "Clef de chair durcie #11",
+        "description": "<p>Un peu de camping... </p><p><b>Attention !!</b> Vous devez être immunisé contre le glas (potion d'immunisation contre le glas d'Evalcian) pour rentrer dans cette pièce au SE de la salle aux 3 leviers de la clef 9 (sinon vous mourez... et droppez!). En cas d'oubli vous avez quelques secondes pour recall ou boire votre potion.<br>Il faut camper les trois petits coffres pour avoir les clefs rouillées du donjon 4 puis 5 puis 6 pour enfin ouvrir le coffre au milieu et faire tomber (peut-être) au sol la clef #11.<br>Temps de repop : petits coffres 10 minutes / gros coffre 20 minutes (seul), 10 minutes (à deux). </p><p><u>Attention</u> : Si vous voulez boire une seconde potion identique, il vaut mieux, pour qu'elle soit prise en compte, attendre que la précédente soit terminée. Mais n'oubliez pas de quitter la salle dangereuse un instant ! </p><p>Pour la suite vous aurez besoin de passez par les îles obsidiennes et /ou la grande salle </p><p><b><u>Présentation de la grande salle (salle des dalles</u></b>) Pour vous rendre dans cette salle, vous devrez passer par les îles obsidiennes (voir plus loin) </p><p><b>Le premier schéma donne l'emplacement et la couleur des dalles dans la grande salle</b> </p><p>Selon le cas vous devrez marcher sur certaines dalles de couleurs numérotées. </p><p>Le coffre petit côté donne la clé de chair #12. </p><p>Le coffre central grand côté donne la clé de chair #13. </p><p>A l'Ouest coffre iridium 1 (8B2V). </p><p>A l'Est caché par le mur coffre iridium 2 (7B4V). </p><p><br> </p><p><b><u>Présentation des îles obsidiennes</u></b> </p><p>Le passage par les îles obsidiennes sera nécessaire pour obtenir certaines des clés de chair suivantes. </p><p>L'accès aux îles obsidiennes se fait par la salle aux 4 tourbillons, ouverte par la clé#11, au-dessus du coffre clé#10. Ensuite vous devrez prendre le tourbillon sud caché par le mur pour vous trouver sur l'île obsidienne de départ (voir plan des îles plus bas). </p>",
+        "images": [],
+        "order": 13
+      },
+      {
+        "title": "Clef de chair durcie #12",
+        "description": "<p>Pour cette clé il faudra marcher beaucoup en allant d'une île obsidienne à l'autre comme il vous sera indiqué ! </p><p>Vous devez vous procurer d'abord la clé obsidienne 19. Vous allez bien vous amuser car vous devrez commencer par trouver la clé obs 1 puis la clé obs 2 etc... jusqu'à la clé obs 19 !! </p><p><b>Attention !</b> Vous devez être immunisé contre la téléportation (potion d'inertie ou inertie majeure d'Evalcian) pour faire cette clé car vous devrez passer par la salle clé #10 ! </p><p>Après avoir pris le tourbillon caché par le mur Sud vous arrivez sur l'ile obsidienne de Départ <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(2242,1270,4)</span> avec les 3 premiers tourbillons (les directions à prendre pour se rendre à l'ile suivante sont données depuis l'ile antérieure). </p><p>clef 1 (ile 2220,1209,4) : milieu<br>clef 2 (ile 2276,1250,4) : G - D - GG - D<br>clef 3 <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(2158,1118,4)</span> : G - D - G - DD - G<br>clef 4 <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(2247,1381,4)</span> : DD - G - DD<br>clef 5 <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(2264,1324,4)</span> : G - DD - G<br>clef 6 <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(2280,1135,4)</span> : DD - puis sortir aux baffreurs par GGG <br><br>clef 7 <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(2192,1163,4)</span> : milieu et G<br>clef 8 <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(2173,1314,4)</span> : D - GGGGG puis sortir par D salle des dalles grand côté puis baffreurs par tourbillon nord<br> </p><p><br>clef 9 <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(2259,1214,4)</span> : D<br>clef 10 <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(2310,1011,4)</span> : G-D puis sortir par D salle des dalles petit côté puis baffreurs par tourbillon </p><p>clef 11 <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(2149,1053,4)</span> : GGGG puis sortir par G aux baffreurs<br><br>clef 12 <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(2168,1204,4)</span> : GG puis sortir par GGG aux baffreurs<br><br>clef 13 <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(204,365,6)</span> : salle des 4 tourbillons (au nord de la salle clé 10), coffre nord-ouest<br>clef 14 <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(2199,1356,4)</span> : DD - GGG<br>clef 15 <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(2237,1159,4)</span> : D - G - D<br>clef 16 <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(2281,1361,4)</span> : GGG - DD puis sortir par DGD salle des dalles puis par tourbillon nord aux baffreurs.<br><br>clef 17 <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(212,367,6)</span> : salle des 4 tourbillons (au nord de la salle clé 10), coffre nord-est<br>clef 18 <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(2298,1301,4)</span> : DD - G puis sortir par DDGD aux baffreurs<br><br>clef 19 <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(207,373,6)</span> : salle des 4 tourbillons (au nord de la salle clé 10), coffre sud-est </p><p>Puis prenez une dernière fois le tourbillon.<br><br><u>clef 12 : finale</u> </p><p>Muni de la clé obsidienne 19, vous pouvez récupérer la clé de chair 12 par le cheminement suivant :<br>DGDD (vous arrivez dans la salle des dalles, petit côté).<br>Ouvrez le coffre pour la clef #12<br>Descendez dans le tourbillon. Arrivée salle des baffreurs... </p>",
+        "images": [],
+        "order": 14
+      },
+      {
+        "title": "Clef de chair durcie #13",
+        "description": "<p>Encore beaucoup de marche pour cette clé ! </p><p><b>Attention !</b> Vous devez être immunisé contre la téléportation (potion d'inertie d'Evalcian) pour traverser la salle du coffre clé de chair 10.<br>Vous devez activer les dalles bleues de 1 à 10 dans l'ordre. Ensuite cliquez sur le coffre au centre de la salle des dalles (grand côté) , il vous donnera la clé directement dans l'inventaire.<br>Pour faire tout cela, il vous faudra passer plusieurs fois par la salle aux 4 tourbillons et entrer dans le tourbillon Sud caché par le mur. </p><p>Enchaînement depuis le tourbillon Sud :<br><br>Dalle 1 : GGGG, puis marcher sur la dalle bleue côté droit de l'île puis sortir côté gauche vers baffreurs.<br><br>Dalle 2 : DD GGGG D, arrivée salle des dalles grand côté, marcher sur la dalles bleue 2 puis sortir par tourbillon nord. <br><br>Dalle 3 : D G DD, arrivée salle des dalles petit côté, marcher sur la dalle bleue 3 puis sortir par tourbillon.<br><br>Dalles 4-5-6-7 : DD GGGG D, arrivée salle des dalles grand côté, marcher sur les dalles bleues 4,5,6,7 puis sortir.<br><br>Dalle 8 : DD GGGG, marcher sur la dalle bleue puis sortir.<br><br>Dalles 9-10 : DD GGGG D, arrivée salle des dalles grand côté, marcher sur les dalles bleues 9,10. <br><br>Pour finir, cliquer sur le coffre central pour obtenir la clé #13. </p><p>Attention : Vous pouvez marcher sur la même dalle bleue deux fois de suite, mais si vous marchez sur une mauvaise dalle il faut recommencer depuis le début ! </p><p><br> </p>",
+        "images": [],
+        "order": 15
+      },
+      {
+        "title": "Clef de chair durcie #14",
+        "description": "<p>Et là beaucoup beaucoup de marche... </p><p><b>Attention !</b> Vous devez être immunisé contre la téléportation (potion d'inertie d'Evalcian) pour traverser la salle du coffre clé de chair 10. </p><p>Ici aussi vous devez parcourir les îles obsidiennes. Cette fois-ci pour obtenir les clefs en obsidienne #19, #11, #8 et #4. Faites d'abord toutes les clés jusqu'à la clé 19 puis recommencez jusqu'à la 11, de même pour la 8 et pour la 4. Vous allez marcher beaucoup et c'est pas fini.... </p><p>Vous devez aussi vous procurer (avec un peu de chance ces clefs traînent dans votre coffre ou un GB vous les donnera) : </p><p>- Une clef tordue &gt; drop des Seigneurs ténébreux de la guerre (cave du Château de Mordenthal au Nord de SH) </p><p>- Une clef de pierre &gt; drop de divers morts-vivants de RD </p><p>- Une clef de fer noircie &gt; drop de divers monstres de la crypte de Lord Stonecrest sur SH </p><p>- Une clef d'os poli &gt; drop de divers monstres de la crypte Centaures à l'Est de la ville Centaure sur SH (Ennemi des Ombres.....) </p><p >Salle aux 10 dalles bleues pour clé de chair 14 (by Mëyli)</p><p><br>Ensuite allez dans la salle aux dix dalles bleues (NO de la salle où on obtient la clef de chair durcie #10). </p><p>Activez les dalles de 1 à 2 dans cette salle, puis prenez le tourbillon du milieu dans la salle aux quatre tourbillons (ouverte par la clef de chair durcie #11) pour trouver la clef rouillée du donjon #7 dans le petit coffre tout à gauche de la petite île ou vous arrivez. Puis recall ... </p><p ></p><p >T4C NMS Révolution, clef de chair 14 les dix dalles.</p><p >Vidéo des 10 dalles</p><p ></p><p ></p><p>Activez les dalles 1 à 4 et cliquez sur l'autre petit coffre à gauche de l'île pour avoir la clef rouillée du donjon #8. Puis recall... </p><p>Activez maintenant les dalles 1 à 6 pour cliquer sur le petit coffre centre droit de l'île pour obtenir la clef rouillée du donjon #9. Puis recall ... </p><p><br>Puis activez les dalles de 1 à 8 et ouvrez le petit coffre le plus à droite de l'île pour obtenir la clef rouillée du donjon #10. Puis recall... </p><p><br>Enfin, retournez activer les dalles de 1 à 10 et trouvez la clef de chair durcie #14 dans le coffre au <u>centre de la salle aux dalles bleues.</u> </p><p >Salles des gargouilles (by TELLAH)</p>",
+        "images": [],
+        "order": 16
+      },
+      {
+        "title": "Clef de chair durcie #15",
+        "description": "<p>Camping au voisinage des gargouilles... </p><p><b>Attention !!</b> Vous devez être immunisé contre le glas (potion d'immunisation au glas d'Evalcian) pour vous rendre dans cette salle au NE de la salle de la clé #11. </p><p>La clef se trouve dans le petit coffre situé à l'est dans la salle aux 11 tourbillons (au NE de celle où vous devez boire une potion d'immunisation au glas). Vous devrez tuer les deux gargouilles pour passer (amusant vous verrez). En fait les gargouilles lancent un sort qui vous fait marcher dans toutes les directions donc, faites attention de ne pas tomber dans un tourbillon. </p><p>Le repop du coffre clé 15 est de 20 minutes (irl) seul et 10 minutes (irl) à deux ! </p><p><br> </p>",
+        "images": [],
+        "order": 17
+      },
+      {
+        "title": "Clef de chair durcie #16",
+        "description": "<p>Ici il vous faudra d'abord obtenir les clés corail 1 et 3 </p><ul><li>Clé corail #1 (le puits)</li></ul><p>Prenez une potion d'inertie puis allez cliquer sur le puits dans la salle au NO de la salle où on obtient la clef de chair durcie #14 (passez par le labyrinthe) et jetez-y 1,5M de pièces d'or au mot <span class=\"text-amber-400 font-bold\">\"<i><b>jetées</b>\"</span></i> (attention il prend toutes vos pièces d'or, posez donc le surplus au sol). S'il la donne pas du 1er coup réessayez avec 100 ou 200k d'or.<br>Vous obtenez la clef corail #1. </p><p>PS: Respawn de 20 min pour refaire à nouveau si vous ratez au 100 coffres. </p><p >Coffres pour clé corail 3 (by Mëyli)</p><ul><li>Clé corail #3 (par la salle dite <span class=\"text-amber-400 font-bold\">\"aux 100 coffres\"</span>)</li></ul><p>Pour faire la suite, vous devez être immunisé contre le glas (potion d'immunisation au glas d'Evalcian).<br>Cela fait, allez dans la salle aux 11 tourbillons, en prenant celui du milieu de l'avant dernier rang (tourbillon <span class=\"text-amber-400 font-bold\">\"coffressss\"</span> du screen de la clé #15), vous tombez dans une salle remplie de coffres.<br>Vous devrez cliquer rapidement sur cinq coffres à la suite pour obtenir la clef de corail #3. </p><p>Le début de chaque flèche verte montre l'endroit ou vous placer pour cliquer sur le coffre à l'autre extrémité de la flèche.<br>Attention vous avez un timing assez serré (environ 30 secondes). Entraînez vous à vous déplacer aux bons endroits. </p><p>Prenez ensuite le portail de cette salle pour être téléporté a l'entrée du niveau -4 </p><p><br>Avec cette clef, procurez-vous la clef de chair durcie #16 dans le gros coffre au centre de l'île sur laquelle vous avez eu les clefs rouillées du donjon de #7 à #10 (voir clef de chair durcie #14). N'oubliez pas d'être immunisé contre l'inertie.<br>Temps de repop : 20 minutes (10 minutes à plusieurs). </p>",
+        "images": [],
+        "order": 18
+      },
+      {
+        "title": "Clef de chair durcie #17",
+        "description": "<p>Maintenant c'est du gâteau !! </p><p>Sans la fiole de protection contre la terreur, cette clé est la plus difficile à cause de la perte de contrôle due aux gargouilles (cette fiole n'existe que depuis peu et la clé était jadis une vraie galère mais qui a laissé aux anciens des souvenirs inoubliables) . </p><p>Il s'agit d'obtenir dans l'ordre les clefs corail 2 4 5 6 et 7 avant de s'attaquer à la clef de chair #17 proprement dite. </p><p>Tip: : Il existe maintenant une fiole de protection contre la terreur (craft) qui permet de supprimer l'effet des gargouilles et facilite grandement l'obtention de cette clé. Une fiole est active durant 30 minutes. </p><ul><li>Clef corail #2</li></ul><p >Salle des gargouilles (by TELLAH)</p><p><b>Salle des gargouilles pour les clés corail suivantes :</b> </p><p>Rendez vous salle des gargouilles et explorez les vortex dans l'ordre, chaque clef corail ouvre le coffre qui donne sa suite numérique (Clef #4 ouvre le coffre pour trouver la #5... Clef #5 ouvre le coffre pour trouver la #6... etc).<b> </b> </p><p>N<b>oter que les clefs corail sont à usage unique !</b> </p><p><br> </p><p >Tourbillon 1 pour clé corail 4 (by Mëyli)</p><ul><li>Clef corail #4 </li></ul><p>Tourbillon N°1 (au nord) afin d'obtenir la clef corail #4. </p><p>Recall après avoir eu votre clef. </p><p><br> </p><p >Tourbillon 2 pour clé corail 5 (by Mëyli)</p><ul><li>Clef corail #5</li></ul><p>Tourbillon N°2 (à l'est) afin d'obtenir la clef corail #5. </p><p>Recall après avoir eu votre clef. </p><p><br> </p><p >Tourbillon 3 pour clé corail 6 (by Mëyli)</p><ul><li>Clef corail #6</li></ul><p>Tourbillon N°3 (à l'ouest) afin d'obtenir la clef corail #6. </p><p>Recall après avoir eu votre clef. </p><p><br> </p><p >Tourbillon 4 pour clé corail 7 (by Mëyli)</p><ul><li>Clef corail #7 </li></ul><p>Tourbillon N°4 (caché au sud) afin d'obtenir la clef corail #7. </p><p>Recall après avoir eu votre clef. </p><p><br> </p><ul><li>Clef de chair #17</li></ul><p >Tourbillon 5 (l'escargot) pour clé de chair 17 (by Mëyli)</p><p>Le repop des 4 premiers coffres est de 20 minutes (seul)... immédiat à plusieurs... </p><p>Le coffre qui drop la clef #17 n'a pas de temps de repop. </p><p>Légende : </p><p>- Etoile verte = Point de départ </p><p>- Point jaune = Tourbillon qui vous téléporte au début </p><p><br> </p>",
+        "images": [],
+        "order": 19
+      },
+      {
+        "title": "Clef de chair durcie #18",
+        "description": "<p>A faire en trio. </p><p><br>Avec la clef #17 vous ouvrez la salle derrière les gargouilles. Mieux vaut être 3 pour actionner les dalles dans l'ordre (jaune bleu vert). Marcher sur la dalle bleu vous rend malade (saturnisme) pendant une heure. De plus celui qui actionne la bleue ne peut pas ouvrir le coffre tant qu'il est malade. </p><p>Vous pouvez acheter une potion de dissipation du saturnisme (chez Evalcian) qui vous guérira de cette maladie. </p><ul><li>Jaune</li> <li>Bleue</li> <li>verte</li></ul><p >Clé 18</p><p><br> </p>",
+        "images": [],
+        "order": 20
+      },
+      {
+        "title": "Clef de chair durcie #19",
+        "description": "<p>A faire en trio. </p><p><br>Salle à l'opposé (il faut traverser les 3 salles avec rejetons ou faire le tour par la salle aux quatre tourbillons). Même principe que la clef #18 avec 3 dalles de couleur à actionner dans l'ordre (jaune bleu vert), mais avec des dalles piégées. Attention ça peut faire mal. </p><p>Voici les positions exactes des dalles : </p><ul><li>Jaune : 216, 344, 6</li> <li>Bleue : 232, 338, 6</li> <li>Verte : 222, 339, 6</li></ul><p >Clé 19</p><p><br> </p>",
+        "images": [],
+        "order": 21
+      },
+      {
+        "title": "Clef de chair durcie #20",
+        "description": "<p>Avec de l'aide. </p><p>Tuez (en groupe) des rejetons furtifs jusqu'à faire droper la clef #20. </p><p><br> </p>",
+        "images": [],
+        "order": 22
+      },
+      {
+        "title": "Clef de chair durcie #21",
+        "description": "<p>Avec de l'aide. </p><p>Tuez (en groupe) des rejetons furtifs jusqu'à faire droper la clef #21. </p><p><br> </p>",
+        "images": [],
+        "order": 23
+      },
+      {
+        "title": "Clef de chair durcie #22",
+        "description": "<p>Avec de l'aide. </p><p>Tuez (en groupe) des rejetons du Cerberus jusqu'à faire droper la clef #22. </p><p>Félicitations, vous avez maintenant accès au CERBERUS ! </p><p>Passez le portail dans la salle des rejetons du Cerberus (mot-clé <span class=\"text-amber-400 font-bold\">\"entrer\"</span>), ceux qui dropent la clef de chair durcie #22, pour arriver dans son antre. </p><p>Puis, mettez vous tout nu, complètement débuff et sans arme et foncez dessus (<b>non....joke</b>)! </p><p>Pour terminer la quête Académie, n'oubliez pas de capturer le Cerberus cela vous rapportera 10G d'xp et 10 parchemins d'xp x2 d'1 heure (ensuite aller rendre la capture a Pelkor Zirus comme les autres captures au salon de jeux.(Oubliez pas d'enlever le sceptre pour qu'il le reprenne)). </p><p><b>Attention</b> : lorsque vous passez le portail pour la première fois, vous perdez <u>presque</u> toutes vos clefs de chair durcie!! </p><p>Ne restent que celles qui permettent d'accéder au Cerberus en ligne droite, c'est à dire les #3, #6, #21 et #22. Vous pourrez donc retourner au Cerberus, mais ne pourrez pas camper les coffres iridium ou ivoire, ni les vers enfouis, ni les gargouilles éthérées. Pour ce faire, il faut... refaire les clefs qui vous intéressent (dans l'ordre... ou pas...). Amusez-vous bien!! </p><p>Tip : Vous pouvez faire d'avance en double les clés qui tombent au sol mais pas celles qui tombent directement dans votre sac. </p><p><u><b>Cerberus, le boss à 3 têtes </b></u> </p><p>Attention ce boss a la capacité de vous retirer toutes vos magies actives et d'invoquer des rejetons (gare à leur nécro) s'il est de mauvaise humeur !! </p><p >T4C NMS Révolution, Cerberus en groupe.</p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [],
+        "order": 24
+      }
+    ],
+    "credits": [
+      "By Mëyli",
+      "Cl",
+      "Sauv",
+      "Salle aux",
+      "Salles des gargouilles",
+      "Coffres pour cl",
+      "Salle des gargouilles",
+      "Tourbillon",
+      "by Meyli"
+    ]
+  },
+  {
+    "title": "La chasse aux dragons",
+    "slug": "la-chasse-aux-dragons",
+    "zone": "Inconnue",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "Introduction",
+        "description": "<p>Il vous faudra tuer plusieurs dragons situés sur Arakas, Raven's Dust, Niève (L'ile de glace), Stoneheim, et Drake Island au cours de cette quête, afin d'obtenir tout les artefacts nécessaires à son accomplissement. </p><p>Votre récompense sera : </p><ul><li><b>Un Bol du Dragon</b> : +10 CA +10 chance + (10 + 2xlevel/10) all stat. Se porte comme un bouclier.</li> <li>Votre niveau x 24000 pièces d'or.</li></ul>",
+        "images": [],
+        "order": 0
+      },
+      {
+        "title": "Arakas",
+        "description": "",
+        "images": [
+          "/t4c-nms-overview/assets/quests/la-chasse-aux-dragons/img_1_0.jpg"
+        ],
+        "order": 1
+      },
+      {
+        "title": "Raven's Dust",
+        "description": "",
+        "images": [
+          "/t4c-nms-overview/assets/quests/la-chasse-aux-dragons/img_2_0.jpg"
+        ],
+        "order": 2
+      },
+      {
+        "title": "Niève (Ile de Glace)",
+        "description": "",
+        "images": [
+          "/t4c-nms-overview/assets/quests/la-chasse-aux-dragons/img_3_0.jpg"
+        ],
+        "order": 3
+      },
+      {
+        "title": "StoneHeim",
+        "description": "",
+        "images": [],
+        "order": 4
+      },
+      {
+        "title": "Dragon Livoxdrinn",
+        "description": "<p><br> </p>",
+        "images": [],
+        "order": 5
+      },
+      {
+        "title": "Drake Island",
+        "description": "",
+        "images": [],
+        "order": 6
+      },
+      {
+        "title": "La Quête",
+        "description": "<p>Allez voir Ayanis <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(1428,633,1)</span>, au village métier situé au sous-sol de Redwall. </p><p>Apporter-lui l'os de Dasrinn, une fiole de sang de dragon, une dent de dragon, le sang d'Ashardalon, une griffe de Livoxdrinn, un griffe argentée de Freidaclan, un oeuf de Yeridaj, la dent de Zudinm et enfin le crâne de Liridell Mirev. </p><p>Dites lui le mot clef <span class=\"text-amber-400 font-bold\">\"dragon\"</span>. Elle vous prendra les items sauf le crâne de Liridell et vous récompensera. </p><p><b>Récompenses :</b> </p><ul><li><b>Un Bol du Dragon</b> : +10 CA +10 chance + (10 + 2xlevel/10) all stat. Se porte comme un bouclier.</li> <li>Votre niveau x 24000 pièces d'or.</li></ul><p>Vous pouvez répéter la quête. Comme vous avez déjà le crâne de Liridell, elle sera plus facile. Mais vous n'aurez que le bol et pas l'or. </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [],
+        "order": 7
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "La hache légendaire",
+    "slug": "la-hache-legendaire",
+    "zone": "Inconnue",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "LA HACHE LEGENDAIRE",
+        "description": "<p>Ramenez 10 haches du bûcheron, 200 haches du bûcheron expérimenté, 10 haches du bûcheron expert et 10 haches du bûcheron reconnu à Brestian dans le sous-sol de Redwall, qui vous donnera une hache légendaire en échange. </p><p>10x La hache du bûcheron (18 force) se trouve sur Griroesh, le gardien de Jarko, (AR).<br>200x La hache du bûcheron expérimenté (23 force) se trouve sur les vers des sables, dans le désert, (RD).<br>10x La hache du bûcheron expert (28 force) se trouve sur les Lepreuchauns aux Bois Creux, (SH).<br>10x La hache du bûcheron reconnu (33 force) se trouve sur les Démons Terreux, dans la cave Humterre (DI). </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [],
+        "order": 0
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "La lettre de Crimsonscale",
+    "slug": "la-lettre-de-crimsonscalerd",
+    "zone": "Inconnue",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [
+      "l'ermite Antonian",
+      "Aquinos",
+      "le Barde sans Nom",
+      "un gardien",
+      "Crimsonscale",
+      "Custodian",
+      "les 4 savants (the 4 Scholars)",
+      "les 3 bibliothécaires (the 3 Librarians)",
+      "Olin Haad",
+      "Grand Prêtre Gunthar",
+      "Efnisien",
+      "Ramirgo",
+      "Lothar",
+      "Efnisien",
+      "Le Gardien Draconis",
+      "la Gitane"
+    ],
+    "gold": "",
+    "steps": [
+      {
+        "title": "La lettre de Crimsonscale",
+        "description": "<p>C’est une quête immense qui se déroule en 3 parties: Arakas, Raven’s Dust, puis le dénouement s’effectue sur Arakas. </p><p>Elle est très intéressante par l'XP qu'elle donne (principalement sur Arakas) et par certains des items offerts (comme l'amulette de renouveau si vous êtes lanceur de sorts). </p><p>Si vous pensez renaître vous pouvez vous arrêter au Barde (pour l'xp donnée et l'accès au Mausolée - ou vous pourrez faire beaucoup d'xp, surtout en prêtre lumière) ou à la Bibliothèque (pour l'xp seule car le bracelet de flammes donné par le Dragon Crimsonscale est supprimé sur NMS). </p><p><b>Tip</b> : Petits indices pour savoir ou vous en êtes dans la quête si vous l'avez commencée il y a un bout de temps :-)) </p><p>La tablette de pierre runique, la gemme sombre et la Caledbolg sont supprimées aux renaissances. Il est impossible de supprimer la Caledbolg donc si vous avez la gemme sombre et pas la Caledbolg, il y a des chances que vous en soyez aux adorateurs (désert RD) ou peu avant. Si vous avez la Caledbolg, allez parler au Grand Prêtre de LH puis à Efnisien. </p>",
+        "images": [],
+        "order": 0
+      },
+      {
+        "title": "ARAKAS",
+        "description": "",
+        "images": [
+          "/t4c-nms-overview/assets/quests/la-lettre-de-crimsonscalerd/img_1_0.jpg",
+          "/t4c-nms-overview/assets/quests/la-lettre-de-crimsonscalerd/img_1_1.jpg"
+        ],
+        "order": 1
+      },
+      {
+        "title": "Kilhiam au temple de Lighhaven",
+        "description": "<p>Allez au temple de Lighthaven et parlez à Kilhiam. Elle vous donnera une lettre (double clic dans l’inventaire) qui dit ceci: </p><p><span class=\"text-amber-400 font-bold\">\"Chère ami(e), vous trouverez cette lettre un peu bizarre, veuillez m’en excuser mais le problème est de la plus grande importance et avant que commence votre journée, je voudrais que vous compreniez parfaitement la situation dans laquelle nous avons été forcés d’entrer. Depuis ce jour, votre vie ne sera plus jamais la même. Je ne peux pas tout expliquer dans cette lettre, mais je vous recommande fortement d’aller voir celui que l’on nomme Efnisien. Il habite à l'étage d'une petite maison située à l’est du temple de Lighthaven. Rencontrez-le et il vous expliquera ce que vous devez connaître.\"</span> </p>",
+        "images": [],
+        "order": 2
+      },
+      {
+        "title": "Efnisien et ses gardes",
+        "description": "<p>Dirigez-vous vers la maison d’Efnisien située à l'Est de la banque de Lighthaven et montez à l'étage. Dès que vous cliquez sur lui, 3 assassins apparaissent. Tuez-les et cliquez à nouveau sur Efnisien. Dites <span class=\"text-amber-400 font-bold\">\"Gardes\"</span>, <span class=\"text-amber-400 font-bold\">\"Assassins\"</span>, <span class=\"text-amber-400 font-bold\">\"Olin Haad\"</span>, <span class=\"text-amber-400 font-bold\">\"Siège de la ville\"</span>, <span class=\"text-amber-400 font-bold\">\"Quelque chose\"</span>, <span class=\"text-amber-400 font-bold\">\"Services\"</span>, <span class=\"text-amber-400 font-bold\">\"Refusé\"</span>, <span class=\"text-amber-400 font-bold\">\"Visite\"</span>, <span class=\"text-amber-400 font-bold\">\"Lettre\"</span> et vous en apprendrez sur Olin Haad et le cœur de pierre. Efnisien mentionne également que vous devez aller parler à Olin Haad mais que, si vous voulez que ce dernier vous porte attention, vous devez donnez une raclée à ses gardes ! </p>",
+        "images": [],
+        "order": 3
+      },
+      {
+        "title": "Le château d'Olin Haad",
+        "description": "<p>Dites <span class=\"text-amber-400 font-bold\">\"Adieu\"</span>, dirigez vous vers la grotte (cave) de Lighthaven (au sud-ouest de la fontaine), entrez-y et trouvez le château d’Olin Haad (attention aux gardes, une bénédiction - même si c'est seulement celle de Zélina du temple - sera la bienvenue). Cliquez sur la porte du château et vous serez téléporté à l’intérieur. Suivez le tapis rouge et vous trouverez Olin Haad. Essayez de discuter avec lui. Il va refuser, ressortez et tuez environ 20 de ses gardes. </p><p>Puis retournez lui parler. Dites <span class=\"text-amber-400 font-bold\">\"Chercher\"</span>, <span class=\"text-amber-400 font-bold\">\"Combat\"</span> et vous serez téléporté dans une pièce avec 4 Gardes d’Elite d’Olin Haad. LAISSEZ-VOUS TUER ! Ils ne mourront qu’en essayant de vous tuer ! Vous serez re-téléporté (tout rouge, avec 5% de vos PV, mais vous ne serez PAS mort) aux côtés d’Olin Haad. A ce point de la quête, vous recevrez l’aura Colère des Anciens (Wrath of the Ancients), un sort de protection permanent qui blesse de temps à autre les ennemis qui vous attaquent. Continuez le dialogue avec Olin Haad, en disant : <span class=\"text-amber-400 font-bold\">\"Ils\"</span>, <span class=\"text-amber-400 font-bold\">\"Haruspice\"</span>, <span class=\"text-amber-400 font-bold\">\"Prophétie\"</span>, <span class=\"text-amber-400 font-bold\">\"Graines\"</span>, <span class=\"text-amber-400 font-bold\">\"Moi\"</span>, <span class=\"text-amber-400 font-bold\">\"Nouvelle race\"</span>, <span class=\"text-amber-400 font-bold\">\"Réponse\"</span> et vous apprendrez des choses au sujet de la prophétie. Olin Haad mentionnera également que vous devez trouver le Grand Prêtre Gunthar et le prévenir qu’il ne pourra quitter Lighthaven en paix, tant qu'il n'aura pas rendu ce qu’il a promis. </p>",
+        "images": [
+          "/t4c-nms-overview/assets/quests/la-lettre-de-crimsonscalerd/img_4_0.jpg"
+        ],
+        "order": 4
+      },
+      {
+        "title": "Grand prêtre Gunthar (au temple, sous-sol derrière le trône)",
+        "description": "<p>Retournez au temple de Lighthaven (utilisez votre gemme de téléportation, c'est plus rapide) et cliquez sur la porte derrière le trône. Vous serez téléporté dans la petite pièce. Descendez dans le donjon et trouvez le Grand Prêtre Gunthar. Dites-lui <span class=\"text-amber-400 font-bold\">\"Demandes\"</span>, <span class=\"text-amber-400 font-bold\">\"Pierre\"</span>, <span class=\"text-amber-400 font-bold\">\"Marchand\"</span>, <span class=\"text-amber-400 font-bold\">\"Attendez\"</span>, <span class=\"text-amber-400 font-bold\">\"Nécromancien\"</span>, <span class=\"text-amber-400 font-bold\">\"Corrupteurs de Gluriurl\"</span>, <span class=\"text-amber-400 font-bold\">\"Bataille des émanations\"</span>, <span class=\"text-amber-400 font-bold\">\"Faucheurs de vie\"</span>, <span class=\"text-amber-400 font-bold\">\"Dragons\"</span>, <span class=\"text-amber-400 font-bold\">\"Complètement\"</span>, <span class=\"text-amber-400 font-bold\">\"Theodore XIII\"</span>, <span class=\"text-amber-400 font-bold\">\"Pierre du coeur\"</span> et vous apprendrez au sujet du culte de Gluriurl, du Cœur de pierre, et de la vente de celui-ci à un marchand. Maintenant dites <span class=\"text-amber-400 font-bold\">\"Oui\"</span> afin d’accepter d’aider Gunthar à trouver le Cœur. Dites <span class=\"text-amber-400 font-bold\">\"Regarder\"</span> et il vous dira de chercher à Windhowl. </p><p>Vous recevez également 1.000 pièces d’or et 10.000 xp. </p><p>Continuez le dialogue en disant <span class=\"text-amber-400 font-bold\">\"Nomade\"</span> et vous parlera du signe du marchand. </p>",
+        "images": [],
+        "order": 5
+      },
+      {
+        "title": "A Windhowl (Ethan, Urik, maison du Nomade)",
+        "description": "<p>Rendez vous à Windhowl. </p><p>Cherchez la maison de la guilde des Marchands située à gauche du marchand d’armes. Trouvez Ethan chef de la guilde des Marchands et dites-lui <span class=\"text-amber-400 font-bold\">\"Nomade\"</span>, <span class=\"text-amber-400 font-bold\">\"Raté\"</span>, <span class=\"text-amber-400 font-bold\">\"Agressif\"</span>, <span class=\"text-amber-400 font-bold\">\"Affaire\"</span>, <span class=\"text-amber-400 font-bold\">\"Pierre du Cœur\"</span> et il vous parlera un peu plus du Nomade et des marchands. Dès que vous lui aurez parlé de la Pierre du Cœur, il vous dira qu’il a un problème et qu’il ne peut plus perdre son temps avec vous. Dites <span class=\"text-amber-400 font-bold\">\"Problème\"</span>, <span class=\"text-amber-400 font-bold\">\"Taxes\"</span> et il vous parlera des dettes d’Urik le Maître tailleur. Dites <span class=\"text-amber-400 font-bold\">\"Mercenaires\"</span>, <span class=\"text-amber-400 font-bold\">\"Tâche\"</span> et <span class=\"text-amber-400 font-bold\">\"oui\"</span>, acceptez d’aider Ethan à récupérer l’argent qu’Urik lui doit. </p><p>Retournez vers la maison d’Urik, située sous la taverne de Windhowl. Montez à l'étage et parlez à Urik. Dites-lui <span class=\"text-amber-400 font-bold\">\"Idiot\"</span>, <span class=\"text-amber-400 font-bold\">\"Discuter\"</span>, <span class=\"text-amber-400 font-bold\">\"Affaire\"</span>. Il refusera de vous donner l’argent qu’il doit et appellera en renfort 3 voleurs. Mettez les au tapis et reparlez à Urik. Il vous donnera alors 1.000 pièces d’or et l’argent de ses dettes. </p><p>Retournez à la Guilde des Marchands et parlez de nouveau à Ethan. Cliquez sur lui, dites-lui <span class=\"text-amber-400 font-bold\">\"Argent\"</span> et il prendra son dû. </p><p>Vous recevez quant à vous 40.000 xp. </p><p>Dites-lui maintenant <span class=\"text-amber-400 font-bold\">\"Nomade\"</span>, <span class=\"text-amber-400 font-bold\">\"Leçon\"</span>, <span class=\"text-amber-400 font-bold\">\"Suspecte\"</span>, <span class=\"text-amber-400 font-bold\">\"Confrerie Obsidienne\"</span>, <span class=\"text-amber-400 font-bold\">\"Aider\"</span> et il vous dira qu’il suspecte qu’Urik et le Nomade travaillent ensemble. Dites <span class=\"text-amber-400 font-bold\">\"Clefs\"</span> et il vous donnera un lot de clés qu’il a dérobé chez Urik. Il mentionnera également qu’une de ces clés ouvrirait peut-être la maison du Nomade. Dites <span class=\"text-amber-400 font-bold\">\"Demeure\"</span> et il vous indiquera où se situe celle-ci, quelque part au sud de la ville. </p><p>Dirigez-vous vers le sud-ouest et cherchez la maison du Nomade. Elle est située à côté des remparts. Cliquez sur la porte, la clé disparaîtra et vous serez téléporté à l’intérieur de la maison. Montez au premier étage et commencez à ouvrir les 4 coffres (faites Ctrl+n pour voir les coffres). Dans un des coffres, vous trouverez une petite clé. Cliquez à nouveau sur le coffre et vous trouverez, cachées dans un double fond, 1.000 pièces d’or. Montez au deuxième étage et ouvrez les deux coffres. Dans l’un des deux, vous trouverez la lettre d’Owain. </p><p>La lettre dit (double clic dans l’inventaire): </p><p>\"Cher Nomad, </p><p>Nous avons finalement trouvé la grotte maudite que vous avez recherchée tant d’années. La semaine dernière, j’ai envoyé une équipe afin de retrouver la relique que vous aviez demandée mais ils ne sont jamais revenus… J’en ai parlé avec Urik, et il me força à envoyer une deuxième équipe, dont seulement un seul hommes est revenu, les bras rongés ! J’arrête. Vous ferez ce que vous voulez mais je n’envoie plus personne dans cette place damnée. J’attendrai au camp des Druides au Nord-Est d’Arakas dix jours. Si pour n’importe quelle raison, j’y apprends que vous amenez Urik avec vous, ou si vous ne venez pas, je partirais. </p>",
+        "images": [],
+        "order": 6
+      },
+      {
+        "title": "Le commandant Owain au camp des druides d'Arakas",
+        "description": "<p>Traversez entièrement Arakas pour vous dirigez vers l’Ordre de la Nature (Camp des Druides au Nord-Est d'Arakas) et trouvez Yrian Holenarbed situé dans une maison à l’Est de Stonehenge. Parlez-lui et il vous demandera si vous êtes le voyageur envoyé par les vents afin de l’aider. Dites <span class=\"text-amber-400 font-bold\">\"Oui\"</span>, <span class=\"text-amber-400 font-bold\">\"Etat\"</span>, <span class=\"text-amber-400 font-bold\">\"Voyageur\"</span>, <span class=\"text-amber-400 font-bold\">\"Malheurs\"</span>, <span class=\"text-amber-400 font-bold\">\"Odeur\"</span>, <span class=\"text-amber-400 font-bold\">\"Resistance\"</span>, <span class=\"text-amber-400 font-bold\">\"Nomade\"</span> et vous apprendrez la disparition du Grand-père et la nausée causée par le Nomade. Continuez le dialogue en disant <span class=\"text-amber-400 font-bold\">\"Bâton\"</span>, <span class=\"text-amber-400 font-bold\">\"Commandant\"</span> et vous apprendrez qu’il pourrait guérir cette nausée s’il avait le Sceptre de Solinae, mais le Nomade a ordonné à son Commandant de prendre ce sceptre. Il soulignera également que les troupes du Nomade sont stationnées au sud-est du camp des Druides à proximité de la rivière. </p><p>Dirigez-vous donc vers le Sud-Est, trouvez et tuez le commandant Owain (et, si vous le pouvez, ses serviteurs, les soldats d’Olin Haad). </p><p><b>Attention:</b> Le commandant Owain et ses soldats sont difficiles à bas niveau. Trouvez un ami qui peut vous aider ou soyez sûr de transporter beaucoup de potions de guérison ! </p><p>Une fois le commandant Owain mort, le sceptre de Solinae apparaît dans votre inventaire. Retrouvez Yrian Holenarbed et cliquez sur lui. Yrian prendra le Sceptre. </p><p>Vous recevrez 75.000 xp. </p><p>Dites-lui <span class=\"text-amber-400 font-bold\">\"Nomade\"</span> et il vous dira que le Nomade recherchait une crypte. Dites <span class=\"text-amber-400 font-bold\">\"Crypte\"</span> et il vous parlera d’une route menant au temple située à proximité d’un campement quelque part à l’ouest. Vous recevrez également l’anneau gardien de vitalité et la gemme de vitalité (Guardian Ring of Vitality et Gem of Vitality). Equipez l'anneau et faites une macro avec la gemme (voyez ici comment faire). </p>",
+        "images": [],
+        "order": 7
+      },
+      {
+        "title": "La gitane",
+        "description": "<p>Dirigez-vous vers le campement de Gypsy la Gitane, situé au sud-est du pont allant en direction des grottes de la Vallée Maudite (en venant du Sud, une fois passé le pont à l'ouest de l’île aux démonicons, tournez immédiatement à gauche puis dès que vous le pouvez dirigez vous vers le nord). Trouvez la Gitane et parlez-lui. Dites <span class=\"text-amber-400 font-bold\">\"Voyageur\"</span>, <span class=\"text-amber-400 font-bold\">\"Voyante\"</span>, <span class=\"text-amber-400 font-bold\">\"Nomade\"</span> et elle vous dira qu’elle vous aidera à trouver le Nomade. Avant cela, elle vous posera quelques questions afin qu’elle s’harmonise avec votre aura. Répondez <span class=\"text-amber-400 font-bold\">\"Oui\"</span>, <span class=\"text-amber-400 font-bold\">\"Oui\"</span>, <span class=\"text-amber-400 font-bold\">\"Donneur de vie\"</span> et elle vous dira qu’il se trouve dans un ancien temple d’une divinité morte nommée Gluriurl. Ce temple se situe sur une île séparée de la terre ferme. Afin d’atteindre cette île, vous devez traverser une grotte se situant au nord. </p>",
+        "images": [],
+        "order": 8
+      },
+      {
+        "title": "La crypte du nomade (le coeur et le sang de Gluriurl)",
+        "description": "<p><b>La crypte du Nomade</b> </p><p> Entrez-y et continuez vers le Nord. Méfiez vous du Kraanien, il fait 200 pv de dégâts par coup qu'il vous porte. Poursuivez jusqu’à l’autel. La, vous verrez un portail et deux tourbillons. </p><p><b>La tombe du Déchu : Le coeur de Gluriurl</b> </p><p>Entrez dans le tourbillon de droite dans la cave des coeurs corrompus. Marchez vers le Nord et vous arriverez à la tombe du Déchu. Cherchez les guerriers Déchus, situés au nord de la crypte. Tuez-les jusqu’à ce qu’ils laissent tomber un cœur corrompu (à petit niveau faites vous aider). Ramassez-le et entrez dans le portail derrière eux. Vous serez à nouveau téléporté à côté de l’autel. </p><p><b>La cave de la corruption : le sang de Gluriurl</b> </p><p>Entrez maintenant dans le tourbillon de gauche et vous arriverez à la cave de la corruption. Allez vers l'ouest pour trouvez le puits portant l'inscription <span class=\"text-amber-400 font-bold\">\"ici repose le sang de Gluriurl\"</span>, cliquez dessus et vous collecterez le sang de Gluriurl dans une bouteille (cette partie est difficile, être béni et rempli de potions est conseillé à bas level). Entrez enfin dans le portail et vous vous retrouverez de nouveau à proximité de l’autel. </p><p>Touchez l’autel et le cœur de Gluriurl commencera à battre, obligeant le portail à miroiter en retour. Plongez dedans et votre vision se brouillera pendant un court moment… </p><p><b>La crypte des pierres sombres</b> </p><p>En passant le portail vous arriverez à la Crypte des pierres sombres. Allez vers le nord-ouest et vous trouverez une cage thoracique. Touchez-la et vous recevrez la gemme sombre (Darkstone) et le message suivant vous apparaîtra : </p><p><span class=\"text-amber-400 font-bold\">\"Une gemme sombre flotte dans les airs là où le cœur devrait être. Avec grands soins, vous prenez la gemme sombre et la remplacez par le cœur de Gluriurl\"</span>. </p><p>La voix de la Gitane résonne alors dans votre tête: [Nom du joueur] ! Vous devriez venir me voir, j’ai quelque chose d’important à vous montrer !\". </p><p>Vous serez récompensé par 125.000 xp. </p>",
+        "images": [],
+        "order": 9
+      },
+      {
+        "title": "Retour chez la gitane",
+        "description": "<p>Retournez voir la Gitane et parlez-lui. Elle mentionnera qu’elle ressent la présence du coeur maléfique sur vous. Dites <span class=\"text-amber-400 font-bold\">\"Coeur maléfique\"</span>, <span class=\"text-amber-400 font-bold\">\"Rêves\"</span>, <span class=\"text-amber-400 font-bold\">\"Cadavre délabré\"</span>, <span class=\"text-amber-400 font-bold\">\"Plan\"</span>, <span class=\"text-amber-400 font-bold\">\"Sacrifice\"</span> et vous en apprendrez plus au sujet de la pierre noire maudite, les rêves étranges de la Gitane et votre nouvelle tâche. Vous devez rapporter la pierre noire au temple d’Arthek à Lighthaven. Dites <span class=\"text-amber-400 font-bold\">\"Quelque chose\"</span> et elle vous offrira (selon votre choix) : </p><p>- Amulette de Renouveau et Gemme de Renouveau (indispensable aux lanceurs de sorts) (Amulet of Renewal and the Gem of Renewal) </p><p>- Amulette de Régénération et Gemme de Régénération (Amulet of Regeneration and the Gem of Regeneration) </p><p>- Carquois de stabilité gris (110 dext, 20 Force) (Trueshot's Quiver) </p><p>Votre choix fait, la Gitane vous conseille de vous rendre rapidement au temple de LightHaven (équipez l'amulette et faites une macro avec la gemme). </p>",
+        "images": [],
+        "order": 10
+      },
+      {
+        "title": "Le chef des brigands Gorlok Bloodaxe",
+        "description": "<p>Rendez-vous au temple de Lighthaven (utilisez la gemme de téléportation). Tentez de prendre la porte menant au grand Prêtre Gunthar : </p><p>La porte est fermée mais il y a un message dessus: </p><p><span class=\"text-amber-400 font-bold\">\"[Nom du joueur], je vous prie de bien vouloir m’excuser de ne pas être là pour vous accueillir, mais j’avais quelque affaire urgente à régler. Si vous désirez me rencontrer, parlez au prêtre du temple.\"</span> </p><p>Allez parler avec Frère Kiran. Il vous demandera si vous veniez voir le Grand Prêtre Gunthar. Répondez <span class=\"text-amber-400 font-bold\">\"Oui\"</span> et il vous dira qu’il a été invité à une réunion avec le chef de son ordre, il semblait qu’il avait quelque sérieuse affaire à régler. Dites <span class=\"text-amber-400 font-bold\">\"Importantes choses\"</span>, <span class=\"text-amber-400 font-bold\">\"Maison du Bourgmestre\"</span> et il vous dira de le chercher dans un grand bâtiment situé à la fin de la rue partant vers le sud-est. Il vous mentionnera Kirlor Dhul, si vous avez des doutes. </p><p>Dirigez-vous vers la banque de Lighthaven et cliquez sur Kirlor Dhul le bourgmestre. Il vous informera au sujet d'une certaine agitation qui a eu lieu dans la rue quelques instants plus tôt. Il vous dira aussi que quelqu’un a peut-être vu ce qui s’est passé. </p><p>Sortez de la banque et cherchez ce quelqu'un qui est une femme nommée Amelia. Cliquez sur elle et elle vous suppliera de ne pas la tuer car elle n’a rien vu. Dites <span class=\"text-amber-400 font-bold\">\"Tuez\"</span>, <span class=\"text-amber-400 font-bold\">\"Eux\"</span> et elle vous dira que six hommes ont attaqué Gunthar. Dites <span class=\"text-amber-400 font-bold\">\"Brigands\"</span>, <span class=\"text-amber-400 font-bold\">\"Ou\"</span> et elle vous dira qu’ils partaient vers le sud-ouest à partir du pont gobelin ouest, à l’extérieur de la ville. </p><p>Dirigez-vous vers le pont de Lighthaven Ouest, et continuez vers l’Ouest jusqu’à ce que vous croisiez un chemin. Continuez sur le chemin vers le Sud et vous arriverez au camp des brigands. </p><p>Mettez au tapis les brigands et finalement Gorlok Bloodaxe (pas facile). Une fois que vous l’aurez tué, le Grand Prêtre Gunthar sera libéré (il apparaîtra à vos côtés). Cliquez sur lui et il vous remerciera. Il vous demandera également si vous avez retrouvé la pierre. Répondez <span class=\"text-amber-400 font-bold\">\"Oui\"</span> et il vous demandera de vite ramener la pierre à Olin Haad. </p><p>Vous serez récompensé par 200.000 xp. </p><p>Retournez au château d’Olin Haad en passant par la grotte de LH. Cliquez sur ce dernier et dites <span class=\"text-amber-400 font-bold\">\"Nomade\"</span>, <span class=\"text-amber-400 font-bold\">\"Gemme sombre\"</span>, <span class=\"text-amber-400 font-bold\">\"Pierre du coeur\"</span>, <span class=\"text-amber-400 font-bold\">\"Ment\"</span>. Vous en apprendrez plus au sujet de la Pierre du Coeur et vous serez téléporté à la bibliothèque du château avec 3 gardes privés d’Olin Haad. Tuez-les (en tuer un seul suffit). Ressortez vite fait de la bibliothèque et reparlez à Olin Haad. Il vous enverra voir Gunthar le Grand Prêtre. </p>",
+        "images": [],
+        "order": 11
+      },
+      {
+        "title": "Retour chez Gunthar au temple",
+        "description": "<p>Retrouvez voir Gunthar au sous-sol du temple et dites-lui <span class=\"text-amber-400 font-bold\">\"Regarder\"</span>, <span class=\"text-amber-400 font-bold\">\"Cacher\"</span>, <span class=\"text-amber-400 font-bold\">\"Dieux\"</span>, <span class=\"text-amber-400 font-bold\">\"Service\"</span>, <span class=\"text-amber-400 font-bold\">\"Corps physique\"</span>, <span class=\"text-amber-400 font-bold\">\"Sacrifiant\"</span>, <span class=\"text-amber-400 font-bold\">\"Transferer\"</span>, <span class=\"text-amber-400 font-bold\">\"Sceau\"</span>, <span class=\"text-amber-400 font-bold\">\"Veritables intentions\"</span> et vous glanerez encore quelques informations au sujet de la Pierre du Coeur. Il vous demandera aussi de rencontrer un ancien ami connu comme étant le Barde sans Nom (Nameless Bard). Il vous dira également que vous devez d’abord parler avec Tarnian situé au sud-ouest du square de Lighthaven, près de la côte. </p>",
+        "images": [],
+        "order": 12
+      },
+      {
+        "title": "Tarnian",
+        "description": "<p>Trouvez Tarnian (vers 2780, 1200) et parlez-lui. Il vous demandera si vous venez de la part de Gunthar. Répondez <span class=\"text-amber-400 font-bold\">\"Oui\"</span> puis dites <span class=\"text-amber-400 font-bold\">\"Gemme sombre\"</span>, <span class=\"text-amber-400 font-bold\">\"Digne\"</span>, <span class=\"text-amber-400 font-bold\">\"Gluriurl\"</span>, <span class=\"text-amber-400 font-bold\">\"Crane\"</span>, <span class=\"text-amber-400 font-bold\">\"Celui\"</span>, <span class=\"text-amber-400 font-bold\">\"Fils\"</span>, <span class=\"text-amber-400 font-bold\">\"Meurtre\"</span>, <span class=\"text-amber-400 font-bold\">\"Fanatique\"</span>, <span class=\"text-amber-400 font-bold\">\"Croit\"</span> et il vous donnera une tablette de pierre runique (Runed Stone Tablet ou RST). Dites <span class=\"text-amber-400 font-bold\">\"Raven's Dust\"</span> et il vous donnera des indications afin de trouver Antonian l’ermite. Il vous apprendra à utiliser la tablette de pierre runique (faites une macro avec la gemme). </p>",
+        "images": [],
+        "order": 13
+      },
+      {
+        "title": "Antonian l'ermite",
+        "description": "<p>Afin de parler à Antonian l’ermite, activez votre macro tablette (RST). Il vous attend dans une maison à l'Est de la tablette de pierre runique d'Arakas, à peu de distance de la crypte d'Arakas. </p>",
+        "images": [],
+        "order": 14
+      },
+      {
+        "title": "Les 5 nexus",
+        "description": "<p>Cliquez sur Antonian et il vous demandera si vous avez la tablette de pierre runique de Tarnian. Répondez <span class=\"text-amber-400 font-bold\">\"Oui\"</span>, puis <span class=\"text-amber-400 font-bold\">\"Tablette de pierre runique\"</span> et vous apprendrez que c’est une pierre de téléportation. Dites <span class=\"text-amber-400 font-bold\">\"Clin d'oeil\"</span>, <span class=\"text-amber-400 font-bold\">\"Prières\"</span>, <span class=\"text-amber-400 font-bold\">\"Ancestrale\"</span>, <span class=\"text-amber-400 font-bold\">\"Index d'un nexus\"</span> et vous saurez que pour l’utiliser (pour gagner la tablette de Raven's Dust, mais vous devrez aussi avoir fait l'accès RD au préalable), vous avez besoin d’activer les pierres de connexion. Dites <span class=\"text-amber-400 font-bold\">\"Lieu\"</span>, <span class=\"text-amber-400 font-bold\">\"Emplacement\"</span> et il vous dira que vous pouvez à tout moment utiliser la tablette pour lui rendre visite (cliquer sur la tablette vous téléporte juste à l’ouest d’Antonian l’ermite). A ce moment, il sera tellement absorbé par ses recherches qu’il en oubliera jusqu’à votre présence. Cliquez à nouveau sur lui et dites <span class=\"text-amber-400 font-bold\">\"Oui\"</span>. Antonian vous donnera alors les indications suivantes : </p>",
+        "images": [],
+        "order": 15
+      },
+      {
+        "title": "Nexus 1",
+        "description": "<p>Voyagez vers le nord au dessus du camp gobelin et cherchez la rivière jusqu’à ce que vous trouviez un pont la traversant. Prenez ce pont et longez la rivière vers l'Est jusqu’à un îlot. Il y a une pierre de connexion tout à l'Est sur cet îlot (attention c'est très chaud...être béni est fortement conseillé). Cliquez sur la pierre et vous obtiendrez le message suivant: </p><p><span class=\"text-amber-400 font-bold\">\"Vous placez la tablette de pierre runique sur la pierre de connexion. La pierre de connexion émet un rayon lumineux qui vient frapper la tablette.\"</span> </p><p>Puis activez rapidement votre tablette de pierre runique (RST) ou votre gemme HDV avant de mourir :))). </p>",
+        "images": [],
+        "order": 16
+      },
+      {
+        "title": "Nexus 2",
+        "description": "<p>Utilisez la tablette afin de retourner voir Antonian l’ermite. Cliquez sur lui, dites <span class=\"text-amber-400 font-bold\">\"Oui\"</span> et il vous donnera la direction de la 2e pierre de connexion (située sur l'île aux Kraanians) : </p><p>Prenez la route vers le sud et continuez vers le sud-ouest à la première intersection. Peu après, la route tourne vers l’ouest, vous arriverez à un nouveau croisement. Continuez vers le nord, puis vers le nord-ouest et prenez le pont de l'île aux Kraaniens. Une fois traversé, continuez vers le nord et vous trouverez une autre pierre de connexion. </p><p>Suivez les directions et trouvez la 2e pierre de connexion (située au nord une fois le pont des kraanians franchi). Cliquez dessus et vous aurez à nouveau le message (vous pouvez directement allez vers l'ouest puis le Sud pour trouver le 4ème Nexus). </p>",
+        "images": [],
+        "order": 17
+      },
+      {
+        "title": "Nexus 3",
+        "description": "<p>Maintenant, utilisez la tablette afin de retourner voir Antonian l’ermite. Cliquez sur lui, dites <span class=\"text-amber-400 font-bold\">\"Oui\"</span> et il vous donnera la direction de la 3e pierre de connexion: </p><p>Prenez la route du sud et continuez vers le sud-ouest à la première intersection. Peu après, la route se dirige vers l’ouest, vous arrivez à un nouveau croisement. Continuez vers le sud-ouest jusqu’à ce que vous passiez un pont, puis continuez vers le sud dans la vallée afin de trouver une autre pierre de connexion. </p><p>Suivez les directions et trouvez la 3e pierre de connexion (située au nord des montagnes de la ville des voleurs). Cliquez dessus pour le message. </p>",
+        "images": [],
+        "order": 18
+      },
+      {
+        "title": "Nexus 4",
+        "description": "<p>Maintenant, utilisez la tablette afin de retourner voir Antonian l’ermite. Cliquez sur lui, dites <span class=\"text-amber-400 font-bold\">\"Oui\"</span> et il vous donnera la direction de la 4e pierre de connexion: </p><p>Suivez la route du sud et continuez vers le sud-ouest à la première intersection. Peu après, la route continue vers l’ouest, vous arrivez à un nouveau croisement. Continuez vers le nord puis vers le nord-ouest en traversant le pont de l'île aux Kraanians. Une fois traversé, suivez la rivière vers l’ouest jusqu’à rencontrer l’océan. Vous trouverez une pierre de connexion à côté du rivage. </p><p>Suivez les directions et trouvez la 4e pierre de connexion (allez vers l’ouest à partir du pont kraanian jusqu’à rencontrer l’océan, continuez au sud). Cliquez dessus pour obtenir à nouveau le message. </p>",
+        "images": [],
+        "order": 19
+      },
+      {
+        "title": "Nexus 5",
+        "description": "<p>Maintenant, utilisez la tablette afin de retourner voir Antonian l’ermite. Cliquez sur lui, dites <span class=\"text-amber-400 font-bold\">\"Oui\"</span> et il vous donnera la direction de la 5e pierre de connexion : </p><p><span class=\"text-amber-400 font-bold\">\"Je n’ai pas de directions particulières pour cette pierre de connexion, mais je vous conseillerai d’aller vers le point situé au maximum vers le sud de cette île\"</span>. Avec ceci, vous devriez la trouver seul(e). </p><p>Suivez les directions et trouvez la 5e pierre de connexion (située au sud de la cave aux brigands, en face de l’océan, c'est la pointe Sud d'Arakas). Cliquez dessus et vous obtiendrez une dernière fois le message. </p><p>Enfin utilisez la tablette de pierre runique et retournez voir Antonian l’ermite. Il vous dira que vous avez trouvé toutes les pierres de connexion qu’il connaissait. </p><p><b>Remarque</b> : Vous pouvez enchaîner les cinq pierres de connexion sans retourner voir Antonian entre deux. </p><p><b>PNJ impliqués</b>: </p><p>Kilhiam, Efnisien, Olin Haad, Grand Prêtre Gunthar, chef de Guilde Ethan, Urik le tailleur, Yrian Holenarbed, La gitane Gypsy, Frère Kiran, Kirlor Dhul, Amelia, Tarnian, l'ermite Antonian. </p><p><b>Mini-boss impliqués</b>: </p><p>Assassins, gardes d'Olin Haad, Commandant Owen, Gorlok Bloodaxe </p><p><b>Récompenses acquises durant la partie <span class=\"text-amber-400 font-bold\">\"Arakas\"</span> de la quête</b>: </p><p>Colère des anciens (Wrath of the Ancients aura), </p><p>Anneau de Vitalité (0 stats) et Gemme de Vitalité. </p><p>Amulette de Renouveau et Gemme de Renouveau (0 stats) ou Amulette de Régénération et Gemme de Régénération (0 stats) ou Carquois de stabilité (Trueshot's Quiver, 110 Dex, 20 For). </p><p>Tablette de pierre runique (Runed Stone Tablet ou RST). </p><p>2.000 pièces d’or. </p><p>450.000 xp. </p>",
+        "images": [],
+        "order": 20
+      },
+      {
+        "title": "Raven's Dust",
+        "description": "<p>Quand vous aurez complété votre quête d’accès à Raven’s Dust bonne ou mauvaise et accédé à Raven's Dust (n'oubliez pas de mettre votre sanctuaire au temple de Silversky), retournez voir Antonian l’ermite et cliquez dessus. Il vous demandera si vous désirez connaître plus de directions pour les pierres de connexion. Répondez <span class=\"text-amber-400 font-bold\">\"Oui\"</span> et il vous dira que vous avez trouvé toutes les pierres de connexion d’Arakas. Il vous dira également que vous devez retrouver son ami habitant la ville de Silversky. </p><p>Vous recevrez 250.000 xp. </p><p>Continuez le dialogue en disant <span class=\"text-amber-400 font-bold\">\"Scribe\"</span>, <span class=\"text-amber-400 font-bold\">\"Celui\"</span> et il vous parlera du Barde sans Nom. </p>",
+        "images": [],
+        "order": 21
+      },
+      {
+        "title": "Le Barde sans nom",
+        "description": "<p>Rendez-vous à votre sanctuaire au temple de Silversky (Comme solution de secours, vous pouvez utiliser la tablette de pierre runique. La RST vous téléportera à l’est du lac tarentules. Ensuite dirigez-vous au Sud. Mais il vous faudra marcher longtemps pour arriver au temple de Silversky). </p><p>Parlez alors au scribe Aquinos (Scholar Aquinos). Dites <span class=\"text-amber-400 font-bold\">\"Visite\"</span>, <span class=\"text-amber-400 font-bold\">\"Lieu\"</span>, <span class=\"text-amber-400 font-bold\">\"Ou\"</span> et il vous dira où habite le Barde sans Nom. Les informations sont : Le Barde sans Nom vit au fond d’une caverne loin vers l’ouest. </p><p>Entrez dans la grotte et avancez, vous trouverez alors le Barde sans Nom (il a l'aspect d’une atrocité). Parlez-lui. Dites <span class=\"text-amber-400 font-bold\">\"Punirrrr\"</span>, <span class=\"text-amber-400 font-bold\">\"Abysses\"</span> (attention : seulement 2 s), <span class=\"text-amber-400 font-bold\">\"restes\"</span> et il vous dira : dans un arbre, vous trouverez la sagesse, dans une fontaine, la connaissance. Où la sagesse et la connaissance fusionnent, la réponse que vous cherchez émergera. </p><p>Depuis le carrefour proche du Barde sans Nom, descendez vers le sud-est et trouvez l’Arbre de Sagesse (Tree of wishdom). Cliquez dessus et vous obtiendrez une Branche de sagesse. Maintenant, retournez sur vos pas et prenez le passage menant vers le nord-ouest à partir du Barde. Vous trouverez la Fontaine de Connaissance (Fountain of Knowledge). Cliquez sur la fontaine et vous utiliserez la Branche de sagesse afin de mettre en mouvement les Eaux de la Connaissance. Devant vos yeux ébahis, l’eau tourbillonne et forme un mot: ETHERE. </p><p><b>Vous obtenez 300.000 xp.</b> </p><p><b>Retournez voir le Barde</b> sans Nom et parlez-lui. Il vous dira que vous avez trouvé le mot de pouvoir ouvrant les grandes portes d'un terrible mal. Elles sont situées à proximité du point le plus au nord de cette terre. Afin de l’atteindre, vous devrez traverser des zones de ténèbres. Soyez certain que si les Eaux de la Connaissance ne vous ont pas donné toutes les informations que vous recherchiez, celui qui réside derrière ces portes pourra sûrement. Le Barde vous dira aussi que c’est votre malédiction. </p><p>Dites <span class=\"text-amber-400 font-bold\">\"Malédiction\"</span> et il vous dira qu’il fût choisi un jour aussi et maudit également et qu’un jour, nous serions vengés. </p>",
+        "images": [],
+        "order": 22
+      },
+      {
+        "title": "Le Mausolée",
+        "description": "<p>Dirigez vous vers la grotte (Broken Ones cave) connue sous le nom de cave de l'aveugle (au Nord de l'île). Entrez-y, dirigez vous vers l’ouest puis le nord et continuez jusqu’à ce que vous atteigniez la sortie vers le Mausolée (Mausoleum). </p><p>Sortez et continuez vers le nord-ouest dans le cimetière, jusqu’à ce que vous rencontriez un PNJ nommé <span class=\"text-amber-400 font-bold\">\"un gardien\"</span>. Cliquez sur lui et il vous dira que le Mausolée situé derrière mène au sanctuaire de l’ancien Dieu de la Corruption, Gluriurl. Il vous dira également que seulement celui qui connaît le mot de pouvoir est autorisé à rentrer. Dites <span class=\"text-amber-400 font-bold\">\"Mot de pouvoir\"</span>, <span class=\"text-amber-400 font-bold\">\"Ethéré\"</span> et il vous préviendra que le mausolée est un endroit dangereux. Dites <span class=\"text-amber-400 font-bold\">\"Oui\"</span> et il vous fera passer la porte. </p>",
+        "images": [],
+        "order": 23
+      },
+      {
+        "title": "Les 4 vicaires",
+        "description": "<p>A l’intérieur du mausolée vous devez tuer les 4 Vicaires et récupérer leurs clés en cristal. Dirigez-vous vers le nord-est jusqu’à ce que vous atteigniez une grande pièce. Continuez alors vers le sud-est et tuez le Vicaire Kervian. Récupérez la clé de cristal violette et dirigez-vous vers le nord-ouest. A la première grande pièce, continuez nord-ouest jusqu’à atteindre une autre grande pièce Dirigez-vous vers le nord-est et allez vers le nord-est le plus possible. A la fin de la route, continuez sur le chemin en direction du nord-ouest. Trouvez et tuez le Vicaire Ramiel. Récupérez la clé de cristal verte. Dirigez-vous vers le nord-ouest et suivez le chemin qui continue vers le sud-ouest. Continuez vers le sud-ouest et comptez les routes que vous rencontrerez qui se dirigent vers le sud-est. Suivez la 4e route allant vers le sud-est que vous rencontrerez et vous trouverez le Vicaire Vharnes. Tuez-le et vous obtiendrez la clé de cristal bleue. Retournez en arrière vers le nord-ouest et tournez vers le nord-est. A la première intersection, continuez vers le nord-ouest puis vers le sud-est. Continuez vers le sud-est jusqu’à ce que vous rencontriez une route allant vers le nord-ouest. Continuez vers le nord-ouest et vous trouverez un portail. Partez vers le nord-ouest à partir du portail et vous trouverez le Vicaire Ashgoth. Tuez-le et vous obtiendrez la clé de cristal rouge. </p>",
+        "images": [],
+        "order": 24
+      },
+      {
+        "title": "Le dragon Crimsonscale",
+        "description": "<p>Après avoir tué les 4 vicaires, revenez vers le portail et entrez-y. Suivez le tapis rouge et vous rencontrerez Crimsonscale le dragon. Parlez-lui et dites <span class=\"text-amber-400 font-bold\">\"Lettre\"</span>, <span class=\"text-amber-400 font-bold\">\"Commencement\"</span>, <span class=\"text-amber-400 font-bold\">\"Elu\"</span>, <span class=\"text-amber-400 font-bold\">\"Justice\"</span>, <span class=\"text-amber-400 font-bold\">\"Vents\"</span>, <span class=\"text-amber-400 font-bold\">\"Bataille des émanations\"</span>, <span class=\"text-amber-400 font-bold\">\"Olin Haad\"</span>, <span class=\"text-amber-400 font-bold\">\"Fasciné\"</span>, <span class=\"text-amber-400 font-bold\">\"Changé de camp\"</span>, <span class=\"text-amber-400 font-bold\">\"Conseil des huit\"</span> et vous apprendrez au sujet des plans machiavéliques d’Olin Haad au sujet du Conseil des Huit. Crimsonscale vous demandera votre aide. Répondez <span class=\"text-amber-400 font-bold\">\"Aide\"</span> puis dites <span class=\"text-amber-400 font-bold\">\"Empecher\"</span>, <span class=\"text-amber-400 font-bold\">\"Grande Librairie\"</span> et il vous donnera le nom du lieu où se situe la Grande Bibliothèque. Dites <span class=\"text-amber-400 font-bold\">\"Quelque chose\"</span> et il vous donnera une fiole de sang de dragon (Vial of Dragon Blood). ps: (retiré aussi) </p><p>Attention : Le bracelet de flammes et la gemme de flammes (Armlet of Flames et Gem of Flames) sont <b><u>supprimés</u></b> sur NMS !! </p>",
+        "images": [],
+        "order": 25
+      },
+      {
+        "title": "La grande bibliothèque",
+        "description": "<p>Dirigez-vous vers la Grande Bibliothèque (située à l’est de l’entrée de la crypte de Raven’s Dust), allez au 3e étage et parlez avec le Conservateur (Custodian). Dites <span class=\"text-amber-400 font-bold\">\"Barbares\"</span>, <span class=\"text-amber-400 font-bold\">\"Incultes\"</span>, <span class=\"text-amber-400 font-bold\">\"Rite de Passage\"</span> et il vous donnera une énigme afin que vous lui prouviez que vous n’êtes pas ignorant. La voici: </p><p><span class=\"text-amber-400 font-bold\">\"Dos\"</span> <span class=\"text-amber-400 font-bold\">\"vaneslae\"</span> <span class=\"text-amber-400 font-bold\">\"navidal\"</span>, <span class=\"text-amber-400 font-bold\">\"Kadrim\"</span> <span class=\"text-amber-400 font-bold\">\"lok\"</span> <span class=\"text-amber-400 font-bold\">\"ungrim\"</span> <span class=\"text-amber-400 font-bold\">\"dok\"</span>, <span class=\"text-amber-400 font-bold\">\"Somalina\"</span> <span class=\"text-amber-400 font-bold\">\"oundi\"</span> <span class=\"text-amber-400 font-bold\">\"inesora\"</span>, <span class=\"text-amber-400 font-bold\">\"Tharrgra\"</span> <span class=\"text-amber-400 font-bold\">\"nethdrovar\"</span>. Si vous pouvez me dire ce que cela signifie, non seulement je vous concéderai l’accès au dernier étage mais je serai en plus gentil avec vous. Voici un indice: vous serez incapable de résoudre cette énigme si vous n’allez pas visiter le sous-sol de la Bibliothèque. </p><p>Dirigez-vous vers les sous-sols où les 4 savants résident. Parlez-leur. </p><p>Au savant disant <span class=\"text-amber-400 font-bold\">\"language of the Elves\"</span> (Pièce au nord-ouest), dites <span class=\"text-amber-400 font-bold\">\"Dos vaneslae navidal\"</span>. Il répondra: <span class=\"text-amber-400 font-bold\">\"Pour regarder quelqu'un\"</span>. </p><p>Au savant disant <span class=\"text-amber-400 font-bold\">\"language of the Dwarves\"</span> (Pièce au sud-ouest), dites <span class=\"text-amber-400 font-bold\">\"Kadrim lok ungrim dok\"</span>. Il répondra: <span class=\"text-amber-400 font-bold\">\"Il suffit d'avoir des yeux\"</span>. </p><p>Au savant disant <span class=\"text-amber-400 font-bold\">\"language of Faeries\"</span>, (Pièce au nord-est), dites <span class=\"text-amber-400 font-bold\">\"Somalina Oundi Inesora\"</span>. Il répondra: <span class=\"text-amber-400 font-bold\">\"Pour reconnaitre sa propre ignorance\"</span>. </p><p>Au savant disant <span class=\"text-amber-400 font-bold\">\"language of Dragons\"</span> (Pièce au sud-est), dites <span class=\"text-amber-400 font-bold\">\"Tharrgra nethdrovar\"</span>. Il répondra: <span class=\"text-amber-400 font-bold\">\"Il faut ouvrir ses yeux\"</span>. </p><p>Retournez au 3e étage et reparlez avec Custodian. Dites <span class=\"text-amber-400 font-bold\">\"Oui\"</span>, <span class=\"text-amber-400 font-bold\">\"Pour regarder quelqu'un\"</span>, <span class=\"text-amber-400 font-bold\">\"Il suffit d'avoir des yeux\"</span>, <span class=\"text-amber-400 font-bold\">\"Pour reconnaitre sa propre ignorance\"</span>, <span class=\"text-amber-400 font-bold\">\"Il faut ouvrir ses yeux\"</span> et vous obtenez l’accès complet à la Bibliothèque. Dites <span class=\"text-amber-400 font-bold\">\"Accès\"</span>, <span class=\"text-amber-400 font-bold\">\"Oui\"</span> et vous serez téléporté au 4e étage. </p><p>Parlez à un des bibliothécaires. Dites <span class=\"text-amber-400 font-bold\">\"Oui\"</span>, <span class=\"text-amber-400 font-bold\">\"Echange de l'essence\"</span>, <span class=\"text-amber-400 font-bold\">\"Corps materiel\"</span>, <span class=\"text-amber-400 font-bold\">\"Ogrimar\"</span>, <span class=\"text-amber-400 font-bold\">\"Lothar le juste\"</span>, <span class=\"text-amber-400 font-bold\">\"Abandonna\"</span>, <span class=\"text-amber-400 font-bold\">\"Elvenweave\"</span>, <span class=\"text-amber-400 font-bold\">\"Coeur\"</span> et vous réaliserez que Olin Haad tente de ramener Gluriurl à la vie. </p><p><b>Vous recevez 500.000 xp.</b> </p><p>Parlez aux deux autres bibliothécaires et écoutez-les. L’un vous parlera de la pierre noire et l’autre du <span class=\"text-amber-400 font-bold\">\"Harbringer\"</span>. Dirigez vous vers le château d’Olin Haad. </p>",
+        "images": [],
+        "order": 26
+      },
+      {
+        "title": "Retour chez Olin Haad en son château",
+        "description": "<p>Une fois au château, parlez à Olin Haad. Dites <span class=\"text-amber-400 font-bold\">\"Defi\"</span> et vous serez téléporté dans une petite pièce avec Olin Haad. Il vous attaquera et comme vous ne pouvez pas le tuer, laissez le vous massacrer mais juste avant le coup final, vous serez téléporté de retour au château. Dites <span class=\"text-amber-400 font-bold\">\"Invincible\"</span>, <span class=\"text-amber-400 font-bold\">\"Heros\"</span>, <span class=\"text-amber-400 font-bold\">\"Insidieuse voix\"</span>, <span class=\"text-amber-400 font-bold\">\"Restes\"</span> et vous saurez tout sur la résurrection de Gluriurl. </p>",
+        "images": [],
+        "order": 27
+      },
+      {
+        "title": "Retour chez Gunthar au temple",
+        "description": "<p>Retournez voir Gunthar et parlez-lui. Dites <span class=\"text-amber-400 font-bold\">\"Benediction d' Artherk\"</span>, <span class=\"text-amber-400 font-bold\">\"Âmes\"</span>, <span class=\"text-amber-400 font-bold\">\"Stopper\"</span>, <span class=\"text-amber-400 font-bold\">\"Débarrasser\"</span>, <span class=\"text-amber-400 font-bold\">\"Faucheur\"</span>, <span class=\"text-amber-400 font-bold\">\"Illusion\"</span>, <span class=\"text-amber-400 font-bold\">\"Recemment\"</span>, <span class=\"text-amber-400 font-bold\">\"Trompais\"</span>, <span class=\"text-amber-400 font-bold\">\"Coeur d' Artherk\"</span>, <span class=\"text-amber-400 font-bold\">\"Efnisien\"</span> et vous apprendrez au sujet du Caledbolg, qui est gardé en sécurité en un lieu saint dans la partie sud-est du désert de Raven’s Dust. Il vous dira également que vous devez aller voir Efnisien. </p>",
+        "images": [],
+        "order": 28
+      },
+      {
+        "title": "Retour chez Efnisien (1er étage de la maison au nord de la banque)",
+        "description": "<p>Allez voir Efnisien et dites-lui <span class=\"text-amber-400 font-bold\">\"Service\"</span>, <span class=\"text-amber-400 font-bold\">\"Entrée\"</span> et il vous dira que l’entrée est située dans la pièce située derrière la porte verrouillée (servez-vous des escaliers de cette pièce). Mais Olin Haad a trouvé un moyen alternatif pour y rentrer et il est à l’intérieur du temple maintenant. Il ne vous servira à rien d’entrer puisque vous ne pouvez pas le battre sans une arme spéciale (Caledbolg, l’arme enchantée). </p>",
+        "images": [],
+        "order": 29
+      },
+      {
+        "title": "La Caledbolg (crypte du désert RD)",
+        "description": "<p>Vous devez trouver la Caledbolg. Allez dans le désert de Raven’s Dust et dirigez vous vers le sud jusqu’à ce que vos atteignez une nouvelle rangée de montagnes. Cherchez l’entrée de la crypte vers l'Est. En face de celle-ci se situe le gardien de la porte nommé Ramirgo. Parlez-lui et dites <span class=\"text-amber-400 font-bold\">\"Gardien\"</span>, <span class=\"text-amber-400 font-bold\">\"Entre\"</span> et il vous téléportera à l’intérieur. </p><p>Suivez le mur du donjon et tuez les 3 démons Terror Demon, Chaos Demon et Darkness Demon. </p><p>Maintenant dirigez-vous vers le milieu du donjon où vous trouverez 3 portails. Entrez dans l’un des trois et vous arriverez dans une petite pièce. Cliquez sur Lothar et vous recevrez la Caledbolg (une fois la Caledbolg obtenue, vous ne pourrez plus pénétrer dans la crypte). </p><p><br> </p><p><b>PNJ impliqués</b>: l'ermite Antonian, Aquinos, le Barde sans Nom, un gardien, Crimsonscale, Custodian, les 4 savants (the 4 Scholars), les 3 bibliothécaires (the 3 Librarians), Olin Haad, Grand Prêtre Gunthar, Efnisien, Ramirgo, Lothar </p><p><b>Mini-boss impliqués</b>: Vicaire Asgoth, Vicaire Kervian, Vicaire Vharmes, Vicaire Ramiel, Terror Demon, Chaos Demon, Darkness Demon </p><p><b>Récompenses acquises durant la partie <span class=\"text-amber-400 font-bold\">\"Raven’s Dust\"</span> de la quête</b>: Fiole de sang de dragon (vial of Dragon Blood), 1.050.000 xps </p>",
+        "images": [],
+        "order": 30
+      },
+      {
+        "title": "Retour sur Arakas",
+        "description": "<p>Cliquez sur lui et il déverrouillera la porte du rez-de chaussée. Descendez au sous-sol et entrez dans le Temple Sacré de Lothar. </p>",
+        "images": [],
+        "order": 31
+      },
+      {
+        "title": "Le Temple de Lothar",
+        "description": "<p>Dirigez-vous au nord, vers le centre du temple et vous verrez un Draconis nommé <span class=\"text-amber-400 font-bold\">\"Le Gardien\"</span> (Draconis Guardian). Il est encore vivant alors parlez-lui. Il vous demandera si vous venez de la part d’Efnisien. Répondez <span class=\"text-amber-400 font-bold\">\"Oui\"</span>, <span class=\"text-amber-400 font-bold\">\"Dragon\"</span>, <span class=\"text-amber-400 font-bold\">\"Prophétie\"</span>, <span class=\"text-amber-400 font-bold\">\"Stopper\"</span>, <span class=\"text-amber-400 font-bold\">\"chambre mortuaire\"</span> et vous en apprendrez plus au sujet de la prophétie. Il vous dira également que vous devez pénétrer à l’intérieur du portail derrière lui afin de stopper Olin Haad. </p>",
+        "images": [],
+        "order": 32
+      },
+      {
+        "title": "Les 5 cristaux",
+        "description": "<p>Le portail comporte 5 ouvertures correspondant à 5 cristaux. Afin de pouvoir activer le portail, vous devez trouver ces 5 cristaux: un rouge, un jaune, un bleu, un vert et un violet. </p><p>Regardez la carte pour voir où sont situés les 5 épreuves. </p><p><i><b>Pour le cristal bleu</b></i>, vous entrerez dans un labyrinthe dont les murs sont invisibles. </p><p>Suivez les flèches afin de sortir du labyrinthe, ouvrez le coffre (chest) et le cristal tombera dans votre sac. </p><p>Rentrez dans le portail et vous arriverez juste à l’entrée du labyrinthe. </p><p><i><b>Pour le cristal jaune</b></i>, vous devez tuer des Kraanians piétineurs jusqu’à ce qu’ils laissent tomber un cristal. </p><p>Une fois un cristal au sol, ramassez le (il est indroppable). </p><p>Puis poursuivez... </p><p><i><b>Pour le cristal vert</b></i>, vous devez traverser un grand labyrinthe. Vous arriverez à un coffre. </p><p>Ouvrez-le (2 fois) et le cristal vert tombera dans votre sac. </p><p>Rentrez dans le portail et vous arriverez à l’entrée de ce labyrinthe. </p><p><i><b>Pour le cristal rouge</b></i>, suivez le corridor et entrez dans le tourbillon au sol. </p><p>Vous arriverez dans un labyrinthe de tourbillons. Faites votre bonhomme de chemin jusqu’au coffre. Ouvrez-le et le cristal tombera dans votre sac. Entrez dans le portail et vous arriverez à côté du portail du 1er étage. </p><p>Légende de la carte ci-contre : S : Start (départ) ; Follow the numbers (suivez les numéros). </p><p><b>Pour le cristal violet</b>, vous devez fouiller 7 coffres différents. </p><p>Le cristal est placé aléatoirement dans un des coffres. </p><p>Trouvez-le et revenez au centre du temple. </p>",
+        "images": [],
+        "order": 33
+      },
+      {
+        "title": "Mort de Gluriurl",
+        "description": "<p><b>N'oubliez pas de parlez au gardien</b> si vous ne l'avez pas encore fait ! </p><p>Entrez maintenant dans le portail situé derrière Le Gardien et vous arriverez dans le tombeau. Allez alors vers le sud-est et vous trouverez Olin Haad. Equipez-vous de la Caledbolg et attaquez-le. Il mentionnera que le rituel est complet. Dès que vous l’aurez tué, Gluriurl, Dieu de la Corruption, apparaîtra. </p><p>Un message en lettres bleues apparaîtra à tous les joueurs : <b><span class=\"text-amber-400 font-bold\">\"Le ciel s'obscurcit soudainement…\"</span></b> </p><p>(parfois Gluriurl sera déjà activé par un joueur précédent qui aura échoué à le tuer) </p><p>Attaquez Gluriurl et tuez-le (n’oubliez pas de retirer rapidement la Caledbolg et de vous réarmer). Une fois tué, le message suivant apparaîtra : </p><p>Vous entendez soudainement la voix de la Gitane : <span class=\"text-amber-400 font-bold\">\"Vous avez vaincu le Dieu de la Corruption ! Venez me voir dès quand vous le pourrez. Je dois vous remercier personnellement pour tout ce que vous avez fait\"</span>. </p><p>Et les lettres bleues, encore une fois pour tous les joueurs : <b><span class=\"text-amber-400 font-bold\">\"La terre se met à trembler violemment pendant quelques secondes…\"</span>.</b> </p><p><b>Attention</b> ! Gluriurl est très fort. Si vous êtes seul il vous faudra dépasser largement le level 100 (selon votre classe) pour l'affronter. </p>",
+        "images": [],
+        "order": 34
+      },
+      {
+        "title": "Retour chez la Gitane",
+        "description": "<p>Maintenant, retournez voir la Gitane pour votre récompense. Répondez <span class=\"text-amber-400 font-bold\">\"Quatrième Prophétie\"</span>, <span class=\"text-amber-400 font-bold\">\"gardiens respectifs\"</span> et vous serez récompensé d’une amulette de rajeunissement, d’une pierre de rajeunissement, d’une amulette d'abondance, d’une pierre d'abondance et d’un carquois de stabilité rouge. </p><p><b>Conseil :</b> Après avoir tué Gluriurl, allez parler à Efnisien, il vous débarrassera de la gemme sombre. Par contre, seul un GM pourra vous débarasser de la Caledbolg. </p><p><b>PNJ impliqués</b>: Efnisien, Le Gardien Draconis, la Gitane </p><p><b>Mini-boss impliqués</b>: Olin Haad, Gluriurl </p><p><b>Récompenses acquises durant la dernière partie de la quête:</b> </p><ul><li>Amulette de Rajeunissement</li> <li>Pierre de Rajeunissement</li> <li>Amulette d'Abondance</li> <li>Pierre d'Abondance (0 stats)</li> <li>Carquois de Stabilité rouge (220 Dex, 30 Force).</li></ul><p><br> </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [],
+        "order": 35
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "La pioche légendaire",
+    "slug": "la-pioche-legendaire",
+    "zone": "Inconnue",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "LA PIOCHE LEGENDAIRE",
+        "description": "<p>La pioche légendaire est une pioche qui vous permettra de miner dans l'ensemble des mines existantes. </p><p>Rendez vous chez Zaeron Kayle, l'entraîneur de Drake Island, un voisin du forgeron. </p><p>Il vous demandera de réunir deux minerais rares dans chaque type de gisement. Sachant qu'il existe treize types de gisements, vous devrez miner longuement jusqu'à faire dropper 2 minerais rares pour chaque type de minerai (le taux de drop semble être d'environ un minerai rare pour cent minerais normaux). </p><p><b>Arakas :</b> </p><p>Fer (cave de LH) : Taénite <br>Plomb (cave des brigands) : Cérusite </p><p><b>Raven's Dust :</b> </p><p>Cuivre (cave d'Anrak) : Orichalque<br>Argent (cave Orc niveau -2) :: Cobalt <br>Mithril (cave des Profundus) :: Granite </p><p><b>Stoneheim :</b> </p><p>Or (cave des Centaures) : Rhodite<br>Saphir (cave des skraugs verts) : Azurite<br>Métrolite (cave des bois creux) : Obsidienne<br>Adamantite (cave des abeilles) : Tourmaline </p><p><b>Drake Island :</b> </p><p>Rubis (cave du Beholder) : Cornaline </p><p><b>Cave Humterre :</b> </p><p>Diamant : Quartz<br>Emeraude : Jade<br>Titane : Sphène </p><p>Retournez ensuite chez Zaeron Kayle qui vous récompensera d'une pioche légendaire. </p><p>Bon courage ! </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [],
+        "order": 0
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "La potion du nécromant",
+    "slug": "la-potion-du-necromant",
+    "zone": "Inconnue",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "Introduction",
+        "description": "<p>Rendez vous chez Squirell au sous-sol métiers de RedWall. </p><p>Dites lui <span class=\"text-amber-400 font-bold\">\"travail\"</span> puis <span class=\"text-amber-400 font-bold\">\"potions\"</span>. Il vous demandera </p><ul><li>un <span class=\"text-amber-400 font-bold\">\"crin de dragon\"</span> (drop du dragon ? drop des demonicons AR mais très rare!)</li> <li>une aigue-marine brute (drop de nombreux monstres de SH)</li> <li>deux feuilles de cigüe (sur des plants situés sur Arakas)</li></ul><p>Muni de ces items, retournez voir Squirell </p><p>Il vous les échangera contre une potion du nécromant. </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [],
+        "order": 0
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "La quête de Kertius Alim",
+    "slug": "la-quete-de-kertius-alim",
+    "zone": "Inconnue",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "La quête de Kertius Alim (pour robes en soie avec bonus +5 chance)",
+        "description": "<p>Cette quête permet d'obtenir la <span class=\"text-amber-400 font-bold\">\"boîte de démolécularisation supérieure\"</span> qui permettra, avec d'autres items, de reskinner certaines robes existantes tout en y ajoutant 5 points de chance. </p><p >Sève mystique en soie</p><p>Pour reskinner ces robes, il vous faudra : </p><p>-- Obtenir une <span class=\"text-amber-400 font-bold\">\"boîte de démolécularisation supérieure\"</span> auprès de Kertius Alim. </p><p>-- Obtenir une <span class=\"text-amber-400 font-bold\">\"fiole de démolécularisation supérieure\"</span>. Première méthode : camper Korès (ex Araknor). Le grand Démon revient.... (hum...buggé actuellement). </p><p>-- Autres méthodes pour obtenir la fiole : </p><ul><li>Camper 100 fioles de démolécularisation auprès du <span class=\"text-amber-400 font-bold\">\"rejet du monde\"</span> (cave du vieil ermite, au Sud-Ouest - 140,1050,2 ou cave de LH).</li> <li>Camper un sceau maléfique auprès d'Elbegast, boss du château d'Utanar.</li> <li>Faire crafter la fiole sup auprès d'un apothicaire level 130.</li> <li>Faire le donjon Eléonore. On l'obtient parfois en échange d'une plume étincelante.</li></ul><p>-- Enfin selon la robe choisie, compléter les items manquants de la recette... </p><p>-- Contacter un couturier qualifié qui apprendra la recette qui vous intéresse s'il n'en dispose pas encore (à apprendre auprès d'Avanna située à l'ouest de LH derrière la taverne). </p><p>-- Et c'est partiiiii pour le craft !! </p>",
+        "images": [
+          "/t4c-nms-overview/assets/quests/la-quete-de-kertius-alim/img_0_0.jpg"
+        ],
+        "order": 0
+      },
+      {
+        "title": "Kertius Alim : La boîte de démolécularisation supérieure",
+        "description": "<p>Pour fabriquer la boîte il faut trouver Kertius Alim et lui parler 4 fois. Petite difficulté, chaque fois que vous lui parlez il se téléporte ailleurs ..... </p><p>Les positions possibles de Kertius sont très nombreuses (une cinquantaine environ) </p><p>La liste des positions connues : </p><ol><li>915,1885,0 petit îlot au milieu du lac au nord de la RST RD (le plus fréquent)</li> <li>1182,1802,0 ouest du camp Orc</li> <li>489,2063,0 nord de Zakhar</li> <li>1185,2508,0 nord des Druides de RD, au-delà de la rivière</li> <li>273,2095,0 cercle du Val des Enchanteurs</li> <li>1826,221,4 plaine de Niève chez les Zartgax</li> <li>297,1653,0 derrière le château de Bane, près du plant de coton</li> <li>2470,2230,0 Ville de Niève</li> <li>716,1900,0 a droite de Moridin Tennglaw</li> <li>2536,2347,0 pret du rempart du dragon Yeridaj</li> <li>655,1885,0 Etheanan</li> <li>1215,2440.0 sortie ouest de RD a la hauteur du château de SS</li> <li>1103,1697,0 sud est de la bibliothèque</li> <li>2444.2082.0 ville de Niève</li> <li>883,2364,0 Gauche du troll de rd ds le creux d un montagne</li> <li>893,2139,0 Sud Est RST RD - pointe embouchure rivière</li> <li>1623,2195,0 Est château SS petit chemin vers vortex</li> <li>425,1886,0 montagnes railleuses, Nord Est de la pnj présent alvors ou Nord Ouest de Jormungand</li> <li>615,2205,0 Sur le chemin des horreurs railleuses au debut avant la croisé des chemins.</li> <li>........???</li></ol><p><b>à compléter !!!!!</b> </p><p>Ce sont des lieux souvent proches (ou pas...) de ceux vers lesquels le chapeau de nomade de RD peut vous téléporter. Donc utiliser le chapeau vous permettra éventuellement de trouver Kertius plus facilement. </p><p>Lors de votre 4ème rencontre il vous donnera la liste des items nécessaires pour fabriquer la boîte : </p><ul><li>3 énergies infernales (drop des monstres de la Créature Infernale dite <span class=\"text-amber-400 font-bold\">\"Totem\"</span> à l'Académie -3)</li> <li>4 catalyseurs d'énergie (drop du chevalier des abysses, au camping Académie -3)</li> <li>1 effluve cristallisée (drop des chevaliers de la damnation - château du désert de DI)</li></ul><p>Une fois en possession des items cherchez à nouveau Kertius. Il vous fabriquera la boîte de démolécularisation. </p>",
+        "images": [],
+        "order": 1
+      },
+      {
+        "title": "La fiole de démolécularisation supérieure",
+        "description": "<p>Au moment ou Kertius Alim fabrique la boîte, il vous dira :<br>{Kertius Alim}<span class=\"text-amber-400 font-bold\">\":\"</span> <b>Pour la faire fonctionner, vous aurez besoin d'une fiole de démolécularisation supérieure, un objet très rare que seul un grand Démon possède. Je vous souhaite bon courage ! Moi je dois filer ! Au revoir et merci encore !</b> </p><p>Ce grand Démon est Korès (ex Araknor LH2). Pour y accéder ce n'est pas facile et pour lui faire droper la fiole encore moins. Il faut être de 12 à 16 joueurs bien organisés. </p><p>Rendez vous donc en groupe dans la maisonnette qui fut celle de Marty Rhyser au -3 (au sud ouest). Vous y trouverez Girflet Kirhn qui, après un petit dialogue (<span class=\"text-amber-400 font-bold\">\"envoyer\"</span>), vous téléportera vers la salle d'entraînement. Un nouveau PNJ vous proposera d'affronter divers monstres dont KORES. Vous devrez disposer de 10 sources d'énergie obtenues auprès des monstres du -2. </p><p>Attention : Il existe d'autres méthodes pour obtenir cette fiole : camper 100 fioles de démolécularisation auprès du <span class=\"text-amber-400 font-bold\">\"rejet du monde\"</span> : Cave du vieil ermite, au Sud-Ouest - 140,1050,2 (2ème mob de la quête Académie) ou cave de LH. Moins facile, obtenir un sceau maléfique, drop d'Elbegast (boss du château d'Urtanar). Faire le donjon d'Eléonore permet parfois d'en obtenir une avec une plume étincelante. </p>",
+        "images": [],
+        "order": 2
+      },
+      {
+        "title": "Le craft d'une robe skinnée (avec un bonus +5 en chance)",
+        "description": "<p>Une fois en possession de la boîte et de la fiole vous pourrez reskinner certaines robes, comme le suaire ou la sève mystique, tout en y rajoutant 5 points de chance..... </p><p>La robe devient une robe <span class=\"text-amber-400 font-bold\">\"en soie\"</span> (voir les <span class=\"text-amber-400 font-bold\">\"recettes couturier\"</span> sur le site NMS). </p><p>Elcentor, Xiathis, Uqbar, Tormund </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [],
+        "order": 3
+      }
+    ],
+    "credits": [
+      "Elcentor"
+    ]
+  },
+  {
+    "title": "Le chapeau de chance",
+    "slug": "le-chapeau-de-chance",
+    "zone": "Général",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "INTRODUCTION",
+        "description": "<p>Cette quête est ouverte à tous les niveaux. Il est cependant conseillé d'avoir fait la quête Crimson jusqu'à la tablette RST. Mais ce n'est pas indispensable. J'ai eu 18/20 en courant à pied jusqu'à Orkanis dans l'épreuve 4. </p><p><u>Récompenses :</u> </p><p>- Bonne surprise : Toujours si vous terminez les 4 épreuves : <b>Un bonus de chance de +10</b> permanent, même après reroll mais pas après renaissance. </p><p>- Entre 15 et 20 de moyenne aux épreuves : <b>le chapeau de diplômé</b> (+25 chance)<span > </span>et ainsi qu’une bourse d’expérience indroppable (environ 7% du level en cours quand vous l'activez) et le bonus chance. Conseil : utilisez la bourse aux levels les plus longs (195 à 200) ou à très haut level. </p><p >- Moins de 10 vous obtenez un masque de cancre (+5 chance) et, nous sommes trop gentils, +10 de chance permanents.</p><p>Il faut finir les quêtes même si vous avez 0 car vous aurez toujours le bonus +10 en chance. </p><p >Vous ne pouvez faire la quête qu'une seule fois par renaissance donc <b>préparez-la bien !!</b> </p><p >Une bénédiction (p.e. de Zélina) vous aidera bien la tâche si vous êtes de petit niveau (et vous évitera de mourir bêtement (épreuve 4 ou 5)). </p><p >Une fois à Windhowl, achetez deux parchemins de WH (sauf si vous disposez d'un portail ou d'un sanctuaire à Windhowl) et assurez-vous d'avoir la gemme HDV de Lighthaven. </p><p>La durée est chronométrée en temps <span class=\"text-amber-400 font-bold\">\"in game \"</span>. Après chaque question, faites un screen (ctrl + h) de la question puis déconnectez-vous ou switchez sur un autre perso et allez voir le screen dans le répertoire du jeu dans <span class=\"text-amber-400 font-bold\">\"mes documents\"</span> (sous répertoire <span class=\"text-amber-400 font-bold\">\"ScreenShot\"</span>) et étudiez la question. Puis reconnectez-vous. </p>",
+        "images": [
+          "/t4c-nms-overview/assets/quests/le-chapeau-de-chance/img_0_0.jpg"
+        ],
+        "order": 0
+      },
+      {
+        "title": "LA QUETE",
+        "description": "<p >Allez voir <b>Madame Flichère</b> à la fontaine de Windhowl.<br>Vous devrez réussir 6 épreuves avec une moyenne générale égale ou supérieure à 15 sur 20.</p><p >Après chaque épreuve, retournez voir Madame Flichère qui vous enverra faire la suivante.</p><p >Les six épreuves sont (les PNJ sont au Sud de la ville) :</p>",
+        "images": [],
+        "order": 1
+      },
+      {
+        "title": "1) Professeur Indetroikat épreuve de calcul (chronométrée)",
+        "description": "<p >Réponses selon la question posée :<br>1<span > (</span>14*8/7-4)/2 = 6<br>2<span > (</span>17*9/3-1)/2 = 25<br>3<span > (</span>13*6/3-8)/2 = 9<br>4<span > (</span>19*9/3-1)/2 = 28<br>5<span > (</span>16*8/4-2)/2 = 10</p>",
+        "images": [],
+        "order": 2
+      },
+      {
+        "title": "2) Professeur Senfaute épreuve d'orthographe (chronométrée)",
+        "description": "<p > <b>Parlez-lui (surtout soyez poli avec elle !!! ne jamais dire je m'en fous)</b></p><p >Réponse selon la question posée :<br>1<span > c</span>auchemard envoyers athé pieds suffire<br>2<span > a</span>utant voir remboursez tord payons<br>3<span > </span>prêt demie-heure maline sensée marrons<br>4<span > </span>soient repère aie laissés tué<br>5<span > </span>quand ou tribue s'en tout</p>",
+        "images": [],
+        "order": 3
+      },
+      {
+        "title": "3 ) Professeur Ensiklopèdy épreuve d'histoire (chronométrée)",
+        "description": "<p>Réponse selon la question posée:<br>1<span > </span>Quel est le nom du lieu actuel ou vivent les dragons?: Firesky<br>2<span > </span>Qui a tué le roy d'Orkanis ?: Mhorgwloth<br>3<span > </span>Nom du vieil ermite : theorn lemnearan<br>4<span > </span>Qui a banni Balork : artherk<br>5<span > </span>Nom du précédent roi de goldmoon : Théopold 1er </p>",
+        "images": [],
+        "order": 4
+      },
+      {
+        "title": "4) Madame FLichère épreuve des coffres (chronométrée). Repérez les coffres par avance !",
+        "description": "<p >Ou courir selon le lieu indiqué :<br>1 Coffre cité des nains, dans une maison (2681-370-0), après le labyrinthe d'Arakas<br>2 Coffre à Mato, aux druides Arakas (2890-287-0)<br>3 Coffre à Orkanis, dans la maison du troll, loin au NO d'Arakas<br>4 Coffre crypte du nomade (cave de la gitane), derrière un pilier en descendant l'escalier d'entrée de la crypte.<br>5 Coffre aux monts Righul (1936-156-0) (près de la mer au nord des montagnes Jarko)</p>",
+        "images": [],
+        "order": 5
+      },
+      {
+        "title": "5) Madame FLichère épreuve du rat (chronométrée)",
+        "description": "<p>Allez tuer le rat affamé sous-sol -2 temple LH (180-120-1) <br> </p>",
+        "images": [
+          "/t4c-nms-overview/assets/quests/le-chapeau-de-chance/img_6_0.jpg"
+        ],
+        "order": 6
+      },
+      {
+        "title": "6) Professeur Fetero (tour des mages), épreuve de magie (chronométrée)",
+        "description": "<p>Réponses selon la question posée :<br>1 Magie des orcs : <b>magie noire</b><br>2 Quel est le nom de la plus grande tour de magie d'Athéa ? : <b>Urtanar</b><br>3 Ressource pour la magie : <b>mana</b><br>4 Quel est le nom du traître emprisonné sur le plan de la magie ? : <b>makrsh p'tangh</b><br>5 Nom du maître de la tour des mages : <b>r'yleth cth</b><br> </p><p >Chapeau du diplômé</p>",
+        "images": [
+          "/t4c-nms-overview/assets/quests/le-chapeau-de-chance/img_7_0.jpg"
+        ],
+        "order": 7
+      },
+      {
+        "title": "LA RECOMPENSE FINALE",
+        "description": "<p >Il faut avoir entre 15 et 20 de moyenne pour obtenir le chapeau de diplômé (+25 chance)<span > </span>et une bourse de chance indroppable (+10 en chance permanent même après reroll mais pas après renaissance) ainsi qu’une bourse d’expérience indroppable (environ 7% du level en cours quand vous l'activez) <u>mais ne vous pouvez pas</u> en demander le transfert si vous êtes level max.</p><p >Vous pouvez aussi conserver ces bourses d'XP et, après plusieurs renaissances, les utiliser toutes quand vous serez proches du level max. </p><p >Entre 10 et 15 vous obtiendrez un masque de clown (+10 chance)<span > </span>et un bonus de chance (+10 permanents)<span > </span>ainsi qu’une bourse d’expérience.</p><p >Moins de 10 vous obtenez un masque de cancre (+5 chance) et, nous sommes trop gentils, +10 de chance permanents.</p>",
+        "images": [],
+        "order": 8
+      },
+      {
+        "title": "Bibliothécaire d'Althéa (Toge chance)",
+        "description": "<p>Aller voir la cheffe bibliothécaire à la grande bibliothèque de RD. </p><p>Cela va être une quête d'entraide pour les petits, à partir du lvl 50 demandez de l'aide aux GB pour 2 ou 3 items </p><p>Suivez bien le dialogue la cheffe va vous proposer 4 étapes. </p><p>Elle permettent de découvrir d'anciennes petites quêtes oubliées. </p><p>1ere étape. </p><ul><li>1 Parchemin magique vierge.</li> <li>1 Plume.</li> <li>1 Encrier.</li></ul><p>Pour l'encre allez voir Cloriande Bollour dans une maison à droite d'Araknor. Elle va vous demander 3 clefs du coffre surprise. </p><p>2eme étape </p><ul><li>1 Parchemin de rappel ( un peu partout )</li> <li>1 Parchemin d'enchantement ( qui ne sait pas quoi !! ) (quête du parchemin d'enchantement)</li> <li>1 Parchemin du village centaure ( drop sur les sentinelles centaures au village Centaure )</li> <li>1 Parchemin de purification de l'or ( drop à DI aux Drakes Akaïstes; pour ceux pas encore rendus à DI demander aux GB )</li> <li>1 Parchemin de l'académie. ( drop académie au -4 pour ceux pas accès demandez aux GB)</li> <li>1 Parchemin de l'amitié des chevaux ( Quête parchemins d'amitié des chevaux SH )</li> <li>1 Document secret ( Quête du Heaume perdu du dragon SH sur le Wiki )</li></ul><p>3eme étape </p><ul><li>1 Livre de Feylor ( coffre au village nains, apporter des clefs de fer ds votre sac )</li> <li>1 Livre de chance ( un peu partout à DI )</li> <li>1 Livre des sorts rouges ( qui sait pas ou :) )</li> <li>1 Livre du collectionneur ( avec quête des scalps ou drop sur les Assassins Obsidiens la grotte ds la montagne de Mordenthal )</li> <li>1 Livre de l'art de la guerre ( achat au château SS de RD à Tobias au 1er étage 15k )</li></ul><p>4eme étape </p><ul><li>1 Certificat de reconnaissance ( suite de la quête du heaume perdu du dragon SH, suivez bien les détails sur le wiki ) Temps de repop des coffres</li></ul><p>Félicitations ! vous êtes maintenant le scribe officiel et diplômé de l'Académie. </p><p>Voici vos cadeaux. </p><p>Toge du bibliothécaire. ( +12 chance ) </p><p>Diplôme de scribe. ( pour collection ) </p><p>Voila j'espère que vous avez apprécié. Cela vous a permis de découvrir de petits quêtes oubliées!!! </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [],
+        "order": 9
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "Le donjon de l'éternelle agonie",
+    "slug": "le-donjon-de-leternelle-agonie",
+    "zone": "Inconnue",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "Le donjon du Marécage de l'Agonie (150-175)",
+        "description": "<p>Vous devez être de niveau 150 à 175 sinon Sigvurd (maison au nord de Redwall) ne vous parlera pas. </p><p>Il vous faudra : </p><p>- Une pierre verte de l'esprit de la forêt (que vous pouvez acheter à Elysana Blackrose (maison proche du temple de SS) pour 20.000 pièces d’or, en lui disant <span class=\"text-amber-400 font-bold\">\"pierre verte de l'esprit de la foret\"</span>) </p><p>-50 feuilles d'arbre démoniaque (dropées par les arbres démoniaques de RD) ou une décoction démoniaque. </p><p>-Un éclat d'âme d'arbre Sintelle (dropé par les arbres Sintelle de DO bien sûr). </p><p>Dans le donjon, vous pourrez obtenir des <span class=\"text-amber-400 font-bold\">\"feuilles d'Ent\"</span> qui vous procureront de l'xp à l'aide d'une petite quête : la quête du remède de Sigvurd. </p>",
+        "images": [
+          "/t4c-nms-overview/assets/quests/le-donjon-de-leternelle-agonie/img_0_0.jpg"
+        ],
+        "order": 0
+      },
+      {
+        "title": "La décoction démoniaque",
+        "description": "<p>Allez voir Solange, avec 50 feuilles d'arbre démoniaque dans votre inventaire, dans une maison aux druides RD. Vous pourrez échanger vos 50 feuilles versus une <span class=\"text-amber-400 font-bold\">\"décoction démoniaque \"</span> en disant ''décoction'' à Solange. La décoction démoniaque vous sera utile pour votre prochain accès au marécage. Vous libérerez ainsi de la place dans votre inventaire. </p>",
+        "images": [],
+        "order": 1
+      },
+      {
+        "title": "Le remède de Sigvurd",
+        "description": "<p>Quand vous récupérerez une feuille d'Ent (elles sont rares), apportez-la à Solange que vous trouverez aux druides de RD dans la même maison que Celestina. </p><p>Dites-lui ''travail'' ''passionnée'' ''médecine'', ''potion'', ''source'', et elle vous remettra une petite fiole de contrepoison que vous devrez donner à Sigvurd en cliquant simplement dessus pour le guérir. Il vous remerciera par un bonus d’xp (dépendant de votre niveau - environ 22M au level 157). </p>",
+        "images": [],
+        "order": 2
+      },
+      {
+        "title": "La quête d'accès au donjon",
+        "description": "<p>Allez voir Sigvurd, dans la maison du forgeron au Nord de la ville de Redwall et parlez-lui. Il vous enjoint de trouver un arbre situé au Nord et de lui parler... </p><p><b>Dialogue avec Sigvurd :</b> </p><p>-- {Sigvurd}<span class=\"text-amber-400 font-bold\">\":\"</span> {*ouvre difficilement les yeux*} ... Ah ... Euh ... Bonjour ... {*tremble de froid*} </p><p>-- Vous avez dit : travail </p><p>-- {Sigvurd}<span class=\"text-amber-400 font-bold\">\":\"</span> Regardez-moi ... Comment voulez-vous que je puisse <span class=\"text-amber-400 font-bold\">\"encore\"</span> travailler ? &lt;&gt;Je ne peux même plus sortir de ce lit ... {*marque une longue pause*} </p><p>-- Vous avez dit : encore </p><p>-- {Sigvurd}<span class=\"text-amber-400 font-bold\">\":\"</span> Oui ... {*parle difficilement*} ... On ne dirait pas ... en réalité ... je suis aventurier ... {*prend une grande bouffée d'air avant de continuer*} ... Je suis rentré depuis quelques semaines ... mon <span class=\"text-amber-400 font-bold\">\"état\"</span> ne cesse d'empirer ... Je ne peux presque plus bouger ... </p><p>-- Vous avez dit : état </p><p>-- {Sigvurd}<span class=\"text-amber-400 font-bold\">\":\"</span> Nous avons traversé un <span class=\"text-amber-400 font-bold\">\"marécage\"</span> ... Nous étions six ... Mes compagnons n'y ont pas survécu ... &lt;&gt;Je ... je ne sais pas ce que j'ai ... {*remonte sa manche pour vous montrer ses avant-bras*} ... ce sont des griffures ... &lt;&gt;Je ... je suis le <span class=\"text-amber-400 font-bold\">\"dernier\"</span> ... {*plisse le front*} </p><p>-- Vous avez dit : marécage </p><p>-- {Sigvurd}<span class=\"text-amber-400 font-bold\">\":\"</span> Un marécage ... oui ... {*a une quinte de toux*} ... une stupide idée ... &lt;&gt;Nous pensions y trouver un trésor ... &lt;&gt; Rhaaaa ... si seulement nous n'avions pas écouté cet <span class=\"text-amber-400 font-bold\">\"arbre\"</span> de malheur ... </p><p>-- Vous avez dit : arbre </p><p>-- {Sigvurd}<span class=\"text-amber-400 font-bold\">\":\"</span> C'est un arbre maudit ! ... {*perd son souffle en s'exclamant*} ... &lt;&gt;N'y <span class=\"text-amber-400 font-bold\">\"allez\"</span> pas ou vous mourrez ! ... Tous les arbres sont maudits !!! ... Et celui là en particulier ... &lt;&gt;En fait ... il parle ! Mais comment voulez-vous qu'un arbre puisse parler ? ... {*sent la folie le gagner*} </p><p>-- Vous avez dit : allez </p><p>-- {Sigvurd}<span class=\"text-amber-400 font-bold\">\":\"</span> Il est au nord ... Mais n'y allez pas !!! ... {*tousse en essayant de hausser le ton*} ... Il est maudit ... Je vous l'ai déjà dis ! {*insiste*} </p><p><b>Trouvez cet arbre....il est situé au Nord de RW dans les eaux marécageuses vers l'Ouest.</b> </p><p><b>Si vous tentez de lui parler de suite il vous répondra :</b> </p><p>-- Les feuilles de l'arbre bougent avec le vent. </p><p><b>Bien évidemment, comme pour Greyleaf, il vous faut une pierre verte de l'esprit de la forêt pour lui parler. Procurez-vous cette pierre comme vu plus haut et reparlez-lui :</b> </p><p>-- {Chêne millénaire}<span class=\"text-amber-400 font-bold\">\":\"</span> Bonjour jeune aventurier </p><p>-- Vous avez dit : travail </p><p>-- {Chêne millénaire}<span class=\"text-amber-400 font-bold\">\":\"</span> Je suis le gardien du marécage ...seuls les courageux aventuriers peuvent y <span class=\"text-amber-400 font-bold\">\"entrer\"</span>. </p><p>-- Vous avez dit : entrer </p><p>-- {Chêne millénaire}<span class=\"text-amber-400 font-bold\">\":\"</span> Si vous voulez y entrer, vous devrez d'abord me <span class=\"text-amber-400 font-bold\">\"montrer\"</span> votre valeur et vos aptitudes à pouvoir y survivre ! </p><p>-- Vous avez dit : montrer </p><p>-- {Chêne millénaire}<span class=\"text-amber-400 font-bold\">\":\"</span> Bien ... Si vous pensez pouvoir y survivre ... Trouvez 50 <span class=\"text-amber-400 font-bold\">\"feuilles\"</span> d'arbre démoniaque ou une <span class=\"text-amber-400 font-bold\">\"décoction\"</span> démoniaque, peu importe ... l'un ou l'autre. &lt;&gt;Ensuite vous devrez trouver un <span class=\"text-amber-400 font-bold\">\"éclat\"</span> d'âme d'arbre Sintelle. &lt;&gt;Quand vous aurez <span class=\"text-amber-400 font-bold\">\"tout\"</span> rassemblé, revenez me voir, je vous y enverrai. </p><p>-- {Chêne millénaire}<span class=\"text-amber-400 font-bold\">\":\"</span> Rapportez-moi une cinquantaine de feuilles d'arbre démoniaque pour me prouver que vous pourrez survivre une fois dans le marécage ! </p><p><b>Trouvez les ingrédients, groupez avec si possible 3 ou 4 amis et reparlez-lui :</b> </p><p>-- Des aventuriers s'aventurent péniblement dans les marécages de l'éternelle agonie. </p><p>-- {Chêne millénaire}<span class=\"text-amber-400 font-bold\">\":\"</span> Vous étiez prévenus ... Allez en paix ! </p><p><b>Et</b> <b>vous êtes téléportés...</b> </p>",
+        "images": [],
+        "order": 3
+      },
+      {
+        "title": "Le donjon",
+        "description": "<p><b>Sur cette île sont de nombreux monstres très méchants. Evitez de trop bouger, avancez lentement !!</b> </p><p><b>Tuez les monstres, ils invoquent des Ent's poisseux. Tuez-les aussi. Ils droppent, rarement, des <span class=\"text-amber-400 font-bold\">\"feuilles d'Ent\"</span>. Pensez surtout à les ramasser. Quand vous aurez tué un certain nombre d'Ent's poisseux, un boss sera invoqué au début de la jetée.</b> </p><p><b>Vous êtes prévenu par un message d'un des Ent poisseux : *dans un dernier souffle* ... L'Ent lethifère... il vous ôtera votre misérable vie ! ... Vous ne sortirez jamais d'ici ... *agonise sur le sol*.</b> </p><p><b>Retournez au début de la jetée et tuez le boss. A sa mort il droppe une souche. Cliquez dessus pour obtenir votre récompense et retourner à votre sanctuaire (n'oubliez pas d'apporter vos feuille d'Ent à Solange).</b> </p><p><b>Récompenses : environ 50M xp et au hasard :</b> </p><p><b>Iridium, parchemin de l'académie, nerf sciatique, globe oculaire, bulbe de l'éveillé, écume de larve toxique, chapeau des espérances multiples (+10 de chance), item secret de l'Académie.</b> </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [
+          "/t4c-nms-overview/assets/quests/le-donjon-de-leternelle-agonie/img_4_0.jpg"
+        ],
+        "order": 4
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "Le donjon des abîmes",
+    "slug": "le-donjon-des-abimes",
+    "zone": "Inconnue",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "Le Donjon des abîmes (80-120)",
+        "description": "<p>Ce donjon est réservé aux niveaux 80 à 120. Donjon intéressant et trop rarement fait. Il vous faudra un bon groupe et/ou un bon level. Mais c'est aussi une bonne zone d'xp. </p><ul><li>un médaillon des abîmes dropé par les B'Zurkans sur DI.</li></ul><p>Le donjon vous sera réservé durant 1H 30. </p>",
+        "images": [
+          "/t4c-nms-overview/assets/quests/le-donjon-des-abimes/img_0_0.jpg"
+        ],
+        "order": 0
+      },
+      {
+        "title": "La Quête d'accès",
+        "description": "<p>Dans Redwall trouvez Cléantine (facile, elle se promène devant la porte du temple) et parlez-lui. </p><p><b>Dialogue :</b> </p><p>-- {Cléantine}<span class=\"text-amber-400 font-bold\">\":\"</span> Avez-vous vu mon <span class=\"text-amber-400 font-bold\">\"fils\"</span> ??? ... Dites-moi que vous l'avez vu ! ... {*très inquiète*}<br>-- Vous avez dit : <b>fils</b><br>-- {Cléantine}<span class=\"text-amber-400 font-bold\">\":\"</span> <b>Fastalan</b>, mon fils... il a <span class=\"text-amber-400 font-bold\">\"disparu\"</span> il y a presque trois jours ... Je ne sais plus quoi faire ...<br>-- Vous avez dit : <b>disparu</b><br>-- {Cléantine}<span class=\"text-amber-400 font-bold\">\":\"</span> Il a fait d'étranges <span class=\"text-amber-400 font-bold\">\"rencontres\"</span> dernièrement ... Depuis, je ne le reconnais plus ... Il m'avait parlé d'un <span class=\"text-amber-400 font-bold\">\"rituel\"</span> ... dans une cave ... dans les montagnes ... mais je ne sais pas où exactement ..<br>-- Vous avez dit : <b>rencontres</b><br>-- {Cléantine}<span class=\"text-amber-400 font-bold\">\":\"</span> Oui ... des mages étranges ... sombres ... ensemble ils s'adonnaient à divers <span class=\"text-amber-400 font-bold\">\"rituels\"</span>, je pensais que c'était pour s'amuser ... mais ... il n'est pas rentré ... {*fond en larmes*}<br>-- Vous avez dit : <b>rituels</b><br>-- {Cléantine}<span class=\"text-amber-400 font-bold\">\":\"</span> Oui ... j'ai peur qu'il se soit fait <span class=\"text-amber-400 font-bold\">\"enrôlé\"</span> dans un mouvement dangereux ... Je suis trop bête ! ... Je pensais à un jeu, j'aurai dû m'inquiéter davantage !!! {*semble s'en vouloir*}<br>-- Vous avez dit : <b>enrôlé</b><br>-- {Cléantine}<span class=\"text-amber-400 font-bold\">\":\"</span> Ce qu'il m'a fait pensé à ça ... c'est que depuis peu il s'habille souvent en noir ... il porte aussi un drôle de <span class=\"text-amber-400 font-bold\">\"médaillon\"</span>, dont il ne se sépare jamais.<br>-- Vous avez dit : <b>médaillon</b><br>-- {Cléantine}<span class=\"text-amber-400 font-bold\">\":\"</span> Un médaillon avec une sorte de flamme, tous ses amis ont le même ... Il est parti en quête à l'ouest de Redwall pour le trouver. &lt;&gt;Ho ! ... Ramenez-moi mon fils, je vous en prie ! </p><p><b>En résumé, elle vous parle de son fils Fastalan parti avec des mages sombres dans une cave des montagnes qu'il va falloir retrouver et sauver !! Pour cela il faut avoir un certain médaillon.</b> </p><p>Sortez de Redwall vers l'ouest comme indiqué. Vous tombez sur des B'Zurkans. Tuez-en jusqu'à faire droper un <span class=\"text-amber-400 font-bold\">\"médaillon des abîmes\"</span> puis reparlez à Cléantine. </p><p>Dialogue : </p><p>-- Vous avez dit : <b>médaillon</b><br>-- {Cléantine}<span class=\"text-amber-400 font-bold\">\":\"</span> OH ! Oui !!!! ... C'est le même médaillon que ça ! Vous devriez pouvoir vous faire passer pour l'un de leurs membres avec ça ... Allez-y vite !!! {*semble avoir récupéré une lueur d'espoir*} </p>",
+        "images": [],
+        "order": 1
+      },
+      {
+        "title": "Le Donjon",
+        "description": "<p>Muni du médaillon constituez un groupe de 4 ou plus avec un (ou deux) bon heal puis allez voir du côté de la cave des Assassins Obsidiens située dans les montagnes de Mordenthal <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(285,170,0)</span>. </p><p>Tout au fond de cette grotte vers le nord-ouest se trouve un lac. Vous allez y trouver un portail <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(1025,2580,2)</span>. </p><p>Traversez-le avec votre groupe : </p><p><span class=\"text-amber-400 font-bold\">\"Un groupe d'aventuriers s'aventure dans les profondeurs des abîmes de Stoneheim\"</span>. </p><p>Le donjon vous est réservé pour 1H30 .... </p><p>Attention : si vous en sortez vous ne pouvez y retourner. </p><p><br> <b>Déroulement</b> </p><p><b>Attention</b> : soyez prudents, <b>avancez groupés</b> et tuez les mobs au fur et à mesure. </p><p>Vous devez trouver l'emplacement de 3 dalles en marchant dessus. Celui qui marche dessus obtient le message <span class=\"text-amber-400 font-bold\">\"l'atmosphère devient subitement oppressante\"</span>. </p><p>Positions approximatives des dalles : (1707,1979) (1765,2032) (1778,1995) </p><p>Marcher sur une dalle fera pop un boss dans la zone d'arrivée. Retournez-y <b>en groupe</b> et tuez le boss. A sa mort il dropera une rune. </p><p>L'un d'entre vous doit ramasser les 3 runes et aller cliquer sur la statue de Tzeeneth située à l'est en haut (accompagnez-le). Il entendra : </p><p><span class=\"text-amber-400 font-bold\">\"Vous placez vos runes dans les cavités de la statue. &lt;&gt;Une épaisse fumée semble se répandre... vous entendez des pas au loin ...\"</span>. </p><p>Ceci fera pop Tzeeneth dans la zone d'arrivée. Retournez-y et tuez-le : <span class=\"text-amber-400 font-bold\">\"le groupe d'aventuriers a réussi à libérer Fastalan des griffes de Tzeeneth\"</span>. </p><p>Enfin Cléantine apparaîtra. Cliquez sur elle pour quitter le donjon : <span class=\"text-amber-400 font-bold\">\"Je vous remercie d'avoir retrouvé Fastalan, ma vie aurait perdu tout son sens si vous n'aviez pas retrouvé mon fils. Voici une petite récompense pour vous remercier.\"</span> </p><p>Vous pouvez obtenir un item intéressant (Talisman des abîmes x 3 (fréquent), pièces de triplicite, robes niveau SC comme robe terreuse robe archi robe Elentir, épée des nains, cocon de soie (rare), potion du veinard?, potion du chanceux?, anneau du cimmérien?, ornement prestigieux? ....). Elle vous donnera aussi un bonus xp. </p><p>Bug : il y as un trou ds la barrière ou pop les boss. Du coup ils finissent souvent dans la salle. </p><p><b>Remarque</b> : le talisman des abîmes, j'ai beau l'avoir miam j'ai pas vu grosse différence sur mes compétences :) (Mélandria) </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [
+          "/t4c-nms-overview/assets/quests/le-donjon-des-abimes/img_2_0.jpg",
+          "/t4c-nms-overview/assets/quests/le-donjon-des-abimes/img_2_1.jpg"
+        ],
+        "order": 2
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "Le donjon des galinettes",
+    "slug": "le-donjon-des-galinettes",
+    "zone": "Inconnue",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "Le donjon des Galinettes (pour niveaux 50 à 80)",
+        "description": "<p>Ce donjon (plein de gallinacées!!) est destiné au niveaux 50 à 80 et sera réservé pendant une heure. </p><p>Items nécessaires pour la quête d'accès : </p><ul><li><b>5 Branches de noyer</b> (sur RD avec une hache du bûcheron expérimenté (23 force); il y en a 4 proches de SS et le 5ème n'est pas bien loin).</li> <li><b>Une corde</b> (chapardeurs SH, vous en avez certainement en stock)</li></ul><p>XP : Ce sont les mages avec un sort de zone qui vont cartonner (séisme puis boulder pour les prêtres) . Il est toutefois possible de le faire avec toutes les classes de personnages - en archer restez hors de la mêlée, un peu à droite en bas, en guerrier ayez une bonne CA. </p><p>Il est possible de le faire seul en prêtre mais soyez au moins level 59 pour la béné (et n'oubliez pas la ceinture instable et des potions). Votre XP sera au bas de la fourchette (qui va de 10 à 20M/heure donc meilleure que tout autre spot hors les sentis (par ex 4/5M aux skraugs verts)). A 2 ça sera mieux et à 3 ou 4 le top!! </p>",
+        "images": [],
+        "order": 0
+      },
+      {
+        "title": "La quête d'accès",
+        "description": "<p>C'est partiiii... </p><p>Comme le nom <span class=\"text-amber-400 font-bold\">\"galinettes\"</span> nous intrigue, furetons dans Stonecrest. Et voilà, nous tombons sur <b>Papy Auguste</b>, du côté de l'écurie de Stonecrest, tout à l'ouest de la ville. </p><p>Parlons-lui <b>(travail...)</b>, Il a l'air tout désemparé car ses poules ont été volées par des skraugs. Il nous demande de l'aider à reconstruire son poulailler et à retrouver ses poules. Bien sûr cela nous fait sauter de joie et nous acquiesçons par <span class=\"text-amber-400 font-bold\">\"<b>oui</b>\"</span>. Et paf il nous demande de lui ramener <b>5 branches de noyer</b> et une <b>corde</b>. </p><p>Sortons de la ville et tuons ces pauvres chapardeurs jusqu'à ce qu'ils dropent une corde... avec quelques items chance cela va vite (ou encore demandons à un GB, ils donneront gracieusement la corde) . Puis trouvons une hache du bûcheron expérimenté à 23 de force (les GB peuvent aussi vous aider) et hop, allons couper des noyers sur l'île de Raven's Dust (avec une hache du bûcheron expérimenté) jusqu'à obtenir 5 branches (les emplacements sont ici sur le wiki). Et voilà, vite fait bien, les noyers n'étaient pas loin de Silversky!! </p><p>Retournons parler à <b>Papy Auguste</b> avec la <b>corde</b> et les <b>5 branches de noyer</b>. Il nous donnera une T<b>ourte à la viande</b> en récompense.... Voilà qui va nous servir ! </p><p>Reste à retrouver le gardien skraug. Allons au village skraugs rouges ... il y a là plusieurs grottes. Visitons la grande grotte devant laquelle veille un shaman skraug. Et, une fois dans la grotte, allons vers l'Ouest ... Ha voilà un skraug vert parmi les rouges, <b>Guschnock</b>, ce doit être lui. </p><p>Après nous être groupés et rapprochés (pas d'obstacle entre lui et nous), parlons à ce <b>Guschnock</b> (<span class=\"text-amber-400 font-bold\">\"<b>manger</b>\"</span>). Et voilà il accepte notre cadeau et nous nous trouvons transférés dans un petit donjon plein de galinettes. </p>",
+        "images": [],
+        "order": 1
+      },
+      {
+        "title": "Le donjon",
+        "description": "<p>Il s'agit maintenant de tuer des galinettes, ça marche très bien au sort de zone mais attention elles font assez mal, il vaut mieux être plusieurs ou alors proche du niveau 80. Seul en prêtre, avec ceinture instable et bénédiction (lev 59) il est possible de tenter l'aventure en utilisant séisme mais ce sera chaud. Il vaut mieux disposer de boulder (lev 67). </p><p>De temps à autre nous verrons une galinette anxieuse. Cliquons dessus. Après environ une douzaine de galinettes anxieuses, <b>Ghartagol</b> le boss va apparaître. Tuons-le, ce qui fait apparaître Papy vers l'Est. Avant la fin du timer (une heure), ramassons les gemmes et potions de résist feu puis cliquons sur Papy et nous aurons notre récompense (15k or et un item comme potion de résist feu... collier de diamant...). Ensuite, il nous renverra illico à notre sanctuaire. </p><p>XP : </p><p>Selon niveau et groupe on peut faire de 8 à plus de 20M d'xp par heure ! </p><p><br> </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [
+          "/t4c-nms-overview/assets/quests/le-donjon-des-galinettes/img_2_0.jpg"
+        ],
+        "order": 2
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "Le Gardien et les yeux de tarentules",
+    "slug": "le-gardien-et-les-yeux-de-tarentules",
+    "zone": "Raven's Dust",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "Introduction",
+        "description": "<p>Un conseil : <b>Préférez gardez vos yeux de tarentule pour la quête du bracelet orque !</b> </p>",
+        "images": [],
+        "order": 0
+      },
+      {
+        "title": "Quête du Gardien et des yeux de tarentule",
+        "description": "<p>•Rapportez <b>10 yeux de tarentule</b> au PNJ <span class=\"text-amber-400 font-bold\">\"George Le Gardien\"</span> dans la même maison que le PNJ Audrey (quête des robes colorées) aux Druide d'Arakas. </p><p>Il vous récompensera par 25 000 pièces d'or et des points d'XP selon votre niveau soit (2k XP * LVL) jusqu'au niveau 50 et (5k XP * LVL) au-delà. </p><p><br> <b>Mot clef pour distraire le gardien:</b> <span class=\"text-amber-400 font-bold\">\"distraire\"</span> </p><p><b>Mot clef pour donner les yeux:</b> <span class=\"text-amber-400 font-bold\">\"Yeux de tarentules\"</span> </p><p>•<b>Attention:</b> Pour que <span class=\"text-amber-400 font-bold\">\"George Le Gardien\"</span> accepte de vous parler et de prendre vos yeux de tarentules, vous devrez le <span class=\"text-amber-400 font-bold\">\"Distraire\"</span> avant. Vous serez alors téléporté(e) en prison pour une durée de 10 minutes mais vous pouvez échapper avec la Runed Stone Tablet, avec Mot de rappel ou avec un parchemin. Ensuite, retournez voir le Gardien et il acceptera de prendre vos yeux (si personne ne lui a parlé entre-temps). Bien sûr l'idéal est de faire la quête en duo, l'un qui distrait le gardien, l'autre qui donne les yeux et reçoit l'XP! </p><p><b>Méthode Solo:</b> Dites <span class=\"text-amber-400 font-bold\">\"Distraire\"</span> puis <span class=\"text-amber-400 font-bold\">\"Adieu\"</span> au gardien. Ensuite, vous avez moins de 5 secondes pour lui dire <span class=\"text-amber-400 font-bold\">\"Yeux de tarentules\"</span> puis <span class=\"text-amber-400 font-bold\">\"oui\"</span>. </p><p><b>Cette quête peut être effectuée à volonté!</b> </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [],
+        "order": 1
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "Le Sceptre des Abysses",
+    "slug": "le-sceptre-des-abysses",
+    "zone": "Inconnue",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "Introduction",
+        "description": "<p>Pour commencer , il faut avoir accès à DI. </p><ul><li>Partez de Redwall en direction des montagnes au centre de DI. Dans le creux du L qu'elles forment vous trouverez un passage invisible. prenez ce passage puis au fond rentrez dans le vortex , vous voila téléporté(e) dans un donjon.</li> <li>Partez au Nord Ouest puis prenez un deuxième vortex dans un petit labyrinthe qui vous amènera cette fois-ci dans une cave.</li></ul><p><br> </p><ul><li>Traversez la cave et tuez le Beholder jusqu'à ce qu'il laisse tomber une clé des abysses (Respawn : 10 minutes)</li></ul><p>(Attention il est fort, je vous conseille d'être groupé(e) avec au moins un autre joueur). </p><p>(Il n'y a pas forcément besoin de tuer le Beholder, souvent des clés trainent à terre). </p><ul><li>Cette clé vous permet d'ouvrir la maison se situant au nord du temple de Redwall.</li></ul><ul><li>Trouvez dans ce donjon le Seigneur des Abysses et dites lui <span class=\"text-amber-400 font-bold\">\"Sceptre\"</span> , il vous dira d'aller voir le Beholder si vous désirez le sceptre.</li></ul><p><br> </p><ul><li>Retournez voir le Beholder et dites lui <span class=\"text-amber-400 font-bold\">\"sceptre\"</span> : il vous parlera d'un homme : Arakis Haz.</li></ul><ul><li>Partez en direction de Windhowl, et trouvez Arakis Haz (il se situe dans une maison près des remparts, c'est celui qui vous fait la poudre de diamant (1722,1349)).</li></ul><ul><li>Dites lui <span class=\"text-amber-400 font-bold\">\"Sceptre\"</span> et il vous donnera le sceptre des Abysses.</li></ul><p><br> <b>Récompenses :</b> </p><ul><li>Sceptre des abysses (revendable au marchand de LH 85k)</li> <li>16 000 000 xp</li> <li>2 500 pièces d'or par level.</li></ul><p><br> <i>La quête ne peut-être effectuée qu'une fois.</i> </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [],
+        "order": 0
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "Les autres quêtes 1.25",
+    "slug": "les-autres-quetes-125",
+    "zone": "Inconnue",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [
+      "Filandrius",
+      "Filandrius",
+      "Sentinelle de Windhowl"
+    ],
+    "gold": "",
+    "steps": [
+      {
+        "title": "Le Chef des Mercenaires (Arakas)",
+        "description": "<p>A la fontaine de Lighthaven, cherchez un PNJ nommé Vincent Finelame. Parlez-lui et il vous dira qu’il a besoin d’un groupe d’héros pour faire un assaut sur trois camps différents. Dites <span class=\"text-amber-400 font-bold\">\"<b>Olin Haad</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"<b>Tarnian\"</span></b>, <span class=\"text-amber-400 font-bold\">\"<b>oui</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"<b>Details</b>\"</span> et il vous donnera plus de détails sur votre quête. </p><p>Dirigez-vous vers le pont ouest de Lighthaven et une fois passé, allez vers le nord. Vous arriverez au 1<sup>er</sup> camp, facile à identifier avec les catapultes. Tuez 15 mercenaires jusqu’à ce que vienne le Lieutenant mercenaire. Tuez-le et dirigez-vous vers le 2<sup>e</sup> camp, situé juste au nord-est de celui où vous êtes. Tuez encore une fois 15 mercenaires et le Lieutenant mercenaire. Dirigez-vous vers l’est et suivez le chemin jusqu’à atteindre le 3<sup>e</sup> camp. Encore une fois tuez les 15 mercenaires et le Lieutenant mercenaire. Vous recevez le message suivant: </p><p><i>Dès que le lieutenant mercenaire s’écroule, vidé de toute vie, vous entendez le son d’un cor de guerre venant du camp nord.</i> </p><p>Suivez le chemin vers l'est (la route contourne la montagne et continue vers l'ouest) jusqu’à ce qu’il s’achève. Continuez vers l’ouest et vous arriverez à quelques maisons abandonnées. Trouvez le Chef mercenaire et tuez le. Retournez voir Vincent Finelame. </p><p>Dites-lui <span class=\"text-amber-400 font-bold\">\"<b>Récompense</b>\"</span> et vous recevrez 750 xps multipliés par votre niveau actuel et 500 pièces d’or. </p><p><b>Remarque:</b> Vous pouvez effectuer cette quête à volonté. </p><p><b>PNJ impliqué: </b>Vincent Finelame. </p><p><b>Mini-boss impliqués:</b> Mercenaires, Lieutenant mercenaire, Chef des mercenaires. </p><p><b>Récompenses acquises:</b> (750*lvl actuel) xps, 500 pièces d’or. </p>",
+        "images": [],
+        "order": 0
+      },
+      {
+        "title": "Le Livre de la Connaissance Arcane (ceinture instable) (SH)",
+        "description": "<p>Allez à la Grande Bibliothèque (à l’est de l’entrée de la crypte de Raven’s Dust) et parlez à Filandrius. Dites <span class=\"text-amber-400 font-bold\">\"<b>La magie étrangère</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"<b>Besoin</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"<b>Filnar'thir</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"<b>Ténèbres</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"<b>Récupérer ce livre</b>\"</span> et il vous enverra tuer Anthor le Fou et prendre le Livre de la Connaissance Arcane. </p><p>Allez à Stoneheim et trouvez Anthor (il est situé au nord-est de l’entrée de la grotte aux araignées, juste avant les skraugs verts). Maintenant tuez Anthor le Fou, vous recevrez le Livre de la Connaissance Arcane. </p><p><b>Tip</b> : Si vous l'attaquez en physique (war, archer, ou sort physique) et n'êtes pas très fort, après 20 ou 30 secondes il va se régénérer vite et vous aurez du mal à le tuer. Dans ce cas faites vous aider par un mage qui va l'affaiblir à l'aide d'un sort mental et attaquez le à ce moment. </p><p>Retournez-voir Filandrius, cliquez dessus et il prendra le Livre. Vous recevrez une ceinture de protection instable et une gemme de protection instable. Vous pouvez aussi lui demander de vous enseigner des nouveaux sorts (si vous avez les bonnes stats). </p><p><b>PNJ impliqués: </b>Filandrius </p><p><b>Mini-boss impliqués:</b> Anthor le Fou </p><p><b>Récompenses acquises:</b> Ceinture de Protection Instable, Gemme de Protection Instable (0 stats), Nouveaux sorts disponibles. </p><p>PS1: Si par accident vous deletez la ceinture retournez parler à filandrius il vous refera faire la quête. </p><p>PS2: Vous conservez la ceinture en cas de renaissance ! </p>",
+        "images": [],
+        "order": 1
+      },
+      {
+        "title": "Le Faucheur de Vie (bracelet et gemme IMMO) (SH)",
+        "description": "<p>La quête des Faucheurs de Vie consiste à tuer les 3 Faucheurs de Vie situés sur chaque île, à raison d’un par île. </p><p>Dirigez-vous vers Windhowl et <u>parlez à la sentinelle de Windhowl</u> (située aux portes de la ville). Dites <span class=\"text-amber-400 font-bold\">\"<b>aide</b>\"</span> et il vous dira que derrière les portes se trouve Hel, le Faucheur de Vie d’Arakas. Cherchez-le (c’est un PNJ non-séraphe situé vers le nord-ouest de Windhowl <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(1663,1044,0)</span>) et cliquez sur lui jusqu’à ce qu’il devienne un PNJ néphilim. Tuez-le et vous recevrez la pierre spirituelle de Hel. Retournez voir la sentinelle et dites <span class=\"text-amber-400 font-bold\">\"<b>récompense\"</span></b>, vous recevrez 100 xps multipliés par votre niveau et 500 pièces d’or multipliées par votre niveau. </p><p>Maintenant, <u>allez parler à Filandrius</u> (situé dans la Grande Bibliothèque de RD). Il reconnaîtra la pierre spirituelle de Hel et vous dira que c’est intéressant. Dites <span class=\"text-amber-400 font-bold\">\"<b>Intéressant</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"I<b>nnombrables richesses</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"P<b>ierre spirituelle</b>\"</span> (et non le mot clef pierre spirituelle qui apparaît dans le dialogue), <span class=\"text-amber-400 font-bold\">\"<b>Noms</b>\"</span> et <u>il vous donnera le nom des 3 Faucheurs de Vie</u> : Jormungand, Hel et Fenrir. Il vous dira aussi qu’une fois les 3 pierres spirituelles réunies vous devrez trouvez un portail au village des Centaures. </p><p>Dirigez-vous ensuite vers la Tour de Zhakar. Allez vers l’ouest et passez au-dessus de Stonehenge. Suivez la ligne de montagnes et tournez vers l’est à la première ouverture. Continuez vers l’est et vous trouverez le Faucheur de Vie de Raven’s Dust, Jormungand qui ressemble lui aussi à un néphilim <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(480, 2010, 0)</span>. Tuez-le et vous recevrez sa pierre spirituelle. </p><p>Allez jusque Stoneheim et prenez la route allant de Stonecrest jusqu’au château de Mordenthal. Suivez le chemin jusqu’à atteindre les montagnes. Dirigez-vous alors vers l’ouest vers la côte. Longez la côte vers le nord et vous trouverez Fenrir, le Faucheur de Vie de Stoneheim <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(155, 215, 0)</span>. Il ressemble aussi à un néphilim. Tuez-le et vous recevrez sa pierre spirituelle. </p><p>Maintenant allez au village des Centaures. Dépassez le château et allez vers l’est (la route en direction de la cave aux centaures). Dès que vous avez passé le petit lac, dirigez-vous vers le sud. Vous arriverez au portail (en 1127, 1191, 0). Cliquez sur ce portail. Il prendra les 3 pierres spirituelles, les mélangera et vous serez téléporté à côté du Faucheur de Vie. Tuez-le et vous obtiendrez le Cristal de la Providence. Dépêchez-vous car le temps est limité. Si vous avez un deuxième jeu de pierres, vous pourrez vous faire aider par un ami mais vous devrez achever le Faucheur vous-même. </p><p>Retournez voir Filandrius à la Grande Bibliothèque et dites <span class=\"text-amber-400 font-bold\">\"<b>délivrer</b>\"</span>. Filandrius prendra le Cristal de la Providence et vous recevrez le Bracelet et la Gemme des Immortels. </p><p><b>Remarque #1 :</b> Vous devez être au minimum niveau 50 pour commencer cette quête.... et beaucoup plus pour la finir !! </p><p><b>Remarque #2 : </b>La récompense donnée par la Sentinelle ne peut être obtenue qu’une seule fois par renaissance. </p><p><b>PNJ impliqués : </b>Filandrius, Sentinelle de Windhowl </p><p><b>Mini-boss impliqués :</b> Jormungand, Hel, Fenrir, le Faucheur de Vie (Harvester of Life) </p><p><b>Récompenses acquises :</b> Bracelet et Gemme des Immortels(0 stats), 100 xp * niveau actuel, 500 po * niveau actuel. </p>",
+        "images": [],
+        "order": 2
+      },
+      {
+        "title": "Voyage entre les plans (réservé aux Séraphes level 50+)",
+        "description": "<p>Vous remarquerez que dans chaque ville (et pas que dans les villes) se trouve un portail auxquel vous n'avez pas accès. </p><p>Vous ne pourrez y accéder que si vous êtes Séraphe/Néphi, au moins level 50 et avez terminé la quête d'accès. </p><p>Pour avoir accès à l'Interplan vous devez activer 8 portails (sur 10). Ces portails sont situés à : </p><ol><li>Lighthaven (AR)</li> <li>Windhowl (AR)</li> <li>Camp des Druides (AR)</li> <li>Silversky (RD)</li> <li>Oasis (RD)</li> <li>Bibliothèque (RD)</li> <li>Stonecrest (SH)</li> <li>Ville Centaure (SH)</li></ol><p>Pour activer l'accès approchez-vous d’un portail et sautez dedans. Dites <span class=\"text-amber-400 font-bold\">\"<b>Creations</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"<b>Stop</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"<b>Yes</b>\"</span>. Vous entrez alors à l’intérieur et vous apparaîtrez autre part. Vous avez environ 60 secondes pour tuer Doppelganger. Entrez dans chacun des 8 portails et faites de même. Vous ne pourrez pas rentrez dans un portail déjà fait avant d’avoir fini les huit. Terminez les 8 et vous pourrez traverser les plans (Plane Walking) (cela signifie que vous pouvez utiliser les portails pour voyager de l'un à l'autre). Cette carte de l'interplan vous montre les destinations des portails quand vous traversez les plans. </p><p><b>Remarque 1 :</b> Le meilleur moyen pour tuer Doppelganger, même pour les mages, ce sont les armes physiques (ou à mains nues si vous bénéficiez d'une bonne force). Il est conseillé d'activer si vous en avez vos boucliers offensifs. Les sorts, à moins d’être à un niveau supérieur à 150 ne leur font rien. </p><p><b>Remarque 2</b> : Vous perdez l'accès à chaque renaissance et devrez attendre le niveau 50 pour le refaire. </p><p><b>Remarque 3</b> : Niève et Redwall seront automatiquement activés </p><p><b>Mini-boss impliqués :</b> Doppelganger </p><p><b>Récompense acquise :</b> Planewalking (ou interplan) (plus besoin d’acheter des parchemins de LH, WH, SS, etc.) </p>",
+        "images": [],
+        "order": 3
+      },
+      {
+        "title": "L’Ancienne Plaque Céleste (Quête réservée aux Séraphes)(non répétable)",
+        "description": "<p>Près de la fontaine de Stonecrest, vous trouverez un PNJ appelé Tristan. Parlez-lui et répondez à ses questions. Dites-lui <span class=\"text-amber-400 font-bold\">\"<b>oui</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"<b>oui</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"<b>récemment</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"<b>déterraient</b>\"</span> et vous entendrez une histoire au sujet de deux hommes qui creusaient le sol avec des pelles. Ils finirent par trouver un corps de Séraphin et sont partis vers l’est dans leur roulotte. </p><p>Allez vers l’est et suivez le chemin menant aux araignées. Juste avant d’y arriver, vous verrez un petit camp avec des guerriers Obsidian Conclave. Tuez-en environ dix jusqu’à ce qu’apparaisse le commandant Mordred. Tuez-le et vous obtiendrez une petite clé en fer. Avec celle-ci, ouvrez le coffre situé dans le camp, vous obtiendrez l'ancienne plaque céleste (indropable). </p><p><b>PNJ impliqué: </b>Tristan </p><p><b>Mini-boss impliqué:</b> Commandant Mordred </p><p><b>Récompense acquise:</b> le plastron Ancienne Plaque Céleste (Stats: 100 End, 30 For, 30 Dex, 30 Int, 30 Sag) (indropable) </p><ul><li><b>Bonus du plastron</b> : Quand vous êtes attaqué, un sort s'enclenche sur la gauche avec les autres sorts : il boost la CA, régénère mana vie et plus, très utile dans les zones ou il y a beaucoup de mobs surtout avec les sorts de zone comme les boucliers de feu air eau ou électrique.</li> <li><b>Attention</b> : ne pas deleter avant d'être 260, vous savez pas quand elle pourrait servir.</li></ul><p><br> </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [],
+        "order": 4
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "Les autres quêtes 1.25",
+    "slug": "les-autres-quetes-125lcdm",
+    "zone": "Inconnue",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [
+      "Filandrius",
+      "Filandrius",
+      "Sentinelle de Windhowl"
+    ],
+    "gold": "",
+    "steps": [
+      {
+        "title": "Le Chef des Mercenaires (Arakas)",
+        "description": "<p>A la fontaine de Lighthaven, cherchez un PNJ nommé Vincent Finelame. Parlez-lui et il vous dira qu’il a besoin d’un groupe d’héros pour faire un assaut sur trois camps différents. Dites <span class=\"text-amber-400 font-bold\">\"<b>Olin Haad</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"<b>Tarnian\"</span></b>, <span class=\"text-amber-400 font-bold\">\"<b>oui</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"<b>Details</b>\"</span> et il vous donnera plus de détails sur votre quête. </p><p>Dirigez-vous vers le pont ouest de Lighthaven et une fois passé, allez vers le nord. Vous arriverez au 1<sup>er</sup> camp, facile à identifier avec les catapultes. Tuez 15 mercenaires jusqu’à ce que vienne le Lieutenant mercenaire. Tuez-le et dirigez-vous vers le 2<sup>e</sup> camp, situé juste au nord-est de celui où vous êtes. Tuez encore une fois 15 mercenaires et le Lieutenant mercenaire. Dirigez-vous vers l’est et suivez le chemin jusqu’à atteindre le 3<sup>e</sup> camp. Encore une fois tuez les 15 mercenaires et le Lieutenant mercenaire. Vous recevez le message suivant: </p><p><i>Dès que le lieutenant mercenaire s’écroule, vidé de toute vie, vous entendez le son d’un cor de guerre venant du camp nord.</i> </p><p>Suivez le chemin vers l'est (la route contourne la montagne et continue vers l'ouest) jusqu’à ce qu’il s’achève. Continuez vers l’ouest et vous arriverez à quelques maisons abandonnées. Trouvez le Chef mercenaire et tuez le. Retournez voir Vincent Finelame. </p><p>Dites-lui <span class=\"text-amber-400 font-bold\">\"<b>Récompense</b>\"</span> et vous recevrez 750 xps multipliés par votre niveau actuel et 500 pièces d’or. </p><p><b>Remarque:</b> Vous pouvez effectuer cette quête à volonté. </p><p><b>PNJ impliqué: </b>Vincent Finelame. </p><p><b>Mini-boss impliqués:</b> Mercenaires, Lieutenant mercenaire, Chef des mercenaires. </p><p><b>Récompenses acquises:</b> (750*lvl actuel) xps, 500 pièces d’or. </p>",
+        "images": [],
+        "order": 0
+      },
+      {
+        "title": "Le Livre de la Connaissance Arcane (ceinture instable) (SH)",
+        "description": "<p>Allez à la Grande Bibliothèque (à l’est de l’entrée de la crypte de Raven’s Dust) et parlez à Filandrius. Dites <span class=\"text-amber-400 font-bold\">\"<b>La magie étrangère</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"<b>Besoin</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"<b>Filnar'thir</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"<b>Ténèbres</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"<b>Récupérer ce livre</b>\"</span> et il vous enverra tuer Anthor le Fou et prendre le Livre de la Connaissance Arcane. </p><p>Allez à Stoneheim et trouvez Anthor (il est situé au nord-est de l’entrée de la grotte aux araignées, juste avant les skraugs verts). Maintenant tuez Anthor le Fou, vous recevrez le Livre de la Connaissance Arcane. </p><p><b>Tip</b> : Si vous l'attaquez en physique (war, archer, ou sort physique) et n'êtes pas très fort, après 20 ou 30 secondes il va se régénérer vite et vous aurez du mal à le tuer. Dans ce cas faites vous aider par un mage qui va l'affaiblir à l'aide d'un sort mental et attaquez le à ce moment. </p><p>Retournez-voir Filandrius, cliquez dessus et il prendra le Livre. Vous recevrez une ceinture de protection instable et une gemme de protection instable. Vous pouvez aussi lui demander de vous enseigner des nouveaux sorts (si vous avez les bonnes stats). </p><p><b>PNJ impliqués: </b>Filandrius </p><p><b>Mini-boss impliqués:</b> Anthor le Fou </p><p><b>Récompenses acquises:</b> Ceinture de Protection Instable, Gemme de Protection Instable (0 stats), Nouveaux sorts disponibles. </p><p>PS1: Si par accident vous deletez la ceinture retournez parler à filandrius il vous refera faire la quête. </p><p>PS2: Vous conservez la ceinture en cas de renaissance ! </p>",
+        "images": [],
+        "order": 1
+      },
+      {
+        "title": "Le Faucheur de Vie (bracelet et gemme IMMO) (SH)",
+        "description": "<p>La quête des Faucheurs de Vie consiste à tuer les 3 Faucheurs de Vie situés sur chaque île, à raison d’un par île. </p><p>Dirigez-vous vers Windhowl et <u>parlez à la sentinelle de Windhowl</u> (située aux portes de la ville). Dites <span class=\"text-amber-400 font-bold\">\"<b>aide</b>\"</span> et il vous dira que derrière les portes se trouve Hel, le Faucheur de Vie d’Arakas. Cherchez-le (c’est un PNJ non-séraphe situé vers le nord-ouest de Windhowl <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(1663,1044,0)</span>) et cliquez sur lui jusqu’à ce qu’il devienne un PNJ néphilim. Tuez-le et vous recevrez la pierre spirituelle de Hel. Retournez voir la sentinelle et dites <span class=\"text-amber-400 font-bold\">\"<b>récompense\"</span></b>, vous recevrez 100 xps multipliés par votre niveau et 500 pièces d’or multipliées par votre niveau. </p><p>Maintenant, <u>allez parler à Filandrius</u> (situé dans la Grande Bibliothèque de RD). Il reconnaîtra la pierre spirituelle de Hel et vous dira que c’est intéressant. Dites <span class=\"text-amber-400 font-bold\">\"<b>Intéressant</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"I<b>nnombrables richesses</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"P<b>ierre spirituelle</b>\"</span> (et non le mot clef pierre spirituelle qui apparaît dans le dialogue), <span class=\"text-amber-400 font-bold\">\"<b>Noms</b>\"</span> et <u>il vous donnera le nom des 3 Faucheurs de Vie</u> : Jormungand, Hel et Fenrir. Il vous dira aussi qu’une fois les 3 pierres spirituelles réunies vous devrez trouvez un portail au village des Centaures. </p><p>Dirigez-vous ensuite vers la Tour de Zhakar. Allez vers l’ouest et passez au-dessus de Stonehenge. Suivez la ligne de montagnes et tournez vers l’est à la première ouverture. Continuez vers l’est et vous trouverez le Faucheur de Vie de Raven’s Dust, Jormungand qui ressemble lui aussi à un néphilim <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(480, 2010, 0)</span>. Tuez-le et vous recevrez sa pierre spirituelle. </p><p>Allez jusque Stoneheim et prenez la route allant de Stonecrest jusqu’au château de Mordenthal. Suivez le chemin jusqu’à atteindre les montagnes. Dirigez-vous alors vers l’ouest vers la côte. Longez la côte vers le nord et vous trouverez Fenrir, le Faucheur de Vie de Stoneheim <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(155, 215, 0)</span>. Il ressemble aussi à un néphilim. Tuez-le et vous recevrez sa pierre spirituelle. </p><p>Maintenant allez au village des Centaures. Dépassez le château et allez vers l’est (la route en direction de la cave aux centaures). Dès que vous avez passé le petit lac, dirigez-vous vers le sud. Vous arriverez au portail (en 1127, 1191, 0). Cliquez sur ce portail. Il prendra les 3 pierres spirituelles, les mélangera et vous serez téléporté à côté du Faucheur de Vie. Tuez-le et vous obtiendrez le Cristal de la Providence. Dépêchez-vous car le temps est limité. Si vous avez un deuxième jeu de pierres, vous pourrez vous faire aider par un ami mais vous devrez achever le Faucheur vous-même. </p><p>Retournez voir Filandrius à la Grande Bibliothèque et dites <span class=\"text-amber-400 font-bold\">\"<b>délivrer</b>\"</span>. Filandrius prendra le Cristal de la Providence et vous recevrez le Bracelet et la Gemme des Immortels. </p><p><b>Remarque #1 :</b> Vous devez être au minimum niveau 50 pour commencer cette quête.... et beaucoup plus pour la finir !! </p><p><b>Remarque #2 : </b>La récompense donnée par la Sentinelle ne peut être obtenue qu’une seule fois par renaissance. </p><p><b>PNJ impliqués : </b>Filandrius, Sentinelle de Windhowl </p><p><b>Mini-boss impliqués :</b> Jormungand, Hel, Fenrir, le Faucheur de Vie (Harvester of Life) </p><p><b>Récompenses acquises :</b> Bracelet et Gemme des Immortels(0 stats), 100 xp * niveau actuel, 500 po * niveau actuel. </p>",
+        "images": [],
+        "order": 2
+      },
+      {
+        "title": "Voyage entre les plans (réservé aux Séraphes level 50+)",
+        "description": "<p>Vous remarquerez que dans chaque ville (et pas que dans les villes) se trouve un portail auxquel vous n'avez pas accès. </p><p>Vous ne pourrez y accéder que si vous êtes Séraphe/Néphi, au moins level 50 et avez terminé la quête d'accès. </p><p>Pour avoir accès à l'Interplan vous devez activer 8 portails (sur 10). Ces portails sont situés à : </p><ol><li>Lighthaven (AR)</li> <li>Windhowl (AR)</li> <li>Camp des Druides (AR)</li> <li>Silversky (RD)</li> <li>Oasis (RD)</li> <li>Bibliothèque (RD)</li> <li>Stonecrest (SH)</li> <li>Ville Centaure (SH)</li></ol><p>Pour activer l'accès approchez-vous d’un portail et sautez dedans. Dites <span class=\"text-amber-400 font-bold\">\"<b>Creations</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"<b>Stop</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"<b>Yes</b>\"</span>. Vous entrez alors à l’intérieur et vous apparaîtrez autre part. Vous avez environ 60 secondes pour tuer Doppelganger. Entrez dans chacun des 8 portails et faites de même. Vous ne pourrez pas rentrez dans un portail déjà fait avant d’avoir fini les huit. Terminez les 8 et vous pourrez traverser les plans (Plane Walking) (cela signifie que vous pouvez utiliser les portails pour voyager de l'un à l'autre). Cette carte de l'interplan vous montre les destinations des portails quand vous traversez les plans. </p><p><b>Remarque 1 :</b> Le meilleur moyen pour tuer Doppelganger, même pour les mages, ce sont les armes physiques (ou à mains nues si vous bénéficiez d'une bonne force). Il est conseillé d'activer si vous en avez vos boucliers offensifs. Les sorts, à moins d’être à un niveau supérieur à 150 ne leur font rien. </p><p><b>Remarque 2</b> : Vous perdez l'accès à chaque renaissance et devrez attendre le niveau 50 pour le refaire. </p><p><b>Remarque 3</b> : Niève et Redwall seront automatiquement activés </p><p><b>Mini-boss impliqués :</b> Doppelganger </p><p><b>Récompense acquise :</b> Planewalking (ou interplan) (plus besoin d’acheter des parchemins de LH, WH, SS, etc.) </p>",
+        "images": [],
+        "order": 3
+      },
+      {
+        "title": "L’Ancienne Plaque Céleste (Quête réservée aux Séraphes)(non répétable)",
+        "description": "<p>Près de la fontaine de Stonecrest, vous trouverez un PNJ appelé Tristan. Parlez-lui et répondez à ses questions. Dites-lui <span class=\"text-amber-400 font-bold\">\"<b>oui</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"<b>oui</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"<b>récemment</b>\"</span>, <span class=\"text-amber-400 font-bold\">\"<b>déterraient</b>\"</span> et vous entendrez une histoire au sujet de deux hommes qui creusaient le sol avec des pelles. Ils finirent par trouver un corps de Séraphin et sont partis vers l’est dans leur roulotte. </p><p>Allez vers l’est et suivez le chemin menant aux araignées. Juste avant d’y arriver, vous verrez un petit camp avec des guerriers Obsidian Conclave. Tuez-en environ dix jusqu’à ce qu’apparaisse le commandant Mordred. Tuez-le et vous obtiendrez une petite clé en fer. Avec celle-ci, ouvrez le coffre situé dans le camp, vous obtiendrez l'ancienne plaque céleste (indropable). </p><p><b>PNJ impliqué: </b>Tristan </p><p><b>Mini-boss impliqué:</b> Commandant Mordred </p><p><b>Récompense acquise:</b> le plastron Ancienne Plaque Céleste (Stats: 100 End, 30 For, 30 Dex, 30 Int, 30 Sag) (indropable) </p><ul><li><b>Bonus du plastron</b> : Quand vous êtes attaqué, un sort s'enclenche sur la gauche avec les autres sorts : il boost la CA, régénère mana vie et plus, très utile dans les zones ou il y a beaucoup de mobs surtout avec les sorts de zone comme les boucliers de feu air eau ou électrique.</li> <li><b>Attention</b> : ne pas deleter avant d'être 260, vous savez pas quand elle pourrait servir.</li></ul><p><br> </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [],
+        "order": 4
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "Petites quêtes pour s'enrichir (un peu)",
+    "slug": "petites-quetes-pour-senrichir-un-peu",
+    "zone": "Inconnue",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "Le dragon Darkfang",
+        "description": "<p>Allez voir le dragon Darkfang près de la fontaine, il vous donnera 5000 pièces d'or, mais une seule fois! Cela vous permettra d'acheter une ou plusieurs bénédictions auprès de Zélina, située au temple. Bénédiction qui vous sera bien utile lors de vos premiers niveaux. </p>",
+        "images": [
+          "/t4c-nms-overview/assets/quests/petites-quetes-pour-senrichir-un-peu/img_0_0.jpg"
+        ],
+        "order": 0
+      },
+      {
+        "title": "La quête des rats et les poils de rats",
+        "description": "<p>A la fin de la quête, le samaritain vous donne 3000 pièces d'or en récompense en plus de l'xp gagné. </p><p>Et surtout, durant la quête, amassez les poils de rats, vous pourrez les vendre à Fulika, la fille en jaune au milieu du village métiers situé au Sud de LH (2850,1300) au prix de 1667 pièces d'or l'unité. </p>",
+        "images": [],
+        "order": 1
+      },
+      {
+        "title": "Les défenses d'ogre",
+        "description": "<p>Lorsque vous serez un peu plus fort, allez tuez des ogres - ils sont au sud ouest de la ville - vous pourrez vendre les défenses d'ogre obtenues à Fulika pour 9444 pièces d'or l'unité. </p><p>Voilà, vous êtes presque riches !! </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [],
+        "order": 2
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "Puissance Ancestrale Humterre (Aura réservée aux humains)",
+    "slug": "puissance-ancestrale-humterre-aura-reservee-aux-humains",
+    "zone": "Inconnue",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "L'AURA HUMTERRE",
+        "description": "<p>Une fois l'accès à la Cave Humterre validé, </p><p>- trouver <b>Kwazor</b> un mage au fond de la cave Humterre et lui parler (lui dire <span class=\"text-amber-400 font-bold\">\"travail\"</span>), il vous parle du livre d'Humterre et d'un vieillard. </p><p>- aller voir le <b>Vieillard Sénile </b>dans le village Métiers de Redwall et lui parler (lui dire <span class=\"text-amber-400 font-bold\">\"travail\"</span>), il vous parle de potion de jouvence et du squelette Morgool (cimetière de Redwall). </p><p>- aller voir le <b>Squelette de Redwall</b> et lui parler (lui dire <span class=\"text-amber-400 font-bold\">\"travail\"</span>), il vous donnera une potion de jouvence contre 4 os de squelette (qui drop aux squelettes dans la cave minotaure sur RD) et un crane du bouffon morbide (drop du bouffon au château de SS). </p><p>- porter la potion de jouvence au <b>Vieillard Sénile</b> qui vous donnera le livre en échange. </p><p>- porter le livre à <b>Kwazor</b> qui vous proposera une épreuve : vous êtes téléporté dans une cave et vous devez tuer 50 mobs en 10 mn pour réussir. </p><p>- si l'épreuve est réussie vous apprenez l'aura humterre. </p><p>MAJ du 4/4/18 : la consommation de mana pour réactiver l'aura est divisée par deux ! </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [],
+        "order": 0
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "Quete de Nirtelle , ou la quête de l'institut de beauté",
+    "slug": "quete-de-nirtelle-ou-la-quete-de-linstitut-de-beaute",
+    "zone": "Inconnue",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "Quête de Nirtelle ou Institut de beauté",
+        "description": "<p>Rendez vous à Lighthaven auprès de Nirtelle, une jeune femme qui habite dans une maison à l'Est de la taverne. Parlez lui. </p><p><b>Elle vous demandera de lui rapporter :</b> </p><p><br> <b>Cette quête augmente votre chance aléatoirement entre +1 et +20 pendant 12 heures IG. </b> </p><p><b>Il faut de la chance pour avoir plus de chance !!</b> </p><p><b>Nirtelle vous donne aussi 50K XP comme récompense.</b> </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [],
+        "order": 0
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "Quête des ornements",
+    "slug": "quete-des-ornements",
+    "zone": "Inconnue",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "Quête des ornements",
+        "description": "<p>Vous devez être niveau 200+ pour pouvoir vous rendre Académie -2. </p><p>Prenez sur vous un ou plusieurs lots de 50 minerais de : </p><ul><li>rubis</li> <li>émeraude</li> <li>diamant</li> <li>saphir</li> <li>titane pour lingot de titane (qui n'est pas cité)</li></ul><p>Rendez vous chez<b> Retally</b>, dans une maison aux Yétis de la serre, à l'Académie-2. </p><p>Parlez-lui : mots clés <span class=\"text-amber-400 font-bold\">\"minerais\"</span> <span class=\"text-amber-400 font-bold\">\"ornements\"</span> <span class=\"text-amber-400 font-bold\">\"pierres\"</span> et le nom des minerais que vous voulez transformer. </p><p>Retally transformera votre lot de 50 minerais en un ornement et vous donnera 2,5M xp/level selon votre level. </p><p>Par exemple au level 200, un ornement vous rapportera 500M. Intéressant pour <span class=\"text-amber-400 font-bold\">\"petits\"</span> levels. </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [
+          "/t4c-nms-overview/assets/quests/quete-des-ornements/img_0_0.jpg"
+        ],
+        "order": 0
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "Quete du présent des alvors",
+    "slug": "quete-du-present-des-alvors",
+    "zone": "Inconnue",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "Description",
+        "description": "<p>Tout d'abord, il faut récupérer des perles de pluie: </p><p>Soit auprès d'un Gobelin particulier qui se trouve au niveau -3 des sous-sols du temple de Lighthaven. Il est mêlé aux autres Gobelins dans la salle de droite et n'a aucun signe de distinction si ce n'est qu'il droppe ces perles. </p><p>Taux de drop anecdotique, vous devrez tuer quelques centaines de fois le même gobelin pour loot les 80 perles, comptez entre 40 et 50 heures au minimum. Si vous etes chanceux, le temps de repop de l'item sur le gobelin varie entre 2 et 15 minutes (D'apres Knuckles et son camping incessant, mouarfff !). </p><p>Soit au niveau -2 de l'Académie, dans le coffre situé dans la zone des embaumés. </p><p><br><span typeof=<span class=\"text-amber-400 font-bold\">\"mw:File\"</span>><a href=<span class=\"text-amber-400 font-bold\">\"https://static.wikia.nocookie.net/t4c/images/0/06/Perles.JPG/revision/latest?cb=20091017085656&amp;path-prefix=fr\"</span> ><img alt=<span class=\"text-amber-400 font-bold\">\"Perles\"</span> src=<span class=\"text-amber-400 font-bold\">\"https://static.wikia.nocookie.net/t4c/images/0/06/Perles.JPG/revision/latest?cb=20091017085656&amp;path-prefix=fr\"</span> decoding=<span class=\"text-amber-400 font-bold\">\"async\"</span> loading=<span class=\"text-amber-400 font-bold\">\"lazy\"</span> width=<span class=\"text-amber-400 font-bold\">\"631\"</span> height=<span class=\"text-amber-400 font-bold\">\"616\"</span> data-image-name=<span class=\"text-amber-400 font-bold\">\"Perles.JPG\"</span> data-image-key=<span class=\"text-amber-400 font-bold\">\"Perles.JPG\"</span> data-relevant=<span class=\"text-amber-400 font-bold\">\"1\"</span>></a></span> </p><p><br>Une fois que vous aurez récupéré plusieurs perles, rendez-vous sur StoneHeim, au Sud de la maison du prêtre qui transforme les fioles d'eau cristalline en fioles d'eau bénite. Vous devrez trouver Aqua Laguna qui se trouve un peu au-dessus du chemin, parmi les loups. A l'initialisation du dialogue, il mettra en évidence le mot-clef <span class=\"text-amber-400 font-bold\">\"sagesse\"</span>. Poursuivez donc le dialogue dans cette voie en suivant les mots-clefs. Au mot-clef <span class=\"text-amber-400 font-bold\">\"récompense\"</span>, il vous transformera toutes vos perles de pluie en potions de premier secours, et ceci en une fois.<br>Une fois les potions en main, direction Raven's Dust, au Nord-Ouest des montagnes entourant la tour de Zhakar. Vous trouverez Hably Cover sur une petite plage. Dîtes-lui <span class=\"text-amber-400 font-bold\">\"potion\"</span> et elle vous proposera de résoudre une énigme plutôt loufoque. Vous devrez proposer un nombre au hasard et vous obtiendrez diverses récompenses. </p><p>Après 80, 81 ou 82 tentatives infructueuses, vous aurez le Présent des Alvors à coup sûr avec le meme perso !!! (j ais rarement vu plus de 82) Apres la quete se remet a 0 donc vous pouvez recommencer indéfiniment. </p>",
+        "images": [],
+        "order": 0
+      },
+      {
+        "title": "Récompenses",
+        "description": "<ul><li><b>Le Présent des Alvors</b> (Amulette des Héros version archer)</li> <li>De l'or (en général 500po multiplié par votre lvl)</li> <li>Épée d'argent (épée pour noob à 71 force)</li> <li>Potion de régénération (valeur de 90kpo/unité à la revente chez un marchand)</li> <li>Paire de ciseaux !</li> <li>Rien *la fille part dans ses pensées*</li> <li>Un petit tour sur RD</li> <li>un petit retour a son sanctuaire</li> <li>Lingot d'iridium</li> <li>Pomme</li> <li>Livre de cuisine</li> <li>Cake aux fruits</li> <li>?...</li></ul>",
+        "images": [],
+        "order": 1
+      },
+      {
+        "title": "Conseils",
+        "description": "<p>Essayez d'échanger ces perles une fois haut niveau, elles vous rapporteront plus d'or. </p><p><br> </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [],
+        "order": 2
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "Quête initiale",
+    "slug": "quete-initiale",
+    "zone": "Inconnue",
+    "prerequisites": [
+      "une armure de cuir gobeline et 5000 po."
+    ],
+    "rewards": [],
+    "npcs": [],
+    "gold": "5000",
+    "steps": [
+      {
+        "title": "INTRODUCTION à la QUETE INITIALE des METIERS",
+        "description": "<p>Les premières recettes peuvent être apprises et mises en pratique directement avec de bonnes chances de réussite. Mais au-delà du niveau de métier 10 rien ne va plus ! Cette quête permet d'apprendre les recettes au delà du niveau 10. </p><p>Cette quête va vous faire marcher beaucoup!! Prenez de bonnes chaussures et munissez-vous d'une armure de cuir gobeline et de 5000 po. </p><p>Elle commence chez le PNJ Gierfres, dans la maison de Sigfried (le marchand d'armes à l'ouest du temple de LH) Dites lui <span class=\"text-amber-400 font-bold\">\"mission\"</span>. Il vous faudra ensuite parler tour à tour à différents PNJ : </p><ul><li>l'ébéniste Fortaleyn: près du marchand armes +2 d'Arakas.</li> <li>l'apothicaire Ilyzie : au nord du lac krakra.</li> <li>l'armurier Egnizek : près du gardien de WH au centre de la ville.</li> <li>le bijoutier Nelkus Piltez (pos: 355, 2320, 2) : dans la cave B des monts Righuls, aussi appelés montagnes de Jarko.</li> <li>le couturier Peliaces : prés de la taverne de LH, maison proche de la coiffeuse.</li></ul><p>Le couturier vous demande de lui ramener une armure de cuir gobeline + 5000 pièces d'or pour faire le sac, et le chemin recommence à l'envers jusqu'au PNJ Gierfres. </p><p>Au retour, vous gagnez 20k xp à chaque PNJ et 300k xp à la fin de la quête. </p>",
+        "images": [],
+        "order": 0
+      },
+      {
+        "title": "La quête des commerces de Sigfried",
+        "description": "<p><b>Items nécessaires</b> : une armure de cuir gobeline et 5000 po. </p><p>La quête commence avec Geirfres. Il s'agit du père de Sigfried (marchand d'armes de LightHaven) qui se trouve dans son échoppe. Il vous expliquera que le commerce va mal à cause d'une dénommée Fortaleyn qui ne veut plus fournir d'arcs à Sigfried. Vous aurez alors pour mission de rétablir le commerce entre ces deux personnes. Mot-clés: <span class=\"text-amber-400 font-bold\">\"mission\"</span> et <span class=\"text-amber-400 font-bold\">\"arrange\"</span>. </p><p>Fortaleyn se trouve près du marchand d'armes+2 au sud du camp de la Gitane et expliquera qu'elle aimerait bien continuer les affaires avec Sigfried mais que le commerce n'est plus rentable pour elle. Elle doit fabriquer des armes plus évoluées et pour cela elle a besoin de runes magiques qu'elle vous demandera de récupérer. Mot-clés: <span class=\"text-amber-400 font-bold\">\"travail\"</span>, <span class=\"text-amber-400 font-bold\">\"commerce\"</span>, <span class=\"text-amber-400 font-bold\">\"conditions\"</span>, <span class=\"text-amber-400 font-bold\">\"renouvelé\"</span>, <span class=\"text-amber-400 font-bold\">\"formules\"</span>, <span class=\"text-amber-400 font-bold\">\"magiques\"</span> et <span class=\"text-amber-400 font-bold\">\"apothicaire\"</span>. </p><p>Direction la plaine des Kraanians (au nor du lac) pour trouver Ilyzie, une apothicaire capable de fabriquer les runes dont Fortaleynn a besoin. Ces runes valent extrêmement cher mais Ilyzie acceptera de vous en donner si vous lui trouvez une armure à la mode. Mot-clés: <span class=\"text-amber-400 font-bold\">\"travail\"</span>, <span class=\"text-amber-400 font-bold\">\"apothicaire\"</span>, <span class=\"text-amber-400 font-bold\">\"boulot\"</span>, <span class=\"text-amber-400 font-bold\">\"payer\"</span>, <span class=\"text-amber-400 font-bold\">\"habillé\"</span>, <span class=\"text-amber-400 font-bold\">\"service\"</span>, <span class=\"text-amber-400 font-bold\">\"quelque chose\"</span> et <span class=\"text-amber-400 font-bold\">\"intervenez\"</span>. </p><p>Rendez-vous à WindHowl pour trouver Egnizek (dans une maison à l'Ouest de la taverne) qui acceptera de vous donner l'armure si vous l'aidez à la terminer. Pour cela, il lui faut une pierre précieuse que vous fournira Nelkus Piltez. Mot-clés: <span class=\"text-amber-400 font-bold\">\"travail\"</span>, <span class=\"text-amber-400 font-bold\">\"oeuvre\"</span>, <span class=\"text-amber-400 font-bold\">\"détails\"</span>, <span class=\"text-amber-400 font-bold\">\"fabriquer\"</span>, <span class=\"text-amber-400 font-bold\">\"presque terminée\"</span> et <span class=\"text-amber-400 font-bold\">\"trouver\"</span>. </p><p>Nelkus Piltez se trouve dans la cave B des Monts de Righul <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(355, 2320, 2)</span>. Il vous expliquera que son sac servant à transporter les pierres précieuses est troué et qu'il aurait bien besoin d'un nouveau sac. Vous devrez donc aller lui en chercher un en allant voir Peliaces à LightHaven. Mot-clés: <span class=\"text-amber-400 font-bold\">\"travail\"</span>, <span class=\"text-amber-400 font-bold\">\"sac\"</span>, <span class=\"text-amber-400 font-bold\">\"tissu\"</span>, <span class=\"text-amber-400 font-bold\">\"couturier\"</span> et <span class=\"text-amber-400 font-bold\">\"faire\"</span>. </p><p>Peliaces habite une maison au centre de LightHaven, derrière celle de Kalastor. Il vous fabriquera le sac si vous lui ramenez les ingrédients nécessaires : 1 armure de cuir gobeline et 5000 pièces d'or. Mots-clés: <span class=\"text-amber-400 font-bold\">\"travail\"</span> et <span class=\"text-amber-400 font-bold\">\"sacs\"</span>. </p><p>Dès lors, vous pourrez apprendre le métier de couturier auprès de Peliaces. (20,000 xp) </p><p>Vous pourrez apprendre celui de bijoutier auprès de Nelkus Piltez une fois que vous lui aurez ramené le sac.(20,000 xp) </p><p>Celui d'armurier auprès d'Egnizek une fois que vous aurez ramené la pierre précieuse.(20,000 xp) </p><p>Celui d'apothicaire auprès d'Ilyzie une fois que vous aurez ramené l'armure, celui d'ébéniste auprès de Fortaleyn une fois que vous aurez ramené les runes.(20,000 xp) </p><p>Enfin celui de forgeron auprès de Geirfres une fois que Fortaleyn aura accepté de reprendre le commerce avec Sigfried. (300,000 xp) </p><p>Ouff c'est fini !!!! (380,000 xp au total quand même) </p><p>Remarque : Après chaque renaissance, la quête est à refaire pour poursuivre l'apprentissage des recettes lvl 10+ (leticia :)). Intéressant aussi pour l'xp. </p><p>Mais pour le moment vous êtes de niveau zéro dans le (les) métier que vous avez choisi. Apprenez maintenant une recette de ce niveau (dite <span class=\"text-amber-400 font-bold\">\"apprendre\"</span> au premier PNJ de votre métier) et fabriquez l'item correspondant pour gagner un niveau. Et ainsi de suite.. </p><p>Vous trouverez les informations dont vous avez besoin (nom du PNJ et localisation, ingrédients de la recette) sur le site NMS des Métiers dont le lien figure sur la page d'accueil de ce Wiki. </p><p>Bon courage. </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [
+          "/t4c-nms-overview/assets/quests/quete-initiale/img_1_0.jpg"
+        ],
+        "order": 1
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "Quêtes T4C Stoneheim",
+    "slug": "quetes-t4c-stoneheim",
+    "zone": "Stoneheim",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "Les crânes de malfrats (Quête neutre)",
+        "description": "<p>Juste à la sortie (porte est) de Stoneheim, vous trouverez un PNJ nommé Delnar Lavndir. Dites-lui <span class=\"text-amber-400 font-bold\">\"crane de malfrat\"</span> et il vous dira qu’il les collectionne. Vous pouvez en trouver sur des cadavres de chapardeurs ou d’arpenteurs de la nuit (vous les trouverez après la sortie par la porte est, pas loin de Delnar). </p><p>Après en avoir cumulé quelques uns, retournez voir Delnar Lavndir. Dites <span class=\"text-amber-400 font-bold\">\"crane de malfrat\"</span> puis <span class=\"text-amber-400 font-bold\">\"oui\"</span>. Vous serez récompensé par une partie de cotte de mailles (aléatoire) et des xps. Vous n’avez qu'à lui dire <span class=\"text-amber-400 font-bold\">\"crane de malfrat\"</span> une fois et il prendra tous les crânes que vous avez dans votre inventaire. Il garde aussi en mémoire combien de crânes vous lui avez rapporté, tout simplement parce que pour certains, vous recevrez plus d’xps. Pour chaque crâne donné à Delnar vous recevez une pièce aléatoire de cotte de maille et vous recevrez 50.000 xps ; excepté pour le 10e (vous recevrez 175.000 xps), pour le 25e (vous recevrez 500.000 xps) et pour le 100e (vous recevrez 2.500.000 xps). </p><p>Remarque: Vous pouvez effectuer cette quête à volonté. </p><p>PNJ impliqué: Delnar Lavndir </p><p>Récompenses acquises: Partie de cotte de mailles (aléatoire) (80 End), 50.000, 175.000, 500.000 ou 2.500.000 xps (selon le crâne que vous amenez). </p>",
+        "images": [],
+        "order": 0
+      },
+      {
+        "title": "Les gemmes (Quête neutre)",
+        "description": "<p>De nombreux monstres droppent des gemmes (Agathe, Diamant…). Dirigez-vous vers la ville des voleurs et trouvez Meltar Goanvach. Dites lui <span class=\"text-amber-400 font-bold\">\"connard\"</span> et courrez car il vous attaquera (vous aimeriez vous faire insulter, vous ?). Retournez le voir et dites <span class=\"text-amber-400 font-bold\">\" Gemmes\"</span>, <span class=\"text-amber-400 font-bold\">\"oui\"</span>. Vous serez récompensé par des points d’expérience et des potions de résistance. </p><p>(<b><span class=\"text-amber-400 font-bold\">\"Mention Spéciale Evil\"</span></b> N'insultez surtout pas Meltar Goanvach Si vous êtes, et/ou espérez devenir Ogrimarien! Sachant qu'il est incontournable afin d'accomplir beaucoup plus facilement, et 2 fois moins coûteux en gemmes pour accéder à réalisation de la Clef d'Ogrimar! Dites lui plutôt: <span class=\"text-amber-400 font-bold\">\"Couronne de corruption\"</span> N'ayant pas essayé avec un Séraphin, étant une quête neutre, ce mot clefs devrait pouvoir fonctionner en tous cas... ) </p><p>Récompenses : </p><p><br> Remarque: Vous pouvez effectuer cette quête à volonté. </p><p>PNJ impliqué: Meltar Goanvach </p><p>Récompenses acquises: Points d’expérience variés et potions de résistance variées. </p>",
+        "images": [],
+        "order": 1
+      },
+      {
+        "title": "La quête du collectionneur de scalps (bénéfique et maléfique)",
+        "description": "<p>Ramenez 5 Scalps (droppés par les Skraugs violets) à Wajpoothin au village Skraugs verts (à l’est) pour une masse Skraugbashor. Mots-clés : <span class=\"text-amber-400 font-bold\">\"masse de Skraugbashor\"</span>, <span class=\"text-amber-400 font-bold\">\"oui\"</span>. Vous recevrez aussi 1.000 xps multipliés par votre niveau actuel. </p><p>Ramenez 5 Masses Skraugbashor à Khan Wulgworth au village Skraugs roses (dans une grotte au centre) pour une ceinture de force Skraug. Mots-clés : <span class=\"text-amber-400 font-bold\">\"masse de Skraugbashor\"</span>, <span class=\"text-amber-400 font-bold\">\"oui\"</span>. Vous recevrez aussi 1.000 xps multipliés par votre niveau actuel. </p><p>Ramenez 3 ceintures de force Skraug au Prévot Grant Anfust à Stonecrest (situé dans la maison au sud du square de la ville), pour un livre du collectionneur (également droppé par les Assassins Obsidiens). Mots-clés : <span class=\"text-amber-400 font-bold\">\"ceinture de force skraug\"</span>, <span class=\"text-amber-400 font-bold\">\" oui\"</span>. Vous recevrez aussi 3.000 xps multipliés par votre niveau actuel. </p><p>Ramenez 5 livres du collectionneur au Roy Aedenas Valreus (situé à la ville des Centaures), pour un anneau du lion. Mots-clés : <span class=\"text-amber-400 font-bold\">\"livres du collectionneur\"</span>, <span class=\"text-amber-400 font-bold\">\"oui\"</span>. Vous recevrez aussi 3.750 xps multipliés par votre niveau actuel. </p>",
+        "images": [],
+        "order": 2
+      },
+      {
+        "title": "Partie bénéfique",
+        "description": "<p>Ramenez 2 anneaux du lion à Sir Beltigan (situé dans son château au sud-ouest de Stonecrest) pour obtenir soit un œil du tigre soit une épée de puissance en cristal. Mots-clés : <span class=\"text-amber-400 font-bold\">\" anneaux du Lion\"</span>, <span class=\"text-amber-400 font-bold\">\"oui\"</span>. Vous recevrez aussi 4.000 xps multipliés par votre niveau actuel. </p>",
+        "images": [],
+        "order": 3
+      },
+      {
+        "title": "Partie maléfique",
+        "description": "<p>Ramenez 3 anneaux du lion à Sir Mordenthal (situé dans son château au nord-est de Stonecrest) pour obtenir soit un manteau de l’Armageddon ou une grande hache de la victoire. Mots-clés : <span class=\"text-amber-400 font-bold\">\"anneaux du Lion\"</span>, <span class=\"text-amber-400 font-bold\">\"oui\"</span>. Vous recevrez aussi 6.000 xps multipliés par votre niveau actuel. </p><p><b>Remarque: Vous pouvez effectuer cette quête à volonté.</b> </p><p><b>PNJs impliqués:</b> Wajpoothin, Khan Wulgworth, Prévot Grant Anfust, Roy Aedenas Valreus, Sir Beltigan (pour la quête bénéfique), Sir Mordenthal (pour la quête maléfique). </p><p><b>Récompenses acquises:</b> Selon vos choix: </p><p>a. Masse Skraugbashor (280 For, 25 Dex, 20 Int, 25 Sag), 1.000 xps * niveau<br>b. Ceinture de force Skraug (100 End, 20 Int, 25 Sag), 1.000 xps * niveau<br>c. Anneau du lion (30 For, 22 End, 26 Dex, 25 Int, 25 Sag), 3.750 xps * niveau<br>d. Œil du tigre (115 Int, 113 Sag) ou épée de puissance en cristal (251 For, 21 Dex, 53 Int, 50 Sag), 4.000 xps * niveau pour la partie bénéfique uniquement.<br>e. Manteau de l’Armageddon (37 End, 175 Int,70 Sag) ou Grande hache de la victoire (242 For, 43 Dex, 25 Int, 25 Sag), 6.000 xps * niveau pour la partie maléfique uniquement. </p>",
+        "images": [],
+        "order": 4
+      },
+      {
+        "title": "L’anneau de vraie foi (Quête bénéfique)",
+        "description": "<p>Cherchez le PNJ nommé Theoran Feizdir (dans une petite maison située dans la plaine au sud-est de Stonecrest) et dites <span class=\"text-amber-400 font-bold\">\"anneau de vraie foi\"</span>. Il vous demandera: </p><p>1 Anneau de foi (de la quête de l’anneau de foi)<br>1 Graal de pureté (droppé par les centaures vengeurs de Stoneheim)<br>2 Fioles d’ eau bénite (préparées par Theoran Feizdir [pour une fiole d’eau cristalline] ou Frère Thorkas [pour une fiole d’eau cristalline et 1.000 pièces d’or]), Mots-clés : <span class=\"text-amber-400 font-bold\">\"eau bénite\"</span>, <span class=\"text-amber-400 font-bold\">\"oui\"</span>. </p><p>Ramenez-lui les objets et dites <span class=\"text-amber-400 font-bold\">\"anneau de vraie foi\"</span>, <span class=\"text-amber-400 font-bold\">\"oui\"</span> et il vous donnera l’anneau. </p><p>Remarque #1: Vous pouvez effectuer cette quête à volonté.<br>Remarque #2: Quand vous dites <span class=\"text-amber-400 font-bold\">\"adieu\"</span> à Theoran Feizdir il invoque une Aura Protectrice pour vous. Elle vous donne +20 à toutes les résistances et dure 2 minutes 30 secondes. </p><p><b>PNJs impliqués:</b> Theoran Feizdir, Frère Thorkas (facultatif). </p><p><b>Récompense acquise:</b> Anneau de vraie foi (prérequis : 15 Int, 90 Sag) </p>",
+        "images": [],
+        "order": 5
+      },
+      {
+        "title": "Le parchemin d’amitié des chevaux (Quête neutre)",
+        "description": "<p>A la ville des Centaures, cherchez un PNJ nommé Dionysus Argantma (situé dans la maison au nord de la fontaine). </p><p>Dites-lui <span class=\"text-amber-400 font-bold\">\"centaures squelettes\"</span> et il vous demandera d’en tuer 12 puis de revenir le voir pour une récompense. Vous trouverez des centaures squelettes dans le donjon du château de Mordenthal (nord-est de Stonecrest). Tuez-en 12 (ou plus mais cela sera perdu) et retournez voir Dionysus Argantma. Dites <span class=\"text-amber-400 font-bold\">\"centaures squelettes\"</span>, <span class=\"text-amber-400 font-bold\">\"oui\"</span> et il vous récompensera par un parchemin d’amitié des chevaux et 1.500 xps multipliés par votre niveau courant. </p><p>Vous pouvez l’utiliser à différentes fins: </p>",
+        "images": [],
+        "order": 6
+      },
+      {
+        "title": "1ère manière : Quête de Malachaï",
+        "description": "<p>Ramenez un parchemin d’amitié des chevaux (ou plusieurs à la fois) à Malachai Thanatos situé ville des Centaures dans la maison au sud de la fontaine (Mot-clé : <span class=\"text-amber-400 font-bold\">\"parchemin d'amitié des chevaux\"</span>) pour obtenir l’un des articles suivants : </p><ul><li>Sinistre lame de guerre</li> <li>Lame assassine</li> <li>Arc pourfendeur de Centaures</li> <li>Robe des Enfers</li></ul><p>Vous recevrez aussi 2.000 xps multipliés par votre niveau courant. </p><p>Quand vous en aurez plusieurs, ces objets peuvent à nouveau être échangés au choix: </p><p>Ramenez <b>2</b> <b>Lames assassines</b> à Daran Pied-léger (situé à l’Auberge des Aventures de Stonecrest) pour une clé des îles éthérées brisée.<br>Mots-clés: <span class=\"text-amber-400 font-bold\">\"lame assassine\"</span>, <span class=\"text-amber-400 font-bold\">\"oui\"</span>. Vous recevrez aussi 1.500 xps multipliés par votre niveau actuel. <br><br>Ramenez <b>3 robes des Enfers</b> à Julian (situé à Stonecrest) pour un sceptre des Ténèbres. Mots-clés: <span class=\"text-amber-400 font-bold\">\"Robe des enfers\"</span>, <span class=\"text-amber-400 font-bold\">\"oui\"</span>. Vous obtiendrez aussi 2.500 xps multipliés par votre niveau actuel. </p><p>Ramenez <b>4 Sinistres lames de guerre</b> à Mordenthal (situé dans son château) pour une gemme sombre (et peut-être une lame-gemme sombre). Mots-clés : <span class=\"text-amber-400 font-bold\">\"Sinistres lames de guerre\"</span>, <span class=\"text-amber-400 font-bold\">\"oui\"</span>. Vous recevrez aussi 1.500 xps multipliés par votre niveau actuel. </p><p>Ramenez <b>5 Arcs pourfendeurs de Centaures</b> à Resha (située dans une maison proche de l’entrée est de Stonecrest) pour un Manteau de l’Archer. Mots-clés : <span class=\"text-amber-400 font-bold\">\"arcs pourfendeurs de centaures\"</span>, <span class=\"text-amber-400 font-bold\">\"oui\"</span>. Vous serez récompensés aussi par 2.500 xps multipliés par votre niveau actuel. </p>",
+        "images": [],
+        "order": 7
+      },
+      {
+        "title": "2ème manière (buggée)",
+        "description": "<p>Une fois que vous avez 10 parchemins d’amitié des chevaux, cherchez le PNJ errant nommé Cheval Sauvage Planétaire. Parlez-lui (mots-clés : <span class=\"text-amber-400 font-bold\">\"travail\"</span>...) et il vous proposera de vous téléporter (pour le prix d’un parchemin) à l’un des endroits suivants: </p><p>Pont de Lighthaven <br>Stonehenge d’Arakas <br>Maison d’Annabelle <br>Brigands d’Arakas <br>Entrée de Windhowl <br>Château de Bane Gwengad<br>Château de Silversky <br>Stonehenge de Raven's Dust <br>Désert de Raven's Dust <br>Place de Stonecrest </p><p>Il se téléporte avec vous. </p><p>Remarque #1: Vous pouvez effectuer cette quête à volonté.<br>Remarque #2: Il y a un bug et le cheval n’apparaît pas dans le jeu (lol!!!!!). </p><p>PNJ impliqué: Dionysus Argantma, Malachai Thanatos/Cheval sauvage planétaire (Facultatif), Sir Mordenthal/Daran Pied-léger/Resha/Julian (Facultatif).<br> </p><p>Récompenses acquises: Selon vos choix: </p><p>a. Parchemin d’amitié des chevaux, 1.500 xps * niveau </p><p>b. Sinistre lame de guerre (266 For, 35 Dex, 35 Sag) ou Lame assassine (110 For, 65 Dex, 15 Int) ou Arc pourfendeur des Centaures (27 For, 140 Dex) ou Robe des Enfers (28 End, 123 Int, 85 Sag), 2.000 xps * niveau </p><p>c. Clé Ethérée Brisée, 1.500 xps * niveau </p><p>d. Sceptre des Ténèbres (20 For, 83 Int, 35 Sag), 2.500 xps * niveau </p><p>e. Gemme Sombre (et peut-être une lame-gemme sombre (242 For, 53 Int, 43 Sag)), 1.500 xps * niveau </p><p>f. Manteau de l’Archer (25 For, 70 Dex, 30 Int, 40 Sag), 2.500 xps * niveau </p>",
+        "images": [],
+        "order": 8
+      },
+      {
+        "title": "La lame perdue du Dragon (Quête neutre)",
+        "description": "<p>A Stonecrest, trouvez le Prévôt Grant Anfust (près de l'entrée Est). </p><p>Dites <span class=\"text-amber-400 font-bold\">\"chapardeurs\"</span> puis <span class=\"text-amber-400 font-bold\">\"arpenteurs de la nuit\"</span> et il vous demandera de tuer 10 chapardeurs ou 10 arpenteurs de la nuit et de revenir le voir pour une récompense. Tuez-en 10 de chaque (vous en trouverez à profusion à la sortie est de Stonecrest) et retournez voir le Prévôt. </p><p>Dites à nouveau <span class=\"text-amber-400 font-bold\">\"chapardeurs\"</span> ou <span class=\"text-amber-400 font-bold\">\"arpenteurs de la nuit\"</span> et il vous remerciera avec une Note de Remerciement et 1.500 xps multipliés par votre niveau (Au maximum 50.000 xps). </p><p>Après cumul de 6 Notes de remerciement, parlez au Bourgmestre Belamzer (situé dans sa résidence, à Stonecrest). Dites <span class=\"text-amber-400 font-bold\">\"note de remerciement\"</span> et vous recevrez en récompense une lame perdue du Dragon et 3.000 xps multipliés par votre niveau actuel. </p><p><b>Remarque :</b> Vous pouvez effectuer cette quête à volonté. </p><p><b>PNJs impliqués :</b> Prévôt Grant Anfust, Bourgmestre Belamzer </p><p><b>Récompenses acquises :</b> Lame perdue du Dragon (242 For), 6 * 1.500 xps * niveau actuel - au maximum 300.000 xps- et 3.000 xps * niveau actuel. </p>",
+        "images": [],
+        "order": 9
+      },
+      {
+        "title": "Le heaume perdu du dragon (Quête neutre)    (Certificat de reconnaissance)",
+        "description": "<p>A Stonecrest, trouvez le prévôt Grant Anfust. Dites <span class=\"text-amber-400 font-bold\">\"document secret\"</span> et il vous demandera de lui en rapporter 5. Allez aux endroits suivants : </p><p> Ps:Attention qd vous clicquez un des coffres la clef se brise donc important de pas clicquer d'avance et s'assurer que qqun d'autre a pas ouvert avant. Sinon vous pouvez crocheter direct le coffre de Mithanna avec crochetage de serrures. </p><ul><li>1° Ouvrez le coffre dans la résidence du Bourgmestre Belamzer, vous trouverez une clé brillante en métal. <ul><li>Temps du coffre: 10 min a 2 et 20 min seul</li></ul></li> <li>2° Ouvrez le coffre brillant en métal dans la boutique d’armes de Gulfrid Morzholdir et vous devriez trouver une clé en métal sombre. <ul><li>Temps du coffre: 50 min toujours</li></ul></li> <li>3° Ouvrez le coffre en métal sombre dans la boutique d’armures de Herewald Herngwean et vous trouverez une clé en éclat d’os. <ul><li>Temps du coffre: 10 min a 2 et 20min seul</li></ul></li> <li>4° Ouvrez le coffre en éclats d’os dans la maison de Mithanna Snowraven et vous trouverez une clé de sureté en acier. <ul><li>Temps du coffre: 50 min toujours</li></ul></li> <li>5° Allez dans la planque des voleurs et ouvrez le coffre de sûreté en acier. Vous trouverez un document secret. <ul><li>Temps du coffre: 41 min toujours</li></ul></li></ul><ul><li>Temps du coffre: 10 min a 2 et 20 min seul</li></ul><ul><li>Temps du coffre: 50 min toujours</li></ul><ul><li>Temps du coffre: 10 min a 2 et 20min seul</li></ul><ul><li>Temps du coffre: 50 min toujours</li></ul><ul><li>Temps du coffre: 41 min toujours</li></ul><p>Collectez 5 Documents Secrets et rendez visite au prévôt Grant Anfust. Mots-clés: <span class=\"text-amber-400 font-bold\">\"document secret\"</span>, <span class=\"text-amber-400 font-bold\">\"oui\"</span> et vous serez récompensés d’'un Certificat de reconnaissance, complétés par 2.500 xps et 3.500 pièces d’or, bien entendu multipliés par votre niveau actuel. </p><p>Collectez 6 Certificats de reconnaissances et allez voir le bourgmestre Belamzer. Mot-clé: <span class=\"text-amber-400 font-bold\">\" Certificat de reconnaissance\"</span> et vous serez récompensés par un heaume perdu du dragon, ainsi que 2.500 xps et 1.000 pièces d’or, multipliés par votre niveau actuel. </p><p>Remarque #1: A chaque fois que vous ouvrez un coffre, la clé correspondante se brise et devient inutilisable (elle disparaît de votre inventaire). Les coffres ne droppent pas à chaque fois la clé suivante : ils droppent parfois autre chose ! Si cela se produit vous devez recommencer depuis le début puisque vous n’avez plus la clé qui s’est brisée. Si quelqu’un d’autre a ouvert le coffre récemment, vous devrez attendre environ une demi-heure pour avoir un nouveau drop. </p><p>Remarque #2: Vous pouvez effectuer cette quête à volonté. </p><p>PNJ impliqué: Prévôt Grant Anfust, Bourgmestre Belamzer </p><p>Récompenses acquises: Heaume perdu du dragon (150 End, 30 Int, 46 Sag), 17.000 xps * niveau actuel, 22.000 pièces d’or * niveau actuel. </p>",
+        "images": [],
+        "order": 10
+      },
+      {
+        "title": "Sceptre d’espoir (Quête bénéfique)",
+        "description": "<p>Dans la ville des Centaures, trouvez Dionysus Argantma. Dites <span class=\"text-amber-400 font-bold\">\"Baton d'espérance\"</span> et il vous demandera les objets suivants: </p><ul><li>2 piles de bois d’arbres démoniaques (droppés par les arbres démoniaques sur RD)</li> <li>5 Symboles d’espoir (achetés à 10.000 pièces d’or chaque chez Chryseida Yolangda à Stonecrest)</li></ul><p>Ceci fait, retournez voir Dionysus Argantma et dites <span class=\"text-amber-400 font-bold\">\"Baton d'espérance\"</span>, <span class=\"text-amber-400 font-bold\">\"oui\"</span> et il vous donnera un sceptre d’espoir. </p><p>Remarque #1: Vous pouvez effectuer cette quête à volonté. </p><p>Remarque #2: Vous devez être <span class=\"text-amber-400 font-bold\">\"messager de la Lumière\"</span> afin d’accomplir cette quête. (cf. Renaissance Séraphin d’Artherk, au commencement de cette quête). </p><p>PNJ impliqué: Dionysus Argantma, Chryseida Yolangda </p><p>Récompenses acquises: Sceptre d’espoir (110 For, 23 Int, 131 Sag). </p>",
+        "images": [],
+        "order": 11
+      },
+      {
+        "title": "La clé éthérée (Quête neutre) (indroppable)",
+        "description": "<ul><li>Échangez 2 lames assassines (obtenue lors de la quête du parchemin d’amitié des chevaux) chez Daran Pied-Léger (taverne de SC) contre une clé éthérée brisée (mot clé <span class=\"text-amber-400 font-bold\">\"lame assassine\"</span>).</li></ul><p>Prenez une clé éthérée brisée et allez voir Bastien Milandra au château de Sir Beltigan. </p><p>Parlez-lui et dites dans l’ordre <i>nom</i>, <i>oui</i>, <i>travail</i>, <i>oui</i>, <i>aide</i>, <i>oui</i>, <i>séraphin</i>, <i>oui</i>, <i>clef éthérée</i>, et enfin <i>oui</i> à <b>Bastien Milandra</b> et il réparera finalement la clé. </p><p>Remarque: Vous pouvez effectuer cette quête à volonté (mais vous n’aurez pas besoin d’une 2e clé car elle ne se brise plus jamais). </p><p>PNJ impliqué: Bastien Milandra </p><p>Récompenses acquises: Clé éthérée qui vous donne accès au Royaume Ethéré et ses îles par le portail éthéré (il se déplace entre la cave araignées et les skraugs verts en 6 positions différentes - voir carte SH) </p>",
+        "images": [],
+        "order": 12
+      },
+      {
+        "title": "Le luth de Paix (Quête neutre)",
+        "description": "<p>Dans la ville des centaures, parlez à Dionysus Argantma. Dites <span class=\"text-amber-400 font-bold\">\"quete\"</span>, <span class=\"text-amber-400 font-bold\">\"Luth de paix\"</span>, <span class=\"text-amber-400 font-bold\">\"recharger\"</span>. </p><p>Il vous demandera de recharger son luth, dites <span class=\"text-amber-400 font-bold\">\"oui\"</span>. Prenez le et cherchez un portail éthéré (vous devez avoir terminé la quête de la clé éthérée). Une fois que vous l’avez trouvé, entrez dedans et cherchez Glaenshenmilandira (la seule pnj sur ces îles, impossible à louper, mais c'est loin !). </p><p>Dites-lui <span class=\"text-amber-400 font-bold\">\"Luth de paix\"</span> et elle vous demandera 6 luths magiques (droppés par le Bouffon Morbide, à Silversky). Trouvez-les et retournez la voir. Dites à nouveau <span class=\"text-amber-400 font-bold\">\"Luth de paix\"</span>, <span class=\"text-amber-400 font-bold\">\"oui\"</span> et elle rechargera le luth. </p><p>Vous recevrez 2.000 xps multipliés par votre niveau actuel. </p><p>Retournez voir Dionysus Argantma et dites <span class=\"text-amber-400 font-bold\">\"Luth de paix\"</span>. Vous recevrez 750 xps et 2.000 pièces d’or, le tout multipliés par votre niveau actuel; et si vous êtes chanceux, une robe des Cieux (inconnue sur NMS ???). </p><p>Remarque #1: Vous pouvez effectuer cette quête à volonté. </p><p>Remarque #2: Diyonyisus Argantma ne vous parlera de cette quête que la nuit. </p><p>Remarque #3: Sur les Îles Ethérées, vous croiserez un monstre nommé Purificateur. Si vous le tuez, vous devrez tuer autant de Néoflares que vous avez tué de purificateurs avant que Glaenshenmilandira ne vous parle. </p><p>PNJ impliqué: Dionysus Argantma, Bastien Milandra (Facultatif), Glaenshenmilandira </p><p>Mini Boss impliqué: Bouffon Morbide </p><p>Récompenses acquises: 2.750 xps * niveau actuel, 2.000 pièces d’or * niveau actuel, peut-être une robe des Cieux (28 End, 73 Int, 135 Sag) </p>",
+        "images": [],
+        "order": 13
+      },
+      {
+        "title": "Quête de Mordenthal (maléfique)",
+        "description": "<p>Description de la quête : Récoltez 3 anneaux du lion, via la quête de l'anneau du lion, et dites <span class=\"text-amber-400 font-bold\">\"anneaux du lion\"</span>, puis <span class=\"text-amber-400 font-bold\">\"oui\"</span> à Mordenthal, situé dans son temple, dans les Montagnes au Nord de StoneCrest. </p><p>Attention, vous devez être d'un alignement maléfique pour effectuer cette quête ! </p><p>Vous pouvez accomplir cette quête à volonté. </p><p><b>Récompenses :</b> Manteau d'Armegeddon ou Grande Hache du Corbeau. </p><p><br> </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [],
+        "order": 14
+      }
+    ],
+    "credits": []
+  },
+  {
+    "title": "R.S.T. (Runed Stone Tablet) Drake Island",
+    "slug": "rst-runed-stone-tablet-drake-island",
+    "zone": "Inconnue",
+    "prerequisites": [],
+    "rewards": [],
+    "npcs": [],
+    "gold": "",
+    "steps": [
+      {
+        "title": "Introduction",
+        "description": "<p><b>Important : la récompense n'est donnée que si vous avez accès à DI.</b> </p><p>Rendez vous à l'auberge à l'est de StoneCrest (SH) et parlez à Mercyn Kignar lui dire <span class=\"text-amber-400 font-bold\">\"taches\"</span>, il vous demandera de trouver les 6 nexus sur SH, qui se trouvent le long des plages ... dites <span class=\"text-amber-400 font-bold\">\"Acceptez\"</span> </p><p><br>Le deuxième se situe avant le pont de la ville des centaures, derrière les montagnes (785-971-0). <br>Le troisième surplombe les montagnes derrière le village skraug vert, à l'est (1386-516-0). <br>Le quatrième est au bout de la foret des gremlins (1195-350-0) .<br>Le cinquième est situé derrière le village skraug rouge (884-145-0). <br>...Et le sixième est tout en haut des montagnes de Mordenthal, en venant des skraugs rouges (266-90-0). <br>Puis retournez voir Mercyn Kignar pour qu'il vous active la RST... Récompense : RST de DI et 18M d'xp.<br> <br>Merci a Anvar pour sa contribution du 05/08/2009. Modifié le 7/09/2011 par Syll. </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "images": [
+          "/t4c-nms-overview/assets/quests/rst-runed-stone-tablet-drake-island/img_0_0.jpg"
+        ],
+        "order": 0
+      }
+    ],
+    "credits": []
   }
 ];
