@@ -1,10 +1,12 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import type { Quest } from '../data/quests';
+import { findItemsInQuest, linkItemsInHtml } from '../data/quest-item-link';
 import { 
   ChevronDown, ChevronUp, MapPin, Coins, Trophy, 
   Scroll, Users, CheckCircle, Copy, ImageIcon,
-  Award, Maximize2
+  Award, Maximize2, Package
 } from 'lucide-react';
 import ImageModal from './ImageModal';
 
@@ -19,6 +21,15 @@ const QuestCard: React.FC<QuestCardProps> = ({ quest }) => {
   
   // Gallery state
   const [modalData, setModalData] = useState<{ images: string[], index: number } | null>(null);
+
+  const relatedItems = useMemo(() => findItemsInQuest(quest), [quest]);
+  
+  const processedSteps = useMemo(() => {
+    return quest.steps.map(step => ({
+      ...step,
+      description: linkItemsInHtml(step.description)
+    }));
+  }, [quest]);
 
   useEffect(() => {
     const saved = localStorage.getItem(`quest-progress-${quest.slug}`);
@@ -139,6 +150,25 @@ const QuestCard: React.FC<QuestCardProps> = ({ quest }) => {
               </div>
             )}
 
+            {relatedItems.length > 0 && (
+              <div className="bg-slate-900/40 p-4 rounded-xl border border-slate-700/30 hover:border-indigo-500/30 transition-colors">
+                <div className="flex items-center gap-2 text-indigo-400 mb-3 font-bold uppercase tracking-widest text-xs">
+                  <Package size={16} /> Objets mentionnés
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  {relatedItems.map((item, i) => (
+                    <Link 
+                      key={i} 
+                      to={`/wiki/items?search=${encodeURIComponent(item)}`}
+                      className="text-xs bg-indigo-500/10 text-indigo-300 px-2 py-1 rounded border border-indigo-500/20 hover:bg-indigo-500/20 hover:text-indigo-200 transition-colors"
+                    >
+                      {item}
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+
             {quest.npcs.length > 0 && (
               <div className="bg-slate-900/40 p-4 rounded-xl border border-slate-700/30 hover:border-blue-500/30 transition-colors">
                 <div className="flex items-center gap-2 text-blue-400 mb-3 font-bold uppercase tracking-widest text-xs">
@@ -157,7 +187,7 @@ const QuestCard: React.FC<QuestCardProps> = ({ quest }) => {
 
           {/* Timeline */}
           <div className="relative border-l border-slate-700/50 ml-4 space-y-16 pl-10">
-            {quest.steps.map((step, idx) => (
+            {processedSteps.map((step, idx) => (
               <div key={idx} className={`relative group/step transition-all duration-500 ${completedSteps.includes(idx) ? 'opacity-40 grayscale blur-[0.5px]' : 'opacity-100'}`}>
                 {/* Checkbox / Marker */}
                 <button 
