@@ -123,8 +123,8 @@ export const cleanHtml = (html: string): string => {
   let cleaned = html;
 
   // 1. Remove "superfluous" formatting tags but keep their content
-  // Strips: big, small, font, center, span, div, style
-  cleaned = cleaned.replace(/<\/?(?:big|small|font|center|span|div|style)[^>]*>/gi, '');
+  // Strips: big, small, font, center, div, style (keeping span)
+  cleaned = cleaned.replace(/<\/?(?:big|small|font|center|div|style)[^>]*>/gi, '');
 
   // 2. Clean attributes from common structural tags (p, b, i, strong, em, u)
   // This removes inline styles, classes, aligns, etc.

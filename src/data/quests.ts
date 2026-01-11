@@ -45,13 +45,13 @@ export const quests: Quest[] = [
         "order": 4
       },
       {
-        "title": "4) Madame FLichère épreuve des coffres (chronométrée). Repérez les coffres par avance !",
+        "title": "Madame FLichère épreuve des coffres (chronométrée). Repérez les coffres par avance !",
         "description": "<p class=\"MsoNormal\">Ou courir selon le <b>lieu</b> indiqué :<br>1 Coffre cité des nains, dans une maison (<b>2681-370-0</b>), après le labyrinthe d'Arakas<br>2 Coffre à Mato, aux druides Arakas (<b>2890-287-0</b>)<br>3 Coffre à Orkanis, dans la maison du troll, loin au NO d'Arakas<br>4 Coffre crypte du nomade (cave de la gitane), derrière un pilier en descendant l'escalier d'entrée de la crypte.<br>5 Coffre aux monts Righul (<b>1936-156-0</b>) (près de la mer au nord des montagnes Jarko)</p>",
         "images": [],
         "order": 5
       },
       {
-        "title": "5) Madame FLichère épreuve du rat (chronométrée)",
+        "title": "Madame FLichère épreuve du rat (chronométrée)",
         "description": "<p>Allez tuer le rat affamé sous-sol -2 temple LH (<b>180-120-1</b>) <br> </p>",
         "images": [
           "/t4c-nms-overview/assets/quests/le-chapeau-de-chance/img_6_0.jpg"
@@ -59,7 +59,7 @@ export const quests: Quest[] = [
         "order": 6
       },
       {
-        "title": "6) Professeur Fetero (tour des mages), épreuve de magie (chronométrée)",
+        "title": "Professeur Fetero (tour des mages), épreuve de magie (chronométrée)",
         "description": "<p>Réponses selon la question posée :<br>1 Magie des orcs : <b>magie noire</b><br>2 Quel est le nom de la plus grande tour de magie d'Athéa ? : <b>Urtanar</b><br>3 Ressource pour la magie : <b>mana</b><br>4 Quel est le nom du traître emprisonné sur le plan de la magie ? : <b>makrsh p'tangh</b><br>5 Nom du maître de la tour des mages : <b>r'yleth cth</b><br> </p>",
         "images": [
           "/t4c-nms-overview/assets/quests/le-chapeau-de-chance/img_7_0.jpg"
@@ -347,7 +347,7 @@ export const quests: Quest[] = [
         "order": 0
       },
       {
-        "title": "1) Création de la canne à pêche",
+        "title": "Création de la canne à pêche",
         "description": "<p>- Rendez-vous auprès de <b>Gildric Moray pierre verte de l'esprit de la foret\") </p><br /><p>-50 feuilles d'arbre démoniaque (dropées par les arbres démoniaques de RD) ou une décoction démoniaque. </p><br /><p>-Un éclat d'âme d'arbre Sintelle (dropé par les arbres Sintelle de DO bien sûr). </p><br /><p>Dans le donjon, vous pourrez obtenir des \"feuilles d'Ent\" qui vous procureront de l'xp à l'aide d'une petite quête : la quête du remède de Sigvurd. </p>",
         "images": [
           "/t4c-nms-overview/assets/quests/le-donjon-de-leternelle-agonie/img_0_0.jpg"
@@ -670,37 +670,37 @@ export const quests: Quest[] = [
         "order": 0
       },
       {
-        "title": "-1 La quête du marché noir (Partie 1) (prévoyez 2 levels pour la terminer)",
+        "title": "La quête du marché noir (Partie 1) (prévoyez 2 levels pour la terminer)",
         "description": "<p><b>Préalable</b> :</b> Il faut être au moins niveau 5 pour pouvoir débuter cette quête nécessaire à l'accès maléfique. </p><br /><p>- Allez voir Kirlor Dhul à la banque de Lighthaven, à côté de l'HDV. </p><br /><p>- Dites-lui \"<b>Travail</b>\", \"<b>Inscrire</b>\", \"<b>Oui</b>\" et il vous donnera une lettre pour l'un des deux marchands de Lighthaven. </p><br /><p><b>Note</b> :</b> Si vous décidez d'aller voir Sigfried vous gagnerez des points d'expérience. Si vous allez voir Rolph vous obtiendrez de l'or. </p><br /><p>- Dites <span class=\"npc-keyword\">\"<b>Lettre</b>\"</span> au marchand de votre choix, Il vous donnera un rapport à remettre au Bourgmestre Sunrock à Windhowl. </p><br /><p><b>Attention</b> :</b> Cette partie de la quête est chronométrée, donc ne traînez pas en route. </p><br /><p>- Au <b>lieu</b> d'aller à Windhowl, allez à la ville des voleurs en passant par la cave des brigands et de l’ermite (<b>2205,1464</b>) et trouvez Asarr. </p><br /><p>- Dites-lui \"<b>Rapport</b>\". Il vous remerciera et vous demandera d'aller transmettre le rapport au Bourgmestre Sunrock. </p><br /><p>- Rendez-vous à Windhowl. Trouvez le Bourgmestre Sunrock dans une maison à l'Ouest de l'entrée du temple. </p><br /><p>- Dites-lui \"<b>Rapport</b>\", il vous remerciera. </p><br /><p>Fin du chronométrage. </p><br /><p>Gagnez maintenant deux niveaux. </p><br /><p><b>PNJs</b> concernés :</b> Kirlor Dul, Sigfried ou Rolph, Sunrock, Asarr </p><br /><p><b>Récompenses obtenues :</b> 750 pièces d'or ou 6000 points d'expérience </p>",
         "images": [],
         "order": 1
       },
       {
-        "title": "-2 La quête du marché noir (Partie 2)",
+        "title": "La quête du marché noir (Partie 2)",
         "description": "<p><b>Préalable</b> :</b> Vous devez avoir gagné deux niveaux après avoir remis le rapport à Sunrock. </p><br /><p>- Retournez voir Sunrock. </p><br /><p>- Parlez-lui et il vous accusera de trahison. </p><br /><p><b>Note</b> :</b> Si vous faites la quête du diamant à ce moment-là, il vous pardonnera. Donc si vous voulez continuer sur les quêtes maléfiques ne faites pas cette quête ! </p><br /><p>- Retournez voir Asarr dans la ville des voleurs. Il s'excusera car le Bourgmestre Sunrock a appris la trahison et il vous demandera si vous voulez vous défiler. </p><br /><p>- Dites-lui \"<b>non</b>\" (karma -17) et il vous dira de contacter le fouineur. </p><br /><p><b>Note</b> :</b> Si vous changez d’avis et répondez <span class=\"npc-keyword\">\"oui\"</span>, Asarr vous donnera un coffret à remettre à Lord Sunrock, le Bourgmestre de Windhowl. Dites-lui \"marchandises\" et il vous pardonnera et vous donnera une épée du Chaos. Mais vous avez répondu non, alors tout va bien… </p><br /><p>- Trouvez le fouineur à Windhowl <b>oui</b>\" (-19 en karma) et il vous dira de revenir le voir de temps en temps car il aura d'autres missions pour vous. </p><br /><p>- Dites-lui \"<b>Mission</b>\", il vous demandera de l’aider à retrouver une vieille amie à lui : Shadeen. </p><br /><p>- Répondez <span class=\"npc-keyword\">\"<b>oui</b>\"</span>, \"<b>Raven's Dust</b>\". Il vous dira de chercher un sorcier puissant. </p><br /><p>- Allez à Windhowl, trouvez Liurn Clar dans la tour des mages à côté de la maison du Bourgmestre. </p><br /><p>- Dites-lui \"<b>Téléporter</b>\". Il vous dira que le Bourgmestre Sunrock ne l'autorise pas à vous aider mais vous conseillera d'aller voir un Orc au Nord. </p><br /><p><b>PNJs</b> concernés</b> : Kalastor, Balork, Liurn Clar </p>",
         "images": [],
         "order": 3
       },
       {
-        "title": "-4 La quête de l'épée de la nuit",
+        "title": "La quête de l'épée de la nuit",
         "description": "<p>- Allez chercher une épée de fureur sur les généraux gobelins devant l'entrée de la cave Jarko ou au niveau -3 de cette cave (ou dans un coffre de guilde !). </p><br /><p>- Trouvez Jagar Kar dans la salle d’armes en face de l’entrée du temple de Lighthaven. </p><br /><p>- Dites-lui \"<b>épée de fureur</b>\", il vous dira qu’il échangerait une épée de la nuit contre une épée de fureur si vous en avez une. </p><br /><p>- Répondez <span class=\"npc-keyword\">\"<b>oui</b>\"</span> pour effectuer l’échange. </p><br /><p><b>Note</b> :</b> Vous pouvez effectuer cette quête à volonté. </p><br /><p><b>PNJ</b> concerné:</b> Jagar Kar </p><br /><p><b>Récompense</b> obtenue:</b> Epée de la nuit (65 For, 30 Int, 25 Sag). </p>",
         "images": [],
         "order": 4
       },
       {
-        "title": "-5 La quête du grimoire de Jarko (Anneau des ténèbres)",
+        "title": "La quête du grimoire de Jarko (Anneau des ténèbres)",
         "description": "<p>- Allez à la grotte J comme Jarko (<b>1853,265</b>), descendez au niveau - 3 et trouvez Jarko le Nécromancien (<b>1084,106</b>). </p><br /><p>- Tuez-le <u>vous-même</u> et récupérez son grimoire (karma +4). <b>Repop</b> 25 minutes. </p><br /><p>- Trouvez Araknor à Lighthaven, au Nord-Est derrière le temple. </p><br /><p>- Dites-lui \"<b>Jarko</b>\", \"<b>grimoire</b>\", \"<b>oui</b>\" et il vous donnera (il faudra parfois attendre car il n'est bien disposé que toutes les heures) un anneau des ténèbres ou un anneau de confiance et la possibilité d'apprendre votre premier sort de nécromancie. </p><br /><p>Vous devenez son apprenti, ce qui est nécessaire pour pouvoir parler à l'aveugle, plus tard. </p><br /><p><b>Notes :</b> </p><br /><ul><li>Pour tuer plus facilement Jarko si vous êtes guerrier (ou si vous combattez au corps à corps), attendez qu'il soit dans un coin de la pièce et attaquez-le. La plupart de ses invocations apparaîtront de l'autre côté du mur. Si vous êtes un mage, attaquez avec des sorts de terre ou de feu pour le tuer et absorption de vie mineure pour vous soigner.</li></ul><ul><li>Il faudra attendre jusqu'à une heure qu'Araknor veuille bien vous parler si un joueur lui a donné un grimoire depuis moins d'une heure.</li></ul><ul><li>Vous devrez peut-être recommencer si vous n’avez pas obtenu un anneau des ténèbres. N’hésitez pas à demander de l’aide. Les anciens en ont certainement un perdu au fond de leur coffre.</li></ul><br /><p><b>PNJ</b> concerné :</b> Araknor. </p><br /><p><b>Récompense</b> obtenue :</b> Un anneau de confiance (souvent) ou un anneau des ténèbres (parfois). </p>",
         "images": [],
         "order": 5
       },
       {
-        "title": "-6 La quête du parchemin d'enchantement",
+        "title": "La quête du parchemin d'enchantement",
         "description": "<p>Voir Quêtes neutres d'Arakas </p>",
         "images": [],
         "order": 6
       },
       {
-        "title": "-7 La quête du Diable (Partie 2)",
+        "title": "La quête du Diable (Partie 2)",
         "description": "<p><b><u>Fabrication de la lame obscure</u></b> </p><br /><p><b>Préalable</b> :</b> vous devez être au moins lvl 16 pour que Lance Silversmith considère que vous êtes assez mature pour lui parler. </p><br /><p>Munissez-vous de : </p><br /><ul><li>Une épée de la nuit,</li></ul><ul><li>Un anneau des ténèbres,</li></ul><ul><li>Un parchemin d'enchantement,</li></ul><ul><li>10.000 pièces,</li></ul><br /><p>- Allez voir Lance Silversmith, au Nord-Est du camp gobelins (<b>2586,691</b>) </p><br /><p>- Dites-lui \"<b>lame obscure</b>\", \"<b>fabriquer une lame obscure</b>\". Vous recevez la lame et 300 000 points d’expérience. </p><br /><p><b><u>Obtention du parchemin d’accès à Raven’s Dust</u></b> </p><br /><p><b>Préalable</b> :</b> vous devez avoir atteint le lvl 25 pour pouvoir obtenir le parchemin de Silversky </p><br /><p>- Retournez à la grotte J (<b>1853,265</b>) au niveau - 3 et trouvez le chef orc renégat (<b>1065,273</b>). </p><br /><p>- Dites-lui \"<b>téléportation</b>\", \"<b>papiers griffonnés</b>\" , \"<b>oui</b>\" et il vous donnera un parchemin de Silversky. </p><br /><p>- Activez le parchemin et il vous téléportera à la fontaine de Silversky. </p><br /><p><b>Note</b> :</b> Pensez à mettre votre sanctuaire à Silversky en arrivant. </p><br /><p><b>PNJs</b> concernés</b> : Le chef orc renégat, Lance Silversmith </p><br /><p><b>Récompenses obtenues</b> 300 000 points d’expérience, parchemin de Silversky </p><br /><p><b>Bravo !!! vous êtes sur Raven's Dust.</b> </p>",
         "images": [],
         "order": 7
