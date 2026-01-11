@@ -87,8 +87,8 @@ export const highlightKeywords = (html: string): string => {
   if (!html) return html;
 
   // Regex to find triggers followed by quoted text
-  // Triggers: parlez/dites/répondez/dire/mots-clés/demandez
-  const triggerPattern = /(parlez(?:[- ]lui)?|dites(?:[- ](?:lui|directement))?|r[ée]pondez(?:[- ]lui)?|dire|mots?[- ]cl[ée]s?|demandez(?:[- ]lui)?)\s*[:,-]?\s*((?:[«"“][^"»”]+[»"”][\s,:;-]*(?:\b(?:ou|et|soit|sinon|simplement|m[êe]me|bien|alors)\b[\s,:;-]*)*)+)/gi;
+  // Triggers: parlez/dites/répondez/dire/mots-clés/demandez/puis/ou...
+  const triggerPattern = /(parlez(?:[- ]lui)?|dites(?:[- ](?:lui|directement))?|r[ée]pondez(?:[- ]lui)?|dire|mots?[- ]cl[ée]s?|demandez(?:[- ]lui)?|puis|ou(?: (?:simplement|m[êe]me|encore))?)\s*[:,-]?\s*((?:[«"“][^"»”]+[»"”][\s,:;-]*(?:\b(?:ou|et|soit|sinon|simplement|m[êe]me|bien|alors|puis|encore)\b[\s,:;-]*)*)+)/gi;
 
   return html.replace(triggerPattern, (_match, trigger, content) => {
     // Style the content parts
