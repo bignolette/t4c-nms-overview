@@ -14,17 +14,33 @@ const escapeRegExp = (string: string) => {
 };
 
 const createPattern = (str: string) => {
-  return str.split('').map(char => {
-    if (/[aAàÀâÂäÄ]/.test(char)) return '[aAàÀâÂäÄ]';
-    if (/[eEéÉèÈêÊëË]/.test(char)) return '[eEéÉèÈêÊëË]';
-    if (/[iIîÎïÏ]/.test(char)) return '[iIîÎïÏ]';
-    if (/[oOôÔöÖ]/.test(char)) return '[oOôÔöÖ]';
-    if (/[uUùÙûÛüÜ]/.test(char)) return '[uUùÙûÛüÜ]';
-    if (/[yYÿŸ]/.test(char)) return '[yYÿŸ]';
-    if (/[cCçÇ]/.test(char)) return '[cCçÇ]';
-    if (/\s/.test(char)) return '\\s+';
-    return escapeRegExp(char);
-  }).join('');
+  const stopWords = ['de', 'du', 'des', 'le', 'la', 'les', 'au', 'aux', 'd', 'l'];
+  
+  return str.split(/\s+/).map(word => {
+    let p = word.split('').map(char => {
+      if (/[aAàÀâÂäÄ]/.test(char)) return '[aAàÀâÂäÄ]';
+      if (/[eEéÉèÈêÊëË]/.test(char)) return '[eEéÉèÈêÊëË]';
+      if (/[iIîÎïÏ]/.test(char)) return '[iIîÎïÏ]';
+      if (/[oOôÔöÖ]/.test(char)) return '[oOôÔöÖ]';
+      if (/[uUùÙûÛüÜ]/.test(char)) return '[uUùÙûÛüÜ]';
+      if (/[yYÿŸ]/.test(char)) return '[yYÿŸ]';
+      if (/[cCçÇ]/.test(char)) return '[cCçÇ]';
+      return escapeRegExp(char);
+    }).join('');
+
+    // If word is not a stop word and long enough, handle plural/singular
+    const lowerWord = word.toLowerCase();
+    if (!stopWords.includes(lowerWord) && word.length > 2) {
+      if (lowerWord.endsWith('s') || lowerWord.endsWith('x')) {
+        // Already ends with s/x, make it optional to match singular
+        p = p.slice(0, -1) + '[sx]?';
+      } else {
+        // Doesn't end with s/x, add optional [sx] to match plural
+        p = p + '[sx]?';
+      }
+    }
+    return p;
+  }).join('\\s+');
 };
 
 const buildCache = () => {

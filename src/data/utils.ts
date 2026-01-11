@@ -15,6 +15,9 @@ export const fastNormalize = (text: string): string => {
     .replace(/['']/g, ' ')
     .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "")
     .replace(/\b(le|la|les|de|du|des|d|un|une|au|aux)\b/g, "")
+    .split(/\s+/)
+    .map(word => (word.length > 3 && (word.endsWith('s') || word.endsWith('x'))) ? word.slice(0, -1) : word)
+    .join(" ")
     .replace(/\s+/g, " ")
     .trim();
 
