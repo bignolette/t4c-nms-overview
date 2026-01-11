@@ -48,7 +48,8 @@ const buildCache = () => {
   normalizedItemsCache.sort((a, b) => b.norm.length - a.norm.length);
   
   // Build Regex
-  // Sort names by length descending for the regex too
+  // CRITICAL: Sort names by length descending for the regex too
+  // This ensures "Arc long des étoiles" is matched before "Arc"
   sortedNames.sort((a, b) => b.length - a.length);
   
   // Create a giant alternation group: \b(Name1|Name2|...)\b
@@ -80,6 +81,65 @@ export const findItemsInQuest = (quest: Quest): string[] => {
   });
 
   return Array.from(foundItems).sort();
+};
+
+export const highlightKeywords = (html: string): string => {
+  if (!html) return html;
+
+  // Regex to find triggers followed by quoted text
+  // Triggers: parlez/dites/répondez/dire/mots-clés/demandez
+  const triggerPattern = /(parlez(?:[- ]lui)?|dites(?:[- ](?:lui|directement))?|r[ée]pondez(?:[- ]lui)?|dire|mots?[- ]cl[ée]s?|demandez(?:[- ]lui)?)\s*[:,-]?\s*((?:[«"“][^"»”]+[»"”][\s,:;-]*(?:\b(?:ou|et|soit|sinon|simplement|m[êe]me|bien|alors)\b[\s,:;-]*)*)+)/gi;
+
+  return html.replace(triggerPattern, (_match, trigger, content) => {
+    // Style the content parts
+    // We look for quotes within the content and style them
+    const styledContent = content.replace(/([«"“])([^"»”]+)([»"”])/g, (_m: string, q1: string, text: string, q2: string) => {
+      // Wrap the whole keyword in npc-keyword class
+      // Inner spans handle the specific colors for quotes (amber) and text (white)
+      return `<span class='npc-keyword'><span class='text-amber-500'>${q1}</span><span class='text-slate-100 font-bold'>${text}</span><span class='text-amber-500'>${q2}</span></span>`;
+    });
+
+    return `${trigger} ${styledContent}`;
+  });
+};
+
+export const cleanTitle = (title: string): string => {
+  if (!title) return title;
+  // Remove starting hyphen followed by optional digits and optional space
+  return title.replace(/^-\d*\s*/, '');
+};
+
+export const formatLists = (html: string): string => {
+  if (!html) return html;
+  
+  // Convert explicit break tags to newlines for processing
+  let text = html.replace(/<br\s*\/?>/gi, '\n');
+  
+  // Also handle </p> as a newline indicator if present
+  text = text.replace(/<\/p>/gi, '</p>\n');
+
+  // Regex to find lines starting with "- " (bullet points)
+  // We look for a newline (or start of string), optional whitespace, hyphen, whitespace, then content
+  const listPattern = /(?:^|\n)\s*-\s+(.+)/g;
+
+  // If no lists found, return original (with <br> restored if we stripped them, so better to operate on copy)
+  if (!text.match(listPattern)) return html;
+
+  // Replace "- Item" with "<li>Item</li>"
+  text = text.replace(listPattern, (match, content) => {
+    // Check if the match started with a newline to preserve it outside the <li>
+    const prefix = match.startsWith('\n') ? '\n' : '';
+    return `${prefix}<li>${content}</li>`;
+  });
+
+  // Wrap groups of <li> elements in <ul>
+  // We look for consecutive <li> lines (separated by newlines)
+  text = text.replace(/((?:<li>.+<\/li>\s*)+)/g, '<ul class="list-disc pl-6 space-y-1 my-3 text-slate-300 marker:text-amber-500">$1</ul>');
+
+  // Restore newlines to <br /> for non-list content
+  text = text.replace(/\n/g, '<br />');
+
+  return text;
 };
 
 export const linkItemsInHtml = (html: string): string => {

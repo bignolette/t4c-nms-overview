@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import type { Quest } from '../data/quests';
-import { findItemsInQuest, linkItemsInHtml } from '../data/quest-item-link';
+import { findItemsInQuest, linkItemsInHtml, highlightKeywords, formatLists, cleanTitle } from '../data/quest-item-link';
 import { 
   ChevronDown, ChevronUp, MapPin, Coins, Trophy, 
   Scroll, Users, CheckCircle, Copy, ImageIcon,
@@ -25,10 +25,18 @@ const QuestCard: React.FC<QuestCardProps> = ({ quest }) => {
   const relatedItems = useMemo(() => findItemsInQuest(quest), [quest]);
   
   const processedSteps = useMemo(() => {
-    return quest.steps.map(step => ({
-      ...step,
-      description: linkItemsInHtml(step.description)
-    }));
+    return quest.steps.map(step => {
+      // Pipeline: Lists -> Keywords -> Links
+      const withLists = formatLists(step.description);
+      const withKeywords = highlightKeywords(withLists);
+      const withLinks = linkItemsInHtml(withKeywords);
+      
+      return {
+        ...step,
+        title: cleanTitle(step.title),
+        description: withLinks
+      };
+    });
   }, [quest]);
 
   useEffect(() => {

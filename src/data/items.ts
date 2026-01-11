@@ -2350,5 +2350,11 @@ export const itemsData: RecipeItem[] = [
 { name: "Os humain", quantity: 1, source: "Divers" },
 { name: "Sachet de poudre jaune", quantity: 1, source: "Divers" },
 { name: "Casque de Commandement", quantity: 1, source: "Heaume", prerequisites: { "wis": "30", "end": "30" }, bonuses: { "ca": "+1", "wis": "+5" } },
-{ name: "Amulette d'esquive", quantity: 1, source: "Amulette", prerequisites: { "int": "21", "wis": "19" }, secondary: {"Esquive":"+10"} }
+{ name: "Amulette d'esquive", quantity: 1, source: "Amulette", prerequisites: { "int": "21", "wis": "19" }, secondary: {"Esquive":"+10"} },
+{ name: "Sceptre de pouvoir de Drachen", quantity: 1, source: "Arme" },
+{ name: "Epée vorpale de Drachen", quantity: 1, source: "Arme" },
+{ name: "Plastron de Drachen", quantity: 1, source: "Plastron" },
+{ name: "Heaume de Drachen", quantity: 1, source: "Heaume" },
+{ name: "Robe de Drachen", quantity: 1, source: "Robe" },
+{ name: "Arc long des étoiles", quantity: 1, source: "Arc" }
 ];
