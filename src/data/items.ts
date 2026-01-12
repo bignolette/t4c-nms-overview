@@ -1,4 +1,4 @@
-import type { RecipeItem } from './types';
+import type {RecipeItem} from './types';
 
 export const itemsData: RecipeItem[] = [
 { name: "Masse de l'Ogre", quantity: 1, source: "Arme" },
@@ -2356,5 +2356,6 @@ export const itemsData: RecipeItem[] = [
 { name: "Plastron de Drachen", quantity: 1, source: "Plastron" },
 { name: "Heaume de Drachen", quantity: 1, source: "Heaume" },
 { name: "Robe de Drachen", quantity: 1, source: "Robe" },
-{ name: "Arc long des étoiles", quantity: 1, source: "Arc" }
+{ name: "Arc long des étoiles", quantity: 1, source: "Arc" },
+{ name: "Sceptre de capture", quantity: 1, source: "Arme" }
 ];

@@ -1,12 +1,10 @@
-
 import React, { useState, useEffect, useMemo } from 'react';
-import { Link } from 'react-router-dom';
 import type { Quest } from '../data/quests';
-import { findItemsInQuest, linkItemsInHtml, highlightKeywords, formatLists, cleanTitle, cleanHtml } from '../data/quest-item-link';
+import { linkItemsInHtml, highlightKeywords, formatLists, cleanTitle, cleanHtml } from '../data/quest-item-link';
 import { 
   ChevronDown, MapPin, Coins, Trophy, 
-  Scroll, Users, CheckCircle, Copy, ImageIcon,
-  Maximize2, Package, Sparkles, ArrowRight,
+  Scroll, CheckCircle, Copy, ImageIcon,
+  Maximize2, Sparkles, ArrowRight,
   Shield
 } from 'lucide-react';
 import ImageModal from './ImageModal';
@@ -23,20 +21,17 @@ const QuestCard: React.FC<QuestCardProps> = ({ quest }) => {
   // Gallery state
   const [modalData, setModalData] = useState<{ images: string[], index: number } | null>(null);
 
-  const relatedItems = useMemo(() => findItemsInQuest(quest), [quest]);
-  
   const processedSteps = useMemo(() => {
     return quest.steps.map(step => {
       // Pipeline: Clean Source -> Lists -> Keywords -> Links
       const cleaned = cleanHtml(step.description);
       const withLists = formatLists(cleaned);
       const withKeywords = highlightKeywords(withLists);
-      const withLinks = linkItemsInHtml(withKeywords);
       
       return {
         ...step,
         title: cleanTitle(step.title),
-        description: withLinks
+        description: withKeywords
       };
     });
   }, [quest]);
@@ -163,11 +158,11 @@ const QuestCard: React.FC<QuestCardProps> = ({ quest }) => {
         <div className="animate-in slide-in-from-top-4 fade-in duration-300">
           
           {/* Quick Stats / Loot Bar */}
-          <div className="px-8 py-6 bg-slate-950/30 border-b border-slate-800/50 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div className="px-8 py-6 bg-slate-950/30 border-b border-slate-800/50 flex flex-wrap gap-4">
             
             {/* XP / Gold */}
             {(quest.gold || quest.rewards.length > 0) && (
-              <div className="col-span-1 md:col-span-2 p-3 rounded-xl bg-slate-900/50 border border-slate-800 flex items-start gap-3">
+              <div className="flex-1 min-w-[280px] p-3 rounded-xl bg-slate-900/50 border border-slate-800 flex items-start gap-3">
                 <div className="p-2 bg-emerald-500/10 rounded-lg text-emerald-500">
                   <Trophy size={18} />
                 </div>
@@ -183,32 +178,9 @@ const QuestCard: React.FC<QuestCardProps> = ({ quest }) => {
               </div>
             )}
 
-            {/* Related Items */}
-            {relatedItems.length > 0 && (
-              <div className="col-span-1 md:col-span-2 p-3 rounded-xl bg-slate-900/50 border border-slate-800 flex items-start gap-3">
-                <div className="p-2 bg-indigo-500/10 rounded-lg text-indigo-500">
-                  <Package size={18} />
-                </div>
-                <div>
-                  <div className="text-[10px] font-bold text-indigo-500/70 uppercase tracking-widest mb-1">Objets Requis / Cités</div>
-                  <div className="flex flex-wrap gap-1.5">
-                    {relatedItems.map((item, i) => (
-                      <Link 
-                        key={i} 
-                        to={`/wiki/items?search=${encodeURIComponent(item)}`}
-                        className="text-[10px] font-bold px-2 py-0.5 rounded bg-indigo-500/10 text-indigo-300 border border-indigo-500/20 hover:bg-indigo-500/20 hover:text-white transition-colors"
-                      >
-                        {item}
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            )}
-
             {/* Prerequisites */}
             {quest.prerequisites.length > 0 && (
-              <div className="col-span-1 md:col-span-2 p-3 rounded-xl bg-slate-900/50 border border-slate-800 flex items-start gap-3">
+              <div className="flex-1 min-w-[280px] p-3 rounded-xl bg-slate-900/50 border border-slate-800 flex items-start gap-3">
                  <div className="p-2 bg-rose-500/10 rounded-lg text-rose-500">
                   <Shield size={18} />
                 </div>
@@ -221,25 +193,6 @@ const QuestCard: React.FC<QuestCardProps> = ({ quest }) => {
                       </li>
                     ))}
                   </ul>
-                </div>
-              </div>
-            )}
-             
-             {/* NPCs */}
-             {quest.npcs.length > 0 && (
-              <div className="col-span-1 md:col-span-2 p-3 rounded-xl bg-slate-900/50 border border-slate-800 flex items-start gap-3">
-                 <div className="p-2 bg-blue-500/10 rounded-lg text-blue-500">
-                  <Users size={18} />
-                </div>
-                <div>
-                  <div className="text-[10px] font-bold text-blue-500/70 uppercase tracking-widest mb-1">Personnages</div>
-                  <div className="flex flex-wrap gap-1.5">
-                    {quest.npcs.map((npc, i) => (
-                      <span key={i} className="text-[10px] font-medium px-2 py-0.5 rounded bg-slate-800 text-slate-400">
-                        {npc}
-                      </span>
-                    ))}
-                  </div>
                 </div>
               </div>
             )}
