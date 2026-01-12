@@ -2780,172 +2780,58 @@ export const quests: Quest[] = [
     "title": "Quête d'accès à l'académie",
     "slug": "quete-dacces-a-lacademie",
     "zone": "Académie",
-    "prerequisites": [],
-    "rewards": [],
-    "npcs": [],
+    "prerequisites": ["Niveau 50 minimum (conseillé 120+ pour finir)", "Être sur Stoneheim (SH)"],
+    "rewards": ["Accès à l'Académie (Niveau 150 requis)", "Aura des Sages (remplace les items 1.25)", "Environ 64M+ XP au total", "10 Parchemins XP x2 (après Cerberus)"],
+    "npcs": ["Pelkor Zyrus"],
     "gold": "",
     "steps": [
       {
-        "title": "Introduction",
-        "description": "<p>La quête d'accès à l'Académie permet d'obtenir <b>3 récompenses différentes</b>. </p>\n\n<p>Vous pouvez la faire partiellement- même en humain mais il faut être sur SH - <b>pour l'xp qu'elle rapporte (les 8 mobs faisables seul vous montent level 54).</b> </p>\n\n<ul>\n  <li><b>de l'XP</b> : Après chaque monstre vous gagnerez beaucoup d'XP : elle est calculée comme suit pour les 16 premiers : \n<ul>\n  <li>500K + (100K * (numDuMob-1). Par ex: 500k + 100*(2-1) = 600k pour le rejet du monde.</li> <li>Soit environ 27M d'xp sur SH et encore environ 37M d'xp sur DI (sans compter le Cerberus). Pas de level minimum mais vous devez être sur SH bien sûr.</li>\n</ul>\n</li>\n</ul>\n\n<ul>\n  <li>500K + (100K * (numDuMob-1). Par ex: 500k + 100*(2-1) = 600k pour le rejet du monde.</li> <li>Soit environ 27M d'xp sur SH et encore environ 37M d'xp sur DI (sans compter le Cerberus). Pas de level minimum mais vous devez être sur SH bien sûr.</li>\n</ul>\n\n<ul>\n  <li><b>L'Aura des Sages</b> \n<ul>\n  <li>Une fois votre dernière renaissance projetée atteinte, essayez d'obtenir l'aura des sages avant le level 150 car elle est très intéressante.</li> <li>C'est une aura permanente qui remplace avantageusement tout les items 1.25 de la Crimsonscale. De plus, plus besoin de switcher vos bijoux ni d'activer des items.</li> <li>Vous devez avoir capturé les 19 premiers monstres et aussi <b>complété la Crimsonscale lors de votre renaissance actuelle</b> (amulette, bracelet immortel et ceinture instable) <b>sauf si vous avez acheté des renaissances même niveau!!</b> En parlant alors à Pelkor Zirus au salon de jeu, ces items disparaîtront et vous obtiendrez à leur place une aura permanente, l'aura des Sage, qui vous donnera de meilleurs bonus. De plus les emplacements libérés peuvent être utilisés pour porter d'autres items.</li> <li>Vous devez être sur Drake Island bien sûr sinon pas de level minimum mais être aux alentours de 120 semble raisonnable.</li>\n</ul>\n</li> <li><b>L'accès à l'Académie</b> \n<ul>\n  <li>Après avoir capturé les 19 premiers monstres, jusqu'à la liche ancestrale et finalisé l'accès, vous aurez accès à l'Académie si vous êtes level 150. Dites une dernière fois <span class=\"text-amber-400 font-bold\">\"proie\"</span> puis <span class=\"text-amber-400 font-bold\">\"partir\"</span> à Pelkor Zyrus.</li>\n</ul>\n</li> <li><b>TIPS à lire</b> \n<ul>\n  <li><b>Une bénédiction</b> est indispensable pour avoir suffisamment d'attaque pour toucher le mob avec le sceptre.</li> <li>Si vous faites le début jusqu'au Cellenium (8ème mob), faisable seul avec une bonne béné, cela vous rapportera déjà 7M XP et vous mènera au level 54. Et l'ensemble des mobs jusqu'à SH vous permettra d'atteindre le level 62 !</li> <li><b>Prêtres lumières :</b> Le 9ème mob ( soldat égaré) est encore faisable pour vous en utilisant <span class=\"text-amber-400 font-bold\">\"<b>repouss</b>\"</span>. Si vous êtes d'une autre classe, la seule solution sera de refaire au moins un plein de potions pour arriver à le finir !!</li> <li><b>Prêtres</b> : Vous serez alors level 55 et pourrez apprendre <span class=\"text-amber-400 font-bold\">\"<b>guérison</b>\"</span> chez l'évêque s'il est en bonne santé (sinon sachez qu'il change spontanément d'état après 3 heures sans changement).</li>\n</ul>\n</li>\n</ul>\n\n<ul>\n  <li>Une fois votre dernière renaissance projetée atteinte, essayez d'obtenir l'aura des sages avant le level 150 car elle est très intéressante.</li> <li>C'est une aura permanente qui remplace avantageusement tout les items 1.25 de la Crimsonscale. De plus, plus besoin de switcher vos bijoux ni d'activer des items.</li> <li>Vous devez avoir capturé les 19 premiers monstres et aussi <b>complété la Crimsonscale lors de votre renaissance actuelle</b> (amulette, bracelet immortel et ceinture instable) <b>sauf si vous avez acheté des renaissances même niveau!!</b> En parlant alors à Pelkor Zirus au salon de jeu, ces items disparaîtront et vous obtiendrez à leur place une aura permanente, l'aura des Sage, qui vous donnera de meilleurs bonus. De plus les emplacements libérés peuvent être utilisés pour porter d'autres items.</li> <li>Vous devez être sur Drake Island bien sûr sinon pas de level minimum mais être aux alentours de 120 semble raisonnable.</li>\n</ul>\n\n<ul>\n  <li>Après avoir capturé les 19 premiers monstres, jusqu'à la liche ancestrale et finalisé l'accès, vous aurez accès à l'Académie si vous êtes level 150. Dites une dernière fois <span class=\"text-amber-400 font-bold\">\"proie\"</span> puis <span class=\"text-amber-400 font-bold\">\"partir\"</span> à Pelkor Zyrus.</li>\n</ul>\n\n<ul>\n  <li><b>Une bénédiction</b> est indispensable pour avoir suffisamment d'attaque pour toucher le mob avec le sceptre.</li> <li>Si vous faites le début jusqu'au Cellenium (8ème mob), faisable seul avec une bonne béné, cela vous rapportera déjà 7M XP et vous mènera au level 54. Et l'ensemble des mobs jusqu'à SH vous permettra d'atteindre le level 62 !</li> <li><b>Prêtres lumières :</b> Le 9ème mob ( soldat égaré) est encore faisable pour vous en utilisant <span class=\"text-amber-400 font-bold\">\"<b>repouss</b>\"</span>. Si vous êtes d'une autre classe, la seule solution sera de refaire au moins un plein de potions pour arriver à le finir !!</li> <li><b>Prêtres</b> : Vous serez alors level 55 et pourrez apprendre <span class=\"text-amber-400 font-bold\">\"<b>guérison</b>\"</span> chez l'évêque s'il est en bonne santé (sinon sachez qu'il change spontanément d'état après 3 heures sans changement).</li>\n</ul>",
+        "title": "Introduction & Récompenses",
+        "description": "<p>Cette quête majeure se déroule en plusieurs phases et offre trois types de bénéfices :</p><ul><li><b>XP massive :</b> Chaque capture rapporte entre 500k et 2.5M+ XP. Faire les 8 premiers monstres (accessibles seul) vous monte au niveau 54.</li><li><b>L'Aura des Sages :</b> Une aura permanente qui remplace avantageusement l'équipement Crimsonscale (amulette, bracelet immortel, ceinture instable). Plus besoin de switcher !</li><li><b>Accès à l'Académie :</b> Permet d'accéder aux zones de haut niveau (150+).</li></ul>",
         "images": [],
         "order": 0
       },
       {
-        "title": "Démarrer la quête",
-        "description": "<ul>\n  <li>Rendez vous au Salon de Jeux de Stoneheim (anciennement Colisée, au nord-est de Stonecrest).</li> <li>Traversez le bâtiment jusqu'à tomber sur Pelkor Zyrus, le PNJ placé derrière des grilles.</li> <li>Engagez la discussion en disant <span class=\"text-amber-400 font-bold\">\"travail\"</span> (elle se veut être très longue...).</li> <li>Il vous remettra un sceptre afin de capturer des monstres.</li> <li>Après chaque capture, revenez le voir afin qu'il vous donne votre récompense en XP puis dites-lui <span class=\"text-amber-400 font-bold\">\"proie\"</span>. En réponse, il vous indiquera votre prochaine proie et vous donnera une indication - pas toujours très claire - concernant le lieu où la trouver.</li>\n</ul>\n\n<p><br/></p>\n\n<ul>\n  <li><b>Tip1 :</b> Il faut affaiblir les monstres avec vos sorts/armes standard jusqu'à ce qu'il leur reste très peu de points de vie puis équiper le sceptre (si vous êtes guerrier/archer) et les frapper avec (<b>pour le rat prenez le sceptre directement</b>). N'oubliez pas votre sort <span class=\"text-amber-400 font-bold\">\"force\"</span>.</li> <li><b>Tip2 :</b> Les mobs sont de plus en plus forts et le temps de respawn est de plus en plus long (10 min pour le rat, 18 min pour le soldat égaré, 30 min pour le Drake Dixtor Supérieur).</li> <li><b>Tip3 : </b>A partir du 3ème ou 4ème monstre, <b>vous devrez être béni</b> pour augmenter votre attaque et pouvoir toucher le monstre avec le sceptre.</li> <li><b>Tip4 :</b> A partir du 9ème monstre, vous devrez vous faire aider par un GB. Autrement vous risquez fort d'y laisser votre peau (sauf en prêtre lulu qui peut encore vaincre le 9ème au repouss ).</li>\n</ul>\n\n<p><br/></p>",
+        "title": "Démarrage : Le Sceptre de Capture",
+        "description": "<p>Rendez-vous au <b>Salon de Jeux de Stoneheim</b> (au Nord-Est de Stonecrest). Traversez le bâtiment pour trouver <b>Pelkor Zyrus</b> derrière ses grilles.</p><ul><li>Dites \"travail\" : il vous remettra un sceptre de capture.</li><li>Après chaque capture réussie, retournez le voir, dites \"proie\" pour valider et recevoir votre XP, puis demandez la suivante.</li></ul><br/><p><b>Règles de capture :</b></p><ul><li><b>Affaiblissement :</b> Réduisez la vie du monstre au minimum avec vos sorts/armes habituels, puis achevez-le avec le <b>sceptre équipé</b>.</li><li><b>Bénédiction :</b> À partir du 3ème monstre, une bénédiction (ex: Zélina) est indispensable pour avoir assez d'attaque pour toucher avec le sceptre.</li><li><b>Aide :</b> À partir du 9ème monstre (Soldat égaré), l'aide d'un haut niveau (GB) est fortement recommandée.</li></ul>",
         "images": [],
         "order": 1
       },
       {
-        "title": "Les monstres",
-        "description": "<p><b>(pour vous orienter en jeu, la carte <span class=\"text-amber-400 font-bold\">\"ctrl W\"</span> et petite flèche bleue en bas à droite pour choisir l'île ou bien utilisez la carte locale par Ctrl + Tab)</b> </p>",
-        "images": [],
+        "title": "Phase 1 : Les captures sur Arakas",
+        "description": "<ul><li><b>1. Rat affamé :</b> Sous-sol -2 du temple de Lighthaven, vers l'Ouest (180,118,1). <i>Gain : 500K XP</i></li><li><b>2. Rejet du monde :</b> Cave du vieil ermite, Sud-Ouest (140,1050,2). <i>Gain : 600K XP</i></li><li><b>3. Chef de guerre Kobold :</b> Nord-Est des montagnes Jarko (2174,152,0). <i>Gain : 700K XP</i></li><li><b>4. Rampilius :</b> Labyrinthe d'Arakas (765,186,1). <i>Gain : 800K XP</i></li><li><b>5. Agrenarok :</b> Cité perdue des Nains (2640,340,0). <i>Gain : 900K XP</i></li><li><b>7. Soldat disparu :</b> Cave B des montagnes Jarko (1765,370,0). <i>Gain : 1.1M XP</i></li></ul>",
+        "images": [
+          "/t4c-nms-overview/assets/quests/quete-dacces-a-lacademie/img_3_0.jpg",
+          "/t4c-nms-overview/assets/quests/quete-dacces-a-lacademie/img_4_0.jpg"
+        ],
         "order": 2
       },
       {
-        "title": "1. Rat affamé",
-        "description": "<p>Arakas : Sous-sol niveau -2 du temple LH, vers l'Ouest - 180,118,1 =&gt; <b>500K xp </b> </p>",
-        "images": [
-          "/t4c-nms-overview/assets/quests/quete-dacces-a-lacademie/img_3_0.jpg"
-        ],
+        "title": "Phase 2 : Les captures sur Raven's Dust",
+        "description": "<ul><li><b>6. Rampilios :</b> Cave d'Anrak (1169,263,2). Entrée via le sous-sol de la maison d'Anrak (597,1763,0). <i>Gain : 1M XP</i></li><li><b>8. Celleniem :</b> Zone railleuse, après la tour de Zhakar (328,2008,0). <i>Gain : 1.2M XP</i></li><li><b>9. Soldat égaré :</b> Crypte de Raven's Dust, niveau -2 (550,2230,1). <i>Gain : 1.4M XP</i></li><li><b>10. Fracasseur :</b> Cave des Minotaures (360,980,1). <i>Gain : 1.5M XP</i></li><li><b>11. Yéti féroce :</b> Plaine de Niève (1409,344,4). <i>Gain : 1.6M XP</i></li><li><b>12. Drake Dixtor :</b> Sud-Ouest du désert (215,2655,0). <i>Gain : 1.8M XP</i></li><li><b>13. Squelette équestre :</b> Cave de l'Aveugle (787,1836,2). <i>Gain : 1.9M XP</i></li><li><b>14. Yéti Adulte :</b> Plaine de Niève (1585,250,4). <i>Gain : 2M XP</i></li><li><b>17. Golem glacial :</b> Plaine de Niève (1655,355,4). <i>Gain : 5M XP</i></li></ul>",
+        "images": [],
         "order": 3
       },
       {
-        "title": "2. Rejet du monde",
-        "description": "<p>Arakas : Dans la cave du vieil ermite, au Sud-ouest - 140,1050, 2 =&gt; <b>600K xp</b> </p>",
-        "images": [
-          "/t4c-nms-overview/assets/quests/quete-dacces-a-lacademie/img_4_0.jpg"
-        ],
+        "title": "Phase 3 : Les captures sur Stoneheim",
+        "description": "<ul><li><b>15. Drake Dixtor Supérieur :</b> Cave des Skraugs Roses (1836,1040,2). <i>Gain : 2.25M XP</i></li><li><b>16. Golem de pierre :</b> Sud de la RST Stoneheim (470,1170,0). <i>Gain : 2.5M XP</i></li><li><b>18. Golem embrasé :</b> Volcan de Stoneheim. <i>Gain : XP variable</i></li><li><b>19. Liche ancestrale :</b> Crypte de Stonecrest. <i>Gain : XP variable</i></li></ul>",
+        "images": [],
         "order": 4
       },
       {
-        "title": "3. Chef de guerre Kobold",
-        "description": "<p>Arakas : Nord-est des montagnes Jarko - 2174,152,0 =&gt; <span ><b>700k xp</b></span> </p>\n\n<p>Passez le<span > pont menant aux monts de Righul/Jarko puis plein Nord. </span> </p>",
-        "images": [
-          "/t4c-nms-overview/assets/quests/quete-dacces-a-lacademie/img_5_0.jpg"
-        ],
+        "title": "Phase Finale : L'Accès et l'Aura",
+        "description": "<p>Pour finaliser l'accès et obtenir l'<b>Aura des Sages</b>, vous devez :</p><ol><li>Avoir terminé les 19 captures précédentes.</li><li>Avoir complété la quête Crimsonscale (tué Gluriurl) lors de votre renaissance actuelle.</li><li>Posséder la ceinture instable et le bracelet immortel.</li><li><b>Déséquiper</b> tous ces items avant de parler à Pelkor.</li></ol><p>Dites \"proie\" puis \"partir\" à Pelkor pour recevoir l'accès définitif (Niveau 150 requis pour entrer).</p>",
+        "images": [],
         "order": 5
       },
       {
-        "title": "4. Rampilius",
-        "description": "<p>Arakas : Labyrinthe d'Arakas - 765,186,1 =&gt; <b>800k xp</b> </p>\n\n<p>L'entrée est à l'ouest du petit lac qui termine vers le sud la rivière voisine de la RST. </p>",
-        "images": [],
+        "title": "Bonus : Le Cerberus (Niveau 200+)",
+        "description": "<p>Une fois le niveau 200 atteint et l'accès au niveau -4 de l'Académie débloqué, vous pourrez affronter le <b>Cerberus</b>.</p><ul><li>Il nécessite d'obtenir 22 clés de chair durcie.</li><li>La capture du Cerberus rapporte <b>10 Milliards d'XP</b> et 10 parchemins d'expérience doublée (1h).</li></ul>",
+        "images": ["/t4c-nms-overview/assets/quests/donjon-du-cerberus/img_24_0.jpg"],
         "order": 6
-      },
-      {
-        "title": "5. Agrenarok",
-        "description": "<p>Arakas : Cité perdue (<i>Ville des Nains</i>) - 2640,340,0 =&gt;<b>900k xp</b> </p>\n\n<p>Passez le labyrinthe d'Arakas, allez au delà de la sortie du labyrinthe, direction nord-ouest. </p>",
-        "images": [],
-        "order": 7
-      },
-      {
-        "title": "6. Rampilios",
-        "description": "<p>Raven's Dust : Cave d'Anrak - 1169,263,2 =&gt; <b>1M xp</b> </p>\n\n<p>L'entrée de la cave se trouve au sous-sol de la maison d'Anrak située au Nord-Nord-Est de la RST de Raven's Dust : 597,1763.0. </p>\n\n<p><i>Sortilège lancé par le monstre Rampilios :</i> </p>",
-        "images": [],
-        "order": 8
-      },
-      {
-        "title": "7. Soldat disparu",
-        "description": "<p>Arakas : Cave B dans les montagnes Jarko - 280,2350,2 =&gt; <b>1,1M xp</b> </p>\n\n<p>Pas facile de trouver la cave B =&gt; <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(1765,370,0)</span> </p>",
-        "images": [],
-        "order": 9
-      },
-      {
-        "title": "8. Celleniem",
-        "description": "<p>Raven's Dust : Après la tour de Zahkar - 328,2008,0 =&gt; <b>1,2M xp</b> </p>\n\n<p>Poursuivez au-delà de la tour de Zakhar en longeant le canal par le haut. Dès que vous le pouvez, tournez deux fois à droite - skin railleuse. </p>",
-        "images": [],
-        "order": 10
-      },
-      {
-        "title": "9. Soldat égaré",
-        "description": "<p>Raven's Dust : Crypte RD niveau -2 - 550,2230,1 =&gt; <b>1,4M xp</b> </p>",
-        "images": [],
-        "order": 11
-      },
-      {
-        "title": "10. Fracasseur",
-        "description": "<p>Raven's Dust :Cave Minotaures - 360,980,1 =&gt; <b>1,5M xp</b> </p>\n\n<p>Pour rentrer dans la cave des minotaures, suivez vers le Sud la ligne de coordonnée 287 (en partant du double palmier, celui qui est blanc) </p>",
-        "images": [],
-        "order": 12
-      },
-      {
-        "title": "11. Yéti féroce",
-        "description": "<p>Raven's Dust : Plaine de Niève - 1409,344,4 =&gt; <b>1,6M xp</b> </p>",
-        "images": [],
-        "order": 13
-      },
-      {
-        "title": "12. Drake Dixtor",
-        "description": "<p>Raven's Dust : Sud-ouest du Désert - 215,2655,0 =&gt; <b>1,8M xp</b> </p>",
-        "images": [],
-        "order": 14
-      },
-      {
-        "title": "13. Squelette équestre",
-        "description": "<p>Raven's Dust : Cave de l'Aveugle - 787,1836,2 =&gt; <b>1,9M xp</b> </p>",
-        "images": [],
-        "order": 15
-      },
-      {
-        "title": "14. Yéti Adulte (repop 26-28 mn)",
-        "description": "<p>Raven's Dust : Plaine de Niève - 1585,250,4 =&gt; <b>2M xp</b> </p>",
-        "images": [],
-        "order": 16
-      },
-      {
-        "title": "15. Drake Dixtor Supérieur",
-        "description": "<p>Stoneheim : Cave Skraugs Roses - 1836,1040,2 =&gt; <b>2,25M xp</b> </p>\n\n<p><br/></p>",
-        "images": [],
-        "order": 17
-      },
-      {
-        "title": "16. Golem de pierre",
-        "description": "<p>Stoneheim : Sud de la RST SH - 470,1170,0 =&gt; <b>2,5 M xp </b> </p>\n<p ><i>By Mëyli</i></p>",
-        "images": [],
-        "order": 18
-      },
-      {
-        "title": "17. Golem glacial",
-        "description": "<p>Raven's Dust : Plaine de Niève - 1655,355,4 =&gt; <b>5 M xp </b><i><b></b></i> </p>",
-        "images": [],
-        "order": 19
-      },
-      {
-        "title": "18. Golem embrasé",
-        "description": "<p ><i>By Mëyli</i></p>",
-        "images": [],
-        "order": 20
-      },
-      {
-        "title": "19. Liche ancestrale",
-        "description": "<p ><i>By Mëyli</i><b></b><i></i></p>",
-        "images": [],
-        "order": 21
-      },
-      {
-        "title": "Récompenses lorsque vous retournez voir le PNJ Pelkor",
-        "description": "<ul>\n  <li><b>de l'XP</b> : Après chaque monstre vous gagnerez beaucoup d'XP : elle est calculée comme suit pour les 16 premiers : \n<ul>\n  <li>500K + (100K * (numDuMob-1). Par ex: 500k + 100*(2-1) = 600k pour le rejet du monde.</li>\n</ul>\n</li>\n</ul>\n\n<ul>\n  <li>500K + (100K * (numDuMob-1). Par ex: 500k + 100*(2-1) = 600k pour le rejet du monde.</li>\n</ul>\n\n<ul>\n  <li><b>L'Aura des Sages</b> (après avoir finalisé l'accès même avant le level 150) : C'est une aura permanente qui remplace avantageusement tout les items 1.25 de la Crimsonscale. De plus, plus besoin de switcher vos bijoux ni d'activer des items.</li>\n</ul>\n\n<ul>\n  <li><b>L'accès à l'académie</b> : Après avoir capturé les 19 premiers monstres, jusqu'à la liche ancestrale et finalisé l'accès, vous aurez accès à l'Académie si vous êtes level 150. Dites une dernière fois <span class=\"text-amber-400 font-bold\">\"proie\"</span> puis <span class=\"text-amber-400 font-bold\">\"partir\"</span> à Pelkor Zyrus.</li>\n</ul>",
-        "images": [],
-        "order": 22
-      },
-      {
-        "title": "Pour finir l'accès",
-        "description": "<p><b>Pour finaliser l'accès à l'Académie : </b> </p>\n\n<p><b>il vous faut avoir fait toutes les quêtes 1.25 <u>lors de la renaissance en cours</u> ): </b> </p>\n\n<ul>\n  <li><b>Crimsonscale jusqu'à la fin (mort de Gluriurl)</b></li> <li><b>Ceinture instable </b></li> <li><b>Bracelet immortel </b></li>\n</ul>\n\n<p><b>Vous devrez déséquiper tous les items relatifs à ces quêtes au moment de reparler à Pelkor.</b> </p>\n\n<p><b>Tip</b> : Petits indices pour savoir ou vous en êtes dans la quête Crimson : La tablette de pierre runique, la gemme sombre et la Caledbog sont supprimées aux renaissances. Il est impossible de supprimer la Caledbog donc si vous avez la gemme sombre et pas la Caledbog, il y a des chances que vous en soyez aux adorateurs ou peu avant. Si vous avez la Caledbog, allez parler au grand prêtre de LH puis à Efnisien. </p>",
-        "images": [],
-        "order": 23
-      },
-      {
-        "title": "20. Cerberus (repop 4 heures)",
-        "description": "<p>Académie niveau -4 =&gt; <b> à la capture : 10 Giga xp et 10 parchemins d'expérience doublée d'une heure. </b> </p>\n\n<p>Le level 200 est requis pour accéder au -4 à l'aide d'une quête. Il vous faudra ensuite faire toutes les clés de chair (de 1 à 22) pour accéder enfin à l'antre du Cerberus. </p>\n\n<p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
-        "images": [],
-        "order": 24
       }
     ],
-    "credits": [
-      "By Mëyli",
-      "BY Mëyli"
-    ]
+    "credits": ["Mëyli", "Uqbar", "Tellah", "Artemys"]
   },
   {
     "title": "Quête de Sarah (Robes brodées)",
