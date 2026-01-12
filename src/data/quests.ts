@@ -3328,7 +3328,7 @@ export const quests: Quest[] = [
   {
     "title": "Accès à l'Asile Déchu",
     "slug": "acces-a-lasile-dechu",
-    "zone": "Inconnue",
+    "zone": "Général",
     "prerequisites": [],
     "rewards": [],
     "npcs": [],
@@ -3384,7 +3384,7 @@ export const quests: Quest[] = [
   {
     "title": "Armure de plaque incrustée d'émeraudes",
     "slug": "armure-de-plaque-incrustee-demeraudes",
-    "zone": "Inconnue",
+    "zone": "Général",
     "prerequisites": [],
     "rewards": [],
     "npcs": [],
@@ -3408,7 +3408,7 @@ export const quests: Quest[] = [
   {
     "title": "Armure Métrolite",
     "slug": "armure-metrolite",
-    "zone": "Inconnue",
+    "zone": "Général",
     "prerequisites": [],
     "rewards": [],
     "npcs": [],
@@ -3435,7 +3435,7 @@ export const quests: Quest[] = [
   {
     "title": "Audrey la couturière",
     "slug": "audrey-la-couturiere",
-    "zone": "Inconnue",
+    "zone": "Général",
     "prerequisites": [],
     "rewards": [],
     "npcs": [],
@@ -3564,7 +3564,7 @@ export const quests: Quest[] = [
   {
     "title": "Donjon du Cerberus",
     "slug": "donjon-du-cerberus",
-    "zone": "Inconnue",
+    "zone": "Général",
     "prerequisites": [],
     "rewards": [],
     "npcs": [],
@@ -3741,7 +3741,7 @@ export const quests: Quest[] = [
   {
     "title": "La chasse aux dragons",
     "slug": "la-chasse-aux-dragons",
-    "zone": "Inconnue",
+    "zone": "Général",
     "prerequisites": [],
     "rewards": [],
     "npcs": [],
@@ -3807,7 +3807,7 @@ export const quests: Quest[] = [
   {
     "title": "La hache légendaire",
     "slug": "la-hache-legendaire",
-    "zone": "Inconnue",
+    "zone": "Général",
     "prerequisites": [],
     "rewards": [],
     "npcs": [],
@@ -3822,260 +3822,11 @@ export const quests: Quest[] = [
     ],
     "credits": []
   },
-  {
-    "title": "La lettre de Crimsonscale",
-    "slug": "la-lettre-de-crimsonscalerd",
-    "zone": "Inconnue",
-    "prerequisites": [],
-    "rewards": [],
-    "npcs": [
-      "l'ermite Antonian",
-      "Aquinos",
-      "le Barde sans Nom",
-      "un gardien",
-      "Crimsonscale",
-      "Custodian",
-      "les 4 savants (the 4 Scholars)",
-      "les 3 bibliothécaires (the 3 Librarians)",
-      "Olin Haad",
-      "Grand Prêtre Gunthar",
-      "Efnisien",
-      "Ramirgo",
-      "Lothar",
-      "Efnisien",
-      "Le Gardien Draconis",
-      "la Gitane"
-    ],
-    "gold": "",
-    "steps": [
-      {
-        "title": "La lettre de Crimsonscale",
-        "description": "<p>C’est une quête immense qui se déroule en 3 parties: Arakas, Raven’s Dust, puis le dénouement s’effectue sur Arakas. </p><p>Elle est très intéressante par l'XP qu'elle donne (principalement sur Arakas) et par certains des items offerts (comme l'amulette de renouveau si vous êtes lanceur de sorts). </p><p>Si vous pensez renaître vous pouvez vous arrêter au Barde (pour l'xp donnée et l'accès au Mausolée - ou vous pourrez faire beaucoup d'xp, surtout en prêtre lumière) ou à la Bibliothèque (pour l'xp seule car le bracelet de flammes donné par le Dragon Crimsonscale est supprimé sur NMS). </p><p><b>Tip</b> : Petits indices pour savoir ou vous en êtes dans la quête si vous l'avez commencée il y a un bout de temps :-)) </p><p>La tablette de pierre runique, la gemme sombre et la Caledbolg sont supprimées aux renaissances. Il est impossible de supprimer la Caledbolg donc si vous avez la gemme sombre et pas la Caledbolg, il y a des chances que vous en soyez aux adorateurs (désert RD) ou peu avant. Si vous avez la Caledbolg, allez parler au Grand Prêtre de LH puis à Efnisien. </p>",
-        "images": [],
-        "order": 0
-      },
-      {
-        "title": "ARAKAS",
-        "description": "",
-        "images": [
-          "/t4c-nms-overview/assets/quests/la-lettre-de-crimsonscalerd/img_1_0.jpg",
-          "/t4c-nms-overview/assets/quests/la-lettre-de-crimsonscalerd/img_1_1.jpg"
-        ],
-        "order": 1
-      },
-      {
-        "title": "Kilhiam au temple de Lighhaven",
-        "description": "<p>Allez au temple de Lighthaven et parlez à Kilhiam. Elle vous donnera une lettre (double clic dans l’inventaire) qui dit ceci: </p><p><span class=\"text-amber-400 font-bold\">\"Chère ami(e), vous trouverez cette lettre un peu bizarre, veuillez m’en excuser mais le problème est de la plus grande importance et avant que commence votre journée, je voudrais que vous compreniez parfaitement la situation dans laquelle nous avons été forcés d’entrer. Depuis ce jour, votre vie ne sera plus jamais la même. Je ne peux pas tout expliquer dans cette lettre, mais je vous recommande fortement d’aller voir celui que l’on nomme Efnisien. Il habite à l'étage d'une petite maison située à l’est du temple de Lighthaven. Rencontrez-le et il vous expliquera ce que vous devez connaître.\"</span> </p>",
-        "images": [],
-        "order": 2
-      },
-      {
-        "title": "Efnisien et ses gardes",
-        "description": "<p>Dirigez-vous vers la maison d’Efnisien située à l'Est de la banque de Lighthaven et montez à l'étage. Dès que vous cliquez sur lui, 3 assassins apparaissent. Tuez-les et cliquez à nouveau sur Efnisien. Dites <span class=\"text-amber-400 font-bold\">\"Gardes\"</span>, <span class=\"text-amber-400 font-bold\">\"Assassins\"</span>, <span class=\"text-amber-400 font-bold\">\"Olin Haad\"</span>, <span class=\"text-amber-400 font-bold\">\"Siège de la ville\"</span>, <span class=\"text-amber-400 font-bold\">\"Quelque chose\"</span>, <span class=\"text-amber-400 font-bold\">\"Services\"</span>, <span class=\"text-amber-400 font-bold\">\"Refusé\"</span>, <span class=\"text-amber-400 font-bold\">\"Visite\"</span>, <span class=\"text-amber-400 font-bold\">\"Lettre\"</span> et vous en apprendrez sur Olin Haad et le cœur de pierre. Efnisien mentionne également que vous devez aller parler à Olin Haad mais que, si vous voulez que ce dernier vous porte attention, vous devez donnez une raclée à ses gardes ! </p>",
-        "images": [],
-        "order": 3
-      },
-      {
-        "title": "Le château d'Olin Haad",
-        "description": "<p>Dites <span class=\"text-amber-400 font-bold\">\"Adieu\"</span>, dirigez vous vers la grotte (cave) de Lighthaven (au sud-ouest de la fontaine), entrez-y et trouvez le château d’Olin Haad (attention aux gardes, une bénédiction - même si c'est seulement celle de Zélina du temple - sera la bienvenue). Cliquez sur la porte du château et vous serez téléporté à l’intérieur. Suivez le tapis rouge et vous trouverez Olin Haad. Essayez de discuter avec lui. Il va refuser, ressortez et tuez environ 20 de ses gardes. </p><p>Puis retournez lui parler. Dites <span class=\"text-amber-400 font-bold\">\"Chercher\"</span>, <span class=\"text-amber-400 font-bold\">\"Combat\"</span> et vous serez téléporté dans une pièce avec 4 Gardes d’Elite d’Olin Haad. LAISSEZ-VOUS TUER ! Ils ne mourront qu’en essayant de vous tuer ! Vous serez re-téléporté (tout rouge, avec 5% de vos PV, mais vous ne serez PAS mort) aux côtés d’Olin Haad. A ce point de la quête, vous recevrez l’aura Colère des Anciens (Wrath of the Ancients), un sort de protection permanent qui blesse de temps à autre les ennemis qui vous attaquent. Continuez le dialogue avec Olin Haad, en disant : <span class=\"text-amber-400 font-bold\">\"Ils\"</span>, <span class=\"text-amber-400 font-bold\">\"Haruspice\"</span>, <span class=\"text-amber-400 font-bold\">\"Prophétie\"</span>, <span class=\"text-amber-400 font-bold\">\"Graines\"</span>, <span class=\"text-amber-400 font-bold\">\"Moi\"</span>, <span class=\"text-amber-400 font-bold\">\"Nouvelle race\"</span>, <span class=\"text-amber-400 font-bold\">\"Réponse\"</span> et vous apprendrez des choses au sujet de la prophétie. Olin Haad mentionnera également que vous devez trouver le Grand Prêtre Gunthar et le prévenir qu’il ne pourra quitter Lighthaven en paix, tant qu'il n'aura pas rendu ce qu’il a promis. </p>",
-        "images": [
-          "/t4c-nms-overview/assets/quests/la-lettre-de-crimsonscalerd/img_4_0.jpg"
-        ],
-        "order": 4
-      },
-      {
-        "title": "Grand prêtre Gunthar (au temple, sous-sol derrière le trône)",
-        "description": "<p>Retournez au temple de Lighthaven (utilisez votre gemme de téléportation, c'est plus rapide) et cliquez sur la porte derrière le trône. Vous serez téléporté dans la petite pièce. Descendez dans le donjon et trouvez le Grand Prêtre Gunthar. Dites-lui <span class=\"text-amber-400 font-bold\">\"Demandes\"</span>, <span class=\"text-amber-400 font-bold\">\"Pierre\"</span>, <span class=\"text-amber-400 font-bold\">\"Marchand\"</span>, <span class=\"text-amber-400 font-bold\">\"Attendez\"</span>, <span class=\"text-amber-400 font-bold\">\"Nécromancien\"</span>, <span class=\"text-amber-400 font-bold\">\"Corrupteurs de Gluriurl\"</span>, <span class=\"text-amber-400 font-bold\">\"Bataille des émanations\"</span>, <span class=\"text-amber-400 font-bold\">\"Faucheurs de vie\"</span>, <span class=\"text-amber-400 font-bold\">\"Dragons\"</span>, <span class=\"text-amber-400 font-bold\">\"Complètement\"</span>, <span class=\"text-amber-400 font-bold\">\"Theodore XIII\"</span>, <span class=\"text-amber-400 font-bold\">\"Pierre du coeur\"</span> et vous apprendrez au sujet du culte de Gluriurl, du Cœur de pierre, et de la vente de celui-ci à un marchand. Maintenant dites <span class=\"text-amber-400 font-bold\">\"Oui\"</span> afin d’accepter d’aider Gunthar à trouver le Cœur. Dites <span class=\"text-amber-400 font-bold\">\"Regarder\"</span> et il vous dira de chercher à Windhowl. </p><p>Vous recevez également 1.000 pièces d’or et 10.000 xp. </p><p>Continuez le dialogue en disant <span class=\"text-amber-400 font-bold\">\"Nomade\"</span> et vous parlera du signe du marchand. </p>",
-        "images": [],
-        "order": 5
-      },
-      {
-        "title": "A Windhowl (Ethan, Urik, maison du Nomade)",
-        "description": "<p>Rendez vous à Windhowl. </p><p>Cherchez la maison de la guilde des Marchands située à gauche du marchand d’armes. Trouvez Ethan chef de la guilde des Marchands et dites-lui <span class=\"text-amber-400 font-bold\">\"Nomade\"</span>, <span class=\"text-amber-400 font-bold\">\"Raté\"</span>, <span class=\"text-amber-400 font-bold\">\"Agressif\"</span>, <span class=\"text-amber-400 font-bold\">\"Affaire\"</span>, <span class=\"text-amber-400 font-bold\">\"Pierre du Cœur\"</span> et il vous parlera un peu plus du Nomade et des marchands. Dès que vous lui aurez parlé de la Pierre du Cœur, il vous dira qu’il a un problème et qu’il ne peut plus perdre son temps avec vous. Dites <span class=\"text-amber-400 font-bold\">\"Problème\"</span>, <span class=\"text-amber-400 font-bold\">\"Taxes\"</span> et il vous parlera des dettes d’Urik le Maître tailleur. Dites <span class=\"text-amber-400 font-bold\">\"Mercenaires\"</span>, <span class=\"text-amber-400 font-bold\">\"Tâche\"</span> et <span class=\"text-amber-400 font-bold\">\"oui\"</span>, acceptez d’aider Ethan à récupérer l’argent qu’Urik lui doit. </p><p>Retournez vers la maison d’Urik, située sous la taverne de Windhowl. Montez à l'étage et parlez à Urik. Dites-lui <span class=\"text-amber-400 font-bold\">\"Idiot\"</span>, <span class=\"text-amber-400 font-bold\">\"Discuter\"</span>, <span class=\"text-amber-400 font-bold\">\"Affaire\"</span>. Il refusera de vous donner l’argent qu’il doit et appellera en renfort 3 voleurs. Mettez les au tapis et reparlez à Urik. Il vous donnera alors 1.000 pièces d’or et l’argent de ses dettes. </p><p>Retournez à la Guilde des Marchands et parlez de nouveau à Ethan. Cliquez sur lui, dites-lui <span class=\"text-amber-400 font-bold\">\"Argent\"</span> et il prendra son dû. </p><p>Vous recevez quant à vous 40.000 xp. </p><p>Dites-lui maintenant <span class=\"text-amber-400 font-bold\">\"Nomade\"</span>, <span class=\"text-amber-400 font-bold\">\"Leçon\"</span>, <span class=\"text-amber-400 font-bold\">\"Suspecte\"</span>, <span class=\"text-amber-400 font-bold\">\"Confrerie Obsidienne\"</span>, <span class=\"text-amber-400 font-bold\">\"Aider\"</span> et il vous dira qu’il suspecte qu’Urik et le Nomade travaillent ensemble. Dites <span class=\"text-amber-400 font-bold\">\"Clefs\"</span> et il vous donnera un lot de clés qu’il a dérobé chez Urik. Il mentionnera également qu’une de ces clés ouvrirait peut-être la maison du Nomade. Dites <span class=\"text-amber-400 font-bold\">\"Demeure\"</span> et il vous indiquera où se situe celle-ci, quelque part au sud de la ville. </p><p>Dirigez-vous vers le sud-ouest et cherchez la maison du Nomade. Elle est située à côté des remparts. Cliquez sur la porte, la clé disparaîtra et vous serez téléporté à l’intérieur de la maison. Montez au premier étage et commencez à ouvrir les 4 coffres (faites Ctrl+n pour voir les coffres). Dans un des coffres, vous trouverez une petite clé. Cliquez à nouveau sur le coffre et vous trouverez, cachées dans un double fond, 1.000 pièces d’or. Montez au deuxième étage et ouvrez les deux coffres. Dans l’un des deux, vous trouverez la lettre d’Owain. </p><p>La lettre dit (double clic dans l’inventaire): </p><p>\"Cher Nomad, </p><p>Nous avons finalement trouvé la grotte maudite que vous avez recherchée tant d’années. La semaine dernière, j’ai envoyé une équipe afin de retrouver la relique que vous aviez demandée mais ils ne sont jamais revenus… J’en ai parlé avec Urik, et il me força à envoyer une deuxième équipe, dont seulement un seul hommes est revenu, les bras rongés ! J’arrête. Vous ferez ce que vous voulez mais je n’envoie plus personne dans cette place damnée. J’attendrai au camp des Druides au Nord-Est d’Arakas dix jours. Si pour n’importe quelle raison, j’y apprends que vous amenez Urik avec vous, ou si vous ne venez pas, je partirais. </p>",
-        "images": [],
-        "order": 6
-      },
-      {
-        "title": "Le commandant Owain au camp des druides d'Arakas",
-        "description": "<p>Traversez entièrement Arakas pour vous dirigez vers l’Ordre de la Nature (Camp des Druides au Nord-Est d'Arakas) et trouvez Yrian Holenarbed situé dans une maison à l’Est de Stonehenge. Parlez-lui et il vous demandera si vous êtes le voyageur envoyé par les vents afin de l’aider. Dites <span class=\"text-amber-400 font-bold\">\"Oui\"</span>, <span class=\"text-amber-400 font-bold\">\"Etat\"</span>, <span class=\"text-amber-400 font-bold\">\"Voyageur\"</span>, <span class=\"text-amber-400 font-bold\">\"Malheurs\"</span>, <span class=\"text-amber-400 font-bold\">\"Odeur\"</span>, <span class=\"text-amber-400 font-bold\">\"Resistance\"</span>, <span class=\"text-amber-400 font-bold\">\"Nomade\"</span> et vous apprendrez la disparition du Grand-père et la nausée causée par le Nomade. Continuez le dialogue en disant <span class=\"text-amber-400 font-bold\">\"Bâton\"</span>, <span class=\"text-amber-400 font-bold\">\"Commandant\"</span> et vous apprendrez qu’il pourrait guérir cette nausée s’il avait le Sceptre de Solinae, mais le Nomade a ordonné à son Commandant de prendre ce sceptre. Il soulignera également que les troupes du Nomade sont stationnées au sud-est du camp des Druides à proximité de la rivière. </p><p>Dirigez-vous donc vers le Sud-Est, trouvez et tuez le commandant Owain (et, si vous le pouvez, ses serviteurs, les soldats d’Olin Haad). </p><p><b>Attention:</b> Le commandant Owain et ses soldats sont difficiles à bas niveau. Trouvez un ami qui peut vous aider ou soyez sûr de transporter beaucoup de potions de guérison ! </p><p>Une fois le commandant Owain mort, le sceptre de Solinae apparaît dans votre inventaire. Retrouvez Yrian Holenarbed et cliquez sur lui. Yrian prendra le Sceptre. </p><p>Vous recevrez 75.000 xp. </p><p>Dites-lui <span class=\"text-amber-400 font-bold\">\"Nomade\"</span> et il vous dira que le Nomade recherchait une crypte. Dites <span class=\"text-amber-400 font-bold\">\"Crypte\"</span> et il vous parlera d’une route menant au temple située à proximité d’un campement quelque part à l’ouest. Vous recevrez également l’anneau gardien de vitalité et la gemme de vitalité (Guardian Ring of Vitality et Gem of Vitality). Equipez l'anneau et faites une macro avec la gemme (voyez ici comment faire). </p>",
-        "images": [],
-        "order": 7
-      },
-      {
-        "title": "La gitane",
-        "description": "<p>Dirigez-vous vers le campement de Gypsy la Gitane, situé au sud-est du pont allant en direction des grottes de la Vallée Maudite (en venant du Sud, une fois passé le pont à l'ouest de l’île aux démonicons, tournez immédiatement à gauche puis dès que vous le pouvez dirigez vous vers le nord). Trouvez la Gitane et parlez-lui. Dites <span class=\"text-amber-400 font-bold\">\"Voyageur\"</span>, <span class=\"text-amber-400 font-bold\">\"Voyante\"</span>, <span class=\"text-amber-400 font-bold\">\"Nomade\"</span> et elle vous dira qu’elle vous aidera à trouver le Nomade. Avant cela, elle vous posera quelques questions afin qu’elle s’harmonise avec votre aura. Répondez <span class=\"text-amber-400 font-bold\">\"Oui\"</span>, <span class=\"text-amber-400 font-bold\">\"Oui\"</span>, <span class=\"text-amber-400 font-bold\">\"Donneur de vie\"</span> et elle vous dira qu’il se trouve dans un ancien temple d’une divinité morte nommée Gluriurl. Ce temple se situe sur une île séparée de la terre ferme. Afin d’atteindre cette île, vous devez traverser une grotte se situant au nord. </p>",
-        "images": [],
-        "order": 8
-      },
-      {
-        "title": "La crypte du nomade (le coeur et le sang de Gluriurl)",
-        "description": "<p><b>La crypte du Nomade</b> </p><p> Entrez-y et continuez vers le Nord. Méfiez vous du Kraanien, il fait 200 pv de dégâts par coup qu'il vous porte. Poursuivez jusqu’à l’autel. La, vous verrez un portail et deux tourbillons. </p><p><b>La tombe du Déchu : Le coeur de Gluriurl</b> </p><p>Entrez dans le tourbillon de droite dans la cave des coeurs corrompus. Marchez vers le Nord et vous arriverez à la tombe du Déchu. Cherchez les guerriers Déchus, situés au nord de la crypte. Tuez-les jusqu’à ce qu’ils laissent tomber un cœur corrompu (à petit niveau faites vous aider). Ramassez-le et entrez dans le portail derrière eux. Vous serez à nouveau téléporté à côté de l’autel. </p><p><b>La cave de la corruption : le sang de Gluriurl</b> </p><p>Entrez maintenant dans le tourbillon de gauche et vous arriverez à la cave de la corruption. Allez vers l'ouest pour trouvez le puits portant l'inscription <span class=\"text-amber-400 font-bold\">\"ici repose le sang de Gluriurl\"</span>, cliquez dessus et vous collecterez le sang de Gluriurl dans une bouteille (cette partie est difficile, être béni et rempli de potions est conseillé à bas level). Entrez enfin dans le portail et vous vous retrouverez de nouveau à proximité de l’autel. </p><p>Touchez l’autel et le cœur de Gluriurl commencera à battre, obligeant le portail à miroiter en retour. Plongez dedans et votre vision se brouillera pendant un court moment… </p><p><b>La crypte des pierres sombres</b> </p><p>En passant le portail vous arriverez à la Crypte des pierres sombres. Allez vers le nord-ouest et vous trouverez une cage thoracique. Touchez-la et vous recevrez la gemme sombre (Darkstone) et le message suivant vous apparaîtra : </p><p><span class=\"text-amber-400 font-bold\">\"Une gemme sombre flotte dans les airs là où le cœur devrait être. Avec grands soins, vous prenez la gemme sombre et la remplacez par le cœur de Gluriurl\"</span>. </p><p>La voix de la Gitane résonne alors dans votre tête: [Nom du joueur] ! Vous devriez venir me voir, j’ai quelque chose d’important à vous montrer !\". </p><p>Vous serez récompensé par 125.000 xp. </p>",
-        "images": [],
-        "order": 9
-      },
-      {
-        "title": "Retour chez la gitane",
-        "description": "<p>Retournez voir la Gitane et parlez-lui. Elle mentionnera qu’elle ressent la présence du coeur maléfique sur vous. Dites <span class=\"text-amber-400 font-bold\">\"Coeur maléfique\"</span>, <span class=\"text-amber-400 font-bold\">\"Rêves\"</span>, <span class=\"text-amber-400 font-bold\">\"Cadavre délabré\"</span>, <span class=\"text-amber-400 font-bold\">\"Plan\"</span>, <span class=\"text-amber-400 font-bold\">\"Sacrifice\"</span> et vous en apprendrez plus au sujet de la pierre noire maudite, les rêves étranges de la Gitane et votre nouvelle tâche. Vous devez rapporter la pierre noire au temple d’Arthek à Lighthaven. Dites <span class=\"text-amber-400 font-bold\">\"Quelque chose\"</span> et elle vous offrira (selon votre choix) : </p><p>- Amulette de Renouveau et Gemme de Renouveau (indispensable aux lanceurs de sorts) (Amulet of Renewal and the Gem of Renewal) </p><p>- Amulette de Régénération et Gemme de Régénération (Amulet of Regeneration and the Gem of Regeneration) </p><p>- Carquois de stabilité gris (110 dext, 20 Force) (Trueshot's Quiver) </p><p>Votre choix fait, la Gitane vous conseille de vous rendre rapidement au temple de LightHaven (équipez l'amulette et faites une macro avec la gemme). </p>",
-        "images": [],
-        "order": 10
-      },
-      {
-        "title": "Le chef des brigands Gorlok Bloodaxe",
-        "description": "<p>Rendez-vous au temple de Lighthaven (utilisez la gemme de téléportation). Tentez de prendre la porte menant au grand Prêtre Gunthar : </p><p>La porte est fermée mais il y a un message dessus: </p><p><span class=\"text-amber-400 font-bold\">\"[Nom du joueur], je vous prie de bien vouloir m’excuser de ne pas être là pour vous accueillir, mais j’avais quelque affaire urgente à régler. Si vous désirez me rencontrer, parlez au prêtre du temple.\"</span> </p><p>Allez parler avec Frère Kiran. Il vous demandera si vous veniez voir le Grand Prêtre Gunthar. Répondez <span class=\"text-amber-400 font-bold\">\"Oui\"</span> et il vous dira qu’il a été invité à une réunion avec le chef de son ordre, il semblait qu’il avait quelque sérieuse affaire à régler. Dites <span class=\"text-amber-400 font-bold\">\"Importantes choses\"</span>, <span class=\"text-amber-400 font-bold\">\"Maison du Bourgmestre\"</span> et il vous dira de le chercher dans un grand bâtiment situé à la fin de la rue partant vers le sud-est. Il vous mentionnera Kirlor Dhul, si vous avez des doutes. </p><p>Dirigez-vous vers la banque de Lighthaven et cliquez sur Kirlor Dhul le bourgmestre. Il vous informera au sujet d'une certaine agitation qui a eu lieu dans la rue quelques instants plus tôt. Il vous dira aussi que quelqu’un a peut-être vu ce qui s’est passé. </p><p>Sortez de la banque et cherchez ce quelqu'un qui est une femme nommée Amelia. Cliquez sur elle et elle vous suppliera de ne pas la tuer car elle n’a rien vu. Dites <span class=\"text-amber-400 font-bold\">\"Tuez\"</span>, <span class=\"text-amber-400 font-bold\">\"Eux\"</span> et elle vous dira que six hommes ont attaqué Gunthar. Dites <span class=\"text-amber-400 font-bold\">\"Brigands\"</span>, <span class=\"text-amber-400 font-bold\">\"Ou\"</span> et elle vous dira qu’ils partaient vers le sud-ouest à partir du pont gobelin ouest, à l’extérieur de la ville. </p><p>Dirigez-vous vers le pont de Lighthaven Ouest, et continuez vers l’Ouest jusqu’à ce que vous croisiez un chemin. Continuez sur le chemin vers le Sud et vous arriverez au camp des brigands. </p><p>Mettez au tapis les brigands et finalement Gorlok Bloodaxe (pas facile). Une fois que vous l’aurez tué, le Grand Prêtre Gunthar sera libéré (il apparaîtra à vos côtés). Cliquez sur lui et il vous remerciera. Il vous demandera également si vous avez retrouvé la pierre. Répondez <span class=\"text-amber-400 font-bold\">\"Oui\"</span> et il vous demandera de vite ramener la pierre à Olin Haad. </p><p>Vous serez récompensé par 200.000 xp. </p><p>Retournez au château d’Olin Haad en passant par la grotte de LH. Cliquez sur ce dernier et dites <span class=\"text-amber-400 font-bold\">\"Nomade\"</span>, <span class=\"text-amber-400 font-bold\">\"Gemme sombre\"</span>, <span class=\"text-amber-400 font-bold\">\"Pierre du coeur\"</span>, <span class=\"text-amber-400 font-bold\">\"Ment\"</span>. Vous en apprendrez plus au sujet de la Pierre du Coeur et vous serez téléporté à la bibliothèque du château avec 3 gardes privés d’Olin Haad. Tuez-les (en tuer un seul suffit). Ressortez vite fait de la bibliothèque et reparlez à Olin Haad. Il vous enverra voir Gunthar le Grand Prêtre. </p>",
-        "images": [],
-        "order": 11
-      },
-      {
-        "title": "Retour chez Gunthar au temple",
-        "description": "<p>Retrouvez voir Gunthar au sous-sol du temple et dites-lui <span class=\"text-amber-400 font-bold\">\"Regarder\"</span>, <span class=\"text-amber-400 font-bold\">\"Cacher\"</span>, <span class=\"text-amber-400 font-bold\">\"Dieux\"</span>, <span class=\"text-amber-400 font-bold\">\"Service\"</span>, <span class=\"text-amber-400 font-bold\">\"Corps physique\"</span>, <span class=\"text-amber-400 font-bold\">\"Sacrifiant\"</span>, <span class=\"text-amber-400 font-bold\">\"Transferer\"</span>, <span class=\"text-amber-400 font-bold\">\"Sceau\"</span>, <span class=\"text-amber-400 font-bold\">\"Veritables intentions\"</span> et vous glanerez encore quelques informations au sujet de la Pierre du Coeur. Il vous demandera aussi de rencontrer un ancien ami connu comme étant le Barde sans Nom (Nameless Bard). Il vous dira également que vous devez d’abord parler avec Tarnian situé au sud-ouest du square de Lighthaven, près de la côte. </p>",
-        "images": [],
-        "order": 12
-      },
-      {
-        "title": "Tarnian",
-        "description": "<p>Trouvez Tarnian (vers 2780, 1200) et parlez-lui. Il vous demandera si vous venez de la part de Gunthar. Répondez <span class=\"text-amber-400 font-bold\">\"Oui\"</span> puis dites <span class=\"text-amber-400 font-bold\">\"Gemme sombre\"</span>, <span class=\"text-amber-400 font-bold\">\"Digne\"</span>, <span class=\"text-amber-400 font-bold\">\"Gluriurl\"</span>, <span class=\"text-amber-400 font-bold\">\"Crane\"</span>, <span class=\"text-amber-400 font-bold\">\"Celui\"</span>, <span class=\"text-amber-400 font-bold\">\"Fils\"</span>, <span class=\"text-amber-400 font-bold\">\"Meurtre\"</span>, <span class=\"text-amber-400 font-bold\">\"Fanatique\"</span>, <span class=\"text-amber-400 font-bold\">\"Croit\"</span> et il vous donnera une tablette de pierre runique (Runed Stone Tablet ou RST). Dites <span class=\"text-amber-400 font-bold\">\"Raven's Dust\"</span> et il vous donnera des indications afin de trouver Antonian l’ermite. Il vous apprendra à utiliser la tablette de pierre runique (faites une macro avec la gemme). </p>",
-        "images": [],
-        "order": 13
-      },
-      {
-        "title": "Antonian l'ermite",
-        "description": "<p>Afin de parler à Antonian l’ermite, activez votre macro tablette (RST). Il vous attend dans une maison à l'Est de la tablette de pierre runique d'Arakas, à peu de distance de la crypte d'Arakas. </p>",
-        "images": [],
-        "order": 14
-      },
-      {
-        "title": "Les 5 nexus",
-        "description": "<p>Cliquez sur Antonian et il vous demandera si vous avez la tablette de pierre runique de Tarnian. Répondez <span class=\"text-amber-400 font-bold\">\"Oui\"</span>, puis <span class=\"text-amber-400 font-bold\">\"Tablette de pierre runique\"</span> et vous apprendrez que c’est une pierre de téléportation. Dites <span class=\"text-amber-400 font-bold\">\"Clin d'oeil\"</span>, <span class=\"text-amber-400 font-bold\">\"Prières\"</span>, <span class=\"text-amber-400 font-bold\">\"Ancestrale\"</span>, <span class=\"text-amber-400 font-bold\">\"Index d'un nexus\"</span> et vous saurez que pour l’utiliser (pour gagner la tablette de Raven's Dust, mais vous devrez aussi avoir fait l'accès RD au préalable), vous avez besoin d’activer les pierres de connexion. Dites <span class=\"text-amber-400 font-bold\">\"Lieu\"</span>, <span class=\"text-amber-400 font-bold\">\"Emplacement\"</span> et il vous dira que vous pouvez à tout moment utiliser la tablette pour lui rendre visite (cliquer sur la tablette vous téléporte juste à l’ouest d’Antonian l’ermite). A ce moment, il sera tellement absorbé par ses recherches qu’il en oubliera jusqu’à votre présence. Cliquez à nouveau sur lui et dites <span class=\"text-amber-400 font-bold\">\"Oui\"</span>. Antonian vous donnera alors les indications suivantes : </p>",
-        "images": [],
-        "order": 15
-      },
-      {
-        "title": "Nexus 1",
-        "description": "<p>Voyagez vers le nord au dessus du camp gobelin et cherchez la rivière jusqu’à ce que vous trouviez un pont la traversant. Prenez ce pont et longez la rivière vers l'Est jusqu’à un îlot. Il y a une pierre de connexion tout à l'Est sur cet îlot (attention c'est très chaud...être béni est fortement conseillé). Cliquez sur la pierre et vous obtiendrez le message suivant: </p><p><span class=\"text-amber-400 font-bold\">\"Vous placez la tablette de pierre runique sur la pierre de connexion. La pierre de connexion émet un rayon lumineux qui vient frapper la tablette.\"</span> </p><p>Puis activez rapidement votre tablette de pierre runique (RST) ou votre gemme HDV avant de mourir :))). </p>",
-        "images": [],
-        "order": 16
-      },
-      {
-        "title": "Nexus 2",
-        "description": "<p>Utilisez la tablette afin de retourner voir Antonian l’ermite. Cliquez sur lui, dites <span class=\"text-amber-400 font-bold\">\"Oui\"</span> et il vous donnera la direction de la 2e pierre de connexion (située sur l'île aux Kraanians) : </p><p>Prenez la route vers le sud et continuez vers le sud-ouest à la première intersection. Peu après, la route tourne vers l’ouest, vous arriverez à un nouveau croisement. Continuez vers le nord, puis vers le nord-ouest et prenez le pont de l'île aux Kraaniens. Une fois traversé, continuez vers le nord et vous trouverez une autre pierre de connexion. </p><p>Suivez les directions et trouvez la 2e pierre de connexion (située au nord une fois le pont des kraanians franchi). Cliquez dessus et vous aurez à nouveau le message (vous pouvez directement allez vers l'ouest puis le Sud pour trouver le 4ème Nexus). </p>",
-        "images": [],
-        "order": 17
-      },
-      {
-        "title": "Nexus 3",
-        "description": "<p>Maintenant, utilisez la tablette afin de retourner voir Antonian l’ermite. Cliquez sur lui, dites <span class=\"text-amber-400 font-bold\">\"Oui\"</span> et il vous donnera la direction de la 3e pierre de connexion: </p><p>Prenez la route du sud et continuez vers le sud-ouest à la première intersection. Peu après, la route se dirige vers l’ouest, vous arrivez à un nouveau croisement. Continuez vers le sud-ouest jusqu’à ce que vous passiez un pont, puis continuez vers le sud dans la vallée afin de trouver une autre pierre de connexion. </p><p>Suivez les directions et trouvez la 3e pierre de connexion (située au nord des montagnes de la ville des voleurs). Cliquez dessus pour le message. </p>",
-        "images": [],
-        "order": 18
-      },
-      {
-        "title": "Nexus 4",
-        "description": "<p>Maintenant, utilisez la tablette afin de retourner voir Antonian l’ermite. Cliquez sur lui, dites <span class=\"text-amber-400 font-bold\">\"Oui\"</span> et il vous donnera la direction de la 4e pierre de connexion: </p><p>Suivez la route du sud et continuez vers le sud-ouest à la première intersection. Peu après, la route continue vers l’ouest, vous arrivez à un nouveau croisement. Continuez vers le nord puis vers le nord-ouest en traversant le pont de l'île aux Kraanians. Une fois traversé, suivez la rivière vers l’ouest jusqu’à rencontrer l’océan. Vous trouverez une pierre de connexion à côté du rivage. </p><p>Suivez les directions et trouvez la 4e pierre de connexion (allez vers l’ouest à partir du pont kraanian jusqu’à rencontrer l’océan, continuez au sud). Cliquez dessus pour obtenir à nouveau le message. </p>",
-        "images": [],
-        "order": 19
-      },
-      {
-        "title": "Nexus 5",
-        "description": "<p>Maintenant, utilisez la tablette afin de retourner voir Antonian l’ermite. Cliquez sur lui, dites <span class=\"text-amber-400 font-bold\">\"Oui\"</span> et il vous donnera la direction de la 5e pierre de connexion : </p><p><span class=\"text-amber-400 font-bold\">\"Je n’ai pas de directions particulières pour cette pierre de connexion, mais je vous conseillerai d’aller vers le point situé au maximum vers le sud de cette île\"</span>. Avec ceci, vous devriez la trouver seul(e). </p><p>Suivez les directions et trouvez la 5e pierre de connexion (située au sud de la cave aux brigands, en face de l’océan, c'est la pointe Sud d'Arakas). Cliquez dessus et vous obtiendrez une dernière fois le message. </p><p>Enfin utilisez la tablette de pierre runique et retournez voir Antonian l’ermite. Il vous dira que vous avez trouvé toutes les pierres de connexion qu’il connaissait. </p><p><b>Remarque</b> : Vous pouvez enchaîner les cinq pierres de connexion sans retourner voir Antonian entre deux. </p><p><b>PNJ impliqués</b>: </p><p>Kilhiam, Efnisien, Olin Haad, Grand Prêtre Gunthar, chef de Guilde Ethan, Urik le tailleur, Yrian Holenarbed, La gitane Gypsy, Frère Kiran, Kirlor Dhul, Amelia, Tarnian, l'ermite Antonian. </p><p><b>Mini-boss impliqués</b>: </p><p>Assassins, gardes d'Olin Haad, Commandant Owen, Gorlok Bloodaxe </p><p><b>Récompenses acquises durant la partie <span class=\"text-amber-400 font-bold\">\"Arakas\"</span> de la quête</b>: </p><p>Colère des anciens (Wrath of the Ancients aura), </p><p>Anneau de Vitalité (0 stats) et Gemme de Vitalité. </p><p>Amulette de Renouveau et Gemme de Renouveau (0 stats) ou Amulette de Régénération et Gemme de Régénération (0 stats) ou Carquois de stabilité (Trueshot's Quiver, 110 Dex, 20 For). </p><p>Tablette de pierre runique (Runed Stone Tablet ou RST). </p><p>2.000 pièces d’or. </p><p>450.000 xp. </p>",
-        "images": [],
-        "order": 20
-      },
-      {
-        "title": "Raven's Dust",
-        "description": "<p>Quand vous aurez complété votre quête d’accès à Raven’s Dust bonne ou mauvaise et accédé à Raven's Dust (n'oubliez pas de mettre votre sanctuaire au temple de Silversky), retournez voir Antonian l’ermite et cliquez dessus. Il vous demandera si vous désirez connaître plus de directions pour les pierres de connexion. Répondez <span class=\"text-amber-400 font-bold\">\"Oui\"</span> et il vous dira que vous avez trouvé toutes les pierres de connexion d’Arakas. Il vous dira également que vous devez retrouver son ami habitant la ville de Silversky. </p><p>Vous recevrez 250.000 xp. </p><p>Continuez le dialogue en disant <span class=\"text-amber-400 font-bold\">\"Scribe\"</span>, <span class=\"text-amber-400 font-bold\">\"Celui\"</span> et il vous parlera du Barde sans Nom. </p>",
-        "images": [],
-        "order": 21
-      },
-      {
-        "title": "Le Barde sans nom",
-        "description": "<p>Rendez-vous à votre sanctuaire au temple de Silversky (Comme solution de secours, vous pouvez utiliser la tablette de pierre runique. La RST vous téléportera à l’est du lac tarentules. Ensuite dirigez-vous au Sud. Mais il vous faudra marcher longtemps pour arriver au temple de Silversky). </p><p>Parlez alors au scribe Aquinos (Scholar Aquinos). Dites <span class=\"text-amber-400 font-bold\">\"Visite\"</span>, <span class=\"text-amber-400 font-bold\">\"Lieu\"</span>, <span class=\"text-amber-400 font-bold\">\"Ou\"</span> et il vous dira où habite le Barde sans Nom. Les informations sont : Le Barde sans Nom vit au fond d’une caverne loin vers l’ouest. </p><p>Entrez dans la grotte et avancez, vous trouverez alors le Barde sans Nom (il a l'aspect d’une atrocité). Parlez-lui. Dites <span class=\"text-amber-400 font-bold\">\"Punirrrr\"</span>, <span class=\"text-amber-400 font-bold\">\"Abysses\"</span> (attention : seulement 2 s), <span class=\"text-amber-400 font-bold\">\"restes\"</span> et il vous dira : dans un arbre, vous trouverez la sagesse, dans une fontaine, la connaissance. Où la sagesse et la connaissance fusionnent, la réponse que vous cherchez émergera. </p><p>Depuis le carrefour proche du Barde sans Nom, descendez vers le sud-est et trouvez l’Arbre de Sagesse (Tree of wishdom). Cliquez dessus et vous obtiendrez une Branche de sagesse. Maintenant, retournez sur vos pas et prenez le passage menant vers le nord-ouest à partir du Barde. Vous trouverez la Fontaine de Connaissance (Fountain of Knowledge). Cliquez sur la fontaine et vous utiliserez la Branche de sagesse afin de mettre en mouvement les Eaux de la Connaissance. Devant vos yeux ébahis, l’eau tourbillonne et forme un mot: ETHERE. </p><p><b>Vous obtenez 300.000 xp.</b> </p><p><b>Retournez voir le Barde</b> sans Nom et parlez-lui. Il vous dira que vous avez trouvé le mot de pouvoir ouvrant les grandes portes d'un terrible mal. Elles sont situées à proximité du point le plus au nord de cette terre. Afin de l’atteindre, vous devrez traverser des zones de ténèbres. Soyez certain que si les Eaux de la Connaissance ne vous ont pas donné toutes les informations que vous recherchiez, celui qui réside derrière ces portes pourra sûrement. Le Barde vous dira aussi que c’est votre malédiction. </p><p>Dites <span class=\"text-amber-400 font-bold\">\"Malédiction\"</span> et il vous dira qu’il fût choisi un jour aussi et maudit également et qu’un jour, nous serions vengés. </p>",
-        "images": [],
-        "order": 22
-      },
-      {
-        "title": "Le Mausolée",
-        "description": "<p>Dirigez vous vers la grotte (Broken Ones cave) connue sous le nom de cave de l'aveugle (au Nord de l'île). Entrez-y, dirigez vous vers l’ouest puis le nord et continuez jusqu’à ce que vous atteigniez la sortie vers le Mausolée (Mausoleum). </p><p>Sortez et continuez vers le nord-ouest dans le cimetière, jusqu’à ce que vous rencontriez un PNJ nommé <span class=\"text-amber-400 font-bold\">\"un gardien\"</span>. Cliquez sur lui et il vous dira que le Mausolée situé derrière mène au sanctuaire de l’ancien Dieu de la Corruption, Gluriurl. Il vous dira également que seulement celui qui connaît le mot de pouvoir est autorisé à rentrer. Dites <span class=\"text-amber-400 font-bold\">\"Mot de pouvoir\"</span>, <span class=\"text-amber-400 font-bold\">\"Ethéré\"</span> et il vous préviendra que le mausolée est un endroit dangereux. Dites <span class=\"text-amber-400 font-bold\">\"Oui\"</span> et il vous fera passer la porte. </p>",
-        "images": [],
-        "order": 23
-      },
-      {
-        "title": "Les 4 vicaires",
-        "description": "<p>A l’intérieur du mausolée vous devez tuer les 4 Vicaires et récupérer leurs clés en cristal. Dirigez-vous vers le nord-est jusqu’à ce que vous atteigniez une grande pièce. Continuez alors vers le sud-est et tuez le Vicaire Kervian. Récupérez la clé de cristal violette et dirigez-vous vers le nord-ouest. A la première grande pièce, continuez nord-ouest jusqu’à atteindre une autre grande pièce Dirigez-vous vers le nord-est et allez vers le nord-est le plus possible. A la fin de la route, continuez sur le chemin en direction du nord-ouest. Trouvez et tuez le Vicaire Ramiel. Récupérez la clé de cristal verte. Dirigez-vous vers le nord-ouest et suivez le chemin qui continue vers le sud-ouest. Continuez vers le sud-ouest et comptez les routes que vous rencontrerez qui se dirigent vers le sud-est. Suivez la 4e route allant vers le sud-est que vous rencontrerez et vous trouverez le Vicaire Vharnes. Tuez-le et vous obtiendrez la clé de cristal bleue. Retournez en arrière vers le nord-ouest et tournez vers le nord-est. A la première intersection, continuez vers le nord-ouest puis vers le sud-est. Continuez vers le sud-est jusqu’à ce que vous rencontriez une route allant vers le nord-ouest. Continuez vers le nord-ouest et vous trouverez un portail. Partez vers le nord-ouest à partir du portail et vous trouverez le Vicaire Ashgoth. Tuez-le et vous obtiendrez la clé de cristal rouge. </p>",
-        "images": [],
-        "order": 24
-      },
-      {
-        "title": "Le dragon Crimsonscale",
-        "description": "<p>Après avoir tué les 4 vicaires, revenez vers le portail et entrez-y. Suivez le tapis rouge et vous rencontrerez Crimsonscale le dragon. Parlez-lui et dites <span class=\"text-amber-400 font-bold\">\"Lettre\"</span>, <span class=\"text-amber-400 font-bold\">\"Commencement\"</span>, <span class=\"text-amber-400 font-bold\">\"Elu\"</span>, <span class=\"text-amber-400 font-bold\">\"Justice\"</span>, <span class=\"text-amber-400 font-bold\">\"Vents\"</span>, <span class=\"text-amber-400 font-bold\">\"Bataille des émanations\"</span>, <span class=\"text-amber-400 font-bold\">\"Olin Haad\"</span>, <span class=\"text-amber-400 font-bold\">\"Fasciné\"</span>, <span class=\"text-amber-400 font-bold\">\"Changé de camp\"</span>, <span class=\"text-amber-400 font-bold\">\"Conseil des huit\"</span> et vous apprendrez au sujet des plans machiavéliques d’Olin Haad au sujet du Conseil des Huit. Crimsonscale vous demandera votre aide. Répondez <span class=\"text-amber-400 font-bold\">\"Aide\"</span> puis dites <span class=\"text-amber-400 font-bold\">\"Empecher\"</span>, <span class=\"text-amber-400 font-bold\">\"Grande Librairie\"</span> et il vous donnera le nom du lieu où se situe la Grande Bibliothèque. Dites <span class=\"text-amber-400 font-bold\">\"Quelque chose\"</span> et il vous donnera une fiole de sang de dragon (Vial of Dragon Blood). ps: (retiré aussi) </p><p>Attention : Le bracelet de flammes et la gemme de flammes (Armlet of Flames et Gem of Flames) sont <b><u>supprimés</u></b> sur NMS !! </p>",
-        "images": [],
-        "order": 25
-      },
-      {
-        "title": "La grande bibliothèque",
-        "description": "<p>Dirigez-vous vers la Grande Bibliothèque (située à l’est de l’entrée de la crypte de Raven’s Dust), allez au 3e étage et parlez avec le Conservateur (Custodian). Dites <span class=\"text-amber-400 font-bold\">\"Barbares\"</span>, <span class=\"text-amber-400 font-bold\">\"Incultes\"</span>, <span class=\"text-amber-400 font-bold\">\"Rite de Passage\"</span> et il vous donnera une énigme afin que vous lui prouviez que vous n’êtes pas ignorant. La voici: </p><p><span class=\"text-amber-400 font-bold\">\"Dos\"</span> <span class=\"text-amber-400 font-bold\">\"vaneslae\"</span> <span class=\"text-amber-400 font-bold\">\"navidal\"</span>, <span class=\"text-amber-400 font-bold\">\"Kadrim\"</span> <span class=\"text-amber-400 font-bold\">\"lok\"</span> <span class=\"text-amber-400 font-bold\">\"ungrim\"</span> <span class=\"text-amber-400 font-bold\">\"dok\"</span>, <span class=\"text-amber-400 font-bold\">\"Somalina\"</span> <span class=\"text-amber-400 font-bold\">\"oundi\"</span> <span class=\"text-amber-400 font-bold\">\"inesora\"</span>, <span class=\"text-amber-400 font-bold\">\"Tharrgra\"</span> <span class=\"text-amber-400 font-bold\">\"nethdrovar\"</span>. Si vous pouvez me dire ce que cela signifie, non seulement je vous concéderai l’accès au dernier étage mais je serai en plus gentil avec vous. Voici un indice: vous serez incapable de résoudre cette énigme si vous n’allez pas visiter le sous-sol de la Bibliothèque. </p><p>Dirigez-vous vers les sous-sols où les 4 savants résident. Parlez-leur. </p><p>Au savant disant <span class=\"text-amber-400 font-bold\">\"language of the Elves\"</span> (Pièce au nord-ouest), dites <span class=\"text-amber-400 font-bold\">\"Dos vaneslae navidal\"</span>. Il répondra: <span class=\"text-amber-400 font-bold\">\"Pour regarder quelqu'un\"</span>. </p><p>Au savant disant <span class=\"text-amber-400 font-bold\">\"language of the Dwarves\"</span> (Pièce au sud-ouest), dites <span class=\"text-amber-400 font-bold\">\"Kadrim lok ungrim dok\"</span>. Il répondra: <span class=\"text-amber-400 font-bold\">\"Il suffit d'avoir des yeux\"</span>. </p><p>Au savant disant <span class=\"text-amber-400 font-bold\">\"language of Faeries\"</span>, (Pièce au nord-est), dites <span class=\"text-amber-400 font-bold\">\"Somalina Oundi Inesora\"</span>. Il répondra: <span class=\"text-amber-400 font-bold\">\"Pour reconnaitre sa propre ignorance\"</span>. </p><p>Au savant disant <span class=\"text-amber-400 font-bold\">\"language of Dragons\"</span> (Pièce au sud-est), dites <span class=\"text-amber-400 font-bold\">\"Tharrgra nethdrovar\"</span>. Il répondra: <span class=\"text-amber-400 font-bold\">\"Il faut ouvrir ses yeux\"</span>. </p><p>Retournez au 3e étage et reparlez avec Custodian. Dites <span class=\"text-amber-400 font-bold\">\"Oui\"</span>, <span class=\"text-amber-400 font-bold\">\"Pour regarder quelqu'un\"</span>, <span class=\"text-amber-400 font-bold\">\"Il suffit d'avoir des yeux\"</span>, <span class=\"text-amber-400 font-bold\">\"Pour reconnaitre sa propre ignorance\"</span>, <span class=\"text-amber-400 font-bold\">\"Il faut ouvrir ses yeux\"</span> et vous obtenez l’accès complet à la Bibliothèque. Dites <span class=\"text-amber-400 font-bold\">\"Accès\"</span>, <span class=\"text-amber-400 font-bold\">\"Oui\"</span> et vous serez téléporté au 4e étage. </p><p>Parlez à un des bibliothécaires. Dites <span class=\"text-amber-400 font-bold\">\"Oui\"</span>, <span class=\"text-amber-400 font-bold\">\"Echange de l'essence\"</span>, <span class=\"text-amber-400 font-bold\">\"Corps materiel\"</span>, <span class=\"text-amber-400 font-bold\">\"Ogrimar\"</span>, <span class=\"text-amber-400 font-bold\">\"Lothar le juste\"</span>, <span class=\"text-amber-400 font-bold\">\"Abandonna\"</span>, <span class=\"text-amber-400 font-bold\">\"Elvenweave\"</span>, <span class=\"text-amber-400 font-bold\">\"Coeur\"</span> et vous réaliserez que Olin Haad tente de ramener Gluriurl à la vie. </p><p><b>Vous recevez 500.000 xp.</b> </p><p>Parlez aux deux autres bibliothécaires et écoutez-les. L’un vous parlera de la pierre noire et l’autre du <span class=\"text-amber-400 font-bold\">\"Harbringer\"</span>. Dirigez vous vers le château d’Olin Haad. </p>",
-        "images": [],
-        "order": 26
-      },
-      {
-        "title": "Retour chez Olin Haad en son château",
-        "description": "<p>Une fois au château, parlez à Olin Haad. Dites <span class=\"text-amber-400 font-bold\">\"Defi\"</span> et vous serez téléporté dans une petite pièce avec Olin Haad. Il vous attaquera et comme vous ne pouvez pas le tuer, laissez le vous massacrer mais juste avant le coup final, vous serez téléporté de retour au château. Dites <span class=\"text-amber-400 font-bold\">\"Invincible\"</span>, <span class=\"text-amber-400 font-bold\">\"Heros\"</span>, <span class=\"text-amber-400 font-bold\">\"Insidieuse voix\"</span>, <span class=\"text-amber-400 font-bold\">\"Restes\"</span> et vous saurez tout sur la résurrection de Gluriurl. </p>",
-        "images": [],
-        "order": 27
-      },
-      {
-        "title": "Retour chez Gunthar au temple",
-        "description": "<p>Retournez voir Gunthar et parlez-lui. Dites <span class=\"text-amber-400 font-bold\">\"Benediction d' Artherk\"</span>, <span class=\"text-amber-400 font-bold\">\"Âmes\"</span>, <span class=\"text-amber-400 font-bold\">\"Stopper\"</span>, <span class=\"text-amber-400 font-bold\">\"Débarrasser\"</span>, <span class=\"text-amber-400 font-bold\">\"Faucheur\"</span>, <span class=\"text-amber-400 font-bold\">\"Illusion\"</span>, <span class=\"text-amber-400 font-bold\">\"Recemment\"</span>, <span class=\"text-amber-400 font-bold\">\"Trompais\"</span>, <span class=\"text-amber-400 font-bold\">\"Coeur d' Artherk\"</span>, <span class=\"text-amber-400 font-bold\">\"Efnisien\"</span> et vous apprendrez au sujet du Caledbolg, qui est gardé en sécurité en un lieu saint dans la partie sud-est du désert de Raven’s Dust. Il vous dira également que vous devez aller voir Efnisien. </p>",
-        "images": [],
-        "order": 28
-      },
-      {
-        "title": "Retour chez Efnisien (1er étage de la maison au nord de la banque)",
-        "description": "<p>Allez voir Efnisien et dites-lui <span class=\"text-amber-400 font-bold\">\"Service\"</span>, <span class=\"text-amber-400 font-bold\">\"Entrée\"</span> et il vous dira que l’entrée est située dans la pièce située derrière la porte verrouillée (servez-vous des escaliers de cette pièce). Mais Olin Haad a trouvé un moyen alternatif pour y rentrer et il est à l’intérieur du temple maintenant. Il ne vous servira à rien d’entrer puisque vous ne pouvez pas le battre sans une arme spéciale (Caledbolg, l’arme enchantée). </p>",
-        "images": [],
-        "order": 29
-      },
-      {
-        "title": "La Caledbolg (crypte du désert RD)",
-        "description": "<p>Vous devez trouver la Caledbolg. Allez dans le désert de Raven’s Dust et dirigez vous vers le sud jusqu’à ce que vos atteignez une nouvelle rangée de montagnes. Cherchez l’entrée de la crypte vers l'Est. En face de celle-ci se situe le gardien de la porte nommé Ramirgo. Parlez-lui et dites <span class=\"text-amber-400 font-bold\">\"Gardien\"</span>, <span class=\"text-amber-400 font-bold\">\"Entre\"</span> et il vous téléportera à l’intérieur. </p><p>Suivez le mur du donjon et tuez les 3 démons Terror Demon, Chaos Demon et Darkness Demon. </p><p>Maintenant dirigez-vous vers le milieu du donjon où vous trouverez 3 portails. Entrez dans l’un des trois et vous arriverez dans une petite pièce. Cliquez sur Lothar et vous recevrez la Caledbolg (une fois la Caledbolg obtenue, vous ne pourrez plus pénétrer dans la crypte). </p><p><br> </p><p><b>PNJ impliqués</b>: l'ermite Antonian, Aquinos, le Barde sans Nom, un gardien, Crimsonscale, Custodian, les 4 savants (the 4 Scholars), les 3 bibliothécaires (the 3 Librarians), Olin Haad, Grand Prêtre Gunthar, Efnisien, Ramirgo, Lothar </p><p><b>Mini-boss impliqués</b>: Vicaire Asgoth, Vicaire Kervian, Vicaire Vharmes, Vicaire Ramiel, Terror Demon, Chaos Demon, Darkness Demon </p><p><b>Récompenses acquises durant la partie <span class=\"text-amber-400 font-bold\">\"Raven’s Dust\"</span> de la quête</b>: Fiole de sang de dragon (vial of Dragon Blood), 1.050.000 xps </p>",
-        "images": [],
-        "order": 30
-      },
-      {
-        "title": "Retour sur Arakas",
-        "description": "<p>Cliquez sur lui et il déverrouillera la porte du rez-de chaussée. Descendez au sous-sol et entrez dans le Temple Sacré de Lothar. </p>",
-        "images": [],
-        "order": 31
-      },
-      {
-        "title": "Le Temple de Lothar",
-        "description": "<p>Dirigez-vous au nord, vers le centre du temple et vous verrez un Draconis nommé <span class=\"text-amber-400 font-bold\">\"Le Gardien\"</span> (Draconis Guardian). Il est encore vivant alors parlez-lui. Il vous demandera si vous venez de la part d’Efnisien. Répondez <span class=\"text-amber-400 font-bold\">\"Oui\"</span>, <span class=\"text-amber-400 font-bold\">\"Dragon\"</span>, <span class=\"text-amber-400 font-bold\">\"Prophétie\"</span>, <span class=\"text-amber-400 font-bold\">\"Stopper\"</span>, <span class=\"text-amber-400 font-bold\">\"chambre mortuaire\"</span> et vous en apprendrez plus au sujet de la prophétie. Il vous dira également que vous devez pénétrer à l’intérieur du portail derrière lui afin de stopper Olin Haad. </p>",
-        "images": [],
-        "order": 32
-      },
-      {
-        "title": "Les 5 cristaux",
-        "description": "<p>Le portail comporte 5 ouvertures correspondant à 5 cristaux. Afin de pouvoir activer le portail, vous devez trouver ces 5 cristaux: un rouge, un jaune, un bleu, un vert et un violet. </p><p>Regardez la carte pour voir où sont situés les 5 épreuves. </p><p><i><b>Pour le cristal bleu</b></i>, vous entrerez dans un labyrinthe dont les murs sont invisibles. </p><p>Suivez les flèches afin de sortir du labyrinthe, ouvrez le coffre (chest) et le cristal tombera dans votre sac. </p><p>Rentrez dans le portail et vous arriverez juste à l’entrée du labyrinthe. </p><p><i><b>Pour le cristal jaune</b></i>, vous devez tuer des Kraanians piétineurs jusqu’à ce qu’ils laissent tomber un cristal. </p><p>Une fois un cristal au sol, ramassez le (il est indroppable). </p><p>Puis poursuivez... </p><p><i><b>Pour le cristal vert</b></i>, vous devez traverser un grand labyrinthe. Vous arriverez à un coffre. </p><p>Ouvrez-le (2 fois) et le cristal vert tombera dans votre sac. </p><p>Rentrez dans le portail et vous arriverez à l’entrée de ce labyrinthe. </p><p><i><b>Pour le cristal rouge</b></i>, suivez le corridor et entrez dans le tourbillon au sol. </p><p>Vous arriverez dans un labyrinthe de tourbillons. Faites votre bonhomme de chemin jusqu’au coffre. Ouvrez-le et le cristal tombera dans votre sac. Entrez dans le portail et vous arriverez à côté du portail du 1er étage. </p><p>Légende de la carte ci-contre : S : Start (départ) ; Follow the numbers (suivez les numéros). </p><p><b>Pour le cristal violet</b>, vous devez fouiller 7 coffres différents. </p><p>Le cristal est placé aléatoirement dans un des coffres. </p><p>Trouvez-le et revenez au centre du temple. </p>",
-        "images": [],
-        "order": 33
-      },
-      {
-        "title": "Mort de Gluriurl",
-        "description": "<p><b>N'oubliez pas de parlez au gardien</b> si vous ne l'avez pas encore fait ! </p><p>Entrez maintenant dans le portail situé derrière Le Gardien et vous arriverez dans le tombeau. Allez alors vers le sud-est et vous trouverez Olin Haad. Equipez-vous de la Caledbolg et attaquez-le. Il mentionnera que le rituel est complet. Dès que vous l’aurez tué, Gluriurl, Dieu de la Corruption, apparaîtra. </p><p>Un message en lettres bleues apparaîtra à tous les joueurs : <b><span class=\"text-amber-400 font-bold\">\"Le ciel s'obscurcit soudainement…\"</span></b> </p><p>(parfois Gluriurl sera déjà activé par un joueur précédent qui aura échoué à le tuer) </p><p>Attaquez Gluriurl et tuez-le (n’oubliez pas de retirer rapidement la Caledbolg et de vous réarmer). Une fois tué, le message suivant apparaîtra : </p><p>Vous entendez soudainement la voix de la Gitane : <span class=\"text-amber-400 font-bold\">\"Vous avez vaincu le Dieu de la Corruption ! Venez me voir dès quand vous le pourrez. Je dois vous remercier personnellement pour tout ce que vous avez fait\"</span>. </p><p>Et les lettres bleues, encore une fois pour tous les joueurs : <b><span class=\"text-amber-400 font-bold\">\"La terre se met à trembler violemment pendant quelques secondes…\"</span>.</b> </p><p><b>Attention</b> ! Gluriurl est très fort. Si vous êtes seul il vous faudra dépasser largement le level 100 (selon votre classe) pour l'affronter. </p>",
-        "images": [],
-        "order": 34
-      },
-      {
-        "title": "Retour chez la Gitane",
-        "description": "<p>Maintenant, retournez voir la Gitane pour votre récompense. Répondez <span class=\"text-amber-400 font-bold\">\"Quatrième Prophétie\"</span>, <span class=\"text-amber-400 font-bold\">\"gardiens respectifs\"</span> et vous serez récompensé d’une amulette de rajeunissement, d’une pierre de rajeunissement, d’une amulette d'abondance, d’une pierre d'abondance et d’un carquois de stabilité rouge. </p><p><b>Conseil :</b> Après avoir tué Gluriurl, allez parler à Efnisien, il vous débarrassera de la gemme sombre. Par contre, seul un GM pourra vous débarasser de la Caledbolg. </p><p><b>PNJ impliqués</b>: Efnisien, Le Gardien Draconis, la Gitane </p><p><b>Mini-boss impliqués</b>: Olin Haad, Gluriurl </p><p><b>Récompenses acquises durant la dernière partie de la quête:</b> </p><ul><li>Amulette de Rajeunissement</li> <li>Pierre de Rajeunissement</li> <li>Amulette d'Abondance</li> <li>Pierre d'Abondance (0 stats)</li> <li>Carquois de Stabilité rouge (220 Dex, 30 Force).</li></ul><p><br> </p><p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
-        "images": [],
-        "order": 35
-      }
-    ],
-    "credits": []
-  },
+
   {
     "title": "La pioche légendaire",
     "slug": "la-pioche-legendaire",
-    "zone": "Inconnue",
+    "zone": "Général",
     "prerequisites": [],
     "rewards": [],
     "npcs": [],
@@ -4093,7 +3844,7 @@ export const quests: Quest[] = [
   {
     "title": "La potion du nécromant",
     "slug": "la-potion-du-necromant",
-    "zone": "Inconnue",
+    "zone": "Général",
     "prerequisites": [],
     "rewards": [],
     "npcs": [],
@@ -4111,7 +3862,7 @@ export const quests: Quest[] = [
   {
     "title": "La quête de Kertius Alim",
     "slug": "la-quete-de-kertius-alim",
-    "zone": "Inconnue",
+    "zone": "Général",
     "prerequisites": [],
     "rewards": [],
     "npcs": [],
@@ -4229,7 +3980,7 @@ export const quests: Quest[] = [
   {
     "title": "Le donjon de l'éternelle agonie",
     "slug": "le-donjon-de-leternelle-agonie",
-    "zone": "Inconnue",
+    "zone": "Général",
     "prerequisites": [],
     "rewards": [],
     "npcs": [],
@@ -4275,7 +4026,7 @@ export const quests: Quest[] = [
   {
     "title": "Le donjon des abîmes",
     "slug": "le-donjon-des-abimes",
-    "zone": "Inconnue",
+    "zone": "Général",
     "prerequisites": [],
     "rewards": [],
     "npcs": [],
@@ -4310,7 +4061,7 @@ export const quests: Quest[] = [
   {
     "title": "Le donjon des galinettes",
     "slug": "le-donjon-des-galinettes",
-    "zone": "Inconnue",
+    "zone": "Général",
     "prerequisites": [],
     "rewards": [],
     "npcs": [],
@@ -4366,7 +4117,7 @@ export const quests: Quest[] = [
   {
     "title": "Le Sceptre des Abysses",
     "slug": "le-sceptre-des-abysses",
-    "zone": "Inconnue",
+    "zone": "Général",
     "prerequisites": [],
     "rewards": [],
     "npcs": [],
@@ -4384,7 +4135,7 @@ export const quests: Quest[] = [
   {
     "title": "Les autres quêtes 1.25",
     "slug": "les-autres-quetes-125",
-    "zone": "Inconnue",
+    "zone": "Général",
     "prerequisites": [],
     "rewards": [],
     "npcs": [
@@ -4430,7 +4181,7 @@ export const quests: Quest[] = [
   {
     "title": "Les autres quêtes 1.25",
     "slug": "les-autres-quetes-125lcdm",
-    "zone": "Inconnue",
+    "zone": "Général",
     "prerequisites": [],
     "rewards": [],
     "npcs": [
@@ -4476,7 +4227,7 @@ export const quests: Quest[] = [
   {
     "title": "Petites quêtes pour s'enrichir (un peu)",
     "slug": "petites-quetes-pour-senrichir-un-peu",
-    "zone": "Inconnue",
+    "zone": "Général",
     "prerequisites": [],
     "rewards": [],
     "npcs": [],
@@ -4508,7 +4259,7 @@ export const quests: Quest[] = [
   {
     "title": "Puissance Ancestrale Humterre (Aura réservée aux humains)",
     "slug": "puissance-ancestrale-humterre-aura-reservee-aux-humains",
-    "zone": "Inconnue",
+    "zone": "Général",
     "prerequisites": [],
     "rewards": [],
     "npcs": [],
@@ -4526,7 +4277,7 @@ export const quests: Quest[] = [
   {
     "title": "Quete de Nirtelle , ou la quête de l'institut de beauté",
     "slug": "quete-de-nirtelle-ou-la-quete-de-linstitut-de-beaute",
-    "zone": "Inconnue",
+    "zone": "Général",
     "prerequisites": [],
     "rewards": [],
     "npcs": [],
@@ -4544,7 +4295,7 @@ export const quests: Quest[] = [
   {
     "title": "Quête des ornements",
     "slug": "quete-des-ornements",
-    "zone": "Inconnue",
+    "zone": "Général",
     "prerequisites": [],
     "rewards": [],
     "npcs": [],
@@ -4564,7 +4315,7 @@ export const quests: Quest[] = [
   {
     "title": "Quete du présent des alvors",
     "slug": "quete-du-present-des-alvors",
-    "zone": "Inconnue",
+    "zone": "Général",
     "prerequisites": [],
     "rewards": [],
     "npcs": [],
@@ -4594,7 +4345,7 @@ export const quests: Quest[] = [
   {
     "title": "Quête initiale",
     "slug": "quete-initiale",
-    "zone": "Inconnue",
+    "zone": "Général",
     "prerequisites": [
       "une armure de cuir gobeline et 5000 po."
     ],
@@ -4724,7 +4475,7 @@ export const quests: Quest[] = [
   {
     "title": "R.S.T. (Runed Stone Tablet) Drake Island",
     "slug": "rst-runed-stone-tablet-drake-island",
-    "zone": "Inconnue",
+    "zone": "Général",
     "prerequisites": [],
     "rewards": [],
     "npcs": [],
