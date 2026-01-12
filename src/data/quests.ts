@@ -2837,550 +2837,425 @@ export const quests: Quest[] = [
     "title": "Quête de Sarah (Robes brodées)",
     "slug": "quete-de-sarah-robes-brodees",
     "zone": "Arakas",
-    "prerequisites": [],
-    "rewards": [],
-    "npcs": [],
-    "gold": "",
+    "prerequisites": ["Niveau 10+ (recommandé)", "Statistiques minimales pour porter les robes"],
+    "rewards": ["Robe brodée (skin unique)", "80.000 XP"],
+    "npcs": ["Sarah", "Brikdétruk", "Audrey"],
+    "gold": "25.000 PO",
     "steps": [
       {
-        "title": "La quête de Sarah ou des robes brodées (reskinnées simples)",
-        "description": "<p><b>Parlez à Sarah, située au premier sous-sol du temple de Stonecrest, elle vous proposera de broder une robe si vous lui fournissez la robe (non brodée) et les <b>items nécessaires</b> (un ornement et 3 bobines de fil d'or).</b></p>\n<br/>\n<p>Le skin de la robe va changer comme indiqué. Très intéressant pour transformer le plastron chance en une belle robe mauve ou pour maigrir rapidement !!</p>",
+        "title": "Démarrage",
+        "description": "<p>Rendez-vous au premier sous-sol du <b>Temple de Stonecrest</b> et parlez à <b>Sarah</b>. Elle vous proposera de broder une robe spécifique si vous lui apportez les composants nécessaires.</p><p>Cette quête est idéale pour personnaliser votre apparence (reskin) ou transformer un plastron de chance en robe plus esthétique.</p>",
         "images": [],
         "order": 0
       },
       {
-        "title": "Les robes",
-        "description": "<p><b>Robe des Fournaises</b></p>\n<br/>\n<ul>\n  <li>Devient robe rouge ordinaire</li>\n</ul>\n<br/>\n<p><b>Robe des Flammes ardentes</b></p>\n<br/>\n<ul>\n  <li>Devient robe rouge ordinaire</li>\n</ul>\n<br/>\n<p><b>Manteau de sève mystique</b></p>\n<br/>\n<ul>\n  <li>Devient robe brune ordinaire</li>\n</ul>\n<br/>\n<p><b>Suaire du Phoenix</b></p>\n<br/>\n<ul>\n  <li>Devient robe blanche ordinaire</li>\n</ul>\n<br/>\n<p><b>Manteau Inlandsis</b></p>\n<br/>\n<ul>\n  <li>Devient robe bleu pale ordinaire</li>\n</ul>\n<br/>\n<p><b>Manteau du Khamsin</b></p>\n<br/>\n<ul>\n  <li>Devient robe jaune ordinaire</li>\n</ul>\n<br/>\n<p><b>Plastron étincelant =&gt; toge étincelante</b></p>\n<br/>\n<ul>\n  <li>Devient robe mauve ordinaire</li>\n</ul>",
-        "images": [
-          "/t4c-nms-overview/assets/quests/quete-de-sarah-robes-brodees/img_1_0.jpg"
-        ],
+        "title": "Ingrédients nécessaires",
+        "description": "<p>Pour chaque robe, vous aurez besoin de :</p><ul><li>La <b>robe d'origine</b> (non brodée).</li><li><b>3 bobines de fil d'or</b> (obtenues via l'artisanat ou dans certains coffres sur Arakas).</li><li>Un <b>ornement</b> correspondant à la couleur souhaitée.</li></ul>",
+        "images": [],
         "order": 1
       },
       {
-        "title": "Items nécessaires",
-        "description": "<p><b>3 bobines de fil d'or et :</b></p>\n<br/>\n<ul>\n  <li>Un ornement de rubis pour une robe rouge</li> <li>Un ornement de saphir pour une robe bleue</li> <li>Un ornement de diamant pour une robe blanche ou jaune</li> <li>Un ornement d'émeraude pour une robe marron</li>\n</ul>\n<br/>\n<p>Voyez la quête des ornements pour savoir comment obtenir les ornements (sauf cobalt).</p>\n<br/>\n<p>3 bobines de fil d'or (obtenues à partir de minerai d'or) pour la toge étincelante et</p>\n<br/>\n<ul>\n  <li>Deux ornements de cobalt (il vous faut 2 minerais de cobalt par ornement, minés sur les gisements d'argent de la grotte Orc RD). \n<ul>\n  <li>Pour faire les ornements de cobalt, aller dans la cave des Skraugs verts muni des minerais et parler à Brikdétruk (<b>position</b> <b>1952,1406</b>). Puis lui dire \"Travail\" plusieurs fois de suite.</li>\n</ul>\n</li>\n</ul>\n\n<ul>\n  <li>Pour faire les ornements de cobalt, aller dans la cave des Skraugs verts muni des minerais et parler à Brikdétruk (<b>position</b> <b>1952,1406</b>). Puis lui dire \"Travail\" plusieurs fois de suite.</li>\n</ul>\n<br/>\n<p>Les bobines se craftent à partir de pépites d'or . Autre solution : 3 coffres dropent (parfois) directement une bobine de fil d'or sur Arakas :</p>\n<br/>\n<ul>\n  <li>Aux druides d'Arakas Audrey (celle qui fait les robes de couleurs. pos <b>2935,155</b>)</li> <li>Au village nain 2ème maison (pos: <b>2652,391</b>)</li> <li>Cave D des montagnes de Jarko, à côté de Trish Jalnec (celui qui drope la pioche de lh. pos <b>870,2629</b>)</li>\n</ul>\n<br/>\n<p><br/></p>\n<br/>\n<p></p>",
-        "images": [],
+        "title": "Correspondance des robes",
+        "description": "<ul><li><b>Robe des Fournaises / Flammes :</b> Ornement de rubis ➔ Robe Rouge.</li><li><b>Manteau de sève mystique :</b> Ornement d'émeraude ➔ Robe Brune.</li><li><b>Suaire du Phoenix :</b> Ornement de diamant ➔ Robe Blanche.</li><li><b>Manteau Inlandsis :</b> Ornement de saphir ➔ Robe Bleue.</li><li><b>Manteau du Khamsin :</b> Ornement de diamant ➔ Robe Jaune.</li><li><b>Plastron étincelant :</b> 2 Ornements de cobalt ➔ Toge étincelante (Mauve).</li></ul>",
+        "images": ["/t4c-nms-overview/assets/quests/quete-de-sarah-robes-brodees/img_1_0.jpg"],
         "order": 2
+      },
+      {
+        "title": "Cas particulier : Le Cobalt",
+        "description": "<p>Pour la toge mauve, les <b>ornements de cobalt</b> nécessitent du minerai de cobalt (miné sur Raven's Dust). Apportez les minerais à <b>Brikdétruk</b> dans la cave des Skraugs Verts (1952,1406) et dites-lui \"travail\" plusieurs fois.</p>",
+        "images": [],
+        "order": 3
       }
     ],
-    "credits": [
-      "T4C NMS Révolution wiki"
-    ]
+    "credits": ["T4C NMS Révolution wiki"]
   },
   {
     "title": "Quête des livres de chance",
     "slug": "quete-des-livres-de-chance",
     "zone": "Drake Island",
-    "prerequisites": [],
-    "rewards": [],
+    "prerequisites": ["Accès à Drake Island (DI)"],
+    "rewards": ["Objets aléatoires", "Équipement de chance", "Or", "Parchemins d'XP"],
     "npcs": [],
-    "gold": "",
+    "gold": "Variable",
     "steps": [
       {
-        "title": "La quête",
-        "description": "",
-        "images": [
-          "/t4c-nms-overview/assets/quests/quete-des-livres-de-chance/img_0_0.jpg"
-        ],
+        "title": "Introduction",
+        "description": "<p>Cette \"quête\" consiste à collecter des <b>Livres de Chance</b> sur les monstres de Drake Island pour obtenir des récompenses variées.</p>",
+        "images": ["/t4c-nms-overview/assets/quests/quete-des-livres-de-chance/img_0_0.jpg"],
         "order": 0
       },
       {
-        "title": "Les livres",
-        "description": "<ol><li><b>TIP</b> : Un bon spot pour faire droper les livres est le petit lac à l'ouest du désert de DI. Tournez autour et tuez les mobs. Il y a là beaucoup de drakes akaïstes qui dropent bien surtout si vous portez quelques items chance.</li> <li><b>TIP</b> : Un conseil, allez-y par le Nord, en passant par la plaine centrale et le passage le long de la côte. Vous éviterez ainsi au maximum les vers et autres gardiens du désert.</li></ol>",
+        "title": "Où farmer les livres ?",
+        "description": "<p>Le meilleur endroit est le <b>petit lac à l'ouest du désert de DI</b>. Tuez les <b>Drakes Akaïstes</b> qui s'y trouvent. Porter de l'équipement de chance augmente vos chances de drop.</p><p><b>Tip :</b> Passez par le Nord (plaine centrale) pour éviter les vers et gardiens du désert plus dangereux.</p>",
         "images": [],
         "order": 1
       },
       {
-        "title": "Les récompenses",
-        "description": "<p>La liste d'objets ci-dessous est <b>non exhaustive...</b></p>",
+        "title": "Récompenses possibles",
+        "description": "<p>L'ouverture d'un livre peut donner (liste non exhaustive) :</p><ul><li><b>Utile :</b> Amulette de chance (+20), Anneaux divers, Capes (Armageddon, Voyelles), Carquois de terre.</li><li><b>Consommables :</b> Potions de résistance, Parchemins d'XP (10min ou 1h), PO (jusqu'à 500k).</li><li><b>Cosmétique :</b> Robe grise, Bottes de la tortue, Épée squelette.</li></ul><p>⚠️ <b>Attention :</b> Certains livres peuvent aussi vous <b>retirer de l'or</b> !</p>",
         "images": [],
         "order": 2
-      },
-      {
-        "title": "Objets utiles et/ou équipables",
-        "description": "<ul>\n  <li>Anneau béni des Hauts Altéens</li> <li>Amulette de chance (+20 chance)</li> <li>Anneau de fer</li> <li>Anneau de pierre de sang</li> <li>Anneau de platine</li> <li>Anneau de sorcellerie en jade</li> <li>Bague araignée</li> <li>Baguette magique*</li> <li>Chapeau en feuilles</li> <li>Cape du bouffon</li> <li>Cape des voyelles</li> <li>Cape d'Armageddon</li> <li>Carquois de terre</li> <li>Chapeau de glace*</li> <li>Collier du coeur noir*</li> <li>Conte des dragons</li> <li>Epée de Fureur</li> <li>Flèches de terre</li> <li>Fragment de météorite</li> <li>Hyperpotion d'esprit clair</li> <li>Livre des sorts rouge</li> <li>Marteau des nains</li> <li>Oeil du tigre</li> <li>Potion de faible résistance contre le mal/feu...</li> <li>Potion de grande résistance contre le mal/feu...</li> <li>Pièces d'or (de 10 à 500 000 maximum)</li> <li>Scalpel du chirurgien</li> <li>Sceptre de Zlüg</li> <li>Sceptre d'espoir</li> <li>Sombre chapeau</li> <li>Tambour finement ciselé</li> <li>Retrait de pièces d'or !!! (<b>attention</b> à votre or)</li> <li>Parchemin d'expérience d'une heure (droppable)</li> <li>Parchemin d'expérience de 10 minutes (droppable)</li> <li>Trèfle à 4 feuilles</li> <li>Venin d'araignée</li>\n</ul>",
-        "images": [],
-        "order": 3
-      },
-      {
-        "title": "Décoratifs et RP (équipables)",
-        "description": "<ul>\n  <li>Lance</li> <li>Couvercle de poubelle (bouclier des ères sans bonus)</li> <li>Bâton orné d'une pierre verte</li> <li>Lambeaux de troll ensanglantés (cuir)</li> <li>Bottes de la tortue</li> <li>Robe grise (robe skin)</li> <li>Epée squelette</li>\n</ul>",
-        "images": [],
-        "order": 4
-      },
-      {
-        "title": "RP non équipables",
-        "description": "<ul>\n  <li>Arbalète</li> <li>Pic à glace</li> <li>Fiole d'alchimiste (nécessaire pour la formule de la Fiole du Démon 106 Apothicaire)</li> <li>Ciseaux</li> <li>Tige de gobelin</li> <li>Pomme juteuse</li> <li>Rouleau à pâtisserie</li> <li>Cake aux fruits</li>\n</ul>\n<br/>\n<p></p>",
-        "images": [],
-        "order": 5
       }
     ],
-    "credits": [
-      "T4C NMS Révolution wiki"
-    ]
+    "credits": ["T4C NMS Révolution wiki"]
   },
   {
     "title": "Quête des essences de Bzu",
     "slug": "quete-des-essences-de-bzu",
     "zone": "Drake Island",
-    "prerequisites": [],
-    "rewards": [],
-    "npcs": [],
-    "gold": "",
+    "prerequisites": ["Accès au sous-sol des métiers de Redwall"],
+    "rewards": ["10.000.000 XP", "500.000 PO"],
+    "npcs": ["Vieillard sénile"],
+    "gold": "500.000 PO",
     "steps": [
       {
-        "title": "Introduction",
-        "description": "<ul>\n  \n  <li>\n<p>Rendez-vous au sous-sol des métiers de Redwall.</p>\n</li>\n  <li>\n<p>Parlez à un vieillard sénile et dites lui \"travail\". Puis poursuivez le dialogue jusqu'à dire \"essences\".</p>\n</li>\n  <li>\n<p>Il vous prendra alors vos 10 essences de B'Zurkhan contre 10M d'xp et 500k po.</p>\n</li>\n  <li>\n<p>Vous pouvez renouveler cette quête à volonté.</p>\n</li>\n  <li>\n<p></p>\n</li>\n\n</ul>",
+        "title": "Démarrage",
+        "description": "<p>Rendez-vous au sous-sol des métiers de <b>Redwall</b> sur Drake Island.</p><p>Parlez au <b>Vieillard sénile</b> et engagez la discussion avec le mot-clé \"travail\". Poursuivez le dialogue jusqu'à pouvoir dire \"essences\".</p>",
         "images": [],
         "order": 0
+      },
+      {
+        "title": "Échange",
+        "description": "<p>Il vous demandera de lui apporter <b>10 essences de B'Zurkhan</b> (que vous pouvez collecter sur les monstres éponymes de l'île).</p><p>En échange, vous recevrez l'XP et l'or. Cette quête est renouvelable à volonté.</p>",
+        "images": [],
+        "order": 1
       }
     ],
-    "credits": [
-      "T4C NMS Révolution wiki"
-    ]
+    "credits": ["T4C NMS Révolution wiki"]
   },
   {
-    "title": "Quete de Lahor",
+    "title": "Quête de Lahor (Forge d'armes)",
     "slug": "quete-de-lahor",
     "zone": "Arakas",
-    "prerequisites": [],
-    "rewards": [],
-    "npcs": [],
-    "gold": "",
+    "prerequisites": ["Accès à Raven's Dust et Drake Island"],
+    "rewards": ["Dague ensanglantée du crâne OU Scalpel du chirurgien poli", "70.000 XP"],
+    "npcs": ["Lahor"],
+    "gold": "20.000 PO (si échec)",
     "steps": [
       {
-        "title": "Introduction",
-        "description": "<p>Rendez visite à Lahor, situé dans la maison de Lance Silversmith, vous découvrirez que son \"Travail\" est de forger des armes.</p>\n<br/>\n<ul>\n  <li>Deux morceaux de fer (drop des Bzus, ile DI).</li> <li>Une peau de ver (drop des apocalypses des sables, île DI).</li> <li>Une lame perdue du dragon (quête des notes de remerciement, ile SH).</li> <li>Une sinistre lame de guerre (quête de Malachaï, ile SH).</li> <li>Un bâton de marche tordu (coffre de l'asile, ile AR).</li> <li>Une dague du crâne (quête des ailes de chauve-souris) <u>OU</u> un scalpel du chirurgien (quête de la pierre de vie). <br/>Vous obtiendrez, selon l'arme que vous avez fournie, une <b>dague ensanglantée du crâne</b> ou un <b>scalpel du chirurgien poli </b>(le nom a été modifié depuis le screen) et 70.000 xp.</li>\n</ul>\n<br/>\n<p><b>Notez bien que la quête échoue environ une fois sur deux</b>!!! Vous recevrez alors 20 000 pièces d'or et 70.000 xp, mais tous les objets seront perdus (grrrrr cela m'est arrivé...).</p>\n<br/>\n<p><br/>entrer\"), ceux qui dropent la clef de chair durcie #22, pour arriver dans son antre.</p>\n<br/>\n<p>Puis, mettez vous tout nu, complètement débuff et sans arme et foncez dessus (<b>non....joke</b>)!</p>\n<br/>\n<p>Pour terminer la quête Académie, n'oubliez pas de capturer le Cerberus cela vous rapportera 10G d'xp et 10 parchemins d'xp x2 d'1 heure (ensuite aller rendre la capture a Pelkor Zirus comme les autres captures au salon de jeux.(Oubliez pas d'enlever le sceptre pour qu'il le reprenne)).</p>\n<br/>\n<p><b>Attention</b> : lorsque vous passez le portail pour la première fois, vous perdez <u>presque</u> toutes vos clefs de chair durcie!!</p>\n<br/>\n<p>Ne restent que celles qui permettent d'accéder au Cerberus en ligne droite, c'est à dire les #3, #6, #21 et #22. Vous pourrez donc retourner au Cerberus, mais ne pourrez pas camper les coffres iridium ou ivoire, ni les vers enfouis, ni les gargouilles éthérées. Pour ce faire, il faut... refaire les clefs qui vous intéressent (dans l'ordre... ou pas...). Amusez-vous bien!!</p>\n<br/>\n<p><b>Tip</b> : Vous pouvez faire d'avance en double les clés qui tombent au sol mais pas celles qui tombent directement dans votre sac.</p>\n<br/>\n<p><u><b>Cerberus, le boss à 3 têtes </b></u></p>\n<br/>\n<p><b>Attention</b> ce boss a la capacité de vous retirer toutes vos magies actives et d'invoquer des rejetons (gare à leur nécro) s'il est de mauvaise humeur !!</p>\n<br/>\n<p></p>",
-        "images": [
-          "/t4c-nms-overview/assets/quests/donjon-du-cerberus/img_24_0.jpg"
-        ],
-        "order": 24
+        "title": "Démarrage",
+        "description": "<p>Rendez visite à <b>Lahor</b>, situé dans la maison de Lance Silversmith sur Arakas. Son \"travail\" consiste à forger des armes puissantes à partir de composants rares.</p>",
+        "images": [],
+        "order": 0
+      },
+      {
+        "title": "Composants requis",
+        "description": "<p>Vous devez réunir les objets suivants :</p><ul><li><b>2 Morceaux de fer :</b> Drop des Bzus (DI).</li><li><b>1 Peau de ver :</b> Drop des apocalypses des sables (DI).</li><li><b>1 Lame perdue du dragon :</b> Quête des notes de remerciement (SH).</li><li><b>1 Sinistre lame de guerre :</b> Quête de Malachaï (SH).</li><li><b>1 Bâton de marche tordu :</b> Coffre de l'asile (AR).</li><li><b>Arme de base :</b> 1 Dague du crâne OU 1 Scalpel du chirurgien.</li></ul>",
+        "images": [],
+        "order": 1
+      },
+      {
+        "title": "Résultat et Risques",
+        "description": "<p>Selon l'arme de base fournie, vous obtiendrez la version améliorée correspondante.</p><p>⚠️ <b>Attention :</b> La quête a environ <b>50% de chances d'échouer</b> ! En cas d'échec, vous perdez tous les objets et recevez seulement 20.000 PO et 70.000 XP.</p>",
+        "images": [],
+        "order": 2
       }
     ],
-    "credits": [
-      "T4C NMS Révolution wiki",
-      "By Mëyli",
-      "Cl",
-      "Sauv",
-      "Salle aux",
-      "Salles des gargouilles",
-      "Coffres pour cl",
-      "Salle des gargouilles",
-      "Tourbillon",
-      "by Meyli"
-    ]
+    "credits": ["T4C NMS Révolution wiki", "Mëyli"]
   },
   {
-    "title": "Coffres iridium",
+    "title": "Coffres Iridium",
     "slug": "coffres-iridium",
     "zone": "Drake Island",
-    "prerequisites": [],
-    "rewards": [],
-    "npcs": [],
-    "gold": "",
-    "steps": [
-      {
-        "title": "Présentation du camping des 5 coffres iridium",
-        "description": "<ul>\n  \n  <li>\n<p>Vous disposez de 5 coffres iridium à l'Académie-4.</p>\n</li>\n  <li>\n<p>Ils sont accessibles à partir du moment où vous disposez des 11 premières clés de chair durcie. Le temps de <b>repop</b> d'un coffre est de 1 heure in game. Chaque joueur dispose d'un timer qui lui est propre. Un coffre drope dans l'inventaire un lingot d'iridium, un item <b>secret</b> ou une potion (pas de relique hélas).</p>\n</li>\n  <li>\n<p>Vous devrez passez par la salle aux leviers \"clé 8\" puis par la salle \"clé 10\". <b>Attention</b> : n'oubliez pas la potion d'inertie pour passer la salle \"clé 10\". Enfin entrez dans la salle aux 4 tourbillons.</p>\n</li>\n  <li>\n<p>Comment ça se passe ?</p>\n</li>\n  <li>\n<p>Selon le coffre que vous désirez ouvrir, vous devrez marcher sur une série de dalles bleues ou vertes numérotées de 1 à 8 pour les bleues et de 1 à 5 pour les vertes. La dalle bleue numéro 1 est notée B1 etc.</p>\n</li>\n  <li>\n<p>A partir de la salle aux quatre tourbillons, au dessus de la clé 10, en prenant le tourbillon caché par le mur du bas. Les cheminements menant aux différentes dalles Bleues et Vertes sont les suivants :</p>\n</li>\n  <li>\n<p>V1 et V2 = dans la salles des dalles (DD GGGG D)</li>\n  <li>V3 = D G DD (salle des dalles petit côté, haut)</li>\n  <li>V4 = D G D sur une île obsidienne</p>\n</li>\n  <li>\n<p>Attention, pour chaque couleur, il faut bien suivre l'ordre des dalles. Si vous marchez sur une mauvaise dalle, vous devrez recommencer au début la couleur concernée (mais vous pouvez marcher plusieurs fois sur la dalle que vous êtes en train de faire).</p>\n</li>\n  <li>\n<p>Les temps moyens affichés correspondent aux temps qu'il faut pour réaliser la combinaison et ouvrir le coffre concerné en partant du coffre précédent. <u>Exemple</u> : temps moyen du coffre 1 : 3 minutes 40 en partant du coffre 5. Ces temps sont réalisés en se dirigeant directement vers les dalles 1B après l'ouverture du coffre précédent sans passer par les bâfreurs de chair fraîche quand cela est possible.</p>\n</li>\n  <li>\n<p>Enfin le dernier chapitre vous donne le contenu de chaque coffre...</p>\n</li>\n\n</ul>",
-        "images": [
-          "/t4c-nms-overview/assets/quests/coffres-iridium/img_0_0.jpg",
-          "/t4c-nms-overview/assets/quests/coffres-iridium/img_0_0.jpg"
-        ],
-        "order": 0
-      },
-      {
-        "title": "Coffre 1 = 8B2V (8 bleu 2 vert)",
-        "description": "<ul>\n  \n  <li>\n<p>-- Temps moyen : 3 minutes 45 --</p>\n</li>\n  <li>\n<p>Aller dans la salle aux quatre tourbillons (au dessus de la salle \"clé 10\") et prendre le tourbillon caché par le mur du bas.</p>\n</li>\n  <li>\n<p>Depuis première île, GGGG et activer dalle 1 bleu puis prendre tourbi vers bâfreurs.</li>\n  <li>Depuis première île, aller salle des dalles (DD GGGG D), activer 1 vert et 2 bleu puis prendre tourbi au nord.</li>\n  <li>Depuis première île, aller petit côté (DGDD) activer 3 bleu puis prendre tourbi vers bâfreurs.</li>\n  <li>Depuis première île, aller salles des dalles (DD GGGG D), activer 2 vert puis <b>4, 5, 6</b>, 7 bleu avant de reprendre le tourbi à côté de la porte Nord.</li>\n  <li>Depuis première île, faire DD GGGG, activer 8 bleu puis D, arrivée salle des dalles, cliquer sur le coffre près de la porte au Nord.</p>\n</li>\n  <li>\n<p>Ensuite n'oubliez pas d'activer 1 vert avant de prendre le tourbillon vers bâfreurs.</p>\n</li>\n  <li>\n<p></li>\n  <li></p>\n</li>\n\n</ul>",
-        "images": [],
-        "order": 1
-      },
-      {
-        "title": "Coffre 2 = 7B4V (7 bleu 4 vert)",
-        "description": "<ul>\n  \n  <li>\n<p>-- Temps moyen : 4 minutes 20 --</p>\n</li>\n  <li>\n<p>Aller dans la salle aux quatre tourbillons (au dessus de la salle \"clé 10\") et prendre le tourbillon caché par le mur du bas.</p>\n</li>\n  <li>\n<p>Depuis première île, GGGG et activer dalle 1 bleu puis prendre tourbi vers bâfreurs.</li>\n  <li>Depuis première île, aller salle des dalles (DD GGGG D), activer 1 vert 2 vert 2 bleu puis prendre tourbi au Nord vers bâfreurs.</li>\n  <li>Depuis première île, aller petit côté (DGDD), activer 3 bleu 3 vert puis prendre tourbi vers bâfreurs.</li>\n  <li>Depuis première île, DGD puis activer dalle 4 vert puis D vers petit côté ...</li>\n  <li>Depuis première île, aller salle des dalles (DD GGGG D), activer 4 ,5 , 6 , 7 bleu puis ouvrir le coffre au Sud (caché par le mur).</p>\n</li>\n  <li>\n<p>Ensuite n'oubliez pas d'activer 1 vert avant de prendre le tourbillon Nord vers bâfreurs.</p>\n</li>\n  <li>\n<p></li>\n  <li></p>\n</li>\n\n</ul>",
-        "images": [],
-        "order": 2
-      },
-      {
-        "title": "Coffre 3 = 2B1V (le petit coffre)(2 bleu 1 vert)",
-        "description": "<p>-- Temps moyen : 2 minutes 15 --</p>\n<br/>\n<p>Aller dans la salle aux quatre tourbillons (au dessus de la \"clé 10\") et prendre celui caché par le mur du bas.</p>\n<br/>\n<p>Depuis première île, GGGG et activer dalle 1 bleu puis prendre tourbi vers bâfreurs.<br/>Depuis première île, aller salle des dalles (DD GGGG D), activer 1 vert et 2 bleu puis prendre tourbi au Nord.<br/>Depuis première île, activer DG puis ouvrir le coffre.</p>\n<br/>\n<p>Ensuite au choix :</p>\n<br/>\n<ul>\n  <li>Sortez par DD (petit côté de la salle des dalles puis bâfreurs)</li> <li>ou rejoignez directement la dalle 1 bleu par GD GD GD DGG.</li>\n</ul>\n<br/>\n<p><br/></p>",
-        "images": [],
-        "order": 3
-      },
-      {
-        "title": "Coffre 4 = 6B4V (6 bleu 4 vert)",
-        "description": "<p>-- Temps moyen : 4 minutes 45 --</p>\n<br/>\n<p>Aller dans la salle aux quatre tourbillons (au dessus de la \"clé 10\") et prendre celui caché par le mur du bas.</p>\n<br/>\n<p>Depuis première île, GGGG et activer 1 bleu puis prendre tourbi vers bâfreurs.<br/>Depuis première île, aller salle des dalles (DD GGGG D), activer 1 vert 2 vert 2 bleu puis prendre tourbi au nord.<br/>Depuis première île, aller petit côté (DGDD), activer 3 bleu 3 vert puis prendre tourbi.<br/>Depuis première île, DGD puis activer dalle 4 vert puis D vers petit côté ...<br/>Depuis première île, aller salle des dalles (DD GGGG D), activer <b>4, 5, 6</b> bleu puis puis tourbi au nord.<br/>Depuis première île, activer DD GG puis ouvrir le coffre.</p>\n<br/>\n<p>Ensuite au choix :</p>\n<br/>\n<ul>\n  <li>Sortez par GG D (bâfreurs)</li> <li>ou rejoignez directement la dalle 1 bleu par DDG DDG G.</li>\n</ul>\n<br/>\n<p><br/></p>",
-        "images": [],
-        "order": 4
-      },
-      {
-        "title": "Coffre 5 = 3B5V (3 bleu 5 vert)",
-        "description": "<ul>\n  \n  <li>\n<p>-- Temps moyen : 4 minutes 15 --</p>\n</li>\n  <li>\n<p>Aller dans la salle aux quatre tourbillons (au dessus de la \"clé 10\") et prendre celui caché par le mur du bas.</p>\n</li>\n  <li>\n<p>Depuis première île, GGGG et activer dalle 1 bleu puis prendre tourbi vers bâfreurs.</li>\n  <li>Depuis première île, aller salles des dalles (DD GGGG D), activer 1 vert 2 vert 2 bleu puis prendre tourbi au nord.</li>\n  <li>Depuis première île, aller petit côté (DGDD), activer 3 bleu 3 vert puis prendre tourbi.</li>\n  <li>Depuis première île, DGD puis activer dalle 4 vert puis D vers petit côté ...</li>\n  <li>Depuis première île, aller salle des dalles (DD GGGG D), activer 5 vert puis tourbi au nord.</li>\n  <li>Depuis première île, activer G puis ouvrir le coffre.</p>\n</li>\n  <li>\n<p>Enfin GGG. Au passage marchez sur la dalle 1 bleu. Et G pour sortir (bâfreurs)</p>\n</li>\n  <li>\n<p></li>\n  <li></p>\n</li>\n\n</ul>",
-        "images": [],
-        "order": 5
-      },
-      {
-        "title": "=== Coffre 1 === 8B 2V",
-        "description": "<ul>\n  <li>Lingot d'iridium + potions</li> <li>Estampe secrète de Miryden</li> <li>Estampe secrète de Gorodek</li> <li>Orbe <b>secret</b> d'Isilaë</li> <li>Orbe <b>secret</b> de Valmar</li> <li>Poudre secrète de Falyel</li> <li>Poudre secrète de Jalaam</li> <li>Marque secrète de Klauzar</li> <li>Marque secrète de Gorodek</li> <li>Inscription secrète de Silvius</li> <li>Inscription secrète d'Amaëlle</li> <li>Blason <b>secret</b> de Xordiv</li> <li>Blason <b>secret</b> de Miryden</li>\n</ul>",
-        "images": [],
-        "order": 6
-      },
-      {
-        "title": "=== Coffre 2 === 7B 4V",
-        "description": "<ul>\n  <li>Lingot d'iridium + potions</li> <li>Estampe secrète de Falyel</li> <li>Estampe secrète de Klauzar</li> <li>Orbe <b>secret</b> de Xordiv</li> <li>Orbe <b>secret</b> de Jalaam</li> <li>Poudre secrète d'Amaëlle</li> <li>Poudre secrète de Klauzar</li> <li>Marque secrète de Falyel</li> <li>Marque secrète de Miryden</li> <li>Inscription secrète d'Isilaë</li> <li>Inscription secrète de Gorodek</li> <li>Blason <b>secret</b> de Valmar</li> <li>Blason <b>secret</b> de Silvius</li>\n</ul>",
-        "images": [],
-        "order": 7
-      },
-      {
-        "title": "=== Coffre 3 === 2B 1V",
-        "description": "<ul>\n  <li>Lingot d'iridium + potions</li> <li>Estampe secrète d'Amaëlle</li> <li>Estampe secrète de Valmar</li> <li>Orbe <b>secret</b> de Silvius</li> <li>Orbe <b>secret</b> de Gorodek</li> <li>Poudre secrète d'Isilaë</li> <li>Poudre secrète de Miryden</li> <li>Marque secrète d'Amaelle</li> <li>Marque secrète de Valmar</li> <li>Inscription secrète de Falyel</li> <li>Inscription secrète de Xordiv</li> <li>Blason <b>secret</b> de Klauzar</li> <li>Blason <b>secret</b> de Jalaam</li>\n</ul>",
-        "images": [],
-        "order": 8
-      },
-      {
-        "title": "=== Coffre 4 === 6B 4V",
-        "description": "<ul>\n  <li><b></b>Lingot d'iridium + potions</li> <li>Estampe secrète de Xordiv</li> <li>Estampe secrète de Sylvius</li> <li>Orbe <b>secret</b> de Miryden</li> <li>Orbe <b>secret</b> de Falyel</li> <li>Poudre secrète de Gorodek</li> <li>Poudre secrète de Valmar</li> <li>Marque secrète de Sylvius</li> <li>Marque secrète de Xordiv</li> <li>Inscription secrète de Klauzar</li> <li>Inscription secrète de Jalaam</li> <li>Blason <b>secret</b> d'Amaëlle</li> <li>Blason <b>secret</b> d'Isilaë</li>\n</ul>",
-        "images": [],
-        "order": 9
-      },
-      {
-        "title": "=== Coffre 5 === 3B 5V",
-        "description": "<ul>\n  <li><b></b>Lingot d'iridium + potions</li> <li>Estampe secrète d'Isilaë</li> <li>Estampe secrète de Jalaam</li> <li>Orbe <b>secret</b> de Klauzar</li> <li>Orbe <b>secret</b> d'Amaëlle</li> <li>Poudre secrète de Xordiv</li> <li>Poudre secrète de Silvius</li> <li>Marque secrète de Jalaam</li> <li>Marque secrète d'Isilaë</li> <li>Inscription secrète de Miryden</li> <li>Inscription secrète de Valmar</li> <li>Blason <b>secret</b> de Falyel</li> <li>Blason <b>secret</b> de Gorodek</li>\n</ul>\n<br/>\n<p>Uqbar, Elcentor et quelques autres ! merci à eux</p>\n<br/>\n<p></p>",
-        "images": [],
-        "order": 10
-      }
-    ],
-    "credits": [
-      "T4C NMS Révolution wiki",
-      "Uqbar"
-    ]
-  },
-  {
-    "title": "Coffres ivoire",
-    "slug": "coffres-ivoire",
-    "zone": "Académie",
-    "prerequisites": [],
-    "rewards": [],
-    "npcs": [],
-    "gold": "",
-    "steps": [
-      {
-        "title": "Les deux coffres ivoire",
-        "description": "<p>Vous trouverez deux coffres ivoire au niveau -4 de l'Académie.</p>\n<br/>\n<p>Il vous faut avoir les clés de chair jusqu'à la clé 14 pour pouvoir accéder à la salle aux 11 tourbillons (celle de la clé de chair 15).</p>\n<br/>\n<p>Il vous faudra aussi des clés de rosée (celle du puits pour aller au Lord) pour pouvoir ouvrir les coffres.</p>\n<br/>\n<p>1er coffre : prenez le tourbillon permettant d'accéder à la salle de la clé corail 3. Cliquez sur le coffre \"accès au coffre ivoire\". Vous êtes arrivé !</p>\n<br/>\n<p>En plus d'ivoires d'Agamaoth celui de droite (dit coffre archer) drope aussi :</p>\n<br/>\n<ul>\n  <li>Critique</li> <li>Popo Prisme</li> <li>Fèves de toutes sortes</li> <li>Chevalière de stagnation</li> <li>Lame en orichalque</li> <li>Manche en orichalque</li> <li>Fût en ébonite</li> <li>Pointes de flèches en tungstène</li>\n</ul>\n<br/>\n<p>2ème coffre : prenez le tourbillon permettant d'accéder à l'escargot de la clé 17. Marcher sur la droite en longeant le bord (prévoyez des potions pour la lave) et <b>entrez par la gauche dans le premier tourbillon rencontré.</b> Vous êtes arrivé !</p>\n<br/>\n<p>En plus d'ivoires d'Agamaoth celui de gauche (dit coffre guerrier) drope aussi :</p>\n<br/>\n<ul>\n  <li>Critique</li> <li>Popo Prisme</li> <li>Fèves de toutes sortes</li> <li>Chevalière de stagnation</li> <li>Lame de métrolite</li> <li>Lame en acier métrolite</li> <li>Manche en acier métrolite</li> <li>Pointes de flèche en orichalque</li>\n</ul>\n<br/>\n<p>Ouvrez les coffres à l'aide d'une clé de rosée (du Lord). Le timing des coffres est personnel et est d'une heure IG.</p>\n<br/>\n<p>Bonne chance !</p>\n<br/>\n<p></p>",
-        "images": [],
-        "order": 0
-      }
-    ],
-    "credits": [
-      "T4C NMS Révolution wiki"
-    ]
-  },
-  {
-    "title": "Camping Académie-3",
-    "slug": "camping-academie-3",
-    "zone": "Arakas",
-    "prerequisites": [],
-    "rewards": [],
-    "npcs": [],
-    "gold": "",
-    "steps": [
-      {
-        "title": "Introduction",
-        "description": "<ul>\n  \n  <li>\n<p>Pour rappel, Les anciens BOSS de LH2 ou plutôt leurs réincarnations ne sont pas loin <b>!</b></p>\n</li>\n  <li>\n<p>QUARAN (Tarnian), OCTRAEL (Edgar), ARKELISE (Moonrock), KORES (Araknor) peuvent être invoqués en vous rendant dans la maisonnette de Marty Rhyser au -3.</p>\n</li>\n  <li>\n<p>Tous les détails dans camping super Boss</p>\n</li>\n\n</ul>",
-        "images": [],
-        "order": 0
-      },
-      {
-        "title": "PLAN DE L'ACADEMIE-3",
-        "description": "<ul>\n  \n  <li>\n<p></li>\n  <li></p>\n</li>\n  <li>\n<p><b>Les différents monstres (boss et mini-boss) sont invoqués via la console centrale (coffre central). </b></p>\n</li>\n  <li>\n<p><b>Il faut activer une combinaison de deux orbes (coffres) avant d'activer la console centrale. Chaque orbe est affectée d'une valeur de 1 à 8.</b></p>\n</li>\n  <li>\n<p><b>Une combinaison est déterminée par la somme de la valeur des deux orbes (coffres) qui la composent.</b></p>\n</li>\n  <li>\n<p><b>Il y a au total 13 combinaisons possibles. Dans la suite, le premier nombre représente la somme de la valeur de deux orbes. Les paires de nombres qui suivent représentent les valeurs des deux orbes.</b></p>\n</li>\n  <li>\n<p><b>En général, chaque combinaison a 3 effets possibles avec respectivement une probabilité de 50%, 25% et 25% parmi bonus, malus ou monstre.</b></p>\n</li>\n  <li>\n<p><b>Plus d'effets sont parfois possibles...</b></p>\n</li>\n  <li>\n<p>Remarque : L'homme lézard depop après 20 minutes s'il n'est pas tué.</p>\n</li>\n\n</ul>",
-        "images": [
-          "/t4c-nms-overview/assets/quests/camping-academie-3/img_1_0.jpg"
-        ],
-        "order": 1
-      },
-      {
-        "title": "INVOCATION DES MONSTRES en fonction des orbes activées",
-        "description": "<ul>\n  \n  <li>\n<p><b>3</b> : 12 : <b>Alanara'ak l'hérétique (dit \"le poulet\")</b> / Jumeaux humanoïdes grotesques / Malus</p>\n</li>\n  <li>\n<p><b>4</b> : 13 :<b> Créature infernale</b> <b>(dite \"le totem\")</b> / Assemblage minéral / Ver d'acier</p>\n</li>\n  <li>\n<p><b>5</b> : 14/23 : Humanoïde grotesque (50%) / Croc Blanc (25%) / <s>Amalgame de chair</s>/ Malus (25%)</p>\n</li>\n  <li>\n<p><b>6</b> : 15/24 : Homme lézard / Assemblage minéral / ver d'acier</p>\n</li>\n  <li>\n<p><b>7</b> : 16/25/34 : Croc Blanc (50%) / Humanoïde grotesque (25%) / Amalgame de chair (25%)</p>\n</li>\n  <li>\n<p><b>8</b> : 17/26/35 : Bonus (50%) / Ver d'acier (25%) / Assemblage minéral (25%)</p>\n</li>\n  <li>\n<p><b>9</b> : 18/27/36/45 : Malus (50%) / Humanoïde grotesque (25%) / Amalgame de chair (25%)</p>\n</li>\n  <li>\n<p><b>10</b> : 28/37/46 : Ver d'acier / Croc Blanc / Amalgame de chair ou Bonus ou Malus ??</p>\n</li>\n  <li>\n<p><b>11</b> : 38/47/56 : Homme lézard (50%) / Assemblage minéral (25%) / Bonus (25%)</p>\n</li>\n  <li>\n<p><b>12</b> : 48/57 : Amalgame de chair (50%) / Homme lézard (25%) / Malus (25%)</p>\n</li>\n  <li>\n<p><b>13</b> : 58/67 : Amalgame de chair / Assemblage minéral / Ver d'acier / Humanoïde grotesque / Homme lézard</p>\n</li>\n  <li>\n<p><b>14</b> : 68 : <b>Chevalier des abysses</b> / Croc Blanc / Homme lézard</p>\n</li>\n  <li>\n<p><b>15</b> : 78 : <b>Ethana &amp; Ethoan</b> <b>(les amoureux)</b> / Amalgame de chair / bonus</p>\n</li>\n\n</ul>",
-        "images": [],
-        "order": 2
-      },
-      {
-        "title": "DROPS DES MONSTRES",
-        "description": "",
-        "images": [
-          "/t4c-nms-overview/assets/quests/camping-academie-3/img_3_0.jpg"
-        ],
-        "order": 3
-      },
-      {
-        "title": "Introduction",
-        "description": "<ul>\n  \n  <li>\n<p>Comme toujours dans mes participations au wiki, je prendrai le point de vue du newbe.</p>\n</li>\n  <li>\n<p>En effet, il faut vraiment être un débutant pour ne pas savoir ramasser un loot. Pourtant, lors des séances de camping auxquelles, j’ai participé, il est arrivé que des erreurs de ramassage gâchent l’ambiance du groupe.</p>\n</li>\n  <li>\n<p>Quoi de plus dommage et de plus triste que de voir un joueur, une joueuse, quitter le groupe par dépit, après avoir vu \"disparaitre \" un item qui lui était réservé. Se mettre à sa place, émotionnellement, est assez facile.</p>\n</li>\n  <li>\n<p>Evidemment, je ne sous-entends pas que certain(e)s volent délibérément les items au sol. Simplement, je pense que ce type d’erreur est vraiment dommageable pour notre petite communauté. Surtout, quand on sait que certains d’entre nous (des GB), font toujours de leur mieux pour que chacun, chacune, obtienne au moins, un item recherché.</p>\n</li>\n  <li>\n<p>Alors voici les outils et une méthode qui devrait vous aider à ne pas faire d’erreur.</p>\n</li>\n\n</ul>",
-        "images": [],
-        "order": 4
-      },
-      {
-        "title": "Les éléments de contrôle",
-        "description": "<p>Il y a trois fonctions qui peuvent vous aider à ne pas vous tromper lorsque vous ramassez un loot.</p>\n<br/>\n<ul>\n  <li>CTRL+N : Afficher les noms des items et des persos de la zone visible</li> <li>CTRL+K : Ramasser l’objet réservé proche. A noter que cette fonction n’est efficace que pendant le temps de réservation de l’item (2-mn)</li> <li>Clic bouton droit sur l’objet : Donne le nom de l’objet visé lorsque l’option \"affichage du détail des objets \" est décochée. Evidemment, la couleur jaune d’attribution est visible.</li>\n</ul>",
-        "images": [],
-        "order": 5
-      },
-      {
-        "title": "Utilisation des fonctions",
-        "description": "<ul>\n  \n  <li>\n<p>Lorsque le mob est mort, CTRL+N liste les items au sol.</p>\n</li>\n  <li>\n<p>Si un item est listé en jaune rapprochez-vous et faites CTRL+K</p>\n</li>\n  <li>\n<p>Si les 2mn sont passées, ce contrôle ne fonctionne plus.</p>\n</li>\n  <li>\n<p>Approchez-vous de l’item que vous voulez ramasser. Cliquez bouton droit de la souris, pour vérifier que vous ciblez le bon item. Si l'objet est en jaune, faites clic bouton gauche pour le ramasser.</p>\n</li>\n  <li>\n<p>Si vous avez ciblé le mauvais (il est en vert) vérifiez le voisin avec, de nouveau, Clic bouton droit de la souris.</p>\n</li>\n  <li>\n<p>ainsi de suite jusqu’à trouver votre item.</p>\n</li>\n  <li>\n<p>Lorsque vous l'avez trouvé, faites clic bouton gauche pour le ramasser.</p>\n</li>\n\n</ul>",
-        "images": [],
-        "order": 6
-      },
-      {
-        "title": "Exemple de situation",
-        "description": "<p>Vous pourriez voir deux items identiques au sol, dont l’un vous est réservé, vous déplacer et en ramasser un, sans vérifier. Imaginez ce qui peut se passer dans la tête d’un autre joueur qui vérifiant les items au sol, se rend compte que son item jaune n’est plus là. Vous pouvez penser qu’il n’a qu’à ramasser l’item au sol, c’est vrai, mais voilà ce n’est pas le sien. Et lui, elle, ne veut pas prendre un item au sol qui ne lui est pas destiné, ne veut pas \"voler \" cet item.</p>",
-        "images": [],
-        "order": 7
-      },
-      {
-        "title": "Conclusion",
-        "description": "<ul>\n  \n  <li>\n<p>Pardon pour cette conclusion, mais, s’il vous plait, ne foncez pas sur les loots. Ne passez pas bêtement pour un(e) voleur(se), juste parce que vous voulez absolument un item, et ne prenez pas le temps de vérifier que l’item que vous ramassez est bien le vôtre.</p>\n</li>\n  <li>\n<p>T4C est un jeu très prenant, c’est vrai, mais ce n’est qu’un jeu, ne l’oublions pas. Alors du calme, de la bienveillance et de la bonne humeur. Si l'objet convoité ne tombe pas pendant une séance, ce sera pour la prochaine...</p>\n</li>\n  <li>\n<p></li>\n  <li></p>\n</li>\n  <li>\n<p></li>\n  <li></p>\n</li>\n  <li>\n<p></p>\n</li>\n\n</ul>",
-        "images": [],
-        "order": 8
-      }
-    ],
-    "credits": [
-      "T4C NMS Révolution wiki"
-    ]
-  },
-  {
-    "title": "Accès à l'Asile Déchu",
-    "slug": "acces-a-lasile-dechu",
-    "zone": "Général",
-    "prerequisites": [],
-    "rewards": [],
-    "npcs": [],
-    "gold": "",
-    "steps": [
-      {
-        "title": "Accès à l'asile et début de la quête de la fiole de magie",
-        "description": "<p>Vous devez être déchu pour réaliser cette quête. </p>\n\n<p>Pour commencer, allez à l'asile et parlez à Forbin, qui est juste à côté du gardien. Il vous remettra la clé d'entrée de l'asile. </p>\n\n<p>Il vous demandera aussi de tuer Bouniak le traître. Entrez dans l'asile et tuez Bouniak (robe et chapeau rouges). Retournez voir Forbin qui vous récompensera d'une <u><b>Fiole de Sang de Forbin </b></u>(cette fiole vous sera utile auprès de Dronus). </p>\n\n<p>Forbin vous demandera ensuite d'aller voir ce personnage nommé Dronus. Vous le trouverez dans une maison à côté du Mausolée <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(761, 1354, 0)</span>. Pour mémoire, le Mausolée est accessible depuis la cave de l'aveugle laquelle est située tout au nord de RD. </p>\n\n<p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
-        "images": [],
-        "order": 0
-      }
-    ],
-    "credits": []
-  },
-  {
-    "title": "Accès niveaux -2 -3 -4 Académie",
-    "slug": "acces-niveaux-2-3-4-academie",
-    "zone": "Académie",
-    "prerequisites": [],
-    "rewards": [],
-    "npcs": [],
-    "gold": "",
-    "steps": [
-      {
-        "title": "Accès à la zone lvl 175 - 200 du Niveau -1",
-        "description": "<ul>\n  <li>Vous devez avoir accès à l'Académie.</li> <li>Il vous suffit ensuite d'atteindre le niveau 175 pour pouvoir franchir une des 4 portes qui mènent chacune à une des 4 zones 175+.</li> <li>Facile ... non ?</li>\n</ul>",
-        "images": [],
-        "order": 0
-      },
-      {
-        "title": "Quête d'accès à l'Académie Niveau -2 (le chevalier ténébreux)",
-        "description": "<ul>\n  <li>Vous devez avoir accès à l'Académie niveau -1.</li> <li>Trouvez un coffre dans une des zones pour niveau 175+ (il y en a un dans chaque zone), vous devez le camper jusqu'à obtenir un <span class=\"text-amber-400 font-bold\">\"Parchemin des ténèbres\"</span> (vous avez le temps entre les niveaux 175 et 200).</li> <li>Quand vous utiliserez le parchemin (vers le level 200), il fera apparaître le <span class=\"text-amber-400 font-bold\">\"Chevalier Ténébreux\"</span> dans la zone ou vous êtes. Faites vous aider.</li> <li><b>Avec l'aide d'un petit groupe solide</b>, attaquez-le (collez-le bien et faites le ménage d'abord). Quand vous l'aurez tué il réapparaîtra automatiquement dans les autres zones. Vous devrez le tuer dans les 4 zones (un seul parchemin suffit).</li> <li>Lorsque vous tuez le Chevalier ténébreux un message apparaît : <span class=\"text-amber-400 font-bold\">\"Le chevalier ténébreux s'empare de votre Ame...\"</span>. Vous devez voir ce message dans chaque zone pour que la quête soit complète. S'il n'apparaît pas dans une zone, tuez à nouveau le Chevalier dans la zone concernée suffira, même si c'est avec un autre groupe.</li> <li>Une fois le Chevalier Ténébreux tué dans les 4 zones, rendez vous au milieu de l'Académie et cliquez sur le Puits. \n<ul>\n  <li><span class=\"text-amber-400 font-bold\">\"Le puits absorbe les ténèbres de votre âme.....\"</span></li>\n</ul>\n</li> <li>Vous avez désormais accès au 2ème niveau de l'Académie, les escaliers pour y descendre se trouvent au bout de chaque salle d'XP des zones 175+. Vous devez être niveau 200 pour franchir la porte.</li>\n</ul>\n\n<ul>\n  <li><span class=\"text-amber-400 font-bold\">\"Le puits absorbe les ténèbres de votre âme.....\"</span></li>\n</ul>\n\n<p>N.B 1 : Vous pouvez réaliser la quête en groupe, tous les membres du groupe participants aux combats contre le Chevalier Ténébreux auront accès à L'Académie niveau -2. </p>\n\n<p>N.B.2 : Pour les soigneurs du groupe : Vous devez obligatoirement frapper au moins une fois le Chevalier dans chaque zone pour que la quête vous soit validée. </p>\n\n<p>N.B.3 : Les Chevaliers disparaissent au bout d'une heure s'il ne sont pas tués. </p>",
-        "images": [],
-        "order": 1
-      },
-      {
-        "title": "Quête d'accès à l'Académie Niveau -3",
-        "description": "<ul>\n  <li>Vous devez avoir accès à l'Académie niveau -2.</li>\n</ul>\n\n<ul>\n  <li>Allez parler au PNJ Ataniel Claren situé dans une maison aux Yétis de la serre <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(410,2750,6)</span>, il vous demandera de tuer des douzaines de montres.</li> <li>Allez tuer environ 50 monstres du niveau -2 puis retournez parler à Ataniel qui vous remettra la Baguette d'Ataniel afin de tuer l'Atrocité mutante (skin Rejeton du Chaos).</li> <li>Faites une macro avec la baguette d'Ataniel. Cela vous permettra de lancer le sort de la baguette.</li> <li>L'atrocité est située dans la zone des vipères (à l'Est des yétis). Montez vers le Nord après l'entrée (560,2595,6 environ). Pour la tuer, vous devez utiliser la macro <b>de loin</b> rapidement et plusieurs fois.</li> <li><b>Attention :</b> dès que vous la voyez ne traînez pas car <b>elle dépop rapidement si vous ne l'attaquez pas</b>.</li> <li><b>Attention</b> : <b>lancez le sort <u>de loin</u> avec votre macro</b> jusqu'à ce qu'elle soit morte ! Si vous vous approchez trop près vous serez téléporté à votre sanctuaire (vivant) et l'atrocité dépopera (respawn environ 20 minutes).</li>\n</ul>\n\n<ul>\n  <li>Retournez voir Ataniel Claren pour votre récompense : \n<ul>\n  <li>accès à l'Académie niveau -3</li> <li><b>3G xp</b>.</li>\n</ul>\n</li>\n</ul>\n\n<ul>\n  <li>accès à l'Académie niveau -3</li> <li><b>3G xp</b>.</li>\n</ul>",
-        "images": [],
-        "order": 2
-      },
-      {
-        "title": "Quête d'accès à l'Académie Niveau -4",
-        "description": "<ul>\n  <li>Vous devez avoir accès à l'Académie niveau -3.</li> <li>Munissez-vous d'un parchemin de rappel puis allez parler au PNJ Dradus situé dans une maison aux Yétis de la serre <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(450,2730,6)</span>. Dites lui <span class=\"text-amber-400 font-bold\">\"mur\"</span> puis poursuivez le dialogue jusqu'à lui remettre le parchemin pour qu'il puisse s'échapper.</li> <li>Parlez ensuite à Kelmar Taniel dans la même maison. Il vous demandera alors de lui rapporter les ingrédients suivants :</li>\n</ul>\n\n<p><i>- Bulbe de l'éveillé (drop Larve sanglante)</i> </p>\n\n<p><i>- Ecume de larve toxique (drop Larve toxique)</i> </p>\n\n<p><i>- Globe oculaire (drop Lérot)</i> </p>\n\n<p><i>- Nerf sciatique (drop Scolopendre)</i> </p>\n\n<p><i>- Pierre de dérobade (drop Soldat d'outre-tombe)</i> </p>\n\n<ul>\n  <li>Une fois les 5 objets en votre possession, rendez-vous près de Kelmar, cliquez simplement dessus puis cliquez tout de suite sur Dradus. Vous serez téléporté dans sa cellule. Attaquez-le de suite.</li> <li><b>Attention ! Vous devrez le tuer en moins de 3 minutes</b> (prenez soin d'avoir avec vous des potions Hyper pour vous booster - surtout en paladin/guerrier -, ainsi que des potions critiques).</li> <li>Si vous dépassez le temps, vous aurez une quête supplémentaire à effectuer : \n<ul>\n  <li>Rapporter 1 moustache vibratoire, 1 corpuscule de résurrection, 1 venin de scorpion, 1 aile de gargouille, 1 pierre de majesté. Puis toujours en moins de 3 minutes tuer Dradus.... Bon courage...</li>\n</ul>\n</li> <li>Une fois Dradus tué, reparlez à Kelmar, il vous demandera d'aller tuer Iliana Valress. Elle va apparaître à ce moment sur son spot.</li> <li>Allez aux Vipères Terrifiantes, au nord-est du petit lac <span class=\"coords-trigger cursor-pointer bg-slate-700/50 px-1.5 py-0.5 rounded text-cyan-400 border border-slate-600 hover:bg-cyan-500/20 transition-colors\" title=\"Cliquer pour copier\">(630,2585,6)</span>, trouvez Iliana Valress (si vous ne la trouvez pas sur place, cherchez-la au Sud ou encore au Nord-Ouest, elle bouge beaucoup) cliquez sur elle puis tuez la. Le médaillon d'accès se retrouvera alors dans votre inventaire. Faites vous aider, surtout pour nettoyer la zone.</li> <li>Retournez parler à Kelmar puis cliquez sur Dradus, vous obtiendrez votre récompense : \n<ul>\n  <li><b>Accès au niveau -4 de l'Académie</b></li> <li><b>10G xp</b></li> <li><b>5M de pièces d'or</b></li>\n</ul>\n</li> <li>Pour vous rendre au -4, allez dans l'octogone au centre du -3. Puis, en sortant par la porte nord-ouest, cliquez sur la statue.</li>\n</ul>\n\n<ul>\n  <li>Rapporter 1 moustache vibratoire, 1 corpuscule de résurrection, 1 venin de scorpion, 1 aile de gargouille, 1 pierre de majesté. Puis toujours en moins de 3 minutes tuer Dradus.... Bon courage...</li>\n</ul>\n\n<ul>\n  <li><b>Accès au niveau -4 de l'Académie</b></li> <li><b>10G xp</b></li> <li><b>5M de pièces d'or</b></li>\n</ul>\n<p >T4C NMS Révolution, Accès -4 les deux boss</p>\n\n<p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
-        "images": [
-          "/t4c-nms-overview/assets/quests/acces-niveaux-2-3-4-academie/img_3_0.jpg"
-        ],
-        "order": 3
-      }
-    ],
-    "credits": []
-  },
-  {
-    "title": "Armure de plaque incrustée d'émeraudes",
-    "slug": "armure-de-plaque-incrustee-demeraudes",
-    "zone": "Général",
-    "prerequisites": [],
-    "rewards": [],
+    "prerequisites": ["Accès à l'Académie niveau -4", "Posséder les 11 premières clés de chair durcie", "Potion d'inertie"],
+    "rewards": ["Lingots d'iridium", "Objets secrets", "Potions"],
     "npcs": [],
     "gold": "",
     "steps": [
       {
         "title": "Présentation",
-        "description": "<p>Avec 140 endurance et +41 de CA, cette armure est plutôt destinée aux jeteurs de sort car elle donne un bonus de +10 dans toutes les puissances. Elle n'est pas trop à la mode car on pourra lui préférer les vêtements ou armures spécialisés. </p>",
-        "images": [],
+        "description": "<p>Situés à l'<b>Académie -4</b>, ces 5 coffres ont un temps de repop d'une heure (propre à chaque joueur). Ils contiennent des lingots d'iridium, des items secrets ou des potions.</p><p>⚠️ <b>Important :</b> Vous devez utiliser une <b>Potion d'Inertie</b> pour traverser la salle de la clé 10 sans être téléporté.</p>",
+        "images": ["/t4c-nms-overview/assets/quests/coffres-iridium/img_0_0.jpg"],
         "order": 0
       },
       {
-        "title": "Obtention",
-        "description": "<p>Ramassez des émeraudes reluisantes sur les golems d'émeraudes que vous trouverez sur les terres des skraugs rouges ou bien sur leur île, au nord des skraugs verts. Au nord de cette petite île, vous trouverez un homme en armure de plaque verte, il vous proposera de forger une partie de l'armure en échange de 80k et de 1 à 3 émeraudes reluisantes. Pour ce faire annoncer le nombre d'émeraude que vous souhaitez fournir pour la fabrication. Moins vous en donnerez, plus la fabrication a de chance d'échouer. </p>\n\n<p>Afin d'obtenir les jambieres ou le plastron, il est nécessaire de lui fournir 3 émeraudes reluisantes. </p>\n\n<p><b><span class=\"text-amber-400 font-bold\">\"Balzak\"</span> donne 1M XP en récompense de la fabrication d'une pièce d'armure émeraude.</b> </p>\n\n<p>Taux de réussite, environ 30% en donnant 3 émeraudes. Si échec vous perdez l'or et pas d'XP. </p>\n\n<p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "title": "Le mécanisme des dalles",
+        "description": "<p>Pour ouvrir un coffre, vous devez marcher sur une série de dalles <b>bleues (B1 à B8)</b> et <b>vertes (V1 à V5)</b> dans un ordre précis. Si vous vous trompez, vous devez recommencer la série de la couleur concernée.</p>",
         "images": [],
         "order": 1
+      },
+      {
+        "title": "Combinaisons des coffres",
+        "description": "<ul><li><b>Coffre 1 (8B 2V) :</b> Temps moyen 3m45.</li><li><b>Coffre 2 (7B 4V) :</b> Temps moyen 4m20.</li><li><b>Coffre 3 (2B 1V) :</b> Temps moyen 2m15.</li><li><b>Coffre 4 (6B 4V) :</b> Temps moyen 4m45.</li><li><b>Coffre 5 (3B 5V) :</b> Temps moyen 4m15.</li></ul>",
+        "images": [],
+        "order": 2
+      },
+      {
+        "title": "Récompenses (Items Secrets)",
+        "description": "<p>Chaque coffre peut contenir des estampes, orbes, poudres ou blasons secrets liés à différents protecteurs (Miryden, Valmar, Amaëlle, etc.).</p>",
+        "images": [],
+        "order": 3
       }
     ],
-    "credits": []
+    "credits": ["T4C NMS Révolution wiki", "Uqbar", "Elcentor"]
   },
   {
-    "title": "Armure Métrolite",
-    "slug": "armure-metrolite",
-    "zone": "Général",
-    "prerequisites": [],
-    "rewards": [],
+    "title": "Coffres Ivoire",
+    "slug": "coffres-ivoire",
+    "zone": "Académie",
+    "prerequisites": ["Clés de chair jusqu'à la 14", "Clés de rosée (obtenues sur le Lord Stonecrest)"],
+    "rewards": ["Ivoire d'Agamaoth", "Équipement puissant (Lames, Pointes)", "Consommables rares"],
     "npcs": [],
     "gold": "",
     "steps": [
       {
-        "title": "Armure Métrolite",
-        "description": "<p>Parlez à Eiden. Vous le trouverez en face du temple, dans une échoppe située près de Veronica la marchande de potions de DI, il vous expliquera qu'il peut vous fabriquer cette armure au prix de 200 000 pièces d'or et de 1 à 3 restes d'acier métrolite par partie. Vous aurez un morceau aléatoire de l'armure si la confection réussit. </p>\n\n<p>La différence entre <span class=\"text-amber-400 font-bold\">\"un\"</span> et <span class=\"text-amber-400 font-bold\">\"deux\"</span> est le taux de réussite (supérieur avec deux). En effet, il est tout à fait possible qu'Eiden ne réussisse pas à tirer quoi que ce soit des restes d'acier métrolite que vous lui rapporterez. Si vous en fournissez trois, le taux de réussite est encore supérieur mais vous pouvez aussi obtenir le plastron ou les jambières (ce qui n'est pas le cas avec les options précédentes). </p>\n\n<p>Chaque essai, que ce soit avec un, deux ou trois restes, vous coûtera 200 000 pièces d'or. Vous trouverez les restes en tuant les B'Zurkhans (autour d'un lac à l'Ouest de RedWall). </p>\n\n<p>La quête peut être effectuée à volonté. </p>\n\n<p>Récompense : </p>\n\n<ul>\n  <li>Soit plastron d'armure métrolite.</li> <li>Soit jambières d'armure métrolite.</li> <li>Soit gants d'armure métrolite.</li> <li>Soit heaume d'armure métrolite.</li> <li>Soit ceinture d'armure métrolite.</li> <li>Soit bottes d'armure métrolite.</li> <li>Soit rien du tout.</li>\n</ul>",
+        "title": "Accès au Niveau -4",
+        "description": "<p>Deux coffres ivoire se trouvent au niveau -4 de l'Académie. Vous aurez besoin de <b>clés de rosée</b> pour les ouvrir. Le repop est d'une heure.</p>",
         "images": [],
         "order": 0
       },
       {
-        "title": "Bouclier Métrolite",
-        "description": "<p>Pour le bouclier Métrolite, vous aurez besoin de 4 morceaux d'or (drop des démons incultes) et 5 restes d'acier métrolite (drop des B'Zurkhans) et d'un bouclier B'Ronkhanique (drop des drakes B'Ronkhans). </p>\n\n<p>Dites <span class=\"text-amber-400 font-bold\">\"bouclier\"</span> à Eiden. Si l'opération réussit, le skin de votre bouclier sera accordé à votre armure (personnellement je ne l'aime pas trop). En cas d'échec, vous récupérez votre bouclier d'origine. </p>\n\n<p><b>Eiden vous donnera 10M XP s'il réussit la fabrication d'une partie d'armure métrolite.</b> </p>\n\n<p><b>Note :</b> Vous remarquerez, si ce n'est déjà fait, que les boosts sont les mêmes. Vous échangerez donc le B'Ronkhanique contre le Métrolite uniquement pour le look. Ci-contre les deux descriptions identiques avec leur skin respectif. A vous de choisir. </p>\n\n<p><br/></p>\n\n<p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
-        "images": [
-          "/t4c-nms-overview/assets/quests/armure-metrolite/img_1_0.jpg",
-          "/t4c-nms-overview/assets/quests/armure-metrolite/img_1_1.jpg"
-        ],
-        "order": 1
-      }
-    ],
-    "credits": []
-  },
-  {
-    "title": "Audrey la couturière",
-    "slug": "audrey-la-couturiere",
-    "zone": "Général",
-    "prerequisites": [],
-    "rewards": [],
-    "npcs": [],
-    "gold": "",
-    "steps": [
-      {
-        "title": "La quête d'Audrey la couturière (robe de couleur)",
-        "description": "<p>Cette quête permet d'obtenir une robe de couleur ainsi que 80.000 xp (quête non répétable). </p>\n\n<ul>\n  <li>10 potions de guérison légère</li> <li>5 potions de mana</li> <li>2 diamants (vous trouverez un coffre dropant un diamant chez le bourgmestre de Windhowl et un second aux Druides, au Nord-Est du camp du commandant Owain, au bord de l'eau)</li> <li>25 000 pièces d'or</li>\n</ul>\n\n<p>Il faudra aussi que le garde soit distrait par vous ou par un comparse : </p>",
-        "images": [
-          "/t4c-nms-overview/assets/quests/audrey-la-couturiere/img_0_0.jpg",
-          "/t4c-nms-overview/assets/quests/audrey-la-couturiere/img_0_1.jpg"
-        ],
-        "order": 0
-      },
-      {
-        "title": "Méthode Solo",
-        "description": "<p>Préparez les mots-clefs (<span class=\"text-amber-400 font-bold\">\"Nécessaire\"</span>, <span class=\"text-amber-400 font-bold\">\"Distraire\"</span>). Dites le mot-clef <b><span class=\"text-amber-400 font-bold\">\"Distraire\"</span></b> au gardien. A partir de ce moment il vous reste 5 secondes avant d'être téléporté(e) en prison. Dites le mot-clef <b><span class=\"text-amber-400 font-bold\">\"nécessaire\"</span></b> à Audrey. A ce moment si vous avez les ingrédients sur vous, vous gagnez 80.000 xp et Audrey vous remet la robe, puis vous allez en prison. Vous devez être rapide pour que cela fonctionne en solo mais c'est faisable. Entrez les mots-clefs avant de commencer et utilisez <b>CTRL+HAUT</b> pour les répéter rapidement. </p>",
+        "title": "Le coffre de droite (Archer)",
+        "description": "<p>Prenez le tourbillon vers la salle de la clé corail 3. Cliquez sur le coffre \"accès au coffre ivoire\".</p><p><b>Drops :</b> Critique, Popo Prisme, Chevalière de stagnation, Lame/Manche en orichalque, Fût en ébonite, Pointes en tungstène.</p>",
         "images": [],
         "order": 1
       },
       {
-        "title": "Méthode Coopérative",
-        "description": "<p>Vous aurez besoin de l'aide d'un comparse qui distraira le garde en lui disant le mot-clef <b><span class=\"text-amber-400 font-bold\">\"Distraire\"</span></b>, et c'est lui qui sera téléporté en prison pendant 10 minutes, il pourra tout de même s'échapper immédiatement s'il le désire grâce à la RST, Mot de rappel ou un Parchemin. Dites ensuite les mot-clefs <b><span class=\"text-amber-400 font-bold\">\"Nécessaire\"</span></b> puis <b><span class=\"text-amber-400 font-bold\">\"oui\"</span> </b>à Audrey (en moins de 5 secondes là aussi), elle vous remettra une robe si vous avez les ingrédients et l'or sur vous. </p>\n\n<p><b>Récompenses:</b> Une robe de couleur aléatoire parmi Brunie, Rose, Bleutée, Jaune ou Orangée (<u>Bonus</u> : +5 Int +5 Sag +2 CA -25 Esquive, <u>Prérequis</u> 12 End 28 Sag 28 Int) . </p>\n\n<p>Vous gagnerez aussi 80.000 xp de récompense. </p>\n\n<p><br/><b>P.S.</b> Si vous avez envie de calmer les nerfs du garde après avoir eu la robe, vous pouvez compléter la quête <span class=\"text-amber-400 font-bold\">\"Le Gardien et les yeux de tarentules\"</span>! </p>\n\n<p><b>Cette quête ne peut être effectuée qu'une seule fois.</b> </p>\n\n<p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "title": "Le coffre de gauche (Guerrier)",
+        "description": "<p>Prenez le tourbillon vers l'escargot (clé 17). Longez le bord droit (attention à la lave) et entrez dans le premier tourbillon à gauche.</p><p><b>Drops :</b> Critique, Popo Prisme, Chevalière de stagnation, Lame de métrolite, Manche en acier métrolite, Pointes en orichalque.</p>",
         "images": [],
         "order": 2
       }
     ],
-    "credits": []
+    "credits": ["T4C NMS Révolution wiki"]
+  },
+  {
+    "title": "Camping Académie-3",
+    "slug": "camping-academie-3",
+    "zone": "Arakas",
+    "prerequisites": ["Accès à l'Académie niveau -3"],
+    "rewards": ["Objets de boss (Tarnian, Edgar, Moonrock, Araknor)"],
+    "npcs": ["Marty Rhyser"],
+    "gold": "",
+    "steps": [
+      {
+        "title": "Introduction",
+        "description": "<p>L'Académie -3 abrite les réincarnations des anciens boss : <b>QUARAN (Tarnian)</b>, <b>OCTRAEL (Edgar)</b>, <b>ARKELISE (Moonrock)</b> et <b>KORES (Araknor)</b>. Ils peuvent être invoqués via un mécanisme spécial.</p>",
+        "images": [],
+        "order": 0
+      },
+      {
+        "title": "Le mécanisme d'invocation",
+        "description": "<p>Les monstres sont invoqués via la <b>console centrale (coffre)</b>. Vous devez activer une combinaison de <b>deux orbes</b> avant d'activer la console. Chaque orbe a une valeur de 1 à 8.</p><p>Le résultat dépend de la <b>somme</b> des deux orbes. Il y a 13 combinaisons possibles avec généralement :</p><ul><li>50% de chance de Bonus</li><li>25% de chance de Malus</li><li>25% de chance d'apparition d'un monstre</li></ul>",
+        "images": ["/t4c-nms-overview/assets/quests/camping-academie-3/img_1_0.jpg"],
+        "order": 1
+      },
+      {
+        "title": "Combinaisons et Boss",
+        "description": "<ul><li><b>Somme 3 (1+2) :</b> Alanara'ak l'hérétique (Poulet).</li><li><b>Somme 14 (6+8) :</b> Chevalier des abysses.</li><li><b>Somme 15 (7+8) :</b> Ethana & Ethoan (Les amoureux).</li></ul>",
+        "images": ["/t4c-nms-overview/assets/quests/camping-academie-3/img_3_0.jpg"],
+        "order": 2
+      },
+      {
+        "title": "Conseils de loot en groupe",
+        "description": "<p>Pour éviter les tensions lors du ramassage :</p><ul><li><b>CTRL+N :</b> Affiche le nom des items au sol.</li><li><b>CTRL+K :</b> Ramasse l'objet qui vous est réservé.</li><li><b>Clic droit :</b> Vérifie le nom et l'attribution (jaune) avant de ramasser.</li></ul>",
+        "images": [],
+        "order": 3
+      }
+    ],
+    "credits": ["T4C NMS Révolution wiki"]
+  },
+  {
+    "title": "Accès à l'Asile Déchu",
+    "slug": "acces-a-lasile-dechu",
+    "zone": "Raven's Dust",
+    "prerequisites": ["Être déchu (Alignement mauvais)"],
+    "rewards": ["Clé de l'asile", "Fiole de Sang de Forbin"],
+    "npcs": ["Forbin", "Dronus"],
+    "gold": "",
+    "steps": [
+      {
+        "title": "Démarrage",
+        "description": "<p>Rendez-vous à l'<b>Asile</b> sur Raven's Dust et parlez à <b>Forbin</b>, situé juste à côté du gardien. Il vous remettra la clé d'entrée de l'asile.</p>",
+        "images": [],
+        "order": 0
+      },
+      {
+        "title": "Éliminer le traître",
+        "description": "<p>Entrez dans l'asile et tuez <b>Bouniak le traître</b> (reconnaissable à sa robe et son chapeau rouges). Retournez voir Forbin pour recevoir votre récompense : une <b>Fiole de Sang de Forbin</b>.</p>",
+        "images": [],
+        "order": 1
+      },
+      {
+        "title": "La suite : Dronus",
+        "description": "<p>Forbin vous demandera ensuite de trouver <b>Dronus</b>. Il se situe dans une maison à côté du Mausolée (761, 1354, 0). Pour rappel, le Mausolée est accessible via la cave de l'Aveugle au Nord de Raven's Dust.</p>",
+        "images": [],
+        "order": 2
+      }
+    ],
+    "credits": ["T4C NMS Révolution wiki"]
+  },
+  {
+    "title": "Accès niveaux -2, -3, -4 Académie",
+    "slug": "acces-niveaux-2-3-4-academie",
+    "zone": "Académie",
+    "prerequisites": ["Accès à l'Académie niveau -1", "Niveau 175+ (pour démarrer)"],
+    "rewards": ["Accès aux niveaux profonds", "Plus de 13G XP au total", "5.000.000 PO"],
+    "npcs": ["Ataniel Claren", "Dradus", "Kelmar Taniel"],
+    "gold": "5.000.000 PO (récompense)",
+    "steps": [
+      {
+        "title": "Accès au Niveau -2 (Chevalier Ténébreux)",
+        "description": "<p>Pour descendre au niveau -2 (Niveau 200 requis pour franchir la porte) :</p><ol><li>Campez les coffres des zones 175+ pour obtenir un <b>Parchemin des ténèbres</b>.</li><li>Utilisez-le pour invoquer le <b>Chevalier Ténébreux</b>. Vous devez le vaincre dans les 4 zones (il réapparaît automatiquement).</li><li>Une fois vaincu partout, cliquez sur le <b>Puits</b> au centre de l'Académie pour valider l'accès.</li></ol>",
+        "images": [],
+        "order": 0
+      },
+      {
+        "title": "Accès au Niveau -3 (Atrocité Mutante)",
+        "description": "<p>Parlez à <b>Ataniel Claren</b> (410,2750,6). Après avoir tué 50 monstres au niveau -2, il vous remettra une baguette spéciale.</p><p>Utilisez la baguette <b>de loin</b> via une macro pour tuer l'<b>Atrocité mutante</b> (560,2595,6). Ne vous approchez pas trop !</p><p><b>Récompense :</b> Accès au -3 et 3 Milliards d'XP.</p>",
+        "images": [],
+        "order": 1
+      },
+      {
+        "title": "Accès au Niveau -4 (Dradus & Iliana)",
+        "description": "<p>Parlez à <b>Dradus</b> (450,2730,6), donnez-lui un parchemin de rappel. Kelmar Taniel vous demandera alors 5 composants (Bulbe, Écume, Globe, Nerf, Pierre de dérobade).</p><ol><li>Apportez les objets et tuez Dradus en <b>moins de 3 minutes</b>.</li><li>Tuez ensuite <b>Iliana Valress</b> (630,2585,6) pour obtenir son médaillon.</li></ol><p><b>Récompense :</b> Accès au -4, 10 Milliards d'XP et 5M PO.</p>",
+        "images": ["/t4c-nms-overview/assets/quests/acces-niveaux-2-3-4-academie/img_3_0.jpg"],
+        "order": 2
+      }
+    ],
+    "credits": ["T4C NMS Révolution wiki"]
+  },
+  {
+    "title": "Armure de plaque d'émeraudes",
+    "slug": "armure-de-plaque-incrustee-demeraudes",
+    "zone": "Stoneheim",
+    "prerequisites": ["140 Endurance"],
+    "rewards": ["Pièces d'armure d'émeraude (+10 toutes puissances)", "1.000.000 XP par pièce"],
+    "npcs": ["Balzak"],
+    "gold": "80.000 PO par essai",
+    "steps": [
+      {
+        "title": "Collecte des composants",
+        "description": "<p>Cette armure offre +41 CA et un bonus de +10 dans toutes les puissances magiques.</p><p>Collectez des <b>Émeraudes reluisantes</b> sur les Golems d'émeraude (terres ou île des Skraugs Rouges).</p>",
+        "images": [],
+        "order": 0
+      },
+      {
+        "title": "Fabrication auprès de Balzak",
+        "description": "<p>Trouvez <b>Balzak</b> (homme en armure verte) au Nord de l'île des Skraugs. Il forgera une pièce contre 80.000 PO et 1 à 3 émeraudes.</p><ul><li><b>Taux de réussite :</b> ~30% avec 3 émeraudes.</li><li><b>Jambières/Plastron :</b> Nécessitent obligatoirement 3 émeraudes.</li></ul><p>Chaque succès rapporte 1.000.000 XP.</p>",
+        "images": [],
+        "order": 1
+      }
+    ],
+    "credits": ["T4C NMS Révolution wiki"]
+  },
+  {
+    "title": "Armure Métrolite",
+    "slug": "armure-metrolite",
+    "zone": "Drake Island",
+    "prerequisites": ["Accès à Drake Island"],
+    "rewards": ["Pièces d'armure métrolite", "Bouclier métrolite (skin)", "10.000.000 XP par succès"],
+    "npcs": ["Eiden"],
+    "gold": "200.000 PO par essai",
+    "steps": [
+      {
+        "title": "Collecte des composants",
+        "description": "<p>Tuez des <b>B'Zurkhans</b> (autour du lac à l'Ouest de Redwall) pour collecter des <b>Restes d'acier métrolite</b>.</p>",
+        "images": [],
+        "order": 0
+      },
+      {
+        "title": "Forge de l'armure",
+        "description": "<p>Trouvez <b>Eiden</b> en face du temple de DI (près de Veronica). Il forgera une pièce aléatoire contre 200.000 PO et 1 à 3 restes d'acier.</p><ul><li><b>1 ou 2 restes :</b> Taux de réussite faible à moyen. Pas de plastron ni de jambières possibles.</li><li><b>3 restes :</b> Taux de réussite élevé. Permet d'obtenir le plastron ou les jambières.</li></ul><p>Chaque réussite vous rapporte 10.000.000 XP.</p>",
+        "images": ["/t4c-nms-overview/assets/quests/armure-metrolite/img_1_0.jpg"],
+        "order": 1
+      },
+      {
+        "title": "Bouclier Métrolite",
+        "description": "<p>Dites \"bouclier\" à Eiden. Prévoyez 4 morceaux d'or (démons incultes), 5 restes d'acier et un bouclier B'Ronkhanique. En cas de succès, le skin du bouclier est modifié pour s'accorder à l'armure.</p>",
+        "images": ["/t4c-nms-overview/assets/quests/armure-metrolite/img_1_1.jpg"],
+        "order": 2
+      }
+    ],
+    "credits": ["T4C NMS Révolution wiki"]
+  },
+  {
+    "title": "Audrey la couturière (Robe de couleur)",
+    "slug": "audrey-la-couturiere",
+    "zone": "Arakas",
+    "prerequisites": ["Une seule fois par personnage", "Stats : 12 End, 28 Sag, 28 Int"],
+    "rewards": ["Robe de couleur (aléatoire)", "80.000 XP"],
+    "npcs": ["Audrey", "Gardien"],
+    "gold": "25.000 PO",
+    "steps": [
+      {
+        "title": "Ingrédients",
+        "description": "<p>Apportez à Audrey (aux Druides, au Nord-Est d'Arakas) :</p><ul><li>10 Potions de guérison légère</li><li>5 Potions de mana</li><li>2 Diamants</li><li>25.000 PO</li></ul>",
+        "images": ["/t4c-nms-overview/assets/quests/audrey-la-couturiere/img_0_0.jpg"],
+        "order": 0
+      },
+      {
+        "title": "La distraction du garde",
+        "description": "<p>Audrey ne vous parlera que si le garde est distrait. Dites \"distraire\" au garde : vous avez 5 secondes pour dire \"nécessaire\" à Audrey.</p><ul><li><b>En solo :</b> Soyez très rapide (utilisez CTRL+HAUT). Vous finirez en prison mais avec votre robe.</li><li><b>En coop :</b> Un ami distrait le garde (et va en prison) pendant que vous récupérez la robe.</li></ul>",
+        "images": ["/t4c-nms-overview/assets/quests/audrey-la-couturiere/img_0_1.jpg"],
+        "order": 1
+      }
+    ],
+    "credits": ["T4C NMS Révolution wiki"]
   },
   {
     "title": "Coffres de l'Académie",
     "slug": "coffres-de-lacademie",
     "zone": "Académie",
-    "prerequisites": [],
-    "rewards": [],
+    "prerequisites": ["Accès aux différents niveaux de l'Académie"],
+    "rewards": ["Parchemin des ténèbres", "Perle de pluie", "Parchemins d'XP", "Objets RP"],
     "npcs": [],
     "gold": "",
     "steps": [
       {
-        "title": "Académie - 1",
-        "description": "<p>4 coffres sont situés niveau Académie -1 (repop ?) </p>\n\n<p>Ils dropent : </p>\n\n<ul>\n  <li>Parchemin des ténèbres (pour la quête d'accès Académie-2)</li> <li>Potions</li>\n</ul>",
+        "title": "Niveau -1",
+        "description": "<p>Quatre coffres sont répartis au niveau -1. Ils contiennent principalement des <b>Parchemins des ténèbres</b> (indispensables pour l'accès au niveau -2) et des potions.</p>",
         "images": [],
         "order": 0
       },
       {
-        "title": "Académie - 2",
-        "description": "<ul>\n  \n  <li>\n<p><b>Le coffre de l'Académie -2 est situé aux embaumés</b> (repop 15 minutes seul / 30 minutes à deux) : </p>\n\n<p>-Items RP (balai, ciseaux....)</li>\n  <li>-Perle de pluie (environ une fois sur deux)</li>\n  <li>-Parchemin d'xp de 10 minutes (rare) </p>\n</li>\n\n</ul>",
+        "title": "Niveau -2",
+        "description": "<p>Un coffre est situé dans la zone des <b>embaumés</b> (repop 15-30 min). Il peut donner :</p><ul><li>Des objets RP (balai, ciseaux, etc.).</li><li>Une <b>Perle de pluie</b> (~50% de chance).</li><li>Un <b>Parchemin d'XP de 10 minutes</b> (rare).</li></ul>",
         "images": [],
         "order": 1
       },
       {
-        "title": "Académie -4",
-        "description": "<p>En plus des nombreux coffres du donjon du Cerberus, vous trouverez au -4 les coffres iridium et les coffres ivoire </p>\n\n<p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
+        "title": "Niveau -4",
+        "description": "<p>En plus du donjon du Cerberus, ce niveau abrite les <b>Coffres Iridium</b> et les <b>Coffres Ivoire</b> (voir leurs quêtes dédiées).</p>",
         "images": [],
         "order": 2
       }
     ],
-    "credits": []
+    "credits": ["T4C NMS Révolution wiki"]
   },
   {
     "title": "Crypte de Stonecrest",
     "slug": "crypte-de-stonecrest",
     "zone": "Stoneheim",
-    "prerequisites": [],
-    "rewards": [],
-    "npcs": [],
+    "prerequisites": ["Niveau 120+ recommandé"],
+    "rewards": ["Armure de Plaque Océane (125 endu)", "Cœur de l'Océan", "Amulette du Héros", "Cape d'Élémendil"],
+    "npcs": ["Lord Stonecrest"],
     "gold": "",
     "steps": [
       {
-        "title": "La crypte du Lord Stonecrest",
-        "description": "<p>Le Lord Stonecrest permet d'obtenir toutes les parties de l'<b>Armure de Plaque Océane</b> (125 endu), le <b>Coeur de l'Océan</b> ainsi que l'<b>Amulette du Héros</b>. </p>\n\n<p>Les invocations du Lord dropent parfois une <b>Cape d'Élémendil</b> (le Lord invoque lorsqu'il attaqué au corps à corps). </p>",
-        "images": [],
+        "title": "Cheminement",
+        "description": "<p>Traversez la crypte en suivant l'ordre des flèches vertes (de 1 à 13) pour atteindre le <b>Puits</b> au niveau gris.</p>",
+        "images": [
+          "/t4c-nms-overview/assets/quests/crypte-de-stonecrest/img_3_0.jpg",
+          "/t4c-nms-overview/assets/quests/crypte-de-stonecrest/img_4_0.jpg",
+          "/t4c-nms-overview/assets/quests/crypte-de-stonecrest/img_5_0.jpg"
+        ],
         "order": 0
       },
       {
-        "title": "Cheminement à suivre",
-        "description": "<p>Il suffit de suivre les numéros (1 à 13) des <b>flèches vertes</b> dans l'ordre pour arriver au puits qui vous mènera vers le tombeau du Lord. </p>\n\n<p>Les flèches jaunes quant à elles servent uniquement à se rendre aux différents coffres (sans grand intérêt). </p>\n\n<p>Une fois arrivé au puits (situé niveau gris au point 13 des flèches vertes), cliquez sur celui-ci. </p>\n\n<p>Vous recevrez <b>1 Clef couverte de rosée</b>. </p>\n\n<p>Au même moment, vous serez téléporté au niveau du tombeau du Lord Stonecrest, dans une salle contenant 5 coffres. </p>",
+        "title": "La Clé de Rosée",
+        "description": "<p>Cliquez sur le puits pour recevoir une <b>Clé couverte de rosée</b>. Vous serez téléporté dans une salle avec 5 coffres. Un seul d'entre eux contient la clé permettant d'accéder au tombeau.</p><p>⚠️ <b>Tip :</b> Vous pouvez sortir avec la clé de rosée pour la vendre à un autre joueur (elle ouvre aussi les coffres ivoire).</p>",
         "images": [],
         "order": 1
       },
       {
-        "title": "Option particulière à NMS",
-        "description": "<p><b>Attention : ici, si vous êtes venus pour conserver la clé de rosée pour la vendre à un autre joueur (elle peut servir à ouvrir un coffre ivoire), il faut à ce moment quitter la crypte et déposer la clé de rosée (par exemple dans votre coffre de SH) avant de recommencer la prochaine tournée.</b> </p>\n\n<p>Suite habituelle : Si vous poursuivez l'accès au Lord, la clef pour accéder au Lord Stonecrest est cachée aléatoirement dans 1 des 5 coffres. </p>\n\n<p>Votre <b>Clef couverte de rosée</b> peut ouvrir seulement 1 de ces 5 coffres et se réduira en poussière après utilisation. </p>\n\n<p>La clef en os effritée permettant d’accéder au tombeau du Lord restera dans le même coffre jusqu'à ce qu'un joueur la trouve. </p>\n\n<p>Une fois la clé trouvée rendez-vous au au tombeau du Lord, ouvrez-le pour faire apparaître le Lord, combattez-le (éventuellement au CAC pour ne pas le tuer trop vite et le faire invoquer si vous cherchez la cape <b>d'Élémendil</b> ) et espérez des drops !! </p>\n\n<p>Le temps de respawn du Lord est de 30 minutes. </p>",
+        "title": "Le Lord Stonecrest",
+        "description": "<p>Ouvrez le tombeau avec la clé trouvée pour faire apparaître le <b>Lord Stonecrest</b> (repop 30 min).</p><p><b>Tip :</b> Attaquez-le au corps à corps pour qu'il invoque des sbires pouvant looter la <b>Cape d'Élémendil</b>.</p>",
         "images": [],
         "order": 2
-      },
-      {
-        "title": "Niveau Gris",
-        "description": "<p><br/></p>",
-        "images": [
-          "/t4c-nms-overview/assets/quests/crypte-de-stonecrest/img_3_0.jpg"
-        ],
-        "order": 3
-      },
-      {
-        "title": "Niveau Vert",
-        "description": "<p><br/></p>",
-        "images": [
-          "/t4c-nms-overview/assets/quests/crypte-de-stonecrest/img_4_0.jpg"
-        ],
-        "order": 4
-      },
-      {
-        "title": "Niveau Violet",
-        "description": "<p><br/></p>",
-        "images": [
-          "/t4c-nms-overview/assets/quests/crypte-de-stonecrest/img_5_0.jpg"
-        ],
-        "order": 5
-      },
-      {
-        "title": "Niveau Bleu",
-        "description": "<p><br/></p>",
-        "images": [],
-        "order": 6
-      },
-      {
-        "title": "Tombeau du Lord",
-        "description": "<p><br/></p>\n\n<p> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> <big></big> </p>",
-        "images": [],
-        "order": 7
       }
     ],
-    "credits": []
+    "credits": ["T4C NMS Révolution wiki"]
   },
   {
     "title": "Donjon du Cerberus",
