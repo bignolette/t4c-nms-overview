@@ -102,18 +102,28 @@ export const findItemsInQuest = (quest: Quest): string[] => {
 export const highlightKeywords = (html: string): string => {
   if (!html) return html;
 
+  // 1. First, strip any existing npc-keyword styling to avoid nested spans
+  // and allow the regex to match clean text
   let processed = html;
+  
+  // Remove existing npc-keyword spans and keep content
+  // We do this multiple times or use a broader regex to catch nested/multiple spans
+  processed = processed.replace(/<span class=['"]npc-keyword['"]>(.*?)<\/span>/gi, '$1');
+  processed = processed.replace(/<span class=['"]text-amber-500['"]>(.*?)<\/span>/gi, '$1');
+  processed = processed.replace(/<span class=['"]text-slate-100 font-bold['"]>(.*?)<\/span>/gi, '$1');
+  // Second pass for potentially nested structures
+  processed = processed.replace(/<span class=['"]npc-keyword['"]>(.*?)<\/span>/gi, '$1');
 
-  // 1. Handle "Vous avez dit : <b>Keyword</b>" pattern (unquoted bold text)
+  // 2. Handle "Vous avez dit : <b>Keyword</b>" pattern (unquoted bold text)
   // We explicitly add quotes and style it
   processed = processed.replace(/Vous avez dit\s*:\s*<(b|strong)>([^<]+)<\/\1>/gi, (_match, _tag, text) => {
     return `Vous avez dit : <span class='npc-keyword'><span class='text-amber-500'>"</span><span class='text-slate-100 font-bold'>${text}</span><span class='text-amber-500'>"</span></span>`;
   });
 
-  // 2. Handle standard triggers followed by quoted text
+  // 3. Handle standard triggers followed by quoted text
   // Regex to find triggers followed by quoted text
-  // Triggers: parlez/dites/répondez/dire/mots-clés/demandez/puis/ou...
-  const triggerPattern = /(parlez(?:[- ]lui)?|dites(?:[- ](?:lui|directement|une (?:derni[èe]re )?fois))?|r[ée]pondez(?:[- ]lui)?|dire|mots?[- ]cl[ée]s?|demandez(?:[- ]lui)?|puis|ou(?: (?:simplement|m[êe]me|encore))?)\s*[:,-]?\s*((?:[«"“][^"»”]+[»"”][\s,:;-]*(?:\b(?:ou|et|soit|sinon|simplement|m[êe]me|bien|alors|puis|encore)\b[\s,:;-]*)*)+)/gi;
+  // Triggers: parlez/dites/répondez/répondre/dire/mots-clés/demandez/tapez/entrez/prononcez/puis/ou...
+  const triggerPattern = /(parlez(?:[- ]lui)?|dites(?:[- ](?:lui|directement|une (?:derni[èe]re )?fois))?|r[ée]pondez(?:[- ]lui)?|r[ée]pondre|dire|mots?[- ]cl[ée]s?|demandez(?:[- ]lui)?|tapez|entrez|prononcez|puis|ou(?: (?:simplement|m[êe]me|encore))?)\s*[:,-]?\s*((?:[«"“][^"»”]+[»"”][\s,:;-]*(?:\b(?:ou|et|soit|sinon|simplement|m[êe]me|bien|alors|puis|encore)\b[\s,:;-]*)*)+)/gi;
 
   return processed.replace(triggerPattern, (_match, trigger, content) => {
     // Style the content parts
