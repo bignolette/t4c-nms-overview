@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import type { Quest } from '../data/quests';
-import { linkItemsInHtml, highlightKeywords, formatLists, cleanTitle, cleanHtml } from '../data/quest-item-link';
+import { highlightKeywords, formatLists, cleanTitle, cleanHtml } from '../data/quest-item-link';
 import { 
   ChevronDown, MapPin, Coins, Trophy, 
   Scroll, CheckCircle, Copy, ImageIcon,
   Maximize2, Sparkles, ArrowRight,
-  Shield
+  Shield, Flame, Zap
 } from 'lucide-react';
 import ImageModal from './ImageModal';
 
@@ -18,12 +18,10 @@ const QuestCard: React.FC<QuestCardProps> = ({ quest }) => {
   const [completedSteps, setCompletedSteps] = useState<number[]>([]);
   const [copyStatus, setCopyStatus] = useState<string | null>(null);
   
-  // Gallery state
   const [modalData, setModalData] = useState<{ images: string[], index: number } | null>(null);
 
   const processedSteps = useMemo(() => {
     return quest.steps.map(step => {
-      // Pipeline: Clean Source -> Lists -> Keywords -> Links
       const cleaned = cleanHtml(step.description);
       const withLists = formatLists(cleaned);
       const withKeywords = highlightKeywords(withLists);
@@ -59,137 +57,150 @@ const QuestCard: React.FC<QuestCardProps> = ({ quest }) => {
     }
   };
 
-  const openGallery = (stepImages: string[], initialIndex: number) => {
-    setModalData({ images: stepImages, index: initialIndex });
-  };
-
   const progressPercentage = Math.round((completedSteps.length / quest.steps.length) * 100);
   const isComplete = progressPercentage === 100;
 
   return (
     <div className={`
-      relative mb-8 rounded-2xl transition-all duration-500 overflow-hidden group
+      relative mb-6 rounded-3xl transition-all duration-500 overflow-hidden group
       ${isOpen 
-        ? 'bg-slate-900/80 ring-1 ring-amber-500/30 shadow-[0_0_50px_rgba(245,158,11,0.1)]' 
-        : 'bg-slate-900/40 hover:bg-slate-800/60 border border-slate-800 hover:border-slate-600'}
+        ? 'bg-slate-900/90 ring-1 ring-amber-500/40 shadow-[0_0_60px_-15px_rgba(245,158,11,0.15)] backdrop-blur-xl' 
+        : 'bg-slate-900/40 hover:bg-slate-800/60 border border-slate-800 hover:border-slate-600/50'}
     `}>
-      {/* Background Decor */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/5 rounded-full blur-3xl -mr-32 -mt-32 pointer-events-none" />
+      {/* Dynamic Glow Background */}
+      <div className={`
+        absolute top-0 right-0 w-96 h-96 rounded-full blur-[120px] -mr-48 -mt-48 pointer-events-none transition-opacity duration-1000
+        ${isComplete ? 'bg-emerald-500/10' : isOpen ? 'bg-amber-500/10' : 'bg-slate-500/5'}
+      `} />
       
       {/* Header Section */}
       <div 
-        className="relative p-6 cursor-pointer select-none"
+        className="relative p-6 md:p-8 cursor-pointer select-none"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <div className="flex items-start gap-6">
-          {/* Icon Badge */}
+        <div className="flex items-center gap-6">
+          {/* Icon Badge - RPG Style */}
           <div className={`
-            relative shrink-0 w-14 h-14 rounded-xl flex items-center justify-center border transition-all duration-500
+            relative shrink-0 w-16 h-16 rounded-2xl flex items-center justify-center border-2 transition-all duration-500
             ${isComplete 
-              ? 'bg-emerald-500/10 border-emerald-500/50 text-emerald-400 shadow-lg shadow-emerald-500/20' 
+              ? 'bg-emerald-500/20 border-emerald-500/50 text-emerald-400 shadow-[0_0_20px_rgba(16,185,129,0.2)]' 
               : isOpen 
-                ? 'bg-amber-500/10 border-amber-500/50 text-amber-500 shadow-lg shadow-amber-500/20'
-                : 'bg-slate-800 border-slate-700 text-slate-500'}
+                ? 'bg-amber-500/20 border-amber-500/50 text-amber-500 shadow-[0_0_20px_rgba(245,158,11,0.2)]'
+                : 'bg-slate-800/50 border-slate-700 text-slate-500 group-hover:border-slate-600'}
           `}>
-            {isComplete ? <CheckCircle size={28} /> : <Scroll size={28} />}
+            {isComplete ? <CheckCircle size={32} /> : <Scroll size={32} />}
             
-            {/* Completion Badge */}
-            {completedSteps.length > 0 && !isComplete && (
-              <div className="absolute -bottom-2 -right-2 bg-slate-900 text-amber-500 text-[10px] font-bold px-2 py-0.5 rounded-full border border-amber-500/30 shadow-sm">
-                {progressPercentage}%
-              </div>
+            {/* Animated Ring for open state */}
+            {isOpen && !isComplete && (
+              <div className="absolute inset-[-4px] border border-amber-500/20 rounded-[20px] animate-pulse" />
             )}
           </div>
 
           <div className="flex-1 min-w-0">
-            <div className="flex items-center gap-3 mb-1">
+            <div className="flex flex-wrap items-center gap-2 mb-2">
               <span className={`
-                inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[10px] font-black uppercase tracking-widest border
+                inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest border
                 ${isComplete 
                   ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20' 
-                  : 'bg-slate-800/50 text-slate-400 border-slate-700'}
+                  : 'bg-slate-800 text-slate-400 border-slate-700'}
               `}>
                 <MapPin size={10} /> {quest.zone}
               </span>
-              {quest.gold && (
-                <span className="hidden sm:inline-flex items-center gap-1.5 text-[10px] font-bold text-amber-400/80 uppercase tracking-widest">
-                  <Coins size={10} /> {quest.gold} PO
+              {isComplete && (
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 text-[10px] font-black uppercase tracking-widest">
+                  Terminée
                 </span>
               )}
             </div>
             
             <h3 className={`
-              text-xl md:text-2xl font-black tracking-tight transition-colors duration-300
-              ${isComplete ? 'text-emerald-400' : isOpen ? 'text-slate-100' : 'text-slate-200'}
+              text-xl md:text-3xl font-black tracking-tight transition-all duration-300
+              ${isComplete ? 'text-emerald-400' : isOpen ? 'text-white' : 'text-slate-200 group-hover:text-white'}
             `}>
               {quest.title}
             </h3>
-
-            {/* Micro-preview of next step if closed */}
-            {!isOpen && !isComplete && (
-              <p className="text-sm text-slate-500 mt-2 truncate font-medium">
-                <span className="text-amber-500/70 mr-2">Objectif actuel :</span>
-                {processedSteps[completedSteps.length]?.title || "Terminer la quête"}
-              </p>
-            )}
           </div>
 
           <div className={`
-            p-2 rounded-full transition-all duration-300
-            ${isOpen ? 'bg-slate-800 text-amber-500 rotate-180' : 'text-slate-600 hover:text-slate-400'}
+            hidden sm:flex flex-col items-end gap-1 px-4 py-2 rounded-2xl transition-all duration-300
+            ${isOpen ? 'bg-amber-500/10 text-amber-500' : 'text-slate-600'}
           `}>
-            <ChevronDown size={20} />
+            <div className="text-[10px] font-black uppercase tracking-tighter opacity-60">Progression</div>
+            <div className="text-xl font-black font-mono leading-none">{progressPercentage}%</div>
+          </div>
+
+          <div className={`
+            p-3 rounded-xl transition-all duration-300
+            ${isOpen ? 'bg-amber-500 text-slate-900 shadow-lg' : 'bg-slate-800 text-slate-500 hover:text-slate-300'}
+          `}>
+            <ChevronDown size={24} className={`transition-transform duration-500 ${isOpen ? 'rotate-180' : ''}`} />
           </div>
         </div>
         
-        {/* Progress Bar (Bottom of header) */}
-        {isOpen && (
-          <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-slate-800">
-            <div 
-              className="h-full bg-gradient-to-r from-amber-600 to-amber-400 transition-all duration-500"
-              style={{ width: `${progressPercentage}%` }}
-            />
-          </div>
-        )}
+        {/* Sleek Progress Bar */}
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-slate-800/50">
+          <div 
+            className={`h-full transition-all duration-1000 ease-out ${isComplete ? 'bg-emerald-500' : 'bg-gradient-to-r from-amber-600 to-amber-400'}`}
+            style={{ width: `${progressPercentage}%` }}
+          />
+        </div>
       </div>
 
       {/* Expanded Content */}
       {isOpen && (
-        <div className="animate-in slide-in-from-top-4 fade-in duration-300">
+        <div className="animate-in slide-in-from-top-4 fade-in duration-500">
           
-          {/* Quick Stats / Loot Bar */}
-          <div className="px-8 py-6 bg-slate-950/30 border-b border-slate-800/50 flex flex-wrap gap-4">
+          {/* Quick Info Grid */}
+          <div className="px-8 py-8 bg-slate-950/40 border-b border-slate-800/50 grid grid-cols-1 md:grid-cols-2 gap-6">
             
-            {/* XP / Gold */}
+            {/* XP / Gold / Rewards - Refined Design */}
             {(quest.gold || quest.rewards.length > 0) && (
-              <div className="flex-1 min-w-[280px] p-3 rounded-xl bg-slate-900/50 border border-slate-800 flex items-start gap-3">
-                <div className="p-2 bg-emerald-500/10 rounded-lg text-emerald-500">
-                  <Trophy size={18} />
+              <div className="relative group/reward overflow-hidden p-5 rounded-2xl bg-gradient-to-br from-emerald-500/5 to-transparent border border-emerald-500/10 flex items-start gap-4">
+                <div className="absolute top-0 right-0 p-4 opacity-5 group-hover/reward:opacity-10 transition-opacity">
+                  <Trophy size={80} />
                 </div>
-                <div>
-                  <div className="text-[10px] font-bold text-emerald-500/70 uppercase tracking-widest mb-1">Récompenses</div>
-                  <div className="text-xs text-slate-300 space-y-1">
-                    {quest.gold && <div className="flex items-center gap-1.5"><Coins size={12} className="text-amber-400"/> {quest.gold} pièces d'or</div>}
+                <div className="p-3 bg-emerald-500/10 rounded-xl text-emerald-500 ring-1 ring-emerald-500/20">
+                  <Trophy size={20} />
+                </div>
+                <div className="relative z-10">
+                  <div className="text-[11px] font-black text-emerald-500/80 uppercase tracking-widest mb-2 flex items-center gap-2">
+                    Butin & Récompenses <Sparkles size={12} />
+                  </div>
+                  <div className="space-y-2">
+                    {quest.gold && (
+                      <div className="flex items-center gap-2 text-sm font-bold text-amber-100">
+                        <Coins size={14} className="text-amber-400"/> {quest.gold} <span className="text-[10px] text-amber-500/60 uppercase">Pièces d'or</span>
+                      </div>
+                    )}
                     {quest.rewards.map((r, i) => (
-                      <div key={i} className="flex items-center gap-1.5"><Sparkles size={12} className="text-purple-400"/> {r}</div>
+                      <div key={i} className="flex items-center gap-2 text-sm font-bold text-slate-200">
+                        <div className="w-1 h-1 rounded-full bg-emerald-500" />
+                        {r}
+                      </div>
                     ))}
                   </div>
                 </div>
               </div>
             )}
 
-            {/* Prerequisites */}
+            {/* Prerequisites - Refined Design */}
             {quest.prerequisites.length > 0 && (
-              <div className="flex-1 min-w-[280px] p-3 rounded-xl bg-slate-900/50 border border-slate-800 flex items-start gap-3">
-                 <div className="p-2 bg-rose-500/10 rounded-lg text-rose-500">
-                  <Shield size={18} />
+              <div className="relative group/req overflow-hidden p-5 rounded-2xl bg-gradient-to-br from-rose-500/5 to-transparent border border-rose-500/10 flex items-start gap-4">
+                <div className="absolute top-0 right-0 p-4 opacity-5 group-hover/req:opacity-10 transition-opacity">
+                  <Shield size={80} />
                 </div>
-                <div>
-                  <div className="text-[10px] font-bold text-rose-500/70 uppercase tracking-widest mb-1">Prérequis</div>
-                  <ul className="text-xs text-slate-300 space-y-1">
+                <div className="p-3 bg-rose-500/10 rounded-xl text-rose-500 ring-1 ring-rose-500/20">
+                  <Shield size={20} />
+                </div>
+                <div className="relative z-10">
+                  <div className="text-[11px] font-black text-rose-500/80 uppercase tracking-widest mb-2 flex items-center gap-2">
+                    Prérequis requis <Flame size={12} />
+                  </div>
+                  <ul className="space-y-2">
                     {quest.prerequisites.map((req, i) => (
-                      <li key={i} className="flex items-start gap-1.5">
-                        <span className="text-rose-500 mt-0.5">•</span> {req}
+                      <li key={i} className="text-sm font-bold text-slate-200 flex items-center gap-2">
+                        <div className="w-1 h-1 rounded-full bg-rose-500" />
+                        {req}
                       </li>
                     ))}
                   </ul>
@@ -198,88 +209,97 @@ const QuestCard: React.FC<QuestCardProps> = ({ quest }) => {
             )}
           </div>
 
-          {/* Timeline Section */}
-          <div className="p-8 relative">
-            {/* Vertical Connector Line */}
-            <div className="absolute left-[54px] top-8 bottom-8 w-[2px] bg-slate-800">
+          {/* Steps Section */}
+          <div className="p-8 md:p-12 relative bg-slate-900/20">
+            {/* Center Connection Line */}
+            <div className="absolute left-[54px] md:left-[70px] top-12 bottom-12 w-[3px] bg-slate-800 rounded-full shadow-inner">
               <div 
-                className="w-full bg-gradient-to-b from-amber-500 to-amber-700 transition-all duration-700 ease-out"
-                style={{ height: `${(completedSteps.length / Math.max(1, quest.steps.length - 1)) * 100}%` }}
+                className="w-full bg-gradient-to-b from-amber-400 via-amber-500 to-amber-700 transition-all duration-1000 ease-out shadow-[0_0_15px_rgba(245,158,11,0.3)]"
+                style={{ height: `${(completedSteps.length / Math.max(1, quest.steps.length)) * 100}%` }}
               />
             </div>
 
-            <div className="space-y-12">
+            <div className="space-y-16">
               {processedSteps.map((step, idx) => {
                 const isStepComplete = completedSteps.includes(idx);
                 const isNext = !isStepComplete && (idx === 0 || completedSteps.includes(idx - 1));
 
                 return (
-                  <div key={idx} className={`relative flex gap-8 group ${isStepComplete ? 'opacity-60 hover:opacity-100 transition-opacity' : ''}`}>
+                  <div key={idx} className={`relative flex gap-8 md:gap-12 group ${isStepComplete ? 'opacity-50' : ''}`}>
                     
-                    {/* Timeline Node */}
+                    {/* Step Orb */}
                     <div className="relative z-10 shrink-0">
                       <button 
                         onClick={() => toggleStep(idx)}
                         className={`
-                          w-14 h-14 flex items-center justify-center rounded-xl border-2 transform rotate-45 transition-all duration-300 shadow-xl
+                          w-12 h-12 md:w-16 md:h-16 flex items-center justify-center rounded-2xl border-2 transform rotate-45 transition-all duration-500 shadow-2xl
                           ${isStepComplete 
-                            ? 'bg-amber-500 border-amber-400 text-slate-900 scale-90' 
+                            ? 'bg-emerald-500 border-emerald-400 text-slate-900' 
                             : isNext 
-                              ? 'bg-slate-900 border-amber-500/50 text-amber-500 scale-100 animate-pulse-slow' 
-                              : 'bg-slate-950 border-slate-700 text-slate-600 scale-90'}
-                        `}
-                      >
-                        <div className="-rotate-45 font-black text-lg">
-                          {isStepComplete ? <CheckCircle size={24} /> : idx + 1}
+                              ? 'bg-amber-500 border-white text-slate-900 scale-110 shadow-amber-500/40' 
+                              : 'bg-slate-900 border-slate-700 text-slate-500'}
+                        `}>
+                        <div className="-rotate-45 font-black text-xl md:text-2xl">
+                          {isStepComplete ? <CheckCircle size={28} /> : idx + 1}
                         </div>
+                        {isNext && (
+                          <div className="absolute inset-0 rounded-2xl border-4 border-white/30 animate-ping" />
+                        )}
                       </button>
                     </div>
 
-                    {/* Content Card */}
+                    {/* Step Card */}
                     <div className={`
-                      flex-1 min-w-0 bg-slate-900/50 border rounded-2xl p-6 transition-all duration-300
-                      ${isNext ? 'border-amber-500/30 ring-1 ring-amber-500/10 bg-gradient-to-br from-slate-900/50 to-amber-900/5' : 'border-slate-800'}
+                      flex-1 min-w-0 rounded-3xl p-6 md:p-8 transition-all duration-500 border-2
+                      ${isNext 
+                        ? 'bg-slate-800/80 border-amber-500/50 shadow-2xl shadow-amber-500/5' 
+                        : isStepComplete 
+                          ? 'bg-slate-900/20 border-slate-800'
+                          : 'bg-slate-900/40 border-slate-800'}
                     `}>
-                      {/* Step Header */}
-                      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4 border-b border-slate-800/50 pb-4">
-                        <h4 className={`text-lg font-bold ${isStepComplete ? 'text-slate-500 line-through decoration-slate-600' : isNext ? 'text-amber-100' : 'text-slate-300'}`}>
-                          {step.title}
-                        </h4>
+                      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                        <div className="flex items-center gap-3">
+                          {isNext && <Zap size={18} className="text-amber-500 animate-pulse" />}
+                          <h4 className={`text-xl md:text-2xl font-black ${isStepComplete ? 'text-slate-500 line-through' : isNext ? 'text-white' : 'text-slate-300'}`}>
+                            {step.title}
+                          </h4>
+                        </div>
                         
                         {step.images.length > 0 && (
-                          <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-slate-500 bg-slate-950/50 px-3 py-1 rounded-full border border-slate-800">
-                            <ImageIcon size={12} /> {step.images.length} Image{step.images.length > 1 ? 's' : ''}
+                          <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 bg-slate-950 px-4 py-1.5 rounded-full border border-slate-800 shadow-inner">
+                            <ImageIcon size={12} /> {step.images.length} ARCHIVE{step.images.length > 1 ? 'S' : ''}
                           </div>
                         )}
                       </div>
 
-                      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-                        {/* Narrative Content */}
-                        <div className={`${step.images.length > 0 ? 'lg:col-span-8' : 'lg:col-span-12'}`}>
+                      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                        <div className={`${step.images.length > 0 ? 'lg:col-span-7' : 'lg:col-span-12'}`}>
                            <div 
                             className={`
-                              prose prose-invert prose-sm max-w-none 
-                              prose-p:text-slate-300 prose-p:leading-relaxed prose-p:mb-4
-                              prose-strong:text-slate-100 prose-strong:font-black
-                              prose-li:text-slate-300 prose-ul:my-2
+                              prose prose-invert prose-base max-w-none 
+                              prose-p:text-slate-300 prose-p:leading-relaxed prose-p:mb-6
+                              prose-strong:text-amber-200 prose-strong:font-black
+                              prose-li:text-slate-300 prose-ul:my-4
+                              prose-b:text-amber-200
                             `}
                             onClick={handleContentClick}
                             dangerouslySetInnerHTML={{ __html: step.description }} 
                           />
                         </div>
 
-                        {/* Gallery Preview */}
                         {step.images.length > 0 && (
-                          <div className="lg:col-span-4 space-y-3">
+                          <div className="lg:col-span-5 grid grid-cols-1 gap-4">
                             {step.images.map((img, i) => (
                               <div 
                                 key={i}
-                                onClick={() => openGallery(step.images, i)}
-                                className="group/img relative aspect-video rounded-lg overflow-hidden border border-slate-700 bg-slate-950 cursor-zoom-in hover:border-amber-500/50 transition-all"
+                                onClick={() => setModalData({ images: step.images, index: i })}
+                                className="group/img relative aspect-[16/10] rounded-2xl overflow-hidden border-2 border-slate-700 bg-slate-950 cursor-zoom-in hover:border-amber-500/50 transition-all shadow-xl"
                               >
-                                <img src={img} alt="" className="w-full h-full object-cover opacity-80 group-hover/img:opacity-100 transition-opacity" />
-                                <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 group-hover/img:opacity-100 transition-opacity">
-                                  <Maximize2 className="text-white drop-shadow-md" size={20} />
+                                <img src={img} alt="" className="w-full h-full object-cover opacity-70 group-hover/img:opacity-100 group-hover/img:scale-105 transition-all duration-700" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent opacity-0 group-hover/img:opacity-100 transition-opacity flex items-end p-4">
+                                  <div className="flex items-center gap-2 text-white font-black text-[10px] uppercase tracking-widest">
+                                    <Maximize2 size={14} /> Agrandir l'image
+                                  </div>
                                 </div>
                               </div>
                             ))}
@@ -287,19 +307,17 @@ const QuestCard: React.FC<QuestCardProps> = ({ quest }) => {
                         )}
                       </div>
 
-                      {/* Step Footer Actions */}
-                      <div className="mt-6 flex justify-end">
+                      <div className="mt-8 pt-6 border-t border-slate-800/50 flex justify-end">
                         <button
                           onClick={() => toggleStep(idx)}
                           className={`
-                            flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-widest transition-all
+                            flex items-center gap-3 px-6 py-3 rounded-xl text-sm font-black uppercase tracking-widest transition-all shadow-lg
                             ${isStepComplete 
-                              ? 'text-slate-500 hover:text-slate-300' 
-                              : 'bg-amber-500 text-slate-900 hover:bg-amber-400 shadow-lg shadow-amber-500/20'}
-                          `}
-                        >
-                          {isStepComplete ? 'Marquer comme inachevé' : 'Terminer l\'étape'}
-                          {!isStepComplete && <ArrowRight size={14} />}
+                              ? 'bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-white' 
+                              : 'bg-amber-500 text-slate-900 hover:bg-amber-400 shadow-amber-500/20 active:scale-95'}
+                          `}>
+                          {isStepComplete ? 'Inachevé' : 'Terminer l\'étape'}
+                          {!isStepComplete && <ArrowRight size={16} />}
                         </button>
                       </div>
                     </div>
@@ -309,13 +327,13 @@ const QuestCard: React.FC<QuestCardProps> = ({ quest }) => {
             </div>
           </div>
           
-          {/* Credits */}
+          {/* Contribution Footer */}
           {quest.credits && quest.credits.length > 0 && (
-             <div className="bg-slate-950/50 py-6 text-center border-t border-slate-800">
-               <p className="text-[10px] text-slate-600 font-bold uppercase tracking-[0.2em] mb-2">Contributeurs</p>
-               <div className="flex justify-center gap-2">
+             <div className="bg-slate-950 py-8 text-center border-t border-slate-800">
+               <div className="text-[10px] text-slate-600 font-black uppercase tracking-[0.3em] mb-4">Crédits & Contributions</div>
+               <div className="flex flex-wrap justify-center gap-3">
                  {quest.credits.map((c, i) => (
-                   <span key={i} className="text-xs text-slate-500">{c}</span>
+                   <span key={i} className="px-3 py-1 rounded-lg bg-slate-900 border border-slate-800 text-xs font-bold text-slate-500">{c}</span>
                  ))}
                </div>
              </div>
@@ -323,10 +341,14 @@ const QuestCard: React.FC<QuestCardProps> = ({ quest }) => {
         </div>
       )}
 
-      {/* Utilities */}
+      {/* Feedback Toast */}
       {copyStatus && (
-        <div className="fixed bottom-12 left-1/2 -translate-x-1/2 bg-cyan-500 text-slate-950 px-6 py-3 rounded-xl font-bold shadow-xl shadow-cyan-500/20 animate-bounce z-[110] flex items-center gap-3 border-2 border-white/10">
-          <Copy size={18} /> {copyStatus}
+        <div className="fixed bottom-12 left-1/2 -translate-x-1/2 bg-cyan-500 text-slate-950 px-8 py-4 rounded-2xl font-black shadow-[0_20px_50px_rgba(6,182,212,0.3)] animate-in slide-in-from-bottom-10 fade-in z-[110] flex items-center gap-4 border-2 border-white/20">
+          <div className="p-2 bg-white/20 rounded-lg"><Copy size={20} /></div>
+          <div className="flex flex-col">
+            <span className="text-[10px] uppercase opacity-70 leading-none mb-1">Coordonnées copiées</span>
+            <span className="text-sm font-mono tracking-wider">{copyStatus}</span>
+          </div>
         </div>
       )}
 
