@@ -12,11 +12,20 @@ export const fastNormalize = (text: string): string => {
     .toLowerCase()
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
-    .replace(/['']/g, ' ')
-    .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "")
-    .replace(/\b(le|la|les|de|du|des|d|un|une|au|aux)\b/g, "")
+    .replace(/['’]/g, ' ') // Handle both types of apostrophes
+    .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, " ") // Replace punctuation with space to keep words separate
+    .replace(/\b(le|la|les|de|du|des|d|un|une|au|aux|l)\b/g, "")
     .split(/\s+/)
-    .map(word => (word.length > 3 && (word.endsWith('s') || word.endsWith('x'))) ? word.slice(0, -1) : word)
+    .filter(word => word.length > 0)
+    .map(word => {
+      // More robust singularization
+      if (word.length > 3) {
+        if (word.endsWith('s')) return word.slice(0, -1);
+        if (word.endsWith('aux')) return word.slice(0, -3) + 'al';
+        if (word.endsWith('x')) return word.slice(0, -1);
+      }
+      return word;
+    })
     .join(" ")
     .replace(/\s+/g, " ")
     .trim();
