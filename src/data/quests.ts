@@ -737,8 +737,8 @@ export const quests: Quest[] = [
     ]
   },
   {
-    "title": "La lettre de Crimsonscale",
-    "slug": "la-lettre-de-crimsonscale",
+    "title": "La lettre de Crimsonscale (AR)",
+    "slug": "la-lettre-de-crimsonscale-AR",
     "zone": "Arakas",
     "prerequisites": [],
     "rewards": [],
@@ -1605,8 +1605,8 @@ export const quests: Quest[] = [
     ]
   },
   {
-    "title": "La lettre de Crimsonscale",
-    "slug": "la-lettre-de-crimsonscale",
+    "title": "La lettre de Crimsonscale (RD)",
+    "slug": "la-lettre-de-crimsonscale-rd",
     "zone": "Raven's Dust",
     "prerequisites": [],
     "rewards": [],
@@ -2993,53 +2993,6 @@ export const quests: Quest[] = [
         "description": "<p><b>3 bobines de fil d'or et :</b></p><br/><ul><li>Un ornement de rubis pour une robe rouge</li> <li>Un ornement de saphir pour une robe bleue</li> <li>Un ornement de diamant pour une robe blanche ou jaune</li> <li>Un ornement d'émeraude pour une robe marron</li></ul><br/><p>Voyez la quête des ornements pour savoir comment obtenir les ornements (sauf cobalt).</p><br/><p>3 bobines de fil d'or (obtenues à partir de minerai d'or) pour la toge étincelante et</p><br/><ul><li>Deux ornements de cobalt (il vous faut 2 minerais de cobalt par ornement, minés sur les gisements d'argent de la grotte Orc RD). <ul><li>Pour faire les ornements de cobalt, aller dans la cave des Skraugs verts muni des minerais et parler à Brikdétruk (<b>position</b> <b>1952,1406</b>). Puis lui dire <span class=\"npc-keyword\">\"Travail\"</span> plusieurs fois de suite.</li></ul></li></ul><ul><li>Pour faire les ornements de cobalt, aller dans la cave des Skraugs verts muni des minerais et parler à Brikdétruk (<b>position</b> <b>1952,1406</b>). Puis lui dire <span class=\"npc-keyword\">\"Travail\"</span> plusieurs fois de suite.</li></ul><br/><p>Les bobines se craftent à partir de pépites d'or . Autre solution : 3 coffres dropent (parfois) directement une bobine de fil d'or sur Arakas :</p><br/><ul><li>Aux druides d'Arakas Audrey (celle qui fait les robes de couleurs. pos <b>2935,155</b>)</li> <li>Au village nain 2ème maison (pos: <b>2652,391</b>)</li> <li>Cave D des montagnes de Jarko, à côté de Trish Jalnec (celui qui drope la pioche de lh. pos <b>870,2629</b>)</li></ul><br/><p><br></p><br/><p></p>",
         "images": [],
         "order": 2
-      }
-    ],
-    "credits": [
-      "T4C NMS Révolution wiki"
-    ]
-  },
-  {
-    "title": "Les autres quêtes 1.25",
-    "slug": "les-autres-quetes-1-25",
-    "zone": "Arakas",
-    "prerequisites": [],
-    "rewards": [],
-    "npcs": [
-      "Filandrius",
-      "Sentinelle de Windhowl"
-    ],
-    "gold": "",
-    "steps": [
-      {
-        "title": "Le Chef des Mercenaires (Arakas)",
-        "description": "<p>A la fontaine de Lighthaven, cherchez un <b>PNJ</b> nommé Vincent Finelame. Parlez-lui et il vous dira qu’il a besoin d’un groupe d’héros pour faire un assaut sur trois camps différents. Dites <span class=\"npc-keyword\">\"<b>Olin Haad</b>\"</span>, \"<b>Tarnian\"</b>, \"<b>oui</b>\", \"<b>Details</b>\" et il vous donnera plus de détails sur votre quête.</p><br/><p>Dirigez-vous vers le pont ouest de Lighthaven et une fois passé, allez vers le nord. Vous arriverez au 1<sup>er</sup> camp, facile à identifier avec les catapultes. Tuez 15 mercenaires jusqu’à ce que vienne le Lieutenant mercenaire. Tuez-le et dirigez-vous vers le 2<sup>e</sup> camp, situé juste au nord-est de celui où vous êtes. Tuez encore une fois 15 mercenaires et le Lieutenant mercenaire. Dirigez-vous vers l’est et suivez le chemin jusqu’à atteindre le 3<sup>e</sup> camp. Encore une fois tuez les 15 mercenaires et le Lieutenant mercenaire. Vous recevez le message suivant:</p><br/><p><i>Dès que le lieutenant mercenaire s’écroule, vidé de toute vie, vous entendez le son d’un cor de guerre venant du camp nord.</i></p><br/><p>Suivez le chemin vers l'est (la route contourne la montagne et continue vers l'ouest) jusqu’à ce qu’il s’achève. Continuez vers l’ouest et vous arriverez à quelques maisons abandonnées. Trouvez le Chef mercenaire et tuez le. Retournez voir Vincent Finelame.</p><br/><p>Dites-lui \"<b>Récompense</b>\" et vous recevrez 750 xps multipliés par votre niveau actuel et 500 pièces d’or.</p><br/><p><b>Remarque:</b> Vous pouvez effectuer cette quête à volonté.</p><br/><p><b>PNJ</b> impliqué: </b>Vincent Finelame.</p><br/><p><b>Mini-boss impliqués:</b> Mercenaires, Lieutenant mercenaire, Chef des mercenaires.</p><br/><p><b>Récompenses acquises:</b> (750*lvl actuel) xps, 500 pièces d’or.</p>",
-        "images": [],
-        "order": 0
-      },
-      {
-        "title": "Le Livre de la Connaissance Arcane (ceinture instable) (SH)",
-        "description": "<p>Allez à la Grande Bibliothèque (à l’est de l’entrée de la crypte de Raven’s Dust) et parlez à Filandrius. Dites <span class=\"npc-keyword\">\"<b>La magie étrangère</b>\"</span>, \"<b>Besoin</b>\", \"<b>Filnar'thir</b>\", \"<b>Ténèbres</b>\", \"<b>Récupérer ce livre</b>\" et il vous enverra tuer Anthor le Fou et prendre le Livre de la Connaissance Arcane.</p><br/><p>Allez à Stoneheim et trouvez Anthor (il est situé au nord-est de l’entrée de la grotte aux araignées, juste avant les skraugs verts). Maintenant tuez Anthor le Fou, vous recevrez le Livre de la Connaissance Arcane.</p><br/><p><b>Tip</b> : Si vous l'attaquez en physique (war, archer, ou sort physique) et n'êtes pas très fort, après 20 ou 30 secondes il va se régénérer vite et vous aurez du mal à le tuer. Dans ce cas faites vous aider par un mage qui va l'affaiblir à l'aide d'un sort mental et attaquez le à ce moment.</p><br/><p>Retournez-voir Filandrius, cliquez dessus et il prendra le Livre. Vous recevrez une ceinture de protection instable et une gemme de protection instable. Vous pouvez aussi lui demander de vous enseigner des nouveaux sorts (si vous avez les bonnes stats).</p><br/><p><b>PNJ</b> impliqués: </b>Filandrius</p><br/><p><b>Mini-boss impliqués:</b> Anthor le Fou</p><br/><p><b>Récompenses acquises:</b> Ceinture de Protection Instable, Gemme de Protection Instable (0 stats), Nouveaux sorts disponibles.</p><br/><p>PS1: Si par accident vous deletez la ceinture retournez parler à filandrius il vous refera faire la quête.</p><br/><p>PS2: Vous conservez la ceinture en cas de renaissance !</p>",
-        "images": [],
-        "order": 1
-      },
-      {
-        "title": "Le Faucheur de Vie (bracelet et gemme IMMO) (SH)",
-        "description": "<p>La quête des Faucheurs de Vie consiste à tuer les 3 Faucheurs de Vie situés sur chaque île, à raison d’un par île.</p><br/><p>Dirigez-vous vers Windhowl et <u>parlez à la sentinelle de Windhowl</u> (située aux portes de la ville). Dites <span class=\"npc-keyword\">\"<b>aide</b>\"</span> et il vous dira que derrière les portes se trouve Hel, le Faucheur de Vie d’Arakas. Cherchez-le (c’est un <b>PNJ</b> non-séraphe situé vers le nord-ouest de Windhowl <b>récompense\"</b>, vous recevrez 100 xps multipliés par votre niveau et 500 pièces d’or multipliées par votre niveau.</p><br/><p>Maintenant, <u>allez parler à Filandrius</u> (situé dans la Grande Bibliothèque de RD). Il reconnaîtra la pierre spirituelle de Hel et vous dira que c’est intéressant. Dites <span class=\"npc-keyword\">\"<b>Intéressant</b>\"</span>, \"I<b>nnombrables richesses</b>\", \"P<b>ierre spirituelle</b>\" (et non le mot clef pierre spirituelle qui apparaît dans le dialogue), \"<b>Noms</b>\" et <u>il vous donnera le nom des 3 Faucheurs de Vie</u> : Jormungand, Hel et Fenrir. Il vous dira aussi qu’une fois les 3 pierres spirituelles réunies vous devrez trouvez un portail au village des Centaures.</p><br/><p>Dirigez-vous ensuite vers la Tour de Zhakar. Allez vers l’ouest et passez au-dessus de Stonehenge. Suivez la ligne de montagnes et tournez vers l’est à la première ouverture. Continuez vers l’est et vous trouverez le Faucheur de Vie de Raven’s Dust, Jormungand qui ressemble lui aussi à un néphilim <b>délivrer</b>\". Filandrius prendra le Cristal de la Providence et vous recevrez le Bracelet et la Gemme des Immortels.</p><br/><p><b>Remarque #1 :</b> Vous devez être au minimum niveau 50 pour commencer cette quête.... et beaucoup plus pour la finir !!</p><br/><p><b>Remarque #2 : </b>La <b>récompense</b> donnée par la Sentinelle ne peut être obtenue qu’une seule fois par renaissance.</p><br/><p><b>PNJ</b> impliqués : </b>Filandrius, Sentinelle de Windhowl</p><br/><p><b>Mini-boss impliqués :</b> Jormungand, Hel, Fenrir, le Faucheur de Vie (Harvester of Life)</p><br/><p><b>Récompenses acquises :</b> Bracelet et Gemme des Immortels(0 stats), 100 xp * niveau actuel, 500 po * niveau actuel.</p>",
-        "images": [],
-        "order": 2
-      },
-      {
-        "title": "Voyage entre les plans (réservé aux Séraphes level 50+)",
-        "description": "<p>Vous remarquerez que dans chaque ville (et pas que dans les villes) se trouve un portail auxquel vous n'avez pas accès.</p><br/><p>Vous ne pourrez y accéder que si vous êtes Séraphe/Néphi, au moins level 50 et avez terminé la quête d'accès.</p><br/><p>Pour avoir accès à l'Interplan vous devez activer 8 portails (sur 10). Ces portails sont situés à :</p><br/><ol><li>Lighthaven (AR)</li> <li>Windhowl (AR)</li> <li>Camp des Druides (AR)</li> <li>Silversky (RD)</li> <li>Oasis (RD)</li> <li>Bibliothèque (RD)</li> <li>Stonecrest (SH)</li> <li>Ville Centaure (SH)</li></ol><br/><p>Pour activer l'accès approchez-vous d’un portail et sautez dedans. Dites <span class=\"npc-keyword\">\"<b>Creations</b>\"</span>, \"<b>Stop</b>\", \"<b>Yes</b>\". Vous entrez alors à l’intérieur et vous apparaîtrez autre part. Vous avez environ 60 secondes pour tuer Doppelganger. Entrez dans chacun des 8 portails et faites de même. Vous ne pourrez pas rentrez dans un portail déjà fait avant d’avoir fini les huit. Terminez les 8 et vous pourrez traverser les plans (Plane Walking) (cela signifie que vous pouvez utiliser les portails pour voyager de l'un à l'autre). Cette carte de l'interplan vous montre les destinations des portails quand vous traversez les plans.</p><br/><p><b>Remarque 1 :</b> Le meilleur moyen pour tuer Doppelganger, même pour les mages, ce sont les armes physiques (ou à mains nues si vous bénéficiez d'une bonne force). Il est conseillé d'activer si vous en avez vos boucliers offensifs. Les sorts, à moins d’être à un niveau supérieur à 150 ne leur font rien.</p><br/><p><b>Remarque 2</b> : Vous perdez l'accès à chaque renaissance et devrez attendre le niveau 50 pour le refaire.</p><br/><p><b>Remarque 3</b> : Niève et Redwall seront automatiquement activés</p><br/><p><b>Mini-boss impliqués :</b> Doppelganger</p><br/><p><b>Récompense</b> acquise :</b> Planewalking (ou interplan) (plus besoin d’acheter des parchemins de LH, WH, SS, etc.)</p>",
-        "images": [],
-        "order": 3
-      },
-      {
-        "title": "L’Ancienne Plaque Céleste (Quête réservée aux Séraphes)(non répétable)",
-        "description": "<p>Près de la fontaine de Stonecrest, vous trouverez un <b>PNJ</b> appelé Tristan. Parlez-lui et répondez à ses questions. Dites-lui \"<b>oui</b>\", \"<b>oui</b>\", \"<b>récemment</b>\", \"<b>déterraient</b>\" et vous entendrez une histoire au sujet de deux hommes qui creusaient le sol avec des pelles. Ils finirent par trouver un corps de Séraphin et sont partis vers l’est dans leur roulotte.</p><br/><p>Allez vers l’est et suivez le chemin menant aux araignées. Juste avant d’y arriver, vous verrez un petit camp avec des guerriers Obsidian Conclave. Tuez-en environ dix jusqu’à ce qu’apparaisse le commandant Mordred. Tuez-le et vous obtiendrez une petite clé en fer. Avec celle-ci, ouvrez le coffre situé dans le camp, vous obtiendrez l'ancienne plaque céleste (indropable).</p><br/><p><b>PNJ</b> impliqué: </b>Tristan</p><br/><p><b>Mini-boss impliqué:</b> Commandant Mordred</p><br/><p><b>Récompense</b> acquise:</b> le plastron Ancienne Plaque Céleste (Stats: 100 End, 30 For, 30 Dex, 30 Int, 30 Sag) (indropable)</p><br/><ul><li><b>Bonus du plastron</b> : Quand vous êtes attaqué, un sort s'enclenche sur la gauche avec les autres sorts : il boost la CA, régénère mana vie et plus, très utile dans les zones ou il y a beaucoup de mobs surtout avec les sorts de zone comme les boucliers de feu air eau ou électrique.</li> <li><b>Attention</b> : ne pas deleter avant d'être 260, vous savez pas quand elle pourrait servir.</li></ul><br/><p><br></p><br/><p></p>",
-        "images": [],
-        "order": 4
       }
     ],
     "credits": [
