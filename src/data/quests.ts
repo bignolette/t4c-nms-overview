@@ -313,19 +313,10 @@ export const quests: Quest[] = [
         "description": "<ul>\n  \n  <li>\n<p>Le portail d'entrée se trouve au Nord Ouest de Nilhem près d'une montagne <b>(B)</b>. Groupez avec vos amis et approchez vous du portail avant que le possesseur de la fiole ne clique sur le portail pour entrer.</p>\n</li>\n  <li>\n<p>Il est possible de rester à l'intérieur du donjon durant 1 heure 30 minutes IRL après quoi vous serez renvoyés à votre sanctuaire. Vous pouvez quitter à tout moment par le portail de sortie et revenir tant que votre temps n'est pas écoulé (en durée IRL) et que vous n'avez pas terminé le donjon, mais ne reparlez plus au PNJ.</p>\n</li>\n  <li>\n<p>Quand vous aurez tué environ une cinquantaine de gobelins chacun (ou peu avant la fin de votre session d'1H30),</p>\n</li>\n  <li>\n<p>Allez - tous ensemble car le boss n'apparaîtra pas deux fois - prendre le portail du nord qui mène à <b>Gobelet</b>, le boss.</p>\n</li>\n  <li>\n<p>Tuez-le en groupe, il va peut-être droper épée de fureur, émail nacré de gobelin jaune etc... Videz ensuite le coffre. Avec un peu de chance vous aurez un drop intéressant (parfois une très jolie robe ou un anneau ou même une arme rare).</p>\n</li>\n  <li>\n<p>Objets du coffre :</p>\n</li>\n  <li>\n<p>- Robe du Zéphyr rapiécée (robe air)</p>\n</li>\n  <li>\n<p>- Robe scintillante rapiécée (robe lumière)</p>\n</li>\n  <li>\n<p>- Robe flamboyante rapiécée (robe feu)</p>\n</li>\n  <li>\n<p>- Robe tellurique rapiécée (robe terre)</p>\n</li>\n  <li>\n<p>- Robe de la rose rapiécée (robe eau)</p>\n</li>\n  <li>\n<p>- Robe des abîmes rapiécée (robe nécro)</p>\n</li>\n  <li>\n<p>- Armure en cuir rapiécée (guerrier/archer)</p>\n</li>\n  <li>\n<p>- Anneau de l'apprenti armurier, bijoutier .. (pour améliorer les chances de réussite de vos futurs crafts de +2%)</p>\n</li>\n  <li>\n<p>- <b>Hachette du rétamé</b></p>\n</li>\n  <li>\n<p>- rien... :(</p>\n</li>\n  <li>\n<p>-encore rien ......</p>\n</li>\n  <li>\n<p>N.B 1 : Pour optimiser votre xp, concentrez vous sur les gobelins shamans en vous efforçant de les faire respawn rapidement.</p>\n</li>\n  <li>\n<p>N.B 2 : Concentrez-vous sur les généraux et les shamans pour l'épée de fureur (rare).</p>\n</li>\n\n</ul>",
         "images": [],
         "order": 3
-      },
-      {
-        "title": "La vidéo de Meyli",
-        "description": "<p></p>",
-        "images": [
-          "/t4c-nms-overview/assets/quests/donjon-1-30/img_4_0.jpg"
-        ],
-        "order": 4
       }
     ],
     "credits": [
-      "T4C NMS Révolution wiki",
-      "La vid"
+      "T4C NMS Révolution wiki"
     ]
   },
   {
@@ -537,14 +528,6 @@ export const quests: Quest[] = [
         "order": 1
       },
       {
-        "title": "La vidéo de Meyli",
-        "description": "<p><br/></p>",
-        "images": [
-          "/t4c-nms-overview/assets/quests/camping-araknor/img_2_0.jpg"
-        ],
-        "order": 2
-      },
-      {
         "title": "Présentation",
         "description": "<ul>\n  \n  <li>\n<p><b>Kores (ex Araknor) est un SUPER-BOSS, vous devrez être nombreux.</b></p>\n</li>\n  <li>\n<p>Prévoyez d'être au moins 8 joueurs divisés en 2 groupes, chacun ayant si possible deux prêtres pouvant ramener à la vie.</p>\n</li>\n  <li>\n<p>Si tout se passe bien vous gagnerez de l'xp et un item rare de craft (livre de sorts de l'apprenti, relique d'un autre temps ou fiole de démolécularisation).</p>\n</li>\n  <li>\n<p>Enfin l'utilisation de SKYPE ou DISCORD aidera bien à l'organisation et la synchronisation des opérations.</p>\n</li>\n\n</ul>",
         "images": [],
@@ -577,7 +560,6 @@ export const quests: Quest[] = [
     ],
     "credits": [
       "T4C NMS Révolution wiki",
-      "La vid"
     ]
   },
   {
