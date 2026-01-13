@@ -1,13 +1,14 @@
 import { useState, useMemo, useEffect, memo } from 'react';
-import { useSearchParams } from 'react-router-dom';
-import { wikiData } from '../data/wiki-data';
+import { Link, useSearchParams } from 'react-router-dom';
+import { wikiData, itemMonsterMap } from '../data/wiki-data';
 import { fastNormalize, formatStatValue } from '../data/utils';
 import type { RecipeItem } from '../data/wiki-data';
 import CraftingTree from './CraftingTree';
 import { 
   Search, ChevronLeft, ChevronRight, ArrowUpDown, Star, X, RotateCcw, Package, MapPin,
   Shield, Sword, Crown, Shirt, Footprints, Hand, Circle, Link2, GripHorizontal, Columns2, Medal,
-  ArrowUpRight, ArrowRight, Wind, Users, ArrowRightCircle, User, LayoutGrid, List, ChevronDown, ChevronUp, Map, Tag
+  ArrowUpRight, ArrowRight, Wind, Users, ArrowRightCircle, User, LayoutGrid, List, ChevronDown, ChevronUp, Map, Tag,
+  Skull
 } from 'lucide-react';
 
 interface RecipeBrowserProps {
@@ -117,6 +118,36 @@ const StatBadge = ({ label, value, type }: { label: string, value: string | numb
   );
 };
 
+const LocationList = ({ locations }: { locations: {label: string, coordinates: string}[] }) => {
+  const [showAll, setShowAll] = useState(false);
+  const visibleLocs = showAll ? locations : locations.slice(0, 5);
+  const hasMore = locations.length > 5;
+
+  return (
+    <div className="space-y-3">
+      {visibleLocs.map((loc, idx) => (
+        <div key={idx} className="flex flex-col gap-1">
+          <span className="text-xs font-bold text-slate-200">{loc.label}</span>
+          {loc.coordinates && (
+            <div className="flex items-center gap-2 text-xs text-amber-400 font-mono bg-amber-400/5 px-2 py-1 rounded border border-amber-400/10 w-fit">
+              <MapPin size={12} className="text-amber-500" />
+              <span className="font-black tracking-tight">{loc.coordinates}</span>
+            </div>
+          )}
+        </div>
+      ))}
+      {hasMore && (
+        <button 
+          onClick={(e) => { e.preventDefault(); setShowAll(!showAll); }}
+          className="text-[10px] font-bold text-amber-500/70 hover:text-amber-400 uppercase tracking-widest text-left mt-2 pl-1"
+        >
+          {showAll ? "Voir moins" : `+ ${locations.length - 5} autres lieux`}
+        </button>
+      )}
+    </div>
+  );
+};
+
 const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, toggleFavorite, getMatchingIngredients, viewMode }: any) => {
   const matchingIngs = getMatchingIngredients ? getMatchingIngredients(recipe, activeSearchTerm) : [];
   
@@ -189,11 +220,17 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
             <MapPin size={10} /> {zone}
           </span>
         ))}
-        {isItemsPage && (recipe.typeSource || recipe.source) && (
+        {isItemsPage && (recipe.sources ? (
+          recipe.sources.slice(0, 1).map((s: any, i: number) => (
+            <span key={i} className="flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter border shadow-lg bg-emerald-500/10 text-emerald-400 border-emerald-500/20">
+              <Tag size={10} className="opacity-70" /> {s.typeSource}
+            </span>
+          ))
+        ) : (recipe.typeSource || recipe.source) && (
           <span className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter border shadow-lg ${recipe.typeSource ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20' : (TYPE_COLORS[recipe.source as string] || 'bg-slate-800 text-slate-400')}`}>
             <Tag size={10} className="opacity-70" /> {recipe.typeSource || recipe.source}
           </span>
-        )}
+        ))}
         {!isItemsPage && recipe.profession && (
           <span className={`px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter border shadow-lg ${PROF_COLORS[recipe.profession]?.replace('text-', 'text-opacity-90 text-') || 'bg-slate-800 text-slate-400'}`}>
             {recipe.profession} • LVL {recipe.level}
@@ -215,13 +252,20 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
                 <div>
                   <h3 className="text-xl font-bold text-slate-100 group-hover:text-amber-500 transition-colors mb-1">{recipe.name}</h3>
                   <div className="flex flex-wrap gap-2">
-                    {recipe.typeSource && (
+                    {recipe.sources && recipe.sources.length > 0 ? (
+                      recipe.sources.map((s: any, i: number) => (
+                        <div key={i} className="flex items-center gap-1.5 px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20 w-fit">
+                          <Tag size={10} className="text-emerald-500" />
+                          <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-tighter">{s.typeSource}</span>
+                        </div>
+                      ))
+                    ) : recipe.typeSource ? (
                       <div className="flex items-center gap-1.5 px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20 w-fit">
                         <Tag size={10} className="text-emerald-500" />
                         <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-tighter">{recipe.typeSource}</span>
                       </div>
-                    )}
-                    {recipe.source && (
+                    ) : null}
+                    {recipe.source && !recipe.sources && (
                       <div className="flex items-center gap-1.5 px-2 py-0.5 rounded bg-slate-800 border border-slate-700 w-fit">
                         <Tag size={10} className="text-slate-500" />
                         <span className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">{recipe.source}</span>
@@ -292,23 +336,51 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
                 </div>
               )}
 
-              {recipe.locations && recipe.locations.length > 0 && (
+              {recipe.sources && recipe.sources.length > 0 && (
+                <div className="space-y-3">
+                  {recipe.sources
+                    .filter((source: any) => !itemMonsterMap[fastNormalize(recipe.name)]?.some(m => m.name === source.typeSource))
+                    .map((source: any, idx: number) => (
+                      <div key={idx} className="bg-emerald-500/5 border border-emerald-500/20 rounded-xl p-3">
+                        <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest block mb-2">{source.typeSource}</span>
+                        <LocationList locations={source.locations} />
+                      </div>
+                    ))
+                  }
+                </div>
+              )}
+
+              {recipe.locations && recipe.locations.length > 0 && !recipe.sources && (
                 <div className="space-y-3">
                   <div className="bg-emerald-500/5 border border-emerald-500/20 rounded-xl p-3">
                     <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-widest block mb-2">Gisements / Récoltes</span>
-                    <div className="space-y-3">
-                      {recipe.locations.map((loc: {label: string, coordinates: string}, idx: number) => (
-                        <div key={idx} className="flex flex-col gap-1">
-                          <span className="text-xs font-bold text-slate-200">{loc.label}</span>
-                          {loc.coordinates && (
-                            <div className="flex items-center gap-2 text-xs text-amber-400 font-mono bg-amber-400/5 px-2 py-1 rounded border border-amber-400/10 w-fit">
-                              <MapPin size={12} className="text-amber-500" />
-                              <span className="font-black tracking-tight">{loc.coordinates}</span>
-                            </div>
-                          )}
-                        </div>
-                      ))}
-                    </div>
+                    <LocationList locations={recipe.locations} />
+                  </div>
+                </div>
+              )}
+
+              {/* Unified Monster Drops section */}
+              {itemMonsterMap[fastNormalize(recipe.name)] && itemMonsterMap[fastNormalize(recipe.name)].length > 0 && (
+                <div className="bg-purple-500/5 border border-purple-500/20 rounded-xl p-4">
+                  <span className="text-[10px] font-black text-[#a335ee] uppercase tracking-[0.2em] block mb-3 flex items-center gap-2">
+                    <Skull size={14} fill="#a335ee" className="fill-purple-500/20" /> 
+                    Drops de monstres
+                  </span>
+                  <div className="flex flex-wrap gap-2">
+                    {itemMonsterMap[fastNormalize(recipe.name)].slice(0, 10).map((m, i) => (
+                      <Link 
+                        key={i} 
+                        to={`/wiki/bestiary?search=${encodeURIComponent(m.name)}`}
+                        className="text-[11px] font-bold text-slate-300 hover:text-[#a335ee] transition-all bg-slate-900 border border-purple-500/20 px-2.5 py-1.5 rounded-lg flex items-center gap-2 group/m shadow-inner"
+                      >
+                        <span className="group-hover/m:underline decoration-[#a335ee] underline-offset-4 decoration-2">{m.name}</span>
+                      </Link>
+                    ))}
+                    {itemMonsterMap[fastNormalize(recipe.name)].length > 10 && (
+                      <span className="text-[10px] text-slate-600 italic mt-1 w-full text-center">
+                        +{itemMonsterMap[fastNormalize(recipe.name)].length - 10} autres...
+                      </span>
+                    )}
                   </div>
                 </div>
               )}

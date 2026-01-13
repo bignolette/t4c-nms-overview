@@ -49,12 +49,12 @@ const DropBadge = memo(({ drop }: { drop: string }) => {
 const MonsterCard = memo(({ monster, showLocation }: { monster: Monster, showLocation: boolean }) => {
   const [showAllCoords, setShowAllCoords] = useState(false);
 
-  const coordsArray = useMemo(() => 
-    monster.coordinates ? monster.coordinates.split(',').map(c => c.trim()) : [], 
-    [monster.coordinates]
-  );
-
-  const displayedCoords = showAllCoords ? coordsArray : coordsArray.slice(0, 3);
+  const coordsArray = useMemo(() => {
+    if (!monster.coordinates) return [];
+    if (Array.isArray(monster.coordinates)) return monster.coordinates;
+    // Fallback for any legacy string data
+    return (monster.coordinates as unknown as string).split(',').map((c: string) => c.trim());
+  }, [monster.coordinates]);
 
   return (
     <div 
@@ -76,7 +76,7 @@ const MonsterCard = memo(({ monster, showLocation }: { monster: Monster, showLoc
               {coordsArray.length > 0 && (
                 <div className="space-y-1">
                   <div className="flex flex-wrap gap-1.5">
-                    {displayedCoords.map((coord, i) => (
+                    {coordsArray.slice(0, showAllCoords ? coordsArray.length : 3).map((coord: string, i: number) => (
                       <div key={i} className="flex items-center gap-1 px-2 py-0.5 rounded bg-blue-500/10 border border-blue-500/20 text-[11px] text-blue-300 font-mono shadow-sm">
                         <MapPin size={10} className="text-blue-500" />
                         <span>{coord}</span>

@@ -87,6 +87,7 @@ const resolveFullTree = (item: RecipeItem, depth = 0, seen = new Set<string>()):
     source: item.source || recipe?.source || itemData?.source,
     typeSource: item.typeSource || recipe?.typeSource || itemData?.typeSource,
     locations: item.locations || recipe?.locations || itemData?.locations,
+    sources: item.sources || recipe?.sources || itemData?.sources,
     prerequisites: itemData?.prerequisites,
     bonuses: itemData?.bonuses,
     secondary: itemData?.secondary
@@ -203,7 +204,8 @@ const FarmingPlannerModal = ({ totals, onClose, itemName }: { totals: Record<str
         name,
         count,
         monsters: monsters.map(m => ({ name: m.name, location: m.location })),
-        harvests: (recipe?.locations || itemData?.locations || [])
+        harvests: (recipe?.locations || itemData?.locations || []),
+        sources: (recipe?.sources || itemData?.sources || [])
       };
 
       const itemZones = new Set<string>();
@@ -217,14 +219,17 @@ const FarmingPlannerModal = ({ totals, onClose, itemName }: { totals: Record<str
         else itemZones.add("Divers / Inconnu");
       });
 
-      itemInfo.harvests.forEach(h => {
-        if (h.label.includes("Arakas") || h.label.includes("LH") || h.label.includes("WH")) itemZones.add("Arakas");
-        else if (h.label.includes("Raven's Dust") || h.label.includes("RD") || h.label.includes("SS")) itemZones.add("Raven's Dust");
-        else if (h.label.includes("Stoneheim") || h.label.includes("SH") || h.label.includes("SC")) itemZones.add("Stoneheim");
-        else if (h.label.includes("Drake Island") || h.label.includes("DI")) itemZones.add("Drake Island");
-        else if (h.label.includes("Urtanar") || h.label.includes("UR")) itemZones.add("Urtanar");
+      const checkZone = (label: string) => {
+        if (label.includes("Arakas") || label.includes("LH") || label.includes("WH")) itemZones.add("Arakas");
+        else if (label.includes("Raven's Dust") || label.includes("RD") || label.includes("SS")) itemZones.add("Raven's Dust");
+        else if (label.includes("Stoneheim") || label.includes("SH") || label.includes("SC")) itemZones.add("Stoneheim");
+        else if (label.includes("Drake Island") || label.includes("DI")) itemZones.add("Drake Island");
+        else if (label.includes("Urtanar") || label.includes("UR")) itemZones.add("Urtanar");
         else itemZones.add("Divers / Inconnu");
-      });
+      };
+
+      itemInfo.harvests.forEach(h => checkZone(h.label));
+      itemInfo.sources.forEach(s => s.locations.forEach((l: any) => checkZone(l.label)));
 
       if (itemZones.size === 0) itemZones.add("Divers / Inconnu");
 
@@ -290,23 +295,34 @@ const FarmingPlannerModal = ({ totals, onClose, itemName }: { totals: Record<str
                         </div>
                       )}
 
-                      {item.harvests.length > 0 && (
+                      {(item.harvests.length > 0 || item.sources.length > 0) && (
                         <div className="space-y-1.5">
                           <span className="text-[9px] font-bold text-slate-500 uppercase tracking-widest block flex items-center gap-1">
                             <Tag size={10} className="text-emerald-500/70" /> Points de récolte
                           </span>
                           <div className="space-y-1">
                             {item.harvests.map((h: any, i: number) => (
-                              <div key={i} className="flex items-center justify-between text-[10px] bg-emerald-500/5 border border-emerald-500/10 text-emerald-400/90 px-2 py-1 rounded-md">
+                              <div key={`h-${i}`} className="flex items-center justify-between text-[10px] bg-emerald-500/5 border border-emerald-500/10 text-emerald-400/90 px-2 py-1 rounded-md">
                                 <span className="font-medium truncate max-w-[150px]">{h.label}</span>
                                 {h.coordinates && <span className="font-mono font-bold ml-2 text-amber-400">{h.coordinates}</span>}
+                              </div>
+                            ))}
+                            {item.sources.map((s: any, i: number) => (
+                              <div key={`s-${i}`} className="flex flex-col gap-1 bg-emerald-500/5 border border-emerald-500/10 text-emerald-400/90 px-2 py-1 rounded-md">
+                                <span className="text-[10px] font-bold uppercase tracking-tighter opacity-70">{s.typeSource}</span>
+                                {s.locations.map((l: any, j: number) => (
+                                  <div key={j} className="flex items-center justify-between text-[10px]">
+                                    <span className="font-medium truncate max-w-[150px]">{l.label}</span>
+                                    {l.coordinates && <span className="font-mono font-bold ml-2 text-amber-400">{l.coordinates}</span>}
+                                  </div>
+                                ))}
                               </div>
                             ))}
                           </div>
                         </div>
                       )}
 
-                      {item.monsters.length === 0 && item.harvests.length === 0 && (
+                      {item.monsters.length === 0 && item.harvests.length === 0 && item.sources.length === 0 && (
                         <div className="text-[10px] text-slate-600 italic py-1 border-t border-slate-800/30">
                           Source à découvrir ou achat PNJ.
                         </div>
@@ -325,6 +341,36 @@ const FarmingPlannerModal = ({ totals, onClose, itemName }: { totals: Record<str
       </div>
     </div>,
     document.body
+  );
+};
+
+const LocationList = ({ locations }: { locations: {label: string, coordinates: string}[] }) => {
+  const [showAll, setShowAll] = useState(false);
+  const visibleLocs = showAll ? locations : locations.slice(0, 5);
+  const hasMore = locations.length > 5;
+
+  return (
+    <div className="flex flex-col gap-0.5 pl-1">
+      {visibleLocs.map((loc, idx) => (
+        <div key={idx} className="flex flex-col gap-0.5">
+          <span className="text-[10px] text-slate-400 font-bold uppercase tracking-tight">{loc.label}</span>
+          {loc.coordinates && (
+            <div className="flex items-center gap-1.5 text-xs text-amber-400 font-black font-mono mt-0.5 bg-amber-400/5 px-2 py-0.5 rounded border border-amber-400/10 w-fit">
+              <MapPin size={12} className="text-amber-500" />
+              <span className="tracking-tight">{loc.coordinates}</span>
+            </div>
+          )}
+        </div>
+      ))}
+      {hasMore && (
+        <button 
+          onClick={(e) => { e.preventDefault(); setShowAll(!showAll); }}
+          className="text-[9px] font-bold text-amber-500/70 hover:text-amber-400 uppercase tracking-tight text-left mt-1 pl-1"
+        >
+          {showAll ? "Voir moins" : `+ ${locations.length - 5} autres positions`}
+        </button>
+      )}
+    </div>
   );
 };
 
@@ -495,19 +541,23 @@ const RecipeNode = memo(({ item, isRoot = false, expandedItems, onToggle }: {
               </div>
             )}
 
-            {item.locations && item.locations.length > 0 && (
+            {item.sources && item.sources.length > 0 && (
+              <div className="flex flex-col gap-2 mt-1 ml-1 border-l border-slate-800 pl-3">
+                {item.sources
+                  .filter((source: any) => !itemMonsterMap[fastNormalize(item.name)]?.some(m => m.name === source.typeSource))
+                  .map((source: any, idx: number) => (
+                    <div key={idx} className="flex flex-col gap-0.5">
+                      <span className="text-[9px] text-emerald-500/80 font-bold uppercase tracking-wider">{source.typeSource}</span>
+                      <LocationList locations={source.locations} />
+                    </div>
+                  ))
+                }
+              </div>
+            )}
+
+            {item.locations && item.locations.length > 0 && !item.sources && (
               <div className="flex flex-col gap-1.5 mt-1 ml-1 border-l border-slate-800 pl-3">
-                {item.locations.map((loc: {label: string, coordinates: string}, idx: number) => (
-                  <div key={idx} className="flex flex-col gap-0.5">
-                    <span className="text-[10px] text-slate-400 font-bold uppercase tracking-tight">{loc.label}</span>
-                    {loc.coordinates && (
-                      <div className="flex items-center gap-1.5 text-xs text-amber-400 font-black font-mono mt-0.5 bg-amber-400/5 px-2 py-0.5 rounded border border-amber-400/10 w-fit">
-                        <MapPin size={12} className="text-amber-500" />
-                        <span className="tracking-tight">{loc.coordinates}</span>
-                      </div>
-                    )}
-                  </div>
-                ))}
+                <LocationList locations={item.locations} />
               </div>
             )}
 
@@ -538,17 +588,19 @@ const RecipeNode = memo(({ item, isRoot = false, expandedItems, onToggle }: {
               </div>
             )}
             
-            {!isReallyCraftable && droppingMonsters.length > 0 && (
-              <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[9px] text-slate-500">
-                <div className="flex flex-wrap gap-1 items-center">
+            {droppingMonsters.length > 0 && (
+              <div className="flex flex-wrap items-center gap-x-2 gap-y-1.5 mt-2 pt-2 border-t border-slate-800/50">
+                <span className="font-black uppercase tracking-[0.15em] text-[10px] text-[#a335ee] flex items-center gap-1">
+                  <Skull size={12} fill="#a335ee" className="fill-purple-500/20" /> DROP :
+                </span>
+                <div className="flex flex-wrap gap-1.5 items-center">
                   {monstersToDisplay.map((m, i) => (
                     <Link 
                       key={i} 
                       to={`/wiki/bestiary?search=${encodeURIComponent(m.name)}`}
-                      className="hover:text-amber-500 transition-colors underline decoration-slate-700 underline-offset-2 flex items-center gap-1"
+                      className="text-[11px] font-bold text-slate-300 hover:text-[#a335ee] transition-all bg-purple-500/5 border border-purple-500/10 px-2 py-0.5 rounded-md flex items-center gap-1.5 group/m"
                     >
-                      <Skull size={10} className="text-amber-600/70" />
-                      {m.name}
+                      <span className="group-hover/m:underline decoration-[#a335ee] underline-offset-4 decoration-2">{m.name}</span>
                     </Link>
                   ))}
                   {droppingMonsters.length > 3 && (

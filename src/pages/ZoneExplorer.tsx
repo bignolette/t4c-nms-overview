@@ -48,7 +48,8 @@ const MonsterCard = ({ monster }: { monster: any }) => {
 
   const coords = useMemo(() => {
     if (!monster.coordinates) return [];
-    return monster.coordinates.split(',').map((c: string) => c.trim()).filter((c: string) => c.length > 0);
+    if (Array.isArray(monster.coordinates)) return monster.coordinates;
+    return typeof monster.coordinates === 'string' ? monster.coordinates.split(',').map((c: string) => c.trim()).filter((c: string) => c.length > 0) : [];
   }, [monster.coordinates]);
 
   const visibleCoords = showAllCoords ? coords : coords.slice(0, 5);

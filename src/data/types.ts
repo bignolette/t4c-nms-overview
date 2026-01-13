@@ -1,7 +1,7 @@
 export interface Monster {
   name: string;
   location: string;
-  coordinates?: string;
+  coordinates?: string[];
   drops: string[];
   exp: string;
   gold: string;
@@ -30,6 +30,11 @@ export interface ItemLocation {
   coordinates: string;
 }
 
+export interface MaterialSource {
+  typeSource: string;
+  locations: ItemLocation[];
+}
+
 export interface RecipeItem {
   name: string;
   quantity: number;
@@ -40,6 +45,7 @@ export interface RecipeItem {
   source?: ItemSource;
   typeSource?: string;
   locations?: ItemLocation[];
+  sources?: MaterialSource[];
   learnedFrom?: string;
   coordinates?: string;
   locationPrecision?: string;

@@ -3,7 +3,6 @@ import Layout from './components/Layout';
 import Home from './pages/Home';
 import WikiPage from './pages/WikiPage';
 import EquipablePage from './pages/EquipablePage';
-import QuestsPage from './pages/QuestsPage';
 import Bestiary from './components/Bestiary';
 import RecipeBrowser from './components/RecipeBrowser';
 import PlannerPage from './pages/PlannerPage';
@@ -24,8 +23,6 @@ const App: React.FC = () => {
           <Route path="/planner" element={<PlannerPage />} />
           <Route path="/wiki" element={<WikiPage />} />
           <Route path="/wiki/:slug" element={<WikiPage />} />
-          <Route path="/quests" element={<QuestsPage />} />
-          <Route path="/quests/:zone" element={<QuestsPage />} />
           <Route path="/explorer" element={<ZoneExplorer />} />
           <Route path="/legal" element={<Legal />} />
         </Routes>
