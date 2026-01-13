@@ -19,23 +19,26 @@ const WikiPage = () => {
   }
 
   return (
-    <div className="animate-fade-in space-y-8">
+    <div className="space-y-8 pb-20">
       {/* Page Header */}
-      <div className="border-b border-slate-800 pb-6">
-        <div className="flex items-center gap-3 mb-2">
-          <span className="px-3 py-1 rounded-full bg-slate-800 text-amber-500 text-xs font-bold uppercase tracking-wider">
+      <div className="border-b border-slate-800 pb-8 relative">
+        <div className="flex items-center gap-3 mb-4">
+          <span className="px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-500 text-[10px] font-black uppercase tracking-[0.2em]">
             {data.category}
           </span>
         </div>
-        <h1 className="text-4xl font-bold text-slate-100 mb-3">{data.title}</h1>
-        <p className="text-lg text-slate-400 max-w-3xl leading-relaxed">
+        <h1 className="text-5xl font-black text-slate-100 mb-4 tracking-tighter italic uppercase drop-shadow-2xl">
+          {data.title}
+        </h1>
+        <p className="text-lg text-slate-400 max-w-3xl leading-relaxed font-medium">
           {data.description}
         </p>
+        <div className="absolute bottom-0 left-0 w-32 h-1 bg-amber-500 rounded-full"></div>
       </div>
 
       {/* Professions & Items Browser */}
       {(slug === 'metiers' || slug === 'items') && data.recipes && (
-        <RecipeBrowser recipes={data.recipes} isItemsPage={slug === 'items'} />
+        <RecipeBrowser key={slug} recipes={data.recipes} isItemsPage={slug === 'items'} />
       )}
 
       {/* Bestiary Browser */}

@@ -310,12 +310,14 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
           if (displayMonsters.length === 0) return null;
 
           return (
-            <section key={zone} id={zone} className="animate-fade-in scroll-mt-8">
+            <section key={zone} id={zone} className="scroll-mt-8">
               <div className="flex items-center gap-3 border-b border-slate-800 pb-4 mb-8">
-                <MapPin className="text-amber-500" size={24} />
-                <h2 className="text-3xl font-black text-slate-100 tracking-tight">{zone}</h2>
-                <div className="px-3 py-1 rounded-lg bg-slate-800 text-slate-400 text-xs font-bold ml-2">
-                  {zoneMonsters.length} au total
+                <div className="p-2 bg-amber-500/10 rounded-lg text-amber-500">
+                  <MapPin size={24} />
+                </div>
+                <h2 className="text-3xl font-black text-slate-100 tracking-tight italic uppercase">{zone}</h2>
+                <div className="px-3 py-1 rounded-lg bg-slate-800 text-slate-400 text-xs font-black ml-2 border border-slate-700">
+                  {zoneMonsters.length} CRÉATURES
                 </div>
               </div>
 

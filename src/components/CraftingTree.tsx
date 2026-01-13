@@ -434,8 +434,8 @@ const RecipeNode = memo(({ item, isRoot = false, expandedItems, onToggle }: {
           className={`
             group relative inline-flex flex-col items-start gap-1 px-3 py-2 rounded-lg border transition-all duration-300
             ${isRoot 
-              ? 'bg-slate-800/60 border-amber-500/50 text-amber-100 shadow-[0_0_20px_rgba(245,158,11,0.1)]' 
-              : 'bg-slate-950/40 border-slate-800/80 text-slate-300 hover:border-slate-500/50 hover:bg-slate-900/60'}
+              ? 'bg-slate-800/60 border-amber-500/50 text-amber-100 shadow-[0_0_20px_rgba(245,158,11,0.15)] hover:shadow-[0_0_30px_rgba(245,158,11,0.25)]' 
+              : 'bg-slate-800/40 border-slate-700/50 text-slate-300 hover:border-amber-500/50 hover:bg-slate-900/60 hover:shadow-amber-500/10 shadow-lg'}
           `}
         >
           {hasInfo && isHovered && createPortal(
@@ -679,7 +679,7 @@ const RecipeCard = memo(({ recipe }: { recipe: RecipeItem }) => {
   }, [recipe.name, expandedItems, recipe.ingredients]);
 
   return (
-    <div className="bg-slate-900/50 border border-slate-800 rounded-xl p-6 relative overflow-visible shadow-xl">
+    <div className="bg-slate-800/40 border border-slate-700/50 rounded-2xl p-6 relative overflow-visible shadow-xl hover:border-amber-500/50 hover:shadow-amber-500/10 transition-all duration-300">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 border-b border-slate-800 pb-4">
         <div className="flex items-center gap-3">
           <div className="p-2 bg-amber-500/20 rounded-lg text-amber-500">

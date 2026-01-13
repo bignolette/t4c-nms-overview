@@ -260,7 +260,7 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95 }}
           onClick={() => setIsModalOpen(true)}
-          className="bg-slate-900/40 border border-slate-800 rounded-2xl p-4 flex flex-col gap-3 hover:border-amber-500/50 hover:bg-slate-800/60 transition-all group cursor-pointer relative overflow-hidden h-full"
+          className="bg-slate-800/40 border border-slate-700/50 rounded-2xl p-4 flex flex-col gap-3 hover:border-amber-500/50 hover:bg-slate-800/60 transition-all duration-300 group cursor-pointer relative overflow-hidden h-full shadow-xl hover:shadow-amber-500/10"
         >
           <div className="absolute top-0 right-0 p-2 opacity-0 group-hover:opacity-100 transition-opacity">
             <Info size={14} className="text-amber-500/50" />
@@ -387,7 +387,7 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
       )}
       
       {isItemsPage ? (
-        <div className="bg-slate-900/40 border border-slate-800 rounded-2xl p-6 shadow-xl hover:border-slate-700 transition-all">
+        <div className="bg-slate-800/40 border border-slate-700/50 rounded-2xl p-6 shadow-xl hover:border-amber-500/50 hover:shadow-amber-500/10 transition-all duration-300">
           <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
             <div className="flex-1 space-y-6">
               <div className="flex items-center gap-3 border-b border-slate-800 pb-4">
