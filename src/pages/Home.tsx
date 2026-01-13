@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Hammer, ExternalLink, Skull, Shield, Calculator, Compass } from 'lucide-react';
+import { Hammer, ExternalLink, Skull, Shield, Calculator } from 'lucide-react';
 
 const Home = () => {
   return (
@@ -18,13 +18,6 @@ const Home = () => {
 
       {/* Quick Access Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <QuickCard 
-          title="Explorateur" 
-          description="Découvrez tout ce qu'une zone a à offrir : PNJs, Ressources et Bestiaire local."
-          icon={Compass}
-          to="/explorer"
-          color="text-blue-400"
-        />
         <QuickCard 
           title="Equipable" 
           description="Simulateur d'équipement avec optimisation Best-in-Slot (BiS) par statistique."
