@@ -1,3 +1,51 @@
+export const formatRewards = (html: string): string => {
+  if (!html) return html;
+
+  const rewardPattern = /(?:<p>|<br\s*\/?>|<li>|^)\s*(?:<u>|<b>|<strong>)?\s*(Récompense|Gain|Butin)\s*[:!]\s*(.*?)(?:<\/p>|<br\s*\/?>|<\/li>|$)/gi;
+
+  return html.replace(rewardPattern, (_match, type, content) => {
+    return `
+      <div class="my-6 p-4 rounded-xl border border-emerald-500/20 bg-emerald-500/5 shadow-lg animate-in fade-in slide-in-from-right-2 duration-300">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="text-emerald-500">🏆</span>
+          <span class="text-[10px] font-black uppercase tracking-[0.2em] text-emerald-500">${type}</span>
+        </div>
+        <div class="text-base font-bold text-slate-100 flex flex-wrap gap-2">
+          ${content}
+        </div>
+      </div>
+    `;
+  });
+};
+
+export const formatAttention = (html: string): string => {
+  if (!html) return html;
+
+  // Pattern to find "Attention", "Important", or "Note" at the start of a paragraph or after a break
+  // Also handles "<u>ATTENTION</u>", "<b>Attention</b>", etc.
+  const attentionPattern = /(?:<p>|<br\s*\/?>|<li>|^)\s*(?:<u>|<b>|<strong>)?\s*(Attention|IMPORTANT|Note|Remarque|Tip|<u>ATTENTION<\/u>)\s*(?:#\d+)?\s*[:!]\s*(.*?)(?:<\/p>|<br\s*\/?>|<\/li>|$)/gi;
+
+  return html.replace(attentionPattern, (_match, type, content) => {
+    const icon = type.toLowerCase().includes('attention') ? '⚠️' : 'ℹ️';
+    const bgColor = type.toLowerCase().includes('attention') ? 'bg-rose-500/10' : 'bg-blue-500/10';
+    const borderColor = type.toLowerCase().includes('attention') ? 'border-rose-500/30' : 'border-blue-500/30';
+    const textColor = type.toLowerCase().includes('attention') ? 'text-rose-300' : 'text-blue-300';
+    const titleColor = type.toLowerCase().includes('attention') ? 'text-rose-500' : 'text-blue-500';
+
+    return `
+      <div class="my-6 p-4 rounded-xl border-l-4 ${bgColor} ${borderColor} shadow-lg animate-in fade-in slide-in-from-left-2 duration-300">
+        <div class="flex items-center gap-2 mb-1">
+          <span class="text-lg">${icon}</span>
+          <span class="text-[10px] font-black uppercase tracking-[0.2em] ${titleColor}">${type}</span>
+        </div>
+        <div class="text-sm font-medium ${textColor} leading-relaxed italic">
+          ${content}
+        </div>
+      </div>
+    `;
+  });
+};
+
 export const highlightKeywords = (html: string): string => {
   if (!html) return html;
 

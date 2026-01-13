@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { quests, type Quest } from '../data/quests';
 import QuestCard from '../components/QuestCard';
-import { Search, MapPin, Info, LayoutGrid, CheckCircle2, Timer, Filter, X } from 'lucide-react';
+import { Search, MapPin, Info, LayoutGrid, Timer, X, ArrowRight } from 'lucide-react';
 
 interface ZoneSectionProps {
   zone: string;

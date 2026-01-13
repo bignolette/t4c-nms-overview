@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import type { Quest } from '../data/quests';
-import { highlightKeywords, formatLists, cleanTitle, cleanHtml } from '../data/quest-item-link';
+import { highlightKeywords, formatLists, cleanTitle, cleanHtml, formatAttention, formatRewards } from '../data/quest-item-link';
 import { 
   ChevronDown, MapPin, Coins, Trophy, 
   Scroll, CheckCircle, Copy, ImageIcon,
   Maximize2, Sparkles, ArrowRight,
-  Shield, Flame, Zap
+  Shield, Flame, Zap, User
 } from 'lucide-react';
 import ImageModal from './ImageModal';
 
@@ -24,7 +24,9 @@ const QuestCard: React.FC<QuestCardProps> = ({ quest }) => {
     return quest.steps.map(step => {
       const cleaned = cleanHtml(step.description);
       const withLists = formatLists(cleaned);
-      const withKeywords = highlightKeywords(withLists);
+      const withAttention = formatAttention(withLists);
+      const withRewards = formatRewards(withAttention);
+      const withKeywords = highlightKeywords(withRewards);
       
       return {
         ...step,
@@ -151,33 +153,36 @@ const QuestCard: React.FC<QuestCardProps> = ({ quest }) => {
         <div className="animate-in slide-in-from-top-4 fade-in duration-500">
           
           {/* Quick Info Grid */}
-          <div className="px-8 py-8 bg-slate-950/40 border-b border-slate-800/50 grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="px-8 py-10 bg-slate-950/40 border-b border-slate-800/50 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
             
             {/* XP / Gold / Rewards - Refined Design */}
             {(quest.gold || quest.rewards.length > 0) && (
-              <div className="relative group/reward overflow-hidden p-5 rounded-2xl bg-gradient-to-br from-emerald-500/5 to-transparent border border-emerald-500/10 flex items-start gap-4">
+              <div className="relative group/reward overflow-hidden p-6 rounded-3xl bg-gradient-to-br from-emerald-500/5 to-transparent border border-emerald-500/10 flex items-start gap-4 transition-all hover:bg-emerald-500/10">
                 <div className="absolute top-0 right-0 p-4 opacity-5 group-hover/reward:opacity-10 transition-opacity">
                   <Trophy size={80} />
                 </div>
-                <div className="p-3 bg-emerald-500/10 rounded-xl text-emerald-500 ring-1 ring-emerald-500/20">
-                  <Trophy size={20} />
+                <div className="p-3 bg-emerald-500/10 rounded-2xl text-emerald-500 ring-1 ring-emerald-500/20">
+                  <Trophy size={24} />
                 </div>
-                <div className="relative z-10">
-                  <div className="text-[11px] font-black text-emerald-500/80 uppercase tracking-widest mb-2 flex items-center gap-2">
+                <div className="relative z-10 flex-1">
+                  <div className="text-[11px] font-black text-emerald-500/80 uppercase tracking-[0.2em] mb-4 flex items-center gap-2">
                     Butin & Récompenses <Sparkles size={12} />
                   </div>
-                  <div className="space-y-2">
+                  <div className="space-y-3">
                     {quest.gold && (
-                      <div className="flex items-center gap-2 text-sm font-bold text-amber-100">
-                        <Coins size={14} className="text-amber-400"/> {quest.gold} <span className="text-[10px] text-amber-500/60 uppercase">Pièces d'or</span>
+                      <div className="flex items-center gap-3 text-base font-black text-amber-100 bg-amber-900/20 px-3 py-2 rounded-xl border border-amber-500/20 w-fit">
+                        <Coins size={18} className="text-amber-400"/> 
+                        <span>{quest.gold} <span className="text-[10px] text-amber-500/60 uppercase ml-1">Or</span></span>
                       </div>
                     )}
-                    {quest.rewards.map((r, i) => (
-                      <div key={i} className="flex items-center gap-2 text-sm font-bold text-slate-200">
-                        <div className="w-1 h-1 rounded-full bg-emerald-500" />
-                        {r}
-                      </div>
-                    ))}
+                    <div className="space-y-2">
+                      {quest.rewards.map((r, i) => (
+                        <div key={i} className="flex items-center gap-3 text-sm font-bold text-slate-200 bg-slate-900/50 p-3 rounded-xl border border-slate-800/50">
+                          <div className="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_8px_rgba(16,185,129,0.5)]" />
+                          {r}
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -185,21 +190,21 @@ const QuestCard: React.FC<QuestCardProps> = ({ quest }) => {
 
             {/* Prerequisites - Refined Design */}
             {quest.prerequisites.length > 0 && (
-              <div className="relative group/req overflow-hidden p-5 rounded-2xl bg-gradient-to-br from-rose-500/5 to-transparent border border-rose-500/10 flex items-start gap-4">
+              <div className="relative group/req overflow-hidden p-6 rounded-3xl bg-gradient-to-br from-rose-500/5 to-transparent border border-rose-500/10 flex items-start gap-4 transition-all hover:bg-rose-500/10">
                 <div className="absolute top-0 right-0 p-4 opacity-5 group-hover/req:opacity-10 transition-opacity">
                   <Shield size={80} />
                 </div>
-                <div className="p-3 bg-rose-500/10 rounded-xl text-rose-500 ring-1 ring-rose-500/20">
-                  <Shield size={20} />
+                <div className="p-3 bg-rose-500/10 rounded-2xl text-rose-500 ring-1 ring-rose-500/20">
+                  <Shield size={24} />
                 </div>
-                <div className="relative z-10">
-                  <div className="text-[11px] font-black text-rose-500/80 uppercase tracking-widest mb-2 flex items-center gap-2">
-                    Prérequis requis <Flame size={12} />
+                <div className="relative z-10 flex-1">
+                  <div className="text-[11px] font-black text-rose-500/80 uppercase tracking-[0.2em] mb-4 flex items-center gap-2">
+                    Conditions Requises <Flame size={12} />
                   </div>
                   <ul className="space-y-2">
                     {quest.prerequisites.map((req, i) => (
-                      <li key={i} className="text-sm font-bold text-slate-200 flex items-center gap-2">
-                        <div className="w-1 h-1 rounded-full bg-rose-500" />
+                      <li key={i} className="text-sm font-bold text-slate-200 flex items-center gap-3 bg-slate-900/50 p-3 rounded-xl border border-slate-800/50">
+                        <div className="w-2 h-2 rounded-full bg-rose-500 shadow-[0_0_8px_rgba(244,63,94,0.5)]" />
                         {req}
                       </li>
                     ))}
@@ -207,40 +212,65 @@ const QuestCard: React.FC<QuestCardProps> = ({ quest }) => {
                 </div>
               </div>
             )}
+
+            {/* NPCs Involved - New Section */}
+            {quest.npcs && quest.npcs.length > 0 && (
+              <div className="relative group/npc overflow-hidden p-6 rounded-3xl bg-gradient-to-br from-blue-500/5 to-transparent border border-blue-500/10 flex items-start gap-4 transition-all hover:bg-blue-500/10">
+                <div className="absolute top-0 right-0 p-4 opacity-5 group-hover/npc:opacity-10 transition-opacity">
+                  <User size={80} />
+                </div>
+                <div className="p-3 bg-blue-500/10 rounded-2xl text-blue-500 ring-1 ring-blue-500/20">
+                  <User size={24} />
+                </div>
+                <div className="relative z-10 flex-1">
+                  <div className="text-[11px] font-black text-blue-500/80 uppercase tracking-[0.2em] mb-4 flex items-center gap-2">
+                    PNJs Clés <MapPin size={12} />
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    {quest.npcs.map((npc, i) => (
+                      <span key={i} className="px-3 py-2 rounded-xl bg-slate-900/50 border border-slate-800/50 text-sm font-bold text-slate-200 flex items-center gap-2">
+                        <div className="w-1.5 h-1.5 rounded-full bg-blue-500" />
+                        {npc}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            )}
           </div>
 
           {/* Steps Section */}
-          <div className="p-8 md:p-12 relative bg-slate-900/20">
+          <div className="p-8 md:p-16 relative bg-slate-900/20">
             {/* Center Connection Line */}
-            <div className="absolute left-[54px] md:left-[70px] top-12 bottom-12 w-[3px] bg-slate-800 rounded-full shadow-inner">
+            <div className="absolute left-[54px] md:left-[86px] top-12 bottom-12 w-[3px] bg-slate-800 rounded-full shadow-inner">
               <div 
                 className="w-full bg-gradient-to-b from-amber-400 via-amber-500 to-amber-700 transition-all duration-1000 ease-out shadow-[0_0_15px_rgba(245,158,11,0.3)]"
                 style={{ height: `${(completedSteps.length / Math.max(1, quest.steps.length)) * 100}%` }}
               />
             </div>
 
-            <div className="space-y-16">
+            <div className="space-y-24">
               {processedSteps.map((step, idx) => {
                 const isStepComplete = completedSteps.includes(idx);
                 const isNext = !isStepComplete && (idx === 0 || completedSteps.includes(idx - 1));
 
                 return (
-                  <div key={idx} className={`relative flex gap-8 md:gap-12 group ${isStepComplete ? 'opacity-50' : ''}`}>
+                  <div key={idx} className={`relative flex gap-10 md:gap-16 group ${isStepComplete ? 'opacity-50' : ''}`}>
                     
                     {/* Step Orb */}
                     <div className="relative z-10 shrink-0">
                       <button 
                         onClick={() => toggleStep(idx)}
                         className={`
-                          w-12 h-12 md:w-16 md:h-16 flex items-center justify-center rounded-2xl border-2 transform rotate-45 transition-all duration-500 shadow-2xl
+                          w-12 h-12 md:w-20 md:h-20 flex items-center justify-center rounded-2xl border-2 transform rotate-45 transition-all duration-500 shadow-2xl
                           ${isStepComplete 
                             ? 'bg-emerald-500 border-emerald-400 text-slate-900' 
                             : isNext 
                               ? 'bg-amber-500 border-white text-slate-900 scale-110 shadow-amber-500/40' 
                               : 'bg-slate-900 border-slate-700 text-slate-500'}
                         `}>
-                        <div className="-rotate-45 font-black text-xl md:text-2xl">
-                          {isStepComplete ? <CheckCircle size={28} /> : idx + 1}
+                        <div className="-rotate-45 font-black text-xl md:text-3xl">
+                          {isStepComplete ? <CheckCircle size={32} /> : idx + 1}
                         </div>
                         {isNext && (
                           <div className="absolute inset-0 rounded-2xl border-4 border-white/30 animate-ping" />
@@ -250,36 +280,36 @@ const QuestCard: React.FC<QuestCardProps> = ({ quest }) => {
 
                     {/* Step Card */}
                     <div className={`
-                      flex-1 min-w-0 rounded-3xl p-6 md:p-8 transition-all duration-500 border-2
+                      flex-1 min-w-0 rounded-[40px] p-8 md:p-12 transition-all duration-500 border-2
                       ${isNext 
-                        ? 'bg-slate-800/80 border-amber-500/50 shadow-2xl shadow-amber-500/5' 
+                        ? 'bg-slate-800/80 border-amber-500/50 shadow-2xl shadow-amber-500/10' 
                         : isStepComplete 
                           ? 'bg-slate-900/20 border-slate-800'
                           : 'bg-slate-900/40 border-slate-800'}
                     `}>
-                      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
-                        <div className="flex items-center gap-3">
-                          {isNext && <Zap size={18} className="text-amber-500 animate-pulse" />}
-                          <h4 className={`text-xl md:text-2xl font-black ${isStepComplete ? 'text-slate-500 line-through' : isNext ? 'text-white' : 'text-slate-300'}`}>
+                      <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
+                        <div className="flex items-center gap-4">
+                          {isNext && <Zap size={24} className="text-amber-500 animate-pulse" />}
+                          <h4 className={`text-2xl md:text-4xl font-black tracking-tight ${isStepComplete ? 'text-slate-500 line-through' : isNext ? 'text-white' : 'text-slate-300'}`}>
                             {step.title}
                           </h4>
                         </div>
                         
                         {step.images.length > 0 && (
-                          <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 bg-slate-950 px-4 py-1.5 rounded-full border border-slate-800 shadow-inner">
-                            <ImageIcon size={12} /> {step.images.length} ARCHIVE{step.images.length > 1 ? 'S' : ''}
+                          <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 bg-slate-950 px-5 py-2 rounded-full border border-slate-800 shadow-inner">
+                            <ImageIcon size={14} /> {step.images.length} ARCHIVE{step.images.length > 1 ? 'S' : ''}
                           </div>
                         )}
                       </div>
 
-                      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
                         <div className={`${step.images.length > 0 ? 'lg:col-span-7' : 'lg:col-span-12'}`}>
                            <div 
                             className={`
-                              prose prose-invert prose-base max-w-none 
-                              prose-p:text-slate-300 prose-p:leading-relaxed prose-p:mb-6
+                              prose prose-invert prose-lg max-w-none 
+                              prose-p:text-slate-300 prose-p:leading-relaxed prose-p:mb-8
                               prose-strong:text-amber-200 prose-strong:font-black
-                              prose-li:text-slate-300 prose-ul:my-4
+                              prose-li:text-slate-300 prose-ul:my-6
                               prose-b:text-amber-200
                             `}
                             onClick={handleContentClick}
