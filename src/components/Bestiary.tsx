@@ -1,5 +1,6 @@
 import { useState, useMemo, memo, useEffect } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 import { type Monster, fastNormalize, ingredientProfessionMap } from '../data/wiki-data';
 import { MapPin, Coins, Skull, Filter, Search, AlertCircle, ChevronRight, ExternalLink, X, RotateCcw, ChevronLeft, Hammer } from 'lucide-react';
 
@@ -21,12 +22,12 @@ const DropBadge = memo(({ drop }: { drop: string }) => {
     return (
       <Link
         to={`/wiki/metiers?search=${encodeURIComponent(drop)}`}
-        className="relative px-2.5 py-1.5 rounded-lg text-xs font-bold border transition-all bg-amber-500/10 border-amber-500/30 text-amber-200 hover:bg-amber-500/20 hover:border-amber-500 flex items-center gap-2 group/drop"
+        className="relative px-2.5 py-1.5 rounded-lg text-xs font-bold border transition-all bg-purple-500/10 border-purple-500/30 text-purple-200 hover:bg-purple-500/20 hover:border-purple-500 flex items-center gap-2 group/drop"
         title={`Utilisé en artisanat : ${usages.join(', ')}`}
       >
-        <Hammer size={10} className="text-amber-500" />
+        <Hammer size={10} className="text-[#a335ee]" />
         <span className="relative z-10">{drop}</span>
-        <ExternalLink size={10} className="text-amber-500/50 group-hover/drop:text-amber-500 relative z-10" />
+        <ExternalLink size={10} className="text-[#a335ee]/50 group-hover/drop:text-[#a335ee] relative z-10" />
       </Link>
     );
   }
@@ -57,21 +58,27 @@ const MonsterCard = memo(({ monster, showLocation }: { monster: Monster, showLoc
   }, [monster.coordinates]);
 
   return (
-    <div 
+    <motion.div 
+      layout
+      initial={{ opacity: 0, scale: 0.95 }}
+      animate={{ opacity: 1, scale: 1 }}
       className={`
         group relative bg-slate-800/40 border rounded-2xl overflow-hidden transition-all duration-300 shadow-xl hover:shadow-amber-500/10
-        ${monster.unique ? 'border-purple-500/50' : 'border-slate-700/50 hover:border-amber-500/50'}
+        ${monster.unique ? 'border-purple-500/50 shadow-[0_0_20px_rgba(168,85,247,0.1)]' : 'border-slate-700/50 hover:border-amber-500/50'}
       `}
     >
-      <div className="p-5 bg-slate-900/40 border-b border-slate-700/50">
-        <div className="flex justify-between items-start mb-3">
-          <div>
-            <h3 className={`text-lg font-bold group-hover:text-amber-500 transition-colors leading-tight ${monster.unique ? 'text-purple-300' : 'text-slate-100'}`}>
+      <div className="p-5 bg-slate-900/40 border-b border-slate-700/50 relative overflow-hidden">
+        {monster.unique && (
+          <div className="absolute top-0 right-0 w-32 h-32 bg-purple-500/5 blur-3xl rounded-full -mr-16 -mt-16 pointer-events-none"></div>
+        )}
+        <div className="flex justify-between items-start mb-3 relative z-10">
+          <div className="flex-1 min-w-0 pr-2">
+            <h3 className={`text-lg font-black group-hover:text-amber-500 transition-colors leading-tight italic tracking-tight truncate ${monster.unique ? 'text-purple-300' : 'text-slate-100'}`}>
               {monster.name}
             </h3>
             <div className="flex flex-col gap-1.5 mt-2">
               {showLocation && (
-                <div className="text-[10px] text-slate-500 italic">{monster.location}</div>
+                <div className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">{monster.location}</div>
               )}
               {coordsArray.length > 0 && (
                 <div className="space-y-1">
@@ -86,7 +93,7 @@ const MonsterCard = memo(({ monster, showLocation }: { monster: Monster, showLoc
                   {coordsArray.length > 3 && (
                     <button 
                       onClick={(e) => { e.preventDefault(); e.stopPropagation(); setShowAllCoords(!showAllCoords); }}
-                      className="text-[10px] font-bold text-blue-400 hover:text-blue-300 transition-colors uppercase tracking-tight flex items-center gap-1 ml-1"
+                      className="text-[10px] font-black text-blue-400/70 hover:text-blue-300 transition-colors uppercase tracking-widest flex items-center gap-1 mt-1 ml-1"
                     >
                       {showAllCoords ? 'Réduire' : `+ ${coordsArray.length - 3} localisations`}
                     </button>
@@ -96,29 +103,29 @@ const MonsterCard = memo(({ monster, showLocation }: { monster: Monster, showLoc
             </div>
           </div>
           {monster.unique && (
-            <span className="px-2 py-0.5 rounded text-[10px] font-black bg-purple-500 text-slate-950 uppercase tracking-tighter shadow-[0_0_10px_rgba(168,85,247,0.5)]">
+            <span className="px-2 py-0.5 rounded text-[10px] font-black bg-purple-500 text-slate-950 uppercase tracking-tighter shadow-[0_0_10px_rgba(168,85,247,0.5)] shrink-0">
               Unique
             </span>
           )}
         </div>
         
-        <div className="grid grid-cols-2 gap-3 text-[11px]">
+        <div className="grid grid-cols-2 gap-3 text-[11px] relative z-10">
           <div className="flex items-center gap-2 text-slate-400">
-            <Skull size={14} className="text-slate-600" />
-            <span className="font-medium">XP:</span>
-            <span className="text-slate-200">{monster.exp}</span>
+            <Skull size={14} className="text-rose-500/70" />
+            <span className="font-bold">XP:</span>
+            <span className="text-slate-200 font-mono">{monster.exp}</span>
           </div>
           <div className="flex items-center gap-2 text-slate-400">
             <Coins size={14} className="text-amber-600/80" />
-            <span className="font-medium">Or:</span>
-            <span className="text-slate-200">{monster.gold}</span>
+            <span className="font-bold">Or:</span>
+            <span className="text-slate-200 font-mono">{monster.gold}</span>
           </div>
         </div>
       </div>
 
       <div className="p-5">
-        <h4 className="text-[10px] font-bold text-slate-500 uppercase tracking-widest mb-4 flex items-center gap-2">
-          <span className="w-1.5 h-1.5 rounded-full bg-slate-600" />
+        <h4 className="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] mb-4 flex items-center gap-2">
+          <div className="w-1.5 h-1.5 rounded-full bg-slate-700" />
           Butins & Ressources
         </h4>
         <div className="flex flex-wrap gap-2">
@@ -130,7 +137,7 @@ const MonsterCard = memo(({ monster, showLocation }: { monster: Monster, showLoc
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 });
 

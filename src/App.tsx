@@ -6,7 +6,6 @@ import EquipablePage from './pages/EquipablePage';
 import Bestiary from './components/Bestiary';
 import RecipeBrowser from './components/RecipeBrowser';
 import PlannerPage from './pages/PlannerPage';
-import ZoneExplorer from './pages/ZoneExplorer';
 import Legal from './pages/Legal';
 import { bestiaryData } from './data/bestiary';
 import { recipesData } from './data/recipes';
@@ -23,7 +22,6 @@ const App: React.FC = () => {
           <Route path="/planner" element={<PlannerPage />} />
           <Route path="/wiki" element={<WikiPage />} />
           <Route path="/wiki/:slug" element={<WikiPage />} />
-          <Route path="/explorer" element={<ZoneExplorer />} />
           <Route path="/legal" element={<Legal />} />
         </Routes>
       </Layout>

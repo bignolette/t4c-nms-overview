@@ -1,20 +1,31 @@
 import { useState, useMemo, useEffect, memo } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import { wikiData, itemMonsterMap } from '../data/wiki-data';
+import { motion, AnimatePresence } from 'framer-motion';
+import { wikiData, itemMonsterMap, itemUsageMap } from '../data/wiki-data';
 import { fastNormalize, formatStatValue } from '../data/utils';
 import type { RecipeItem } from '../data/wiki-data';
 import CraftingTree from './CraftingTree';
+import { createPortal } from 'react-dom';
 import { 
   Search, ChevronLeft, ChevronRight, ArrowUpDown, Star, X, RotateCcw, Package, MapPin,
   Shield, Sword, Crown, Shirt, Footprints, Hand, Circle, Link2, GripHorizontal, Columns2, Medal,
   ArrowUpRight, ArrowRight, Wind, Users, ArrowRightCircle, User, LayoutGrid, List, ChevronDown, ChevronUp, Map, Tag,
-  Skull
+  Skull, Info, Sparkles, Filter, Hammer
 } from 'lucide-react';
 
 interface RecipeBrowserProps {
   recipes: RecipeItem[];
   isItemsPage?: boolean;
 }
+
+const STAT_FILTERS = [
+  { key: 'str', label: 'Force', color: 'text-rose-400' },
+  { key: 'end', label: 'Endurance', color: 'text-orange-400' },
+  { key: 'dex', label: 'Dextérité', color: 'text-emerald-400' },
+  { key: 'int', label: 'Intelligence', color: 'text-sky-400' },
+  { key: 'wis', label: 'Sagesse', color: 'text-purple-400' },
+  { key: 'ca', label: 'CA', color: 'text-slate-300' },
+];
 
 const PROFESSIONS = ['Tous', 'Apothicaire', 'Bijoutier', 'Couturier', 'Armurier', 'Forgeron', 'Ebéniste'];
 const ITEM_TYPES = [
@@ -148,109 +159,246 @@ const LocationList = ({ locations }: { locations: {label: string, coordinates: s
   );
 };
 
-const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, toggleFavorite, getMatchingIngredients, viewMode }: any) => {
-  const matchingIngs = getMatchingIngredients ? getMatchingIngredients(recipe, activeSearchTerm) : [];
-  
-  if (viewMode === 'grid' && isItemsPage) {
-    return (
-      <div className="bg-slate-900/40 border border-slate-800 rounded-2xl p-4 flex flex-col gap-3 hover:border-slate-600 transition-all group">
-        <div className="flex items-start justify-between">
-          <div className="p-2 bg-slate-800 rounded-xl text-amber-500 border border-slate-700/50 group-hover:bg-amber-500 group-hover:text-slate-900 transition-all">
-            {(() => {
-              const Icon = getSourceIcon(recipe.source, recipe.name);
-              return <Icon size={18} />;
-            })()}
+const ItemDetailModal = ({ recipe, onClose, toggleFavorite, favorites, navigateToRecipe }: any) => {
+  return createPortal(
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4">
+      <div className="absolute inset-0 bg-slate-950/90 backdrop-blur-md" onClick={onClose}></div>
+      <div className="bg-slate-900 border border-slate-800 w-full max-w-4xl max-h-[90vh] rounded-3xl shadow-2xl relative overflow-hidden flex flex-col animate-in zoom-in-95 duration-200">
+        <div className="p-6 border-b border-slate-800 flex justify-between items-center bg-slate-900/50 backdrop-blur-xl">
+          <div className="flex items-center gap-3">
+            <div className="p-2 bg-slate-800 rounded-xl text-amber-500 border border-slate-700/50">
+              {(() => {
+                const Icon = getSourceIcon(recipe.source, recipe.name);
+                return <Icon size={24} />;
+              })()}
+            </div>
+            <div>
+              <h3 className="text-xl font-black text-slate-100 uppercase tracking-tighter italic">{recipe.name}</h3>
+              <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">{recipe.source || recipe.typeSource || 'Objet'}</p>
+            </div>
           </div>
-          <button 
-            onClick={() => toggleFavorite(recipe.name)}
-            className={`p-1.5 rounded-full border shadow-lg transition-all ${favorites.includes(recipe.name) ? 'bg-yellow-500 border-yellow-400 text-slate-950 scale-110' : 'bg-slate-800 border-slate-700 text-slate-500 hover:text-yellow-500'}`}
-          >
-            <Star size={12} fill={favorites.includes(recipe.name) ? 'currentColor' : 'none'} />
-          </button>
-        </div>
-        
-        <div>
-          <h3 className="font-bold text-slate-100 group-hover:text-amber-500 transition-colors text-sm line-clamp-2 min-h-[40px]">{recipe.name}</h3>
-          <div className="flex flex-col gap-1 mt-1">
-            {recipe.typeSource ? (
-              <div className="flex items-center gap-1 text-[10px] text-emerald-500 uppercase font-black tracking-tighter">
-                <Tag size={10} />
-                <span>{recipe.typeSource} {recipe.locations?.[0] ? `• ${recipe.locations[0].label}` : ''}</span>
-              </div>
-            ) : recipe.source && (
-              <div className="flex items-center gap-1 text-[10px] text-slate-500 uppercase font-black tracking-tighter">
-                <Tag size={10} className="text-slate-600" />
-                <span>{recipe.source}</span>
-              </div>
-            )}
+          <div className="flex items-center gap-2">
+            <button 
+              onClick={() => toggleFavorite(recipe.name)}
+              className={`p-2 rounded-xl border transition-all ${favorites.includes(recipe.name) ? 'bg-yellow-500 border-yellow-400 text-slate-950' : 'bg-slate-800 border-slate-700 text-slate-500 hover:text-yellow-500'}`}
+            >
+              <Star size={20} fill={favorites.includes(recipe.name) ? 'currentColor' : 'none'} />
+            </button>
+            <button onClick={onClose} className="p-2 hover:bg-slate-800 rounded-full text-slate-500 hover:text-white transition-all"><X size={20} /></button>
           </div>
         </div>
 
-        <div className="flex flex-wrap gap-1.5 mt-auto">
-          {recipe.bonuses?.ca && <StatBadge label="CA" value={formatStatValue(recipe.bonuses.ca)} type="ca" />}
-          {recipe.bonuses?.str && <StatBadge label="FOR" value={formatStatValue(recipe.bonuses.str)} type="str" />}
-          {recipe.bonuses?.end && <StatBadge label="END" value={formatStatValue(recipe.bonuses.end)} type="end" />}
-          {recipe.bonuses?.dex && <StatBadge label="DEX" value={formatStatValue(recipe.bonuses.dex)} type="dex" />}
-          {recipe.bonuses?.int && <StatBadge label="INT" value={formatStatValue(recipe.bonuses.int)} type="int" />}
-          {recipe.bonuses?.wis && <StatBadge label="SAG" value={formatStatValue(recipe.bonuses.wis)} type="wis" />}
+        <div className="flex-1 overflow-y-auto p-6 custom-scrollbar">
+          <RecipeItemRow 
+            recipe={recipe} 
+            isItemsPage={true} 
+            favorites={favorites} 
+            toggleFavorite={toggleFavorite} 
+            viewMode="list" 
+            hideExternalLink={true}
+            onNavigateToRecipe={(name: string) => { navigateToRecipe(name); onClose(); }}
+          />
         </div>
       </div>
+    </div>,
+    document.body
+  );
+};
+
+const MonsterDropSection = ({ itemName }: { itemName: string }) => {
+  const monsters = itemMonsterMap[fastNormalize(itemName)] || [];
+  if (monsters.length === 0) return null;
+  
+  const [showAllMonsters, setShowAllMonsters] = useState(false);
+  const displayedMonsters = showAllMonsters ? monsters : monsters.slice(0, 10);
+
+  return (
+    <div className="bg-purple-500/5 border border-purple-500/20 rounded-xl p-4">
+      <span className="text-[10px] font-black text-[#a335ee] uppercase tracking-[0.2em] block mb-3 flex items-center gap-2">
+        <Skull size={14} fill="#a335ee" className="fill-purple-500/20" /> 
+        Drops de monstres
+      </span>
+      <div className="flex flex-wrap gap-2">
+        {displayedMonsters.map((m, i) => (
+          <Link 
+            key={i} 
+            to={`/wiki/bestiary?search=${encodeURIComponent(m.name)}`}
+            className="text-[11px] font-bold text-slate-300 hover:text-[#a335ee] transition-all bg-slate-900 border border-purple-500/20 px-2.5 py-1.5 rounded-lg flex items-center gap-2 group/m shadow-inner"
+          >
+            <span className="group-hover/m:underline decoration-[#a335ee] underline-offset-4 decoration-2">{m.name}</span>
+          </Link>
+        ))}
+      </div>
+      {monsters.length > 10 && (
+        <button 
+          onClick={() => setShowAllMonsters(!showAllMonsters)}
+          className="text-[10px] font-black text-slate-500 hover:text-amber-500 uppercase tracking-widest mt-4 w-full py-2 border-t border-purple-500/10 transition-colors flex items-center justify-center gap-2"
+        >
+          {showAllMonsters ? (
+            <>Voir moins <ChevronUp size={12} /></>
+          ) : (
+            <>+{monsters.length - 10} autres... <ChevronDown size={12} /></>
+          )}
+        </button>
+      )}
+    </div>
+  );
+};
+
+const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, toggleFavorite, getMatchingIngredients, viewMode, hideExternalLink, onNavigateToRecipe }: any) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const matchingIngs = getMatchingIngredients ? getMatchingIngredients(recipe, activeSearchTerm) : [];
+  
+  const usages = useMemo(() => itemUsageMap[fastNormalize(recipe.name)] || [], [recipe.name]);
+
+  if (viewMode === 'grid' && isItemsPage) {
+    return (
+      <>
+        <motion.div 
+          layout
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, scale: 0.95 }}
+          onClick={() => setIsModalOpen(true)}
+          className="bg-slate-900/40 border border-slate-800 rounded-2xl p-4 flex flex-col gap-3 hover:border-amber-500/50 hover:bg-slate-800/60 transition-all group cursor-pointer relative overflow-hidden h-full"
+        >
+          <div className="absolute top-0 right-0 p-2 opacity-0 group-hover:opacity-100 transition-opacity">
+            <Info size={14} className="text-amber-500/50" />
+          </div>
+
+          <div className="flex items-start justify-between">
+            <div className="p-2 bg-slate-800 rounded-xl text-amber-500 border border-slate-700/50 group-hover:bg-amber-500 group-hover:text-slate-900 transition-all">
+              {(() => {
+                const Icon = getSourceIcon(recipe.source, recipe.name);
+                return <Icon size={18} />;
+              })()}
+            </div>
+            <button 
+              onClick={(e) => { e.stopPropagation(); toggleFavorite(recipe.name); }}
+              className={`p-1.5 rounded-full border shadow-lg transition-all ${favorites.includes(recipe.name) ? 'bg-yellow-500 border-yellow-400 text-slate-950 scale-110' : 'bg-slate-800 border-slate-700 text-slate-500 hover:text-yellow-500'}`}
+            >
+              <Star size={12} fill={favorites.includes(recipe.name) ? 'currentColor' : 'none'} />
+            </button>
+          </div>
+          
+          <div>
+            <h3 className="font-bold text-slate-100 group-hover:text-amber-500 transition-colors text-sm line-clamp-2 min-h-[40px]">{recipe.name}</h3>
+            <div className="flex flex-col gap-1.5 mt-1">
+              {recipe.typeSource ? (
+                <div className="flex items-center gap-1 text-[10px] text-emerald-500 uppercase font-black tracking-tighter">
+                  <Tag size={10} />
+                  <span>{recipe.typeSource} {recipe.locations?.[0] ? `• ${recipe.locations[0].label}` : ''}</span>
+                </div>
+              ) : recipe.source && (
+                <div className="flex items-center gap-1 text-[10px] text-slate-500 uppercase font-black tracking-tighter">
+                  <Tag size={10} className="text-slate-600" />
+                  <span>{recipe.source}</span>
+                </div>
+              )}
+
+              {/* Monster Drops in Grid View */}
+              {(() => {
+                const monsters = itemMonsterMap[fastNormalize(recipe.name)] || [];
+                if (monsters.length === 0) return null;
+                return (
+                  <div className="flex items-center gap-1.5 overflow-hidden">
+                    <Skull size={10} fill="#a335ee" className="fill-purple-500/20 shrink-0" />
+                    <div className="flex gap-1 truncate">
+                      {monsters.slice(0, 2).map((m, i) => (
+                        <span key={i} className="text-[9px] font-bold text-[#a335ee] uppercase tracking-tighter opacity-80 whitespace-nowrap bg-purple-500/5 px-1 rounded">
+                          {m.name}
+                        </span>
+                      ))}
+                      {monsters.length > 2 && <span className="text-[9px] text-slate-600">+{monsters.length - 2}</span>}
+                    </div>
+                  </div>
+                );
+              })()}
+            </div>
+          </div>
+
+          <div className="flex flex-wrap gap-1.5 mt-auto">
+            {recipe.bonuses?.ca && <StatBadge label="CA" value={formatStatValue(recipe.bonuses.ca)} type="ca" />}
+            {recipe.bonuses?.str && <StatBadge label="FOR" value={formatStatValue(recipe.bonuses.str)} type="str" />}
+            {recipe.bonuses?.end && <StatBadge label="END" value={formatStatValue(recipe.bonuses.end)} type="end" />}
+            {recipe.bonuses?.dex && <StatBadge label="DEX" value={formatStatValue(recipe.bonuses.dex)} type="dex" />}
+            {recipe.bonuses?.int && <StatBadge label="INT" value={formatStatValue(recipe.bonuses.int)} type="int" />}
+            {recipe.bonuses?.wis && <StatBadge label="SAG" value={formatStatValue(recipe.bonuses.wis)} type="wis" />}
+          </div>
+        </motion.div>
+        {isModalOpen && (
+          <ItemDetailModal 
+            recipe={recipe} 
+            onClose={() => setIsModalOpen(false)} 
+            toggleFavorite={toggleFavorite} 
+            favorites={favorites} 
+            navigateToRecipe={onNavigateToRecipe}
+          />
+        )}
+      </>
     );
   }
 
   return (
-    <div className="group relative">
-      <div className="absolute -top-3 right-6 z-10 flex flex-wrap items-center gap-2 justify-end max-w-[80%]">
-        {matchingIngs.length > 0 && (
-          <div className="hidden md:flex items-center gap-1 bg-slate-950 border border-amber-500/30 px-3 py-1 rounded-full text-[10px] text-amber-500 font-bold shadow-xl animate-in fade-in zoom-in duration-300">
-            <Search size={10} />
-            <span>Contient: {matchingIngs.join(', ')}</span>
-          </div>
-        )}
-        {!isItemsPage && (
-          <button 
-            onClick={() => toggleFavorite(recipe.name)}
-            className={`p-1.5 rounded-full border shadow-lg transition-all ${favorites.includes(recipe.name) ? 'bg-yellow-500 border-yellow-400 text-slate-950 scale-110' : 'bg-slate-800 border-slate-700 text-slate-500 hover:text-yellow-500'}`}
-          >
-            <Star size={14} fill={favorites.includes(recipe.name) ? 'currentColor' : 'none'} />
-          </button>
-        )}
-        {recipe.zones && recipe.zones.map((zone: string) => (
-          <span key={zone} className="flex items-center gap-1 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter border shadow-lg bg-indigo-500/10 text-indigo-400 border-indigo-500/20">
-            <MapPin size={10} /> {zone}
-          </span>
-        ))}
-        {isItemsPage && (recipe.sources ? (
-          recipe.sources.slice(0, 1).map((s: any, i: number) => (
-            <span key={i} className="flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter border shadow-lg bg-emerald-500/10 text-emerald-400 border-emerald-500/20">
-              <Tag size={10} className="opacity-70" /> {s.typeSource}
+    <motion.div 
+      layout
+      initial={{ opacity: 0, x: -10 }}
+      animate={{ opacity: 1, x: 0 }}
+      className="group relative"
+    >
+      {!hideExternalLink && (
+        <div className="absolute -top-3 right-6 z-10 flex flex-wrap items-center gap-2 justify-end max-w-[80%]">
+          {matchingIngs.length > 0 && (
+            <div className="hidden md:flex items-center gap-1 bg-slate-950 border border-amber-500/30 px-3 py-1 rounded-full text-[10px] text-amber-500 font-bold shadow-xl animate-in fade-in zoom-in duration-300">
+              <Search size={10} />
+              <span>Contient: {matchingIngs.join(', ')}</span>
+            </div>
+          )}
+          {!isItemsPage && (
+            <button 
+              onClick={() => toggleFavorite(recipe.name)}
+              className={`p-1.5 rounded-full border shadow-lg transition-all ${favorites.includes(recipe.name) ? 'bg-yellow-500 border-yellow-400 text-slate-950 scale-110' : 'bg-slate-800 border-slate-700 text-slate-500 hover:text-yellow-500'}`}
+            >
+              <Star size={14} fill={favorites.includes(recipe.name) ? 'currentColor' : 'none'} />
+            </button>
+          )}
+          {recipe.zones && recipe.zones.map((zone: string) => (
+            <span key={zone} className="flex items-center gap-1 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter border shadow-lg bg-indigo-500/10 text-indigo-400 border-indigo-500/20">
+              <MapPin size={10} /> {zone}
             </span>
-          ))
-        ) : (recipe.typeSource || recipe.source) && (
-          <span className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter border shadow-lg ${recipe.typeSource ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20' : (TYPE_COLORS[recipe.source as string] || 'bg-slate-800 text-slate-400')}`}>
-            <Tag size={10} className="opacity-70" /> {recipe.typeSource || recipe.source}
-          </span>
-        ))}
-        {!isItemsPage && recipe.profession && (
-          <span className={`px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter border shadow-lg ${PROF_COLORS[recipe.profession]?.replace('text-', 'text-opacity-90 text-') || 'bg-slate-800 text-slate-400'}`}>
-            {recipe.profession} • LVL {recipe.level}
-          </span>
-        )}
-      </div>
+          ))}
+          {isItemsPage && (recipe.sources ? (
+            recipe.sources.slice(0, 1).map((s: any, i: number) => (
+              <span key={i} className="flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter border shadow-lg bg-emerald-500/10 text-emerald-400 border-emerald-500/20">
+                <Tag size={10} className="opacity-70" /> {s.typeSource}
+              </span>
+            ))
+          ) : (recipe.typeSource || recipe.source) && (
+            <span className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter border shadow-lg ${recipe.typeSource ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20' : (TYPE_COLORS[recipe.source as string] || 'bg-slate-800 text-slate-400')}`}>
+              <Tag size={10} className="opacity-70" /> {recipe.typeSource || recipe.source}
+            </span>
+          ))}
+          {!isItemsPage && recipe.profession && (
+            <span className={`px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter border shadow-lg ${PROF_COLORS[recipe.profession]?.replace('text-', 'text-opacity-90 text-') || 'bg-slate-800 text-slate-400'}`}>
+              {recipe.profession} • LVL {recipe.level}
+            </span>
+          )}
+        </div>
+      )}
       
       {isItemsPage ? (
         <div className="bg-slate-900/40 border border-slate-800 rounded-2xl p-6 shadow-xl hover:border-slate-700 transition-all">
           <div className="flex flex-col md:flex-row md:items-start justify-between gap-6">
-            <div className="space-y-3">
-              <div className="flex items-center gap-3">
+            <div className="flex-1 space-y-6">
+              <div className="flex items-center gap-3 border-b border-slate-800 pb-4">
                 <div className="p-2 bg-slate-800 rounded-xl text-amber-500 border border-slate-700/50">
                   {(() => {
                     const Icon = getSourceIcon(recipe.source, recipe.name);
-                    return <Icon size={20} />;
+                    return <Icon size={24} />;
                   })()}
                 </div>
                 <div>
-                  <h3 className="text-xl font-bold text-slate-100 group-hover:text-amber-500 transition-colors mb-1">{recipe.name}</h3>
+                  <h3 className="text-2xl font-black text-slate-100 mb-1">{recipe.name}</h3>
                   <div className="flex flex-wrap gap-2">
                     {recipe.sources && recipe.sources.length > 0 ? (
                       recipe.sources.map((s: any, i: number) => (
@@ -275,49 +423,96 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
                 </div>
               </div>
 
-              <div className="space-y-4">
-                {recipe.description && (
-                  <p className="text-sm text-slate-400 leading-relaxed border-l-2 border-amber-500/30 pl-3 py-1">
-                    {recipe.description}
-                  </p>
-                )}
-                
-                <div className="space-y-2">
-                  <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block">Prérequis</span>
-                  {recipe.prerequisites && Object.values(recipe.prerequisites).some(v => v) ? (
-                    <div className="flex flex-wrap gap-2">
-                      {recipe.prerequisites.str && <StatBadge label="FOR" value={formatStatValue(recipe.prerequisites.str)} type="str" />}
-                      {recipe.prerequisites.end && <StatBadge label="END" value={formatStatValue(recipe.prerequisites.end)} type="end" />}
-                      {recipe.prerequisites.dex && <StatBadge label="DEX" value={formatStatValue(recipe.prerequisites.dex)} type="dex" />}
-                      {recipe.prerequisites.int && <StatBadge label="INT" value={formatStatValue(recipe.prerequisites.int)} type="int" />}
-                      {recipe.prerequisites.wis && <StatBadge label="SAG" value={formatStatValue(recipe.prerequisites.wis)} type="wis" />}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="space-y-6">
+                  {recipe.description && (
+                    <div className="space-y-2">
+                      <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest block flex items-center gap-2">
+                        <Info size={12} /> Description
+                      </span>
+                      <p className="text-sm text-slate-400 leading-relaxed bg-slate-950/30 p-3 rounded-xl border border-slate-800">
+                        {recipe.description}
+                      </p>
                     </div>
-                  ) : (
-                    <span className="text-xs text-slate-600 italic">Pas de pré-requis</span>
                   )}
+                  
+                  <div className="space-y-3">
+                    <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest block">Prérequis</span>
+                    {recipe.prerequisites && Object.values(recipe.prerequisites).some(v => v) ? (
+                      <div className="flex flex-wrap gap-2">
+                        {recipe.prerequisites.str && <StatBadge label="FOR" value={formatStatValue(recipe.prerequisites.str)} type="str" />}
+                        {recipe.prerequisites.end && <StatBadge label="END" value={formatStatValue(recipe.prerequisites.end)} type="end" />}
+                        {recipe.prerequisites.dex && <StatBadge label="DEX" value={formatStatValue(recipe.prerequisites.dex)} type="dex" />}
+                        {recipe.prerequisites.int && <StatBadge label="INT" value={formatStatValue(recipe.prerequisites.int)} type="int" />}
+                        {recipe.prerequisites.wis && <StatBadge label="SAG" value={formatStatValue(recipe.prerequisites.wis)} type="wis" />}
+                      </div>
+                    ) : (
+                      <span className="text-xs text-slate-600 italic">Pas de pré-requis</span>
+                    )}
+                  </div>
+
+                  {(recipe.bonuses && Object.values(recipe.bonuses).some(v => v)) || recipe.secondary ? (
+                    <div className="space-y-3">
+                      <span className="text-[10px] font-black text-emerald-500 uppercase tracking-widest block flex items-center gap-2">
+                        <Sparkles size={12} /> Bonus & Caractéristiques
+                      </span>
+                      <div className="flex flex-wrap gap-2 bg-emerald-500/5 p-3 rounded-xl border border-emerald-500/10">
+                        {recipe.bonuses?.ca && <StatBadge label="CA" value={formatStatValue(recipe.bonuses.ca)} type="ca" />}
+                        {recipe.bonuses?.str && <StatBadge label="FOR" value={formatStatValue(recipe.bonuses.str)} type="str" />}
+                        {recipe.bonuses?.end && <StatBadge label="END" value={formatStatValue(recipe.bonuses.end)} type="end" />}
+                        {recipe.bonuses?.dex && <StatBadge label="DEX" value={formatStatValue(recipe.bonuses.dex)} type="dex" />}
+                        {recipe.bonuses?.int && <StatBadge label="INT" value={formatStatValue(recipe.bonuses.int)} type="int" />}
+                        {recipe.bonuses?.wis && <StatBadge label="SAG" value={formatStatValue(recipe.bonuses.wis)} type="wis" />}
+                        
+                        {recipe.secondary && Object.entries(recipe.secondary).map(([label, value]) => (
+                          <StatBadge key={label} label={label} value={formatStatValue(value as string)} type="secondary" />
+                        ))}
+                      </div>
+                    </div>
+                  ) : null}
                 </div>
 
-                {(recipe.bonuses && Object.values(recipe.bonuses).some(v => v)) || recipe.secondary ? (
-                  <div className="space-y-2">
-                    <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest block text-emerald-500/80">Bonus</span>
-                    <div className="flex flex-wrap gap-2">
-                      {recipe.bonuses?.ca && <StatBadge label="CA" value={formatStatValue(recipe.bonuses.ca)} type="ca" />}
-                      {recipe.bonuses?.str && <StatBadge label="FOR" value={formatStatValue(recipe.bonuses.str)} type="str" />}
-                      {recipe.bonuses?.end && <StatBadge label="END" value={formatStatValue(recipe.bonuses.end)} type="end" />}
-                      {recipe.bonuses?.dex && <StatBadge label="DEX" value={formatStatValue(recipe.bonuses.dex)} type="dex" />}
-                      {recipe.bonuses?.int && <StatBadge label="INT" value={formatStatValue(recipe.bonuses.int)} type="int" />}
-                      {recipe.bonuses?.wis && <StatBadge label="SAG" value={formatStatValue(recipe.bonuses.wis)} type="wis" />}
-                      
-                      {recipe.secondary && Object.entries(recipe.secondary).map(([label, value]) => (
-                        <StatBadge key={label} label={label} value={formatStatValue(value as string)} type="secondary" />
-                      ))}
+                <div className="space-y-6">
+                  {/* Inverse lookup: Where is this item used? */}
+                  {usages.length > 0 && (
+                    <div className="space-y-3">
+                      <span className="text-[10px] font-black text-amber-500 uppercase tracking-widest block flex items-center gap-2">
+                        <Hammer size={12} /> Utilisé pour fabriquer
+                      </span>
+                      <div className="grid grid-cols-1 gap-2">
+                        {usages.map((u, i) => (
+                          <button
+                            key={i}
+                            onClick={() => onNavigateToRecipe ? onNavigateToRecipe(u.name) : null}
+                            className="flex items-center justify-between p-2 rounded-lg bg-amber-500/5 border border-amber-500/10 hover:border-amber-500/30 transition-all group/u text-left"
+                          >
+                            <span className="text-xs font-bold text-slate-300 group-hover/u:text-amber-400">{u.name}</span>
+                            <ArrowRightCircle size={12} className="text-slate-600 group-hover/u:text-amber-500" />
+                          </button>
+                        ))}
+                      </div>
                     </div>
-                  </div>
-                ) : null}
+                  )}
+
+                  {recipe.proc && (
+                    <div className="space-y-3">
+                      <span className="text-[10px] font-black text-sky-400 uppercase tracking-widest block flex items-center gap-2">
+                        <Wind size={12} /> Effet Spécial (Proc)
+                      </span>
+                      <div className="bg-sky-500/5 border border-sky-500/20 rounded-xl p-3">
+                        <div className="flex justify-between items-center mb-1">
+                          <span className="text-xs font-black text-sky-300 uppercase italic">{recipe.proc.effect}</span>
+                          <span className="text-[10px] font-bold text-sky-500 bg-sky-500/10 px-1.5 py-0.5 rounded">{recipe.proc.chance}</span>
+                        </div>
+                        <p className="text-[11px] text-slate-400 italic">{recipe.proc.description}</p>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             </div>
             
-            <div className="flex flex-col gap-6 w-full md:w-64 lg:w-80 shrink-0">
+            <div className="flex flex-col gap-6 w-full md:w-64 lg:w-80 shrink-0 border-l border-slate-800/50 pl-6">
               {recipe.learnedFrom && (
                 <div className="space-y-3">
                   <div className="bg-blue-500/5 border border-blue-500/20 rounded-xl p-3">
@@ -360,37 +555,14 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
               )}
 
               {/* Unified Monster Drops section */}
-              {itemMonsterMap[fastNormalize(recipe.name)] && itemMonsterMap[fastNormalize(recipe.name)].length > 0 && (
-                <div className="bg-purple-500/5 border border-purple-500/20 rounded-xl p-4">
-                  <span className="text-[10px] font-black text-[#a335ee] uppercase tracking-[0.2em] block mb-3 flex items-center gap-2">
-                    <Skull size={14} fill="#a335ee" className="fill-purple-500/20" /> 
-                    Drops de monstres
-                  </span>
-                  <div className="flex flex-wrap gap-2">
-                    {itemMonsterMap[fastNormalize(recipe.name)].slice(0, 10).map((m, i) => (
-                      <Link 
-                        key={i} 
-                        to={`/wiki/bestiary?search=${encodeURIComponent(m.name)}`}
-                        className="text-[11px] font-bold text-slate-300 hover:text-[#a335ee] transition-all bg-slate-900 border border-purple-500/20 px-2.5 py-1.5 rounded-lg flex items-center gap-2 group/m shadow-inner"
-                      >
-                        <span className="group-hover/m:underline decoration-[#a335ee] underline-offset-4 decoration-2">{m.name}</span>
-                      </Link>
-                    ))}
-                    {itemMonsterMap[fastNormalize(recipe.name)].length > 10 && (
-                      <span className="text-[10px] text-slate-600 italic mt-1 w-full text-center">
-                        +{itemMonsterMap[fastNormalize(recipe.name)].length - 10} autres...
-                      </span>
-                    )}
-                  </div>
-                </div>
-              )}
+              <MonsterDropSection itemName={recipe.name} />
             </div>
           </div>
         </div>
       ) : (
         <CraftingTree recipes={[recipe]} />
       )}
-    </div>
+    </motion.div>
   );
 });
 
@@ -668,8 +840,9 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
   const [selectedProf, setSelectedProf] = useState('Tous');
   const [selectedType, setSelectedType] = useState('Tous');
   const [selectedZone, setSelectedZone] = useState('Toutes');
+  const [selectedStats, setSelectedStats] = useState<string[]>([]);
   const [levelRange, setLevelRange] = useState<[number, number]>(DEFAULT_LEVEL_RANGE);
-  const [sortBy, setSortBy] = useState<'name' | 'level'>(isItemsPage ? 'name' : 'level');
+  const [sortBy, setSortBy] = useState<string>(isItemsPage ? 'name' : 'level');
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc');
   const [showOnlyFavs, setShowOnlyFavs] = useState(false);
   const [showBaseComponents, setShowBaseComponents] = useState(false);
@@ -715,6 +888,13 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
     localStorage.setItem('t4c-fav-recipes', JSON.stringify(newFavs));
   };
 
+  const toggleStatFilter = (statKey: string) => {
+    setSelectedStats(prev => 
+      prev.includes(statKey) ? prev.filter(s => s !== statKey) : [...prev, statKey]
+    );
+    setCurrentPage(1);
+  };
+
   const handleSearch = () => {
     setActiveSearchTerm(searchInput);
     setIsExactSearch(false);
@@ -733,6 +913,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
     setSelectedProf('Tous');
     setSelectedType('Tous');
     setSelectedZone('Toutes');
+    setSelectedStats([]);
     setLevelRange(DEFAULT_LEVEL_RANGE);
     setSortBy(isItemsPage ? 'name' : 'level');
     setSortOrder('asc');
@@ -762,9 +943,15 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
       const resolvedType = recipe.source || findItemSource(recipe.name);
       const matchesType = selectedType === 'Tous' || resolvedType === selectedType;
 
+      // Stat Filter
+      const matchesStats = selectedStats.length === 0 || selectedStats.every(s => 
+        (recipe.bonuses && recipe.bonuses[s as keyof typeof recipe.bonuses]) || 
+        (recipe.secondary && Object.keys(recipe.secondary).some(k => k.toLowerCase().includes(s)))
+      );
+
       if (isItemsPage) {
         const matchesSearch = normalizedSearch === '' || fastNormalize(recipe.name).includes(normalizedSearch);
-        return matchesType && matchesSearch;
+        return matchesType && matchesSearch && matchesStats;
       }
 
       const isBaseComponent = !recipe.ingredients || recipe.ingredients.length === 0;
@@ -774,7 +961,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
       const matchesBaseToggle = showBaseComponents || !isBaseComponent || normalizedSearch !== '';
       const matchesZone = selectedZone === 'Toutes' || (recipe.zones && recipe.zones.includes(selectedZone));
       
-      if (!matchesProf || !matchesLevel || !matchesFav || !matchesBaseToggle || !matchesType || !matchesZone) return false;
+      if (!matchesProf || !matchesLevel || !matchesFav || !matchesBaseToggle || !matchesType || !matchesZone || !matchesStats) return false;
       if (normalizedSearch === '') return true;
 
       if (isExactSearch) return fastNormalize(recipe.name) === normalizedSearch;
@@ -785,7 +972,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
         if (fastNormalize(r.name).includes(search)) return true;
         if (r.ingredients) {
           for (const ing of r.ingredients) {
-            if (fastNormalize(ing.name).includes(search)) return true;
+            if (fastNormalize(ing.name).includes(normalizedSearch)) return true;
             const ingRecipe = recipes.find(subR => fastNormalize(subR.name) === fastNormalize(ing.name));
             if (ingRecipe && checkMatch(ingRecipe, search, seen)) return true;
           }
@@ -798,12 +985,17 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
     result.sort((a, b) => {
       if (sortBy === 'name') {
         return sortOrder === 'asc' ? a.name.localeCompare(b.name) : b.name.localeCompare(a.name);
-      } else {
+      } else if (sortBy === 'level') {
         return sortOrder === 'asc' ? (a.level || 0) - (b.level || 0) : (b.level || 0) - (a.level || 0);
+      } else {
+        // Sort by specific stat value
+        const valA = parseInt(a.bonuses?.[sortBy as keyof typeof a.bonuses] || '0');
+        const valB = parseInt(b.bonuses?.[sortBy as keyof typeof b.bonuses] || '0');
+        return sortOrder === 'asc' ? valA - valB : valB - valA;
       }
     });
     return result;
-  }, [recipes, activeSearchTerm, selectedProf, selectedType, selectedZone, levelRange, sortBy, sortOrder, showOnlyFavs, showBaseComponents, favorites, isItemsPage, viewMode, isExactSearch]);
+  }, [recipes, activeSearchTerm, selectedProf, selectedType, selectedZone, selectedStats, levelRange, sortBy, sortOrder, showOnlyFavs, showBaseComponents, favorites, isItemsPage, viewMode, isExactSearch]);
 
   const getMatchingIngredients = (recipe: RecipeItem, search: string) => {
     if (!search || isItemsPage || isExactSearch) return [];
@@ -836,12 +1028,12 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
     }
   };
 
-  const toggleSort = (type: 'name' | 'level') => {
+  const toggleSort = (type: string) => {
     if (sortBy === type) {
       setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
     } else {
       setSortBy(type);
-      setSortOrder('asc');
+      setSortOrder('desc'); // Most stats we want descending by default
     }
   };
 
@@ -937,19 +1129,41 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
 
               <div className="flex flex-col lg:flex-row gap-6 items-end border-t border-slate-800/50 pt-6">
                 {isItemsPage ? (
-                  <div className="w-full space-y-3">
-                    <label className="text-[10px] font-bold text-slate-500 uppercase tracking-[0.2em] ml-1">Catégorie d'objet</label>
-                    <div className="flex flex-wrap gap-2">
-                      {itemTypes.map(t => (
-                        <button
-                          key={t}
-                          onClick={() => {setSelectedType(t); setCurrentPage(1);}}
-                          className={`px-4 py-2 rounded-xl text-xs font-bold border transition-all flex items-center gap-2 ${selectedType === t ? (TYPE_COLORS[t] || 'bg-amber-500 text-slate-950 border-amber-500 shadow-md') : 'bg-slate-950 text-slate-500 border-slate-800 hover:border-slate-600'}`}
-                        >
-                          <span className={`w-1.5 h-1.5 rounded-full ${TYPE_COLORS[t]?.split(' ')[0] || 'bg-slate-500'}`} />
-                          {t}
-                        </button>
-                      ))}
+                  <div className="w-full space-y-6">
+                    <div className="space-y-3">
+                      <label className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em] ml-1 flex items-center gap-2">
+                        <Tag size={12} /> Catégorie d'objet
+                      </label>
+                      <div className="flex flex-wrap gap-2">
+                        {itemTypes.map(t => (
+                          <button
+                            key={t}
+                            onClick={() => {setSelectedType(t); setCurrentPage(1);}}
+                            className={`px-4 py-2 rounded-xl text-xs font-bold border transition-all flex items-center gap-2 ${selectedType === t ? (TYPE_COLORS[t] || 'bg-amber-500 text-slate-950 border-amber-500 shadow-md') : 'bg-slate-950 text-slate-500 border-slate-800 hover:border-slate-600'}`}
+                          >
+                            <span className={`w-1.5 h-1.5 rounded-full ${TYPE_COLORS[t]?.split(' ')[0] || 'bg-slate-500'}`} />
+                            {t}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="space-y-3">
+                      <label className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em] ml-1 flex items-center gap-2">
+                        <Filter size={12} /> Filtrer par Bonus
+                      </label>
+                      <div className="flex flex-wrap gap-2">
+                        {STAT_FILTERS.map(stat => (
+                          <button
+                            key={stat.key}
+                            onClick={() => toggleStatFilter(stat.key)}
+                            className={`px-4 py-2 rounded-xl text-xs font-black uppercase tracking-tighter border transition-all flex items-center gap-2 ${selectedStats.includes(stat.key) ? 'bg-slate-100 text-slate-950 border-white shadow-lg' : 'bg-slate-950 text-slate-500 border-slate-800 hover:border-slate-600'}`}
+                          >
+                            <div className={`w-2 h-2 rounded-full ${stat.color.replace('text-', 'bg-')}`} />
+                            {stat.label}
+                          </button>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 ) : (
@@ -1012,6 +1226,10 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
             </div>
 
             <div className="flex flex-wrap gap-3 mt-6 pt-6 border-t border-slate-800/50">
+              <div className="flex items-center gap-2 mr-2">
+                <span className="text-[10px] font-black text-slate-600 uppercase tracking-widest">Trier par :</span>
+              </div>
+              
               {!isItemsPage && (
                 <button onClick={() => toggleSort('level')} className={`flex items-center gap-2 px-4 py-2 rounded-full text-[11px] font-bold border transition-all ${sortBy === 'level' ? 'bg-amber-500 text-slate-950 border-amber-500' : 'bg-slate-800 text-slate-400 border-slate-700'}`}>
                   <ArrowUpDown size={12} /> Niveau {sortBy === 'level' && (sortOrder === 'asc' ? '↑' : '↓')}
@@ -1020,6 +1238,16 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
               <button onClick={() => toggleSort('name')} className={`flex items-center gap-2 px-4 py-2 rounded-full text-[11px] font-bold border transition-all ${sortBy === 'name' ? 'bg-amber-500 text-slate-950 border-amber-500' : 'bg-slate-800 text-slate-400 border-slate-700'}`}>
                 <ArrowUpDown size={12} /> Nom {sortBy === 'name' && (sortOrder === 'asc' ? '↑' : '↓')}
               </button>
+
+              {isItemsPage && STAT_FILTERS.map(stat => (
+                <button 
+                  key={stat.key}
+                  onClick={() => toggleSort(stat.key)} 
+                  className={`flex items-center gap-2 px-4 py-2 rounded-full text-[11px] font-black uppercase tracking-tighter border transition-all ${sortBy === stat.key ? 'bg-slate-100 text-slate-950 border-white shadow-lg' : 'bg-slate-800 text-slate-400 border-slate-700 hover:border-slate-500'}`}
+                >
+                  <ArrowUpDown size={12} /> {stat.label} {sortBy === stat.key && (sortOrder === 'asc' ? '↑' : '↓')}
+                </button>
+              ))}
               
               {!isItemsPage && (
                 <>
@@ -1036,20 +1264,26 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
             </div>
           </div>
 
-          <div className={`${layoutMode === 'grid' && isItemsPage ? 'grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4' : 'space-y-6'}`}>
-            {currentRecipes.map((recipe, idx) => (
-              <RecipeItemRow 
-                key={idx}
-                recipe={recipe}
-                activeSearchTerm={activeSearchTerm}
-                isItemsPage={isItemsPage}
-                favorites={favorites}
-                toggleFavorite={toggleFavorite}
-                getMatchingIngredients={getMatchingIngredients}
-                viewMode={layoutMode}
-              />
-            ))}
-          </div>
+          <motion.div 
+            layout
+            className={`${layoutMode === 'grid' && isItemsPage ? 'grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4' : 'space-y-6'}`}
+          >
+            <AnimatePresence mode="popLayout">
+              {currentRecipes.map((recipe, idx) => (
+                <RecipeItemRow 
+                  key={recipe.name + idx}
+                  recipe={recipe}
+                  activeSearchTerm={activeSearchTerm}
+                  isItemsPage={isItemsPage}
+                  favorites={favorites}
+                  toggleFavorite={toggleFavorite}
+                  getMatchingIngredients={getMatchingIngredients}
+                  viewMode={layoutMode}
+                  onNavigateToRecipe={navigateToRecipe}
+                />
+              ))}
+            </AnimatePresence>
+          </motion.div>
 
           {filteredRecipes.length === 0 && (
             <div className="text-center py-20 bg-slate-900/30 rounded-2xl border border-dashed border-slate-800">
