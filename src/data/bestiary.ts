@@ -835,7 +835,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Cerberus",
         "location": "Académie",
-        "drops": ["Côte de Cerberus", "Ligament de Cerberus", "Langue de Cerberus", "Tégument du Cerberus", "Griffe du Cerberus"],
+        "drops": ["Côte de Cerberus", "Ligament de Cerberus", "Langue de Cerberus", "Tégument du Cerberus", "Griffe du Cerberus", "Oeil du Cerberus"],
         "exp": "1M",
         "gold": "13K",
         "coordinates": ["1168.1529.6"]
