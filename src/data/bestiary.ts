@@ -156,7 +156,7 @@ export const bestiaryData: Monster[] = [
         "name": "Apparition",
         "location": "Stoneheim",
         "coordinates": ["1996.1935.1", "1954.1940.1", "1992.1942.1", "1967.1943.1", "1976.1950.1", "1951.1952.1", "1939.1958.1", "1978.1959.1", "1968.1965.1", "1993.1965.1", "1959.1967.1", "1949.1970.1", "1984.1976.1", "1963.1982.1", "1953.1983.1", "1983.1988.1", "1970.1990.1", "1947.1993.1", "1931.1998.1", "1932.2001.1", "1920.2011.1"],
-        "drops": ["Cantiques perdus d'Artherk p.2"],
+        "drops": ["Cantiques perdu d'Artherk p.2"],
         "exp": "12K",
         "gold": "200"
     },
@@ -367,7 +367,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Arpenteur des ombres",
         "location": "Stoneheim",
-        "drops": ["Cantiques perdus d'Artherk p.2"],
+        "drops": ["Cantiques perdu d'Artherk p.2"],
         "exp": "2708",
         "gold": "N/A",
         "coordinates": []
@@ -490,7 +490,7 @@ export const bestiaryData: Monster[] = [
         "name": "B'thonian",
         "location": "Inconnu",
         "coordinates": ["2808.2436.2", "2804.2440.2", "2800.2444.2", "2816.2444.2", "2812.2448.2", "2792.2452.2", "2808.2452.2", "2796.2456.2", "2800.2460.2"],
-        "drops": ["Clef d'argent brillant"],
+        "drops": ["Clef d'argent"],
         "exp": "65 444",
         "gold": "215 et 660"
     },
@@ -835,7 +835,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Cerberus",
         "location": "Académie",
-        "drops": ["Côte de Cerberus", "Ligament de Cerberus", "Langue de Cerberus", "Tégument du Cerberus", "Griffe du Cerberus", "Oeil du Cerberus"],
+        "drops": ["Côte de Cerberus", "Ligaments de Cerberus", "Langue de Cerberus", "Tégument du Cerberus", "Griffe du Cerberus", "Oeil du Cerberus"],
         "exp": "1M",
         "gold": "13K",
         "coordinates": ["1168.1529.6"]
@@ -1147,7 +1147,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Chevalier ténébreux",
         "location": "Académie",
-        "drops": ["Essence spectrale", "Éclat d'âme factice", "Boyau de rejeton", "Potion de guérison critique", "Eclat d'âme factice"],
+        "drops": ["Essence spectrale", "Eclat d'âme factice", "Boyaux de rejeton", "Potion de guérison critique", "Eclat d'âme factice"],
         "exp": "N/A",
         "gold": "N/A",
         "coordinates": []
@@ -1171,7 +1171,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Clerc des ombres",
         "location": "Stoneheim",
-        "drops": ["Émeraude brute", "Heaume hurlant d'Ogrimar", "Malachite brute", "Morceau de calcaire brut", "Potion de guérison critique", "Potion de tranquillité"],
+        "drops": ["Emeraude brute", "Heaume hurlant d'Ogrimar", "Malachite brute", "Morceau de calcaire brut", "Potion de guérison critique", "Potion de tranquillité"],
         "exp": "11948",
         "gold": "N/A",
         "coordinates": []
@@ -1203,7 +1203,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Cobra céleste",
         "location": "Stoneheim",
-        "drops": ["Clef d'Ascension", "Émeraude brute", "Malachite brute", "Morceau de calcaire brut"],
+        "drops": ["Clef d'Ascension", "Emeraude brute", "Malachite brute", "Morceau de calcaire brut"],
         "exp": "4K",
         "gold": "120",
         "coordinates": []
@@ -1417,7 +1417,7 @@ export const bestiaryData: Monster[] = [
         "name": "Démon de la terreur",
         "location": "Stoneheim",
         "coordinates": ["1477.1793.1"],
-        "drops": ["Cantiques perdus d'Artherk p.3"],
+        "drops": ["Cantiques perdu d'Artherk p.3"],
         "exp": "15K",
         "gold": "218"
     },
@@ -1433,7 +1433,7 @@ export const bestiaryData: Monster[] = [
         "name": "Démon des ténèbres",
         "location": "Stoneheim",
         "coordinates": ["1475.1514.1"],
-        "drops": ["Cantiques perdus d'Artherk p.4"],
+        "drops": ["Cantiques perdu d'Artherk p.4"],
         "exp": "15K",
         "gold": "218"
     },
@@ -1441,7 +1441,7 @@ export const bestiaryData: Monster[] = [
         "name": "Démon du chaos",
         "location": "Stoneheim",
         "coordinates": ["1755.1794.1"],
-        "drops": ["Cantiques perdus d'Artherk p.5"],
+        "drops": ["Cantiques perdu d'Artherk p.5"],
         "exp": "15K",
         "gold": "218"
     },
@@ -1528,7 +1528,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Désespéré",
         "location": "Raven's Dust",
-        "drops": ["Bandelette de momie", "Armes de Ciel d'Argent"],
+        "drops": ["Bandelettes de momie", "Armes de Ciel d'Argent"],
         "exp": "2K",
         "gold": "87",
         "coordinates": []
@@ -1652,7 +1652,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Dragon Ashardalonn",
         "location": "Raven's Dust",
-        "drops": ["Robe ArchMagie", "Épée d'argent", "Anneau de sorcellerie en jade", "Sang d'Ashardalonn"],
+        "drops": ["Robe d'ArchMagi", "Épée d'argent", "Anneau de sorcellerie en jade", "Sang d'Ashardalonn"],
         "exp": "16M",
         "gold": "N/A",
         "coordinates": []
@@ -1668,7 +1668,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Dragon Dimith Karjit",
         "location": "Arakas",
-        "drops": ["Cape ornée de rune", "Dent de Dimith", "Émeraude focus de pouvoir"],
+        "drops": ["Cape ornée de runes", "Dent de Dimith", "Emeraude focus de pouvoir"],
         "exp": "N/A",
         "gold": "30000",
         "coordinates": []
@@ -1684,7 +1684,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Dragon Freidaclan",
         "location": "Raven's Dust (Boss)",
-        "drops": ["Épée d'argent", "Griffe argentée", "Plastron d'Argent"],
+        "drops": ["Épée d'argent", "Griffe argentée", "Plastron d'argent"],
         "exp": "284230",
         "gold": "100000",
         "coordinates": []
@@ -1692,7 +1692,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Dragon Livoxdrinn",
         "location": "Stoneheim",
-        "drops": ["Griffe de Livoxdrinn", "Épée bâtarde d'Adamantium", "Armure d'écaille"],
+        "drops": ["Griffe de Livoxdrinn", "Epée bâtarde d'adamantium", "Armure d'écailles"],
         "exp": "N/A",
         "gold": "N/A",
         "coordinates": []
@@ -1708,7 +1708,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Dragon Yeridaj",
         "location": "Nieve",
-        "drops": ["Bottes en peau de lézard blanc", "Collier de diamants", "Robe de grand froid"],
+        "drops": ["Bottes en peau de lézard blanc", "Collier de diamants", "Robe du grand froid"],
         "exp": "300000",
         "gold": "N/A",
         "coordinates": []
@@ -1725,7 +1725,7 @@ export const bestiaryData: Monster[] = [
         "name": "Dragonnet",
         "location": "Inconnu",
         "coordinates": ["2477.2618.1", "2480.2619.1", "2481.2613.1", "2472.2594.1", "2508.2588.1", "2507.2586.1", "2492.2570.1", "2494.2605.1", "2469.2573.1", "2559.2457.1", "2558.2453.1", "2543.2439.1", "2559.2413.1", "2579.2434.1", "2560.2433.1", "2535.2431.1", "2534.2431.1", "2533.2428.1", "2513.2396.1", "2511.2399.1", "2518.2399.1", "2512.2440.1", "2504.2508.1", "2483.2508.1", "2480.2472.1", "2469.2517.1", "2444.2550.1", "1959.1077.4", "1943.1036.4", "1939.989.4", "1542.2136.2", "1574.2128.2", "1616.2017.2", "1636.2020.2", "1646.2041.2", "1668.2042.2", "1683.2066.2", "1708.2086.2", "1723.2116.2", "1734.2053.2", "1721.2038.2", "1706.2021.2", "1693.2003.2", "1663.2000.2", "1664.2028.2", "1790.1077.4", "1864.1076.4", "1888.1075.4", "1920.1098.4", "1949.1015.4", "1814.976.4", "1546.2074.2", "1533.2004.2", "1544.2209.2", "1531.2216.2", "1545.2187.2", "1574.2190.2", "1817.1131.4", "1786.1105.4", "1892.1147.4", "1860.1102.4", "1833.1105.4", "1847.1074.4", "1824.1048.4", "1809.1025.4", "1784.1018.4", "1832.1007.4", "1892.1047.4", "1917.1043.4", "1968.1056.4", "1978.1028.4", "1895.980.4", "1486.2014.2", "1507.2028.2", "1532.2051.2", "1524.2081.2", "1539.2113.2", "1558.2095.2", "1558.2047.2", "1559.2029.2", "1544.2021.2", "1528.2032.2", "1499.2037.2", "1491.1985.2", "1499.1961.2", "1521.1977.2", "1536.1980.2", "1548.1970.2", "1564.1969.2", "1575.1995.2", "1569.2015.2", "1563.1968.2", "77.705.5"],
-        "drops": ["Potion de guérison légère", "Torche", "Dent de Dragon"],
+        "drops": ["Potion de guérison légère", "Torche", "Dent de dragon"],
         "exp": "180",
         "gold": "25 et 65"
     },
@@ -1756,7 +1756,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Drake B'zurkhan",
         "location": "Drake Island",
-        "drops": ["Essence de Bzurkhan", "Oeuf de B'zurkhan", "Restes d'acier métrolite", "Naseaux calcinés"],
+        "drops": ["Essence de B'zurkhan", "Oeuf de B'Zurkhan", "Reste d'acier métrolite", "Naseaux calcinés"],
         "exp": "242K",
         "gold": "1K",
         "coordinates": []
@@ -1945,7 +1945,7 @@ export const bestiaryData: Monster[] = [
         "name": "Elémental du Temps",
         "location": "Stoneheim",
         "coordinates": ["2816.2200.2", "2828.2204.2", "2812.2212.2", "2800.2216.2", "2824.2216.2", "2784.2232.2", "2804.2236.2", "2792.2247.2", "2764.2252.2", "2780.2260.2", "2748.2268.2", "2768.2272.2", "2744.2280.2", "2732.2284.2", "2748.2292.2", "2736.2296.2"],
-        "drops": ["Cantiques perdus d'Artherk p.2"],
+        "drops": ["Cantiques perdu d'Artherk p.2"],
         "exp": "65K",
         "gold": "437"
     },
@@ -2267,7 +2267,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Fine lame Noctris",
         "location": "Île de Lune",
-        "drops": ["Scalp de Moon Tug", "Armure de plaques", "Pelote de laine", "Cape de puissance", "Bouclier Sombrebois"],
+        "drops": ["Scalp de Moon Tug", "Armure de plaques", "Pelote de laine", "Cape de puissance", "Bouclier de Sombrebois"],
         "exp": "N/A",
         "gold": "N/A",
         "coordinates": []
@@ -2828,14 +2828,14 @@ export const bestiaryData: Monster[] = [
         "name": "Golem",
         "location": "Inconnu",
         "coordinates": [],
-        "drops": ["Potion de guérison légère", "Dent de Dragon"],
+        "drops": ["Potion de guérison légère", "Dent de dragon"],
         "exp": "30",
         "gold": "25 et 65"
     },
     {
         "name": "Golem d'Émeraude",
         "location": "Stoneheim",
-        "drops": ["Émeraude Focus de Pouvoir", "Émeraude reluisante", "Pierre de lune finement taillée", "Rubis finement taillé", "Saphir finement taillé"],
+        "drops": ["Emeraude focus de pouvoir", "Emeraude reluisante", "Pierre de lune finement taillée", "Rubis finement taillé", "Saphir finement taillé"],
         "exp": "30",
         "gold": "45",
         "coordinates": []
@@ -2875,7 +2875,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Golem de pierre",
         "location": "Drake Island",
-        "drops": ["Gravillons d'energy", "Fragment rocailleux", "Robe en humus", "Gravillons d'énergie"],
+        "drops": ["Gravillons d'énergie", "Fragment rocailleux", "Robe en humus", "Gravillons d'énergie"],
         "exp": "30",
         "gold": "45",
         "coordinates": []
@@ -2908,7 +2908,7 @@ export const bestiaryData: Monster[] = [
         "name": "Golem Feu",
         "location": "Inconnu",
         "coordinates": [],
-        "drops": ["Potion de guérison légère", "Dent de Dragon"],
+        "drops": ["Potion de guérison légère", "Dent de dragon"],
         "exp": "30",
         "gold": "25 et 65"
     },
@@ -2932,7 +2932,7 @@ export const bestiaryData: Monster[] = [
         "name": "Golem Neige",
         "location": "Inconnu",
         "coordinates": [],
-        "drops": ["Potion de guérison légère", "Dent de Dragon"],
+        "drops": ["Potion de guérison légère", "Dent de dragon"],
         "exp": "30",
         "gold": "25 et 65"
     },
@@ -3029,7 +3029,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "GreyLeaf l'arbre démoniaque",
         "location": "Raven's Dust",
-        "drops": ["Feuille d'un arbre démoniaque", "Baies de belladone"],
+        "drops": ["Feuille d'arbre démoniaque", "Baies de belladone"],
         "exp": "2K",
         "gold": "80",
         "coordinates": []
@@ -3869,7 +3869,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Makrsh P'Tangh",
         "location": "Stoneheim",
-        "drops": ["Arc composite des Hauts-Elfes", "Bottes ciselées des Hauts-Elfes", "Bouclier des Ères", "Épée antique des Hauts-Elfes", "Epée déchue des Hauts-Elfes", "Fléau antique des Hauts-Elfes", "Gantelets ciselés des Hauts-Elfes", "Hache antique des Hauts-Elfes", "Heaume ciselé des Hauts-Elfes", "Jambières ciselées des Hauts-Elfes", "Plastron ciselé des Hauts-Elfes", "Protecteur ciselé des Hauts-Elfes"],
+        "drops": ["Arc composite des Hauts-Elfes", "Bottes ciselées des Haut-Elfes", "Bouclier des Ères", "Épée antique des Haut-Elfes", "Epée déchue des Hauts-Elfes", "Fléau antique des Haut-Elfes", "Gantelets ciselés des Haut-Elfes", "Hache antique des Haut-Elfes", "Heaume ciselé des Haut-Elfes", "Jambières ciselées des Haut-Elfes", "Plastron ciselé des Haut-Elfes", "Protecteur ciselé des Haut-Elfes"],
         "exp": "4M",
         "gold": "21K",
         "coordinates": []
@@ -4534,7 +4534,7 @@ export const bestiaryData: Monster[] = [
         "name": "Pisteur de la crypte",
         "location": "Raven's Dust",
         "coordinates": ["1114.2231.1", "1124.2235.1", "1111.2250.1", "1120.2254.1", "1130.2254.1", "1142.2267.1", "1143.2267.1", "1154.2279.1", "1167.2291.1", "1186.2310.1", "1161.2315.1", "1203.2326.1", "1176.2328.1", "1214.2339.1", "1261.2403.1", "1247.2417.1", "1230.2432.1", "1194.2434.1", "1212.2441.1", "1210.2461.1", "1195.2465.1", "1219.2469.1", "1000.2472.1", "994.2483.1", "1230.2485.1", "1240.2496.1", "971.2504.1", "1368.2527.1", "1214.2529.1", "1162.2533.1", "1195.2539.1", "1356.2541.1", "1347.2548.1", "1179.2554.1", "1350.2567.1", "1195.2568.1", "1163.2569.1", "1158.2593.1", "1163.2603.1", "1282.2603.1", "1310.2606.1", "1351.2615.1", "1261.2620.1", "1267.2626.1", "1340.2626.1", "1263.2633.1"],
-        "drops": ["Clé de fer noircie"],
+        "drops": ["Clef de fer noircie"],
         "exp": "7K",
         "gold": "156"
     },
@@ -4690,7 +4690,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Prolifique (Unique)",
         "location": "Arakas",
-        "drops": ["Armure d'anneaux", "Anneau d'or", "Potion de guérison légère", "Épée courte d'Orkanis"],
+        "drops": ["Armure d'anneaux", "Anneau d'or", "Potion de guérison légère", "Epée courte d'Orkanis"],
         "exp": "12000",
         "gold": "100-400",
         "coordinates": []
@@ -4994,7 +4994,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Rongeur hurlant",
         "location": "Stoneheim",
-        "drops": ["Clef d'Ascension", "Émeraude brute", "Malachite brute", "Morceau de calcaire brut", "Potion de dextérité"],
+        "drops": ["Clef d'Ascension", "Emeraude brute", "Malachite brute", "Morceau de calcaire brut", "Potion de dextérité"],
         "exp": "11411",
         "gold": "N/A",
         "coordinates": []
@@ -5280,7 +5280,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Skraug bigworviktor",
         "location": "Stoneheim",
-        "drops": ["Aigue-marine brute", "Améthyste brute", "Armure de plaques", "Bottes de plaques", "Bouclier de Sombrebois", "Cristal brut", "Gantelets de plaques", "Heaume de plaques", "Jambières de plaques", "Potion de guérison critique", "Protecteur en plaques", "Saphir Brut"],
+        "drops": ["Aigue-marine brute", "Amethyste brute", "Armure de plaques", "Bottes de plaques", "Bouclier de Sombrebois", "Cristal brut", "Gantelets de plaques", "Heaume de plaques", "Jambières de plaques", "Potion de guérison critique", "Protecteur en plaques", "Saphir Brut"],
         "exp": "9409",
         "gold": "N/A",
         "coordinates": []
@@ -5288,7 +5288,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Skraug bludfightor",
         "location": "Stoneheim",
-        "drops": ["Aigue-marine brute", "Améthyste brute", "Armure de plaques", "Bottes de plaques", "Cristal brut", "Gantelets de plaques", "Heaume de plaques", "Jambières de plaques", "Lame d'héroïsme", "Potion de guérison critique", "Potion de guérison des blessures graves", "Protecteur en plaques", "Saphir Brut"],
+        "drops": ["Aigue-marine brute", "Amethyste brute", "Armure de plaques", "Bottes de plaques", "Cristal brut", "Gantelets de plaques", "Heaume de plaques", "Jambières de plaques", "Lame d'héroïsme", "Potion de guérison critique", "Potion de guérison des blessures graves", "Protecteur en plaques", "Saphir Brut"],
         "exp": "6369",
         "gold": "N/A",
         "coordinates": []
@@ -5328,7 +5328,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Skraug madlimbmanglor",
         "location": "Stoneheim",
-        "drops": ["Armure de plaques", "Bottes de plaques", "Cristal brut", "Émeraude brute", "Gantelets de plaques", "Heaume de plaques", "Jambières de plaques", "Malachite brute", "Morceau de calcaire brut", "Potion de guérison critique", "Potion de guérison des blessures graves", "Protecteur en plaques"],
+        "drops": ["Armure de plaques", "Bottes de plaques", "Cristal brut", "Emeraude brute", "Gantelets de plaques", "Heaume de plaques", "Jambières de plaques", "Malachite brute", "Morceau de calcaire brut", "Potion de guérison critique", "Potion de guérison des blessures graves", "Protecteur en plaques"],
         "exp": "7635",
         "gold": "N/A",
         "coordinates": []
@@ -5352,7 +5352,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Skraug munchhuntor",
         "location": "Stoneheim",
-        "drops": ["Aigue-marine brute", "Aigue-marine finement taillée", "Améthyste brute", "Améthyste finement taillée", "Cristal brut", "Lame d'héroïsme", "Os humain", "Potion de guérison critique", "Potion de guérison des blessures graves", "Saphir Brut", "Saphir finement taillé"],
+        "drops": ["Aigue-marine brute", "Aigue-marine finement taillée", "Amethyste brute", "Amethyste finement taillée", "Cristal brut", "Lame d'héroïsme", "Os humain", "Potion de guérison critique", "Potion de guérison des blessures graves", "Saphir Brut", "Saphir finement taillé"],
         "exp": "2574",
         "gold": "N/A",
         "coordinates": []
@@ -5369,7 +5369,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Skraug protekterritor",
         "location": "Stoneheim",
-        "drops": ["Arc skraug primitif", "Armure de plaques", "Bottes de plaques", "Cristal brut", "Émeraude brute", "Gantelets de plaques", "Heaume de plaques", "Jambières de plaques", "Lame d'héroïsme", "Malachite brute", "Morceau de calcaire brut", "Os humain", "Potion de guérison critique", "Potion de guérison des blessures graves", "Protecteur en plaques"],
+        "drops": ["Arc skraug primitif", "Armure de plaques", "Bottes de plaques", "Cristal brut", "Emeraude brute", "Gantelets de plaques", "Heaume de plaques", "Jambières de plaques", "Lame d'héroïsme", "Malachite brute", "Morceau de calcaire brut", "Os humain", "Potion de guérison critique", "Potion de guérison des blessures graves", "Protecteur en plaques"],
         "exp": "4541",
         "gold": "N/A",
         "coordinates": []
@@ -5396,7 +5396,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Skraug totemherbdoktor",
         "location": "Stoneheim",
-        "drops": ["Cristal brut", "Émeraude brute", "Émeraude finement taillée", "Livre des sorts rouges", "Malachite brute", "Malachite finement taillée", "Morceau de calcaire brut", "Morceau de calcaire finement taillé", "Potion de guérison critique", "Prisme de mana", "Tome magique vierge"],
+        "drops": ["Cristal brut", "Emeraude brute", "Emeraude finement taillée", "Livre des sorts rouges", "Malachite brute", "Malachite finement taillée", "Morceau de calcaire brut", "Morceau de calcaire finement taillé", "Potion de guérison critique", "Prisme de mana", "Tome magique vierge"],
         "exp": "7856",
         "gold": "N/A",
         "coordinates": []
@@ -5786,7 +5786,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Tisseur de mana centaure",
         "location": "Stoneheim",
-        "drops": ["Émeraude brute", "Livre des sorts rouges", "Malachite brute", "Manteau des éléments", "Morceau de calcaire brut", "Parchemin de rappel", "Potion d'esprit clair", "Prisme de mana"],
+        "drops": ["Emeraude brute", "Livre des sorts rouges", "Malachite brute", "Manteau des éléments", "Morceau de calcaire brut", "Parchemin de rappel", "Potion d'esprit clair", "Prisme de mana"],
         "exp": "6776",
         "gold": "N/A",
         "coordinates": []
@@ -5797,7 +5797,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Traqueur centaure",
         "location": "Raven's Dust",
-        "drops": ["Agate brute", "Arc courbé en noyer blanc", "Cotte de mailles en mithril", "Diamant brut", "Grand bouclier", "Pierre de lune brute", "Potion de guérison des blessures graves", "Poil de centaure"],
+        "drops": ["Agate brute", "Arc courbé en noyer blanc", "Cotte de mailles en mithril", "Diamant brut", "Grand bouclier", "Pierre de lune brute", "Potion de guérison des blessures graves", "Poil de Centaure"],
         "exp": "6000",
         "gold": "273",
         "coordinates": []
@@ -5856,7 +5856,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Un arbre qui marche",
         "location": "Raven's Dust",
-        "drops": ["Feuille d'un arbre démoniaque"],
+        "drops": ["Feuille d'arbre démoniaque"],
         "exp": "13552",
         "gold": "N/A",
         "coordinates": []
@@ -5872,7 +5872,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Un garde skraug",
         "location": "Stoneheim",
-        "drops": ["Armure de plaques", "Bottes de plaques", "Bouclier de la Tour", "Émeraude brute", "Gantelets de plaques", "Heaume de plaques", "Jambières de plaques", "Malachite brute", "Morceau de calcaire brut", "Protecteur en plaques"],
+        "drops": ["Armure de plaques", "Bottes de plaques", "Bouclier de la Tour", "Emeraude brute", "Gantelets de plaques", "Heaume de plaques", "Jambières de plaques", "Malachite brute", "Morceau de calcaire brut", "Protecteur en plaques"],
         "exp": "14832",
         "gold": "N/A",
         "coordinates": []
@@ -5969,7 +5969,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Vengeur centaure",
         "location": "Stoneheim",
-        "drops": ["Aigue-marine brute", "Améthyste brute", "Arc à poulies en noyer blanc", "Bottes de mailles en mithril", "Ceinturon de mailles en mithril", "Cotte de mailles en mithril", "Gantelets de mailles en mithril", "Graal de pureté", "Heaume de mailles en mithril", "Jambières de mailles en mithril", "Lame d'héroïsme", "Saphir Brut"],
+        "drops": ["Aigue-marine brute", "Amethyste brute", "Arc à poulies en noyer blanc", "Bottes de mailles en mithril", "Ceinturon de mailles en mithril", "Cotte de mailles en mithril", "Gantelets de mailles en mithril", "Graal de pureté", "Heaume de mailles en mithril", "Jambières de mailles en mithril", "Lame d'héroïsme", "Saphir Brut"],
         "exp": "4870",
         "gold": "N/A",
         "coordinates": []
@@ -6035,7 +6035,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "Veuve noire géante",
         "location": "Stoneheim",
-        "drops": ["Aigue-marine brute", "Améthyste brute", "Saphir Brut", "Venin d'araignée"],
+        "drops": ["Aigue-marine brute", "Amethyste brute", "Saphir Brut", "Venin d'araignée"],
         "exp": "7856",
         "gold": "N/A",
         "coordinates": []
@@ -6184,7 +6184,7 @@ export const bestiaryData: Monster[] = [
     {
         "name": "ZartGax",
         "location": "Nieve",
-        "drops": ["Chapeau de glace", "Arc de glace enchanté", "Épée de glace runique", "Flèche de glace", "Bave de Zart"],
+        "drops": ["Chapeau de glace", "Arc de glace enchanté", "Épée de glace runique", "Flèches de glace", "Bave de Zart"],
         "exp": "16K",
         "gold": "400",
         "coordinates": []
