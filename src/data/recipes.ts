@@ -2,7 +2,7 @@ import type {RecipeItem} from './types';
 
 export const recipesData: RecipeItem[] = [
     {
-        "name": "",
+        "name": "Ailes de Kraanian",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{"typeSource": "Kraanian volant", "locations": [{"label": "Kraanian volant", "coordinates": ""}]}]
