@@ -58,7 +58,7 @@ export const recipesData: RecipeItem[] = [
         }]
     },
     {
-        "name": "Bouclier du Décrépit",
+        "name": "Bouclier du décrépit",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{
@@ -96,7 +96,7 @@ export const recipesData: RecipeItem[] = [
         "description": "Usage: Corde en boyaux de lézard (ébén 110)"
     },
     {
-        "name": "Boyau de rejeton",
+        "name": "Boyaux de rejeton",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{
@@ -1173,7 +1173,7 @@ export const recipesData: RecipeItem[] = [
         "zones": ["Arakas"]
     },
     {
-        "name": "Feuille de consoude",
+        "name": "Feuille de Consoude",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{
@@ -1461,7 +1461,7 @@ export const recipesData: RecipeItem[] = [
         "sources": [{"typeSource": "Coffre -2", "locations": [{"label": "Coffre -2", "coordinates": "Embaumé"}]}]
     },
     {
-        "name": "Lame en Orichalque",
+        "name": "Lame en orichalque",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{
@@ -1505,7 +1505,7 @@ export const recipesData: RecipeItem[] = [
         "sources": [{"typeSource": "Coffre -2", "locations": [{"label": "Coffre -2", "coordinates": "Embaumé"}]}]
     },
     {
-        "name": "Manche en Orichalque",
+        "name": "Manche en orichalque",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{
@@ -1524,7 +1524,7 @@ export const recipesData: RecipeItem[] = [
         "description": "Usage: Bracelet d'argent à Bec de Corbeau (bijou 91)"
     },
     {
-        "name": "Minerai d'adamantite",
+        "name": "Minerais d'adamantite",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{
@@ -1537,7 +1537,7 @@ export const recipesData: RecipeItem[] = [
         "zones": ["Stoneheim"]
     },
     {
-        "name": "Minerai d'argent",
+        "name": "Minerais d'argent",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{
@@ -1553,7 +1553,7 @@ export const recipesData: RecipeItem[] = [
         "zones": ["Arakas"]
     },
     {
-        "name": "Minerai d'azurite",
+        "name": "Minerais d'azurite",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{
@@ -1566,21 +1566,21 @@ export const recipesData: RecipeItem[] = [
         "zones": ["Stoneheim"]
     },
     {
-        "name": "Minerai d'hématite",
+        "name": "Minerais d'hématite",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{"typeSource": "Grotte Urtanar", "locations": [{"label": "Grotte Urtanar", "coordinates": ""}]}],
         "zones": ["Urtanar"]
     },
     {
-        "name": "Minerai d'iridium",
+        "name": "Minerais d'iridium",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{"typeSource": "Cave Humterre", "locations": [{"label": "Cave Humterre", "coordinates": ""}]}],
         "zones": ["Drake Island"]
     },
     {
-        "name": "Minerai d'obsidienne",
+        "name": "Minerais d'obsidienne",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{
@@ -1593,7 +1593,7 @@ export const recipesData: RecipeItem[] = [
         "zones": ["Stoneheim"]
     },
     {
-        "name": "Minerai d'or",
+        "name": "Minerais d'or",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{
@@ -1606,7 +1606,7 @@ export const recipesData: RecipeItem[] = [
         "zones": ["Stoneheim"]
     },
     {
-        "name": "Minerai d'orichalque",
+        "name": "Minerais d'orichalque",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{
@@ -1616,7 +1616,7 @@ export const recipesData: RecipeItem[] = [
         "zones": ["Raven's Dust"]
     },
     {
-        "name": "Minerai de cérusite",
+        "name": "Minerais de cérusite",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{
@@ -1629,14 +1629,14 @@ export const recipesData: RecipeItem[] = [
         "zones": ["Arakas"]
     },
     {
-        "name": "Minerai de cinabre",
+        "name": "Minerais de cinabre",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{"typeSource": "Grotte Urtanar", "locations": [{"label": "Grotte Urtanar", "coordinates": ""}]}],
         "zones": ["Urtanar"]
     },
     {
-        "name": "Minerai de cuivre",
+        "name": "Minerais de cuivre",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{
@@ -1652,7 +1652,7 @@ export const recipesData: RecipeItem[] = [
         "zones": ["Raven's Dust"]
     },
     {
-        "name": "Minerai de fer",
+        "name": "Minerais de fer",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{
@@ -1665,7 +1665,7 @@ export const recipesData: RecipeItem[] = [
         "zones": ["Arakas"]
     },
     {
-        "name": "Minerai de jade",
+        "name": "Minerais de jade",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{
@@ -1677,7 +1677,7 @@ export const recipesData: RecipeItem[] = [
         }]
     },
     {
-        "name": "Minerai de métrolite",
+        "name": "Minerais de métrolite",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{
@@ -1693,7 +1693,7 @@ export const recipesData: RecipeItem[] = [
         "zones": ["Stoneheim"]
     },
     {
-        "name": "Minerai de mithril",
+        "name": "Minerais de mithril",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{
@@ -1706,7 +1706,7 @@ export const recipesData: RecipeItem[] = [
         "zones": ["Raven's Dust"]
     },
     {
-        "name": "Minerai de plomb",
+        "name": "Minerais de plomb",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{
@@ -1719,7 +1719,7 @@ export const recipesData: RecipeItem[] = [
         "zones": ["Arakas"]
     },
     {
-        "name": "Minerai de quartz",
+        "name": "Minerais de quartz",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{
@@ -1731,7 +1731,7 @@ export const recipesData: RecipeItem[] = [
         }]
     },
     {
-        "name": "Minerai de rhodite",
+        "name": "Minerais de rhodite",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{
@@ -1741,7 +1741,7 @@ export const recipesData: RecipeItem[] = [
         "zones": ["Stoneheim"]
     },
     {
-        "name": "Minerai de rose des neiges",
+        "name": "Minerais de rose des neiges",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{
@@ -1750,7 +1750,7 @@ export const recipesData: RecipeItem[] = [
         }]
     },
     {
-        "name": "Minerai de titane",
+        "name": "Minerais de titane",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{"typeSource": "Cave Humterre", "locations": [{"label": "Cave Humterre", "coordinates": ""}]}],
@@ -1902,7 +1902,7 @@ export const recipesData: RecipeItem[] = [
         }]
     },
     {
-        "name": "Pointes de flèches en Orichalque",
+        "name": "Pointe de flèche en orichalque",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{
@@ -2115,7 +2115,7 @@ export const recipesData: RecipeItem[] = [
         "description": "Usage: Pèlerine des cendres funestes (cout 122)"
     },
     {
-        "name": "Résidu de mana stable",
+        "name": "Résidus de mana stable",
         "quantity": 1,
         "source": "Matériau",
         "sources": [{
@@ -2682,10 +2682,10 @@ export const recipesData: RecipeItem[] = [
         "source": "Anneau",
         "level": 87,
         "ingredients": [{"name": "Coeur desséché", "quantity": 1}, {
-            "name": "Anneau étoile",
+            "name": "Anneau étoilé",
             "quantity": 1
         }, {"name": "Pépite en hématite", "quantity": 5}, {
-            "name": "Joyaux reluisant",
+            "name": "Joyau reluisant",
             "quantity": 1
         }, {"name": "Clefs âmes en peine", "quantity": 3}]
     },
@@ -3714,7 +3714,7 @@ export const recipesData: RecipeItem[] = [
         "ingredients": [{"name": "Bouclier en Sureau", "quantity": 1}, {
             "name": "Lingot d'iridium",
             "quantity": 6
-        }, {"name": "Escarboucle destructrice", "quantity": 1}, {"name": "Sangles du Balafré", "quantity": 2}]
+        }, {"name": "Escarboucle destructrice", "quantity": 1}, {"name": "Sangle du balafré", "quantity": 2}]
     },
     {
         "name": "Bouclier du décrépit",
@@ -3867,10 +3867,10 @@ export const recipesData: RecipeItem[] = [
         "level": 91,
         "quantity": 1,
         "source": "Orbe",
-        "ingredients": [{"name": "Épine sacrificielle", "quantity": 1}, {
-            "name": "Manchette de l’érudit",
+        "ingredients": [{"name": "Épine Sacrificielle", "quantity": 1}, {
+            "name": "Manchette de l'érudit",
             "quantity": 1
-        }, {"name": "Lingot argent", "quantity": 3}, {"name": "Cendre sanctifiée", "quantity": 3}],
+        }, {"name": "Lingot argent", "quantity": 3}, {"name": "Cendres sanctifiées", "quantity": 3}],
         "learnedFrom": "Telmus Zirus",
         "coordinates": "salle après Cerberus, dire \"mener\" à Pelkor",
         "locationPrecision": "Académie",
@@ -4896,7 +4896,7 @@ export const recipesData: RecipeItem[] = [
         "ingredients": [{
             "name": "Antidote contre empoisonnement délétère",
             "quantity": 1
-        }, {"name": "1 Ceinturon en peau de gnome", "quantity": 1}, {
+        }, {"name": "Ceinturon en peau de gnome", "quantity": 1}, {
             "name": "Décoction de champignons des bois",
             "quantity": 2
         }],
@@ -5111,7 +5111,7 @@ export const recipesData: RecipeItem[] = [
         "source": "Divers",
         "level": 96,
         "ingredients": [{"name": "Souffle mortifère", "quantity": 1}, {
-            "name": "Pépite d’or",
+            "name": "Pépite d'or",
             "quantity": 5
         }, {"name": "Bague de rejet spirituel", "quantity": 1}, {"name": "Sceau des ombres", "quantity": 1}]
     },
@@ -5275,12 +5275,12 @@ export const recipesData: RecipeItem[] = [
         "locationPrecision": "Désert du Ver Engloutisseur"
     },
     {
-        "name": "Claymore d'extinction étoilé",
+        "name": "Claymore d'extinction étoilée",
         "profession": "Forgeron",
         "level": 0,
         "quantity": 1,
         "source": "Arme",
-        "ingredients": [{"name": "Quete du Forgeron de DI  Durikk", "quantity": 1}],
+        "ingredients": [{"name": "Quete du Forgeron de DI Durikk", "quantity": 1}],
         "learnedFrom": "Gralek ",
         "coordinates": "1050.1035.3",
         "locationPrecision": "Désert du Ver Engloutisseur"
@@ -5482,7 +5482,7 @@ export const recipesData: RecipeItem[] = [
         "level": 75,
         "quantity": 1,
         "source": "Divers",
-        "ingredients": [{"name": "Lame en Orichalque", "quantity": 1}, {"name": "Sensilles cryptiques", "quantity": 1}],
+        "ingredients": [{"name": "Lame en orichalque", "quantity": 1}, {"name": "Sensilles cryptiques", "quantity": 1}],
         "learnedFrom": "Psaëllis",
         "coordinates": "1496.738.1",
         "locationPrecision": "Sous-sol des métiers, Redwall",
@@ -5497,7 +5497,7 @@ export const recipesData: RecipeItem[] = [
         "ingredients": [{"name": "Manche en noisetier", "quantity": 1}, {
             "name": "Sensilles cryptiques",
             "quantity": 2
-        }, {"name": "Lingot d’adamantite", "quantity": 2}, {"name": "Lame en orichalque", "quantity": 1}],
+        }, {"name": "Lingot d'adamantite", "quantity": 2}, {"name": "Lame en orichalque", "quantity": 1}],
         "learnedFrom": "Psaëllis",
         "coordinates": "1495.740.1",
         "locationPrecision": "Quartier des métiers"
@@ -8486,7 +8486,7 @@ export const recipesData: RecipeItem[] = [
         "ingredients": [{"name": "Lame de perdition enchantée", "quantity": 1}, {
             "name": "Hampe mélèze",
             "quantity": 1
-        }, {"name": "Ame spectral", "quantity": 2}, {"name": "Lingot métrolite", "quantity": 4}]
+        }, {"name": "Ame spectral", "quantity": 2}, {"name": "Lingot de métrolite", "quantity": 4}]
     },
     {
         "name": "Feutre d'antilope",
@@ -8892,9 +8892,9 @@ export const recipesData: RecipeItem[] = [
             "name": "Chaine en titane",
             "quantity": 1
         }, {"name": "Flacon renfermant des lucioles", "quantity": 1}, {
-            "name": "Lingot d’iridium",
+            "name": "Lingot d'iridium",
             "quantity": 4
-        }, {"name": "Lingot d’or", "quantity": 4}]
+        }, {"name": "Lingot d'or", "quantity": 4}]
     },
     {
         "name": "Fléau du croisé",
@@ -10364,7 +10364,7 @@ export const recipesData: RecipeItem[] = [
         "quantity": 1,
         "source": "Robe",
         "level": 130,
-        "ingredients": [{"name": "Etoffes elfiques légendaires", "quantity": 3}, {
+        "ingredients": [{"name": "Etoffes Elfiques légendaires", "quantity": 3}, {
             "name": "Galon d'argent soyeux",
             "quantity": 1
         }, {"name": "Fétiche scélérate", "quantity": 1}, {
@@ -10377,7 +10377,7 @@ export const recipesData: RecipeItem[] = [
         "quantity": 1,
         "source": "Robe",
         "level": 131,
-        "ingredients": [{"name": "Etoffes elfiques légendaires", "quantity": 3}, {
+        "ingredients": [{"name": "Etoffes Elfiques légendaires", "quantity": 3}, {
             "name": "Galon d'argent soyeux",
             "quantity": 1
         }, {"name": "Fétiche Basaltique", "quantity": 1}, {
@@ -10390,7 +10390,7 @@ export const recipesData: RecipeItem[] = [
         "quantity": 1,
         "source": "Robe",
         "level": 132,
-        "ingredients": [{"name": "Etoffes elfiques légendaires", "quantity": 3}, {
+        "ingredients": [{"name": "Etoffes Elfiques légendaires", "quantity": 3}, {
             "name": "Galon d'argent soyeux",
             "quantity": 1
         }, {"name": "Fétiche cyclonique", "quantity": 1}, {
@@ -10403,7 +10403,7 @@ export const recipesData: RecipeItem[] = [
         "quantity": 1,
         "source": "Robe",
         "level": 129,
-        "ingredients": [{"name": "Etoffes elfiques légendaires", "quantity": 3}, {
+        "ingredients": [{"name": "Etoffes Elfiques légendaires", "quantity": 3}, {
             "name": "Galon d'argent soyeux",
             "quantity": 1
         }, {"name": "Fétiche forestier", "quantity": 1}, {
@@ -11321,7 +11321,7 @@ export const recipesData: RecipeItem[] = [
         "zones": ["Drake Island"]
     },
     {
-        "name": "Manteau des éléments finement tissé",
+        "name": "Manteau des élements finement tissé",
         "quantity": 1,
         "source": "Robe",
         "level": 86,
@@ -11422,7 +11422,7 @@ export const recipesData: RecipeItem[] = [
         "quantity": 1,
         "source": "Robe",
         "level": 123,
-        "ingredients": [{"name": "Etoffes elfiques légendaires", "quantity": 3}, {
+        "ingredients": [{"name": "Etoffes Elfiques légendaires", "quantity": 3}, {
             "name": "Galon d'argent soyeux",
             "quantity": 1
         }, {"name": "Quintessence Mystique", "quantity": 1}, {
@@ -11551,7 +11551,7 @@ export const recipesData: RecipeItem[] = [
         "quantity": 1,
         "source": "Orbe",
         "ingredients": [{"name": "Orbe vierge de taille moyenne", "quantity": 1}, {
-            "name": "Couenne de Rampilios",
+            "name": "Couenne de rampilios",
             "quantity": 1
         }, {"name": "Sachet de douces-amères", "quantity": 3}],
         "learnedFrom": "Salma ",
@@ -12313,10 +12313,10 @@ export const recipesData: RecipeItem[] = [
             "name": "Plume",
             "quantity": 1
         }, {"name": "Sachet de graines à chapelet", "quantity": 1}, {
-            "name": "Potion de faible résistance  à la terre",
+            "name": "Potion de faible résistance à la terre",
             "quantity": 1
         }, {
-            "name": "Potion de partiel résistance à la terre",
+            "name": "Potion de résistance partielle à la terre",
             "quantity": 1
         }, {"name": "Potion de grande résistance à la terre", "quantity": 1}]
     },
@@ -12504,7 +12504,7 @@ export const recipesData: RecipeItem[] = [
         "zones": ["Drake Island"]
     },
     {
-        "name": "Partisan Infernal",
+        "name": "Partisan infernal",
         "profession": "Forgeron",
         "level": 71,
         "quantity": 1,
@@ -12512,7 +12512,7 @@ export const recipesData: RecipeItem[] = [
         "ingredients": [{"name": "Lame courbée enneigée", "quantity": 1}, {
             "name": "Manche en noisetier",
             "quantity": 1
-        }, {"name": "Griffe d’orc", "quantity": 2}, {"name": "Lingot d’argent", "quantity": 2}],
+        }, {"name": "Griffe d'orc", "quantity": 2}, {"name": "Lingot d'argent", "quantity": 2}],
         "learnedFrom": "Psaëllis",
         "coordinates": "1495.740.1",
         "locationPrecision": "Quartier des métiers"
@@ -12538,7 +12538,7 @@ export const recipesData: RecipeItem[] = [
         "level": 121,
         "quantity": 1,
         "source": "Cape",
-        "ingredients": [{"name": "Etoffes elfiques légendaires", "quantity": 3}, {
+        "ingredients": [{"name": "Etoffes Elfiques légendaires", "quantity": 3}, {
             "name": "Galon d'argent soyeux",
             "quantity": 1
         }, {"name": "Fétiche luminescente", "quantity": 1}, {
@@ -12555,11 +12555,11 @@ export const recipesData: RecipeItem[] = [
         "quantity": 1,
         "source": "Cape",
         "level": 122,
-        "ingredients": [{"name": "Etoffes elfiques légendaires", "quantity": 3}, {
+        "ingredients": [{"name": "Etoffes Elfiques légendaires", "quantity": 3}, {
             "name": "Galon d'argent soyeux",
             "quantity": 1
         }, {"name": "Fétiche morbide", "quantity": 1}, {
-            "name": "Eclat crépusculaire",
+            "name": "Eclat Crépusculaire",
             "quantity": 1
         }, {"name": "Relique de Xordiv", "quantity": 1}, {"name": "Sphène polie", "quantity": 1}]
     },
@@ -12605,7 +12605,7 @@ export const recipesData: RecipeItem[] = [
         "level": 32,
         "quantity": 3,
         "source": "Divers",
-        "ingredients": [{"name": "Minerai d'or", "quantity": 10}],
+        "ingredients": [{"name": "Minerais d'or", "quantity": 10}],
         "learnedFrom": "Lucrell",
         "coordinates": "172.839.0",
         "locationPrecision": "Quartier des métiers, Stonecrest",
@@ -14996,7 +14996,7 @@ export const recipesData: RecipeItem[] = [
         }, {"name": "Ecaille de Dragon", "quantity": 4}, {
             "name": "Sachet de poudre de quartz",
             "quantity": 3
-        }, {"name": " Corde de la perdition", "quantity": 1}]
+        }, {"name": "Corde de la perdition", "quantity": 1}]
     },
     {
         "name": "Plastron du trépassé",
@@ -29748,7 +29748,7 @@ export const recipesData: RecipeItem[] = [
         "ingredients": [{"name": "Branche de cèdre", "quantity": 2}]
     },
     {
-        "name": "Rouleau à pâtisserie pour faire des bons gateaux qui sont bons",
+        "name": "Rouleau à patisserie pour faire des bons gateaux qui sont bons",
         "quantity": 1,
         "source": "Divers",
         "level": 49,
@@ -29857,7 +29857,7 @@ export const recipesData: RecipeItem[] = [
         "level": 110,
         "quantity": 3,
         "source": "Divers",
-        "ingredients": [{"name": "Minerai de quartz", "quantity": 2}],
+        "ingredients": [{"name": "Minerais de quartz", "quantity": 2}],
         "learnedFrom": "Ortherion",
         "coordinates": "2",
         "locationPrecision": "Tour d'Urtanar, 1er étage",
@@ -29869,7 +29869,7 @@ export const recipesData: RecipeItem[] = [
         "level": 122,
         "quantity": 3,
         "source": "Divers",
-        "ingredients": [{"name": "Minerai de rhodite", "quantity": 2}],
+        "ingredients": [{"name": "Minerais de rhodite", "quantity": 2}],
         "learnedFrom": "Ortherion",
         "coordinates": "2",
         "locationPrecision": "Tour d'Urtanar, 1er étage",
@@ -30022,7 +30022,7 @@ export const recipesData: RecipeItem[] = [
         "zones": ["Raven's Dust"]
     },
     {
-        "name": "Scepte de sagesse",
+        "name": "Sceptre de sagesse",
         "quantity": 1,
         "source": "Divers",
         "level": 31,
@@ -30365,7 +30365,7 @@ export const recipesData: RecipeItem[] = [
         "level": 114,
         "quantity": 1,
         "source": "Divers",
-        "ingredients": [{"name": "Venins méphitiques", "quantity": 3, "source": "Drop: Tégénaires Méphitiques (UR)"}],
+        "ingredients": [{"name": "Venin méphitique", "quantity": 3, "source": "Drop: Tégénaires Méphitiques (UR)"}],
         "learnedFrom": "Ortherion",
         "coordinates": "2",
         "locationPrecision": "Tour d'Urtanar, 1er étage",
@@ -30457,7 +30457,7 @@ export const recipesData: RecipeItem[] = [
         "quantity": 1,
         "source": "Divers",
         "level": 117,
-        "ingredients": [{"name": "Galons dorés soyeux", "quantity": 3}, {"name": "Joyaux elfiques", "quantity": 3}]
+        "ingredients": [{"name": "Galons dorés soyeux", "quantity": 3}, {"name": "Joyau elfique", "quantity": 3}]
     },
     {
         "name": "Voile de pestilence",
