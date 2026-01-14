@@ -2,10 +2,10 @@ import type {RecipeItem} from './types';
 
 export const recipesData: RecipeItem[] = [
     {
-        "name": "Ailes de Krakra Volants",
+        "name": "",
         "quantity": 1,
         "source": "Matériau",
-        "sources": [{"typeSource": "Krakra volant", "locations": [{"label": "Krakra volant", "coordinates": ""}]}]
+        "sources": [{"typeSource": "Kraanian volant", "locations": [{"label": "Kraanian volant", "coordinates": ""}]}]
     },
     {
         "name": "Ame spectrale",
