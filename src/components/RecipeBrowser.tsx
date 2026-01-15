@@ -1,9 +1,9 @@
-import { useState, useMemo, useEffect, memo } from 'react';
+import { useState, useMemo, useEffect, memo, useCallback } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { wikiData, itemMonsterMap, itemUsageMap } from '../data/wiki-data';
+import { useData } from '../context/DataContext';
 import { fastNormalize, formatStatValue } from '../data/utils';
-import type { RecipeItem } from '../data/wiki-data';
+import type { RecipeItem } from '../data/types';
 import CraftingTree from './CraftingTree';
 import { createPortal } from 'react-dom';
 import { 
@@ -35,46 +35,16 @@ const ITEM_TYPES = [
 ];
 const DEFAULT_LEVEL_RANGE: [number, number] = [0, 250];
 
-const allItems = wikiData.find(p => p.id === 'items')?.recipes || [];
-
-const findItemSource = (name: string) => {
-  const normalized = fastNormalize(name);
-  const item = allItems.find(i => fastNormalize(i.name) === normalized);
-  return item?.source;
-};
-
-const getSourceIcon = (source: string | undefined, name?: string) => {
-  let resolvedSource = source;
-  if (!resolvedSource && name) {
-    resolvedSource = findItemSource(name);
-  }
-  
-  if (!resolvedSource) return Package;
-  switch (resolvedSource) {
-    case 'Heaume': return Crown;
-    case 'Amulette': return Medal;
-    case 'Bracelet': return Link2;
-    case 'Anneau':
-    case 'Bijou': return Circle;
-    case 'Robe': return Shirt;
-    case 'Armure':
-    case 'Plastron':
-    case 'Torse': return Shirt;
-    case 'Cape': return Wind;
-    case 'Orbe': return Wind; 
-    case 'Arme': return Sword;
-    case 'Arc': return ArrowUpRight;
-    case 'Bouclier':
-    case 'Focus': return Shield;
-    case 'Flèches': return ArrowRight;
-    case 'Gant': return Hand;
-    case 'Ceinture': return GripHorizontal;
-    case 'Jambière': return Columns2; 
-    case 'Botte': return Footprints;
-    case 'Matériau':
-    case 'Divers': return Package;
-    default: return Package;
-  }
+const TYPE_COLORS: Record<string, string> = {
+  'Arme': 'bg-red-500/10 text-red-400 border-red-500/20',
+  'Arc': 'bg-orange-500/10 text-orange-400 border-orange-500/20',
+  'Robe': 'bg-purple-500/10 text-purple-400 border-purple-500/20',
+  'Cape': 'bg-blue-500/10 text-blue-400 border-blue-500/20',
+  'Armure': 'bg-slate-500/10 text-slate-400 border-slate-500/20',
+  'Bouclier': 'bg-amber-500/10 text-amber-400 border-amber-500/20',
+  'Anneau': 'bg-cyan-500/10 text-cyan-400 border-cyan-500/20',
+  'Matériau': 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20',
+  'Récolte': 'bg-green-500/10 text-green-400 border-green-500/20',
 };
 
 const PROF_COLORS: Record<string, string> = {
@@ -96,16 +66,47 @@ const VIBRANT_PROF_COLORS: Record<string, string> = {
   'Tous': 'bg-slate-100 text-slate-900 border-white shadow-white/10'
 };
 
-const TYPE_COLORS: Record<string, string> = {
-  'Arme': 'bg-red-500/10 text-red-400 border-red-500/20',
-  'Arc': 'bg-orange-500/10 text-orange-400 border-orange-500/20',
-  'Robe': 'bg-purple-500/10 text-purple-400 border-purple-500/20',
-  'Cape': 'bg-blue-500/10 text-blue-400 border-blue-500/20',
-  'Armure': 'bg-slate-500/10 text-slate-400 border-slate-500/20',
-  'Bouclier': 'bg-amber-500/10 text-amber-400 border-amber-500/20',
-  'Anneau': 'bg-cyan-500/10 text-cyan-400 border-cyan-500/20',
-  'Matériau': 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20',
-  'Récolte': 'bg-green-500/10 text-green-400 border-green-500/20',
+const useSourceIcon = () => {
+    const { wikiData } = useData();
+    const allItems = useMemo(() => wikiData.find(p => p.id === 'items')?.recipes || [], [wikiData]);
+
+    const getSourceIcon = useCallback((source: string | undefined, name?: string) => {
+        let resolvedSource = source;
+        if (!resolvedSource && name) {
+            const normalized = fastNormalize(name);
+            const item = allItems.find(i => fastNormalize(i.name) === normalized);
+            resolvedSource = item?.source;
+        }
+        
+        if (!resolvedSource) return Package;
+        switch (resolvedSource) {
+            case 'Heaume': return Crown;
+            case 'Amulette': return Medal;
+            case 'Bracelet': return Link2;
+            case 'Anneau':
+            case 'Bijou': return Circle;
+            case 'Robe': return Shirt;
+            case 'Armure':
+            case 'Plastron':
+            case 'Torse': return Shirt;
+            case 'Cape': return Wind;
+            case 'Orbe': return Wind; 
+            case 'Arme': return Sword;
+            case 'Arc': return ArrowUpRight;
+            case 'Bouclier':
+            case 'Focus': return Shield;
+            case 'Flèches': return ArrowRight;
+            case 'Gant': return Hand;
+            case 'Ceinture': return GripHorizontal;
+            case 'Jambière': return Columns2; 
+            case 'Botte': return Footprints;
+            case 'Matériau':
+            case 'Divers': return Package;
+            default: return Package;
+        }
+    }, [allItems]);
+
+    return getSourceIcon;
 };
 
 const StatBadge = ({ label, value, type }: { label: string, value: string | number, type: 'str' | 'end' | 'dex' | 'int' | 'wis' | 'ca' | 'secondary' }) => {
@@ -159,7 +160,51 @@ const LocationList = ({ locations }: { locations: {label: string, coordinates: s
   );
 };
 
+const MonsterDropSection = ({ itemName }: { itemName: string }) => {
+  const { itemMonsterMap } = useData();
+  const monsters = itemMonsterMap[fastNormalize(itemName)] || [];
+  const [showAllMonsters, setShowAllMonsters] = useState(false);
+  
+  if (monsters.length === 0) return null;
+
+  const displayedMonsters = showAllMonsters ? monsters : monsters.slice(0, 10);
+
+  return (
+    <div className="bg-purple-500/5 border border-purple-500/20 rounded-xl p-4">
+      <div className="flex items-center justify-between mb-4">
+        <span className="text-[10px] font-bold text-purple-400 uppercase tracking-widest block">Butins de Monstres</span>
+        <span className="text-[10px] font-black text-purple-500 bg-purple-500/10 px-2 py-0.5 rounded-full">{monsters.length} sources</span>
+      </div>
+      <div className="flex flex-wrap gap-2">
+        {displayedMonsters.map((m, midx) => (
+          <Link 
+            key={midx} 
+            to={`/wiki/bestiary?search=${encodeURIComponent(m.name)}`}
+            className="flex items-center gap-2 bg-slate-900/50 border border-slate-700/50 px-3 py-1.5 rounded-lg text-xs font-bold text-slate-300 hover:border-purple-500/50 hover:text-purple-300 transition-all group/m"
+          >
+            <Skull size={12} className="text-purple-500/50 group-hover/m:text-purple-500" />
+            <span className="group-hover/m:underline decoration-[#a335ee] underline-offset-4 decoration-2">{m.name}</span>
+          </Link>
+        ))}
+      </div>
+      {monsters.length > 10 && (
+        <button 
+          onClick={() => setShowAllMonsters(!showAllMonsters)}
+          className="text-[10px] font-black text-slate-500 hover:text-amber-500 uppercase tracking-widest mt-4 w-full py-2 border-t border-purple-500/10 transition-colors flex items-center justify-center gap-2"
+        >
+          {showAllMonsters ? (
+            <>Voir moins <ChevronUp size={12} /></>
+          ) : (
+            <>+{monsters.length - 10} autres... <ChevronDown size={12} /></>
+          )}
+        </button>
+      )}
+    </div>
+  );
+};
+
 const ItemDetailModal = ({ recipe, onClose, toggleFavorite, favorites, navigateToRecipe }: any) => {
+  const getSourceIcon = useSourceIcon();
   return createPortal(
     <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4">
       <div className="absolute inset-0 bg-slate-950/90 backdrop-blur-md" onClick={onClose}></div>
@@ -196,7 +241,7 @@ const ItemDetailModal = ({ recipe, onClose, toggleFavorite, favorites, navigateT
             toggleFavorite={toggleFavorite} 
             viewMode="list" 
             hideExternalLink={true}
-            onNavigateToRecipe={(name: string) => { navigateToRecipe(name); onClose(); }}
+            onNavigateToRecipe={navigateToRecipe}
           />
         </div>
       </div>
@@ -205,51 +250,13 @@ const ItemDetailModal = ({ recipe, onClose, toggleFavorite, favorites, navigateT
   );
 };
 
-const MonsterDropSection = ({ itemName }: { itemName: string }) => {
-  const monsters = itemMonsterMap[fastNormalize(itemName)] || [];
-  if (monsters.length === 0) return null;
-  
-  const [showAllMonsters, setShowAllMonsters] = useState(false);
-  const displayedMonsters = showAllMonsters ? monsters : monsters.slice(0, 10);
-
-  return (
-    <div className="bg-purple-500/5 border border-purple-500/20 rounded-xl p-4">
-      <span className="text-[10px] font-black text-[#a335ee] uppercase tracking-[0.2em] block mb-3 flex items-center gap-2">
-        <Skull size={14} fill="#a335ee" className="fill-purple-500/20" /> 
-        Drops de monstres
-      </span>
-      <div className="flex flex-wrap gap-2">
-        {displayedMonsters.map((m, i) => (
-          <Link 
-            key={i} 
-            to={`/wiki/bestiary?search=${encodeURIComponent(m.name)}`}
-            className="text-[11px] font-bold text-slate-300 hover:text-[#a335ee] transition-all bg-slate-900 border border-purple-500/20 px-2.5 py-1.5 rounded-lg flex items-center gap-2 group/m shadow-inner"
-          >
-            <span className="group-hover/m:underline decoration-[#a335ee] underline-offset-4 decoration-2">{m.name}</span>
-          </Link>
-        ))}
-      </div>
-      {monsters.length > 10 && (
-        <button 
-          onClick={() => setShowAllMonsters(!showAllMonsters)}
-          className="text-[10px] font-black text-slate-500 hover:text-amber-500 uppercase tracking-widest mt-4 w-full py-2 border-t border-purple-500/10 transition-colors flex items-center justify-center gap-2"
-        >
-          {showAllMonsters ? (
-            <>Voir moins <ChevronUp size={12} /></>
-          ) : (
-            <>+{monsters.length - 10} autres... <ChevronDown size={12} /></>
-          )}
-        </button>
-      )}
-    </div>
-  );
-};
-
 const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, toggleFavorite, getMatchingIngredients, viewMode, hideExternalLink, onNavigateToRecipe }: any) => {
+  const { itemMonsterMap, itemUsageMap } = useData();
+  const getSourceIcon = useSourceIcon();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const matchingIngs = getMatchingIngredients ? getMatchingIngredients(recipe, activeSearchTerm) : [];
   
-  const usages = useMemo(() => itemUsageMap[fastNormalize(recipe.name)] || [], [recipe.name]);
+  const usages = useMemo(() => itemUsageMap[fastNormalize(recipe.name)] || [], [recipe.name, itemUsageMap]);
 
   if (viewMode === 'grid' && isItemsPage) {
     return (
@@ -304,7 +311,7 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
                   <div className="flex items-center gap-1.5 overflow-hidden">
                     <Skull size={10} fill="#a335ee" className="fill-purple-500/20 shrink-0" />
                     <div className="flex gap-1 truncate">
-                      {monsters.slice(0, 2).map((m, i) => (
+                      {monsters.slice(0, 2).map((m: any, i: number) => (
                         <span key={i} className="text-[9px] font-bold text-[#a335ee] uppercase tracking-tighter opacity-80 whitespace-nowrap bg-purple-500/5 px-1 rounded">
                           {m.name}
                         </span>
@@ -828,6 +835,15 @@ const NPCGroupedView = ({
 
 
 const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => {
+  const { wikiData } = useData();
+  const allItems = useMemo(() => wikiData.find(p => p.id === 'items')?.recipes || [], [wikiData]);
+  
+  const findItemSource = useCallback((name: string) => {
+    const normalized = fastNormalize(name);
+    const item = allItems.find(i => fastNormalize(i.name) === normalized);
+    return item?.source;
+  }, [allItems]);
+
   const [searchParams, setSearchParams] = useSearchParams();
   const urlSearch = searchParams.get('search') || '';
 
@@ -995,7 +1011,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
       }
     });
     return result;
-  }, [recipes, activeSearchTerm, selectedProf, selectedType, selectedZone, selectedStats, levelRange, sortBy, sortOrder, showOnlyFavs, showBaseComponents, favorites, isItemsPage, viewMode, isExactSearch]);
+  }, [recipes, activeSearchTerm, selectedProf, selectedType, selectedZone, selectedStats, levelRange, sortBy, sortOrder, showOnlyFavs, showBaseComponents, favorites, isItemsPage, viewMode, isExactSearch, findItemSource]);
 
   const getMatchingIngredients = (recipe: RecipeItem, search: string) => {
     if (!search || isItemsPage || isExactSearch) return [];

@@ -7,10 +7,22 @@ import Bestiary from './components/Bestiary';
 import RecipeBrowser from './components/RecipeBrowser';
 import PlannerPage from './pages/PlannerPage';
 import Legal from './pages/Legal';
-import { bestiaryData } from './data/bestiary';
-import { recipesData } from './data/recipes';
+import { DataProvider, useData } from './context/DataContext';
 
-const App: React.FC = () => {
+const AppContent: React.FC = () => {
+  const { bestiaryData, recipesData, loading } = useData();
+
+  if (loading) {
+    return (
+      <div className="min-h-screen bg-[#0a0a0c] flex items-center justify-center">
+        <div className="flex flex-col items-center gap-4">
+          <div className="w-12 h-12 border-4 border-blue-500/20 border-t-blue-500 rounded-full animate-spin"></div>
+          <p className="text-slate-400 font-medium animate-pulse">Chargement de la base de données...</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <Router>
       <Layout>
@@ -26,6 +38,14 @@ const App: React.FC = () => {
         </Routes>
       </Layout>
     </Router>
+  );
+};
+
+const App: React.FC = () => {
+  return (
+    <DataProvider>
+      <AppContent />
+    </DataProvider>
   );
 };
 

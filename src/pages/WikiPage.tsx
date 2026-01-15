@@ -1,11 +1,12 @@
 import { useParams } from 'react-router-dom';
-import { wikiData } from '../data/wiki-data';
+import { useData } from '../context/DataContext';
 import RecipeBrowser from '../components/RecipeBrowser';
 import Bestiary from '../components/Bestiary';
 import { AlertCircle } from 'lucide-react';
 
 const WikiPage = () => {
   const { slug } = useParams();
+  const { wikiData } = useData();
   const data = wikiData.find(p => p.id === slug);
 
   if (!data) {

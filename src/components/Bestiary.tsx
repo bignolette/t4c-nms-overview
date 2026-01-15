@@ -1,7 +1,9 @@
 import { useState, useMemo, memo, useEffect } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { type Monster, fastNormalize, ingredientProfessionMap } from '../data/wiki-data';
+import { useData } from '../context/DataContext';
+import { fastNormalize } from '../data/utils';
+import type { Monster } from '../data/types';
 import { MapPin, Coins, Skull, Filter, Search, AlertCircle, ChevronRight, ExternalLink, X, RotateCcw, ChevronLeft, Hammer } from 'lucide-react';
 
 interface BestiaryProps {
@@ -14,8 +16,9 @@ const ITEMS_PER_PAGE = 12;
  * Optimized Drop Component to prevent re-renders
  */
 const DropBadge = memo(({ drop }: { drop: string }) => {
+  const { ingredientProfessionMap } = useData();
   const normalizedDrop = useMemo(() => fastNormalize(drop), [drop]);
-  const usages = useMemo(() => Array.from(ingredientProfessionMap[normalizedDrop] || []), [normalizedDrop]);
+  const usages = useMemo(() => Array.from(ingredientProfessionMap[normalizedDrop] || []), [normalizedDrop, ingredientProfessionMap]);
   const isIngredient = usages.length > 0;
   
   if (isIngredient) {

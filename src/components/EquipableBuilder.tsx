@@ -1,8 +1,8 @@
 import { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { itemsData } from '../data/items';
+import { useData } from '../context/DataContext';
 import type { RecipeItem } from '../data/types';
-import { fastNormalize, mapSourceToSlot, formatStatValue } from '../data/utils';
+import { mapSourceToSlot, fastNormalize, formatStatValue } from '../data/utils';
 import { Search, Shield, Sword, Crown, Shirt, Footprints, Hand, Hexagon, Circle, Package, Link2, GripHorizontal, Columns2, Medal, Wind, User, Tag, Zap, Trophy, ChevronDown, type LucideIcon } from 'lucide-react';
 
 // Types
@@ -56,6 +56,7 @@ const SLOTS = [
 ];
 
 const EquipableBuilder = () => {
+  const { itemsData } = useData();
   const [stats, setStats] = useState<Stats>({
     str: 50,
     end: 50,
@@ -95,7 +96,7 @@ const EquipableBuilder = () => {
       }
     });
     return map;
-  }, []);
+  }, [itemsData]);
 
   const updateStat = (key: keyof Stats, value: string) => {
     let num = parseInt(value, 10);
