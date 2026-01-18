@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useData } from '../context/DataContext';
 import type { RecipeItem } from '../data/types';
 import { mapSourceToSlot, fastNormalize, formatStatValue } from '../data/utils';
-import { Search, Shield, Sword, Crown, Shirt, Footprints, Hand, Hexagon, Circle, Package, Link2, GripHorizontal, Columns2, Medal, Wind, User, Tag, Zap, Trophy, ChevronDown, type LucideIcon } from 'lucide-react';
+import { Search, Shield, Sword, Crown, Shirt, Footprints, Hand, Circle, Package, Link2, GripHorizontal, Columns2, Medal, Wind, User, Tag, Zap, Trophy, ChevronDown, Star, Sparkles, type LucideIcon } from 'lucide-react';
 
 // Types
 interface Stats {
@@ -250,272 +250,226 @@ const EquipableBuilder = () => {
   }, [stats, selectedSlot, searchTerm, hideNoReqs, itemsBySlot, isBiSMode, bisFocus]);
 
   return (
-    <div className="space-y-8">
-      {/* Top Banner: Upcoming Objectives */}
+    <div className="space-y-10 animate-in fade-in duration-700">
+      {/* 🚀 PROGRESSION ROADMAP */}
       {upcomingItems.length > 0 && (
-        <div className="bg-slate-900/40 border border-amber-500/20 rounded-3xl p-6 backdrop-blur-md relative overflow-hidden group">
-          <div className="absolute top-0 left-0 w-1 h-full bg-amber-500/50" />
-          <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center gap-3">
-              <div className="p-2 bg-amber-500/10 rounded-xl border border-amber-500/20 text-amber-500">
-                <Trophy size={20} />
-              </div>
+        <div className="relative group">
+          <div className="absolute -inset-1 bg-gradient-to-r from-amber-500/20 to-emerald-500/20 rounded-[2rem] blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+          <div className="relative bg-slate-900/80 border border-white/5 rounded-[2rem] p-8 backdrop-blur-xl shadow-2xl overflow-hidden">
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
               <div>
-                <h2 className="text-sm font-black text-slate-100 uppercase tracking-tight">Prochains Objectifs</h2>
-                <p className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Équipements accessibles bientôt pour {selectedSlot.label}</p>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="p-2 bg-amber-500 rounded-xl shadow-[0_0_20px_rgba(245,158,11,0.4)]">
+                    <Trophy size={20} className="text-slate-950" />
+                  </div>
+                  <h2 className="text-2xl font-black text-white tracking-tight uppercase italic">Roadmap de Progression</h2>
+                </div>
+                <p className="text-slate-400 text-sm font-medium ml-12">Les prochains paliers d'équipement pour votre build {selectedSlot.label}</p>
+              </div>
+              <div className="flex items-center gap-4 bg-slate-950/50 px-4 py-2 rounded-2xl border border-white/5">
+                <div className="flex -space-x-2">
+                  {[...Array(3)].map((_, i) => (
+                    <div key={i} className="w-6 h-6 rounded-full bg-slate-800 border-2 border-slate-950 flex items-center justify-center">
+                      <Star size={10} className="text-amber-500/50" />
+                    </div>
+                  ))}
+                </div>
+                <span className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em]">{upcomingItems.length} OBJECTIFS DÉTECTÉS</span>
               </div>
             </div>
-            <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-slate-950 border border-slate-800">
-              <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
-              <span className="text-[9px] font-black text-slate-400 uppercase tracking-tighter">En approche</span>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+              {upcomingItems.map((item, idx) => {
+                const reqs = item.prerequisites || {};
+                const sReq = parseInt(reqs.str || '0');
+                const eReq = parseInt(reqs.end || '0');
+                const dReq = parseInt(reqs.dex || '0');
+                const iReq = parseInt(reqs.int || '0');
+                const wReq = parseInt(reqs.wis || '0');
+                
+                const totalReq = sReq + eReq + dReq + iReq + wReq;
+                const currentRel = Math.min(sReq, stats.str) + Math.min(eReq, stats.end) + Math.min(dReq, stats.dex) + Math.min(iReq, stats.int) + Math.min(wReq, stats.wis);
+                const progress = totalReq > 0 ? (currentRel / totalReq) * 100 : 100;
+                const diff = Math.max(0, sReq - stats.str) + Math.max(0, eReq - stats.end) + Math.max(0, dReq - stats.dex) + Math.max(0, iReq - stats.int) + Math.max(0, wReq - stats.wis);
+
+                return (
+                  <Link 
+                    key={idx}
+                    to={`/wiki/items?search=${encodeURIComponent(item.name)}`}
+                    className="group/item relative flex flex-col bg-slate-950/40 border border-white/5 hover:border-amber-500/30 p-5 rounded-[1.5rem] transition-all duration-300 hover:shadow-[0_10px_30px_-10px_rgba(0,0,0,0.5)] hover:-translate-y-1"
+                  >
+                    <div className="flex justify-between items-start mb-4">
+                      <div className="flex flex-col">
+                        <span className="text-[10px] font-black text-amber-500 uppercase tracking-widest mb-1">{item.source}</span>
+                        <h3 className="text-sm font-bold text-slate-100 group-hover/item:text-white transition-colors line-clamp-1">{item.name}</h3>
+                      </div>
+                      <div className="p-2 bg-slate-900 rounded-lg text-slate-600 group-hover/item:text-amber-500 transition-colors">
+                        <Package size={14} />
+                      </div>
+                    </div>
+
+                    <div className="mt-auto pt-4 border-t border-white/5">
+                      <div className="flex justify-between items-end mb-2">
+                        <span className="text-[10px] font-black text-slate-500">PROGRESSION</span>
+                        <span className="text-[10px] font-black text-amber-500">-{diff} PTS</span>
+                      </div>
+                      <div className="h-1.5 w-full bg-slate-900 rounded-full overflow-hidden border border-white/5">
+                        <div 
+                          className="h-full bg-gradient-to-r from-amber-600 to-amber-400 transition-all duration-1000 shadow-[0_0_10px_rgba(245,158,11,0.3)]" 
+                          style={{ width: `${progress}%` }}
+                        />
+                      </div>
+                    </div>
+                  </Link>
+                );
+              })}
             </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
-            {upcomingItems.map((item, idx) => {
-              // Calculate total points missing for the "Distance" badge
-              const reqs = item.prerequisites || {};
-              const diff = Math.max(0, parseInt(reqs.str || '0') - stats.str) +
-                           Math.max(0, parseInt(reqs.end || '0') - stats.end) +
-                           Math.max(0, parseInt(reqs.dex || '0') - stats.dex) +
-                           Math.max(0, parseInt(reqs.int || '0') - stats.int) +
-                           Math.max(0, parseInt(reqs.wis || '0') - stats.wis);
-
-              return (
-                <Link 
-                  key={idx}
-                  to={`/wiki/items?search=${encodeURIComponent(item.name)}`}
-                  className="group/card bg-slate-950/50 border border-slate-800 hover:border-amber-500/50 p-4 rounded-2xl transition-all hover:translate-y-[-2px] relative overflow-hidden"
-                >
-                  <div className="flex justify-between items-start mb-3">
-                    <span className="text-[9px] font-black px-2 py-0.5 rounded-md bg-amber-500 text-slate-950">
-                      -{diff} PTS
-                    </span>
-                    <Package size={14} className="text-slate-700 group-hover/card:text-amber-500 transition-colors" />
-                  </div>
-                  <h3 className="text-xs font-bold text-slate-200 truncate group-hover/card:text-white mb-2">{item.name}</h3>
-                  <div className="flex flex-wrap gap-1">
-                    {Object.entries({ str: 'FOR', end: 'END', dex: 'DEX', int: 'INT', wis: 'SAG' }).map(([key, label]) => {
-                      const req = parseInt(item.prerequisites?.[key as keyof typeof item.prerequisites] || '0');
-                      if (req === 0) return null;
-                      const current = stats[key as keyof Stats];
-                      const isMet = current >= req;
-                      
-                      return (
-                        <span 
-                          key={key} 
-                          className={`text-[8px] font-bold px-1.5 py-0.5 rounded border flex items-center gap-1 ${
-                            isMet 
-                              ? 'text-emerald-500 bg-emerald-500/5 border-emerald-500/10 opacity-60' 
-                              : 'text-rose-500 bg-rose-500/5 border-rose-500/20 shadow-[0_0_10px_rgba(244,63,94,0.1)]'
-                          }`}
-                        >
-                          {label} {req}
-                          {!isMet && (
-                            <span className="font-black border-l border-rose-500/20 pl-1 ml-0.5">
-                              +{req - current}
-                            </span>
-                          )}
-                        </span>
-                      );
-                    })}
-                  </div>
-                </Link>
-              );
-            })}
           </div>
         </div>
       )}
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        {/* Left Column: Stats */}
-        <div className="lg:col-span-3 bg-slate-900/50 p-6 rounded-lg border border-slate-800 backdrop-blur-sm h-fit relative">
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="text-xl font-bold text-amber-500 flex items-center gap-2">
-              <Hexagon size={20} /> Vos Stats
-            </h2>
-            <div className="flex gap-1 relative">
+      {/* 🛠️ MAIN BUILDER INTERFACE */}
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        
+        {/* LEFT: CHARACTER PROFILE & CONFIG */}
+        <div className="lg:col-span-5 space-y-8">
+          <div className="bg-slate-900/50 border border-white/5 rounded-[2rem] p-8 backdrop-blur-sm relative overflow-hidden">
+            <div className="absolute top-0 right-0 p-8 opacity-5">
+              <User size={120} />
+            </div>
+            
+            <div className="flex items-center justify-between mb-8 relative z-10">
+              <div>
+                <h2 className="text-xl font-black text-white uppercase italic tracking-tight flex items-center gap-2">
+                  <User size={20} className="text-amber-500" /> Profil Personnage
+                </h2>
+                <p className="text-xs text-slate-500 font-bold uppercase tracking-widest mt-1">Configurez vos attributs</p>
+              </div>
               <button 
                 onClick={() => setShowLoadModal(true)}
-                className="px-3 py-2 bg-amber-500 hover:bg-amber-400 text-slate-900 rounded-lg border border-amber-600 shadow-[0_0_15px_rgba(245,158,11,0.2)] transition-all group flex items-center gap-2 font-bold text-[11px] uppercase tracking-wider"
+                className="px-5 py-2.5 bg-white text-slate-950 rounded-xl font-black text-[10px] uppercase tracking-[0.15em] hover:bg-amber-500 transition-all shadow-xl active:scale-95"
               >
-                <User size={16} />
-                CHARGER
+                Importer
               </button>
-              {showImportToast && (
-                <span className="absolute -top-10 left-1/2 -translate-x-1/2 bg-emerald-500 text-white text-[10px] py-1 px-2 rounded whitespace-nowrap animate-bounce z-50">
-                  Stats importées !
-                </span>
-              )}
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 relative z-10">
+              {(['str', 'end', 'dex', 'int', 'wis'] as const).map((key) => {
+                const config = {
+                  str: { label: 'Force', icon: Sword, color: 'text-rose-500', bg: 'bg-rose-500/10' },
+                  end: { label: 'Endurance', icon: Shield, color: 'text-orange-500', bg: 'bg-orange-500/10' },
+                  dex: { label: 'Dextérité', icon: Wind, color: 'text-emerald-500', bg: 'bg-emerald-500/10' },
+                  int: { label: 'Intelligence', icon: Zap, color: 'text-sky-500', bg: 'bg-sky-500/10' },
+                  wis: { label: 'Sagesse', icon: Sparkles, color: 'text-purple-500', bg: 'bg-purple-500/10' }
+                }[key];
+                
+                return (
+                  <div key={key} className="flex flex-col gap-2 p-4 bg-slate-950/40 border border-white/5 rounded-2xl hover:border-white/10 transition-colors">
+                    <div className="flex items-center gap-2">
+                      <config.icon size={12} className={config.color} />
+                      <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest">{config.label}</label>
+                    </div>
+                    <input
+                      type="number"
+                      value={stats[key]}
+                      onChange={(e) => updateStat(key, e.target.value)}
+                      className="bg-transparent text-2xl font-black text-white focus:outline-none focus:text-amber-500 transition-colors w-full"
+                    />
+                  </div>
+                );
+              })}
             </div>
           </div>
 
-          {/* LOAD MODAL */}
-          {showLoadModal && (
-            <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
-              <div className="absolute inset-0 bg-slate-950/80 backdrop-blur-sm" onClick={() => setShowLoadModal(false)}></div>
-              <div className="bg-slate-900 border border-slate-800 w-full max-w-md rounded-2xl shadow-2xl relative overflow-hidden animate-in zoom-in-95 duration-200">
-                <div className="p-6 border-b border-slate-800 flex justify-between items-center">
-                   <h3 className="text-amber-500 font-black flex items-center gap-2 uppercase tracking-tighter italic">
-                     <User size={20} /> Charger un Personnage
-                   </h3>
-                   <button onClick={() => setShowLoadModal(false)} className="text-slate-500 hover:text-white transition-colors">✕</button>
+          <div className="bg-slate-900/50 border border-white/5 rounded-[2rem] p-8 backdrop-blur-sm">
+            <h2 className="text-xl font-black text-white uppercase italic tracking-tight mb-8 flex items-center gap-2">
+              <GripHorizontal size={20} className="text-amber-500" /> Emplacement
+            </h2>
+            <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
+              {SLOTS.map((slot) => (
+                <div 
+                  key={slot.id}
+                  onClick={() => setSelectedSlot(slot)}
+                  className={`aspect-square rounded-2xl border-2 flex flex-col items-center justify-center cursor-pointer transition-all relative group ${selectedSlot.id === slot.id ? 'border-amber-500 bg-amber-500/10 shadow-[0_0_20px_rgba(245,158,11,0.2)]' : 'border-white/5 bg-slate-950/20 hover:border-white/20'}`}
+                >
+                  <slot.icon size={24} className={selectedSlot.id === slot.id ? 'text-amber-500' : 'text-slate-600 group-hover:text-slate-400'} />
+                  <span className={`text-[9px] mt-2 font-black uppercase tracking-tighter ${selectedSlot.id === slot.id ? 'text-amber-500' : 'text-slate-600'}`}>{slot.label}</span>
                 </div>
-                <div className="p-6 space-y-3 max-h-[400px] overflow-y-auto">
-                  {savedChars.length === 0 ? (
-                    <div className="text-center py-8 text-slate-500 italic text-sm">
-                      Aucun personnage trouvé.
-                    </div>
-                  ) : (
-                    savedChars.map(char => (
-                      <button
-                        key={char.name}
-                        onClick={() => loadSavedChar(char)}
-                        className="w-full group bg-slate-950/50 hover:bg-amber-500 border border-slate-800 hover:border-amber-400 p-4 rounded-xl transition-all flex items-center justify-between"
-                      >
-                        <div className="flex flex-col items-start text-left">
-                          <span className="text-slate-100 group-hover:text-slate-900 font-black uppercase text-sm tracking-wider">{char.name}</span>
-                          <div className="flex flex-wrap gap-2 mt-1">
-                            <span className="text-[9px] text-slate-500 group-hover:text-slate-800 font-bold uppercase tracking-tighter">FOR {char.finalStats.str}</span>
-                            <span className="text-[9px] text-slate-500 group-hover:text-slate-800 font-bold uppercase tracking-tighter">END {char.finalStats.end}</span>
-                            <span className="text-[9px] text-slate-500 group-hover:text-slate-800 font-bold uppercase tracking-tighter">DEX {char.finalStats.dex}</span>
-                            <span className="text-[9px] text-slate-500 group-hover:text-slate-800 font-bold uppercase tracking-tighter">INT {char.finalStats.int}</span>
-                            <span className="text-[9px] text-slate-500 group-hover:text-slate-800 font-bold uppercase tracking-tighter">SAG {char.finalStats.wis}</span>
-                          </div>
-                        </div>
-                        <div className="p-2 rounded-lg bg-slate-900 group-hover:bg-slate-900/20 text-amber-500 group-hover:text-slate-900 transition-colors">
-                          <User size={18} />
-                        </div>
-                      </button>
-                    ))
-                  )}
-                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* RIGHT: RESULTS LIST */}
+        <div className="lg:col-span-7 flex flex-col h-[900px] bg-slate-900/30 border border-white/5 rounded-[2.5rem] overflow-hidden backdrop-blur-sm">
+          <div className="p-8 border-b border-white/5 bg-white/[0.02]">
+            <div className="flex items-center justify-between mb-8">
+              <div>
+                <h3 className="text-2xl font-black text-white uppercase tracking-tight italic flex items-center gap-3">
+                  {selectedSlot.label}
+                  <span className="not-italic text-sm text-slate-600 font-bold bg-slate-950 px-3 py-1 rounded-full border border-white/5">{availableItems.length}</span>
+                </h3>
+              </div>
+              
+              <div className="flex items-center gap-4">
+                <label className="flex items-center gap-3 cursor-pointer group">
+                  <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest group-hover:text-slate-300 transition-colors">Masquer sans req.</span>
+                  <div className="relative">
+                    <input type="checkbox" className="sr-only" checked={hideNoReqs} onChange={(e) => setHideNoReqs(e.target.checked)} />
+                    <div className={`w-10 h-5 rounded-full transition-colors ${hideNoReqs ? 'bg-amber-500' : 'bg-slate-800'}`}></div>
+                    <div className={`absolute left-1 top-1 w-3 h-3 bg-white rounded-full transition-transform ${hideNoReqs ? 'translate-x-5' : ''}`}></div>
+                  </div>
+                </label>
               </div>
             </div>
-          )}
-          
-          <div className="space-y-4">
-            {(['str', 'end', 'dex', 'int', 'wis'] as const).map((key) => (
-              <div key={key} className="flex flex-col gap-1">
-                <label className="text-xs font-bold text-slate-500 uppercase">
-                  {key === 'str' ? 'Force' : key === 'end' ? 'Endurance' : key === 'dex' ? 'Dextérité' : key === 'int' ? 'Intelligence' : 'Sagesse'}
-                </label>
-                <input
-                  type="number"
-                  min="8"
-                  max="65535"
-                  value={stats[key]}
-                  onChange={(e) => updateStat(key, e.target.value)}
-                  className="bg-slate-800 border border-slate-700 text-slate-100 rounded px-3 py-2 focus:ring-2 focus:ring-amber-500 focus:outline-none"
+
+            <div className="space-y-6">
+              <div className="relative">
+                <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-600" size={20} />
+                <input 
+                  type="text" 
+                  placeholder="Rechercher un équipement..." 
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
+                  className="w-full bg-slate-950/50 border border-white/5 rounded-2xl pl-12 pr-6 py-4 text-white placeholder:text-slate-700 focus:outline-none focus:border-amber-500/50 transition-all text-sm font-medium"
                 />
               </div>
-            ))}
-          </div>
-        </div>
 
-        {/* Middle Column: Slot Selection */}
-        <div className="lg:col-span-4 bg-slate-900/50 p-6 rounded-lg border border-slate-800 backdrop-blur-sm flex flex-col items-center h-fit">
-          <h2 className="text-xl font-bold text-amber-500 mb-8 flex items-center gap-2">
-            <Crown size={20} /> Emplacement
-          </h2>
-
-          <div className="flex flex-col gap-4 w-full max-w-[320px] items-center">
-            <div className="flex justify-center">
-               <div 
-                 onClick={() => setSelectedSlot(SLOTS[0])}
-                 className={`w-24 h-24 rounded-xl border-2 flex flex-col items-center justify-center cursor-pointer transition-all relative group ${selectedSlot.id === 'Tete' ? 'border-amber-500 bg-amber-500/10 shadow-[0_0_20px_rgba(245,158,11,0.3)]' : 'border-slate-700 bg-slate-800/30 hover:border-slate-500 hover:bg-slate-800/50'}`}
-               >
-                 <Crown size={40} className={selectedSlot.id === 'Tete' ? 'text-amber-500' : 'text-slate-600 group-hover:text-slate-500'} />
-                 <span className={`text-xs mt-1 uppercase tracking-wider font-bold ${selectedSlot.id === 'Tete' ? 'text-amber-500' : 'text-slate-600'}`}>Tête</span>
-               </div>
-            </div>
-
-            <div className="grid grid-cols-3 gap-3 w-full">
-              <SlotBtn def={SLOTS[1]} isActive={selectedSlot.id === 'Amulette'} onClick={() => setSelectedSlot(SLOTS[1])} />
-              <SlotBtn def={SLOTS[2]} isActive={selectedSlot.id === 'Bracelet'} onClick={() => setSelectedSlot(SLOTS[2])} />
-              <SlotBtn def={SLOTS[3]} isActive={selectedSlot.id === 'Anneau'} onClick={() => setSelectedSlot(SLOTS[3])} />
-            </div>
-
-            <div className="grid grid-cols-2 gap-3 w-3/4">
-              <SlotBtn def={SLOTS[4]} isActive={selectedSlot.id === 'Torse'} onClick={() => setSelectedSlot(SLOTS[4])} />
-              <SlotBtn def={SLOTS[5]} isActive={selectedSlot.id === 'Cape'} onClick={() => setSelectedSlot(SLOTS[5])} />
-            </div>
-
-            <div className="grid grid-cols-2 gap-3 w-3/4">
-              <SlotBtn def={SLOTS[6]} isActive={selectedSlot.id === 'Arme'} onClick={() => setSelectedSlot(SLOTS[6])} />
-              <SlotBtn def={SLOTS[7]} isActive={selectedSlot.id === 'Bouclier'} onClick={() => setSelectedSlot(SLOTS[7])} />
-            </div>
-
-            <div className="grid grid-cols-4 gap-2 w-full">
-              <SlotBtn def={SLOTS[8]} isActive={selectedSlot.id === 'Gant'} onClick={() => setSelectedSlot(SLOTS[8])} />
-              <SlotBtn def={SLOTS[9]} isActive={selectedSlot.id === 'Ceinture'} onClick={() => setSelectedSlot(SLOTS[9])} />
-              <SlotBtn def={SLOTS[10]} isActive={selectedSlot.id === 'Jambière'} onClick={() => setSelectedSlot(SLOTS[10])} />
-              <SlotBtn def={SLOTS[11]} isActive={selectedSlot.id === 'Botte'} onClick={() => setSelectedSlot(SLOTS[11])} />
-            </div>
-          </div>
-        </div>
-
-        {/* Right Column: Items List */}
-        <div className="lg:col-span-5 bg-slate-900/50 rounded-lg border border-slate-800 backdrop-blur-sm flex flex-col overflow-hidden h-[800px]">
-          <div className="p-4 border-b border-slate-800 bg-slate-800/30">
-            <h3 className="text-lg font-bold text-amber-500 mb-4 flex items-center justify-between">
-              <span>{selectedSlot.label}</span>
-              <span className="text-xs text-slate-500 font-normal">{availableItems.length} objets</span>
-            </h3>
-            
-            <div className="relative mb-4">
-              <Search className="absolute left-3 top-2.5 text-slate-500" size={18} />
-              <input 
-                type="text" 
-                placeholder="Filtrer par nom..." 
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full bg-slate-950 border border-slate-700 rounded-xl pl-10 pr-4 py-2 text-slate-200 focus:outline-none focus:border-amber-500 text-sm"
-              />
-            </div>
-
-            <div className="space-y-3">
-              <label className="flex items-center gap-3 cursor-pointer group">
-                <div className="relative">
-                  <input type="checkbox" className="sr-only" checked={hideNoReqs} onChange={(e) => setHideNoReqs(e.target.checked)} />
-                  <div className={`w-10 h-5 rounded-full transition-colors ${hideNoReqs ? 'bg-amber-500' : 'bg-slate-700'}`}></div>
-                  <div className={`absolute left-1 top-1 w-3 h-3 bg-white rounded-full transition-transform ${hideNoReqs ? 'translate-x-5' : ''}`}></div>
-                </div>
-                <span className="text-[11px] font-bold text-slate-500 uppercase tracking-wider">Ignorer sans prérequis</span>
-              </label>
-
-              <div className="pt-3 border-t border-slate-800">
-                <label className="flex items-center gap-3 cursor-pointer group mb-3">
+              <div className="flex flex-col sm:flex-row items-center gap-4 p-4 bg-emerald-500/5 border border-emerald-500/10 rounded-2xl">
+                <label className="flex items-center gap-3 cursor-pointer">
                   <div className="relative">
                     <input type="checkbox" className="sr-only" checked={isBiSMode} onChange={(e) => setIsBiSMode(e.target.checked)} />
-                    <div className={`w-10 h-5 rounded-full transition-colors ${isBiSMode ? 'bg-emerald-500' : 'bg-slate-700'}`}></div>
+                    <div className={`w-10 h-5 rounded-full transition-colors ${isBiSMode ? 'bg-emerald-500' : 'bg-slate-800'}`}></div>
                     <div className={`absolute left-1 top-1 w-3 h-3 bg-white rounded-full transition-transform ${isBiSMode ? 'translate-x-5' : ''}`}></div>
                   </div>
-                  <span className="text-[11px] font-bold text-emerald-500 uppercase tracking-widest flex items-center gap-2">
-                    <Zap size={12} /> Optimisation BiS
+                  <span className="text-[11px] font-black text-emerald-500 uppercase tracking-[0.2em] flex items-center gap-2">
+                    <Zap size={14} fill="currentColor" /> Optimisation BiS
                   </span>
                 </label>
 
                 {isBiSMode && (
-                  <div className="relative">
+                  <div className="flex-1 relative">
                     <select 
                       value={bisFocus}
                       onChange={(e) => setBisFocus(e.target.value)}
-                      className="w-full bg-slate-950 border border-slate-700 rounded-xl py-2 pl-3 pr-8 text-[10px] font-bold uppercase tracking-wider text-slate-300 focus:outline-none focus:border-emerald-500 appearance-none cursor-pointer"
+                      className="w-full bg-slate-950 border border-white/5 rounded-xl py-2 pl-4 pr-10 text-[10px] font-black uppercase tracking-widest text-emerald-200 focus:outline-none focus:border-emerald-500 appearance-none cursor-pointer"
                     >
                       <option value="">Choisir une statistique...</option>
                       {bisOptions.map(opt => <option key={opt} value={opt}>{opt}</option>)}
                     </select>
-                    <ChevronDown size={14} className="absolute right-2 top-2 text-slate-500 pointer-events-none" />
+                    <ChevronDown size={14} className="absolute right-3 top-1/2 -translate-y-1/2 text-emerald-500 pointer-events-none" />
                   </div>
                 )}
               </div>
             </div>
           </div>
 
-          <div className="flex-1 overflow-y-auto p-4 space-y-4 custom-scrollbar">
+          <div className="flex-1 overflow-y-auto p-8 space-y-6 custom-scrollbar scroll-smooth">
             {availableItems.length === 0 ? (
-              <div className="text-center py-12 text-slate-500 italic">Aucun objet trouvé.</div>
+              <div className="flex flex-col items-center justify-center py-20 text-slate-600 opacity-50">
+                <Package size={48} className="mb-4" />
+                <p className="text-sm font-bold uppercase tracking-widest">Aucun équipement disponible</p>
+              </div>
             ) : (
               availableItems.map((item, idx) => (
                 <ItemCard key={idx} item={item} isBiSMode={isBiSMode} idx={idx} stats={stats} />
@@ -524,6 +478,48 @@ const EquipableBuilder = () => {
           </div>
         </div>
       </div>
+
+      {/* LOAD MODAL & OTHER COMPS */}
+      {showLoadModal && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
+          <div className="absolute inset-0 bg-slate-950/90 backdrop-blur-xl" onClick={() => setShowLoadModal(false)}></div>
+          <div className="bg-slate-900 border border-white/10 w-full max-w-md rounded-[2.5rem] shadow-2xl relative overflow-hidden animate-in zoom-in-95 duration-200">
+            <div className="p-8 border-b border-white/5 flex justify-between items-center">
+               <h3 className="text-white text-xl font-black uppercase italic tracking-tight flex items-center gap-3">
+                 <User size={24} className="text-amber-500" /> Charger Profil
+               </h3>
+               <button onClick={() => setShowLoadModal(false)} className="w-8 h-8 flex items-center justify-center rounded-full bg-slate-800 text-slate-400 hover:text-white transition-colors">✕</button>
+            </div>
+            <div className="p-8 space-y-4 max-h-[500px] overflow-y-auto custom-scrollbar">
+              {savedChars.length === 0 ? (
+                <div className="text-center py-12 text-slate-600 font-bold uppercase tracking-widest text-xs">
+                  Aucun profil trouvé
+                </div>
+              ) : (
+                savedChars.map(char => (
+                  <button
+                    key={char.name}
+                    onClick={() => loadSavedChar(char)}
+                    className="w-full group bg-slate-950/50 hover:bg-amber-500 border border-white/5 hover:border-amber-400 p-5 rounded-2xl transition-all flex items-center justify-between"
+                  >
+                    <div className="flex flex-col items-start text-left">
+                      <span className="text-slate-100 group-hover:text-slate-900 font-black uppercase text-sm tracking-wider">{char.name}</span>
+                      <div className="flex flex-wrap gap-3 mt-2">
+                        <span className="text-[9px] text-slate-600 group-hover:text-slate-800 font-black uppercase">FOR {char.finalStats.str}</span>
+                        <span className="text-[9px] text-slate-600 group-hover:text-slate-800 font-black uppercase">DEX {char.finalStats.dex}</span>
+                        <span className="text-[9px] text-slate-600 group-hover:text-slate-800 font-black uppercase">INT {char.finalStats.int}</span>
+                      </div>
+                    </div>
+                    <div className="p-3 rounded-xl bg-slate-900 group-hover:bg-slate-900/20 text-amber-500 group-hover:text-slate-900 transition-colors">
+                      <User size={20} />
+                    </div>
+                  </button>
+                ))
+              )}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
@@ -532,70 +528,56 @@ const ItemCard = ({ item, isBiSMode, idx, isUpcoming, stats }: { item: RecipeIte
   const isTopBiS = isBiSMode && idx < 3;
   
   return (
-    <div className={`w-full p-4 rounded-2xl border transition-all relative ${
-      isUpcoming 
-        ? 'bg-slate-950/40 border-slate-800/50 grayscale-[0.5] opacity-80' 
-        : isTopBiS 
-          ? 'bg-slate-900/60 border-emerald-500/50 shadow-[0_0_20px_rgba(16,185,129,0.1)]' 
-          : 'bg-slate-900/60 border-slate-800'
+    <div className={`group/card w-full p-6 rounded-[2rem] border transition-all duration-500 relative ${
+      isTopBiS 
+        ? 'bg-slate-900/80 border-emerald-500/30 shadow-[0_20px_50px_-20px_rgba(16,185,129,0.2)]' 
+        : 'bg-slate-900/40 border-white/5 hover:border-white/10 hover:bg-slate-900/60'
     }`}>
       {isTopBiS && (
-        <div className="absolute -top-2 -right-2 bg-emerald-500 text-slate-950 p-1.5 rounded-lg shadow-lg rotate-12">
-          <Trophy size={14} />
-        </div>
-      )}
-
-      {isUpcoming && (
-        <div className="absolute -top-2 -right-2 bg-slate-800 text-slate-400 p-1.5 rounded-lg shadow-lg border border-slate-700">
-          <Search size={14} />
+        <div className="absolute -top-3 -right-3 bg-gradient-to-br from-emerald-400 to-emerald-600 text-slate-950 p-2 rounded-xl shadow-lg rotate-12 flex items-center gap-2 border-2 border-slate-950">
+          <Trophy size={16} fill="currentColor" />
+          <span className="text-[10px] font-black uppercase tracking-tighter">Top {idx + 1} BiS</span>
         </div>
       )}
       
-      <div className="flex justify-between items-start mb-4">
+      <div className="flex flex-col sm:flex-row justify-between items-start gap-4 mb-6">
         <div className="flex flex-col gap-1">
-          <h4 className={`font-bold ${isUpcoming ? 'text-slate-400' : isTopBiS ? 'text-emerald-400' : 'text-slate-100'}`}>
+          <div className="flex items-center gap-2 mb-1">
+            <span className="text-[10px] font-black text-amber-500/80 uppercase tracking-[0.2em]">{item.source}</span>
+            {item.typeSource && (
+              <>
+                <span className="w-1 h-1 rounded-full bg-slate-800" />
+                <span className="text-[10px] font-black text-emerald-500/80 uppercase tracking-[0.2em]">{item.typeSource}</span>
+              </>
+            )}
+          </div>
+          <h4 className={`text-xl font-black italic uppercase tracking-tight ${isTopBiS ? 'text-emerald-400' : 'text-slate-100'}`}>
             {item.name}
           </h4>
-          {item.typeSource && (
-            <div className={`flex items-center gap-1 text-[9px] uppercase font-black ${isUpcoming ? 'text-slate-600' : 'text-emerald-500'}`}>
-              <Tag size={10} /> {item.typeSource}
-            </div>
-          )}
         </div>
-        <Link to={`/wiki/items?search=${encodeURIComponent(item.name)}`} className="p-1.5 bg-slate-800 rounded-lg text-slate-400 hover:text-amber-500">
-          <Package size={14} />
-        </Link>
+        <div className="flex gap-2">
+          <Link to={`/wiki/items?search=${encodeURIComponent(item.name)}`} className="flex items-center gap-2 px-4 py-2 bg-slate-950 border border-white/5 rounded-xl text-[10px] font-black text-slate-500 hover:text-amber-500 hover:border-amber-500/30 transition-all uppercase tracking-widest">
+            Détails <Package size={14} />
+          </Link>
+        </div>
       </div>
 
-      <div className="space-y-3">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
-          <span className="text-[9px] font-bold text-slate-500 uppercase tracking-widest block mb-1.5">
-            {isUpcoming ? 'Prerequis (Points manquants)' : 'Prérequis'}
-          </span>
-          <div className="flex flex-wrap gap-1.5">
+          <span className="text-[10px] font-black text-slate-600 uppercase tracking-[0.2em] block mb-3">Attributs Requis</span>
+          <div className="flex flex-wrap gap-2">
             {Object.entries({ str: 'FOR', end: 'END', dex: 'DEX', int: 'INT', wis: 'SAG' }).map(([key, label]) => {
               const req = parseInt(item.prerequisites?.[key as keyof typeof item.prerequisites] || '0');
               if (req === 0) return null;
-              
-              const current = stats[key as keyof Stats];
-              const diff = req - current;
-              
-              return (
-                <div key={key} className="flex flex-col gap-0.5">
-                  <StatBadge label={label} value={formatStatValue(req)} type={key as any} />
-                  {isUpcoming && diff > 0 && (
-                    <span className="text-[8px] font-black text-rose-500 ml-1">+{diff} pts</span>
-                  )}
-                </div>
-              );
+              return <StatBadge key={key} label={label} value={req} type={key as any} />;
             })}
           </div>
         </div>
 
         {(item.bonuses || item.secondary) && (
           <div>
-            <span className={`text-[9px] font-bold uppercase tracking-widest block mb-1.5 ${isUpcoming ? 'text-slate-600' : 'text-emerald-500/80'}`}>Bonus</span>
-            <div className="flex flex-wrap gap-1.5">
+            <span className="text-[10px] font-black text-emerald-500/50 uppercase tracking-[0.2em] block mb-3">Statistiques Bonus</span>
+            <div className="flex flex-wrap gap-2">
               {item.bonuses?.ca && <StatBadge label="CA" value={formatStatValue(item.bonuses.ca)} type="ca" />}
               {item.bonuses?.str && <StatBadge label="FOR" value={formatStatValue(item.bonuses.str)} type="str" />}
               {item.bonuses?.end && <StatBadge label="END" value={formatStatValue(item.bonuses.end)} type="end" />}
@@ -609,17 +591,6 @@ const ItemCard = ({ item, isBiSMode, idx, isUpcoming, stats }: { item: RecipeIte
           </div>
         )}
       </div>
-    </div>
-  );
-};
-
-interface SlotBtnProps { def: { id: string, label: string, icon: LucideIcon }, isActive: boolean, onClick: () => void }
-const SlotBtn = ({ def, isActive, onClick }: SlotBtnProps) => {
-  const Icon = def.icon;
-  return (
-    <div onClick={onClick} className={`aspect-square rounded-xl border-2 flex flex-col items-center justify-center cursor-pointer transition-all relative group ${isActive ? 'border-amber-500 bg-amber-500/10 shadow-[0_0_20px_rgba(245,158,11,0.2)]' : 'border-slate-700 bg-slate-800/30 hover:border-slate-500'}`}>
-      <Icon size={24} className={isActive ? 'text-amber-500' : 'text-slate-600'} />
-      <span className={`text-[9px] mt-1 uppercase tracking-wider font-bold ${isActive ? 'text-amber-500' : 'text-slate-600'}`}>{def.label}</span>
     </div>
   );
 };
