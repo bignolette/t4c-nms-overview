@@ -16788,7 +16788,7 @@
     },
     "secondary": {
       "Puissance Nécro": "+12",
-      "++15 Résistance Nécro": "true",
+      "Résistance Nécro": "+15",
       "Résistance Terre": "-5",
       "Résistance Eau": "-5",
       "Résistance Feu": "-5",
