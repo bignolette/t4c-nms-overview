@@ -249,7 +249,8 @@
     "quantity": 1,
     "source": "Arc",
     "prerequisites": {
-      "str": "118"
+      "str": "118",
+      "dex": "282"
     },
     "secondary": {
       "Puissance Eau": "+25",
@@ -262,7 +263,8 @@
     "quantity": 1,
     "source": "Arc",
     "prerequisites": {
-      "str": "138"
+      "str": "138",
+      "dex": "590"
     },
     "secondary": {
       "Coup Paralysant": "+10",
@@ -280,7 +282,8 @@
     "quantity": 1,
     "source": "Arc",
     "prerequisites": {
-      "str": "94"
+      "str": "94",
+      "dex": "372"
     },
     "secondary": {
       "Coup Paralysant": "+10",
@@ -293,7 +296,8 @@
     "quantity": 1,
     "source": "Arc",
     "prerequisites": {
-      "str": "116"
+      "str": "116",
+      "dex": "677"
     }
   },
   {
@@ -301,7 +305,8 @@
     "quantity": 1,
     "source": "Arc",
     "prerequisites": {
-      "str": "161"
+      "str": "161",
+      "dex": "706"
     }
   },
   {
@@ -309,7 +314,8 @@
     "quantity": 1,
     "source": "Arc",
     "prerequisites": {
-      "str": "161"
+      "str": "161",
+      "dex": "706"
     },
     "secondary": {
       "Coup Paralysant": "+10",
@@ -322,7 +328,8 @@
     "quantity": 1,
     "source": "Arc",
     "prerequisites": {
-      "str": "161"
+      "str": "161",
+      "dex": "706"
     }
   },
   {
@@ -330,7 +337,8 @@
     "quantity": 1,
     "source": "Arc",
     "prerequisites": {
-      "str": "138"
+      "str": "138",
+      "dex": "691"
     }
   },
   {
@@ -338,7 +346,8 @@
     "quantity": 1,
     "source": "Arc",
     "prerequisites": {
-      "str": "109"
+      "str": "109",
+      "dex": "445"
     },
     "secondary": {
       "Coup Paralysant": "+10",
@@ -351,7 +360,8 @@
     "quantity": 1,
     "source": "Arc",
     "prerequisites": {
-      "str": "178"
+      "str": "178",
+      "dex": "793"
     },
     "secondary": {
       "Coup Paralysant": "+10",
@@ -364,7 +374,8 @@
     "quantity": 1,
     "source": "Arc",
     "prerequisites": {
-      "str": "116"
+      "str": "116",
+      "dex": "677"
     }
   },
   {
@@ -372,7 +383,8 @@
     "quantity": 1,
     "source": "Arc",
     "prerequisites": {
-      "str": "138"
+      "str": "138",
+      "dex": "691"
     }
   },
   {
@@ -380,7 +392,8 @@
     "quantity": 1,
     "source": "Flèches",
     "prerequisites": {
-      "str": "89"
+      "str": "89",
+      "dex": "349"
     },
     "secondary": {
       "Transpercer l’Armure": "+15"
@@ -393,7 +406,8 @@
     "prerequisites": {
       "int": "17",
       "wis": "72",
-      "str": "31"
+      "str": "31",
+      "dex": "184"
     }
   },
   {
@@ -401,7 +415,8 @@
     "quantity": 1,
     "source": "Flèches",
     "prerequisites": {
-      "str": "89"
+      "str": "89",
+      "dex": "349"
     },
     "secondary": {
       "Coup Paralysant": "+10"
@@ -413,7 +428,8 @@
     "source": "Flèches",
     "prerequisites": {
       "int": "28",
-      "str": "19"
+      "str": "19",
+      "dex": "76"
     }
   },
   {
@@ -1149,7 +1165,8 @@
     "source": "Plastron",
     "prerequisites": {
       "end": "200",
-      "str": "140"
+      "str": "140",
+      "dex": "450"
     },
     "secondary": {
       "Résistance Air": "+8",
@@ -1168,7 +1185,8 @@
     "source": "Botte",
     "prerequisites": {
       "end": "200",
-      "str": "140"
+      "str": "140",
+      "dex": "450"
     },
     "secondary": {
       "Résistance Air": "+7",
@@ -1187,7 +1205,8 @@
     "source": "Ceinture",
     "prerequisites": {
       "end": "200",
-      "str": "140"
+      "str": "140",
+      "dex": "450"
     },
     "secondary": {
       "Immobilisation": "+5"
@@ -1202,7 +1221,8 @@
     "source": "Gant",
     "prerequisites": {
       "end": "200",
-      "str": "140"
+      "str": "140",
+      "dex": "450"
     },
     "secondary": {
       "Résistance Eau": "+7",
@@ -1221,7 +1241,8 @@
     "source": "Jambière",
     "prerequisites": {
       "end": "200",
-      "str": "140"
+      "str": "140",
+      "dex": "450"
     },
     "secondary": {
       "Résistance Air": "+7",
@@ -1702,7 +1723,8 @@
     "source": "Bouclier",
     "prerequisites": {
       "end": "300",
-      "str": "240"
+      "str": "240",
+      "dex": "80"
     },
     "secondary": {
       "Coup Puissant": "+5",
@@ -2503,7 +2525,10 @@
   {
     "name": "Cape noire",
     "quantity": 1,
-    "source": "Cape"
+    "source": "Cape",
+    "prerequisites": {
+      "end": "25"
+    }
   },
   {
     "name": "Cotte de mailles en mithril",
@@ -3462,7 +3487,8 @@
     "quantity": 1,
     "source": "Cape",
     "prerequisites": {
-      "end": "60"
+      "end": "60",
+      "dex": "225"
     },
     "secondary": {
       "Résistance Nécro": "+20",
@@ -3652,7 +3678,8 @@
       "int": "75",
       "wis": "75",
       "end": "220",
-      "str": "130"
+      "str": "130",
+      "dex": "75"
     },
     "bonuses": {
       "ca": "+42",
@@ -4566,7 +4593,8 @@
     "source": "Arme",
     "prerequisites": {
       "wis": "248",
-      "str": "270"
+      "str": "270",
+      "dex": "40"
     },
     "bonuses": {
       "end": "+25",
@@ -4699,7 +4727,8 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "320"
+      "str": "320",
+      "dex": "40"
     },
     "bonuses": {
       "end": "+25",
@@ -4893,7 +4922,8 @@
       "int": "50",
       "wis": "50",
       "end": "100",
-      "str": "50"
+      "str": "50",
+      "dex": "75"
     },
     "bonuses": {
       "dex": "+25",
@@ -6179,7 +6209,8 @@
     "prerequisites": {
       "int": "16",
       "wis": "12",
-      "end": "75"
+      "end": "75",
+      "dex": "50"
     },
     "secondary": {
       "Se Faufiler": "+10",
@@ -7137,7 +7168,8 @@
     "source": "Arme",
     "prerequisites": {
       "wis": "248",
-      "str": "270"
+      "str": "270",
+      "dex": "40"
     },
     "bonuses": {
       "end": "+25",
@@ -8275,7 +8307,8 @@
     "prerequisites": {
       "int": "45",
       "wis": "50",
-      "str": "25"
+      "str": "25",
+      "dex": "20"
     },
     "bonuses": {
       "dex": "+10",
@@ -8745,7 +8778,11 @@
   {
     "name": "Masque de loup",
     "quantity": 1,
-    "source": "Heaume"
+    "source": "Heaume",
+    "prerequisites": {
+      "str": "27",
+      "dex": "41"
+    }
   },
   {
     "name": "Bâton de marche tordu",
@@ -9169,7 +9206,8 @@
       "int": "30",
       "wis": "30",
       "end": "50",
-      "str": "100"
+      "str": "100",
+      "dex": "50"
     },
     "secondary": {
       "Résistance Feu": "+10",
@@ -9643,7 +9681,8 @@
     "quantity": 1,
     "source": "Bracelet",
     "prerequisites": {
-      "str": "60"
+      "str": "60",
+      "dex": "50"
     },
     "bonuses": {
       "dex": "+25",
@@ -9700,7 +9739,8 @@
       "int": "50",
       "wis": "50",
       "end": "110",
-      "str": "90"
+      "str": "90",
+      "dex": "45"
     },
     "bonuses": {
       "ca": "+30",
@@ -9749,7 +9789,8 @@
     "quantity": 1,
     "source": "Orbe",
     "prerequisites": {
-      "end": "60"
+      "end": "60",
+      "dex": "225"
     },
     "secondary": {
       "Résistance Nécro": "+20",
@@ -9770,7 +9811,8 @@
       "int": "75",
       "wis": "75",
       "end": "220",
-      "str": "130"
+      "str": "130",
+      "dex": "75"
     },
     "bonuses": {
       "ca": "+42",
@@ -9843,7 +9885,8 @@
     "source": "Orbe",
     "prerequisites": {
       "end": "100",
-      "str": "50"
+      "str": "50",
+      "dex": "75"
     },
     "bonuses": {
       "dex": "+25",
@@ -9879,7 +9922,8 @@
     "quantity": 1,
     "source": "Orbe",
     "prerequisites": {
-      "str": "70"
+      "str": "70",
+      "dex": "70"
     },
     "bonuses": {
       "dex": "+30",
@@ -10733,7 +10777,8 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "320"
+      "str": "320",
+      "dex": "40"
     },
     "bonuses": {
       "end": "+25",
@@ -11337,7 +11382,8 @@
     "source": "Plastron",
     "prerequisites": {
       "end": "80",
-      "str": "190"
+      "str": "190",
+      "dex": "800"
     },
     "bonuses": {
       "ca": "+20",
@@ -12112,7 +12158,8 @@
     "source": "Plastron",
     "prerequisites": {
       "end": "140",
-      "str": "90"
+      "str": "90",
+      "dex": "370"
     },
     "secondary": {
       "Résistance Air": "+6",
@@ -12574,7 +12621,8 @@
     "source": "Jambière",
     "prerequisites": {
       "end": "140",
-      "str": "90"
+      "str": "90",
+      "dex": "370"
     },
     "secondary": {
       "Résistance Air": "+5",
@@ -13135,7 +13183,8 @@
     "source": "Heaume",
     "prerequisites": {
       "end": "140",
-      "str": "90"
+      "str": "90",
+      "dex": "370"
     },
     "secondary": {
       "Résistance Air": "+5",
@@ -13850,7 +13899,8 @@
     "source": "Botte",
     "prerequisites": {
       "end": "140",
-      "str": "90"
+      "str": "90",
+      "dex": "370"
     },
     "secondary": {
       "Résistance Air": "+5",
@@ -14527,7 +14577,8 @@
     "source": "Ceinture",
     "prerequisites": {
       "end": "140",
-      "str": "90"
+      "str": "90",
+      "dex": "370"
     },
     "secondary": {
       "Immobilisation": "+5"
@@ -15279,7 +15330,8 @@
     "source": "Gant",
     "prerequisites": {
       "end": "140",
-      "str": "90"
+      "str": "90",
+      "dex": "370"
     },
     "secondary": {
       "Résistance Air": "+5",
@@ -16287,7 +16339,8 @@
     "source": "Heaume",
     "prerequisites": {
       "end": "200",
-      "str": "140"
+      "str": "140",
+      "dex": "450"
     },
     "secondary": {
       "Résistance Air": "+7",
@@ -17432,7 +17485,8 @@
       "int": "50",
       "wis": "50",
       "end": "110",
-      "str": "90"
+      "str": "90",
+      "dex": "45"
     },
     "bonuses": {
       "ca": "+30",
@@ -17463,7 +17517,8 @@
       "int": "30",
       "wis": "30",
       "end": "60",
-      "str": "238"
+      "str": "238",
+      "dex": "85"
     },
     "bonuses": {
       "dex": "+10",
@@ -17525,7 +17580,8 @@
       "int": "40",
       "wis": "40",
       "end": "35",
-      "str": "80"
+      "str": "80",
+      "dex": "223"
     },
     "secondary": {
       "Transpercer l’Armure": "+10",
@@ -18928,7 +18984,8 @@
     "prerequisites": {
       "int": "109",
       "wis": "31",
-      "str": "94"
+      "str": "94",
+      "dex": "372"
     },
     "bonuses": {
       "dex": "+25",
@@ -19227,7 +19284,8 @@
     "prerequisites": {
       "int": "71",
       "wis": "69",
-      "str": "31"
+      "str": "31",
+      "dex": "184"
     },
     "bonuses": {
       "dex": "+25",
@@ -19274,7 +19332,8 @@
     "prerequisites": {
       "int": "38",
       "wis": "102",
-      "str": "94"
+      "str": "94",
+      "dex": "184"
     },
     "bonuses": {
       "dex": "+25",
@@ -19716,7 +19775,8 @@
     "quantity": 1,
     "source": "Cape",
     "prerequisites": {
-      "str": "70"
+      "str": "70",
+      "dex": "70"
     },
     "bonuses": {
       "dex": "+30",
@@ -19884,7 +19944,8 @@
       "int": "62",
       "wis": "63",
       "end": "32",
-      "str": "50"
+      "str": "50",
+      "dex": "65"
     },
     "secondary": {
       "Piller": "+15",
@@ -20548,7 +20609,8 @@
       "int": "63",
       "wis": "63",
       "end": "54",
-      "str": "360"
+      "str": "360",
+      "dex": "95"
     },
     "bonuses": {
       "ca": "+5",
