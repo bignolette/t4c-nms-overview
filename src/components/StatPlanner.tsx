@@ -307,7 +307,7 @@ const StatPlanner = () => {
                       <div className="flex flex-col min-w-[80px]">
                         <span className={`text-xs font-black uppercase leading-tight tracking-tight ${isActive ? 'text-amber-500' : 'text-slate-200'}`}>{char.name}</span>
                         <span className="text-[10px] font-bold italic tracking-wider text-slate-500 mt-0.5">
-                          {char.renaissance === 0 ? "Humain" : `RN x${char.renaissance}`}
+                          {char.renaissance === 0 ? "Humain" : `x${char.renaissance}`}
                         </span>
                       </div>
                       <div onClick={(e) => e.stopPropagation()} className="pl-2 border-l border-slate-800">
@@ -329,7 +329,7 @@ const StatPlanner = () => {
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-center shadow-xl overflow-hidden relative group">
             <h2 className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2 flex items-center justify-center gap-2"><Zap size={14}/> Renaissance</h2>
             <div className="text-3xl font-black text-amber-500 mb-6 drop-shadow-[0_0_10px_rgba(245,158,11,0.3)] group-hover:scale-110 transition-transform uppercase italic">
-              {renaissance === 0 ? "Humain" : `RN x${renaissance}`}
+              {renaissance === 0 ? "Humain" : `x${renaissance}`}
             </div>
             <div className="grid grid-cols-7 gap-1 relative z-10">
               {[0, 1, 2, 3, 4, 5, 6].map((r) => (

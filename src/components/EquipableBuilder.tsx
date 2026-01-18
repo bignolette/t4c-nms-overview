@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useData } from '../context/DataContext';
 import type { RecipeItem } from '../data/types';
 import { mapSourceToSlot, fastNormalize, formatStatValue } from '../data/utils';
-import { Search, Shield, Sword, Crown, Shirt, Footprints, Hand, Circle, Package, Link2, GripHorizontal, Columns2, Medal, Wind, User, Zap, Trophy, Sparkles } from 'lucide-react';
+import { Search, Shield, Sword, Crown, Shirt, Footprints, Hand, Circle, Package, Link2, GripHorizontal, Columns2, Medal, Wind, User, Zap, Trophy, Sparkles, ChevronUp, ChevronDown } from 'lucide-react';
 
 // Types
 interface Stats {
@@ -126,11 +126,13 @@ const EquipableBuilder = () => {
     return map;
   }, [itemsData]);
 
-  const updateStat = (key: keyof Stats, value: string) => {
-    let num = parseInt(value, 10);
-    if (isNaN(num)) num = 0;
-    if (num > 65535) num = 65535;
-    setStats(prev => ({ ...prev, [key]: num }));
+  const adjustStat = (key: keyof Stats, amount: number) => {
+    setStats(prev => {
+      let num = (prev[key] || 0) + amount;
+      if (num < 8) num = 8;
+      if (num > 65535) num = 65535;
+      return { ...prev, [key]: num };
+    });
   };
 
   const bisOptions = useMemo(() => {
@@ -309,22 +311,43 @@ const EquipableBuilder = () => {
               </div>
               <button onClick={() => setShowLoadModal(true)} className="px-5 py-2.5 bg-white text-slate-950 rounded-xl font-black text-[10px] uppercase tracking-[0.15em] hover:bg-amber-500 transition-all">Importer</button>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 relative z-10">
+            <div className="grid grid-cols-1 gap-4 relative z-10">
               {(['str', 'end', 'dex', 'int', 'wis'] as const).map((key) => {
                 const config = {
-                  str: { label: 'Force', icon: Sword, color: 'text-rose-500' },
-                  end: { label: 'Endurance', icon: Shield, color: 'text-orange-500' },
-                  dex: { label: 'Dextérité', icon: Wind, color: 'text-emerald-500' },
-                  int: { label: 'Intelligence', icon: Zap, color: 'text-sky-500' },
-                  wis: { label: 'Sagesse', icon: Sparkles, color: 'text-purple-500' }
+                  str: { label: 'Force', icon: Sword, color: 'text-rose-500', short: 'FOR' },
+                  end: { label: 'Endurance', icon: Shield, color: 'text-orange-500', short: 'END' },
+                  dex: { label: 'Dextérité', icon: Wind, color: 'text-emerald-500', short: 'DEX' },
+                  int: { label: 'Intelligence', icon: Zap, color: 'text-sky-500', short: 'INT' },
+                  wis: { label: 'Sagesse', icon: Sparkles, color: 'text-purple-500', short: 'SAG' }
                 }[key];
+                
                 return (
-                  <div key={key} className="flex flex-col gap-2 p-4 bg-slate-950/40 border border-white/5 rounded-2xl text-left">
-                    <div className="flex items-center gap-2">
-                      <config.icon size={12} className={config.color} />
-                      <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest">{config.label}</label>
+                  <div key={key} className="flex flex-col gap-3 p-4 bg-slate-950/40 border border-white/5 rounded-2xl">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <config.icon size={14} className={config.color} />
+                        <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest">{config.label}</label>
+                      </div>
+                      <span className={`text-xl font-black ${config.color} tabular-nums`}>{stats[key]}</span>
                     </div>
-                    <input type="number" value={stats[key]} onChange={(e) => updateStat(key, e.target.value)} className="bg-transparent text-2xl font-black text-white focus:outline-none focus:text-amber-500 transition-colors w-full" />
+
+                    <div className="flex items-center justify-between bg-slate-900/50 p-1.5 rounded-xl border border-white/5 shadow-inner">
+                      <div className="flex gap-1">
+                        <button onClick={() => adjustStat(key, -100)} className="w-8 h-7 text-[9px] font-black rounded-md bg-slate-950 border border-white/5 text-slate-500 hover:text-white transition-all">-100</button>
+                        <button onClick={() => adjustStat(key, -10)} className="w-8 h-7 text-[9px] font-black rounded-md bg-slate-950 border border-white/5 text-slate-500 hover:text-white transition-all">-10</button>
+                      </div>
+                      
+                      <div className="flex items-center gap-2">
+                        <button onClick={() => adjustStat(key, -1)} className="w-7 h-7 flex items-center justify-center rounded-md bg-slate-800 text-slate-400 hover:text-white transition-all shadow-sm" disabled={stats[key] <= 8}><ChevronDown size={14}/></button>
+                        <div className="w-10 text-center text-sm font-black text-white">{stats[key]}</div>
+                        <button onClick={() => adjustStat(key, 1)} className="w-7 h-7 flex items-center justify-center rounded-md bg-slate-800 text-slate-400 hover:text-white transition-all shadow-sm"><ChevronUp size={14}/></button>
+                      </div>
+
+                      <div className="flex gap-1">
+                        <button onClick={() => adjustStat(key, 10)} className="w-8 h-7 text-[9px] font-black rounded-md bg-slate-950 border border-white/5 text-slate-500 hover:text-white transition-all">+10</button>
+                        <button onClick={() => adjustStat(key, 100)} className="w-8 h-7 text-[9px] font-black rounded-md bg-slate-950 border border-white/5 text-slate-500 hover:text-white transition-all">+100</button>
+                      </div>
+                    </div>
                   </div>
                 );
               })}
