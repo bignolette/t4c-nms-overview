@@ -113,7 +113,7 @@ const EquipableBuilder = () => {
       }
     });
     return Array.from(options).sort();
-  }, []);
+  }, [itemsData]);
 
   const availableItems = useMemo(() => {
     const itemsInSlot = itemsBySlot[selectedSlot.id] || [];
@@ -142,13 +142,36 @@ const EquipableBuilder = () => {
     });
 
     if (isBiSMode) {
+      // Determine Archetype for better weapon/armor suggestions
+      const archetypeStats = { str: stats.str, dex: stats.dex, int: stats.int, wis: stats.wis };
+      const mainStat = Object.entries(archetypeStats).reduce((a, b) => a[1] > b[1] ? a : b)[0];
+
       return filtered.sort((a, b) => {
-        const getVal = (i: RecipeItem) => {
+        const getScore = (i: RecipeItem) => {
           const focusKey = bisFocus.toLowerCase() as keyof typeof i.bonuses;
-          const s = i.secondary?.[bisFocus] || (i.bonuses ? i.bonuses[focusKey] : "0") || "0";
-          return parseInt(String(s).replace(/[^0-9-]/g, '')) || 0;
+          const sValue = i.secondary?.[bisFocus] || (i.bonuses ? i.bonuses[focusKey] : "0") || "0";
+          let baseScore = parseInt(String(sValue).replace(/[^0-9-]/g, '')) || 0;
+          
+          // Heuristic: Penalize items that don't match the build's primary stat in critical slots
+          // Example: Archer (DEX) seeing an Axe (requires STR)
+          if (selectedSlot.id === 'Arme') {
+             if (mainStat === 'dex' && i.source !== 'Arc') baseScore -= 1000;
+             if (mainStat === 'str' && i.source !== 'Arme') baseScore -= 1000;
+             if ((mainStat === 'int' || mainStat === 'wis') && (i.source === 'Arme' || i.source === 'Arc')) baseScore -= 1000;
+          }
+
+          if (selectedSlot.id === 'Torse') {
+             if ((mainStat === 'int' || mainStat === 'wis') && i.source === 'Armure') baseScore -= 500;
+             if ((mainStat === 'str' || mainStat === 'dex') && i.source === 'Robe') baseScore -= 500;
+          }
+
+          if (selectedSlot.id === 'Bouclier') {
+             if (mainStat === 'int' && i.source !== 'Focus') baseScore -= 500;
+          }
+
+          return baseScore;
         };
-        return getVal(b) - getVal(a);
+        return getScore(b) - getScore(a);
       });
     }
 
