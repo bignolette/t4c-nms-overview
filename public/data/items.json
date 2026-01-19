@@ -6516,9 +6516,9 @@
     "quantity": 1,
     "source": "Robe",
     "prerequisites": {
-      "int": "297",
+      "end": "75",
       "wis": "238",
-      "end": "75"
+      "int": "297"
     },
     "bonuses": {
       "ca": "+18",
@@ -6529,7 +6529,8 @@
       "Puissance Air": "+15",
       "Puissance Terre": "+15",
       "Puissance Feu": "+15",
-      "Puissance Eau": "+15"
+      "Puissance Eau": "+15",
+      "Esquive": "-25"
     }
   },
   {
@@ -22793,11 +22794,6 @@
     "source": "Divers"
   },
   {
-    "name": "Corsetique Cryptique",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Manche en noisetier",
     "quantity": 1,
     "source": "Divers"
@@ -22897,11 +22893,6 @@
     "source": "Divers"
   },
   {
-    "name": "Souffle polaire",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Houppelande légendaire de Thavasthar",
     "quantity": 1,
     "source": "Robe",
@@ -22914,11 +22905,6 @@
     "secondary": {
       "Esquive": "-100"
     }
-  },
-  {
-    "name": "Fétiche cyclonique",
-    "quantity": 1,
-    "source": "Divers"
   },
   {
     "name": "Souffle ardent",
@@ -22938,11 +22924,6 @@
     "secondary": {
       "Esquive": "-100"
     }
-  },
-  {
-    "name": "Fétiche forestier",
-    "quantity": 1,
-    "source": "Divers"
   },
   {
     "name": "Souffle tropical",
@@ -23019,17 +23000,7 @@
     "source": "Divers"
   },
   {
-    "name": "Manche en myrte",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Manche en Sureau",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Manche en sureau",
     "quantity": 1,
     "source": "Divers"
   },
@@ -23121,11 +23092,6 @@
     "secondary": {
       "Esquive": "-100"
     }
-  },
-  {
-    "name": "Fétiche morbide",
-    "quantity": 1,
-    "source": "Divers"
   },
   {
     "name": "Sphène polie",
@@ -23519,28 +23485,6 @@
     }
   },
   {
-    "name": "Manteau des éléments",
-    "quantity": 1,
-    "source": "Robe",
-    "prerequisites": {
-      "end": "75",
-      "wis": "238",
-      "int": "297"
-    },
-    "bonuses": {
-      "ca": "+18",
-      "int": "+20",
-      "wis": "+20"
-    },
-    "secondary": {
-      "Puissance Air": "+15",
-      "Puissance Terre": "+15",
-      "Puissance Feu": "+15",
-      "Puissance Eau": "+15",
-      "Esquive": "-25"
-    }
-  },
-  {
     "name": "Robe tellurique rapiécée",
     "quantity": 1,
     "source": "Robe",
@@ -23653,7 +23597,7 @@
       "Puissance Nécro": "+5",
       "Esquive": "-15"
     }
-  }
+  },
   {
     "name": "Branche de Myrte",
     "quantity": 1,
@@ -23666,21 +23610,6 @@
   },
   {
     "name": "Branche de Noisetier",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Branche en mélèze",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Branche de cyprès",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Branche de févier épineux",
     "quantity": 1,
     "source": "Divers"
   }
