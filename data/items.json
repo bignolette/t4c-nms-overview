@@ -524,7 +524,8 @@
       "int": "60",
       "wis": "80",
       "str": "50",
-      "dex": "140"
+      "dex": "140",
+      "end": "20"
     },
     "secondary": {
       "Dissimulation": "+15",
@@ -22879,7 +22880,16 @@
   {
     "name": "Houppelande légendaire  du Belharra",
     "quantity": 1,
-    "source": "Divers"
+    "source": "Robe",
+    "prerequisites": {
+      "end": "49"
+    },
+    "bonuses": {
+      "ca": "+33"
+    },
+    "secondary": {
+      "Esquive": "-100"
+    }
   },
   {
     "name": "Fétiche scélérate",
@@ -22894,7 +22904,16 @@
   {
     "name": "Houppelande légendaire de Thavasthar",
     "quantity": 1,
-    "source": "Divers"
+    "source": "Robe",
+    "prerequisites": {
+      "end": "49"
+    },
+    "bonuses": {
+      "ca": "+33"
+    },
+    "secondary": {
+      "Esquive": "-100"
+    }
   },
   {
     "name": "Fétiche cyclonique",
@@ -22909,7 +22928,16 @@
   {
     "name": "Houppelande légendaire du Séchard",
     "quantity": 1,
-    "source": "Divers"
+    "source": "Robe",
+    "prerequisites": {
+      "end": "49"
+    },
+    "bonuses": {
+      "ca": "+33"
+    },
+    "secondary": {
+      "Esquive": "-100"
+    }
   },
   {
     "name": "Fétiche forestier",
@@ -22924,7 +22952,16 @@
   {
     "name": "Houppelande légendaire du Thar",
     "quantity": 1,
-    "source": "Divers"
+    "source": "Robe",
+    "prerequisites": {
+      "end": "49"
+    },
+    "bonuses": {
+      "ca": "+33"
+    },
+    "secondary": {
+      "Esquive": "-100"
+    }
   },
   {
     "name": "Souffle rocheux",
@@ -23044,7 +23081,27 @@
   {
     "name": "Pèlerine de l'éclat lunaire",
     "quantity": 1,
-    "source": "Divers"
+    "source": "Robe",
+    "prerequisites": {
+      "end": "49",
+      "wis": "1152",
+      "int": "57"
+    },
+    "bonuses": {
+      "ca": "+33"
+    },
+    "secondary": {
+      "Puissance Lumière": "+40",
+      "Retour à la vie": "+20",
+      "Profusion de mana": "+20",
+      "Résistance Eau": "+10",
+      "Résistance Air": "+10",
+      "Résistance Terre": "+10",
+      "Résistance Feu": "+10",
+      "Esquive": "-100",
+      "Puissance Terre": "-20",
+      "Résistance Nécro": "-10"
+    }
   },
   {
     "name": "Fétiche luminescente",
@@ -23054,7 +23111,16 @@
   {
     "name": "Pèlerine des cendres funeste",
     "quantity": 1,
-    "source": "Divers"
+    "source": "Robe",
+    "prerequisites": {
+      "end": "49"
+    },
+    "bonuses": {
+      "ca": "+33"
+    },
+    "secondary": {
+      "Esquive": "-100"
+    }
   },
   {
     "name": "Fétiche morbide",
@@ -23410,5 +23476,159 @@
     "name": "Joyaux elfiques",
     "quantity": 1,
     "source": "Divers"
+  },
+  {
+    "name": "Robe de couleur",
+    "quantity": 1,
+    "source": "Robe",
+    "prerequisites": {
+      "end": "12",
+      "wis": "28",
+      "int": "28"
+    },
+    "bonuses": {
+      "ca": "+2",
+      "wis": "+5",
+      "int": "+5"
+    },
+    "secondary": {
+      "Esquive": "-25"
+    }
+  },
+  {
+    "name": "Manteau des éléments",
+    "quantity": 1,
+    "source": "Robe",
+    "prerequisites": {
+      "end": "75",
+      "wis": "238",
+      "int": "297"
+    },
+    "bonuses": {
+      "ca": "+18",
+      "int": "+20",
+      "wis": "+20"
+    },
+    "secondary": {
+      "Puissance Air": "+15",
+      "Puissance Terre": "+15",
+      "Puissance Feu": "+15",
+      "Puissance Eau": "+15",
+      "Esquive": "-25"
+    }
+  },
+  {
+    "name": "Robe tellurique rapiécée",
+    "quantity": 1,
+    "source": "Robe",
+    "prerequisites": {
+      "wis": "18",
+      "int": "18"
+    },
+    "bonuses": {
+      "ca": "+3",
+      "wis": "+5",
+      "int": "+5",
+      "str": "+5"
+    },
+    "secondary": {
+      "Puissance Terre": "+5",
+      "Esquive": "-15"
+    }
+  },
+  {
+    "name": "Robe scintillante rapiécée",
+    "quantity": 1,
+    "source": "Robe",
+    "prerequisites": {
+      "wis": "18",
+      "int": "18"
+    },
+    "bonuses": {
+      "ca": "+3",
+      "wis": "+5",
+      "int": "+5",
+      "str": "+5"
+    },
+    "secondary": {
+      "Puissance Lumière": "+5",
+      "Esquive": "-15"
+    }
+  },
+  {
+    "name": "Robe du zéphyr rapiécée",
+    "quantity": 1,
+    "source": "Robe",
+    "prerequisites": {
+      "wis": "18",
+      "int": "18"
+    },
+    "bonuses": {
+      "ca": "+3",
+      "wis": "+5",
+      "int": "+5",
+      "str": "+5"
+    },
+    "secondary": {
+      "Puissance Air": "+5",
+      "Esquive": "-15"
+    }
+  },
+  {
+    "name": "Robe de la rosée rapiécée",
+    "quantity": 1,
+    "source": "Robe",
+    "prerequisites": {
+      "wis": "18",
+      "int": "18"
+    },
+    "bonuses": {
+      "ca": "+3",
+      "wis": "+5",
+      "int": "+5",
+      "str": "+5"
+    },
+    "secondary": {
+      "Puissance Eau": "+5",
+      "Esquive": "-15"
+    }
+  },
+  {
+    "name": "Robe flamboyante rapiécée",
+    "quantity": 1,
+    "source": "Robe",
+    "prerequisites": {
+      "wis": "18",
+      "int": "18"
+    },
+    "bonuses": {
+      "ca": "+3",
+      "wis": "+5",
+      "int": "+5",
+      "str": "+5"
+    },
+    "secondary": {
+      "Puissance Feu": "+5",
+      "Esquive": "-15"
+    }
+  },
+  {
+    "name": "Robe des abîmes rapiécée",
+    "quantity": 1,
+    "source": "Robe",
+    "prerequisites": {
+      "wis": "18",
+      "int": "18"
+    },
+    "bonuses": {
+      "ca": "+3",
+      "wis": "+5",
+      "int": "+5",
+      "str": "+5"
+    },
+    "secondary": {
+      "Puissance Nécro": "+5",
+      "Esquive": "-15"
+    }
   }
 ]
