@@ -11687,41 +11687,6 @@
   },
   {
     "name": "Gardien de la crypte",
-    "location": "Stoneheim",
-    "coordinates": [
-      "1625.602.2",
-      "1626.610.2",
-      "1615.619.2",
-      "1607.623.2",
-      "1604.634.2",
-      "1595.637.2",
-      "1584.648.2",
-      "1574.655.2",
-      "1583.663.2",
-      "1564.675.2",
-      "1594.675.2",
-      "1549.682.2",
-      "1575.696.2",
-      "1569.699.2",
-      "1566.702.2",
-      "1600.702.2",
-      "1581.715.2"
-    ],
-    "drops": [
-      "Élixir de mana",
-      "Potion de guérison critique",
-      "Épée longue de mithril",
-      "Malachite brute",
-      "Morceau de calcaire brut",
-      "Emeraude brute",
-      "Hallebarde runique",
-      "Capture d'esprit taciturne"
-    ],
-    "exp": "18K",
-    "gold": "236"
-  },
-  {
-    "name": "Gardien de la crypte",
     "location": "Drake Island",
     "coordinates": [
       "1625.602.2",
@@ -12096,46 +12061,6 @@
   },
   {
     "name": "Gardien squelette",
-    "location": "Arakas",
-    "coordinates": [
-      "447.166.1",
-      "456.180.1",
-      "428.183.1",
-      "485.191.1",
-      "400.197.1",
-      "394.208.1",
-      "448.226.1",
-      "446.250.1",
-      "464.266.1",
-      "475.283.1",
-      "518.299.1",
-      "493.314.1",
-      "1275.2172.2",
-      "1274.2211.2",
-      "1301.2236.2",
-      "1245.2273.2",
-      "1312.2292.2",
-      "1232.2337.2",
-      "1211.2371.2",
-      "874.2543.2",
-      "892.2566.2",
-      "867.2570.2",
-      "704.2584.2",
-      "712.2596.2",
-      "704.2615.2",
-      "797.2617.2"
-    ],
-    "drops": [
-      "Ceinture de cuir",
-      "Clé de fer",
-      "Potion de guérison",
-      "Os de squelette"
-    ],
-    "exp": "701",
-    "gold": "47"
-  },
-  {
-    "name": "Gardien squelette",
     "location": "Stoneheim",
     "coordinates": [
       "447.166.1",
@@ -12177,7 +12102,7 @@
   },
   {
     "name": "Gardien temporel",
-    "location": "Inconnu",
+    "location": "Zone Oracle",
     "coordinates": [
       "2856.2244.2",
       "2868.2256.2",

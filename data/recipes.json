@@ -113,17 +113,36 @@
   },
   {
     "name": "Bouclier du décrépit",
+    "profession": "Armurier",
+    "level": 70,
     "quantity": 1,
-    "source": "Matériau",
-    "sources": [
+    "source": "Bouclier",
+    "learnedFrom": "Tarik Oleddo",
+    "coordinates": "1888.329.1",
+    "locationPrecision": "Couloirs du sous-sol du temple de Redwall",
+    "zones": [
+      "Drake Island"
+    ],
+    "ingredients": [
       {
-        "typeSource": "Craft Armurier Tarik Oleddo DI",
-        "locations": [
-          {
-            "label": "Craft Armurier Tarik Oleddo DI",
-            "coordinates": ""
-          }
-        ]
+        "name": "Ampélite",
+        "quantity": 2
+      },
+      {
+        "name": "Effluve cristallisée",
+        "quantity": 2
+      },
+      {
+        "name": "Ornement de rubis",
+        "quantity": 1
+      },
+      {
+        "name": "Lingot de titane",
+        "quantity": 2
+      },
+      {
+        "name": "Corde en boyaux d'apocalypse des sables",
+        "quantity": 1
       }
     ]
   },
@@ -615,7 +634,7 @@
     ]
   },
   {
-    "name": "Branche en oxandre",
+    "name": "Branche d'oxandre",
     "quantity": 1,
     "source": "Matériau",
     "sources": [
@@ -3640,18 +3659,19 @@
     "source": "Matériau",
     "sources": [
       {
-        "typeSource": "Grotte Urtanar",
+        "typeSource": "Gisement d'hématite",
         "locations": [
           {
-            "label": "Grotte Urtanar",
-            "coordinates": ""
+            "label": "Gisement d'hématite",
+            "coordinates": "Grotte Urtanar"
           }
         ]
       }
     ],
     "zones": [
       "Urtanar"
-    ]
+    ],
+    "description": "Usage: Pépite en hématite (bijou 107)"
   },
   {
     "name": "Minerais d'iridium",
@@ -3776,18 +3796,19 @@
     "source": "Matériau",
     "sources": [
       {
-        "typeSource": "Grotte Urtanar",
+        "typeSource": "Gisement d'hématite",
         "locations": [
           {
-            "label": "Grotte Urtanar",
-            "coordinates": ""
+            "label": "Gisement d'hématite",
+            "coordinates": "Grotte Urtanar"
           }
         ]
       }
     ],
     "zones": [
       "Urtanar"
-    ]
+    ],
+    "description": "Usage: Cinabre poli (bijou 125)"
   },
   {
     "name": "Minerais de cuivre",
@@ -4007,11 +4028,12 @@
         "locations": [
           {
             "label": "Gisement de rose des neiges",
-            "coordinates": ""
+            "coordinates": "repop: 30 minutes"
           }
         ]
       }
-    ]
+    ],
+    "description": "Usage: Pépite de rose des neiges (bijou 113)"
   },
   {
     "name": "Minerais de titane",
@@ -4031,63 +4053,6 @@
     "zones": [
       "Drake Island"
     ]
-  },
-  {
-    "name": "Minerais d'hématite",
-    "quantity": 1,
-    "source": "Matériau",
-    "sources": [
-      {
-        "typeSource": "Gisement d'hématite",
-        "locations": [
-          {
-            "label": "Gisement d'hématite",
-            "coordinates": "Grotte Urtanar"
-          }
-        ]
-      }
-    ],
-    "zones": [
-      "Urtanar"
-    ],
-    "description": "Usage: Pépite en hématite (bijou 107)"
-  },
-  {
-    "name": "Minerais de cinabre",
-    "quantity": 1,
-    "source": "Matériau",
-    "sources": [
-      {
-        "typeSource": "Gisement d'hématite",
-        "locations": [
-          {
-            "label": "Gisement d'hématite",
-            "coordinates": "Grotte Urtanar"
-          }
-        ]
-      }
-    ],
-    "zones": [
-      "Urtanar"
-    ],
-    "description": "Usage: Cinabre poli (bijou 125)"
-  },
-  {
-    "name": "Minerais de rose des neiges",
-    "quantity": 1,
-    "source": "Matériau",
-    "sources": [
-      {
-        "typeSource": "Gisement de rose des neiges",
-        "locations": [
-          {
-            "label": "Gisement de rose des neiges",
-            "coordinates": "repop: 30 minutes"
-          }
-        ]
-      }
-    ],
-    "description": "Usage: Pépite de rose des neiges (bijou 113)"
   },
   {
     "name": "Mixture illusoire",
@@ -7775,41 +7740,6 @@
     ]
   },
   {
-    "name": "Bouclier du décrépit",
-    "profession": "Armurier",
-    "level": 70,
-    "quantity": 1,
-    "source": "Bouclier",
-    "learnedFrom": "Tarik Oleddo",
-    "coordinates": "1888.329.1",
-    "locationPrecision": "Couloirs du sous-sol du temple de Redwall",
-    "zones": [
-      "Drake Island"
-    ],
-    "ingredients": [
-      {
-        "name": "Ampélite",
-        "quantity": 2
-      },
-      {
-        "name": "Effluve cristallisée",
-        "quantity": 2
-      },
-      {
-        "name": "Ornement de rubis",
-        "quantity": 1
-      },
-      {
-        "name": "Lingot de titane",
-        "quantity": 2
-      },
-      {
-        "name": "Corde en boyaux d'apocalypse des sables",
-        "quantity": 1
-      }
-    ]
-  },
-  {
     "name": "Bouclier du pourfendeur de mage",
     "profession": "Armurier",
     "level": 108,
@@ -8068,7 +7998,7 @@
         "quantity": 1
       },
       {
-        "name": "Lingot argent",
+        "name": "Lingot d'argent",
         "quantity": 3
       },
       {
@@ -11186,34 +11116,6 @@
     "zones": [
       "Drake Island"
     ]
-  },
-  {
-    "name": "Corsetique Cryptique",
-    "profession": "Forgeron",
-    "level": 75,
-    "quantity": 1,
-    "source": "Divers",
-    "ingredients": [
-      {
-        "name": "Manche en noisetier",
-        "quantity": 1
-      },
-      {
-        "name": "Sensilles cryptiques",
-        "quantity": 2
-      },
-      {
-        "name": "Lingot d'adamantite",
-        "quantity": 2
-      },
-      {
-        "name": "Lame en orichalque",
-        "quantity": 1
-      }
-    ],
-    "learnedFrom": "Psaëllis",
-    "coordinates": "1495.740.1",
-    "locationPrecision": "Quartier des métiers"
   },
   {
     "name": "Cotte de maille reluisante",
@@ -23642,12 +23544,6 @@
     ]
   },
   {
-    "name": "Manche en myrte",
-    "quantity": 1,
-    "source": "Matériau",
-    "sources": []
-  },
-  {
     "name": "Manche en noyer",
     "profession": "Ebéniste",
     "level": 30,
@@ -23739,12 +23635,6 @@
     "zones": [
       "Urtanar"
     ]
-  },
-  {
-    "name": "Manche en sureau",
-    "quantity": 1,
-    "source": "Matériau",
-    "sources": []
   },
   {
     "name": "Manteau d'inlandsis",
@@ -24165,38 +24055,6 @@
     "locationPrecision": "Sous-sol des métiers, Redwall",
     "zones": [
       "Drake Island"
-    ]
-  },
-  {
-    "name": "Manteau des élements finement tissé",
-    "quantity": 1,
-    "source": "Robe",
-    "level": 86,
-    "ingredients": [
-      {
-        "name": "Manteau des éléments",
-        "quantity": 1
-      },
-      {
-        "name": "Pelote de laine",
-        "quantity": 5
-      },
-      {
-        "name": "Peau de ver",
-        "quantity": 4
-      },
-      {
-        "name": "Diadème de malachites",
-        "quantity": 1
-      },
-      {
-        "name": "Oeil du tigre",
-        "quantity": 1
-      },
-      {
-        "name": "Fiole de liquide bleuté",
-        "quantity": 1
-      }
     ]
   },
   {
@@ -26446,34 +26304,6 @@
     ]
   },
   {
-    "name": "Partisan infernal",
-    "profession": "Forgeron",
-    "level": 71,
-    "quantity": 1,
-    "source": "Divers",
-    "ingredients": [
-      {
-        "name": "Lame courbée enneigée",
-        "quantity": 1
-      },
-      {
-        "name": "Manche en noisetier",
-        "quantity": 1
-      },
-      {
-        "name": "Griffe d'orc",
-        "quantity": 2
-      },
-      {
-        "name": "Lingot d'argent",
-        "quantity": 2
-      }
-    ],
-    "learnedFrom": "Psaëllis",
-    "coordinates": "1495.740.1",
-    "locationPrecision": "Quartier des métiers"
-  },
-  {
     "name": "Pavois de Serisiss",
     "profession": "Armurier",
     "level": 70,
@@ -26653,25 +26483,6 @@
     "locationPrecision": "Quartier des métiers, Stonecrest",
     "zones": [
       "Stoneheim"
-    ]
-  },
-  {
-    "name": "Pépite d'or",
-    "profession": "Bijoutier",
-    "level": 32,
-    "quantity": 1,
-    "source": "Divers",
-    "learnedFrom": "Lucrell",
-    "coordinates": "172.839.0",
-    "locationPrecision": "Quartier des métiers, Stonecrest",
-    "zones": [
-      "Stoneheim"
-    ],
-    "ingredients": [
-      {
-        "name": "Minerais d'or",
-        "quantity": 10
-      }
     ]
   },
   {
@@ -69334,30 +69145,6 @@
     ]
   },
   {
-    "name": "Protecteur du  barbare",
-    "quantity": 1,
-    "source": "Ceinture",
-    "level": 98,
-    "ingredients": [
-      {
-        "name": "Estampe secrète de Valmar",
-        "quantity": 1
-      },
-      {
-        "name": "Sangle de balafré",
-        "quantity": 1
-      },
-      {
-        "name": "Morceau d'ivoire d'Agamaoth",
-        "quantity": 1
-      },
-      {
-        "name": "Bobine de fil spirituel éthéré",
-        "quantity": 2
-      }
-    ]
-  },
-  {
     "name": "Protecteur du barbare",
     "profession": "Armurier",
     "level": 98,
@@ -69486,13 +69273,14 @@
     ]
   },
   {
-    "name": "Robe de grand froid finement tissée",
+    "name": "Robe du grand froid finement tissée",
+    "profession": "Couturier",
+    "level": 78,
     "quantity": 1,
     "source": "Robe",
-    "level": 78,
     "ingredients": [
       {
-        "name": "Robe de grand froid",
+        "name": "Robe du grand froid",
         "quantity": 1
       },
       {
@@ -69515,6 +69303,12 @@
         "name": "Fiole de liquide bleuté",
         "quantity": 1
       }
+    ],
+    "learnedFrom": "Qualette",
+    "coordinates": "1524.764.1",
+    "locationPrecision": "Sous-sol des métiers, Redwall",
+    "zones": [
+      "Drake Island"
     ]
   },
   {
@@ -69963,45 +69757,6 @@
     ]
   },
   {
-    "name": "Robe du grand froid finement tissée",
-    "profession": "Couturier",
-    "level": 78,
-    "quantity": 1,
-    "source": "Robe",
-    "ingredients": [
-      {
-        "name": "Robe du grand froid",
-        "quantity": 1
-      },
-      {
-        "name": "Pelote de laine",
-        "quantity": 5
-      },
-      {
-        "name": "Peau de ver",
-        "quantity": 4
-      },
-      {
-        "name": "Chapeau de glace",
-        "quantity": 1
-      },
-      {
-        "name": "Saphir focus de pouvoir",
-        "quantity": 1
-      },
-      {
-        "name": "Fiole de liquide bleuté",
-        "quantity": 1
-      }
-    ],
-    "learnedFrom": "Qualette",
-    "coordinates": "1524.764.1",
-    "locationPrecision": "Sous-sol des métiers, Redwall",
-    "zones": [
-      "Drake Island"
-    ]
-  },
-  {
     "name": "Robe en humus finement tissée",
     "profession": "Couturier",
     "level": 84,
@@ -70309,18 +70064,6 @@
     "zones": [
       "Stoneheim"
     ],
-    "ingredients": [
-      {
-        "name": "Branche de cèdre",
-        "quantity": 2
-      }
-    ]
-  },
-  {
-    "name": "Rouleau à patisserie pour faire des bons gateaux qui sont bons",
-    "quantity": 1,
-    "source": "Divers",
-    "level": 49,
     "ingredients": [
       {
         "name": "Branche de cèdre",
@@ -70842,9 +70585,16 @@
   },
   {
     "name": "Sceptre de sagesse",
-    "quantity": 1,
-    "source": "Divers",
+    "profession": "Forgeron",
     "level": 31,
+    "quantity": 1,
+    "source": "Arme",
+    "learnedFrom": "Babulle",
+    "coordinates": "1630.2575.0",
+    "locationPrecision": "Quartier des métiers, Silversky",
+    "zones": [
+      "Raven's Dust"
+    ],
     "ingredients": [
       {
         "name": "Hampe d'acier",
@@ -71189,33 +70939,6 @@
       },
       {
         "name": "Anneau de résistance",
-        "quantity": 3
-      },
-      {
-        "name": "Pépite de mithril",
-        "quantity": 2
-      }
-    ]
-  },
-  {
-    "name": "Sceptre de sagesse",
-    "profession": "Forgeron",
-    "level": 31,
-    "quantity": 1,
-    "source": "Arme",
-    "learnedFrom": "Babulle",
-    "coordinates": "1630.2575.0",
-    "locationPrecision": "Quartier des métiers, Silversky",
-    "zones": [
-      "Raven's Dust"
-    ],
-    "ingredients": [
-      {
-        "name": "Hampe d'acier",
-        "quantity": 1
-      },
-      {
-        "name": "Anneau de sagesse",
         "quantity": 3
       },
       {
@@ -71681,7 +71404,7 @@
         "quantity": 3
       },
       {
-        "name": "Joyau elfique",
+        "name": "Joyaux elfiques",
         "quantity": 3
       }
     ]
