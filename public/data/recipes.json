@@ -615,7 +615,7 @@
     ]
   },
   {
-    "name": "Branche en oxandre",
+    "name": "Branche d'oxandre",
     "quantity": 1,
     "source": "Matériau",
     "sources": [
@@ -8068,7 +8068,7 @@
         "quantity": 1
       },
       {
-        "name": "Lingot argent",
+        "name": "Lingot d'argent",
         "quantity": 3
       },
       {
@@ -69334,7 +69334,7 @@
     ]
   },
   {
-    "name": "Protecteur du  barbare",
+    "name": "Protecteur du barbare",
     "quantity": 1,
     "source": "Ceinture",
     "level": 98,
@@ -69344,7 +69344,7 @@
         "quantity": 1
       },
       {
-        "name": "Sangle de balafré",
+        "name": "Sangle du balafré",
         "quantity": 1
       },
       {
@@ -69486,13 +69486,13 @@
     ]
   },
   {
-    "name": "Robe de grand froid finement tissée",
+    "name": "Robe du grand froid finement tissée",
     "quantity": 1,
     "source": "Robe",
     "level": 78,
     "ingredients": [
       {
-        "name": "Robe de grand froid",
+        "name": "Robe du grand froid",
         "quantity": 1
       },
       {
@@ -71681,7 +71681,7 @@
         "quantity": 3
       },
       {
-        "name": "Joyau elfique",
+        "name": "Joyaux elfiques",
         "quantity": 3
       }
     ]
