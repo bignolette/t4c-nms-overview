@@ -254,8 +254,17 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
                 type="text"
                 placeholder="Rechercher un monstre ou un butin..."
                 value={searchInput}
-                onChange={(e) => setSearchInput(e.target.value)}
-                onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
+                onChange={(e) => {
+                    const val = e.target.value;
+                    setSearchInput(val);
+                    setActiveSearchTerm(val);
+                    setCurrentPage(1);
+                    setSearchParams(prev => {
+                        if (val) prev.set('search', val);
+                        else prev.delete('search');
+                        return prev;
+                    });
+                }}
                 className="w-full bg-slate-900/50 border border-slate-700 text-slate-100 pl-12 pr-10 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500 transition-all placeholder:text-slate-600"
               />
               {searchInput && (
@@ -264,9 +273,6 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
                 </button>
               )}
             </div>
-            <button onClick={handleSearch} className="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-6 py-3 rounded-xl transition-all shadow-lg active:scale-95 whitespace-nowrap">
-              Chercher
-            </button>
             <button onClick={handleReset} className="flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold border bg-slate-800 text-slate-400 border-slate-700 hover:text-rose-400 transition-all">
               <RotateCcw size={14} /> Réinitialiser
             </button>

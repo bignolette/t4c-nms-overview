@@ -251,11 +251,18 @@ const ItemDetailModal = ({ recipe, onClose, toggleFavorite, favorites, navigateT
 };
 
 const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, toggleFavorite, getMatchingIngredients, viewMode, hideExternalLink, onNavigateToRecipe }: any) => {
-  const { itemMonsterMap, itemUsageMap } = useData();
+  const { itemMonsterMap, itemUsageMap, wikiData } = useData();
   const getSourceIcon = useSourceIcon();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const matchingIngs = getMatchingIngredients ? getMatchingIngredients(recipe, activeSearchTerm) : [];
   
+  const allRecipes = useMemo(() => wikiData.find(p => p.id === 'metiers')?.recipes || [], [wikiData]);
+  
+  const craftingRecipe = useMemo(() => {
+    return allRecipes.find(r => fastNormalize(r.name) === fastNormalize(recipe.name));
+  }, [allRecipes, recipe.name]);
+
+  const isCraftable = !!craftingRecipe;
   const usages = useMemo(() => itemUsageMap[fastNormalize(recipe.name)] || [], [recipe.name, itemUsageMap]);
 
   if (viewMode === 'grid' && isItemsPage) {
@@ -289,7 +296,14 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
           </div>
           
           <div>
-            <h3 className="font-bold text-slate-100 group-hover:text-amber-500 transition-colors text-sm line-clamp-2 min-h-[40px]">{recipe.name}</h3>
+            <h3 className="font-bold text-slate-100 group-hover:text-amber-500 transition-colors text-sm line-clamp-2 min-h-[40px] flex items-center gap-2">
+              {recipe.name}
+              {isCraftable && (
+                <span title="Cet objet peut être fabriqué" className="flex items-center justify-center bg-amber-500/20 text-amber-500 p-1 rounded-full border border-amber-500/30">
+                  <Hammer size={10} />
+                </span>
+              )}
+            </h3>
             <div className="flex flex-col gap-1.5 mt-1">
               {recipe.typeSource ? (
                 <div className="flex items-center gap-1 text-[10px] text-emerald-500 uppercase font-black tracking-tighter">
@@ -405,7 +419,30 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
                   })()}
                 </div>
                 <div>
-                  <h3 className="text-2xl font-black text-slate-100 mb-1">{recipe.name}</h3>
+                  <h3 className="text-2xl font-black text-slate-100 mb-1 flex flex-wrap items-center gap-3">
+                    {recipe.name}
+                    {isItemsPage ? (
+                      isCraftable && (
+                        <Link 
+                          to={`/wiki/metiers?search=${encodeURIComponent(recipe.name)}`}
+                          className="flex items-center gap-1 bg-amber-500/20 text-amber-500 px-2 py-0.5 rounded-full border border-amber-500/30 text-[10px] uppercase font-bold tracking-wider hover:bg-amber-500/30 transition-colors group/craft"
+                        >
+                          <Hammer size={12} /> CRAFTABLE
+                          <ArrowUpRight size={10} className="opacity-50 group-hover/craft:opacity-100 transition-opacity" />
+                        </Link>
+                      )
+                    ) : (
+                      recipe.ingredients && recipe.ingredients.length > 0 ? (
+                        <span title="Cet objet peut être fabriqué" className="flex items-center gap-1 bg-amber-500/20 text-amber-500 px-2 py-0.5 rounded-full border border-amber-500/30 text-[10px] uppercase font-bold tracking-wider">
+                          <Hammer size={12} /> CRAFTABLE
+                        </span>
+                      ) : (
+                        <span title="Ceci est un composant de base" className="flex items-center gap-1 bg-emerald-500/20 text-emerald-500 px-2 py-0.5 rounded-full border border-emerald-500/30 text-[10px] uppercase font-bold tracking-wider">
+                          <Package size={12} /> COMPOSANT DE BASE
+                        </span>
+                      )
+                    )}
+                  </h3>
                   <div className="flex flex-wrap gap-2">
                     {recipe.sources && recipe.sources.length > 0 ? (
                       recipe.sources.map((s: any, i: number) => (
@@ -1129,17 +1166,23 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
                       placeholder={isItemsPage ? "Rechercher un objet..." : "Ex: Potion, Lingot, Épée..."}
                       value={searchInput}
                       onChange={(e) => {
-                        setSearchInput(e.target.value);
+                        const val = e.target.value;
+                        setSearchInput(val);
+                        setActiveSearchTerm(val);
+                        setCurrentPage(1);
+                        setSearchParams(prev => {
+                            if (val) prev.set('search', val);
+                            else prev.delete('search');
+                            return prev;
+                        });
                         if (isExactSearch) setIsExactSearch(false);
                       }}
-                      onKeyDown={(e) => e.key === 'Enter' && handleSearch()}
                       className="w-full bg-slate-950 border border-slate-700 rounded-2xl py-3.5 pl-12 pr-10 text-slate-100 focus:border-amber-500 outline-none transition-all focus:ring-4 focus:ring-amber-500/10 shadow-inner"
                     />
                     {searchInput && (
                       <button onClick={handleClearSearch} className="absolute right-4 top-3.5 text-slate-500 hover:text-slate-300"><X size={20} /></button>
                     )}
                   </div>
-                  <button onClick={handleSearch} className="bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold px-8 py-3.5 rounded-2xl transition-all shadow-lg shadow-amber-500/20 active:scale-95">Chercher</button>
                 </div>
               </div>
 

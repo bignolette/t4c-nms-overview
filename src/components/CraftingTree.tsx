@@ -377,10 +377,16 @@ const RecipeCard = memo(({ recipe }: { recipe: RecipeItem }) => {
                 {item.source && (
                   <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider">{item.source}</span>
                 )}
-                {hasIngredients && (
+                {hasIngredients ? (
                   <div className={`flex items-center gap-1 text-[9px] font-black uppercase tracking-widest ${isNodeExpanded ? 'text-amber-500' : 'text-slate-600'}`}>
                     <Hammer size={10} />
-                    {isNodeExpanded ? 'Cacher recette' : 'Voir recette'}
+                    <span className="px-1.5 py-0.5 rounded bg-amber-500/10 border border-amber-500/20 text-amber-500">CRAFTABLE</span>
+                    <span className="text-[8px] opacity-60 ml-1">{isNodeExpanded ? '(Masquer)' : '(Voir)'}</span>
+                  </div>
+                ) : (
+                  <div className="flex items-center gap-1 text-[9px] font-black uppercase tracking-widest text-emerald-600">
+                    <Package size={10} />
+                    <span className="px-1.5 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20 text-emerald-500">COMPOSANT DE BASE</span>
                   </div>
                 )}
               </div>
