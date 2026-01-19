@@ -17208,7 +17208,7 @@
     "source": "Divers"
   },
   {
-    "name": "Ampélite",
+    "name": "Amite",
     "quantity": 1,
     "source": "Divers"
   },
@@ -22875,7 +22875,7 @@
   {
     "name": "Haubert d'armure légendaire de camouflage",
     "quantity": 1,
-    "source": "Divers"
+    "source": "Plastron"
   },
   {
     "name": "Houppelande légendaire  du Belharra",
@@ -23170,7 +23170,7 @@
   {
     "name": "Bouclier du Trépassé",
     "quantity": 1,
-    "source": "Divers"
+    "source": "Bouclier"
   },
   {
     "name": "Boucle modorée",
@@ -23215,7 +23215,11 @@
   {
     "name": "Arc composite des alizés",
     "quantity": 1,
-    "source": "Divers"
+    "source": "Arc",
+    "prerequisites": {
+      "str": "208",
+      "dex": "974"
+    }
   },
   {
     "name": "Arc ensorcelé de la bise noire",
@@ -23465,12 +23469,31 @@
   {
     "name": "Suaire du Phoenix en soie",
     "quantity": 1,
-    "source": "Divers"
+    "source": "Robe",
+    "prerequisites": {
+      "int": "23",
+      "wis": "697",
+      "end": "38"
+    },
+    "secondary": {
+      "Puissance Lumière": "+30",
+      "Puissance Terre": "-20",
+      "Résistance Nécro": "-10",
+      "Retour à la vie": "+20",
+      "Résistance Air": "+10",
+      "Résistance Feu": "+10",
+      "Résistance Eau": "+10",
+      "Résistance Terre": "+10",
+      "Profusion de mana": "+10"
+    },
+    "bonuses": {
+      "ca": "+28"
+    }
   },
   {
     "name": "Targe du belluaire noire",
     "quantity": 1,
-    "source": "Divers"
+    "source": "Bouclier"
   },
   {
     "name": "Joyaux elfiques",
