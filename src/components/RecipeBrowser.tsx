@@ -10,7 +10,7 @@ import {
   Search, ChevronLeft, ChevronRight, ArrowUpDown, Star, X, RotateCcw, Package, MapPin,
   Shield, Sword, Crown, Shirt, Footprints, Hand, Circle, Link2, GripHorizontal, Columns2, Medal,
   ArrowUpRight, ArrowRight, Wind, Users, ArrowRightCircle, User, LayoutGrid, List, ChevronDown, ChevronUp, Map, Tag,
-  Skull, Info, Sparkles, Filter, Hammer
+  Skull, Info, Sparkles, Filter, Hammer, Plus, Trash2, ClipboardList, Square, CheckSquare, Bell, Check, ExternalLink
 } from 'lucide-react';
 
 interface RecipeBrowserProps {
@@ -203,7 +203,7 @@ const MonsterDropSection = ({ itemName }: { itemName: string }) => {
   );
 };
 
-const ItemDetailModal = ({ recipe, onClose, toggleFavorite, favorites, navigateToRecipe }: any) => {
+const ItemDetailModal = ({ recipe, onClose, toggleFavorite, favorites, navigateToRecipe, onAddProject }: any) => {
   const getSourceIcon = useSourceIcon();
   return createPortal(
     <div className="fixed inset-0 z-[9999] flex items-center justify-center p-4">
@@ -242,6 +242,7 @@ const ItemDetailModal = ({ recipe, onClose, toggleFavorite, favorites, navigateT
             viewMode="list" 
             hideExternalLink={true}
             onNavigateToRecipe={navigateToRecipe}
+            onAddProject={onAddProject}
           />
         </div>
       </div>
@@ -250,11 +251,18 @@ const ItemDetailModal = ({ recipe, onClose, toggleFavorite, favorites, navigateT
   );
 };
 
-const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, toggleFavorite, getMatchingIngredients, viewMode, hideExternalLink, onNavigateToRecipe }: any) => {
+const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, toggleFavorite, getMatchingIngredients, viewMode, hideExternalLink, onNavigateToRecipe, onAddProject }: any) => {
   const { itemMonsterMap, itemUsageMap, wikiData } = useData();
   const getSourceIcon = useSourceIcon();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const matchingIngs = getMatchingIngredients ? getMatchingIngredients(recipe, activeSearchTerm) : [];
+
+  const handleInstantiate = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    if (onAddProject) {
+        onAddProject(recipe.name);
+    }
+  };
   
   const allRecipes = useMemo(() => wikiData.find(p => p.id === 'metiers')?.recipes || [], [wikiData]);
   
@@ -346,6 +354,16 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
             {recipe.bonuses?.int && <StatBadge label="INT" value={formatStatValue(recipe.bonuses.int)} type="int" />}
             {recipe.bonuses?.wis && <StatBadge label="SAG" value={formatStatValue(recipe.bonuses.wis)} type="wis" />}
           </div>
+
+          {isCraftable && (
+            <button 
+              onClick={handleInstantiate}
+              className="mt-2 w-full py-2 bg-amber-500/10 hover:bg-amber-500 text-amber-500 hover:text-slate-950 border border-amber-500/20 hover:border-amber-500 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all flex items-center justify-center gap-2 group/btn"
+            >
+              <Plus size={14} className="group-hover/btn:scale-110 transition-transform" />
+              Ajouter aux projets
+            </button>
+          )}
         </motion.div>
         {isModalOpen && (
           <ItemDetailModal 
@@ -354,6 +372,7 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
             toggleFavorite={toggleFavorite} 
             favorites={favorites} 
             navigateToRecipe={onNavigateToRecipe}
+            onAddProject={onAddProject}
           />
         )}
       </>
@@ -376,12 +395,23 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
             </div>
           )}
           {!isItemsPage && (
-            <button 
-              onClick={() => toggleFavorite(recipe.name)}
-              className={`p-1.5 rounded-full border shadow-lg transition-all ${favorites.includes(recipe.name) ? 'bg-yellow-500 border-yellow-400 text-slate-950 scale-110' : 'bg-slate-800 border-slate-700 text-slate-500 hover:text-yellow-500'}`}
-            >
-              <Star size={14} fill={favorites.includes(recipe.name) ? 'currentColor' : 'none'} />
-            </button>
+            <div className="flex items-center gap-3">
+              {isCraftable && (
+                <button 
+                  onClick={handleInstantiate}
+                  className="flex items-center gap-2 px-4 py-2 bg-amber-500/10 hover:bg-amber-500 text-amber-500 hover:text-slate-950 border border-amber-500/20 hover:border-amber-500 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all"
+                >
+                  <Plus size={14} />
+                  Ajouter aux projets
+                </button>
+              )}
+              <button 
+                onClick={() => toggleFavorite(recipe.name)}
+                className={`p-2 rounded-full border shadow-lg transition-all ${favorites.includes(recipe.name) ? 'bg-yellow-500 border-yellow-400 text-slate-950 scale-110' : 'bg-slate-800 border-slate-700 text-slate-500 hover:text-yellow-500'}`}
+              >
+                <Star size={16} fill={favorites.includes(recipe.name) ? 'currentColor' : 'none'} />
+              </button>
+            </div>
           )}
           {recipe.zones && recipe.zones.map((zone: string) => (
             <span key={zone} className="flex items-center gap-1 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter border shadow-lg bg-indigo-500/10 text-indigo-400 border-indigo-500/20">
@@ -433,9 +463,17 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
                       )
                     ) : (
                       recipe.ingredients && recipe.ingredients.length > 0 ? (
-                        <span title="Cet objet peut être fabriqué" className="flex items-center gap-1 bg-amber-500/20 text-amber-500 px-2 py-0.5 rounded-full border border-amber-500/30 text-[10px] uppercase font-bold tracking-wider">
-                          <Hammer size={12} /> CRAFTABLE
-                        </span>
+                        <div className="flex items-center gap-3">
+                          <span title="Cet objet peut être fabriqué" className="flex items-center gap-1 bg-amber-500/20 text-amber-500 px-2 py-0.5 rounded-full border border-amber-500/30 text-[10px] uppercase font-bold tracking-wider">
+                            <Hammer size={12} /> CRAFTABLE
+                          </span>
+                          <button 
+                            onClick={handleInstantiate}
+                            className="flex items-center gap-2 px-6 py-2.5 bg-amber-500 text-slate-950 hover:bg-amber-400 rounded-xl shadow-[0_0_20px_rgba(245,158,11,0.3)] text-xs font-black uppercase tracking-widest transition-all active:scale-95"
+                          >
+                            <Plus size={16} /> Ajouter aux projets
+                          </button>
+                        </div>
                       ) : (
                         <span title="Ceci est un composant de base" className="flex items-center gap-1 bg-emerald-500/20 text-emerald-500 px-2 py-0.5 rounded-full border border-emerald-500/30 text-[10px] uppercase font-bold tracking-wider">
                           <Package size={12} /> COMPOSANT DE BASE
@@ -871,8 +909,164 @@ const NPCGroupedView = ({
 };
 
 
+const ProjectCard = ({ project, recipes, onToggleIngredient, onDelete, onNavigate }: any) => {
+    const { recipesData } = useData();
+    const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set());
+    
+    const recipe = useMemo(() => 
+        recipes.find((r: any) => fastNormalize(r.name) === fastNormalize(project.recipeName)),
+        [recipes, project.recipeName]
+    );
+
+    const toggleExpand = (e: React.MouseEvent, name: string) => {
+        e.stopPropagation();
+        setExpandedItems(prev => {
+            const next = new Set(prev);
+            if (next.has(name)) next.delete(name);
+            else next.add(name);
+            return next;
+        });
+    };
+
+    // Recursively get all ingredients with depth and visibility information
+    const allIngredients = useMemo(() => {
+        if (!recipe) return [];
+        
+        const list: { name: string; quantity: number; depth: number; isCraftable: boolean; isVisible: boolean }[] = [];
+
+        const walk = (item: any, depth: number, parentExpanded: boolean) => {
+            if (!item.ingredients || item.ingredients.length === 0) return;
+            
+            item.ingredients.forEach((ing: any) => {
+                const subRecipe = recipesData.find(r => fastNormalize(r.name) === fastNormalize(ing.name));
+                const isCraftable = !!subRecipe;
+                const isExpanded = expandedItems.has(ing.name);
+                
+                list.push({ 
+                    name: ing.name, 
+                    quantity: ing.quantity, 
+                    depth, 
+                    isCraftable,
+                    isVisible: parentExpanded
+                });
+
+                if (isCraftable) {
+                    walk(subRecipe, depth + 1, parentExpanded && isExpanded);
+                }
+            });
+        };
+
+        walk(recipe, 0, true);
+        return list;
+    }, [recipe, recipesData, expandedItems]);
+
+    return (
+        <div className={`bg-slate-900 border border-slate-800 rounded-xl p-5 shadow-lg hover:border-amber-500/30 transition-all group relative overflow-hidden h-fit ${project.completed ? 'border-emerald-500/30 shadow-[0_0_15px_rgba(16,185,129,0.1)]' : ''}`}>
+            <div className="absolute top-0 right-0 p-3 opacity-0 group-hover:opacity-100 transition-opacity flex gap-1">
+                <button 
+                    onClick={() => onNavigate(project.recipeName)}
+                    className="p-2 text-slate-500 hover:text-amber-500 hover:bg-amber-500/10 rounded-lg transition-all"
+                    title="Voir la recette"
+                >
+                    <ExternalLink size={16} />
+                </button>
+                <button 
+                    onClick={onDelete}
+                    className="p-2 text-slate-500 hover:text-rose-500 hover:bg-rose-500/10 rounded-lg transition-all"
+                    title="Supprimer le projet"
+                >
+                    <Trash2 size={16} />
+                </button>
+            </div>
+            
+            <div className="flex items-center gap-4 mb-4">
+                <div className="p-3 bg-slate-800 rounded-xl text-amber-500 border border-slate-700/50">
+                    <Package size={24} />
+                </div>
+                <div className="min-w-0">
+                    <h3 
+                        onClick={() => onNavigate(project.recipeName)}
+                        className="font-bold text-slate-100 text-lg leading-tight line-clamp-1 cursor-pointer hover:text-amber-500 transition-colors"
+                    >
+                        {project.recipeName}
+                    </h3>
+                    <div className="flex items-center gap-2 mt-1">
+                        <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">
+                            Ajouté le {new Date(project.createdAt).toLocaleDateString()}
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div className={`flex items-center justify-between p-3 rounded-lg border transition-all ${project.completed ? 'bg-emerald-500/10 border-emerald-500/30' : 'bg-slate-950/50 border-slate-800'}`}>
+                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">Statut</span>
+                <div className="flex items-center gap-2">
+                    {project.completed && <Check size={12} className="text-emerald-500 animate-in zoom-in duration-300" />}
+                    <span className={`text-xs font-black uppercase tracking-widest italic ${project.completed ? 'text-emerald-500' : 'text-amber-500'}`}>
+                        {project.completed ? 'Terminé' : 'En cours'}
+                    </span>
+                </div>
+            </div>
+
+            {/* Ingredients Checklist */}
+            {allIngredients.length > 0 && (
+                <div className="mt-6 space-y-3">
+                    <h4 className="text-[10px] font-black text-slate-500 uppercase tracking-[0.2em] mb-4 px-1 flex items-center gap-2">
+                        <Hammer size={12} /> Liste des composants
+                    </h4>
+                    <div className="grid gap-2">
+                        {allIngredients.filter(ing => ing.isVisible).map((ing, idx) => {
+                            const isCollected = project.collectedIngredients?.includes(ing.name);
+                            const isExpanded = expandedItems.has(ing.name);
+                            return (
+                                <div key={idx} style={{ marginLeft: `${ing.depth * 1.25}rem` }} className="flex items-center gap-2">
+                                    {ing.isCraftable ? (
+                                        <button 
+                                            onClick={(e) => toggleExpand(e, ing.name)}
+                                            className={`p-1 rounded-md transition-colors ${isExpanded ? 'text-amber-500 bg-amber-500/10' : 'text-slate-600 hover:text-slate-400'}`}
+                                        >
+                                            <ChevronDown size={14} className={`transition-transform duration-200 ${isExpanded ? '' : '-rotate-90'}`} />
+                                        </button>
+                                    ) : (
+                                        <div className="w-6" /> // Spacer for alignment
+                                    )}
+                                    <button 
+                                        onClick={() => onToggleIngredient(project.id, ing.name)}
+                                        className={`flex-1 flex items-center justify-between p-2.5 rounded-xl border transition-all text-left group/ing ${
+                                            isCollected 
+                                                ? 'bg-emerald-500/10 border-emerald-500/30 text-emerald-400' 
+                                                : 'bg-slate-950 border-slate-800 text-slate-400 hover:border-slate-600'
+                                        }`}
+                                    >
+                                        <div className="flex items-center gap-3 min-w-0">
+                                            <div className={`shrink-0 ${isCollected ? 'text-emerald-500' : 'text-slate-700 group-hover/ing:text-slate-500'}`}>
+                                                {isCollected ? <CheckSquare size={16} /> : <Square size={16} />}
+                                            </div>
+                                            <div className="flex flex-col min-w-0">
+                                                <span className={`text-xs font-bold truncate ${isCollected ? 'line-through opacity-50' : ''}`}>
+                                                    {ing.name}
+                                                </span>
+                                                {ing.isCraftable && !isCollected && (
+                                                    <span className="text-[8px] font-black text-amber-500/50 uppercase tracking-tighter text-left">CRAFTABLE</span>
+                                                )}
+                                            </div>
+                                        </div>
+                                        <span className={`text-[10px] font-black px-2 py-0.5 rounded-md ${isCollected ? 'bg-emerald-500/20 text-emerald-500' : 'bg-slate-900 text-slate-500'}`}>
+                                            x{ing.quantity}
+                                        </span>
+                                    </button>
+                                </div>
+                            );
+                        })}
+                    </div>
+                </div>
+            )}
+        </div>
+    );
+};
+
 const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => {
-  const { wikiData } = useData();
+  const { wikiData, recipesData, favRecipes: favorites, setFavRecipes: setFavorites, craftingProjects, setCraftingProjects } = useData();
   const allItems = useMemo(() => wikiData.find(p => p.id === 'items')?.recipes || [], [wikiData]);
   
   const findItemSource = useCallback((name: string) => {
@@ -885,7 +1079,122 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
   const urlSearch = searchParams.get('search') || '';
 
   const [viewMode, setViewMode] = useState<'search' | 'npc'>(isItemsPage ? 'search' : 'search');
+  const [currentTab, setCurrentTab] = useState<'recipes' | 'projects'>('recipes');
   const [layoutMode, setLayoutMode] = useState<'list' | 'grid'>('list');
+  const [notification, setNotification] = useState<{ message: string, type: 'success' | 'error' } | null>(null);
+
+  const showNotification = (message: string, type: 'success' | 'error' = 'success') => {
+    setNotification({ message, type });
+    setTimeout(() => setNotification(null), 3000);
+  };
+
+  const handleProjectAdd = (recipeName: string) => {
+    const newProject = {
+        id: crypto.randomUUID(),
+        recipeName: recipeName,
+        targetQuantity: 1,
+        createdAt: Date.now(),
+        collectedIngredients: []
+    };
+    setCraftingProjects(prev => [...prev, newProject]);
+    showNotification(`Projet ajouté : ${recipeName}`);
+    
+    // Scroll the main container to top
+    const mainContainer = document.querySelector('main');
+    if (mainContainer) {
+        mainContainer.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
+  const handleProjectDelete = (id: string, recipeName: string) => {
+    setCraftingProjects(prev => prev.filter(p => p.id !== id));
+    showNotification(`Projet supprimé : ${recipeName}`, 'error');
+  };
+
+  const toggleIngredient = (projectId: string, ingredientName: string) => {
+    setCraftingProjects(prev => prev.map(p => {
+        if (p.id !== projectId) return p;
+        const current = p.collectedIngredients || [];
+        const isChecking = !current.includes(ingredientName);
+
+        // Helper to get all sub-ingredient names recursively (Downward)
+        const getChildrenNames = (name: string, names: string[] = []): string[] => {
+            const r = recipesData.find((rec: any) => fastNormalize(rec.name) === fastNormalize(name));
+            if (r && r.ingredients) {
+                r.ingredients.forEach((ing: any) => {
+                    if (!names.includes(ing.name)) {
+                        names.push(ing.name);
+                        getChildrenNames(ing.name, names);
+                    }
+                });
+            }
+            return names;
+        };
+
+        const children = getChildrenNames(ingredientName);
+        const targets = [ingredientName, ...children];
+
+        let next: string[];
+        if (isChecking) {
+            const toAdd = targets.filter(t => !current.includes(t));
+            next = [...current, ...toAdd];
+        } else {
+            next = current.filter(i => !targets.includes(i));
+        }
+
+        // Upward logic: Check parents if all their children are now checked
+        const checkParents = (currentList: string[]): string[] => {
+            let changed = false;
+            const updatedList = [...currentList];
+
+            // We need to check every craftable item in the project's tree
+            const walkUp = (recipeName: string) => {
+                const r = recipesData.find((rec: any) => fastNormalize(rec.name) === fastNormalize(recipeName));
+                if (r && r.ingredients) {
+                    // Check children first (DFS)
+                    r.ingredients.forEach((ing: any) => walkUp(ing.name));
+
+                    // If all children are in updatedList, parent should be too
+                    const allChildrenChecked = r.ingredients.every((ing: any) => updatedList.includes(ing.name));
+                    if (allChildrenChecked && !updatedList.includes(recipeName)) {
+                        updatedList.push(recipeName);
+                        changed = true;
+                    } else if (!allChildrenChecked && updatedList.includes(recipeName) && recipeName !== ingredientName && !targets.includes(recipeName)) {
+                        // If one child is missing and parent was checked (and not the one we just toggled), uncheck it
+                        const idx = updatedList.indexOf(recipeName);
+                        updatedList.splice(idx, 1);
+                        changed = true;
+                    }
+                }
+            };
+
+            walkUp(p.recipeName);
+            return changed ? checkParents(updatedList) : updatedList;
+        };
+
+        next = checkParents(next);
+        
+        // Dynamic completion check (Recursive - Unique names only)
+        const getUniqueRequiredNames = (recipeName: string, names = new Set<string>()): Set<string> => {
+            const r = recipesData.find((rec: any) => fastNormalize(rec.name) === fastNormalize(recipeName));
+            if (!r || !r.ingredients) return names;
+            
+            r.ingredients.forEach((ing: any) => {
+                names.add(ing.name);
+                const subR = recipesData.find((sr: any) => fastNormalize(sr.name) === fastNormalize(ing.name));
+                if (subR) {
+                    getUniqueRequiredNames(ing.name, names);
+                }
+            });
+            return names;
+        };
+
+        const uniqueRequired = getUniqueRequiredNames(p.recipeName);
+        const isDone = uniqueRequired.size > 0 && Array.from(uniqueRequired).every(name => next.includes(name));
+
+        return { ...p, collectedIngredients: next, completed: isDone };
+    }));
+  };
   const [isExactSearch, setIsExactSearch] = useState(false);
 
   const [searchInput, setSearchInput] = useState(urlSearch);
@@ -899,7 +1208,6 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc');
   const [showOnlyFavs, setShowOnlyFavs] = useState(false);
   const [showBaseComponents, setShowBaseComponents] = useState(false);
-  const [favorites, setFavorites] = useState<string[]>([]);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = layoutMode === 'grid' ? 12 : 8;
 
@@ -928,17 +1236,11 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
     }
   }, [urlSearch, isItemsPage]);
 
-  useEffect(() => {
-    const saved = localStorage.getItem('t4c-fav-recipes');
-    if (saved) setFavorites(JSON.parse(saved));
-  }, []);
-
   const toggleFavorite = (name: string) => {
     const newFavs = favorites.includes(name) 
       ? favorites.filter(f => f !== name) 
       : [...favorites, name];
     setFavorites(newFavs);
-    localStorage.setItem('t4c-fav-recipes', JSON.stringify(newFavs));
   };
 
   const toggleStatFilter = (statKey: string) => {
@@ -948,16 +1250,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
     setCurrentPage(1);
   };
 
-  const handleSearch = () => {
-    setActiveSearchTerm(searchInput);
-    setIsExactSearch(false);
-    setSearchParams(prev => {
-      if (searchInput) prev.set('search', searchInput);
-      else prev.delete('search');
-      return prev;
-    });
-    setCurrentPage(1);
-  };
+
 
   const handleReset = () => {
     setSearchInput('');
@@ -1105,6 +1398,76 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
 
   return (
     <div className="space-y-6">
+      {!isItemsPage && (
+        <div className="flex justify-center mb-6">
+          <div className="flex bg-slate-900/50 p-1.5 rounded-2xl border border-slate-800 backdrop-blur-xl shadow-lg">
+            <button
+              onClick={() => setCurrentTab('recipes')}
+              className={`flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-black uppercase tracking-wider transition-all ${
+                currentTab === 'recipes' 
+                  ? 'bg-amber-500 text-slate-950 shadow-lg scale-105' 
+                  : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50'
+              }`}
+            >
+              <Hammer size={16} />
+              Recettes
+            </button>
+            <motion.button
+              key={`tab-projects-${craftingProjects.length}`}
+              initial={false}
+              animate={currentTab !== 'projects' ? { 
+                y: [0, -12, 0],
+                transition: { duration: 0.4, ease: "easeOut" }
+              } : {}}
+              onClick={() => setCurrentTab('projects')}
+              className={`flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-black uppercase tracking-wider transition-all ${
+                currentTab === 'projects' 
+                  ? 'bg-amber-500 text-slate-950 shadow-lg scale-105' 
+                  : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50'
+              }`}
+            >
+              <ClipboardList size={16} />
+              Mes Projets
+              {craftingProjects.length > 0 && (
+                <motion.span 
+                  key={`badge-${craftingProjects.length}`}
+                  initial={{ y: 15, opacity: 0, scale: 0.5 }}
+                  animate={{ y: 0, opacity: 1, scale: 1 }}
+                  className={`ml-1 px-2 py-0.5 rounded-full text-[10px] ${currentTab === 'projects' ? 'bg-slate-950 text-amber-500' : 'bg-slate-800 text-slate-400'}`}
+                >
+                  {craftingProjects.length}
+                </motion.span>
+              )}
+            </motion.button>
+          </div>
+        </div>
+      )}
+
+      {currentTab === 'projects' ? (
+        <div className="grid grid-cols-1 gap-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
+            {craftingProjects.length === 0 ? (
+                <div className="py-20 text-center bg-slate-900/30 rounded-2xl border border-dashed border-slate-800">
+                    <ClipboardList size={48} className="mx-auto text-slate-700 mb-4" />
+                    <p className="text-slate-500 font-bold uppercase tracking-widest">Aucun projet en cours</p>
+                    <p className="text-slate-600 text-sm mt-2">Ajoutez des recettes depuis l'onglet "Recettes" pour les suivre ici.</p>
+                </div>
+            ) : (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
+                    {craftingProjects.map(project => (
+                        <ProjectCard 
+                            key={project.id}
+                            project={project}
+                            recipes={recipes}
+                            onToggleIngredient={toggleIngredient}
+                            onDelete={() => handleProjectDelete(project.id, project.recipeName)}
+                            onNavigate={navigateToRecipe}
+                        />
+                    ))}
+                </div>
+            )}
+        </div>
+      ) : (
+        <div className="space-y-6">
       <div className="flex flex-col md:flex-row justify-between items-center gap-4">
         {!isItemsPage && (
           <div className="flex bg-slate-900/50 p-1 rounded-xl border border-slate-800 w-fit backdrop-blur-xl shadow-lg">
@@ -1339,6 +1702,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
                   getMatchingIngredients={getMatchingIngredients}
                   viewMode={layoutMode}
                   onNavigateToRecipe={navigateToRecipe}
+                  onAddProject={handleProjectAdd}
                 />
               ))}
             </AnimatePresence>
@@ -1386,6 +1750,29 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
           allZones={allZones}
         />
       )}
+      </div>
+      )}
+
+      {/* Non-blocking Toast Notification */}
+      <AnimatePresence>
+        {notification && (
+          <motion.div 
+            initial={{ opacity: 0, y: 50, scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            className={`fixed bottom-8 left-1/2 -translate-x-1/2 z-[9999] flex items-center gap-3 px-6 py-3 rounded-2xl font-black uppercase tracking-widest shadow-2xl border transition-colors ${
+                notification.type === 'success' 
+                    ? 'bg-emerald-500 text-slate-950 border-emerald-400/50 shadow-emerald-500/20' 
+                    : 'bg-rose-500 text-white border-rose-400/50 shadow-rose-500/20'
+            }`}
+          >
+            <div className={`p-1 rounded-lg ${notification.type === 'success' ? 'bg-slate-950/20' : 'bg-white/20'}`}>
+                <Bell size={18} />
+            </div>
+            {notification.message}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

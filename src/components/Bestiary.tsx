@@ -172,15 +172,7 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
     return ['Toutes', ...Array.from(zones).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }))];
   }, [monsters]);
 
-  const handleSearch = () => {
-    setActiveSearchTerm(searchInput);
-    setSearchParams(prev => {
-      if (searchInput) prev.set('search', searchInput);
-      else prev.delete('search');
-      return prev;
-    });
-    setCurrentPage(1);
-  };
+
 
   const handleClearSearch = () => {
     setSearchInput('');

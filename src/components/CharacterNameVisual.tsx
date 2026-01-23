@@ -1,12 +1,10 @@
 import React, { useMemo } from 'react';
-import { Save } from 'lucide-react';
 
 interface Props {
   name: string | null;
-  onUpdate?: () => void;
 }
 
-const CharacterNameVisual: React.FC<Props> = ({ name, onUpdate }) => {
+const CharacterNameVisual: React.FC<Props> = ({ name }) => {
   const displayName = name || "SÉLECTIONNEZ UN PERSONNAGE";
 
   // Générer des particules aléatoires pour l'effet de fond
@@ -50,24 +48,6 @@ const CharacterNameVisual: React.FC<Props> = ({ name, onUpdate }) => {
         <h1 className={`text-2xl sm:text-3xl md:text-5xl font-black italic uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-amber-200 to-amber-500 drop-shadow-[0_0_15px_rgba(245,158,11,0.5)] text-center px-4 ${!name ? 'opacity-20 grayscale' : ''}`}>
           {displayName}
         </h1>
-        
-        {onUpdate && (
-          <button 
-            onClick={onUpdate}
-            disabled={!name}
-            title={name ? `Enregistrer les modifications pour ${name}` : "Sélectionnez un personnage pour mettre à jour"}
-            className={`mt-4 flex items-center gap-2 px-6 py-2 rounded-full transition-all group/btn border z-10 ${
-              name 
-              ? "bg-amber-500 text-slate-900 border-amber-400 shadow-[0_0_15px_rgba(245,158,11,0.4)] hover:bg-amber-400 hover:scale-105" 
-              : "bg-slate-900/50 text-slate-600 border-slate-800 cursor-not-allowed opacity-50"
-            }`}
-          >
-            <Save size={16} className={name ? "animate-pulse" : ""} />
-            <span className="text-[11px] font-black uppercase tracking-widest">
-              {name ? "Enregistrer les modifications" : "Aucun personnage actif"}
-            </span>
-          </button>
-        )}
 
         <div className="w-24 h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent mt-2 rounded-full opacity-50" />
       </div>

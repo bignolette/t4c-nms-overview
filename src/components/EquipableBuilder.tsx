@@ -1,29 +1,9 @@
 import { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useData } from '../context/DataContext';
-import type { RecipeItem } from '../data/types';
+import type { RecipeItem, SavedCharacter, Stats } from '../data/types';
 import { mapSourceToSlot, fastNormalize, formatStatValue } from '../data/utils';
 import { Search, Shield, Sword, Crown, Shirt, Footprints, Hand, Circle, Package, Link2, GripHorizontal, Columns2, Medal, Wind, User, Zap, Trophy, Sparkles, ChevronUp, ChevronDown } from 'lucide-react';
-
-// Types
-interface Stats {
-  str: number;
-  end: number;
-  dex: number;
-  int: number;
-  wis: number;
-}
-
-interface SavedCharacter {
-  name: string;
-  renaissance: number;
-  seraphStats: Stats;
-  seraphPowers: Record<string, number>;
-  seraphResists: Record<string, number>;
-  levelPoints: Stats;
-  finalStats: Stats;
-  updatedAt: number;
-}
 
 const StatBadge = ({ label, value, type }: { label: string, value: string | number, type: 'str' | 'end' | 'dex' | 'int' | 'wis' | 'ca' | 'secondary' }) => {
   const configs = {
@@ -62,44 +42,14 @@ const SLOTS = [
 ];
 
 const EquipableBuilder = () => {
-  const { itemsData } = useData();
-  const [stats, setStats] = useState<Stats>({
-    str: 50,
-    end: 50,
-    dex: 50,
-    int: 50,
-    wis: 50
-  });
+  const { itemsData, savedCharacters, activeStats: stats, setActiveStats: setStats } = useData();
 
   const [hideNoReqs, setHideNoReqs] = useState(true);
   const [isBiSMode, setIsBiSMode] = useState(false);
   const [bisFocus, setBisFocus] = useState('');
   const [selectedSlot, setSelectedSlot] = useState(SLOTS[0]);
   const [searchTerm, setSearchTerm] = useState('');
-  const [savedChars, setSavedChars] = useState<SavedCharacter[]>([]);
   const [showLoadModal, setShowLoadModal] = useState(false);
-
-  useEffect(() => {
-    const saved = localStorage.getItem('t4c-characters');
-    if (saved) setSavedChars(JSON.parse(saved));
-
-    const plannerStats = localStorage.getItem('t4c-planner-stats');
-    if (plannerStats) {
-      setStats(JSON.parse(plannerStats));
-    }
-
-    const handleStorageChange = (e: StorageEvent) => {
-      if (e.key === 't4c-planner-stats' && e.newValue) {
-        setStats(JSON.parse(e.newValue));
-      }
-    };
-    window.addEventListener('storage', handleStorageChange);
-    return () => window.removeEventListener('storage', handleStorageChange);
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem('t4c-planner-stats', JSON.stringify(stats));
-  }, [stats]);
 
   const loadSavedChar = (char: SavedCharacter) => {
     if (char && char.finalStats) {
@@ -418,7 +368,7 @@ const EquipableBuilder = () => {
                <button onClick={() => setShowLoadModal(false)} className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-800 text-slate-400 hover:text-white transition-all active:scale-90">✕</button>
             </div>
             <div className="p-8 space-y-4 max-h-[500px] overflow-y-auto custom-scrollbar">
-              {savedChars.length === 0 ? (
+              {savedCharacters.length === 0 ? (
                 <div className="text-center py-12 flex flex-col items-center gap-4">
                   <div className="w-16 h-16 rounded-2xl bg-slate-950 border border-white/5 flex items-center justify-center text-slate-700">
                     <User size={32} />
@@ -426,7 +376,7 @@ const EquipableBuilder = () => {
                   <p className="text-slate-500 font-bold uppercase tracking-widest text-xs">Aucun personnage enregistré dans le Planner</p>
                 </div>
               ) : (
-                savedChars.map(char => (
+                savedCharacters.map(char => (
                   <button
                     key={char.name}
                     onClick={() => loadSavedChar(char)}

@@ -91,7 +91,7 @@ const Sidebar = ({ isOpen = true, onToggle }: SidebarProps) => {
           </div>
 
           {/* Navigation */}
-          <nav className="flex-1 overflow-y-auto py-12 px-6 custom-scrollbar">
+          <nav className="flex-1 overflow-y-auto py-8 px-6 custom-scrollbar flex flex-col gap-8">
             <ul className="space-y-4">
               {navItems.map((item) => {
                 const active = isActive(item.path);

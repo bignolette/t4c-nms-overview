@@ -19,6 +19,27 @@ export interface ItemStats {
     ca?: string;
 }
 
+export interface Stats {
+    str: number;
+    end: number;
+    dex: number;
+    int: number;
+    wis: number;
+}
+
+export type SeraphElement = 'fire' | 'water' | 'air' | 'earth' | 'light' | 'necromancy';
+
+export interface SavedCharacter {
+    name: string;
+    renaissance: number;
+    seraphStats: Stats;
+    seraphPowers: Record<SeraphElement, number>;
+    seraphResists: Record<SeraphElement, number>;
+    levelPoints: Stats;
+    finalStats: Stats;
+    updatedAt: number;
+}
+
 export type ItemSource =
     | 'Amulette' | 'Anneau' | 'Arc' | 'Arme' | 'Botte' | 'Bouclier' | 'Bracelet'
     | 'Cape' | 'Ceinture' | 'Flèches' | 'Focus' | 'Gant' | 'Heaume' | 'Jambière'
@@ -61,6 +82,29 @@ export interface RecipeItem {
     };
 }
 
+export interface QuestStep {
+    id: string | number;
+    title?: string;
+    description: string;
+    images?: string[];
+}
+
+export interface Quest {
+    id: string;
+    title: string;
+    description: string;
+    steps: QuestStep[];
+}
+
+export interface CraftingProject {
+    id: string;
+    recipeName: string; 
+    targetQuantity: number;
+    createdAt: number;
+    completed?: boolean;
+    collectedIngredients?: string[];
+}
+
 export interface PageContent {
     id: string;
     title: string;
@@ -68,5 +112,5 @@ export interface PageContent {
     description: string;
     monsters?: Monster[];
     recipes?: RecipeItem[];
+    quests?: Quest[];
 }
-

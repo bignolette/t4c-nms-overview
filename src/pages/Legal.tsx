@@ -76,8 +76,7 @@ const Legal = () => {
           <div className="text-sm text-slate-400 leading-relaxed">
             <p>
               Ce site ne collecte aucune donnée personnelle et n'utilise aucun cookie de traçage ou de publicité. 
-              Vos préférences (comme vos favoris) sont enregistrées localement dans votre navigateur (localStorage) 
-              et ne sont jamais transmises à un serveur tiers.
+              Aucune donnée n'est stockée de manière persistante dans votre navigateur. Vous pouvez sauvegarder vos données (personnages, favoris) dans un fichier local sur votre appareil et les recharger lors de votre prochaine visite.
             </p>
           </div>
         </section>

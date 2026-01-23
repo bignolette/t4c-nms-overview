@@ -1,26 +1,19 @@
 import { useState, useMemo, useEffect } from 'react';
-import { User, Zap, ChevronUp, ChevronDown, RotateCcw, Award, Heart, Sparkles, Star, Shield, Flame, Save, Trash2, HelpCircle, Info, X, BookOpen } from 'lucide-react';
+import { User, Zap, ChevronUp, ChevronDown, RotateCcw, Award, Heart, Sparkles, Star, Shield, Flame, Save, Trash2, HelpCircle, Info, X, BookOpen, Bell } from 'lucide-react';
 import CharacterNameVisual from './CharacterNameVisual';
+import { motion, AnimatePresence } from 'framer-motion';
 import { spellPowerConfig } from '../data/spell_power';
+import { useData } from '../context/DataContext';
+import type { Stats, SavedCharacter, SeraphElement } from '../data/types';
 
-interface Stats {
-  str: number; end: number; dex: number; int: number; wis: number;
-}
-
-interface SavedCharacter {
-  name: string;
-  renaissance: number;
-  seraphStats: Stats;
-  seraphPowers: Record<string, number>;
-  seraphResists: Record<string, number>;
-  levelPoints: Stats;
-  finalStats: Stats;
-  updatedAt: number;
-}
-
-type Element = 'Feu' | 'Eau' | 'Air' | 'Terre' | 'Lumière' | 'Nécromancie';
-
-const ELEMENTS: Element[] = ['Feu', 'Eau', 'Air', 'Terre', 'Lumière', 'Nécromancie'];
+const SERAPH_ELEMENTS: { key: SeraphElement; label: string }[] = [
+  { key: 'fire', label: 'Feu' },
+  { key: 'water', label: 'Eau' },
+  { key: 'air', label: 'Air' },
+  { key: 'earth', label: 'Terre' },
+  { key: 'light', label: 'Lumière' },
+  { key: 'necromancy', label: 'Nécromancie' }
+];
 
 const normalizeName = (name: string) => {
   return name
@@ -32,22 +25,26 @@ const normalizeName = (name: string) => {
 };
 
 const StatPlanner = () => {
+  const { savedCharacters, setSavedCharacters, setActiveStats } = useData();
+
   // 1. ÉTATS
   const [renaissance, setRenaissance] = useState(0);
   const [charName, setCharName] = useState('');
   const [activeCharName, setActiveCharName] = useState<string | null>(null);
-  const [savedChars, setSavedChars] = useState<SavedCharacter[]>([]);
+  // Removed local savedChars state
   const [seraphStats, setSeraphStats] = useState<Stats>({ str: 0, end: 0, dex: 0, int: 0, wis: 0 });
-  const [seraphPowers, setSeraphPowers] = useState<Record<string, number>>({ 
-    'Feu': 0, 'Eau': 0, 'Air': 0, 'Terre': 0, 'Lumière': 0, 'Nécromancie': 0 
+  const [seraphPowers, setSeraphPowers] = useState<Record<SeraphElement, number>>({ 
+    'fire': 0, 'water': 0, 'air': 0, 'earth': 0, 'light': 0, 'necromancy': 0 
   });
-  const [seraphResists, setSeraphResists] = useState<Record<string, number>>({ 
-    'Feu': 0, 'Eau': 0, 'Air': 0, 'Terre': 0, 'Lumière': 0, 'Nécromancie': 0 
+  const [seraphResists, setSeraphResists] = useState<Record<SeraphElement, number>>({ 
+    'fire': 0, 'water': 0, 'air': 0, 'earth': 0, 'light': 0, 'necromancy': 0 
   });
   const [levelPoints, setLevelPoints] = useState<Stats>({ str: 0, end: 0, dex: 0, int: 0, wis: 0 });
   const [modal, setModal] = useState<{ show: boolean; title: string; message: string; onConfirm?: () => void; type: 'confirm' | 'info' }>(
     { show: false, title: '', message: '', type: 'info' }
   );
+  const [notification, setNotification] = useState<{ message: string, type: 'success' | 'error' } | null>(null);
+  const [prevLevel, setPrevLevel] = useState<number>(1);
 
   const POINTS_PER_LEVEL = 5;
 
@@ -63,13 +60,13 @@ const StatPlanner = () => {
   const getCumulativeCost = (n: number) => (n * (n + 1)) / 2;
 
   const spentSeraphPoints = useMemo(() => {
-    const statsCost = Object.values(seraphStats).reduce((acc, val) => acc + getCumulativeCost(val), 0);
-    const powersCost = ELEMENTS.reduce((acc, el) => acc + getCumulativeCost(seraphPowers[el] || 0), 0);
-    const resistsCost = ELEMENTS.reduce((acc, el) => acc + getCumulativeCost(seraphResists[el] || 0) * 2, 0);
+    const statsCost = Object.values(seraphStats).reduce((acc: number, val: number) => acc + getCumulativeCost(val), 0);
+    const powersCost = SERAPH_ELEMENTS.reduce((acc, el) => acc + getCumulativeCost(seraphPowers[el.key] || 0), 0);
+    const resistsCost = SERAPH_ELEMENTS.reduce((acc, el) => acc + getCumulativeCost(seraphResists[el.key] || 0) * 2, 0);
     return statsCost + powersCost + resistsCost;
   }, [seraphStats, seraphPowers, seraphResists]);
 
-  const remainingSeraphPoints = totalSeraphPoints - spentSeraphPoints;
+  const remainingSeraphPoints = totalSeraphPoints - (spentSeraphPoints as number);
 
   const finalStats = useMemo(() => ({
     str: currentBase + (seraphStats.str || 0) + (levelPoints.str || 0),
@@ -82,14 +79,14 @@ const StatPlanner = () => {
   const finalMagic = useMemo(() => {
     const powers: Record<string, number> = {};
     const resists: Record<string, number> = {};
-    ELEMENTS.forEach(el => {
-      powers[el] = 100 + (seraphPowers[el] || 0) * 5;
-      resists[el] = (el === 'Lumière' ? 5000 : 100) + (seraphResists[el] || 0) * 10;
+    SERAPH_ELEMENTS.forEach(el => {
+      powers[el.label] = 100 + (seraphPowers[el.key] || 0) * 5;
+      resists[el.label] = (el.key === 'light' ? 5000 : 100) + (seraphResists[el.key] || 0) * 10;
     });
     return { powers, resists };
   }, [seraphPowers, seraphResists]);
 
-  const totalLevelPointsSpent = useMemo(() => Object.values(levelPoints).reduce((a, b) => a + (b || 0), 0), [levelPoints]);
+  const totalLevelPointsSpent = useMemo(() => Object.values(levelPoints).reduce((a: number, b: number) => a + (b || 0), 0), [levelPoints]);
 
   const requiredLevel = useMemo(() => {
     return 1 + Math.ceil(totalLevelPointsSpent / POINTS_PER_LEVEL);
@@ -114,6 +111,11 @@ const StatPlanner = () => {
   }, [finalStats]);
 
   // 3. FONCTIONS
+  const showNotification = (message: string, type: 'success' | 'error' = 'success') => {
+    setNotification({ message, type });
+    setTimeout(() => setNotification(null), 2000);
+  };
+
   const showConfirm = (title: string, message: string, onConfirm: () => void) => {
     setModal({ show: true, title, message, onConfirm, type: 'confirm' });
   };
@@ -138,7 +140,7 @@ const StatPlanner = () => {
         updatedAt: Date.now()
       };
 
-      let updatedList = [...savedChars];
+      let updatedList = [...savedCharacters];
       const existingIdx = updatedList.findIndex(c => c.name === cleanName);
 
       if (existingIdx >= 0) {
@@ -151,43 +153,18 @@ const StatPlanner = () => {
         updatedList.push(newChar);
       }
 
-      setSavedChars(updatedList);
-      localStorage.setItem('t4c-characters', JSON.stringify(updatedList));
+      setSavedCharacters(updatedList);
       setActiveCharName(cleanName);
       setCharName('');
       setModal({ show: false, title: '', message: '', type: 'info' });
     };
 
-    const exists = savedChars.some(c => c.name === cleanName);
+    const exists = savedCharacters.some(c => c.name === cleanName);
     if (exists) {
       showConfirm("Écraser le profil ?", `Le personnage ${cleanName} existe déjà. Voulez-vous le remplacer ?`, executeSave);
     } else {
       executeSave();
     }
-  };
-
-  const updateActiveCharacter = () => {
-    if (!activeCharName) return;
-    
-    const updatedList = savedChars.map(char => {
-      if (char.name === activeCharName) {
-        return {
-          ...char,
-          renaissance,
-          seraphStats,
-          seraphPowers,
-          seraphResists,
-          levelPoints,
-          finalStats,
-          updatedAt: Date.now()
-        };
-      }
-      return char;
-    });
-
-    setSavedChars(updatedList);
-    localStorage.setItem('t4c-characters', JSON.stringify(updatedList));
-    showInfo("Succès", `Les statistiques de ${activeCharName} ont été mises à jour.`);
   };
 
   const loadCharacter = (char: SavedCharacter) => {
@@ -197,6 +174,7 @@ const StatPlanner = () => {
     setSeraphResists(char.seraphResists);
     setLevelPoints(char.levelPoints);
     setActiveCharName(char.name);
+    setPrevLevel(1 + Math.ceil(Object.values(char.levelPoints).reduce((a, b) => a + (b || 0), 0) / POINTS_PER_LEVEL));
   };
 
   const deleteCharacter = (name: string) => {
@@ -204,9 +182,8 @@ const StatPlanner = () => {
       "Supprimer le personnage ?",
       `Êtes-vous sûr de vouloir supprimer ${name} ? Cette action est irréversible.`,
       () => {
-        const updated = savedChars.filter(c => c.name !== name);
-        setSavedChars(updated);
-        localStorage.setItem('t4c-characters', JSON.stringify(updated));
+        const updated = savedCharacters.filter(c => c.name !== name);
+        setSavedCharacters(updated);
         if (activeCharName === name) setActiveCharName(null);
         setModal({ show: false, title: '', message: '', type: 'info' });
       }
@@ -215,37 +192,43 @@ const StatPlanner = () => {
 
   const resetAll = () => {
     setSeraphStats({ str: 0, end: 0, dex: 0, int: 0, wis: 0 });
-    setSeraphPowers({ 'Feu': 0, 'Eau': 0, 'Air': 0, 'Terre': 0, 'Lumière': 0, 'Nécromancie': 0 });
-    setSeraphResists({ 'Feu': 0, 'Eau': 0, 'Air': 0, 'Terre': 0, 'Lumière': 0, 'Nécromancie': 0 });
+    setSeraphPowers({ 'fire': 0, 'water': 0, 'air': 0, 'earth': 0, 'light': 0, 'necromancy': 0 });
+    setSeraphResists({ 'fire': 0, 'water': 0, 'air': 0, 'earth': 0, 'light': 0, 'necromancy': 0 });
     setLevelPoints({ str: 0, end: 0, dex: 0, int: 0, wis: 0 });
     setActiveCharName(null);
+    setPrevLevel(1);
   };
 
   const handleRenaissanceChange = (r: number) => {
     if (r !== renaissance) {
       setRenaissance(r);
       setSeraphStats({ str: 0, end: 0, dex: 0, int: 0, wis: 0 });
-      setSeraphPowers({ 'Feu': 0, 'Eau': 0, 'Air': 0, 'Terre': 0, 'Lumière': 0, 'Nécromancie': 0 });
-      setSeraphResists({ 'Feu': 0, 'Eau': 0, 'Air': 0, 'Terre': 0, 'Lumière': 0, 'Nécromancie': 0 });
+      setSeraphPowers({ 'fire': 0, 'water': 0, 'air': 0, 'earth': 0, 'light': 0, 'necromancy': 0 });
+      setSeraphResists({ 'fire': 0, 'water': 0, 'air': 0, 'earth': 0, 'light': 0, 'necromancy': 0 });
       setLevelPoints({ str: 0, end: 0, dex: 0, int: 0, wis: 0 });
+      setPrevLevel(1);
     }
   };
 
   // 4. EFFETS
   useEffect(() => {
-    const saved = localStorage.getItem('t4c-characters');
-    if (saved) setSavedChars(JSON.parse(saved));
-  }, []);
+    setActiveStats(finalStats);
+  }, [finalStats, setActiveStats]);
 
   useEffect(() => {
-    localStorage.setItem('t4c-planner-stats', JSON.stringify(finalStats));
-  }, [finalStats]);
+    if (requiredLevel > prevLevel) {
+        showNotification(`Niveau gagné : ${requiredLevel}`, 'success');
+    } else if (requiredLevel < prevLevel) {
+        showNotification(`Niveau perdu : ${requiredLevel}`, 'error');
+    }
+    setPrevLevel(requiredLevel);
+  }, [requiredLevel]);
 
   const updateSeraphStat = (type: 'stat' | 'power' | 'resist', key: string, amount: number) => {
     let currentVal = 0;
     if (type === 'stat') currentVal = seraphStats[key as keyof Stats] || 0;
-    else if (type === 'power') currentVal = seraphPowers[key] || 0;
-    else currentVal = seraphResists[key] || 0;
+    else if (type === 'power') currentVal = seraphPowers[key as SeraphElement] || 0;
+    else currentVal = seraphResists[key as SeraphElement] || 0;
 
     if (amount > 0) {
       const multiplier = type === 'resist' ? 2 : 1;
@@ -255,8 +238,8 @@ const StatPlanner = () => {
     if (currentVal + amount < 0) return;
 
     if (type === 'stat') setSeraphStats(prev => ({ ...prev, [key]: (prev[key as keyof Stats] || 0) + amount }));
-    else if (type === 'power') setSeraphPowers(prev => ({ ...prev, [key]: (prev[key] || 0) + amount }));
-    else setSeraphResists(prev => ({ ...prev, [key]: (prev[key] || 0) + amount }));
+    else if (type === 'power') setSeraphPowers(prev => ({ ...prev, [key]: (prev[key as SeraphElement] || 0) + amount }));
+    else setSeraphResists(prev => ({ ...prev, [key]: (prev[key as SeraphElement] || 0) + amount }));
   };
 
   const updateLevelStat = (key: keyof Stats, amount: number) => {
@@ -275,9 +258,11 @@ const StatPlanner = () => {
     <div className="space-y-6 pb-20 text-left">
       {/* BLOC PERSONNAGES */}
       <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl text-left">
-        <h2 className="text-xs font-black text-slate-500 uppercase tracking-widest mb-4 flex items-center gap-2">
-          <Save size={14}/> Mes Personnages ({savedChars.length}/10)
-        </h2>
+        <div className="flex items-center justify-between mb-4">
+            <h2 className="text-xs font-black text-slate-500 uppercase tracking-widest flex items-center gap-2">
+            <Save size={14}/> Mes Personnages ({savedCharacters.length}/10)
+            </h2>
+        </div>
         
         <div className="flex flex-col gap-4">
           <div className="w-full space-y-1">
@@ -297,10 +282,10 @@ const StatPlanner = () => {
           <div className="w-full space-y-2">
             <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1 text-left block">Mes Profils Enregistrés</label>
             <div className="flex flex-wrap gap-3 p-4 bg-slate-950/30 border border-slate-800/50 rounded-2xl">
-              {savedChars.length === 0 ? (
+              {savedCharacters.length === 0 ? (
                 <div className="text-xs text-slate-600 italic px-2 py-4 w-full text-center">Aucun personnage enregistré</div>
               ) : (
-                savedChars.map((char) => {
+                savedCharacters.map((char) => {
                   const isActive = activeCharName === char.name;
                   return (
                     <div key={char.name} onClick={() => loadCharacter(char)} className={`flex items-center gap-4 px-4 py-2.5 rounded-xl border transition-all cursor-pointer shadow-sm ${isActive ? 'bg-amber-500/20 border-amber-500 shadow-[0_0_15px_rgba(245,158,11,0.25)] scale-[1.02]' : 'bg-slate-900 border-slate-800 hover:border-amber-500/50 hover:scale-[1.02]'}`}>
@@ -466,7 +451,7 @@ const StatPlanner = () => {
 
         {/* MAIN (Colonne droite) */}
         <div className="lg:col-span-6 space-y-6">
-          <CharacterNameVisual name={activeCharName} onUpdate={updateActiveCharacter} />
+          <CharacterNameVisual name={activeCharName} />
           
           {renaissance > 0 && (
             <div className="bg-slate-900 border border-amber-500/20 rounded-3xl p-6 shadow-2xl flex items-center justify-between overflow-hidden relative">
@@ -486,21 +471,21 @@ const StatPlanner = () => {
                    <h2 className="text-sm font-black text-slate-100 uppercase tracking-widest">Puissances Magiques</h2>
                 </div>
                 <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-                   {ELEMENTS.map(el => {
-                     const cur = seraphPowers[el] || 0;
+                   {SERAPH_ELEMENTS.map(el => {
+                     const cur = seraphPowers[el.key] || 0;
                      return (
-                       <div key={el} className="flex items-center justify-between bg-slate-950/40 p-4 rounded-2xl border border-slate-800/50 hover:border-emerald-500/30 transition-all group">
+                       <div key={el.key} className="flex items-center justify-between bg-slate-950/40 p-4 rounded-2xl border border-slate-800/50 hover:border-emerald-500/30 transition-all group">
                           <div className="flex items-center gap-4 min-w-0">
                             <div className="w-1.5 h-10 bg-emerald-500/20 rounded-full group-hover:bg-emerald-500/50 transition-colors shrink-0" />
                             <div className="min-w-0">
-                              <span className="text-[10px] font-black text-slate-500 uppercase tracking-[0.15em] block mb-1 truncate">{el}</span>
-                              <span className="text-2xl font-black text-emerald-400 leading-none drop-shadow-md">{finalMagic.powers[el]}</span>
+                              <span className="text-[10px] font-black text-slate-500 uppercase tracking-[0.15em] block mb-1 truncate">{el.label}</span>
+                              <span className="text-2xl font-black text-emerald-400 leading-none drop-shadow-md">{finalMagic.powers[el.label]}</span>
                             </div>
                           </div>
                           <div className="flex items-center gap-2 bg-slate-900/80 p-1.5 rounded-2xl border border-slate-800 shadow-inner shrink-0">
-                             <button onClick={() => updateSeraphStat('power', el, -1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all shadow-sm disabled:opacity-20" disabled={cur <= 0}>-</button>
+                             <button onClick={() => updateSeraphStat('power', el.key, -1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all shadow-sm disabled:opacity-20" disabled={cur <= 0}>-</button>
                              <div className="w-8 text-center text-xs font-black text-amber-500/70">{cur}</div>
-                             <button onClick={() => updateSeraphStat('power', el, 1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all shadow-sm disabled:opacity-20" disabled={remainingSeraphPoints < (cur + 1)}>+</button>
+                             <button onClick={() => updateSeraphStat('power', el.key, 1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all shadow-sm disabled:opacity-20" disabled={remainingSeraphPoints < (cur + 1)}>+</button>
                           </div>
                        </div>
                      );
@@ -513,22 +498,22 @@ const StatPlanner = () => {
                    <h2 className="text-sm font-black text-slate-100 uppercase tracking-widest">Résistances Magiques</h2>
                 </div>
                 <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-                   {ELEMENTS.map(el => {
-                     const cur = seraphResists[el] || 0;
+                   {SERAPH_ELEMENTS.map(el => {
+                     const cur = seraphResists[el.key] || 0;
                      const nextCost = (cur + 1) * 2;
                      return (
-                       <div key={el} className="flex items-center justify-between bg-slate-950/40 p-4 rounded-2xl border border-slate-800/50 hover:border-blue-500/30 transition-all group">
+                       <div key={el.key} className="flex items-center justify-between bg-slate-950/40 p-4 rounded-2xl border border-slate-800/50 hover:border-blue-500/30 transition-all group">
                           <div className="flex items-center gap-4 min-w-0">
                             <div className="w-1.5 h-10 bg-blue-500/20 rounded-full group-hover:bg-blue-500/50 transition-colors shrink-0" />
                             <div className="min-w-0">
-                              <span className="text-[10px] font-black text-slate-500 uppercase tracking-[0.15em] block mb-1 truncate">{el}</span>
-                              <span className="text-2xl font-black text-blue-400 leading-none drop-shadow-md">{finalMagic.resists[el]}</span>
+                              <span className="text-[10px] font-black text-slate-500 uppercase tracking-[0.15em] block mb-1 truncate">{el.label}</span>
+                              <span className="text-2xl font-black text-blue-400 leading-none drop-shadow-md">{finalMagic.resists[el.label]}</span>
                             </div>
                           </div>
                           <div className="flex items-center gap-2 bg-slate-900/80 p-1.5 rounded-2xl border border-slate-800 shadow-inner shrink-0">
-                             <button onClick={() => updateSeraphStat('resist', el, -1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all shadow-sm disabled:opacity-20" disabled={cur <= 0}>-</button>
+                             <button onClick={() => updateSeraphStat('resist', el.key, -1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all shadow-sm disabled:opacity-20" disabled={cur <= 0}>-</button>
                              <div className="w-8 text-center text-xs font-black text-amber-500/70">{cur}</div>
-                             <button onClick={() => updateSeraphStat('resist', el, 1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all shadow-sm disabled:opacity-20" disabled={remainingSeraphPoints < nextCost}>+</button>
+                             <button onClick={() => updateSeraphStat('resist', el.key, 1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all shadow-sm disabled:opacity-20" disabled={remainingSeraphPoints < nextCost}>+</button>
                           </div>
                        </div>
                      );
@@ -592,6 +577,7 @@ const StatPlanner = () => {
               </div>
               <h3 className="text-xl font-black text-white uppercase tracking-tight mb-2">{modal.title}</h3>
               <p className="text-slate-400 text-sm leading-relaxed mb-8">{modal.message}</p>
+
               <div className="flex gap-3">
                 {modal.type === 'confirm' ? (
                   <>
@@ -607,6 +593,27 @@ const StatPlanner = () => {
           </div>
         </div>
       )}
+
+      {/* Non-blocking Toast Notification */}
+      <AnimatePresence>
+        {notification && (
+          <motion.div 
+            initial={{ opacity: 0, y: 50, scale: 0.9 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            className={`fixed bottom-8 left-1/2 -translate-x-1/2 z-[9999] flex items-center gap-3 px-6 py-3 rounded-2xl font-black uppercase tracking-widest shadow-2xl border transition-colors ${
+                notification.type === 'success' 
+                    ? 'bg-emerald-500 text-slate-950 border-emerald-400/50 shadow-emerald-500/20' 
+                    : 'bg-rose-500 text-white border-rose-400/50 shadow-rose-500/20'
+            }`}
+          >
+            <div className={`p-1 rounded-lg ${notification.type === 'success' ? 'bg-slate-950/20' : 'bg-white/20'}`}>
+                <Bell size={18} />
+            </div>
+            {notification.message}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };

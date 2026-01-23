@@ -1,6 +1,38 @@
 import React, { createContext, useContext, useState, useEffect, useMemo } from 'react';
-import type { Monster, RecipeItem, PageContent } from '../data/types';
+import type { Monster, RecipeItem, PageContent, SavedCharacter, Stats, SeraphElement, CraftingProject } from '../data/types';
 import { fastNormalize } from '../data/utils';
+
+// Helper to migrate old save format (with accents/French keys) to technical format
+const migrateSaveData = (data: any): any => {
+    if (!data.characters || !Array.isArray(data.characters)) return data;
+
+    const elementMap: Record<string, SeraphElement> = {
+        'Feu': 'fire',
+        'Eau': 'water',
+        'Air': 'air',
+        'Terre': 'earth',
+        'Lumière': 'light',
+        'Nécromancie': 'necromancy'
+    };
+
+    const migrateElementRecord = (record: Record<string, number>): Record<SeraphElement, number> => {
+        const newRecord: any = {};
+        Object.entries(record).forEach(([key, value]) => {
+            const newKey = elementMap[key] || key;
+            newRecord[newKey] = value;
+        });
+        return newRecord;
+    };
+
+    return {
+        ...data,
+        characters: data.characters.map((char: any) => ({
+            ...char,
+            seraphPowers: migrateElementRecord(char.seraphPowers || {}),
+            seraphResists: migrateElementRecord(char.seraphResists || {})
+        }))
+    };
+};
 
 interface DataContextType {
     itemsData: RecipeItem[];
@@ -12,6 +44,17 @@ interface DataContextType {
     itemUsageMap: Record<string, RecipeItem[]>;
     loading: boolean;
     error: string | null;
+    // User Data & Persistence
+    savedCharacters: SavedCharacter[];
+    setSavedCharacters: React.Dispatch<React.SetStateAction<SavedCharacter[]>>;
+    craftingProjects: CraftingProject[];
+    setCraftingProjects: React.Dispatch<React.SetStateAction<CraftingProject[]>>;
+    activeStats: Stats;
+    setActiveStats: React.Dispatch<React.SetStateAction<Stats>>;
+    favRecipes: string[];
+    setFavRecipes: React.Dispatch<React.SetStateAction<string[]>>;
+    saveDataToFile: (filename?: string) => void;
+    loadDataFromFile: (file: File) => Promise<void>;
 }
 
 const DataContext = createContext<DataContextType | undefined>(undefined);
@@ -25,6 +68,12 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
     
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
+
+    // User Data State
+    const [savedCharacters, setSavedCharacters] = useState<SavedCharacter[]>([]);
+    const [craftingProjects, setCraftingProjects] = useState<CraftingProject[]>([]);
+    const [activeStats, setActiveStats] = useState<Stats>({ str: 0, end: 0, dex: 0, int: 0, wis: 0 });
+    const [favRecipes, setFavRecipes] = useState<string[]>([]);
 
     useEffect(() => {
         const loadData = async () => {
@@ -49,6 +98,62 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
         loadData();
     }, []);
+
+    // File Persistence Logic
+    const saveDataToFile = (filename?: string) => {
+        const dataToSave = {
+            version: 1,
+            timestamp: Date.now(),
+            characters: savedCharacters,
+            craftingProjects: craftingProjects,
+            activeStats: activeStats,
+            favRecipes: favRecipes
+        };
+        
+        const blob = new Blob([JSON.stringify(dataToSave, null, 2)], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        const defaultName = `t4c_nms_backup_${new Date().toISOString().split('T')[0]}.json`;
+        a.download = filename ? (filename.endsWith('.json') ? filename : `${filename}.json`) : defaultName;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+    };
+
+    const loadDataFromFile = async (file: File): Promise<void> => {
+        return new Promise((resolve, reject) => {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                try {
+                    const content = e.target?.result as string;
+                    const rawData = JSON.parse(content);
+                    const parsed = migrateSaveData(rawData);
+                    
+                    // Basic validation
+                    if (parsed.characters && Array.isArray(parsed.characters)) {
+                        setSavedCharacters(parsed.characters);
+                    }
+                    if (parsed.craftingProjects && Array.isArray(parsed.craftingProjects)) {
+                        setCraftingProjects(parsed.craftingProjects);
+                    }
+                    if (parsed.activeStats) {
+                        setActiveStats(parsed.activeStats);
+                    }
+                    if (parsed.favRecipes && Array.isArray(parsed.favRecipes)) {
+                        setFavRecipes(parsed.favRecipes);
+                    }
+                    resolve();
+                } catch (err) {
+                    console.error("Failed to parse save file:", err);
+                    reject(err);
+                }
+            };
+            reader.onerror = () => reject(reader.error);
+            reader.readAsText(file);
+        });
+    };
 
     const maps = useMemo(() => {
         if (loading || !data.items.length) return {
@@ -143,7 +248,17 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         recipesData: data.recipes,
         ...maps,
         loading,
-        error
+        error,
+        savedCharacters,
+        setSavedCharacters,
+        craftingProjects,
+        setCraftingProjects,
+        activeStats,
+        setActiveStats,
+        favRecipes,
+        setFavRecipes,
+        saveDataToFile,
+        loadDataFromFile
     };
 
     return (
