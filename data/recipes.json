@@ -4923,7 +4923,7 @@
     "name": "Aiguille à coudre",
     "profession": "Forgeron",
     "level": 0,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "learnedFrom": "Tronec",
     "coordinates": "2822.1319.0",
@@ -6087,7 +6087,7 @@
     "name": "Anneau en acier",
     "profession": "Armurier",
     "level": 22,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Anneau",
     "learnedFrom": "Egnizek",
     "coordinates": "1736.1236.0",
@@ -6106,7 +6106,7 @@
     "name": "Anneau en adamantite",
     "profession": "Armurier",
     "level": 64,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Anneau",
     "learnedFrom": "Ecion Bras De Fer",
     "coordinates": "892.1050.0",
@@ -6125,7 +6125,7 @@
     "name": "Anneau en argent",
     "profession": "Armurier",
     "level": 49,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Anneau",
     "learnedFrom": "Victor Poingdacier",
     "coordinates": "1374.2372.0",
@@ -6144,7 +6144,7 @@
     "name": "Anneau en cuivre",
     "profession": "Armurier",
     "level": 37,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Anneau",
     "learnedFrom": "Victor Poingdacier",
     "coordinates": "1374.2372.0",
@@ -6163,7 +6163,7 @@
     "name": "Anneau en fer forgé",
     "profession": "Armurier",
     "level": 10,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Anneau",
     "learnedFrom": "Egnizek",
     "coordinates": "1736.1236.0",
@@ -6221,7 +6221,7 @@
     "name": "Anneau en métrolite",
     "profession": "Armurier",
     "level": 76,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Anneau",
     "learnedFrom": "Ecion Bras De Fer",
     "coordinates": "892.1050.0",
@@ -6240,7 +6240,7 @@
     "name": "Anneau en mithril",
     "profession": "Armurier",
     "level": 43,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Anneau",
     "learnedFrom": "Victor Poingdacier",
     "coordinates": "1374.2372.0",
@@ -6259,7 +6259,7 @@
     "name": "Anneau en or forgé",
     "profession": "Armurier",
     "level": 70,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Anneau",
     "learnedFrom": "Ecion Bras De Fer",
     "coordinates": "892.1050.0",
@@ -6278,7 +6278,7 @@
     "name": "Anneau en plomb",
     "profession": "Armurier",
     "level": 16,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Anneau",
     "learnedFrom": "Egnizek",
     "coordinates": "1736.1236.0",
@@ -6340,7 +6340,7 @@
     "name": "Antidote contre l'empoisonnement",
     "profession": "Apothicaire",
     "level": 6,
-    "quantity": 1,
+    "quantity": 5,
     "source": "Divers",
     "ingredients": [
       {
@@ -6394,7 +6394,7 @@
     "name": "Antidote contre l'empoisonnement mortel",
     "profession": "Apothicaire",
     "level": 52,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -6425,7 +6425,7 @@
     "name": "Antidote contre l'empoisonnement sévère",
     "profession": "Apothicaire",
     "level": 28,
-    "quantity": 1,
+    "quantity": 4,
     "source": "Divers",
     "ingredients": [
       {
@@ -6709,7 +6709,7 @@
     "name": "Aune de toile de chanvre",
     "profession": "Couturier",
     "level": 6,
-    "quantity": 1,
+    "quantity": 2,
     "source": "Cape",
     "ingredients": [
       {
@@ -6728,7 +6728,7 @@
     "name": "Aune de toile de coton",
     "profession": "Couturier",
     "level": 32,
-    "quantity": 1,
+    "quantity": 2,
     "source": "Cape",
     "ingredients": [
       {
@@ -6747,7 +6747,7 @@
     "name": "Aune de toile de soie",
     "profession": "Couturier",
     "level": 58,
-    "quantity": 1,
+    "quantity": 2,
     "source": "Cape",
     "ingredients": [
       {
@@ -6766,7 +6766,7 @@
     "name": "Aune de toile de soie elfe",
     "profession": "Couturier",
     "level": 82,
-    "quantity": 1,
+    "quantity": 2,
     "source": "Cape",
     "ingredients": [
       {
@@ -7181,7 +7181,7 @@
     "name": "Bobine de fil d'argent",
     "profession": "Couturier",
     "level": 35,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -7200,7 +7200,7 @@
     "name": "Bobine de fil d'or",
     "profession": "Couturier",
     "level": 48,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -7219,7 +7219,7 @@
     "name": "Bobine de fil de chanvre",
     "profession": "Couturier",
     "level": 0,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -7238,7 +7238,7 @@
     "name": "Bobine de fil de coton",
     "profession": "Couturier",
     "level": 26,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -7257,7 +7257,7 @@
     "name": "Bobine de fil de cuivre",
     "profession": "Couturier",
     "level": 22,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -7276,7 +7276,7 @@
     "name": "Bobine de fil de soie",
     "profession": "Couturier",
     "level": 52,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -7304,7 +7304,7 @@
     "name": "Bobine de fil de soie elfe",
     "profession": "Couturier",
     "level": 76,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -7323,7 +7323,7 @@
     "name": "Bobine de fil métallisé",
     "profession": "Couturier",
     "level": 9,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -7350,7 +7350,7 @@
     "name": "Bobine de fil spirituel éthéré",
     "profession": "Couturier",
     "level": 98,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -11356,7 +11356,7 @@
     "name": "Cuir d'Orc tanné",
     "profession": "Couturier",
     "level": 2,
-    "quantity": 1,
+    "quantity": 2,
     "source": "Cape",
     "ingredients": [
       {
@@ -11375,7 +11375,7 @@
     "name": "Cuir de B'Ronkhan tanné",
     "profession": "Couturier",
     "level": 93,
-    "quantity": 1,
+    "quantity": 2,
     "source": "Cape",
     "ingredients": [
       {
@@ -11394,7 +11394,7 @@
     "name": "Cuir de Profundus tanné",
     "profession": "Couturier",
     "level": 45,
-    "quantity": 1,
+    "quantity": 2,
     "source": "Cape",
     "ingredients": [
       {
@@ -11413,7 +11413,7 @@
     "name": "Cuir de Skraug tanné",
     "profession": "Couturier",
     "level": 70,
-    "quantity": 1,
+    "quantity": 2,
     "source": "Cape",
     "ingredients": [
       {
@@ -12235,7 +12235,7 @@
     "name": "Élixir de mana",
     "profession": "Apothicaire",
     "level": 2,
-    "quantity": 1,
+    "quantity": 25,
     "source": "Divers",
     "ingredients": [
       {
@@ -18473,7 +18473,7 @@
     "name": "Feutre d'antilope",
     "profession": "Couturier",
     "level": 13,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Cape",
     "ingredients": [
       {
@@ -18492,7 +18492,7 @@
     "name": "Feutre de Centaure",
     "profession": "Couturier",
     "level": 64,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Cape",
     "ingredients": [
       {
@@ -18511,7 +18511,7 @@
     "name": "Feutre de Minotaure",
     "profession": "Couturier",
     "level": 39,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Cape",
     "ingredients": [
       {
@@ -18530,7 +18530,7 @@
     "name": "Feutre de Sintelle",
     "profession": "Couturier",
     "level": 88,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Cape",
     "ingredients": [
       {
@@ -18549,7 +18549,7 @@
     "name": "Fiole d'absolution",
     "profession": "Apothicaire",
     "level": 8,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -19140,7 +19140,7 @@
     "name": "Fiole de poison",
     "profession": "Apothicaire",
     "level": 4,
-    "quantity": 1,
+    "quantity": 5,
     "source": "Divers",
     "ingredients": [
       {
@@ -19167,7 +19167,7 @@
     "name": "Fiole de poison mortel",
     "profession": "Apothicaire",
     "level": 50,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -19198,7 +19198,7 @@
     "name": "Fiole de protection contre la terreur",
     "profession": "Apothicaire",
     "level": 91,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -19236,7 +19236,7 @@
     "name": "Fiole de puissant poison",
     "profession": "Apothicaire",
     "level": 26,
-    "quantity": 1,
+    "quantity": 4,
     "source": "Divers",
     "ingredients": [
       {
@@ -19757,7 +19757,7 @@
     "name": "Flèches de l'éclaireur",
     "profession": "Ebéniste",
     "level": 8,
-    "quantity": 1,
+    "quantity": 20,
     "source": "Arc",
     "learnedFrom": "Ysuve",
     "coordinates": "2826.1294.0",
@@ -19788,7 +19788,7 @@
     "name": "Flèches de puanteur",
     "profession": "Ebéniste",
     "level": 17,
-    "quantity": 1,
+    "quantity": 999,
     "source": "Arc",
     "learnedFrom": "Fortaleyn",
     "coordinates": "2150.515.0",
@@ -19896,7 +19896,7 @@
     "name": "Flèches empoisonnées",
     "profession": "Forgeron",
     "level": 21,
-    "quantity": 1,
+    "quantity": 30,
     "source": "Arc",
     "learnedFrom": "Geirfres",
     "coordinates": "2908.1028.0",
@@ -20086,7 +20086,7 @@
     "name": "Flèches mortellement empoisonnées",
     "profession": "Forgeron",
     "level": 69,
-    "quantity": 1,
+    "quantity": 10,
     "source": "Arc",
     "learnedFrom": "Rilouff",
     "coordinates": "785.1084.0",
@@ -20148,7 +20148,7 @@
     "name": "Flèches paralysantes",
     "profession": "Ebéniste",
     "level": 20,
-    "quantity": 1,
+    "quantity": 999,
     "source": "Arc",
     "learnedFrom": "Fortaleyn",
     "coordinates": "2150.515.0",
@@ -20245,7 +20245,7 @@
     "name": "Flèches puissamment empoisonnées",
     "profession": "Forgeron",
     "level": 45,
-    "quantity": 1,
+    "quantity": 20,
     "source": "Arc",
     "learnedFrom": "Norel",
     "coordinates": "1274.2714.0",
@@ -20407,7 +20407,7 @@
     "name": "Fût en cèdre",
     "profession": "Ebéniste",
     "level": 51,
-    "quantity": 1,
+    "quantity": 10,
     "source": "Arme",
     "learnedFrom": "Volecian",
     "coordinates": "132.855.0",
@@ -20426,7 +20426,7 @@
     "name": "Fût en chêne",
     "profession": "Ebéniste",
     "level": 39,
-    "quantity": 1,
+    "quantity": 10,
     "source": "Arme",
     "learnedFrom": "Riaze",
     "coordinates": "1284.2724.0",
@@ -20445,7 +20445,7 @@
     "name": "Fût en cyprès",
     "profession": "Ebéniste",
     "level": 99,
-    "quantity": 1,
+    "quantity": 10,
     "source": "Arme",
     "learnedFrom": "Telmus Zirus",
     "coordinates": "2224.955.4",
@@ -20464,7 +20464,7 @@
     "name": "Fût en févier épineux",
     "profession": "Ebéniste",
     "level": 75,
-    "quantity": 1,
+    "quantity": 10,
     "source": "Arme",
     "learnedFrom": "Justen",
     "coordinates": "1510.724.1",
@@ -20483,7 +20483,7 @@
     "name": "Fût en frêne",
     "profession": "Ebéniste",
     "level": 3,
-    "quantity": 1,
+    "quantity": 10,
     "source": "Arme",
     "learnedFrom": "Ysuve",
     "coordinates": "2826.1294.0",
@@ -20502,7 +20502,7 @@
     "name": "Fût en mélèze",
     "profession": "Ebéniste",
     "level": 87,
-    "quantity": 1,
+    "quantity": 10,
     "source": "Arme",
     "learnedFrom": "Slizest",
     "coordinates": "1502.696.1",
@@ -20521,7 +20521,7 @@
     "name": "Fût en noyer",
     "profession": "Ebéniste",
     "level": 27,
-    "quantity": 1,
+    "quantity": 10,
     "source": "Arme",
     "learnedFrom": "Maletis",
     "coordinates": "1654.2540.0",
@@ -20540,7 +20540,7 @@
     "name": "Fût en orme",
     "profession": "Ebéniste",
     "level": 15,
-    "quantity": 1,
+    "quantity": 10,
     "source": "Arme",
     "learnedFrom": "Fortaleyn",
     "coordinates": "2150.515.0",
@@ -20559,7 +20559,7 @@
     "name": "Fût en oxandre",
     "profession": "Ebéniste",
     "level": 63,
-    "quantity": 1,
+    "quantity": 10,
     "source": "Arme",
     "learnedFrom": "Kaella",
     "coordinates": "2664.973.4",
@@ -22355,7 +22355,7 @@
     "name": "Infusion de mana",
     "profession": "Apothicaire",
     "level": 78,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -23175,7 +23175,7 @@
     "name": "Lingot d'acier",
     "profession": "Bijoutier",
     "level": 12,
-    "quantity": 1,
+    "quantity": 2,
     "source": "Divers",
     "ingredients": [
       {
@@ -23194,7 +23194,7 @@
     "name": "Lingot d'adamantite",
     "profession": "Bijoutier",
     "level": 36,
-    "quantity": 1,
+    "quantity": 2,
     "source": "Divers",
     "ingredients": [
       {
@@ -23213,7 +23213,7 @@
     "name": "Lingot d'argent",
     "profession": "Bijoutier",
     "level": 26,
-    "quantity": 1,
+    "quantity": 2,
     "source": "Divers",
     "ingredients": [
       {
@@ -23232,7 +23232,7 @@
     "name": "Lingot d'or",
     "profession": "Bijoutier",
     "level": 38,
-    "quantity": 1,
+    "quantity": 2,
     "source": "Divers",
     "ingredients": [
       {
@@ -23251,7 +23251,7 @@
     "name": "Lingot de cuivre",
     "profession": "Bijoutier",
     "level": 22,
-    "quantity": 1,
+    "quantity": 2,
     "source": "Divers",
     "ingredients": [
       {
@@ -23270,7 +23270,7 @@
     "name": "Lingot de fer",
     "profession": "Bijoutier",
     "level": 8,
-    "quantity": 1,
+    "quantity": 2,
     "source": "Divers",
     "ingredients": [
       {
@@ -23289,7 +23289,7 @@
     "name": "Lingot de métrolite",
     "profession": "Bijoutier",
     "level": 40,
-    "quantity": 1,
+    "quantity": 2,
     "source": "Divers",
     "ingredients": [
       {
@@ -23308,7 +23308,7 @@
     "name": "Lingot de mithril",
     "profession": "Bijoutier",
     "level": 24,
-    "quantity": 1,
+    "quantity": 2,
     "source": "Divers",
     "ingredients": [
       {
@@ -23327,7 +23327,7 @@
     "name": "Lingot de plomb",
     "profession": "Bijoutier",
     "level": 10,
-    "quantity": 1,
+    "quantity": 2,
     "source": "Divers",
     "ingredients": [
       {
@@ -25543,7 +25543,7 @@
     "name": "Parchemin d'anxiété",
     "profession": "Apothicaire",
     "level": 74,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -25570,7 +25570,7 @@
     "name": "Parchemin d'aveuglement",
     "profession": "Apothicaire",
     "level": 80,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -25597,7 +25597,7 @@
     "name": "Parchemin d'immobilisation",
     "profession": "Apothicaire",
     "level": 94,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -25628,7 +25628,7 @@
     "name": "Parchemin d'inhibition des soins",
     "profession": "Apothicaire",
     "level": 104,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -25659,7 +25659,7 @@
     "name": "Parchemin d'invisibilité supérieure",
     "profession": "Apothicaire",
     "level": 100,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -25690,7 +25690,7 @@
     "name": "Parchemin de confusion",
     "profession": "Apothicaire",
     "level": 74,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -25717,7 +25717,7 @@
     "name": "Parchemin de dissipation de l'inhibition des soins",
     "profession": "Apothicaire",
     "level": 102,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -25748,7 +25748,7 @@
     "name": "Parchemin de dissipation de l'invisibilité",
     "profession": "Apothicaire",
     "level": 100,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -25779,7 +25779,7 @@
     "name": "Parchemin de dissipation de la bénédiction",
     "profession": "Apothicaire",
     "level": 72,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -25806,7 +25806,7 @@
     "name": "Parchemin de dissipation de la fatigue mentale",
     "profession": "Apothicaire",
     "level": 90,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -25833,7 +25833,7 @@
     "name": "Parchemin de dissipation de la fatigue physique",
     "profession": "Apothicaire",
     "level": 90,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -25860,7 +25860,7 @@
     "name": "Parchemin de dissipation de la résistance à l'air",
     "profession": "Apothicaire",
     "level": 70,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -25899,7 +25899,7 @@
     "name": "Parchemin de dissipation de la résistance à l'eau",
     "profession": "Apothicaire",
     "level": 70,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -25970,7 +25970,7 @@
     "name": "Parchemin de dissipation de la résistance au feu",
     "profession": "Apothicaire",
     "level": 70,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -26009,7 +26009,7 @@
     "name": "Parchemin de dissipation de la résistance nécro",
     "profession": "Apothicaire",
     "level": 70,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -26048,7 +26048,7 @@
     "name": "Parchemin de dissipation de la résistance terre",
     "profession": "Apothicaire",
     "level": 70,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -26087,7 +26087,7 @@
     "name": "Parchemin de dissipation des protections d'eau",
     "profession": "Apothicaire",
     "level": 82,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -26114,7 +26114,7 @@
     "name": "Parchemin de dissipation des protections de terre",
     "profession": "Apothicaire",
     "level": 82,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -26141,7 +26141,7 @@
     "name": "Parchemin de dynamisme",
     "profession": "Apothicaire",
     "level": 98,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -26172,7 +26172,7 @@
     "name": "Parchemin de fatigue mentale",
     "profession": "Apothicaire",
     "level": 96,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -26203,7 +26203,7 @@
     "name": "Parchemin de fatigue physique",
     "profession": "Apothicaire",
     "level": 96,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -26234,7 +26234,7 @@
     "name": "Parchemin de mobilité",
     "profession": "Apothicaire",
     "level": 88,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "learnedFrom": "Vairrine ",
     "coordinates": "1199.1227.3",
@@ -26261,7 +26261,7 @@
     "name": "Parchemin de vulnérabilité",
     "profession": "Apothicaire",
     "level": 84,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -26409,7 +26409,7 @@
     "name": "Pépite d'acier",
     "profession": "Bijoutier",
     "level": 6,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -26432,7 +26432,7 @@
     "name": "Pépite d'adamantite",
     "profession": "Bijoutier",
     "level": 30,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -26451,7 +26451,7 @@
     "name": "Pépite d'argent",
     "profession": "Bijoutier",
     "level": 20,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -26489,7 +26489,7 @@
     "name": "Pépite de cuivre",
     "profession": "Bijoutier",
     "level": 16,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -26508,7 +26508,7 @@
     "name": "Pépite de fer",
     "profession": "Bijoutier",
     "level": 1,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -26527,7 +26527,7 @@
     "name": "Pépite de métrolite",
     "profession": "Bijoutier",
     "level": 34,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -26546,7 +26546,7 @@
     "name": "Pépite de mithril",
     "profession": "Bijoutier",
     "level": 18,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -26736,7 +26736,7 @@
     "name": "Pépite de plomb",
     "profession": "Bijoutier",
     "level": 4,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -26773,7 +26773,7 @@
     "name": "Pierre de mana",
     "profession": "Apothicaire",
     "level": 24,
-    "quantity": 1,
+    "quantity": 20,
     "source": "Divers",
     "ingredients": [
       {
@@ -32943,7 +32943,7 @@
     "name": "Pointes de flèches en acier",
     "profession": "Forgeron",
     "level": 38,
-    "quantity": 1,
+    "quantity": 10,
     "source": "Arme",
     "learnedFrom": "Norel",
     "coordinates": "1274.2714.0",
@@ -32962,7 +32962,7 @@
     "name": "Pointes de flèches en adamantite",
     "profession": "Forgeron",
     "level": 62,
-    "quantity": 1,
+    "quantity": 10,
     "source": "Arme",
     "learnedFrom": "Rilouff",
     "coordinates": "785.1084.0",
@@ -32981,7 +32981,7 @@
     "name": "Pointes de flèches en fer",
     "profession": "Forgeron",
     "level": 14,
-    "quantity": 1,
+    "quantity": 10,
     "source": "Arme",
     "learnedFrom": "Geirfres",
     "coordinates": "2908.1028.0",
@@ -33000,7 +33000,7 @@
     "name": "Pointes de flèches en frêne taillé",
     "profession": "Ebéniste",
     "level": 4,
-    "quantity": 1,
+    "quantity": 10,
     "source": "Arme",
     "learnedFrom": "Ysuve",
     "coordinates": "2826.1294.0",
@@ -33023,7 +33023,7 @@
     "name": "Pointes de flèches en mithril",
     "profession": "Forgeron",
     "level": 86,
-    "quantity": 1,
+    "quantity": 10,
     "source": "Arme",
     "learnedFrom": "Gralek ",
     "coordinates": "1050.1035.3",
@@ -34632,7 +34632,7 @@
     "name": "Potion d'obscurité",
     "profession": "Apothicaire",
     "level": 14,
-    "quantity": 1,
+    "quantity": 2,
     "source": "Divers",
     "ingredients": [
       {
@@ -34655,7 +34655,7 @@
     "name": "Potion de faible puissance en air",
     "profession": "Apothicaire",
     "level": 12,
-    "quantity": 1,
+    "quantity": 5,
     "source": "Divers",
     "ingredients": [
       {
@@ -34678,7 +34678,7 @@
     "name": "Potion de faible puissance en eau",
     "profession": "Apothicaire",
     "level": 12,
-    "quantity": 1,
+    "quantity": 5,
     "source": "Divers",
     "ingredients": [
       {
@@ -34701,7 +34701,7 @@
     "name": "Potion de faible puissance en feu",
     "profession": "Apothicaire",
     "level": 12,
-    "quantity": 1,
+    "quantity": 5,
     "source": "Divers",
     "ingredients": [
       {
@@ -34724,7 +34724,7 @@
     "name": "Potion de faible puissance en lumière",
     "profession": "Apothicaire",
     "level": 12,
-    "quantity": 1,
+    "quantity": 5,
     "source": "Divers",
     "ingredients": [
       {
@@ -34747,7 +34747,7 @@
     "name": "Potion de faible puissance en nécromancie",
     "profession": "Apothicaire",
     "level": 12,
-    "quantity": 1,
+    "quantity": 5,
     "source": "Divers",
     "ingredients": [
       {
@@ -34770,7 +34770,7 @@
     "name": "Potion de faible puissance en terre",
     "profession": "Apothicaire",
     "level": 12,
-    "quantity": 1,
+    "quantity": 5,
     "source": "Divers",
     "ingredients": [
       {
@@ -34793,7 +34793,7 @@
     "name": "Potion de faible régénération",
     "profession": "Apothicaire",
     "level": 40,
-    "quantity": 1,
+    "quantity": 5,
     "source": "Divers",
     "ingredients": [
       {
@@ -34962,7 +34962,7 @@
     "name": "Potion de guérison",
     "profession": "Apothicaire",
     "level": 0,
-    "quantity": 1,
+    "quantity": 25,
     "source": "Divers",
     "ingredients": [
       {
@@ -44000,7 +44000,7 @@
     "name": "Potion de guérison critique",
     "profession": "Apothicaire",
     "level": 44,
-    "quantity": 1,
+    "quantity": 15,
     "source": "Divers",
     "ingredients": [
       {
@@ -52827,7 +52827,7 @@
     "name": "Potion de guérison de maladie",
     "profession": "Apothicaire",
     "level": 18,
-    "quantity": 1,
+    "quantity": 5,
     "source": "Divers",
     "ingredients": [
       {
@@ -52850,7 +52850,7 @@
     "name": "Potion de guérison des blessures graves",
     "profession": "Apothicaire",
     "level": 22,
-    "quantity": 1,
+    "quantity": 20,
     "source": "Divers",
     "ingredients": [
       {
@@ -56914,7 +56914,7 @@
     "name": "Potion de guérison divine",
     "profession": "Apothicaire",
     "level": 76,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -58047,7 +58047,7 @@
     "name": "Potion de Guérison Extrême",
     "profession": "Apothicaire",
     "level": 66,
-    "quantity": 1,
+    "quantity": 10,
     "source": "Divers",
     "ingredients": [
       {
@@ -58341,7 +58341,7 @@
     "name": "Potion de protection contre le venin d'Ambrane",
     "profession": "Apothicaire",
     "level": 108,
-    "quantity": 1,
+    "quantity": 8,
     "source": "Divers",
     "ingredients": [
       {
@@ -58365,7 +58365,7 @@
     "name": "Potion de puissance partielle en air",
     "profession": "Apothicaire",
     "level": 34,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -58388,7 +58388,7 @@
     "name": "Potion de puissance partielle en eau",
     "profession": "Apothicaire",
     "level": 34,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -58411,7 +58411,7 @@
     "name": "Potion de puissance partielle en feu",
     "profession": "Apothicaire",
     "level": 34,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -58434,7 +58434,7 @@
     "name": "Potion de puissance partielle en lumière",
     "profession": "Apothicaire",
     "level": 34,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -58457,7 +58457,7 @@
     "name": "Potion de puissance partielle en nécromancie",
     "profession": "Apothicaire",
     "level": 34,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -58480,7 +58480,7 @@
     "name": "Potion de puissance partielle en terre",
     "profession": "Apothicaire",
     "level": 34,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -58503,7 +58503,7 @@
     "name": "Potion de régénération",
     "profession": "Apothicaire",
     "level": 62,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -58534,7 +58534,7 @@
     "name": "Potion de régénération majeure",
     "profession": "Apothicaire",
     "level": 86,
-    "quantity": 1,
+    "quantity": 3,
     "source": "Divers",
     "ingredients": [
       {
@@ -58792,7 +58792,7 @@
     "name": "Prisme de mana",
     "profession": "Apothicaire",
     "level": 46,
-    "quantity": 1,
+    "quantity": 15,
     "source": "Divers",
     "ingredients": [
       {
@@ -69086,7 +69086,7 @@
     "name": "Prisme de mana finement taillé",
     "profession": "Apothicaire",
     "level": 68,
-    "quantity": 1,
+    "quantity": 10,
     "source": "Divers",
     "ingredients": [
       {
@@ -71254,7 +71254,7 @@
     "name": "Torche incandescente",
     "profession": "Ebéniste",
     "level": 1,
-    "quantity": 1,
+    "quantity": 5,
     "source": "Divers",
     "learnedFrom": "Ysuve",
     "coordinates": "2826.1294.0",
