@@ -451,8 +451,8 @@ const EquipableBuilder = () => {
           </div>
           <div className="flex-1 overflow-y-auto p-8 space-y-6 custom-scrollbar">
             {availableItems.map((entry, idx) => {
-              if (entry.type === 'spell') return <SpellCard key={idx} spell={entry} idx={idx} />;
-              if (entry.type === 'skill') return <SkillCard key={idx} skill={entry} idx={idx} />;
+              if (entry.type === 'spell') return <SpellCard key={idx} spell={entry} />;
+              if (entry.type === 'skill') return <SkillCard key={idx} skill={entry} />;
               return <ItemCard key={idx} item={entry} isBiSMode={isBiSMode} idx={idx} />;
             })}
           </div>
