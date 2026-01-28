@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import { User, Zap, ChevronUp, ChevronDown, RotateCcw, Award, Heart, Sparkles, Star, Shield, Flame, Save, Trash2, HelpCircle, Info, X, BookOpen, Bell } from 'lucide-react';
 import CharacterNameVisual from './CharacterNameVisual';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -44,7 +44,7 @@ const StatPlanner = () => {
     { show: false, title: '', message: '', type: 'info' }
   );
   const [notification, setNotification] = useState<{ message: string, type: 'success' | 'error' } | null>(null);
-  const [prevLevel, setPrevLevel] = useState<number>(1);
+  const prevLevelRef = useRef<number>(1);
 
   const POINTS_PER_LEVEL = 5;
 
@@ -174,7 +174,7 @@ const StatPlanner = () => {
     setSeraphResists(char.seraphResists);
     setLevelPoints(char.levelPoints);
     setActiveCharName(char.name);
-    setPrevLevel(1 + Math.ceil(Object.values(char.levelPoints).reduce((a, b) => a + (b || 0), 0) / POINTS_PER_LEVEL));
+    prevLevelRef.current = 1 + Math.ceil(Object.values(char.levelPoints).reduce((a, b) => a + (b || 0), 0) / POINTS_PER_LEVEL);
   };
 
   const deleteCharacter = (name: string) => {
@@ -196,7 +196,7 @@ const StatPlanner = () => {
     setSeraphResists({ 'fire': 0, 'water': 0, 'air': 0, 'earth': 0, 'light': 0, 'necromancy': 0 });
     setLevelPoints({ str: 0, end: 0, dex: 0, int: 0, wis: 0 });
     setActiveCharName(null);
-    setPrevLevel(1);
+    prevLevelRef.current = 1;
   };
 
   const handleRenaissanceChange = (r: number) => {
@@ -206,7 +206,7 @@ const StatPlanner = () => {
       setSeraphPowers({ 'fire': 0, 'water': 0, 'air': 0, 'earth': 0, 'light': 0, 'necromancy': 0 });
       setSeraphResists({ 'fire': 0, 'water': 0, 'air': 0, 'earth': 0, 'light': 0, 'necromancy': 0 });
       setLevelPoints({ str: 0, end: 0, dex: 0, int: 0, wis: 0 });
-      setPrevLevel(1);
+      prevLevelRef.current = 1;
     }
   };
 
@@ -216,12 +216,12 @@ const StatPlanner = () => {
   }, [finalStats, setActiveStats]);
 
   useEffect(() => {
-    if (requiredLevel > prevLevel) {
+    if (requiredLevel > prevLevelRef.current) {
         showNotification(`Niveau gagné : ${requiredLevel}`, 'success');
-    } else if (requiredLevel < prevLevel) {
+    } else if (requiredLevel < prevLevelRef.current) {
         showNotification(`Niveau perdu : ${requiredLevel}`, 'error');
     }
-    setPrevLevel(requiredLevel);
+    prevLevelRef.current = requiredLevel;
   }, [requiredLevel]);
 
   const updateSeraphStat = (type: 'stat' | 'power' | 'resist', key: string, amount: number) => {
