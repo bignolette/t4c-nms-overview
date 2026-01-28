@@ -13,7 +13,19 @@ interface SpellListProps {
 
 const DEFAULT_ITEMS_PER_PAGE = 24;
 
-const SpellCard = memo(({ spell }: { spell: Spell }) => {
+const SpellCard = memo(({ spell, onNavigate }: { spell: Spell, onNavigate: (name: string) => void }) => {
+  const { spellMap, spellPrerequisiteMap } = useData();
+  
+  const linkedPrerequisites = useMemo(() => {
+    if (!spell.prerequisites) return [];
+    const norm = fastNormalize(spell.prerequisites);
+    return Object.values(spellMap).filter(s => norm.includes(fastNormalize(s.name)));
+  }, [spell.prerequisites, spellMap]);
+
+  const usedAsPrerequisiteFor = useMemo(() => {
+    return spellPrerequisiteMap[fastNormalize(spell.name)] || [];
+  }, [spell.name, spellPrerequisiteMap]);
+
   return (
     <motion.div 
       layout
@@ -62,26 +74,65 @@ const SpellCard = memo(({ spell }: { spell: Spell }) => {
         </div>
       </div>
 
-      <div className="p-5">
+      <div className="p-5 flex-1 flex flex-col">
         <h4 className="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] mb-3 flex items-center gap-2">
           <ScrollText size={12} /> Effect
         </h4>
-        <p className="text-xs text-slate-300 leading-relaxed italic">
+        <p className="text-xs text-slate-300 leading-relaxed italic mb-4">
           {spell.description}
         </p>
         
-        {(Object.keys(spell.npc).length > 0 || spell.prerequisites) && (
-          <div className="mt-4 pt-4 border-t border-slate-700/30 space-y-2">
-            {Object.entries(spell.npc).map(([city, names]) => (
-              <div key={city} className="flex items-start gap-2 text-[10px] text-slate-400">
-                <span className="font-black uppercase text-slate-500 min-w-[80px]">{city}:</span>
-                <span className="font-bold text-blue-400/80">{names.join(', ')}</span>
+        {(Object.keys(spell.npc).length > 0 || spell.prerequisites || usedAsPrerequisiteFor.length > 0) && (
+          <div className="mt-auto space-y-4 pt-4 border-t border-slate-700/30">
+            {Object.keys(spell.npc).length > 0 && (
+              <div className="space-y-2">
+                <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest block">Localisation PNJ</span>
+                {Object.entries(spell.npc).map(([city, names]) => (
+                  <div key={city} className="flex items-start gap-2 text-[10px]">
+                    <span className="font-black uppercase text-slate-500 w-20 shrink-0">{city}:</span>
+                    <span className="font-bold text-blue-400/80">{names.join(', ')}</span>
+                  </div>
+                ))}
               </div>
-            ))}
+            )}
+
             {spell.prerequisites && (
-              <div className="flex items-center gap-2 text-[10px] text-slate-400">
-                <span className="font-black uppercase text-slate-500">Prerequis:</span>
-                <span className="font-bold text-amber-500/80">{spell.prerequisites}</span>
+              <div className="space-y-2">
+                <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest block">Sorts Prérequis</span>
+                <div className="flex flex-wrap gap-1.5">
+                  {linkedPrerequisites.length > 0 ? (
+                    linkedPrerequisites.map(ps => (
+                      <button 
+                        key={ps.name}
+                        onClick={() => onNavigate(ps.name)}
+                        className="flex items-center gap-1.5 px-2 py-1 rounded bg-amber-500/10 border border-amber-500/30 text-[10px] font-bold text-amber-400 hover:bg-amber-500/20 transition-all"
+                      >
+                        <Sparkles size={10} />
+                        {ps.name}
+                      </button>
+                    ))
+                  ) : (
+                    <span className="text-[10px] font-bold text-slate-400 italic bg-slate-950/50 px-2 py-1 rounded border border-slate-800 w-full">{spell.prerequisites}</span>
+                  )}
+                </div>
+              </div>
+            )}
+
+            {usedAsPrerequisiteFor.length > 0 && (
+              <div className="space-y-2">
+                <span className="text-[9px] font-black text-blue-500/70 uppercase tracking-widest block">Prérequis pour</span>
+                <div className="flex flex-wrap gap-1.5">
+                  {usedAsPrerequisiteFor.map(s => (
+                    <button 
+                      key={s.name}
+                      onClick={() => onNavigate(s.name)}
+                      className="flex items-center gap-1.5 px-2 py-1 rounded bg-blue-500/10 border border-blue-500/30 text-[10px] font-bold text-blue-300 hover:bg-blue-500/20 transition-all"
+                    >
+                      <BookOpen size={10} />
+                      {s.name}
+                    </button>
+                  ))}
+                </div>
               </div>
             )}
           </div>
@@ -135,6 +186,16 @@ const SpellList = ({ spells }: SpellListProps) => {
       setSortOrder(type === 'level' ? 'asc' : 'asc');
     }
     setCurrentPage(1);
+  };
+
+  const handleNavigate = (name: string) => {
+    setActiveSearchTerm(name);
+    setSearchParams(prev => {
+      prev.set('search', name);
+      return prev;
+    });
+    setCurrentPage(1);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const filteredSpells = useMemo(() => {
@@ -261,7 +322,7 @@ const SpellList = ({ spells }: SpellListProps) => {
       {/* Main Content */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {paginatedSpells.map((spell, index) => (
-          <SpellCard key={`${spell.name}-${index}`} spell={spell} />
+          <SpellCard key={`${spell.name}-${index}`} spell={spell} onNavigate={handleNavigate} />
         ))}
       </div>
 

@@ -44,6 +44,8 @@ interface DataContextType {
     ingredientProfessionMap: Record<string, Set<string>>;
     itemMonsterMap: Record<string, Monster[]>;
     itemUsageMap: Record<string, RecipeItem[]>;
+    spellMap: Record<string, Spell>;
+    spellPrerequisiteMap: Record<string, Spell[]>;
     loading: boolean;
     error: string | null;
     // User Data & Persistence
@@ -166,12 +168,37 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
             ingredientProfessionMap: {},
             itemMonsterMap: {},
             itemUsageMap: {},
+            spellMap: {},
+            spellPrerequisiteMap: {},
             wikiData: []
         };
 
         const ingredientProfessionMap: Record<string, Set<string>> = {};
         const itemMonsterMap: Record<string, Monster[]> = {};
         const itemUsageMap: Record<string, RecipeItem[]> = {};
+        const spellMap: Record<string, Spell> = {};
+        const spellPrerequisiteMap: Record<string, Spell[]> = {};
+
+        // Index Spells
+        data.spells.forEach(spell => {
+            spellMap[fastNormalize(spell.name)] = spell;
+        });
+
+        // Build Spell Prerequisite Map (Inverse lookup)
+        data.spells.forEach(spell => {
+            if (spell.prerequisites) {
+                const normalizedPrereq = fastNormalize(spell.prerequisites);
+                // We check if any known spell name is contained in the prerequisite string
+                Object.keys(spellMap).forEach(knownSpellName => {
+                    if (normalizedPrereq.includes(knownSpellName)) {
+                        if (!spellPrerequisiteMap[knownSpellName]) {
+                            spellPrerequisiteMap[knownSpellName] = [];
+                        }
+                        spellPrerequisiteMap[knownSpellName].push(spell);
+                    }
+                });
+            }
+        });
 
         // Index Monsters by Drop
         data.bestiary.forEach(monster => {
@@ -259,7 +286,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
             }
         ];
 
-        return { ingredientProfessionMap, itemMonsterMap, itemUsageMap, wikiData };
+        return { ingredientProfessionMap, itemMonsterMap, itemUsageMap, spellMap, spellPrerequisiteMap, wikiData };
     }, [data, loading]);
 
     const value = {
