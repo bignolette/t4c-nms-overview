@@ -1,0 +1,1937 @@
+[
+  {
+    "name": "Lumière",
+    "prerequisites": "",
+    "level": 2,
+    "wis": 15,
+    "int": 18,
+    "price": "233",
+    "pc": 5,
+    "mana": "10",
+    "description": "Eclaire le lanceur pendant 10 minutes (LH temple)",
+    "npc": {
+      "Lighthaven": [
+        "Kilhiam"
+      ]
+    },
+    "type": "Lumière physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Dard de Feu",
+    "prerequisites": "",
+    "level": 2,
+    "wis": 15,
+    "int": 21,
+    "price": "532",
+    "pc": 5,
+    "mana": "1",
+    "description": "Premier sort de feu (Lh tour des mages)",
+    "npc": {
+      "Lighthaven": [
+        "Iraltok"
+      ]
+    },
+    "type": "Feu physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Guérison Légère",
+    "prerequisites": "",
+    "level": 3,
+    "wis": 19,
+    "int": 15,
+    "price": "897",
+    "pc": 9,
+    "mana": "2",
+    "description": "Premier sort de soin (LH temple)",
+    "npc": {
+      "Lighthaven": [
+        "Moonrock"
+      ]
+    },
+    "type": "Lumière mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Eclat de Pierre",
+    "prerequisites": "",
+    "level": 4,
+    "wis": 20,
+    "int": 17,
+    "price": "1328",
+    "pc": 6,
+    "mana": "2",
+    "description": "Premier sort de terre, très efficace sur les Gobelins (Lh tour des mages)",
+    "npc": {
+      "Lighthaven": [
+        "Uranos"
+      ]
+    },
+    "type": "Terre physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Antidote pour Poison",
+    "prerequisites": "",
+    "level": 5,
+    "wis": 17,
+    "int": 26,
+    "price": "1825",
+    "pc": 9,
+    "mana": "2",
+    "description": "Soigne la cible du poison. Attention il peut rater (LH temple)",
+    "npc": {
+      "Lighthaven": [
+        "Moonrock"
+      ]
+    },
+    "type": "Eau physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Tourbillon",
+    "prerequisites": "",
+    "level": 6,
+    "wis": 21,
+    "int": 21,
+    "price": "2388",
+    "pc": 7,
+    "mana": "2",
+    "description": "Premier sort d'air (LH temple-1)",
+    "npc": {
+      "Lighthaven": [
+        "Shovanis"
+      ]
+    },
+    "type": "Air mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Poison",
+    "prerequisites": "",
+    "level": 7,
+    "wis": 18,
+    "int": 30,
+    "price": "3017",
+    "pc": 7,
+    "mana": "2",
+    "description": "Empoisonne la cible. Le lanceur ne gagne ni or ni xp. (Lh tour des mages)",
+    "npc": {
+      "Lighthaven": [
+        "Lothan"
+      ]
+    },
+    "type": "Eau mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Protection",
+    "prerequisites": "",
+    "level": 8,
+    "wis": 25,
+    "int": 20,
+    "price": "3712",
+    "pc": 7,
+    "mana": "9",
+    "description": "Augmente durant 3 minutes la CA de la cible. (LH temple)",
+    "npc": {
+      "Lighthaven": [
+        "Moonrock"
+      ]
+    },
+    "type": "Terre physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Eclat de Glace",
+    "prerequisites": "",
+    "level": 9,
+    "wis": 19,
+    "int": 34,
+    "price": "4473",
+    "pc": 8,
+    "mana": "3",
+    "description": "1er sort d'eau d'attaque (Lh tour des mages)",
+    "npc": {
+      "Lighthaven": [
+        "Lothan"
+      ]
+    },
+    "type": "Eau physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Flèche enflammée",
+    "prerequisites": "dard de feu",
+    "level": 10,
+    "wis": 15,
+    "int": 44,
+    "price": "4473",
+    "pc": 8,
+    "mana": "3",
+    "description": "2ème sort de feu (Lh tour des mages)",
+    "npc": {
+      "Lighthaven": [
+        "Iraltok"
+      ]
+    },
+    "type": "Feu physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Absorption de Vie Mineure",
+    "prerequisites": "",
+    "level": 12,
+    "wis": 15,
+    "int": 50,
+    "price": "7152",
+    "pc": 13,
+    "mana": "3",
+    "description": "Retire la vie de la cible pour la donner au lanceur - Sort de Nécromancie - inefficace sur les morts-vivants (LH derrière temple)",
+    "npc": {
+      "Lighthaven": [
+        "Araknor"
+      ]
+    },
+    "type": "Arcane mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Guérison Importante",
+    "prerequisites": "guérison légère",
+    "level": 13,
+    "wis": 34,
+    "int": 16,
+    "price": "8177",
+    "pc": 14,
+    "mana": "4",
+    "description": "2ème sort de soins. Soigne la cible (LH temple)",
+    "npc": {
+      "Lighthaven": [
+        "Moonrock"
+      ]
+    },
+    "type": "Lumière mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Eclair",
+    "prerequisites": "tourbillon",
+    "level": 15,
+    "wis": 30,
+    "int": 30,
+    "price": "10425",
+    "pc": 10,
+    "mana": "4",
+    "description": "Très efficace contre les volants krakra... (AR druides)",
+    "npc": {
+      "Arakas": [
+        "Dunikus Cathbad"
+      ]
+    },
+    "type": "Air mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Flèche Empoisonnée",
+    "prerequisites": "poison",
+    "level": 17,
+    "wis": 23,
+    "int": 51,
+    "price": "12937",
+    "pc": 10,
+    "mana": "5",
+    "description": "Légèrement plus puissant que poison (Lh tour des mages)",
+    "npc": {
+      "Lighthaven": [
+        "Lothan"
+      ]
+    },
+    "type": "Eau physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Fracassement",
+    "prerequisites": "éclat de pierre",
+    "level": 18,
+    "wis": 37,
+    "int": 26,
+    "price": "14292",
+    "pc": 11,
+    "mana": "5",
+    "description": "Très performant sur les gobelins... (Lh tour des mages)",
+    "npc": {
+      "Lighthaven": [
+        "Uranos"
+      ]
+    },
+    "type": "Terre mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Repousser les Morts-Vivants",
+    "prerequisites": "",
+    "level": 19,
+    "wis": 43,
+    "int": 16,
+    "price": "15713",
+    "pc": 17,
+    "mana": "5",
+    "description": "Contre les Morts-Vivants seulement. Très dépendant de la sagesse. (RD temple)",
+    "npc": {
+      "Raven's Dust": [
+        "Frère Thorkas"
+      ]
+    },
+    "type": "Lumière mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Malédiction",
+    "prerequisites": "",
+    "level": 20,
+    "wis": 16,
+    "int": 74,
+    "price": "17200",
+    "pc": 17,
+    "mana": "5",
+    "description": "Réduit de 66% la puissance lumière pure de la cible. Durée 30 sec. (LH temple-1)",
+    "npc": {
+      "Lighthaven": [
+        "Shovanis"
+      ]
+    },
+    "type": "Arcane noir mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Gel",
+    "prerequisites": "éclat de glace",
+    "level": 20,
+    "wis": 24,
+    "int": 57,
+    "price": "17200",
+    "pc": 11,
+    "mana": "5",
+    "description": "Petit sort d'attaque (WH, tour des mages)",
+    "npc": {
+      "Windhowl": [
+        "Marsac Cred"
+      ]
+    },
+    "type": "Eau mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Barrière de Protection",
+    "prerequisites": "protection",
+    "level": 21,
+    "wis": 24,
+    "int": 59,
+    "price": "18753",
+    "pc": 12,
+    "mana": "10",
+    "description": "Augmente la CA (2x la CA de protection). Durée 2 mn (RD druides)",
+    "npc": {
+      "Raven's Dust": [
+        "Kederic Steriad"
+      ]
+    },
+    "type": "Eau physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Mot de Rappel",
+    "prerequisites": "",
+    "level": 21,
+    "wis": 36,
+    "int": 36,
+    "price": "18753",
+    "pc": 12,
+    "mana": "100",
+    "description": "Téléporte le lanceur à son sanctuaire. Impose une période de récupération après utilisation. Inutile sur NMS car remplacé par les gemmes de transfert. (LH ss-sol temple-1)",
+    "npc": {
+      "Lighthaven": [
+        "Shovanis"
+      ]
+    },
+    "type": "Air physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Eclair de Feu",
+    "prerequisites": "flèche enflammée",
+    "level": 22,
+    "wis": 16,
+    "int": 80,
+    "price": "20372",
+    "pc": 12,
+    "mana": "6",
+    "description": "3ème sort de feu (WH, tour des mages)",
+    "npc": {
+      "Windhowl": [
+        "Liurn Clar"
+      ]
+    },
+    "type": "Feu physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Absorption de vie",
+    "prerequisites": "absorption de vie mineure et être apprenti d'Araknor",
+    "level": 23,
+    "wis": 16,
+    "int": 83,
+    "price": "22057",
+    "pc": 19,
+    "mana": "6",
+    "description": "Evolution d'absorption de vie mineure, très lent (RD cave aveugle)",
+    "npc": {
+      "Raven's Dust": [
+        "Un aveugle"
+      ]
+    },
+    "type": "Arcane noir mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Force de la Terre",
+    "prerequisites": "",
+    "level": 23,
+    "wis": 43,
+    "int": 29,
+    "price": "22057",
+    "pc": 12,
+    "mana": "30",
+    "description": "Augmente la force de la cible. Permet de porter plus. Utile à tous. Durée 5 mn (RD temple)",
+    "npc": {
+      "Raven's Dust": [
+        "Frère Giamas"
+      ]
+    },
+    "type": "Terre physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Instinct de Combat Mineur",
+    "prerequisites": "",
+    "level": 24,
+    "wis": 31,
+    "int": 55,
+    "price": "23808",
+    "pc": 13,
+    "mana": "6",
+    "description": "+25% Esquive, +33% Attaque et Archerie pures de la cible. Durée 1 mn (RD, maison S-E du temple)",
+    "npc": {
+      "Raven's Dust": [
+        "Elysana Blackrose"
+      ]
+    },
+    "type": "Arcane physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Eclair de Glace",
+    "prerequisites": "éclat de glace",
+    "level": 25,
+    "wis": 26,
+    "int": 68,
+    "price": "25625",
+    "pc": 13,
+    "mana": "6",
+    "description": "Evolution d'éclat de glace (WH mages)",
+    "npc": {
+      "Windhowl": [
+        "Marsac Cred"
+      ]
+    },
+    "type": "Eau physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Invocation de la Foudre",
+    "prerequisites": "éclair",
+    "level": 26,
+    "wis": 41,
+    "int": 42,
+    "price": "27058",
+    "pc": 13,
+    "mana": "7",
+    "description": "Lance un éclair sur la cible, intéressant contre les volants (Arakas druides)",
+    "npc": {
+      "Arakas": [
+        "Dunikus Cathbad"
+      ]
+    },
+    "type": "Air mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Boule de Feu",
+    "prerequisites": "éclair de feu",
+    "level": 27,
+    "wis": 16,
+    "int": 94,
+    "price": "29457",
+    "pc": 14,
+    "mana": "7",
+    "description": "Incontournable sur RD pour les mages feu. Effet de zone important (WH, tour des mages)",
+    "npc": {
+      "Windhowl": [
+        "Liurn Clar"
+      ]
+    },
+    "type": "Feu physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Guérison critique",
+    "prerequisites": "guérison importante",
+    "level": 27,
+    "wis": 55,
+    "int": 17,
+    "price": "29457",
+    "pc": 21,
+    "mana": "7",
+    "description": "3ème sort de soin (AR Druides)",
+    "npc": {
+      "Arakas": [
+        "Yrian Holenarbed"
+      ]
+    },
+    "type": "Lumière mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Esprit Clair",
+    "prerequisites": "",
+    "level": 28,
+    "wis": 28,
+    "int": 74,
+    "price": "31472",
+    "pc": 14,
+    "mana": "21",
+    "description": "Augmente de +25% l'intelligence pure du lanceur. Durée 3 mn (RD druides)",
+    "npc": {
+      "Raven's Dust": [
+        "Kederic Steriad"
+      ]
+    },
+    "type": "Eau physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Bouclier de mana",
+    "prerequisites": "barrière de protection",
+    "level": 29,
+    "wis": 28,
+    "int": 76,
+    "price": "33553",
+    "pc": 14,
+    "mana": "14",
+    "description": "+33% sur toutes les résistances magiques de la cible sauf lumière. Durée 3 mn (RD forêt ouest)",
+    "npc": {
+      "Raven's Dust": [
+        "Etheanan"
+      ]
+    },
+    "type": "Eau physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Chaîne d'éclairs",
+    "prerequisites": "invocation de la foudre",
+    "level": 30,
+    "wis": 45,
+    "int": 46,
+    "price": "35700",
+    "pc": 15,
+    "mana": "7",
+    "description": "Agit sur toute une zone autour de la cible. Efficace contre les volants et les Drakes. (RD tour de sorcellerie)",
+    "npc": {
+      "Raven's Dust": [
+        "Zhakar"
+      ]
+    },
+    "type": "Air mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Enchevêtrement",
+    "prerequisites": "Modifié NMS: level et prérequis",
+    "level": 31,
+    "wis": 52,
+    "int": 34,
+    "price": "37319",
+    "pc": 15,
+    "mana": "10",
+    "description": "Paralyse parfois la cible un moment et réduit de 75% l'esquive. Influencé par puissance terre. (SH, village skraugs verts)",
+    "npc": {
+      "Stoneheim": [
+        "Weethgwotha"
+      ]
+    },
+    "type": "Terre physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Explosion de Mana",
+    "prerequisites": "",
+    "level": 32,
+    "wis": 39,
+    "int": 63,
+    "price": "40192",
+    "pc": 15,
+    "mana": "8",
+    "description": "Très rapide (2 coups par sec), Uniquement influencé par intelligence boostée (RD, maison S-E temple)",
+    "npc": {
+      "Raven's Dust": [
+        "Elysana Blackrose"
+      ]
+    },
+    "type": "Arcane mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Peste \n(être apprenti d'Araknor)\nModification NMS :\nle malus ne s'applique qu'aux PV purs (au lieu de l'ensemble des PV)",
+    "prerequisites": "",
+    "level": 33,
+    "wis": 16,
+    "int": 112,
+    "price": "42537",
+    "pc": 24,
+    "mana": "40",
+    "description": "NMS : Réduit de 25% les PV purs mais bonus (béné...) inchangés, et de 25% la puissance lumière pure de la cible. Inflige régulièrement des dégâts (jusqu'au nouveau max PV en PVP (PVP et gros mobs). Durée 5mn. (RD cave aveugle)",
+    "npc": {
+      "Raven's Dust": [
+        "Un aveugle"
+      ]
+    },
+    "type": "Arcane noir mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Détection de la dissimulation",
+    "prerequisites": "",
+    "level": 35,
+    "wis": 15,
+    "int": 118,
+    "price": "47425",
+    "pc": 16,
+    "mana": "90",
+    "description": "Permet de voir les personnes ayant utilisé \"se cacher\". Durée 10 mn. (RD château, 1er étage, coursive droite)",
+    "npc": {
+      "Raven's Dust": [
+        "Aloysius Starbolt"
+      ]
+    },
+    "type": "Feu physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Peau de Pierre",
+    "prerequisites": "protection",
+    "level": 37,
+    "wis": 59,
+    "int": 37,
+    "price": "52577",
+    "pc": 17,
+    "mana": "45",
+    "description": "Augmente la CA du lanceur (2X la CA de barrière). Durée 5 mn. (RD temple)",
+    "npc": {
+      "Raven's Dust": [
+        "Frère Giamas"
+      ]
+    },
+    "type": "Terre physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Tranquillité",
+    "prerequisites": "guérison critique",
+    "level": 38,
+    "wis": 71,
+    "int": 17,
+    "price": "55252",
+    "pc": 26,
+    "mana": "45",
+    "description": "+33% à la sagesse pure du lanceur. Durée 5 mn (RD temple)",
+    "npc": {
+      "Raven's Dust": [
+        "Frère Thorkas"
+      ]
+    },
+    "type": "Lumière physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Vague de Flamme",
+    "prerequisites": "boule de feu",
+    "level": 40,
+    "wis": 16,
+    "int": 133,
+    "price": "60800",
+    "pc": 18,
+    "mana": "10",
+    "description": "Attaque toutes les cibles proches de plusieurs BDF. (RD château, 1er étage, coursive droite )",
+    "npc": {
+      "Raven's Dust": [
+        "Aloysius Starbolt"
+      ]
+    },
+    "type": "Feu physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Vortex d'air",
+    "prerequisites": "chaîne d'éclairs",
+    "level": 40,
+    "wis": 55,
+    "int": 56,
+    "price": "60800",
+    "pc": 18,
+    "mana": "10",
+    "description": "Lance un éclair sur la cible. (RD tour)",
+    "npc": {
+      "Raven's Dust": [
+        "Zhakar"
+      ]
+    },
+    "type": "Air mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Absorption de Vie Majeure",
+    "prerequisites": "absorption de vie et être disciple d'Araknor",
+    "level": 41,
+    "wis": 16,
+    "int": 136,
+    "price": "63673",
+    "pc": 28,
+    "mana": "10",
+    "description": "Sort de nécro. Retire les PV de la cible pour les donner au lanceur. (RD cave de l'aveugle) Il faut avoir fait la quête du grimoire pour l'apprendre (quête Arakas)",
+    "npc": {
+      "Raven's Dust": [
+        "Un aveugle"
+      ]
+    },
+    "type": "Arcane noir mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Résistance au Feu",
+    "prerequisites": "bouclier de mana",
+    "level": 43,
+    "wis": 16,
+    "int": 141,
+    "price": "69617",
+    "pc": 19,
+    "mana": "10",
+    "description": "+100 de résistance feu au lanceur. Durée 1 mn. (RD druides)",
+    "npc": {
+      "Raven's Dust": [
+        "Celestina Avel"
+      ]
+    },
+    "type": "Eau physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Dextérité",
+    "prerequisites": "",
+    "level": 44,
+    "wis": 59,
+    "int": 60,
+    "price": "72688",
+    "pc": 19,
+    "mana": "11",
+    "description": "+50% à l'esquive pure et +25% à la dextérité pure du lanceur. Durée 1 mn (RD tour)",
+    "npc": {
+      "Raven's Dust": [
+        "Zhakar"
+      ]
+    },
+    "type": "Air physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Boule de Glace",
+    "prerequisites": "éclair de glace",
+    "level": 45,
+    "wis": 35,
+    "int": 110,
+    "price": "75825",
+    "pc": 20,
+    "mana": "11",
+    "description": "Sort skin gel à petit effet zone (RD druides)",
+    "npc": {
+      "Raven's Dust": [
+        "Celestina Avel"
+      ]
+    },
+    "type": "Eau physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Résistance à la glace",
+    "prerequisites": "bouclier de mana",
+    "level": 46,
+    "wis": 15,
+    "int": 150,
+    "price": "79028",
+    "pc": 20,
+    "mana": "11",
+    "description": "+100 de résistance à l'eau au lanceur. Durée 1 mn (RD château, 1er étage, coursive droite)",
+    "npc": {
+      "Raven's Dust": [
+        "Aloysius Starbolt"
+      ]
+    },
+    "type": "Feu physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Séisme",
+    "prerequisites": "fracassement",
+    "level": 47,
+    "wis": 71,
+    "int": 43,
+    "price": "82297",
+    "pc": 20,
+    "mana": "11",
+    "description": "Sort d'attaque à large effet zone sur les cibles alentour (RD temple)",
+    "npc": {
+      "Raven's Dust": [
+        "Frère Giamas"
+      ]
+    },
+    "type": "Terre physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Bouclier de Feu",
+    "prerequisites": "vague de flammes",
+    "level": 48,
+    "wis": 16,
+    "int": 156,
+    "price": "85632",
+    "pc": 22,
+    "mana": "22",
+    "description": "Renvoie une petite boule de feu à chaque attaque reçue. Durée 2 mn (RD forêt ouest lac Tata)",
+    "npc": {
+      "Raven's Dust": [
+        "Etheanan"
+      ]
+    },
+    "type": "Feu physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Bouclier d'électricité",
+    "prerequisites": "chaîne d'éclairs",
+    "level": 49,
+    "wis": 64,
+    "int": 65,
+    "price": "89033",
+    "pc": 31,
+    "mana": "24",
+    "description": "Renvoie un éclair à chaque attaque reçue. Durée 2 mn (RD forêt ouest)",
+    "npc": {
+      "Raven's Dust": [
+        "Etheanan"
+      ]
+    },
+    "type": "Air physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Détection de l'invisible",
+    "prerequisites": "",
+    "level": 50,
+    "wis": 16,
+    "int": 162,
+    "price": "92500",
+    "pc": 21,
+    "mana": "60",
+    "description": "Détection des objets, joueurs et PNJ invisibles. Durée 5mn (RD château, 1er étage, coursive droite)",
+    "npc": {
+      "Raven's Dust": [
+        "Aloysius Starbolt"
+      ]
+    },
+    "type": "Feu physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Sanctuaire \n(bouclier de mana, peau de pierre)\nSort modifié NMS !",
+    "prerequisites": "",
+    "level": 52,
+    "wis": 91,
+    "int": 18,
+    "price": "99632",
+    "pc": 33,
+    "mana": "120",
+    "description": "Protège pendant 1 minute des attaques PVM uniquement ! Pendant la minute suivante tous les sorts sont bloqués (RD château, 3ème étage)",
+    "npc": {
+      "Raven's Dust": [
+        "Evêque Crowbanner"
+      ]
+    },
+    "type": "Lumière physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Pluie d'étincelles",
+    "prerequisites": "vague de flammes",
+    "level": 53,
+    "wis": 17,
+    "int": 171,
+    "price": "103297",
+    "pc": 22,
+    "mana": "12",
+    "description": "Explosion de Feu. Très bon sort de zone. (RD forêt ouest)",
+    "npc": {
+      "Raven's Dust": [
+        "Etheanan"
+      ]
+    },
+    "type": "Feu physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Afflux de Mana",
+    "prerequisites": "modifié NMS !",
+    "level": 54,
+    "wis": 17,
+    "int": 174,
+    "price": "107028",
+    "pc": 23,
+    "mana": "39",
+    "description": "NMS :+30% dans toutes les puissances de la cible (T4C standard :+33% de puissance Lumière, Air, Glace, Terre, Feu et +25% de puissance Nécro à la cible. Durée 3 mn (RD forêt ouest) (voir aussi sorts NMS)",
+    "npc": {
+      "Raven's Dust": [
+        "Etheanan"
+      ]
+    },
+    "type": "Arcane physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Glacier",
+    "prerequisites": "boule de glace",
+    "level": 55,
+    "wis": 40,
+    "int": 130,
+    "price": "110825",
+    "pc": 23,
+    "mana": "13",
+    "description": "Dégâts d'eau sur la cible (RD forêt ouest)",
+    "npc": {
+      "Raven's Dust": [
+        "Etheanan"
+      ]
+    },
+    "type": "Eau physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Guérison",
+    "prerequisites": "guérison critique",
+    "level": 55,
+    "wis": 96,
+    "int": 18,
+    "price": "110825",
+    "pc": 23,
+    "mana": "13",
+    "description": "Dernier sort de soin individuel standard (RD château)",
+    "npc": {
+      "Raven's Dust": [
+        "Evêque Crowbanner"
+      ]
+    },
+    "type": "Lumière mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Dissipation de la Magie",
+    "prerequisites": "",
+    "level": 56,
+    "wis": 57,
+    "int": 99,
+    "price": "170913",
+    "pc": 28,
+    "mana": "13",
+    "description": "Annule les effets de 28 sorts : Malédiction-Courroux divin-Peste-Anathème céleste-Frayeur mentale-Folie-Boule de boue-Puanteur-Puces-Rage-Gangrène-Pourriture de cerveau-Lancer de pierres-Faiblesse-Doigts pourris-Vers de cerveau-Faiblesse de l'armure-Fuite de mana-Toucher glacé-Coquille anti-magie-Rongeur de mana-Fonte de l'armure-Explosion cérébrale-Boule de confusion-Charme-Fatigue-Voile de pestilence-Kandjar de destinée (SH, maison skraugs rouges)",
+    "npc": {
+      "Stoneheim": [
+        "Un homme à l'air intelligent (invisible)\nMaison aux skraugs rouges SH"
+      ]
+    },
+    "type": "Arcane physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Invisibilité",
+    "prerequisites": "",
+    "level": 58,
+    "wis": 72,
+    "int": 74,
+    "price": "122612",
+    "pc": 24,
+    "mana": "70",
+    "description": "Rend invisible la cible. Durée 5 mn (SH, maison skraugs rouges)",
+    "npc": {
+      "Stoneheim": [
+        "Un homme à l'air intelligent"
+      ]
+    },
+    "type": "Air physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Bénédiction",
+    "prerequisites": "",
+    "level": 59,
+    "wis": 102,
+    "int": 19,
+    "price": "126673",
+    "pc": 37,
+    "mana": "140",
+    "description": "Augmente les PV de la cible d'environ 1,2 fois la sagesse boostée. Durée 30 mn (SC temple)",
+    "npc": {
+      "Stonecrest": [
+        "Nissus Talandra"
+      ]
+    },
+    "type": "Lumière physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Flamme",
+    "prerequisites": "pluie d'étincelles",
+    "level": 60,
+    "wis": 17,
+    "int": 191,
+    "price": "130300",
+    "pc": 25,
+    "mana": "14",
+    "description": "Sort puissant, en particulier contre les Morts-Vivants. Très utile en PVP. (SH skraugs rouges)",
+    "npc": {
+      "Stoneheim": [
+        "Un homme à l'air intelligent (invisible) Maison aux skraugs rouges SH"
+      ]
+    },
+    "type": "Feu mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Guérison de groupe",
+    "prerequisites": "guérison",
+    "level": 63,
+    "wis": 108,
+    "int": 19,
+    "price": "143557",
+    "pc": 39,
+    "mana": "15",
+    "description": "Sort de Guérison du lanceur à effet de zone. Soigne les membres du groupe dans la zone. (SC temple)",
+    "npc": {
+      "Stonecrest": [
+        "Nissus Talandra"
+      ]
+    },
+    "type": "Lumière mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Tempête de glace",
+    "prerequisites": "glacier, gel",
+    "level": 65,
+    "wis": 44,
+    "int": 152,
+    "price": "152425",
+    "pc": 26,
+    "mana": "15",
+    "description": "Attaque de glace puissante mais lente. Effet de Zone (Ouest SC, le jour)",
+    "npc": {
+      "Stonecrest": [
+        "Mithanna Snowraven"
+      ]
+    },
+    "type": "Eau physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Instinct de combat majeur",
+    "prerequisites": "instinct de combat mineur",
+    "level": 66,
+    "wis": 64,
+    "int": 114,
+    "price": "156948",
+    "pc": 27,
+    "mana": "15",
+    "description": "+33% esquive, +50% attaque et archerie, +25% force. Durée 30 sec (SH skraugs rouges)",
+    "npc": {
+      "Stoneheim": [
+        "Un homme à l'air intelligent (invisible) Maison aux skraugs rouges SH"
+      ]
+    },
+    "type": "Arcane physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Eboulement",
+    "prerequisites": "séisme",
+    "level": 67,
+    "wis": 95,
+    "int": 55,
+    "price": "161537",
+    "pc": 27,
+    "mana": "16",
+    "description": "Indispensable aux prêtres sur SH. Très peu de monstres résistent à la Terre. Léger effet de zone (SH village skraugs verts)",
+    "npc": {
+      "Stoneheim": [
+        "Weethgwotha"
+      ]
+    },
+    "type": "Terre physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Vol d'âme",
+    "prerequisites": "absorption de vie majeure",
+    "level": 68,
+    "wis": 17,
+    "int": 215,
+    "price": "166192",
+    "pc": 41,
+    "mana": "16",
+    "description": "Drain de vie. Meilleur sort de nécro du jeu (SH château de Mordenthal)",
+    "npc": {
+      "Stoneheim": [
+        "Sir Mordenthal"
+      ]
+    },
+    "type": "Arcane noir mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Révélation",
+    "prerequisites": "",
+    "level": 69,
+    "wis": 98,
+    "int": 56,
+    "price": "170913",
+    "pc": 28,
+    "mana": "80",
+    "description": "Détecte ce qui est caché et invisible : monstres, objets et joueurs. Durée 5 mn (SH village skraugs verts)",
+    "npc": {
+      "Stoneheim": [
+        "Weethgwotha"
+      ]
+    },
+    "type": "Terre physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Vortex vers les Cercles",
+    "prerequisites": "mot de rappel",
+    "level": 70,
+    "wis": 84,
+    "int": 86,
+    "price": "175700",
+    "pc": 5,
+    "mana": "100",
+    "description": "Téléporte le lanceur à un des cercles de pierre. Le sort ne blesse pas le lanceur si il est utilisé dans une zone protégée. Ailleurs, les PV descendent de 95%. Utilise 100% de mana ! (SH Forêt des gremlins)",
+    "npc": {
+      "Stoneheim": [
+        "Un vieillard en bonne santé (Forêt des gremlins)"
+      ]
+    },
+    "type": "Air physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Blizzard",
+    "prerequisites": "tempête de glace",
+    "level": 74,
+    "wis": 48,
+    "int": 170,
+    "price": "195508",
+    "pc": 29,
+    "mana": "17",
+    "description": "Sort destructeur. Utile contre tous types de monstres. Effet de Zone Maison SO temple SC",
+    "npc": {
+      "Stonecrest": [
+        "Mithanna Snowraven"
+      ]
+    },
+    "type": "Eau mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Aura de Guérison",
+    "prerequisites": "guérison de groupe",
+    "level": 75,
+    "wis": 125,
+    "int": 20,
+    "price": "200625",
+    "pc": 45,
+    "mana": "17",
+    "description": "Evolution de Guérison de groupe (effet de zone sur le Groupe). (SC temple)",
+    "npc": {
+      "Stonecrest": [
+        "Nissus Talandra"
+      ]
+    },
+    "type": "Lumière mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Tempête de Feu",
+    "prerequisites": "flamme",
+    "level": 76,
+    "wis": 17,
+    "int": 238,
+    "price": "205808",
+    "pc": 30,
+    "mana": "18",
+    "description": "Sort de feu jetant des flammes sur tout ce qui bouge. Très bon sort de feu pour tuer en masse. (RD bibliothèque)",
+    "npc": {
+      "Raven's Dust": [
+        "Filandrius"
+      ]
+    },
+    "type": "Feu physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Tornade",
+    "prerequisites": "vortex d'air",
+    "level": 79,
+    "wis": 93,
+    "int": 96,
+    "price": "221753",
+    "pc": 31,
+    "mana": "18",
+    "description": "Enveloppe la cible. Large effet de zone. Puissant mais lent. (RD bibliothèque)",
+    "npc": {
+      "Raven's Dust": [
+        "Filandrius"
+      ]
+    },
+    "type": "Air physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Avalanche",
+    "prerequisites": "blizzard",
+    "level": 82,
+    "wis": 52,
+    "int": 187,
+    "price": "238292",
+    "pc": 32,
+    "mana": "19",
+    "description": "Lance avalanche de neige et de glace sur la cible. Effet de zone. (RD bibliothèque)",
+    "npc": {
+      "Raven's Dust": [
+        "Filandrius"
+      ]
+    },
+    "type": "Eau physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Inferno",
+    "prerequisites": "flamme",
+    "level": 83,
+    "wis": 17,
+    "int": 259,
+    "price": "249648",
+    "pc": 32,
+    "mana": "19",
+    "description": "Recouvre la cible de feu (RD bibliothèque)",
+    "npc": {
+      "Raven's Dust": [
+        "Filandrius"
+      ]
+    },
+    "type": "Feu mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Bouclier de Glace",
+    "prerequisites": "",
+    "level": 84,
+    "wis": 53,
+    "int": 191,
+    "price": "249648",
+    "pc": 33,
+    "mana": "100",
+    "description": "Bouclier offensif qui contre-attaque chaque coup par un nuage de glace. Durée 2 mn. (RD bibliothèque)",
+    "npc": {
+      "Raven's Dust": [
+        "Filandrius"
+      ]
+    },
+    "type": "Eau physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Ouragan",
+    "prerequisites": "tornade",
+    "level": 88,
+    "wis": 102,
+    "int": 105,
+    "price": "273152",
+    "pc": 34,
+    "mana": "20",
+    "description": "Attaque la cible de violentes tornades. Effet de zone. (RD bibliothèque)",
+    "npc": {
+      "Raven's Dust": [
+        "Filandrius"
+      ]
+    },
+    "type": "Air physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Portail",
+    "prerequisites": "vortex vers les cercles",
+    "level": 92,
+    "wis": 106,
+    "int": 109,
+    "price": "297712",
+    "pc": 10,
+    "mana": "0",
+    "description": "Invoque un portail pouvant téléporter le lanceur et ceux qui suivent. (RD bibliothèque)",
+    "npc": {
+      "Raven's Dust": [
+        "Filandrius"
+      ]
+    },
+    "type": "Arcane physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Tsunami",
+    "prerequisites": "avalanche",
+    "level": 96,
+    "wis": 58,
+    "int": 217,
+    "price": "323328",
+    "pc": 37,
+    "mana": "22",
+    "description": "Meilleur sort d'eau en PVP. (RD bibliothèque)",
+    "npc": {
+      "Raven's Dust": [
+        "Filandrius"
+      ]
+    },
+    "type": "Eau mental",
+    "source": "Standard"
+  },
+  {
+    "name": "Météorite",
+    "prerequisites": "tempête de feu, inferno",
+    "level": 100,
+    "wis": 18,
+    "int": 309,
+    "price": "350000",
+    "pc": 38,
+    "mana": "23",
+    "description": "Une météorite s'abat sur la cible (RD bibliothèque)",
+    "npc": {
+      "Raven's Dust": [
+        "Filandrius"
+      ]
+    },
+    "type": "Feu Physique",
+    "source": "Standard"
+  },
+  {
+    "name": "Cri de guerre",
+    "level": 15,
+    "int": 800,
+    "wis": 20,
+    "mana": "20",
+    "price": "360",
+    "description": "Augmente l'attaque de 1000, CAss de 30, CP de 25, TA de 35, Force de 400-500 +20% de la force du lanceur. Diminue la CA de 200, les résist air eau feu et nécro de 100, l'esquive de 1500 et Parade de 50.Dissipe les sorts Enchevêtrement et Racines Vénéneuses.Durée : 7 secondes.Le sort ne peut être lancé qu'une fois par minute, seulement sur soi-même et n'est pas cumulable avec \"Cri de Puissance\".",
+    "npc": {
+      "Drake Island": [
+        "Un puissant guerrier, Est du désert de DI"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Résistance à l'air",
+    "level": 48,
+    "int": 156,
+    "wis": 16,
+    "mana": "22",
+    "price": "89.115",
+    "description": "Sort de Terre - Augmente la résistance à l'air du lanceur.Durée 1 minutes",
+    "npc": {
+      "Raven's Dust": [
+        "Kalezit, renfoncement montagneux \nau sud de l'entrée du territoire des railleuses de RD (640, 2315, 0)"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Absolution",
+    "level": 52,
+    "int": 140,
+    "wis": 15,
+    "mana": "217",
+    "price": "18",
+    "description": "Dissipe les malédictions (effluves et émanations) lancées par un Chevalier de la Damnation.",
+    "npc": {
+      "Stonecrest": [
+        "Luvinael, sous sol du temple de Stonecrest"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Afflux de mana",
+    "level": 54,
+    "int": 174,
+    "wis": 17,
+    "mana": "39",
+    "price": "107.028",
+    "description": "",
+    "npc": {
+      "Raven's Dust": [
+        "Etheanan (Une maison au nord-ouest du lac des tarentules, RD)"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Déflagration de mana",
+    "level": 58,
+    "int": 102,
+    "wis": 56,
+    "mana": "14",
+    "price": "122.612",
+    "description": "",
+    "npc": {
+      "Stoneheim": [
+        "Tito, Château de Mordhental"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Bénédiction de groupe",
+    "level": 59,
+    "int": 19,
+    "wis": 102,
+    "mana": "450",
+    "price": "600.000",
+    "description": "",
+    "npc": {
+      "Redwall": [
+        "Gakalia, une maison dans Redwall"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Coup de vent",
+    "level": 70,
+    "int": 86,
+    "wis": 84,
+    "mana": "16",
+    "price": "175.700",
+    "description": "Sort d'Air (mental) - Envoie un éclair sur la cible.",
+    "npc": {
+      "Stoneheim": [
+        "Caprice, maison aux loups de SH"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Vortex vers Niève",
+    "level": 70,
+    "int": 86,
+    "wis": 84,
+    "mana": "100%",
+    "price": "175.700",
+    "description": "sort d'air - Téléporte le lanceur après 10 secondes vers Niève. Inflige des dégâts mentaux retirant presque tous les points de vie du lanceur.",
+    "npc": {
+      "Raven's Dust": [
+        "Kalezit, renfoncement montagneux \nau sud de l'entrée du territoire des railleuses de RD (640, 2315, 0)"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Vortex vers Drake Island",
+    "level": 70,
+    "int": 86,
+    "wis": 84,
+    "mana": "100%",
+    "price": "175.700",
+    "description": "sort d'air - Téléporte le lanceur après 10 secondes vers Drake Island.",
+    "npc": {
+      "Raven's Dust": [
+        "Kalezit, renfoncement montagneux \nau sud de l'entrée du territoire des railleuses de RD (640, 2315, 0)"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Enchevêtrement",
+    "level": 71,
+    "int": 59,
+    "wis": 452,
+    "mana": "10",
+    "price": "37.913",
+    "description": "Inflige un malus de 75% en esquive et immobilise la cible un instant.Durée : variable selon la force de la cible. La réussite du sort dépend de la puissance terre du lanceur et de la résistance terre de la cible.Le sort \"verglas\" a le même effet pour les mages. La compétence \"immobilisation\" a un effet analogue pour les guerriers/archers.",
+    "npc": {
+      "Stoneheim": [
+        "Shaman Weethgwotha, village skraugs verts de SH"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Implosion",
+    "level": 72,
+    "int": 58,
+    "wis": 101,
+    "mana": "17",
+    "price": "180.553",
+    "description": "",
+    "npc": {
+      "Redwall": [
+        "Xaria, une maison dans Redwall"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Lucioles",
+    "level": 78,
+    "int": 34,
+    "wis": 102,
+    "mana": "22",
+    "price": "368.000",
+    "description": "",
+    "npc": {
+      "Redwall": [
+        "Gakalia, une maison dans Redwall"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Lumière divine",
+    "level": 90,
+    "int": 77,
+    "wis": 140,
+    "mana": "160",
+    "price": "576.000",
+    "description": "Sort de Lumière - Combine les sorts Lumière et Révélation",
+    "npc": {
+      "Redwall": [
+        "Gakalia, une maison dans Redwall"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Frayeur mentale",
+    "level": 92,
+    "int": 503,
+    "wis": 84,
+    "mana": "42",
+    "price": "297.712",
+    "description": "",
+    "npc": {
+      "Redwall": [
+        "Squirrel, Ouest du sous-sol métiers Redwall"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Portail vers Niève",
+    "level": 92,
+    "int": 109,
+    "wis": 106,
+    "mana": "100%",
+    "price": "297.712",
+    "description": "",
+    "npc": {
+      "Redwall": [
+        "Squirrel, Ouest du sous-sol métiers Redwall"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Portail vers Drake Island",
+    "level": 92,
+    "int": 109,
+    "wis": 106,
+    "mana": "100%",
+    "price": "297.712",
+    "description": "",
+    "npc": {
+      "Redwall": [
+        "Squirrel, Ouest du sous-sol métiers Redwall"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Soin divin",
+    "level": 93,
+    "int": 20,
+    "wis": 463,
+    "mana": "19",
+    "price": "243.937",
+    "description": "Sort de Lumière - Régénère les points de vie de la cible",
+    "npc": {
+      "Redwall": [
+        "Gakalia, une maison dans Redwall"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Brûlure funeste",
+    "level": 93,
+    "int": 288,
+    "wis": 18,
+    "mana": "21",
+    "price": "249.648",
+    "description": "Sort de Nécromancie",
+    "npc": {
+      "Redwall": [
+        "Squirrel, Ouest du sous-sol métiers Redwall"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Chute de pierres",
+    "level": 95,
+    "int": 72,
+    "wis": 129,
+    "mana": "22",
+    "price": "316.825",
+    "description": "",
+    "npc": {
+      "Stoneheim": [
+        "Shaman Hatan, Maison dans la cave des Skraugs Verts\n(entrée 1237, 553, 0)"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Flèches étincelantes",
+    "level": 98,
+    "int": 35,
+    "wis": 35,
+    "mana": "35",
+    "price": "415.000",
+    "description": "Augmente votre dextérité de +10%,",
+    "npc": {
+      "Redwall": [
+        "Gakalia, une maison dans Redwall"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Racines vénéneuses",
+    "level": 99,
+    "int": 84,
+    "wis": 526,
+    "mana": "27",
+    "price": "799.000",
+    "description": "Sort de Terre",
+    "npc": {
+      "Redwall": [
+        "Xaria, une maison dans Redwall"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Cri de puissance",
+    "level": 0,
+    "int": 0,
+    "wis": 0,
+    "mana": "",
+    "price": "",
+    "description": "Augmente l'attaque de 1000, CAss CP et TA de 10, la résistance terre de 200, la force de 200/250 plus 10% de la force du lanceur.Diminue la CA de 200, les résistances eau feu air nécro de 100, l'esquive de 1500 et Parade de 50.Dissipe les sorts Enchevêtrement et racines vénéneuses.Durée 7 secondes.",
+    "npc": {
+      "Drake Island": [
+        "Oscoor Kayle, maison au Nord-Ouest de DI, (754,1143,3)"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Inondation",
+    "level": 104,
+    "int": 233,
+    "wis": 62,
+    "mana": "24",
+    "price": "377.728",
+    "description": "",
+    "npc": {
+      "Drake Island": [
+        "Cassandre, ilot à l'Est-Nord-Est de DI"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Peau d'écorce",
+    "level": 108,
+    "int": 80,
+    "wis": 145,
+    "mana": "63",
+    "price": "406.512",
+    "description": "Sort de Terre",
+    "npc": {
+      "Stoneheim": [
+        "Harung Batkist (rez-de-chaussée de la Grande Bibliothèque)"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Peau d'écorce de groupe",
+    "level": 108,
+    "int": 80,
+    "wis": 145,
+    "mana": "200",
+    "price": "600.000",
+    "description": "Sort de Terre",
+    "npc": {
+      "Redwall": [
+        "Xaria, ville de Redwall"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Barrage",
+    "level": 121,
+    "int": 269,
+    "wis": 69,
+    "mana": "27",
+    "price": "507.353",
+    "description": "Sort d'Eau",
+    "npc": {
+      "Redwall": [
+        "Cassandre, ilot à l'est de Redwall"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Barrage de groupe",
+    "level": 121,
+    "int": 269,
+    "wis": 69,
+    "mana": "200",
+    "price": "600.000",
+    "description": "Sort d'Eau",
+    "npc": {
+      "Redwall": [
+        "Cassandre, ilot à l'est de Redwall (983,1298,3)"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Force ancestrale",
+    "level": 123,
+    "int": 89,
+    "wis": 163,
+    "mana": "70",
+    "price": "523.857",
+    "description": "Sort de Terre",
+    "npc": {
+      "Redwall": [
+        "Xaria, ville de Redwall"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Force ancestrale de groupe",
+    "level": 123,
+    "int": 89,
+    "wis": 163,
+    "mana": "250",
+    "price": "523.857",
+    "description": "Sort de Terre",
+    "npc": {
+      "Redwall": [
+        "Xaria, ville de Redwall"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Foudroiement",
+    "level": 126,
+    "int": 201,
+    "wis": 203,
+    "mana": "29",
+    "price": "549.108",
+    "description": "Sort d'Air mental",
+    "npc": {
+      "Raven's Dust": [
+        "Kalezit, renfoncement montagneux au sud de l'entrée du territoire des railleuses de RD (640, 2315, 0)"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Volcano",
+    "level": 126,
+    "int": 385,
+    "wis": 19,
+    "mana": "29",
+    "price": "549.108",
+    "description": "Sort de feu mental",
+    "npc": {
+      "Redwall": [
+        "Déziel, sous-sol des métiers Redwall"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Esprit limpide",
+    "level": 128,
+    "int": 284,
+    "wis": 73,
+    "mana": "29",
+    "price": "566.272",
+    "description": "Evolution d'Esprit clair",
+    "npc": {
+      "Redwall": [
+        "Cassandre, ilot à l'est de Redwall"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Bouclier d'essence magique",
+    "level": 129,
+    "int": 286,
+    "wis": 73,
+    "mana": "29",
+    "price": "574.953",
+    "description": "Sort d'eau",
+    "npc": {
+      "Redwall": [
+        "Cassandre, ilot à l'est de Redwall"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Bouclier d'essence magique de groupe",
+    "level": 129,
+    "int": 286,
+    "wis": 73,
+    "mana": "200",
+    "price": "600.000",
+    "description": "Sort d'eau",
+    "npc": {
+      "Redwall": [
+        "Cassandre, ilot à l'est de Redwall"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Sérénité",
+    "level": 138,
+    "int": 23,
+    "wis": 218,
+    "mana": "78",
+    "price": "656.052",
+    "description": "",
+    "npc": {
+      "Redwall": [
+        "Gakalia, une maison dans Redwall"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Peau de granit",
+    "level": 139,
+    "int": 98,
+    "wis": 182,
+    "mana": "78",
+    "price": "665.393",
+    "description": "",
+    "npc": {
+      "Redwall": [
+        "Xaria, maison dans Redwall"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Afflux de puissance",
+    "level": 154,
+    "int": 468,
+    "wis": 20,
+    "mana": "35",
+    "price": "813.428",
+    "description": "",
+    "npc": {
+      "Redwall": [
+        "Squirrel, sous-sol des métiers Redwall"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Afflux de puissance de groupe",
+    "level": 154,
+    "int": 468,
+    "wis": 20,
+    "mana": "250",
+    "price": "600.000",
+    "description": "Augmente les puissances air terre eau feu et lumière",
+    "npc": {
+      "Redwall": [
+        "Squirrel, sous-sol des métiers Redwall"
+      ]
+    },
+    "source": "NMS"
+  },
+  {
+    "name": "Zombification",
+    "level": 164,
+    "int": 497,
+    "wis": 20,
+    "mana": "37",
+    "price": "920.368",
+    "description": "Sort de Nécromancie+10% de puissance en nécromancie. +50 en résistance à la nécromancie.-20 en résistance au feu. -5 en résistance à l'eau.",
+    "npc": {
+      "Redwall": [
+        "Squirrel, Ouest du sous-sol métiers Redwall"
+      ]
+    },
+    "source": "NMS"
+  }
+]
