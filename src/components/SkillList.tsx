@@ -1,10 +1,13 @@
 import { useState, useMemo, memo, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useData } from '../context/DataContext';
 import { fastNormalize } from '../data/utils';
 import type { Skill } from '../data/types';
-import { Sword, BookOpen, User, Coins, Filter, AlertCircle, RotateCcw, Target, Shield, Info, MapPin, ArrowUpDown } from 'lucide-react';
+import { 
+  Sword, BookOpen, User, Coins, Filter, AlertCircle, RotateCcw, 
+  Target, Shield, Info, MapPin, ArrowUpDown, Zap, Hand
+} from 'lucide-react';
 import Pagination from './shared/Pagination';
 
 interface SkillListProps {
@@ -23,6 +26,10 @@ const SkillCard = memo(({ skill }: { skill: Skill }) => {
     return skill.requirements.replace(/Niv\s*\d+,?\s*/i, '').trim();
   }, [skill.requirements]);
 
+  const isPassive = useMemo(() => {
+    return skill.description.toLowerCase().includes('passive');
+  }, [skill.description]);
+
   return (
     <motion.div 
       layout
@@ -37,16 +44,16 @@ const SkillCard = memo(({ skill }: { skill: Skill }) => {
               <span className="px-2 py-0.5 rounded bg-amber-500 text-slate-950 text-[10px] font-black uppercase tracking-tighter shadow-lg shadow-amber-500/20">
                 Niveau {extractedLevel || '1'}
               </span>
-              <span className="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-[10px] font-black uppercase tracking-tighter shrink-0">
-                {skill.maxTraining}
+              <span className={`px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-tighter shrink-0 border ${isPassive ? 'bg-blue-500/10 text-blue-400 border-blue-500/30' : 'bg-rose-500/10 text-rose-400 border-rose-500/30'}`}>
+                {isPassive ? 'Passive' : 'Active'}
               </span>
             </div>
             <h3 className="text-xl font-black group-hover:text-emerald-400 transition-colors leading-tight italic tracking-tight truncate text-slate-100">
               {skill.name}
             </h3>
           </div>
-          <div className="p-2 bg-emerald-500/10 rounded-lg text-emerald-500">
-            <Target size={18} />
+          <div className={`p-2 rounded-lg ${isPassive ? 'bg-blue-500/10 text-blue-500' : 'bg-rose-500/10 text-rose-500'}`}>
+            {isPassive ? <Shield size={18} /> : <Zap size={18} />}
           </div>
         </div>
         
@@ -99,6 +106,7 @@ const SkillList = ({ skills }: SkillListProps) => {
   const urlSearch = searchParams.get('search') || '';
 
   const [selectedZone, setSelectedZone] = useState<string>('Toutes');
+  const [selectedType, setSelectedType] = useState<'Tous' | 'Active' | 'Passive'>('Tous');
   const [sortBy, setSortBy] = useState<'name' | 'zone'>('name');
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc');
   const [activeSearchTerm, setActiveSearchTerm] = useState<string>(urlSearch);
@@ -121,6 +129,7 @@ const SkillList = ({ skills }: SkillListProps) => {
   const handleReset = () => {
     setActiveSearchTerm('');
     setSelectedZone('Toutes');
+    setSelectedType('Tous');
     setSortBy('name');
     setSortOrder('asc');
     setCurrentPage(1);
@@ -145,7 +154,11 @@ const SkillList = ({ skills }: SkillListProps) => {
         fastNormalize(s.name).includes(query) || 
         fastNormalize(s.description).includes(query);
       const matchesZone = selectedZone === 'Toutes' || Object.keys(s.trainingTeachers).includes(selectedZone);
-      return matchesSearch && matchesZone;
+      
+      const isP = s.description.toLowerCase().includes('passive');
+      const matchesType = selectedType === 'Tous' || (selectedType === 'Passive' && isP) || (selectedType === 'Active' && !isP);
+      
+      return matchesSearch && matchesZone && matchesType;
     });
 
     result.sort((a, b) => {
@@ -163,7 +176,7 @@ const SkillList = ({ skills }: SkillListProps) => {
     });
 
     return result;
-  }, [skills, selectedZone, sortBy, sortOrder, activeSearchTerm]);
+  }, [skills, selectedZone, selectedType, sortBy, sortOrder, activeSearchTerm]);
 
   const paginatedSkills = useMemo(() => {
     return filteredSkills.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
@@ -174,8 +187,10 @@ const SkillList = ({ skills }: SkillListProps) => {
   return (
     <div className="space-y-8">
       {/* Controls Header */}
-      <div className="flex flex-col gap-6 bg-slate-800/30 p-6 rounded-2xl border border-slate-700/50">
-        <div className="flex flex-col md:flex-row gap-4 items-center">
+      <div className="flex flex-col gap-6 bg-slate-800/30 p-6 rounded-2xl border border-slate-700/50 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/5 blur-3xl rounded-full -mr-32 -mt-32 pointer-events-none"></div>
+        
+        <div className="flex flex-col md:flex-row gap-4 relative z-10">
           <div className="flex-1 w-full flex gap-2">
             <button onClick={handleReset} className="btn-danger w-full md:w-auto">
               <RotateCcw size={16} /> Réinitialiser
@@ -195,25 +210,47 @@ const SkillList = ({ skills }: SkillListProps) => {
           </div>
         </div>
 
-        <div className="space-y-4">
-          <div className="flex items-center gap-2 text-slate-500">
-            <MapPin size={16} className="text-amber-500/50" />
-            <span className="text-[10px] font-black uppercase tracking-[0.2em]">Zones Géographiques</span>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 relative z-10">
+          <div className="space-y-4">
+            <div className="flex items-center gap-2 text-slate-500">
+              <Filter size={16} className="text-emerald-500/50" />
+              <span className="text-[10px] font-black uppercase tracking-[0.2em]">Type</span>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {['Tous', 'Active', 'Passive'].map(type => (
+                <button
+                  key={type}
+                  onClick={() => { setSelectedType(type as any); setCurrentPage(1); }}
+                  className={`px-5 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all border 
+                    ${selectedType === type 
+                      ? 'bg-emerald-600 border-emerald-500 text-white shadow-lg scale-105 z-10' 
+                      : 'bg-slate-900 border-slate-800 text-slate-500 hover:text-slate-200 hover:border-slate-600'}`}
+                >
+                  {type}
+                </button>
+              ))}
+            </div>
           </div>
-          <div className="flex flex-wrap gap-2">
-            {allZones.map(zone => (
-              <button
-                key={zone}
-                onClick={() => { setSelectedZone(zone); setCurrentPage(1); }}
-                className={`px-4 py-2.5 rounded-xl text-[10px] font-black uppercase tracking-wider transition-all border ${selectedZone === zone ? 'bg-amber-500 border-amber-400 text-slate-950 shadow-xl shadow-amber-500/10 scale-105 z-10' : 'bg-slate-900 border-slate-800 text-slate-500 hover:text-slate-200 hover:border-slate-600'}`}
+
+          <div className="space-y-4">
+            <div className="flex items-center gap-2 text-slate-500">
+              <MapPin size={16} className="text-amber-500/50" />
+              <span className="text-[10px] font-black uppercase tracking-[0.2em]">Zones</span>
+            </div>
+            <div className="relative flex-1 md:max-w-[200px]">
+              <select 
+                value={selectedZone}
+                onChange={(e) => { setSelectedZone(e.target.value); setCurrentPage(1); }}
+                className="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-2.5 text-xs font-bold text-slate-300 focus:border-amber-500 outline-none appearance-none"
               >
-                {zone}
-              </button>
-            ))}
+                {allZones.map(z => <option key={z} value={z}>{z}</option>)}
+              </select>
+              <MapPin size={14} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-600 pointer-events-none" />
+            </div>
           </div>
         </div>
 
-        <div className="flex flex-wrap gap-3 pt-6 border-t border-slate-800/50">
+        <div className="flex flex-wrap gap-3 pt-6 border-t border-slate-800/50 relative z-10">
           <span className="text-[10px] font-black text-slate-600 uppercase tracking-widest self-center mr-2">Trier par :</span>
           <button 
             onClick={() => toggleSort('name')} 
@@ -232,9 +269,11 @@ const SkillList = ({ skills }: SkillListProps) => {
 
       {/* Main Content */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {paginatedSkills.map((skill, index) => (
-          <SkillCard key={`${skill.name}-${index}`} skill={skill} />
-        ))}
+        <AnimatePresence mode="popLayout">
+          {paginatedSkills.map((skill, index) => (
+            <SkillCard key={`${skill.name}-${index}`} skill={skill} />
+          ))}
+        </AnimatePresence>
       </div>
 
       <Pagination 

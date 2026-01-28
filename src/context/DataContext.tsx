@@ -48,7 +48,7 @@ interface DataContextType {
     spellPrerequisiteMap: Record<string, Spell[]>;
     loading: boolean;
     error: string | null;
-    // User Data & Persistence
+    // ...
     savedCharacters: SavedCharacter[];
     setSavedCharacters: React.Dispatch<React.SetStateAction<SavedCharacter[]>>;
     craftingProjects: CraftingProject[];
@@ -295,7 +295,12 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         recipesData: data.recipes,
         spellsData: data.spells,
         skillsData: data.skills,
-        ...maps,
+        ingredientProfessionMap: maps.ingredientProfessionMap,
+        itemMonsterMap: maps.itemMonsterMap,
+        itemUsageMap: maps.itemUsageMap,
+        spellMap: maps.spellMap,
+        spellPrerequisiteMap: maps.spellPrerequisiteMap,
+        wikiData: maps.wikiData,
         loading,
         error,
         savedCharacters,

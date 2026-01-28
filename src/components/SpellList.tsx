@@ -14,7 +14,7 @@ interface SpellListProps {
 const DEFAULT_ITEMS_PER_PAGE = 24;
 
 const SpellCard = memo(({ spell, onNavigate }: { spell: Spell, onNavigate: (name: string) => void }) => {
-  const { spellMap, spellPrerequisiteMap } = useData();
+  const { spellMap = {}, spellPrerequisiteMap = {} } = useData();
   
   const linkedPrerequisites = useMemo(() => {
     if (!spell.prerequisites) return [];
@@ -23,7 +23,7 @@ const SpellCard = memo(({ spell, onNavigate }: { spell: Spell, onNavigate: (name
   }, [spell.prerequisites, spellMap]);
 
   const usedAsPrerequisiteFor = useMemo(() => {
-    return spellPrerequisiteMap[fastNormalize(spell.name)] || [];
+    return (spellPrerequisiteMap[fastNormalize(spell.name)]) || [];
   }, [spell.name, spellPrerequisiteMap]);
 
   return (
