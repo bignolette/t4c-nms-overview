@@ -5,12 +5,13 @@ import { useData } from '../context/DataContext';
 import { fastNormalize } from '../data/utils';
 import type { Monster } from '../data/types';
 import { MapPin, Coins, Skull, Filter, AlertCircle, ExternalLink, RotateCcw, ChevronLeft, ChevronRight, Hammer } from 'lucide-react';
+import Pagination from './shared/Pagination';
 
 interface BestiaryProps {
   monsters: Monster[];
 }
 
-const ITEMS_PER_PAGE = 12;
+const DEFAULT_ITEMS_PER_PAGE = 36;
 
 /**
  * Optimized Drop Component to prevent re-renders
@@ -151,6 +152,7 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
   const [selectedZone, setSelectedZone] = useState<string>('Toutes');
   const [activeSearchTerm, setActiveSearchTerm] = useState<string>(urlSearch);
   const [currentPage, setCurrentPage] = useState(1);
+  const [itemsPerPage, setItemsPerPage] = useState(DEFAULT_ITEMS_PER_PAGE);
 
   // Sync with URL search parameters
   useEffect(() => {
@@ -174,6 +176,7 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
     setActiveSearchTerm('');
     setSelectedZone('Toutes');
     setCurrentPage(1);
+    setItemsPerPage(DEFAULT_ITEMS_PER_PAGE);
     setSearchParams(new URLSearchParams());
   };
 
@@ -207,15 +210,12 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
   }, [filteredMonsters, selectedZone]);
 
   // 3. Pagination calculation
-  // Since we group by zone, pagination is a bit tricky. 
-  // For better performance, we'll only paginate the "Toutes" view or very large search results.
-  // But let's keep it simple: if filtered list > 50, we paginate the entire view.
-  const isPaginating = filteredMonsters.length > 50;
+  const isPaginating = filteredMonsters.length > itemsPerPage || itemsPerPage !== DEFAULT_ITEMS_PER_PAGE;
   const paginatedMonsters = isPaginating 
-    ? filteredMonsters.slice((currentPage - 1) * ITEMS_PER_PAGE * 3, currentPage * ITEMS_PER_PAGE * 3)
+    ? filteredMonsters.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage)
     : filteredMonsters;
 
-  const totalPages = Math.ceil(filteredMonsters.length / (ITEMS_PER_PAGE * 3));
+  const totalPages = Math.ceil(filteredMonsters.length / itemsPerPage);
 
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
@@ -299,31 +299,15 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
       </div>
 
       {/* Pagination Controls */}
-      {isPaginating && totalPages > 1 && (
-        <div className="flex justify-center items-center gap-4 py-12 border-t border-slate-800">
-          <button 
-            onClick={() => { setCurrentPage(p => Math.max(1, p - 1)); scrollToTop(); }}
-            disabled={currentPage === 1}
-            className="p-3 rounded-xl bg-slate-800 text-slate-400 disabled:opacity-20 hover:text-amber-500 transition-all"
-          >
-            <ChevronLeft size={24} />
-          </button>
-          <div className="flex items-center gap-2">
-            <span className="text-sm font-bold text-slate-500 uppercase tracking-widest">Page</span>
-            <span className="w-10 h-10 flex items-center justify-center bg-amber-500 text-slate-950 font-black rounded-lg shadow-lg shadow-amber-500/20">
-              {currentPage}
-            </span>
-            <span className="text-sm font-bold text-slate-500 uppercase tracking-widest">sur {totalPages}</span>
-          </div>
-          <button 
-            onClick={() => { setCurrentPage(p => Math.min(totalPages, p + 1)); scrollToTop(); }}
-            disabled={currentPage === totalPages}
-            className="p-3 rounded-xl bg-slate-800 text-slate-400 disabled:opacity-20 hover:text-amber-500 transition-all"
-          >
-            <ChevronRight size={24} />
-          </button>
-        </div>
-      )}
+      <Pagination 
+        currentPage={currentPage}
+        totalPages={totalPages}
+        onPageChange={setCurrentPage}
+        itemsPerPage={itemsPerPage}
+        onItemsPerPageChange={(newSize) => { setItemsPerPage(newSize); setCurrentPage(1); }}
+        totalItems={filteredMonsters.length}
+        pageSizeOptions={[24, 48, 96]}
+      />
 
       {filteredMonsters.length === 0 && (
         <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-16 text-center">

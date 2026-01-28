@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, useMemo } from 'react';
-import type { Monster, RecipeItem, PageContent, SavedCharacter, Stats, SeraphElement, CraftingProject } from '../data/types';
+import type { Monster, RecipeItem, PageContent, SavedCharacter, Stats, SeraphElement, CraftingProject, Spell, Skill } from '../data/types';
 import { fastNormalize } from '../data/utils';
 
 // Helper to migrate old save format (with accents/French keys) to technical format
@@ -38,6 +38,8 @@ interface DataContextType {
     itemsData: RecipeItem[];
     bestiaryData: Monster[];
     recipesData: RecipeItem[];
+    spellsData: Spell[];
+    skillsData: Skill[];
     wikiData: PageContent[];
     ingredientProfessionMap: Record<string, Set<string>>;
     itemMonsterMap: Record<string, Monster[]>;
@@ -64,7 +66,9 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         items: RecipeItem[];
         bestiary: Monster[];
         recipes: RecipeItem[];
-    }>({ items: [], bestiary: [], recipes: [] });
+        spells: Spell[];
+        skills: Skill[];
+    }>({ items: [], bestiary: [], recipes: [], spells: [], skills: [] });
     
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
@@ -81,13 +85,15 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
                 // In production, these will be fetched from the hosted URL
                 // In development, they are served from public/data/
                 const baseUrl = import.meta.env.BASE_URL || '/';
-                const [items, bestiary, recipes] = await Promise.all([
+                const [items, bestiary, recipes, spells, skills] = await Promise.all([
                     fetch(`${baseUrl}data/items.json`).then(res => res.json()),
                     fetch(`${baseUrl}data/bestiary.json`).then(res => res.json()),
                     fetch(`${baseUrl}data/recipes.json`).then(res => res.json()),
+                    fetch(`${baseUrl}data/spells.json`).then(res => res.json()),
+                    fetch(`${baseUrl}data/skills.json`).then(res => res.json()),
                 ]);
 
-                setData({ items, bestiary, recipes });
+                setData({ items, bestiary, recipes, spells, skills });
                 setLoading(false);
             } catch (err) {
                 console.error("Failed to load data:", err);
@@ -236,6 +242,20 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
                 category: 'items',
                 description: "Retrouvez ici la liste complète des équipements, armes et composants d'Althéa.",
                 recipes: data.items
+            },
+            {
+                id: 'spells',
+                title: 'Sorts',
+                category: 'spell',
+                description: "La bibliothèque complète des sorts standards et NMS.",
+                spells: data.spells
+            },
+            {
+                id: 'skills',
+                title: 'Compétences',
+                category: 'skill',
+                description: "Toutes les compétences physiques et utilitaires d'Althéa.",
+                skills: data.skills
             }
         ];
 
@@ -246,6 +266,8 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         itemsData: data.items,
         bestiaryData: data.bestiary,
         recipesData: data.recipes,
+        spellsData: data.spells,
+        skillsData: data.skills,
         ...maps,
         loading,
         error,

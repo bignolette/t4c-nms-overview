@@ -12,6 +12,7 @@ import {
   ArrowUpRight, ArrowRight, Wind, Users, ArrowRightCircle, User, LayoutGrid, List, ChevronDown, ChevronUp, Map, Tag,
   Skull, Info, Sparkles, Filter, Hammer, Plus, Trash2, ClipboardList, Square, CheckSquare, Bell, Check, ExternalLink
 } from 'lucide-react';
+import Pagination from './shared/Pagination';
 
 interface RecipeBrowserProps {
   recipes: RecipeItem[];
@@ -1217,7 +1218,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
   const [showOnlyFavs, setShowOnlyFavs] = useState(false);
   const [displayMode, setDisplayMode] = useState<'all' | 'recipes' | 'components'>('recipes');
   const [currentPage, setCurrentPage] = useState(1);
-  const itemsPerPage = layoutMode === 'grid' ? 12 : 8;
+  const [itemsPerPage, setItemsPerPage] = useState(isItemsPage ? 24 : 12);
 
   const itemTypes = useMemo(() => {
     if (isItemsPage) return ITEM_TYPES;
@@ -1703,25 +1704,15 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
             </div>
           )}
 
-          {totalPages > 1 && (
-            <div className="flex justify-center items-center gap-2 pt-10">
-              <PaginationButton onClick={() => handlePageChange(currentPage - 1)} disabled={currentPage === 1}><ChevronLeft size={20} /></PaginationButton>
-              <div className="flex gap-1">
-                {[...Array(totalPages)].map((_, i) => {
-                  const page = i + 1;
-                  if (page === 1 || page === totalPages || (page >= currentPage - 1 && page <= currentPage + 1)) {
-                    return (
-                      <button key={page} onClick={() => handlePageChange(page)} className={`w-10 h-10 rounded-xl font-bold text-sm transition-all ${currentPage === page ? 'bg-amber-500 text-slate-950 shadow-lg' : 'bg-slate-900 text-slate-500 hover:bg-slate-800'}`}>{page}</button>
-                    );
-                  } else if (page === currentPage - 2 || page === currentPage + 2) {
-                    return <span key={page} className="text-slate-700 self-center px-1">...</span>;
-                  }
-                  return null;
-                })}
-              </div>
-              <PaginationButton onClick={() => handlePageChange(currentPage + 1)} disabled={currentPage === totalPages}><ChevronRight size={20} /></PaginationButton>
-            </div>
-          )}
+          <Pagination 
+            currentPage={currentPage}
+            totalPages={totalPages}
+            onPageChange={setCurrentPage}
+            itemsPerPage={itemsPerPage}
+            onItemsPerPageChange={(newSize) => { setItemsPerPage(newSize); setCurrentPage(1); }}
+            totalItems={filteredRecipes.length}
+            pageSizeOptions={isItemsPage ? [24, 48, 96] : [12, 24, 48]}
+          />
         </>
       ) : (
         <NPCGroupedView 
@@ -1764,15 +1755,5 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
     </div>
   );
 };
-
-const PaginationButton = ({ children, onClick, disabled }: any) => (
-  <button
-    onClick={onClick}
-    disabled={disabled}
-    className="w-10 h-10 flex items-center justify-center rounded-xl border border-slate-800 bg-slate-900 text-slate-400 hover:bg-slate-800 disabled:opacity-20 transition-all"
-  >
-    {children}
-  </button>
-);
 
 export default RecipeBrowser;

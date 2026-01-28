@@ -5,12 +5,14 @@ import WikiPage from './pages/WikiPage';
 import EquipablePage from './pages/EquipablePage';
 import Bestiary from './components/Bestiary';
 import RecipeBrowser from './components/RecipeBrowser';
+import SpellList from './components/SpellList';
+import SkillList from './components/SkillList';
 import PlannerPage from './pages/PlannerPage';
 import Legal from './pages/Legal';
 import { DataProvider, useData } from './context/DataContext';
 
 const AppContent: React.FC = () => {
-  const { bestiaryData, recipesData, loading } = useData();
+  const { bestiaryData, recipesData, spellsData, skillsData, loading } = useData();
 
   if (loading) {
     return (
@@ -31,6 +33,8 @@ const AppContent: React.FC = () => {
           <Route path="/bestiary" element={<Bestiary monsters={bestiaryData} />} />
           <Route path="/equipable" element={<EquipablePage />} />
           <Route path="/recipes" element={<RecipeBrowser recipes={recipesData} />} />
+          <Route path="/spells" element={<SpellList spells={spellsData} />} />
+          <Route path="/skills" element={<SkillList skills={skillsData} />} />
           <Route path="/planner" element={<PlannerPage />} />
           <Route path="/wiki" element={<WikiPage />} />
           <Route path="/wiki/:slug" element={<WikiPage />} />

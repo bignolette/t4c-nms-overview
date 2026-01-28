@@ -106,11 +106,75 @@ export interface CraftingProject {
 }
 
 export interface PageContent {
+
     id: string;
+
     title: string;
-    category: 'zone' | 'class' | 'items' | 'spell' | 'profession' | 'guide' | 'bestiary';
+
+    category: 'zone' | 'class' | 'items' | 'spell' | 'profession' | 'guide' | 'bestiary' | 'skill';
+
     description: string;
+
     monsters?: Monster[];
+
     recipes?: RecipeItem[];
+
     quests?: Quest[];
+
+    spells?: Spell[];
+
+    skills?: Skill[];
+
+}
+
+
+
+export interface Spell {
+
+    name: string;
+
+    prerequisites?: string;
+
+    level: number;
+
+    wis: number;
+
+    int: number;
+
+    price: string;
+
+    pc?: number;
+
+    mana: string;
+
+    description: string;
+
+    npc: string;
+
+    type?: string;
+
+    source: 'Standard' | 'NMS';
+
+}
+
+
+
+export interface Skill {
+
+    name: string;
+
+    maxTraining: string;
+
+    requirements: string;
+
+    firstTeacher: string;
+
+    initialCost: string;
+
+    description: string;
+
+    trainingTeachers: string;
+
+    trainingCost: string;
+
 }

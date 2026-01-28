@@ -2,7 +2,9 @@ import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { useData } from '../context/DataContext';
 import RecipeBrowser from '../components/RecipeBrowser';
 import Bestiary from '../components/Bestiary';
-import { Package, Hammer, Skull, Search, X } from 'lucide-react';
+import SpellList from '../components/SpellList';
+import SkillList from '../components/SkillList';
+import { Package, Hammer, Skull, Search, X, Sparkles, Target } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
@@ -10,7 +12,7 @@ const WikiPage = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
-  const { bestiaryData, recipesData, itemsData } = useData();
+  const { bestiaryData, recipesData, itemsData, spellsData, skillsData } = useData();
   
   const currentTab = slug || 'items';
   const searchTerm = searchParams.get('search') || '';
@@ -25,6 +27,8 @@ const WikiPage = () => {
     { id: 'items', label: 'Objets', icon: Package, color: 'text-blue-400', bg: 'bg-blue-500/10' },
     { id: 'metiers', label: 'Artisanat', icon: Hammer, color: 'text-amber-400', bg: 'bg-amber-500/10' },
     { id: 'bestiary', label: 'Bestiaire', icon: Skull, color: 'text-rose-400', bg: 'bg-rose-500/10' },
+    { id: 'spells', label: 'Sorts', icon: Sparkles, color: 'text-sky-400', bg: 'bg-sky-500/10' },
+    { id: 'skills', label: 'Compétences', icon: Target, color: 'text-emerald-400', bg: 'bg-emerald-500/10' },
   ];
 
   const handleTabChange = (id: string) => {
@@ -115,6 +119,12 @@ const WikiPage = () => {
         )}
         {currentTab === 'bestiary' && (
           <Bestiary key="bestiary" monsters={bestiaryData} />
+        )}
+        {currentTab === 'spells' && (
+          <SpellList key="spells" spells={spellsData} />
+        )}
+        {currentTab === 'skills' && (
+          <SkillList key="skills" skills={skillsData} />
         )}
       </div>
     </div>
