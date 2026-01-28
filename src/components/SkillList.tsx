@@ -1,12 +1,11 @@
 import { useState, useMemo, memo, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useData } from '../context/DataContext';
 import { fastNormalize } from '../data/utils';
 import type { Skill } from '../data/types';
 import { 
-  Sword, BookOpen, User, Coins, Filter, AlertCircle, RotateCcw, 
-  Target, Shield, Info, MapPin, ArrowUpDown, Zap, Hand
+  Filter, AlertCircle, RotateCcw, 
+  Shield, Info, MapPin, ArrowUpDown, Zap
 } from 'lucide-react';
 import Pagination from './shared/Pagination';
 

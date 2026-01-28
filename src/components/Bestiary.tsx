@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useData } from '../context/DataContext';
 import { fastNormalize } from '../data/utils';
 import type { Monster } from '../data/types';
-import { MapPin, Coins, Skull, Filter, AlertCircle, ExternalLink, RotateCcw, ChevronLeft, ChevronRight, Hammer } from 'lucide-react';
+import { MapPin, Coins, Skull, Filter, AlertCircle, ExternalLink, RotateCcw, Hammer } from 'lucide-react';
 import Pagination from './shared/Pagination';
 
 interface BestiaryProps {
@@ -216,8 +216,6 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
     : filteredMonsters;
 
   const totalPages = Math.ceil(filteredMonsters.length / itemsPerPage);
-
-  const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
 
   return (
     <div className="space-y-8">

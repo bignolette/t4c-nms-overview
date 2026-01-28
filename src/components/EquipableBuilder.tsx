@@ -39,10 +39,12 @@ const SLOTS = [
   { id: 'Ceinture', label: 'Ceinture', icon: GripHorizontal },
   { id: 'Jambière', label: 'Jambières', icon: Columns2 }, 
   { id: 'Botte', label: 'Bottes', icon: Footprints },
+  { id: 'Spells', label: 'Sorts', icon: Sparkles },
+  { id: 'Skills', label: 'Compétences', icon: Sword },
 ];
 
 const EquipableBuilder = () => {
-  const { itemsData, savedCharacters, activeStats: stats, setActiveStats: setStats } = useData();
+  const { itemsData, spellsData, skillsData, savedCharacters, activeStats: stats, setActiveStats: setStats } = useData();
 
   const [hideNoReqs, setHideNoReqs] = useState(true);
   const [isBiSMode, setIsBiSMode] = useState(false);
@@ -106,32 +108,91 @@ const EquipableBuilder = () => {
   }, [bisOptions, bisFocus]);
 
   const { availableItems, upcomingItems } = useMemo(() => {
-    const itemsInSlot = itemsBySlot[selectedSlot.id] || [];
     const normalizedSearch = fastNormalize(searchTerm);
-    const canEquip: RecipeItem[] = [];
-    const comingSoon: RecipeItem[] = [];
+    const canEquip: (RecipeItem | any)[] = [];
+    const comingSoon: (RecipeItem | any)[] = [];
 
-    itemsInSlot.forEach((item) => {
-      if (normalizedSearch && !fastNormalize(item.name).includes(normalizedSearch)) return;
-      const reqs = item.prerequisites || {};
-      const sReq = parseInt(reqs.str || '0');
-      const eReq = parseInt(reqs.end || '0');
-      const dReq = parseInt(reqs.dex || '0');
-      const iReq = parseInt(reqs.int || '0');
-      const wReq = parseInt(reqs.wis || '0');
-      const reqSum = sReq + eReq + dReq + iReq + wReq;
-      if (hideNoReqs && reqSum === 0) return;
+    if (selectedSlot.id === 'Spells') {
+      spellsData.forEach((spell) => {
+        if (normalizedSearch && !fastNormalize(spell.name).includes(normalizedSearch)) return;
+        
+        const isLearnable = stats.int >= spell.int && stats.wis >= spell.wis;
+        
+        if (isLearnable) {
+          canEquip.push({ ...spell, type: 'spell' });
+        } else {
+          const diff = Math.max(0, spell.int - stats.int) + Math.max(0, spell.wis - stats.wis);
+          if (diff <= 40) comingSoon.push({ ...spell, type: 'spell' });
+        }
+      });
+    } else if (selectedSlot.id === 'Skills') {
+      skillsData.forEach((skill) => {
+        if (normalizedSearch && !fastNormalize(skill.name).includes(normalizedSearch)) return;
+        
+        // Extract requirements from string
+        const lvlMatch = skill.requirements.match(/Niv\s*(\d+)/i);
+        const strMatch = skill.requirements.match(/(\d+)\s*en\s*force/i);
+        const endMatch = skill.requirements.match(/(\d+)\s*en\s*endurance/i);
+        const dexMatch = skill.requirements.match(/(\d+)\s*en\s*dextérité/i);
+        const intMatch = skill.requirements.match(/(\d+)\s*en\s*intelligence/i);
+        const wisMatch = skill.requirements.match(/(\d+)\s*en\s*sagesse/i);
 
-      const isEquipable = stats.str >= sReq && stats.end >= eReq && stats.dex >= dReq && stats.int >= iReq && stats.wis >= wReq;
-      if (isEquipable) {
-        canEquip.push(item);
-      } else {
-        const diff = Math.max(0, sReq - stats.str) + Math.max(0, eReq - stats.end) + Math.max(0, dReq - stats.dex) + Math.max(0, iReq - stats.int) + Math.max(0, wReq - stats.wis);
-        if (diff <= 40) comingSoon.push(item);
+        const sReq = strMatch ? parseInt(strMatch[1]) : 0;
+        const eReq = endMatch ? parseInt(endMatch[1]) : 0;
+        const dReq = dexMatch ? parseInt(dexMatch[1]) : 0;
+        const iReq = intMatch ? parseInt(intMatch[1]) : 0;
+        const wReq = wisMatch ? parseInt(wisMatch[1]) : 0;
+        const lReq = lvlMatch ? parseInt(lvlMatch[1]) : 1;
+
+        const isLearnable = stats.str >= sReq && stats.end >= eReq && stats.dex >= dReq && stats.int >= iReq && stats.wis >= wReq;
+        
+        const skillObj = { 
+          ...skill, 
+          type: 'skill', 
+          parsedReqs: { str: sReq, end: eReq, dex: dReq, int: iReq, wis: wReq, lvl: lReq } 
+        };
+
+        if (isLearnable) {
+          canEquip.push(skillObj);
+        } else {
+          const diff = Math.max(0, sReq - stats.str) + Math.max(0, eReq - stats.end) + Math.max(0, dReq - stats.dex) + Math.max(0, iReq - stats.int) + Math.max(0, wReq - stats.wis);
+          if (diff <= 40) comingSoon.push(skillObj);
+        }
+      });
+    } else {
+      const itemsInSlot = itemsBySlot[selectedSlot.id] || [];
+      itemsInSlot.forEach((item) => {
+        if (normalizedSearch && !fastNormalize(item.name).includes(normalizedSearch)) return;
+        const reqs = item.prerequisites || {};
+        const sReq = parseInt(reqs.str || '0');
+        const eReq = parseInt(reqs.end || '0');
+        const dReq = parseInt(reqs.dex || '0');
+        const iReq = parseInt(reqs.int || '0');
+        const wReq = parseInt(reqs.wis || '0');
+        const reqSum = sReq + eReq + dReq + iReq + wReq;
+        if (hideNoReqs && reqSum === 0) return;
+
+        const isEquipable = stats.str >= sReq && stats.end >= eReq && stats.dex >= dReq && stats.int >= iReq && stats.wis >= wReq;
+        if (isEquipable) {
+          canEquip.push({ ...item, type: 'item' });
+        } else {
+          const diff = Math.max(0, sReq - stats.str) + Math.max(0, eReq - stats.end) + Math.max(0, dReq - stats.dex) + Math.max(0, iReq - stats.int) + Math.max(0, wReq - stats.wis);
+          if (diff <= 40) comingSoon.push({ ...item, type: 'item' });
+        }
+      });
+    }
+
+    const sortFn = (a: any, b: any) => {
+      if (selectedSlot.id === 'Spells') {
+        if (a.level !== b.level) return (a.level || 0) - (b.level || 0);
+        return a.name.localeCompare(b.name);
       }
-    });
 
-    const sortFn = (a: RecipeItem, b: RecipeItem) => {
+      if (selectedSlot.id === 'Skills') {
+        if (a.parsedReqs.lvl !== b.parsedReqs.lvl) return a.parsedReqs.lvl - b.parsedReqs.lvl;
+        return a.name.localeCompare(b.name);
+      }
+
       if (isBiSMode && bisFocus) {
         const getScore = (i: RecipeItem) => {
           const archetypeStats = { str: stats.str, dex: stats.dex, int: stats.int, wis: stats.wis };
@@ -160,7 +221,7 @@ const EquipableBuilder = () => {
     };
 
     return { availableItems: canEquip.sort(sortFn), upcomingItems: comingSoon.sort(sortFn).slice(0, 5) };
-  }, [stats, selectedSlot, searchTerm, hideNoReqs, itemsBySlot, isBiSMode, bisFocus]);
+  }, [stats, selectedSlot, searchTerm, hideNoReqs, itemsBySlot, spellsData, isBiSMode, bisFocus]);
 
   return (
     <div className="space-y-10 animate-in fade-in duration-700">
@@ -185,45 +246,81 @@ const EquipableBuilder = () => {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-              {upcomingItems.map((item, idx) => {
-                const reqs = item.prerequisites || {};
-                const sReq = parseInt(reqs.str || '0'), eReq = parseInt(reqs.end || '0'), dReq = parseInt(reqs.dex || '0'), iReq = parseInt(reqs.int || '0'), wReq = parseInt(reqs.wis || '0');
-                const totalReq = sReq + eReq + dReq + iReq + wReq;
-                const currentRel = Math.min(sReq, stats.str) + Math.min(eReq, stats.end) + Math.min(dReq, stats.dex) + Math.min(iReq, stats.int) + Math.min(wReq, stats.wis);
+              {upcomingItems.map((entry: any, idx) => {
+                const isSpell = entry.type === 'spell';
+                const isSkill = entry.type === 'skill';
+                const name = entry.name;
+                
+                let totalReq = 0;
+                let currentRel = 0;
+                let diff = 0;
+                let reqList: { key: string, label: string, req: number, current: number }[] = [];
+
+                if (isSpell) {
+                  reqList = [
+                    { key: 'int', label: 'INT', req: entry.int || 0, current: stats.int },
+                    { key: 'wis', label: 'SAG', req: entry.wis || 0, current: stats.wis }
+                  ].filter(r => r.req > 0);
+                } else if (isSkill) {
+                  reqList = [
+                    { key: 'str', label: 'FOR', req: entry.parsedReqs.str || 0, current: stats.str },
+                    { key: 'end', label: 'END', req: entry.parsedReqs.end || 0, current: stats.end },
+                    { key: 'dex', label: 'DEX', req: entry.parsedReqs.dex || 0, current: stats.dex },
+                    { key: 'int', label: 'INT', req: entry.parsedReqs.int || 0, current: stats.int },
+                    { key: 'wis', label: 'SAG', req: entry.parsedReqs.wis || 0, current: stats.wis }
+                  ].filter(r => r.req > 0);
+                } else {
+                  reqList = [
+                    { key: 'str', label: 'FOR', req: parseInt(entry.prerequisites?.str || '0'), current: stats.str },
+                    { key: 'end', label: 'END', req: parseInt(entry.prerequisites?.end || '0'), current: stats.end },
+                    { key: 'dex', label: 'DEX', req: parseInt(entry.prerequisites?.dex || '0'), current: stats.dex },
+                    { key: 'int', label: 'INT', req: parseInt(entry.prerequisites?.int || '0'), current: stats.int },
+                    { key: 'wis', label: 'SAG', req: parseInt(entry.prerequisites?.wis || '0'), current: stats.wis }
+                  ].filter(r => r.req > 0);
+                }
+
+                reqList.forEach(r => {
+                  totalReq += r.req;
+                  currentRel += Math.min(r.req, r.current);
+                  diff += Math.max(0, r.req - r.current);
+                });
+
                 const progress = totalReq > 0 ? (currentRel / totalReq) * 100 : 100;
-                const diff = Math.max(0, sReq - stats.str) + Math.max(0, eReq - stats.end) + Math.max(0, dReq - stats.dex) + Math.max(0, iReq - stats.int) + Math.max(0, wReq - stats.wis);
+                const linkPath = isSpell ? 'spells' : (isSkill ? 'skills' : 'items');
 
                 return (
-                  <Link key={idx} to={`/wiki/items?search=${encodeURIComponent(item.name)}`} className="group/item relative flex flex-col bg-slate-950/40 border border-white/5 hover:border-amber-500/30 p-5 rounded-[1.5rem] transition-all duration-300 text-left">
+                  <Link 
+                    key={idx} 
+                    to={`/wiki/${linkPath}?search=${encodeURIComponent(name)}`} 
+                    className={`group/item relative flex flex-col bg-slate-950/40 border border-white/5 hover:border-amber-500/30 p-5 rounded-[1.5rem] transition-all duration-300 text-left ${isSpell ? 'hover:border-blue-500/30' : (isSkill ? 'hover:border-emerald-500/30' : '')}`}
+                  >
                     <div className="flex justify-between items-start mb-4">
                       <div className="flex flex-col">
-                        <span className="text-[10px] font-black text-amber-500 uppercase tracking-widest mb-1">{item.source}</span>
-                        <h3 className="text-sm font-bold text-slate-100 group-hover/item:text-white transition-colors line-clamp-1">{item.name}</h3>
+                        <span className={`text-[10px] font-black uppercase tracking-widest mb-1 ${isSpell ? 'text-blue-400' : (isSkill ? 'text-emerald-400' : 'text-amber-500')}`}>
+                          {isSpell ? 'SORT' : (isSkill ? 'COMPÉTENCE' : entry.source)}
+                        </span>
+                        <h3 className="text-sm font-bold text-slate-100 group-hover/item:text-white transition-colors line-clamp-1">{name}</h3>
                       </div>
-                      <Package size={14} className="text-slate-600" />
+                      {isSpell ? <Sparkles size={14} className="text-blue-400/50" /> : (isSkill ? <Sword size={14} className="text-emerald-400/50" /> : <Package size={14} className="text-slate-600" />)}
                     </div>
 
                     <div className="flex flex-wrap gap-1.5 mb-4">
-                      {Object.entries({ str: 'FOR', end: 'END', dex: 'DEX', int: 'INT', wis: 'SAG' }).map(([key, label]) => {
-                        const req = parseInt(item.prerequisites?.[key as keyof typeof item.prerequisites] || '0');
-                        if (req === 0) return null;
-                        const current = stats[key as keyof Stats];
-                        const isMet = current >= req;
-                        
+                      {reqList.map((r) => {
+                        const isMet = r.current >= r.req;
                         return (
                           <div 
-                            key={key} 
+                            key={r.key} 
                             className={`flex flex-col px-1.5 py-0.5 rounded border ${
                               isMet 
                                 ? 'text-emerald-500/60 bg-emerald-500/5 border-emerald-500/10' 
                                 : 'text-rose-500 bg-rose-500/5 border-rose-500/20 shadow-[0_0_10px_rgba(244,63,94,0.05)]'
                             }`}
                           >
-                            <span className="text-[7px] font-black uppercase tracking-tighter opacity-70">{label}</span>
+                            <span className="text-[7px] font-black uppercase tracking-tighter opacity-70">{r.label}</span>
                             <div className="flex items-center gap-1">
-                              <span className="text-[10px] font-bold tracking-tighter">{req}</span>
+                              <span className="text-[10px] font-bold tracking-tighter">{r.req}</span>
                               {!isMet && (
-                                <span className="text-[8px] font-black border-l border-rose-500/20 pl-1">+{req - current}</span>
+                                <span className="text-[8px] font-black border-l border-rose-500/20 pl-1">+{r.req - r.current}</span>
                               )}
                             </div>
                           </div>
@@ -233,11 +330,14 @@ const EquipableBuilder = () => {
 
                     <div className="mt-auto pt-4 border-t border-white/5">
                       <div className="flex justify-between items-end mb-2">
-                        <span className="text-[10px] font-black text-slate-500">PROGRESSION</span>
-                        <span className="text-[10px] font-black text-amber-500">-{diff} PTS</span>
+                        <span className="text-[10px] font-black text-slate-500 uppercase">PROGRESSION</span>
+                        <span className={`text-[10px] font-black ${isSpell ? 'text-blue-400' : 'text-amber-500'}`}>-{diff} PTS</span>
                       </div>
                       <div className="h-1.5 w-full bg-slate-900 rounded-full overflow-hidden border border-white/5">
-                        <div className="h-full bg-gradient-to-r from-amber-600 to-amber-400 transition-all duration-1000" style={{ width: `${progress}%` }} />
+                        <div 
+                          className={`h-full transition-all duration-1000 ${isSpell ? 'bg-gradient-to-r from-blue-600 to-blue-400' : 'bg-gradient-to-r from-amber-600 to-amber-400'}`} 
+                          style={{ width: `${progress}%` }} 
+                        />
                       </div>
                     </div>
                   </Link>
@@ -350,9 +450,11 @@ const EquipableBuilder = () => {
             </div>
           </div>
           <div className="flex-1 overflow-y-auto p-8 space-y-6 custom-scrollbar">
-            {availableItems.map((item, idx) => (
-              <ItemCard key={idx} item={item} isBiSMode={isBiSMode} idx={idx} />
-            ))}
+            {availableItems.map((entry, idx) => {
+              if (entry.type === 'spell') return <SpellCard key={idx} spell={entry} idx={idx} />;
+              if (entry.type === 'skill') return <SkillCard key={idx} skill={entry} idx={idx} />;
+              return <ItemCard key={idx} item={entry} isBiSMode={isBiSMode} idx={idx} />;
+            })}
           </div>
         </div>
       </div>
@@ -441,6 +543,69 @@ const ItemCard = ({ item, isBiSMode, idx }: { item: RecipeItem, isBiSMode: boole
             </div>
           </div>
         )}
+      </div>
+    </div>
+  );
+};
+
+const SkillCard = ({ skill }: { skill: any }) => {
+  return (
+    <div className="w-full p-6 rounded-[2rem] border bg-slate-900/40 border-white/5 transition-all duration-500 relative text-left hover:border-emerald-500/30">
+      <div className="flex flex-col sm:flex-row justify-between items-start gap-4 mb-6">
+        <div>
+          <div className="flex items-center gap-2 mb-1">
+            <span className="px-2 py-0.5 rounded bg-amber-500 text-slate-950 text-[9px] font-black uppercase tracking-tighter">LVL {skill.parsedReqs.lvl}</span>
+            <span className="text-[10px] font-black text-emerald-400 uppercase tracking-[0.2em]">Compétence</span>
+          </div>
+          <h4 className="text-xl font-black italic uppercase tracking-tight text-slate-100">{skill.name}</h4>
+        </div>
+        <Link to={`/wiki/skills?search=${encodeURIComponent(skill.name)}`} className="btn-secondary px-4 py-2 text-[10px] uppercase tracking-widest">Détails</Link>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <span className="text-[10px] font-black text-slate-600 uppercase tracking-[0.2em] mb-3 block">Requis</span>
+          <div className="flex flex-wrap gap-2">
+            {skill.parsedReqs.str > 0 && <StatBadge label="FOR" value={skill.parsedReqs.str} type="str" />}
+            {skill.parsedReqs.end > 0 && <StatBadge label="END" value={skill.parsedReqs.end} type="end" />}
+            {skill.parsedReqs.dex > 0 && <StatBadge label="DEX" value={skill.parsedReqs.dex} type="dex" />}
+            {skill.parsedReqs.int > 0 && <StatBadge label="INT" value={skill.parsedReqs.int} type="int" />}
+            {skill.parsedReqs.wis > 0 && <StatBadge label="SAG" value={skill.parsedReqs.wis} type="wis" />}
+          </div>
+        </div>
+        <div>
+          <span className="text-[10px] font-black text-emerald-500/50 uppercase tracking-[0.2em] mb-3 block">Description</span>
+          <p className="text-xs text-slate-400 italic line-clamp-2">{skill.description}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const SpellCard = ({ spell }: { spell: any }) => {
+  return (
+    <div className="w-full p-6 rounded-[2rem] border bg-slate-900/40 border-white/5 transition-all duration-500 relative text-left hover:border-blue-500/30">
+      <div className="flex flex-col sm:flex-row justify-between items-start gap-4 mb-6">
+        <div>
+          <div className="flex items-center gap-2 mb-1">
+            <span className="px-2 py-0.5 rounded bg-amber-500 text-slate-950 text-[9px] font-black uppercase tracking-tighter">LVL {spell.level}</span>
+            <span className="text-[10px] font-black text-blue-400 uppercase tracking-[0.2em]">{spell.source}</span>
+          </div>
+          <h4 className="text-xl font-black italic uppercase tracking-tight text-slate-100">{spell.name}</h4>
+        </div>
+        <Link to={`/wiki/spells?search=${encodeURIComponent(spell.name)}`} className="btn-secondary px-4 py-2 text-[10px] uppercase tracking-widest">Détails</Link>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <span className="text-[10px] font-black text-slate-600 uppercase tracking-[0.2em] mb-3 block">Requis</span>
+          <div className="flex flex-wrap gap-2">
+            {spell.int > 0 && <StatBadge label="INT" value={spell.int} type="int" />}
+            {spell.wis > 0 && <StatBadge label="SAG" value={spell.wis} type="wis" />}
+          </div>
+        </div>
+        <div>
+          <span className="text-[10px] font-black text-blue-500/50 uppercase tracking-[0.2em] mb-3 block">Effet</span>
+          <p className="text-xs text-slate-400 italic line-clamp-2">{spell.description}</p>
+        </div>
       </div>
     </div>
   );

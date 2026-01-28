@@ -1,10 +1,14 @@
 import { useState, useMemo, memo, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useData } from '../context/DataContext';
 import { fastNormalize } from '../data/utils';
 import type { Spell } from '../data/types';
-import { Sparkles, Zap, Brain, ScrollText, Filter, AlertCircle, RotateCcw, BookOpen, Star, Coins, MapPin, ArrowUpDown } from 'lucide-react';
+import { 
+  Sparkles, Zap, Brain, ScrollText, Filter, AlertCircle, RotateCcw, 
+  BookOpen, Star, MapPin, ArrowUpDown, Flame, Droplets, 
+  Wind, Mountain, Sun, Ghost, Wand2
+} from 'lucide-react';
 import Pagination from './shared/Pagination';
 
 interface SpellListProps {
@@ -13,8 +17,40 @@ interface SpellListProps {
 
 const DEFAULT_ITEMS_PER_PAGE = 24;
 
+const SCHOOL_CONFIG: Record<string, { color: string, border: string, bg: string, icon: any, label: string }> = {
+  'Feu': { color: 'text-rose-500', border: 'border-rose-500/30', bg: 'bg-rose-500/10', icon: Flame, label: 'Feu' },
+  'Eau': { color: 'text-blue-500', border: 'border-blue-500/30', bg: 'bg-blue-500/10', icon: Droplets, label: 'Eau' },
+  'Air': { color: 'text-sky-400', border: 'border-sky-400/30', bg: 'bg-sky-400/10', icon: Wind, label: 'Air' },
+  'Terre': { color: 'text-emerald-500', border: 'border-emerald-500/30', bg: 'bg-emerald-500/10', icon: Mountain, label: 'Terre' },
+  'Lumière': { color: 'text-amber-400', border: 'border-amber-400/30', bg: 'bg-amber-400/10', icon: Sun, label: 'Lumière' },
+  'Nécromancie': { color: 'text-purple-500', border: 'border-purple-500/30', bg: 'bg-purple-500/10', icon: Ghost, label: 'Nécromancie' },
+  'Arcane': { color: 'text-indigo-400', border: 'border-indigo-400/30', bg: 'bg-indigo-400/10', icon: Wand2, label: 'Arcane' },
+};
+
+const getSpellSchool = (type: string | undefined): string => {
+  if (!type) return 'Arcane';
+  const t = type.toLowerCase();
+  if (t.includes('feu')) return 'Feu';
+  if (t.includes('eau') || t.includes('glace')) return 'Eau';
+  if (t.includes('air') || t.includes('foudre') || t.includes('eclair')) return 'Air';
+  if (t.includes('terre') || t.includes('pierre')) return 'Terre';
+  if (t.includes('lumière') || t.includes('lumiere')) return 'Lumière';
+  if (t.includes('noir') || t.includes('nécromancie') || t.includes('necromancie')) return 'Nécromancie';
+  return 'Arcane';
+};
+
 const SpellCard = memo(({ spell, onNavigate }: { spell: Spell, onNavigate: (name: string) => void }) => {
   const { spellMap = {}, spellPrerequisiteMap = {} } = useData();
+  const school = useMemo(() => getSpellSchool(spell.type), [spell.type]);
+  const config = SCHOOL_CONFIG[school] || SCHOOL_CONFIG['Arcane'];
+  
+  const nature = useMemo(() => {
+    if (!spell.type) return null;
+    const t = spell.type.toLowerCase();
+    if (t.includes('mental')) return 'Mental';
+    if (t.includes('physique')) return 'Physique';
+    return null;
+  }, [spell.type]);
   
   const linkedPrerequisites = useMemo(() => {
     if (!spell.prerequisites) return [];
@@ -26,27 +62,40 @@ const SpellCard = memo(({ spell, onNavigate }: { spell: Spell, onNavigate: (name
     return (spellPrerequisiteMap[fastNormalize(spell.name)]) || [];
   }, [spell.name, spellPrerequisiteMap]);
 
+  const Icon = config.icon;
+
   return (
     <motion.div 
       layout
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       className={`
-        group relative bg-slate-800/40 border rounded-2xl overflow-hidden transition-all duration-300 shadow-xl hover:shadow-blue-500/10 border-slate-700/50 hover:border-blue-500/50
+        group relative bg-slate-800/40 border rounded-2xl overflow-hidden transition-all duration-300 shadow-xl hover:shadow-2xl
+        ${config.border} hover:border-opacity-100 hover:shadow-blue-500/10
       `}
     >
-      <div className="p-5 bg-slate-900/40 border-b border-slate-700/50 relative overflow-hidden">
+      <div className={`p-5 bg-slate-900/40 border-b ${config.border} relative overflow-hidden`}>
+        <Icon className={`absolute -right-4 -bottom-4 w-24 h-24 opacity-5 rotate-12 transition-transform group-hover:scale-110 group-hover:opacity-10 ${config.color}`} />
+        
         <div className="flex justify-between items-start mb-4 relative z-10">
           <div className="flex-1 min-w-0 pr-2">
             <div className="flex items-center gap-2 mb-1">
               <span className="px-2 py-0.5 rounded bg-amber-500 text-slate-950 text-[10px] font-black uppercase tracking-tighter shadow-lg shadow-amber-500/20">
                 Niveau {spell.level}
               </span>
-              <span className={`px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-tighter shrink-0 ${spell.source === 'NMS' ? 'bg-purple-500/20 text-purple-300 border border-purple-500/30' : 'bg-blue-600/20 text-blue-300 border border-blue-500/30'}`}>
-                {spell.source}
+              <span className={`px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-tighter shrink-0 border ${config.bg} ${config.color} ${config.border}`}>
+                {school}
               </span>
+              {nature && (
+                <span className="px-2 py-0.5 rounded bg-slate-800 text-slate-400 border border-slate-700 text-[10px] font-black uppercase tracking-tighter shrink-0">
+                  {nature}
+                </span>
+              )}
+              {spell.source === 'NMS' && (
+                <span className="px-2 py-0.5 rounded bg-purple-500 text-slate-950 text-[10px] font-black uppercase tracking-tighter">NMS</span>
+              )}
             </div>
-            <h3 className="text-xl font-black group-hover:text-blue-400 transition-colors leading-tight italic tracking-tight truncate text-slate-100">
+            <h3 className="text-xl font-black group-hover:text-white transition-colors leading-tight italic tracking-tight truncate text-slate-100">
               {spell.name}
             </h3>
           </div>
@@ -74,69 +123,72 @@ const SpellCard = memo(({ spell, onNavigate }: { spell: Spell, onNavigate: (name
         </div>
       </div>
 
-      <div className="p-5 flex-1 flex flex-col">
+      <div className="p-5 flex-1 flex flex-col min-h-[200px]">
         <h4 className="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] mb-3 flex items-center gap-2">
-          <ScrollText size={12} /> Effect
+          <ScrollText size={12} /> Effet
         </h4>
         <p className="text-xs text-slate-300 leading-relaxed italic mb-4">
           {spell.description}
         </p>
         
-        {(Object.keys(spell.npc).length > 0 || spell.prerequisites || usedAsPrerequisiteFor.length > 0) && (
-          <div className="mt-auto space-y-4 pt-4 border-t border-slate-700/30">
-            {Object.keys(spell.npc).length > 0 && (
-              <div className="space-y-2">
-                <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest block">Localisation PNJ</span>
-                {Object.entries(spell.npc).map(([city, names]) => (
-                  <div key={city} className="flex items-start gap-2 text-[10px]">
-                    <span className="font-black uppercase text-slate-500 w-20 shrink-0">{city}:</span>
-                    <span className="font-bold text-blue-400/80">{names.join(', ')}</span>
+        <div className="mt-auto space-y-4 pt-4 border-t border-slate-700/30">
+          {Object.keys(spell.npc).length > 0 && (
+            <div className="space-y-2">
+              <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest block">Localisation PNJ</span>
+              {Object.entries(spell.npc).map(([city, names]) => (
+                <div key={city} className="flex items-start gap-2 text-[10px]">
+                  <span className="font-black uppercase text-slate-500 w-24 shrink-0">{city}:</span>
+                  <span className="font-bold text-blue-400/80 leading-tight">{names.join(', ')}</span>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {(spell.prerequisites || usedAsPrerequisiteFor.length > 0) && (
+            <div className="grid grid-cols-1 gap-3 border-t border-slate-800/50 pt-3">
+              {spell.prerequisites && (
+                <div className="space-y-2">
+                  <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest block">Sorts Prérequis</span>
+                  <div className="flex flex-wrap gap-1.5">
+                    {linkedPrerequisites.length > 0 ? (
+                      linkedPrerequisites.map(ps => (
+                        <button 
+                          key={ps.name}
+                          onClick={() => onNavigate(ps.name)}
+                          className="flex items-center gap-1.5 px-2 py-1 rounded bg-amber-500/10 border border-amber-500/30 text-[10px] font-bold text-amber-400 hover:bg-amber-500/20 transition-all"
+                        >
+                          <Sparkles size={10} />
+                          {ps.name}
+                        </button>
+                      ))
+                    ) : (
+                      <span className="text-[10px] font-bold text-slate-400 italic bg-slate-950/50 px-2 py-1 rounded border border-slate-800 w-full line-clamp-1">{spell.prerequisites}</span>
+                    )}
                   </div>
-                ))}
-              </div>
-            )}
+                </div>
+              )}
 
-            {spell.prerequisites && (
-              <div className="space-y-2">
-                <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest block">Sorts Prérequis</span>
-                <div className="flex flex-wrap gap-1.5">
-                  {linkedPrerequisites.length > 0 ? (
-                    linkedPrerequisites.map(ps => (
+              {usedAsPrerequisiteFor.length > 0 && (
+                <div className="space-y-2">
+                  <span className="text-[9px] font-black text-blue-500/70 uppercase tracking-widest block">Prérequis pour</span>
+                  <div className="flex flex-wrap gap-1.5">
+                    {usedAsPrerequisiteFor.slice(0, 3).map(s => (
                       <button 
-                        key={ps.name}
-                        onClick={() => onNavigate(ps.name)}
-                        className="flex items-center gap-1.5 px-2 py-1 rounded bg-amber-500/10 border border-amber-500/30 text-[10px] font-bold text-amber-400 hover:bg-amber-500/20 transition-all"
+                        key={s.name}
+                        onClick={() => onNavigate(s.name)}
+                        className="flex items-center gap-1.5 px-2 py-1 rounded bg-blue-500/10 border border-blue-500/30 text-[10px] font-bold text-blue-300 hover:bg-blue-500/20 transition-all"
                       >
-                        <Sparkles size={10} />
-                        {ps.name}
+                        <BookOpen size={10} />
+                        {s.name}
                       </button>
-                    ))
-                  ) : (
-                    <span className="text-[10px] font-bold text-slate-400 italic bg-slate-950/50 px-2 py-1 rounded border border-slate-800 w-full">{spell.prerequisites}</span>
-                  )}
+                    ))}
+                    {usedAsPrerequisiteFor.length > 3 && <span className="text-[10px] text-slate-600">+{usedAsPrerequisiteFor.length - 3}</span>}
+                  </div>
                 </div>
-              </div>
-            )}
-
-            {usedAsPrerequisiteFor.length > 0 && (
-              <div className="space-y-2">
-                <span className="text-[9px] font-black text-blue-500/70 uppercase tracking-widest block">Prérequis pour</span>
-                <div className="flex flex-wrap gap-1.5">
-                  {usedAsPrerequisiteFor.map(s => (
-                    <button 
-                      key={s.name}
-                      onClick={() => onNavigate(s.name)}
-                      className="flex items-center gap-1.5 px-2 py-1 rounded bg-blue-500/10 border border-blue-500/30 text-[10px] font-bold text-blue-300 hover:bg-blue-500/20 transition-all"
-                    >
-                      <BookOpen size={10} />
-                      {s.name}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            )}
-          </div>
-        )}
+              )}
+            </div>
+          )}
+        </div>
       </div>
     </motion.div>
   );
@@ -148,6 +200,7 @@ const SpellList = ({ spells }: SpellListProps) => {
 
   const [selectedSource, setSelectedSource] = useState<string>('Tous');
   const [selectedZone, setSelectedZone] = useState<string>('Toutes');
+  const [selectedSchool, setSelectedSchool] = useState<string>('Toutes');
   const [sortBy, setSortBy] = useState<'level' | 'name' | 'zone'>('level');
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc');
   const [activeSearchTerm, setActiveSearchTerm] = useState<string>(urlSearch);
@@ -167,10 +220,13 @@ const SpellList = ({ spells }: SpellListProps) => {
     return ['Toutes', ...Array.from(zones).sort()];
   }, [spells]);
 
+  const allSchools = ['Toutes', ...Object.keys(SCHOOL_CONFIG)];
+
   const handleReset = () => {
     setActiveSearchTerm('');
     setSelectedSource('Tous');
     setSelectedZone('Toutes');
+    setSelectedSchool('Toutes');
     setSortBy('level');
     setSortOrder('asc');
     setCurrentPage(1);
@@ -183,7 +239,7 @@ const SpellList = ({ spells }: SpellListProps) => {
       setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
     } else {
       setSortBy(type);
-      setSortOrder(type === 'level' ? 'asc' : 'asc');
+      setSortOrder('asc');
     }
     setCurrentPage(1);
   };
@@ -206,7 +262,11 @@ const SpellList = ({ spells }: SpellListProps) => {
         fastNormalize(s.description).includes(query);
       const matchesSource = selectedSource === 'Tous' || s.source === selectedSource;
       const matchesZone = selectedZone === 'Toutes' || Object.keys(s.npc).includes(selectedZone);
-      return matchesSearch && matchesSource && matchesZone;
+      
+      // Fixed logic: If selectedSchool is 'Toutes', don't filter.
+      const matchesSchool = selectedSchool === 'Toutes' || getSpellSchool(s.type) === selectedSchool;
+      
+      return matchesSearch && matchesSource && matchesZone && matchesSchool;
     });
 
     result.sort((a, b) => {
@@ -226,7 +286,7 @@ const SpellList = ({ spells }: SpellListProps) => {
     });
 
     return result;
-  }, [spells, selectedSource, selectedZone, sortBy, sortOrder, activeSearchTerm]);
+  }, [spells, selectedSource, selectedZone, selectedSchool, sortBy, sortOrder, activeSearchTerm]);
 
   const paginatedSpells = useMemo(() => {
     return filteredSpells.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
@@ -237,8 +297,10 @@ const SpellList = ({ spells }: SpellListProps) => {
   return (
     <div className="space-y-8">
       {/* Controls Header */}
-      <div className="flex flex-col gap-6 bg-slate-800/30 p-6 rounded-2xl border border-slate-700/50">
-        <div className="flex flex-col md:flex-row gap-4">
+      <div className="flex flex-col gap-6 bg-slate-800/30 p-6 rounded-2xl border border-slate-700/50 relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/5 blur-3xl rounded-full -mr-32 -mt-32 pointer-events-none"></div>
+        
+        <div className="flex flex-col md:flex-row gap-4 relative z-10">
           <div className="flex-1 flex gap-2">
             <button onClick={handleReset} className="btn-danger w-full md:w-auto">
               <RotateCcw size={16} /> Réinitialiser
@@ -258,45 +320,73 @@ const SpellList = ({ spells }: SpellListProps) => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="space-y-6 relative z-10">
           <div className="space-y-4">
             <div className="flex items-center gap-2 text-slate-500">
-              <Filter size={16} className="text-blue-500/50" />
-              <span className="text-[10px] font-black uppercase tracking-[0.2em]">Source des sorts</span>
+              <Sparkles size={16} className="text-blue-500/50" />
+              <span className="text-[10px] font-black uppercase tracking-[0.2em]">Écoles de Magie</span>
             </div>
             <div className="flex flex-wrap gap-2">
-              {['Tous', 'Standard', 'NMS'].map(source => (
-                <button
-                  key={source}
-                  onClick={() => { setSelectedSource(source); setCurrentPage(1); }}
-                  className={`px-5 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all border ${selectedSource === source ? 'bg-blue-600 border-blue-500 text-white shadow-xl shadow-blue-500/10 scale-105 z-10' : 'bg-slate-900 border-slate-800 text-slate-500 hover:text-slate-200 hover:border-slate-600'}`}
-                >
-                  {source}
-                </button>
-              ))}
+              {allSchools.map(school => {
+                const config = SCHOOL_CONFIG[school];
+                const isActive = selectedSchool === school;
+                const Icon = config?.icon || Sparkles;
+                return (
+                  <button
+                    key={school}
+                    onClick={() => { setSelectedSchool(school); setCurrentPage(1); }}
+                    className={`px-4 py-2.5 rounded-xl text-[10px] font-black uppercase tracking-wider transition-all border flex items-center gap-2 
+                      ${isActive 
+                        ? `${config?.bg || 'bg-blue-600'} ${config?.color || 'text-white'} ${config?.border || 'border-blue-500'} shadow-lg scale-105 z-10` 
+                        : 'bg-slate-900 border-slate-800 text-slate-500 hover:text-slate-200 hover:border-slate-600'}`}
+                  >
+                    <Icon size={14} className={isActive ? '' : 'opacity-50'} />
+                    {school}
+                  </button>
+                );
+              })}
             </div>
           </div>
 
-          <div className="space-y-4">
-            <div className="flex items-center gap-2 text-slate-500">
-              <MapPin size={16} className="text-amber-500/50" />
-              <span className="text-[10px] font-black uppercase tracking-[0.2em]">Zones Géographiques</span>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 relative z-10">
+            <div className="space-y-4">
+              <div className="flex items-center gap-2 text-slate-500">
+                <Filter size={16} className="text-blue-500/50" />
+                <span className="text-[10px] font-black uppercase tracking-[0.2em]">Source</span>
+              </div>
+              <div className="flex flex-wrap gap-2">
+                {['Tous', 'Standard', 'NMS'].map(source => (
+                  <button
+                    key={source}
+                    onClick={() => { setSelectedSource(source); setCurrentPage(1); }}
+                    className={`px-5 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all border ${selectedSource === source ? 'bg-indigo-600 border-indigo-500 text-white shadow-xl scale-105 z-10' : 'bg-slate-900 border-slate-800 text-slate-500 hover:text-slate-200 hover:border-slate-600'}`}
+                  >
+                    {source}
+                  </button>
+                ))}
+              </div>
             </div>
-            <div className="flex flex-wrap gap-2">
-              {allZones.map(zone => (
-                <button
-                  key={zone}
-                  onClick={() => { setSelectedZone(zone); setCurrentPage(1); }}
-                  className={`px-4 py-2 rounded-xl text-[10px] font-black uppercase tracking-wider transition-all border ${selectedZone === zone ? 'bg-amber-500 border-amber-400 text-slate-950 shadow-xl shadow-amber-500/10 scale-105 z-10' : 'bg-slate-900 border-slate-800 text-slate-500 hover:text-slate-200 hover:border-slate-600'}`}
+
+            <div className="space-y-4">
+              <div className="flex items-center gap-2 text-slate-500">
+                <MapPin size={16} className="text-amber-500/50" />
+                <span className="text-[10px] font-black uppercase tracking-[0.2em]">Zones</span>
+              </div>
+              <div className="relative flex-1 md:max-w-[200px]">
+                <select 
+                  value={selectedZone}
+                  onChange={(e) => { setSelectedZone(e.target.value); setCurrentPage(1); }}
+                  className="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-2.5 text-xs font-bold text-slate-300 focus:border-amber-500 outline-none appearance-none"
                 >
-                  {zone}
-                </button>
-              ))}
+                  {allZones.map(z => <option key={z} value={z}>{z}</option>)}
+                </select>
+                <MapPin size={14} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-600 pointer-events-none" />
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-wrap gap-3 pt-6 border-t border-slate-800/50">
+        <div className="flex flex-wrap gap-3 pt-6 border-t border-slate-800/50 relative z-10">
           <span className="text-[10px] font-black text-slate-600 uppercase tracking-widest self-center mr-2">Trier par :</span>
           <button 
             onClick={() => toggleSort('level')} 
@@ -321,9 +411,11 @@ const SpellList = ({ spells }: SpellListProps) => {
 
       {/* Main Content */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {paginatedSpells.map((spell, index) => (
-          <SpellCard key={`${spell.name}-${index}`} spell={spell} onNavigate={handleNavigate} />
-        ))}
+        <AnimatePresence mode="popLayout">
+          {paginatedSpells.map((spell, index) => (
+            <SpellCard key={`${spell.name}-${index}`} spell={spell} onNavigate={handleNavigate} />
+          ))}
+        </AnimatePresence>
       </div>
 
       <Pagination 

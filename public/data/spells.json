@@ -302,7 +302,7 @@
         "Shovanis"
       ]
     },
-    "type": "Arcane noir mental",
+    "type": "Arcane Noir mental",
     "source": "Standard"
   },
   {
@@ -392,7 +392,7 @@
         "Un aveugle"
       ]
     },
-    "type": "Arcane noir mental",
+    "type": "Arcane Noir mental",
     "source": "Standard"
   },
   {
@@ -716,7 +716,7 @@
         "Un aveugle"
       ]
     },
-    "type": "Arcane noir mental",
+    "type": "Arcane Noir mental",
     "source": "Standard"
   },
   {
@@ -1112,7 +1112,7 @@
         "Sir Mordenthal"
       ]
     },
-    "type": "Arcane noir mental",
+    "type": "Arcane Noir mental",
     "source": "Standard"
   },
   {
@@ -1166,7 +1166,7 @@
         "Mithanna Snowraven"
       ]
     },
-    "type": "Eau mental",
+    "type": "Eau physique",
     "source": "Standard"
   },
   {
@@ -1346,7 +1346,7 @@
         "Filandrius"
       ]
     },
-    "type": "Feu Physique",
+    "type": "Feu physique",
     "source": "Standard"
   },
   {
@@ -1362,7 +1362,8 @@
         "Un puissant guerrier, Est du désert de DI"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "mental"
   },
   {
     "name": "Résistance à l'air",
@@ -1377,7 +1378,8 @@
         "Kalezit, renfoncement montagneux \nau sud de l'entrée du territoire des railleuses de RD (640, 2315, 0)"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Terre physique"
   },
   {
     "name": "Absolution",
@@ -1392,7 +1394,8 @@
         "Luvinael, sous sol du temple de Stonecrest"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Lumière physique"
   },
   {
     "name": "Afflux de mana",
@@ -1407,7 +1410,8 @@
         "Etheanan (Une maison au nord-ouest du lac des tarentules, RD)"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Arcane physique"
   },
   {
     "name": "Déflagration de mana",
@@ -1422,7 +1426,8 @@
         "Tito, Château de Mordhental"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Arcane mental"
   },
   {
     "name": "Bénédiction de groupe",
@@ -1437,7 +1442,8 @@
         "Gakalia, une maison dans Redwall"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Lumière physique"
   },
   {
     "name": "Coup de vent",
@@ -1452,7 +1458,8 @@
         "Caprice, maison aux loups de SH"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Air mental"
   },
   {
     "name": "Vortex vers Niève",
@@ -1467,7 +1474,8 @@
         "Kalezit, renfoncement montagneux \nau sud de l'entrée du territoire des railleuses de RD (640, 2315, 0)"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Air physique"
   },
   {
     "name": "Vortex vers Drake Island",
@@ -1482,7 +1490,8 @@
         "Kalezit, renfoncement montagneux \nau sud de l'entrée du territoire des railleuses de RD (640, 2315, 0)"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Air physique"
   },
   {
     "name": "Enchevêtrement",
@@ -1497,7 +1506,8 @@
         "Shaman Weethgwotha, village skraugs verts de SH"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Terre physique"
   },
   {
     "name": "Implosion",
@@ -1512,7 +1522,8 @@
         "Xaria, une maison dans Redwall"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Terre mental"
   },
   {
     "name": "Lucioles",
@@ -1527,7 +1538,8 @@
         "Gakalia, une maison dans Redwall"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Lumière physique"
   },
   {
     "name": "Lumière divine",
@@ -1542,7 +1554,8 @@
         "Gakalia, une maison dans Redwall"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Lumière mental"
   },
   {
     "name": "Frayeur mentale",
@@ -1557,7 +1570,8 @@
         "Squirrel, Ouest du sous-sol métiers Redwall"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Arcane mental"
   },
   {
     "name": "Portail vers Niève",
@@ -1572,7 +1586,8 @@
         "Squirrel, Ouest du sous-sol métiers Redwall"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Arcane physique"
   },
   {
     "name": "Portail vers Drake Island",
@@ -1587,7 +1602,8 @@
         "Squirrel, Ouest du sous-sol métiers Redwall"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Arcane physique"
   },
   {
     "name": "Soin divin",
@@ -1602,7 +1618,8 @@
         "Gakalia, une maison dans Redwall"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Lumière physique"
   },
   {
     "name": "Brûlure funeste",
@@ -1617,7 +1634,8 @@
         "Squirrel, Ouest du sous-sol métiers Redwall"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Arcane Noir mental"
   },
   {
     "name": "Chute de pierres",
@@ -1632,7 +1650,8 @@
         "Shaman Hatan, Maison dans la cave des Skraugs Verts\n(entrée 1237, 553, 0)"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Terre physique"
   },
   {
     "name": "Flèches étincelantes",
@@ -1662,7 +1681,8 @@
         "Xaria, une maison dans Redwall"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Terre physique"
   },
   {
     "name": "Cri de puissance",
@@ -1677,7 +1697,8 @@
         "Oscoor Kayle, maison au Nord-Ouest de DI, (754,1143,3)"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "mental"
   },
   {
     "name": "Inondation",
@@ -1692,7 +1713,8 @@
         "Cassandre, ilot à l'Est-Nord-Est de DI"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Eau physique"
   },
   {
     "name": "Peau d'écorce",
@@ -1707,7 +1729,8 @@
         "Harung Batkist (rez-de-chaussée de la Grande Bibliothèque)"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Terre physique"
   },
   {
     "name": "Peau d'écorce de groupe",
@@ -1722,7 +1745,8 @@
         "Xaria, ville de Redwall"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Terre physique"
   },
   {
     "name": "Barrage",
@@ -1737,7 +1761,8 @@
         "Cassandre, ilot à l'est de Redwall"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Eau physique"
   },
   {
     "name": "Barrage de groupe",
@@ -1752,7 +1777,8 @@
         "Cassandre, ilot à l'est de Redwall (983,1298,3)"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Eau physique"
   },
   {
     "name": "Force ancestrale",
@@ -1767,7 +1793,8 @@
         "Xaria, ville de Redwall"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Terre physique"
   },
   {
     "name": "Force ancestrale de groupe",
@@ -1782,7 +1809,8 @@
         "Xaria, ville de Redwall"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Terre physique"
   },
   {
     "name": "Foudroiement",
@@ -1797,7 +1825,8 @@
         "Kalezit, renfoncement montagneux au sud de l'entrée du territoire des railleuses de RD (640, 2315, 0)"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Air mental"
   },
   {
     "name": "Volcano",
@@ -1812,7 +1841,8 @@
         "Déziel, sous-sol des métiers Redwall"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Feu mental"
   },
   {
     "name": "Esprit limpide",
@@ -1827,7 +1857,8 @@
         "Cassandre, ilot à l'est de Redwall"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Eau physique"
   },
   {
     "name": "Bouclier d'essence magique",
@@ -1842,7 +1873,8 @@
         "Cassandre, ilot à l'est de Redwall"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Eau physique"
   },
   {
     "name": "Bouclier d'essence magique de groupe",
@@ -1857,7 +1889,8 @@
         "Cassandre, ilot à l'est de Redwall"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Eau physique"
   },
   {
     "name": "Sérénité",
@@ -1872,7 +1905,8 @@
         "Gakalia, une maison dans Redwall"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Lumière physique"
   },
   {
     "name": "Peau de granit",
@@ -1887,7 +1921,8 @@
         "Xaria, maison dans Redwall"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Terre physique"
   },
   {
     "name": "Afflux de puissance",
@@ -1902,7 +1937,8 @@
         "Squirrel, sous-sol des métiers Redwall"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Arcane physique"
   },
   {
     "name": "Afflux de puissance de groupe",
@@ -1917,7 +1953,8 @@
         "Squirrel, sous-sol des métiers Redwall"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Arcane physique"
   },
   {
     "name": "Zombification",
@@ -1932,6 +1969,7 @@
         "Squirrel, Ouest du sous-sol métiers Redwall"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "type": "Arcane Noir mental"
   }
 ]

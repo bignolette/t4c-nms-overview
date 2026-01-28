@@ -7,7 +7,7 @@ import type { RecipeItem } from '../data/types';
 import CraftingTree from './CraftingTree';
 import { createPortal } from 'react-dom';
 import { 
-  Search, ChevronLeft, ChevronRight, ArrowUpDown, Star, X, RotateCcw, Package, MapPin,
+  Search, ArrowUpDown, Star, X, RotateCcw, Package, MapPin,
   Shield, Sword, Crown, Shirt, Footprints, Hand, Circle, Link2, GripHorizontal, Columns2, Medal,
   ArrowUpRight, ArrowRight, Wind, Users, ArrowRightCircle, User, LayoutGrid, List, ChevronDown, ChevronUp, Map, Tag,
   Skull, Info, Sparkles, Filter, Hammer, Plus, Trash2, ClipboardList, Square, CheckSquare, Bell, Check, ExternalLink
@@ -1367,13 +1367,6 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
 
   const totalPages = Math.ceil(filteredRecipes.length / itemsPerPage);
   const currentRecipes = filteredRecipes.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
-
-  const handlePageChange = (newPage: number) => {
-    if (newPage >= 1 && newPage <= totalPages) {
-      setCurrentPage(newPage);
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-  };
 
   const toggleSort = (type: string) => {
     if (sortBy === type) {
