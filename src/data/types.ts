@@ -131,50 +131,130 @@ export interface PageContent {
 
 export interface Spell {
 
+
+
     name: string;
+
+
 
     prerequisites?: string;
 
+
+
     level: number;
+
+
 
     wis: number;
 
+
+
     int: number;
+
+
 
     price: string;
 
+
+
     pc?: number;
+
+
 
     mana: string;
 
+
+
     description: string;
 
-    npc: string;
+
+
+    npc: Record<string, string[]>;
+
+
 
     type?: string;
 
+
+
     source: 'Standard' | 'NMS';
 
+
+
 }
+
+
+
+
 
 
 
 export interface Skill {
 
+
+
+
+
+
+
     name: string;
+
+
+
+
+
+
 
     maxTraining: string;
 
+
+
+
+
+
+
     requirements: string;
 
-    firstTeacher: string;
 
-    initialCost: string;
+
+
+
+
 
     description: string;
 
-    trainingTeachers: string;
+
+
+
+
+
+
+    trainingTeachers: Record<string, string[]>;
+
+
+
+
+
+
 
     trainingCost: string;
 
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
