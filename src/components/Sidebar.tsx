@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, Hammer, Skull, Package, User, ShieldCheck, Calculator, PanelLeftClose, PanelLeftOpen, Shield } from 'lucide-react';
+import { Menu, X, Home, Hammer, Skull, Package, User, ShieldCheck, Calculator, PanelLeftClose, PanelLeftOpen, Shield, BookOpen, Star } from 'lucide-react';
 
 interface SidebarProps {
   isOpen?: boolean;
@@ -13,15 +13,16 @@ const Sidebar = ({ isOpen = true, onToggle }: SidebarProps) => {
 
   const navItems = [
     { name: 'Accueil', icon: Home, path: '/' },
+    { name: 'Encyclopédie', icon: BookOpen, path: '/wiki/items' },
     { name: 'Simulateur', icon: Calculator, path: '/planner' },
-    { name: 'Equipable', icon: User, path: '/equipable' },
-    { name: 'Artisanat', icon: Hammer, path: '/wiki/metiers' },
-    { name: 'Bestiaire', icon: Skull, path: '/wiki/bestiary' },
-    { name: 'Objets', icon: Package, path: '/wiki/items' },
+    { name: 'Personnage', icon: User, path: '/equipable' },
     { name: 'Mentions Légales', icon: ShieldCheck, path: '/legal' },
   ];
 
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (path: string) => {
+    if (path === '/wiki/items') return location.pathname.startsWith('/wiki');
+    return location.pathname === path;
+  };
 
   return (
     <>

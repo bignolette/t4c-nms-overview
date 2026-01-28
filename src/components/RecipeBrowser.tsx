@@ -1534,36 +1534,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
             <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/5 blur-3xl rounded-full -mr-16 -mt-16"></div>
             
             <div className="space-y-6 relative z-10">
-              <div className="w-full space-y-2">
-                <div className="flex gap-2">
-                  <div className="relative flex-1 group">
-                    <Search className="absolute left-4 top-3.5 text-slate-500 group-focus-within:text-amber-500 transition-colors" size={20} />
-                    <input
-                      type="text"
-                      placeholder={isItemsPage ? "Rechercher un objet..." : "Ex: Potion, Lingot, Épée..."}
-                      value={searchInput}
-                      onChange={(e) => {
-                        const val = e.target.value;
-                        setSearchInput(val);
-                        setActiveSearchTerm(val);
-                        setCurrentPage(1);
-                        setSearchParams(prev => {
-                            if (val) prev.set('search', val);
-                            else prev.delete('search');
-                            return prev;
-                        });
-                        if (isExactSearch) setIsExactSearch(false);
-                      }}
-                      className="w-full bg-slate-950 border border-slate-700 rounded-2xl py-3.5 pl-12 pr-10 text-slate-100 focus:border-amber-500 outline-none transition-all focus:ring-4 focus:ring-amber-500/10 shadow-inner"
-                    />
-                    {searchInput && (
-                      <button onClick={handleClearSearch} className="absolute right-4 top-3.5 text-slate-500 hover:text-slate-300"><X size={20} /></button>
-                    )}
-                  </div>
-                </div>
-              </div>
-
-              <div className="flex flex-col lg:flex-row gap-6 items-end border-t border-slate-800/50 pt-6">
+              <div className="flex flex-col lg:flex-row gap-6 items-end">
                 {isItemsPage ? (
                   <div className="w-full space-y-6">
                     <div className="space-y-3">

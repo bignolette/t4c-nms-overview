@@ -240,58 +240,35 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
       <div className="flex flex-col gap-6 bg-slate-800/30 p-6 rounded-2xl border border-slate-700/50">
         <div className="flex flex-col md:flex-row gap-4">
           <div className="flex-1 flex gap-2">
-            <div className="flex-1 relative group">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500" size={20} />
-              <input
-                type="text"
-                placeholder="Rechercher un monstre ou un butin..."
-                value={searchInput}
-                onChange={(e) => {
-                    const val = e.target.value;
-                    setSearchInput(val);
-                    setActiveSearchTerm(val);
-                    setCurrentPage(1);
-                    setSearchParams(prev => {
-                        if (val) prev.set('search', val);
-                        else prev.delete('search');
-                        return prev;
-                    });
-                }}
-                className="w-full bg-slate-900/50 border border-slate-700 text-slate-100 pl-12 pr-10 py-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-500/50 focus:border-amber-500 transition-all placeholder:text-slate-600"
-              />
-              {searchInput && (
-                <button onClick={handleClearSearch} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-500 hover:text-slate-300">
-                  <X size={20} />
-                </button>
-              )}
-            </div>
-            <button onClick={handleReset} className="flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-bold border bg-slate-800 text-slate-400 border-slate-700 hover:text-rose-400 transition-all">
-              <RotateCcw size={14} /> Réinitialiser
+            <button onClick={handleReset} className="flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-sm font-black uppercase tracking-widest border bg-slate-800 text-slate-400 border-slate-700 hover:text-rose-400 transition-all w-full md:w-auto shadow-lg shadow-black/20">
+              <RotateCcw size={16} /> Réinitialiser
             </button>
           </div>
 
-          <div className="flex items-center gap-4 px-4 py-2 bg-slate-900/50 rounded-xl border border-slate-700/50 text-sm h-12">
-            <div className="text-slate-400 whitespace-nowrap">
-              <span className="font-bold text-amber-500">{filteredMonsters.length}</span> créatures
+          <div className="flex items-center gap-4 px-6 py-3 bg-slate-950/50 rounded-xl border border-slate-800 text-sm h-14 shadow-inner">
+            <div className="text-slate-400 whitespace-nowrap flex items-center gap-2">
+              <span className="font-black text-amber-500 text-xl">{filteredMonsters.length}</span>
+              <span className="text-[10px] font-black uppercase tracking-widest opacity-60">créatures</span>
             </div>
-            <div className="w-px h-4 bg-slate-700" />
-            <div className="text-slate-400 whitespace-nowrap">
-              <span className="font-bold text-slate-200">{monsters.length}</span> au total
+            <div className="w-px h-6 bg-slate-800" />
+            <div className="text-slate-400 whitespace-nowrap flex items-center gap-2">
+              <span className="font-black text-slate-200 text-lg">{monsters.length}</span>
+              <span className="text-[10px] font-black uppercase tracking-widest opacity-40">total</span>
             </div>
           </div>
         </div>
 
-        <div className="space-y-3">
+        <div className="space-y-4">
           <div className="flex items-center gap-2 text-slate-500">
-            <Filter size={16} />
-            <span className="text-xs font-bold uppercase tracking-wider">Zones :</span>
+            <Filter size={16} className="text-amber-500/50" />
+            <span className="text-[10px] font-black uppercase tracking-[0.2em]">Zones Géographiques</span>
           </div>
           <div className="flex flex-wrap gap-2">
             {baseZones.map(zone => (
               <button
                 key={zone}
                 onClick={() => { setSelectedZone(zone); setCurrentPage(1); }}
-                className={`px-4 py-2 rounded-xl text-sm font-semibold transition-all ${selectedZone === zone ? 'bg-amber-500 text-slate-900 shadow-lg scale-105' : 'bg-slate-800/50 text-slate-400 border border-slate-700 hover:text-slate-200'}`}
+                className={`px-5 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all border ${selectedZone === zone ? 'bg-amber-500 border-amber-400 text-slate-950 shadow-xl shadow-amber-500/10 scale-105 z-10' : 'bg-slate-900 border-slate-800 text-slate-500 hover:text-slate-200 hover:border-slate-600'}`}
               >
                 {zone}
               </button>
