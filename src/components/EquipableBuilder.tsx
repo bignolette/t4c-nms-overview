@@ -259,7 +259,7 @@ const EquipableBuilder = () => {
                 </h2>
                 <p className="text-xs text-slate-500 font-bold uppercase tracking-widest mt-1">Configurez vos attributs</p>
               </div>
-              <button onClick={() => setShowLoadModal(true)} className="px-5 py-2.5 bg-white text-slate-950 rounded-xl font-black text-[10px] uppercase tracking-[0.15em] hover:bg-amber-500 transition-all">Importer</button>
+              <button onClick={() => setShowLoadModal(true)} className="btn-secondary px-5 py-2.5 text-[10px] uppercase tracking-[0.15em]">Importer</button>
             </div>
             <div className="grid grid-cols-1 gap-4 relative z-10">
               {(['str', 'end', 'dex', 'int', 'wis'] as const).map((key) => {
@@ -419,7 +419,7 @@ const ItemCard = ({ item, isBiSMode, idx }: { item: RecipeItem, isBiSMode: boole
           <span className="text-[10px] font-black text-amber-500/80 uppercase tracking-[0.2em] mb-1 block">{item.source}</span>
           <h4 className={`text-xl font-black italic uppercase tracking-tight ${isTopBiS ? 'text-emerald-400' : 'text-slate-100'}`}>{item.name}</h4>
         </div>
-        <Link to={`/wiki/items?search=${encodeURIComponent(item.name)}`} className="px-4 py-2 bg-slate-950 border border-white/5 rounded-xl text-[10px] font-black text-slate-500 hover:text-amber-500 transition-all uppercase tracking-widest">Détails</Link>
+        <Link to={`/wiki/items?search=${encodeURIComponent(item.name)}`} className="btn-secondary px-4 py-2 text-[10px] uppercase tracking-widest">Détails</Link>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>

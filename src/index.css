@@ -52,6 +52,18 @@
   .quest-description ul {
     @apply list-disc list-inside mb-4 space-y-1 text-slate-300;
   }
+
+  .btn-primary {
+    @apply bg-amber-500 hover:bg-amber-400 text-slate-950 px-6 py-2.5 rounded-xl font-black uppercase tracking-widest text-xs transition-all shadow-lg active:scale-95 flex items-center justify-center gap-2;
+  }
+
+  .btn-secondary {
+    @apply bg-slate-800 hover:bg-slate-700 text-slate-300 px-6 py-2.5 rounded-xl font-bold transition-all border border-slate-700 flex items-center justify-center gap-2;
+  }
+
+  .btn-danger {
+    @apply px-6 py-2.5 rounded-xl text-xs font-black uppercase tracking-widest border transition-all flex items-center justify-center gap-2 bg-slate-800/50 text-slate-400 border-slate-700 hover:text-rose-400 hover:border-rose-500/30 hover:bg-rose-500/5;
+  }
 }
 
 @keyframes fadeIn {

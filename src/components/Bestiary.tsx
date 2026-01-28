@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useData } from '../context/DataContext';
 import { fastNormalize } from '../data/utils';
 import type { Monster } from '../data/types';
-import { MapPin, Coins, Skull, Filter, Search, AlertCircle, ChevronRight, ExternalLink, X, RotateCcw, ChevronLeft, Hammer } from 'lucide-react';
+import { MapPin, Coins, Skull, Filter, AlertCircle, ExternalLink, RotateCcw, ChevronLeft, ChevronRight, Hammer } from 'lucide-react';
 
 interface BestiaryProps {
   monsters: Monster[];
@@ -149,14 +149,12 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
   const urlSearch = searchParams.get('search') || '';
 
   const [selectedZone, setSelectedZone] = useState<string>('Toutes');
-  const [searchInput, setSearchInput] = useState<string>(urlSearch);
   const [activeSearchTerm, setActiveSearchTerm] = useState<string>(urlSearch);
   const [currentPage, setCurrentPage] = useState(1);
 
   // Sync with URL search parameters
   useEffect(() => {
     if (urlSearch !== activeSearchTerm) {
-      setSearchInput(urlSearch);
       setActiveSearchTerm(urlSearch);
       setCurrentPage(1);
       // When searching from a link, we want to see all zones to find the specific monster
@@ -172,20 +170,7 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
     return ['Toutes', ...Array.from(zones).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }))];
   }, [monsters]);
 
-
-
-  const handleClearSearch = () => {
-    setSearchInput('');
-    setActiveSearchTerm('');
-    setSearchParams(prev => {
-      prev.delete('search');
-      return prev;
-    });
-    setCurrentPage(1);
-  };
-
   const handleReset = () => {
-    setSearchInput('');
     setActiveSearchTerm('');
     setSelectedZone('Toutes');
     setCurrentPage(1);
@@ -240,7 +225,7 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
       <div className="flex flex-col gap-6 bg-slate-800/30 p-6 rounded-2xl border border-slate-700/50">
         <div className="flex flex-col md:flex-row gap-4">
           <div className="flex-1 flex gap-2">
-            <button onClick={handleReset} className="flex items-center justify-center gap-2 px-6 py-3 rounded-xl text-sm font-black uppercase tracking-widest border bg-slate-800 text-slate-400 border-slate-700 hover:text-rose-400 transition-all w-full md:w-auto shadow-lg shadow-black/20">
+            <button onClick={handleReset} className="btn-danger w-full md:w-auto">
               <RotateCcw size={16} /> Réinitialiser
             </button>
           </div>

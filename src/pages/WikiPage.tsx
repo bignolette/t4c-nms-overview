@@ -2,15 +2,15 @@ import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { useData } from '../context/DataContext';
 import RecipeBrowser from '../components/RecipeBrowser';
 import Bestiary from '../components/Bestiary';
-import { AlertCircle, Package, Hammer, Skull, Search, X } from 'lucide-react';
-import { useState, useEffect, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { Package, Hammer, Skull, Search, X } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 const WikiPage = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
-  const { wikiData, bestiaryData, recipesData, itemsData } = useData();
+  const { bestiaryData, recipesData, itemsData } = useData();
   
   const currentTab = slug || 'items';
   const searchTerm = searchParams.get('search') || '';

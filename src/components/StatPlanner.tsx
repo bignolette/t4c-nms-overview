@@ -275,7 +275,7 @@ const StatPlanner = () => {
                 onChange={(e) => setCharName(normalizeName(e.target.value))}
                 className="flex-1 bg-slate-950 border border-slate-800 rounded-xl px-4 py-2 text-sm font-bold text-amber-500 placeholder:text-slate-800 focus:outline-none focus:border-amber-500/50 transition-all"
               />
-              <button onClick={saveCharacter} disabled={!charName} className="px-8 bg-amber-500 text-slate-900 rounded-xl disabled:opacity-30 hover:bg-amber-400 transition-colors shadow-lg font-black text-2xl flex items-center justify-center">+</button>
+              <button onClick={saveCharacter} disabled={!charName} className="btn-primary px-8 text-2xl">+</button>
             </div>
           </div>
 
@@ -309,25 +309,24 @@ const StatPlanner = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
         {/* COLONNE GAUCHE (Plus large pour les attributs) */}
-        <div className="lg:col-span-6 space-y-6">
-          {/* Renaissance */}
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-center shadow-xl overflow-hidden relative group">
-            <h2 className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2 flex items-center justify-center gap-2"><Zap size={14}/> Renaissance</h2>
-            <div className="text-3xl font-black text-amber-500 mb-6 drop-shadow-[0_0_10px_rgba(245,158,11,0.3)] group-hover:scale-110 transition-transform uppercase italic">
-              {renaissance === 0 ? "Humain" : `x${renaissance}`}
-            </div>
-            <div className="grid grid-cols-7 gap-1 relative z-10">
-              {[0, 1, 2, 3, 4, 5, 6].map((r) => (
-                <button key={r} onClick={() => handleRenaissanceChange(r)} className={`py-2 rounded-lg border text-[10px] font-black transition-all ${renaissance === r ? 'bg-amber-500 border-amber-500 text-slate-900' : 'bg-slate-800 border-slate-700 text-slate-400 hover:border-slate-500'}`}>
-                  {r === 0 ? 'H' : `${r}x`}
-                </button>
-              ))}
-            </div>
-            <Zap className="absolute -bottom-4 -left-4 text-slate-800/20" size={80} />
-          </div>
-
-          <button onClick={resetAll} className="w-full py-4 bg-slate-800 hover:bg-red-500/10 text-slate-400 rounded-2xl border border-slate-700 transition-all font-black uppercase text-xs tracking-widest flex items-center justify-center gap-2"><RotateCcw size={16} /> Reset Build</button>
-
+                  <div className="lg:col-span-6 space-y-6">
+                  {/* Renaissance */}
+                  <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-center shadow-xl overflow-hidden relative group">
+                    <h2 className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2 flex items-center justify-center gap-2"><Zap size={14}/> Renaissance</h2>
+                    <div className="text-3xl font-black text-amber-500 mb-6 drop-shadow-[0_0_10px_rgba(245,158,11,0.3)] group-hover:scale-110 transition-transform uppercase italic">
+                      {renaissance === 0 ? "Humain" : `x${renaissance}`}
+                    </div>
+                    <div className="grid grid-cols-7 gap-1 relative z-10">
+                      {[0, 1, 2, 3, 4, 5, 6].map((r) => (
+                        <button key={r} onClick={() => handleRenaissanceChange(r)} className={`py-2 rounded-lg border text-[10px] font-black transition-all ${renaissance === r ? 'bg-amber-500 border-amber-500 text-slate-950 shadow-lg' : 'bg-slate-800 border-slate-700 text-slate-400 hover:border-slate-500'}`}>
+                          {r === 0 ? 'H' : `${r}x`}
+                        </button>
+                      ))}
+                    </div>
+                    <Zap className="absolute -bottom-4 -left-4 text-slate-800/20" size={80} />
+                  </div>
+        
+                  <button onClick={resetAll} className="btn-danger w-full"><RotateCcw size={16} /> Reset Build</button>
           {/* Attributs & Progression */}
           <div className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl relative">
             <div className="absolute top-0 left-0 w-full h-1 bg-slate-800">
@@ -581,11 +580,11 @@ const StatPlanner = () => {
               <div className="flex gap-3">
                 {modal.type === 'confirm' ? (
                   <>
-                    <button onClick={() => setModal(prev => ({ ...prev, show: false }))} className="flex-1 py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all">Annuler</button>
-                    <button onClick={() => { if (modal.onConfirm) modal.onConfirm(); }} className="flex-1 py-3 px-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-900 font-black uppercase tracking-wider shadow-lg transition-all">Confirmer</button>
+                    <button onClick={() => setModal(prev => ({ ...prev, show: false }))} className="btn-secondary flex-1">Annuler</button>
+                    <button onClick={() => { if (modal.onConfirm) modal.onConfirm(); }} className="btn-primary flex-1">Confirmer</button>
                   </>
                 ) : (
-                  <button onClick={() => setModal(prev => ({ ...prev, show: false }))} className="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-black uppercase tracking-wider transition-all shadow-lg">OK</button>
+                  <button onClick={() => setModal(prev => ({ ...prev, show: false }))} className="btn-secondary w-full">OK</button>
                 )}
               </div>
             </div>

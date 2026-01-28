@@ -51,11 +51,11 @@ const Header = () => {
                 },
                 true
             )}
-            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-950 border border-slate-800 text-slate-400 hover:text-amber-500 hover:border-amber-500/30 transition-all group shadow-inner"
+            className="btn-secondary px-4 py-2 text-[10px] bg-slate-950 hover:text-amber-500"
             title="Sauvegarder"
           >
             <Download size={18} className="group-hover:scale-110 transition-transform" />
-            <span className="font-black text-[10px] uppercase tracking-wider hidden sm:inline">Sauvegarder</span>
+            <span className="font-black uppercase tracking-wider hidden sm:inline">Sauvegarder</span>
           </button>
           
           <input 
@@ -74,11 +74,11 @@ const Header = () => {
                     setTimeout(() => fileInputRef.current?.click(), 100);
                 }
             )}
-            className="flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-950 border border-slate-800 text-slate-400 hover:text-emerald-500 hover:border-emerald-500/30 transition-all group shadow-inner"
+            className="btn-secondary px-4 py-2 text-[10px] bg-slate-950 hover:text-emerald-500"
             title="Charger"
           >
             <Upload size={18} className="group-hover:scale-110 transition-transform" />
-            <span className="font-black text-[10px] uppercase tracking-wider hidden sm:inline">Charger</span>
+            <span className="font-black uppercase tracking-wider hidden sm:inline">Charger</span>
           </button>
         </div>
       </header>
@@ -113,11 +113,11 @@ const Header = () => {
               <div className="flex gap-3">
                 {modal.type === 'confirm' ? (
                   <>
-                    <button onClick={() => setModal(prev => ({ ...prev, show: false }))} className="flex-1 py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold transition-all">Annuler</button>
-                    <button onClick={() => { if (modal.onConfirm) modal.onConfirm(); }} className="flex-1 py-3 px-4 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-900 font-black uppercase tracking-wider shadow-lg transition-all">Confirmer</button>
+                    <button onClick={() => setModal(prev => ({ ...prev, show: false }))} className="btn-secondary flex-1">Annuler</button>
+                    <button onClick={() => { if (modal.onConfirm) modal.onConfirm(); }} className="btn-primary flex-1">Confirmer</button>
                   </>
                 ) : (
-                  <button onClick={() => setModal(prev => ({ ...prev, show: false }))} className="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-black uppercase tracking-wider transition-all shadow-lg">OK</button>
+                  <button onClick={() => setModal(prev => ({ ...prev, show: false }))} className="btn-secondary w-full">OK</button>
                 )}
               </div>
             </div>

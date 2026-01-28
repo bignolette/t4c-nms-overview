@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { Hammer, ExternalLink, Skull, Shield, Calculator, Search, BookOpen, User } from 'lucide-react';
+import { ExternalLink, Calculator, Search, BookOpen, User } from 'lucide-react';
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState('');

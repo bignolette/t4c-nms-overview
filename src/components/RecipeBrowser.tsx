@@ -1206,7 +1206,6 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
   };
   const [isExactSearch, setIsExactSearch] = useState(false);
 
-  const [searchInput, setSearchInput] = useState(urlSearch);
   const [activeSearchTerm, setActiveSearchTerm] = useState(urlSearch);
   const [selectedProf, setSelectedProf] = useState('Tous');
   const [selectedType, setSelectedType] = useState('Tous');
@@ -1238,12 +1237,11 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
 
   useEffect(() => {
     if (urlSearch !== activeSearchTerm) {
-      setSearchInput(urlSearch);
       setActiveSearchTerm(urlSearch);
       setCurrentPage(1);
       if (urlSearch && !isItemsPage) setDisplayMode('all');
     }
-  }, [urlSearch, isItemsPage]);
+  }, [urlSearch, isItemsPage, activeSearchTerm]);
 
   const toggleFavorite = (name: string) => {
     const newFavs = favorites.includes(name) 
@@ -1262,7 +1260,6 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
 
 
   const handleReset = () => {
-    setSearchInput('');
     setActiveSearchTerm('');
     setIsExactSearch(false);
     setSelectedProf('Tous');
@@ -1276,17 +1273,6 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
     setDisplayMode('recipes');
     setCurrentPage(1);
     setSearchParams(new URLSearchParams());
-  };
-
-  const handleClearSearch = () => {
-    setSearchInput('');
-    setActiveSearchTerm('');
-    setIsExactSearch(false);
-    setSearchParams(prev => {
-      prev.delete('search');
-      return prev;
-    });
-    setCurrentPage(1);
   };
 
   const filteredRecipes = useMemo(() => {
@@ -1398,7 +1384,6 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
   };
 
   const navigateToRecipe = (name: string) => {
-    setSearchInput(name);
     setActiveSearchTerm(name);
     setIsExactSearch(true);
     setSearchParams(prev => {
@@ -1685,7 +1670,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
                 </>
               )}
 
-              <button onClick={handleReset} className="ml-auto flex items-center gap-2 px-4 py-2 rounded-full text-[11px] font-bold text-slate-500 hover:text-rose-400 transition-colors"><RotateCcw size={12} /> Réinitialiser</button>
+              <button onClick={handleReset} className="ml-auto btn-danger"><RotateCcw size={12} /> Réinitialiser</button>
             </div>
           </div>
 
