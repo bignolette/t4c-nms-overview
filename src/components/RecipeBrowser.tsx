@@ -881,12 +881,21 @@ const NPCGroupedView = ({
                                             <ArrowRightCircle size={10} className="opacity-0 group-hover:opacity-100 transition-opacity" />
                                           </button>
                                         </div>
-                                        <button 
-                                          onClick={() => toggleFavorite(recipe.name)}
-                                          className={`p-1 rounded transition-all ${favorites.includes(recipe.name) ? 'text-yellow-500' : 'text-slate-700 hover:text-slate-400'}`}
-                                        >
-                                          <Star size={12} fill={favorites.includes(recipe.name) ? 'currentColor' : 'none'} />
-                                        </button>
+                                        <div className="flex items-center gap-1">
+                                            <Link
+                                              to={`/wiki/items?search=${encodeURIComponent(recipe.name)}`}
+                                              className="p-1 text-slate-600 hover:text-amber-500 transition-colors rounded-md hover:bg-amber-500/10"
+                                              title="Voir l'objet"
+                                            >
+                                              <ExternalLink size={12} />
+                                            </Link>
+                                            <button 
+                                              onClick={() => toggleFavorite(recipe.name)}
+                                              className={`p-1 rounded transition-all ${favorites.includes(recipe.name) ? 'text-yellow-500' : 'text-slate-700 hover:text-slate-400'}`}
+                                            >
+                                              <Star size={12} fill={favorites.includes(recipe.name) ? 'currentColor' : 'none'} />
+                                            </button>
+                                        </div>
                                       </div>
                                     ))}
                                   </div>
@@ -1207,7 +1216,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
   const [sortBy, setSortBy] = useState<string>(isItemsPage ? 'name' : 'level');
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc');
   const [showOnlyFavs, setShowOnlyFavs] = useState(false);
-  const [showBaseComponents, setShowBaseComponents] = useState(false);
+  const [displayMode, setDisplayMode] = useState<'all' | 'recipes' | 'components'>('recipes');
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = layoutMode === 'grid' ? 12 : 8;
 
@@ -1232,7 +1241,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
       setSearchInput(urlSearch);
       setActiveSearchTerm(urlSearch);
       setCurrentPage(1);
-      if (urlSearch && !isItemsPage) setShowBaseComponents(true);
+      if (urlSearch && !isItemsPage) setDisplayMode('all');
     }
   }, [urlSearch, isItemsPage]);
 
@@ -1264,7 +1273,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
     setSortBy(isItemsPage ? 'name' : 'level');
     setSortOrder('asc');
     setShowOnlyFavs(false);
-    setShowBaseComponents(false);
+    setDisplayMode('recipes');
     setCurrentPage(1);
     setSearchParams(new URLSearchParams());
   };
@@ -1304,10 +1313,15 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
       const matchesProf = selectedProf === 'Tous' || recipe.profession === selectedProf;
       const matchesLevel = (recipe.level || 0) >= levelRange[0] && (recipe.level || 0) <= levelRange[1];
       const matchesFav = !showOnlyFavs || favorites.includes(recipe.name);
-      const matchesBaseToggle = showBaseComponents || !isBaseComponent || normalizedSearch !== '';
       const matchesZone = selectedZone === 'Toutes' || (recipe.zones && recipe.zones.includes(selectedZone));
       
-      if (!matchesProf || !matchesLevel || !matchesFav || !matchesBaseToggle || !matchesType || !matchesZone || !matchesStats) return false;
+      let matchesDisplayMode = true;
+      if (normalizedSearch === '') {
+          if (displayMode === 'recipes') matchesDisplayMode = !isBaseComponent;
+          else if (displayMode === 'components') matchesDisplayMode = isBaseComponent;
+      }
+      
+      if (!matchesProf || !matchesLevel || !matchesFav || !matchesDisplayMode || !matchesType || !matchesZone || !matchesStats) return false;
       if (normalizedSearch === '') return true;
 
       if (isExactSearch) return fastNormalize(recipe.name) === normalizedSearch;
@@ -1341,7 +1355,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
       }
     });
     return result;
-  }, [recipes, activeSearchTerm, selectedProf, selectedType, selectedZone, selectedStats, levelRange, sortBy, sortOrder, showOnlyFavs, showBaseComponents, favorites, isItemsPage, viewMode, isExactSearch, findItemSource]);
+  }, [recipes, activeSearchTerm, selectedProf, selectedType, selectedZone, selectedStats, levelRange, sortBy, sortOrder, showOnlyFavs, displayMode, favorites, isItemsPage, viewMode, isExactSearch, findItemSource]);
 
   const getMatchingIngredients = (recipe: RecipeItem, search: string) => {
     if (!search || isItemsPage || isExactSearch) return [];
@@ -1676,9 +1690,27 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
                   <button onClick={() => {setShowOnlyFavs(!showOnlyFavs); setCurrentPage(1);}} className={`flex items-center gap-2 px-4 py-2 rounded-full text-[11px] font-bold border transition-all ${showOnlyFavs ? 'bg-yellow-500 text-slate-950' : 'bg-slate-800 text-slate-400 border-slate-700'}`}>
                     <Star size={12} fill={showOnlyFavs ? 'currentColor' : 'none'} /> Favoris ({favorites.length})
                   </button>
-                  <button onClick={() => {setShowBaseComponents(!showBaseComponents); setCurrentPage(1);}} className={`flex items-center gap-2 px-4 py-2 rounded-full text-[11px] font-bold border transition-all ${showBaseComponents ? 'bg-blue-500 text-slate-950' : 'bg-slate-800 text-slate-400 border-slate-700'}`}>
-                    <Package size={12} /> Composants
-                  </button>
+
+                  <div className="flex bg-slate-800 rounded-full border border-slate-700 p-0.5">
+                    <button 
+                        onClick={() => {setDisplayMode('recipes'); setCurrentPage(1);}} 
+                        className={`px-3 py-1.5 rounded-full text-[10px] font-black uppercase tracking-wider transition-all ${displayMode === 'recipes' ? 'bg-slate-100 text-slate-950 shadow-sm' : 'text-slate-500 hover:text-slate-300'}`}
+                    >
+                        Recettes
+                    </button>
+                    <button 
+                        onClick={() => {setDisplayMode('components'); setCurrentPage(1);}} 
+                        className={`px-3 py-1.5 rounded-full text-[10px] font-black uppercase tracking-wider transition-all ${displayMode === 'components' ? 'bg-slate-100 text-slate-950 shadow-sm' : 'text-slate-500 hover:text-slate-300'}`}
+                    >
+                        Composants
+                    </button>
+                    <button 
+                        onClick={() => {setDisplayMode('all'); setCurrentPage(1);}} 
+                        className={`px-3 py-1.5 rounded-full text-[10px] font-black uppercase tracking-wider transition-all ${displayMode === 'all' ? 'bg-slate-100 text-slate-950 shadow-sm' : 'text-slate-500 hover:text-slate-300'}`}
+                    >
+                        Tout
+                    </button>
+                  </div>
                 </>
               )}
 

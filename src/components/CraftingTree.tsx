@@ -1,10 +1,11 @@
+import { Link } from 'react-router-dom';
 import { type RecipeItem } from '../data/types';
 import { useData } from '../context/DataContext';
 import { fastNormalize } from '../data/utils';
 import { 
   Hammer, Package, Calculator, ShoppingBag, MapPin, ChevronDown, User, Skull,
   Shield, Sword, Crown, Shirt, Footprints, Hand, Circle, Link2, GripHorizontal, Columns2, Medal,
-  ArrowUpRight, ArrowRight, Wind, ListChecks, Sparkles, X
+  ArrowUpRight, ArrowRight, Wind, ListChecks, Sparkles, X, ExternalLink
 } from 'lucide-react';
 import { useState, useMemo, memo, useCallback } from 'react';
 import { createPortal } from 'react-dom';
@@ -370,6 +371,14 @@ const RecipeCard = memo(({ recipe }: { recipe: RecipeItem }) => {
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-2">
                 <span className="font-bold text-sm text-slate-200 truncate">{item.name}</span>
+                <Link
+                  to={`/wiki/items?search=${encodeURIComponent(item.name)}`}
+                  onClick={(e) => e.stopPropagation()}
+                  className="text-slate-600 hover:text-amber-500 transition-colors p-1 rounded-md hover:bg-amber-500/10"
+                  title="Voir l'objet"
+                >
+                  <ExternalLink size={12} />
+                </Link>
                 <span className="text-[10px] font-black text-amber-500 bg-amber-900/20 px-1.5 rounded">x{item.quantity * multiplier}</span>
               </div>
               
