@@ -15,7 +15,11 @@
       ]
     },
     "type": "Lumière physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "18",
+      "wis": "15"
+    }
   },
   {
     "name": "Dard de Feu",
@@ -33,7 +37,11 @@
       ]
     },
     "type": "Feu physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "21",
+      "wis": "15"
+    }
   },
   {
     "name": "Guérison Légère",
@@ -51,7 +59,11 @@
       ]
     },
     "type": "Lumière mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "15",
+      "wis": "19"
+    }
   },
   {
     "name": "Eclat de Pierre",
@@ -69,7 +81,11 @@
       ]
     },
     "type": "Terre physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "17",
+      "wis": "20"
+    }
   },
   {
     "name": "Antidote pour Poison",
@@ -87,7 +103,11 @@
       ]
     },
     "type": "Eau physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "26",
+      "wis": "17"
+    }
   },
   {
     "name": "Tourbillon",
@@ -105,7 +125,11 @@
       ]
     },
     "type": "Air mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "21",
+      "wis": "21"
+    }
   },
   {
     "name": "Poison",
@@ -123,7 +147,11 @@
       ]
     },
     "type": "Eau mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "30",
+      "wis": "18"
+    }
   },
   {
     "name": "Protection",
@@ -141,7 +169,11 @@
       ]
     },
     "type": "Terre physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "20",
+      "wis": "25"
+    }
   },
   {
     "name": "Eclat de Glace",
@@ -159,7 +191,11 @@
       ]
     },
     "type": "Eau physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "34",
+      "wis": "19"
+    }
   },
   {
     "name": "Flèche enflammée",
@@ -177,7 +213,11 @@
       ]
     },
     "type": "Feu physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "44",
+      "wis": "15"
+    }
   },
   {
     "name": "Absorption de Vie Mineure",
@@ -195,7 +235,11 @@
       ]
     },
     "type": "Arcane mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "50",
+      "wis": "15"
+    }
   },
   {
     "name": "Guérison Importante",
@@ -213,7 +257,11 @@
       ]
     },
     "type": "Lumière mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "16",
+      "wis": "34"
+    }
   },
   {
     "name": "Eclair",
@@ -231,7 +279,11 @@
       ]
     },
     "type": "Air mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "30",
+      "wis": "30"
+    }
   },
   {
     "name": "Flèche Empoisonnée",
@@ -249,7 +301,11 @@
       ]
     },
     "type": "Eau physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "51",
+      "wis": "23"
+    }
   },
   {
     "name": "Fracassement",
@@ -267,7 +323,11 @@
       ]
     },
     "type": "Terre mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "26",
+      "wis": "37"
+    }
   },
   {
     "name": "Repousser les Morts-Vivants",
@@ -285,7 +345,11 @@
       ]
     },
     "type": "Lumière mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "16",
+      "wis": "43"
+    }
   },
   {
     "name": "Malédiction",
@@ -303,7 +367,11 @@
       ]
     },
     "type": "Arcane Noir mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "74",
+      "wis": "16"
+    }
   },
   {
     "name": "Gel",
@@ -321,7 +389,11 @@
       ]
     },
     "type": "Eau mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "57",
+      "wis": "24"
+    }
   },
   {
     "name": "Barrière de Protection",
@@ -339,7 +411,11 @@
       ]
     },
     "type": "Eau physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "59",
+      "wis": "24"
+    }
   },
   {
     "name": "Mot de Rappel",
@@ -357,7 +433,11 @@
       ]
     },
     "type": "Air physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "36",
+      "wis": "36"
+    }
   },
   {
     "name": "Eclair de Feu",
@@ -375,7 +455,11 @@
       ]
     },
     "type": "Feu physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "80",
+      "wis": "16"
+    }
   },
   {
     "name": "Absorption de vie",
@@ -393,7 +477,11 @@
       ]
     },
     "type": "Arcane Noir mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "83",
+      "wis": "16"
+    }
   },
   {
     "name": "Force de la Terre",
@@ -411,7 +499,11 @@
       ]
     },
     "type": "Terre physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "29",
+      "wis": "43"
+    }
   },
   {
     "name": "Instinct de Combat Mineur",
@@ -429,7 +521,11 @@
       ]
     },
     "type": "Arcane physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "55",
+      "wis": "31"
+    }
   },
   {
     "name": "Eclair de Glace",
@@ -447,7 +543,11 @@
       ]
     },
     "type": "Eau physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "68",
+      "wis": "26"
+    }
   },
   {
     "name": "Invocation de la Foudre",
@@ -465,7 +565,11 @@
       ]
     },
     "type": "Air mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "42",
+      "wis": "41"
+    }
   },
   {
     "name": "Boule de Feu",
@@ -483,7 +587,11 @@
       ]
     },
     "type": "Feu physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "94",
+      "wis": "16"
+    }
   },
   {
     "name": "Guérison critique",
@@ -501,7 +609,11 @@
       ]
     },
     "type": "Lumière mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "17",
+      "wis": "55"
+    }
   },
   {
     "name": "Esprit Clair",
@@ -519,7 +631,11 @@
       ]
     },
     "type": "Eau physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "74",
+      "wis": "28"
+    }
   },
   {
     "name": "Bouclier de mana",
@@ -537,7 +653,11 @@
       ]
     },
     "type": "Eau physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "76",
+      "wis": "28"
+    }
   },
   {
     "name": "Chaîne d'éclairs",
@@ -555,7 +675,11 @@
       ]
     },
     "type": "Air mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "46",
+      "wis": "45"
+    }
   },
   {
     "name": "Enchevêtrement",
@@ -573,7 +697,11 @@
       ]
     },
     "type": "Terre physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "34",
+      "wis": "52"
+    }
   },
   {
     "name": "Explosion de Mana",
@@ -591,7 +719,11 @@
       ]
     },
     "type": "Arcane mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "63",
+      "wis": "39"
+    }
   },
   {
     "name": "Peste \n(être apprenti d'Araknor)\nModification NMS :\nle malus ne s'applique qu'aux PV purs (au lieu de l'ensemble des PV)",
@@ -609,7 +741,11 @@
       ]
     },
     "type": "Arcane noir mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "112",
+      "wis": "16"
+    }
   },
   {
     "name": "Détection de la dissimulation",
@@ -627,7 +763,11 @@
       ]
     },
     "type": "Feu physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "118",
+      "wis": "15"
+    }
   },
   {
     "name": "Peau de Pierre",
@@ -645,7 +785,11 @@
       ]
     },
     "type": "Terre physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "37",
+      "wis": "59"
+    }
   },
   {
     "name": "Tranquillité",
@@ -663,7 +807,11 @@
       ]
     },
     "type": "Lumière physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "17",
+      "wis": "71"
+    }
   },
   {
     "name": "Vague de Flamme",
@@ -681,7 +829,11 @@
       ]
     },
     "type": "Feu physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "133",
+      "wis": "16"
+    }
   },
   {
     "name": "Vortex d'air",
@@ -699,7 +851,11 @@
       ]
     },
     "type": "Air mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "56",
+      "wis": "55"
+    }
   },
   {
     "name": "Absorption de Vie Majeure",
@@ -717,7 +873,11 @@
       ]
     },
     "type": "Arcane Noir mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "136",
+      "wis": "16"
+    }
   },
   {
     "name": "Résistance au Feu",
@@ -735,7 +895,11 @@
       ]
     },
     "type": "Eau physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "141",
+      "wis": "16"
+    }
   },
   {
     "name": "Dextérité",
@@ -753,7 +917,11 @@
       ]
     },
     "type": "Air physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "60",
+      "wis": "59"
+    }
   },
   {
     "name": "Boule de Glace",
@@ -771,7 +939,11 @@
       ]
     },
     "type": "Eau physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "110",
+      "wis": "35"
+    }
   },
   {
     "name": "Résistance à la glace",
@@ -789,7 +961,11 @@
       ]
     },
     "type": "Feu physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "150",
+      "wis": "15"
+    }
   },
   {
     "name": "Séisme",
@@ -807,7 +983,11 @@
       ]
     },
     "type": "Terre physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "43",
+      "wis": "71"
+    }
   },
   {
     "name": "Bouclier de Feu",
@@ -825,7 +1005,11 @@
       ]
     },
     "type": "Feu physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "156",
+      "wis": "16"
+    }
   },
   {
     "name": "Bouclier d'électricité",
@@ -843,7 +1027,11 @@
       ]
     },
     "type": "Air physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "65",
+      "wis": "64"
+    }
   },
   {
     "name": "Détection de l'invisible",
@@ -861,7 +1049,11 @@
       ]
     },
     "type": "Feu physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "162",
+      "wis": "16"
+    }
   },
   {
     "name": "Sanctuaire \n(bouclier de mana, peau de pierre)\nSort modifié NMS !",
@@ -879,7 +1071,11 @@
       ]
     },
     "type": "Lumière physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "18",
+      "wis": "91"
+    }
   },
   {
     "name": "Pluie d'étincelles",
@@ -897,7 +1093,11 @@
       ]
     },
     "type": "Feu physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "171",
+      "wis": "17"
+    }
   },
   {
     "name": "Afflux de Mana",
@@ -915,7 +1115,11 @@
       ]
     },
     "type": "Arcane physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "174",
+      "wis": "17"
+    }
   },
   {
     "name": "Glacier",
@@ -933,7 +1137,11 @@
       ]
     },
     "type": "Eau physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "130",
+      "wis": "40"
+    }
   },
   {
     "name": "Guérison",
@@ -951,7 +1159,11 @@
       ]
     },
     "type": "Lumière mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "18",
+      "wis": "96"
+    }
   },
   {
     "name": "Dissipation de la Magie",
@@ -969,7 +1181,11 @@
       ]
     },
     "type": "Arcane physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "99",
+      "wis": "57"
+    }
   },
   {
     "name": "Invisibilité",
@@ -987,7 +1203,11 @@
       ]
     },
     "type": "Air physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "74",
+      "wis": "72"
+    }
   },
   {
     "name": "Bénédiction",
@@ -1005,7 +1225,11 @@
       ]
     },
     "type": "Lumière physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "19",
+      "wis": "102"
+    }
   },
   {
     "name": "Flamme",
@@ -1023,7 +1247,11 @@
       ]
     },
     "type": "Feu mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "191",
+      "wis": "17"
+    }
   },
   {
     "name": "Guérison de groupe",
@@ -1041,7 +1269,11 @@
       ]
     },
     "type": "Lumière mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "19",
+      "wis": "108"
+    }
   },
   {
     "name": "Tempête de glace",
@@ -1059,7 +1291,11 @@
       ]
     },
     "type": "Eau physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "152",
+      "wis": "44"
+    }
   },
   {
     "name": "Instinct de combat majeur",
@@ -1077,7 +1313,11 @@
       ]
     },
     "type": "Arcane physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "114",
+      "wis": "64"
+    }
   },
   {
     "name": "Eboulement",
@@ -1095,7 +1335,11 @@
       ]
     },
     "type": "Terre physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "55",
+      "wis": "95"
+    }
   },
   {
     "name": "Vol d'âme",
@@ -1113,7 +1357,11 @@
       ]
     },
     "type": "Arcane Noir mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "215",
+      "wis": "17"
+    }
   },
   {
     "name": "Révélation",
@@ -1131,7 +1379,11 @@
       ]
     },
     "type": "Terre physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "56",
+      "wis": "98"
+    }
   },
   {
     "name": "Vortex vers les Cercles",
@@ -1149,7 +1401,11 @@
       ]
     },
     "type": "Air physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "86",
+      "wis": "84"
+    }
   },
   {
     "name": "Blizzard",
@@ -1167,7 +1423,11 @@
       ]
     },
     "type": "Eau physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "170",
+      "wis": "48"
+    }
   },
   {
     "name": "Aura de Guérison",
@@ -1185,7 +1445,11 @@
       ]
     },
     "type": "Lumière mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "20",
+      "wis": "125"
+    }
   },
   {
     "name": "Tempête de Feu",
@@ -1203,7 +1467,11 @@
       ]
     },
     "type": "Feu physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "238",
+      "wis": "17"
+    }
   },
   {
     "name": "Tornade",
@@ -1221,7 +1489,11 @@
       ]
     },
     "type": "Air physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "96",
+      "wis": "93"
+    }
   },
   {
     "name": "Avalanche",
@@ -1239,7 +1511,11 @@
       ]
     },
     "type": "Eau physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "187",
+      "wis": "52"
+    }
   },
   {
     "name": "Inferno",
@@ -1257,7 +1533,11 @@
       ]
     },
     "type": "Feu mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "259",
+      "wis": "17"
+    }
   },
   {
     "name": "Bouclier de Glace",
@@ -1275,7 +1555,11 @@
       ]
     },
     "type": "Eau physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "191",
+      "wis": "53"
+    }
   },
   {
     "name": "Ouragan",
@@ -1293,7 +1577,11 @@
       ]
     },
     "type": "Air physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "105",
+      "wis": "102"
+    }
   },
   {
     "name": "Portail",
@@ -1311,7 +1599,11 @@
       ]
     },
     "type": "Arcane physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "109",
+      "wis": "106"
+    }
   },
   {
     "name": "Tsunami",
@@ -1329,7 +1621,11 @@
       ]
     },
     "type": "Eau mental",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "217",
+      "wis": "58"
+    }
   },
   {
     "name": "Météorite",
@@ -1347,7 +1643,11 @@
       ]
     },
     "type": "Feu physique",
-    "source": "Standard"
+    "source": "Standard",
+    "prerequisitesStats": {
+      "int": "309",
+      "wis": "18"
+    }
   },
   {
     "name": "Cri de guerre",
@@ -1363,7 +1663,11 @@
       ]
     },
     "source": "NMS",
-    "type": "mental"
+    "type": "mental",
+    "prerequisitesStats": {
+      "int": "800",
+      "wis": "20"
+    }
   },
   {
     "name": "Résistance à l'air",
@@ -1379,7 +1683,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Terre physique"
+    "type": "Terre physique",
+    "prerequisitesStats": {
+      "int": "156",
+      "wis": "16"
+    }
   },
   {
     "name": "Absolution",
@@ -1395,7 +1703,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Lumière physique"
+    "type": "Lumière physique",
+    "prerequisitesStats": {
+      "int": "140",
+      "wis": "15"
+    }
   },
   {
     "name": "Afflux de mana",
@@ -1411,7 +1723,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Arcane physique"
+    "type": "Arcane physique",
+    "prerequisitesStats": {
+      "int": "174",
+      "wis": "17"
+    }
   },
   {
     "name": "Déflagration de mana",
@@ -1427,7 +1743,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Arcane mental"
+    "type": "Arcane mental",
+    "prerequisitesStats": {
+      "int": "102",
+      "wis": "56"
+    }
   },
   {
     "name": "Bénédiction de groupe",
@@ -1443,7 +1763,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Lumière physique"
+    "type": "Lumière physique",
+    "prerequisitesStats": {
+      "int": "19",
+      "wis": "102"
+    }
   },
   {
     "name": "Coup de vent",
@@ -1459,7 +1783,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Air mental"
+    "type": "Air mental",
+    "prerequisitesStats": {
+      "int": "86",
+      "wis": "84"
+    }
   },
   {
     "name": "Vortex vers Niève",
@@ -1475,7 +1803,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Air physique"
+    "type": "Air physique",
+    "prerequisitesStats": {
+      "int": "86",
+      "wis": "84"
+    }
   },
   {
     "name": "Vortex vers Drake Island",
@@ -1491,7 +1823,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Air physique"
+    "type": "Air physique",
+    "prerequisitesStats": {
+      "int": "86",
+      "wis": "84"
+    }
   },
   {
     "name": "Enchevêtrement",
@@ -1507,7 +1843,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Terre physique"
+    "type": "Terre physique",
+    "prerequisitesStats": {
+      "int": "59",
+      "wis": "452"
+    }
   },
   {
     "name": "Implosion",
@@ -1523,7 +1863,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Terre mental"
+    "type": "Terre mental",
+    "prerequisitesStats": {
+      "int": "58",
+      "wis": "101"
+    }
   },
   {
     "name": "Lucioles",
@@ -1539,7 +1883,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Lumière physique"
+    "type": "Lumière physique",
+    "prerequisitesStats": {
+      "int": "34",
+      "wis": "102"
+    }
   },
   {
     "name": "Lumière divine",
@@ -1555,7 +1903,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Lumière mental"
+    "type": "Lumière mental",
+    "prerequisitesStats": {
+      "int": "77",
+      "wis": "140"
+    }
   },
   {
     "name": "Frayeur mentale",
@@ -1571,7 +1923,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Arcane mental"
+    "type": "Arcane mental",
+    "prerequisitesStats": {
+      "int": "503",
+      "wis": "84"
+    }
   },
   {
     "name": "Portail vers Niève",
@@ -1587,7 +1943,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Arcane physique"
+    "type": "Arcane physique",
+    "prerequisitesStats": {
+      "int": "109",
+      "wis": "106"
+    }
   },
   {
     "name": "Portail vers Drake Island",
@@ -1603,7 +1963,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Arcane physique"
+    "type": "Arcane physique",
+    "prerequisitesStats": {
+      "int": "109",
+      "wis": "106"
+    }
   },
   {
     "name": "Soin divin",
@@ -1619,7 +1983,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Lumière physique"
+    "type": "Lumière physique",
+    "prerequisitesStats": {
+      "int": "20",
+      "wis": "463"
+    }
   },
   {
     "name": "Brûlure funeste",
@@ -1635,7 +2003,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Arcane Noir mental"
+    "type": "Arcane Noir mental",
+    "prerequisitesStats": {
+      "int": "288",
+      "wis": "18"
+    }
   },
   {
     "name": "Chute de pierres",
@@ -1651,7 +2023,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Terre physique"
+    "type": "Terre physique",
+    "prerequisitesStats": {
+      "int": "72",
+      "wis": "129"
+    }
   },
   {
     "name": "Flèches étincelantes",
@@ -1666,7 +2042,11 @@
         "Gakalia, une maison dans Redwall"
       ]
     },
-    "source": "NMS"
+    "source": "NMS",
+    "prerequisitesStats": {
+      "int": "35",
+      "wis": "35"
+    }
   },
   {
     "name": "Racines vénéneuses",
@@ -1682,7 +2062,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Terre physique"
+    "type": "Terre physique",
+    "prerequisitesStats": {
+      "int": "84",
+      "wis": "526"
+    }
   },
   {
     "name": "Cri de puissance",
@@ -1698,7 +2082,8 @@
       ]
     },
     "source": "NMS",
-    "type": "mental"
+    "type": "mental",
+    "prerequisitesStats": {}
   },
   {
     "name": "Inondation",
@@ -1714,7 +2099,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Eau physique"
+    "type": "Eau physique",
+    "prerequisitesStats": {
+      "int": "233",
+      "wis": "62"
+    }
   },
   {
     "name": "Peau d'écorce",
@@ -1730,7 +2119,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Terre physique"
+    "type": "Terre physique",
+    "prerequisitesStats": {
+      "int": "80",
+      "wis": "145"
+    }
   },
   {
     "name": "Peau d'écorce de groupe",
@@ -1746,7 +2139,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Terre physique"
+    "type": "Terre physique",
+    "prerequisitesStats": {
+      "int": "80",
+      "wis": "145"
+    }
   },
   {
     "name": "Barrage",
@@ -1762,7 +2159,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Eau physique"
+    "type": "Eau physique",
+    "prerequisitesStats": {
+      "int": "269",
+      "wis": "69"
+    }
   },
   {
     "name": "Barrage de groupe",
@@ -1778,7 +2179,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Eau physique"
+    "type": "Eau physique",
+    "prerequisitesStats": {
+      "int": "269",
+      "wis": "69"
+    }
   },
   {
     "name": "Force ancestrale",
@@ -1794,7 +2199,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Terre physique"
+    "type": "Terre physique",
+    "prerequisitesStats": {
+      "int": "89",
+      "wis": "163"
+    }
   },
   {
     "name": "Force ancestrale de groupe",
@@ -1810,7 +2219,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Terre physique"
+    "type": "Terre physique",
+    "prerequisitesStats": {
+      "int": "89",
+      "wis": "163"
+    }
   },
   {
     "name": "Foudroiement",
@@ -1826,7 +2239,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Air mental"
+    "type": "Air mental",
+    "prerequisitesStats": {
+      "int": "201",
+      "wis": "203"
+    }
   },
   {
     "name": "Volcano",
@@ -1842,7 +2259,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Feu mental"
+    "type": "Feu mental",
+    "prerequisitesStats": {
+      "int": "385",
+      "wis": "19"
+    }
   },
   {
     "name": "Esprit limpide",
@@ -1858,7 +2279,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Eau physique"
+    "type": "Eau physique",
+    "prerequisitesStats": {
+      "int": "284",
+      "wis": "73"
+    }
   },
   {
     "name": "Bouclier d'essence magique",
@@ -1874,7 +2299,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Eau physique"
+    "type": "Eau physique",
+    "prerequisitesStats": {
+      "int": "286",
+      "wis": "73"
+    }
   },
   {
     "name": "Bouclier d'essence magique de groupe",
@@ -1890,7 +2319,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Eau physique"
+    "type": "Eau physique",
+    "prerequisitesStats": {
+      "int": "286",
+      "wis": "73"
+    }
   },
   {
     "name": "Sérénité",
@@ -1906,7 +2339,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Lumière physique"
+    "type": "Lumière physique",
+    "prerequisitesStats": {
+      "int": "23",
+      "wis": "218"
+    }
   },
   {
     "name": "Peau de granit",
@@ -1922,7 +2359,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Terre physique"
+    "type": "Terre physique",
+    "prerequisitesStats": {
+      "int": "98",
+      "wis": "182"
+    }
   },
   {
     "name": "Afflux de puissance",
@@ -1938,7 +2379,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Arcane physique"
+    "type": "Arcane physique",
+    "prerequisitesStats": {
+      "int": "468",
+      "wis": "20"
+    }
   },
   {
     "name": "Afflux de puissance de groupe",
@@ -1954,7 +2399,11 @@
       ]
     },
     "source": "NMS",
-    "type": "Arcane physique"
+    "type": "Arcane physique",
+    "prerequisitesStats": {
+      "int": "468",
+      "wis": "20"
+    }
   },
   {
     "name": "Zombification",
@@ -1970,6 +2419,10 @@
       ]
     },
     "source": "NMS",
-    "type": "Arcane Noir mental"
+    "type": "Arcane Noir mental",
+    "prerequisitesStats": {
+      "int": "497",
+      "wis": "20"
+    }
   }
 ]
