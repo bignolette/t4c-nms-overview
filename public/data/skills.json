@@ -175,8 +175,7 @@
     "trainingCost": "100 PO par point dépensé",
     "prerequisitesStats": {
       "lvl": "12",
-      "dex": "40",
-      "minimumSkillPoints": "1"
+      "dex": "40"
     }
   },
   {
@@ -196,8 +195,7 @@
     "prerequisitesStats": {
       "lvl": "12",
       "int": "20",
-      "wis": "1",
-      "minimumSkillPoints": "1"
+      "wis": "1"
     }
   },
   {
@@ -213,8 +211,7 @@
     "trainingCost": "1200 PO par point dépensé",
     "prerequisitesStats": {
       "lvl": "12",
-      "str": "38",
-      "minimumSkillPoints": "1"
+      "str": "38"
     }
   },
   {
@@ -234,8 +231,7 @@
     "prerequisitesStats": {
       "lvl": "13",
       "dex": "34",
-      "int": "20",
-      "minimumSkillPoints": "1"
+      "int": "20"
     }
   },
   {
@@ -255,8 +251,7 @@
     "prerequisitesStats": {
       "lvl": "15",
       "str": "50",
-      "dex": "30",
-      "minimumSkillPoints": "1"
+      "dex": "30"
     }
   },
   {
@@ -276,8 +271,7 @@
     "prerequisitesStats": {
       "lvl": "16",
       "int": "30",
-      "wis": "30",
-      "minimumSkillPoints": "1"
+      "wis": "30"
     }
   },
   {
@@ -294,8 +288,7 @@
     "trainingCost": "250 PO par point dépensé",
     "prerequisitesStats": {
       "lvl": "17",
-      "wis": "50",
-      "minimumSkillPoints": "1"
+      "wis": "50"
     }
   },
   {
@@ -312,8 +305,7 @@
     "trainingCost": "125 PO par point dépensé",
     "prerequisitesStats": {
       "lvl": "17",
-      "dex": "50",
-      "minimumSkillPoints": "1"
+      "dex": "50"
     }
   },
   {
@@ -332,8 +324,7 @@
     "trainingCost": "250 PO par point dépensé",
     "prerequisitesStats": {
       "lvl": "17",
-      "dex": "50",
-      "minimumSkillPoints": "1"
+      "dex": "50"
     }
   },
   {
@@ -349,8 +340,7 @@
     "trainingCost": "50 PO par point dépensé",
     "prerequisitesStats": {
       "lvl": "20",
-      "int": "25",
-      "minimumSkillPoints": "1"
+      "int": "25"
     }
   },
   {
@@ -366,8 +356,7 @@
     "trainingCost": "100 PO par point dépensé",
     "prerequisitesStats": {
       "lvl": "24",
-      "dex": "75",
-      "minimumSkillPoints": "1"
+      "dex": "75"
     }
   },
   {
@@ -388,8 +377,7 @@
       "lvl": "25",
       "str": "75",
       "dex": "40",
-      "int": "30",
-      "minimumSkillPoints": "1"
+      "int": "30"
     }
   },
   {
@@ -407,8 +395,7 @@
       "lvl": "26",
       "str": "75",
       "dex": "40",
-      "int": "30",
-      "minimumSkillPoints": "1"
+      "int": "30"
     }
   },
   {
@@ -427,8 +414,7 @@
     "trainingCost": "200 PO par point dépensé",
     "prerequisitesStats": {
       "lvl": "30",
-      "end": "80",
-      "minimumSkillPoints": "1"
+      "end": "80"
     }
   },
   {
@@ -446,8 +432,7 @@
     "prerequisitesStats": {
       "lvl": "35",
       "int": "150",
-      "wis": "75",
-      "minimumSkillPoints": "1"
+      "wis": "75"
     }
   },
   {
@@ -464,8 +449,7 @@
     "prerequisitesStats": {
       "lvl": "51",
       "str": "56",
-      "dex": "47",
-      "minimumSkillPoints": "1"
+      "dex": "47"
     }
   }
 ]
