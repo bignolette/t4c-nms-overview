@@ -364,19 +364,6 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
       </>
     );
   }
-        {isModalOpen && (
-          <ItemDetailModal 
-            recipe={recipe} 
-            onClose={() => setIsModalOpen(false)} 
-            toggleFavorite={toggleFavorite} 
-            favorites={favorites} 
-            navigateToRecipe={onNavigateToRecipe}
-            onAddProject={onAddProject}
-          />
-        )}
-      </>
-    );
-  }
 
   return (
     <motion.div 
