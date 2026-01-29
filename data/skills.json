@@ -108,8 +108,7 @@
     "prerequisitesStats": {
       "lvl": "3",
       "str": "25",
-      "dex": "20",
-      "minimumSkillPoints": "1"
+      "dex": "20"
     }
   },
   {
@@ -134,8 +133,7 @@
     "trainingCost": "25 PO par point dépensé",
     "prerequisitesStats": {
       "lvl": "5",
-      "dex": "1",
-      "minimumSkillPoints": "1"
+      "dex": "1"
     }
   },
   {
@@ -177,8 +175,7 @@
     "trainingCost": "100 PO par point dépensé",
     "prerequisitesStats": {
       "lvl": "12",
-      "dex": "40",
-      "minimumSkillPoints": "1"
+      "dex": "40"
     }
   },
   {
@@ -198,12 +195,11 @@
     "prerequisitesStats": {
       "lvl": "12",
       "int": "20",
-      "wis": "1",
-      "minimumSkillPoints": "1"
+      "wis": "1"
     }
   },
   {
-    "name": "Peur primale\n       NMS",
+    "name": "Peur primale",
     "maxTraining": "100",
     "requirements": "Niv 12, 38 en force. 1 point de compétences minimum.",
     "description": "Permet d'agréger toutes les cibles d'une zone. Influence par ? Tip : Peut être remplacé économiquement par dard de feu.",
@@ -215,8 +211,7 @@
     "trainingCost": "1200 PO par point dépensé",
     "prerequisitesStats": {
       "lvl": "12",
-      "str": "38",
-      "minimumSkillPoints": "1"
+      "str": "38"
     }
   },
   {
@@ -236,8 +231,7 @@
     "prerequisitesStats": {
       "lvl": "13",
       "dex": "34",
-      "int": "20",
-      "minimumSkillPoints": "1"
+      "int": "20"
     }
   },
   {
@@ -257,8 +251,7 @@
     "prerequisitesStats": {
       "lvl": "15",
       "str": "50",
-      "dex": "30",
-      "minimumSkillPoints": "1"
+      "dex": "30"
     }
   },
   {
@@ -278,12 +271,11 @@
     "prerequisitesStats": {
       "lvl": "16",
       "int": "30",
-      "wis": "30",
-      "minimumSkillPoints": "1"
+      "wis": "30"
     }
   },
   {
-    "name": "Ramener à la vie\n       NMS",
+    "name": "Ramener à la vie",
     "maxTraining": "100",
     "requirements": "Niv 17, 50 en sagesse. 1 point de compétences minimum.",
     "description": "Permet de ramener à la vie le joueur mort ciblé. L'efficacité de la compétence dépend de la sagesse de l'utilisateur et de celle de la cible. Influencée aussi par la différence de niveaux entre la cible et l'utilisateur. Tip : Indispensable à tout prêtre qui se respecte. Fonctionnel (avec un faible nombre de points (1 seul?) mais dans ce cas le taux de réussite est mauvais.",
@@ -296,12 +288,11 @@
     "trainingCost": "250 PO par point dépensé",
     "prerequisitesStats": {
       "lvl": "17",
-      "wis": "50",
-      "minimumSkillPoints": "1"
+      "wis": "50"
     }
   },
   {
-    "name": "Pillage de tombe\n       NMS",
+    "name": "Pillage de tombe",
     "maxTraining": "100",
     "requirements": "Niv 17, 50 en dextérité. 1 point de compétences minimum.",
     "description": "Permet de piller la tombe d'un jouer mort avec une chance d'avoir un de ses items au hasard. Il faut faire une quête chez Riguel, récupérer \"un anneau d'une rare beauté. Il était serti de gemmes, c'était l'oeuvre d'un maître joaillier certainement\". \"Le pilleur de tombe\" (cimetière de Lighthaven et niveau de Jarko) l'aurait en sa possession. Influencée par la différence de niveau. Tip :",
@@ -314,8 +305,7 @@
     "trainingCost": "125 PO par point dépensé",
     "prerequisitesStats": {
       "lvl": "17",
-      "dex": "50",
-      "minimumSkillPoints": "1"
+      "dex": "50"
     }
   },
   {
@@ -334,8 +324,7 @@
     "trainingCost": "250 PO par point dépensé",
     "prerequisitesStats": {
       "lvl": "17",
-      "dex": "50",
-      "minimumSkillPoints": "1"
+      "dex": "50"
     }
   },
   {
@@ -351,8 +340,7 @@
     "trainingCost": "50 PO par point dépensé",
     "prerequisitesStats": {
       "lvl": "20",
-      "int": "25",
-      "minimumSkillPoints": "1"
+      "int": "25"
     }
   },
   {
@@ -368,8 +356,7 @@
     "trainingCost": "100 PO par point dépensé",
     "prerequisitesStats": {
       "lvl": "24",
-      "dex": "75",
-      "minimumSkillPoints": "1"
+      "dex": "75"
     }
   },
   {
@@ -390,8 +377,7 @@
       "lvl": "25",
       "str": "75",
       "dex": "40",
-      "int": "30",
-      "minimumSkillPoints": "1"
+      "int": "30"
     }
   },
   {
@@ -409,8 +395,7 @@
       "lvl": "26",
       "str": "75",
       "dex": "40",
-      "int": "30",
-      "minimumSkillPoints": "1"
+      "int": "30"
     }
   },
   {
@@ -429,8 +414,7 @@
     "trainingCost": "200 PO par point dépensé",
     "prerequisitesStats": {
       "lvl": "30",
-      "end": "80",
-      "minimumSkillPoints": "1"
+      "end": "80"
     }
   },
   {
@@ -448,12 +432,11 @@
     "prerequisitesStats": {
       "lvl": "35",
       "int": "150",
-      "wis": "75",
-      "minimumSkillPoints": "1"
+      "wis": "75"
     }
   },
   {
-    "name": "ImmobilisationNMS",
+    "name": "Immobilisation",
     "maxTraining": "100",
     "requirements": "Niv 51, 56 en force, 47 en dextérité. 1 point de compétences minimum.",
     "description": "Immobilise la cible à distance et réduit l'esquive de 75%.Remplace enchevêtrement/verglas pour les classes ne pouvant apprendre ces sorts (archer, guerrier, paladin et mage de guerre). La réussite est influencée par les bonus fournis par divers items (ces bonus sont indispensables pour que la compétence soit efficace : 175 est une valeur correcte). Tip : Indispensable en PVP et PVM.",
@@ -466,8 +449,7 @@
     "prerequisitesStats": {
       "lvl": "51",
       "str": "56",
-      "dex": "47",
-      "minimumSkillPoints": "1"
+      "dex": "47"
     }
   }
 ]
