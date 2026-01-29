@@ -31,7 +31,7 @@
     "name": "Archerie",
     "maxTraining": "illimitée",
     "requirements": "Niv 1",
-    "description": "Passive. Capacité à atteindre sa cible avec une arme de jet. Demande un grand investissement en points de compétences. Tip : Indispensable à tout utilisateur d'arme de jet.",
+    "description": "Capacité à atteindre sa cible avec une arme de jet. Demande un grand investissement en points de compétences. Tip : Indispensable à tout utilisateur d'arme de jet.",
     "trainingTeachers": {
       "Lighthaven": [
         "Ortanalas (en face du temple)",
@@ -86,7 +86,7 @@
     "name": "Coup assommant",
     "maxTraining": "100",
     "requirements": "Niv 3, 25 en force, 20 en dextérité. 1 point de compétences minimum.",
-    "description": "Passive. Possibilité d'immobiliser sa cible un court instant à chaque coup réussi d'une attaque physique. Influencée par la dextérité. Ralentit donc la fréquence des attaques adverses.Tip : Indispensable aux tapeurs et archers.",
+    "description": "Possibilité d'immobiliser sa cible un court instant à chaque coup réussi d'une attaque physique. Influencée par la dextérité. Ralentit donc la fréquence des attaques adverses.Tip : Indispensable aux tapeurs et archers.",
     "trainingTeachers": {
       "Lighthaven": [
         "Ortanalas"
@@ -101,7 +101,7 @@
     "name": "Coup d'oeil",
     "maxTraining": "100",
     "requirements": "Niv 5, 30 en Dex. 1 point de compétences minimum.",
-    "description": "Active. Permet de regarder dans l'inventaire des voisins. Influencée par la dextérité et la différence de niveaux entre la cible et le lanceur. Tip : Pour archers curieux.",
+    "description": "Permet de regarder dans l'inventaire des voisins. Influencée par la dextérité et la différence de niveaux entre la cible et le lanceur. Tip : Pour archers curieux.",
     "trainingTeachers": {
       "Lighthaven": [
         "Kalastor (maison nord-est fontaine)"
@@ -122,7 +122,7 @@
     "name": "Parade",
     "maxTraining": "100",
     "requirements": "Niv 10, 30 en dextérité, 20 en intelligence. 1 point de compétences minimum.",
-    "description": "Passive. Capacité à parer une attaque physique à l'aide de son arme et/ou son bouclier. Influencée par la dextérité et la taille de l'arme (plus celle-ci est grande, plus la compétence est efficace). Le port d'un bouclier améliore cette compétence. Tip : Très utile pour les tapeurs. Moins efficace chez les archers.",
+    "description": "Capacité à parer une attaque physique à l'aide de son arme et/ou son bouclier. Influencée par la dextérité et la taille de l'arme (plus celle-ci est grande, plus la compétence est efficace). Le port d'un bouclier améliore cette compétence. Tip : Très utile pour les tapeurs. Moins efficace chez les archers.",
     "trainingTeachers": {
       "Windhowl": [
         "Garnir"
@@ -140,7 +140,7 @@
     "name": "Crochetage de serrures",
     "maxTraining": "100",
     "requirements": "Niv 12, 40 en dextérité. 1 point de compétences minimum.",
-    "description": "Active. Capacité à ouvrir un coffre, une porte ou tout objet verrouillé. Influencée par la dextérité. Tip : Inutile en PVM/PVP. De plus inutilisable sur les coffres de quêtes (ex: coffre de Reynen). Principalement utilisé en RP.",
+    "description": "Capacité à ouvrir un coffre, une porte ou tout objet verrouillé. Influencée par la dextérité. Tip : Inutile en PVM/PVP. De plus inutilisable sur les coffres de quêtes (ex: coffre de Reynen). Principalement utilisé en RP.",
     "trainingTeachers": {
       "Arakas": [
         "Lyria (Ville des voleurs)"
@@ -155,7 +155,7 @@
     "name": "Premiers soins",
     "maxTraining": "100",
     "requirements": "Niv 12, 20 en intelligence et en sagesse. 1 point de compétences minimum.",
-    "description": "Active. Permet de soigner certaines blessures condition d'avoir des bandelettes de momie dans l'inventaire. La russite n'est pas systématique, la tentative peut parfois aggraver la blessure. Tip : Inutile et inefficace.",
+    "description": "Permet de soigner certaines blessures condition d'avoir des bandelettes de momie dans l'inventaire. La russite n'est pas systématique, la tentative peut parfois aggraver la blessure. Tip : Inutile et inefficace.",
     "trainingTeachers": {
       "Raven's Dust": [
         "Morindin Tenglow (Bois de RD)"
@@ -170,7 +170,7 @@
     "name": "Peur primale\n       NMS",
     "maxTraining": "100",
     "requirements": "Niv 12, 38 en force. 1 point de compétences minimum.",
-    "description": "Active. Permet d'agréger toutes les cibles d'une zone. Influence par ? Tip : Peut être remplacé économiquement par dard de feu.",
+    "description": "Permet d'agréger toutes les cibles d'une zone. Influence par ? Tip : Peut être remplacé économiquement par dard de feu.",
     "trainingTeachers": {
       "Windhowl": [
         "Serje Fortepee (Sud-Est de la ville en 1700,1360,0)"
@@ -182,7 +182,7 @@
     "name": "Se cacher",
     "maxTraining": "100",
     "requirements": "Niv 13, 34 en dextérité, 20 en intelligence. 1 point de compétences minimum.",
-    "description": "Active. Cette compétence rend parfois invisible à condition de rester immobile. Doit être utilisée conjointement à Se faufiler pour pouvoir se déplacer discrètement (peu efficace). Influencée par la dextérité. Tip : Inutile. Autrefois utilisé par les archers pour faire discrètement un coup critique.",
+    "description": "Cette compétence rend parfois invisible à condition de rester immobile. Doit être utilisée conjointement à Se faufiler pour pouvoir se déplacer discrètement (peu efficace). Influencée par la dextérité. Tip : Inutile. Autrefois utilisé par les archers pour faire discrètement un coup critique.",
     "trainingTeachers": {
       "Raven's Dust": [
         "Morindin Tenglow"
@@ -197,7 +197,7 @@
     "name": "Coup puissant",
     "maxTraining": "100",
     "requirements": "Niv 15, 50 en force, 30 en dextérité. 1 point de compétences minimum.",
-    "description": "Passive. Rend chaque attaque physique réussie plus puissante (20 à 30%). Influencée par la dextérité et la force. Tip : Indispensable aux tapeurs et archers",
+    "description": "Rend chaque attaque physique réussie plus puissante (20 à 30%). Influencée par la dextérité et la force. Tip : Indispensable aux tapeurs et archers",
     "trainingTeachers": {
       "Lighthaven": [
         "Ortanalas"
@@ -212,7 +212,7 @@
     "name": "Méditer",
     "maxTraining": "100",
     "requirements": "Niv 16, 30 en intelligence, 30 en sagesse. 1 point de compétences minimum.",
-    "description": "Active. Augmente la vitesse de récupération de mana.(mais il faut rester immobile sans lancer aucun sort). Influencée par la sagesse et l'intelligence (50/50) par paliers de 160. Tip : Inutile sauf peut-être en humain. Du gâchis en séraph (prismes de mana!)",
+    "description": "Augmente la vitesse de récupération de mana.(mais il faut rester immobile sans lancer aucun sort). Influencée par la sagesse et l'intelligence (50/50) par paliers de 160. Tip : Inutile sauf peut-être en humain. Du gâchis en séraph (prismes de mana!)",
     "trainingTeachers": {
       "Arakas": [
         "Rainmist Lantalir"
@@ -227,7 +227,7 @@
     "name": "Ramener à la vie\n       NMS",
     "maxTraining": "100",
     "requirements": "Niv 17, 50 en sagesse. 1 point de compétences minimum.",
-    "description": "Active. Permet de ramener à la vie le joueur mort ciblé. L'efficacité de la compétence dépend de la sagesse de l'utilisateur et de celle de la cible. Influencée aussi par la différence de niveaux entre la cible et l'utilisateur. Tip : Indispensable à tout prêtre qui se respecte. Fonctionnel (avec un faible nombre de points (1 seul?) mais dans ce cas le taux de réussite est mauvais.",
+    "description": "Permet de ramener à la vie le joueur mort ciblé. L'efficacité de la compétence dépend de la sagesse de l'utilisateur et de celle de la cible. Influencée aussi par la différence de niveaux entre la cible et l'utilisateur. Tip : Indispensable à tout prêtre qui se respecte. Fonctionnel (avec un faible nombre de points (1 seul?) mais dans ce cas le taux de réussite est mauvais.",
     "trainingTeachers": {
       "Windhowl": [
         "Nalya",
@@ -240,7 +240,7 @@
     "name": "Pillage de tombe\n       NMS",
     "maxTraining": "100",
     "requirements": "Niv 17, 50 en dextérité. 1 point de compétences minimum.",
-    "description": "Active. Permet de piller la tombe d'un jouer mort avec une chance d'avoir un de ses items au hasard. Il faut faire une quête chez Riguel, récupérer \"un anneau d'une rare beauté. Il était serti de gemmes, c'était l'oeuvre d'un maître joaillier certainement\". \"Le pilleur de tombe\" (cimetière de Lighthaven et niveau de Jarko) l'aurait en sa possession. Influencée par la différence de niveau. Tip :",
+    "description": "Permet de piller la tombe d'un jouer mort avec une chance d'avoir un de ses items au hasard. Il faut faire une quête chez Riguel, récupérer \"un anneau d'une rare beauté. Il était serti de gemmes, c'était l'oeuvre d'un maître joaillier certainement\". \"Le pilleur de tombe\" (cimetière de Lighthaven et niveau de Jarko) l'aurait en sa possession. Influencée par la différence de niveau. Tip :",
     "trainingTeachers": {
       "Arakas": [
         "Riguel",
@@ -253,7 +253,7 @@
     "name": "Vol",
     "maxTraining": "100",
     "requirements": "Niv 17, 50 en dextérité, 25 en Coup d'oeil. 1 point de compétences minimum.",
-    "description": "Active. Permet de voler dans l'inventaire d'un joueur proche. Influence par la dextérité et la différence de niveaux entre la cible et l'utilisateur. Tip : Pour archers voleurs. Convient bien aussi à une utilisation RP.",
+    "description": "Permet de voler dans l'inventaire d'un joueur proche. Influence par la dextérité et la différence de niveaux entre la cible et l'utilisateur. Tip : Pour archers voleurs. Convient bien aussi à une utilisation RP.",
     "trainingTeachers": {
       "Silversky": [
         "Baldric Iraelis"
@@ -268,7 +268,7 @@
     "name": "Chercher",
     "maxTraining": "100",
     "requirements": "Niv 20, 25 en intelligence. 1 point de compétences minimum.",
-    "description": "Active. Permet de détecter les objets et personnes cachés. Influence par la sagesse et l'intelligence hauteur de 50/50. Tip : Inutile",
+    "description": "Permet de détecter les objets et personnes cachés. Influence par la sagesse et l'intelligence hauteur de 50/50. Tip : Inutile",
     "trainingTeachers": {
       "Stonecrest": [
         "Chryseida Yolangda"
@@ -280,7 +280,7 @@
     "name": "Se faufiler",
     "maxTraining": "100",
     "requirements": "Niv 24, 75 en dextérité. 1 point de compétences minimum.",
-    "description": "Passive. Utilisé conjointement Se cacher, permet de se déplacer sans être repéré. Influence par la sagesse et l'intelligence à hauteur de 50/50 et par le milieu extérieur. Tip : Inutile et inefficace.",
+    "description": "Utilisé conjointement Se cacher, permet de se déplacer sans être repéré. Influence par la sagesse et l'intelligence à hauteur de 50/50 et par le milieu extérieur. Tip : Inutile et inefficace.",
     "trainingTeachers": {
       "Stonecrest": [
         "Dantalir le Barde (Repaire des voleurs)"
@@ -292,7 +292,7 @@
     "name": "Transpercer l'armure",
     "maxTraining": "100",
     "requirements": "Niv 25, 75 en force, 40 en dextérité, 30 en intelligence. 1 point de compétences minimum.",
-    "description": "Passive. La CA de la cible est moins prise en compte lors du calcul des dégâts infligés par une attaque physique. Influence par la dextérité et la force. Tip : Indispensable aux tapeurs et archers. Utile en PVM surtout à partir de SH.",
+    "description": "La CA de la cible est moins prise en compte lors du calcul des dégâts infligés par une attaque physique. Influence par la dextérité et la force. Tip : Indispensable aux tapeurs et archers. Utile en PVM surtout à partir de SH.",
     "trainingTeachers": {
       "Silversky": [
         "Adriana (salle d'entraînement)"
@@ -307,7 +307,7 @@
     "name": "Ambidextrie",
     "maxTraining": "500",
     "requirements": "Niv 26, 75 en force, 40 en dextérité et 30 en intelligence. 1 point de compétences minimum.",
-    "description": "Passive. Permet d'utiliser simultanément une arme dans chaque main. Influencée par ? Tip : Augmente les dégâts PVM de 30% environ. Utile aussi en PVP.",
+    "description": "Permet d'utiliser simultanément une arme dans chaque main. Influencée par ? Tip : Augmente les dégâts PVM de 30% environ. Utile aussi en PVP.",
     "trainingTeachers": {
       "Silversky": [
         "Adriana (salle d'entraînement)"
@@ -319,7 +319,7 @@
     "name": "Guérison rapide",
     "maxTraining": "100",
     "requirements": "Niv 30, 80 en endurance. 1 point de compétences minimum.",
-    "description": "Passive. Augmente la vitesse de récupération des points de vie. Influencée par l'endurance par paliers de 160. Tip : Très peu efficace.",
+    "description": "Augmente la vitesse de récupération des points de vie. Influencée par l'endurance par paliers de 160. Tip : Très peu efficace.",
     "trainingTeachers": {
       "Arakas": [
         "Mhorgwloth le Troll"
@@ -334,7 +334,7 @@
     "name": "Profusion de manaNMS",
     "maxTraining": "100",
     "requirements": "Niv 35, 150 en intelligence, 75 en sagesse. 1 point de compétences minimum.",
-    "description": "Passive. Augmente aléatoirement la puissance de lancement de certains sorts. Influencée par ? Tip : Utile à tous les lanceurs de sorts.",
+    "description": "Augmente aléatoirement la puissance de lancement de certains sorts. Influencée par ? Tip : Utile à tous les lanceurs de sorts.",
     "trainingTeachers": {
       "Silversky": [
         "Erfule Norduls 1er étage du château de SilverSky",
@@ -347,7 +347,7 @@
     "name": "ImmobilisationNMS",
     "maxTraining": "100",
     "requirements": "Niv 51, 56 en force, 47 en dextérité. 1 point de compétences minimum.",
-    "description": "Active. Immobilise la cible à distance et réduit l'esquive de 75%.Remplace enchevêtrement/verglas pour les classes ne pouvant apprendre ces sorts (archer, guerrier, paladin et mage de guerre). La réussite est influencée par les bonus fournis par divers items (ces bonus sont indispensables pour que la compétence soit efficace : 175 est une valeur correcte). Tip : Indispensable en PVP et PVM.",
+    "description": "Immobilise la cible à distance et réduit l'esquive de 75%.Remplace enchevêtrement/verglas pour les classes ne pouvant apprendre ces sorts (archer, guerrier, paladin et mage de guerre). La réussite est influencée par les bonus fournis par divers items (ces bonus sont indispensables pour que la compétence soit efficace : 175 est une valeur correcte). Tip : Indispensable en PVP et PVM.",
     "trainingTeachers": {
       "Windhowl": [
         "Serje Fortepee (Sud-Est de la ville en 1700,1360,0)"
