@@ -59,10 +59,13 @@ const Header = () => {
           </button>
           
           <input 
+            id="load-backup-input"
+            name="load-backup"
             type="file" 
             ref={fileInputRef} 
             className="hidden" 
             accept=".json" 
+            aria-label="Charger une sauvegarde JSON"
             onChange={handleFileChange} 
           />
           <button 
@@ -98,8 +101,10 @@ const Header = () => {
               
               {modal.isSave && (
                 <div className="mb-6 text-left">
-                  <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1 mb-2 block">Nom du fichier</label>
+                  <label htmlFor="save-filename-input" className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1 mb-2 block">Nom du fichier</label>
                   <input 
+                    id="save-filename-input"
+                    name="save-filename"
                     type="text"
                     value={saveFilename}
                     onChange={(e) => setSaveFilename(e.target.value)}

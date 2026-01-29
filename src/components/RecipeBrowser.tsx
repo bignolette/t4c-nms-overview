@@ -1543,9 +1543,11 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
                   <>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full">
                       <div className="space-y-2">
-                        <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest ml-1">Profession</label>
+                        <label htmlFor="prof-select" className="text-[10px] font-bold text-slate-500 uppercase tracking-widest ml-1">Profession</label>
                         <div className="relative">
                           <select
+                            id="prof-select"
+                            name="profession"
                             value={selectedProf}
                             onChange={(e) => {setSelectedProf(e.target.value); setCurrentPage(1);}}
                             className="w-full bg-slate-950 border border-slate-700 rounded-xl py-3 px-4 text-slate-100 focus:border-amber-500 outline-none appearance-none cursor-pointer"
@@ -1557,9 +1559,11 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
                       </div>
 
                       <div className="space-y-2">
-                        <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest ml-1">Zone</label>
+                        <label htmlFor="zone-select" className="text-[10px] font-bold text-slate-500 uppercase tracking-widest ml-1">Zone</label>
                         <div className="relative">
                           <select
+                            id="zone-select"
+                            name="zone"
                             value={selectedZone}
                             onChange={(e) => {setSelectedZone(e.target.value); setCurrentPage(1);}}
                             className="w-full bg-slate-950 border border-slate-700 rounded-xl py-3 px-4 text-slate-100 focus:border-amber-500 outline-none appearance-none cursor-pointer"
@@ -1571,9 +1575,11 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
                       </div>
 
                       <div className="space-y-2">
-                        <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest ml-1">Type</label>
+                        <label htmlFor="type-select" className="text-[10px] font-bold text-slate-500 uppercase tracking-widest ml-1">Type</label>
                         <div className="relative">
                           <select
+                            id="type-select"
+                            name="type"
                             value={selectedType}
                             onChange={(e) => {setSelectedType(e.target.value); setCurrentPage(1);}}
                             className="w-full bg-slate-950 border border-slate-700 rounded-xl py-3 px-4 text-slate-100 focus:border-amber-500 outline-none appearance-none cursor-pointer"
@@ -1585,11 +1591,27 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
                       </div>
 
                       <div className="space-y-2">
-                        <label className="text-[10px] font-bold text-slate-500 uppercase tracking-widest ml-1">Niveau</label>
+                        <label htmlFor="lvl-min-input" className="text-[10px] font-bold text-slate-500 uppercase tracking-widest ml-1">Niveau</label>
                         <div className="flex items-center gap-2 bg-slate-950 border border-slate-700 rounded-xl px-4 py-2.5">
-                          <input type="number" value={levelRange[0]} onChange={(e) => {setLevelRange([parseInt(e.target.value) || 0, levelRange[1]]); setCurrentPage(1);}} className="w-full bg-transparent text-center text-sm font-bold text-amber-500 outline-none" />
+                          <input 
+                            id="lvl-min-input"
+                            name="lvl-min"
+                            type="number" 
+                            aria-label="Niveau minimum"
+                            value={levelRange[0]} 
+                            onChange={(e) => {setLevelRange([parseInt(e.target.value) || 0, levelRange[1]]); setCurrentPage(1);}} 
+                            className="w-full bg-transparent text-center text-sm font-bold text-amber-500 outline-none" 
+                          />
                           <span className="text-slate-700 font-bold">-</span>
-                          <input type="number" value={levelRange[1]} onChange={(e) => {setLevelRange([levelRange[0], parseInt(e.target.value) || 250]); setCurrentPage(1);}} className="w-full bg-transparent text-center text-sm font-bold text-amber-500 outline-none" />
+                          <input 
+                            id="lvl-max-input"
+                            name="lvl-max"
+                            type="number" 
+                            aria-label="Niveau maximum"
+                            value={levelRange[1]} 
+                            onChange={(e) => {setLevelRange([levelRange[0], parseInt(e.target.value) || 250]); setCurrentPage(1);}} 
+                            className="w-full bg-transparent text-center text-sm font-bold text-amber-500 outline-none" 
+                          />
                         </div>
                       </div>
                     </div>

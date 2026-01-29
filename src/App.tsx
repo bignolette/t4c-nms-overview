@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import WikiPage from './pages/WikiPage';
@@ -13,6 +13,7 @@ import { DataProvider, useData } from './context/DataContext';
 
 const AppContent: React.FC = () => {
   const { bestiaryData, recipesData, spellsData, skillsData, loading } = useData();
+  const location = useLocation();
 
   if (loading) {
     return (
@@ -26,29 +27,29 @@ const AppContent: React.FC = () => {
   }
 
   return (
-    <Router>
-      <Layout>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/bestiary" element={<Bestiary monsters={bestiaryData} />} />
-          <Route path="/equipable" element={<EquipablePage />} />
-          <Route path="/recipes" element={<RecipeBrowser recipes={recipesData} />} />
-          <Route path="/spells" element={<SpellList spells={spellsData} />} />
-          <Route path="/skills" element={<SkillList skills={skillsData} />} />
-          <Route path="/planner" element={<PlannerPage />} />
-          <Route path="/wiki" element={<WikiPage />} />
-          <Route path="/wiki/:slug" element={<WikiPage />} />
-          <Route path="/legal" element={<Legal />} />
-        </Routes>
-      </Layout>
-    </Router>
+    <Layout>
+      <Routes key={location.pathname}>
+        <Route path="/" element={<Home />} />
+        <Route path="/bestiary" element={<Bestiary monsters={bestiaryData} />} />
+        <Route path="/equipable" element={<EquipablePage />} />
+        <Route path="/recipes" element={<RecipeBrowser recipes={recipesData} />} />
+        <Route path="/spells" element={<SpellList spells={spellsData} />} />
+        <Route path="/skills" element={<SkillList skills={skillsData} />} />
+        <Route path="/planner" element={<PlannerPage />} />
+        <Route path="/wiki" element={<WikiPage />} />
+        <Route path="/wiki/:slug" element={<WikiPage />} />
+        <Route path="/legal" element={<Legal />} />
+      </Routes>
+    </Layout>
   );
 };
 
 const App: React.FC = () => {
   return (
     <DataProvider>
-      <AppContent />
+      <Router>
+        <AppContent />
+      </Router>
     </DataProvider>
   );
 };

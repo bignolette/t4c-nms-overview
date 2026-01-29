@@ -8,7 +8,7 @@ import { Package, Hammer, Skull, Search, X, Sparkles, Target, LayoutGrid, Chevro
 import { useState, useEffect, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import ScrollContainer from '../components/shared/ScrollContainer';
-import { fastNormalize } from '../data/utils';
+import { fastNormalize, generateUUID } from '../data/utils';
 import type { Monster, RecipeItem, Spell, Skill } from '../data/types';
 
 const WikiPage = () => {
@@ -30,7 +30,7 @@ const WikiPage = () => {
 
   const handleProjectAdd = (recipeName: string) => {
     const newProject = {
-        id: crypto.randomUUID(),
+        id: generateUUID(),
         recipeName: recipeName,
         targetQuantity: 1,
         createdAt: Date.now(),
@@ -138,7 +138,10 @@ const WikiPage = () => {
               <div className="relative">
                 <Search className="absolute left-4 md:left-5 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-amber-500 transition-all duration-300 group-focus-within:scale-110 pointer-events-none" size={18} />
                 <input
+                  id="wiki-search-input"
+                  name="wiki-search"
                   type="text"
+                  aria-label="Rechercher dans l'encyclopédie"
                   placeholder="Rechercher..."
                   value={searchInput}
                   onChange={(e) => handleSearch(e.target.value)}
@@ -198,8 +201,8 @@ const WikiPage = () => {
               })}
             </div>
           </ScrollContainer>
+        </div>
       </div>
-    </div>
 
       {/* Main Content Area */}
       <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">

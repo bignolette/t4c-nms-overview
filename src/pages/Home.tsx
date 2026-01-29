@@ -9,7 +9,7 @@ const Home = () => {
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     if (searchTerm.trim()) {
-      navigate(`/wiki/items?search=${encodeURIComponent(searchTerm)}`);
+      navigate(`/wiki?search=${encodeURIComponent(searchTerm)}`);
     }
   };
 
@@ -35,7 +35,10 @@ const Home = () => {
             <div className="relative flex items-center">
               <Search className="absolute left-6 text-slate-500 group-focus-within:text-amber-500 transition-colors pointer-events-none" size={24} />
               <input 
+                id="home-search-input"
+                name="home-search"
                 type="text"
+                aria-label="Rechercher un objet ou un monstre"
                 placeholder="Chercher un objet, un monstre..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
@@ -43,10 +46,14 @@ const Home = () => {
               />
               <button 
                 type="submit"
-                className="absolute right-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 w-12 h-12 md:w-auto md:h-auto md:px-8 md:py-4 rounded-full md:rounded-[24px] font-black uppercase tracking-widest text-sm transition-all shadow-lg active:scale-95 flex items-center justify-center"
+                className="absolute right-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 w-12 h-12 md:w-auto md:h-auto md:px-8 md:py-4 rounded-full md:rounded-[24px] font-black uppercase tracking-widest text-sm transition-all shadow-lg active:scale-95 flex items-center justify-center shrink-0"
               >
-                <span className="hidden md:inline">Chercher</span>
-                <Search className="md:hidden" size={20} />
+                <div className="md:hidden flex items-center justify-center">
+                  <Search size={20} />
+                </div>
+                <div className="hidden md:block">
+                  Chercher
+                </div>
               </button>
             </div>
           </form>

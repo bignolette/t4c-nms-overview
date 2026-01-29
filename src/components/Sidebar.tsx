@@ -13,14 +13,14 @@ const Sidebar = ({ isOpen = true, onToggle }: SidebarProps) => {
 
   const navItems = [
     { name: 'Accueil', icon: Home, path: '/' },
-    { name: 'Encyclopédie', icon: BookOpen, path: '/wiki/items' },
+    { name: 'Encyclopédie', icon: BookOpen, path: '/wiki' },
     { name: 'Simulateur', icon: Calculator, path: '/planner' },
     { name: 'Personnage', icon: User, path: '/equipable' },
     { name: 'Mentions Légales', icon: ShieldCheck, path: '/legal' },
   ];
 
   const isActive = (path: string) => {
-    if (path === '/wiki/items') return location.pathname.startsWith('/wiki');
+    if (path === '/wiki') return location.pathname.startsWith('/wiki');
     return location.pathname === path;
   };
 

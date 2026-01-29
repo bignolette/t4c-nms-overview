@@ -389,10 +389,12 @@ const SpellList = ({ spells }: SpellListProps) => {
             <div className="space-y-4">
               <div className="flex items-center gap-2 text-slate-500">
                 <MapPin size={16} className="text-amber-500/50" />
-                <span className="text-[10px] font-black uppercase tracking-[0.2em]">Zones</span>
+                <label htmlFor="spell-zone-select" className="text-[10px] font-black uppercase tracking-[0.2em]">Zones</label>
               </div>
-              <div className="relative flex-1 md:max-w-[200px] w-full">
+              <div className="relative flex-1 md:max-w-[200px]">
                 <select 
+                  id="spell-zone-select"
+                  name="zone"
                   value={selectedZone}
                   onChange={(e) => { setSelectedZone(e.target.value); setCurrentPage(1); }}
                   className="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-2.5 text-xs font-bold text-slate-300 focus:border-amber-500 outline-none appearance-none truncate"
