@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import Pagination from './shared/Pagination';
 import StatBadge from './shared/StatBadge';
+import ScrollContainer from './shared/ScrollContainer';
 
 interface RecipeBrowserProps {
   recipes: RecipeItem[];
@@ -711,7 +712,7 @@ const NPCGroupedView = ({
     <div className="space-y-6 animate-fade-in">
       {/* Navigation Tabs */}
       <div className="bg-slate-900 border border-slate-800 rounded-2xl p-1.5 md:p-2 shadow-xl flex flex-wrap gap-2 sticky top-20 md:top-24 z-30 backdrop-blur-xl items-center pl-14 md:pl-2">
-        <div className="flex overflow-x-auto no-scrollbar gap-1 w-full lg:w-auto pb-1 lg:pb-0">
+        <ScrollContainer containerClassName="w-full lg:w-auto" className="gap-1 pb-1 lg:pb-0">
           <div className="flex gap-1 min-w-max">
             {PROFESSIONS.map(p => {
               const isSelected = selectedProf === p;
@@ -735,7 +736,7 @@ const NPCGroupedView = ({
               );
             })}
           </div>
-        </div>
+        </ScrollContainer>
         
         <div className="hidden lg:flex flex-1" />
         

@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import Pagination from './shared/Pagination';
 import StatBadge from './shared/StatBadge';
+import ScrollContainer from './shared/ScrollContainer';
 
 interface SpellListProps {
   spells: Spell[];
@@ -342,26 +343,28 @@ const SpellList = ({ spells }: SpellListProps) => {
               <Sparkles size={16} className="text-blue-500/50" />
               <span className="text-[10px] font-black uppercase tracking-[0.2em]">Écoles de Magie</span>
             </div>
-            <div className="flex flex-wrap gap-2">
-              {allSchools.map(school => {
-                const config = SCHOOL_CONFIG[school];
-                const isActive = selectedSchool === school;
-                const Icon = config?.icon || Sparkles;
-                return (
-                  <button
-                    key={school}
-                    onClick={() => { setSelectedSchool(school); setCurrentPage(1); }}
-                    className={`px-4 py-2.5 rounded-xl text-[10px] font-black uppercase tracking-wider transition-all border flex items-center gap-2 
-                      ${isActive 
-                        ? `${config?.bg || 'bg-blue-600'} ${config?.color || 'text-white'} ${config?.border || 'border-blue-500'} shadow-lg scale-105 z-10` 
-                        : 'bg-slate-900 border-slate-800 text-slate-500 hover:text-slate-200 hover:border-slate-600'}`}
-                  >
-                    <Icon size={14} className={isActive ? '' : 'opacity-50'} />
-                    {school}
-                  </button>
-                );
-              })}
-            </div>
+            <ScrollContainer className="pb-1">
+              <div className="flex gap-2 min-w-max">
+                {allSchools.map(school => {
+                  const config = SCHOOL_CONFIG[school];
+                  const isActive = selectedSchool === school;
+                  const Icon = config?.icon || Sparkles;
+                  return (
+                    <button
+                      key={school}
+                      onClick={() => { setSelectedSchool(school); setCurrentPage(1); }}
+                      className={`px-4 py-2.5 rounded-xl text-[10px] font-black uppercase tracking-wider transition-all border flex items-center gap-2 
+                        ${isActive 
+                          ? `${config?.bg || 'bg-blue-600'} ${config?.color || 'text-white'} ${config?.border || 'border-blue-500'} shadow-lg scale-105 z-10` 
+                          : 'bg-slate-900 border-slate-800 text-slate-500 hover:text-slate-200 hover:border-slate-600'}`}
+                    >
+                      <Icon size={14} className={isActive ? '' : 'opacity-50'} />
+                      {school}
+                    </button>
+                  );
+                })}
+              </div>
+            </ScrollContainer>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 relative z-10">

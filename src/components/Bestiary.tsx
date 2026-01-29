@@ -6,6 +6,7 @@ import { fastNormalize } from '../data/utils';
 import type { Monster } from '../data/types';
 import { MapPin, Coins, Skull, Filter, AlertCircle, ExternalLink, RotateCcw, Hammer } from 'lucide-react';
 import Pagination from './shared/Pagination';
+import ScrollContainer from './shared/ScrollContainer';
 
 interface BestiaryProps {
   monsters: Monster[];
@@ -246,17 +247,19 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
             <Filter size={16} className="text-amber-500/50" />
             <span className="text-[10px] font-black uppercase tracking-[0.2em]">Zones Géographiques</span>
           </div>
-          <div className="flex flex-wrap gap-2 w-full">
-            {baseZones.map(zone => (
-              <button
-                key={zone}
-                onClick={() => { setSelectedZone(zone); setCurrentPage(1); }}
-                className={`px-5 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all border ${selectedZone === zone ? 'bg-amber-500 border-amber-400 text-slate-950 shadow-xl shadow-amber-500/10 scale-105 z-10' : 'bg-slate-900 border-slate-800 text-slate-500 hover:text-slate-200 hover:border-slate-600'}`}
-              >
-                {zone}
-              </button>
-            ))}
-          </div>
+          <ScrollContainer className="pb-1">
+            <div className="flex gap-2 min-w-max">
+              {baseZones.map(zone => (
+                <button
+                  key={zone}
+                  onClick={() => { setSelectedZone(zone); setCurrentPage(1); }}
+                  className={`px-5 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all border ${selectedZone === zone ? 'bg-amber-500 border-amber-400 text-slate-950 shadow-xl shadow-amber-500/10 scale-105 z-10' : 'bg-slate-900 border-slate-800 text-slate-500 hover:text-slate-200 hover:border-slate-600'}`}
+                >
+                  {zone}
+                </button>
+              ))}
+            </div>
+          </ScrollContainer>
         </div>
       </div>
 

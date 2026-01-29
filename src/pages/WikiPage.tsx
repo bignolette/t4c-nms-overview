@@ -7,6 +7,7 @@ import SkillList from '../components/SkillList';
 import { Package, Hammer, Skull, Search, X, Sparkles, Target } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import ScrollContainer from '../components/shared/ScrollContainer';
 
 const WikiPage = () => {
   const { slug } = useParams();
@@ -82,10 +83,12 @@ const WikiPage = () => {
           </div>
 
           {/* Tab Navigation */}
-          <div className="w-full min-w-0">
-            <div className="flex overflow-x-auto no-scrollbar bg-slate-950/50 p-1 rounded-xl md:rounded-2xl border border-slate-800 w-full md:w-fit scrollbar-hide">
-              <div className="flex min-w-max">
-                {tabs.map((tab) => {
+          <ScrollContainer 
+            containerClassName="w-full md:w-fit"
+            className="bg-slate-950/50 p-1 rounded-xl md:rounded-2xl border border-slate-800"
+          >
+            <div className="flex min-w-max">
+              {tabs.map((tab) => {
                 const isActive = currentTab === tab.id;
                 return (
                   <button
@@ -108,8 +111,7 @@ const WikiPage = () => {
                 );
               })}
             </div>
-          </div>
-        </div>
+          </ScrollContainer>
       </div>
     </div>
 
