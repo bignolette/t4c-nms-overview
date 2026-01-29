@@ -418,7 +418,7 @@
     }
   },
   {
-    "name": "Profusion de manaNMS",
+    "name": "Profusion de mana",
     "maxTraining": "100",
     "requirements": "Niv 35, 150 en intelligence, 75 en sagesse. 1 point de compétences minimum.",
     "description": "Augmente aléatoirement la puissance de lancement de certains sorts. Influencée par ? Tip : Utile à tous les lanceurs de sorts.",
