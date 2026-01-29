@@ -46,39 +46,51 @@ const WikiPage = () => {
   };
 
   return (
-    <div className="space-y-8 pb-20">
-      {/* Search Header */}
-      <div className="bg-slate-900/50 backdrop-blur-xl border border-slate-800 rounded-2xl md:rounded-3xl p-5 md:p-8 shadow-2xl relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/5 blur-3xl rounded-full -mr-32 -mt-32"></div>
+    <div className="space-y-10 pb-20">
+      {/* Search Header - Hero Section */}
+      <div className="glass-card rounded-3xl p-6 md:p-12 relative overflow-hidden group/hero">
+        {/* Animated Background Orbs */}
+        <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 blur-[100px] rounded-full -mr-48 -mt-48 animate-pulse transition-all duration-1000 group-hover/hero:bg-amber-500/20"></div>
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/5 blur-[80px] rounded-full -ml-32 -mb-32"></div>
         
-        <div className="relative z-10 flex flex-col gap-6 md:gap-8 min-w-0">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 min-w-0">
-            <div className="min-w-0">
-              <h1 className="text-2xl md:text-4xl font-black text-slate-100 tracking-tighter italic uppercase mb-2 truncate">
-                Encyclopédie Althéenne
-              </h1>
-              <p className="text-slate-400 font-medium max-w-xl text-sm md:text-base">
-                Recherchez des équipements, des recettes d'artisanat ou des créatures à travers tout Althéa.
+        <div className="relative z-10 flex flex-col gap-10 min-w-0">
+          <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 min-w-0">
+            <div className="min-w-0 space-y-4">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.2 }}
+              >
+                <h1 className="text-3xl md:text-6xl font-black text-slate-100 tracking-[calc(-0.05em)] italic uppercase leading-none">
+                  Encyclopédie <br/>
+                  <span className="text-amber-500 text-glow-amber">Althéenne</span>
+                </h1>
+              </motion.div>
+              <p className="text-slate-400 font-medium max-w-xl text-base md:text-lg leading-relaxed border-l-2 border-amber-500/30 pl-4">
+                Découvrez les secrets d'Althéa. Recherchez des équipements légendaires, maîtrisez l'artisanat ou traquez les créatures les plus rares.
               </p>
             </div>
 
-            <div className="w-full md:w-96 relative group">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-amber-500 transition-colors" size={20} />
-              <input
-                type="text"
-                placeholder="Rechercher partout..."
-                value={searchInput}
-                onChange={(e) => handleSearch(e.target.value)}
-                className="w-full bg-slate-950 border border-slate-700 rounded-2xl py-4 pl-12 pr-12 text-slate-100 focus:border-amber-500 outline-none transition-all focus:ring-4 focus:ring-amber-500/10 shadow-inner text-lg font-medium"
-              />
-              {searchInput && (
-                <button 
-                  onClick={() => handleSearch('')}
-                  className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 hover:text-slate-300 p-1"
-                >
-                  <X size={20} />
-                </button>
-              )}
+            <div className="w-full md:w-[450px] relative group shrink-0">
+              <div className="absolute inset-0 bg-amber-500/5 blur-xl group-focus-within:bg-amber-500/10 transition-colors"></div>
+              <div className="relative">
+                <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-amber-500 transition-all duration-300 group-focus-within:scale-110" size={22} />
+                <input
+                  type="text"
+                  placeholder="Rechercher un objet, un monstre..."
+                  value={searchInput}
+                  onChange={(e) => handleSearch(e.target.value)}
+                  className="w-full bg-slate-950/80 backdrop-blur-xl border border-slate-700/50 rounded-2xl py-5 pl-14 pr-14 text-slate-100 focus:border-amber-500/50 outline-none transition-all focus:ring-4 focus:ring-amber-500/5 shadow-2xl text-lg font-bold placeholder:text-slate-600"
+                />
+                {searchInput && (
+                  <button 
+                    onClick={() => handleSearch('')}
+                    className="absolute right-5 top-1/2 -translate-y-1/2 text-slate-500 hover:text-amber-500 p-1 bg-slate-900/50 rounded-lg transition-all"
+                  >
+                    <X size={20} />
+                  </button>
+                )}
+              </div>
             </div>
           </div>
 

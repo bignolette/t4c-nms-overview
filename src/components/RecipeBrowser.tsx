@@ -260,33 +260,37 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
       <>
         <motion.div 
           layout
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, scale: 0.95 }}
+          initial={{ opacity: 0, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          whileHover={{ y: -5, scale: 1.02 }}
           onClick={() => setIsModalOpen(true)}
-          className="bg-slate-800/40 border border-slate-700/50 rounded-2xl p-4 flex flex-col gap-3 hover:border-amber-500/50 hover:bg-slate-800/60 transition-all duration-300 group cursor-pointer relative overflow-hidden h-full shadow-xl hover:shadow-amber-500/10"
+          className="glass-card rounded-2xl p-4 flex flex-col gap-3 hover:border-amber-500/40 transition-all duration-300 group cursor-pointer relative overflow-hidden h-full"
         >
-          <div className="absolute top-0 right-0 p-2 opacity-0 group-hover:opacity-100 transition-opacity">
-            <Info size={14} className="text-amber-500/50" />
+          <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+          
+          <div className="absolute top-0 right-0 p-3 opacity-0 group-hover:opacity-100 transition-opacity">
+            <div className="bg-slate-900/80 p-1.5 rounded-lg border border-slate-700 backdrop-blur-md">
+              <Info size={14} className="text-amber-500" />
+            </div>
           </div>
 
-          <div className="flex items-start justify-between">
-            <div className="p-2 bg-slate-800 rounded-xl text-amber-500 border border-slate-700/50 group-hover:bg-amber-500 group-hover:text-slate-900 transition-all">
+          <div className="flex items-start justify-between relative z-10">
+            <div className="p-3 bg-slate-950/80 rounded-2xl text-amber-500 border border-slate-800 shadow-inner group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all duration-500">
               {(() => {
                 const Icon = getSourceIcon(recipe.source, recipe.name);
-                return <Icon size={18} />;
+                return <Icon size={20} />;
               })()}
             </div>
             <button 
               onClick={(e) => { e.stopPropagation(); toggleFavorite(recipe.name); }}
-              className={`p-1.5 rounded-full border shadow-lg transition-all ${favorites.includes(recipe.name) ? 'bg-yellow-500 border-yellow-400 text-slate-950 scale-110' : 'bg-slate-800 border-slate-700 text-slate-500 hover:text-yellow-500'}`}
+              className={`p-2 rounded-xl border backdrop-blur-md transition-all duration-300 shadow-xl ${favorites.includes(recipe.name) ? 'bg-amber-500 border-amber-400 text-slate-950 scale-110' : 'bg-slate-900/80 border-slate-700 text-slate-500 hover:text-amber-500'}`}
             >
-              <Star size={12} fill={favorites.includes(recipe.name) ? 'currentColor' : 'none'} />
+              <Star size={14} fill={favorites.includes(recipe.name) ? 'currentColor' : 'none'} />
             </button>
           </div>
           
-          <div>
-            <h3 className="font-bold text-slate-100 group-hover:text-amber-500 transition-colors text-sm line-clamp-2 min-h-[40px] flex items-center gap-2">
+          <div className="relative z-10">
+            <h3 className="font-black text-slate-100 group-hover:text-amber-400 transition-colors text-[15px] leading-tight line-clamp-2 min-h-[40px] flex items-center gap-2">
               {recipe.name}
               {isCraftable && (
                 <span title="Cet objet peut être fabriqué" className="flex items-center justify-center bg-amber-500/20 text-amber-500 p-1 rounded-full border border-amber-500/30">
@@ -294,14 +298,14 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
                 </span>
               )}
             </h3>
-            <div className="flex flex-col gap-1.5 mt-1">
+            <div className="flex flex-col gap-2 mt-2">
               {recipe.typeSource ? (
-                <div className="flex items-center gap-1 text-[10px] text-emerald-500 uppercase font-black tracking-tighter">
+                <div className="flex items-center gap-1.5 text-[10px] text-emerald-400 uppercase font-black tracking-widest bg-emerald-500/5 px-2 py-1 rounded-lg w-fit border border-emerald-500/10">
                   <Tag size={10} />
                   <span>{recipe.typeSource} {recipe.locations?.[0] ? `• ${recipe.locations[0].label}` : ''}</span>
                 </div>
               ) : recipe.source && (
-                <div className="flex items-center gap-1 text-[10px] text-slate-500 uppercase font-black tracking-tighter">
+                <div className="flex items-center gap-1.5 text-[10px] text-slate-500 uppercase font-black tracking-widest bg-slate-950 px-2 py-1 rounded-lg w-fit border border-slate-800">
                   <Tag size={10} className="text-slate-600" />
                   <span>{recipe.source}</span>
                 </div>
@@ -312,15 +316,15 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
                 const monsters = itemMonsterMap[fastNormalize(recipe.name)] || [];
                 if (monsters.length === 0) return null;
                 return (
-                  <div className="flex items-center gap-1.5 overflow-hidden">
-                    <Skull size={10} fill="#a335ee" className="fill-purple-500/20 shrink-0" />
-                    <div className="flex gap-1 truncate">
-                      {monsters.slice(0, 2).map((m: any, i: number) => (
-                        <span key={i} className="text-[9px] font-bold text-[#a335ee] uppercase tracking-tighter opacity-80 whitespace-nowrap bg-purple-500/5 px-1 rounded">
+                  <div className="flex items-center gap-2 overflow-hidden bg-purple-500/5 px-2 py-1.5 rounded-xl border border-purple-500/10">
+                    <Skull size={12} fill="#a335ee" className="fill-purple-500/20 shrink-0" />
+                    <div className="flex gap-1.5 truncate">
+                      {monsters.slice(0, 1).map((m: any, i: number) => (
+                        <span key={i} className="text-[10px] font-bold text-purple-300 uppercase tracking-widest whitespace-nowrap">
                           {m.name}
                         </span>
                       ))}
-                      {monsters.length > 2 && <span className="text-[9px] text-slate-600">+{monsters.length - 2}</span>}
+                      {monsters.length > 1 && <span className="text-[10px] text-slate-500 font-black">+{monsters.length - 1}</span>}
                     </div>
                   </div>
                 );
@@ -328,7 +332,7 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-1.5 mt-auto">
+          <div className="flex flex-wrap gap-1.5 mt-auto relative z-10">
             {recipe.bonuses?.ca && <StatBadge label="CA" value={formatStatValue(recipe.bonuses.ca)} type="ca" />}
             {recipe.bonuses?.str && <StatBadge label="FOR" value={formatStatValue(recipe.bonuses.str)} type="str" />}
             {recipe.bonuses?.end && <StatBadge label="END" value={formatStatValue(recipe.bonuses.end)} type="end" />}
@@ -340,13 +344,26 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
           {isCraftable && (
             <button 
               onClick={handleInstantiate}
-              className="mt-2 w-full py-2 bg-amber-500/10 hover:bg-amber-500 text-amber-500 hover:text-slate-950 border border-amber-500/20 hover:border-amber-500 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all flex items-center justify-center gap-2 group/btn"
+              className="mt-3 w-full py-2.5 bg-amber-500/10 hover:bg-amber-500 text-amber-500 hover:text-slate-950 border border-amber-500/20 hover:border-amber-500 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all duration-300 flex items-center justify-center gap-2 group/btn relative z-10 shadow-lg shadow-amber-950/20"
             >
               <Plus size={14} className="group-hover/btn:scale-110 transition-transform" />
-              Ajouter aux projets
+              Projet
             </button>
           )}
         </motion.div>
+        {isModalOpen && (
+          <ItemDetailModal 
+            recipe={recipe} 
+            onClose={() => setIsModalOpen(false)} 
+            toggleFavorite={toggleFavorite} 
+            favorites={favorites} 
+            navigateToRecipe={onNavigateToRecipe}
+            onAddProject={onAddProject}
+          />
+        )}
+      </>
+    );
+  }
         {isModalOpen && (
           <ItemDetailModal 
             recipe={recipe} 
