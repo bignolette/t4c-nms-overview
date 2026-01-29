@@ -31,21 +31,22 @@ const Home = () => {
 
           {/* Home Search Bar */}
           <form onSubmit={handleSearch} className="max-w-2xl mx-auto relative group">
-            <div className="absolute inset-0 bg-amber-500/20 blur-2xl group-focus-within:bg-amber-500/30 transition-all rounded-full" />
+            <div className="absolute inset-0 bg-amber-500/20 blur-2xl group-focus-within:bg-amber-500/30 transition-all rounded-full pointer-events-none" />
             <div className="relative flex items-center">
-              <Search className="absolute left-6 text-slate-500 group-focus-within:text-amber-500 transition-colors" size={24} />
+              <Search className="absolute left-6 text-slate-500 group-focus-within:text-amber-500 transition-colors pointer-events-none" size={24} />
               <input 
                 type="text"
-                placeholder="Chercher un objet, un monstre, une recette..."
+                placeholder="Chercher un objet, un monstre..."
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full bg-slate-950/80 backdrop-blur-xl border-2 border-slate-800 rounded-[32px] py-6 pl-16 pr-8 text-xl text-white focus:border-amber-500 outline-none transition-all shadow-2xl placeholder:text-slate-700"
+                className="w-full bg-slate-950/80 backdrop-blur-xl border-2 border-slate-800 rounded-[32px] py-5 md:py-6 pl-16 pr-16 md:pr-40 text-lg md:text-xl text-white focus:border-amber-500 outline-none transition-all shadow-2xl placeholder:text-slate-700"
               />
               <button 
                 type="submit"
-                className="absolute right-3 bg-amber-500 hover:bg-amber-400 text-slate-950 px-8 py-4 rounded-[24px] font-black uppercase tracking-widest text-sm transition-all shadow-lg active:scale-95"
+                className="absolute right-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 w-12 h-12 md:w-auto md:h-auto md:px-8 md:py-4 rounded-full md:rounded-[24px] font-black uppercase tracking-widest text-sm transition-all shadow-lg active:scale-95 flex items-center justify-center"
               >
-                Chercher
+                <span className="hidden md:inline">Chercher</span>
+                <Search className="md:hidden" size={20} />
               </button>
             </div>
           </form>
@@ -58,7 +59,7 @@ const Home = () => {
           title="Encyclopédie" 
           description="Explorez la base de données complète des objets, monstres et métiers d'Althéa."
           icon={BookOpen}
-          to="/wiki/items"
+          to="/wiki"
           color="bg-blue-500/10 text-blue-400 border-blue-500/20"
           accent="group-hover:border-blue-500/50"
         />

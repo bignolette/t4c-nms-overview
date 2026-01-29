@@ -233,7 +233,7 @@ const ItemDetailModal = ({ recipe, onClose, toggleFavorite, favorites, navigateT
   );
 };
 
-const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, toggleFavorite, getMatchingIngredients, viewMode, hideExternalLink, onNavigateToRecipe, onAddProject }: any) => {
+export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, toggleFavorite, getMatchingIngredients, viewMode, hideExternalLink, onNavigateToRecipe, onAddProject, hideProjectButton }: any) => {
   const { itemMonsterMap, itemUsageMap, wikiData } = useData();
   const getSourceIcon = useSourceIcon();
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -628,7 +628,7 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
           </div>
         </div>
       ) : (
-        <CraftingTree recipes={[recipe]} />
+        <CraftingTree recipes={[recipe]} hidePlanner={hideProjectButton} />
       )}
     </motion.div>
   );
@@ -1453,25 +1453,25 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
           <div className="flex bg-slate-900/50 p-1 rounded-xl border border-slate-800 w-fit backdrop-blur-xl shadow-lg">
             <button
               onClick={() => setViewMode('search')}
-              className={`flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-bold transition-all ${
+              className={`flex items-center gap-2 px-4 md:px-5 py-2.5 rounded-lg text-sm font-bold transition-all ${
                 viewMode === 'search' 
                   ? 'bg-amber-500 text-slate-950 shadow-lg scale-105' 
                   : 'text-slate-400 hover:text-slate-200'
               }`}
             >
-              <Search size={16} />
-              Recherche
+              <Search size={18} />
+              <span className="hidden md:inline">Recherche</span>
             </button>
             <button
               onClick={() => setViewMode('npc')}
-              className={`flex items-center gap-2 px-5 py-2.5 rounded-lg text-sm font-bold transition-all ${
+              className={`flex items-center gap-2 px-4 md:px-5 py-2.5 rounded-lg text-sm font-bold transition-all ${
                 viewMode === 'npc' 
                   ? 'bg-amber-500 text-slate-950 shadow-lg scale-105' 
                   : 'text-slate-400 hover:text-slate-200'
               }`}
             >
-              <Users size={16} />
-              Maîtres Artisans
+              <Users size={18} />
+              <span className="hidden md:inline">Maîtres Artisans</span>
             </button>
           </div>
         )}

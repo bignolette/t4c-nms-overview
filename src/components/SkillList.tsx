@@ -16,7 +16,7 @@ interface SkillListProps {
 
 const DEFAULT_ITEMS_PER_PAGE = 24;
 
-const SkillCard = memo(({ skill }: { skill: Skill }) => {
+export const SkillCard = memo(({ skill }: { skill: Skill }) => {
   const cleanRequirements = useMemo(() => {
     return skill.requirements.replace(/Niv\s*\d+,?\s*/i, '').trim();
   }, [skill.requirements]);
@@ -260,13 +260,13 @@ const SkillList = ({ skills }: SkillListProps) => {
             onClick={() => toggleSort('name')} 
             className={`flex items-center gap-2 px-4 py-2 rounded-full text-[11px] font-bold border transition-all ${sortBy === 'name' ? 'bg-emerald-600 text-white border-emerald-500 shadow-lg' : 'bg-slate-800 text-slate-400 border-slate-700'}`}
           >
-            <ArrowUpDown size={12} /> Nom {sortBy === 'name' && (sortOrder === 'asc' ? '↑' : '↓')}
+            <ArrowUpDown size={12} /> <span className="hidden md:inline">Nom</span> {sortBy === 'name' && (sortOrder === 'asc' ? '↑' : '↓')}
           </button>
           <button 
             onClick={() => toggleSort('zone')} 
             className={`flex items-center gap-2 px-4 py-2 rounded-full text-[11px] font-bold border transition-all ${sortBy === 'zone' ? 'bg-emerald-600 text-white border-emerald-500 shadow-lg' : 'bg-slate-800 text-slate-400 border-slate-700'}`}
           >
-            <ArrowUpDown size={12} /> Zone {sortBy === 'zone' && (sortOrder === 'asc' ? '↑' : '↓')}
+            <ArrowUpDown size={12} /> <span className="hidden md:inline">Zone</span> {sortBy === 'zone' && (sortOrder === 'asc' ? '↑' : '↓')}
           </button>
         </div>
       </div>

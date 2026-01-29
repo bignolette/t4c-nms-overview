@@ -52,7 +52,7 @@ const DropBadge = memo(({ drop }: { drop: string }) => {
 /**
  * Optimized Monster Card Component with Holographic effect for Uniques
  */
-const MonsterCard = memo(({ monster, showLocation }: { monster: Monster, showLocation: boolean }) => {
+export const MonsterCard = memo(({ monster, showLocation }: { monster: Monster, showLocation: boolean }) => {
   const [showAllCoords, setShowAllCoords] = useState(false);
 
   const coordsArray = useMemo(() => {

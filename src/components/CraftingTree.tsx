@@ -37,7 +37,9 @@ const getSourceIcon = (source: string | undefined) => {
   }
 };
 
-const ResourceSummary = memo(({ totals, onOpenPlanner }: { totals: Record<string, number>, onOpenPlanner: () => void }) => {
+const ResourceSummary = memo(({ totals, onOpenPlanner, hidePlanner }: { totals: Record<string, number>, onOpenPlanner: () => void, hidePlanner?: boolean }) => {
+  if (hidePlanner) return null;
+
   const resources = useMemo(() => 
     Object.entries(totals).sort((a, b) => a[0].localeCompare(b[0], undefined, { sensitivity: 'base' })), 
     [totals]
@@ -68,13 +70,15 @@ const ResourceSummary = memo(({ totals, onOpenPlanner }: { totals: Record<string
             ))}
           </div>
 
-          <button 
-            onClick={onOpenPlanner}
-            className="w-full mt-4 bg-emerald-600 hover:bg-emerald-500 text-white font-black text-[10px] uppercase tracking-widest py-3 rounded-xl shadow-lg shadow-emerald-900/20 flex items-center justify-center gap-2 transition-all active:scale-95 border border-emerald-400/20 group"
-          >
-            <Sparkles size={14} className="group-hover:animate-pulse" />
-            Planifier mon Farm
-          </button>
+          {!hidePlanner && (
+            <button 
+              onClick={onOpenPlanner}
+              className="w-full mt-4 bg-emerald-600 hover:bg-emerald-500 text-white font-black text-[10px] uppercase tracking-widest py-3 rounded-xl shadow-lg shadow-emerald-900/20 flex items-center justify-center gap-2 transition-all active:scale-95 border border-emerald-400/20 group"
+            >
+              <Sparkles size={14} className="group-hover:animate-pulse" />
+              Planifier mon Farm
+            </button>
+          )}
         </div>
       ) : (
         <p className="text-sm text-slate-500 italic text-center py-4">Matières premières directes.</p>
@@ -229,7 +233,7 @@ const FarmingPlannerModal = ({ totals, onClose, itemName }: { totals: Record<str
   );
 };
 
-const RecipeCard = memo(({ recipe }: { recipe: RecipeItem }) => {
+const RecipeCard = memo(({ recipe, hidePlanner }: { recipe: RecipeItem, hidePlanner?: boolean }) => {
   const { wikiData } = useData();
   const allRecipes = useMemo(() => wikiData.find(p => p.id === 'metiers')?.recipes || [], [wikiData]);
   const allItems = useMemo(() => wikiData.find(p => p.id === 'items')?.recipes || [], [wikiData]);
@@ -424,7 +428,7 @@ const RecipeCard = memo(({ recipe }: { recipe: RecipeItem }) => {
     <div className="bg-[#0f0f12] border border-slate-800 rounded-3xl overflow-hidden shadow-2xl group hover:border-slate-700 transition-colors">
       <div className="flex flex-col lg:flex-row min-h-[500px]">
         {/* Tree Section */}
-        <div className="flex-1 p-6 md:p-8 lg:p-10 border-b lg:border-b-0 lg:border-r border-slate-800 overflow-x-auto">
+        <div className={`flex-1 p-6 md:p-8 lg:p-10 border-b lg:border-b-0 ${!hidePlanner ? 'lg:border-r' : ''} border-slate-800 overflow-x-auto`}>
           <div className="flex items-center justify-between mb-8">
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl flex items-center justify-center shadow-lg shadow-orange-900/20">
@@ -453,12 +457,15 @@ const RecipeCard = memo(({ recipe }: { recipe: RecipeItem }) => {
         </div>
 
         {/* Sidebar Summary */}
-        <div className="w-full lg:w-80 p-6 bg-slate-900/20">
-          <ResourceSummary 
-            totals={totals} 
-            onOpenPlanner={() => setIsPlannerOpen(true)}
-          />
-        </div>
+        {!hidePlanner && (
+          <div className="w-full lg:w-80 p-6 bg-slate-900/20">
+            <ResourceSummary 
+              totals={totals} 
+              onOpenPlanner={() => setIsPlannerOpen(true)}
+              hidePlanner={hidePlanner}
+            />
+          </div>
+        )}
       </div>
 
       {isPlannerOpen && (
@@ -472,11 +479,11 @@ const RecipeCard = memo(({ recipe }: { recipe: RecipeItem }) => {
   );
 });
 
-const CraftingTree = ({ recipes }: { recipes: RecipeItem[] }) => {
+const CraftingTree = ({ recipes, hidePlanner }: { recipes: RecipeItem[], hidePlanner?: boolean }) => {
   return (
     <div className="space-y-8">
       {recipes.map((recipe, idx) => (
-        <RecipeCard key={recipe.name + idx} recipe={recipe} />
+        <RecipeCard key={recipe.name + idx} recipe={recipe} hidePlanner={hidePlanner} />
       ))}
     </div>
   );

@@ -1,30 +1,66 @@
 import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { useData } from '../context/DataContext';
-import RecipeBrowser from '../components/RecipeBrowser';
-import Bestiary from '../components/Bestiary';
-import SpellList from '../components/SpellList';
-import SkillList from '../components/SkillList';
-import { Package, Hammer, Skull, Search, X, Sparkles, Target } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import RecipeBrowser, { RecipeItemRow } from '../components/RecipeBrowser';
+import Bestiary, { MonsterCard } from '../components/Bestiary';
+import SpellList, { SpellCard } from '../components/SpellList';
+import SkillList, { SkillCard } from '../components/SkillList';
+import { Package, Hammer, Skull, Search, X, Sparkles, Target, LayoutGrid, ChevronRight, ArrowRight } from 'lucide-react';
+import { useState, useEffect, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import ScrollContainer from '../components/shared/ScrollContainer';
+import { fastNormalize } from '../data/utils';
+import type { Monster, RecipeItem, Spell, Skill } from '../data/types';
 
 const WikiPage = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
-  const { bestiaryData, recipesData, itemsData, spellsData, skillsData } = useData();
+  const { 
+    bestiaryData, recipesData, itemsData, spellsData, skillsData, 
+    favRecipes, setFavRecipes, setCraftingProjects 
+  } = useData();
   
-  const currentTab = slug || 'items';
+  const currentTab = slug || 'all';
   const searchTerm = searchParams.get('search') || '';
 
   const [searchInput, setSearchInput] = useState(searchTerm);
+  const [tabSearches, setTabSearches] = useState<Record<string, string>>({
+    all: searchTerm
+  });
 
+  const handleProjectAdd = (recipeName: string) => {
+    const newProject = {
+        id: crypto.randomUUID(),
+        recipeName: recipeName,
+        targetQuantity: 1,
+        createdAt: Date.now(),
+        collectedIngredients: []
+    };
+    setCraftingProjects(prev => [...prev, newProject]);
+  };
+
+  const toggleFavorite = (name: string) => {
+    const newFavs = favRecipes.includes(name) 
+      ? favRecipes.filter(f => f !== name) 
+      : [...favRecipes, name];
+    setFavRecipes(newFavs);
+  };
+
+  const handleNavigate = (name: string) => {
+    handleSearch(name);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  // Sync URL search to local state
   useEffect(() => {
     setSearchInput(searchTerm);
-  }, [searchTerm]);
+    if (searchTerm || currentTab === 'all') {
+      setTabSearches(prev => ({ ...prev, [currentTab]: searchTerm }));
+    }
+  }, [searchTerm, currentTab]);
 
   const tabs = [
+    { id: 'all', label: 'Tous', icon: LayoutGrid, color: 'text-amber-400', bg: 'bg-amber-500/10' },
     { id: 'items', label: 'Objets', icon: Package, color: 'text-blue-400', bg: 'bg-blue-500/10' },
     { id: 'metiers', label: 'Artisanat', icon: Hammer, color: 'text-amber-400', bg: 'bg-amber-500/10' },
     { id: 'bestiary', label: 'Bestiaire', icon: Skull, color: 'text-rose-400', bg: 'bg-rose-500/10' },
@@ -33,11 +69,17 @@ const WikiPage = () => {
   ];
 
   const handleTabChange = (id: string) => {
-    navigate(`/wiki/${id}${searchTerm ? `?search=${encodeURIComponent(searchTerm)}` : ''}`);
+    // If switching from 'all' to a specific tab, and that tab is empty, propagate 'all' search
+    let savedSearch = tabSearches[id] || '';
+    if (!savedSearch && currentTab === 'all' && searchTerm) {
+        savedSearch = searchTerm;
+    }
+    navigate(`/wiki/${id}${savedSearch ? `?search=${encodeURIComponent(savedSearch)}` : ''}`);
   };
 
   const handleSearch = (val: string) => {
     setSearchInput(val);
+    setTabSearches(prev => ({ ...prev, [currentTab]: val }));
     setSearchParams(prev => {
       if (val) prev.set('search', val);
       else prev.delete('search');
@@ -45,13 +87,33 @@ const WikiPage = () => {
     });
   };
 
+  const globalResults = useMemo(() => {
+    if (currentTab !== 'all' || !searchTerm) return null;
+    const query = fastNormalize(searchTerm);
+
+    const filterFn = (item: any) => {
+        const nameMatch = fastNormalize(item.name).includes(query);
+        const descMatch = item.description && fastNormalize(item.description).includes(query);
+        const dropsMatch = item.drops && item.drops.some((d: string) => fastNormalize(d).includes(query));
+        return nameMatch || descMatch || dropsMatch;
+    };
+
+    return [
+      { id: 'items', label: 'Objets', icon: Package, color: 'text-blue-400', results: itemsData.filter(filterFn) },
+      { id: 'metiers', label: 'Artisanat', icon: Hammer, color: 'text-amber-400', results: recipesData.filter(filterFn) },
+      { id: 'bestiary', label: 'Bestiaire', icon: Skull, color: 'text-rose-400', results: bestiaryData.filter(filterFn) },
+      { id: 'spells', label: 'Sorts', icon: Sparkles, color: 'text-sky-400', results: spellsData.filter(filterFn) },
+      { id: 'skills', label: 'Compétences', icon: Target, color: 'text-emerald-400', results: skillsData.filter(filterFn) },
+    ].filter(cat => cat.results.length > 0);
+  }, [currentTab, searchTerm, itemsData, recipesData, bestiaryData, spellsData, skillsData]);
+
   return (
     <div className="space-y-10 pb-20">
       {/* Search Header - Hero Section */}
       <div className="glass-card rounded-3xl p-6 md:p-12 relative overflow-hidden group/hero">
         {/* Animated Background Orbs */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 blur-[100px] rounded-full -mr-48 -mt-48 animate-pulse transition-all duration-1000 group-hover/hero:bg-amber-500/20"></div>
-        <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/5 blur-[80px] rounded-full -ml-32 -mb-32"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-amber-500/10 blur-[100px] rounded-full -mr-48 -mt-48 animate-pulse transition-all duration-1000 group-hover/hero:bg-amber-500/20 pointer-events-none"></div>
+        <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/5 blur-[80px] rounded-full -ml-32 -mb-32 pointer-events-none"></div>
         
         <div className="relative z-10 flex flex-col gap-10 min-w-0">
           <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 min-w-0">
@@ -72,23 +134,35 @@ const WikiPage = () => {
             </div>
 
             <div className="w-full md:w-[450px] relative group shrink-0">
-              <div className="absolute inset-0 bg-amber-500/5 blur-xl group-focus-within:bg-amber-500/10 transition-colors"></div>
+              <div className="absolute inset-0 bg-amber-500/5 blur-xl group-focus-within:bg-amber-500/10 transition-colors pointer-events-none"></div>
               <div className="relative">
-                <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-amber-500 transition-all duration-300 group-focus-within:scale-110" size={22} />
+                <Search className="absolute left-4 md:left-5 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-amber-500 transition-all duration-300 group-focus-within:scale-110 pointer-events-none" size={18} />
                 <input
                   type="text"
-                  placeholder="Rechercher un objet, un monstre..."
+                  placeholder="Rechercher..."
                   value={searchInput}
                   onChange={(e) => handleSearch(e.target.value)}
-                  className="w-full bg-slate-950/80 backdrop-blur-xl border border-slate-700/50 rounded-2xl py-5 pl-14 pr-14 text-slate-100 focus:border-amber-500/50 outline-none transition-all focus:ring-4 focus:ring-amber-500/5 shadow-2xl text-lg font-bold placeholder:text-slate-600"
+                  className="w-full bg-slate-950/80 backdrop-blur-xl border border-slate-700/50 rounded-xl md:rounded-2xl py-3.5 md:py-5 pl-12 md:pl-14 pr-12 md:pr-32 text-slate-100 focus:border-amber-500/50 outline-none transition-all focus:ring-4 focus:ring-amber-500/5 shadow-2xl text-base md:text-lg font-bold placeholder:text-slate-600"
                 />
                 {searchInput && (
-                  <button 
-                    onClick={() => handleSearch('')}
-                    className="absolute right-5 top-1/2 -translate-y-1/2 text-slate-500 hover:text-amber-500 p-1 bg-slate-900/50 rounded-lg transition-all"
-                  >
-                    <X size={20} />
-                  </button>
+                  <div className="absolute right-3 md:right-5 top-1/2 -translate-y-1/2 flex items-center gap-2">
+                    <button 
+                        onClick={() => {
+                            handleSearch('');
+                            setTabSearches({});
+                        }}
+                        className="text-[10px] font-black uppercase tracking-tighter text-slate-500 hover:text-amber-500 transition-colors mr-2 hidden md:block"
+                        title="Réinitialiser tous les onglets"
+                    >
+                        Tout effacer
+                    </button>
+                    <button 
+                        onClick={() => handleSearch('')}
+                        className="text-slate-500 hover:text-amber-500 p-1.5 bg-slate-900/50 rounded-lg transition-all"
+                    >
+                        <X size={16} />
+                    </button>
+                  </div>
                 )}
               </div>
             </div>
@@ -129,6 +203,110 @@ const WikiPage = () => {
 
       {/* Main Content Area */}
       <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+        {currentTab === 'all' && (
+          <div className="space-y-12">
+            {!searchTerm ? (
+              <div className="text-center py-20 bg-slate-900/20 rounded-[40px] border border-slate-800/50 glass-card">
+                <div className="w-20 h-20 bg-amber-500/10 rounded-3xl flex items-center justify-center mx-auto mb-6 border border-amber-500/20">
+                  <Search size={40} className="text-amber-500" />
+                </div>
+                <h2 className="text-3xl font-black text-slate-100 uppercase italic tracking-tighter mb-4">Que recherchez-vous ?</h2>
+                <p className="text-slate-400 max-w-md mx-auto text-lg leading-relaxed">
+                  Entrez un nom d'objet, une créature ou un mot-clé pour explorer toute la base de données d'Althéa.
+                </p>
+                <div className="flex flex-wrap justify-center gap-3 mt-10">
+                  {['Cimeterre', 'Ondine', 'Sort de Feu', 'Anneau de Vie'].map(suggest => (
+                    <button 
+                      key={suggest} 
+                      onClick={() => handleSearch(suggest)}
+                      className="px-5 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 text-sm font-bold hover:border-amber-500/50 hover:text-amber-500 transition-all"
+                    >
+                      {suggest}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ) : (
+              <div className="space-y-16">
+                {globalResults?.length === 0 ? (
+                  <div className="text-center py-20 glass-card rounded-[40px] border border-dashed border-slate-800">
+                    <Search size={64} className="mx-auto text-slate-800 mb-6" />
+                    <h3 className="text-2xl font-bold text-slate-400">Aucun résultat trouvé</h3>
+                    <p className="text-slate-600 mt-2 text-lg">Essayez avec d'autres mots-clés ou vérifiez l'orthographe.</p>
+                  </div>
+                ) : (
+                  globalResults?.map(category => (
+                    <section key={category.id} className="space-y-8">
+                      <div className="flex items-center justify-between border-b border-slate-800 pb-4">
+                        <div className="flex items-center gap-4">
+                          <div className={`p-3 rounded-2xl ${category.color.replace('text-', 'bg-')}/10 ${category.color} border ${category.color.replace('text-', 'border-')}/20 shadow-lg`}>
+                            <category.icon size={24} />
+                          </div>
+                          <div>
+                            <h2 className="text-3xl font-black text-white italic uppercase tracking-tighter">{category.label}</h2>
+                            <p className="text-slate-500 text-xs font-black uppercase tracking-[0.2em]">{category.results.length} correspondances</p>
+                          </div>
+                        </div>
+                        <button 
+                          onClick={() => handleTabChange(category.id)}
+                          className="flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-400 text-[10px] font-black uppercase tracking-widest hover:bg-slate-800 hover:text-white transition-all group"
+                        >
+                          Voir tout <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+                        </button>
+                      </div>
+
+                      <div className={category.id === 'metiers' ? "space-y-6" : "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"}>
+                        {category.id === 'items' && category.results.slice(0, 6).map((item, idx) => (
+                          <RecipeItemRow 
+                            key={item.name + idx} 
+                            recipe={item as RecipeItem} 
+                            isItemsPage={true} 
+                            favorites={favRecipes}
+                            toggleFavorite={toggleFavorite}
+                            viewMode="grid"
+                            onAddProject={handleProjectAdd}
+                          />
+                        ))}
+                        {category.id === 'metiers' && category.results.slice(0, 6).map((recipe, idx) => (
+                          <RecipeItemRow 
+                            key={recipe.name + idx} 
+                            recipe={recipe as RecipeItem} 
+                            isItemsPage={false} 
+                            favorites={favRecipes}
+                            toggleFavorite={toggleFavorite}
+                            viewMode="list"
+                            onAddProject={handleProjectAdd}
+                            hideProjectButton={true}
+                          />
+                        ))}
+                        {category.id === 'bestiary' && category.results.slice(0, 6).map((monster, idx) => (
+                          <MonsterCard key={monster.name + idx} monster={monster as Monster} showLocation={true} />
+                        ))}
+                        {category.id === 'spells' && category.results.slice(0, 6).map((spell, idx) => (
+                          <SpellCard key={spell.name + idx} spell={spell as Spell} onNavigate={handleNavigate} />
+                        ))}
+                        {category.id === 'skills' && category.results.slice(0, 6).map((skill, idx) => (
+                          <SkillCard key={skill.name + idx} skill={skill as Skill} />
+                        ))}
+                      </div>
+                      
+                      {category.results.length > 6 && (
+                        <div className="pt-4 flex justify-center">
+                          <button 
+                            onClick={() => handleTabChange(category.id)}
+                            className="text-xs font-black uppercase tracking-[0.3em] text-slate-500 hover:text-amber-500 transition-colors flex items-center gap-2"
+                          >
+                            + {category.results.length - 6} autres résultats dans {category.label} <ChevronRight size={14} />
+                          </button>
+                        </div>
+                      )}
+                    </section>
+                  ))
+                )}
+              </div>
+            )}
+          </div>
+        )}
         {currentTab === 'items' && (
           <RecipeBrowser key="items" recipes={itemsData} isItemsPage={true} />
         )}

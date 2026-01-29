@@ -41,7 +41,7 @@ const getSpellSchool = (type: string | undefined): string => {
   return 'Arcane';
 };
 
-const SpellCard = memo(({ spell, onNavigate }: { spell: Spell, onNavigate: (name: string) => void }) => {
+export const SpellCard = memo(({ spell, onNavigate }: { spell: Spell, onNavigate: (name: string) => void }) => {
   const { spellMap = {}, spellPrerequisiteMap = {} } = useData();
   const school = useMemo(() => getSpellSchool(spell.type), [spell.type]);
   const config = SCHOOL_CONFIG[school] || SCHOOL_CONFIG['Arcane'];
@@ -411,19 +411,19 @@ const SpellList = ({ spells }: SpellListProps) => {
             onClick={() => toggleSort('level')} 
             className={`flex items-center gap-2 px-4 py-2 rounded-full text-[11px] font-bold border transition-all ${sortBy === 'level' ? 'bg-blue-600 text-white border-blue-500 shadow-lg' : 'bg-slate-800 text-slate-400 border-slate-700'}`}
           >
-            <ArrowUpDown size={12} /> Niveau {sortBy === 'level' && (sortOrder === 'asc' ? '↑' : '↓')}
+            <ArrowUpDown size={12} /> <span className="hidden md:inline">Niveau</span> {sortBy === 'level' && (sortOrder === 'asc' ? '↑' : '↓')}
           </button>
           <button 
             onClick={() => toggleSort('name')} 
             className={`flex items-center gap-2 px-4 py-2 rounded-full text-[11px] font-bold border transition-all ${sortBy === 'name' ? 'bg-blue-600 text-white border-blue-500 shadow-lg' : 'bg-slate-800 text-slate-400 border-slate-700'}`}
           >
-            <ArrowUpDown size={12} /> Nom {sortBy === 'name' && (sortOrder === 'asc' ? '↑' : '↓')}
+            <ArrowUpDown size={12} /> <span className="hidden md:inline">Nom</span> {sortBy === 'name' && (sortOrder === 'asc' ? '↑' : '↓')}
           </button>
           <button 
             onClick={() => toggleSort('zone')} 
             className={`flex items-center gap-2 px-4 py-2 rounded-full text-[11px] font-bold border transition-all ${sortBy === 'zone' ? 'bg-blue-600 text-white border-blue-500 shadow-lg' : 'bg-slate-800 text-slate-400 border-slate-700'}`}
           >
-            <ArrowUpDown size={12} /> Zone {sortBy === 'zone' && (sortOrder === 'asc' ? '↑' : '↓')}
+            <ArrowUpDown size={12} /> <span className="hidden md:inline">Zone</span> {sortBy === 'zone' && (sortOrder === 'asc' ? '↑' : '↓')}
           </button>
         </div>
       </div>
