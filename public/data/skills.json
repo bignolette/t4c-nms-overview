@@ -108,8 +108,7 @@
     "prerequisitesStats": {
       "lvl": "3",
       "str": "25",
-      "dex": "20",
-      "minimumSkillPoints": "1"
+      "dex": "20"
     }
   },
   {
