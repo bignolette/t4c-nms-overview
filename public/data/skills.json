@@ -199,7 +199,7 @@
     }
   },
   {
-    "name": "Peur primale\n       NMS",
+    "name": "Peur primale",
     "maxTraining": "100",
     "requirements": "Niv 12, 38 en force. 1 point de compétences minimum.",
     "description": "Permet d'agréger toutes les cibles d'une zone. Influence par ? Tip : Peut être remplacé économiquement par dard de feu.",
@@ -275,7 +275,7 @@
     }
   },
   {
-    "name": "Ramener à la vie\n       NMS",
+    "name": "Ramener à la vie",
     "maxTraining": "100",
     "requirements": "Niv 17, 50 en sagesse. 1 point de compétences minimum.",
     "description": "Permet de ramener à la vie le joueur mort ciblé. L'efficacité de la compétence dépend de la sagesse de l'utilisateur et de celle de la cible. Influencée aussi par la différence de niveaux entre la cible et l'utilisateur. Tip : Indispensable à tout prêtre qui se respecte. Fonctionnel (avec un faible nombre de points (1 seul?) mais dans ce cas le taux de réussite est mauvais.",
@@ -292,7 +292,7 @@
     }
   },
   {
-    "name": "Pillage de tombe\n       NMS",
+    "name": "Pillage de tombe",
     "maxTraining": "100",
     "requirements": "Niv 17, 50 en dextérité. 1 point de compétences minimum.",
     "description": "Permet de piller la tombe d'un jouer mort avec une chance d'avoir un de ses items au hasard. Il faut faire une quête chez Riguel, récupérer \"un anneau d'une rare beauté. Il était serti de gemmes, c'était l'oeuvre d'un maître joaillier certainement\". \"Le pilleur de tombe\" (cimetière de Lighthaven et niveau de Jarko) l'aurait en sa possession. Influencée par la différence de niveau. Tip :",
@@ -436,7 +436,7 @@
     }
   },
   {
-    "name": "ImmobilisationNMS",
+    "name": "Immobilisation",
     "maxTraining": "100",
     "requirements": "Niv 51, 56 en force, 47 en dextérité. 1 point de compétences minimum.",
     "description": "Immobilise la cible à distance et réduit l'esquive de 75%.Remplace enchevêtrement/verglas pour les classes ne pouvant apprendre ces sorts (archer, guerrier, paladin et mage de guerre). La réussite est influencée par les bonus fournis par divers items (ces bonus sont indispensables pour que la compétence soit efficace : 175 est une valeur correcte). Tip : Indispensable en PVP et PVM.",
