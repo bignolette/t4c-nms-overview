@@ -13,6 +13,7 @@ import {
   Skull, Info, Sparkles, Filter, Hammer, Plus, Trash2, ClipboardList, Square, CheckSquare, Bell, Check, ExternalLink
 } from 'lucide-react';
 import Pagination from './shared/Pagination';
+import StatBadge from './shared/StatBadge';
 
 interface RecipeBrowserProps {
   recipes: RecipeItem[];
@@ -108,27 +109,6 @@ const useSourceIcon = () => {
     }, [allItems]);
 
     return getSourceIcon;
-};
-
-const StatBadge = ({ label, value, type }: { label: string, value: string | number, type: 'str' | 'end' | 'dex' | 'int' | 'wis' | 'ca' | 'secondary' }) => {
-  const configs = {
-    str: { color: 'text-rose-400', bg: 'bg-rose-500/10', border: 'border-rose-500/20' },
-    end: { color: 'text-orange-400', bg: 'bg-orange-500/10', border: 'border-orange-500/20' },
-    dex: { color: 'text-emerald-400', bg: 'bg-emerald-500/10', border: 'border-emerald-500/20' },
-    int: { color: 'text-sky-400', bg: 'bg-sky-500/10', border: 'border-sky-500/20' },
-    wis: { color: 'text-purple-400', bg: 'bg-purple-500/10', border: 'border-purple-500/20' },
-    ca: { color: 'text-slate-300', bg: 'bg-slate-100/10', border: 'border-slate-100/20' },
-    secondary: { color: 'text-emerald-400', bg: 'bg-emerald-500/5', border: 'border-emerald-500/10' }
-  };
-  
-  const config = configs[type] || configs.secondary;
-  
-  return (
-    <div className={`flex items-center gap-1.5 px-2 py-0.5 rounded-md border ${config.bg} ${config.border} backdrop-blur-sm`}>
-      <span className={`text-[9px] font-black uppercase tracking-wider ${config.color} opacity-80`}>{label}</span>
-      <span className="text-[11px] font-bold text-slate-100 font-mono tracking-tighter">{value}</span>
-    </div>
-  );
 };
 
 const LocationList = ({ locations }: { locations: {label: string, coordinates: string}[] }) => {

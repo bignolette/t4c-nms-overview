@@ -8,6 +8,7 @@ import {
   Shield, Info, MapPin, ArrowUpDown, Zap
 } from 'lucide-react';
 import Pagination from './shared/Pagination';
+import StatBadge from './shared/StatBadge';
 
 interface SkillListProps {
   skills: Skill[];
@@ -16,11 +17,6 @@ interface SkillListProps {
 const DEFAULT_ITEMS_PER_PAGE = 24;
 
 const SkillCard = memo(({ skill }: { skill: Skill }) => {
-  const extractedLevel = useMemo(() => {
-    const match = skill.requirements.match(/Niv\s*(\d+)/i);
-    return match ? match[1] : null;
-  }, [skill.requirements]);
-
   const cleanRequirements = useMemo(() => {
     return skill.requirements.replace(/Niv\s*\d+,?\s*/i, '').trim();
   }, [skill.requirements]);
@@ -40,9 +36,6 @@ const SkillCard = memo(({ skill }: { skill: Skill }) => {
         <div className="flex justify-between items-start mb-4 relative z-10">
           <div className="flex-1 min-w-0 pr-2">
             <div className="flex items-center gap-2 mb-1">
-              <span className="px-2 py-0.5 rounded bg-amber-500 text-slate-950 text-[10px] font-black uppercase tracking-tighter shadow-lg shadow-amber-500/20">
-                Niveau {extractedLevel || '1'}
-              </span>
               <span className={`px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-tighter shrink-0 border ${isPassive ? 'bg-blue-500/10 text-blue-400 border-blue-500/30' : 'bg-rose-500/10 text-rose-400 border-rose-500/30'}`}>
                 {isPassive ? 'Passive' : 'Active'}
               </span>
@@ -59,9 +52,21 @@ const SkillCard = memo(({ skill }: { skill: Skill }) => {
         <div className="space-y-2 mt-4 bg-slate-950/50 p-3 rounded-xl border border-slate-800/50 shadow-inner">
           <div className="flex items-start gap-2">
             <Shield size={14} className="text-amber-500 shrink-0 mt-0.5" />
-            <div className="text-[11px] leading-tight">
-              <span className="text-slate-500 font-black uppercase block text-[9px] tracking-widest mb-1">Prérequis Statistiques</span>
-              <span className="font-bold text-slate-200">{cleanRequirements || "Aucun prérequis spécifique"}</span>
+            <div className="text-[11px] leading-tight w-full">
+              <span className="text-slate-500 font-black uppercase block text-[9px] tracking-widest mb-1.5">Prérequis Statistiques</span>
+              {skill.prerequisitesStats && Object.values(skill.prerequisitesStats).some(v => v) ? (
+                <div className="flex flex-wrap gap-2">
+                    {skill.prerequisitesStats.lvl && <StatBadge label="NIVEAU" value={skill.prerequisitesStats.lvl} type="lvl" />}
+                    {skill.prerequisitesStats.str && <StatBadge label="FOR" value={skill.prerequisitesStats.str} type="str" />}
+                    {skill.prerequisitesStats.end && <StatBadge label="END" value={skill.prerequisitesStats.end} type="end" />}
+                    {skill.prerequisitesStats.dex && <StatBadge label="DEX" value={skill.prerequisitesStats.dex} type="dex" />}
+                    {skill.prerequisitesStats.int && <StatBadge label="INT" value={skill.prerequisitesStats.int} type="int" />}
+                    {skill.prerequisitesStats.wis && <StatBadge label="SAG" value={skill.prerequisitesStats.wis} type="wis" />}
+                    {skill.prerequisitesStats.minimumSkillPoints && <StatBadge label="PTS COMP" value={skill.prerequisitesStats.minimumSkillPoints} type="minimumSkillPoints" />}
+                </div>
+              ) : (
+                <span className="font-bold text-slate-200">{cleanRequirements || "Aucun prérequis spécifique"}</span>
+              )}
             </div>
           </div>
         </div>

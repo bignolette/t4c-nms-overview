@@ -17,6 +17,8 @@ export interface ItemStats {
     int?: string;
     wis?: string;
     ca?: string;
+    lvl?: string;
+    minimumSkillPoints?: string;
 }
 
 export interface Stats {

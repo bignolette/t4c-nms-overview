@@ -10,6 +10,7 @@ import {
   Wind, Mountain, Sun, Ghost, Wand2
 } from 'lucide-react';
 import Pagination from './shared/Pagination';
+import StatBadge from './shared/StatBadge';
 
 interface SpellListProps {
   spells: Spell[];
@@ -144,8 +145,23 @@ const SpellCard = memo(({ spell, onNavigate }: { spell: Spell, onNavigate: (name
             </div>
           )}
 
-          {(spell.prerequisites || usedAsPrerequisiteFor.length > 0) && (
+          {(spell.prerequisites || usedAsPrerequisiteFor.length > 0 || spell.prerequisitesStats) && (
             <div className="grid grid-cols-1 gap-3 border-t border-slate-800/50 pt-3">
+              {spell.prerequisitesStats && Object.values(spell.prerequisitesStats).some(v => v) && (
+                <div className="space-y-2">
+                  <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest block">Prérequis Statistiques</span>
+                  <div className="flex flex-wrap gap-2">
+                    {spell.prerequisitesStats.lvl && <StatBadge label="NIVEAU" value={spell.prerequisitesStats.lvl} type="lvl" />}
+                    {spell.prerequisitesStats.str && <StatBadge label="FOR" value={spell.prerequisitesStats.str} type="str" />}
+                    {spell.prerequisitesStats.end && <StatBadge label="END" value={spell.prerequisitesStats.end} type="end" />}
+                    {spell.prerequisitesStats.dex && <StatBadge label="DEX" value={spell.prerequisitesStats.dex} type="dex" />}
+                    {spell.prerequisitesStats.int && <StatBadge label="INT" value={spell.prerequisitesStats.int} type="int" />}
+                    {spell.prerequisitesStats.wis && <StatBadge label="SAG" value={spell.prerequisitesStats.wis} type="wis" />}
+                    {spell.prerequisitesStats.minimumSkillPoints && <StatBadge label="PTS COMP" value={spell.prerequisitesStats.minimumSkillPoints} type="minimumSkillPoints" />}
+                  </div>
+                </div>
+              )}
+
               {spell.prerequisites && (
                 <div className="space-y-2">
                   <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest block">Sorts Prérequis</span>

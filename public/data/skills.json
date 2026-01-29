@@ -25,7 +25,10 @@
         "Zaeron Kayle"
       ]
     },
-    "trainingCost": "10 PO par point dépensé"
+    "trainingCost": "10 PO par point dépensé",
+    "prerequisitesStats": {
+      "lvl": "1"
+    }
   },
   {
     "name": "Archerie",
@@ -54,7 +57,10 @@
         "Zaeron Kayle"
       ]
     },
-    "trainingCost": "15 PO par point dépensé"
+    "trainingCost": "15 PO par point dépensé",
+    "prerequisitesStats": {
+      "lvl": "1"
+    }
   },
   {
     "name": "Esquive",
@@ -80,7 +86,10 @@
         "Steelblade Delnar"
       ]
     },
-    "trainingCost": "10 PO par point dépensé"
+    "trainingCost": "10 PO par point dépensé",
+    "prerequisitesStats": {
+      "lvl": "1"
+    }
   },
   {
     "name": "Coup assommant",
@@ -95,7 +104,13 @@
         "Garnir"
       ]
     },
-    "trainingCost": "20 PO par point dépensé"
+    "trainingCost": "20 PO par point dépensé",
+    "prerequisitesStats": {
+      "lvl": "3",
+      "str": "25",
+      "dex": "20",
+      "minimumSkillPoints": "1"
+    }
   },
   {
     "name": "Coup d'oeil",
@@ -116,7 +131,12 @@
         "Baldric Iraelis"
       ]
     },
-    "trainingCost": "25 PO par point dépensé"
+    "trainingCost": "25 PO par point dépensé",
+    "prerequisitesStats": {
+      "lvl": "5",
+      "dex": "1",
+      "minimumSkillPoints": "1"
+    }
   },
   {
     "name": "Parade",
@@ -134,7 +154,12 @@
         "Morindin Tenglow (Bois de RD)"
       ]
     },
-    "trainingCost": "75 PO par point dépensé"
+    "trainingCost": "75 PO par point dépensé",
+    "prerequisitesStats": {
+      "lvl": "10",
+      "dex": "30",
+      "int": "20"
+    }
   },
   {
     "name": "Crochetage de serrures",
@@ -149,7 +174,12 @@
         "Le Fouineur"
       ]
     },
-    "trainingCost": "100 PO par point dépensé"
+    "trainingCost": "100 PO par point dépensé",
+    "prerequisitesStats": {
+      "lvl": "12",
+      "dex": "40",
+      "minimumSkillPoints": "1"
+    }
   },
   {
     "name": "Premiers soins",
@@ -164,7 +194,13 @@
         "Roen Greenleaf"
       ]
     },
-    "trainingCost": "30 PO par point dépensé"
+    "trainingCost": "30 PO par point dépensé",
+    "prerequisitesStats": {
+      "lvl": "12",
+      "int": "20",
+      "wis": "1",
+      "minimumSkillPoints": "1"
+    }
   },
   {
     "name": "Peur primale\n       NMS",
@@ -176,7 +212,12 @@
         "Serje Fortepee (Sud-Est de la ville en 1700,1360,0)"
       ]
     },
-    "trainingCost": "1200 PO par point dépensé"
+    "trainingCost": "1200 PO par point dépensé",
+    "prerequisitesStats": {
+      "lvl": "12",
+      "str": "38",
+      "minimumSkillPoints": "1"
+    }
   },
   {
     "name": "Se cacher",
@@ -191,7 +232,13 @@
         "Roen Greenleaf"
       ]
     },
-    "trainingCost": "25 PO par point dépensé"
+    "trainingCost": "25 PO par point dépensé",
+    "prerequisitesStats": {
+      "lvl": "13",
+      "dex": "34",
+      "int": "20",
+      "minimumSkillPoints": "1"
+    }
   },
   {
     "name": "Coup puissant",
@@ -206,7 +253,13 @@
         "Garnir"
       ]
     },
-    "trainingCost": "50 PO par point dépensé"
+    "trainingCost": "50 PO par point dépensé",
+    "prerequisitesStats": {
+      "lvl": "15",
+      "str": "50",
+      "dex": "30",
+      "minimumSkillPoints": "1"
+    }
   },
   {
     "name": "Méditer",
@@ -221,7 +274,13 @@
         "Elandor (un mage errant)"
       ]
     },
-    "trainingCost": "100 PO par point dépensé"
+    "trainingCost": "100 PO par point dépensé",
+    "prerequisitesStats": {
+      "lvl": "16",
+      "int": "30",
+      "wis": "30",
+      "minimumSkillPoints": "1"
+    }
   },
   {
     "name": "Ramener à la vie\n       NMS",
@@ -234,7 +293,12 @@
         "jardins de la cathédrale (1674,1130,0)"
       ]
     },
-    "trainingCost": "250 PO par point dépensé"
+    "trainingCost": "250 PO par point dépensé",
+    "prerequisitesStats": {
+      "lvl": "17",
+      "wis": "50",
+      "minimumSkillPoints": "1"
+    }
   },
   {
     "name": "Pillage de tombe\n       NMS",
@@ -247,7 +311,12 @@
         "ville des voleurs au sous-sol. (2031,2800,1). Entrée du sous-sol en (2200,1270,0)"
       ]
     },
-    "trainingCost": "125 PO par point dépensé"
+    "trainingCost": "125 PO par point dépensé",
+    "prerequisitesStats": {
+      "lvl": "17",
+      "dex": "50",
+      "minimumSkillPoints": "1"
+    }
   },
   {
     "name": "Vol",
@@ -262,7 +331,12 @@
         "Lightfoot Daran"
       ]
     },
-    "trainingCost": "250 PO par point dépensé"
+    "trainingCost": "250 PO par point dépensé",
+    "prerequisitesStats": {
+      "lvl": "17",
+      "dex": "50",
+      "minimumSkillPoints": "1"
+    }
   },
   {
     "name": "Chercher",
@@ -274,7 +348,12 @@
         "Chryseida Yolangda"
       ]
     },
-    "trainingCost": "50 PO par point dépensé"
+    "trainingCost": "50 PO par point dépensé",
+    "prerequisitesStats": {
+      "lvl": "20",
+      "int": "25",
+      "minimumSkillPoints": "1"
+    }
   },
   {
     "name": "Se faufiler",
@@ -286,7 +365,12 @@
         "Dantalir le Barde (Repaire des voleurs)"
       ]
     },
-    "trainingCost": "100 PO par point dépensé"
+    "trainingCost": "100 PO par point dépensé",
+    "prerequisitesStats": {
+      "lvl": "24",
+      "dex": "75",
+      "minimumSkillPoints": "1"
+    }
   },
   {
     "name": "Transpercer l'armure",
@@ -301,7 +385,14 @@
         "Rablek Blivtaor (Repaire des voleurs)"
       ]
     },
-    "trainingCost": "300 PO par point dépensé"
+    "trainingCost": "300 PO par point dépensé",
+    "prerequisitesStats": {
+      "lvl": "25",
+      "str": "75",
+      "dex": "40",
+      "int": "30",
+      "minimumSkillPoints": "1"
+    }
   },
   {
     "name": "Ambidextrie",
@@ -313,7 +404,14 @@
         "Adriana (salle d'entraînement)"
       ]
     },
-    "trainingCost": "500 PO par point dépensé"
+    "trainingCost": "500 PO par point dépensé",
+    "prerequisitesStats": {
+      "lvl": "26",
+      "str": "75",
+      "dex": "40",
+      "int": "30",
+      "minimumSkillPoints": "1"
+    }
   },
   {
     "name": "Guérison rapide",
@@ -328,7 +426,12 @@
         "Worgwolth Trugg (Camp skraug vert)"
       ]
     },
-    "trainingCost": "200 PO par point dépensé"
+    "trainingCost": "200 PO par point dépensé",
+    "prerequisitesStats": {
+      "lvl": "30",
+      "end": "80",
+      "minimumSkillPoints": "1"
+    }
   },
   {
     "name": "Profusion de manaNMS",
@@ -341,7 +444,13 @@
         "couloir extérieur au Sud (2850,300,4)"
       ]
     },
-    "trainingCost": "300 PO par point dépensé"
+    "trainingCost": "300 PO par point dépensé",
+    "prerequisitesStats": {
+      "lvl": "35",
+      "int": "150",
+      "wis": "75",
+      "minimumSkillPoints": "1"
+    }
   },
   {
     "name": "ImmobilisationNMS",
@@ -353,6 +462,12 @@
         "Serje Fortepee (Sud-Est de la ville en 1700,1360,0)"
       ]
     },
-    "trainingCost": "3000 PO par point dépensé"
+    "trainingCost": "3000 PO par point dépensé",
+    "prerequisitesStats": {
+      "lvl": "51",
+      "str": "56",
+      "dex": "47",
+      "minimumSkillPoints": "1"
+    }
   }
 ]
