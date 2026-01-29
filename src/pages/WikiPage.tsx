@@ -47,16 +47,16 @@ const WikiPage = () => {
   return (
     <div className="space-y-8 pb-20">
       {/* Search Header */}
-      <div className="bg-slate-900/50 backdrop-blur-xl border border-slate-800 rounded-3xl p-8 shadow-2xl relative overflow-hidden">
+      <div className="bg-slate-900/50 backdrop-blur-xl border border-slate-800 rounded-2xl md:rounded-3xl p-5 md:p-8 shadow-2xl relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/5 blur-3xl rounded-full -mr-32 -mt-32"></div>
         
-        <div className="relative z-10 flex flex-col gap-8">
-          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
-            <div>
-              <h1 className="text-4xl font-black text-slate-100 tracking-tighter italic uppercase mb-2">
+        <div className="relative z-10 flex flex-col gap-6 md:gap-8 min-w-0">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 min-w-0">
+            <div className="min-w-0">
+              <h1 className="text-2xl md:text-4xl font-black text-slate-100 tracking-tighter italic uppercase mb-2 truncate">
                 Encyclopédie Althéenne
               </h1>
-              <p className="text-slate-400 font-medium max-w-xl">
+              <p className="text-slate-400 font-medium max-w-xl text-sm md:text-base">
                 Recherchez des équipements, des recettes d'artisanat ou des créatures à travers tout Althéa.
               </p>
             </div>
@@ -82,29 +82,32 @@ const WikiPage = () => {
           </div>
 
           {/* Tab Navigation */}
-          <div className="flex bg-slate-950/50 p-1.5 rounded-2xl border border-slate-800 w-fit self-center md:self-start">
-            {tabs.map((tab) => {
-              const isActive = currentTab === tab.id;
-              return (
-                <button
-                  key={tab.id}
-                  onClick={() => handleTabChange(tab.id)}
-                  className={`
-                    flex items-center gap-3 px-6 py-3 rounded-xl text-sm font-black uppercase tracking-wider transition-all relative
-                    ${isActive ? 'bg-slate-800 text-white shadow-lg' : 'text-slate-500 hover:text-slate-300 hover:bg-slate-800/30'}
-                  `}
-                >
-                  <tab.icon size={18} className={isActive ? tab.color : 'text-slate-600'} />
-                  {tab.label}
-                  {isActive && (
-                    <motion.div 
-                      layoutId="activeTab"
-                      className="absolute inset-0 bg-slate-800 rounded-xl -z-10 border border-slate-700"
-                    />
-                  )}
-                </button>
-              );
-            })}
+          <div className="w-full min-w-0">
+            <div className="flex overflow-x-auto no-scrollbar bg-slate-950/50 p-1 rounded-xl md:rounded-2xl border border-slate-800 w-full md:w-fit scrollbar-hide">
+              <div className="flex min-w-max">
+                {tabs.map((tab) => {
+                const isActive = currentTab === tab.id;
+                return (
+                  <button
+                    key={tab.id}
+                    onClick={() => handleTabChange(tab.id)}
+                    className={`
+                      flex items-center gap-2 md:gap-3 px-4 md:px-6 py-2.5 md:py-3 rounded-lg md:rounded-xl text-[11px] md:text-sm font-black uppercase tracking-wider transition-all relative
+                      ${isActive ? 'bg-slate-800 text-white shadow-lg' : 'text-slate-500 hover:text-slate-300 hover:bg-slate-800/30'}
+                    `}
+                  >
+                    <tab.icon size={16} className={isActive ? tab.color : 'text-slate-600'} />
+                    {tab.label}
+                    {isActive && (
+                      <motion.div 
+                        layoutId="activeTab"
+                        className="absolute inset-0 bg-slate-800 rounded-lg md:rounded-xl -z-10 border border-slate-700"
+                      />
+                    )}
+                  </button>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

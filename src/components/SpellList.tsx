@@ -297,7 +297,7 @@ const SpellList = ({ spells }: SpellListProps) => {
   return (
     <div className="space-y-8">
       {/* Controls Header */}
-      <div className="flex flex-col gap-6 bg-slate-800/30 p-6 rounded-2xl border border-slate-700/50 relative overflow-hidden">
+      <div className="flex flex-col gap-6 bg-slate-800/30 p-4 md:p-6 rounded-2xl border border-slate-700/50 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/5 blur-3xl rounded-full -mr-32 -mt-32 pointer-events-none"></div>
         
         <div className="flex flex-col md:flex-row gap-4 relative z-10">
@@ -307,15 +307,15 @@ const SpellList = ({ spells }: SpellListProps) => {
             </button>
           </div>
 
-          <div className="flex items-center gap-4 px-6 py-3 bg-slate-950/50 rounded-xl border border-slate-800 text-sm h-14 shadow-inner">
+          <div className="flex items-center justify-between md:justify-start gap-4 px-4 md:px-6 py-3 bg-slate-950/50 rounded-xl border border-slate-800 text-sm h-auto md:h-14 shadow-inner">
             <div className="text-slate-400 whitespace-nowrap flex items-center gap-2">
-              <span className="font-black text-blue-500 text-xl">{filteredSpells.length}</span>
-              <span className="text-[10px] font-black uppercase tracking-widest opacity-60">sorts</span>
+              <span className="font-black text-blue-500 text-lg md:text-xl">{filteredSpells.length}</span>
+              <span className="text-[9px] md:text-[10px] font-black uppercase tracking-widest opacity-60">sorts</span>
             </div>
             <div className="w-px h-6 bg-slate-800" />
             <div className="text-slate-400 whitespace-nowrap flex items-center gap-2">
-              <span className="font-black text-slate-200 text-lg">{spells.length}</span>
-              <span className="text-[10px] font-black uppercase tracking-widest opacity-40">total</span>
+              <span className="font-black text-slate-200 text-base md:text-lg">{spells.length}</span>
+              <span className="text-[9px] md:text-[10px] font-black uppercase tracking-widest opacity-40">total</span>
             </div>
           </div>
         </div>
@@ -372,11 +372,11 @@ const SpellList = ({ spells }: SpellListProps) => {
                 <MapPin size={16} className="text-amber-500/50" />
                 <span className="text-[10px] font-black uppercase tracking-[0.2em]">Zones</span>
               </div>
-              <div className="relative flex-1 md:max-w-[200px]">
+              <div className="relative flex-1 md:max-w-[200px] w-full">
                 <select 
                   value={selectedZone}
                   onChange={(e) => { setSelectedZone(e.target.value); setCurrentPage(1); }}
-                  className="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-2.5 text-xs font-bold text-slate-300 focus:border-amber-500 outline-none appearance-none"
+                  className="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-2.5 text-xs font-bold text-slate-300 focus:border-amber-500 outline-none appearance-none truncate"
                 >
                   {allZones.map(z => <option key={z} value={z}>{z}</option>)}
                 </select>

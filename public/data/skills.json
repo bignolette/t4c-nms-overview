@@ -304,7 +304,7 @@
     "trainingCost": "300 po/pt"
   },
   {
-    "name": "AmbidextrieNMS",
+    "name": "Ambidextrie",
     "maxTraining": "500",
     "requirements": "Niv 26, 75 en force, 40 en dextérité et 30 en intelligence. 1 point de compétences minimum.",
     "description": "Passive. Permet d'utiliser simultanément une arme dans chaque main. Influencée par ? Tip : Augmente les dégâts PVM de 30% environ. Utile aussi en PVP.",

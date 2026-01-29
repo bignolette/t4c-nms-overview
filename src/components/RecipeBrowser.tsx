@@ -595,7 +595,7 @@ const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, 
               </div>
             </div>
             
-            <div className="flex flex-col gap-6 w-full md:w-64 lg:w-80 shrink-0 border-l border-slate-800/50 pl-6">
+            <div className="flex flex-col gap-6 w-full md:w-64 lg:w-80 shrink-0 border-t md:border-t-0 md:border-l border-slate-800/50 pt-6 md:pt-0 md:pl-6">
               {recipe.learnedFrom && (
                 <div className="space-y-3">
                   <div className="bg-blue-500/5 border border-blue-500/20 rounded-xl p-3">
@@ -730,36 +730,38 @@ const NPCGroupedView = ({
   return (
     <div className="space-y-6 animate-fade-in">
       {/* Navigation Tabs */}
-      <div className="bg-slate-900 border border-slate-800 rounded-2xl p-2 shadow-xl flex flex-wrap gap-2 sticky top-4 z-30 backdrop-blur-xl items-center">
-        <div className="flex flex-wrap gap-1">
-          {PROFESSIONS.map(p => {
-            const isSelected = selectedProf === p;
-            return (
-              <button
-                key={p}
-                onClick={() => onSelectProf(p)}
-                className={`px-4 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all flex items-center gap-2 border ${
-                  isSelected 
-                    ? `${VIBRANT_PROF_COLORS[p] || 'bg-amber-500 text-slate-950'} text-white shadow-lg scale-105 z-10` 
-                    : 'bg-slate-950 text-slate-500 border-slate-800 hover:border-slate-600 hover:text-slate-200'
-                }`}
-              >
-                {p === 'Tous' ? (
-                  <Users size={14} className={isSelected ? 'text-slate-900' : 'text-slate-500'} />
-                ) : (
-                  <div className={`w-2 h-2 rounded-full ${isSelected ? 'bg-white' : (VIBRANT_PROF_COLORS[p]?.split(' ')[0])}`} />
-                )}
-                {p}
-              </button>
-            );
-          })}
+      <div className="bg-slate-900 border border-slate-800 rounded-2xl p-1.5 md:p-2 shadow-xl flex flex-wrap gap-2 sticky top-20 md:top-24 z-30 backdrop-blur-xl items-center pl-14 md:pl-2">
+        <div className="flex overflow-x-auto no-scrollbar gap-1 w-full lg:w-auto pb-1 lg:pb-0">
+          <div className="flex gap-1 min-w-max">
+            {PROFESSIONS.map(p => {
+              const isSelected = selectedProf === p;
+              return (
+                <button
+                  key={p}
+                  onClick={() => onSelectProf(p)}
+                  className={`px-3 md:px-4 py-2 md:py-2.5 rounded-lg md:rounded-xl text-[10px] md:text-xs font-black uppercase tracking-wider transition-all flex items-center gap-2 border ${
+                    isSelected 
+                      ? `${VIBRANT_PROF_COLORS[p] || 'bg-amber-500 text-slate-950'} text-white shadow-lg scale-105 z-10` 
+                      : 'bg-slate-950 text-slate-500 border-slate-800 hover:border-slate-600 hover:text-slate-200'
+                  }`}
+                >
+                  {p === 'Tous' ? (
+                    <Users size={14} className={isSelected ? 'text-slate-900' : 'text-slate-500'} />
+                  ) : (
+                    <div className={`w-2 h-2 rounded-full ${isSelected ? 'bg-white' : (VIBRANT_PROF_COLORS[p]?.split(' ')[0])}`} />
+                  )}
+                  {p}
+                </button>
+              );
+            })}
+          </div>
         </div>
         
-        <div className="flex-1" />
+        <div className="hidden lg:flex flex-1" />
         
-        <div className="flex items-center gap-2 w-full md:w-auto">
+        <div className="flex items-center gap-2 w-full lg:w-auto">
           {/* Zone Dropdown */}
-          <div className="relative flex-1 md:min-w-[180px]">
+          <div className="relative flex-1 md:min-w-[150px] lg:min-w-[180px]">
             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
               <MapPin size={14} className="text-slate-500" />
             </div>
@@ -1509,11 +1511,11 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
 
       {viewMode === 'search' ? (
         <>
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl relative overflow-hidden">
+          <div className="bg-slate-900 border border-slate-800 rounded-2xl p-4 md:p-6 shadow-xl relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/5 blur-3xl rounded-full -mr-16 -mt-16"></div>
             
             <div className="space-y-6 relative z-10">
-              <div className="flex flex-col lg:flex-row gap-6 items-end">
+              <div className="flex flex-col lg:flex-row gap-6 items-stretch lg:items-end">
                 {isItemsPage ? (
                   <div className="w-full space-y-6">
                     <div className="space-y-3">

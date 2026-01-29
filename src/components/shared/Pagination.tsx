@@ -46,7 +46,7 @@ const Pagination = ({
         <button
           key={i}
           onClick={() => handlePageChange(i)}
-          className={`w-10 h-10 rounded-xl font-bold text-sm transition-all ${
+          className={`w-8 h-8 md:w-10 md:h-10 rounded-lg md:rounded-xl font-bold text-[11px] md:text-sm transition-all ${
             currentPage === i 
               ? 'bg-amber-500 text-slate-950 shadow-lg shadow-amber-500/20 scale-110 z-10' 
               : 'bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-slate-200'
@@ -95,45 +95,45 @@ const Pagination = ({
 
       {/* Page navigation */}
       {totalPages > 1 && (
-        <div className="flex items-center gap-2 order-1 md:order-2">
+        <div className="flex items-center gap-1 md:gap-2 order-1 md:order-2 max-w-full overflow-x-auto no-scrollbar md:pb-0">
           <button
             onClick={() => handlePageChange(1)}
             disabled={currentPage === 1}
-            className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-500 hover:text-amber-500 disabled:opacity-20 transition-all"
+            className="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-slate-900 border border-slate-800 text-slate-500 hover:text-amber-500 disabled:opacity-20 transition-all shrink-0"
             title="Première page"
           >
-            <ChevronsLeft size={18} />
+            <ChevronsLeft size={16} className="md:w-[18px] md:h-[18px]" />
           </button>
           
           <button
             onClick={() => handlePageChange(currentPage - 1)}
             disabled={currentPage === 1}
-            className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-500 hover:text-amber-500 disabled:opacity-20 transition-all"
+            className="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-slate-900 border border-slate-800 text-slate-500 hover:text-amber-500 disabled:opacity-20 transition-all shrink-0"
             title="Page précédente"
           >
-            <ChevronLeft size={18} />
+            <ChevronLeft size={16} className="md:w-[18px] md:h-[18px]" />
           </button>
 
-          <div className="flex gap-1.5 px-2">
+          <div className="flex gap-1 md:gap-1.5 px-1 md:px-2">
             {renderPageNumbers()}
           </div>
 
           <button
             onClick={() => handlePageChange(currentPage + 1)}
             disabled={currentPage === totalPages}
-            className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-500 hover:text-amber-500 disabled:opacity-20 transition-all"
+            className="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-slate-900 border border-slate-800 text-slate-500 hover:text-amber-500 disabled:opacity-20 transition-all shrink-0"
             title="Page suivante"
           >
-            <ChevronRight size={18} />
+            <ChevronRight size={16} className="md:w-[18px] md:h-[18px]" />
           </button>
 
           <button
             onClick={() => handlePageChange(totalPages)}
             disabled={currentPage === totalPages}
-            className="p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-500 hover:text-amber-500 disabled:opacity-20 transition-all"
+            className="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-slate-900 border border-slate-800 text-slate-500 hover:text-amber-500 disabled:opacity-20 transition-all shrink-0"
             title="Dernière page"
           >
-            <ChevronsRight size={18} />
+            <ChevronsRight size={16} className="md:w-[18px] md:h-[18px]" />
           </button>
         </div>
       )}

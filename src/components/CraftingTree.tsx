@@ -44,7 +44,7 @@ const ResourceSummary = memo(({ totals, onOpenPlanner }: { totals: Record<string
   );
 
   return (
-    <div className="bg-slate-950/50 border border-slate-800 rounded-xl p-5 sticky top-4 shadow-inner">
+    <div className="bg-slate-950/50 border border-slate-800 rounded-xl p-4 md:p-5 sticky top-20 md:top-24 shadow-inner">
       <div className="flex items-center justify-between mb-4 text-amber-500">
         <div className="flex items-center gap-2">
           <Calculator size={20} />

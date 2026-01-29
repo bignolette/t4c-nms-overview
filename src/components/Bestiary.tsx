@@ -220,7 +220,7 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
   return (
     <div className="space-y-8">
       {/* Controls Header */}
-      <div className="flex flex-col gap-6 bg-slate-800/30 p-6 rounded-2xl border border-slate-700/50">
+      <div className="flex flex-col gap-6 bg-slate-800/30 p-4 md:p-6 rounded-2xl border border-slate-700/50">
         <div className="flex flex-col md:flex-row gap-4">
           <div className="flex-1 flex gap-2">
             <button onClick={handleReset} className="btn-danger w-full md:w-auto">
@@ -228,15 +228,15 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
             </button>
           </div>
 
-          <div className="flex items-center gap-4 px-6 py-3 bg-slate-950/50 rounded-xl border border-slate-800 text-sm h-14 shadow-inner">
+          <div className="flex items-center justify-between md:justify-start gap-4 px-4 md:px-6 py-3 bg-slate-950/50 rounded-xl border border-slate-800 text-sm h-auto md:h-14 shadow-inner">
             <div className="text-slate-400 whitespace-nowrap flex items-center gap-2">
-              <span className="font-black text-amber-500 text-xl">{filteredMonsters.length}</span>
-              <span className="text-[10px] font-black uppercase tracking-widest opacity-60">créatures</span>
+              <span className="font-black text-amber-500 text-lg md:text-xl">{filteredMonsters.length}</span>
+              <span className="text-[9px] md:text-[10px] font-black uppercase tracking-widest opacity-60">créatures</span>
             </div>
             <div className="w-px h-6 bg-slate-800" />
             <div className="text-slate-400 whitespace-nowrap flex items-center gap-2">
-              <span className="font-black text-slate-200 text-lg">{monsters.length}</span>
-              <span className="text-[10px] font-black uppercase tracking-widest opacity-40">total</span>
+              <span className="font-black text-slate-200 text-base md:text-lg">{monsters.length}</span>
+              <span className="text-[9px] md:text-[10px] font-black uppercase tracking-widest opacity-40">total</span>
             </div>
           </div>
         </div>
@@ -246,7 +246,7 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
             <Filter size={16} className="text-amber-500/50" />
             <span className="text-[10px] font-black uppercase tracking-[0.2em]">Zones Géographiques</span>
           </div>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 w-full">
             {baseZones.map(zone => (
               <button
                 key={zone}
