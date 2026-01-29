@@ -7,11 +7,12 @@ import type { Spell } from '../data/types';
 import { 
   Sparkles, Zap, Brain, ScrollText, Filter, AlertCircle, RotateCcw, 
   BookOpen, Star, MapPin, ArrowUpDown, Flame, Droplets, 
-  Wind, Mountain, Sun, Ghost, Wand2
+  Wind, Mountain, Sun, Ghost, Wand2, Copy, Check
 } from 'lucide-react';
 import Pagination from './shared/Pagination';
 import StatBadge from './shared/StatBadge';
 import ScrollContainer from './shared/ScrollContainer';
+import { useClipboard } from '../hooks/useClipboard';
 
 interface SpellListProps {
   spells: Spell[];
@@ -43,6 +44,7 @@ const getSpellSchool = (type: string | undefined): string => {
 
 export const SpellCard = memo(({ spell, onNavigate }: { spell: Spell, onNavigate: (name: string) => void }) => {
   const { spellMap = {}, spellPrerequisiteMap = {} } = useData();
+  const { copied, copy } = useClipboard();
   const school = useMemo(() => getSpellSchool(spell.type), [spell.type]);
   const config = SCHOOL_CONFIG[school] || SCHOOL_CONFIG['Arcane'];
   
@@ -97,8 +99,15 @@ export const SpellCard = memo(({ spell, onNavigate }: { spell: Spell, onNavigate
                 <span className="px-2 py-0.5 rounded bg-purple-500 text-slate-950 text-[10px] font-black uppercase tracking-tighter">NMS</span>
               )}
             </div>
-            <h3 className="text-xl font-black group-hover:text-white transition-colors leading-tight italic tracking-tight truncate text-slate-100">
-              {spell.name}
+            <h3 className="text-xl font-black group-hover:text-white transition-colors leading-tight italic tracking-tight text-slate-100 flex items-center gap-2 overflow-hidden">
+              <span className="truncate">{spell.name}</span>
+              <button 
+                onClick={() => copy(spell.name)}
+                className="p-1.5 hover:bg-white/10 rounded-lg transition-all shrink-0 bg-slate-900/50 md:bg-transparent"
+                title="Copier le nom"
+              >
+                {copied ? <Check size={14} className="text-emerald-500" /> : <Copy size={14} className="text-amber-500/70 md:text-slate-500 md:group-hover:text-amber-500" />}
+              </button>
             </h3>
           </div>
         </div>

@@ -4,9 +4,10 @@ import { motion } from 'framer-motion';
 import { useData } from '../context/DataContext';
 import { fastNormalize } from '../data/utils';
 import type { Monster } from '../data/types';
-import { MapPin, Coins, Skull, Filter, AlertCircle, ExternalLink, RotateCcw, Hammer } from 'lucide-react';
+import { MapPin, Coins, Skull, Filter, AlertCircle, ExternalLink, RotateCcw, Hammer, Copy, Check } from 'lucide-react';
 import Pagination from './shared/Pagination';
 import ScrollContainer from './shared/ScrollContainer';
+import { useClipboard } from '../hooks/useClipboard';
 
 interface BestiaryProps {
   monsters: Monster[];
@@ -54,6 +55,7 @@ const DropBadge = memo(({ drop }: { drop: string }) => {
  */
 export const MonsterCard = memo(({ monster, showLocation }: { monster: Monster, showLocation: boolean }) => {
   const [showAllCoords, setShowAllCoords] = useState(false);
+  const { copied, copy } = useClipboard();
 
   const coordsArray = useMemo(() => {
     if (!monster.coordinates) return [];
@@ -78,8 +80,15 @@ export const MonsterCard = memo(({ monster, showLocation }: { monster: Monster, 
         )}
         <div className="flex justify-between items-start mb-3 relative z-10">
           <div className="flex-1 min-w-0 pr-2">
-            <h3 className={`text-lg font-black group-hover:text-amber-500 transition-colors leading-tight italic tracking-tight truncate ${monster.unique ? 'text-purple-300' : 'text-slate-100'}`}>
-              {monster.name}
+            <h3 className={`text-lg font-black group-hover:text-amber-500 transition-colors leading-tight italic tracking-tight flex items-center gap-2 overflow-hidden ${monster.unique ? 'text-purple-300' : 'text-slate-100'}`}>
+              <span className="truncate">{monster.name}</span>
+              <button 
+                onClick={() => copy(monster.name)}
+                className="p-1.5 hover:bg-white/10 rounded-lg transition-all shrink-0 bg-slate-900/50 md:bg-transparent"
+                title="Copier le nom"
+              >
+                {copied ? <Check size={14} className="text-emerald-500" /> : <Copy size={14} className="text-amber-500/70 md:text-slate-500 md:group-hover:text-amber-500" />}
+              </button>
             </h3>
             <div className="flex flex-col gap-1.5 mt-2">
               {showLocation && (

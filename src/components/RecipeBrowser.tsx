@@ -10,11 +10,13 @@ import {
   Search, ArrowUpDown, Star, X, RotateCcw, Package, MapPin,
   Shield, Sword, Crown, Shirt, Footprints, Hand, Circle, Link2, GripHorizontal, Columns2, Medal,
   ArrowUpRight, ArrowRight, Wind, Users, ArrowRightCircle, User, LayoutGrid, List, ChevronDown, ChevronUp, Map, Tag,
-  Skull, Info, Sparkles, Filter, Hammer, Plus, Trash2, ClipboardList, Square, CheckSquare, Bell, Check, ExternalLink
+  Skull, Info, Sparkles, Filter, Hammer, Plus, Trash2, ClipboardList, Square, CheckSquare, Check, ExternalLink,
+  Copy
 } from 'lucide-react';
 import Pagination from './shared/Pagination';
 import StatBadge from './shared/StatBadge';
 import ScrollContainer from './shared/ScrollContainer';
+import { useClipboard } from '../hooks/useClipboard';
 
 interface RecipeBrowserProps {
   recipes: RecipeItem[];
@@ -28,6 +30,7 @@ const STAT_FILTERS = [
   { key: 'int', label: 'Intelligence', color: 'text-sky-400' },
   { key: 'wis', label: 'Sagesse', color: 'text-purple-400' },
   { key: 'ca', label: 'CA', color: 'text-slate-300' },
+  { key: 'luck', label: 'Chance', color: 'text-amber-400' },
 ];
 
 const PROFESSIONS = ['Tous', 'Apothicaire', 'Bijoutier', 'Couturier', 'Armurier', 'Forgeron', 'Ebéniste'];
@@ -238,6 +241,7 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
   const getSourceIcon = useSourceIcon();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const matchingIngs = getMatchingIngredients ? getMatchingIngredients(recipe, activeSearchTerm) : [];
+  const { copied, copy } = useClipboard();
 
   const handleInstantiate = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -290,8 +294,15 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
           </div>
           
           <div className="relative z-10">
-            <h3 className="font-black text-slate-100 group-hover:text-amber-400 transition-colors text-[15px] leading-tight line-clamp-2 min-h-[40px] flex items-center gap-2">
-              {recipe.name}
+            <h3 className="font-black text-slate-100 group-hover:text-amber-400 transition-colors text-[15px] leading-tight flex items-center gap-2 overflow-hidden min-h-[40px]">
+              <span className="flex-1 truncate">{recipe.name}</span>
+              <button 
+                onClick={(e) => { e.stopPropagation(); copy(recipe.name); }}
+                className="p-1.5 hover:bg-white/10 rounded-lg transition-all shrink-0 bg-slate-900/50 md:bg-transparent"
+                title="Copier le nom"
+              >
+                {copied ? <Check size={14} className="text-emerald-500" /> : <Copy size={14} className="text-amber-500/70 md:text-slate-500 md:group-hover:text-amber-500" />}
+              </button>
               {isCraftable && (
                 <span title="Cet objet peut être fabriqué" className="flex items-center justify-center bg-amber-500/20 text-amber-500 p-1 rounded-full border border-amber-500/30">
                   <Hammer size={10} />
@@ -339,6 +350,7 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
             {recipe.bonuses?.dex && <StatBadge label="DEX" value={formatStatValue(recipe.bonuses.dex)} type="dex" />}
             {recipe.bonuses?.int && <StatBadge label="INT" value={formatStatValue(recipe.bonuses.int)} type="int" />}
             {recipe.bonuses?.wis && <StatBadge label="SAG" value={formatStatValue(recipe.bonuses.wis)} type="wis" />}
+            {recipe.bonuses?.luck && <StatBadge label="CHA" value={formatStatValue(recipe.bonuses.luck)} type="luck" />}
           </div>
 
           {isCraftable && (
@@ -436,7 +448,14 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
                 </div>
                 <div>
                   <h3 className="text-2xl font-black text-slate-100 mb-1 flex flex-wrap items-center gap-3">
-                    {recipe.name}
+                    <span className="truncate">{recipe.name}</span>
+                    <button 
+                      onClick={() => copy(recipe.name)}
+                      className="p-2 hover:bg-slate-800 rounded-xl transition-all bg-slate-900 md:bg-transparent text-amber-500/70 md:text-slate-500 md:hover:text-amber-500"
+                      title="Copier le nom"
+                    >
+                      {copied ? <Check size={18} className="text-emerald-500" /> : <Copy size={18} />}
+                    </button>
                     {isItemsPage ? (
                       isCraftable && (
                         <Link 
@@ -531,6 +550,7 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
                         {recipe.bonuses?.dex && <StatBadge label="DEX" value={formatStatValue(recipe.bonuses.dex)} type="dex" />}
                         {recipe.bonuses?.int && <StatBadge label="INT" value={formatStatValue(recipe.bonuses.int)} type="int" />}
                         {recipe.bonuses?.wis && <StatBadge label="SAG" value={formatStatValue(recipe.bonuses.wis)} type="wis" />}
+                        {recipe.bonuses?.luck && <StatBadge label="CHA" value={formatStatValue(recipe.bonuses.luck)} type="luck" />}
                         
                         {recipe.secondary && Object.entries(recipe.secondary).map(([label, value]) => (
                           <StatBadge key={label} label={label} value={formatStatValue(value as string)} type="secondary" />
@@ -1063,7 +1083,7 @@ const ProjectCard = ({ project, recipes, onToggleIngredient, onDelete, onNavigat
 };
 
 const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => {
-  const { wikiData, recipesData, favRecipes: favorites, setFavRecipes: setFavorites, craftingProjects, setCraftingProjects } = useData();
+  const { wikiData, recipesData, favRecipes: favorites, setFavRecipes: setFavorites, craftingProjects, setCraftingProjects, showNotification } = useData();
   const allItems = useMemo(() => wikiData.find(p => p.id === 'items')?.recipes || [], [wikiData]);
   
   const findItemSource = useCallback((name: string) => {
@@ -1078,12 +1098,6 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
   const [viewMode, setViewMode] = useState<'search' | 'npc'>(isItemsPage ? 'search' : 'search');
   const [currentTab, setCurrentTab] = useState<'recipes' | 'projects'>('recipes');
   const [layoutMode, setLayoutMode] = useState<'list' | 'grid'>('list');
-  const [notification, setNotification] = useState<{ message: string, type: 'success' | 'error' } | null>(null);
-
-  const showNotification = (message: string, type: 'success' | 'error' = 'success') => {
-    setNotification({ message, type });
-    setTimeout(() => setNotification(null), 3000);
-  };
 
   const handleProjectAdd = (recipeName: string) => {
     const newProject = {
@@ -1273,10 +1287,14 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
       const matchesType = selectedType === 'Tous' || resolvedType === selectedType;
 
       // Stat Filter
-      const matchesStats = selectedStats.length === 0 || selectedStats.every(s => 
-        (recipe.bonuses && recipe.bonuses[s as keyof typeof recipe.bonuses]) || 
-        (recipe.secondary && Object.keys(recipe.secondary).some(k => k.toLowerCase().includes(s)))
-      );
+      const matchesStats = selectedStats.length === 0 || selectedStats.every(s => {
+        if (s === 'luck') {
+            return (recipe.bonuses && recipe.bonuses.luck) || 
+                   (recipe.secondary && (recipe.secondary['Chance'] || recipe.secondary['chance']));
+        }
+        return (recipe.bonuses && recipe.bonuses[s as keyof typeof recipe.bonuses]) || 
+               (recipe.secondary && Object.keys(recipe.secondary).some(k => k.toLowerCase().includes(s)));
+      });
 
       if (isItemsPage) {
         const matchesSearch = normalizedSearch === '' || fastNormalize(recipe.name).includes(normalizedSearch);
@@ -1322,9 +1340,18 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
       } else if (sortBy === 'level') {
         return sortOrder === 'asc' ? (a.level || 0) - (b.level || 0) : (b.level || 0) - (a.level || 0);
       } else {
-        // Sort by specific stat value
-        const valA = parseInt(a.bonuses?.[sortBy as keyof typeof a.bonuses] || '0');
-        const valB = parseInt(b.bonuses?.[sortBy as keyof typeof b.bonuses] || '0');
+        // Sort by specific stat value (str, end, dex, int, wis, ca, luck)
+        let valA = 0;
+        let valB = 0;
+
+        if (sortBy === 'luck') {
+            valA = parseInt(a.bonuses?.luck || a.secondary?.['Chance'] || a.secondary?.['chance'] || '0');
+            valB = parseInt(b.bonuses?.luck || b.secondary?.['Chance'] || b.secondary?.['chance'] || '0');
+        } else {
+            valA = parseInt(a.bonuses?.[sortBy as keyof typeof a.bonuses] || '0');
+            valB = parseInt(b.bonuses?.[sortBy as keyof typeof b.bonuses] || '0');
+        }
+        
         return sortOrder === 'asc' ? valA - valB : valB - valA;
       }
     });
@@ -1733,27 +1760,6 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
       )}
       </div>
       )}
-
-      {/* Non-blocking Toast Notification */}
-      <AnimatePresence>
-        {notification && (
-          <motion.div 
-            initial={{ opacity: 0, y: 50, scale: 0.9 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.9 }}
-            className={`fixed bottom-8 left-1/2 -translate-x-1/2 z-[9999] flex items-center gap-3 px-6 py-3 rounded-2xl font-black uppercase tracking-widest shadow-2xl border transition-colors ${
-                notification.type === 'success' 
-                    ? 'bg-emerald-500 text-slate-950 border-emerald-400/50 shadow-emerald-500/20' 
-                    : 'bg-rose-500 text-white border-rose-400/50 shadow-rose-500/20'
-            }`}
-          >
-            <div className={`p-1 rounded-lg ${notification.type === 'success' ? 'bg-slate-950/20' : 'bg-white/20'}`}>
-                <Bell size={18} />
-            </div>
-            {notification.message}
-          </motion.div>
-        )}
-      </AnimatePresence>
     </div>
   );
 };

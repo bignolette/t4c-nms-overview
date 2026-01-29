@@ -1,7 +1,7 @@
 interface StatBadgeProps {
   label: string;
   value: string | number;
-  type: 'str' | 'end' | 'dex' | 'int' | 'wis' | 'ca' | 'lvl' | 'minimumSkillPoints' | 'secondary';
+  type: 'str' | 'end' | 'dex' | 'int' | 'wis' | 'ca' | 'lvl' | 'luck' | 'minimumSkillPoints' | 'secondary';
 }
 
 const StatBadge = ({ label, value, type }: StatBadgeProps) => {
@@ -13,6 +13,7 @@ const StatBadge = ({ label, value, type }: StatBadgeProps) => {
     wis: { color: 'text-purple-400', bg: 'bg-purple-500/10', border: 'border-purple-500/20' },
     ca: { color: 'text-slate-300', bg: 'bg-slate-100/10', border: 'border-slate-100/20' },
     lvl: { color: 'text-amber-500', bg: 'bg-amber-500/10', border: 'border-amber-500/20' },
+    luck: { color: 'text-amber-400', bg: 'bg-amber-400/10', border: 'border-amber-400/20' },
     minimumSkillPoints: { color: 'text-indigo-400', bg: 'bg-indigo-500/10', border: 'border-indigo-500/20' },
     secondary: { color: 'text-emerald-400', bg: 'bg-emerald-500/5', border: 'border-emerald-500/10' }
   };

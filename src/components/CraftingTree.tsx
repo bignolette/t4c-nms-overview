@@ -5,10 +5,11 @@ import { fastNormalize } from '../data/utils';
 import { 
   Hammer, Package, Calculator, ShoppingBag, MapPin, ChevronDown, User, Skull,
   Shield, Sword, Crown, Shirt, Footprints, Hand, Circle, Link2, GripHorizontal, Columns2, Medal,
-  ArrowUpRight, ArrowRight, Wind, ListChecks, Sparkles, X, ExternalLink
+  ArrowUpRight, ArrowRight, Wind, ListChecks, Sparkles, X, ExternalLink, Copy, Check
 } from 'lucide-react';
 import { useState, useMemo, memo, useCallback } from 'react';
 import { createPortal } from 'react-dom';
+import { useClipboard } from '../hooks/useClipboard';
 
 const getSourceIcon = (source: string | undefined) => {
   if (!source) return Package;
@@ -345,6 +346,7 @@ const RecipeCard = memo(({ recipe, hidePlanner }: { recipe: RecipeItem, hidePlan
     const hasIngredients = item.ingredients && item.ingredients.length > 0;
     const isNodeExpanded = expandedItems.has(item.name);
     const Icon = getSourceIcon(item.source);
+    const { copied, copy } = useClipboard();
     
     return (
       <div className="relative">
@@ -375,6 +377,13 @@ const RecipeCard = memo(({ recipe, hidePlanner }: { recipe: RecipeItem, hidePlan
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-2">
                 <span className="font-bold text-sm text-slate-200 truncate">{item.name}</span>
+                <button 
+                  onClick={(e) => { e.stopPropagation(); copy(item.name); }}
+                  className="p-1 hover:bg-white/10 rounded transition-colors shrink-0"
+                  title="Copier le nom"
+                >
+                  {copied ? <Check size={12} className="text-emerald-500" /> : <Copy size={12} className="text-slate-500 group-hover:text-amber-500" />}
+                </button>
                 <Link
                   to={`/wiki/items?search=${encodeURIComponent(item.name)}`}
                   onClick={(e) => e.stopPropagation()}

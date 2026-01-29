@@ -4,6 +4,7 @@ import Sidebar from './Sidebar';
 import Header from './Header';
 import Scene3D from './Scene3D';
 import Footer from './Footer';
+import NotificationToast from './ui/NotificationToast';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -29,6 +30,7 @@ const Layout = ({ children }: LayoutProps) => {
 
       <Sidebar isOpen={isSidebarOpen} onToggle={() => setIsSidebarOpen(!isSidebarOpen)} />
       <Header />
+      <NotificationToast />
       
       <main 
         ref={mainRef}

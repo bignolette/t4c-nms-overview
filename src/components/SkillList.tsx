@@ -3,13 +3,13 @@ import { useSearchParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { fastNormalize } from '../data/utils';
 import type { Skill } from '../data/types';
-import { 
-  Filter, AlertCircle, RotateCcw, 
-  Shield, Info, MapPin, ArrowUpDown, Zap
+import {
+  Filter, AlertCircle, RotateCcw,
+  Shield, Info, MapPin, ArrowUpDown, Zap, Copy, Check
 } from 'lucide-react';
 import Pagination from './shared/Pagination';
 import StatBadge from './shared/StatBadge';
-
+import { useClipboard } from '../hooks/useClipboard';
 interface SkillListProps {
   skills: Skill[];
 }
@@ -17,6 +17,7 @@ interface SkillListProps {
 const DEFAULT_ITEMS_PER_PAGE = 24;
 
 export const SkillCard = memo(({ skill }: { skill: Skill }) => {
+  const { copied, copy } = useClipboard();
   const cleanRequirements = useMemo(() => {
     return skill.requirements.replace(/Niv\s*\d+,?\s*/i, '').trim();
   }, [skill.requirements]);
@@ -40,8 +41,15 @@ export const SkillCard = memo(({ skill }: { skill: Skill }) => {
                 {isPassive ? 'Passive' : 'Active'}
               </span>
             </div>
-            <h3 className="text-xl font-black group-hover:text-emerald-400 transition-colors leading-tight italic tracking-tight truncate text-slate-100">
-              {skill.name}
+            <h3 className="text-xl font-black group-hover:text-emerald-400 transition-colors leading-tight italic tracking-tight text-slate-100 flex items-center gap-2 overflow-hidden">
+              <span className="truncate">{skill.name}</span>
+              <button 
+                onClick={() => copy(skill.name)}
+                className="p-1.5 hover:bg-white/10 rounded-lg transition-all shrink-0 bg-slate-900/50 md:bg-transparent"
+                title="Copier le nom"
+              >
+                {copied ? <Check size={14} className="text-emerald-500" /> : <Copy size={14} className="text-amber-500/70 md:text-slate-500 md:group-hover:text-amber-500" />}
+              </button>
             </h3>
           </div>
           <div className={`p-2 rounded-lg ${isPassive ? 'bg-blue-500/10 text-blue-500' : 'bg-rose-500/10 text-rose-500'}`}>

@@ -18,6 +18,7 @@ export interface ItemStats {
     wis?: string;
     ca?: string;
     lvl?: string;
+    luck?: string;
     minimumSkillPoints?: string;
 }
 

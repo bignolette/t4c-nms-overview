@@ -59,6 +59,8 @@ interface DataContextType {
     setFavRecipes: React.Dispatch<React.SetStateAction<string[]>>;
     saveDataToFile: (filename?: string) => void;
     loadDataFromFile: (file: File) => Promise<void>;
+    showNotification: (message: string, type?: 'success' | 'error') => void;
+    notification: { message: string, type: 'success' | 'error' } | null;
 }
 
 const DataContext = createContext<DataContextType | undefined>(undefined);
@@ -80,6 +82,12 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
     const [craftingProjects, setCraftingProjects] = useState<CraftingProject[]>([]);
     const [activeStats, setActiveStats] = useState<Stats>({ str: 0, end: 0, dex: 0, int: 0, wis: 0 });
     const [favRecipes, setFavRecipes] = useState<string[]>([]);
+    const [notification, setNotification] = useState<{ message: string, type: 'success' | 'error' } | null>(null);
+
+    const showNotification = (message: string, type: 'success' | 'error' = 'success') => {
+        setNotification({ message, type });
+        setTimeout(() => setNotification(null), 3000);
+    };
 
     useEffect(() => {
         const loadData = async () => {
@@ -312,7 +320,9 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         favRecipes,
         setFavRecipes,
         saveDataToFile,
-        loadDataFromFile
+        loadDataFromFile,
+        showNotification,
+        notification
     };
 
     return (
