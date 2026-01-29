@@ -25,7 +25,7 @@
         "Zaeron Kayle"
       ]
     },
-    "trainingCost": "10 po/pt"
+    "trainingCost": "10 PO par Point"
   },
   {
     "name": "Archerie",
@@ -54,7 +54,7 @@
         "Zaeron Kayle"
       ]
     },
-    "trainingCost": "15 po/pt"
+    "trainingCost": "15 PO par Point"
   },
   {
     "name": "Esquive",
@@ -80,7 +80,7 @@
         "Steelblade Delnar"
       ]
     },
-    "trainingCost": "10 po/pt"
+    "trainingCost": "10 PO par Point"
   },
   {
     "name": "Coup assommant",
@@ -95,7 +95,7 @@
         "Garnir"
       ]
     },
-    "trainingCost": "20 po/pt"
+    "trainingCost": "20 PO par Point"
   },
   {
     "name": "Coup d'oeil",
@@ -116,7 +116,7 @@
         "Baldric Israelis"
       ]
     },
-    "trainingCost": "25 po/pt"
+    "trainingCost": "25 PO par Point"
   },
   {
     "name": "Parade",
@@ -134,7 +134,7 @@
         "Morindin Tenglow (Bois de RD)"
       ]
     },
-    "trainingCost": "75 po/pt"
+    "trainingCost": "75 PO par Point"
   },
   {
     "name": "Crochetage de serrures",
@@ -149,7 +149,7 @@
         "Le Fouineur"
       ]
     },
-    "trainingCost": "100 po/pt"
+    "trainingCost": "100 PO par Point"
   },
   {
     "name": "Premiers soins",
@@ -164,7 +164,7 @@
         "Roen Greenleaf"
       ]
     },
-    "trainingCost": "30 po/pt"
+    "trainingCost": "30 PO par Point"
   },
   {
     "name": "Peur primale\n       NMS",
@@ -176,7 +176,7 @@
         "Serje Fortepee (Sud-Est de la ville en 1700,1360,0)"
       ]
     },
-    "trainingCost": "1200 po/pt"
+    "trainingCost": "1200 PO par Point"
   },
   {
     "name": "Se cacher",
@@ -191,7 +191,7 @@
         "Roen Greenleaf"
       ]
     },
-    "trainingCost": "25 po/pt"
+    "trainingCost": "25 PO par Point"
   },
   {
     "name": "Coup puissant",
@@ -206,7 +206,7 @@
         "Garnir"
       ]
     },
-    "trainingCost": "50 po/pt"
+    "trainingCost": "50 PO par Point"
   },
   {
     "name": "Méditer",
@@ -221,7 +221,7 @@
         "Elandor (un mage errant)"
       ]
     },
-    "trainingCost": "100 po/pt"
+    "trainingCost": "100 PO par Point"
   },
   {
     "name": "Ramener à la vie\n       NMS",
@@ -234,7 +234,7 @@
         "jardins de la cathédrale (1674,1130,0)"
       ]
     },
-    "trainingCost": "250 po/pt"
+    "trainingCost": "250 PO par Point"
   },
   {
     "name": "Pillage de tombe\n       NMS",
@@ -247,7 +247,7 @@
         "ville des voleurs au sous-sol. (2031,2800,1). Entrée du sous-sol en (2200,1270,0)"
       ]
     },
-    "trainingCost": "125 po/pt"
+    "trainingCost": "125 PO par Point"
   },
   {
     "name": "Vol",
@@ -262,7 +262,7 @@
         "Lightfoot Daran"
       ]
     },
-    "trainingCost": "250 po/pt"
+    "trainingCost": "250 PO par Point"
   },
   {
     "name": "Chercher",
@@ -274,7 +274,7 @@
         "Chryseida Yolangda"
       ]
     },
-    "trainingCost": "50 po/pt"
+    "trainingCost": "50 PO par Point"
   },
   {
     "name": "Se faufiler",
@@ -286,7 +286,7 @@
         "Dantalir le Barde (Repaire des voleurs)"
       ]
     },
-    "trainingCost": "100 po/pt"
+    "trainingCost": "100 PO par Point"
   },
   {
     "name": "Transpercer l'armure",
@@ -301,7 +301,7 @@
         "Rablek Blivtaor (Repaire des voleurs)"
       ]
     },
-    "trainingCost": "300 po/pt"
+    "trainingCost": "300 PO par Point"
   },
   {
     "name": "Ambidextrie",
@@ -313,7 +313,7 @@
         "Adriana (salle d'entraînement)"
       ]
     },
-    "trainingCost": "500 po/pt"
+    "trainingCost": "500 PO par Point"
   },
   {
     "name": "Guérison rapide",
@@ -328,7 +328,7 @@
         "Worgwolth Trugg (Camp skraug vert)"
       ]
     },
-    "trainingCost": "200 po/pt"
+    "trainingCost": "200 PO par Point"
   },
   {
     "name": "Profusion de manaNMS",
@@ -341,7 +341,7 @@
         "couloir extérieur au Sud (2850,300,4)"
       ]
     },
-    "trainingCost": "300 po/pt"
+    "trainingCost": "300 PO par Point"
   },
   {
     "name": "ImmobilisationNMS",
@@ -353,6 +353,6 @@
         "Serje Fortepee (Sud-Est de la ville en 1700,1360,0)"
       ]
     },
-    "trainingCost": "3000 po/pt"
+    "trainingCost": "3000 PO par Point"
   }
 ]

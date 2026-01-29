@@ -111,6 +111,7 @@ const WikiPage = () => {
           </div>
         </div>
       </div>
+    </div>
 
       {/* Main Content Area */}
       <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
