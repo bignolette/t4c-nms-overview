@@ -25,7 +25,7 @@
         "Zaeron Kayle"
       ]
     },
-    "trainingCost": "10 PO par Point"
+    "trainingCost": "10 PO par point dépensé"
   },
   {
     "name": "Archerie",
@@ -41,7 +41,7 @@
         "Karl"
       ],
       "Silversky": [
-        "Baldric Israelis"
+        "Baldric Iraelis"
       ],
       "Raven's Dust": [
         "Morindin Tenglow (bois de RD)"
@@ -54,7 +54,7 @@
         "Zaeron Kayle"
       ]
     },
-    "trainingCost": "15 PO par Point"
+    "trainingCost": "15 PO par point dépensé"
   },
   {
     "name": "Esquive",
@@ -70,7 +70,7 @@
       ],
       "Silversky": [
         "Doremas",
-        "Baldric Israelis"
+        "Baldric Iraelis"
       ],
       "Raven's Dust": [
         "Morindin Tenglow (bois de RD)"
@@ -80,7 +80,7 @@
         "Steelblade Delnar"
       ]
     },
-    "trainingCost": "10 PO par Point"
+    "trainingCost": "10 PO par point dépensé"
   },
   {
     "name": "Coup assommant",
@@ -95,7 +95,7 @@
         "Garnir"
       ]
     },
-    "trainingCost": "20 PO par Point"
+    "trainingCost": "20 PO par point dépensé"
   },
   {
     "name": "Coup d'oeil",
@@ -113,10 +113,10 @@
         "Lyria (Ville des voleurs)"
       ],
       "Silversky": [
-        "Baldric Israelis"
+        "Baldric Iraelis"
       ]
     },
-    "trainingCost": "25 PO par Point"
+    "trainingCost": "25 PO par point dépensé"
   },
   {
     "name": "Parade",
@@ -134,7 +134,7 @@
         "Morindin Tenglow (Bois de RD)"
       ]
     },
-    "trainingCost": "75 PO par Point"
+    "trainingCost": "75 PO par point dépensé"
   },
   {
     "name": "Crochetage de serrures",
@@ -149,7 +149,7 @@
         "Le Fouineur"
       ]
     },
-    "trainingCost": "100 PO par Point"
+    "trainingCost": "100 PO par point dépensé"
   },
   {
     "name": "Premiers soins",
@@ -164,7 +164,7 @@
         "Roen Greenleaf"
       ]
     },
-    "trainingCost": "30 PO par Point"
+    "trainingCost": "30 PO par point dépensé"
   },
   {
     "name": "Peur primale\n       NMS",
@@ -176,7 +176,7 @@
         "Serje Fortepee (Sud-Est de la ville en 1700,1360,0)"
       ]
     },
-    "trainingCost": "1200 PO par Point"
+    "trainingCost": "1200 PO par point dépensé"
   },
   {
     "name": "Se cacher",
@@ -191,7 +191,7 @@
         "Roen Greenleaf"
       ]
     },
-    "trainingCost": "25 PO par Point"
+    "trainingCost": "25 PO par point dépensé"
   },
   {
     "name": "Coup puissant",
@@ -206,7 +206,7 @@
         "Garnir"
       ]
     },
-    "trainingCost": "50 PO par Point"
+    "trainingCost": "50 PO par point dépensé"
   },
   {
     "name": "Méditer",
@@ -221,7 +221,7 @@
         "Elandor (un mage errant)"
       ]
     },
-    "trainingCost": "100 PO par Point"
+    "trainingCost": "100 PO par point dépensé"
   },
   {
     "name": "Ramener à la vie\n       NMS",
@@ -234,7 +234,7 @@
         "jardins de la cathédrale (1674,1130,0)"
       ]
     },
-    "trainingCost": "250 PO par Point"
+    "trainingCost": "250 PO par point dépensé"
   },
   {
     "name": "Pillage de tombe\n       NMS",
@@ -247,7 +247,7 @@
         "ville des voleurs au sous-sol. (2031,2800,1). Entrée du sous-sol en (2200,1270,0)"
       ]
     },
-    "trainingCost": "125 PO par Point"
+    "trainingCost": "125 PO par point dépensé"
   },
   {
     "name": "Vol",
@@ -256,13 +256,13 @@
     "description": "Active. Permet de voler dans l'inventaire d'un joueur proche. Influence par la dextérité et la différence de niveaux entre la cible et l'utilisateur. Tip : Pour archers voleurs. Convient bien aussi à une utilisation RP.",
     "trainingTeachers": {
       "Silversky": [
-        "Baldric Israelis"
+        "Baldric Iraelis"
       ],
       "Stonecrest": [
         "Lightfoot Daran"
       ]
     },
-    "trainingCost": "250 PO par Point"
+    "trainingCost": "250 PO par point dépensé"
   },
   {
     "name": "Chercher",
@@ -274,7 +274,7 @@
         "Chryseida Yolangda"
       ]
     },
-    "trainingCost": "50 PO par Point"
+    "trainingCost": "50 PO par point dépensé"
   },
   {
     "name": "Se faufiler",
@@ -286,7 +286,7 @@
         "Dantalir le Barde (Repaire des voleurs)"
       ]
     },
-    "trainingCost": "100 PO par Point"
+    "trainingCost": "100 PO par point dépensé"
   },
   {
     "name": "Transpercer l'armure",
@@ -301,7 +301,7 @@
         "Rablek Blivtaor (Repaire des voleurs)"
       ]
     },
-    "trainingCost": "300 PO par Point"
+    "trainingCost": "300 PO par point dépensé"
   },
   {
     "name": "Ambidextrie",
@@ -313,7 +313,7 @@
         "Adriana (salle d'entraînement)"
       ]
     },
-    "trainingCost": "500 PO par Point"
+    "trainingCost": "500 PO par point dépensé"
   },
   {
     "name": "Guérison rapide",
@@ -328,7 +328,7 @@
         "Worgwolth Trugg (Camp skraug vert)"
       ]
     },
-    "trainingCost": "200 PO par Point"
+    "trainingCost": "200 PO par point dépensé"
   },
   {
     "name": "Profusion de manaNMS",
@@ -341,7 +341,7 @@
         "couloir extérieur au Sud (2850,300,4)"
       ]
     },
-    "trainingCost": "300 PO par Point"
+    "trainingCost": "300 PO par point dépensé"
   },
   {
     "name": "ImmobilisationNMS",
@@ -353,6 +353,6 @@
         "Serje Fortepee (Sud-Est de la ville en 1700,1360,0)"
       ]
     },
-    "trainingCost": "3000 PO par Point"
+    "trainingCost": "3000 PO par point dépensé"
   }
 ]
