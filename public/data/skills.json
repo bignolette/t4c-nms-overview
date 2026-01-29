@@ -133,8 +133,7 @@
     "trainingCost": "25 PO par point dépensé",
     "prerequisitesStats": {
       "lvl": "5",
-      "dex": "1",
-      "minimumSkillPoints": "1"
+      "dex": "1"
     }
   },
   {
