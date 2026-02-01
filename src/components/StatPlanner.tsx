@@ -1,6 +1,7 @@
 import { useState, useMemo, useEffect, useRef } from 'react';
 import { User, Zap, ChevronUp, ChevronDown, RotateCcw, Award, Heart, Sparkles, Star, Shield, Flame, Save, Trash2, HelpCircle, Info, X, BookOpen, Bell } from 'lucide-react';
 import CharacterNameVisual from './CharacterNameVisual';
+import SpiderChart from './SpiderChart';
 import { motion, AnimatePresence } from 'framer-motion';
 import { spellPowerConfig } from '../data/spell_power';
 import { useData } from '../context/DataContext';
@@ -265,23 +266,24 @@ const StatPlanner = () => {
   return (
     <div className="space-y-6 pb-20 text-left">
       {/* BLOC PERSONNAGES */}
-      <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 shadow-xl text-left">
-        <div className="flex items-center justify-between mb-4">
-            <h2 className="text-xs font-black text-slate-500 uppercase tracking-widest flex items-center gap-2">
+      <div className="glass-card rounded-2xl p-6 text-left relative overflow-hidden group">
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-transparent pointer-events-none" />
+        <div className="flex items-center justify-between mb-4 relative z-10">
+            <h2 className="text-xs font-black text-amber-500 uppercase tracking-widest flex items-center gap-2 font-fantasy">
             <Save size={14}/> Mes Personnages ({savedCharacters.length}/10)
             </h2>
         </div>
         
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 relative z-10">
           <div className="w-full space-y-1">
-            <label className="text-[9px] font-black text-slate-500 uppercase tracking-widest ml-1 text-left block">Nom du Personnage (Sauvegarder/Mettre à jour)</label>
+            <label className="text-[9px] font-black text-slate-400 uppercase tracking-widest ml-1 text-left block">Nom du Personnage (Sauvegarder/Mettre à jour)</label>
             <div className="flex gap-2">
               <input 
                 type="text" 
                 placeholder="NOM DU PERSONNAGE"
                 value={charName}
                 onChange={(e) => setCharName(normalizeName(e.target.value))}
-                className="flex-1 bg-slate-950 border border-slate-800 rounded-xl px-4 py-2 text-sm font-bold text-amber-500 placeholder:text-slate-800 focus:outline-none focus:border-amber-500/50 transition-all"
+                className="flex-1 bg-slate-900/50 border border-slate-700/50 rounded-xl px-4 py-2 text-sm font-bold text-amber-500 placeholder:text-slate-600 focus:outline-none focus:border-amber-500/50 transition-all backdrop-blur-sm"
               />
               <button 
                 onClick={() => {
@@ -289,7 +291,7 @@ const StatPlanner = () => {
                   setCharName(''); // Clear input after clicking +
                 }} 
                 disabled={!charName} 
-                className="btn-primary px-8 text-2xl shrink-0"
+                className="btn-primary px-8 text-2xl shrink-0 font-fantasy"
                 title="Ajouter un nouveau personnage"
               >
                 +
@@ -298,8 +300,8 @@ const StatPlanner = () => {
           </div>
 
           <div className="w-full space-y-2">
-            <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1 text-left block">Mes Profils Enregistrés</label>
-            <div className="flex flex-wrap gap-3 p-4 bg-slate-950/30 border border-slate-800/50 rounded-2xl">
+            <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-1 text-left block">Mes Profils Enregistrés</label>
+            <div className="flex flex-wrap gap-3 p-4 bg-slate-950/20 border border-white/5 rounded-2xl backdrop-blur-sm">
               {savedCharacters.length === 0 ? (
                 <div className="text-xs text-slate-600 italic px-2 py-4 w-full text-center">Aucun personnage enregistré</div>
               ) : (
@@ -329,14 +331,14 @@ const StatPlanner = () => {
         {/* COLONNE GAUCHE (Plus large pour les attributs) */}
                   <div className="lg:col-span-6 space-y-6">
                   {/* Renaissance */}
-                  <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6 text-center shadow-xl overflow-hidden relative group">
-                    <h2 className="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2 flex items-center justify-center gap-2"><Zap size={14}/> Renaissance</h2>
-                    <div className="text-3xl font-black text-amber-500 mb-6 drop-shadow-[0_0_10px_rgba(245,158,11,0.3)] group-hover:scale-110 transition-transform uppercase italic">
+                  <div className="glass-card rounded-2xl p-6 text-center overflow-hidden relative group">
+                    <h2 className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-2 flex items-center justify-center gap-2 font-fantasy"><Zap size={14}/> Renaissance</h2>
+                    <div className="text-3xl font-black text-amber-500 mb-6 drop-shadow-[0_0_10px_rgba(245,158,11,0.3)] group-hover:scale-110 transition-transform uppercase italic font-fantasy">
                       {renaissance === 0 ? "Humain" : `x${renaissance}`}
                     </div>
                     <div className="grid grid-cols-7 gap-1 relative z-10">
                       {[0, 1, 2, 3, 4, 5, 6].map((r) => (
-                        <button key={r} onClick={() => handleRenaissanceChange(r)} className={`py-2 rounded-lg border text-[10px] font-black transition-all ${renaissance === r ? 'bg-amber-500 border-amber-500 text-slate-950 shadow-lg' : 'bg-slate-800 border-slate-700 text-slate-400 hover:border-slate-500'}`}>
+                        <button key={r} onClick={() => handleRenaissanceChange(r)} className={`py-2 rounded-lg border text-[10px] font-black transition-all ${renaissance === r ? 'bg-amber-500 border-amber-500 text-slate-950 shadow-lg' : 'bg-slate-800/50 border-slate-700/50 text-slate-400 hover:border-slate-500 hover:bg-slate-700/50'}`}>
                           {r === 0 ? 'H' : `${r}x`}
                         </button>
                       ))}
@@ -346,53 +348,56 @@ const StatPlanner = () => {
         
                   <button onClick={resetAll} className="btn-danger w-full"><RotateCcw size={16} /> Reset Build</button>
           {/* Attributs & Progression */}
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-2xl relative">
-            <div className="absolute top-0 left-0 w-full h-1 bg-slate-800">
-              <div className="h-full bg-amber-500 transition-all duration-500" style={{ width: `${((totalLevelPointsSpent % POINTS_PER_LEVEL) / POINTS_PER_LEVEL) * 100}%` }} />
+          <div className="glass-card rounded-2xl overflow-hidden relative">
+            <div className="absolute top-0 left-0 w-full h-1 bg-slate-800/50">
+              <div className="h-full bg-amber-500 transition-all duration-500 shadow-[0_0_10px_rgba(245,158,11,0.5)]" style={{ width: `${((totalLevelPointsSpent % POINTS_PER_LEVEL) / POINTS_PER_LEVEL) * 100}%` }} />
             </div>
 
-            <div className="p-4 border-b border-slate-800 bg-slate-900/50 flex flex-col items-center justify-between gap-4 text-center sm:text-left sm:flex-row">
+            <div className="p-4 border-b border-white/5 bg-slate-900/30 flex flex-col items-center justify-between gap-4 text-center sm:text-left sm:flex-row backdrop-blur-sm">
                <div className="flex items-center gap-2">
                   <User className="text-amber-500" size={18} /> 
-                  <h2 className="text-sm font-black text-slate-100 uppercase tracking-tight">Attributs de base</h2>
+                  <h2 className="text-sm font-black text-slate-200 uppercase tracking-tight font-fantasy">Attributs de base</h2>
                </div>
                <div>
                  <span className="text-[8px] font-black text-slate-500 uppercase block leading-none tracking-widest">Points Investis</span>
-                 <span className="text-xl font-black text-amber-500 leading-none">{totalLevelPointsSpent}</span>
+                 <span className="text-xl font-black text-amber-500 leading-none font-fantasy">{totalLevelPointsSpent}</span>
                </div>
             </div>
 
             <div className="flex flex-col">
-              {/* STATS VITALES - Stackées en haut */}
-              <div className="bg-slate-950/50 p-6 border-b border-slate-800 flex flex-col sm:flex-row items-center justify-around gap-6">
-                <div className="text-center">
-                  <span className="text-[9px] font-black text-slate-500 uppercase block leading-none tracking-[0.2em] mb-2">Niveau Requis</span>
-                  <div className="flex items-center justify-center gap-2">
-                    <Award className="text-amber-500" size={20} />
-                    <span className="text-5xl font-black text-white leading-none tracking-tighter">{requiredLevel}</span>
-                  </div>
-                </div>
+              {/* Spider Chart & Vital Stats */}
+              <div className="bg-slate-950/30 p-6 border-b border-white/5 flex flex-col md:flex-row items-center justify-around gap-6">
+                 {/* Spider Chart */}
+                 <div className="shrink-0 -my-4 scale-90 md:scale-100">
+                    <SpiderChart stats={finalStats} maxVal={200} />
+                 </div>
 
-                <div className="flex gap-8">
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-red-500/10 flex items-center justify-center border border-red-500/20 shrink-0"><Heart className="text-red-500" size={18} /></div>
-                    <div>
-                      <div className="text-xl font-black text-red-400 leading-none">{derivedStats.hp}</div>
-                      <div className="text-[9px] font-bold text-slate-500 uppercase tracking-widest mt-1">PV (Est.)</div>
+                 <div className="flex flex-col gap-6 w-full max-w-xs">
+                    <div className="text-center bg-slate-900/40 p-3 rounded-xl border border-white/5">
+                      <span className="text-[9px] font-black text-slate-500 uppercase block leading-none tracking-[0.2em] mb-2">Niveau Requis</span>
+                      <div className="flex items-center justify-center gap-2">
+                        <Award className="text-amber-500" size={20} />
+                        <span className="text-4xl font-black text-white leading-none tracking-tighter font-fantasy drop-shadow-lg">{requiredLevel}</span>
+                      </div>
                     </div>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-blue-500/10 flex items-center justify-center border border-blue-500/20 shrink-0"><Sparkles className="text-blue-500" size={18} /></div>
-                    <div>
-                      <div className="text-xl font-black text-blue-400 leading-none">{derivedStats.mana}</div>
-                      <div className="text-[9px] font-bold text-slate-500 uppercase tracking-widest mt-1">Mana (Est.)</div>
+
+                    <div className="flex justify-between gap-4">
+                      <div className="flex-1 flex flex-col items-center bg-red-500/5 border border-red-500/10 p-2 rounded-xl">
+                        <div className="w-8 h-8 rounded-lg bg-red-500/20 flex items-center justify-center mb-1"><Heart className="text-red-500" size={14} /></div>
+                        <div className="text-lg font-black text-red-400 leading-none font-fantasy">{derivedStats.hp}</div>
+                        <div className="text-[8px] font-bold text-slate-500 uppercase tracking-widest mt-0.5">PV</div>
+                      </div>
+                      <div className="flex-1 flex flex-col items-center bg-blue-500/5 border border-blue-500/10 p-2 rounded-xl">
+                        <div className="w-8 h-8 rounded-lg bg-blue-500/20 flex items-center justify-center mb-1"><Sparkles className="text-blue-500" size={14} /></div>
+                        <div className="text-lg font-black text-blue-400 leading-none font-fantasy">{derivedStats.mana}</div>
+                        <div className="text-[8px] font-bold text-slate-500 uppercase tracking-widest mt-0.5">Mana</div>
+                      </div>
                     </div>
-                  </div>
-                </div>
+                 </div>
               </div>
 
               {/* LISTE DES ATTRIBUTS - Format Compact Vertical */}
-              <div className="divide-y divide-slate-800/50">
+              <div className="divide-y divide-white/5">
                 {(['str', 'end', 'dex', 'int', 'wis'] as (keyof Stats)[]).map((k) => {
                   const labels: Record<string, string> = { str: 'Force', end: 'Endurance', dex: 'Dextérité', int: 'Intelligence', wis: 'Sagesse' };
                   const shortLabels: Record<string, string> = { str: 'FOR', end: 'END', dex: 'DEX', int: 'INT', wis: 'SAG' };

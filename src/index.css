@@ -4,7 +4,12 @@
 
 @layer base {
   body {
-    @apply bg-slate-950 text-slate-100;
+    @apply bg-slate-950 text-slate-100 font-sans;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel', serif;
   }
 
   /* Custom Scrollbar Styles */
@@ -30,11 +35,15 @@
 
 @layer components {
   .glass-card {
-    @apply bg-slate-900/40 backdrop-blur-xl border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.37)];
+    @apply bg-slate-950/40 backdrop-blur-md border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.37)];
   }
 
   .glass-panel {
-    @apply bg-slate-950/60 backdrop-blur-md border border-slate-800/50;
+    @apply bg-slate-900/30 backdrop-blur-xl border border-white/5 shadow-inner;
+  }
+
+  .font-fantasy {
+    font-family: 'Cinzel', serif;
   }
 
   .text-glow-amber {
