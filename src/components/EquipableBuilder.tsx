@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useData } from '../context/DataContext';
 import type { RecipeItem, SavedCharacter, Stats } from '../data/types';
 import { mapSourceToSlot, fastNormalize, formatStatValue } from '../data/utils';
-import { Search, Shield, Sword, Crown, Shirt, Footprints, Hand, Circle, Package, Link2, GripHorizontal, Columns2, Medal, Wind, User, Zap, Trophy, Sparkles, ChevronUp, ChevronDown } from 'lucide-react';
+import { Search, Sword, Package, Zap, Trophy, Sparkles, ChevronUp, ChevronDown } from 'lucide-react';
 import RuneIcon from './ui/RuneIcon';
 
 const StatBadge = ({ label, value, type }: { label: string, value: string | number, type: 'str' | 'end' | 'dex' | 'int' | 'wis' | 'ca' | 'secondary' }) => {
