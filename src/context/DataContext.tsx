@@ -83,6 +83,37 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
     const [activeStats, setActiveStats] = useState<Stats>({ str: 0, end: 0, dex: 0, int: 0, wis: 0 });
     const [favRecipes, setFavRecipes] = useState<string[]>([]);
     const [notification, setNotification] = useState<{ message: string, type: 'success' | 'error' } | null>(null);
+    const [storageLoaded, setStorageLoaded] = useState(false);
+
+    // Persistence LocalStorage
+    useEffect(() => {
+        try {
+            const savedCharsStr = localStorage.getItem('t4c_nms_saved_characters');
+            if (savedCharsStr) setSavedCharacters(JSON.parse(savedCharsStr));
+
+            const projectsStr = localStorage.getItem('t4c_nms_crafting_projects');
+            if (projectsStr) setCraftingProjects(JSON.parse(projectsStr));
+
+            const favsStr = localStorage.getItem('t4c_nms_fav_recipes');
+            if (favsStr) setFavRecipes(JSON.parse(favsStr));
+        } catch (e) {
+            console.error("Erreur lors du chargement depuis localStorage", e);
+        } finally {
+            setStorageLoaded(true);
+        }
+    }, []);
+
+    useEffect(() => {
+        if (storageLoaded) localStorage.setItem('t4c_nms_saved_characters', JSON.stringify(savedCharacters));
+    }, [savedCharacters, storageLoaded]);
+
+    useEffect(() => {
+        if (storageLoaded) localStorage.setItem('t4c_nms_crafting_projects', JSON.stringify(craftingProjects));
+    }, [craftingProjects, storageLoaded]);
+
+    useEffect(() => {
+        if (storageLoaded) localStorage.setItem('t4c_nms_fav_recipes', JSON.stringify(favRecipes));
+    }, [favRecipes, storageLoaded]);
 
     const showNotification = (message: string, type: 'success' | 'error' = 'success') => {
         setNotification({ message, type });

@@ -62,7 +62,7 @@ const StatPlanner = () => {
   const spentSeraphPoints = useMemo(() => {
     const statsCost = Object.values(seraphStats).reduce((acc: number, val: number) => acc + getCumulativeCost(val), 0);
     const powersCost = SERAPH_ELEMENTS.reduce((acc, el) => acc + getCumulativeCost(seraphPowers[el.key] || 0), 0);
-    const resistsCost = SERAPH_ELEMENTS.reduce((acc, el) => acc + getCumulativeCost(seraphResists[el.key] || 0) * 2, 0);
+    const resistsCost = SERAPH_ELEMENTS.reduce((acc, el) => acc + (seraphResists[el.key] || 0) * 2, 0);
     return statsCost + powersCost + resistsCost;
   }, [seraphStats, seraphPowers, seraphResists]);
 
@@ -231,8 +231,7 @@ const StatPlanner = () => {
     else currentVal = seraphResists[key as SeraphElement] || 0;
 
     if (amount > 0) {
-      const multiplier = type === 'resist' ? 2 : 1;
-      const nextCost = (currentVal + 1) * multiplier;
+      const nextCost = type === 'resist' ? 2 : (currentVal + 1);
       if (remainingSeraphPoints < nextCost) return;
     }
     if (currentVal + amount < 0) return;
@@ -434,7 +433,7 @@ const StatPlanner = () => {
                                <span className="text-[8px] font-black text-amber-600 uppercase tracking-widest ml-2">PTS RN</span>
                                <div className="flex items-center gap-2">
                                  <button onClick={() => updateSeraphStat('stat', k, -1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-amber-500 transition-all shadow-sm disabled:opacity-20" disabled={curS <= 0}>-</button>
-                                 <span className="w-8 text-center text-md font-black text-amber-500 tabular-nums">{curS}</span>
+                                 <span className="w-8 text-center text-md font-black text-amber-500 tabular-nums">{getCumulativeCost(curS)}</span>
                                  <button onClick={() => updateSeraphStat('stat', k, 1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-amber-500 transition-all shadow-sm disabled:opacity-20" disabled={remainingSeraphPoints < (curS + 1)}>+</button>
                                </div>
                             </div>
@@ -483,7 +482,7 @@ const StatPlanner = () => {
                           </div>
                           <div className="flex items-center gap-2 bg-slate-900/80 p-1.5 rounded-2xl border border-slate-800 shadow-inner shrink-0">
                              <button onClick={() => updateSeraphStat('power', el.key, -1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all shadow-sm disabled:opacity-20" disabled={cur <= 0}>-</button>
-                             <div className="w-8 text-center text-xs font-black text-amber-500/70">{cur}</div>
+                             <div className="w-8 text-center text-xs font-black text-amber-500/70">{getCumulativeCost(cur)}</div>
                              <button onClick={() => updateSeraphStat('power', el.key, 1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all shadow-sm disabled:opacity-20" disabled={remainingSeraphPoints < (cur + 1)}>+</button>
                           </div>
                        </div>
@@ -499,7 +498,7 @@ const StatPlanner = () => {
                 <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
                    {SERAPH_ELEMENTS.map(el => {
                      const cur = seraphResists[el.key] || 0;
-                     const nextCost = (cur + 1) * 2;
+                     const nextCost = 2;
                      return (
                        <div key={el.key} className="flex items-center justify-between bg-slate-950/40 p-4 rounded-2xl border border-slate-800/50 hover:border-blue-500/30 transition-all group">
                           <div className="flex items-center gap-4 min-w-0">
@@ -511,7 +510,7 @@ const StatPlanner = () => {
                           </div>
                           <div className="flex items-center gap-2 bg-slate-900/80 p-1.5 rounded-2xl border border-slate-800 shadow-inner shrink-0">
                              <button onClick={() => updateSeraphStat('resist', el.key, -1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all shadow-sm disabled:opacity-20" disabled={cur <= 0}>-</button>
-                             <div className="w-8 text-center text-xs font-black text-amber-500/70">{cur}</div>
+                             <div className="w-8 text-center text-xs font-black text-amber-500/70">{cur * 2}</div>
                              <button onClick={() => updateSeraphStat('resist', el.key, 1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all shadow-sm disabled:opacity-20" disabled={remainingSeraphPoints < nextCost}>+</button>
                           </div>
                        </div>
