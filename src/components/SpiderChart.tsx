@@ -97,7 +97,6 @@ const SpiderChart: React.FC<SpiderChartProps> = ({ stats, maxVal = 300 }) => {
          {axes.map((axis, i) => {
              const pVal = points[i];
              const pLabel = getPoint(maxVal * 1.25, axis.angle);
-             const val = stats[axis.key as keyof Stats] || 0;
              
              return (
                  <g key={i}>

@@ -39,12 +39,12 @@ const getSourceIcon = (source: string | undefined) => {
 };
 
 const ResourceSummary = memo(({ totals, onOpenPlanner, hidePlanner }: { totals: Record<string, number>, onOpenPlanner: () => void, hidePlanner?: boolean }) => {
-  if (hidePlanner) return null;
-
   const resources = useMemo(() => 
     Object.entries(totals).sort((a, b) => a[0].localeCompare(b[0], undefined, { sensitivity: 'base' })), 
     [totals]
   );
+
+  if (hidePlanner) return null;
 
   return (
     <div className="bg-slate-950/50 border border-slate-800 rounded-xl p-4 md:p-5 sticky top-20 md:top-24 shadow-inner">

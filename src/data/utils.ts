@@ -13,7 +13,7 @@ export const fastNormalize = (text: string): string => {
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/['’]/g, ' ') // Handle both types of apostrophes
-    .replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, " ") // Replace punctuation with space to keep words separate
+    .replace(/[.,/#!$%^&*;:{}=\-_`~()]/g, " ") // Replace punctuation with space to keep words separate
     .replace(/\b(le|la|les|de|du|des|d|un|une|au|aux|l)\b/g, "")
     .split(/\s+/)
     .filter(word => word.length > 0)

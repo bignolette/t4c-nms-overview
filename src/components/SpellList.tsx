@@ -282,7 +282,7 @@ const SpellList = ({ spells }: SpellListProps) => {
 
   const filteredSpells = useMemo(() => {
     const query = fastNormalize(activeSearchTerm);
-    let result = spells.filter(s => {
+    const result = spells.filter(s => {
       const matchesSearch = !query || 
         fastNormalize(s.name).includes(query) || 
         fastNormalize(s.description).includes(query);

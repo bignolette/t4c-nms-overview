@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 
 interface Props {
   name: string | null;
@@ -7,10 +7,11 @@ interface Props {
 
 const CharacterNameVisual: React.FC<Props> = ({ name, children }) => {
   const displayName = name || "SÉLECTIONNEZ UN PERSONNAGE";
+  const [particles, setParticles] = React.useState<{id: number, left: string, top: string, size: number, duration: number, delay: number}[]>([]);
 
   // Générer des particules aléatoires pour l'effet de fond
-  const particles = useMemo(() => {
-    return Array.from({ length: 20 }).map((_, i) => ({
+  React.useEffect(() => {
+    const newParticles = Array.from({ length: 20 }).map((_, i) => ({
       id: i,
       left: `${Math.random() * 100}%`,
       top: `${Math.random() * 100}%`,
@@ -18,6 +19,7 @@ const CharacterNameVisual: React.FC<Props> = ({ name, children }) => {
       duration: Math.random() * 3 + 2,
       delay: Math.random() * 2,
     }));
+    setParticles(newParticles);
   }, [name]);
 
   return (

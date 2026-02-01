@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, User, ShieldCheck, Calculator, PanelLeftClose, PanelLeftOpen, Shield, BookOpen } from 'lucide-react';
+import { Menu, X, Home, User, ShieldCheck, Calculator, PanelLeftClose, PanelLeftOpen, BookOpen } from 'lucide-react';
 import RuneIcon from './ui/RuneIcon';
 
 interface SidebarProps {

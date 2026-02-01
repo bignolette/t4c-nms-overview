@@ -161,7 +161,7 @@ const SkillList = ({ skills }: SkillListProps) => {
 
   const filteredSkills = useMemo(() => {
     const query = fastNormalize(activeSearchTerm);
-    let result = skills.filter(s => {
+    const result = skills.filter(s => {
       const matchesSearch = !query || 
         fastNormalize(s.name).includes(query) || 
         fastNormalize(s.description).includes(query);

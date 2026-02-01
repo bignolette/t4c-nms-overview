@@ -1282,7 +1282,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
 
     const normalizedSearch = fastNormalize(activeSearchTerm);
     
-    let result = recipes.filter(recipe => {
+    const result = recipes.filter(recipe => {
       const resolvedType = recipe.source || findItemSource(recipe.name);
       const matchesType = selectedType === 'Tous' || resolvedType === selectedType;
 

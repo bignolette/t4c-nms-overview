@@ -24,7 +24,7 @@ const Header = () => {
     try {
         await loadDataFromFile(file);
         showNotification("Données chargées avec succès !");
-    } catch (err) {
+    } catch {
         showNotification("Erreur lors du chargement des données.", 'error');
     }
     if (fileInputRef.current) fileInputRef.current.value = '';
