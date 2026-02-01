@@ -7,45 +7,71 @@ const Background3D = () => {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    const gl = canvas.getContext('webgl');
+    const gl = canvas.getContext('webgl', { alpha: true });
     if (!gl) return;
 
-    const particleCount = 200;
-    const particles = new Float32Array(particleCount * 6); // x, y, size, r, g, b
+    // Magical Blue Fire Configuration
+    const particleCount = 700; 
+    const particles = new Float32Array(particleCount * 7); // x, y, speed, r, g, b, alpha
+
+    function resetParticle(i: number, randomY: boolean = false) {
+      const idx = i * 7;
+      particles[idx] = (Math.random() * 2 - 1);     
+      particles[idx + 1] = randomY ? (Math.random() * 2 - 1) : -1.1; 
+      particles[idx + 2] = Math.random() * 0.5 + 0.3; // Steady speed
+      
+      const type = Math.random();
+      if (type > 0.7) {
+        // Cyan Magic
+        particles[idx + 3] = 0.3; 
+        particles[idx + 4] = 0.8; 
+        particles[idx + 5] = 1.0;
+      } else if (type > 0.3) {
+        // Deep Electric Blue
+        particles[idx + 3] = 0.1; 
+        particles[idx + 4] = 0.3; 
+        particles[idx + 5] = 1.0;
+      } else {
+        // Mystic Violet/Blue
+        particles[idx + 3] = 0.5; 
+        particles[idx + 4] = 0.1; 
+        particles[idx + 5] = 1.0;
+      }
+      
+      particles[idx + 6] = Math.random() * 0.8; 
+    }
 
     for (let i = 0; i < particleCount; i++) {
-      particles[i * 6] = (Math.random() * 2 - 1);     // x
-      particles[i * 6 + 1] = (Math.random() * 2 - 1); // y
-      particles[i * 6 + 2] = Math.random();           // speed/life
-      
-      // Default amber
-      particles[i * 6 + 3] = 0.96; // r
-      particles[i * 6 + 4] = 0.65; // g
-      particles[i * 6 + 5] = 0.1;  // b
+      resetParticle(i, true);
     }
 
     const vsSource = `
       attribute vec2 a_position;
-      attribute float a_life;
+      attribute float a_speed;
       attribute vec3 a_color;
-      varying float v_life;
+      attribute float a_alpha;
       varying vec3 v_color;
+      varying float v_alpha;
       void main() {
         gl_Position = vec4(a_position, 0.0, 1.0);
-        gl_PointSize = 2.0 + (a_life * 8.0);
-        v_life = a_life;
+        float sizeMod = max(0.0, (1.2 - a_position.y) * 0.5); 
+        // Slightly thicker particles
+        gl_PointSize = (4.0 + a_speed * 10.0) * sizeMod;
         v_color = a_color;
+        v_alpha = a_alpha;
       }
     `;
 
     const fsSource = `
       precision mediump float;
-      varying float v_life;
       varying vec3 v_color;
+      varying float v_alpha;
       void main() {
         float dist = distance(gl_PointCoord, vec2(0.5, 0.5));
         if (dist > 0.5) discard;
-        gl_FragColor = vec4(v_color, (1.0 - dist * 2.0) * v_life * 0.5);
+        // Slightly softer glow for "thicker" appearance
+        float glow = pow(1.0 - (dist * 2.0), 1.4);
+        gl_FragColor = vec4(v_color, v_alpha * glow);
       }
     `;
 
@@ -65,19 +91,23 @@ const Background3D = () => {
     const buffer = gl.createBuffer();
     gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
     
+    const stride = 7 * 4;
     const posLoc = gl.getAttribLocation(program, 'a_position');
-    const lifeLoc = gl.getAttribLocation(program, 'a_life');
+    const speedLoc = gl.getAttribLocation(program, 'a_speed');
     const colorLoc = gl.getAttribLocation(program, 'a_color');
+    const alphaLoc = gl.getAttribLocation(program, 'a_alpha');
 
     gl.enableVertexAttribArray(posLoc);
-    gl.vertexAttribPointer(posLoc, 2, gl.FLOAT, false, 24, 0);
-    gl.enableVertexAttribArray(lifeLoc);
-    gl.vertexAttribPointer(lifeLoc, 1, gl.FLOAT, false, 24, 8);
+    gl.vertexAttribPointer(posLoc, 2, gl.FLOAT, false, stride, 0);
+    gl.enableVertexAttribArray(speedLoc);
+    gl.vertexAttribPointer(speedLoc, 1, gl.FLOAT, false, stride, 8);
     gl.enableVertexAttribArray(colorLoc);
-    gl.vertexAttribPointer(colorLoc, 3, gl.FLOAT, false, 24, 12);
+    gl.vertexAttribPointer(colorLoc, 3, gl.FLOAT, false, stride, 12);
+    gl.enableVertexAttribArray(alphaLoc);
+    gl.vertexAttribPointer(alphaLoc, 1, gl.FLOAT, false, stride, 24);
 
     gl.enable(gl.BLEND);
-    gl.blendFunc(gl.SRC_ALPHA, gl.ONE);
+    gl.blendFunc(gl.SRC_ALPHA, gl.ONE); 
 
     const resize = () => {
       canvas.width = window.innerWidth;
@@ -89,36 +119,32 @@ const Background3D = () => {
     resize();
 
     let animationFrame: number;
+    let time = 0;
+
     const render = () => {
-      gl.clearColor(0.01, 0.03, 0.08, 1.0);
+      time += 0.01;
+      
+      // Deep Space Blue/Black background
+      gl.clearColor(0.005, 0.005, 0.02, 1.0); 
       gl.clear(gl.COLOR_BUFFER_BIT);
 
       for (let i = 0; i < particleCount; i++) {
-        // Horizontal movement
-        particles[i * 6] += (Math.random() - 0.5) * 0.001;
-        // Upward movement
-        particles[i * 6 + 1] += 0.001 * particles[i * 6 + 2];
+        const idx = i * 7;
+        const speed = particles[idx + 2];
+        
+        particles[idx + 1] += 0.002 * speed + 0.0015;
+        particles[idx] += Math.sin(time * 1.2 + i + particles[idx+1] * 2.5) * 0.0015;
 
-        // Reset if out of bounds or randomly
-        if (particles[i * 6 + 1] > 1 || Math.random() > 0.995) {
-          particles[i * 6] = (Math.random() * 2 - 1);
-          particles[i * 6 + 1] = -1.1;
-          
-          // Randomly change color to simulate spells
-          const type = Math.random();
-          if (type > 0.9) { // Blue magic
-            particles[i * 6 + 3] = 0.2; 
-            particles[i * 6 + 4] = 0.4; 
-            particles[i * 6 + 5] = 1.0;
-          } else if (type > 0.8) { // Fire magic
-            particles[i * 6 + 3] = 1.0; 
-            particles[i * 6 + 4] = 0.2; 
-            particles[i * 6 + 5] = 0.1;
-          } else { // Classic amber
-            particles[i * 6 + 3] = 0.96; 
-            particles[i * 6 + 4] = 0.65; 
-            particles[i * 6 + 5] = 0.1;
-          }
+        let alpha = 1.0;
+        if (particles[idx + 1] > 0.3) {
+            alpha = 1.0 - ((particles[idx + 1] - 0.3) * 1.1);
+        }
+        
+        // Pulsating magical flicker
+        particles[idx + 6] = Math.max(0, alpha * (0.5 + Math.sin(time * 2.0 + i) * 0.3));
+
+        if (particles[idx + 1] > 1.0 || particles[idx + 6] <= 0.0) {
+          resetParticle(i);
         }
       }
 

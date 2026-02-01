@@ -124,8 +124,9 @@ const StatPlanner = () => {
     setModal({ show: true, title, message, type: 'info' });
   };
 
-  const saveCharacter = () => {
-    const cleanName = normalizeName(charName);
+  const saveCharacter = (nameOverride?: string) => {
+    const targetName = nameOverride || charName;
+    const cleanName = normalizeName(targetName);
     if (!cleanName) return;
 
     const executeSave = () => {
@@ -155,13 +156,20 @@ const StatPlanner = () => {
 
       setSavedCharacters(updatedList);
       setActiveCharName(cleanName);
-      setCharName('');
+      if (!nameOverride) setCharName('');
       setModal({ show: false, title: '', message: '', type: 'info' });
+      showNotification("Personnage enregistré avec succès !", "success");
     };
 
     const exists = savedCharacters.some(c => c.name === cleanName);
     if (exists) {
-      showConfirm("Écraser le profil ?", `Le personnage ${cleanName} existe déjà. Voulez-vous le remplacer ?`, executeSave);
+      // If it's an explicit override (button below name) or same as active, maybe just save
+      // but to be safe we follow existing logic or just execute if it's an update.
+      if (nameOverride || cleanName === activeCharName) {
+        executeSave();
+      } else {
+        showConfirm("Écraser le profil ?", `Le personnage ${cleanName} existe déjà. Voulez-vous le remplacer ?`, executeSave);
+      }
     } else {
       executeSave();
     }
@@ -174,6 +182,7 @@ const StatPlanner = () => {
     setSeraphResists(char.seraphResists);
     setLevelPoints(char.levelPoints);
     setActiveCharName(char.name);
+    // Removed setCharName(char.name) to keep creation and update separate
     prevLevelRef.current = 1 + Math.ceil(Object.values(char.levelPoints).reduce((a, b) => a + (b || 0), 0) / POINTS_PER_LEVEL);
   };
 
@@ -265,7 +274,7 @@ const StatPlanner = () => {
         
         <div className="flex flex-col gap-4">
           <div className="w-full space-y-1">
-            <label className="text-[9px] font-black text-slate-500 uppercase tracking-widest ml-1 text-left block">Nouveau Personnage</label>
+            <label className="text-[9px] font-black text-slate-500 uppercase tracking-widest ml-1 text-left block">Nom du Personnage (Sauvegarder/Mettre à jour)</label>
             <div className="flex gap-2">
               <input 
                 type="text" 
@@ -274,7 +283,17 @@ const StatPlanner = () => {
                 onChange={(e) => setCharName(normalizeName(e.target.value))}
                 className="flex-1 bg-slate-950 border border-slate-800 rounded-xl px-4 py-2 text-sm font-bold text-amber-500 placeholder:text-slate-800 focus:outline-none focus:border-amber-500/50 transition-all"
               />
-              <button onClick={saveCharacter} disabled={!charName} className="btn-primary px-8 text-2xl">+</button>
+              <button 
+                onClick={() => {
+                  saveCharacter();
+                  setCharName(''); // Clear input after clicking +
+                }} 
+                disabled={!charName} 
+                className="btn-primary px-8 text-2xl shrink-0"
+                title="Ajouter un nouveau personnage"
+              >
+                +
+              </button>
             </div>
           </div>
 
@@ -449,7 +468,17 @@ const StatPlanner = () => {
 
         {/* MAIN (Colonne droite) */}
         <div className="lg:col-span-6 space-y-6">
-          <CharacterNameVisual name={activeCharName} />
+          <CharacterNameVisual name={activeCharName}>
+            {activeCharName && (
+              <button 
+                onClick={() => saveCharacter(activeCharName)}
+                className="w-full btn-primary py-2.5 shadow-2xl shadow-amber-500/10 flex items-center justify-center gap-3 border-amber-500/50 bg-slate-900/50 backdrop-blur-sm hover:bg-amber-500 hover:text-slate-950 transition-all group/btn"
+              >
+                <Save size={14} className="group-hover/btn:scale-110 transition-transform" />
+                <span className="text-[10px] font-black">ENREGISTRER LES MODIFICATIONS</span>
+              </button>
+            )}
+          </CharacterNameVisual>
           
           {renaissance > 0 && (
             <div className="bg-slate-900 border border-amber-500/20 rounded-3xl p-6 shadow-2xl flex items-center justify-between overflow-hidden relative">

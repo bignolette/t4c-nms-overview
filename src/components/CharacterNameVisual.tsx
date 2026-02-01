@@ -2,9 +2,10 @@ import React, { useMemo } from 'react';
 
 interface Props {
   name: string | null;
+  children?: React.ReactNode;
 }
 
-const CharacterNameVisual: React.FC<Props> = ({ name }) => {
+const CharacterNameVisual: React.FC<Props> = ({ name, children }) => {
   const displayName = name || "SÉLECTIONNEZ UN PERSONNAGE";
 
   // Générer des particules aléatoires pour l'effet de fond
@@ -48,6 +49,12 @@ const CharacterNameVisual: React.FC<Props> = ({ name }) => {
         <h1 className={`text-2xl sm:text-3xl md:text-5xl font-black italic uppercase tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-amber-200 to-amber-500 drop-shadow-[0_0_15px_rgba(245,158,11,0.5)] text-center px-4 ${!name ? 'opacity-20 grayscale' : ''}`}>
           {displayName}
         </h1>
+
+        {children && (
+          <div className="mt-4 w-full px-8 animate-fadeIn">
+            {children}
+          </div>
+        )}
 
         <div className="w-24 h-1 bg-gradient-to-r from-transparent via-amber-500 to-transparent mt-2 rounded-full opacity-50" />
       </div>
