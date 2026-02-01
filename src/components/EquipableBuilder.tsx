@@ -4,6 +4,7 @@ import { useData } from '../context/DataContext';
 import type { RecipeItem, SavedCharacter, Stats } from '../data/types';
 import { mapSourceToSlot, fastNormalize, formatStatValue } from '../data/utils';
 import { Search, Shield, Sword, Crown, Shirt, Footprints, Hand, Circle, Package, Link2, GripHorizontal, Columns2, Medal, Wind, User, Zap, Trophy, Sparkles, ChevronUp, ChevronDown } from 'lucide-react';
+import RuneIcon from './ui/RuneIcon';
 
 const StatBadge = ({ label, value, type }: { label: string, value: string | number, type: 'str' | 'end' | 'dex' | 'int' | 'wis' | 'ca' | 'secondary' }) => {
   const configs = {
@@ -27,20 +28,20 @@ const StatBadge = ({ label, value, type }: { label: string, value: string | numb
 };
 
 const SLOTS = [
-  { id: 'Tete', label: 'Tête', icon: Crown },
-  { id: 'Amulette', label: 'Amulette', icon: Medal },
-  { id: 'Bracelet', label: 'Bracelet', icon: Link2 },
-  { id: 'Anneau', label: 'Anneau', icon: Circle },
-  { id: 'Torse', label: 'Torse', icon: Shirt },
-  { id: 'Cape', label: 'Cape / Orbe', icon: Wind }, 
-  { id: 'Arme', label: 'Arme', icon: Sword },
-  { id: 'Bouclier', label: 'Bouclier / Focus', icon: Shield },
-  { id: 'Gant', label: 'Gants', icon: Hand },
-  { id: 'Ceinture', label: 'Ceinture', icon: GripHorizontal },
-  { id: 'Jambière', label: 'Jambières', icon: Columns2 }, 
-  { id: 'Botte', label: 'Bottes', icon: Footprints },
-  { id: 'Spells', label: 'Sorts', icon: Sparkles },
-  { id: 'Skills', label: 'Compétences', icon: Sword },
+  { id: 'Tete', label: 'Tête', rune: 'crown' },
+  { id: 'Amulette', label: 'Amulette', rune: 'amulet' },
+  { id: 'Bracelet', label: 'Bracelet', rune: 'bracelet' },
+  { id: 'Anneau', label: 'Anneau', rune: 'ring' },
+  { id: 'Torse', label: 'Torse', rune: 'shirt' },
+  { id: 'Cape', label: 'Cape / Orbe', rune: 'cloak' }, 
+  { id: 'Arme', label: 'Arme', rune: 'str' },
+  { id: 'Bouclier', label: 'Bouclier / Focus', rune: 'shield' },
+  { id: 'Gant', label: 'Gants', rune: 'hand' },
+  { id: 'Ceinture', label: 'Ceinture', rune: 'belt' },
+  { id: 'Jambière', label: 'Jambières', rune: 'leg' }, 
+  { id: 'Botte', label: 'Bottes', rune: 'boot' },
+  { id: 'Spells', label: 'Sorts', rune: 'wis' },
+  { id: 'Skills', label: 'Compétences', rune: 'dex' },
 ];
 
 const EquipableBuilder = () => {
@@ -234,9 +235,9 @@ const EquipableBuilder = () => {
               <div>
                 <div className="flex items-center gap-3 mb-2">
                   <div className="p-2 bg-amber-500 rounded-xl shadow-[0_0_20px_rgba(245,158,11,0.4)]">
-                    <Trophy size={20} className="text-slate-950" />
+                    <RuneIcon stat="trophy" size={20} color="#0f172a" />
                   </div>
-                  <h2 className="text-2xl font-black text-white tracking-tight uppercase italic">Roadmap de Progression</h2>
+                  <h2 className="text-2xl font-black text-white tracking-tight uppercase italic font-fantasy">Roadmap de Progression</h2>
                 </div>
                 <p className="text-slate-400 text-sm font-medium ml-12">Les prochains paliers d'équipement pour votre build {selectedSlot.label}</p>
               </div>
@@ -354,8 +355,8 @@ const EquipableBuilder = () => {
           <div className="bg-slate-900/50 border border-white/5 rounded-[2rem] p-8 backdrop-blur-sm relative text-left">
             <div className="flex items-center justify-between mb-8 relative z-10">
               <div>
-                <h2 className="text-xl font-black text-white uppercase italic tracking-tight flex items-center gap-2">
-                  <User size={20} className="text-amber-500" /> Profil Personnage
+                <h2 className="text-xl font-black text-white uppercase italic tracking-tight flex items-center gap-2 font-fantasy">
+                  <RuneIcon stat="user" size={20} color="#f59e0b" /> Profil Personnage
                 </h2>
                 <p className="text-xs text-slate-500 font-bold uppercase tracking-widest mt-1">Configurez vos attributs</p>
               </div>
@@ -364,21 +365,21 @@ const EquipableBuilder = () => {
             <div className="grid grid-cols-1 gap-4 relative z-10">
               {(['str', 'end', 'dex', 'int', 'wis'] as const).map((key) => {
                 const config = {
-                  str: { label: 'Force', icon: Sword, color: 'text-rose-500', short: 'FOR' },
-                  end: { label: 'Endurance', icon: Shield, color: 'text-orange-500', short: 'END' },
-                  dex: { label: 'Dextérité', icon: Wind, color: 'text-emerald-500', short: 'DEX' },
-                  int: { label: 'Intelligence', icon: Zap, color: 'text-sky-500', short: 'INT' },
-                  wis: { label: 'Sagesse', icon: Sparkles, color: 'text-purple-500', short: 'SAG' }
+                  str: { label: 'Force', rune: 'str', color: 'text-rose-500', colorHex: '#f43f5e' },
+                  end: { label: 'Endurance', rune: 'end', color: 'text-orange-500', colorHex: '#f97316' },
+                  dex: { label: 'Dextérité', rune: 'dex', color: 'text-emerald-500', colorHex: '#10b981' },
+                  int: { label: 'Intelligence', rune: 'int', color: 'text-sky-500', colorHex: '#0ea5e9' },
+                  wis: { label: 'Sagesse', rune: 'wis', color: 'text-purple-500', colorHex: '#a855f7' }
                 }[key];
                 
                 return (
                   <div key={key} className="flex flex-col gap-3 p-4 bg-slate-950/40 border border-white/5 rounded-2xl">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
-                        <config.icon size={14} className={config.color} />
-                        <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest">{config.label}</label>
+                        <RuneIcon stat={config.rune as any} size={14} color={config.colorHex} />
+                        <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest font-fantasy">{config.label}</label>
                       </div>
-                      <span className={`text-xl font-black ${config.color} tabular-nums`}>{stats[key]}</span>
+                      <span className={`text-xl font-black ${config.color} tabular-nums font-fantasy`}>{stats[key]}</span>
                     </div>
 
                     <div className="flex items-center justify-between bg-slate-900/50 p-1.5 rounded-xl border border-white/5 shadow-inner">
@@ -405,14 +406,14 @@ const EquipableBuilder = () => {
           </div>
 
           <div className="bg-slate-900/50 border border-white/5 rounded-[2rem] p-8 backdrop-blur-sm text-left">
-            <h2 className="text-xl font-black text-white uppercase italic tracking-tight mb-8 flex items-center gap-2">
-              <GripHorizontal size={20} className="text-amber-500" /> Emplacement
+            <h2 className="text-xl font-black text-white uppercase italic tracking-tight mb-8 flex items-center gap-2 font-fantasy">
+              <RuneIcon stat="belt" size={20} color="#f59e0b" /> Emplacement
             </h2>
             <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
               {SLOTS.map((slot) => (
                 <div key={slot.id} onClick={() => setSelectedSlot(slot)} className={`aspect-square rounded-2xl border-2 flex flex-col items-center justify-center cursor-pointer transition-all ${selectedSlot.id === slot.id ? 'border-amber-500 bg-amber-500/10' : 'border-white/5 bg-slate-950/20 hover:border-white/20'}`}>
-                  <slot.icon size={24} className={selectedSlot.id === slot.id ? 'text-amber-500' : 'text-slate-600'} />
-                  <span className={`text-[9px] mt-2 font-black uppercase tracking-tighter ${selectedSlot.id === slot.id ? 'text-amber-500' : 'text-slate-600'}`}>{slot.label}</span>
+                  <RuneIcon stat={slot.rune as any} size={24} color={selectedSlot.id === slot.id ? '#f59e0b' : '#475569'} />
+                  <span className={`text-[9px] mt-2 font-black uppercase tracking-tighter font-fantasy ${selectedSlot.id === slot.id ? 'text-amber-500' : 'text-slate-600'}`}>{slot.label}</span>
                 </div>
               ))}
             </div>
@@ -464,18 +465,18 @@ const EquipableBuilder = () => {
           <div className="absolute inset-0 bg-slate-950/90 backdrop-blur-xl" onClick={() => setShowLoadModal(false)}></div>
           <div className="bg-slate-900 border border-white/10 w-full max-w-md rounded-[2.5rem] shadow-2xl relative overflow-hidden animate-in zoom-in-95 duration-200">
             <div className="p-8 border-b border-white/5 flex justify-between items-center">
-               <h3 className="text-white text-xl font-black uppercase italic tracking-tight flex items-center gap-3">
-                 <User size={24} className="text-amber-500" /> Charger Profil
+               <h3 className="text-white text-xl font-black uppercase italic tracking-tight flex items-center gap-3 font-fantasy">
+                 <RuneIcon stat="user" size={24} color="#f59e0b" /> Charger Profil
                </h3>
-               <button onClick={() => setShowLoadModal(false)} className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-800 text-slate-400 hover:text-white transition-all active:scale-90">✕</button>
+               <button onClick={() => setShowLoadModal(false)} className="w-10 h-10 flex items-center justify-center rounded-full bg-slate-800 text-slate-400 hover:text-white transition-all active:scale-90 font-fantasy">✕</button>
             </div>
             <div className="p-8 space-y-4 max-h-[500px] overflow-y-auto custom-scrollbar">
               {savedCharacters.length === 0 ? (
                 <div className="text-center py-12 flex flex-col items-center gap-4">
                   <div className="w-16 h-16 rounded-2xl bg-slate-950 border border-white/5 flex items-center justify-center text-slate-700">
-                    <User size={32} />
+                    <RuneIcon stat="user" size={32} color="#1e293b" />
                   </div>
-                  <p className="text-slate-500 font-bold uppercase tracking-widest text-xs">Aucun personnage enregistré dans le Planner</p>
+                  <p className="text-slate-500 font-bold uppercase tracking-widest text-xs font-fantasy">Aucun personnage enregistré dans le Planner</p>
                 </div>
               ) : (
                 savedCharacters.map(char => (
@@ -485,15 +486,15 @@ const EquipableBuilder = () => {
                     className="w-full group bg-slate-950/50 hover:bg-amber-500 border border-white/5 hover:border-amber-400 p-5 rounded-2xl transition-all flex items-center justify-between"
                   >
                     <div className="flex flex-col items-start text-left">
-                      <span className="text-slate-100 group-hover:text-slate-900 font-black uppercase text-sm tracking-wider">{char.name}</span>
+                      <span className="text-slate-100 group-hover:text-slate-900 font-black uppercase text-sm tracking-wider font-fantasy">{char.name}</span>
                       <div className="flex flex-wrap gap-3 mt-2">
-                        <span className="text-[9px] text-slate-600 group-hover:text-slate-800 font-black uppercase">FOR {char.finalStats?.str || 0}</span>
-                        <span className="text-[9px] text-slate-600 group-hover:text-slate-800 font-black uppercase">DEX {char.finalStats?.dex || 0}</span>
-                        <span className="text-[9px] text-slate-600 group-hover:text-slate-800 font-black uppercase">INT {char.finalStats?.int || 0}</span>
+                        <span className="text-[9px] text-slate-600 group-hover:text-slate-800 font-black uppercase font-fantasy">FOR {char.finalStats?.str || 0}</span>
+                        <span className="text-[9px] text-slate-600 group-hover:text-slate-800 font-black uppercase font-fantasy">DEX {char.finalStats?.dex || 0}</span>
+                        <span className="text-[9px] text-slate-600 group-hover:text-slate-800 font-black uppercase font-fantasy">INT {char.finalStats?.int || 0}</span>
                       </div>
                     </div>
                     <div className="p-3 rounded-xl bg-slate-900 group-hover:bg-slate-900/20 text-amber-500 group-hover:text-slate-900 transition-colors">
-                      <User size={20} />
+                      <RuneIcon stat="user" size={20} color="currentColor" />
                     </div>
                   </button>
                 ))

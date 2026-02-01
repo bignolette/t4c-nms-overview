@@ -1,41 +1,43 @@
 # T4C NMS Overview
 
-Une application compagnon ultra-performante et moderne conçue spécifiquement pour les joueurs du serveur **T4C NMS Revolution** (The 4th Coming). Cet outil centralise, organise et sublime les données essentielles du jeu pour offrir une expérience de navigation fluide et des outils d'optimisation avancés.
+Une application compagnon ultra-performante et immersive conçue spécifiquement pour les joueurs du serveur **T4C NMS Revolution** (The 4th Coming). Cet outil centralise, organise et sublime les données essentielles du jeu pour offrir une expérience de navigation fluide et des outils d'optimisation avancés dans une ambiance "Grimoire Magique".
 
 ## 🚀 Fonctionnalités Majeures
 
+### 🧙‍♂️ Simulateur de Stats & Planner (Stat Planner)
+L'outil ultime pour sculpter votre personnage :
+*   **Gestion des Points Séraphes** : Calculez précisément vos coûts d'attributs, de puissances et de résistances magiques.
+*   **Visualisation Radar (Spider Chart)** : Visualisez instantanément la "forme" de votre build (Guerrier, Mage, Prêtre, Hybride) grâce à un graphique dynamique.
+*   **Calculs Dérivés** : Estimation en temps réel de vos PV, Mana et paliers de puissance magique.
+*   **Persistance Locale** : Vos personnages sont automatiquement sauvegardés dans votre navigateur (`localStorage`).
+
 ### 🔨 Métiers & Artisanat (Crafting)
-L'outil de craft le plus avancé pour T4C NMS :
+L'outil de craft le plus complet pour T4C NMS :
 *   **Arbre de Dépendances Interactif** : Visualisez l'intégralité de la chaîne de fabrication pour les objets complexes.
-*   **Calculateur de Ressources Brutes** : Identifiez instantanément le total cumulé des composants de base nécessaires pour fabriquer un item, en tenant compte des sous-crafts.
-*   **Localisation d'Apprentissage** : Nom des PNJ, coordonnées exactes et descriptions précises des lieux pour chaque recette.
-*   **Système de Favoris** : Enregistrez vos recettes prioritaires pour un accès rapide.
+*   **Calculateur de Ressources Brutes** : Identifiez instantanément le total cumulé des composants de base nécessaires.
+*   **Géolocalisation des Recettes** : Localisation précise des PNJ formateurs et descriptions des lieux.
 
-### 📦 Base de Données d'Objets
-Un catalogue exhaustif de tous les items du serveur :
-*   **Filtres Intelligents** : Filtrez par type (Anneau, Cape, Arme, etc.) et par niveau.
-*   **Statistiques Détaillées** : Pré-requis complets (FOR, END, DEX, INT, SAG) et bonus détaillés (CA, Puissances, Résistances).
-*   **Icônes Spécifiques** : Identification visuelle rapide grâce à un set d'icônes RPG dédié.
+### 📦 Profil Personnage & Équipement
+Planifiez votre progression d'équipement :
+*   **Roadmap de Progression** : L'application détecte automatiquement les prochains objets que vous pourrez équiper selon vos stats actuelles.
+*   **Filtrage Intelligent (BiS Mode)** : Trouvez les meilleurs objets pour une statistique donnée (Puissances, Résistances, Chance).
+*   **Bibliothèque de Sorts & Compétences** : Consultez les pré-requis et effets de l'intégralité du grimoire NMS.
 
-### 💀 Bestiaire Interactif
-Explorez la faune d'Althéa, Raven's Dust, Stoneheim et au-delà :
-*   **Tables de Butins (Drops)** : Liens directs entre les monstres et les objets qu'ils lâchent.
-*   **Données de Combat** : Points d'expérience, or, faiblesses élémentaires et résistances.
-*   **Géolocalisation** : Coordonnées précises pour chaque créature.
+## 🎨 Expérience Visuelle & UX
 
-### 🛡️ Simulateur d'Équipement (Planner)
-Un outil pour planifier votre progression :
-*   **Filtrage par Statistiques** : Entrez vos statistiques actuelles pour voir instantanément quels objets vous pouvez équiper.
-*   **Gestion des Emplacements** : Organisation par slots (Tête, Torse, Bijoux, etc.).
+L'application a été conçue pour offrir une immersion totale dans l'univers médiéval-fantastique :
+*   **Interface Glassmorphism** : Des panneaux semi-transparents avec flou d'arrière-plan laissant transparaître la magie.
+*   **Fond WebGL Dynamique** : Un système de particules simulant des flammes magiques oscillant entre le bleu spectral et l'ambre ardent.
+*   **Iconographie Runique** : Plus de 20 icônes personnalisées gravées dans un style runique avec lueurs néon.
+*   **Micro-interactions Magiques** : Jauges de progression "liquides" animées et explosions de particules lors des interactions avec les statistiques.
+*   **Typographie Fantasy** : Utilisation de la police **Cinzel** pour les titres, renforçant l'aspect parchemin ancien.
 
 ## 🛠️ Excellence Technique
 
-*   **Performance Optimisée** : Utilisation de maps d'indexation pré-calculées pour des recherches instantanées sans latence.
-*   **Recherche Linguistique** : Algorithme de recherche intelligent ignorant la casse, les accents et les articles (ex: "d'arnica" match avec "Arnica").
-*   **UI Avancée** :
-    *   **React Portals** : Infobulles garanties sans clipping, s'affichant toujours au-dessus des zones de défilement.
-    *   **WebGL Background** : Immersion visuelle avec un fond étoilé 3D interactif (Three.js).
-*   **Stack Moderne** : React 19, TypeScript, Vite, Tailwind CSS, Lucide-React, Framer Motion.
+*   **Performance Instantanée** : Maps d'indexation pré-calculées pour des recherches sans aucun temps de chargement.
+*   **Recherche Linguistique Floue** : Algorithme ignorant la casse, les accents et les articles pour une recherche naturelle.
+*   **Sauvegarde Hybride** : Export/Import de fichiers JSON pour transférer vos données ou sauvegarde automatique locale.
+*   **Stack Moderne** : React 19, TypeScript, Vite, Tailwind CSS, Framer Motion, WebGL.
 
 ## 🚀 Installation
 
@@ -59,8 +61,8 @@ Un outil pour planifier votre progression :
 
 *   **Auteur** : Bignole
 *   **Sources des données** : Les informations, quêtes et données textuelles ont été reprises et adaptées des sites **T4C Wiki NMS** et **NMS Révolution**.
-*   **Assets Visuels** : L'application utilise des assets visuels originaux du jeu (images, textures, icônes).
-*   **Propriété Intellectuelle** : T4C est une marque déposée de Dialsoft LLC. Les données du jeu et les assets originaux appartiennent à leurs auteurs respectifs.
+*   **Assets Visuels** : L'application utilise des icônes runiques originales et des assets inspirés du jeu.
+*   **Propriété Intellectuelle** : T4C est une marque déposée de Dialsoft LLC. Les données du jeu appartiennent à leurs auteurs respectifs.
 
 ---
 *Projet indépendant créé par la communauté pour la communauté. Non affilié à Dialsoft LLC.*

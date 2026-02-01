@@ -33,7 +33,7 @@ const Header = () => {
   return (
     <>
       <header className="fixed top-0 right-0 left-0 h-20 z-30 pointer-events-none flex items-start justify-end px-8 pt-6">
-        <div className="flex items-center gap-3 pointer-events-auto bg-slate-900/50 backdrop-blur-xl border border-slate-800 p-1.5 rounded-2xl shadow-2xl">
+        <div className="flex items-center gap-3 pointer-events-auto glass-card p-1.5 rounded-2xl shadow-2xl">
           <button 
             onClick={() => showConfirm(
                 "Sauvegarder les données ?", 
@@ -44,7 +44,7 @@ const Header = () => {
                 },
                 true
             )}
-            className="btn-secondary px-4 py-2 text-[10px] bg-slate-950 hover:text-amber-500"
+            className="btn-secondary px-4 py-2 text-[10px] bg-slate-900/50 hover:text-amber-500 font-fantasy"
             title="Sauvegarder"
           >
             <Download size={18} className="group-hover:scale-110 transition-transform" />
@@ -70,7 +70,7 @@ const Header = () => {
                     setTimeout(() => fileInputRef.current?.click(), 100);
                 }
             )}
-            className="btn-secondary px-4 py-2 text-[10px] bg-slate-950 hover:text-emerald-500"
+            className="btn-secondary px-4 py-2 text-[10px] bg-slate-900/50 hover:text-emerald-500 font-fantasy"
             title="Charger"
           >
             <Upload size={18} className="group-hover:scale-110 transition-transform" />
@@ -83,25 +83,25 @@ const Header = () => {
       {modal.show && (
         <div className="fixed inset-0 z-[200] flex items-center justify-center p-4">
           <div className="absolute inset-0 bg-slate-950/90 backdrop-blur-md" onClick={() => setModal(prev => ({ ...prev, show: false }))}></div>
-          <div className="bg-slate-900 border border-slate-800 w-full max-w-sm rounded-3xl shadow-2xl relative overflow-hidden animate-in zoom-in-95 duration-200 text-left">
+          <div className="glass-card w-full max-w-sm rounded-3xl relative overflow-hidden animate-in zoom-in-95 duration-200 text-left border-white/10">
             <div className={`h-2 w-full ${modal.type === 'confirm' ? 'bg-amber-500' : 'bg-emerald-500'}`} />
             <div className="p-8 text-center">
-              <div className={`w-16 h-16 rounded-2xl mx-auto mb-6 flex items-center justify-center ${modal.type === 'confirm' ? 'bg-amber-500/10 text-amber-500' : 'bg-emerald-500/10 text-emerald-500'}`}>
+              <div className={`w-16 h-16 rounded-2xl mx-auto mb-6 flex items-center justify-center ${modal.type === 'confirm' ? 'bg-amber-500/10 text-amber-500' : 'bg-emerald-500/10 text-emerald-500'} border border-white/5`}>
                 {modal.type === 'confirm' ? <HelpCircle size={32} /> : <Info size={32} />}
               </div>
-              <h3 className="text-xl font-black text-white uppercase tracking-tight mb-2">{modal.title}</h3>
+              <h3 className="text-xl font-black text-white uppercase tracking-tight mb-2 font-fantasy">{modal.title}</h3>
               <p className="text-slate-400 text-sm leading-relaxed mb-6">{modal.message}</p>
               
               {modal.isSave && (
                 <div className="mb-6 text-left">
-                  <label htmlFor="save-filename-input" className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1 mb-2 block">Nom du fichier</label>
+                  <label htmlFor="save-filename-input" className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1 mb-2 block font-fantasy">Nom du fichier</label>
                   <input 
                     id="save-filename-input"
                     name="save-filename"
                     type="text"
                     value={saveFilename}
                     onChange={(e) => setSaveFilename(e.target.value)}
-                    className="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm font-bold text-amber-500 focus:outline-none focus:border-amber-500/50 transition-all"
+                    className="w-full bg-slate-950/50 border border-white/10 rounded-xl px-4 py-3 text-sm font-bold text-amber-500 focus:outline-none focus:border-amber-500/50 transition-all backdrop-blur-sm"
                     placeholder="nom_du_fichier"
                   />
                   <span className="text-[9px] text-slate-600 mt-1 ml-1 block">.json sera ajouté automatiquement</span>
@@ -111,11 +111,11 @@ const Header = () => {
               <div className="flex gap-3">
                 {modal.type === 'confirm' ? (
                   <>
-                    <button onClick={() => setModal(prev => ({ ...prev, show: false }))} className="btn-secondary flex-1">Annuler</button>
-                    <button onClick={() => { if (modal.onConfirm) modal.onConfirm(); }} className="btn-primary flex-1">Confirmer</button>
+                    <button onClick={() => setModal(prev => ({ ...prev, show: false }))} className="btn-secondary flex-1 font-fantasy">Annuler</button>
+                    <button onClick={() => { if (modal.onConfirm) modal.onConfirm(); }} className="btn-primary flex-1 font-fantasy text-slate-950">Confirmer</button>
                   </>
                 ) : (
-                  <button onClick={() => setModal(prev => ({ ...prev, show: false }))} className="btn-secondary w-full">OK</button>
+                  <button onClick={() => setModal(prev => ({ ...prev, show: false }))} className="btn-secondary w-full font-fantasy">OK</button>
                 )}
               </div>
             </div>

@@ -1,7 +1,10 @@
 import { useState, useMemo, useEffect, useRef } from 'react';
-import { User, Zap, ChevronUp, ChevronDown, RotateCcw, Award, Heart, Sparkles, Star, Shield, Flame, Save, Trash2, HelpCircle, Info, X, BookOpen, Bell } from 'lucide-react';
+import { Zap, ChevronUp, ChevronDown, RotateCcw, Award, Heart, Sparkles, Star, Save, HelpCircle, Info, X, BookOpen, Bell } from 'lucide-react';
 import CharacterNameVisual from './CharacterNameVisual';
 import SpiderChart from './SpiderChart';
+import LiquidBar from './ui/LiquidBar';
+import RuneIcon from './ui/RuneIcon';
+import SparkButton from './ui/SparkButton';
 import { motion, AnimatePresence } from 'framer-motion';
 import { spellPowerConfig } from '../data/spell_power';
 import { useData } from '../context/DataContext';
@@ -270,7 +273,7 @@ const StatPlanner = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-transparent pointer-events-none" />
         <div className="flex items-center justify-between mb-4 relative z-10">
             <h2 className="text-xs font-black text-amber-500 uppercase tracking-widest flex items-center gap-2 font-fantasy">
-            <Save size={14}/> Mes Personnages ({savedCharacters.length}/10)
+              <RuneIcon stat="save" size={16} color="#f59e0b" /> Mes Personnages ({savedCharacters.length}/10)
             </h2>
         </div>
         
@@ -308,15 +311,17 @@ const StatPlanner = () => {
                 savedCharacters.map((char) => {
                   const isActive = activeCharName === char.name;
                   return (
-                    <div key={char.name} onClick={() => loadCharacter(char)} className={`flex items-center gap-4 px-4 py-2.5 rounded-xl border transition-all cursor-pointer shadow-sm ${isActive ? 'bg-amber-500/20 border-amber-500 shadow-[0_0_15px_rgba(245,158,11,0.25)] scale-[1.02]' : 'bg-slate-900 border-slate-800 hover:border-amber-500/50 hover:scale-[1.02]'}`}>
+                    <div key={char.name} onClick={() => loadCharacter(char)} className={`flex items-center gap-4 px-4 py-2.5 rounded-xl border transition-all cursor-pointer shadow-sm ${isActive ? 'bg-amber-500/20 border-amber-500 shadow-[0_0_15px_rgba(245,158,11,0.25)] scale-[1.02]' : 'bg-slate-900/40 border-white/5 hover:border-amber-500/50 hover:scale-[1.02]'}`}>
                       <div className="flex flex-col min-w-[80px]">
-                        <span className={`text-xs font-black uppercase leading-tight tracking-tight ${isActive ? 'text-amber-500' : 'text-slate-200'}`}>{char.name}</span>
+                        <span className={`text-xs font-black uppercase leading-tight tracking-tight font-fantasy ${isActive ? 'text-amber-500' : 'text-slate-200'}`}>{char.name}</span>
                         <span className="text-[10px] font-bold italic tracking-wider text-slate-500 mt-0.5">
                           {char.renaissance === 0 ? "Humain" : `x${char.renaissance}`}
                         </span>
                       </div>
-                      <div onClick={(e) => e.stopPropagation()} className="pl-2 border-l border-slate-800">
-                        <button onClick={() => deleteCharacter(char.name)} className="p-1.5 text-slate-600 hover:text-red-500 transition-colors"><Trash2 size={14} /></button>
+                      <div onClick={(e) => e.stopPropagation()} className="pl-2 border-l border-white/5">
+                        <button onClick={() => deleteCharacter(char.name)} className="p-1.5 text-slate-600 hover:text-red-500 transition-colors">
+                          <RuneIcon stat="trash" size={14} color="currentColor" />
+                        </button>
                       </div>
                     </div>
                   );
@@ -348,14 +353,14 @@ const StatPlanner = () => {
         
                   <button onClick={resetAll} className="btn-danger w-full"><RotateCcw size={16} /> Reset Build</button>
           {/* Attributs & Progression */}
-          <div className="glass-card rounded-2xl overflow-hidden relative">
-            <div className="absolute top-0 left-0 w-full h-1 bg-slate-800/50">
-              <div className="h-full bg-amber-500 transition-all duration-500 shadow-[0_0_10px_rgba(245,158,11,0.5)]" style={{ width: `${((totalLevelPointsSpent % POINTS_PER_LEVEL) / POINTS_PER_LEVEL) * 100}%` }} />
+          <div className="glass-card rounded-2xl overflow-hidden relative pt-1">
+            <div className="absolute top-0 left-0 w-full z-0">
+               <LiquidBar percentage={((totalLevelPointsSpent % POINTS_PER_LEVEL) / POINTS_PER_LEVEL) * 100} className="rounded-none border-none h-1.5" colorHex="#f59e0b" />
             </div>
 
-            <div className="p-4 border-b border-white/5 bg-slate-900/30 flex flex-col items-center justify-between gap-4 text-center sm:text-left sm:flex-row backdrop-blur-sm">
+            <div className="p-4 border-b border-white/5 bg-slate-900/30 flex flex-col items-center justify-between gap-4 text-center sm:text-left sm:flex-row backdrop-blur-sm relative z-10">
                <div className="flex items-center gap-2">
-                  <User className="text-amber-500" size={18} /> 
+                  <RuneIcon stat="user" size={18} color="#f59e0b" /> 
                   <h2 className="text-sm font-black text-slate-200 uppercase tracking-tight font-fantasy">Attributs de base</h2>
                </div>
                <div>
@@ -400,24 +405,26 @@ const StatPlanner = () => {
               <div className="divide-y divide-white/5">
                 {(['str', 'end', 'dex', 'int', 'wis'] as (keyof Stats)[]).map((k) => {
                   const labels: Record<string, string> = { str: 'Force', end: 'Endurance', dex: 'Dextérité', int: 'Intelligence', wis: 'Sagesse' };
-                  const shortLabels: Record<string, string> = { str: 'FOR', end: 'END', dex: 'DEX', int: 'INT', wis: 'SAG' };
-                  const colors: Record<string, string> = { str: 'text-red-400', end: 'text-orange-400', dex: 'text-emerald-400', int: 'text-blue-400', wis: 'text-purple-400' };
+                  const hexColors: Record<string, string> = { str: '#f87171', end: '#fb923c', dex: '#34d399', int: '#60a5fa', wis: '#c084fc' };
+                  const textColors: Record<string, string> = { str: 'text-red-400', end: 'text-orange-400', dex: 'text-emerald-400', int: 'text-blue-400', wis: 'text-purple-400' };
                   const curS = seraphStats[k] || 0;
                   const magicInfo = k === 'int' ? magicTiers.int : k === 'wis' ? magicTiers.wis : null;
+                  const color = hexColors[k];
 
                   return (
                       <div key={k} className="px-4 py-4 flex flex-col gap-4 hover:bg-white/[0.02] transition-colors group/stat">
                         <div className="flex items-center justify-between">
-                          <div className="flex items-center gap-3">
-                            <div className="w-8 h-8 rounded-lg bg-slate-800 flex items-center justify-center font-black text-[10px] text-slate-400 border border-slate-700 uppercase shadow-lg group-hover/stat:border-slate-500 transition-colors">
-                              {shortLabels[k]}
+                          <div className="flex items-center gap-4">
+                            <div className="w-12 h-12 rounded-xl bg-slate-900/50 flex items-center justify-center border border-white/10 shadow-lg group-hover/stat:border-white/20 transition-all relative overflow-hidden">
+                              <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent" />
+                              <RuneIcon stat={k as any} color={color} size={28} />
                             </div>
                             <div>
-                              <div className="font-black text-slate-500 text-[10px] uppercase tracking-[0.15em] leading-none mb-1">{labels[k]}</div>
+                              <div className="font-black text-slate-500 text-[10px] uppercase tracking-[0.15em] leading-none mb-1.5 font-fantasy">{labels[k]}</div>
                               <div className="flex items-center gap-2">
-                                  <div className={`text-xl font-black ${colors[k]} drop-shadow-lg tracking-tighter`}>{finalStats[k]}</div>
+                                  <div className={`text-2xl font-black ${textColors[k]} drop-shadow-md tracking-tighter font-fantasy`}>{finalStats[k]}</div>
                                   {magicInfo && (
-                                      <div className="flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-amber-500/10 border border-amber-500/20 shadow-sm" title={`Rang ${magicInfo.rank}`}>
+                                      <div className="flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-amber-500/10 border border-amber-500/20 shadow-sm backdrop-blur-sm" title={`Rang ${magicInfo.rank}`}>
                                           <Sparkles size={10} className="text-amber-400" />
                                           <span className="text-[9px] font-black text-amber-200 uppercase whitespace-nowrap">R{magicInfo.rank}</span>
                                       </div>
@@ -434,31 +441,31 @@ const StatPlanner = () => {
                         </div>
                         
                         <div className="flex flex-col gap-3">
-                          <div className="flex items-center justify-between bg-slate-950 p-1.5 rounded-xl border border-slate-800 shadow-xl w-full">
+                          <div className="flex items-center justify-between bg-slate-950/40 p-1.5 rounded-xl border border-white/5 shadow-inner w-full backdrop-blur-sm">
                              <div className="flex gap-1">
-                               <button onClick={() => updateLevelStat(k, -100)} className="w-8 h-7 text-[9px] font-black rounded-md bg-slate-900 border border-slate-800 text-slate-500 hover:text-white transition-all">-100</button>
-                               <button onClick={() => updateLevelStat(k, -10)} className="w-8 h-7 text-[9px] font-black rounded-md bg-slate-900 border border-slate-800 text-slate-500 hover:text-white transition-all">-10</button>
+                               <button onClick={() => updateLevelStat(k, -100)} className="w-8 h-8 text-[9px] font-black rounded-lg bg-slate-900/50 border border-white/5 text-slate-500 hover:text-white hover:bg-white/10 transition-all">-100</button>
+                               <button onClick={() => updateLevelStat(k, -10)} className="w-8 h-8 text-[9px] font-black rounded-lg bg-slate-900/50 border border-white/5 text-slate-500 hover:text-white hover:bg-white/10 transition-all">-10</button>
                              </div>
                              
                              <div className="flex items-center gap-2">
-                               <button onClick={() => updateLevelStat(k, -1)} className="w-7 h-7 flex items-center justify-center rounded-md bg-slate-800 text-slate-400 hover:text-white transition-all shadow-sm" disabled={(levelPoints[k] || 0) <= 0}><ChevronDown size={14}/></button>
-                               <span className="w-10 text-center text-lg font-black text-white tabular-nums">{levelPoints[k] || 0}</span>
-                               <button onClick={() => updateLevelStat(k, 1)} className="w-7 h-7 flex items-center justify-center rounded-md bg-slate-800 text-slate-400 hover:text-white transition-all shadow-sm"><ChevronUp size={14}/></button>
+                               <button onClick={() => updateLevelStat(k, -1)} className="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-800/50 text-slate-400 hover:text-white transition-all shadow-sm" disabled={(levelPoints[k] || 0) <= 0}><ChevronDown size={14}/></button>
+                               <span className="w-12 text-center text-lg font-black text-white tabular-nums font-fantasy">{levelPoints[k] || 0}</span>
+                               <SparkButton onClick={() => updateLevelStat(k, 1)} color={color} className="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-800/50 text-slate-400 hover:text-white hover:bg-white/10 transition-all shadow-sm border border-white/5"><ChevronUp size={14}/></SparkButton>
                              </div>
 
                              <div className="flex gap-1">
-                               <button onClick={() => updateLevelStat(k, 10)} className="w-8 h-7 text-[9px] font-black rounded-md bg-slate-900 border border-slate-800 text-slate-500 hover:text-white transition-all">+10</button>
-                               <button onClick={() => updateLevelStat(k, 100)} className="w-8 h-7 text-[9px] font-black rounded-md bg-slate-900 border border-slate-800 text-slate-500 hover:text-white transition-all">+100</button>
+                               <SparkButton onClick={() => updateLevelStat(k, 10)} color={color} className="w-8 h-8 text-[9px] font-black rounded-lg bg-slate-900/50 border border-white/5 text-slate-500 hover:text-white hover:bg-white/10 transition-all">+10</SparkButton>
+                               <SparkButton onClick={() => updateLevelStat(k, 100)} color={color} className="w-8 h-8 text-[9px] font-black rounded-lg bg-slate-900/50 border border-white/5 text-slate-500 hover:text-white hover:bg-white/10 transition-all">+100</SparkButton>
                              </div>
                           </div>
                           
                           {renaissance > 0 && (
-                            <div className="flex items-center justify-between bg-slate-950 p-1.5 rounded-xl border border-amber-500/20 shadow-xl w-full">
-                               <span className="text-[8px] font-black text-amber-600 uppercase tracking-widest ml-2">PTS RN</span>
+                            <div className="flex items-center justify-between bg-slate-950/40 p-1.5 rounded-xl border border-amber-500/20 shadow-inner w-full backdrop-blur-sm">
+                               <span className="text-[8px] font-black text-amber-600 uppercase tracking-widest ml-2 font-fantasy">PTS RN</span>
                                <div className="flex items-center gap-2">
-                                 <button onClick={() => updateSeraphStat('stat', k, -1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-amber-500 transition-all shadow-sm disabled:opacity-20" disabled={curS <= 0}>-</button>
-                                 <span className="w-8 text-center text-md font-black text-amber-500 tabular-nums">{getCumulativeCost(curS)}</span>
-                                 <button onClick={() => updateSeraphStat('stat', k, 1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-amber-500 transition-all shadow-sm disabled:opacity-20" disabled={remainingSeraphPoints < (curS + 1)}>+</button>
+                                 <button onClick={() => updateSeraphStat('stat', k, -1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800/50 text-slate-400 hover:text-amber-500 transition-all shadow-sm disabled:opacity-20" disabled={curS <= 0}>-</button>
+                                 <span className="w-8 text-center text-md font-black text-amber-500 tabular-nums font-fantasy">{getCumulativeCost(curS)}</span>
+                                 <SparkButton onClick={() => updateSeraphStat('stat', k, 1)} color="#f59e0b" className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800/50 text-slate-400 hover:text-amber-500 hover:bg-amber-500/10 transition-all shadow-sm disabled:opacity-20" disabled={remainingSeraphPoints < (curS + 1)}>+</SparkButton>
                                </div>
                             </div>
                           )}
@@ -486,21 +493,23 @@ const StatPlanner = () => {
           </CharacterNameVisual>
           
           {renaissance > 0 && (
-            <div className="bg-slate-900 border border-amber-500/20 rounded-3xl p-6 shadow-2xl flex items-center justify-between overflow-hidden relative">
-              <div className="flex items-center gap-6 relative z-10">
-                 <div className="flex items-center gap-3 text-amber-500"><Star size={24} fill="currentColor" className="drop-shadow-[0_0_10px_rgba(245,158,11,0.5)]" /><h2 className="text-xs font-black uppercase tracking-[0.3em]">Points Séraphe</h2></div>
-                 <div className="w-64 h-2 bg-slate-800 rounded-full overflow-hidden border border-slate-700/50"><div className="h-full bg-gradient-to-r from-amber-600 to-amber-400 transition-all duration-700 shadow-[0_0_15px_rgba(245,158,11,0.4)]" style={{ width: `${Math.min(100, (spentSeraphPoints / totalSeraphPoints) * 100)}%` }} /></div>
+            <div className="glass-card rounded-3xl p-6 flex items-center justify-between overflow-hidden relative">
+              <div className="flex items-center gap-6 relative z-10 w-full mr-8">
+                 <div className="flex items-center gap-3 text-amber-500 shrink-0"><Star size={24} fill="currentColor" className="drop-shadow-[0_0_10px_rgba(245,158,11,0.5)]" /><h2 className="text-xs font-black uppercase tracking-[0.3em] font-fantasy">Points Séraphe</h2></div>
+                 <div className="flex-1">
+                    <LiquidBar percentage={(spentSeraphPoints / totalSeraphPoints) * 100} colorHex="#d97706" className="h-4" />
+                 </div>
               </div>
-              <div className="text-3xl font-black text-amber-500 relative z-10">{remainingSeraphPoints} <span className="text-slate-600 text-sm font-bold">/ {totalSeraphPoints}</span></div>
+              <div className="text-3xl font-black text-amber-500 relative z-10 font-fantasy whitespace-nowrap">{remainingSeraphPoints} <span className="text-slate-500 text-sm font-bold">/ {totalSeraphPoints}</span></div>
               <Star className="absolute -right-4 -bottom-4 text-amber-500/5 rotate-12" size={120} />
             </div>
           )}
 
           <div className="grid grid-cols-1 gap-6">
-             <div className="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden shadow-2xl">
-                <div className="p-5 border-b border-slate-800 bg-emerald-500/5 flex items-center gap-3">
-                   <Flame className="text-emerald-500" size={22} />
-                   <h2 className="text-sm font-black text-slate-100 uppercase tracking-widest">Puissances Magiques</h2>
+             <div className="glass-card rounded-3xl overflow-hidden relative">
+                <div className="p-5 border-b border-white/5 bg-emerald-500/5 flex items-center gap-3">
+                   <RuneIcon stat="magic" size={22} color="#10b981" />
+                   <h2 className="text-sm font-black text-slate-100 uppercase tracking-widest font-fantasy">Puissances Magiques</h2>
                 </div>
                 <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
                    {SERAPH_ELEMENTS.map(el => {
@@ -524,10 +533,10 @@ const StatPlanner = () => {
                    })}
                 </div>
              </div>
-             <div className="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden shadow-2xl">
-                <div className="p-5 border-b border-slate-800 bg-blue-500/5 flex items-center gap-3">
-                   <Shield className="text-blue-500" size={22} />
-                   <h2 className="text-sm font-black text-slate-100 uppercase tracking-widest">Résistances Magiques</h2>
+             <div className="glass-card rounded-3xl overflow-hidden relative">
+                <div className="p-5 border-b border-white/5 bg-blue-500/5 flex items-center gap-3">
+                   <RuneIcon stat="shield" size={22} color="#3b82f6" />
+                   <h2 className="text-sm font-black text-slate-100 uppercase tracking-widest font-fantasy">Résistances Magiques</h2>
                 </div>
                 <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
                    {SERAPH_ELEMENTS.map(el => {
