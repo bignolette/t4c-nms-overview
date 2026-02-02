@@ -82,7 +82,7 @@ const CoordsOverlay = memo(({ gx, gy, worldId, px, py }: { gx: number, gy: numbe
 ));
 
 const MapViewer: React.FC = () => {
-  const { bestiaryData, recipesData, itemsData } = useData();
+  const { bestiaryData, recipesData, itemsData, plantsData, treesData, depositsData } = useData();
   const [searchParams, setSearchParams] = useSearchParams();
   
   const targetName = searchParams.get('name');
@@ -103,12 +103,11 @@ const MapViewer: React.FC = () => {
     const categories: Record<string, Record<string, MarkerData[]>> = {
       'Monstres': {},
       'PNJs': {},
+      'Plantes': {},
+      'Arbres': {},
+      'Gisements': {},
       'Divers': {}
     };
-
-    const monsterNames = new Set(bestiaryData.map(m => fastNormalize(m.name)));
-    const teacherNames = new Set();
-    [...recipesData, ...itemsData].forEach(r => { if (r.learnedFrom) teacherNames.add(fastNormalize(r.learnedFrom)); });
 
     // 1. Monstres
     bestiaryData.forEach(m => {
@@ -120,7 +119,7 @@ const MapViewer: React.FC = () => {
       }
     });
 
-    // 2. PNJs
+    // 2. PNJs (Teachers)
     const processTeachers = (list: any[]) => {
       list.forEach(r => {
         if (r.learnedFrom && r.coordinates) {
@@ -135,33 +134,49 @@ const MapViewer: React.FC = () => {
     processTeachers(recipesData);
     processTeachers(itemsData);
 
-    // 3. Divers
+    // 3. Plants, Trees, Deposits
+    const processItems = (list: any[], cat: string) => {
+        list.forEach(item => {
+            if (item.coordinates) {
+                const coordsList = Array.isArray(item.coordinates) ? item.coordinates : [item.coordinates];
+                categories[cat][item.name] = coordsList.map(c => {
+                    const [gx, gy, w] = c.split('.').map(Number);
+                    return { gx, gy, world: w, label: item.name, category: cat };
+                }).filter(m => !isNaN(m.world));
+            }
+        });
+    };
+    processItems(plantsData, 'Plantes');
+    processItems(treesData, 'Arbres');
+    processItems(depositsData, 'Gisements');
+
+    // 4. Divers (Remaining with coordinates)
     recipesData.forEach(r => {
         if (r.sources) {
             r.sources.forEach((s: any) => {
-                const normSource = fastNormalize(s.typeSource);
-                if (monsterNames.has(normSource) || teacherNames.has(normSource)) return;
-
                 s.locations.forEach((loc: any) => {
                     if (loc.coordinates) {
                         const parts = loc.coordinates.split('.');
                         if (parts.length === 3) {
                             const [gx, gy, w] = parts.map(Number);
                             if (!isNaN(w)) {
-                                if (!categories['Divers'][loc.label]) categories['Divers'][loc.label] = [];
-                                if (!categories['Divers'][loc.label].some(m => m.gx === gx && m.gy === gy && m.world === w)) {
-                                    categories['Divers'][loc.label].push({ gx, gy, world: w, label: loc.label, category: 'Divers' });
+                                // Only if not already categorized
+                                if (!categories['Plantes'][loc.label] && !categories['Arbres'][loc.label] && !categories['Gisements'][loc.label] && !categories['Monstres'][loc.label] && !categories['PNJs'][loc.label]) {
+                                    if (!categories['Divers'][loc.label]) categories['Divers'][loc.label] = [];
+                                    if (!categories['Divers'][loc.label].some(m => m.gx === gx && m.gy === gy && m.world === w)) {
+                                        categories['Divers'][loc.label].push({ gx, gy, world: w, label: loc.label, category: 'Divers' });
+                                    }
                                 }
                             }
                         }
                     }
                 });
-            });
+            }
         }
     });
 
     return categories;
-  }, [bestiaryData, recipesData, itemsData]);
+  }, [bestiaryData, recipesData, itemsData, plantsData, treesData, depositsData]);
 
   // Filtered layers based on search
   const filteredDataLayers = useMemo(() => {
@@ -301,7 +316,9 @@ const MapViewer: React.FC = () => {
     switch (cat) {
       case 'Monstres': return 'text-rose-500';
       case 'PNJs': return 'text-blue-500';
-      case 'Divers': return 'text-emerald-500';
+      case 'Plantes': return 'text-emerald-500';
+      case 'Arbres': return 'text-amber-800';
+      case 'Gisements': return 'text-amber-500';
       default: return 'text-slate-400';
     }
   };
@@ -386,7 +403,7 @@ const MapViewer: React.FC = () => {
               <p className="text-slate-400 font-black uppercase tracking-widest animate-pulse text-xs">Initialisation...</p>
             </div>
           )}
-          <TransformWrapper initialScale={0.1} minScale={0.01} maxScale={4} doubleClick={{ disabled: true }} limitToBounds={false} centerZoomedOut={true} ref={transformWrapperRef}>
+          <TransformWrapper initialScale={0.1} minScale={0.01} maxScale={4} doubleClick={{ disabled: true }} limitToBounds={false} centerZoomedOut={true} ref={transformWrapperRef}> 
             {(instance) => (
               <>
                 <div className="absolute top-4 right-4 z-20 flex flex-col gap-2">
