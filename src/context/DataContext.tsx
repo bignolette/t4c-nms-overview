@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, useMemo } from 'react';
-import type { Monster, RecipeItem, PageContent, SavedCharacter, Stats, SeraphElement, CraftingProject, Spell, Skill } from '../data/types';
+import type { Monster, RecipeItem, PageContent, SavedCharacter, Stats, SeraphElement, CraftingProject, Spell, Skill, NPC } from '../data/types';
 import { fastNormalize } from '../data/utils';
 
 // Helper to migrate old save format (with accents/French keys) to technical format
@@ -41,11 +41,13 @@ interface DataContextType {
     depositsData: RecipeItem[];
     bestiaryData: Monster[];
     recipesData: RecipeItem[];
+    npcsData: NPC[];
     spellsData: Spell[];
     skillsData: Skill[];
     wikiData: PageContent[];
     ingredientProfessionMap: Record<string, Set<string>>;
     itemMonsterMap: Record<string, Monster[]>;
+    npcRecipesMap: Record<string, RecipeItem[]>;
     itemUsageMap: Record<string, RecipeItem[]>;
     spellMap: Record<string, Spell>;
     spellPrerequisiteMap: Record<string, Spell[]>;
@@ -75,6 +77,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         deposits: RecipeItem[];
         bestiary: Monster[];
         recipes: RecipeItem[];
+        npcs: NPC[];
         spells: Spell[];
         skills: Skill[];
     }>({ 
@@ -84,6 +87,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         deposits: [], 
         bestiary: [], 
         recipes: [], 
+        npcs: [],
         spells: [], 
         skills: [] 
     });
@@ -138,18 +142,19 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         const loadData = async () => {
             try {
                 const baseUrl = import.meta.env.BASE_URL || '/';
-                const [items, plants, trees, deposits, bestiary, recipes, spells, skills] = await Promise.all([
+                const [items, plants, trees, deposits, bestiary, recipes, npcs, spells, skills] = await Promise.all([
                     fetch(`${baseUrl}data/items.json`).then(res => res.json()),
                     fetch(`${baseUrl}data/plants.json`).then(res => res.json()),
                     fetch(`${baseUrl}data/trees.json`).then(res => res.json()),
                     fetch(`${baseUrl}data/deposits.json`).then(res => res.json()),
                     fetch(`${baseUrl}data/bestiary.json`).then(res => res.json()),
                     fetch(`${baseUrl}data/recipes.json`).then(res => res.json()),
+                    fetch(`${baseUrl}data/npcs.json`).then(res => res.json()),
                     fetch(`${baseUrl}data/spells.json`).then(res => res.json()),
                     fetch(`${baseUrl}data/skills.json`).then(res => res.json()),
                 ]);
 
-                setData({ items, plants, trees, deposits, bestiary, recipes, spells, skills });
+                setData({ items, plants, trees, deposits, bestiary, recipes, npcs, spells, skills });
                 setLoading(false);
             } catch (err) {
                 console.error("Failed to load data:", err);
@@ -219,9 +224,22 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
         const ingredientProfessionMap: Record<string, Set<string>> = {};
         const itemMonsterMap: Record<string, Monster[]> = {};
+        const npcRecipesMap: Record<string, RecipeItem[]> = {};
         const itemUsageMap: Record<string, RecipeItem[]> = {};
         const spellMap: Record<string, Spell> = {};
         const spellPrerequisiteMap: Record<string, Spell[]> = {};
+
+        // Index NPCs by recipes they teach
+        data.recipes.forEach(recipe => {
+            if (recipe.learnedFrom) {
+                const normL = fastNormalize(recipe.learnedFrom);
+                const officialNpc = data.npcs.find(n => fastNormalize(n.name) === normL);
+                const npcKey = officialNpc ? fastNormalize(officialNpc.name) : normL;
+                
+                if (!npcRecipesMap[npcKey]) npcRecipesMap[npcKey] = [];
+                npcRecipesMap[npcKey].push(recipe);
+            }
+        });
 
         // Index Spells
         data.spells.forEach(spell => {
@@ -281,6 +299,13 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
                 monsters: data.bestiary
             },
             {
+                id: 'npcs',
+                title: 'PNJs',
+                category: 'npc',
+                description: "Liste des personnages non-joueurs d'Althéa.",
+                npcs: data.npcs
+            },
+            {
                 id: 'metiers',
                 title: 'Artisanat',
                 category: 'profession',
@@ -310,7 +335,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
             }
         ];
 
-        return { ingredientProfessionMap, itemMonsterMap, itemUsageMap, spellMap, spellPrerequisiteMap, wikiData };
+        return { ingredientProfessionMap, itemMonsterMap, npcRecipesMap, itemUsageMap, spellMap, spellPrerequisiteMap, wikiData };
     }, [data, loading]);
 
     const value = {
@@ -320,6 +345,8 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         depositsData: data.deposits,
         bestiaryData: data.bestiary,
         recipesData: data.recipes,
+        npcsData: data.npcs,
+        npcRecipesMap: maps.npcRecipesMap,
         spellsData: data.spells,
         skillsData: data.skills,
         ingredientProfessionMap: maps.ingredientProfessionMap,

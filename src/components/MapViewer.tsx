@@ -63,7 +63,7 @@ const CoordsOverlay = memo(({ gx, gy, worldId, isFullscreen }: { gx: number, gy:
 ));
 
 const MapViewer: React.FC = () => {
-  const { bestiaryData, recipesData, itemsData, plantsData, treesData, depositsData, showNotification } = useData();
+  const { bestiaryData, recipesData, itemsData, plantsData, treesData, depositsData, npcsData, showNotification } = useData();
   const [searchParams, setSearchParams] = useSearchParams();
   const targetName = searchParams.get('name');
 
@@ -80,6 +80,7 @@ const MapViewer: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapViewportRef = useRef<HTMLDivElement>(null);
   const transformWrapperRef = useRef<any>(null);
+  const initialCenteringDone = useRef(false);
   const [coords, setCoords] = useState({ x: 0, y: 0, gx: 0, gy: 0 });
 
   const fitToView = (instance: any) => {
@@ -118,7 +119,7 @@ const MapViewer: React.FC = () => {
 
     const timer = setTimeout(() => {
       if (transformWrapperRef.current) {
-        if (visibleMarkers.length > 0 && isFullscreen) {
+        if (visibleMarkers.length > 0) {
            centerOnPoint(transformWrapperRef.current, visibleMarkers[0].gx, visibleMarkers[0].gy);
         } else {
            fitToView(transformWrapperRef.current);
@@ -130,7 +131,7 @@ const MapViewer: React.FC = () => {
       document.body.style.overflow = '';
       clearTimeout(timer);
     };
-  }, [isFullscreen, selectedMap.id]);
+  }, [isFullscreen]);
 
   useEffect(() => {
     const handleResize = () => {
@@ -154,19 +155,19 @@ const MapViewer: React.FC = () => {
         }).filter((marker: MarkerData) => !isNaN(marker.world));
       }
     });
-    const processTeachers = (list: any[]) => {
-      list.forEach(r => {
-        if (r.learnedFrom && r.coordinates) {
-          const [gx, gy, w] = r.coordinates.split('.').map(Number);
-          if (!categories['PNJs'][r.learnedFrom]) categories['PNJs'][r.learnedFrom] = [];
-          if (!categories['PNJs'][r.learnedFrom].some(m => m.gx === gx && m.gy === gy && m.world === w)) {
-            categories['PNJs'][r.learnedFrom].push({ gx, gy, world: w, label: r.learnedFrom, category: 'PNJs' });
-          }
-        }
-      });
-    };
-    processTeachers(recipesData);
-    processTeachers(itemsData);
+    
+    // Process full NPC data
+    npcsData.forEach(npc => {
+      if (npc.coordinates && npc.coordinates.length > 0) {
+        const coordsList = Array.isArray(npc.coordinates) ? npc.coordinates : [npc.coordinates];
+        categories['PNJs'][npc.name] = coordsList.map(coord => {
+          // Handle both . and , as separators
+          const [gx, gy, w] = coord.replace(/,/g, '.').split('.').map(Number);
+          return { gx, gy, world: w, label: npc.name, category: 'PNJs' };
+        }).filter((marker: MarkerData) => !isNaN(marker.world));
+      }
+    });
+
     const processItems = (list: RecipeItem[], cat: string) => {
         list.forEach(item => {
             if (item.coordinates) {
@@ -202,6 +203,23 @@ const MapViewer: React.FC = () => {
 
   const toggleFullscreen = () => {
     setIsFullscreen(!isFullscreen);
+  };
+
+  const handleReset = () => {
+    setActiveLayers(new Set());
+    setSearchQuery('');
+    setSearchParams({});
+    
+    if (selectedMap.id !== MAPS[0].id) {
+      setSelectedMap(MAPS[0]);
+      setIsLoading(true);
+    }
+    
+    setExpandedCategories(new Set(['Monstres']));
+    if (transformWrapperRef.current) {
+      setTimeout(() => fitToView(transformWrapperRef.current), 100);
+    }
+    showNotification('Cartographie réinitialisée', 'success');
   };
 
   const toggleLayer = (cat: string, name: string) => {
@@ -267,6 +285,27 @@ const MapViewer: React.FC = () => {
     }
   };
 
+  useEffect(() => {
+    if (targetName && dataLayers) {
+      const normalizedTarget = fastNormalize(targetName);
+      for (const cat of Object.keys(dataLayers)) {
+        const key = Object.keys(dataLayers[cat]).find(k => fastNormalize(k) === normalizedTarget);
+        if (key) {
+          const firstMarker = dataLayers[cat][key][0];
+          if (firstMarker && firstMarker.world !== selectedMap.worldId) {
+            const targetMap = MAPS.find(m => m.worldId === firstMarker.world);
+            if (targetMap) {
+              setSelectedMap(targetMap);
+              setIsLoading(true);
+              initialCenteringDone.current = false;
+            }
+          }
+          break;
+        }
+      }
+    }
+  }, [targetName, dataLayers]);
+
   return (
     <div 
       ref={containerRef}
@@ -320,21 +359,18 @@ const MapViewer: React.FC = () => {
       </div>
 
       <div className="flex flex-1 gap-2 md:gap-4 min-h-0 relative">
-        <div className={`fixed inset-y-0 left-0 z-[10100] w-72 bg-slate-900 border-r border-slate-800 shadow-2xl transform transition-transform duration-300 lg:relative lg:translate-x-0 lg:z-0 lg:bg-slate-900/50 lg:border lg:rounded-2xl ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+        <div className={`fixed inset-y-0 left-0 z-[10100] w-72 bg-slate-900 border-r border-slate-800 shadow-2xl transform transition-transform duration-300 ${isFullscreen ? '' : 'lg:relative lg:translate-x-0 lg:z-0 lg:bg-slate-900/50 lg:border lg:rounded-2xl'} ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
           <div className="flex flex-col h-full overflow-hidden">
             <div className="p-4 border-b border-slate-800 bg-slate-800/20 flex items-center justify-between gap-3">
               <div className="flex items-center gap-3"><Layers size={18} className="text-amber-500" /><h3 className="text-xs font-black uppercase tracking-widest text-slate-200">Filtres</h3></div>
               <div className="flex items-center gap-1">
-                {(activeLayers.size > 0 || targetName || searchQuery) && (
-                  <button 
-                    onClick={() => { setActiveLayers(new Set()); setSearchParams({}); setSearchQuery(''); }}
-                    className="p-1.5 hover:bg-rose-500/20 text-slate-500 hover:text-rose-500 rounded-lg transition-all" 
-                    title="Réinitialiser"
-                  >
-                    <RotateCcw size={14} />
-                  </button>
-                )}
-                <button onClick={() => setIsSidebarOpen(false)} className="lg:hidden p-1.5 text-slate-500 hover:text-white transition-all"><X size={20} /></button>
+                <button 
+                  onClick={handleReset}
+                  className="p-2 hover:bg-rose-500/20 text-slate-500 hover:text-rose-500 rounded-lg transition-all" 
+                  title="Réinitialiser tout"
+                >
+                  <RotateCcw size={18} />
+                </button>
               </div>
             </div>
             <div className="px-3 pt-3 pb-1">
@@ -392,7 +428,7 @@ const MapViewer: React.FC = () => {
           </div>
         </div>
 
-        {isSidebarOpen && <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[10050] lg:hidden" onClick={() => setIsSidebarOpen(false)} />}
+        {(isSidebarOpen || (isFullscreen && isSidebarOpen)) && <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[10050]" onClick={() => setIsSidebarOpen(false)} />}
 
         <div ref={mapViewportRef} className="relative flex-1 bg-slate-950 rounded-xl md:rounded-2xl border border-slate-800 overflow-hidden select-none group shadow-inner">
           {isLoading && (
@@ -410,12 +446,37 @@ const MapViewer: React.FC = () => {
                   <button onClick={() => instance.zoomOut()} className="p-2 md:p-3 bg-slate-900/90 backdrop-blur-md border border-slate-700 rounded-lg md:rounded-xl text-slate-300 hover:text-amber-500 transition-all shadow-2xl"><ZoomOut size={16} className="md:w-5 md:h-5" /></button>
                   <button onClick={() => fitToView(instance)} className="p-2 md:p-3 bg-slate-900/90 backdrop-blur-md border border-slate-700 rounded-lg md:rounded-xl text-slate-300 hover:text-amber-500 transition-all shadow-2xl" title="Recadrer"><Maximize size={16} className="md:w-5 md:h-5" /></button>
                 </div>
+
+                {isFullscreen && (
+                  <button 
+                    onClick={() => setIsSidebarOpen(true)}
+                    className="absolute top-2 left-2 md:top-4 md:left-4 z-20 p-2 md:p-3 bg-amber-500/90 backdrop-blur-md border border-amber-400 rounded-lg md:rounded-xl text-slate-950 hover:bg-amber-400 transition-all shadow-2xl flex items-center gap-2"
+                  >
+                    <Menu size={16} className="md:w-5 md:h-5" />
+                    <span className="text-[10px] md:text-xs font-black uppercase tracking-wider">Filtres</span>
+                  </button>
+                )}
                 <TransformComponent wrapperStyle={{ width: "100%", height: "100%" }}>
                   <div onMouseMove={handleMouseMove} className="relative cursor-crosshair">
-                    <img ref={imgRef} src={selectedMap.path} alt={selectedMap.name} className="max-w-none" onLoad={() => { setIsLoading(false); setTimeout(() => {
-                      if (visibleMarkers.length > 0) centerOnPoint(instance, visibleMarkers[0].gx, visibleMarkers[0].gy);
-                      else fitToView(instance);
-                    }, 150); }} draggable={false} />
+                    <img 
+                      ref={imgRef} 
+                      src={selectedMap.path} 
+                      alt={selectedMap.name} 
+                      className="max-w-none" 
+                      onLoad={() => { 
+                        setIsLoading(false); 
+                        setTimeout(() => {
+                          if (transformWrapperRef.current) {
+                            if (visibleMarkers.length > 0) {
+                              centerOnPoint(transformWrapperRef.current, visibleMarkers[0].gx, visibleMarkers[0].gy);
+                            } else {
+                              fitToView(transformWrapperRef.current);
+                            }
+                          }
+                        }, 100); 
+                      }} 
+                      draggable={false} 
+                    />
                     {visibleMarkers.map((marker, i) => <MapMarker key={`${marker.category}-${marker.label}-${i}`} x={marker.gx * 2} y={marker.gy} label={marker.label} color={getCategoryColor(marker.category)} />)}
                   </div>
                 </TransformComponent>

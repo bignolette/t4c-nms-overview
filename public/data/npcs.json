@@ -1,0 +1,2006 @@
+[
+  {
+    "name": "Adriana",
+    "locationPrecision": "Silversky, dans la salle d'entrainement",
+    "zone": "Raven's Dust",
+    "coordinates": "1585.2528.0"
+  },
+  {
+    "name": "Albertin",
+    "locationPrecision": "Dans un champ au Sud est de Windhowl",
+    "zone": "Raven's Dust",
+    "coordinates": ""
+  },
+  {
+    "name": "Alice",
+    "locationPrecision": "Auberge de Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1625,2644,0"
+  },
+  {
+    "name": "Aloysius Starbolt",
+    "locationPrecision": "Chateau de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1483,2355,0"
+  },
+  {
+    "name": "Alpan Hauramisk",
+    "locationPrecision": "Maison au Nord de l'armurerie",
+    "zone": "Arakas",
+    "coordinates": ""
+  },
+  {
+    "name": "Alphonse",
+    "locationPrecision": "Maison au Nord de l'armurerie",
+    "zone": "Arakas",
+    "coordinates": ""
+  },
+  {
+    "name": "Amandra",
+    "locationPrecision": "Salle d'entrainement de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1584.2518.0"
+  },
+  {
+    "name": "Amelia",
+    "locationPrecision": "LightHaven",
+    "zone": "Add-on 1.25",
+    "coordinates": "2953.1093.0"
+  },
+  {
+    "name": "Amnet",
+    "locationPrecision": "Niève",
+    "zone": "Niève",
+    "coordinates": ""
+  },
+  {
+    "name": "Annabelle",
+    "locationPrecision": "Chateau d'Orkanis au Nord Ouest d'Arakas (prs du troll)",
+    "zone": "Arakas",
+    "coordinates": "1551.205.0"
+  },
+  {
+    "name": "Annithae Teardrop",
+    "locationPrecision": "Maison du Joalier de StoneCrest",
+    "zone": "StoneHeim",
+    "coordinates": "300.830.0"
+  },
+  {
+    "name": "Anrak",
+    "locationPrecision": "Sous-sol d'une maison au Nord-Est du lac des tarentules",
+    "zone": "Raven's Dust",
+    "coordinates": "1270.1621.0"
+  },
+  {
+    "name": "Antonian l'hermite",
+    "locationPrecision": "AR ouest du camps gob",
+    "zone": "Add-on 1.25",
+    "coordinates": "2372.733.0"
+  },
+  {
+    "name": "Aquinos Scholar",
+    "locationPrecision": "",
+    "zone": "Add-on 1.25",
+    "coordinates": "1557.2405.0"
+  },
+  {
+    "name": "Arakis Haz",
+    "locationPrecision": "Maison au sud est de Windhowl",
+    "zone": "Arakas",
+    "coordinates": ""
+  },
+  {
+    "name": "Araknor",
+    "locationPrecision": "Derriere le temple de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2981.1035.0"
+  },
+  {
+    "name": "Archibald Spielengnaffron",
+    "locationPrecision": "Nord de Raven's Dust devant la cave de l'Aveugle",
+    "zone": "StoneHeim",
+    "coordinates": "829.1447.0"
+  },
+  {
+    "name": "Arganor Iargh",
+    "locationPrecision": "Windhowl, dans la salle d'entrainement",
+    "zone": "Arakas",
+    "coordinates": "1689.1232.0"
+  },
+  {
+    "name": "Asarr",
+    "locationPrecision": "Ville des voleurs",
+    "zone": "Arakas",
+    "coordinates": "2139.1226.0"
+  },
+  {
+    "name": "Assyst Anter",
+    "locationPrecision": "Banque de Windhowl, maison du bourgmestre",
+    "zone": "Arakas",
+    "coordinates": "1639.1191.0"
+  },
+  {
+    "name": "Audrey",
+    "locationPrecision": "Camp druidique d'Arakas",
+    "zone": "Arakas",
+    "coordinates": ""
+  },
+  {
+    "name": "Avamys",
+    "locationPrecision": "Temple Windhowl",
+    "zone": "Arakas",
+    "coordinates": ""
+  },
+  {
+    "name": "Avana",
+    "locationPrecision": "Nord de la taverne de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2862.1028.0"
+  },
+  {
+    "name": "Babulle",
+    "locationPrecision": "Quartier des métiers, Silversky",
+    "zone": "Raven's Dust",
+    "coordinates": "1630.2575.0"
+  },
+  {
+    "name": "Baldric Iraelis",
+    "locationPrecision": "SilverSky, l'est de la taverne",
+    "zone": "Raven's Dust",
+    "coordinates": "1573.2551.0"
+  },
+  {
+    "name": "Balzak",
+    "locationPrecision": "Nord du camp des Skraugs verts",
+    "zone": "StoneHeim",
+    "coordinates": ""
+  },
+  {
+    "name": "Bane Gwengad",
+    "locationPrecision": "Dans un chateau l'ouest de Raven's Dust",
+    "zone": "Raven's Dust",
+    "coordinates": "342.1679.0"
+  },
+  {
+    "name": "Barde sans nom",
+    "locationPrecision": "RD cave du barde sans nom",
+    "zone": "Add-on 1.25",
+    "coordinates": ""
+  },
+  {
+    "name": "Bastien Milandra",
+    "locationPrecision": "Chateau de Sir Beltigan",
+    "zone": "StoneHeim",
+    "coordinates": "420.1255.0"
+  },
+  {
+    "name": "Belagan",
+    "locationPrecision": "Silversky, dans la salle d'entrainement",
+    "zone": "Raven's Dust",
+    "coordinates": "1598.2539.0"
+  },
+  {
+    "name": "Bibliothcaire",
+    "locationPrecision": "4me tage de la bibliothque",
+    "zone": "Raven's Dust",
+    "coordinates": ""
+  },
+  {
+    "name": "Bibliothcaire en chef",
+    "locationPrecision": "RDC de la bibliothque",
+    "zone": "Raven's Dust",
+    "coordinates": ""
+  },
+  {
+    "name": "Bobaborh",
+    "locationPrecision": "Maison au sud du Château de Silversky",
+    "zone": "Raven's Dust",
+    "coordinates": "1436.2489.0"
+  },
+  {
+    "name": "Boreas",
+    "locationPrecision": "Marchand de Potions de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1525.2562.0"
+  },
+  {
+    "name": "Boroar le chevalier",
+    "locationPrecision": "Dans la maison droite en entrant Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1799.1252.0"
+  },
+  {
+    "name": "Bourgmestre Belamzer",
+    "locationPrecision": "Situ dans la grande maison en bas droite de StoneCrest",
+    "zone": "StoneHeim",
+    "coordinates": "264,863,0"
+  },
+  {
+    "name": "Bourgmestre Sunrock",
+    "locationPrecision": "Dans la banque de Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1609.1181.0"
+  },
+  {
+    "name": "Brave Hunter",
+    "locationPrecision": "Iles thres ct de Glaenshenmilandira",
+    "zone": "Zone Seraph",
+    "coordinates": "1170.435.0"
+  },
+  {
+    "name": "Calirèse",
+    "locationPrecision": "Sous-sol des métiers, Redwall",
+    "zone": "Drake Island",
+    "coordinates": "1416.680.1"
+  },
+  {
+    "name": "Capitaine Harock Harr",
+    "locationPrecision": "Nord Ouest de Windhowl ( ct des mages)",
+    "zone": "Raven's Dust",
+    "coordinates": "1583.1215.0"
+  },
+  {
+    "name": "Capitaine Jambedefer",
+    "locationPrecision": "Sud Est de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1615,2612,0"
+  },
+  {
+    "name": "Caprice",
+    "locationPrecision": "Dans la maison aux loups de SH",
+    "zone": "StoneHeim",
+    "coordinates": ""
+  },
+  {
+    "name": "Carmen Sunim",
+    "locationPrecision": "Porcheirie de LightHaven au sud de la fontaine",
+    "zone": "Arakas",
+    "coordinates": "2918.1178.0"
+  },
+  {
+    "name": "Cassandre",
+    "locationPrecision": "Dans une maison au nord ouest de Redwall",
+    "zone": "Drake Island",
+    "coordinates": ""
+  },
+  {
+    "name": "Celestina Avel",
+    "locationPrecision": "Camp des druides",
+    "zone": "Raven's Dust",
+    "coordinates": "1499.2847.0"
+  },
+  {
+    "name": "Celydia",
+    "locationPrecision": "Chateau de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1426.2349.0"
+  },
+  {
+    "name": "Chambellan Thomar",
+    "locationPrecision": "Chateau de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1417.2340.0"
+  },
+  {
+    "name": "Chef Thorgwagth",
+    "locationPrecision": "Camp des Skraugs Rouges",
+    "zone": "StoneHeim",
+    "coordinates": ""
+  },
+  {
+    "name": "Chef Yahgwuhl",
+    "locationPrecision": "Camp des Skraugs Rouges",
+    "zone": "StoneHeim",
+    "coordinates": "2185.90.2"
+  },
+  {
+    "name": "Chryseida Yolangda",
+    "locationPrecision": "Sud Est du temple de StoneCrest",
+    "zone": "StoneHeim",
+    "coordinates": "255.740.0"
+  },
+  {
+    "name": "Cleantine",
+    "locationPrecision": "Se promne dans RedWall",
+    "zone": "Drake Island",
+    "coordinates": ""
+  },
+  {
+    "name": "Clerc volant",
+    "locationPrecision": "Temple Windhowl",
+    "zone": "Arakas",
+    "coordinates": ""
+  },
+  {
+    "name": "Constelle",
+    "locationPrecision": "Au sud de la bande que Stonecrest sur un petit lot",
+    "zone": "StoneHeim",
+    "coordinates": ""
+  },
+  {
+    "name": "Corsaire Leowald",
+    "locationPrecision": "Sud Est de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1616,2634,0"
+  },
+  {
+    "name": "Crimsonscale",
+    "locationPrecision": "Mausole de RD",
+    "zone": "Add-on 1.25",
+    "coordinates": "842.2220.1"
+  },
+  {
+    "name": "Custodian",
+    "locationPrecision": "RD librairie",
+    "zone": "Add-on 1.25",
+    "coordinates": "1080.1400.1"
+  },
+  {
+    "name": "Cynthia",
+    "locationPrecision": "Quartier des métiers, Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2858.1339.0"
+  },
+  {
+    "name": "Dafyd",
+    "locationPrecision": "Entre le dsert et la cave du Profondus Supremus",
+    "zone": "Raven's Dust",
+    "coordinates": "440.2285.0"
+  },
+  {
+    "name": "Dantalir le barde",
+    "locationPrecision": "Cave des voleurs de StoneCrest",
+    "zone": "StoneHeim",
+    "coordinates": "190.1585.1"
+  },
+  {
+    "name": "Daran Pied-lger",
+    "locationPrecision": "Taverne de StoneCrest",
+    "zone": "StoneHeim",
+    "coordinates": "365.820.0"
+  },
+  {
+    "name": "Darius Moonglow",
+    "locationPrecision": "Camp des druides",
+    "zone": "Raven's Dust",
+    "coordinates": "1466.2888.0"
+  },
+  {
+    "name": "DarkFang",
+    "locationPrecision": "Enclos de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2835.1110.0"
+  },
+  {
+    "name": "Delilah",
+    "locationPrecision": "Chateau de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1420.2320.0"
+  },
+  {
+    "name": "Delnar Lavndir",
+    "locationPrecision": "Devant la Sortie Nord de StoneCrest",
+    "zone": "StoneHeim",
+    "coordinates": "315.700.0"
+  },
+  {
+    "name": "Delvar Dorndir",
+    "locationPrecision": "Prs du camp gobelin d'Arakas",
+    "zone": "Arakas",
+    "coordinates": "2407.807.0"
+  },
+  {
+    "name": "Derran Talandre",
+    "locationPrecision": "Chateau de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1368.2413.0"
+  },
+  {
+    "name": "Dionysus Argantma",
+    "locationPrecision": "Ville Centaure",
+    "zone": "StoneHeim",
+    "coordinates": "1025.1000.0"
+  },
+  {
+    "name": "Doremas",
+    "locationPrecision": "Sud ouest de la fontaine de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1448.2503.0"
+  },
+  {
+    "name": "Drados",
+    "locationPrecision": "A l'est dans SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": ""
+  },
+  {
+    "name": "Dunikus Cathbad",
+    "locationPrecision": "Druides D'arakas",
+    "zone": "Arakas",
+    "coordinates": "2831.146.0"
+  },
+  {
+    "name": "Dwarthon Lithin",
+    "locationPrecision": "Chateau de Bane",
+    "zone": "Raven's Dust",
+    "coordinates": "303.1678.0"
+  },
+  {
+    "name": "Ecion Bras De Fer",
+    "locationPrecision": "Ouest de la maison du forgeron centaure",
+    "zone": "Stoneheim",
+    "coordinates": "892.1050.0"
+  },
+  {
+    "name": "Edden",
+    "locationPrecision": "Chateau de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1445.2418.0"
+  },
+  {
+    "name": "Edgar Gimplestratten",
+    "locationPrecision": "Une Maison prs de la fontaine de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2855.1165.0"
+  },
+  {
+    "name": "Efnisien",
+    "locationPrecision": "",
+    "zone": "Add-on 1.25",
+    "coordinates": "2628.1450.0"
+  },
+  {
+    "name": "Egnizek",
+    "locationPrecision": "Windhowl, maison avant celle dEthan",
+    "zone": "Arakas",
+    "coordinates": "1736.1236.0"
+  },
+  {
+    "name": "Eiden",
+    "locationPrecision": "Nord est du temple de Redwall",
+    "zone": "Drake Island",
+    "coordinates": ""
+  },
+  {
+    "name": "Eldrig",
+    "locationPrecision": "Sud ouest de la taverne de StoneCrest",
+    "zone": "StoneHeim",
+    "coordinates": "340.840.0"
+  },
+  {
+    "name": "Eliadenne",
+    "locationPrecision": "Quartier des métiers, Stonecrest",
+    "zone": "Stoneheim",
+    "coordinates": "146.819.0"
+  },
+  {
+    "name": "Elmert Merkis",
+    "locationPrecision": "Prs de la fontaine de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2868.1135.0"
+  },
+  {
+    "name": "Elysana Blackrose",
+    "locationPrecision": "Une Maison droite du temple de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1561.2471.0"
+  },
+  {
+    "name": "Eraka",
+    "locationPrecision": "Dans la maison droite en entrant Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1802.1257.0"
+  },
+  {
+    "name": "Erava Ed Senuth",
+    "locationPrecision": "Maison l'Est de la sortie Est du temple de Redwall",
+    "zone": "Drake Island",
+    "coordinates": ""
+  },
+  {
+    "name": "Ethan",
+    "locationPrecision": "WH proche du marchand d'armes",
+    "zone": "Add-on 1.25",
+    "coordinates": "1710.1198.0"
+  },
+  {
+    "name": "Etheanan",
+    "locationPrecision": "A l'ouest du lac des tarentules",
+    "zone": "Raven's Dust",
+    "coordinates": "617.1900.0"
+  },
+  {
+    "name": "Evelyn",
+    "locationPrecision": "Nord de la plaine des tarentules",
+    "zone": "Raven's Dust",
+    "coordinates": "830.1825.0"
+  },
+  {
+    "name": "Evque Crowbanner",
+    "locationPrecision": "Chteau de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1415.2334.0"
+  },
+  {
+    "name": "Fali",
+    "locationPrecision": "Sud Ouest du temple de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2900.1068.0"
+  },
+  {
+    "name": "Filandrius",
+    "locationPrecision": "2me tage de la grande bibliothque",
+    "zone": "Add-on 1.25",
+    "coordinates": "985.1465.0"
+  },
+  {
+    "name": "Fliris",
+    "locationPrecision": "Quartier des métiers, Stonecrest",
+    "zone": "Stoneheim",
+    "coordinates": "166.809.0"
+  },
+  {
+    "name": "Florentin",
+    "locationPrecision": "Sud Windhowl",
+    "zone": "Raven's Dust",
+    "coordinates": ""
+  },
+  {
+    "name": "Fortaleyn",
+    "locationPrecision": "Maison à l'ouest d'Arakas",
+    "zone": "Arakas",
+    "coordinates": "2150.515.0"
+  },
+  {
+    "name": "Fraktor",
+    "locationPrecision": "Banque de Windhowl (maison Bourgmestre)",
+    "zone": "Raven's Dust",
+    "coordinates": ""
+  },
+  {
+    "name": "Frère Giamas",
+    "locationPrecision": "Temple de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1548.2399.0"
+  },
+  {
+    "name": "Frère Harforr",
+    "locationPrecision": "Temple de Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1653.1171.0"
+  },
+  {
+    "name": "Frère Kiran",
+    "locationPrecision": "Temple de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2955.1048.0"
+  },
+  {
+    "name": "Frère Niuss",
+    "locationPrecision": "Temple de Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1693.1176.0"
+  },
+  {
+    "name": "Frère Thorkas",
+    "locationPrecision": "Temple de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1565.2398.0"
+  },
+  {
+    "name": "Gabriel Archonis",
+    "locationPrecision": "Oracle",
+    "zone": "StoneHeim",
+    "coordinates": ""
+  },
+  {
+    "name": "Gaenen Elthorn",
+    "locationPrecision": "",
+    "zone": "StoneHeim",
+    "coordinates": ""
+  },
+  {
+    "name": "Gakalia",
+    "locationPrecision": "Nord de la sortie Est du temple de Redwall",
+    "zone": "Drake Island",
+    "coordinates": ""
+  },
+  {
+    "name": "Gardien Vortimer",
+    "locationPrecision": "Nord d'Arakas, dans une maison sous l'asile",
+    "zone": "StoneHeim",
+    "coordinates": "2455.186.0"
+  },
+  {
+    "name": "Garnir",
+    "locationPrecision": "Windhowl, dans la salle d'entrainement",
+    "zone": "Arakas",
+    "coordinates": "1692.1224.0"
+  },
+  {
+    "name": "Geena",
+    "locationPrecision": "Taverne de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2864.1058.0"
+  },
+  {
+    "name": "Geifreis",
+    "locationPrecision": "Armurerie de Siegfrid Lighthaven",
+    "zone": "Arakas",
+    "coordinates": ""
+  },
+  {
+    "name": "Geirfres",
+    "locationPrecision": "Maison à l'ouest de Lighthaven (Chez le marchand d'armes)",
+    "zone": "Arakas",
+    "coordinates": "2908.1028.0"
+  },
+  {
+    "name": "George le troisime",
+    "locationPrecision": "Dans la maison droite en entrant Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1811.1263.0"
+  },
+  {
+    "name": "Geram",
+    "locationPrecision": "Taverne de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1500.2547.0"
+  },
+  {
+    "name": "Gitane",
+    "locationPrecision": "Au nord de l'ile orc",
+    "zone": "Add-on 1.25",
+    "coordinates": ""
+  },
+  {
+    "name": "Gladdius Jiboesavel",
+    "locationPrecision": "Dans une maison droite de l'entre du Village Centaure",
+    "zone": "StoneHeim",
+    "coordinates": "935.975.0"
+  },
+  {
+    "name": "Glaenshenmilandira",
+    "locationPrecision": "Iles Ethres",
+    "zone": "StoneHeim",
+    "coordinates": "1965.2815.0"
+  },
+  {
+    "name": "Gorhendad",
+    "locationPrecision": "Tour d'Urtanar, 1er étage",
+    "zone": "Urtanar",
+    "coordinates": "0.0.0"
+  },
+  {
+    "name": "Gralek",
+    "locationPrecision": "Désert du Ver Engloutisseur",
+    "zone": "Inconnue",
+    "coordinates": "1050.1035.3"
+  },
+  {
+    "name": "Greyard Eedy",
+    "locationPrecision": "Dans la banque de Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1620.1209.0"
+  },
+  {
+    "name": "Grutt",
+    "locationPrecision": "Camp des Skraugs Verts",
+    "zone": "StoneHeim",
+    "coordinates": "1140.450.0"
+  },
+  {
+    "name": "Gulfrid Morzholdir",
+    "locationPrecision": "Sud du temple de StoneCrest",
+    "zone": "StoneHeim",
+    "coordinates": "220.760.0"
+  },
+  {
+    "name": "Guntertag Destroy",
+    "locationPrecision": "Dans la maison droite en entrant Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1813.1273.0"
+  },
+  {
+    "name": "Gunthar le Grand Pretre",
+    "locationPrecision": "",
+    "zone": "Add-on 1.25",
+    "coordinates": "910.2765.1"
+  },
+  {
+    "name": "Gustavo Melli",
+    "locationPrecision": "Quartier des métiers, Stonecrest",
+    "zone": "Stoneheim",
+    "coordinates": "119.837.0"
+  },
+  {
+    "name": "Gwen",
+    "locationPrecision": "Windhowl, dans la salle d'entrainement",
+    "zone": "Arakas",
+    "coordinates": "1667.1271.0"
+  },
+  {
+    "name": "Halam",
+    "locationPrecision": "Taverne de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2848.1067.0"
+  },
+  {
+    "name": "Halsielle",
+    "locationPrecision": "Sous-sol des métiers, Redwall",
+    "zone": "Drake Island",
+    "coordinates": "1538.744.1"
+  },
+  {
+    "name": "Harung Batkist",
+    "locationPrecision": "RDC de la Bibliothque de Raven's Dust",
+    "zone": "Raven's Dust",
+    "coordinates": ""
+  },
+  {
+    "name": "Héloïk",
+    "locationPrecision": "Quartier des métiers, Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2866.1304.0"
+  },
+  {
+    "name": "Herewald Herngwean",
+    "locationPrecision": "Dans une maison au sud de la fontaine de Stonecrest",
+    "zone": "StoneHeim",
+    "coordinates": "285.765.0"
+  },
+  {
+    "name": "Hervert",
+    "locationPrecision": "Quartier des métiers, Silversky",
+    "zone": "Raven's Dust",
+    "coordinates": "1671.2564.0"
+  },
+  {
+    "name": "Hothien Ardiel",
+    "locationPrecision": "Tour d'Urtanar, Sous-sol",
+    "zone": "Urtanar",
+    "coordinates": "0.0.0"
+  },
+  {
+    "name": "Idas",
+    "locationPrecision": "Chateau de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1453.2409.0"
+  },
+  {
+    "name": "Ilyzie",
+    "locationPrecision": "Nord du lac de la plaine des kraanians",
+    "zone": "Arakas",
+    "coordinates": "1978.698.0"
+  },
+  {
+    "name": "Iraltok",
+    "locationPrecision": "Tour des mages de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2998.952.0"
+  },
+  {
+    "name": "Iriklaesh",
+    "locationPrecision": "Sous-sol des métiers, Redwall",
+    "zone": "Drake Island",
+    "coordinates": "1526.714.1"
+  },
+  {
+    "name": "Irinalia Velianaë",
+    "locationPrecision": "Maison au nord-ouest de Redwall",
+    "zone": "Drake Island",
+    "coordinates": "549.1315.3"
+  },
+  {
+    "name": "Iroual Guezan",
+    "locationPrecision": "Taverne de Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1784.1233.0"
+  },
+  {
+    "name": "Isulgur",
+    "locationPrecision": "Dans la banque de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2970.1096.0"
+  },
+  {
+    "name": "Ivrogne",
+    "locationPrecision": "Taverne de Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1783.1241.0"
+  },
+  {
+    "name": "Jagar Kar",
+    "locationPrecision": "Lighthaven, dans la salle d'entrainement",
+    "zone": "Arakas",
+    "coordinates": "2920.1082.0"
+  },
+  {
+    "name": "Jalus",
+    "locationPrecision": "Dans une maison au sud de la fontaine de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2838.1177.0"
+  },
+  {
+    "name": "Jamar",
+    "locationPrecision": "Sud Ouest de la fontaine de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1491.2501.0"
+  },
+  {
+    "name": "Jelosine",
+    "locationPrecision": "Quartier des métiers, Stonecrest",
+    "zone": "Stoneheim",
+    "coordinates": "161.849.0"
+  },
+  {
+    "name": "Jeremiah",
+    "locationPrecision": "Chateau de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1340.2360.0"
+  },
+  {
+    "name": "Jon Hamhoo",
+    "locationPrecision": "Chateau de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1480.2375.0"
+  },
+  {
+    "name": "Julian",
+    "locationPrecision": "Au sud du temple de StoneCrest",
+    "zone": "StoneHeim",
+    "coordinates": "210.735.0"
+  },
+  {
+    "name": "Jurnistakr Kira",
+    "locationPrecision": "Temple de Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1698.1152.0"
+  },
+  {
+    "name": "Justen",
+    "locationPrecision": "Sous-sol des métiers, Redwall",
+    "zone": "Drake Island",
+    "coordinates": "1510.724.1"
+  },
+  {
+    "name": "Kaella",
+    "locationPrecision": "Cave aux araignées, au nord de Stonecrest",
+    "zone": "Stoneheim",
+    "coordinates": "2664.973.4"
+  },
+  {
+    "name": "Kalastor",
+    "locationPrecision": "Dans une maison au Nord Est de la fontaine de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2882.1128.0"
+  },
+  {
+    "name": "Kalir",
+    "locationPrecision": "L'oasis du Dsert",
+    "zone": "Raven's Dust",
+    "coordinates": "276.2518.0"
+  },
+  {
+    "name": "Kalius",
+    "locationPrecision": "Maison l'Est de la sortie Est du temple de Redwall",
+    "zone": "Drake Island",
+    "coordinates": ""
+  },
+  {
+    "name": "Karl",
+    "locationPrecision": "Windhowl, dans la salle d'entrainement",
+    "zone": "Arakas",
+    "coordinates": "1701.1238.0"
+  },
+  {
+    "name": "Kederic Steriad",
+    "locationPrecision": "Camp des druides",
+    "zone": "Raven's Dust",
+    "coordinates": "1405.2854.0"
+  },
+  {
+    "name": "Keldor Felony",
+    "locationPrecision": "Sur un lot au nord est de Redwall ct de Cassandre",
+    "zone": "Drake Island",
+    "coordinates": ""
+  },
+  {
+    "name": "Khan Wulgworth",
+    "locationPrecision": "Camp des Skraugs Rouge",
+    "zone": "StoneHeim",
+    "coordinates": "2165.140.2"
+  },
+  {
+    "name": "Khan Wuuthgoran",
+    "locationPrecision": "Camp des Skraugs Verts",
+    "zone": "StoneHeim",
+    "coordinates": "1230.420.0"
+  },
+  {
+    "name": "Kheral Logotaer",
+    "locationPrecision": "Devant la sortie Nord de StoneCrest",
+    "zone": "StoneHeim",
+    "coordinates": "290.685.0"
+  },
+  {
+    "name": "Kiadus",
+    "locationPrecision": "Marchand d'armes du Chateau de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1467.2395.0"
+  },
+  {
+    "name": "Kilhiam",
+    "locationPrecision": "Temple de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2961.1058.0"
+  },
+  {
+    "name": "Kirlor Dhul",
+    "locationPrecision": "Dans la Banque de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2967.1111.0"
+  },
+  {
+    "name": "Kwarl Gloth",
+    "locationPrecision": "Camp des Skraugs Rouges",
+    "zone": "StoneHeim",
+    "coordinates": "2150.105.2"
+  },
+  {
+    "name": "Kwazor",
+    "locationPrecision": "Au fond de la cave Humterre",
+    "zone": "Drake Island",
+    "coordinates": ""
+  },
+  {
+    "name": "Kyathos Tarzhporan",
+    "locationPrecision": "Entre de la Ville Centaure",
+    "zone": "StoneHeim",
+    "coordinates": "875.1010.0"
+  },
+  {
+    "name": "Ladre Citre",
+    "locationPrecision": "Sud des plaines de glace Nive",
+    "zone": "Niève",
+    "coordinates": ""
+  },
+  {
+    "name": "Lance Silversmith",
+    "locationPrecision": "Dans une maison dans les montagnes au Sud-Est de l'le aux deux ponts avant les druides d'Arakas",
+    "zone": "Arakas",
+    "coordinates": "2580.690.0"
+  },
+  {
+    "name": "Lantalir Glawtar",
+    "locationPrecision": "Druides D'arakas",
+    "zone": "Arakas",
+    "coordinates": "2801.220.0"
+  },
+  {
+    "name": "Laonian Rikarr",
+    "locationPrecision": "Temple de Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1705.1158.0"
+  },
+  {
+    "name": "Laren",
+    "locationPrecision": "Taverne de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1497.2534.0"
+  },
+  {
+    "name": "Larryna Evernild",
+    "locationPrecision": "Tour d'Urtanar",
+    "zone": "Urtanar",
+    "coordinates": "1er étage"
+  },
+  {
+    "name": "Le fouineur",
+    "locationPrecision": "Une maison au nord de Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1716.1173.0"
+  },
+  {
+    "name": "le sceptre de Théopold",
+    "locationPrecision": "Grotte du sceptre de Théopold",
+    "zone": "Raven's Dust",
+    "coordinates": "625.290.2"
+  },
+  {
+    "name": "Leana",
+    "locationPrecision": "A l'est dans SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1596.2572.0"
+  },
+  {
+    "name": "Librarian",
+    "locationPrecision": "RD Librairie",
+    "zone": "Add-on 1.25",
+    "coordinates": "1081.1470.0"
+  },
+  {
+    "name": "Liurn Clar",
+    "locationPrecision": "Maison des Mages de Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1559.1250.0"
+  },
+  {
+    "name": "Lothan",
+    "locationPrecision": "Tour des mages de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2979.968.0"
+  },
+  {
+    "name": "Lothar le Juste",
+    "locationPrecision": "",
+    "zone": "Add-on 1.25",
+    "coordinates": "1631.1644.1"
+  },
+  {
+    "name": "Lourill",
+    "locationPrecision": "Cave du bois noyé",
+    "zone": "Stoneheim",
+    "coordinates": "2095.920.2"
+  },
+  {
+    "name": "Lucrell",
+    "locationPrecision": "Quartier des métiers, Stonecrest",
+    "zone": "Stoneheim",
+    "coordinates": "172.839.0"
+  },
+  {
+    "name": "Lyria",
+    "locationPrecision": "Ville des voleurs",
+    "zone": "Arakas",
+    "coordinates": "2181.1276.0"
+  },
+  {
+    "name": "Malaar",
+    "locationPrecision": "Temple de Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1690.1165.0"
+  },
+  {
+    "name": "Malachai Thanatos",
+    "locationPrecision": "Ville Centaure",
+    "zone": "StoneHeim",
+    "coordinates": "900.1110.0"
+  },
+  {
+    "name": "Malclom Fello",
+    "locationPrecision": "Au nord de son Frère Malcolm",
+    "zone": "Niève",
+    "coordinates": "1768.1233.0"
+  },
+  {
+    "name": "Malcolm Fello",
+    "locationPrecision": "Nord est dans les plaines de glaces sur Nive",
+    "zone": "Niève",
+    "coordinates": "1768.1233.0"
+  },
+  {
+    "name": "Maletis",
+    "locationPrecision": "Quartier des métiers, Silversky",
+    "zone": "Raven's Dust",
+    "coordinates": "1654.2540.0"
+  },
+  {
+    "name": "Marissa",
+    "locationPrecision": "Quartier des métiers, Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2839.1342.0"
+  },
+  {
+    "name": "Markam",
+    "locationPrecision": "Dans la banque de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2954.1102.0"
+  },
+  {
+    "name": "Marnec Sunim",
+    "locationPrecision": "Champ de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2918.1178.0"
+  },
+  {
+    "name": "Marsac Cred",
+    "locationPrecision": "Maison des Mages de Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1608.1253.0"
+  },
+  {
+    "name": "Mayna",
+    "locationPrecision": "Htel des Ventes",
+    "zone": "Arakas",
+    "coordinates": ""
+  },
+  {
+    "name": "Melkilem",
+    "locationPrecision": "Htel des Ventes",
+    "zone": "Arakas",
+    "coordinates": ""
+  },
+  {
+    "name": "Meltar Goanvach",
+    "locationPrecision": "Cave des voleurs qui se trouve derrire la Taverne de StoneCrest",
+    "zone": "StoneHeim",
+    "coordinates": "190.1545.1"
+  },
+  {
+    "name": "Menark",
+    "locationPrecision": "Dans le Chateau de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1342.2383.0"
+  },
+  {
+    "name": "Metanas",
+    "locationPrecision": "Taverne de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1510.2530.0"
+  },
+  {
+    "name": "Mirak Nira",
+    "locationPrecision": "Devant le temple de Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1641.1181.0"
+  },
+  {
+    "name": "Miram Laky",
+    "locationPrecision": "Champ au Sud est de Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1741.1306.0"
+  },
+  {
+    "name": "Mirandul",
+    "locationPrecision": "Ville des voleurs",
+    "zone": "Arakas",
+    "coordinates": "2193.1234.0"
+  },
+  {
+    "name": "Mirymwen Baldrn",
+    "locationPrecision": "Cave des voleurs qui se trouve derrire la Taverne de StoneCrest",
+    "zone": "StoneHeim",
+    "coordinates": "140.1550.1"
+  },
+  {
+    "name": "Mithanna Snowraven",
+    "locationPrecision": "Sud du cercle de pierres de StoneCrest",
+    "zone": "StoneHeim",
+    "coordinates": "120.795.0"
+  },
+  {
+    "name": "Mithrand",
+    "locationPrecision": "Dans la banque de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2961.1093.0"
+  },
+  {
+    "name": "Monseigneur Damien",
+    "locationPrecision": "A l'est de la Runed aprs le pont",
+    "zone": "Raven's Dust",
+    "coordinates": "1030.2090.0"
+  },
+  {
+    "name": "Moonrock",
+    "locationPrecision": "Temple de LightHaven",
+    "zone": "Arakas",
+    "coordinates": "2947.1043.0"
+  },
+  {
+    "name": "Mordrick Maensel",
+    "locationPrecision": "Chateau de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1440.2381.0"
+  },
+  {
+    "name": "Morindin Tennglaw",
+    "locationPrecision": "Au dessus du lac des tarentules",
+    "zone": "Raven's Dust",
+    "coordinates": "706.1912.0"
+  },
+  {
+    "name": "Murmuntag",
+    "locationPrecision": "prs de la fontaine de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2848.1126.0"
+  },
+  {
+    "name": "Mushn",
+    "locationPrecision": "dans un champs Whindhowl",
+    "zone": "Arakas",
+    "coordinates": "1755.1319.0"
+  },
+  {
+    "name": "Naadriel",
+    "locationPrecision": "Maison au sud du Château de Silversky",
+    "zone": "Raven's Dust",
+    "coordinates": "1440.2515.0"
+  },
+  {
+    "name": "Nafuhr Morzhol",
+    "locationPrecision": "Marchand d'armures de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1446.2454.0"
+  },
+  {
+    "name": "Nalya",
+    "locationPrecision": "Nord du temple de Windhowl",
+    "zone": "Arakas",
+    "coordinates": ""
+  },
+  {
+    "name": "Naviil",
+    "locationPrecision": "Quartier des métiers, Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2848.1287.0"
+  },
+  {
+    "name": "Nelkus Piltez",
+    "locationPrecision": "Cave B des Monts Righul",
+    "zone": "Arakas",
+    "coordinates": "354.2318.2"
+  },
+  {
+    "name": "Nevanis",
+    "locationPrecision": "Sous-sol du temple de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "302.288.1"
+  },
+  {
+    "name": "NightMare ---",
+    "locationPrecision": "Nord de LightHaven, ct du Lac d'Argent",
+    "zone": "Arakas",
+    "coordinates": ""
+  },
+  {
+    "name": "Nisalm Malorik",
+    "locationPrecision": "Dans la banque de Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1621.1175.0"
+  },
+  {
+    "name": "Nissus Talandra",
+    "locationPrecision": "Temple de StoneCrest",
+    "zone": "StoneHeim",
+    "coordinates": "210.675.0"
+  },
+  {
+    "name": "Norel",
+    "locationPrecision": "Maison au nord-est du camp druide de Raven's Dust",
+    "zone": "Raven's Dust",
+    "coordinates": "1274.2714.0"
+  },
+  {
+    "name": "Norimar Aveldir",
+    "locationPrecision": "Banque de StoneCrest",
+    "zone": "StoneHeim",
+    "coordinates": "275.785.0"
+  },
+  {
+    "name": "Olin Haad",
+    "locationPrecision": "Grotte de LightHaven",
+    "zone": "Add-on 1.25",
+    "coordinates": "2973.1346.0"
+  },
+  {
+    "name": "Omar Hald",
+    "locationPrecision": "Maison du Joalier de StoneCrest",
+    "zone": "StoneHeim",
+    "coordinates": "305.840.0"
+  },
+  {
+    "name": "Oogla Thraaglurh",
+    "locationPrecision": "Camp des Skraugs Rouges",
+    "zone": "StoneHeim",
+    "coordinates": "2235.95.2"
+  },
+  {
+    "name": "Ortanalas",
+    "locationPrecision": "Lighthaven, dans la salle d'entrainement",
+    "zone": "Arakas",
+    "coordinates": "2924.1093.0"
+  },
+  {
+    "name": "Ortherion",
+    "locationPrecision": "Tour d'Urtanar",
+    "zone": "Urtanar",
+    "coordinates": "1er étage"
+  },
+  {
+    "name": "Owinyc Sovan",
+    "locationPrecision": "1er tage de la grande bibliothque",
+    "zone": "Raven's Dust",
+    "coordinates": "986.1386.0"
+  },
+  {
+    "name": "Peliaces",
+    "locationPrecision": "Maison au centre de la ville de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2897.1103.0"
+  },
+  {
+    "name": "Pomme Deschamps",
+    "locationPrecision": "Placette ct des curies entre Windhowl",
+    "zone": "Raven's Dust",
+    "coordinates": ""
+  },
+  {
+    "name": "Porcine Citre",
+    "locationPrecision": "Porcherie l'est du temple de Silversky",
+    "zone": "Raven's Dust",
+    "coordinates": ""
+  },
+  {
+    "name": "Pquerette",
+    "locationPrecision": "Devant le temple de Lighthaven ou l'armurerie",
+    "zone": "Arakas",
+    "coordinates": ""
+  },
+  {
+    "name": "Pre Stanfrid",
+    "locationPrecision": "Temple de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": ""
+  },
+  {
+    "name": "Pre Ulrich",
+    "locationPrecision": "Temple de Redwall",
+    "zone": "Drake Island",
+    "coordinates": ""
+  },
+  {
+    "name": "Princesse Delilah",
+    "locationPrecision": "Chateau de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1420.2320.0"
+  },
+  {
+    "name": "Prvt Grant Anfust",
+    "locationPrecision": "Dans une maison l'est de la fontaine de Stonecrest",
+    "zone": "StoneHeim",
+    "coordinates": "315.740.0"
+  },
+  {
+    "name": "Psaëllis",
+    "locationPrecision": "Sous-sol des métiers, Redwall",
+    "zone": "Drake Island",
+    "coordinates": "1496.738.1"
+  },
+  {
+    "name": "Qualette",
+    "locationPrecision": "Sous-sol des métiers, Redwall",
+    "zone": "Drake Island",
+    "coordinates": "1524.764.1"
+  },
+  {
+    "name": "R'yleth Cth",
+    "locationPrecision": "Maison des mages Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1604.1244.0"
+  },
+  {
+    "name": "Rablek Blivtaor",
+    "locationPrecision": "Cave des voleurs qui se trouve derrire la Taverne de StoneCrest",
+    "zone": "StoneHeim",
+    "coordinates": "120.1555.1"
+  },
+  {
+    "name": "Rawlin",
+    "locationPrecision": "Au nord-est de l'enceinte de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1589.2315.0"
+  },
+  {
+    "name": "Resha",
+    "locationPrecision": "StoneCrest",
+    "zone": "StoneHeim",
+    "coordinates": "280.695.0"
+  },
+  {
+    "name": "Reynen Aspicdart",
+    "locationPrecision": "Cave des illusionnistes",
+    "zone": "Raven's Dust",
+    "coordinates": "870.800.2"
+  },
+  {
+    "name": "Rhodar Pyras",
+    "locationPrecision": "Marchand d'armes de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1493.2423.0"
+  },
+  {
+    "name": "Riaze",
+    "locationPrecision": "Maison au nord du camp druide de Raven's Dust",
+    "zone": "Raven's Dust",
+    "coordinates": "1284.2724.0"
+  },
+  {
+    "name": "Rilouff",
+    "locationPrecision": "Maison au sud-est de Stoneheim",
+    "zone": "Stoneheim",
+    "coordinates": "785.1084.0"
+  },
+  {
+    "name": "Roen Fanril",
+    "locationPrecision": "Dans une maison l'ouest de la Ville Centaure",
+    "zone": "StoneHeim",
+    "coordinates": "800.1110.0"
+  },
+  {
+    "name": "Roi Thodore XIII",
+    "locationPrecision": "Chateau de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1050.1090.0"
+  },
+  {
+    "name": "Rolianne",
+    "locationPrecision": "Quartier des métiers, Silversky",
+    "zone": "Raven's Dust",
+    "coordinates": "1658.2606.0"
+  },
+  {
+    "name": "Rolph",
+    "locationPrecision": "Marchand d'armures de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2901.1069.0"
+  },
+  {
+    "name": "Rondy",
+    "locationPrecision": "SilverSky, prs des champs dans une maison",
+    "zone": "Raven's Dust",
+    "coordinates": "1594.2502.0"
+  },
+  {
+    "name": "Rosalia Moonshadow",
+    "locationPrecision": "Prs de l'entre de l'oracle aprs le pont invisible sur Stoneheim",
+    "zone": "StoneHeim",
+    "coordinates": ""
+  },
+  {
+    "name": "Roy Aedenas Valreus",
+    "locationPrecision": "Ville des centaures, dans le grand batiment au sud",
+    "zone": "StoneHeim",
+    "coordinates": "1813.1273.0"
+  },
+  {
+    "name": "Salma",
+    "locationPrecision": "Derrière l'entrée du Barde",
+    "zone": "Raven's Dust",
+    "coordinates": "745.2388.0"
+  },
+  {
+    "name": "Samuel",
+    "locationPrecision": "Chateau de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1402.2323.0"
+  },
+  {
+    "name": "Scholar",
+    "locationPrecision": "",
+    "zone": "Add-on 1.25",
+    "coordinates": "1557.2405.0"
+  },
+  {
+    "name": "Seigneur Travis",
+    "locationPrecision": "Dans la maison gauche en entrant Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1787.1301.0"
+  },
+  {
+    "name": "Sentinelle Windhowl",
+    "locationPrecision": "Entre Est de Windhowl",
+    "zone": "Add-on 1.25",
+    "coordinates": "1752.1238.0"
+  },
+  {
+    "name": "Serje Fortepee",
+    "locationPrecision": "Maison Sud de Windhowl",
+    "zone": "Raven's Dust",
+    "coordinates": ""
+  },
+  {
+    "name": "Shadeen la dague",
+    "locationPrecision": "Dans le sous-sol du chateau de Bane Gwengad",
+    "zone": "Raven's Dust",
+    "coordinates": "1438.2730.2"
+  },
+  {
+    "name": "Shaman Weethgwotha",
+    "locationPrecision": "Camp Skraugs Verts",
+    "zone": "StoneHeim",
+    "coordinates": "1190.500.0"
+  },
+  {
+    "name": "Sheriff Grant Hornkeep",
+    "locationPrecision": "Poste de Garde avant la sortie Nord de StoneCrest",
+    "zone": "StoneHeim",
+    "coordinates": "315.740.0"
+  },
+  {
+    "name": "Shovanis",
+    "locationPrecision": "Sous-sol du temple de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "318.295.1"
+  },
+  {
+    "name": "Sigfried",
+    "locationPrecision": "Marchand d'armes l'armurerie de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2921.1041.0"
+  },
+  {
+    "name": "Sir Beltigan",
+    "locationPrecision": "Chateau de Sir Beltigan",
+    "zone": "StoneHeim",
+    "coordinates": "1689.1232.0"
+  },
+  {
+    "name": "Sir Mordenthal",
+    "locationPrecision": "Chateau de Sir Mordenthal",
+    "zone": "StoneHeim",
+    "coordinates": "1689.1232.0"
+  },
+  {
+    "name": "Skipper Barberouge",
+    "locationPrecision": "Nord Ouest de Windhowl (proche tour des mages)",
+    "zone": "Raven's Dust",
+    "coordinates": "1570.1226.0"
+  },
+  {
+    "name": "Slizest",
+    "locationPrecision": "Sous-sol des métiers, Redwall",
+    "zone": "Drake Island",
+    "coordinates": "1502.696.1"
+  },
+  {
+    "name": "Sonia",
+    "locationPrecision": "Quartier des métiers, Silversky",
+    "zone": "Raven's Dust",
+    "coordinates": "1678.2581.0"
+  },
+  {
+    "name": "Spectre de Theopold",
+    "locationPrecision": "Dans une caverne o l'on ne peut accder qu'en se faisant tlporter par l'Horreur repoussante",
+    "zone": "Raven's Dust",
+    "coordinates": "625.290.2"
+  },
+  {
+    "name": "Squiriel",
+    "locationPrecision": "Château dans le désert de Drake Island",
+    "zone": "Ile spécifique au serveur",
+    "coordinates": ""
+  },
+  {
+    "name": "Sulivan",
+    "locationPrecision": "Maison, sur le petit îlot au sud de Stonecrest",
+    "zone": "Stoneheim",
+    "coordinates": "213.832.0"
+  },
+  {
+    "name": "Tafnoir Aigridor",
+    "locationPrecision": "Dans la grotte d'accès à Niève",
+    "zone": "Ile spécifique au serveur",
+    "coordinates": ""
+  },
+  {
+    "name": "Taliron",
+    "locationPrecision": "Marchand d'armures de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1554.2515.0"
+  },
+  {
+    "name": "Talon Dirsell",
+    "locationPrecision": "Chateau de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1383.2312.0"
+  },
+  {
+    "name": "Tarik Oleddo",
+    "locationPrecision": "Couloirs du sous-sol du temple de Redwall",
+    "zone": "Drake Island",
+    "coordinates": "1888.329.1"
+  },
+  {
+    "name": "Tarissa",
+    "locationPrecision": "Quartier des métiers, Silversky",
+    "zone": "Raven's Dust",
+    "coordinates": "1661.2549.0"
+  },
+  {
+    "name": "Tarnian Wolfmane",
+    "locationPrecision": "LightHaven",
+    "zone": "Add-on 1.25",
+    "coordinates": "2780.1205.0"
+  },
+  {
+    "name": "Telmus Zirus",
+    "locationPrecision": "Zone de téléport (après Cerberus)",
+    "zone": "Cerberus",
+    "coordinates": "2224.955.4"
+  },
+  {
+    "name": "Terwin",
+    "locationPrecision": "Chateau de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1379.2354.0"
+  },
+  {
+    "name": "Thea",
+    "locationPrecision": "Taverne de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "617.1900.0"
+  },
+  {
+    "name": "Theoran Feizdir",
+    "locationPrecision": "Une Maison au Sud-est de StoneCrest",
+    "zone": "StoneHeim",
+    "coordinates": "565.925.0"
+  },
+  {
+    "name": "Thorbin Kaloneg",
+    "locationPrecision": "Taverne de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1507.2544.0"
+  },
+  {
+    "name": "Tobias",
+    "locationPrecision": "Chateau de SilverSky",
+    "zone": "Raven's Dust",
+    "coordinates": "1354.2362.0"
+  },
+  {
+    "name": "Torgas",
+    "locationPrecision": "Taverne de StoneCrest",
+    "zone": "StoneHeim",
+    "coordinates": "370.805.0"
+  },
+  {
+    "name": "Totak",
+    "locationPrecision": "Ville des voleurs",
+    "zone": "Arakas",
+    "coordinates": "2151.1224.0"
+  },
+  {
+    "name": "Tristan",
+    "locationPrecision": "SC",
+    "zone": "Add-on 1.25",
+    "coordinates": "295.738.0"
+  },
+  {
+    "name": "Tronec",
+    "locationPrecision": "Quartier des métiers, Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2822.1319.0"
+  },
+  {
+    "name": "Ttayh Mark",
+    "locationPrecision": "Une maison au nord de Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1734.1194.0"
+  },
+  {
+    "name": "Umnia Felony",
+    "locationPrecision": "Dans la maison en face du temple de Redwall",
+    "zone": "Ile spécifique au serveur",
+    "coordinates": ""
+  },
+  {
+    "name": "Un aveugle",
+    "locationPrecision": "Cave de l'aveugle",
+    "zone": "Raven's Dust",
+    "coordinates": "690.1610.2"
+  },
+  {
+    "name": "Un cadavre trébuchant",
+    "locationPrecision": "Crypte niveau -3",
+    "zone": "Raven's Dust",
+    "coordinates": "465.2460.1"
+  },
+  {
+    "name": "Un commis voyageur",
+    "locationPrecision": "Nord d'Arakas, près de l'Asile",
+    "zone": "Arakas",
+    "coordinates": "1590,2330,0"
+  },
+  {
+    "name": "Un démon rampant",
+    "locationPrecision": "Crypte niveau -3",
+    "zone": "Raven's Dust",
+    "coordinates": "610.2436.1"
+  },
+  {
+    "name": "Un employé très occupé",
+    "locationPrecision": "Dans le Colisée",
+    "zone": "StoneHeim",
+    "coordinates": ""
+  },
+  {
+    "name": "Un étrange cheval sauvage",
+    "locationPrecision": "Se déplace sur Stoneheim",
+    "zone": "StoneHeim",
+    "coordinates": "1507.2544.0"
+  },
+  {
+    "name": "Un forgeron occupé",
+    "locationPrecision": "Ville des centaures",
+    "zone": "StoneHeim",
+    "coordinates": ""
+  },
+  {
+    "name": "Un gardien",
+    "locationPrecision": "Windhowl",
+    "zone": "Arakas",
+    "coordinates": "2865.1076.0"
+  },
+  {
+    "name": "Un gardien blessé",
+    "locationPrecision": "Dans la maison à gauche en entrant à Windhowl",
+    "zone": "Arakas",
+    "coordinates": "2865.1076.0"
+  },
+  {
+    "name": "Un homme à l'air intelligent",
+    "locationPrecision": "Au sud du camp Skraug Rouge",
+    "zone": "StoneHeim",
+    "coordinates": "305.870.0"
+  },
+  {
+    "name": "Un homme de la garde",
+    "locationPrecision": "Taverne de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2862.1066.0"
+  },
+  {
+    "name": "Un homme joyeux",
+    "locationPrecision": "Taverne de Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1783.1241.0"
+  },
+  {
+    "name": "Un homme vêtu richement",
+    "locationPrecision": "Devant le Colisée",
+    "zone": "StoneHeim",
+    "coordinates": ""
+  },
+  {
+    "name": "Un mage errant",
+    "locationPrecision": "Devant le temple de StoneCrest",
+    "zone": "StoneHeim",
+    "coordinates": "306,750,0"
+  },
+  {
+    "name": "Un marchand errant",
+    "locationPrecision": "Au sud-ouest de la Gitane",
+    "zone": "Arakas",
+    "coordinates": "2163.505.0"
+  },
+  {
+    "name": "Un monstre putride",
+    "locationPrecision": "Crypte niveau -3",
+    "zone": "Raven's Dust",
+    "coordinates": "562, 2446, 1"
+  },
+  {
+    "name": "Un vendeur étrange",
+    "locationPrecision": "Nord de Redwall",
+    "zone": "Ile spécifique au serveur",
+    "coordinates": ""
+  },
+  {
+    "name": "Un vieillard en bonne santé",
+    "locationPrecision": "Est du cercle de pierre du bois creux",
+    "zone": "StoneHeim",
+    "coordinates": ""
+  },
+  {
+    "name": "Un voyageur paisible",
+    "locationPrecision": "Montagnes de Zhakar",
+    "zone": "Raven's Dust",
+    "coordinates": "425, 2270, 0"
+  },
+  {
+    "name": "Une âme tourmentée",
+    "locationPrecision": "Crypte niveau -3",
+    "zone": "Raven's Dust",
+    "coordinates": "2953.1093.0"
+  },
+  {
+    "name": "Une bête effrayante",
+    "locationPrecision": "Cave du bois creux",
+    "zone": "StoneHeim",
+    "coordinates": ""
+  },
+  {
+    "name": "Une créature fragile",
+    "locationPrecision": "Crypte niveau -3",
+    "zone": "Raven's Dust",
+    "coordinates": "514.2330.1"
+  },
+  {
+    "name": "Une créature pitoyable",
+    "locationPrecision": "Crypte niveau -3",
+    "zone": "Raven's Dust",
+    "coordinates": "514.2330.1"
+  },
+  {
+    "name": "Une entité hurlante",
+    "locationPrecision": "Crypte niveau -3",
+    "zone": "Raven's Dust",
+    "coordinates": "568.2441.1"
+  },
+  {
+    "name": "Une horreur repoussante",
+    "locationPrecision": "Crypte niveau -3",
+    "zone": "Raven's Dust",
+    "coordinates": "662, 2388, 1"
+  },
+  {
+    "name": "Une infâme abomination",
+    "locationPrecision": "Crypte niveau -3",
+    "zone": "Raven's Dust",
+    "coordinates": "561.2548.1"
+  },
+  {
+    "name": "Une loque humaine",
+    "locationPrecision": "Crypte niveau -3",
+    "zone": "Raven's Dust",
+    "coordinates": "618, 2345, 1"
+  },
+  {
+    "name": "Une monstruosité putride",
+    "locationPrecision": "Crypte niveau -3",
+    "zone": "Raven's Dust",
+    "coordinates": "571.2443.1"
+  },
+  {
+    "name": "Une Ombre",
+    "locationPrecision": "Différents endroits de Stoneheim",
+    "zone": "StoneHeim",
+    "coordinates": "526.2562.1"
+  },
+  {
+    "name": "Une ombre dans la forêt",
+    "locationPrecision": "Forêt de non retour",
+    "zone": "Zone Seraph",
+    "coordinates": "526.2562.1"
+  },
+  {
+    "name": "Une ombre gémissante",
+    "locationPrecision": "Crypte niveau -3",
+    "zone": "Raven's Dust",
+    "coordinates": "526.2562.1"
+  },
+  {
+    "name": "Une sombre silhouette...",
+    "locationPrecision": "Dans une maison au Nord Est de la fontaine de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2888.1123.0"
+  },
+  {
+    "name": "Uranos",
+    "locationPrecision": "Tour des mages de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2975.950.0"
+  },
+  {
+    "name": "Urik the Tailor",
+    "locationPrecision": "WH",
+    "zone": "Arakas",
+    "coordinates": "2622.1498.0"
+  },
+  {
+    "name": "Vairrine",
+    "locationPrecision": "Est du désert de Drake Island",
+    "zone": "Drake Island",
+    "coordinates": "1199.1227.3"
+  },
+  {
+    "name": "Vargus",
+    "locationPrecision": "Dans les montagnes au milieu du camp des Skraugs rouge",
+    "zone": "StoneHeim",
+    "coordinates": "582.233.0"
+  },
+  {
+    "name": "Vellis",
+    "locationPrecision": "Maison au sud du territoire des araignées de Stoneheim",
+    "zone": "Stoneheim",
+    "coordinates": "809.853.0"
+  },
+  {
+    "name": "Véronika",
+    "locationPrecision": "Nord est du temple de Redwall",
+    "zone": "Ile spécifique au serveur",
+    "coordinates": ""
+  },
+  {
+    "name": "Victor Poingdacier",
+    "locationPrecision": "Château de Silversky, RDC (Ouest)",
+    "zone": "Raven's Dust",
+    "coordinates": "1374.2372.0"
+  },
+  {
+    "name": "Vieil ermite",
+    "locationPrecision": "Dans une Vallée après la cave des brigands ( sortie Nord-est)",
+    "zone": "Arakas",
+    "coordinates": "2814.682.0"
+  },
+  {
+    "name": "Vincent Swiftblade",
+    "locationPrecision": "LH près de la fontaine",
+    "zone": "Add-on 1.25",
+    "coordinates": "120.1555.1"
+  },
+  {
+    "name": "Volecian",
+    "locationPrecision": "Quartier des métiers, Stonecrest",
+    "zone": "Stoneheim",
+    "coordinates": "132.855.0"
+  },
+  {
+    "name": "Wajpoothin",
+    "locationPrecision": "Camp des Skraugs Verts",
+    "zone": "StoneHeim",
+    "coordinates": "1170.435.0"
+  },
+  {
+    "name": "Weethgwotha",
+    "locationPrecision": "Village skraug",
+    "zone": "StoneHeim",
+    "coordinates": "1190.500.0"
+  },
+  {
+    "name": "Wellys",
+    "locationPrecision": "Sous-sol des métiers, Redwall",
+    "zone": "Drake Island",
+    "coordinates": "1504.777.1"
+  },
+  {
+    "name": "Windia",
+    "locationPrecision": "Dans la maison à droite en entrant à Windhowl",
+    "zone": "Arakas",
+    "coordinates": ""
+  },
+  {
+    "name": "Xaria",
+    "locationPrecision": "DI: Dans la maison à l'Ouest du Temple de Redwall",
+    "zone": "Add-on 1.25",
+    "coordinates": ""
+  },
+  {
+    "name": "Yolak",
+    "locationPrecision": "Sud est du temple de Windhowl",
+    "zone": "Arakas",
+    "coordinates": "1649.1243.0"
+  },
+  {
+    "name": "Yrian Holenarbed",
+    "locationPrecision": "Druides d'Arakas",
+    "zone": "Arakas",
+    "coordinates": "2877.169.0"
+  },
+  {
+    "name": "Ysuve",
+    "locationPrecision": "Quartier des métiers, Lighthaven",
+    "zone": "Arakas",
+    "coordinates": "2826.1294.0"
+  },
+  {
+    "name": "Zelina",
+    "locationPrecision": "Temple de Lighthaven",
+    "zone": "Arakas",
+    "coordinates": ""
+  },
+  {
+    "name": "Zhakar",
+    "locationPrecision": "Tour de Zakhar",
+    "zone": "Raven's Dust",
+    "coordinates": "55.1769.0"
+  },
+  {
+    "name": "Zion Coeur-de-Tonnerre",
+    "locationPrecision": "Ville des centaures",
+    "zone": "StoneHeim",
+    "coordinates": "935.1150.0"
+  }
+]

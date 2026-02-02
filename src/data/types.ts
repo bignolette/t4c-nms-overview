@@ -108,13 +108,20 @@ export interface CraftingProject {
     collectedIngredients?: string[];
 }
 
+export interface NPC {
+    name: string;
+    locationPrecision?: string;
+    zone: string;
+    coordinates?: string;
+}
+
 export interface PageContent {
 
     id: string;
 
     title: string;
 
-    category: 'zone' | 'class' | 'items' | 'spell' | 'profession' | 'guide' | 'bestiary' | 'skill';
+    category: 'zone' | 'class' | 'items' | 'spell' | 'profession' | 'guide' | 'bestiary' | 'skill' | 'npc';
 
     description: string;
 
@@ -127,6 +134,8 @@ export interface PageContent {
     spells?: Spell[];
 
     skills?: Skill[];
+
+    npcs?: NPC[];
 
 }
 

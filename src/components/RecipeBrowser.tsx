@@ -242,11 +242,17 @@ const ItemDetailModal = ({ recipe, onClose, toggleFavorite, favorites, navigateT
 };
 
 export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, toggleFavorite, getMatchingIngredients, viewMode, hideExternalLink, onNavigateToRecipe, onAddProject, hideProjectButton }: any) => {
-  const { itemMonsterMap, itemUsageMap, wikiData, plantsData, treesData, depositsData } = useData();
+  const { itemMonsterMap, itemUsageMap, wikiData, plantsData, treesData, depositsData, npcsData } = useData();
   const getSourceIcon = useSourceIcon();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const matchingIngs = getMatchingIngredients ? getMatchingIngredients(recipe, activeSearchTerm) : [];
   const { copied, copy } = useClipboard();
+
+  const npcInfo = useMemo(() => {
+    if (!recipe.learnedFrom) return null;
+    const norm = fastNormalize(recipe.learnedFrom);
+    return npcsData.find(n => fastNormalize(n.name) === norm);
+  }, [recipe.learnedFrom, npcsData]);
 
   const handleInstantiate = (e: React.MouseEvent) => {
     e.stopPropagation();
@@ -624,15 +630,24 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
                     <span className="text-[10px] font-bold text-blue-400 uppercase tracking-widest block mb-2">Enseignement</span>
                     <div className="flex items-center gap-2 text-xs font-bold text-slate-200">
                       <User size={12} className="text-blue-500" />
-                      <span>{recipe.learnedFrom}</span>
+                      {npcInfo ? (
+                        <Link 
+                          to={`/wiki/npcs?search=${encodeURIComponent(npcInfo.name)}`}
+                          className="hover:text-amber-500 transition-colors underline decoration-blue-500/30 underline-offset-4"
+                        >
+                          {npcInfo.name}
+                        </Link>
+                      ) : (
+                        <span>{recipe.learnedFrom}</span>
+                      )}
                     </div>
-                    {recipe.coordinates && (
+                    {(recipe.coordinates || npcInfo?.coordinates) && (
                       <Link 
                         to={`/maps?type=npc&name=${encodeURIComponent(recipe.learnedFrom)}`}
                         className="flex items-center gap-2 text-xs text-amber-400 mt-2 font-mono bg-amber-400/5 px-2 py-1 rounded border border-amber-400/10 w-fit hover:bg-amber-400/10 transition-colors group/npc"
                       >
                         <MapPin size={14} className="text-amber-500 group-hover/npc:scale-110 transition-transform" />
-                        <span className="font-black tracking-tight">{recipe.coordinates}</span>
+                        <span className="font-black tracking-tight">{recipe.coordinates || npcInfo?.coordinates}</span>
                       </Link>
                     )}
                   </div>
@@ -699,6 +714,7 @@ const NPCGroupedView = ({
   onSelectZone: (z: string) => void,
   allZones: string[]
 }) => {
+  const { npcsData } = useData();
   const [expandedZones, setExpandedZones] = useState<string[]>([]);
   const [expandedNPCs, setExpandedNPCs] = useState<string[]>([]);
 
@@ -717,10 +733,16 @@ const NPCGroupedView = ({
       
       if (!g[r.profession][zoneName]) g[r.profession][zoneName] = {};
 
-      const npc = r.learnedFrom || 'Appris automatiquement / Inconnu';
-      if (!g[r.profession][zoneName][npc]) g[r.profession][zoneName][npc] = [];
+      let npcName = r.learnedFrom || 'Appris automatiquement / Inconnu';
+      if (r.learnedFrom) {
+        const norm = fastNormalize(r.learnedFrom);
+        const found = npcsData.find(n => fastNormalize(n.name) === norm);
+        if (found) npcName = found.name;
+      }
+
+      if (!g[r.profession][zoneName][npcName]) g[r.profession][zoneName][npcName] = [];
       
-      g[r.profession][zoneName][npc].push(r);
+      g[r.profession][zoneName][npcName].push(r);
     });
     
     // Sort recipes by level within each NPC group
@@ -865,6 +887,7 @@ const NPCGroupedView = ({
                           const npcKey = `${zoneKey}-${npc}`;
                           const npcRecipes = npcs[npc];
                           const isNpcExpanded = expandedNPCs.includes(npcKey);
+                          const npcInfo = npcsData.find(n => fastNormalize(n.name) === fastNormalize(npc));
 
                           return (
                             <div key={npcKey} className={`bg-slate-950/50 border rounded-xl overflow-hidden transition-all duration-300 ${isNpcExpanded ? 'border-amber-500/30' : 'border-slate-800'}`}>
@@ -878,15 +901,25 @@ const NPCGroupedView = ({
                                     <User size={16} />
                                   </div>
                                   <div>
-                                    <h4 className="font-bold text-slate-200 text-sm italic uppercase tracking-tighter">ENSEIGNÉ PAR : {npc}</h4>
+                                    <h4 className="font-bold text-slate-200 text-sm italic uppercase tracking-tighter">
+                                      ENSEIGNÉ PAR : {npcInfo ? (
+                                        <Link 
+                                          to={`/wiki/npcs?search=${encodeURIComponent(npc)}`}
+                                          onClick={(e) => e.stopPropagation()}
+                                          className="hover:text-amber-500 transition-colors underline decoration-amber-500/20 underline-offset-4"
+                                        >
+                                          {npc}
+                                        </Link>
+                                      ) : npc}
+                                    </h4>
                                     <div className="flex items-center gap-2 mt-1">
-                                      {npcRecipes[0]?.coordinates && (
+                                      {(npcRecipes[0]?.coordinates || npcInfo?.coordinates) && (
                                         <Link 
                                           to={`/maps?type=npc&name=${encodeURIComponent(npc)}`}
                                           onClick={(e) => e.stopPropagation()}
                                           className="flex items-center gap-1.5 text-xs font-mono font-black text-amber-400 bg-amber-400/5 px-2 py-0.5 rounded border border-amber-400/10 hover:bg-amber-400/10 transition-colors group/npc-loc"
                                         >
-                                          <MapPin size={12} className="text-amber-500 group-hover/npc-loc:scale-110 transition-transform" /> {npcRecipes[0].coordinates}
+                                          <MapPin size={12} className="text-amber-500 group-hover/npc-loc:scale-110 transition-transform" /> {npcRecipes[0]?.coordinates || npcInfo?.coordinates}
                                         </Link>
                                       )}
                                     </div>

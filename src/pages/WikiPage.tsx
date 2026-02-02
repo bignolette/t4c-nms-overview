@@ -2,21 +2,22 @@ import { useParams, useNavigate, useSearchParams } from 'react-router-dom';
 import { useData } from '../context/DataContext';
 import RecipeBrowser, { RecipeItemRow } from '../components/RecipeBrowser';
 import Bestiary, { MonsterCard } from '../components/Bestiary';
+import NpcList, { NpcCard } from '../components/NpcList';
 import SpellList, { SpellCard } from '../components/SpellList';
 import SkillList, { SkillCard } from '../components/SkillList';
-import { Package, Hammer, Skull, Search, X, Sparkles, Target, LayoutGrid, ArrowRight } from 'lucide-react';
+import { Package, Hammer, Skull, Search, X, Sparkles, Target, LayoutGrid, ArrowRight, Users } from 'lucide-react';
 import { useState, useEffect, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import ScrollContainer from '../components/shared/ScrollContainer';
 import { fastNormalize, generateUUID } from '../data/utils';
-import type { Monster, RecipeItem, Spell, Skill } from '../data/types';
+import type { Monster, RecipeItem, Spell, Skill, NPC } from '../data/types';
 
 const WikiPage = () => {
   const { slug } = useParams();
   const navigate = useNavigate();
   const [searchParams, setSearchParams] = useSearchParams();
   const { 
-    bestiaryData, recipesData, itemsData, plantsData, treesData, depositsData, spellsData, skillsData, 
+    bestiaryData, recipesData, itemsData, plantsData, treesData, depositsData, spellsData, skillsData, npcsData,
     favRecipes, setFavRecipes, setCraftingProjects 
   } = useData();
   
@@ -68,6 +69,7 @@ const WikiPage = () => {
     { id: 'items', label: 'Objets', icon: Package, color: 'text-blue-400', bg: 'bg-blue-500/10' },
     { id: 'metiers', label: 'Artisanat', icon: Hammer, color: 'text-amber-400', bg: 'bg-amber-500/10' },
     { id: 'bestiary', label: 'Bestiaire', icon: Skull, color: 'text-rose-400', bg: 'bg-rose-500/10' },
+    { id: 'npcs', label: 'PNJs', icon: Users, color: 'text-amber-400', bg: 'bg-amber-500/10' },
     { id: 'spells', label: 'Sorts', icon: Sparkles, color: 'text-sky-400', bg: 'bg-sky-500/10' },
     { id: 'skills', label: 'Compétences', icon: Target, color: 'text-emerald-400', bg: 'bg-emerald-500/10' },
   ];
@@ -105,6 +107,7 @@ const WikiPage = () => {
       { id: 'items', label: 'Objets', icon: Package, color: 'text-blue-400', results: combinedItems.filter(filterFn) },
       { id: 'metiers', label: 'Artisanat', icon: Hammer, color: 'text-amber-400', results: recipesData.filter(filterFn) },
       { id: 'bestiary', label: 'Bestiaire', icon: Skull, color: 'text-rose-400', results: bestiaryData.filter(filterFn) },
+      { id: 'npcs', label: 'PNJs', icon: Users, color: 'text-amber-400', results: npcsData.filter(filterFn) },
       { id: 'spells', label: 'Sorts', icon: Sparkles, color: 'text-sky-400', results: spellsData.filter(filterFn) },
       { id: 'skills', label: 'Compétences', icon: Target, color: 'text-emerald-400', results: skillsData.filter(filterFn) },
     ].filter(cat => cat.results.length > 0);
@@ -210,6 +213,7 @@ const WikiPage = () => {
                         {category.id === 'items' && category.results.slice(0, 6).map((item, idx) => <RecipeItemRow key={item.name + idx} recipe={item as RecipeItem} isItemsPage={true} favorites={favRecipes} toggleFavorite={toggleFavorite} viewMode="grid" onAddProject={handleProjectAdd} />)}
                         {category.id === 'metiers' && category.results.slice(0, 6).map((recipe, idx) => <RecipeItemRow key={recipe.name + idx} recipe={recipe as RecipeItem} isItemsPage={false} favorites={favRecipes} toggleFavorite={toggleFavorite} viewMode="list" onAddProject={handleProjectAdd} hideProjectButton={true} />)}
                         {category.id === 'bestiary' && category.results.slice(0, 6).map((monster, idx) => <MonsterCard key={monster.name + idx} monster={monster as Monster} showLocation={true} />)}
+                        {category.id === 'npcs' && category.results.slice(0, 6).map((npc, idx) => <NpcCard key={npc.name + idx} npc={npc as NPC} />)}
                         {category.id === 'spells' && category.results.slice(0, 6).map((spell, idx) => <SpellCard key={spell.name + idx} spell={spell as Spell} onNavigate={handleNavigate} />)}
                         {category.id === 'skills' && category.results.slice(0, 6).map((skill, idx) => <SkillCard key={skill.name + idx} skill={skill as Skill} />)}
                       </div>
@@ -223,6 +227,7 @@ const WikiPage = () => {
         {currentTab === 'items' && <RecipeBrowser key="items" recipes={combinedItems} isItemsPage={true} />}
         {currentTab === 'metiers' && <RecipeBrowser key="metiers" recipes={recipesData} isItemsPage={false} />}
         {currentTab === 'bestiary' && <Bestiary key="bestiary" monsters={bestiaryData} />}
+        {currentTab === 'npcs' && <NpcList key="npcs" npcs={npcsData} />}
         {currentTab === 'spells' && <SpellList key="spells" spells={spellsData} />}
         {currentTab === 'skills' && <SkillList key="skills" skills={skillsData} />}
       </div>
