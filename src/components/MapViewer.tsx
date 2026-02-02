@@ -4,6 +4,7 @@ import { Map as MapIcon, Maximize, ZoomIn, ZoomOut, MousePointer2, Loader2, MapP
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import { useData } from '../context/DataContext';
 import { fastNormalize } from '../data/utils';
+import type { RecipeItem } from '../data/types';
 
 interface MapInfo {
   id: string;
@@ -115,7 +116,7 @@ const MapViewer: React.FC = () => {
         categories['Monstres'][m.name] = (Array.isArray(m.coordinates) ? m.coordinates : [m.coordinates]).map(coord => {
           const [gx, gy, w] = coord.split('.').map(Number);
           return { gx, gy, world: w, label: m.name, category: 'Monstres' };
-        }).filter(m => !isNaN(m.world));
+        }).filter((marker: MarkerData) => !isNaN(marker.world));
       }
     });
 
@@ -135,14 +136,14 @@ const MapViewer: React.FC = () => {
     processTeachers(itemsData);
 
     // 3. Plants, Trees, Deposits
-    const processItems = (list: any[], cat: string) => {
+    const processItems = (list: RecipeItem[], cat: string) => {
         list.forEach(item => {
             if (item.coordinates) {
                 const coordsList = Array.isArray(item.coordinates) ? item.coordinates : [item.coordinates];
-                categories[cat][item.name] = coordsList.map(c => {
+                categories[cat][item.name] = coordsList.map((c: string) => {
                     const [gx, gy, w] = c.split('.').map(Number);
                     return { gx, gy, world: w, label: item.name, category: cat };
-                }).filter(m => !isNaN(m.world));
+                }).filter((marker: MarkerData) => !isNaN(marker.world));
             }
         });
     };
@@ -171,7 +172,7 @@ const MapViewer: React.FC = () => {
                         }
                     }
                 });
-            }
+            });
         }
     });
 

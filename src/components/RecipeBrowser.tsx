@@ -242,7 +242,7 @@ const ItemDetailModal = ({ recipe, onClose, toggleFavorite, favorites, navigateT
 };
 
 export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favorites, toggleFavorite, getMatchingIngredients, viewMode, hideExternalLink, onNavigateToRecipe, onAddProject, hideProjectButton }: any) => {
-  const { itemMonsterMap, itemUsageMap, wikiData } = useData();
+  const { itemMonsterMap, itemUsageMap, wikiData, plantsData, treesData, depositsData } = useData();
   const getSourceIcon = useSourceIcon();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const matchingIngs = getMatchingIngredients ? getMatchingIngredients(recipe, activeSearchTerm) : [];
@@ -257,9 +257,17 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
   
   const allRecipes = useMemo(() => wikiData.find(p => p.id === 'metiers')?.recipes || [], [wikiData]);
   
+  const isHarvestResource = useMemo(() => {
+    const norm = fastNormalize(recipe.name);
+    return plantsData.some((p: RecipeItem) => fastNormalize(p.name) === norm) ||
+           treesData.some((t: RecipeItem) => fastNormalize(t.name) === norm) ||
+           depositsData.some((d: RecipeItem) => fastNormalize(d.name) === norm);
+  }, [recipe.name, plantsData, treesData, depositsData]);
+
   const craftingRecipe = useMemo(() => {
+    if (isHarvestResource) return null; // Never craftable if it's a primary harvest resource
     return allRecipes.find(r => fastNormalize(r.name) === fastNormalize(recipe.name));
-  }, [allRecipes, recipe.name]);
+  }, [allRecipes, recipe.name, isHarvestResource]);
 
   const isCraftable = !!craftingRecipe;
   const usages = useMemo(() => itemUsageMap[fastNormalize(recipe.name)] || [], [recipe.name, itemUsageMap]);
@@ -485,8 +493,8 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
                           </button>
                         </div>
                       ) : (
-                        <span title="Ceci est un composant de base" className="flex items-center gap-1 bg-emerald-500/20 text-emerald-500 px-2 py-0.5 rounded-full border border-emerald-500/30 text-[10px] uppercase font-bold tracking-wider">
-                          <Package size={12} /> COMPOSANT DE BASE
+                        <span title={isHarvestResource ? "Ceci est une ressource récoltable" : "Ceci est un composant de base"} className={`flex items-center gap-1 ${isHarvestResource ? 'bg-emerald-500/20 text-emerald-500' : 'bg-slate-700/20 text-slate-400'} px-2 py-0.5 rounded-full border border-current opacity-70 text-[10px] uppercase font-bold tracking-wider`}>
+                          <Package size={12} /> {isHarvestResource ? 'RESSOURCE DE RÉCOLTE' : 'COMPOSANT DE BASE'}
                         </span>
                       )
                     )}
@@ -737,7 +745,12 @@ const NPCGroupedView = ({
   };
 
   const toggleNPC = (npcKey: string) => {
-    setExpandedNPCs(prev => prev.includes(npcKey) ? prev.filter(n => n !== npcKey) : [...prev, npcKey]);
+    setExpandedNPCs(prev => {
+        const next = new Set(prev);
+        if (next.has(npcKey)) next.delete(npcKey);
+        else next.add(npcKey);
+        return Array.from(next);
+    });
   };
 
   return (
@@ -898,7 +911,7 @@ const NPCGroupedView = ({
                                             className="text-xs font-bold text-slate-300 group-hover:text-amber-500 truncate text-left flex items-center gap-1"
                                           >
                                             {recipe.name}
-                                            <ArrowRightCircle size={10} className="opacity-0 group-hover:opacity-100 transition-opacity" />
+                                            <ArrowRightCircle size={10} className="opacity-0 group-hover/craft:opacity-100 transition-opacity" />
                                           </button>
                                         </div>
                                         <div className="flex items-center gap-1">

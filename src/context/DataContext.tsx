@@ -36,6 +36,9 @@ const migrateSaveData = (data: any): any => {
 
 interface DataContextType {
     itemsData: RecipeItem[];
+    plantsData: RecipeItem[];
+    treesData: RecipeItem[];
+    depositsData: RecipeItem[];
     bestiaryData: Monster[];
     recipesData: RecipeItem[];
     spellsData: Spell[];
@@ -48,7 +51,6 @@ interface DataContextType {
     spellPrerequisiteMap: Record<string, Spell[]>;
     loading: boolean;
     error: string | null;
-    // ...
     savedCharacters: SavedCharacter[];
     setSavedCharacters: React.Dispatch<React.SetStateAction<SavedCharacter[]>>;
     craftingProjects: CraftingProject[];
@@ -68,11 +70,23 @@ const DataContext = createContext<DataContextType | undefined>(undefined);
 export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     const [data, setData] = useState<{
         items: RecipeItem[];
+        plants: RecipeItem[];
+        trees: RecipeItem[];
+        deposits: RecipeItem[];
         bestiary: Monster[];
         recipes: RecipeItem[];
         spells: Spell[];
         skills: Skill[];
-    }>({ items: [], bestiary: [], recipes: [], spells: [], skills: [] });
+    }>({ 
+        items: [], 
+        plants: [], 
+        trees: [], 
+        deposits: [], 
+        bestiary: [], 
+        recipes: [], 
+        spells: [], 
+        skills: [] 
+    });
     
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
@@ -123,18 +137,19 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
     useEffect(() => {
         const loadData = async () => {
             try {
-                // In production, these will be fetched from the hosted URL
-                // In development, they are served from public/data/
                 const baseUrl = import.meta.env.BASE_URL || '/';
-                const [items, bestiary, recipes, spells, skills] = await Promise.all([
+                const [items, plants, trees, deposits, bestiary, recipes, spells, skills] = await Promise.all([
                     fetch(`${baseUrl}data/items.json`).then(res => res.json()),
+                    fetch(`${baseUrl}data/plants.json`).then(res => res.json()),
+                    fetch(`${baseUrl}data/trees.json`).then(res => res.json()),
+                    fetch(`${baseUrl}data/deposits.json`).then(res => res.json()),
                     fetch(`${baseUrl}data/bestiary.json`).then(res => res.json()),
                     fetch(`${baseUrl}data/recipes.json`).then(res => res.json()),
                     fetch(`${baseUrl}data/spells.json`).then(res => res.json()),
                     fetch(`${baseUrl}data/skills.json`).then(res => res.json()),
                 ]);
 
-                setData({ items, bestiary, recipes, spells, skills });
+                setData({ items, plants, trees, deposits, bestiary, recipes, spells, skills });
                 setLoading(false);
             } catch (err) {
                 console.error("Failed to load data:", err);
@@ -177,20 +192,10 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
                     const content = e.target?.result as string;
                     const rawData = JSON.parse(content);
                     const parsed = migrateSaveData(rawData);
-                    
-                    // Basic validation
-                    if (parsed.characters && Array.isArray(parsed.characters)) {
-                        setSavedCharacters(parsed.characters);
-                    }
-                    if (parsed.craftingProjects && Array.isArray(parsed.craftingProjects)) {
-                        setCraftingProjects(parsed.craftingProjects);
-                    }
-                    if (parsed.activeStats) {
-                        setActiveStats(parsed.activeStats);
-                    }
-                    if (parsed.favRecipes && Array.isArray(parsed.favRecipes)) {
-                        setFavRecipes(parsed.favRecipes);
-                    }
+                    if (parsed.characters && Array.isArray(parsed.characters)) setSavedCharacters(parsed.characters);
+                    if (parsed.craftingProjects && Array.isArray(parsed.craftingProjects)) setCraftingProjects(parsed.craftingProjects);
+                    if (parsed.activeStats) setActiveStats(parsed.activeStats);
+                    if (parsed.favRecipes && Array.isArray(parsed.favRecipes)) setFavRecipes(parsed.favRecipes);
                     resolve();
                 } catch (err) {
                     console.error("Failed to parse save file:", err);
@@ -223,16 +228,13 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
             spellMap[fastNormalize(spell.name)] = spell;
         });
 
-        // Build Spell Prerequisite Map (Inverse lookup)
+        // Build Spell Prerequisite Map
         data.spells.forEach(spell => {
             if (spell.prerequisites) {
                 const normalizedPrereq = fastNormalize(spell.prerequisites);
-                // We check if any known spell name is contained in the prerequisite string
                 Object.keys(spellMap).forEach(knownSpellName => {
                     if (normalizedPrereq.includes(knownSpellName)) {
-                        if (!spellPrerequisiteMap[knownSpellName]) {
-                            spellPrerequisiteMap[knownSpellName] = [];
-                        }
+                        if (!spellPrerequisiteMap[knownSpellName]) spellPrerequisiteMap[knownSpellName] = [];
                         spellPrerequisiteMap[knownSpellName].push(spell);
                     }
                 });
@@ -243,49 +245,32 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         data.bestiary.forEach(monster => {
             monster.drops.forEach(drop => {
                 const normalizedDrop = fastNormalize(drop);
-                if (!itemMonsterMap[normalizedDrop]) {
-                    itemMonsterMap[normalizedDrop] = [];
-                }
+                if (!itemMonsterMap[normalizedDrop]) itemMonsterMap[normalizedDrop] = [];
                 itemMonsterMap[normalizedDrop].push(monster);
             });
         });
 
         const walk = (item: RecipeItem, profession: string, parentRecipe: RecipeItem) => {
             const normalizedName = fastNormalize(item.name);
-            
-            if (!ingredientProfessionMap[normalizedName]) {
-                ingredientProfessionMap[normalizedName] = new Set();
-            }
-            if (profession) {
-                ingredientProfessionMap[normalizedName].add(profession);
-            }
-
+            if (!ingredientProfessionMap[normalizedName]) ingredientProfessionMap[normalizedName] = new Set();
+            if (profession) ingredientProfessionMap[normalizedName].add(profession);
             if (parentRecipe && fastNormalize(parentRecipe.name) !== normalizedName) {
-                if (!itemUsageMap[normalizedName]) {
-                    itemUsageMap[normalizedName] = [];
-                }
-                if (!itemUsageMap[normalizedName].some(r => r.name === parentRecipe.name)) {
-                    itemUsageMap[normalizedName].push(parentRecipe);
-                }
+                if (!itemUsageMap[normalizedName]) itemUsageMap[normalizedName] = [];
+                if (!itemUsageMap[normalizedName].some(r => r.name === parentRecipe.name)) itemUsageMap[normalizedName].push(parentRecipe);
             }
-            
-            if (item.ingredients) {
-                item.ingredients.forEach(ing => walk(ing, profession || item.profession || "", parentRecipe));
-            }
+            if (item.ingredients) item.ingredients.forEach(ing => walk(ing, profession || item.profession || "", parentRecipe));
         };
 
         data.recipes.forEach(recipe => {
             const normalizedName = fastNormalize(recipe.name);
-            
             if (recipe.profession) {
-                if (!ingredientProfessionMap[normalizedName]) {
-                    ingredientProfessionMap[normalizedName] = new Set();
-                }
+                if (!ingredientProfessionMap[normalizedName]) ingredientProfessionMap[normalizedName] = new Set();
                 ingredientProfessionMap[normalizedName].add(recipe.profession);
             }
-            
             recipe.ingredients?.forEach(ing => walk(ing, recipe.profession || "", recipe));
         });
+
+        const combinedItems = [...data.items, ...data.plants, ...data.trees, ...data.deposits];
 
         const wikiData: PageContent[] = [
             {
@@ -307,7 +292,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
                 title: 'Objets',
                 category: 'items',
                 description: "Retrouvez ici la liste complète des équipements, armes et composants d'Althéa.",
-                recipes: data.items
+                recipes: combinedItems
             },
             {
                 id: 'spells',
@@ -330,6 +315,9 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
     const value = {
         itemsData: data.items,
+        plantsData: data.plants,
+        treesData: data.trees,
+        depositsData: data.deposits,
         bestiaryData: data.bestiary,
         recipesData: data.recipes,
         spellsData: data.spells,
