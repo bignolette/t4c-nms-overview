@@ -191,42 +191,6 @@
     "source": "Divers"
   },
   {
-    "name": "Potion de forte puissance en air",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "2095.920.2"
-  },
-  {
-    "name": "Potion de forte puissance en eau",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "2095.920.2"
-  },
-  {
-    "name": "Potion de forte puissance en feu",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "2095.920.2"
-  },
-  {
-    "name": "Potion de forte puissance en lumière",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "2095.920.2"
-  },
-  {
-    "name": "Potion de forte puissance en nécromancie",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "2095.920.2"
-  },
-  {
-    "name": "Potion de forte puissance en terre",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "2095.920.2"
-  },
-  {
     "name": "Fiole de soufre",
     "quantity": 1,
     "source": "Divers"
@@ -249,24 +213,6 @@
     "source": "Divers"
   },
   {
-    "name": "Cuir d'Orc tanné",
-    "quantity": 1,
-    "source": "Cape",
-    "coordinates": "2839.1342.0"
-  },
-  {
-    "name": "Pépite de mithril",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "1671.2564.0"
-  },
-  {
-    "name": "Pointes de flèches en fer",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "2908.1028.0"
-  },
-  {
     "name": "Lingot d'iridium",
     "quantity": 1,
     "source": "Divers"
@@ -275,48 +221,6 @@
     "name": "Morceau d'ivoire d'Agamaoth",
     "quantity": 1,
     "source": "Divers"
-  },
-  {
-    "name": "Pépite de cuivre",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "1671.2564.0"
-  },
-  {
-    "name": "Pépite de fer",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "2858.1339.0"
-  },
-  {
-    "name": "Pépite d'argent",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "1671.2564.0"
-  },
-  {
-    "name": "Décoction de mandragore",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "2866.1304.0"
-  },
-  {
-    "name": "Décoction d'immortelle",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "1658.2606.0"
-  },
-  {
-    "name": "Fiole de poison mortel",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "119.837.0"
-  },
-  {
-    "name": "Antidote contre l'empoisonnement mortel",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "119.837.0"
   },
   {
     "name": "Fleur d'immortelle",
@@ -333,12 +237,6 @@
     "name": "Queue de rat pestiféré",
     "quantity": 1,
     "source": "Divers"
-  },
-  {
-    "name": "Potion du fortuné",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "2095.920.2"
   },
   {
     "name": "Fer à cheval",
@@ -720,90 +618,6 @@
     "source": "Orbe"
   },
   {
-    "name": "Orbe vierge de petite taille",
-    "quantity": 1,
-    "source": "Orbe",
-    "coordinates": "2858.1339.0"
-  },
-  {
-    "name": "Orbe vierge de taille moyenne",
-    "quantity": 1,
-    "source": "Orbe",
-    "coordinates": "1671.2564.0"
-  },
-  {
-    "name": "Orbe vierge de grande taille",
-    "quantity": 1,
-    "source": "Orbe",
-    "coordinates": "172.839.0"
-  },
-  {
-    "name": "Pépite d'adamantite",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "172.839.0"
-  },
-  {
-    "name": "Pépite de métrolite",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "172.839.0"
-  },
-  {
-    "name": "Pépite de plomb",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "2858.1339.0"
-  },
-  {
-    "name": "Lingot de fer",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "354.2318.2"
-  },
-  {
-    "name": "Lingot de plomb",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "354.2318.2"
-  },
-  {
-    "name": "Lingot de cuivre",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "745.2388.0"
-  },
-  {
-    "name": "Lingot de mithril",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "745.2388.0"
-  },
-  {
-    "name": "Lingot d'argent",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "745.2388.0"
-  },
-  {
-    "name": "Lingot d'adamantite",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "809.853.0"
-  },
-  {
-    "name": "Lingot d'or",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "809.853.0"
-  },
-  {
-    "name": "Lingot de métrolite",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "809.853.0"
-  },
-  {
     "name": "Morceau de charbon",
     "quantity": 1,
     "source": "Divers"
@@ -854,162 +668,6 @@
     "source": "Divers"
   },
   {
-    "name": "Bobine de fil de cuivre",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "2897.1103.0"
-  },
-  {
-    "name": "Bobine de fil d'argent",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "1678.2581.0"
-  },
-  {
-    "name": "Carquois en cuir d'Orc vide",
-    "quantity": 1,
-    "source": "Arc",
-    "coordinates": "2897.1103.0"
-  },
-  {
-    "name": "Courte lame de fer",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "2822.1319.0"
-  },
-  {
-    "name": "Courte lame d'adamantite",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "146.819.0"
-  },
-  {
-    "name": "Courte lame de mithril",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "1496.738.1"
-  },
-  {
-    "name": "Longue lame de fer",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "2822.1319.0"
-  },
-  {
-    "name": "Longue lame d'adamantite",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "146.819.0"
-  },
-  {
-    "name": "Longue lame de mithril",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "1496.738.1"
-  },
-  {
-    "name": "Lame courbée de fer",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "2822.1319.0"
-  },
-  {
-    "name": "Lame courbée d'adamantite",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "146.819.0"
-  },
-  {
-    "name": "Lame courbée de mithril",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "1496.738.1"
-  },
-  {
-    "name": "Hampe de fer",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "2822.1319.0"
-  },
-  {
-    "name": "Hampe d'adamantite",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "146.819.0"
-  },
-  {
-    "name": "Hampe de mithril",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "1496.738.1"
-  },
-  {
-    "name": "Poulie en fer",
-    "quantity": 1,
-    "source": "Amulette",
-    "coordinates": "2908.1028.0"
-  },
-  {
-    "name": "Poulie en adamantite",
-    "quantity": 1,
-    "source": "Amulette",
-    "coordinates": "785.1084.0"
-  },
-  {
-    "name": "Poulie en mithril",
-    "quantity": 1,
-    "source": "Amulette",
-    "coordinates": "1050.1035.3"
-  },
-  {
-    "name": "Pointes de flèches en adamantite",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "785.1084.0"
-  },
-  {
-    "name": "Pointes de flèches en mithril",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "1050.1035.3"
-  },
-  {
-    "name": "Boule à pointes en fer",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "2908.1028.0"
-  },
-  {
-    "name": "Boule à pointes en adamantite",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "785.1084.0"
-  },
-  {
-    "name": "Boule à pointes en mithril",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "1050.1035.3"
-  },
-  {
-    "name": "Chaîne de fer",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "2908.1028.0"
-  },
-  {
-    "name": "Chaîne d'adamantite",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "785.1084.0"
-  },
-  {
-    "name": "Chaîne de mithril",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "1050.1035.3"
-  },
-  {
     "name": "Corne de Gobelin",
     "quantity": 1,
     "source": "Divers"
@@ -1025,168 +683,6 @@
     "source": "Divers"
   },
   {
-    "name": "Cuissot en cuir d'Orc",
-    "quantity": 1,
-    "source": "Jambière",
-    "coordinates": "2848.1287.0"
-  },
-  {
-    "name": "Cuissot en iridium",
-    "quantity": 1,
-    "source": "Jambière",
-    "coordinates": "1538.744.1"
-  },
-  {
-    "name": "Grève en cuir d'Orc",
-    "quantity": 1,
-    "source": "Jambière",
-    "coordinates": "2848.1287.0"
-  },
-  {
-    "name": "Grève en iridium",
-    "quantity": 1,
-    "source": "Jambière",
-    "coordinates": "1538.744.1"
-  },
-  {
-    "name": "Brassard en cuir d'Orc",
-    "quantity": 1,
-    "source": "Gant",
-    "coordinates": "2848.1287.0"
-  },
-  {
-    "name": "Brassard en iridium",
-    "quantity": 1,
-    "source": "Gant",
-    "coordinates": "1538.744.1"
-  },
-  {
-    "name": "Brigandine en cuir d'Orc",
-    "quantity": 1,
-    "source": "Plastron",
-    "coordinates": "2848.1287.0"
-  },
-  {
-    "name": "Brigandine en iridium",
-    "quantity": 1,
-    "source": "Plastron",
-    "coordinates": "1888.329.1"
-  },
-  {
-    "name": "Spalière en iridium",
-    "quantity": 1,
-    "source": "Plastron",
-    "coordinates": "1888.329.1"
-  },
-  {
-    "name": "Soleret en iridium",
-    "quantity": 1,
-    "source": "Botte",
-    "coordinates": "1538.744.1"
-  },
-  {
-    "name": "Cubitière en iridium",
-    "quantity": 1,
-    "source": "Plastron",
-    "coordinates": "1888.329.1"
-  },
-  {
-    "name": "Genouillère en iridium",
-    "quantity": 1,
-    "source": "Jambière",
-    "coordinates": "1538.744.1"
-  },
-  {
-    "name": "Rondelle d'iridium",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "1538.744.1"
-  },
-  {
-    "name": "Anneau en fer forgé",
-    "quantity": 1,
-    "source": "Anneau",
-    "coordinates": "1736.1236.0"
-  },
-  {
-    "name": "Anneau en plomb",
-    "quantity": 1,
-    "source": "Anneau",
-    "coordinates": "1736.1236.0"
-  },
-  {
-    "name": "Anneau en cuivre",
-    "quantity": 1,
-    "source": "Anneau",
-    "coordinates": "1374.2372.0"
-  },
-  {
-    "name": "Anneau en mithril",
-    "quantity": 1,
-    "source": "Anneau",
-    "coordinates": "1374.2372.0"
-  },
-  {
-    "name": "Anneau en argent",
-    "quantity": 1,
-    "source": "Anneau",
-    "coordinates": "1374.2372.0"
-  },
-  {
-    "name": "Anneau en adamantite",
-    "quantity": 1,
-    "source": "Anneau",
-    "coordinates": "892.1050.0"
-  },
-  {
-    "name": "Anneau en or forgé",
-    "quantity": 1,
-    "source": "Anneau",
-    "coordinates": "892.1050.0"
-  },
-  {
-    "name": "Anneau en métrolite",
-    "quantity": 1,
-    "source": "Anneau",
-    "coordinates": "892.1050.0"
-  },
-  {
-    "name": "Corde en boyaux d'antilope",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "2826.1294.0"
-  },
-  {
-    "name": "Corde en boyaux d'horreur railleuse",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "1654.2540.0"
-  },
-  {
-    "name": "Corde en boyaux de loup",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "132.855.0"
-  },
-  {
-    "name": "Corde en boyaux d'apocalypse des sables",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "1510.724.1"
-  },
-  {
-    "name": "Fût en orme",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "2150.515.0"
-  },
-  {
-    "name": "Manche en orme",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "2150.515.0"
-  },
-  {
     "name": "Boyaux d'horreur railleuse",
     "quantity": 1,
     "source": "Divers"
@@ -1195,12 +691,6 @@
     "name": "Ecorce de vénérable centenaire de Mato",
     "quantity": 1,
     "source": "Divers"
-  },
-  {
-    "name": "Morceau de peau de loup tannée",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "1678.2581.0"
   },
   {
     "name": "Catalyseur de puissance orc",
@@ -1403,21 +893,9 @@
     "source": "Divers"
   },
   {
-    "name": "Pépite d'or",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "172.839.0"
-  },
-  {
     "name": "Morceau de peau d'Orc",
     "quantity": 1,
     "source": "Divers"
-  },
-  {
-    "name": "Bobine de fil d'or",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "1436.2489.0"
   },
   {
     "name": "Os d'Orc",
@@ -1530,33 +1008,12 @@
     "source": "Divers"
   },
   {
-    "name": "Azurite polie",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Anneaux en hématite",
     "quantity": 1,
     "source": "Divers"
   },
   {
-    "name": "Cérusite polie",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Quete du Forgeron de DI Durikk",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Gorgerin en iridium",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "1888.329.1"
-  },
-  {
-    "name": "Rondache en iridium",
     "quantity": 1,
     "source": "Divers"
   },
@@ -1569,12 +1026,6 @@
     "name": "Chaine en titane",
     "quantity": 1,
     "source": "Divers"
-  },
-  {
-    "name": "Galon d'argent soyeux",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "1er étage"
   },
   {
     "name": "Jade polie",
@@ -1600,18 +1051,6 @@
     "name": "Galons dorés soyeux",
     "quantity": 1,
     "source": "Divers"
-  },
-  {
-    "name": "Sachet de poudre de quartz",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "2"
-  },
-  {
-    "name": "Sachet de poudre d'obsidienne",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "1er étage"
   },
   {
     "name": "Boule a pointe en titane",

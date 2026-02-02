@@ -57,120 +57,6 @@
     ]
   },
   {
-    "name": "Fût en frêne",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "2826.1294.0"
-  },
-  {
-    "name": "Fût en noyer",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "1654.2540.0"
-  },
-  {
-    "name": "Fût en chêne",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "1284.2724.0"
-  },
-  {
-    "name": "Fût en cèdre",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "132.855.0"
-  },
-  {
-    "name": "Fût en oxandre",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "2664.973.4"
-  },
-  {
-    "name": "Fût en févier épineux",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "1510.724.1"
-  },
-  {
-    "name": "Fût en mélèze",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "1502.696.1"
-  },
-  {
-    "name": "Fût en cyprès",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "2224.955.4"
-  },
-  {
-    "name": "Manche en noyer",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "1654.2540.0"
-  },
-  {
-    "name": "Manche en chêne",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "1284.2724.0"
-  },
-  {
-    "name": "Manche en cèdre",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "132.855.0"
-  },
-  {
-    "name": "Manche en oxandre",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "2664.973.4"
-  },
-  {
-    "name": "Manche en févier épineux",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "1510.724.1"
-  },
-  {
-    "name": "Manche en mélèze",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "1502.696.1"
-  },
-  {
-    "name": "Manche en cyprès",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "2224.955.4"
-  },
-  {
-    "name": "Bâton en chêne",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "1284.2724.0"
-  },
-  {
-    "name": "Bâton en oxandre",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "2664.973.4"
-  },
-  {
-    "name": "Bâton en mélèze",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "1502.696.1"
-  },
-  {
-    "name": "Pointes de flèches en frêne taillé",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "2826.1294.0"
-  },
-  {
     "name": "Branche de févier épineux",
     "quantity": 1,
     "source": "Divers",
@@ -191,12 +77,6 @@
     ]
   },
   {
-    "name": "Bâton en cyprès",
-    "quantity": 1,
-    "source": "Arme",
-    "coordinates": "2224.955.4"
-  },
-  {
     "name": "Branche de cyprès",
     "quantity": 1,
     "source": "Divers",
@@ -204,11 +84,6 @@
   },
   {
     "name": "Hampe mélèze",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Bouclier en Sureau",
     "quantity": 1,
     "source": "Divers"
   },
