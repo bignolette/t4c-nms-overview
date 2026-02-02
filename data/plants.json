@@ -1,0 +1,229 @@
+[
+  {
+    "name": "Feuille de Consoude",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": [
+      "293.1016.0",
+      "245.420.0",
+      "558.861.0"
+    ]
+  },
+  {
+    "name": "Fleur d'arnica",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": [
+      "2723.1235.0",
+      "2709.830.0",
+      "2551.1182.0",
+      "2559.974.0",
+      "2314.1044.0"
+    ]
+  },
+  {
+    "name": "Racine de ginseng",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": [
+      "1812.1122.0",
+      "1909.1093.0",
+      "2284.1299.0",
+      "2374.1384.0",
+      "2246.1045.0"
+    ]
+  },
+  {
+    "name": "Décoction de ginseng",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": "2866.1304.0"
+  },
+  {
+    "name": "Décoction d'arnica",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": "2866.1304.0"
+  },
+  {
+    "name": "Décoction de ciguë",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": "2866.1304.0"
+  },
+  {
+    "name": "Feuille de ciguë",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": [
+      "2320.146.0",
+      "1492.200.0",
+      "1910.806.0",
+      "2196.638.0",
+      "1853.578.0"
+    ]
+  },
+  {
+    "name": "Décoction de maté",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": "1658.2606.0"
+  },
+  {
+    "name": "Décoction de datura",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": "1658.2606.0"
+  },
+  {
+    "name": "Décoction de fleur de cactus",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": "1658.2606.0"
+  },
+  {
+    "name": "Décoction de consoude",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": "119.837.0"
+  },
+  {
+    "name": "Décoction d'acérola",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": "119.837.0"
+  },
+  {
+    "name": "Décoction de colchique",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": "119.837.0"
+  },
+  {
+    "name": "Décoction de boldo",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": "119.837.0"
+  },
+  {
+    "name": "Feuille de maté",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": [
+      "1563.2892.0",
+      "1125.2065.0",
+      "589.2060.0",
+      "1178.2380.0"
+    ]
+  },
+  {
+    "name": "Feuille de datura",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": [
+      "971.1954.0",
+      "462.1819.0",
+      "645.1506.0",
+      "1047.1831.0"
+    ]
+  },
+  {
+    "name": "Fleur de cactus",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": [
+      "272.2418.0",
+      "318.2479.0",
+      "345.2330.0",
+      "425.2674.0"
+    ]
+  },
+  {
+    "name": "Cerise d'acérola",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": [
+      "1095.1223.0",
+      "465.134.0",
+      "821.896.0"
+    ]
+  },
+  {
+    "name": "Fleur de colchique",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": [
+      "781.525.0",
+      "1132.308.0",
+      "1336.398.0"
+    ]
+  },
+  {
+    "name": "Feuille de boldo",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": [
+      "856.710.0",
+      "1103.147.0",
+      "897.76.0"
+    ]
+  },
+  {
+    "name": "Bobine de fil de chanvre",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": "2839.1342.0"
+  },
+  {
+    "name": "Bobine de fil de coton",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": "1678.2581.0"
+  },
+  {
+    "name": "Aune de toile de chanvre",
+    "quantity": 1,
+    "source": "Cape",
+    "coordinates": "2839.1342.0"
+  },
+  {
+    "name": "Aune de toile de coton",
+    "quantity": 1,
+    "source": "Cape",
+    "coordinates": "1678.2581.0"
+  },
+  {
+    "name": "Gerbe de chanvre",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": [
+      "2685.566.0",
+      "2807.650.0",
+      "2705.650.0",
+      "1614.102.0",
+      "2055.877.0"
+    ]
+  },
+  {
+    "name": "Feuille de charme",
+    "quantity": 1,
+    "source": "Divers"
+  },
+  {
+    "name": "Fleur de coton",
+    "quantity": 1,
+    "source": "Arme",
+    "coordinates": [
+      "757.1479.0",
+      "991.2028.0",
+      "275.1634.0",
+      "817.2209.0"
+    ]
+  },
+  {
+    "name": "Violettes sauvages",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": "930.150.7"
+  }
+]

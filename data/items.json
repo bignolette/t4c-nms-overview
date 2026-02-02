@@ -1806,51 +1806,6 @@
     }
   },
   {
-    "name": "Minerais de fer",
-    "quantity": 1,
-    "source": "Matériau"
-  },
-  {
-    "name": "Minerais de plomb",
-    "quantity": 1,
-    "source": "Matériau"
-  },
-  {
-    "name": "Minerais de cuivre",
-    "quantity": 1,
-    "source": "Matériau"
-  },
-  {
-    "name": "Minerais d'argent",
-    "quantity": 1,
-    "source": "Matériau"
-  },
-  {
-    "name": "Minerais de mithril",
-    "quantity": 1,
-    "source": "Matériau"
-  },
-  {
-    "name": "Minerais d'adamantite",
-    "quantity": 1,
-    "source": "Matériau"
-  },
-  {
-    "name": "Minerais d'or",
-    "quantity": 1,
-    "source": "Matériau"
-  },
-  {
-    "name": "Minerais de métrolite",
-    "quantity": 1,
-    "source": "Matériau"
-  },
-  {
-    "name": "Corindon des profondeurs",
-    "quantity": 1,
-    "source": "Matériau"
-  },
-  {
     "name": "Gravillons d'énergie",
     "quantity": 1,
     "source": "Matériau"
@@ -1861,42 +1816,12 @@
     "source": "Matériau"
   },
   {
-    "name": "Minerais de saphir",
-    "quantity": 1,
-    "source": "Matériau"
-  },
-  {
-    "name": "Freibergite",
-    "quantity": 1,
-    "source": "Matériau"
-  },
-  {
     "name": "Metal sulfuré",
     "quantity": 1,
     "source": "Matériau"
   },
   {
     "name": "Silice de la fange",
-    "quantity": 1,
-    "source": "Matériau"
-  },
-  {
-    "name": "Minerais de diamant",
-    "quantity": 1,
-    "source": "Matériau"
-  },
-  {
-    "name": "Minerais de rubis",
-    "quantity": 1,
-    "source": "Matériau"
-  },
-  {
-    "name": "Minerais d'émeraude",
-    "quantity": 1,
-    "source": "Matériau"
-  },
-  {
-    "name": "Minerais de titane",
     "quantity": 1,
     "source": "Matériau"
   },
@@ -1912,11 +1837,6 @@
   },
   {
     "name": "Pierre des sables",
-    "quantity": 1,
-    "source": "Matériau"
-  },
-  {
-    "name": "Fragment de Météorite",
     "quantity": 1,
     "source": "Matériau"
   },
@@ -2755,11 +2675,6 @@
   },
   {
     "name": "Élixir de mana",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Morceau de peau blanche rude",
     "quantity": 1,
     "source": "Divers"
   },
@@ -4212,14 +4127,6 @@
     }
   },
   {
-    "name": "Pierre verte d'esprit de la forêt",
-    "quantity": 1,
-    "source": "Divers",
-    "secondary": {
-      "Luminosité": "+75"
-    }
-  },
-  {
     "name": "Robe de mariée",
     "quantity": 1,
     "source": "Robe"
@@ -4241,11 +4148,6 @@
   },
   {
     "name": "Pierre verte",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Crâne du bouffon morbide",
     "quantity": 1,
     "source": "Divers"
   },
@@ -4568,11 +4470,6 @@
       "dex": "+5",
       "ca": "+2"
     }
-  },
-  {
-    "name": "Calice d'or",
-    "quantity": 1,
-    "source": "Divers"
   },
   {
     "name": "Os de squelette",
@@ -5842,11 +5739,6 @@
     "source": "Divers"
   },
   {
-    "name": "Racine de mandragore",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Pomme grenade",
     "quantity": 1,
     "source": "Divers"
@@ -6123,11 +6015,6 @@
     }
   },
   {
-    "name": "Livre des sorts rouges",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Lame d'héroïsme",
     "quantity": 1,
     "source": "Arme",
@@ -6195,11 +6082,6 @@
     "name": "Talisman de contrôle de la pensée",
     "quantity": 1,
     "source": "Amulette"
-  },
-  {
-    "name": "Pierre immortelle",
-    "quantity": 1,
-    "source": "Divers"
   },
   {
     "name": "Sablier essentiel",
@@ -7567,11 +7449,6 @@
     "source": "Divers"
   },
   {
-    "name": "Fluide visqueux essentiel de Zorglub",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Crâne de malfrat",
     "quantity": 1,
     "source": "Divers"
@@ -7644,21 +7521,6 @@
     "source": "Divers"
   },
   {
-    "name": "Rubis brut",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Saphir Brut",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Diamant brut",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Grenat brut",
     "quantity": 1,
     "source": "Divers"
@@ -7670,11 +7532,6 @@
   },
   {
     "name": "Pierre de lune brute",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Morceau de calcaire brut",
     "quantity": 1,
     "source": "Divers"
   },
@@ -10176,42 +10033,7 @@
     "source": "Divers"
   },
   {
-    "name": "Potion de forte puissance en air",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Potion de forte puissance en eau",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Potion de forte puissance en feu",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Potion de forte puissance en lumière",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Potion de forte puissance en nécromancie",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Potion de forte puissance en terre",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Potion du chanceux",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Fiole de soufre",
     "quantity": 1,
     "source": "Divers"
   },
@@ -10749,16 +10571,6 @@
     }
   },
   {
-    "name": "Branche de noyer",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Branche de chêne",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Sceptre du néant",
     "quantity": 1,
     "source": "Arme"
@@ -10775,27 +10587,7 @@
     }
   },
   {
-    "name": "Branche de cèdre",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Branche d'oxandre",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Branche de bois mort",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Branche de frêne",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Branche d'orme",
     "quantity": 1,
     "source": "Divers"
   },
@@ -10831,11 +10623,6 @@
     "source": "Divers"
   },
   {
-    "name": "Oeuf d'horreur railleuse",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Sachet de poudre rouge",
     "quantity": 1,
     "source": "Divers"
@@ -10854,21 +10641,6 @@
     "name": "Lanière en cuir d'Orc",
     "quantity": 1,
     "source": "Ceinture"
-  },
-  {
-    "name": "Cuir d'Orc tanné",
-    "quantity": 1,
-    "source": "Cape"
-  },
-  {
-    "name": "Pépite de mithril",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Pointes de flèches en fer",
-    "quantity": 1,
-    "source": "Arme"
   },
   {
     "name": "Chope de bière naine",
@@ -11259,16 +11031,6 @@
     }
   },
   {
-    "name": "Lingot d'iridium",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Morceau d'ivoire d'Agamaoth",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Cake au fruit",
     "quantity": 1,
     "source": "Divers"
@@ -11641,21 +11403,6 @@
     "bonuses": {
       "ca": "+6"
     }
-  },
-  {
-    "name": "Pépite de cuivre",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Pépite de fer",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Pépite d'argent",
-    "quantity": 1,
-    "source": "Divers"
   },
   {
     "name": "Cape de mauvais augure",
@@ -12238,11 +11985,6 @@
     "source": "Divers"
   },
   {
-    "name": "Décoction de mandragore",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Sceptre de déferlante",
     "quantity": 1,
     "source": "Arme",
@@ -12318,37 +12060,7 @@
     }
   },
   {
-    "name": "Feuille de Consoude",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Potion du Centaure",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Fleur d'arnica",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Racine de ginseng",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Décoction de ginseng",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Décoction d'arnica",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Décoction de ciguë",
     "quantity": 1,
     "source": "Divers"
   },
@@ -12363,32 +12075,7 @@
     "source": "Divers"
   },
   {
-    "name": "Feuille de ciguë",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Potion d'obscurité",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Décoction d'immortelle",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Décoction de maté",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Décoction de datura",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Décoction de fleur de cactus",
     "quantity": 1,
     "source": "Divers"
   },
@@ -12399,36 +12086,6 @@
   },
   {
     "name": "Potion de faible régénération",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Décoction de consoude",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Décoction d'acérola",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Décoction de colchique",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Décoction de boldo",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Fiole de poison mortel",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Antidote contre l'empoisonnement mortel",
     "quantity": 1,
     "source": "Divers"
   },
@@ -12448,42 +12105,7 @@
     "source": "Divers"
   },
   {
-    "name": "Fleur d'immortelle",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Feuille de maté",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Feuille de datura",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Fleur de cactus",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Rate de Troll",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Cerise d'acérola",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Fleur de colchique",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Feuille de boldo",
     "quantity": 1,
     "source": "Divers"
   },
@@ -12503,24 +12125,9 @@
     "source": "Divers"
   },
   {
-    "name": "Queue de rat pestiféré",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Potion de régénération",
     "quantity": 1,
     "source": "Divers"
-  },
-  {
-    "name": "Potion du fortuné",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Fer à cheval",
-    "quantity": 1,
-    "source": "Amulette"
   },
   {
     "name": "Prisme de mana finement taillé",
@@ -12566,56 +12173,6 @@
     "name": "Parchemin d'anxiété",
     "quantity": 1,
     "source": "Divers"
-  },
-  {
-    "name": "Orbe secret de Falyel",
-    "quantity": 1,
-    "source": "Orbe"
-  },
-  {
-    "name": "Orbe secret de Gorodek",
-    "quantity": 1,
-    "source": "Orbe"
-  },
-  {
-    "name": "Orbe secret de Miryden",
-    "quantity": 1,
-    "source": "Orbe"
-  },
-  {
-    "name": "Orbe secret de Jalaam",
-    "quantity": 1,
-    "source": "Orbe"
-  },
-  {
-    "name": "Orbe secret d'Amaëlle",
-    "quantity": 1,
-    "source": "Orbe"
-  },
-  {
-    "name": "Orbe secret de Xordiv",
-    "quantity": 1,
-    "source": "Orbe"
-  },
-  {
-    "name": "Orbe secret d'Isilaë",
-    "quantity": 1,
-    "source": "Orbe"
-  },
-  {
-    "name": "Orbe secret de Klauzar",
-    "quantity": 1,
-    "source": "Orbe"
-  },
-  {
-    "name": "Orbe secret de Silvius",
-    "quantity": 1,
-    "source": "Orbe"
-  },
-  {
-    "name": "Orbe secret de Valmar",
-    "quantity": 1,
-    "source": "Orbe"
   },
   {
     "name": "Extrait d'énergie pure",
@@ -12965,47 +12522,7 @@
     }
   },
   {
-    "name": "Orbe vierge de petite taille",
-    "quantity": 1,
-    "source": "Orbe"
-  },
-  {
-    "name": "Orbe vierge de taille moyenne",
-    "quantity": 1,
-    "source": "Orbe"
-  },
-  {
-    "name": "Orbe vierge de grande taille",
-    "quantity": 1,
-    "source": "Orbe"
-  },
-  {
-    "name": "Pépite d'adamantite",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Pépite de métrolite",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Pépite de plomb",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Pépite d'acier",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Lingot de fer",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Lingot de plomb",
     "quantity": 1,
     "source": "Divers"
   },
@@ -13015,42 +12532,7 @@
     "source": "Divers"
   },
   {
-    "name": "Lingot de cuivre",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Lingot de mithril",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Lingot d'argent",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Lingot d'adamantite",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Lingot d'or",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Lingot de métrolite",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Manuel d'instructions de Jander",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Morceau de charbon",
     "quantity": 1,
     "source": "Divers"
   },
@@ -13071,11 +12553,6 @@
   },
   {
     "name": "Feuille de protecteur",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Scorie de l'incendiaire",
     "quantity": 1,
     "source": "Divers"
   },
@@ -13145,11 +12622,6 @@
     "source": "Divers"
   },
   {
-    "name": "Moelle du bouffon morbide",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Boîte à secrets",
     "quantity": 1,
     "source": "Divers"
@@ -13161,11 +12633,6 @@
   },
   {
     "name": "Poudre secrète de Falyel",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Poudre secrète de Gorodek",
     "quantity": 1,
     "source": "Divers"
   },
@@ -13196,11 +12663,6 @@
   },
   {
     "name": "Poudre secrète de Valmar",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Poudre secrète de Xordiv",
     "quantity": 1,
     "source": "Divers"
   },
@@ -13271,16 +12733,6 @@
     "source": "Divers"
   },
   {
-    "name": "Butin de la corruption",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Parchemin de purification de l'or",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Capture d'esprit taciturne",
     "quantity": 1,
     "source": "Divers"
@@ -13334,16 +12786,6 @@
     "bonuses": {
       "ca": "+8"
     }
-  },
-  {
-    "name": "Guide du mentor",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Cornaline",
-    "quantity": 1,
-    "source": "Divers"
   },
   {
     "name": "Plume passe-partout",
@@ -13436,11 +12878,6 @@
     "source": "Orbe"
   },
   {
-    "name": "Morceau de peau du loup solitaire",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Eclats de glace",
     "quantity": 1,
     "source": "Divers"
@@ -13481,27 +12918,7 @@
     "source": "Divers"
   },
   {
-    "name": "Bobine de fil de chanvre",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Bobine de fil métallisé",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Bobine de fil de cuivre",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Bobine de fil de coton",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Bobine de fil d'argent",
     "quantity": 1,
     "source": "Divers"
   },
@@ -13546,16 +12963,6 @@
     "secondary": {
       "Puissance Lumière": "+3"
     }
-  },
-  {
-    "name": "Aune de toile de chanvre",
-    "quantity": 1,
-    "source": "Cape"
-  },
-  {
-    "name": "Aune de toile de coton",
-    "quantity": 1,
-    "source": "Cape"
   },
   {
     "name": "Aune de toile de soie",
@@ -13724,11 +13131,6 @@
     }
   },
   {
-    "name": "Carquois en cuir d'Orc vide",
-    "quantity": 1,
-    "source": "Arc"
-  },
-  {
     "name": "Chapeau du nomade d'Arakas",
     "quantity": 1,
     "source": "Heaume",
@@ -13738,16 +13140,6 @@
     "bonuses": {
       "ca": "+4"
     }
-  },
-  {
-    "name": "Gerbe de chanvre",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Feuille de charme",
-    "quantity": 1,
-    "source": "Divers"
   },
   {
     "name": "Aiguille à coudre",
@@ -13910,27 +13302,7 @@
     }
   },
   {
-    "name": "Courte lame de fer",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
     "name": "Courte lame d'acier",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Courte lame d'adamantite",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Courte lame de mithril",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Longue lame de fer",
     "quantity": 1,
     "source": "Arme"
   },
@@ -13940,37 +13312,7 @@
     "source": "Arme"
   },
   {
-    "name": "Longue lame d'adamantite",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Longue lame de mithril",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Lame courbée de fer",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
     "name": "Lame courbée d'acier",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Lame courbée d'adamantite",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Lame courbée de mithril",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Hampe de fer",
     "quantity": 1,
     "source": "Arme"
   },
@@ -13980,52 +13322,12 @@
     "source": "Arme"
   },
   {
-    "name": "Hampe d'adamantite",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Hampe de mithril",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Poulie en fer",
-    "quantity": 1,
-    "source": "Amulette"
-  },
-  {
     "name": "Poulie en acier",
     "quantity": 1,
     "source": "Amulette"
   },
   {
-    "name": "Poulie en adamantite",
-    "quantity": 1,
-    "source": "Amulette"
-  },
-  {
-    "name": "Poulie en mithril",
-    "quantity": 1,
-    "source": "Amulette"
-  },
-  {
     "name": "Pointes de flèches en acier",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Pointes de flèches en adamantite",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Pointes de flèches en mithril",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Boule à pointes en fer",
     "quantity": 1,
     "source": "Arme"
   },
@@ -14055,32 +13357,7 @@
     }
   },
   {
-    "name": "Boule à pointes en adamantite",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Boule à pointes en mithril",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Chaîne de fer",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
     "name": "Chaîne d'acier",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Chaîne d'adamantite",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Chaîne de mithril",
     "quantity": 1,
     "source": "Arme"
   },
@@ -14147,11 +13424,6 @@
     }
   },
   {
-    "name": "Corne de Gobelin",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Pommeau de rapière rouillé",
     "quantity": 1,
     "source": "Arme"
@@ -14177,34 +13449,14 @@
     "source": "Divers"
   },
   {
-    "name": "Ecusson d'Orkanis",
-    "quantity": 1,
-    "source": "Bouclier"
-  },
-  {
     "name": "Médaillon de Rhykin Dhin",
     "quantity": 1,
     "source": "Amulette"
   },
   {
-    "name": "Morceau de nacre",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Fût en frêne",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
     "name": "Sécrétions putrides",
     "quantity": 1,
     "source": "Divers"
-  },
-  {
-    "name": "Cuissot en cuir d'Orc",
-    "quantity": 1,
-    "source": "Jambière"
   },
   {
     "name": "Cuissot en cuir de Minotaure",
@@ -14213,16 +13465,6 @@
   },
   {
     "name": "Cuissot en plaque de Centaure",
-    "quantity": 1,
-    "source": "Jambière"
-  },
-  {
-    "name": "Cuissot en iridium",
-    "quantity": 1,
-    "source": "Jambière"
-  },
-  {
-    "name": "Grève en cuir d'Orc",
     "quantity": 1,
     "source": "Jambière"
   },
@@ -14237,16 +13479,6 @@
     "source": "Jambière"
   },
   {
-    "name": "Grève en iridium",
-    "quantity": 1,
-    "source": "Jambière"
-  },
-  {
-    "name": "Brassard en cuir d'Orc",
-    "quantity": 1,
-    "source": "Gant"
-  },
-  {
     "name": "Brassard en cuir de Minotaure",
     "quantity": 1,
     "source": "Gant"
@@ -14255,16 +13487,6 @@
     "name": "Brassard en plaque de Centaure",
     "quantity": 1,
     "source": "Gant"
-  },
-  {
-    "name": "Brassard en iridium",
-    "quantity": 1,
-    "source": "Gant"
-  },
-  {
-    "name": "Brigandine en cuir d'Orc",
-    "quantity": 1,
-    "source": "Plastron"
   },
   {
     "name": "Brigandine en cuir de Minotaure",
@@ -14277,77 +13499,7 @@
     "source": "Plastron"
   },
   {
-    "name": "Brigandine en iridium",
-    "quantity": 1,
-    "source": "Plastron"
-  },
-  {
-    "name": "Spalière en iridium",
-    "quantity": 1,
-    "source": "Plastron"
-  },
-  {
-    "name": "Soleret en iridium",
-    "quantity": 1,
-    "source": "Botte"
-  },
-  {
-    "name": "Cubitière en iridium",
-    "quantity": 1,
-    "source": "Plastron"
-  },
-  {
-    "name": "Genouillère en iridium",
-    "quantity": 1,
-    "source": "Jambière"
-  },
-  {
-    "name": "Rondelle d'iridium",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Anneau en fer forgé",
-    "quantity": 1,
-    "source": "Anneau"
-  },
-  {
-    "name": "Anneau en plomb",
-    "quantity": 1,
-    "source": "Anneau"
-  },
-  {
     "name": "Anneau en acier",
-    "quantity": 1,
-    "source": "Anneau"
-  },
-  {
-    "name": "Anneau en cuivre",
-    "quantity": 1,
-    "source": "Anneau"
-  },
-  {
-    "name": "Anneau en mithril",
-    "quantity": 1,
-    "source": "Anneau"
-  },
-  {
-    "name": "Anneau en argent",
-    "quantity": 1,
-    "source": "Anneau"
-  },
-  {
-    "name": "Anneau en adamantite",
-    "quantity": 1,
-    "source": "Anneau"
-  },
-  {
-    "name": "Anneau en or forgé",
-    "quantity": 1,
-    "source": "Anneau"
-  },
-  {
-    "name": "Anneau en métrolite",
     "quantity": 1,
     "source": "Anneau"
   },
@@ -14546,127 +13698,12 @@
     "source": "Divers"
   },
   {
-    "name": "Corde en boyaux d'antilope",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Corde en boyaux d'horreur railleuse",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Corde en boyaux de loup",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Corde en boyaux d'apocalypse des sables",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Fût en orme",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Fût en noyer",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Fût en chêne",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Fût en cèdre",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Fût en oxandre",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Fût en févier épineux",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Fût en mélèze",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Fût en cyprès",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
     "name": "Manche en os",
     "quantity": 1,
     "source": "Divers"
   },
   {
-    "name": "Manche en orme",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Manche en noyer",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Manche en chêne",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Manche en cèdre",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Manche en oxandre",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Manche en févier épineux",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Manche en mélèze",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Manche en cyprès",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
     "name": "Bâton en orme",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Bâton en chêne",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Bâton en oxandre",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Bâton en mélèze",
     "quantity": 1,
     "source": "Arme"
   },
@@ -14759,11 +13796,6 @@
     "bonuses": {
       "ca": "+2"
     }
-  },
-  {
-    "name": "Pointes de flèches en frêne taillé",
-    "quantity": 1,
-    "source": "Arme"
   },
   {
     "name": "Targe en frêne",
@@ -14863,11 +13895,6 @@
     "source": "Divers"
   },
   {
-    "name": "Boyaux d'horreur railleuse",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Boyaux de loup",
     "quantity": 1,
     "source": "Divers"
@@ -14889,11 +13916,6 @@
   },
   {
     "name": "Glande nauséabonde",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Ecorce de vénérable centenaire de Mato",
     "quantity": 1,
     "source": "Divers"
   },
@@ -15028,11 +14050,6 @@
     "bonuses": {
       "ca": "+8"
     }
-  },
-  {
-    "name": "Morceau de peau de loup tannée",
-    "quantity": 1,
-    "source": "Divers"
   },
   {
     "name": "Braies du don de soi",
@@ -15340,26 +14357,6 @@
     }
   },
   {
-    "name": "Fleur de coton",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Catalyseur de puissance orc",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Morceau de peau de Minotaure",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Morceau de peau de Centaure",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Prestine athermane",
     "quantity": 1,
     "source": "Divers"
@@ -15371,11 +14368,6 @@
   },
   {
     "name": "Pus infectieux",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Morceau de peau de Profundus",
     "quantity": 1,
     "source": "Divers"
   },
@@ -15419,11 +14411,6 @@
     "name": "Bâton du sourcier",
     "quantity": 1,
     "source": "Arme"
-  },
-  {
-    "name": "Ornement prestigieux",
-    "quantity": 1,
-    "source": "Divers"
   },
   {
     "name": "Sceptre de sagesse",
@@ -15492,11 +14479,6 @@
     "bonuses": {
       "ca": "+8"
     }
-  },
-  {
-    "name": "Eperon de jade",
-    "quantity": 1,
-    "source": "Divers"
   },
   {
     "name": "Enduit de Rampilios",
@@ -15637,11 +14619,6 @@
     "name": "Sabot de Minotaure",
     "quantity": 1,
     "source": "Amulette"
-  },
-  {
-    "name": "Baguette tordue",
-    "quantity": 1,
-    "source": "Arme"
   },
   {
     "name": "Rose des sables",
@@ -15814,11 +14791,6 @@
     "source": "Divers"
   },
   {
-    "name": "Zeste de peau d'Orc",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Fil de Yoggoth",
     "quantity": 1,
     "source": "Divers"
@@ -15834,11 +14806,6 @@
     "source": "Divers"
   },
   {
-    "name": "Morceau de peau de Skraug",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Toxine de la ruche",
     "quantity": 1,
     "source": "Divers"
@@ -15847,11 +14814,6 @@
     "name": "Parchemin du village Centaure",
     "quantity": 1,
     "source": "Divers"
-  },
-  {
-    "name": "Feuille d'or",
-    "quantity": 1,
-    "source": "Cape"
   },
   {
     "name": "Braises animées",
@@ -15903,11 +14865,6 @@
     "source": "Divers"
   },
   {
-    "name": "Blason secret de Gorodek",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Blason secret d'Isilaë",
     "quantity": 1,
     "source": "Divers"
@@ -15934,21 +14891,6 @@
   },
   {
     "name": "Blason secret de Valmar",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Blason secret de Xordiv",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Morceau de peau de B'Ronkhan",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Corpuscule de résurrection",
     "quantity": 1,
     "source": "Divers"
   },
@@ -16130,19 +15072,9 @@
     "source": "Divers"
   },
   {
-    "name": "Soupir effervescent",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Patène du preux",
     "quantity": 1,
     "source": "Arc"
-  },
-  {
-    "name": "Corde vocale de terreur",
-    "quantity": 1,
-    "source": "Divers"
   },
   {
     "name": "Brin de pénombre",
@@ -16180,11 +15112,6 @@
     "source": "Divers"
   },
   {
-    "name": "Mandibule d'absorption de la vie",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Empennage des temps anciens",
     "quantity": 1,
     "source": "Divers"
@@ -16203,11 +15130,6 @@
     "name": "Pointes de flèches en tungstène",
     "quantity": 1,
     "source": "Arme"
-  },
-  {
-    "name": "Branche de févier épineux",
-    "quantity": 1,
-    "source": "Divers"
   },
   {
     "name": "Inscription secrète d'Amaëlle",
@@ -16245,11 +15167,6 @@
     }
   },
   {
-    "name": "Inscription secrète de Gorodek",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Inscription secrète de d'Isilaë",
     "quantity": 1,
     "source": "Divers"
@@ -16280,22 +15197,12 @@
     "source": "Divers"
   },
   {
-    "name": "Inscription secrète de Xordiv",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Capture de nuage électrique",
     "quantity": 1,
     "source": "Divers"
   },
   {
     "name": "Bobine de fil spirituel",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Branche en mélèze",
     "quantity": 1,
     "source": "Divers"
   },
@@ -16403,24 +15310,9 @@
     "source": "Divers"
   },
   {
-    "name": "Lame de métrolite",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
     "name": "Effluve du trépas",
     "quantity": 1,
     "source": "Divers"
-  },
-  {
-    "name": "Lame en acier métrolite",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Manche en acier métrolite",
-    "quantity": 1,
-    "source": "Arme"
   },
   {
     "name": "Lambeaux en peau de rejeton",
@@ -16562,11 +15454,6 @@
     "source": "Divers"
   },
   {
-    "name": "Estampe secrète de Gorodek",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Estampe secrète d'Isilaë",
     "quantity": 1,
     "source": "Divers"
@@ -16593,11 +15480,6 @@
   },
   {
     "name": "Estampe secrète de Valmar",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Estampe secrète de Xordiv",
     "quantity": 1,
     "source": "Divers"
   },
@@ -16637,11 +15519,6 @@
     "source": "Divers"
   },
   {
-    "name": "Marque secrète de Gorodek",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Marque secrète d'Isilaë",
     "quantity": 1,
     "source": "Divers"
@@ -16668,11 +15545,6 @@
   },
   {
     "name": "Marque secrète de Valmar",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Marque secrète de Xordiv",
     "quantity": 1,
     "source": "Divers"
   },
@@ -17372,36 +16244,6 @@
     }
   },
   {
-    "name": "Ornement d'émeraude",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Ornement de saphir",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Ornement de diamant",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Ornement de rubis",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Lingot de titane",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Bâton en cyprès",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
     "name": "Essence de regret",
     "quantity": 1,
     "source": "Divers"
@@ -17437,19 +16279,9 @@
     "source": "Gant"
   },
   {
-    "name": "Pièce d'acier renforcé",
-    "quantity": 1,
-    "source": "Bouclier"
-  },
-  {
     "name": "Mucus de l'intouchable",
     "quantity": 1,
     "source": "Divers"
-  },
-  {
-    "name": "Orbe de pureté",
-    "quantity": 1,
-    "source": "Orbe"
   },
   {
     "name": "Viscères du profane",
@@ -17460,11 +16292,6 @@
     "name": "Fragment incandescent",
     "quantity": 1,
     "source": "Divers"
-  },
-  {
-    "name": "Bracelet coruscant",
-    "quantity": 1,
-    "source": "Bracelet"
   },
   {
     "name": "Chevelure électrostatique",
@@ -17507,32 +16334,12 @@
     "source": "Orbe"
   },
   {
-    "name": "Venin de scorpion",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Diamant à pointe finement acérée",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Essence des vents",
     "quantity": 1,
     "source": "Divers"
   },
   {
     "name": "Empennage antique",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Énergie infernale",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Ornement turbulent",
     "quantity": 1,
     "source": "Divers"
   },
@@ -17770,11 +16577,6 @@
   },
   {
     "name": "Tégument du Cerberus",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Branche de cyprès",
     "quantity": 1,
     "source": "Divers"
   },
@@ -19185,11 +17987,6 @@
     "source": "Arme"
   },
   {
-    "name": "Livre de sorts de l'apprenti",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Bouclier du pourfendeur de mage",
     "quantity": 1,
     "source": "Bouclier",
@@ -19444,11 +18241,6 @@
   },
   {
     "name": "Feuille de Souci",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Feuille de Coriandre",
     "quantity": 1,
     "source": "Divers"
   },
@@ -20851,22 +19643,7 @@
     "source": "Divers"
   },
   {
-    "name": "Pépite d'or",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Fiole de bile de Démonicon",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Morceau de peau d'Orc",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Bobine de fil d'or",
     "quantity": 1,
     "source": "Divers"
   },
@@ -20912,11 +19689,6 @@
       "Luminosité": "+100",
       "Puissance Lumière": "+5"
     }
-  },
-  {
-    "name": "Os d'Orc",
-    "quantity": 1,
-    "source": "Divers"
   },
   {
     "name": "Potion du veinard",
@@ -21046,11 +19818,6 @@
   },
   {
     "name": "Cristal du renouveau",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Fiole de sang de Drake Vigrator",
     "quantity": 1,
     "source": "Divers"
   },
@@ -21631,11 +20398,6 @@
     "source": "Divers"
   },
   {
-    "name": "Diamant",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Ailes de chauve-souris putrides",
     "quantity": 1,
     "source": "Divers"
@@ -21864,11 +20626,6 @@
     "source": "Divers"
   },
   {
-    "name": "Flacon renfermant des lucioles",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Opuscule du Châtiment Amoureux",
     "quantity": 1,
     "source": "Divers"
@@ -22084,11 +20841,6 @@
     "source": "Divers"
   },
   {
-    "name": "Morceau de peau de troll des collines",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Lame à double affûtage",
     "quantity": 1,
     "source": "Arme"
@@ -22167,11 +20919,6 @@
     "name": "Bottes en peau de lézard blanc",
     "quantity": 1,
     "source": "Monstre"
-  },
-  {
-    "name": "Pelote de laine angora",
-    "quantity": 1,
-    "source": "Divers"
   },
   {
     "name": "Sachet de Damiana",
@@ -22359,16 +21106,6 @@
     "source": "Divers"
   },
   {
-    "name": "Fétiche Forestier",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Fétiche Morbide",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Fétiche Resplendissant",
     "quantity": 1,
     "source": "Divers"
@@ -22409,11 +21146,6 @@
     "source": "Divers"
   },
   {
-    "name": "Lame courbée en argent",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Lame courbée en hématite",
     "quantity": 1,
     "source": "Divers"
@@ -22430,11 +21162,6 @@
   },
   {
     "name": "Lame en chrysolithe",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Lame en orichalque",
     "quantity": 1,
     "source": "Divers"
   },
@@ -22459,11 +21186,6 @@
     "source": "Divers"
   },
   {
-    "name": "Minerais d'azurite",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Minerais d'hématite",
     "quantity": 1,
     "source": "Divers"
@@ -22474,37 +21196,12 @@
     "source": "Divers"
   },
   {
-    "name": "Minerais d'obsidienne",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Minerais d'orichalque",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Minerais de cérusite",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Minerais de cinabre",
     "quantity": 1,
     "source": "Divers"
   },
   {
     "name": "Minerais de jade",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Minerais de quartz",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Minerais de rhodite",
     "quantity": 1,
     "source": "Divers"
   },
@@ -22530,11 +21227,6 @@
   },
   {
     "name": "Œuf de Charognard volant",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Partisan infernal brisé",
     "quantity": 1,
     "source": "Divers"
   },
@@ -22599,11 +21291,6 @@
     "source": "Divers"
   },
   {
-    "name": "Relique de Gorodek",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Relique de Jalaam",
     "quantity": 1,
     "source": "Divers"
@@ -22629,22 +21316,12 @@
     "source": "Divers"
   },
   {
-    "name": "Relique de Xordiv",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Scalpulaire doré",
     "quantity": 1,
     "source": "Divers"
   },
   {
     "name": "Sensilles cryptiques",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Souffle mortifère",
     "quantity": 1,
     "source": "Divers"
   },
@@ -22674,11 +21351,6 @@
     "source": "Divers"
   },
   {
-    "name": "Violettes sauvages",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Aiguille à tricoter",
     "quantity": 1,
     "source": "Divers"
@@ -22690,11 +21362,6 @@
   },
   {
     "name": "Coeur desséché",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Pépite en hématite",
     "quantity": 1,
     "source": "Divers"
   },
@@ -22714,11 +21381,6 @@
     "source": "Divers"
   },
   {
-    "name": "Pépite de titane",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Décoction de baies empoisonnées",
     "quantity": 1,
     "source": "Divers"
@@ -22734,17 +21396,7 @@
     "source": "Divers"
   },
   {
-    "name": "Azurite polie",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Bâton orné d'une tête fêlée",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Anneaux en hématite",
     "quantity": 1,
     "source": "Divers"
   },
@@ -22755,11 +21407,6 @@
   },
   {
     "name": "Ceinturon en peau de gnome",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Cérusite polie",
     "quantity": 1,
     "source": "Divers"
   },
@@ -22779,11 +21426,6 @@
     "source": "Divers"
   },
   {
-    "name": "Quete du Forgeron de DI Durikk",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Cognée du Nécrosé",
     "quantity": 1,
     "source": "Divers"
@@ -22799,27 +21441,7 @@
     "source": "Divers"
   },
   {
-    "name": "Gorgerin en iridium",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Rondache en iridium",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Pierre de force d'âme enneigée",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Fauchard spectral",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Hampe mélèze",
     "quantity": 1,
     "source": "Divers"
   },
@@ -22830,16 +21452,6 @@
   },
   {
     "name": "Fléau de la clarté rayonnante",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Chaine en titane",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Galon d'argent soyeux",
     "quantity": 1,
     "source": "Divers"
   },
@@ -22950,22 +21562,12 @@
     "source": "Divers"
   },
   {
-    "name": "Jade polie",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Jade poli",
     "quantity": 1,
     "source": "Divers"
   },
   {
     "name": "Lanière d'Elfe corrompu",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Chair d'elfe corrompu",
     "quantity": 1,
     "source": "Divers"
   },
@@ -23094,11 +21696,6 @@
     }
   },
   {
-    "name": "Sphène polie",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Pépite de rose des neiges",
     "quantity": 1,
     "source": "Divers"
@@ -23114,22 +21711,12 @@
     "source": "Divers"
   },
   {
-    "name": "Lanières en peau de gnome des forêts",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Caillasse éruptive",
     "quantity": 1,
     "source": "Divers"
   },
   {
     "name": "Voile de la faucheuse",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Galons dorés soyeux",
     "quantity": 1,
     "source": "Divers"
   },
@@ -23198,17 +21785,7 @@
     "source": "Divers"
   },
   {
-    "name": "Sachet de poudre de quartz",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
     "name": "Bottes du trépassé",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Sachet de poudre d'obsidienne",
     "quantity": 1,
     "source": "Divers"
   },
@@ -23219,11 +21796,6 @@
   },
   {
     "name": "Bouclier barbare",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Bouclier en Sureau",
     "quantity": 1,
     "source": "Divers"
   },
@@ -23309,11 +21881,6 @@
   },
   {
     "name": "Epée à une main et demi vibrante",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Boule a pointe en titane",
     "quantity": 1,
     "source": "Divers"
   },
@@ -23597,16 +22164,6 @@
       "Puissance Nécro": "+5",
       "Esquive": "-15"
     }
-  },
-  {
-    "name": "Branche de Myrte",
-    "quantity": 1,
-    "source": "Divers"
-  },
-  {
-    "name": "Branche de Sureau",
-    "quantity": 1,
-    "source": "Divers"
   },
   {
     "name": "Branche de Noisetier",
