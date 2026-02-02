@@ -8,6 +8,7 @@ import RecipeBrowser from './components/RecipeBrowser';
 import SpellList from './components/SpellList';
 import SkillList from './components/SkillList';
 import PlannerPage from './pages/PlannerPage';
+import MapViewer from './components/MapViewer';
 import Legal from './pages/Legal';
 import { DataProvider, useData } from './context/DataContext';
 
@@ -36,6 +37,7 @@ const AppContent: React.FC = () => {
         <Route path="/spells" element={<SpellList spells={spellsData} />} />
         <Route path="/skills" element={<SkillList skills={skillsData} />} />
         <Route path="/planner" element={<PlannerPage />} />
+        <Route path="/maps" element={<MapViewer />} />
         <Route path="/wiki" element={<WikiPage />} />
         <Route path="/wiki/:slug" element={<WikiPage />} />
         <Route path="/legal" element={<Legal />} />

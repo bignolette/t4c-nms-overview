@@ -122,17 +122,22 @@ const LocationList = ({ locations }: { locations: {label: string, coordinates: s
 
   return (
     <div className="space-y-3">
-      {visibleLocs.map((loc, idx) => (
-        <div key={idx} className="flex flex-col gap-1">
-          <span className="text-xs font-bold text-slate-200">{loc.label}</span>
-          {loc.coordinates && (
-            <div className="flex items-center gap-2 text-xs text-amber-400 font-mono bg-amber-400/5 px-2 py-1 rounded border border-amber-400/10 w-fit">
-              <MapPin size={12} className="text-amber-500" />
-              <span className="font-black tracking-tight">{loc.coordinates}</span>
-            </div>
-          )}
-        </div>
-      ))}
+      {visibleLocs.map((loc, idx) => {
+        return (
+          <div key={idx} className="flex flex-col gap-1">
+            <span className="text-xs font-bold text-slate-200">{loc.label}</span>
+            {loc.coordinates && (
+              <Link 
+                to={`/maps?type=location&name=${encodeURIComponent(loc.label)}`}
+                className="flex items-center gap-2 text-xs text-amber-400 font-mono bg-amber-400/5 px-2 py-1 rounded border border-amber-400/10 w-fit hover:bg-amber-400/10 transition-colors group/loc"
+              >
+                <MapPin size={12} className="text-amber-500 group-hover/loc:scale-110 transition-transform" />
+                <span className="font-black tracking-tight">{loc.coordinates}</span>
+              </Link>
+            )}
+          </div>
+        );
+      })}
       {hasMore && (
         <button 
           onClick={(e) => { e.preventDefault(); setShowAll(!showAll); }}
@@ -610,10 +615,13 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
                       <span>{recipe.learnedFrom}</span>
                     </div>
                     {recipe.coordinates && (
-                      <div className="flex items-center gap-2 text-xs text-amber-400 mt-2 font-mono bg-amber-400/5 px-2 py-1 rounded border border-amber-400/10 w-fit">
-                        <MapPin size={14} className="text-amber-500" />
+                      <Link 
+                        to={`/maps?type=npc&name=${encodeURIComponent(recipe.learnedFrom)}`}
+                        className="flex items-center gap-2 text-xs text-amber-400 mt-2 font-mono bg-amber-400/5 px-2 py-1 rounded border border-amber-400/10 w-fit hover:bg-amber-400/10 transition-colors group/npc"
+                      >
+                        <MapPin size={14} className="text-amber-500 group-hover/npc:scale-110 transition-transform" />
                         <span className="font-black tracking-tight">{recipe.coordinates}</span>
-                      </div>
+                      </Link>
                     )}
                   </div>
                 </div>
@@ -856,9 +864,13 @@ const NPCGroupedView = ({
                                     <h4 className="font-bold text-slate-200 text-sm italic uppercase tracking-tighter">ENSEIGNÉ PAR : {npc}</h4>
                                     <div className="flex items-center gap-2 mt-1">
                                       {npcRecipes[0]?.coordinates && (
-                                        <span className="flex items-center gap-1.5 text-xs font-mono font-black text-amber-400 bg-amber-400/5 px-2 py-0.5 rounded border border-amber-400/10">
-                                          <MapPin size={12} className="text-amber-500" /> {npcRecipes[0].coordinates}
-                                        </span>
+                                        <Link 
+                                          to={`/maps?type=npc&name=${encodeURIComponent(npc)}`}
+                                          onClick={(e) => e.stopPropagation()}
+                                          className="flex items-center gap-1.5 text-xs font-mono font-black text-amber-400 bg-amber-400/5 px-2 py-0.5 rounded border border-amber-400/10 hover:bg-amber-400/10 transition-colors group/npc-loc"
+                                        >
+                                          <MapPin size={12} className="text-amber-500 group-hover/npc-loc:scale-110 transition-transform" /> {npcRecipes[0].coordinates}
+                                        </Link>
                                       )}
                                     </div>
                                   </div>

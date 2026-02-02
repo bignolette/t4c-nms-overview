@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useData } from '../context/DataContext';
 import { fastNormalize } from '../data/utils';
 import type { Monster } from '../data/types';
-import { MapPin, Coins, Skull, Filter, AlertCircle, ExternalLink, RotateCcw, Hammer, Copy, Check } from 'lucide-react';
+import { MapPin, Coins, Skull, Filter, AlertCircle, ExternalLink, RotateCcw, Hammer, Copy, Check, Map as MapIcon } from 'lucide-react';
 import Pagination from './shared/Pagination';
 import ScrollContainer from './shared/ScrollContainer';
 import { useClipboard } from '../hooks/useClipboard';
@@ -97,12 +97,28 @@ export const MonsterCard = memo(({ monster, showLocation }: { monster: Monster, 
               {coordsArray.length > 0 && (
                 <div className="space-y-1">
                   <div className="flex flex-wrap gap-1.5">
-                    {coordsArray.slice(0, showAllCoords ? coordsArray.length : 3).map((coord: string, i: number) => (
-                      <div key={i} className="flex items-center gap-1 px-2 py-0.5 rounded bg-blue-500/10 border border-blue-500/20 text-[11px] text-blue-300 font-mono shadow-sm">
-                        <MapPin size={10} className="text-blue-500" />
-                        <span>{coord}</span>
-                      </div>
-                    ))}
+                    <Link 
+                      to={`/maps?type=monster&name=${encodeURIComponent(monster.name)}`}
+                      className="flex items-center gap-1.5 px-2 py-1 rounded bg-rose-500/10 border border-rose-500/20 text-[10px] text-rose-300 font-black uppercase tracking-widest shadow-sm hover:bg-rose-500/20 hover:border-rose-500/50 transition-all mb-1"
+                    >
+                      <MapIcon size={10} className="text-rose-500" />
+                      Voir tout sur la carte
+                    </Link>
+                    <div className="w-full h-px bg-slate-800/50 my-1" />
+                    {coordsArray.slice(0, showAllCoords ? coordsArray.length : 3).map((coord: string, i: number) => {
+                      const mapUrl = `/maps?type=monster&name=${encodeURIComponent(monster.name)}`;
+
+                      return (
+                        <Link 
+                          key={i} 
+                          to={mapUrl}
+                          className="flex items-center gap-1 px-2 py-0.5 rounded bg-blue-500/10 border border-blue-500/20 text-[11px] text-blue-300 font-mono shadow-sm hover:bg-blue-500/20 hover:border-blue-500/50 transition-all group/coord"
+                        >
+                          <MapPin size={10} className="text-blue-500 group-hover/coord:scale-110 transition-transform" />
+                          <span>{coord}</span>
+                        </Link>
+                      );
+                    })}
                   </div>
                   {coordsArray.length > 3 && (
                     <button 
