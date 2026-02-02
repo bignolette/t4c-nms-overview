@@ -265,8 +265,12 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
   }, [recipe.name, plantsData, treesData, depositsData]);
 
   const craftingRecipe = useMemo(() => {
-    if (isHarvestResource) return null; // Never craftable if it's a primary harvest resource
-    return allRecipes.find(r => fastNormalize(r.name) === fastNormalize(recipe.name));
+    if (isHarvestResource) return null;
+    return allRecipes.find(r => 
+      fastNormalize(r.name) === fastNormalize(recipe.name) && 
+      r.ingredients && 
+      r.ingredients.length > 0
+    );
   }, [allRecipes, recipe.name, isHarvestResource]);
 
   const isCraftable = !!craftingRecipe;
@@ -480,7 +484,7 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
                         </Link>
                       )
                     ) : (
-                      recipe.ingredients && recipe.ingredients.length > 0 ? (
+                      isCraftable ? (
                         <div className="flex items-center gap-3">
                           <span title="Cet objet peut être fabriqué" className="flex items-center gap-1 bg-amber-500/20 text-amber-500 px-2 py-0.5 rounded-full border border-amber-500/30 text-[10px] uppercase font-bold tracking-wider">
                             <Hammer size={12} /> CRAFTABLE

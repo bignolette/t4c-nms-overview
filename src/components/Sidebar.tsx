@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, Home, User, ShieldCheck, Calculator, PanelLeftClose, PanelLeftOpen, BookOpen, Map } from 'lucide-react';
 import RuneIcon from './ui/RuneIcon';
@@ -10,7 +10,21 @@ interface SidebarProps {
 
 const Sidebar = ({ isOpen = true, onToggle }: SidebarProps) => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
+  const [isFullscreen, setIsFullscreen] = useState(false);
   const location = useLocation();
+
+  useEffect(() => {
+    const handleNativeFSChange = () => setIsFullscreen(!!document.fullscreenElement);
+    const handleCustomFSChange = (e: any) => setIsFullscreen(e.detail);
+    
+    document.addEventListener('fullscreenchange', handleNativeFSChange);
+    window.addEventListener('t4c-fullscreen-change', handleCustomFSChange);
+    
+    return () => {
+      document.removeEventListener('fullscreenchange', handleNativeFSChange);
+      window.removeEventListener('t4c-fullscreen-change', handleCustomFSChange);
+    };
+  }, []);
 
   const navItems = [
     { name: 'Accueil', icon: Home, path: '/' },
@@ -29,15 +43,17 @@ const Sidebar = ({ isOpen = true, onToggle }: SidebarProps) => {
   return (
     <>
       {/* Mobile Toggle */}
-      <button 
-        onClick={() => setIsMobileOpen(!isMobileOpen)}
-        className="fixed top-4 left-4 z-50 p-2 bg-slate-800 rounded-xl md:hidden text-white border border-slate-700 shadow-2xl"
-      >
-        {isMobileOpen ? <X size={24} /> : <Menu size={24} />}
-      </button>
+      {!isFullscreen && (
+        <button 
+          onClick={() => setIsMobileOpen(!isMobileOpen)}
+          className="fixed top-4 left-4 z-50 p-2 bg-slate-800 rounded-xl md:hidden text-white border border-slate-700 shadow-2xl"
+        >
+          {isMobileOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      )}
 
       {/* Desktop Toggle (Floating when closed) */}
-      {!isOpen && (
+      {!isOpen && !isFullscreen && (
         <button
           onClick={onToggle}
           className="hidden md:flex fixed top-6 left-6 z-50 p-3 bg-slate-900/80 backdrop-blur-md rounded-xl text-amber-500 border border-amber-500/20 shadow-2xl transition-all hover:scale-110 hover:bg-slate-800 active:scale-95"
@@ -48,7 +64,7 @@ const Sidebar = ({ isOpen = true, onToggle }: SidebarProps) => {
       )}
 
       {/* Sidebar Overlay (Mobile) */}
-      {isMobileOpen && (
+      {isMobileOpen && !isFullscreen && (
         <div 
           className="fixed inset-0 bg-black/60 z-40 md:hidden backdrop-blur-sm animate-fade-in"
           onClick={() => setIsMobileOpen(false)}
@@ -59,8 +75,8 @@ const Sidebar = ({ isOpen = true, onToggle }: SidebarProps) => {
       <div className={`
         fixed md:relative inset-y-0 left-0 z-40 glass-card border-r border-white/5
         transform transition-all duration-500 cubic-bezier(0.4, 0, 0.2, 1)
-        ${isMobileOpen ? 'translate-x-0' : '-translate-x-full'}
-        md:translate-x-0
+        ${isMobileOpen && !isFullscreen ? 'translate-x-0' : '-translate-x-full'}
+        ${isFullscreen ? 'hidden md:hidden' : 'md:translate-x-0'}
         ${isOpen ? 'md:w-80' : 'md:w-0 md:border-none md:overflow-hidden'}
         flex flex-col h-full shadow-[15px_0_40px_-15px_rgba(0,0,0,0.6)]
       `}>

@@ -9,7 +9,7 @@
         "locations": [
           {
             "label": "Kraanian volant",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -172,7 +172,7 @@
         "locations": [
           {
             "label": "Ethana",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -181,7 +181,7 @@
         "locations": [
           {
             "label": "Ethana (la fille) les amoureux au -3",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -198,7 +198,7 @@
         "locations": [
           {
             "label": "Homme Lézard",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -215,7 +215,7 @@
         "locations": [
           {
             "label": "Chevalier ténébreux",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -224,7 +224,7 @@
         "locations": [
           {
             "label": "Rejeton de Cerberus",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -244,7 +244,7 @@
         "locations": [
           {
             "label": "Vipères au -2",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -261,7 +261,7 @@
         "locations": [
           {
             "label": "B'ronkhan",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -562,7 +562,7 @@
         "locations": [
           {
             "label": "Noisetier ( ZoEth pos 2035,2730 et aussi",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -689,19 +689,19 @@
         "locations": [
           {
             "label": "Zone Oracle",
-            "coordinates": "2638.2803.0"
+            "coordinates": "2638.2803.2"
           },
           {
             "label": "Zone Oracle",
-            "coordinates": "2695.2573.0"
+            "coordinates": "2695.2573.2"
           },
           {
             "label": "Zone Oracle",
-            "coordinates": "2808.2936.0"
+            "coordinates": "2808.2936.2"
           },
           {
             "label": "Zone Oracle",
-            "coordinates": "2918.2712.0"
+            "coordinates": "2918.2712.2"
           }
         ]
       }
@@ -710,10 +710,10 @@
       "Stoneheim"
     ],
     "coordinates": [
-      "2638.2803.0",
-      "2695.2573.0",
-      "2808.2936.0",
-      "2918.2712.0"
+      "2638.2803.2",
+      "2695.2573.2",
+      "2808.2936.2",
+      "2918.2712.2"
     ]
   },
   {
@@ -743,7 +743,7 @@
         "locations": [
           {
             "label": "Gargouilles Ethérées",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -760,7 +760,7 @@
         "locations": [
           {
             "label": "Octrael",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -818,7 +818,7 @@
         "locations": [
           {
             "label": "Arbre Févier épineux Di",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -906,7 +906,7 @@
         "locations": [
           {
             "label": "Rare dans Gisements d'argent",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -925,7 +925,7 @@
         "locations": [
           {
             "label": "Mygales au-2",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -978,7 +978,7 @@
         "locations": [
           {
             "label": "Rare dans Gisements de rubis",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -1029,7 +1029,7 @@
         "locations": [
           {
             "label": "Souffle de la mort",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -1048,7 +1048,7 @@
         "locations": [
           {
             "label": "Octrael",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -1065,7 +1065,7 @@
         "locations": [
           {
             "label": "Crache Flamme",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -1074,7 +1074,7 @@
         "locations": [
           {
             "label": "Démonicon Arakas et Dragonet Forteresse des Damnés",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -1083,7 +1083,7 @@
         "locations": [
           {
             "label": "Ecaille Brillante",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -1092,7 +1092,7 @@
         "locations": [
           {
             "label": "Fourche Langue",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -1101,7 +1101,7 @@
         "locations": [
           {
             "label": "Griffe Tranchante",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -1110,7 +1110,7 @@
         "locations": [
           {
             "label": "Spectre Fumant",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -1129,7 +1129,7 @@
         "locations": [
           {
             "label": "Yéti féroce",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -1145,7 +1145,7 @@
         "locations": [
           {
             "label": "( Inconnu pour l'instant )",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -1162,7 +1162,7 @@
         "locations": [
           {
             "label": "( Inconnu pour l'instant )",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -1179,7 +1179,7 @@
         "locations": [
           {
             "label": "Garde de l'ombre",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -1231,7 +1231,7 @@
         "locations": [
           {
             "label": "Noctris l'Éthinsselant",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -1240,7 +1240,7 @@
         "locations": [
           {
             "label": "Noctris l'Éthinsselant à l'île de Lune",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -1309,7 +1309,7 @@
         "locations": [
           {
             "label": "Fracasseur",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -1325,7 +1325,7 @@
         "locations": [
           {
             "label": "Troll des collines",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -2977,7 +2977,7 @@
         "locations": [
           {
             "label": "( Inconnu pour l'instant )",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -2994,7 +2994,7 @@
         "locations": [
           {
             "label": "( Inconnu pour l'instant )",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -3011,7 +3011,7 @@
         "locations": [
           {
             "label": "( Inconnu pour l'instant )",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -3028,7 +3028,7 @@
         "locations": [
           {
             "label": "( Inconnu pour l'instant )",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -3045,7 +3045,7 @@
         "locations": [
           {
             "label": "( Inconnu pour l'instant )",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -3062,7 +3062,7 @@
         "locations": [
           {
             "label": "( Inconnu pour l'instant )",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -3271,7 +3271,7 @@
         "locations": [
           {
             "label": "Arbre Mélèze Di",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -3362,7 +3362,7 @@
         "locations": [
           {
             "label": "Ent Pernicieux",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -3649,7 +3649,7 @@
         "locations": [
           {
             "label": "Gisements d'Adamantite",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -3730,7 +3730,7 @@
         "locations": [
           {
             "label": "Donjon Chapelle le tombeau",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -3746,7 +3746,7 @@
         "locations": [
           {
             "label": "Rare dans Gisements de mithril",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -3765,7 +3765,7 @@
         "locations": [
           {
             "label": "Orc de banquise à Niève Pos 1415,440",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -3798,7 +3798,7 @@
         "locations": [
           {
             "label": "Troll des collines",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -3818,7 +3818,7 @@
         "locations": [
           {
             "label": "Coffres à cocons de soie - Cave du bois noyé",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -3838,7 +3838,7 @@
         "locations": [
           {
             "label": "Coffres Urtanar",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -3858,7 +3858,7 @@
         "locations": [
           {
             "label": "Coffres Urtanar",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -3944,7 +3944,7 @@
         "locations": [
           {
             "label": "Bugar Sakkor (RD pos 1230,2250) - Repop 20 mn",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -3961,7 +3961,7 @@
         "locations": [
           {
             "label": "Drake Dixtor Supérieur",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -3970,7 +3970,7 @@
         "locations": [
           {
             "label": "Yéti féroce",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -4018,7 +4018,7 @@
         "locations": [
           {
             "label": "Noctris l'Éthinsselant à l'île de Lune",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -4104,7 +4104,7 @@
         "locations": [
           {
             "label": "Cave Skraugs Verts",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -4152,7 +4152,7 @@
         "locations": [
           {
             "label": "Cave Humterre",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -4171,7 +4171,7 @@
         "locations": [
           {
             "label": "Cave des Bois Creux",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -4226,7 +4226,7 @@
         "locations": [
           {
             "label": "Rare dans Gisements de cuivre",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -4245,7 +4245,7 @@
         "locations": [
           {
             "label": "Cave des brigands",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -4254,7 +4254,7 @@
         "locations": [
           {
             "label": "dans Gisements de plomb",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -4357,7 +4357,7 @@
         "locations": [
           {
             "label": "Cave Humterre",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -4483,7 +4483,7 @@
         "locations": [
           {
             "label": "Cave Humterre",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -4508,7 +4508,7 @@
         "locations": [
           {
             "label": "Rare dans Gisements d'or",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -4544,7 +4544,7 @@
         "locations": [
           {
             "label": "Cave Humterre",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -4579,7 +4579,7 @@
         "locations": [
           {
             "label": "Gisements de fer/plomb",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -4598,7 +4598,7 @@
         "locations": [
           {
             "label": "Gnome des forêts",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -4618,7 +4618,7 @@
         "locations": [
           {
             "label": "Troll des collines",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -4637,7 +4637,7 @@
         "locations": [
           {
             "label": "Noisetier ( ZoEth pos 2035,2730 et aussi",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -4653,7 +4653,7 @@
         "locations": [
           {
             "label": "( Inconnu pour l'instant )",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -4702,7 +4702,7 @@
         "locations": [
           {
             "label": "Gnome des forêts",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -4757,7 +4757,7 @@
         "locations": [
           {
             "label": "Cave des Minotaures (Nord)",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -4979,7 +4979,7 @@
         "locations": [
           {
             "label": "Récolte rare: Cyprès",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -5014,7 +5014,7 @@
         "locations": [
           {
             "label": "Récolte rare: Chênes",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -5033,7 +5033,7 @@
         "locations": [
           {
             "label": "Tour des Académiciens de RD",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -5050,7 +5050,7 @@
         "locations": [
           {
             "label": "Tour des Académiciens de RD",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -5067,7 +5067,7 @@
         "locations": [
           {
             "label": "Tour des Académiciens de RD",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -5084,7 +5084,7 @@
         "locations": [
           {
             "label": "Tour des Académiciens de RD",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -5101,7 +5101,7 @@
         "locations": [
           {
             "label": "Tour des Académiciens de RD",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -5117,7 +5117,7 @@
         "locations": [
           {
             "label": "Tour des Académiciens de RD",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -5133,7 +5133,7 @@
         "locations": [
           {
             "label": "Tour des Académiciens de RD",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -5149,7 +5149,7 @@
         "locations": [
           {
             "label": "Tour des Académiciens de RD",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -5166,7 +5166,7 @@
         "locations": [
           {
             "label": "Tour des Académiciens de RD",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -5183,7 +5183,7 @@
         "locations": [
           {
             "label": "Tour des Académiciens de RD",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -5249,7 +5249,7 @@
         "locations": [
           {
             "label": "Souffle de la mort",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -5269,7 +5269,7 @@
         "locations": [
           {
             "label": "Mage Rodeur",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -5286,7 +5286,7 @@
         "locations": [
           {
             "label": "Chevaliers Ténébreux accès -2",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -5302,7 +5302,7 @@
         "locations": [
           {
             "label": "( Inconnu pour l'instant )",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -5319,7 +5319,7 @@
         "locations": [
           {
             "label": "Rare dans Gisements de titane",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -5338,7 +5338,7 @@
         "locations": [
           {
             "label": "Coffres à cocons de soie - Cave du bois noyé",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -5358,7 +5358,7 @@
         "locations": [
           {
             "label": "Rare dans Gisements de fer",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -5377,7 +5377,7 @@
         "locations": [
           {
             "label": "Rare dans Gisements d'Adamantite",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -5396,7 +5396,7 @@
         "locations": [
           {
             "label": "Tégénaires Méphitiques",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -5424,7 +5424,7 @@
         "locations": [
           {
             "label": "Plant de violettes sauvages",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -5916,7 +5916,7 @@
         "locations": [
           {
             "label": "Bane Gwengad",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -6102,7 +6102,7 @@
         "locations": [
           {
             "label": "Archi Draconigus",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -6111,7 +6111,7 @@
         "locations": [
           {
             "label": "Draconigus invoqué",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -6129,7 +6129,7 @@
         "locations": [
           {
             "label": "Drake Envahisseur",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -6138,7 +6138,7 @@
         "locations": [
           {
             "label": "Grand Skraug",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -6455,7 +6455,7 @@
         "locations": [
           {
             "label": "Fou",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -6464,7 +6464,7 @@
         "locations": [
           {
             "label": "Mad Madrigan",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -6482,7 +6482,7 @@
         "locations": [
           {
             "label": "Profilique Général",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -6491,7 +6491,7 @@
         "locations": [
           {
             "label": "Profilique Lieutenant",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -7019,7 +7019,7 @@
       }
     ],
     "learnedFrom": "Hothien Ardiel",
-    "coordinates": "",
+    "coordinates": "0.0.0",
     "locationPrecision": "Tour d'Urtanar, Sous-sol",
     "zones": [
       "Urtanar"
@@ -7143,7 +7143,7 @@
       }
     ],
     "learnedFrom": "Hothien Ardiel",
-    "coordinates": "",
+    "coordinates": "0.0.0",
     "locationPrecision": "Tour d'Urtanar, Sous-sol",
     "zones": [
       "Urtanar"
@@ -8065,7 +8065,7 @@
     "quantity": 1,
     "source": "Botte",
     "learnedFrom": "Gorhendad",
-    "coordinates": "",
+    "coordinates": "0.0.0",
     "locationPrecision": "Tour d'Urtanar, 1er étage",
     "zones": [
       "Urtanar"
@@ -8533,7 +8533,7 @@
         "locations": [
           {
             "label": "Noctris l'Éthinsselant",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -8610,7 +8610,7 @@
         "locations": [
           {
             "label": "Chef orc renégat",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -8619,7 +8619,7 @@
         "locations": [
           {
             "label": "Dorken le Putride",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -10993,7 +10993,7 @@
         "locations": [
           {
             "label": "Crotale",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -11548,7 +11548,7 @@
     "quantity": 1,
     "source": "Ceinture",
     "learnedFrom": "Gorhendad",
-    "coordinates": "",
+    "coordinates": "0.0.0",
     "locationPrecision": "Tour d'Urtanar, 1er étage",
     "zones": [
       "Urtanar"
@@ -12718,7 +12718,7 @@
     "quantity": 1,
     "source": "Bouclier",
     "learnedFrom": "Gorhendad",
-    "coordinates": "",
+    "coordinates": "0.0.0",
     "locationPrecision": "Tour d'Urtanar, 1er étage",
     "zones": [
       "Urtanar"
@@ -13168,7 +13168,7 @@
         "locations": [
           {
             "label": "Demon Skull",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -13186,7 +13186,7 @@
         "locations": [
           {
             "label": "Fou",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -16321,7 +16321,7 @@
         "locations": [
           {
             "label": "Lunatique délirant",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -18393,7 +18393,7 @@
         "locations": [
           {
             "label": "Orc archemage",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -18402,7 +18402,7 @@
         "locations": [
           {
             "label": "Patient en fuite",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -18568,7 +18568,7 @@
         "locations": [
           {
             "label": "Quelet Hon l'assoiffé",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -18652,7 +18652,7 @@
         "locations": [
           {
             "label": "Tarantule Géante",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -19741,7 +19741,7 @@
         "locations": [
           {
             "label": "Spectre des marais",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -20370,7 +20370,7 @@
         "locations": [
           {
             "label": "B'Rokals'Tank",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -20912,7 +20912,7 @@
         "locations": [
           {
             "label": "Sanavaldo Carne",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -21492,7 +21492,7 @@
     "quantity": 1,
     "source": "Gant",
     "learnedFrom": "Gorhendad",
-    "coordinates": "",
+    "coordinates": "0.0.0",
     "locationPrecision": "Tour d'Urtanar, 1er étage",
     "zones": [
       "Urtanar"
@@ -21651,7 +21651,7 @@
     "quantity": 1,
     "source": "Arme",
     "learnedFrom": "",
-    "coordinates": "",
+    "coordinates": "0.0.0",
     "locationPrecision": "",
     "ingredients": [
       {
@@ -22682,7 +22682,7 @@
     "quantity": 1,
     "source": "Heaume",
     "learnedFrom": "Gorhendad",
-    "coordinates": "",
+    "coordinates": "0.0.0",
     "locationPrecision": "Tour d'Urtanar, 1er étage",
     "zones": [
       "Urtanar"
@@ -23147,7 +23147,7 @@
     "quantity": 1,
     "source": "Jambière",
     "learnedFrom": "Gorhendad",
-    "coordinates": "",
+    "coordinates": "0.0.0",
     "locationPrecision": "Tour d'Urtanar, 1er étage",
     "zones": [
       "Urtanar"
@@ -25498,7 +25498,7 @@
         "locations": [
           {
             "label": "Golem embrasé",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -25843,7 +25843,7 @@
         "locations": [
           {
             "label": "Golem glacial",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -27545,7 +27545,7 @@
         "locations": [
           {
             "label": "Arbre faiblard monster",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -27879,7 +27879,7 @@
         "locations": [
           {
             "label": "Archi Draconigus",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -28438,7 +28438,7 @@
         "locations": [
           {
             "label": "Automate gardien en métrolite",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -28447,7 +28447,7 @@
         "locations": [
           {
             "label": "B'Rokals'Tank",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -29002,7 +29002,7 @@
         "locations": [
           {
             "label": "Bane Gwengad",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -29406,7 +29406,7 @@
         "locations": [
           {
             "label": "Chevalier du Soleil",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -29674,7 +29674,7 @@
         "locations": [
           {
             "label": "Demon berserker fou",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -29683,7 +29683,7 @@
         "locations": [
           {
             "label": "Démon Ignoble",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -29982,7 +29982,7 @@
         "locations": [
           {
             "label": "Démon Protecteur",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -29991,7 +29991,7 @@
         "locations": [
           {
             "label": "Doktor Vertebrus",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -30000,7 +30000,7 @@
         "locations": [
           {
             "label": "Dr. Van Pyre",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -30009,7 +30009,7 @@
         "locations": [
           {
             "label": "Draconigus invoqué",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -30027,7 +30027,7 @@
         "locations": [
           {
             "label": "Drake Dixtor",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -30036,7 +30036,7 @@
         "locations": [
           {
             "label": "Drake Envahisseur",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -30452,7 +30452,7 @@
         "locations": [
           {
             "label": "Galinette",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -30461,7 +30461,7 @@
         "locations": [
           {
             "label": "Galinette cendrée",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -30648,7 +30648,7 @@
         "locations": [
           {
             "label": "Golem de chair",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -30657,7 +30657,7 @@
         "locations": [
           {
             "label": "Grand Skraug",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -30666,7 +30666,7 @@
         "locations": [
           {
             "label": "Graykko Darastrix",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -30693,7 +30693,7 @@
         "locations": [
           {
             "label": "Illusion des abîmes",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -32217,7 +32217,7 @@
         "locations": [
           {
             "label": "Mommie Paresseuse",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -32226,7 +32226,7 @@
         "locations": [
           {
             "label": "Morlokk",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -32571,7 +32571,7 @@
         "locations": [
           {
             "label": "Noctris Shaman",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -32580,7 +32580,7 @@
         "locations": [
           {
             "label": "Ombre des abîmes",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -32589,7 +32589,7 @@
         "locations": [
           {
             "label": "Quentin Tarantula",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -32598,7 +32598,7 @@
         "locations": [
           {
             "label": "Rocailleux",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -32705,7 +32705,7 @@
         "locations": [
           {
             "label": "Skraug Dextrator",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -32714,7 +32714,7 @@
         "locations": [
           {
             "label": "Skraug moonfiredansah",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -33028,7 +33028,7 @@
         "locations": [
           {
             "label": "Sornette",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -33222,7 +33222,7 @@
     "quantity": 1,
     "source": "Plastron",
     "learnedFrom": "Gorhendad",
-    "coordinates": "",
+    "coordinates": "0.0.0",
     "locationPrecision": "Tour d'Urtanar, 1er étage",
     "zones": [
       "Urtanar"
@@ -37039,7 +37039,7 @@
         "locations": [
           {
             "label": "Arbre Maléfique",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -38032,7 +38032,7 @@
         "locations": [
           {
             "label": "Demon Skull",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -38041,7 +38041,7 @@
         "locations": [
           {
             "label": "Dorken le Putride",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -39919,7 +39919,7 @@
         "locations": [
           {
             "label": "Ent maléfique",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -41057,7 +41057,7 @@
         "locations": [
           {
             "label": "Gardien gobelin",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -41304,7 +41304,7 @@
         "locations": [
           {
             "label": "Ghundarg Garak",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -41880,7 +41880,7 @@
         "locations": [
           {
             "label": "Gobelin saboteur",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -41946,7 +41946,7 @@
         "locations": [
           {
             "label": "Goblin",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -42000,7 +42000,7 @@
         "locations": [
           {
             "label": "Golem Rocailleux",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -43523,7 +43523,7 @@
         "locations": [
           {
             "label": "Infirmière psychotique",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -43532,7 +43532,7 @@
         "locations": [
           {
             "label": "Innocent",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -43550,7 +43550,7 @@
         "locations": [
           {
             "label": "Ogre",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -43883,7 +43883,7 @@
         "locations": [
           {
             "label": "Paladin",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -44492,7 +44492,7 @@
         "locations": [
           {
             "label": "Tarantule Géante",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -45025,7 +45025,7 @@
         "locations": [
           {
             "label": "Acolytes",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -45034,7 +45034,7 @@
         "locations": [
           {
             "label": "Ame damnée",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -45096,7 +45096,7 @@
         "locations": [
           {
             "label": "Ame errante",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -45894,7 +45894,7 @@
         "locations": [
           {
             "label": "Araignée venimeuse",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -45903,7 +45903,7 @@
         "locations": [
           {
             "label": "Arbre faiblard monster",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -46237,7 +46237,7 @@
         "locations": [
           {
             "label": "Archi Draconigus",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -46246,7 +46246,7 @@
         "locations": [
           {
             "label": "Automate gardien en métrolite",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -46255,7 +46255,7 @@
         "locations": [
           {
             "label": "B'Rokals'Tank",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -47061,7 +47061,7 @@
         "locations": [
           {
             "label": "Champion centaure",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -47307,7 +47307,7 @@
         "locations": [
           {
             "label": "Chevalier ténébreux",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -47316,7 +47316,7 @@
         "locations": [
           {
             "label": "Clerc des ombres",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -47325,7 +47325,7 @@
         "locations": [
           {
             "label": "Crotale",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -47334,7 +47334,7 @@
         "locations": [
           {
             "label": "Démon Ignoble",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -47633,7 +47633,7 @@
         "locations": [
           {
             "label": "Démon Protecteur",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -47642,7 +47642,7 @@
         "locations": [
           {
             "label": "Diacre infâme",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -47651,7 +47651,7 @@
         "locations": [
           {
             "label": "Draconigus invoqué",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -48087,7 +48087,7 @@
         "locations": [
           {
             "label": "Drake Envahisseur",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -48748,7 +48748,7 @@
         "locations": [
           {
             "label": "Ent léthifère",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -48757,7 +48757,7 @@
         "locations": [
           {
             "label": "Ent poisseux",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -49179,7 +49179,7 @@
         "locations": [
           {
             "label": "Feuillu fangeux",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -49405,7 +49405,7 @@
         "locations": [
           {
             "label": "Frelon perfide",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -49659,7 +49659,7 @@
         "locations": [
           {
             "label": "Galinette",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -49668,7 +49668,7 @@
         "locations": [
           {
             "label": "Galinette cendrée",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -51147,7 +51147,7 @@
         "locations": [
           {
             "label": "Gnôme des marécages",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -51156,7 +51156,7 @@
         "locations": [
           {
             "label": "Gnôme exité",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -51165,7 +51165,7 @@
         "locations": [
           {
             "label": "Grand Skraug",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -51174,7 +51174,7 @@
         "locations": [
           {
             "label": "Graykko Darastrix",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -51183,7 +51183,7 @@
         "locations": [
           {
             "label": "Illusion des abîmes",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -51192,7 +51192,7 @@
         "locations": [
           {
             "label": "Infirmière psychotique",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -51201,7 +51201,7 @@
         "locations": [
           {
             "label": "Kraanian Dévoreur",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -51362,7 +51362,7 @@
         "locations": [
           {
             "label": "Lombric scrofuleux",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -51371,7 +51371,7 @@
         "locations": [
           {
             "label": "Migale noire",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -51380,7 +51380,7 @@
         "locations": [
           {
             "label": "Mommie Paresseuse",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -51911,7 +51911,7 @@
         "locations": [
           {
             "label": "Ombre des abîmes",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -51920,7 +51920,7 @@
         "locations": [
           {
             "label": "Prédicateur décrépit",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -52098,7 +52098,7 @@
         "locations": [
           {
             "label": "Rat de Laboratoire",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -52107,7 +52107,7 @@
         "locations": [
           {
             "label": "Rat enragé",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -52620,7 +52620,7 @@
         "locations": [
           {
             "label": "Skraug bigbruddalbashah",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -52629,7 +52629,7 @@
         "locations": [
           {
             "label": "Skraug bigworviktor",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -52638,7 +52638,7 @@
         "locations": [
           {
             "label": "Skraug bludfightor",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -52647,7 +52647,7 @@
         "locations": [
           {
             "label": "Skraug clangbangah",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -52656,7 +52656,7 @@
         "locations": [
           {
             "label": "Skraug Dextrator",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -52665,7 +52665,7 @@
         "locations": [
           {
             "label": "Skraug grubbringah",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -52674,7 +52674,7 @@
         "locations": [
           {
             "label": "Skraug madlimbmanglor",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -52683,7 +52683,7 @@
         "locations": [
           {
             "label": "Skraug meanheaddrummah",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -52692,7 +52692,7 @@
         "locations": [
           {
             "label": "Skraug moonfiredansah",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -52701,7 +52701,7 @@
         "locations": [
           {
             "label": "Skraug munchhuntor",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -52710,7 +52710,7 @@
         "locations": [
           {
             "label": "Skraug protekterritor",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -52719,7 +52719,7 @@
         "locations": [
           {
             "label": "Skraug standanbonkah",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -52728,7 +52728,7 @@
         "locations": [
           {
             "label": "Skraug totemherbdoktor",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -52774,7 +52774,7 @@
         "locations": [
           {
             "label": "Sornette",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -54167,7 +54167,7 @@
         "locations": [
           {
             "label": "Champion centaure",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -54470,7 +54470,7 @@
         "locations": [
           {
             "label": "Dr. Van Pyre",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -55202,7 +55202,7 @@
         "locations": [
           {
             "label": "Infirmière psychotique",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -56726,7 +56726,7 @@
         "locations": [
           {
             "label": "Mad Madrigan",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -56848,7 +56848,7 @@
         "locations": [
           {
             "label": "Orc des glaces",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -57115,7 +57115,7 @@
         "locations": [
           {
             "label": "Sceau d'Eberywun",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -57124,7 +57124,7 @@
         "locations": [
           {
             "label": "Sentinelle centaure",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -57133,7 +57133,7 @@
         "locations": [
           {
             "label": "Skraug bludfightor",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -57142,7 +57142,7 @@
         "locations": [
           {
             "label": "Skraug clangbangah",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -57151,7 +57151,7 @@
         "locations": [
           {
             "label": "Skraug grubbringah",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -57160,7 +57160,7 @@
         "locations": [
           {
             "label": "Skraug madlimbmanglor",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -57169,7 +57169,7 @@
         "locations": [
           {
             "label": "Skraug meanheaddrummah",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -57178,7 +57178,7 @@
         "locations": [
           {
             "label": "Skraug munchhuntor",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -57187,7 +57187,7 @@
         "locations": [
           {
             "label": "Skraug protekterritor",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -57196,7 +57196,7 @@
         "locations": [
           {
             "label": "Skraug standanbonkah",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -57205,7 +57205,7 @@
         "locations": [
           {
             "label": "Traqueur centaure",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -57419,7 +57419,7 @@
         "locations": [
           {
             "label": "Zuwarah",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -57457,7 +57457,7 @@
         "locations": [
           {
             "label": "Automate gardien en métrolite",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -57756,7 +57756,7 @@
         "locations": [
           {
             "label": "Démon Protecteur",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58051,7 +58051,7 @@
         "locations": [
           {
             "label": "Epeire ténébreuse",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58238,7 +58238,7 @@
         "locations": [
           {
             "label": "Golem de chair",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58247,7 +58247,7 @@
         "locations": [
           {
             "label": "Infirmière psychotique",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58298,7 +58298,7 @@
         "locations": [
           {
             "label": "Kraanian ténébreux lourd",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58307,7 +58307,7 @@
         "locations": [
           {
             "label": "Larve d'élite",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58316,7 +58316,7 @@
         "locations": [
           {
             "label": "Protecteur Elite",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58325,7 +58325,7 @@
         "locations": [
           {
             "label": "Skraug Dextrator",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58334,7 +58334,7 @@
         "locations": [
           {
             "label": "Sornette",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58594,7 +58594,7 @@
         "locations": [
           {
             "label": "Atrax",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58603,7 +58603,7 @@
         "locations": [
           {
             "label": "Cemen",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58612,7 +58612,7 @@
         "locations": [
           {
             "label": "Crache Flamme",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58621,7 +58621,7 @@
         "locations": [
           {
             "label": "Crupellaire",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58630,7 +58630,7 @@
         "locations": [
           {
             "label": "Ecaille Brillante",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58639,7 +58639,7 @@
         "locations": [
           {
             "label": "Ent furieu",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58648,7 +58648,7 @@
         "locations": [
           {
             "label": "Fidèle de Jander",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58657,7 +58657,7 @@
         "locations": [
           {
             "label": "Fourche Langue",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58666,7 +58666,7 @@
         "locations": [
           {
             "label": "Géant des plaines",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58675,7 +58675,7 @@
         "locations": [
           {
             "label": "Griffe Tranchante",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58684,7 +58684,7 @@
         "locations": [
           {
             "label": "Huine",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58693,7 +58693,7 @@
         "locations": [
           {
             "label": "Kri Nas",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58702,7 +58702,7 @@
         "locations": [
           {
             "label": "Kro Nas",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58711,7 +58711,7 @@
         "locations": [
           {
             "label": "Nare",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58720,7 +58720,7 @@
         "locations": [
           {
             "label": "Nemesia Caementaria",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58729,7 +58729,7 @@
         "locations": [
           {
             "label": "Nen",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58738,7 +58738,7 @@
         "locations": [
           {
             "label": "Okea Nas",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58747,7 +58747,7 @@
         "locations": [
           {
             "label": "Ombre démoniaque",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58756,7 +58756,7 @@
         "locations": [
           {
             "label": "Pretre obscur",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58774,7 +58774,7 @@
         "locations": [
           {
             "label": "Profilique Général",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58783,7 +58783,7 @@
         "locations": [
           {
             "label": "Profilique Lieutenant",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58792,7 +58792,7 @@
         "locations": [
           {
             "label": "Rétiaire",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58801,7 +58801,7 @@
         "locations": [
           {
             "label": "Sanavaldo Carne",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58810,7 +58810,7 @@
         "locations": [
           {
             "label": "Spectre des marais",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58819,7 +58819,7 @@
         "locations": [
           {
             "label": "Spectre Fumant",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58828,7 +58828,7 @@
         "locations": [
           {
             "label": "Tarmur",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58837,7 +58837,7 @@
         "locations": [
           {
             "label": "Tarnian",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -58846,7 +58846,7 @@
         "locations": [
           {
             "label": "Wilma",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -58873,7 +58873,7 @@
       }
     ],
     "learnedFrom": "",
-    "coordinates": "",
+    "coordinates": "0.0.0",
     "locationPrecision": ""
   },
   {
@@ -59817,7 +59817,7 @@
         "locations": [
           {
             "label": "Acolytes",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -59826,7 +59826,7 @@
         "locations": [
           {
             "label": "Ame damnée",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -59888,7 +59888,7 @@
         "locations": [
           {
             "label": "Ame errante",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -60686,7 +60686,7 @@
         "locations": [
           {
             "label": "Arbre faiblard monster",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -61020,7 +61020,7 @@
         "locations": [
           {
             "label": "Atrax",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -61029,7 +61029,7 @@
         "locations": [
           {
             "label": "Automate gardien en métrolite",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -61629,7 +61629,7 @@
         "locations": [
           {
             "label": "Cécidomyie",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -61638,7 +61638,7 @@
         "locations": [
           {
             "label": "Cemen",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -61993,7 +61993,7 @@
         "locations": [
           {
             "label": "Crache Flamme",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -62002,7 +62002,7 @@
         "locations": [
           {
             "label": "Crupellaire",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -62310,7 +62310,7 @@
         "locations": [
           {
             "label": "Démon Protecteur",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -62380,7 +62380,7 @@
         "locations": [
           {
             "label": "Diacre infâme",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -63093,7 +63093,7 @@
         "locations": [
           {
             "label": "Ecaille Brillante",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -63468,7 +63468,7 @@
         "locations": [
           {
             "label": "Ent furieu",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -63477,7 +63477,7 @@
         "locations": [
           {
             "label": "Ent léthifère",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -63486,7 +63486,7 @@
         "locations": [
           {
             "label": "Ent poisseux",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -63495,7 +63495,7 @@
         "locations": [
           {
             "label": "Epeire des bois",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -63504,7 +63504,7 @@
         "locations": [
           {
             "label": "Epeire ténébreuse",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -63926,7 +63926,7 @@
         "locations": [
           {
             "label": "Feuillu fangeux",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -63935,7 +63935,7 @@
         "locations": [
           {
             "label": "Fidèle de Jander",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -64161,7 +64161,7 @@
         "locations": [
           {
             "label": "Fourche Langue",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -65575,7 +65575,7 @@
         "locations": [
           {
             "label": "Géant des plaines",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -65584,7 +65584,7 @@
         "locations": [
           {
             "label": "Gecko Sulfureux",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -65830,7 +65830,7 @@
         "locations": [
           {
             "label": "Gnôme des marécages",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -66340,7 +66340,7 @@
         "locations": [
           {
             "label": "Graykko Darastrix",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -66349,7 +66349,7 @@
         "locations": [
           {
             "label": "Griffe Tranchante",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -66358,7 +66358,7 @@
         "locations": [
           {
             "label": "Huine",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -66409,7 +66409,7 @@
         "locations": [
           {
             "label": "Kraanian ténébreux lourd",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -66418,7 +66418,7 @@
         "locations": [
           {
             "label": "Kri Nas",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -66427,7 +66427,7 @@
         "locations": [
           {
             "label": "Kro Nas",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -66436,7 +66436,7 @@
         "locations": [
           {
             "label": "Lame des ténêbres",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -66445,7 +66445,7 @@
         "locations": [
           {
             "label": "Larve d'élite",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -67654,7 +67654,7 @@
         "locations": [
           {
             "label": "Lombric scrofuleux",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -67663,7 +67663,7 @@
         "locations": [
           {
             "label": "Migale noire",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -67672,7 +67672,7 @@
         "locations": [
           {
             "label": "Mommie Paresseuse",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -67850,7 +67850,7 @@
         "locations": [
           {
             "label": "Nare",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -67859,7 +67859,7 @@
         "locations": [
           {
             "label": "Nemesia Caementaria",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -67868,7 +67868,7 @@
         "locations": [
           {
             "label": "Nen",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -68055,7 +68055,7 @@
         "locations": [
           {
             "label": "Okea Nas",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -68064,7 +68064,7 @@
         "locations": [
           {
             "label": "Ombre démoniaque",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -68073,7 +68073,7 @@
         "locations": [
           {
             "label": "Prédicateur décrépit",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -68082,7 +68082,7 @@
         "locations": [
           {
             "label": "Pretre obscur",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -68091,7 +68091,7 @@
         "locations": [
           {
             "label": "Protecteur Elite",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -68337,7 +68337,7 @@
         "locations": [
           {
             "label": "Rétiaire",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -68346,7 +68346,7 @@
         "locations": [
           {
             "label": "Sanavaldo Carne",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -68355,7 +68355,7 @@
         "locations": [
           {
             "label": "Sceau d'Eberywun",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -68688,7 +68688,7 @@
         "locations": [
           {
             "label": "Skraug Dextrator",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -68697,7 +68697,7 @@
         "locations": [
           {
             "label": "Skraug totemherbdoktor",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -68743,7 +68743,7 @@
         "locations": [
           {
             "label": "Sornette",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -68752,7 +68752,7 @@
         "locations": [
           {
             "label": "Spectre des marais",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -68761,7 +68761,7 @@
         "locations": [
           {
             "label": "Spectre Fumant",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -68779,7 +68779,7 @@
         "locations": [
           {
             "label": "Tarmur",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -68788,7 +68788,7 @@
         "locations": [
           {
             "label": "Tisseur de mana centaure",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -69006,7 +69006,7 @@
         "locations": [
           {
             "label": "Ver Tisseur",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -69140,7 +69140,7 @@
         "locations": [
           {
             "label": "Wilma",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       },
@@ -69591,7 +69591,7 @@
         "locations": [
           {
             "label": "Zuwarah",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -69757,7 +69757,7 @@
       }
     ],
     "learnedFrom": "",
-    "coordinates": "",
+    "coordinates": "0.0.0",
     "locationPrecision": ""
   },
   {
@@ -70230,7 +70230,7 @@
         "locations": [
           {
             "label": "Protecteur Elite",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }
@@ -71328,7 +71328,7 @@
         "locations": [
           {
             "label": "B'Rokals'Tank",
-            "coordinates": ""
+            "coordinates": "0.0.0"
           }
         ]
       }

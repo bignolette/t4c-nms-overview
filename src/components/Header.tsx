@@ -1,10 +1,29 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { Download, Upload, HelpCircle, Info, X } from 'lucide-react';
 import { useData } from '../context/DataContext';
 
 const Header = () => {
   const { saveDataToFile, loadDataFromFile, showNotification } = useData();
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+
+  useEffect(() => {
+    const handleFullscreenChange = () => {
+      setIsFullscreen(!!document.fullscreenElement);
+    };
+    
+    const handleCustomFSChange = (e: any) => {
+      setIsFullscreen(e.detail);
+    };
+
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
+    window.addEventListener('t4c-fullscreen-change', handleCustomFSChange);
+    
+    return () => {
+      document.removeEventListener('fullscreenchange', handleFullscreenChange);
+      window.removeEventListener('t4c-fullscreen-change', handleCustomFSChange);
+    };
+  }, []);
 
   const [modal, setModal] = useState<{ show: boolean; title: string; message: string; onConfirm?: () => void; type: 'confirm' | 'info'; isSave?: boolean }>(
     { show: false, title: '', message: '', type: 'info' }
@@ -32,7 +51,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="fixed top-0 right-0 left-0 h-20 z-30 pointer-events-none flex items-start justify-end px-8 pt-6">
+      <header className={`fixed top-0 right-0 left-0 h-20 z-30 pointer-events-none flex items-start justify-end px-8 pt-6 transition-opacity duration-300 ${isFullscreen ? 'opacity-0 pointer-events-none invisible' : 'opacity-100'}`}>
         <div className="flex items-center gap-3 pointer-events-auto glass-card p-1.5 rounded-2xl shadow-2xl">
           <button 
             onClick={() => showConfirm(

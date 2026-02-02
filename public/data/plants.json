@@ -34,24 +34,6 @@
     ]
   },
   {
-    "name": "Décoction de ginseng",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "2866.1304.0"
-  },
-  {
-    "name": "Décoction d'arnica",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "2866.1304.0"
-  },
-  {
-    "name": "Décoction de ciguë",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "2866.1304.0"
-  },
-  {
     "name": "Feuille de ciguë",
     "quantity": 1,
     "source": "Divers",
@@ -62,48 +44,6 @@
       "2196.638.0",
       "1853.578.0"
     ]
-  },
-  {
-    "name": "Décoction de maté",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "1658.2606.0"
-  },
-  {
-    "name": "Décoction de datura",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "1658.2606.0"
-  },
-  {
-    "name": "Décoction de fleur de cactus",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "1658.2606.0"
-  },
-  {
-    "name": "Décoction de consoude",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "119.837.0"
-  },
-  {
-    "name": "Décoction d'acérola",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "119.837.0"
-  },
-  {
-    "name": "Décoction de colchique",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "119.837.0"
-  },
-  {
-    "name": "Décoction de boldo",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "119.837.0"
   },
   {
     "name": "Feuille de maté",
@@ -167,30 +107,6 @@
       "1103.147.0",
       "897.76.0"
     ]
-  },
-  {
-    "name": "Bobine de fil de chanvre",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "2839.1342.0"
-  },
-  {
-    "name": "Bobine de fil de coton",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "1678.2581.0"
-  },
-  {
-    "name": "Aune de toile de chanvre",
-    "quantity": 1,
-    "source": "Cape",
-    "coordinates": "2839.1342.0"
-  },
-  {
-    "name": "Aune de toile de coton",
-    "quantity": 1,
-    "source": "Cape",
-    "coordinates": "1678.2581.0"
   },
   {
     "name": "Gerbe de chanvre",

@@ -4,7 +4,7 @@ import RecipeBrowser, { RecipeItemRow } from '../components/RecipeBrowser';
 import Bestiary, { MonsterCard } from '../components/Bestiary';
 import SpellList, { SpellCard } from '../components/SpellList';
 import SkillList, { SkillCard } from '../components/SkillList';
-import { Package, Hammer, Skull, Search, X, Sparkles, Target, LayoutGrid, ChevronRight, ArrowRight } from 'lucide-react';
+import { Package, Hammer, Skull, Search, X, Sparkles, Target, LayoutGrid, ArrowRight } from 'lucide-react';
 import { useState, useEffect, useMemo } from 'react';
 import { motion } from 'framer-motion';
 import ScrollContainer from '../components/shared/ScrollContainer';
