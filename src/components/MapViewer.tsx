@@ -135,14 +135,32 @@ const MapViewer: React.FC = () => {
   }, [isFullscreen]);
 
   useEffect(() => {
-    const handleResize = () => {
-      setOrientation(window.innerHeight > window.innerWidth ? 'portrait' : 'landscape');
+    const checkOrientation = () => {
+      const isPortrait = window.matchMedia('(orientation: portrait)').matches;
+      setOrientation(isPortrait ? 'portrait' : 'landscape');
     };
-    window.addEventListener('resize', handleResize);
-    window.addEventListener('orientationchange', handleResize);
+
+    checkOrientation();
+
+    const mql = window.matchMedia('(orientation: portrait)');
+    const handleOrientationChange = (e: MediaQueryListEvent) => {
+      setOrientation(e.matches ? 'portrait' : 'landscape');
+    };
+
+    mql.addEventListener('change', handleOrientationChange);
+    window.addEventListener('resize', checkOrientation);
+    
+    // Fallback for devices where orientationchange fires before dimensions update
+    const handleLegacyOrientationChange = () => {
+       setTimeout(checkOrientation, 100);
+       setTimeout(checkOrientation, 500);
+    };
+    window.addEventListener('orientationchange', handleLegacyOrientationChange);
+
     return () => {
-        window.removeEventListener('resize', handleResize);
-        window.removeEventListener('orientationchange', handleResize);
+        mql.removeEventListener('change', handleOrientationChange);
+        window.removeEventListener('resize', checkOrientation);
+        window.removeEventListener('orientationchange', handleLegacyOrientationChange);
     };
   }, []);
 
