@@ -69,7 +69,7 @@ const MapViewer: React.FC = () => {
 
   const [selectedMap, setSelectedMap] = useState<MapInfo>(MAPS[0]);
   const [activeLayers, setActiveLayers] = useState<Set<string>>(new Set());
-  const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set(['Monstres']));
+  const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
   const [searchQuery, setSearchQuery] = useState('');
   const [isLoading, setIsLoading] = useState(true);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -247,7 +247,7 @@ const MapViewer: React.FC = () => {
       setIsLoading(true);
     }
     
-    setExpandedCategories(new Set(['Monstres']));
+    setExpandedCategories(new Set());
     if (transformWrapperRef.current) {
       setTimeout(() => fitToView(transformWrapperRef.current), 100);
     }
