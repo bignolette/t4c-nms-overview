@@ -83,66 +83,108 @@
   {
     "name": "Minerais de saphir",
     "quantity": 1,
-    "source": "Matériau"
+    "source": "Matériau",
+    "coordinates": [
+      ""
+    ]
   },
   {
     "name": "Freibergite",
     "quantity": 1,
-    "source": "Matériau"
+    "source": "Matériau",
+    "coordinates": [
+      "2170.340.2",
+      "2350.337.2",
+      "2010.440.2"
+    ]
   },
   {
     "name": "Minerais de diamant",
     "quantity": 1,
-    "source": "Matériau"
+    "source": "Matériau",
+    "coordinates": [
+      ""
+    ]
   },
   {
     "name": "Minerais de rubis",
     "quantity": 1,
-    "source": "Matériau"
+    "source": "Matériau",
+    "coordinates": [
+      ""
+    ]
   },
   {
     "name": "Minerais d'émeraude",
     "quantity": 1,
-    "source": "Matériau"
+    "source": "Matériau",
+    "coordinates": [
+      ""
+    ]
   },
   {
     "name": "Minerais de titane",
     "quantity": 1,
-    "source": "Matériau"
-  },
-  {
-    "name": "Morceau de calcaire brut",
-    "quantity": 1,
-    "source": "Divers"
+    "source": "Matériau",
+    "coordinates": [
+      ""
+    ]
   },
   {
     "name": "Minerais d'azurite",
     "quantity": 1,
-    "source": "Matériau"
+    "source": "Matériau",
+    "coordinates": [
+      ""
+    ]
   },
   {
     "name": "Minerais d'obsidienne",
     "quantity": 1,
-    "source": "Matériau"
+    "source": "Matériau",
+    "coordinates": [
+      "2025.982.2",
+      "2095.1147.2",
+      "2255.821.2",
+      "2311.995.2"
+    ]
   },
   {
     "name": "Minerais d'orichalque",
     "quantity": 1,
-    "source": "Matériau"
+    "source": "Matériau",
+    "coordinates": [
+      "1188.320.2",
+      "1288.131.2",
+      "1292.320.2",
+      "1405.395.2"
+    ]
   },
   {
     "name": "Minerais de cérusite",
     "quantity": 1,
-    "source": "Matériau"
+    "source": "Matériau",
+    "coordinates": [
+      "267.1149.2",
+      "289.1139.2"
+    ]
   },
   {
     "name": "Minerais de quartz",
     "quantity": 1,
-    "source": "Matériau"
+    "source": "Matériau",
+    "coordinates": [
+      ""
+    ]
   },
   {
     "name": "Minerais de rhodite",
     "quantity": 1,
-    "source": "Matériau"
+    "source": "Matériau",
+    "coordinates": [
+      "1527.378.2",
+      "1643.490.2",
+      "1758.639.2"
+    ]
   }
 ]
