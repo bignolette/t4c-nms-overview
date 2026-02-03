@@ -168,39 +168,46 @@ const MapViewer: React.FC = () => {
     const categories: Record<string, Record<string, MarkerData[]>> = { 'Monstres': {}, 'PNJs': {}, 'Plantes': {}, 'Arbres': {}, 'Gisements': {} };
     
     bestiaryData.forEach(m => {
-      if (m.coordinates && m.coordinates.length > 0) {
-        categories['Monstres'][m.name] = (Array.isArray(m.coordinates) ? m.coordinates : [m.coordinates]).map(coord => {
-          const [gx, gy, w] = coord.split('.').map(Number);
-          return { gx, gy, world: w, label: m.name, category: 'Monstres' };
-        }).filter((marker: MarkerData) => !isNaN(marker.world));
-      } else {
-        categories['Monstres'][m.name] = [{ gx: 0, gy: 0, world: -1, label: m.name, category: 'Monstres' }];
-      }
+      const rawCoords = Array.isArray(m.coordinates) ? m.coordinates : (m.coordinates ? [m.coordinates] : []);
+      const validMarkers = rawCoords
+        .filter(c => c && typeof c === 'string' && c.trim() !== '')
+        .map(coord => {
+          const parts = coord.split('.').map(Number);
+          return { gx: parts[0], gy: parts[1], world: parts[2], label: m.name, category: 'Monstres' };
+        }).filter((marker: MarkerData) => !isNaN(marker.world) && marker.world !== -1);
+
+      categories['Monstres'][m.name] = validMarkers.length > 0 
+        ? validMarkers 
+        : [{ gx: 0, gy: 0, world: -1, label: m.name, category: 'Monstres' }];
     });
     
     npcsData.forEach(npc => {
-      if (npc.coordinates && npc.coordinates.length > 0) {
-        const coordsList = Array.isArray(npc.coordinates) ? npc.coordinates : [npc.coordinates];
-        categories['PNJs'][npc.name] = coordsList.map(coord => {
-          const [gx, gy, w] = coord.replace(/,/g, '.').split('.').map(Number);
-          return { gx, gy, world: w, label: npc.name, category: 'PNJs' };
-        }).filter((marker: MarkerData) => !isNaN(marker.world));
-      } else {
-        categories['PNJs'][npc.name] = [{ gx: 0, gy: 0, world: -1, label: npc.name, category: 'PNJs' }];
-      }
+      const rawCoords = Array.isArray(npc.coordinates) ? npc.coordinates : (npc.coordinates ? [npc.coordinates] : []);
+      const validMarkers = rawCoords
+        .filter(c => c && typeof c === 'string' && c.trim() !== '')
+        .map(coord => {
+          const parts = coord.replace(/,/g, '.').split('.').map(Number);
+          return { gx: parts[0], gy: parts[1], world: parts[2], label: npc.name, category: 'PNJs' };
+        }).filter((marker: MarkerData) => !isNaN(marker.world) && marker.world !== -1);
+
+      categories['PNJs'][npc.name] = validMarkers.length > 0 
+        ? validMarkers 
+        : [{ gx: 0, gy: 0, world: -1, label: npc.name, category: 'PNJs' }];
     });
 
     const processStaticList = (list: RecipeItem[], cat: string) => {
         list.forEach(item => {
-            if (item.coordinates && item.coordinates.length > 0) {
-                const coordsList = Array.isArray(item.coordinates) ? item.coordinates : [item.coordinates];
-                categories[cat][item.name] = coordsList.map((c: string) => {
-                    const [gx, gy, w] = c.split('.').map(Number);
-                    return { gx, gy, world: w, label: item.name, category: cat };
-                }).filter((marker: MarkerData) => !isNaN(marker.world));
-            } else {
-                categories[cat][item.name] = [{ gx: 0, gy: 0, world: -1, label: item.name, category: cat }];
-            }
+            const rawCoords = Array.isArray(item.coordinates) ? item.coordinates : (item.coordinates ? [item.coordinates] : []);
+            const validMarkers = rawCoords
+                .filter(c => c && typeof c === 'string' && c.trim() !== '')
+                .map((c: string) => {
+                    const parts = c.split('.').map(Number);
+                    return { gx: parts[0], gy: parts[1], world: parts[2], label: item.name, category: cat };
+                }).filter((marker: MarkerData) => !isNaN(marker.world) && marker.world !== -1);
+
+            categories[cat][item.name] = validMarkers.length > 0 
+                ? validMarkers 
+                : [{ gx: 0, gy: 0, world: -1, label: item.name, category: cat }];
         });
     };
 
@@ -248,16 +255,19 @@ const MapViewer: React.FC = () => {
   };
 
   const toggleLayer = (cat: string, name: string) => {
+    const layerMarkers = dataLayers[cat][name];
+    const isDummy = layerMarkers && layerMarkers.length > 0 && (layerMarkers[0].world === -1 || (layerMarkers[0].gx === 0 && layerMarkers[0].gy === 0));
+
+    if (isDummy) {
+        showNotification('Localisation indisponible', 'error');
+        return;
+    }
+
     const key = `${cat}|${name}`;
     setActiveLayers(prev => {
       const next = new Set(prev);
       const isActivating = !next.has(key);
       if (isActivating) {
-        const layerMarkers = dataLayers[cat][name];
-        if (layerMarkers && layerMarkers.length > 0 && (layerMarkers[0].world === -1 || (layerMarkers[0].gx === 0 && layerMarkers[0].gy === 0))) {
-            showNotification('Localisation indisponible', 'error');
-            return prev;
-        }
         next.add(key);
         if (layerMarkers && layerMarkers.length > 0) {
           const firstMarker = layerMarkers[0];
@@ -439,7 +449,7 @@ const MapViewer: React.FC = () => {
                         {itemsList.map(name => {
                           const isActive = activeLayers.has(`${cat}|${name}`);
                           const layerMarkers = items[name];
-                          const isDummy = layerMarkers.length > 0 && layerMarkers[0].gx === 0 && layerMarkers[0].gy === 0;
+                          const isDummy = layerMarkers.length > 0 && (layerMarkers[0].world === -1 || (layerMarkers[0].gx === 0 && layerMarkers[0].gy === 0));
                           const worldCount = layerMarkers.filter(m => m.world === selectedMap.worldId && !(m.gx === 0 && m.gy === 0)).length;
                           return (
                             <button 
@@ -448,8 +458,8 @@ const MapViewer: React.FC = () => {
                               className={`
                                 w-full flex items-center justify-between p-1.5 rounded-md text-[10px] font-medium transition-all 
                                 ${isActive 
-                                  ? (isDummy ? 'bg-slate-800 text-slate-400' : 'bg-amber-500/10 text-amber-400') 
-                                  : (isDummy ? 'text-slate-600 grayscale opacity-50' : 'text-slate-400 hover:text-slate-200 hover:bg-white/5')
+                                  ? 'bg-amber-500/10 text-amber-400' 
+                                  : (isDummy ? 'text-slate-600 grayscale opacity-50 cursor-not-allowed' : 'text-slate-400 hover:text-slate-200 hover:bg-white/5')
                                 }
                                 ${isDummy ? 'italic' : ''}
                               `}
