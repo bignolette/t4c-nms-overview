@@ -83,9 +83,14 @@
     "coordinates": "336.2691.0"
   },
   {
-    "name": "Hampe mélèze",
+    "name": "Hampe de mélèze",
     "quantity": 1,
-    "source": "Divers"
+    "source": "Divers",
+    "coordinates": [
+      "740.1205.3",
+      "607.1441.3",
+      "816.1424.3"
+    ]
   },
   {
     "name": "Branche de Myrte",
