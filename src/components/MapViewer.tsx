@@ -63,7 +63,7 @@ const CoordsOverlay = memo(({ gx, gy, worldId, isFullscreen }: { gx: number, gy:
 ));
 
 const MapViewer: React.FC = () => {
-  const { bestiaryData, recipesData, itemsData, plantsData, treesData, depositsData, npcsData, showNotification } = useData();
+  const { bestiaryData, plantsData, treesData, depositsData, npcsData, showNotification } = useData();
   const [searchParams, setSearchParams] = useSearchParams();
   const targetName = searchParams.get('name');
 
@@ -148,43 +148,49 @@ const MapViewer: React.FC = () => {
 
   const dataLayers = useMemo(() => {
     const categories: Record<string, Record<string, MarkerData[]>> = { 'Monstres': {}, 'PNJs': {}, 'Plantes': {}, 'Arbres': {}, 'Gisements': {} };
+    
     bestiaryData.forEach(m => {
       if (m.coordinates && m.coordinates.length > 0) {
         categories['Monstres'][m.name] = (Array.isArray(m.coordinates) ? m.coordinates : [m.coordinates]).map(coord => {
           const [gx, gy, w] = coord.split('.').map(Number);
           return { gx, gy, world: w, label: m.name, category: 'Monstres' };
         }).filter((marker: MarkerData) => !isNaN(marker.world));
+      } else {
+        categories['Monstres'][m.name] = [{ gx: 0, gy: 0, world: -1, label: m.name, category: 'Monstres' }];
       }
     });
     
-    // Process full NPC data
     npcsData.forEach(npc => {
       if (npc.coordinates && npc.coordinates.length > 0) {
         const coordsList = Array.isArray(npc.coordinates) ? npc.coordinates : [npc.coordinates];
         categories['PNJs'][npc.name] = coordsList.map(coord => {
-          // Handle both . and , as separators
           const [gx, gy, w] = coord.replace(/,/g, '.').split('.').map(Number);
           return { gx, gy, world: w, label: npc.name, category: 'PNJs' };
         }).filter((marker: MarkerData) => !isNaN(marker.world));
+      } else {
+        categories['PNJs'][npc.name] = [{ gx: 0, gy: 0, world: -1, label: npc.name, category: 'PNJs' }];
       }
     });
 
-    const processItems = (list: RecipeItem[], cat: string) => {
+    const processStaticList = (list: RecipeItem[], cat: string) => {
         list.forEach(item => {
-            if (item.coordinates) {
+            if (item.coordinates && item.coordinates.length > 0) {
                 const coordsList = Array.isArray(item.coordinates) ? item.coordinates : [item.coordinates];
                 categories[cat][item.name] = coordsList.map((c: string) => {
                     const [gx, gy, w] = c.split('.').map(Number);
                     return { gx, gy, world: w, label: item.name, category: cat };
                 }).filter((marker: MarkerData) => !isNaN(marker.world));
+            } else {
+                categories[cat][item.name] = [{ gx: 0, gy: 0, world: -1, label: item.name, category: cat }];
             }
         });
     };
-    processItems(plantsData, 'Plantes');
-    processItems(treesData, 'Arbres');
-    processItems(depositsData, 'Gisements');
+
+    processStaticList(plantsData, 'Plantes');
+    processStaticList(treesData, 'Arbres');
+    processStaticList(depositsData, 'Gisements');
     return categories;
-  }, [bestiaryData, recipesData, itemsData, plantsData, treesData, depositsData]);
+  }, [bestiaryData, npcsData, plantsData, treesData, depositsData]);
 
   const visibleMarkers = useMemo(() => {
     const markers: MarkerData[] = [];
@@ -230,7 +236,7 @@ const MapViewer: React.FC = () => {
       const isActivating = !next.has(key);
       if (isActivating) {
         const layerMarkers = dataLayers[cat][name];
-        if (layerMarkers && layerMarkers.length > 0 && layerMarkers[0].gx === 0 && layerMarkers[0].gy === 0) {
+        if (layerMarkers && layerMarkers.length > 0 && (layerMarkers[0].world === -1 || (layerMarkers[0].gx === 0 && layerMarkers[0].gy === 0))) {
             showNotification('Localisation indisponible', 'error');
             return prev;
         }
