@@ -4,7 +4,7 @@ import { MapPin, Search, X, Map as MapIcon, Compass, Hammer, ArrowRightCircle } 
 import { fastNormalize } from '../data/utils';
 import type { NPC } from '../data/types';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const NpcCard = ({ npc }: { npc: NPC }) => {
     const navigate = useNavigate();

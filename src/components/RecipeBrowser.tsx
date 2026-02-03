@@ -9,7 +9,7 @@ import { createPortal } from 'react-dom';
 import { 
   Search, ArrowUpDown, Star, X, RotateCcw, Package, MapPin,
   Shield, Sword, Crown, Shirt, Footprints, Hand, Circle, Link2, GripHorizontal, Columns2, Medal,
-  ArrowUpRight, ArrowRight, Wind, Users, ArrowRightCircle, User, LayoutGrid, List, ChevronDown, ChevronUp, Map, Tag,
+  ArrowUpRight, ArrowRight, Wind, Users, ArrowRightCircle, User, LayoutGrid, List, ChevronDown, ChevronUp, Tag,
   Skull, Info, Sparkles, Filter, Hammer, Plus, Trash2, ClipboardList, Square, CheckSquare, Check, ExternalLink,
   Copy
 } from 'lucide-react';
@@ -715,278 +715,294 @@ const NPCGroupedView = ({
   allZones: string[]
 }) => {
   const { npcsData } = useData();
-  const [expandedZones, setExpandedZones] = useState<string[]>([]);
-  const [expandedNPCs, setExpandedNPCs] = useState<string[]>([]);
+  const [npcSearch, setNpcSearch] = useState('');
+  const [focusedArtisan, setFocusedArtisan] = useState<string | null>(null);
 
-  // Group by Profession -> Zone -> NPC
-  const grouped = useMemo(() => {
-    const g: Record<string, Record<string, Record<string, RecipeItem[]>>> = {};
-    
+  // Group recipes by artisan
+  const artisans = useMemo(() => {
+    const map: Record<string, {
+        id: string;
+        name: string;
+        profession: string;
+        zone: string;
+        coordinates?: string;
+        recipes: RecipeItem[];
+        minLvl: number;
+        maxLvl: number;
+    }> = {};
+
     recipes.forEach(r => {
-      if (!r.profession) return;
-      if (showOnlyFavs && !favorites.includes(r.name)) return;
-      
-      const zoneName = (r.zones && r.zones.length > 0) ? r.zones[0] : 'Inconnu / Divers';
-      if (selectedZone !== 'Toutes' && zoneName !== selectedZone) return;
+        if (!r.profession) return;
+        if (showOnlyFavs && !favorites.includes(r.name)) return;
+        
+        let npcName = r.learnedFrom || 'Apprentissage auto';
+        let officialZone = (r.zones && r.zones.length > 0) ? r.zones[0] : 'Inconnu';
+        let officialCoords = r.coordinates;
 
-      if (!g[r.profession]) g[r.profession] = {};
-      
-      if (!g[r.profession][zoneName]) g[r.profession][zoneName] = {};
+        if (r.learnedFrom) {
+            const norm = fastNormalize(r.learnedFrom);
+            const found = npcsData.find(n => fastNormalize(n.name) === norm);
+            if (found) {
+                npcName = found.name;
+                officialZone = found.zone;
+                officialCoords = found.coordinates || officialCoords;
+            }
+        }
 
-      let npcName = r.learnedFrom || 'Appris automatiquement / Inconnu';
-      if (r.learnedFrom) {
-        const norm = fastNormalize(r.learnedFrom);
-        const found = npcsData.find(n => fastNormalize(n.name) === norm);
-        if (found) npcName = found.name;
-      }
-
-      if (!g[r.profession][zoneName][npcName]) g[r.profession][zoneName][npcName] = [];
-      
-      g[r.profession][zoneName][npcName].push(r);
+        const artisanId = `${npcName}-${r.profession}`;
+        if (!map[artisanId]) {
+            map[artisanId] = {
+                id: artisanId,
+                name: npcName,
+                profession: r.profession,
+                zone: officialZone,
+                coordinates: officialCoords,
+                recipes: [],
+                minLvl: Infinity,
+                maxLvl: -Infinity
+            };
+        }
+        map[artisanId].recipes.push(r);
+        map[artisanId].minLvl = Math.min(map[artisanId].minLvl, r.level || 0);
+        map[artisanId].maxLvl = Math.max(map[artisanId].maxLvl, r.level || 0);
     });
-    
-    // Sort recipes by level within each NPC group
-    Object.keys(g).forEach(prof => {
-      Object.keys(g[prof]).forEach(zone => {
-        Object.keys(g[prof][zone]).forEach(npc => {
-          g[prof][zone][npc].sort((a, b) => (a.level || 0) - (b.level || 0));
-        });
-      });
-    });
-    
-    return g;
-  }, [recipes, showOnlyFavs, favorites, selectedZone]);
 
-  const sortedProfessions = Object.keys(grouped).sort((a, b) => {
-    const idxA = PROFESSIONS.indexOf(a);
-    const idxB = PROFESSIONS.indexOf(b);
-    if (idxA === -1 && idxB === -1) return a.localeCompare(b);
-    if (idxA === -1) return 1;
-    if (idxB === -1) return -1;
-    return idxA - idxB;
-  }).filter(p => selectedProf === 'Tous' || p === selectedProf);
+    return Object.values(map).filter(a => {
+        const matchesProf = selectedProf === 'Tous' || a.profession === selectedProf;
+        const matchesZone = selectedZone === 'Toutes' || a.zone === selectedZone;
+        const matchesSearch = !npcSearch || fastNormalize(a.name).includes(fastNormalize(npcSearch));
+        return matchesProf && matchesZone && matchesSearch;
+    }).sort((a, b) => a.name.localeCompare(b.name));
+  }, [recipes, selectedProf, selectedZone, npcSearch, showOnlyFavs, favorites, npcsData]);
 
-  const toggleZone = (zoneKey: string) => {
-    setExpandedZones(prev => prev.includes(zoneKey) ? prev.filter(z => z !== zoneKey) : [...prev, zoneKey]);
-  };
-
-  const toggleNPC = (npcKey: string) => {
-    setExpandedNPCs(prev => {
-        const next = new Set(prev);
-        if (next.has(npcKey)) next.delete(npcKey);
-        else next.add(npcKey);
-        return Array.from(next);
-    });
-  };
+  const selectedArtisanData = focusedArtisan ? artisans.find(a => a.id === focusedArtisan) : null;
 
   return (
-    <div className="space-y-6 animate-fade-in">
-      {/* Navigation Tabs */}
-      <div className="bg-slate-900 border border-slate-800 rounded-2xl p-1.5 md:p-2 shadow-xl flex flex-wrap gap-2 sticky top-20 md:top-24 z-30 backdrop-blur-xl items-center pl-14 md:pl-2">
-        <ScrollContainer containerClassName="w-full lg:w-auto" className="gap-1 pb-1 lg:pb-0">
-          <div className="flex gap-1 min-w-max">
-            {PROFESSIONS.map(p => {
-              const isSelected = selectedProf === p;
-              return (
-                <button
-                  key={p}
-                  onClick={() => onSelectProf(p)}
-                  className={`px-3 md:px-4 py-2 md:py-2.5 rounded-lg md:rounded-xl text-[10px] md:text-xs font-black uppercase tracking-wider transition-all flex items-center gap-2 border ${
-                    isSelected 
-                      ? `${VIBRANT_PROF_COLORS[p] || 'bg-amber-500 text-slate-950'} text-white shadow-lg scale-105 z-10` 
-                      : 'bg-slate-950 text-slate-500 border-slate-800 hover:border-slate-600 hover:text-slate-200'
-                  }`}
-                >
-                  {p === 'Tous' ? (
-                    <Users size={14} className={isSelected ? 'text-slate-900' : 'text-slate-500'} />
-                  ) : (
-                    <div className={`w-2 h-2 rounded-full ${isSelected ? 'bg-white' : (VIBRANT_PROF_COLORS[p]?.split(' ')[0])}`} />
-                  )}
-                  {p}
-                </button>
-              );
-            })}
+    <div className="space-y-8 animate-in fade-in duration-500">
+      {/* Search & Tabs Toolbar */}
+      <div className="flex flex-col gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
+          <div className="lg:col-span-4 relative group">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-amber-500 transition-colors" size={18} />
+            <input
+              type="text"
+              placeholder="Rechercher un maître artisan..."
+              value={npcSearch}
+              onChange={(e) => { setNpcSearch(e.target.value); setFocusedArtisan(null); }}
+              className="w-full bg-slate-900/50 border border-slate-800 rounded-2xl py-4 pl-12 pr-12 text-slate-100 focus:border-amber-500/50 outline-none transition-all font-bold"
+            />
+            {npcSearch && (
+              <button onClick={() => setNpcSearch('')} className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 hover:text-white transition-all"><X size={18} /></button>
+            )}
           </div>
-        </ScrollContainer>
-        
-        <div className="hidden lg:flex flex-1" />
-        
-        <div className="flex items-center gap-2 w-full lg:w-auto">
-          {/* Zone Dropdown */}
-          <div className="relative flex-1 md:min-w-[150px] lg:min-w-[180px]">
-            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              <MapPin size={14} className="text-slate-500" />
-            </div>
-            <select
-              value={selectedZone}
-              onChange={(e) => onSelectZone(e.target.value)}
-              className="w-full pl-9 pr-8 py-2.5 bg-slate-950 border border-slate-800 text-slate-300 text-xs font-bold uppercase tracking-wider rounded-xl hover:border-slate-600 focus:border-amber-500 focus:outline-none appearance-none cursor-pointer transition-colors"
-            >
-              {allZones.map(z => <option key={z} value={z}>{z}</option>)}
-            </select>
-            <div className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
-              <ChevronDown size={14} className="text-slate-500" />
+
+          <div className="lg:col-span-8 flex flex-wrap gap-2 justify-end">
+            <div className="flex bg-slate-900/50 p-1 rounded-2xl border border-slate-800 backdrop-blur-xl">
+              <ScrollContainer className="gap-1 px-1">
+                <div className="flex gap-1">
+                  {PROFESSIONS.map(p => {
+                    const isSelected = selectedProf === p;
+                    return (
+                      <button
+                        key={p}
+                        onClick={() => { onSelectProf(p); setFocusedArtisan(null); }}
+                        className={`px-4 py-2.5 rounded-xl text-[10px] md:text-xs font-black uppercase tracking-wider transition-all flex items-center gap-2 border ${
+                          isSelected 
+                            ? (p === 'Tous' ? 'bg-amber-500 border-amber-400 text-slate-950 shadow-lg' : `${VIBRANT_PROF_COLORS[p] || 'bg-amber-500 text-slate-950'} text-white shadow-lg`) 
+                            : 'bg-slate-950 text-slate-500 border-slate-800 hover:border-slate-600 hover:text-slate-200'
+                        }`}
+                      >
+                        {p}
+                      </button>
+                    );
+                  })}
+                </div>
+              </ScrollContainer>
             </div>
           </div>
+        </div>
+
+        <div className="flex flex-wrap items-center gap-4 bg-slate-900/30 p-4 rounded-2xl border border-slate-800/50">
+          <div className="flex items-center gap-2 text-[10px] font-black text-slate-500 uppercase tracking-widest mr-2">
+            <Filter size={14} /> Filtres :
+          </div>
+          
+          <select
+            value={selectedZone}
+            onChange={(e) => { onSelectZone(e.target.value); setFocusedArtisan(null); }}
+            className="bg-slate-950 border border-slate-800 text-slate-300 text-[10px] font-black uppercase tracking-widest px-4 py-2 rounded-xl focus:border-amber-500 outline-none cursor-pointer"
+          >
+            {allZones.map(z => <option key={z} value={z}>{z === 'Toutes' ? 'Toutes les Zones' : z}</option>)}
+          </select>
 
           <button 
             onClick={onToggleFavs}
-            className={`flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all ${
+            className={`flex items-center gap-2 px-4 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all border ${
               showOnlyFavs 
-                ? 'bg-yellow-500 text-slate-950 shadow-lg shadow-yellow-500/20 scale-105' 
+                ? 'bg-yellow-500 border-yellow-400 text-slate-950 shadow-lg' 
                 : 'bg-slate-950 text-slate-500 border border-slate-800 hover:border-yellow-500/50 hover:text-yellow-500'
             }`}
           >
             <Star size={14} fill={showOnlyFavs ? 'currentColor' : 'none'} />
-            <span className="hidden md:inline">Favoris</span>
+            Favoris
           </button>
+
+          <div className="ml-auto text-[10px] font-black text-slate-600 uppercase tracking-tighter">
+            {artisans.length} Maîtres trouvés
+          </div>
         </div>
       </div>
 
-      {sortedProfessions.map((prof) => {
-        const zones = grouped[prof];
-        const zoneNames = Object.keys(zones).sort(); // Sort zones alphabetically
-
-        if (zoneNames.length === 0) return null;
-
-        return (
-          <div key={prof} className="space-y-4">
-            <h2 className="text-xl font-black uppercase tracking-wider text-slate-100 flex items-center gap-3 px-2">
-              <div className={`w-1.5 h-6 rounded-full ${VIBRANT_PROF_COLORS[prof]?.split(' ')[0]}`} />
-              {prof}
-            </h2>
-
-            <div className="grid gap-4">
-              {zoneNames.map((zone) => {
-                const zoneKey = `${prof}-${zone}`;
-                const isZoneExpanded = expandedZones.includes(zoneKey);
-                const npcs = zones[zone];
-                const npcNames = Object.keys(npcs).sort(); // Sort NPCs alphabetically
-
-                return (
-                  <div key={zoneKey} className={`bg-slate-900/30 border border-slate-800 rounded-2xl overflow-hidden`}>
-                    {/* Zone Header */}
-                    <button 
-                      onClick={() => toggleZone(zoneKey)}
-                      className="w-full flex items-center justify-between p-4 hover:bg-slate-800/50 transition-colors"
-                    >
-                      <div className="flex items-center gap-3">
-                        <div className="p-2 bg-slate-800 rounded-lg text-indigo-400">
-                          <Map size={18} />
-                        </div>
-                        <h3 className="font-bold text-slate-200">{zone}</h3>
-                        <span className="text-xs text-slate-500">({npcNames.length} PNJ)</span>
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        {/* Left: Artisans Grid */}
+        <div className={`${focusedArtisan ? 'lg:col-span-4' : 'lg:col-span-12'} grid grid-cols-1 md:grid-cols-2 ${focusedArtisan ? 'xl:grid-cols-1' : 'xl:grid-cols-3'} gap-4 transition-all duration-500`}>
+          <AnimatePresence mode="popLayout">
+            {artisans.map(a => {
+              const isActive = focusedArtisan === a.id;
+              return (
+                <motion.div
+                  layout
+                  key={a.id}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  exit={{ opacity: 0, scale: 0.9 }}
+                  onClick={() => setFocusedArtisan(isActive ? null : a.id)}
+                  className={`group glass-card rounded-2xl p-5 border cursor-pointer transition-all duration-300 relative overflow-hidden ${
+                    isActive ? 'border-amber-500 ring-4 ring-amber-500/10 bg-slate-800/50' : 'border-slate-800 hover:border-slate-600'
+                  }`}
+                >
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="space-y-3 flex-1 min-w-0">
+                      <div className="flex items-center gap-2">
+                        <span className={`w-2 h-2 rounded-full ${VIBRANT_PROF_COLORS[a.profession]?.split(' ')[0] || 'bg-slate-500'}`} />
+                        <span className="text-[10px] font-black uppercase tracking-widest text-slate-500">{a.profession}</span>
                       </div>
-                      {isZoneExpanded ? <ChevronUp size={18} className="text-slate-500" /> : <ChevronDown size={18} className="text-slate-500" />}
-                    </button>
-
-                    {/* Zone Content: List of NPCs */}
-                    {isZoneExpanded && (
-                      <div className="p-4 pt-0 space-y-3 border-t border-slate-800/50">
-                        {npcNames.map(npc => {
-                          const npcKey = `${zoneKey}-${npc}`;
-                          const npcRecipes = npcs[npc];
-                          const isNpcExpanded = expandedNPCs.includes(npcKey);
-                          const npcInfo = npcsData.find(n => fastNormalize(n.name) === fastNormalize(npc));
-
-                          return (
-                            <div key={npcKey} className={`bg-slate-950/50 border rounded-xl overflow-hidden transition-all duration-300 ${isNpcExpanded ? 'border-amber-500/30' : 'border-slate-800'}`}>
-                              {/* NPC Header */}
-                              <button 
-                                onClick={() => toggleNPC(npcKey)}
-                                className="w-full flex flex-col md:flex-row md:items-center justify-between p-3 gap-3 text-left hover:bg-slate-800/30 transition-colors"
-                              >
-                                <div className="flex items-center gap-3 flex-1">
-                                  <div className="w-8 h-8 rounded-full bg-slate-800 flex items-center justify-center text-amber-500 border border-slate-700">
-                                    <User size={16} />
-                                  </div>
-                                  <div>
-                                    <h4 className="font-bold text-slate-200 text-sm italic uppercase tracking-tighter">
-                                      ENSEIGNÉ PAR : {npcInfo ? (
-                                        <Link 
-                                          to={`/wiki/npcs?search=${encodeURIComponent(npc)}`}
-                                          onClick={(e) => e.stopPropagation()}
-                                          className="hover:text-amber-500 transition-colors underline decoration-amber-500/20 underline-offset-4"
-                                        >
-                                          {npc}
-                                        </Link>
-                                      ) : npc}
-                                    </h4>
-                                    <div className="flex items-center gap-2 mt-1">
-                                      {(npcRecipes[0]?.coordinates || npcInfo?.coordinates) && (
-                                        <Link 
-                                          to={`/maps?type=npc&name=${encodeURIComponent(npc)}`}
-                                          onClick={(e) => e.stopPropagation()}
-                                          className="flex items-center gap-1.5 text-xs font-mono font-black text-amber-400 bg-amber-400/5 px-2 py-0.5 rounded border border-amber-400/10 hover:bg-amber-400/10 transition-colors group/npc-loc"
-                                        >
-                                          <MapPin size={12} className="text-amber-500 group-hover/npc-loc:scale-110 transition-transform" /> {npcRecipes[0]?.coordinates || npcInfo?.coordinates}
-                                        </Link>
-                                      )}
-                                    </div>
-                                  </div>
-                                </div>
-                                <div className="flex items-center gap-3 shrink-0">
-                                  <span className="bg-slate-900 border border-slate-700 text-[10px] font-bold text-slate-400 px-2 py-0.5 rounded-full uppercase tracking-tighter">
-                                    {npcRecipes.length} recettes
-                                  </span>
-                                  {isNpcExpanded ? <ChevronUp size={16} className="text-slate-600" /> : <ChevronDown size={16} className="text-slate-600" />}
-                                </div>
-                              </button>
-
-                              {/* NPC Content: Recipes */}
-                              {isNpcExpanded && (
-                                <div className="p-3 pt-0 border-t border-slate-800/50 bg-slate-950/20">
-                                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2 mt-3 animate-in slide-in-from-top-2 duration-300">
-                                    {npcRecipes.map((recipe) => (
-                                      <div key={recipe.name} className="group flex items-center justify-between bg-slate-900 border border-slate-800 rounded-lg p-2 hover:border-slate-600 transition-all">
-                                        <div className="flex items-center gap-2 min-w-0">
-                                          <div className="w-6 h-6 rounded bg-slate-950 border border-slate-800 flex items-center justify-center text-[10px] font-bold text-slate-400 group-hover:text-amber-500 transition-colors">
-                                            {recipe.level}
-                                          </div>
-                                          <button 
-                                            onClick={() => onNavigateToRecipe(recipe.name)}
-                                            className="text-xs font-bold text-slate-300 group-hover:text-amber-500 truncate text-left flex items-center gap-1"
-                                          >
-                                            {recipe.name}
-                                            <ArrowRightCircle size={10} className="opacity-0 group-hover/craft:opacity-100 transition-opacity" />
-                                          </button>
-                                        </div>
-                                        <div className="flex items-center gap-1">
-                                            <Link
-                                              to={`/wiki/items?search=${encodeURIComponent(recipe.name)}`}
-                                              className="p-1 text-slate-600 hover:text-amber-500 transition-colors rounded-md hover:bg-amber-500/10"
-                                              title="Voir l'objet"
-                                            >
-                                              <ExternalLink size={12} />
-                                            </Link>
-                                            <button 
-                                              onClick={() => toggleFavorite(recipe.name)}
-                                              className={`p-1 rounded transition-all ${favorites.includes(recipe.name) ? 'text-yellow-500' : 'text-slate-700 hover:text-slate-400'}`}
-                                            >
-                                              <Star size={12} fill={favorites.includes(recipe.name) ? 'currentColor' : 'none'} />
-                                            </button>
-                                        </div>
-                                      </div>
-                                    ))}
-                                  </div>
-                                </div>
-                              )}
-                            </div>
-                          );
-                        })}
+                      <h3 className="text-lg font-black text-slate-100 uppercase italic tracking-tighter truncate group-hover:text-amber-400 transition-colors">
+                        {a.name}
+                      </h3>
+                      <div className="flex flex-wrap gap-2">
+                        <span className="flex items-center gap-1 px-2 py-0.5 rounded-lg bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 text-[9px] font-black uppercase">
+                          <MapPin size={10} /> {a.zone}
+                        </span>
+                        {a.coordinates && (
+                          <span className="px-2 py-0.5 rounded-lg bg-amber-500/10 text-amber-500 border border-amber-500/20 text-[9px] font-mono font-black">
+                            {a.coordinates}
+                          </span>
+                        )}
                       </div>
-                    )}
+                    </div>
+                    <div className="flex flex-col items-end gap-2">
+                      <div className="bg-slate-950 p-2 rounded-xl border border-slate-800 text-center min-w-[60px]">
+                        <div className="text-lg font-black text-amber-500 leading-none">{a.recipes.length}</div>
+                        <div className="text-[7px] font-black text-slate-600 uppercase tracking-tighter mt-1">Recettes</div>
+                      </div>
+                      <div className="text-[9px] font-bold text-slate-500">
+                        Niv. {a.minLvl}-{a.maxLvl}
+                      </div>
+                    </div>
                   </div>
-                );
-              })}
-            </div>
+                  {isActive && (
+                    <div className="absolute top-2 right-2">
+                      <ArrowRightCircle size={20} className="text-amber-500 animate-pulse" />
+                    </div>
+                  )}
+                </motion.div>
+              );
+            })}
+          </AnimatePresence>
+        </div>
+
+        {/* Right: Focused Recipes */}
+        <AnimatePresence>
+          {focusedArtisan && selectedArtisanData && (
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: 20 }}
+              className="lg:col-span-8 bg-slate-900/50 border border-slate-800 rounded-3xl overflow-hidden shadow-2xl sticky top-24"
+            >
+              <div className="p-6 border-b border-slate-800 bg-slate-800/30 flex items-center justify-between">
+                <div>
+                  <div className="flex items-center gap-2 mb-1">
+                    <User size={16} className="text-amber-500" />
+                    <h2 className="text-2xl font-black text-white uppercase italic tracking-tighter">{selectedArtisanData.name}</h2>
+                  </div>
+                  <p className="text-xs font-bold text-slate-500 uppercase tracking-widest">{selectedArtisanData.profession} • {selectedArtisanData.zone}</p>
+                </div>
+                <div className="flex gap-2">
+                    <Link 
+                        to={`/wiki/npcs?search=${encodeURIComponent(selectedArtisanData.name)}`}
+                        className="p-3 bg-slate-950 text-slate-400 hover:text-amber-500 rounded-xl border border-slate-800 transition-all"
+                        title="Voir la fiche PNJ"
+                    >
+                        <ExternalLink size={20} />
+                    </Link>
+                    <button 
+                        onClick={() => setFocusedArtisan(null)}
+                        className="p-3 bg-slate-950 text-slate-400 hover:text-white rounded-xl border border-slate-800 transition-all"
+                    >
+                        <X size={20} />
+                    </button>
+                </div>
+              </div>
+
+              <div className="p-6 overflow-y-auto max-h-[60vh] custom-scrollbar">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                  {selectedArtisanData.recipes.sort((a,b) => (a.level || 0) - (b.level || 0)).map((recipe) => (
+                    <div key={recipe.name} className="group flex items-center justify-between bg-slate-900 border border-slate-800 rounded-xl p-3 hover:border-amber-500/50 transition-all shadow-lg">
+                      <div className="flex items-center gap-3 min-w-0">
+                        <div className="w-10 h-10 rounded-lg bg-slate-950 border border-slate-800 flex items-center justify-center text-xs font-black text-slate-400 group-hover:text-amber-500 transition-colors shrink-0">
+                          {recipe.level}
+                        </div>
+                        <div className="min-w-0">
+                          <button 
+                            onClick={() => onNavigateToRecipe(recipe.name)}
+                            className="text-sm font-bold text-slate-200 group-hover:text-amber-400 truncate text-left block w-full"
+                          >
+                            {recipe.name}
+                          </button>
+                          <div className="text-[10px] text-slate-600 font-bold uppercase">{recipe.source || 'Objet'}</div>
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-1 shrink-0 ml-4">
+                          <Link
+                            to={`/wiki/items?search=${encodeURIComponent(recipe.name)}`}
+                            className="p-2 text-slate-600 hover:text-amber-500 transition-colors rounded-lg hover:bg-amber-500/10"
+                            title="Voir l'objet"
+                          >
+                            <ExternalLink size={14} />
+                          </Link>
+                          <button 
+                            onClick={() => toggleFavorite(recipe.name)}
+                            className={`p-2 rounded-lg transition-all ${favorites.includes(recipe.name) ? 'text-yellow-500 bg-yellow-500/10' : 'text-slate-700 hover:text-slate-400'}`}
+                          >
+                            <Star size={14} fill={favorites.includes(recipe.name) ? 'currentColor' : 'none'} />
+                          </button>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              
+              <div className="p-4 bg-slate-950/50 border-t border-slate-800 flex items-center justify-center gap-2">
+                <Info size={12} className="text-slate-600" />
+                <span className="text-[10px] font-bold text-slate-600 uppercase tracking-widest">Sélectionnez un autre artisan pour comparer ses recettes</span>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {artisans.length === 0 && (
+          <div className="lg:col-span-12 py-20 text-center glass-card rounded-[40px] border border-dashed border-slate-800">
+            <Users size={64} className="mx-auto text-slate-800 mb-6" />
+            <h3 className="text-2xl font-black text-slate-500 uppercase italic tracking-tighter">Aucun maître artisan ne correspond à ces critères</h3>
+            <button onClick={() => { setNpcSearch(''); onSelectProf('Tous'); onSelectZone('Toutes'); }} className="mt-6 text-amber-500 font-black uppercase text-xs hover:underline underline-offset-8">Réinitialiser tous les filtres</button>
           </div>
-        );
-      })}
+        )}
+      </div>
     </div>
   );
 };
-
 
 const ProjectCard = ({ project, recipes, onToggleIngredient, onDelete, onNavigate }: any) => {
     const { recipesData } = useData();
@@ -1300,12 +1316,20 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
   }, [recipes]);
 
   useEffect(() => {
-    if (urlSearch !== activeSearchTerm) {
-      setActiveSearchTerm(urlSearch);
-      setCurrentPage(1);
-      if (urlSearch && !isItemsPage) setDisplayMode('all');
-    }
-  }, [urlSearch, isItemsPage, activeSearchTerm]);
+    setActiveSearchTerm(urlSearch);
+    setCurrentPage(1);
+    if (urlSearch && !isItemsPage) setDisplayMode('all');
+  }, [urlSearch, isItemsPage]);
+
+  const handleSearchChange = (val: string) => {
+    setActiveSearchTerm(val);
+    setCurrentPage(1);
+    setSearchParams(prev => {
+      if (val) prev.set('search', val);
+      else prev.delete('search');
+      return prev;
+    }, { replace: true });
+  };
 
   const toggleFavorite = (name: string) => {
     const newFavs = favorites.includes(name) 
@@ -1585,6 +1609,26 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
 
       {viewMode === 'search' ? (
         <>
+          {/* Main Search Bar */}
+          <div className="relative group">
+            <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-amber-500 transition-all duration-300 group-focus-within:scale-110 pointer-events-none" size={20} />
+            <input
+              type="text"
+              placeholder={isItemsPage ? "Rechercher un objet ou un bonus..." : "Rechercher une recette ou un composant..."}
+              value={activeSearchTerm}
+              onChange={(e) => handleSearchChange(e.target.value)}
+              className="w-full bg-slate-900/50 backdrop-blur-xl border-2 border-slate-800 rounded-[20px] py-4 md:py-5 pl-14 pr-12 text-lg text-white focus:border-amber-500 outline-none transition-all shadow-xl placeholder:text-slate-700 font-bold"
+            />
+            {activeSearchTerm && (
+              <button 
+                onClick={() => handleSearchChange('')} 
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 hover:text-white p-2 bg-slate-800/50 rounded-lg transition-all"
+              >
+                <X size={18} />
+              </button>
+            )}
+          </div>
+
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-4 md:p-6 shadow-xl relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-amber-500/5 blur-3xl rounded-full -mr-16 -mt-16"></div>
             

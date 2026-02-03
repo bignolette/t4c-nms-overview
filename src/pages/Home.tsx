@@ -1,18 +1,7 @@
-import { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
-import { ExternalLink, Calculator, Search, BookOpen, User } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { ExternalLink, Calculator, BookOpen, User, Map } from 'lucide-react';
 
 const Home = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-  const navigate = useNavigate();
-
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (searchTerm.trim()) {
-      navigate(`/wiki?search=${encodeURIComponent(searchTerm)}`);
-    }
-  };
-
   return (
     <div className="space-y-12 pb-20">
       {/* Hero Section */}
@@ -25,43 +14,14 @@ const Home = () => {
           <h1 className="text-6xl md:text-8xl font-black text-white mb-8 tracking-tighter italic uppercase">
             T4C <span className="text-amber-500">NMS</span>
           </h1>
-          <p className="text-slate-300 text-xl md:text-2xl font-medium leading-relaxed mb-12 opacity-80">
+          <p className="text-slate-300 text-xl md:text-2xl font-medium leading-relaxed opacity-80">
               Votre compagnon stratégique ultime pour Althéa.
           </p>
-
-          {/* Home Search Bar */}
-          <form onSubmit={handleSearch} className="max-w-2xl mx-auto relative group">
-            <div className="absolute inset-0 bg-amber-500/20 blur-2xl group-focus-within:bg-amber-500/30 transition-all rounded-full pointer-events-none" />
-            <div className="relative flex items-center">
-              <Search className="absolute left-6 text-slate-500 group-focus-within:text-amber-500 transition-colors pointer-events-none" size={24} />
-              <input 
-                id="home-search-input"
-                name="home-search"
-                type="text"
-                aria-label="Rechercher un objet ou un monstre"
-                placeholder="Chercher un objet, un monstre..."
-                value={searchTerm}
-                onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full bg-slate-950/80 backdrop-blur-xl border-2 border-slate-800 rounded-[32px] py-5 md:py-6 pl-16 pr-16 md:pr-40 text-lg md:text-xl text-white focus:border-amber-500 outline-none transition-all shadow-2xl placeholder:text-slate-700"
-              />
-              <button 
-                type="submit"
-                className="absolute right-2.5 bg-amber-500 hover:bg-amber-400 text-slate-950 w-12 h-12 md:w-auto md:h-auto md:px-8 md:py-4 rounded-full md:rounded-[24px] font-black uppercase tracking-widest text-sm transition-all shadow-lg active:scale-95 flex items-center justify-center shrink-0"
-              >
-                <div className="md:hidden flex items-center justify-center">
-                  <Search size={20} />
-                </div>
-                <div className="hidden md:block">
-                  Chercher
-                </div>
-              </button>
-            </div>
-          </form>
         </div>
       </div>
 
       {/* Main Tools Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
         <QuickCard 
           title="Encyclopédie" 
           description="Explorez la base de données complète des objets, monstres et métiers d'Althéa."
@@ -69,6 +29,14 @@ const Home = () => {
           to="/wiki"
           color="bg-blue-500/10 text-blue-400 border-blue-500/20"
           accent="group-hover:border-blue-500/50"
+        />
+        <QuickCard 
+          title="Cartographie" 
+          description="Localisez précisément chaque ressource, PNJ et créature sur nos cartes HD."
+          icon={Map}
+          to="/maps"
+          color="bg-indigo-500/10 text-indigo-400 border-indigo-500/20"
+          accent="group-hover:border-indigo-500/50"
         />
         <QuickCard 
           title="Simulateur" 

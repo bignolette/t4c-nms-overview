@@ -216,6 +216,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         if (loading || !data.items.length) return {
             ingredientProfessionMap: {},
             itemMonsterMap: {},
+            npcRecipesMap: {},
             itemUsageMap: {},
             spellMap: {},
             spellPrerequisiteMap: {},

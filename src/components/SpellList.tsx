@@ -7,7 +7,7 @@ import type { Spell } from '../data/types';
 import { 
   Sparkles, Zap, Brain, ScrollText, Filter, AlertCircle, RotateCcw, 
   BookOpen, Star, MapPin, ArrowUpDown, Flame, Droplets, 
-  Wind, Mountain, Sun, Ghost, Wand2, Copy, Check
+  Wind, Mountain, Sun, Ghost, Wand2, Copy, Check, Search, X
 } from 'lucide-react';
 import Pagination from './shared/Pagination';
 import StatBadge from './shared/StatBadge';
@@ -234,11 +234,19 @@ const SpellList = ({ spells }: SpellListProps) => {
   const [itemsPerPage, setItemsPerPage] = useState(DEFAULT_ITEMS_PER_PAGE);
 
   useEffect(() => {
-    if (urlSearch !== activeSearchTerm) {
-      setActiveSearchTerm(urlSearch);
-      setCurrentPage(1);
-    }
-  }, [urlSearch, activeSearchTerm]);
+    setActiveSearchTerm(urlSearch);
+    setCurrentPage(1);
+  }, [urlSearch]);
+
+  const handleSearchChange = (val: string) => {
+    setActiveSearchTerm(val);
+    setCurrentPage(1);
+    setSearchParams(prev => {
+      if (val) prev.set('search', val);
+      else prev.delete('search');
+      return prev;
+    }, { replace: true });
+  };
 
   const allZones = useMemo(() => {
     const zones = new Set<string>();
@@ -327,21 +335,30 @@ const SpellList = ({ spells }: SpellListProps) => {
         <div className="absolute top-0 right-0 w-64 h-64 bg-blue-500/5 blur-3xl rounded-full -mr-32 -mt-32 pointer-events-none"></div>
         
         <div className="flex flex-col md:flex-row gap-4 relative z-10">
-          <div className="flex-1 flex gap-2">
-            <button onClick={handleReset} className="btn-danger w-full md:w-auto">
-              <RotateCcw size={16} /> Réinitialiser
-            </button>
+          <div className="flex-1 relative group">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-amber-500 transition-colors" size={18} />
+            <input 
+              type="text"
+              placeholder="Rechercher un sort ou un effet..."
+              value={activeSearchTerm}
+              onChange={(e) => handleSearchChange(e.target.value)}
+              className="w-full bg-slate-950/50 border border-slate-800 rounded-xl py-3.5 pl-12 pr-12 text-slate-100 focus:border-amber-500/50 outline-none transition-all font-bold"
+            />
+            {activeSearchTerm && (
+              <button onClick={() => handleSearchChange('')} className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 hover:text-white transition-all"><X size={18} /></button>
+            )}
           </div>
 
-          <div className="flex items-center justify-between md:justify-start gap-4 px-4 md:px-6 py-3 bg-slate-950/50 rounded-xl border border-slate-800 text-sm h-auto md:h-14 shadow-inner">
-            <div className="text-slate-400 whitespace-nowrap flex items-center gap-2">
-              <span className="font-black text-blue-500 text-lg md:text-xl">{filteredSpells.length}</span>
-              <span className="text-[9px] md:text-[10px] font-black uppercase tracking-widest opacity-60">sorts</span>
-            </div>
-            <div className="w-px h-6 bg-slate-800" />
-            <div className="text-slate-400 whitespace-nowrap flex items-center gap-2">
-              <span className="font-black text-slate-200 text-base md:text-lg">{spells.length}</span>
-              <span className="text-[9px] md:text-[10px] font-black uppercase tracking-widest opacity-40">total</span>
+          <div className="flex flex-wrap md:flex-nowrap gap-2 shrink-0">
+            <button onClick={handleReset} className="btn-danger flex-1 md:flex-none justify-center">
+              <RotateCcw size={16} /> <span className="md:hidden lg:inline">Réinitialiser</span>
+            </button>
+            
+            <div className="flex items-center gap-4 px-4 py-2 bg-slate-950/50 rounded-xl border border-slate-800 shadow-inner">
+              <div className="text-slate-400 whitespace-nowrap flex items-center gap-2">
+                <span className="font-black text-blue-500 text-lg">{filteredSpells.length}</span>
+                <span className="text-[9px] md:text-[10px] font-black uppercase tracking-widest opacity-60">match</span>
+              </div>
             </div>
           </div>
         </div>

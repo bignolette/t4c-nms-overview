@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useData } from '../context/DataContext';
 import { fastNormalize } from '../data/utils';
 import type { Monster } from '../data/types';
-import { MapPin, Coins, Skull, Filter, AlertCircle, ExternalLink, RotateCcw, Hammer, Copy, Check, Map as MapIcon } from 'lucide-react';
+import { MapPin, Coins, Skull, Filter, AlertCircle, ExternalLink, RotateCcw, Hammer, Copy, Check, Map as MapIcon, Search, X } from 'lucide-react';
 import Pagination from './shared/Pagination';
 import ScrollContainer from './shared/ScrollContainer';
 import { useClipboard } from '../hooks/useClipboard';
@@ -182,13 +182,22 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
 
   // Sync with URL search parameters
   useEffect(() => {
-    if (urlSearch !== activeSearchTerm) {
-      setActiveSearchTerm(urlSearch);
+    setActiveSearchTerm(urlSearch);
+    if (urlSearch) {
+      setSelectedZone('Toutes');
       setCurrentPage(1);
-      // When searching from a link, we want to see all zones to find the specific monster
-      if (urlSearch) setSelectedZone('Toutes');
     }
-  }, [urlSearch, activeSearchTerm]);
+  }, [urlSearch]);
+
+  const handleSearchChange = (val: string) => {
+    setActiveSearchTerm(val);
+    setCurrentPage(1);
+    setSearchParams(prev => {
+      if (val) prev.set('search', val);
+      else prev.delete('search');
+      return prev;
+    }, { replace: true });
+  };
 
   // Normalize location for filtering
   const getBaseZone = (location: string) => location.split('(')[0].trim();
@@ -248,21 +257,30 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
       {/* Controls Header */}
       <div className="flex flex-col gap-6 bg-slate-800/30 p-4 md:p-6 rounded-2xl border border-slate-700/50">
         <div className="flex flex-col md:flex-row gap-4">
-          <div className="flex-1 flex gap-2">
-            <button onClick={handleReset} className="btn-danger w-full md:w-auto">
-              <RotateCcw size={16} /> Réinitialiser
-            </button>
+          <div className="flex-1 relative group">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-amber-500 transition-colors" size={18} />
+            <input 
+              type="text"
+              placeholder="Rechercher une créature ou un butin..."
+              value={activeSearchTerm}
+              onChange={(e) => handleSearchChange(e.target.value)}
+              className="w-full bg-slate-950/50 border border-slate-800 rounded-xl py-3.5 pl-12 pr-12 text-slate-100 focus:border-amber-500/50 outline-none transition-all font-bold"
+            />
+            {activeSearchTerm && (
+              <button onClick={() => handleSearchChange('')} className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 hover:text-white transition-all"><X size={18} /></button>
+            )}
           </div>
 
-          <div className="flex items-center justify-between md:justify-start gap-4 px-4 md:px-6 py-3 bg-slate-950/50 rounded-xl border border-slate-800 text-sm h-auto md:h-14 shadow-inner">
-            <div className="text-slate-400 whitespace-nowrap flex items-center gap-2">
-              <span className="font-black text-amber-500 text-lg md:text-xl">{filteredMonsters.length}</span>
-              <span className="text-[9px] md:text-[10px] font-black uppercase tracking-widest opacity-60">créatures</span>
-            </div>
-            <div className="w-px h-6 bg-slate-800" />
-            <div className="text-slate-400 whitespace-nowrap flex items-center gap-2">
-              <span className="font-black text-slate-200 text-base md:text-lg">{monsters.length}</span>
-              <span className="text-[9px] md:text-[10px] font-black uppercase tracking-widest opacity-40">total</span>
+          <div className="flex flex-wrap md:flex-nowrap gap-2 shrink-0">
+            <button onClick={handleReset} className="btn-danger flex-1 md:flex-none justify-center">
+              <RotateCcw size={16} /> <span className="md:hidden lg:inline">Réinitialiser</span>
+            </button>
+            
+            <div className="flex items-center gap-4 px-4 py-2 bg-slate-950/50 rounded-xl border border-slate-800 shadow-inner">
+              <div className="text-slate-400 whitespace-nowrap flex items-center gap-2">
+                <span className="font-black text-amber-500 text-lg">{filteredMonsters.length}</span>
+                <span className="text-[9px] font-black uppercase tracking-widest opacity-60">match</span>
+              </div>
             </div>
           </div>
         </div>
