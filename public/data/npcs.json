@@ -15,13 +15,13 @@
     "name": "Alice",
     "locationPrecision": "Auberge de Windhowl",
     "zone": "Arakas",
-    "coordinates": "1625,2644,0"
+    "coordinates": "1625.2644.0"
   },
   {
     "name": "Aloysius Starbolt",
     "locationPrecision": "Chateau de SilverSky",
     "zone": "Raven's Dust",
-    "coordinates": "1483,2355,0"
+    "coordinates": "1483.2355.0"
   },
   {
     "name": "Alpan Hauramisk",
@@ -213,7 +213,7 @@
     "name": "Bourgmestre Belamzer",
     "locationPrecision": "Situ dans la grande maison en bas droite de StoneCrest",
     "zone": "StoneHeim",
-    "coordinates": "264,863,0"
+    "coordinates": "264.863.0"
   },
   {
     "name": "Bourgmestre Sunrock",
@@ -243,7 +243,7 @@
     "name": "Capitaine Jambedefer",
     "locationPrecision": "Sud Est de SilverSky",
     "zone": "Raven's Dust",
-    "coordinates": "1615,2612,0"
+    "coordinates": "1615.2612.0"
   },
   {
     "name": "Caprice",
@@ -321,7 +321,7 @@
     "name": "Corsaire Leowald",
     "locationPrecision": "Sud Est de SilverSky",
     "zone": "Raven's Dust",
-    "coordinates": "1616,2634,0"
+    "coordinates": "1616.2634.0"
   },
   {
     "name": "Crimsonscale",
@@ -669,7 +669,7 @@
     "name": "Gorhendad",
     "locationPrecision": "Tour d'Urtanar, 1er étage",
     "zone": "Urtanar",
-    "coordinates": "0.0.0"
+    "coordinates": ""
   },
   {
     "name": "Gralek",
@@ -759,7 +759,7 @@
     "name": "Hothien Ardiel",
     "locationPrecision": "Tour d'Urtanar, Sous-sol",
     "zone": "Urtanar",
-    "coordinates": "0.0.0"
+    "coordinates": ""
   },
   {
     "name": "Idas",
@@ -993,7 +993,7 @@
     "name": "Larryna Evernild",
     "locationPrecision": "Tour d'Urtanar",
     "zone": "Urtanar",
-    "coordinates": "1er étage"
+    "coordinates": "1erétage"
   },
   {
     "name": "Le fouineur",
@@ -1305,7 +1305,7 @@
     "name": "Ortherion",
     "locationPrecision": "Tour d'Urtanar",
     "zone": "Urtanar",
-    "coordinates": "1er étage"
+    "coordinates": "1erétage"
   },
   {
     "name": "Owinyc Sovan",
@@ -1701,7 +1701,7 @@
     "name": "Un commis voyageur",
     "locationPrecision": "Nord d'Arakas, près de l'Asile",
     "zone": "Arakas",
-    "coordinates": "1590,2330,0"
+    "coordinates": "1590.2330.0"
   },
   {
     "name": "Un démon rampant",
@@ -1767,7 +1767,7 @@
     "name": "Un mage errant",
     "locationPrecision": "Devant le temple de StoneCrest",
     "zone": "StoneHeim",
-    "coordinates": "306,750,0"
+    "coordinates": "306.750.0"
   },
   {
     "name": "Un marchand errant",
@@ -1779,7 +1779,7 @@
     "name": "Un monstre putride",
     "locationPrecision": "Crypte niveau -3",
     "zone": "Raven's Dust",
-    "coordinates": "562, 2446, 1"
+    "coordinates": "562.2446.1"
   },
   {
     "name": "Un vendeur étrange",
@@ -1797,7 +1797,7 @@
     "name": "Un voyageur paisible",
     "locationPrecision": "Montagnes de Zhakar",
     "zone": "Raven's Dust",
-    "coordinates": "425, 2270, 0"
+    "coordinates": "425.2270.0"
   },
   {
     "name": "Une âme tourmentée",
@@ -1833,7 +1833,7 @@
     "name": "Une horreur repoussante",
     "locationPrecision": "Crypte niveau -3",
     "zone": "Raven's Dust",
-    "coordinates": "662, 2388, 1"
+    "coordinates": "662.2388.1"
   },
   {
     "name": "Une infâme abomination",
@@ -1845,7 +1845,7 @@
     "name": "Une loque humaine",
     "locationPrecision": "Crypte niveau -3",
     "zone": "Raven's Dust",
-    "coordinates": "618, 2345, 1"
+    "coordinates": "618.2345.1"
   },
   {
     "name": "Une monstruosité putride",
