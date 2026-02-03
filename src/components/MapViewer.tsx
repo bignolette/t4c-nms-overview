@@ -73,6 +73,7 @@ const MapViewer: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [isLoading, setIsLoading] = useState(true);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [orientation, setOrientation] = useState<'portrait' | 'landscape'>(window.innerHeight > window.innerWidth ? 'portrait' : 'landscape');
   
@@ -322,14 +323,14 @@ const MapViewer: React.FC = () => {
 
       <div className={`flex gap-2 md:gap-6 items-center bg-slate-800/30 p-2 md:p-4 rounded-xl md:rounded-2xl border border-slate-700/50 shadow-xl shrink-0 transition-all ${isFullscreen ? 'py-1 md:py-2 px-safe-top' : ''}`}>
         <div className="flex items-center gap-3 shrink-0">
-          {!isFullscreen && <button onClick={() => setIsSidebarOpen(true)} className="p-2 bg-amber-500/10 text-amber-500 rounded-lg border border-amber-500/20 lg:hidden"><Menu size={18} /></button>}
+          <button onClick={() => setIsSidebarOpen(true)} className="p-2 bg-amber-500/10 text-amber-500 rounded-lg border border-amber-500/20 lg:hidden"><Menu size={18} /></button>
           <div className={`${isFullscreen ? 'hidden' : 'hidden lg:flex items-center gap-3'}`}>
             <h2 className="text-lg font-black text-slate-100 uppercase tracking-tight italic leading-none">Cartographie</h2>
           </div>
         </div>
         
         <div className="flex-1 min-w-0">
-          <div className={`${isFullscreen ? 'flex' : 'hidden lg:flex'} flex-wrap gap-2`}>
+          <div className="hidden lg:flex flex-wrap gap-2">
             {MAPS.map(map => (
               <button key={map.id} onClick={() => { setSelectedMap(map); setIsLoading(true); }} className={`px-2 md:px-3 py-1 md:py-1.5 rounded-lg text-[7px] md:text-[10px] font-black uppercase tracking-wider transition-all border ${selectedMap.id === map.id ? 'bg-amber-500 border-amber-400 text-slate-950 shadow-lg scale-105' : 'bg-slate-900 border-slate-800 text-slate-500 hover:text-slate-200'}`}>
                 {map.name.split(' / ')[0]}
@@ -337,7 +338,7 @@ const MapViewer: React.FC = () => {
               </button>
             ))}
           </div>
-          <div className={`${isFullscreen ? 'hidden' : 'lg:hidden'}`}>
+          <div className="lg:hidden">
             <ScrollContainer className="flex gap-1 px-1">
               {MAPS.map(map => (
                 <button key={map.id} onClick={() => { setSelectedMap(map); setIsLoading(true); }} className={`shrink-0 px-2 py-1 rounded-lg text-[8px] font-black uppercase tracking-wider transition-all border ${selectedMap.id === map.id ? 'bg-amber-500 border-amber-400 text-slate-950 shadow-lg scale-105' : 'bg-slate-900 border-slate-800 text-slate-500 hover:text-slate-200'}`}>
@@ -359,7 +360,13 @@ const MapViewer: React.FC = () => {
       </div>
 
       <div className="flex flex-1 gap-2 md:gap-4 min-h-0 relative">
-        <div className={`fixed inset-y-0 left-0 z-[10100] w-72 bg-slate-900 border-r border-slate-800 shadow-2xl transform transition-transform duration-300 ${isFullscreen ? '' : 'lg:relative lg:translate-x-0 lg:z-0 lg:bg-slate-900/50 lg:border lg:rounded-2xl'} ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full'}`}>
+        <div className={`
+          fixed inset-y-0 left-0 z-[10100] w-72 bg-slate-900 border-slate-800 shadow-2xl transform transition-all duration-300 
+          lg:relative lg:translate-x-0 lg:z-0 lg:bg-slate-900/50 
+          ${isFullscreen ? 'lg:border-r lg:rounded-none' : 'lg:border lg:rounded-2xl'} 
+          ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'}
+          ${isSidebarCollapsed ? 'lg:w-0 lg:opacity-0 lg:pointer-events-none lg:ml-[-16px]' : 'lg:w-72 lg:opacity-100'}
+        `}>
           <div className="flex flex-col h-full overflow-hidden">
             <div className="p-4 border-b border-slate-800 bg-slate-800/20 flex items-center justify-between gap-3">
               <div className="flex items-center gap-3"><Layers size={18} className="text-amber-500" /><h3 className="text-xs font-black uppercase tracking-widest text-slate-200">Filtres</h3></div>
@@ -370,6 +377,16 @@ const MapViewer: React.FC = () => {
                   title="Réinitialiser tout"
                 >
                   <RotateCcw size={18} />
+                </button>
+                <button 
+                  onClick={() => {
+                    if (window.innerWidth < 1024) setIsSidebarOpen(false);
+                    else setIsSidebarCollapsed(true);
+                  }}
+                  className="p-2 text-slate-500 hover:text-white transition-all rounded-lg hover:bg-slate-800"
+                  title="Réduire les filtres"
+                >
+                  <X size={20} />
                 </button>
               </div>
             </div>
@@ -428,9 +445,23 @@ const MapViewer: React.FC = () => {
           </div>
         </div>
 
-        {(isSidebarOpen || (isFullscreen && isSidebarOpen)) && <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[10050]" onClick={() => setIsSidebarOpen(false)} />}
+        {(isSidebarOpen && window.innerWidth < 1024) && <div className="fixed inset-0 bg-black/60 backdrop-blur-sm z-[10050]" onClick={() => setIsSidebarOpen(false)} />}
 
         <div ref={mapViewportRef} className="relative flex-1 bg-slate-950 rounded-xl md:rounded-2xl border border-slate-800 overflow-hidden select-none group shadow-inner">
+          {/* Toggle to show sidebar when collapsed */}
+          {(isSidebarCollapsed || (!isSidebarOpen && window.innerWidth < 1024)) && (
+            <button 
+              onClick={() => {
+                setIsSidebarCollapsed(false);
+                setIsSidebarOpen(true);
+              }}
+              className="absolute top-2 left-2 md:top-4 md:left-4 z-20 p-2 md:p-3 bg-amber-500/90 backdrop-blur-md border border-amber-400 rounded-lg md:rounded-xl text-slate-950 hover:bg-amber-400 transition-all shadow-2xl flex items-center gap-2"
+            >
+              <Menu size={16} className="md:w-5 md:h-5" />
+              <span className="text-[10px] md:text-xs font-black uppercase tracking-wider">Filtres</span>
+            </button>
+          )}
+          
           {isLoading && (
             <div className="absolute inset-0 z-10 flex flex-col items-center justify-center bg-slate-950/80 backdrop-blur-sm">
               <Loader2 size={24} className="md:w-12 md:h-12 text-amber-500 animate-spin mb-2 md:mb-4" /><p className="text-slate-400 font-black uppercase tracking-widest animate-pulse text-[8px] md:text-xs">Chargement...</p>
@@ -447,15 +478,6 @@ const MapViewer: React.FC = () => {
                   <button onClick={() => fitToView(instance)} className="p-2 md:p-3 bg-slate-900/90 backdrop-blur-md border border-slate-700 rounded-lg md:rounded-xl text-slate-300 hover:text-amber-500 transition-all shadow-2xl" title="Recadrer"><Maximize size={16} className="md:w-5 md:h-5" /></button>
                 </div>
 
-                {isFullscreen && (
-                  <button 
-                    onClick={() => setIsSidebarOpen(true)}
-                    className="absolute top-2 left-2 md:top-4 md:left-4 z-20 p-2 md:p-3 bg-amber-500/90 backdrop-blur-md border border-amber-400 rounded-lg md:rounded-xl text-slate-950 hover:bg-amber-400 transition-all shadow-2xl flex items-center gap-2"
-                  >
-                    <Menu size={16} className="md:w-5 md:h-5" />
-                    <span className="text-[10px] md:text-xs font-black uppercase tracking-wider">Filtres</span>
-                  </button>
-                )}
                 <TransformComponent wrapperStyle={{ width: "100%", height: "100%" }}>
                   <div onMouseMove={handleMouseMove} className="relative cursor-crosshair">
                     <img 
