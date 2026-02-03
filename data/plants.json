@@ -141,5 +141,28 @@
     "quantity": 1,
     "source": "Divers",
     "coordinates": "930.150.7"
+  },
+  {
+    "name": "Racine de mandragore",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": [
+      "2650.181.0",
+      "2566.423.0",
+      "2847.732.0",
+      "2052.585.0",
+      "2831.378.0"
+    ]
+  },
+  {
+    "name": "Fleur d'immortelle",
+    "quantity": 1,
+    "source": "Divers",
+    "coordinates": [
+      "965.2445.0",
+      "1323.2212.0",
+      "61.2518.0",
+      "1281.2609.0"
+    ]
   }
 ]

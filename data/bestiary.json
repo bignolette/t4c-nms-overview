@@ -2,9 +2,7 @@
   {
     "name": "Terreur des écuries",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -104,9 +102,7 @@
   {
     "name": "Abominable skraug",
     "location": "Stoneheim",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "200 et 6 000"
@@ -260,9 +256,7 @@
   {
     "name": "Acolytes",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Potion de guérison critique"
@@ -341,9 +335,7 @@
   {
     "name": "Aelys",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -351,9 +343,7 @@
   {
     "name": "Agrenarok",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Glande nauséabonde"
     ],
@@ -382,16 +372,12 @@
     ],
     "exp": "N/A",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Aleydd",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -399,9 +385,7 @@
   {
     "name": "Alfrid Bécher",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -409,9 +393,7 @@
   {
     "name": "Amalgame de chair",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Essence de regret",
       "Glande de l'enragé"
@@ -422,9 +404,7 @@
   {
     "name": "Amalrik",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -432,9 +412,7 @@
   {
     "name": "Ame damnée",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Potion de guérison critique",
@@ -473,9 +451,7 @@
   {
     "name": "Ame errante",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Potion de guérison critique",
@@ -487,9 +463,7 @@
   {
     "name": "Amyre",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -497,9 +471,7 @@
   {
     "name": "Ancien chef",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -507,9 +479,7 @@
   {
     "name": "Answald",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -1498,9 +1468,7 @@
   {
     "name": "Araignée sabres",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "104 629",
     "gold": "269 et 825"
@@ -1592,9 +1560,7 @@
   {
     "name": "Araignée venimeuse",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Cape de la forêt",
       "Cape de la nuit",
@@ -2019,9 +1985,7 @@
   {
     "name": "Arbre faiblard monster",
     "location": "Raven's Dust",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Plastron d'armure céleste",
       "Bottes d'armure céleste",
@@ -2040,9 +2004,7 @@
   {
     "name": "Arbre Maléfique",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de guérison légère",
       "Potion de guérison",
@@ -2159,9 +2121,7 @@
   {
     "name": "Arbre tombé",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -2169,9 +2129,7 @@
   {
     "name": "Archer aux yeux rouges",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -2179,9 +2137,7 @@
   {
     "name": "Archer centaure",
     "location": "Stoneheim",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Poil de Centaure"
     ],
@@ -2191,9 +2147,7 @@
   {
     "name": "Archer de l'empire",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -2201,9 +2155,7 @@
   {
     "name": "Archer du royaume",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -2211,9 +2163,7 @@
   {
     "name": "Archer Royal",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -2221,9 +2171,7 @@
   {
     "name": "Archi Draconigus",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Cape de fortification",
       "Anneau de feu",
@@ -2240,9 +2188,7 @@
   {
     "name": "Archi-Drake",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "1 799 et 5 500"
@@ -2561,9 +2507,7 @@
     ],
     "exp": "2708",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Arpenteur forestier",
@@ -2645,9 +2589,7 @@
   {
     "name": "Arsène",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -2668,9 +2610,7 @@
   {
     "name": "Artisan Orc",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Rune de la terre"
     ],
@@ -2752,9 +2692,7 @@
     ],
     "exp": "1K",
     "gold": "51",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Assassin obsidien",
@@ -2795,9 +2733,7 @@
   {
     "name": "Atrax",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Potion de Guérison Extrême"
@@ -2897,9 +2833,7 @@
   {
     "name": "Atrocité affamée",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Clef solide en or"
     ],
@@ -2919,9 +2853,7 @@
   {
     "name": "Aubépine",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -2929,9 +2861,7 @@
   {
     "name": "Automate gardien en métrolite",
     "location": "Raven's Dust",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de guérison critique",
       "Potion de guérison divine",
@@ -2945,9 +2875,7 @@
   {
     "name": "B'Rokals'Tank",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Pierre de mana",
       "Potion de guérison critique",
@@ -3200,9 +3128,7 @@
   {
     "name": "B'Zerillis énervé",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -3307,9 +3233,7 @@
   {
     "name": "B'Zurkhan énervé",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -3334,9 +3258,7 @@
     ],
     "exp": "3M",
     "gold": "3K",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Bâfreur de chair fraîche",
@@ -3366,9 +3288,7 @@
   {
     "name": "Balor",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "30 486 360",
     "gold": "899 et 2 750"
@@ -3383,9 +3303,7 @@
     ],
     "exp": "674",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Bane Gwengad",
@@ -3401,9 +3319,7 @@
     ],
     "exp": "18818",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Barde de Guerre",
@@ -3416,9 +3332,7 @@
     ],
     "exp": "2K",
     "gold": "80",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Barjot",
@@ -3430,16 +3344,12 @@
     ],
     "exp": "411",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Barricade",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -3546,9 +3456,7 @@
     ],
     "exp": "3M",
     "gold": "18K",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Bend Hayjes le pourri",
@@ -3567,9 +3475,7 @@
   {
     "name": "Bergénie",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -3577,9 +3483,7 @@
   {
     "name": "Berserker aux yeux rouges",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -3639,9 +3543,7 @@
   {
     "name": "Beuhark",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "110 et 450"
@@ -3695,9 +3597,7 @@
     ],
     "exp": "5K",
     "gold": "131",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Blobby blop",
@@ -3960,9 +3860,7 @@
   {
     "name": "Bouniak",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "6 400",
     "gold": "100 et 300"
@@ -3970,9 +3868,7 @@
   {
     "name": "Bourgeois",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "1 000 et 10 000"
@@ -3980,9 +3876,7 @@
   {
     "name": "Bourgeoise",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "1 000 et 10 000"
@@ -4523,16 +4417,12 @@
     ],
     "exp": "37M",
     "gold": "5K",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Cadavre réanimé",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -4628,9 +4518,7 @@
   {
     "name": "Calyssandre",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -4638,9 +4526,7 @@
   {
     "name": "Caporal de l'armée impériale",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -4648,9 +4534,7 @@
   {
     "name": "Caporal de l'armée royale",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -4658,9 +4542,7 @@
   {
     "name": "Capucine",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -4681,9 +4563,7 @@
   {
     "name": "Carnassier putride",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "812",
     "gold": "56 et 112"
@@ -4708,9 +4588,7 @@
   {
     "name": "Cécidomyie",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana"
     ],
@@ -4720,9 +4598,7 @@
   {
     "name": "Celleniem",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Boyaux d'horreur railleuse"
     ],
@@ -4732,9 +4608,7 @@
   {
     "name": "Cemen",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
       "Prisme de mana",
@@ -4805,9 +4679,7 @@
   {
     "name": "Chaman centaure",
     "location": "Stoneheim",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Poil de Centaure"
     ],
@@ -4985,16 +4857,12 @@
     ],
     "exp": "7856",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Chanteclair",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -5300,9 +5168,7 @@
     ],
     "exp": "10000",
     "gold": "182",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Chat",
@@ -5390,9 +5256,7 @@
   {
     "name": "Chat Peau",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -5400,9 +5264,7 @@
   {
     "name": "Chat sauvage",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -5431,9 +5293,7 @@
   {
     "name": "Chaton enragé",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -5441,9 +5301,7 @@
   {
     "name": "Chaudron",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -5451,9 +5309,7 @@
   {
     "name": "Chaudron nauséabon",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -5529,16 +5385,12 @@
     ],
     "exp": "116",
     "gold": "7",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Chauve-souris farceuse",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 563",
     "gold": "1 et 1"
@@ -6181,9 +6033,7 @@
   {
     "name": "Chauves-souris des cryptes",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "260",
     "gold": "27 et 54"
@@ -6191,9 +6041,7 @@
   {
     "name": "Chauves-souris géantes",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Torche",
       "Potion de guérison légère"
@@ -6342,9 +6190,7 @@
   {
     "name": "Chef de guerre Kobold",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Chroniques de Ruikuk l'éclaireur"
     ],
@@ -6354,9 +6200,7 @@
   {
     "name": "Chef de la garde Ardens",
     "location": "Raven's Dust",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -6503,16 +6347,12 @@
     ],
     "exp": "1620",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Chêne Centenaire",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -6864,9 +6704,7 @@
   {
     "name": "Chevalier",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -6939,9 +6777,7 @@
     ],
     "exp": "3K",
     "gold": "102",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Chevalier spectral",
@@ -7022,9 +6858,7 @@
     ],
     "exp": "N/A",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Chien de sang",
@@ -7259,9 +7093,7 @@
     ],
     "exp": "11948",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Clerc Hykal",
@@ -7289,9 +7121,7 @@
   {
     "name": "Cloriande de Bollour",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -7304,9 +7134,7 @@
     ],
     "exp": "4K",
     "gold": "120",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Cobra céleste",
@@ -7319,9 +7147,7 @@
     ],
     "exp": "4K",
     "gold": "120",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Cobra royal de Jade",
@@ -7385,9 +7211,7 @@
     ],
     "exp": "1K",
     "gold": "54",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Comte Hémogobelin",
@@ -7411,9 +7235,7 @@
   {
     "name": "Corps enrubanné",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "320",
     "gold": "31 et 62"
@@ -7549,9 +7371,7 @@
   {
     "name": "Corsaire mort-vivant",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Aigue-marine finement taillée",
       "Aigue-marine brute",
@@ -7563,9 +7383,7 @@
   {
     "name": "Crache Flamme",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Potion de Guérison Extrême",
@@ -7656,9 +7474,7 @@
   {
     "name": "Creature infernale",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Énergie infernale"
     ],
@@ -7674,16 +7490,12 @@
     ],
     "exp": "N/A",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Crotale",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Bouclier démoniaque",
       "Potion de guérison critique",
@@ -7695,9 +7507,7 @@
   {
     "name": "Crupellaire",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Potion de Guérison Extrême"
@@ -7708,9 +7518,7 @@
   {
     "name": "Cupidonitos",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Parchemin d'expérience d'une heure",
       "Parchemin d'expérience de dix minutes"
@@ -7721,9 +7529,7 @@
   {
     "name": "Cupidonitos transformé",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Parchemin d'expérience de dix minutes"
     ],
@@ -7733,9 +7539,7 @@
   {
     "name": "Daghild",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -7743,9 +7547,7 @@
   {
     "name": "Dalle 1",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -7753,9 +7555,7 @@
   {
     "name": "Dalle 2",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -7763,9 +7563,7 @@
   {
     "name": "Dalle 3",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -7773,9 +7571,7 @@
   {
     "name": "Dalle Bavarde",
     "location": "Raven's Dust",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -7783,9 +7579,7 @@
   {
     "name": "Dalle Eboulement",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -7793,9 +7587,7 @@
   {
     "name": "Dalle Ench",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -7822,9 +7614,7 @@
   {
     "name": "Dalle Explosive",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -7832,9 +7622,7 @@
   {
     "name": "Dalle Mob Pioche",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -7842,9 +7630,7 @@
   {
     "name": "Dalle Piégée",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -7852,9 +7638,7 @@
   {
     "name": "Dalle Poison",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -7862,9 +7646,7 @@
   {
     "name": "Dalle Trou",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -7882,9 +7664,7 @@
   {
     "name": "Déchet organique",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Fiole d'éther"
     ],
@@ -8024,16 +7804,12 @@
     ],
     "exp": "3150",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Démon",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "200 000",
     "gold": "0 et 0"
@@ -8052,9 +7828,7 @@
     ],
     "exp": "18076",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Démon d'ossements",
@@ -8181,9 +7955,7 @@
   {
     "name": "Démon Ignoble",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Pierre de mana",
       "Potion de guérison critique",
@@ -8301,9 +8073,7 @@
   {
     "name": "Démon Protecteur",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de guérison critique",
       "Prisme de mana",
@@ -8318,9 +8088,7 @@
   {
     "name": "Démon Putréfié",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "200 et 6 000"
@@ -8328,9 +8096,7 @@
   {
     "name": "Demon Skull",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Yeux de tarentule",
       "Potion de guérison",
@@ -8403,9 +8169,7 @@
   {
     "name": "Demonicon Féroce",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Dent de Démonicon"
     ],
@@ -8415,9 +8179,7 @@
   {
     "name": "Dérangé",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Autorisation C5",
       "Autorisation J3"
@@ -8434,9 +8196,7 @@
     ],
     "exp": "2K",
     "gold": "87",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Desséché",
@@ -8477,9 +8237,7 @@
   {
     "name": "Diacre infâme",
     "location": "Drake Island",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Potion de guérison critique"
@@ -8490,9 +8248,7 @@
   {
     "name": "Dinde sauvage",
     "location": "Drake Island",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Dinde"
     ],
@@ -8706,9 +8462,7 @@
   {
     "name": "Disciple du sombre",
     "location": "Drake Island",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -8723,9 +8477,7 @@
     ],
     "exp": "1154",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Dorken le Putride",
@@ -8738,9 +8490,7 @@
     ],
     "exp": "674",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Dr. Van Pyre",
@@ -8753,16 +8503,12 @@
     ],
     "exp": "1154",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Draco",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "104 629",
     "gold": "269 et 825"
@@ -8770,9 +8516,7 @@
   {
     "name": "Draco 1",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "69 792",
     "gold": "269 et 825"
@@ -8780,9 +8524,7 @@
   {
     "name": "Draco 2",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "87 205",
     "gold": "269 et 825"
@@ -8790,9 +8532,7 @@
   {
     "name": "Draco guerrier",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "1 802 386",
     "gold": "449 et 1 375"
@@ -8800,9 +8540,7 @@
   {
     "name": "Draco lieutenant",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "7 515 239",
     "gold": "629 et 1 925"
@@ -8810,9 +8548,7 @@
   {
     "name": "Draco lieutenant 1",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "6 262 610",
     "gold": "629 et 1 925"
@@ -8820,9 +8556,7 @@
   {
     "name": "Draconigus invoqué",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Pierre de mana",
       "Potion de guérison critique",
@@ -8875,9 +8609,7 @@
     ],
     "exp": "16M",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Dragon Dasrinn",
@@ -8890,9 +8622,7 @@
     ],
     "exp": "15000",
     "gold": "15000",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Dragon Dimith Karjit",
@@ -8904,16 +8634,12 @@
     ],
     "exp": "N/A",
     "gold": "30000",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Dragon effrayant",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "200 et 6 000"
@@ -8928,9 +8654,7 @@
     ],
     "exp": "284230",
     "gold": "100000",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Dragon Livoxdrinn",
@@ -8942,9 +8666,7 @@
     ],
     "exp": "N/A",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Dragon Mirev",
@@ -8969,9 +8691,7 @@
     ],
     "exp": "300000",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Dragon Zudinm",
@@ -8982,9 +8702,7 @@
     ],
     "exp": "600000",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Dragonnet",
@@ -9266,9 +8984,7 @@
     ],
     "exp": "242K",
     "gold": "1K",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Drake Dixtor",
@@ -9280,9 +8996,7 @@
     ],
     "exp": "300K",
     "gold": "14K",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Drake Dixtor Supérieur",
@@ -9309,9 +9023,7 @@
   {
     "name": "Drake Envahisseur",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Pierre de mana",
       "Potion de guérison critique",
@@ -9327,9 +9039,7 @@
   {
     "name": "Drake Funeste",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "200 et 6 000"
@@ -9337,9 +9047,7 @@
   {
     "name": "Drake inférieur",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "449 et 1 375"
@@ -9374,9 +9082,7 @@
   {
     "name": "Drake supérieur",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "899 et 2 750"
@@ -9501,9 +9207,7 @@
   {
     "name": "Dromadaire",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Pelote de laine angora"
     ],
@@ -9513,9 +9217,7 @@
   {
     "name": "Druide malefique",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -9523,9 +9225,7 @@
   {
     "name": "Druide maléfique",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -9538,16 +9238,12 @@
     ],
     "exp": "5417",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Dworkin",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -9555,9 +9251,7 @@
   {
     "name": "Ecaille Brillante",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
       "Prisme de mana",
@@ -9702,9 +9396,7 @@
   {
     "name": "Eclaireur aux yeux rouges",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -10194,9 +9886,7 @@
   {
     "name": "Eclaireur Gobelin de l'Oeil",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -10204,9 +9894,7 @@
   {
     "name": "Eclaireur Olphen",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "10 001",
     "gold": "750 et 1 500"
@@ -10278,9 +9966,7 @@
   {
     "name": "Ecumeur mort-vivant",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Diamant brut",
       "Pierre de lune finement taillée",
@@ -10298,16 +9984,12 @@
     ],
     "exp": "10K",
     "gold": "250",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Edgar le malheureux",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "10 000",
     "gold": "100 et 400"
@@ -10315,9 +9997,7 @@
   {
     "name": "Egéus",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -10352,9 +10032,7 @@
   {
     "name": "Eliot",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -10362,9 +10040,7 @@
   {
     "name": "Elladora",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -10372,9 +10048,7 @@
   {
     "name": "Elséar",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -10429,9 +10103,7 @@
   {
     "name": "Embrasiff",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Roche magmatique"
     ],
@@ -10441,9 +10113,7 @@
   {
     "name": "Empereur Olphen",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "200 001",
     "gold": "5 000 et 10 000"
@@ -10505,9 +10175,7 @@
   {
     "name": "Ent aux yeux rouges",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -10571,9 +10239,7 @@
   {
     "name": "Ent furieu",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Parchemin d'Astoriel",
       "Potion de Guérison Extrême",
@@ -10591,9 +10257,7 @@
   {
     "name": "Ent léthifère",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Potion de guérison critique",
@@ -10605,9 +10269,7 @@
   {
     "name": "Ent maléfique",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de guérison légère",
       "Potion de guérison"
@@ -10618,9 +10280,7 @@
   {
     "name": "Ent méprisable",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "200 et 6 000"
@@ -10633,16 +10293,12 @@
     ],
     "exp": "N/A",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Ent poisseux",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Potion de guérison critique"
@@ -10653,9 +10309,7 @@
   {
     "name": "Envoyé de Sir Al Owinn",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Parchemin d'expérience de dix minutes",
       "Parchemin d'expérience d'une heure"
@@ -10666,9 +10320,7 @@
   {
     "name": "Epeire",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Morceau de calcaire brut",
       "Pierre de lune brute",
@@ -10680,9 +10332,7 @@
   {
     "name": "Epeire des bois",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Malachite brute",
       "Amethyste brute",
@@ -10694,9 +10344,7 @@
   {
     "name": "Epeire ténébreuse",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Potion de guérison divine"
@@ -10707,9 +10355,7 @@
   {
     "name": "Epeire venimeuse",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Morceau de calcaire brut",
       "Pierre de lune brute",
@@ -10721,9 +10367,7 @@
   {
     "name": "Erehrt de Quaerere",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -10731,9 +10375,7 @@
   {
     "name": "Esclavagiste de l'Oeil",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -10741,9 +10383,7 @@
   {
     "name": "Esclave démoniaque",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "5 et 10"
@@ -10751,9 +10391,7 @@
   {
     "name": "Esclave Gobelin",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "2 344",
     "gold": "41 et 150"
@@ -10761,9 +10399,7 @@
   {
     "name": "Esprit frappeur",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Sachet de Damiana"
     ],
@@ -10773,9 +10409,7 @@
   {
     "name": "Esprit malicieux",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -10783,9 +10417,7 @@
   {
     "name": "Esprit rédempteur",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -10799,9 +10431,7 @@
     ],
     "exp": "N/A",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Ethana",
@@ -10811,9 +10441,7 @@
     ],
     "exp": "N/A",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Ethoan",
@@ -10823,16 +10451,12 @@
     ],
     "exp": "N/A",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Eugénie",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -10840,9 +10464,7 @@
   {
     "name": "Evangelie",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -10982,9 +10604,7 @@
   {
     "name": "Ezalielle",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -10992,9 +10612,7 @@
   {
     "name": "Facteur",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -11002,9 +10620,7 @@
   {
     "name": "Fahire",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "1 000 000 et 2 000 000"
@@ -11012,9 +10628,7 @@
   {
     "name": "Fantassin Gobelin de l'Oeil",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -11115,9 +10729,7 @@
   {
     "name": "Farfadet Farceur",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "50 001",
     "gold": "1 et 1"
@@ -11216,16 +10828,12 @@
     ],
     "exp": "20K",
     "gold": "255",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Feuillu fangeux",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Potion de guérison critique"
@@ -11268,9 +10876,7 @@
   {
     "name": "Fidèle d'Alanara'ak",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Bobine de fil spirituel",
       "Diamant à pointe finement acérée"
@@ -11281,9 +10887,7 @@
   {
     "name": "Fidèle de Jander",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
       "Prisme de mana",
@@ -11295,9 +10899,7 @@
   {
     "name": "Fillette Noel",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -11314,9 +10916,7 @@
     ],
     "exp": "N/A",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Flamboyant",
@@ -11388,9 +10988,7 @@
   {
     "name": "Florentin",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -11409,16 +11007,12 @@
     ],
     "exp": "7K",
     "gold": "368",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Fourche Langue",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Potion de Guérison Extrême",
@@ -11436,16 +11030,12 @@
     ],
     "exp": "1400000",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Frelon perfide",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Cire de guêpe",
       "Potion de guérison critique"
@@ -11550,9 +11140,7 @@
   {
     "name": "Galinette",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de guérison critique",
       "Pierre de mana",
@@ -11567,9 +11155,7 @@
   {
     "name": "Galinette cendrée",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de guérison critique",
       "Pierre de mana",
@@ -11584,9 +11170,7 @@
   {
     "name": "Gamin",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -11704,9 +11288,7 @@
   {
     "name": "Garde de l'île",
     "location": "Raven's Dust",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -12028,9 +11610,7 @@
   {
     "name": "Garde de Niève",
     "location": "Raven's Dust",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -12038,9 +11618,7 @@
   {
     "name": "Garde éborgné",
     "location": "Raven's Dust",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -12048,9 +11626,7 @@
   {
     "name": "Garde mort-vivant",
     "location": "Raven's Dust",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "100 et 200"
@@ -12058,9 +11634,7 @@
   {
     "name": "Garde privé d'Olin Haad",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "2 662",
     "gold": "44 et 137"
@@ -12068,9 +11642,7 @@
   {
     "name": "Garde qui met en prison",
     "location": "Raven's Dust",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Épée de fureur",
       "Fiole de sang de gobelin",
@@ -12084,9 +11656,7 @@
   {
     "name": "Garde Royal",
     "location": "Raven's Dust",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -12094,9 +11664,7 @@
   {
     "name": "Garde Wheatergate",
     "location": "Raven's Dust",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -12104,9 +11672,7 @@
   {
     "name": "Garde Wheathergate",
     "location": "Raven's Dust",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -12114,9 +11680,7 @@
   {
     "name": "Gardien centaure",
     "location": "Raven's Dust",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "100 et 200"
@@ -12159,9 +11723,7 @@
   {
     "name": "Gardien de la terre",
     "location": "Raven's Dust",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Livre de chance"
     ],
@@ -12189,9 +11751,7 @@
   {
     "name": "Gardien démoniaque",
     "location": "Raven's Dust",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "190 000",
     "gold": "500 et 30 000"
@@ -12321,9 +11881,7 @@
   {
     "name": "Gardien du Portail",
     "location": "Raven's Dust",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Bonbon gélatineux"
     ],
@@ -12410,9 +11968,7 @@
   {
     "name": "Gardien gobelin",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Armure gobeline en cuir",
       "Ceinture de cuir",
@@ -12429,9 +11985,7 @@
   {
     "name": "Gardien mort-vivant",
     "location": "Raven's Dust",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "100 et 200"
@@ -12453,9 +12007,7 @@
     ],
     "exp": "6K",
     "gold": "145",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Gardien sombre",
@@ -12647,9 +12199,7 @@
   {
     "name": "Gargouille animée",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Bonbon gélatineux"
     ],
@@ -12861,9 +12411,7 @@
   {
     "name": "Gargouille infernale",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "200 et 6 000"
@@ -12871,9 +12419,7 @@
   {
     "name": "Gaspard",
     "location": "Raven's Dust",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -12892,9 +12438,7 @@
   {
     "name": "Géant des plaines",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Potion de Guérison Extrême",
@@ -12906,9 +12450,7 @@
   {
     "name": "Géant Miteux",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Hyperpotion d'esprit clair",
       "Hyperpotion de courage",
@@ -12940,9 +12482,7 @@
     ],
     "exp": "18076",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Gehenna Reaver",
@@ -12950,9 +12490,7 @@
     "drops": [],
     "exp": "4063",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Général gobelin",
@@ -13007,9 +12545,7 @@
   {
     "name": "Gerlinde",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -13099,16 +12635,12 @@
     ],
     "exp": "10450",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Gildric Moray",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -13116,9 +12648,7 @@
   {
     "name": "Girflet Kirhn",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -13202,16 +12732,12 @@
     ],
     "exp": "N/A",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Gnôme des marécages",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Potion de guérison critique"
@@ -13222,9 +12748,7 @@
   {
     "name": "Gnôme exité",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de guérison critique",
       "Marteau de guerre renforcé sacré"
@@ -13235,9 +12759,7 @@
   {
     "name": "Gobelet",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Épée de fureur",
       "Email nacré de Gobelin jaune"
@@ -13372,9 +12894,7 @@
   {
     "name": "Gobelin blanc",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "0 et 0"
@@ -13382,9 +12902,7 @@
   {
     "name": "Gobelin bleu",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "0 et 0"
@@ -13502,9 +13020,7 @@
   {
     "name": "Gobelin cruel",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "4 832",
     "gold": "32 et 64"
@@ -13512,9 +13028,7 @@
   {
     "name": "Gobelin cyan",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "0 et 0"
@@ -13522,9 +13036,7 @@
   {
     "name": "Gobelin de Noël",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "28 643",
     "gold": "85 et 230"
@@ -13532,9 +13044,7 @@
   {
     "name": "Gobelin des glaces",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -13718,9 +13228,7 @@
   {
     "name": "Gobelin jaune",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "0 et 0"
@@ -13728,9 +13236,7 @@
   {
     "name": "Gobelin noir",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "0 et 0"
@@ -13738,9 +13244,7 @@
   {
     "name": "Gobelin réanimé",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "116",
     "gold": "3 et 11"
@@ -13748,9 +13252,7 @@
   {
     "name": "Gobelin rouge",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "0 et 0"
@@ -13764,9 +13266,7 @@
     ],
     "exp": "1K",
     "gold": "54",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Gobelin Shaman",
@@ -13802,9 +13302,7 @@
   {
     "name": "Gobelin Taciturne",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "200 et 6 000"
@@ -13812,9 +13310,7 @@
   {
     "name": "Gobelin transformé",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -13822,9 +13318,7 @@
   {
     "name": "Gobelin vert",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "0 et 0"
@@ -13832,9 +13326,7 @@
   {
     "name": "Gobelin violet",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "0 et 0"
@@ -13842,9 +13334,7 @@
   {
     "name": "Goblin",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Armure gobeline en cuir",
       "Anneau de fer",
@@ -13862,9 +13352,7 @@
     ],
     "exp": "245",
     "gold": "17",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Goblin Hargneux",
@@ -13902,9 +13390,7 @@
   {
     "name": "Golem",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de guérison légère",
       "Dent de dragon"
@@ -13924,9 +13410,7 @@
     ],
     "exp": "30",
     "gold": "45",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Golem de chair",
@@ -13941,16 +13425,12 @@
     ],
     "exp": "30",
     "gold": "45",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Golem de feu",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "100 et 200"
@@ -13958,9 +13438,7 @@
   {
     "name": "Golem de glace",
     "location": "Nieve",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "100 et 200"
@@ -14003,16 +13481,12 @@
     ],
     "exp": "30",
     "gold": "45",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Golem de terre",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "100 et 200"
@@ -14029,16 +13503,12 @@
     ],
     "exp": "30",
     "gold": "45",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Golem en colère",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "105 410",
     "gold": "269 et 825"
@@ -14046,9 +13516,7 @@
   {
     "name": "Golem Feu",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de guérison légère",
       "Dent de dragon"
@@ -14065,9 +13533,7 @@
     ],
     "exp": "30",
     "gold": "45",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Golem incrusté d'émeraudes",
@@ -14101,9 +13567,7 @@
   {
     "name": "Golem Neige",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de guérison légère",
       "Dent de dragon"
@@ -14114,9 +13578,7 @@
   {
     "name": "Golem Rocailleux",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de guérison légère",
       "Potion de mana",
@@ -14131,9 +13593,7 @@
   {
     "name": "Golem terrifiant",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "200 et 6 000"
@@ -14158,9 +13618,7 @@
   {
     "name": "Goryn",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -14168,9 +13626,7 @@
   {
     "name": "Goule sauvage",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "640",
     "gold": "41 et 82"
@@ -14226,9 +13682,7 @@
   {
     "name": "Grand Skraug",
     "location": "Stoneheim",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Cape de fortification",
       "Anneau de feu",
@@ -14245,9 +13699,7 @@
   {
     "name": "Graykko Darastrix",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de guérison critique",
       "Pierre de mana",
@@ -14537,9 +13989,7 @@
   {
     "name": "Gremlin de Rez",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "12 644",
     "gold": "142 et 440"
@@ -14555,9 +14005,7 @@
     ],
     "exp": "13K",
     "gold": "207",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Gremlin terreux",
@@ -14591,16 +14039,12 @@
     ],
     "exp": "2K",
     "gold": "80",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Griffe Tranchante",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
       "Prisme de mana",
@@ -14633,9 +14077,7 @@
   {
     "name": "Grorah",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "110 et 450"
@@ -14643,9 +14085,7 @@
   {
     "name": "Grosse araignée",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "7 515 239",
     "gold": "629 et 1 925"
@@ -14653,9 +14093,7 @@
   {
     "name": "Grosse larve",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "1 802 386",
     "gold": "449 et 1 375"
@@ -14696,9 +14134,7 @@
   {
     "name": "Guêpe",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "100 et 200"
@@ -15072,9 +14508,7 @@
     ],
     "exp": "3K",
     "gold": "90",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Guêpe titanesque dévastatrice",
@@ -15085,9 +14519,7 @@
     ],
     "exp": "2K",
     "gold": "80",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Guêpe titanesque éclaireur",
@@ -15097,9 +14529,7 @@
     ],
     "exp": "701",
     "gold": "47",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Guêpe titanesque guerrière",
@@ -15109,9 +14539,7 @@
     ],
     "exp": "1K",
     "gold": "54",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Guêpe titanesque nourrice",
@@ -15122,9 +14550,7 @@
     ],
     "exp": "929",
     "gold": "51",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Guêpe titanesque soldate",
@@ -15134,16 +14560,12 @@
     ],
     "exp": "1K",
     "gold": "65",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Guerrier aux yeux rouges",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -15151,9 +14573,7 @@
   {
     "name": "Guerrier centaure",
     "location": "Stoneheim",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Poil de Centaure"
     ],
@@ -15556,9 +14976,7 @@
   {
     "name": "Guerrier Gobelin de l'Oeil",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -15580,9 +14998,7 @@
     ],
     "exp": "11948",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Guerrier minotaure",
@@ -15671,9 +15087,7 @@
   {
     "name": "Guerrier Olphen",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "30 001",
     "gold": "1 000 et 2 000"
@@ -16174,9 +15588,7 @@
   {
     "name": "Guimauve",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -16218,9 +15630,7 @@
   {
     "name": "Haarm",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -16252,16 +15662,12 @@
     ],
     "exp": "4071",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Hallucination adorable",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "200 et 6 000"
@@ -16269,9 +15675,7 @@
   {
     "name": "Haure Enje",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "110 et 450"
@@ -16343,16 +15747,12 @@
     ],
     "exp": "N/A",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Homme Lezard",
     "location": "Raven's Dust",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Peau de lézard",
       "Prisme énigmatique",
@@ -16370,9 +15770,7 @@
     ],
     "exp": "N/A",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Horreur enrubannée",
@@ -16675,9 +16073,7 @@
   {
     "name": "Huine",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
       "Prisme de mana",
@@ -16695,9 +16091,7 @@
     ],
     "exp": "N/A",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Hurbag Digitus",
@@ -16717,9 +16111,7 @@
   {
     "name": "Hysope",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -16732,16 +16124,12 @@
     ],
     "exp": "2091",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Illusion des abîmes",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de guérison critique",
       "Pierre de mana"
@@ -16757,16 +16145,12 @@
     ],
     "exp": "1",
     "gold": "0 et 0",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Infirmière",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -16789,16 +16173,12 @@
     ],
     "exp": "453",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Innocent",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Armure gobeline en cuir",
       "Anneau de fer",
@@ -16811,9 +16191,7 @@
   {
     "name": "Intendant",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -16826,16 +16204,12 @@
     ],
     "exp": "4K",
     "gold": "127",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "ISIDORE",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -16843,9 +16217,7 @@
   {
     "name": "Jabimot",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -16863,9 +16235,7 @@
     ],
     "exp": "2624",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Jehan Vaire",
@@ -16880,9 +16250,7 @@
   {
     "name": "Jorfer",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -16890,9 +16258,7 @@
   {
     "name": "Jument Sauvage",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Crin de jument"
     ],
@@ -16912,9 +16278,7 @@
   {
     "name": "Kaub Hold",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "110 et 450"
@@ -16922,9 +16286,7 @@
   {
     "name": "Kobold",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "7 134 503",
     "gold": "2 500 et 4 000"
@@ -16932,9 +16294,7 @@
   {
     "name": "Kobold grincheux",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -17099,9 +16459,7 @@
   {
     "name": "Kraanian Dévoreur",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Parchemin de rappel",
       "Potion de guérison critique",
@@ -17428,9 +16786,7 @@
   {
     "name": "Kraanian ténébreux lourd",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Parchemin de rappel",
       "Prisme de mana",
@@ -17694,9 +17050,7 @@
   {
     "name": "Kraanien géant",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "100 et 200"
@@ -17704,9 +17058,7 @@
   {
     "name": "Kraanien mille-pattes",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "100 et 200"
@@ -17714,9 +17066,7 @@
   {
     "name": "Kraanien ouvrier",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "100 et 200"
@@ -17724,9 +17074,7 @@
   {
     "name": "Kraanien volant",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "100 et 200"
@@ -17734,9 +17082,7 @@
   {
     "name": "Kri Nas",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
       "Prisme de mana",
@@ -17748,9 +17094,7 @@
   {
     "name": "Kro Nas",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
       "Prisme de mana"
@@ -17771,9 +17115,7 @@
   {
     "name": "Lahor",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -17791,9 +17133,7 @@
   {
     "name": "Lame des ténêbres",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Fiole d'eau cristalline",
@@ -17805,9 +17145,7 @@
   {
     "name": "Larve d'élite",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Manteau des Âges",
@@ -17833,9 +17171,7 @@
     ],
     "exp": "20K",
     "gold": "255",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Larve sanglante",
@@ -18230,9 +17566,7 @@
   {
     "name": "Leynn",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Pied de Leynn"
     ],
@@ -18242,9 +17576,7 @@
   {
     "name": "Lézard monstrueux",
     "location": "Raven's Dust",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "200 et 6 000"
@@ -18252,9 +17584,7 @@
   {
     "name": "Lich",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -18262,9 +17592,7 @@
   {
     "name": "Liche",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "100 et 200"
@@ -18277,16 +17605,12 @@
     ],
     "exp": "2300000",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Licorne",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -18407,9 +17731,7 @@
   {
     "name": "Lilielle",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -18417,9 +17739,7 @@
   {
     "name": "Lombric scrofuleux",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Potion de guérison critique"
@@ -18443,9 +17763,7 @@
     ],
     "exp": "150000",
     "gold": "10000",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Loup",
@@ -18776,9 +18094,7 @@
   {
     "name": "Loup domestique",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -18786,9 +18102,7 @@
   {
     "name": "Loup enragé",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Livre de chance"
     ],
@@ -18852,9 +18166,7 @@
   {
     "name": "Loup hargneux",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "200 et 6 000"
@@ -18872,9 +18184,7 @@
   {
     "name": "Loup Pestiféré",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Pierre de lune brute",
       "Diamant brut",
@@ -18886,9 +18196,7 @@
   {
     "name": "Ludrès",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -18907,16 +18215,12 @@
     ],
     "exp": "543",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Machine A Sous R",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -18940,16 +18244,12 @@
     ],
     "exp": "1575",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Mage aux yeux rouges",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -18957,9 +18257,7 @@
   {
     "name": "Mage de combat gobelin",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "201 019",
     "gold": "32 et 64"
@@ -18967,9 +18265,7 @@
   {
     "name": "Mage Draconien",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -19040,9 +18336,7 @@
   {
     "name": "Mage minotaur",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -19350,9 +18644,7 @@
   {
     "name": "Maitre-Gourdin Gobelin de l'Oeil",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -19376,16 +18668,12 @@
     ],
     "exp": "4M",
     "gold": "21K",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Makut",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -19393,9 +18681,7 @@
   {
     "name": "Malch Haraan",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -19403,9 +18689,7 @@
   {
     "name": "Malénie",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -19413,9 +18697,7 @@
   {
     "name": "Malherb",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Oeil de Malherb"
     ],
@@ -19425,9 +18707,7 @@
   {
     "name": "Marcie Trouille",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -19435,9 +18715,7 @@
   {
     "name": "Marlu",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -19445,9 +18723,7 @@
   {
     "name": "Matelot mort-vivant",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Rubis brut",
       "Rubis finement taillé",
@@ -19459,9 +18735,7 @@
   {
     "name": "Méduline",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -19469,9 +18743,7 @@
   {
     "name": "Méduse blanche",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -19479,9 +18751,7 @@
   {
     "name": "Méduse bleue",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -19489,9 +18759,7 @@
   {
     "name": "Méduse cyan",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -19499,9 +18767,7 @@
   {
     "name": "Méduse jaune",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -19509,9 +18775,7 @@
   {
     "name": "Méduse noire",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -19519,9 +18783,7 @@
   {
     "name": "Méduse rouge",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -19529,9 +18791,7 @@
   {
     "name": "Méduse verte",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -19539,9 +18799,7 @@
   {
     "name": "Méduse violette",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -19559,9 +18817,7 @@
   {
     "name": "Melkilem",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -19569,9 +18825,7 @@
   {
     "name": "Mémé",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -19579,9 +18833,7 @@
   {
     "name": "Meylia",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -19596,9 +18848,7 @@
     ],
     "exp": "2308",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Miaouw",
@@ -19615,9 +18865,7 @@
   {
     "name": "Migale noire",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Potion de guérison critique",
@@ -19629,9 +18877,7 @@
   {
     "name": "Millefeuille",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -19639,9 +18885,7 @@
   {
     "name": "Millepertuis",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -19659,9 +18903,7 @@
   {
     "name": "Mineur",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -19782,9 +19024,7 @@
   {
     "name": "Mob Rune",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -19800,9 +19040,7 @@
     ],
     "exp": "914",
     "gold": "47",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Momie",
@@ -19846,9 +19084,7 @@
   {
     "name": "Momie contagieuse",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "1 000 et 2 000"
@@ -20138,9 +19374,7 @@
   {
     "name": "Mommie Paresseuse",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Pierre de mana",
       "Prisme de mana",
@@ -20155,9 +19389,7 @@
   {
     "name": "Monster",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -20165,9 +19397,7 @@
   {
     "name": "Monstre éthéré",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -20175,9 +19405,7 @@
   {
     "name": "Moradinne",
     "location": "Drake Island",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -20196,9 +19424,7 @@
     ],
     "exp": "13K",
     "gold": "215",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Mortdart",
@@ -20307,9 +19533,7 @@
   {
     "name": "Myrte Rose",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -20368,9 +19592,7 @@
   {
     "name": "Naga vipère",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "110 780",
     "gold": "116 et 357"
@@ -20378,9 +19600,7 @@
   {
     "name": "Nare",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
       "Prisme de mana",
@@ -20402,9 +19622,7 @@
   {
     "name": "Nécromancien impérial",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -20412,9 +19630,7 @@
   {
     "name": "Neige",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -20422,9 +19638,7 @@
   {
     "name": "Nemesia Caementaria",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Potion de Guérison Extrême"
@@ -20488,9 +19702,7 @@
   {
     "name": "Nen",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Potion de Guérison Extrême",
@@ -20532,9 +19744,7 @@
     ],
     "exp": "187K",
     "gold": "900",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Néphilim intrus",
@@ -20648,9 +19858,7 @@
   {
     "name": "Nexus",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -20672,9 +19880,7 @@
   {
     "name": "Nightmare",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -20682,9 +19888,7 @@
   {
     "name": "Nightounet",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -20692,9 +19896,7 @@
   {
     "name": "Nirtelle",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -20716,9 +19918,7 @@
     ],
     "exp": "10635",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Noctris Dézéthoill",
@@ -20809,9 +20009,7 @@
     ],
     "exp": "N/A",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Noctris Shaman",
@@ -20826,9 +20024,7 @@
     ],
     "exp": "N/A",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Noctris Trenchdanltaa",
@@ -20900,9 +20096,7 @@
   {
     "name": "Norauld",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -20910,9 +20104,7 @@
   {
     "name": "Nyctère",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Cocon de soie"
     ],
@@ -20928,16 +20120,12 @@
     ],
     "exp": "N/A",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Ogre",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de guérison",
       "Anneau de fer",
@@ -20951,9 +20139,7 @@
   {
     "name": "Ogre des collines",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "50 022",
     "gold": "179 et 550"
@@ -21022,16 +20208,12 @@
     ],
     "exp": "500000",
     "gold": "25000",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Okea Nas",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
       "Prisme de mana"
@@ -21142,9 +20324,7 @@
   {
     "name": "Ombre assassine",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -21152,9 +20332,7 @@
   {
     "name": "Ombre démoniaque",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Potion de Guérison Extrême"
@@ -21165,9 +20343,7 @@
   {
     "name": "Ombre des abîmes",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de guérison critique",
       "Pierre de mana"
@@ -21183,9 +20359,7 @@
     ],
     "exp": "4662",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Orc berserker",
@@ -21398,9 +20572,7 @@
   {
     "name": "Orc de Rez",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "874 500",
     "gold": "5 000 et 25 000"
@@ -21408,9 +20580,7 @@
   {
     "name": "Orc des glaces",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de guérison des blessures graves",
       "Os d'Orc",
@@ -21533,9 +20703,7 @@
   {
     "name": "Orc menaçant",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -21599,9 +20767,7 @@
   {
     "name": "Osselet animé",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "320",
     "gold": "31 et 62"
@@ -21609,9 +20775,7 @@
   {
     "name": "Ouahtter",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "1 000 000 et 2 000 000"
@@ -21750,9 +20914,7 @@
   {
     "name": "Ouvrière de la colonie",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Diamant brut",
       "Pierre de lune finement taillée",
@@ -21772,9 +20934,7 @@
     ],
     "exp": "2K",
     "gold": "72",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Pantin Obscur",
@@ -21822,9 +20982,7 @@
   {
     "name": "Pâquerette",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -21832,9 +20990,7 @@
   {
     "name": "Parsi Chepterre monster",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -21849,9 +21005,7 @@
     ],
     "exp": "641",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Patient fou",
@@ -21864,16 +21018,12 @@
     ],
     "exp": "337",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Pépé",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -21881,9 +21031,7 @@
   {
     "name": "Père Philidas",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -21915,9 +21063,7 @@
   {
     "name": "Phildor",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -21925,9 +21071,7 @@
   {
     "name": "Philéas",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -21935,9 +21079,7 @@
   {
     "name": "Piege",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -21945,9 +21087,7 @@
   {
     "name": "Pile de livre du chateau SS",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -21955,9 +21095,7 @@
   {
     "name": "Pile de livre range bibliotheque",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -22222,9 +21360,7 @@
   {
     "name": "Point de controle de l'Empire",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -22232,9 +21368,7 @@
   {
     "name": "Point de controle du royaume",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -22242,9 +21376,7 @@
   {
     "name": "Pomme Deschamps",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -22252,9 +21384,7 @@
   {
     "name": "Portail vers la salle de jeu",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -22262,9 +21392,7 @@
   {
     "name": "Porte",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -22272,9 +21400,7 @@
   {
     "name": "Porte cassable",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -22282,9 +21408,7 @@
   {
     "name": "Porte en bois",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -22353,9 +21477,7 @@
   {
     "name": "Porte-Peste",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Torche",
       "Potion de guérison légère"
@@ -22433,9 +21555,7 @@
   {
     "name": "Pousse corrompu",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -22443,9 +21563,7 @@
   {
     "name": "Prédicateur décrépit",
     "location": "Drake Island",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Potion de guérison critique"
@@ -22465,16 +21583,12 @@
     ],
     "exp": "1K",
     "gold": "51",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Pretre obscur",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
       "Prisme de mana",
@@ -23465,9 +22579,7 @@
   {
     "name": "Profilique Général",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Anneau d'or",
       "Potion de guérison légère",
@@ -23486,9 +22598,7 @@
   {
     "name": "Profilique Lieutenant",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Anneau d'or",
       "Potion de guérison légère",
@@ -23566,9 +22676,7 @@
     ],
     "exp": "4K",
     "gold": "116",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Prolifique (Unique)",
@@ -23581,9 +22689,7 @@
     ],
     "exp": "12000",
     "gold": "100-400",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Protecteur de la forêt",
@@ -23625,9 +22731,7 @@
   {
     "name": "Protecteur Elite",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Robe de l'hiver éternel",
       "Robe des flammes ardentes",
@@ -23679,9 +22783,7 @@
   {
     "name": "Puits",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "61 343",
     "gold": "0 et 0"
@@ -23689,9 +22791,7 @@
   {
     "name": "Puppet Master",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "501",
     "gold": "1 et 1"
@@ -23699,9 +22799,7 @@
   {
     "name": "Puppet Sparte",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -23714,16 +22812,12 @@
     ],
     "exp": "N/A",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Puss Thule",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "110 et 450"
@@ -23750,9 +22844,7 @@
     ],
     "exp": "9K",
     "gold": "254",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Quentin Tarantula",
@@ -23766,9 +22858,7 @@
     ],
     "exp": "13344",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Rampant",
@@ -23894,9 +22984,7 @@
   {
     "name": "Rampilios",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Enduit de Rampilios",
       "Couenne de rampilios"
@@ -23907,9 +22995,7 @@
   {
     "name": "Rampilius",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "27 634",
     "gold": "3 544 et 4 961"
@@ -24352,9 +23438,7 @@
   {
     "name": "Rat de Laboratoire",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de guérison critique"
     ],
@@ -24369,16 +23453,12 @@
     ],
     "exp": "N/A",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Rat enragé",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de guérison critique"
     ],
@@ -24523,9 +23603,7 @@
   {
     "name": "Rat noir",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -24843,9 +23921,7 @@
   {
     "name": "Reine de la colonie",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Diamant brut",
       "Pierre de lune finement taillée",
@@ -24857,9 +23933,7 @@
   {
     "name": "Rejet du monde",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Fluide de démolécularisation",
       "Résidu éthéré"
@@ -24953,9 +24027,7 @@
   {
     "name": "Rejeton sordide",
     "location": "Raven's Dust",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "200 et 6 000"
@@ -24988,9 +24060,7 @@
   {
     "name": "Rémi Façolle",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -24998,9 +24068,7 @@
   {
     "name": "Rétiaire",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Potion de Guérison Extrême"
@@ -25011,9 +24079,7 @@
   {
     "name": "Riath Brasir",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -25021,9 +24087,7 @@
   {
     "name": "Ricine",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -25036,16 +24100,12 @@
     ],
     "exp": "5K",
     "gold": "1",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Rocailleux",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Opale finement taillée",
       "Diamant finement taillé",
@@ -25062,9 +24122,7 @@
   {
     "name": "Rongeur affamé",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "1 110",
     "gold": "53 et 165"
@@ -25072,9 +24130,7 @@
   {
     "name": "Rongeur en putrefaction",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "260",
     "gold": "27 et 54"
@@ -25091,9 +24147,7 @@
     ],
     "exp": "11411",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Roshnak Tul",
@@ -25118,9 +24172,7 @@
   {
     "name": "Roy centaure",
     "location": "Stoneheim",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Poil de Centaure"
     ],
@@ -25172,9 +24224,7 @@
   {
     "name": "Sac d'os",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Soie d'araignée",
       "Potion de guérison légère",
@@ -25186,9 +24236,7 @@
   {
     "name": "Sagestria Mutante",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "51 000",
     "gold": "1 000 et 5 000"
@@ -25196,9 +24244,7 @@
   {
     "name": "Sanavaldo Carne",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Potion de Guérison Extrême",
@@ -25221,9 +24267,7 @@
   {
     "name": "Sapin",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -25231,9 +24275,7 @@
   {
     "name": "Sarah",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -25241,9 +24283,7 @@
   {
     "name": "Saules protecteur",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -25251,9 +24291,7 @@
   {
     "name": "Sceau d'Eberywun",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de guérison des blessures graves",
       "Prisme de mana"
@@ -25588,9 +24626,7 @@
   {
     "name": "Scorpion",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "100 et 200"
@@ -25711,9 +24747,7 @@
   {
     "name": "Scorpion terrifiant",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -25734,9 +24768,7 @@
   {
     "name": "Seigneur Elfe",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "931",
     "gold": "56 et 112"
@@ -25784,9 +24816,7 @@
     ],
     "exp": "4063",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Sentinelle d'Olin Haad",
@@ -25944,9 +24974,7 @@
   {
     "name": "Sentinelle mort-vivante",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "100 et 200"
@@ -25954,9 +24982,7 @@
   {
     "name": "Sérac",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Eclats de glace",
       "Flocon de sérac"
@@ -25972,9 +24998,7 @@
     ],
     "exp": "59K",
     "gold": "350",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Séraphin corrompu",
@@ -26259,9 +25283,7 @@
   {
     "name": "Serviteur momifié",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "700",
     "gold": "51 et 102"
@@ -26269,9 +25291,7 @@
   {
     "name": "Shaluzard",
     "location": "Raven's Dust",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -26279,9 +25299,7 @@
   {
     "name": "Shaman centaure",
     "location": "Stoneheim",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "100 et 200"
@@ -26289,9 +25307,7 @@
   {
     "name": "Shaman Orc",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -26299,9 +25315,7 @@
   {
     "name": "Shonir",
     "location": "Stoneheim",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -26309,9 +25323,7 @@
   {
     "name": "Sigfrid",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -26319,9 +25331,7 @@
   {
     "name": "Sighild",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -26329,9 +25339,7 @@
   {
     "name": "Skeleton 01",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -26339,9 +25347,7 @@
   {
     "name": "Skeleton King",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -26349,9 +25355,7 @@
   {
     "name": "Skeleton Servant 1",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -26359,9 +25363,7 @@
   {
     "name": "Skeleton Servant 2",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -26369,9 +25371,7 @@
   {
     "name": "Skraug Assassin",
     "location": "Stoneheim",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "100 et 200"
@@ -26395,9 +25395,7 @@
     ],
     "exp": "9164",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Skraug bigworviktor",
@@ -26418,9 +25416,7 @@
     ],
     "exp": "9409",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Skraug bludfightor",
@@ -26442,9 +25438,7 @@
     ],
     "exp": "6369",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Skraug clangbangah",
@@ -26466,16 +25460,12 @@
     ],
     "exp": "5974",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Skraug Dextrator",
     "location": "Stoneheim",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Plastron de ciel argent",
       "Bottes de ciel argent",
@@ -26518,16 +25508,12 @@
     ],
     "exp": "2331",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Skraug Guerrier",
     "location": "Stoneheim",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "100 et 200"
@@ -26551,9 +25537,7 @@
     ],
     "exp": "7635",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Skraug meanheaddrummah",
@@ -26577,9 +25561,7 @@
     ],
     "exp": "8483",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Skraug moonfiredansah",
@@ -26597,9 +25579,7 @@
     ],
     "exp": "7856",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Skraug munchhuntor",
@@ -26619,16 +25599,12 @@
     ],
     "exp": "2574",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Skraug Peon",
     "location": "Stoneheim",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "100 et 200"
@@ -26636,9 +25612,7 @@
   {
     "name": "Skraug Peon 2",
     "location": "Stoneheim",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -26665,16 +25639,12 @@
     ],
     "exp": "4541",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Skraug Shaman",
     "location": "Stoneheim",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "100 et 200"
@@ -26682,9 +25652,7 @@
   {
     "name": "Skraug Shaman 2",
     "location": "Stoneheim",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -26692,9 +25660,7 @@
   {
     "name": "Skraug skavenger",
     "location": "Stoneheim",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -26702,9 +25668,7 @@
   {
     "name": "Skraug Skavenger 2",
     "location": "Stoneheim",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -26731,9 +25695,7 @@
     ],
     "exp": "4870",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Skraug totemherbdoktor",
@@ -26753,16 +25715,12 @@
     ],
     "exp": "7856",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Skraug vert peon",
     "location": "Stoneheim",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Livre de chance"
     ],
@@ -26772,9 +25730,7 @@
   {
     "name": "Skraug vert shaman",
     "location": "Stoneheim",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Dictionnaire de langue humaine"
     ],
@@ -26784,9 +25740,7 @@
   {
     "name": "Skraug vert skavenger",
     "location": "Stoneheim",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Alliage de confection skraug"
     ],
@@ -26796,9 +25750,7 @@
   {
     "name": "Skraug warrior",
     "location": "Stoneheim",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -26806,9 +25758,7 @@
   {
     "name": "Skraug Warrior 2",
     "location": "Stoneheim",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -26871,9 +25821,7 @@
   {
     "name": "Soldat de l'empire",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -26881,9 +25829,7 @@
   {
     "name": "Soldat disparu",
     "location": "Drake Island",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "81 208",
     "gold": "6 819 et 7 112"
@@ -26906,9 +25852,7 @@
   {
     "name": "Soldat du Royaume",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -26922,16 +25866,12 @@
     ],
     "exp": "1300000",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Sombre fantassin",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "1 000 et 2 000"
@@ -26976,9 +25916,7 @@
   {
     "name": "Sorcier Olphen",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "30 001",
     "gold": "1 000 et 2 000"
@@ -27079,9 +26017,7 @@
   {
     "name": "Sorcière au nez crochu",
     "location": "Arakas",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "105 000",
     "gold": "1 500 et 3 000"
@@ -27089,9 +26025,7 @@
   {
     "name": "Sornette",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de guérison critique",
       "Potion de guérison divine",
@@ -27110,9 +26044,7 @@
     ],
     "exp": "N/A",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Souilleur",
@@ -27162,9 +26094,7 @@
   {
     "name": "Spectre des marais",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
       "Prisme de mana",
@@ -27176,9 +26106,7 @@
   {
     "name": "Spectre Fumant",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
       "Prisme de mana",
@@ -27191,9 +26119,7 @@
   {
     "name": "Spectre MakrshP'tangh",
     "location": "Stoneheim",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "3 536 890",
     "gold": "10 000 et 31 000"
@@ -27201,9 +26127,7 @@
   {
     "name": "Spectre menaçant",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Faux spectrale"
     ],
@@ -27256,9 +26180,7 @@
   {
     "name": "Squelette bleu",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "100 et 200"
@@ -27296,9 +26218,7 @@
   {
     "name": "Squelette dansant",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "65 000",
     "gold": "1 000 et 1 750"
@@ -27324,9 +26244,7 @@
   {
     "name": "Squelette dément",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Clef en os"
     ],
@@ -27373,9 +26291,7 @@
     ],
     "exp": "128",
     "gold": "14",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Squelette Géant",
@@ -27394,9 +26310,7 @@
   {
     "name": "Squelette rouge",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "100 et 200"
@@ -27404,9 +26318,7 @@
   {
     "name": "Squelette Sinistre",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "200 et 6 000"
@@ -27414,9 +26326,7 @@
   {
     "name": "Syrtash",
     "location": "Stoneheim",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -27454,9 +26364,7 @@
   {
     "name": "Tarantule Géante",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Yeux de tarentule",
       "Potion de guérison",
@@ -27468,9 +26376,7 @@
   {
     "name": "Tarantule nécrosée",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "200 et 6 000"
@@ -27478,9 +26384,7 @@
   {
     "name": "Tarantule PT",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Yeux de tarentule"
     ],
@@ -27624,9 +26528,7 @@
   {
     "name": "Tarmur",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Prisme de mana",
       "Potion de Guérison Extrême",
@@ -27639,9 +26541,7 @@
   {
     "name": "Tarnian",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
       "Joyau reluisant",
@@ -27653,9 +26553,7 @@
   {
     "name": "Ted Demort",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Balai volant",
       "Tête de citrouille"
@@ -27671,9 +26569,7 @@
     ],
     "exp": "N/A",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Templier",
@@ -27685,16 +26581,12 @@
     ],
     "exp": "1K",
     "gold": "65",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Terreur des Neiges",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Venin d'araignée"
     ],
@@ -27904,9 +26796,7 @@
   {
     "name": "Tetra-Grammaton",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -27939,16 +26829,12 @@
     ],
     "exp": "6776",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Tito",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -27956,9 +26842,7 @@
   {
     "name": "Tombeau",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -27966,9 +26850,7 @@
   {
     "name": "Tonar Mastard",
     "location": "Raven's Dust",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -27988,9 +26870,7 @@
     ],
     "exp": "6000",
     "gold": "273",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Trish Jalnec",
@@ -28016,9 +26896,7 @@
   {
     "name": "Troll",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "100 et 200"
@@ -28033,9 +26911,7 @@
     ],
     "exp": "N/A",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Troll des ponts",
@@ -28150,9 +27026,7 @@
   {
     "name": "Troll hargnieux",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -28160,9 +27034,7 @@
   {
     "name": "Troll sanguinaire",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "200 et 6 000"
@@ -28185,9 +27057,7 @@
   {
     "name": "Ulgère",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -28200,9 +27070,7 @@
     ],
     "exp": "13552",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Un garde mort-vivant",
@@ -28248,9 +27116,7 @@
     ],
     "exp": "14832",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Un gardien mort-vivant",
@@ -28260,16 +27126,12 @@
     ],
     "exp": "34955",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Un homme mystérieux",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -28277,9 +27139,7 @@
   {
     "name": "Un homme noyé",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -28287,9 +27147,7 @@
   {
     "name": "Un livre usé",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -28297,9 +27155,7 @@
   {
     "name": "Un marchand mystérieux",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -28307,9 +27163,7 @@
   {
     "name": "Un Portail Magique",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -28322,16 +27176,12 @@
     ],
     "exp": "7856",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Un puit",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -28339,9 +27189,7 @@
   {
     "name": "Un trebuchet",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -28349,9 +27197,7 @@
   {
     "name": "Une archère mystérieuse",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -28359,9 +27205,7 @@
   {
     "name": "Une catapulte",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Pile de bois"
     ],
@@ -28371,9 +27215,7 @@
   {
     "name": "Une femme mystérieuse",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -28381,9 +27223,7 @@
   {
     "name": "une porte",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -28408,9 +27248,7 @@
     ],
     "exp": "92K",
     "gold": "510",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Une sentinelle mort-vivante",
@@ -28671,9 +27509,7 @@
   {
     "name": "Urigan",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -28681,9 +27517,7 @@
   {
     "name": "Urthel",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -28691,9 +27525,7 @@
   {
     "name": "Vase",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "116",
     "gold": "3 et 11"
@@ -28727,16 +27559,12 @@
     ],
     "exp": "4870",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Ver Charognard",
     "location": "Raven's Dust",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "48",
     "gold": "1 et 5"
@@ -28750,9 +27578,7 @@
     ],
     "exp": "N/A",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Ver de Yoggoth",
@@ -28764,9 +27590,7 @@
     ],
     "exp": "15K",
     "gold": "218",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Ver enfoui",
@@ -28800,9 +27624,7 @@
   {
     "name": "Ver géant",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "100 et 200"
@@ -28871,9 +27693,7 @@
     ],
     "exp": "20K",
     "gold": "157",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Vert-de-vase",
@@ -28944,9 +27764,7 @@
   {
     "name": "Vert-de-vase poisseux",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "200 et 6 000"
@@ -28962,16 +27780,12 @@
     ],
     "exp": "7856",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Vieille souche",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -28979,9 +27793,7 @@
   {
     "name": "Villageois en putréfaction",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "460",
     "gold": "51 et 102"
@@ -28989,9 +27801,7 @@
   {
     "name": "Villageois réanimé",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "660",
     "gold": "41 et 82"
@@ -29064,9 +27874,7 @@
   {
     "name": "Wheende",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "1 000 000 et 2 000 000"
@@ -29074,9 +27882,7 @@
   {
     "name": "Whydah Gally",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Aigue-marine finement taillée",
       "Aigue-marine brute",
@@ -29088,9 +27894,7 @@
   {
     "name": "Wilma",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
       "Prisme de mana",
@@ -29117,9 +27921,7 @@
   {
     "name": "Xarion",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -29137,9 +27939,7 @@
   {
     "name": "Yéti",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "5 001",
     "gold": "100 et 200"
@@ -29147,9 +27947,7 @@
   {
     "name": "Yéti adulte",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Flocon ambré des sommets"
     ],
@@ -29282,9 +28080,7 @@
   {
     "name": "Yeti de Nicolaï",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "10 000 et 10 000"
@@ -29292,9 +28088,7 @@
   {
     "name": "Yeti des montagnes",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "449 et 1 375"
@@ -29302,9 +28096,7 @@
   {
     "name": "Yeti des Neiges",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Cotte d'anneaux",
       "Jambières d'anneaux",
@@ -29322,16 +28114,12 @@
     ],
     "exp": "1500000",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Yoggoth",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [
       "Amethyste brute",
       "Saphir Brut",
@@ -29347,9 +28135,7 @@
   {
     "name": "Yrsath",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -29357,9 +28143,7 @@
   {
     "name": "Ysaline",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -29367,9 +28151,7 @@
   {
     "name": "Zaelke",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "1 000 000 et 2 000 000"
@@ -29386,9 +28168,7 @@
     ],
     "exp": "16K",
     "gold": "400",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Zartgax de givre",
@@ -29415,9 +28195,7 @@
   {
     "name": "Zélina",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "0",
     "gold": "0 et 0"
@@ -29495,9 +28273,7 @@
   {
     "name": "Zombie au crâne dégarni",
     "location": "Inconnu",
-    "coordinates": [
-      "0.0.0"
-    ],
+    "coordinates": [],
     "drops": [],
     "exp": "52 000",
     "gold": "750 et 1 000"
@@ -29572,9 +28348,7 @@
     ],
     "exp": "14771",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Zuwarah",
@@ -29586,9 +28360,7 @@
     ],
     "exp": "N/A",
     "gold": "N/A",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   },
   {
     "name": "Zzartgax",
@@ -29596,8 +28368,6 @@
     "drops": [],
     "exp": "16K",
     "gold": "400",
-    "coordinates": [
-      "0.0.0"
-    ]
+    "coordinates": []
   }
 ]
