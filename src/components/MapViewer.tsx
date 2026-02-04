@@ -1,6 +1,6 @@
 import React, { useState, useRef, memo, useEffect, useMemo } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { Maximize, ZoomIn, ZoomOut, MousePointer2, Loader2, MapPin, Layers, ChevronRight, ChevronDown, Eye, RotateCcw, Search, X, Menu, Fullscreen, Minimize, RotateCw } from 'lucide-react';
+import { Maximize, ZoomIn, ZoomOut, MousePointer2, Loader2, MapPin, Layers, ChevronRight, ChevronDown, Eye, RotateCcw, Search, X, Menu, Fullscreen, Minimize, RotateCw, EyeOff } from 'lucide-react';
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import { useData } from '../context/DataContext';
 import { fastNormalize } from '../data/utils';
@@ -94,6 +94,7 @@ const MapViewer: React.FC = () => {
   const [activeLayers, setActiveLayers] = useState<Set<string>>(new Set());
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(new Set());
   const [searchQuery, setSearchQuery] = useState('');
+  const [showUnavailable, setShowUnavailable] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [isSidebarCollapsed, setIsSidebarCollapsed] = useState(false);
@@ -437,6 +438,13 @@ const MapViewer: React.FC = () => {
               <div className="flex items-center gap-3"><Layers size={18} className="text-amber-500" /><h3 className="text-xs font-black uppercase tracking-widest text-slate-200">Filtres</h3></div>
               <div className="flex items-center gap-1">
                 <button 
+                  onClick={() => setShowUnavailable(!showUnavailable)}
+                  className={`p-2 rounded-lg transition-all ${!showUnavailable ? 'bg-amber-500/20 text-amber-500 shadow-inner' : 'text-slate-500 hover:text-white hover:bg-slate-800'}`}
+                  title={showUnavailable ? "Masquer les éléments sans coordonnées" : "Afficher les éléments sans coordonnées"}
+                >
+                  {showUnavailable ? <Eye size={18} /> : <EyeOff size={18} />}
+                </button>
+                <button 
                   onClick={handleReset}
                   className="p-2 hover:bg-rose-500/20 text-slate-500 hover:text-rose-500 rounded-lg transition-all" 
                   title="Réinitialiser tout"
@@ -467,17 +475,24 @@ const MapViewer: React.FC = () => {
                 const isExpanded = expandedCategories.has(cat);
                 
                 // Sort items: Available first, then Unavailable, both alphabetically
-                const itemsList = Object.keys(items).sort((a, b) => {
-                  const markersA = items[a];
-                  const markersB = items[b];
-                  const isDummyA = markersA.length === 0 || markersA[0].world === -1 || (markersA[0].gx === 0 && markersA[0].gy === 0);
-                  const isDummyB = markersB.length === 0 || markersB[0].world === -1 || (markersB[0].gx === 0 && markersB[0].gy === 0);
+                const itemsList = Object.keys(items)
+                  .filter(name => {
+                    if (showUnavailable) return true;
+                    const markers = items[name];
+                    const isDummy = markers.length === 0 || markers[0].world === -1 || (markers[0].gx === 0 && markers[0].gy === 0);
+                    return !isDummy;
+                  })
+                  .sort((a, b) => {
+                    const markersA = items[a];
+                    const markersB = items[b];
+                    const isDummyA = markersA.length === 0 || markersA[0].world === -1 || (markersA[0].gx === 0 && markersA[0].gy === 0);
+                    const isDummyB = markersB.length === 0 || markersB[0].world === -1 || (markersB[0].gx === 0 && markersB[0].gy === 0);
 
-                  if (isDummyA !== isDummyB) {
-                    return isDummyA ? 1 : -1;
-                  }
-                  return a.localeCompare(b);
-                });
+                    if (isDummyA !== isDummyB) {
+                      return isDummyA ? 1 : -1;
+                    }
+                    return a.localeCompare(b);
+                  });
 
                 return (
                   <div key={cat} className="space-y-1">
