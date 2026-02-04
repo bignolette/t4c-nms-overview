@@ -3303,7 +3303,9 @@
     ],
     "exp": "674",
     "gold": "N/A",
-    "coordinates": []
+    "coordinates": [
+      "235.452.1"
+    ]
   },
   {
     "name": "Bane Gwengad",
@@ -3578,7 +3580,7 @@
     "name": "Blaarg Pedista",
     "location": "Raven's Dust",
     "coordinates": [
-      "931.1042.2"
+      "926.1041.2"
     ],
     "drops": [
       "Hachette rouillée",
@@ -6347,7 +6349,9 @@
     ],
     "exp": "1620",
     "gold": "N/A",
-    "coordinates": []
+    "coordinates": [
+      "1076.103.1"
+    ]
   },
   {
     "name": "Chêne Centenaire",
@@ -7804,7 +7808,9 @@
     ],
     "exp": "3150",
     "gold": "N/A",
-    "coordinates": []
+    "coordinates": [
+      "1523.63.1"
+    ]
   },
   {
     "name": "Démon",
@@ -8477,7 +8483,9 @@
     ],
     "exp": "1154",
     "gold": "N/A",
-    "coordinates": []
+    "coordinates": [
+      "2831.2331.0"
+    ]
   },
   {
     "name": "Dorken le Putride",
@@ -8490,7 +8498,9 @@
     ],
     "exp": "674",
     "gold": "N/A",
-    "coordinates": []
+    "coordinates": [
+      "2685.873.0"
+    ]
   },
   {
     "name": "Dr. Van Pyre",
@@ -8503,7 +8513,9 @@
     ],
     "exp": "1154",
     "gold": "N/A",
-    "coordinates": []
+    "coordinates": [
+      "2831.2397.0"
+    ]
   },
   {
     "name": "Draco",
@@ -13425,7 +13437,9 @@
     ],
     "exp": "30",
     "gold": "45",
-    "coordinates": []
+    "coordinates": [
+      "72.1569.0"
+    ]
   },
   {
     "name": "Golem de feu",
@@ -14039,7 +14053,9 @@
     ],
     "exp": "2K",
     "gold": "80",
-    "coordinates": []
+    "coordinates": [
+      "849.2086.0"
+    ]
   },
   {
     "name": "Griffe Tranchante",
@@ -15662,7 +15678,9 @@
     ],
     "exp": "4071",
     "gold": "N/A",
-    "coordinates": []
+    "coordinates": [
+      "87.2654.0"
+    ]
   },
   {
     "name": "Hallucination adorable",
@@ -16235,7 +16253,9 @@
     ],
     "exp": "2624",
     "gold": "N/A",
-    "coordinates": []
+    "coordinates": [
+      "1088.103.1"
+    ]
   },
   {
     "name": "Jehan Vaire",
@@ -17763,7 +17783,9 @@
     ],
     "exp": "150000",
     "gold": "10000",
-    "coordinates": []
+    "coordinates": [
+      "678.1176.1"
+    ]
   },
   {
     "name": "Loup",
@@ -18244,7 +18266,9 @@
     ],
     "exp": "1575",
     "gold": "N/A",
-    "coordinates": []
+    "coordinates": [
+      "2810.2572.0"
+    ]
   },
   {
     "name": "Mage aux yeux rouges",
@@ -18848,7 +18872,9 @@
     ],
     "exp": "2308",
     "gold": "N/A",
-    "coordinates": []
+    "coordinates": [
+      "1566.174.0"
+    ]
   },
   {
     "name": "Miaouw",
@@ -22858,7 +22884,9 @@
     ],
     "exp": "13344",
     "gold": "N/A",
-    "coordinates": []
+    "coordinates": [
+      "1731.247.2"
+    ]
   },
   {
     "name": "Rampant",
@@ -24208,7 +24236,7 @@
     "name": "Sabotcasseur",
     "location": "Raven's Dust",
     "coordinates": [
-      "423.804.1"
+      "407.813.1"
     ],
     "drops": [
       "Pierre de mana",
@@ -27176,7 +27204,13 @@
     ],
     "exp": "7856",
     "gold": "N/A",
-    "coordinates": []
+    "coordinates": [
+      "437.755.0",
+      "495.553.0",
+      "607.925.0",
+      "780.439.0",
+      "792.801.0"
+    ]
   },
   {
     "name": "Un puit",
