@@ -33,22 +33,45 @@ interface MarkerData {
   category: string;
 }
 
-const MapMarker = memo(({ x, y, label, color = "text-rose-500" }: { x: number, y: number, label?: string, color?: string }) => (
-  <div className="absolute z-30 pointer-events-auto cursor-help" style={{ left: x, top: y, transform: 'translate(-50%, -100%)' }}>
-    <div className="relative flex flex-col items-center group/marker">
-      {label && (
-        <div className="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-950/95 border border-white/20 rounded-lg text-[11px] font-black text-white whitespace-nowrap shadow-[0_0_20px_rgba(0,0,0,0.5)] opacity-0 group-hover/marker:opacity-100 transition-all duration-200 translate-y-1 group-hover/marker:translate-y-0 pointer-events-none z-50">
-          <div className="flex items-center gap-2"><div className={`w-1.5 h-1.5 rounded-full ${color.replace('text-', 'bg-')}`} />{label}</div>
-          <div className="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-slate-950/95" />
+const getCategoryColor = (cat: string) => {
+  switch (cat) {
+    case 'Monstres': return 'text-rose-500';
+    case 'PNJs': return 'text-blue-500';
+    case 'Plantes': return 'text-emerald-500';
+    case 'Arbres': return 'text-amber-800';
+    case 'Gisements': return 'text-amber-500';
+    default: return 'text-slate-400';
+  }
+};
+
+const MapMarker = memo(({ x, y, items }: { x: number, y: number, items: { label: string, category: string }[] }) => {
+  const firstCategory = items[0]?.category || '';
+  const color = getCategoryColor(firstCategory);
+  
+  return (
+    <div className="absolute z-30 pointer-events-auto cursor-help" style={{ left: x, top: y, transform: 'translate(-50%, -100%)' }}>
+      <div className="relative flex flex-col items-center group/marker">
+        {items.length > 0 && (
+          <div className="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-950/95 border border-white/20 rounded-lg text-[11px] font-black text-white whitespace-nowrap shadow-[0_0_20px_rgba(0,0,0,0.5)] opacity-0 group-hover/marker:opacity-100 transition-all duration-200 translate-y-1 group-hover/marker:translate-y-0 pointer-events-none z-50">
+            <div className="flex flex-col gap-1.5">
+              {items.map((item, idx) => (
+                <div key={idx} className="flex items-center gap-2">
+                  <div className={`w-1.5 h-1.5 rounded-full shrink-0 ${getCategoryColor(item.category).replace('text-', 'bg-')}`} />
+                  {item.label}
+                </div>
+              ))}
+            </div>
+            <div className="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-slate-950/95" />
+          </div>
+        )}
+        <div className="relative">
+          <MapPin size={28} className={`${color} fill-current/20 drop-shadow-[0_0_10px_rgba(0,0,0,0.8)] transition-transform group-hover/marker:scale-110`} />
+          <div className="absolute inset-0 animate-ping opacity-40"><MapPin size={28} className={color} /></div>
         </div>
-      )}
-      <div className="relative">
-        <MapPin size={28} className={`${color} fill-current/20 drop-shadow-[0_0_10px_rgba(0,0,0,0.8)] transition-transform group-hover/marker:scale-110`} />
-        <div className="absolute inset-0 animate-ping opacity-40"><MapPin size={28} className={color} /></div>
       </div>
     </div>
-  </div>
-));
+  );
+});
 
 const CoordsOverlay = memo(({ gx, gy, worldId, isFullscreen }: { gx: number, gy: number, worldId: number, isFullscreen: boolean }) => (
   <div className={`absolute bottom-4 left-4 md:bottom-6 md:right-6 md:left-auto flex flex-col items-start md:items-end gap-3 pointer-events-none z-20 ${isFullscreen ? 'pl-safe pb-safe' : ''}`}> 
@@ -233,6 +256,18 @@ const MapViewer: React.FC = () => {
     return markers.filter(m => m.world === selectedMap.worldId && !(m.gx === 0 && m.gy === 0));
   }, [targetName, activeLayers, dataLayers, selectedMap.worldId]);
 
+  const groupedMarkers = useMemo(() => {
+    const groups: Record<string, { gx: number, gy: number, items: { label: string, category: string }[] }> = {};
+    visibleMarkers.forEach(m => {
+      const key = `${m.gx},${m.gy}`;
+      if (!groups[key]) {
+        groups[key] = { gx: m.gx, gy: m.gy, items: [] };
+      }
+      groups[key].items.push({ label: m.label, category: m.category });
+    });
+    return Object.values(groups);
+  }, [visibleMarkers]);
+
   const toggleFullscreen = () => {
     setIsFullscreen(!isFullscreen);
   };
@@ -315,17 +350,6 @@ const MapViewer: React.FC = () => {
     });
     return filtered;
   }, [dataLayers, searchQuery]);
-
-  const getCategoryColor = (cat: string) => {
-    switch (cat) {
-      case 'Monstres': return 'text-rose-500';
-      case 'PNJs': return 'text-blue-500';
-      case 'Plantes': return 'text-emerald-500';
-      case 'Arbres': return 'text-amber-800';
-      case 'Gisements': return 'text-amber-500';
-      default: return 'text-slate-400';
-    }
-  };
 
   useEffect(() => {
     if (targetName && dataLayers) {
@@ -540,7 +564,14 @@ const MapViewer: React.FC = () => {
                       }} 
                       draggable={false} 
                     />
-                    {visibleMarkers.map((marker, i) => <MapMarker key={`${marker.category}-${marker.label}-${i}`} x={marker.gx * 2} y={marker.gy} label={marker.label} color={getCategoryColor(marker.category)} />)}
+                    {groupedMarkers.map((group, i) => (
+                      <MapMarker 
+                        key={`${group.gx}-${group.gy}-${i}`} 
+                        x={group.gx * 2} 
+                        y={group.gy} 
+                        items={group.items} 
+                      />
+                    ))}
                   </div>
                 </TransformComponent>
               </>
