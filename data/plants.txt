@@ -1,0 +1,31 @@
+Plants
+
+The "Plants" page lists various plants found in different regions, along with their respawn times and locations.
+
+*   **ARAKAS** (Respawn: 20 minutes solo, 10 minutes à deux joueurs)
+    *   **Mandragore:** Asile (2650, 181, 0), Camp Orc (2566, 423, 0), Plaine des Kraanians (2052, 585, 0), Ermite (2847, 732, 0), Ville des nains (2831, 378, 0).
+    *   **Ciguë:** Asile (2320, 146, 0), Orkanis (1492, 200, 0), Plaine des Kraanians (1910, 806, 0 / 2196, 638, 0), Sud des Monts Righul (1853, 578, 0).
+    *   **Arnica:** Nord de Nilhem (2709, 830, 0), Sud-ouest de Nilhem (2559, 974, 0), Sud-ouest de la Rst Ar (2314, 1044, 0), Ouest du camp des brigands (Gorlox) (2551, 1182, 0), Lighthaven (2723, 1235, 0).
+    *   **Charme:** Nord du pont gob (2759, 903, 0), Ouest de la RST Arakas (2223, 809, 0), Nord de WH (1789, 989, 0), Nord-Est du vendeur d'armes +2 (2179, 445, 0), Vieil ermite (2899, 692, 0).
+    *   **Chanvre:** Camp Orc (2685, 566, 0), Est de Silversmith (2705, 650, 0), Plaine des Kraanians (2055, 877, 0), Orkanis (1614, 102, 0), Ermite (2807, 650, 0).
+    *   **Ginseng:** Alentours de WH (1812, 1122, 0 / 1909, 1093, 0 / 2284, 1299, 0 / 2374, 1384, 0), Plaines Centrales (2246, 1045, 0).
+
+*   **RAVEN'S DUST** (Respawn: 1 hour solo, 30 minutes à deux joueurs)
+    *   **Coton:** Au milieu du camp des fatalistes (757, 1479, 0), Sud-Ouest de la RST (817, 2209, 0), Ile de Bane (275, 1634, 0), Près du Nexus (991, 2028, 0).
+    *   **Immortelle:** Nord-Ouest de SilverSky (1323, 2212, 0), Centre de Raven's Dust (965, 2445, 0), Sud-Ouest de SilverSky (1281, 2609, 0), A l'Ouest, direction Zakar (61, 2518, 0).
+    *   **Maté:** Chemin sortie Ouest de Silversky (1178, 2380, 0), Est du Camp druidique (1563, 2892, 0), Avant le camp Orc (1125, 2065, 0), Nord-Ouest du Lac aux tarentules (589, 2060, 0).
+    *   **Datura:** Nord du Territoire des railleuses (462, 1819, 0), Nord est de la RST (971, 1954, 0), Ouest du Camp des fatalistes (645, 1506, 0), Sud de la Grande Bibliothèque (1047, 1831, 0).
+    *   **Cactus:** Nord de l'Oasis de RD (272, 2418, 0 / 318, 2479, 0 / 345, 2330, 0), Extrême sud-est du Temple de Lothar (425, 2674, 0).
+
+*   **STONEHEIM** (Respawn: 2 hours solo, 1 hour à deux joueurs)
+    *   **Consoude:** Nord de SC (245, 420, 0), Territoire des guêpes de Stoneheim (293, 1016, 0), Sud-Ouest RST StoneHeim (558, 861, 0).
+    *   **Acérola:** Nord du territoire des skraugs roses (465, 134, 0), Sous la maison de Vellis (821, 896, 0), Derrière la Ville des Centaures (1095, 1223, 0).
+    *   **Boldo:** Près d'Anthor le fou (856, 710, 0), Forêt des Gremlins (1103, 147, 0), Sur la petite île (897, 76, 0).
+    *   **Colchique:** Droite du Coeur du Destin (781, 525, 0), Territoires de Kaph Leth (1336, 398, 0), Forêt des Gremlins (1132, 308, 0).
+
+*   **DRAKE ISLAND** (Respawn: ~1.23 hours solo, 43 minutes à deux joueurs)
+    *   **Absinthe** (for Eléonore's dungeon access quest): Loin à l'Est de Redwall (1070, 1270, 3).
+    *   **Tamaris** (Respawn: ~1.40 hours solo, 50 minutes à deux joueurs): A droite dans le désert (1205, 1135, 3).
+
+*   **ACADEMIE - 2** (Respawn: ~1.23 hours solo, 43 minutes à deux joueurs)
+    *   **Absinthe** (for Eléonore's dungeon access quest): Territoire des mygales (465, 2380, 6).

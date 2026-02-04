@@ -1,0 +1,26 @@
+sur la base de plants.txt, crée les entrées correspondantes dans le fichiers plants.json. Attention à bien reprendre les informations pour chaque plante et les
+formats de coordonnées doivent etre avec des "." et non des ",". Tu peux aussi mettre le drop rate pour les objets spéciaux et rares. Le format est   {
+   "name": "Nom",
+   "quantity": 1,
+   "source": "Plante",
+   "zone": "Raven's Dust"
+   "dropRate": "Rare",
+   "description": "La description"
+   "coordinates": [
+	   "XXXX.YYYY.Z"
+   ]
+ }
+	 
+	 
+ sur la base de minerai.txt, crée les entrées correspondantes dans le fichiers deposits.json. Attention à bien reprendre les informations pour chaque minerai et les
+formats de coordonnées doivent etre avec des "." et non des ",". Tu peux aussi mettre le drop rate pour les objets spéciaux et rares. Le format est   {
+   "name": "Nom",
+   "quantity": 1,
+   "source": "Minerai",
+   "zone": "Raven's Dust"
+   "dropRate": "Rare",
+   "description": "La description"
+   "coordinates": [
+	   "XXXX.YYYY.Z"
+   ]
+ }

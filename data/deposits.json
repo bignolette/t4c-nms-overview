@@ -1,26 +1,110 @@
 [
   {
-    "name": "Minerais de fer",
+    "name": "Gisements de fer",
     "quantity": 1,
-    "source": "Matériau",
+    "source": "Minerai",
+    "zone": [
+      "Arakas"
+    ],
+    "dropRate": "Common",
+    "description": "Gisement de minerai. Peut donner du Taénite (Rare). Peut donner du Morceau de charbon (Spécial).",
     "coordinates": [
       "525.426.2",
       "200.501.2"
     ]
   },
   {
-    "name": "Minerais de plomb",
+    "name": "Taénite",
     "quantity": 1,
-    "source": "Matériau",
+    "source": "Minerai",
+    "zone": [
+      "Arakas"
+    ],
+    "dropRate": "Rare",
+    "description": "Minerai rare obtenu sur Gisements de fer.",
+    "coordinates": [
+      "525.426.2",
+      "200.501.2"
+    ]
+  },
+  {
+    "name": "Morceau de charbon",
+    "quantity": 1,
+    "source": "Minerai",
+    "zone": [
+      "Arakas"
+    ],
+    "dropRate": "Special",
+    "description": "Minerai spécial obtenu sur Gisements de fer.",
+    "coordinates": [
+      "525.426.2",
+      "200.501.2"
+    ]
+  },
+  {
+    "name": "Gisements de plomb",
+    "quantity": 1,
+    "source": "Minerai",
+    "zone": [
+      "Arakas"
+    ],
+    "dropRate": "Common",
+    "description": "Gisement de minerai. Peut donner du Cérusite (Rare). Peut donner du Morceau de charbon (Spécial).",
     "coordinates": [
       "267.1149.2",
       "289.1139.2"
     ]
   },
   {
-    "name": "Minerais de cuivre",
+    "name": "Cérusite",
     "quantity": 1,
-    "source": "Matériau",
+    "source": "Minerai",
+    "zone": [
+      "Arakas"
+    ],
+    "dropRate": "Rare",
+    "description": "Minerai rare obtenu sur Gisements de plomb.",
+    "coordinates": [
+      "267.1149.2",
+      "289.1139.2"
+    ]
+  },
+  {
+    "name": "Morceau de charbon",
+    "quantity": 1,
+    "source": "Minerai",
+    "zone": [
+      "Arakas"
+    ],
+    "dropRate": "Special",
+    "description": "Minerai spécial obtenu sur Gisements de plomb.",
+    "coordinates": [
+      "267.1149.2",
+      "289.1139.2"
+    ]
+  },
+  {
+    "name": "Gisements de platine",
+    "quantity": 1,
+    "source": "Minerai",
+    "zone": [
+      "Arakas"
+    ],
+    "dropRate": "Common",
+    "description": "Gisement de minerai.",
+    "coordinates": [
+      "2340.280.0"
+    ]
+  },
+  {
+    "name": "Gisements de cuivre",
+    "quantity": 1,
+    "source": "Minerai",
+    "zone": [
+      "Raven's Dust"
+    ],
+    "dropRate": "Common",
+    "description": "Gisement de minerai. Peut donner du Orichalque (Rare).",
     "coordinates": [
       "1188.320.2",
       "1288.131.2",
@@ -29,9 +113,30 @@
     ]
   },
   {
-    "name": "Minerais d'argent",
+    "name": "Orichalque",
     "quantity": 1,
-    "source": "Matériau",
+    "source": "Minerai",
+    "zone": [
+      "Raven's Dust"
+    ],
+    "dropRate": "Rare",
+    "description": "Minerai rare obtenu sur Gisements de cuivre.",
+    "coordinates": [
+      "1188.320.2",
+      "1288.131.2",
+      "1292.320.2",
+      "1405.395.2"
+    ]
+  },
+  {
+    "name": "Gisements d'argent",
+    "quantity": 1,
+    "source": "Minerai",
+    "zone": [
+      "Raven's Dust"
+    ],
+    "dropRate": "Common",
+    "description": "Gisement de minerai. Peut donner du Cobalt (Rare).",
     "coordinates": [
       "860.960.2",
       "955.947.2",
@@ -40,9 +145,30 @@
     ]
   },
   {
-    "name": "Minerais de mithril",
+    "name": "Cobalt",
     "quantity": 1,
-    "source": "Matériau",
+    "source": "Minerai",
+    "zone": [
+      "Raven's Dust"
+    ],
+    "dropRate": "Rare",
+    "description": "Minerai rare obtenu sur Gisements d'argent.",
+    "coordinates": [
+      "860.960.2",
+      "955.947.2",
+      "986.1093.2",
+      "1070.1072.2"
+    ]
+  },
+  {
+    "name": "Gisements de mithril",
+    "quantity": 1,
+    "source": "Minerai",
+    "zone": [
+      "Raven's Dust"
+    ],
+    "dropRate": "Common",
+    "description": "Gisement de minerai. Peut donner du Granite (Rare).",
     "coordinates": [
       "661.145.2",
       "1000.212.2",
@@ -50,9 +176,59 @@
     ]
   },
   {
-    "name": "Minerais d'adamantite",
+    "name": "Granite",
     "quantity": 1,
-    "source": "Matériau",
+    "source": "Minerai",
+    "zone": [
+      "Raven's Dust"
+    ],
+    "dropRate": "Rare",
+    "description": "Minerai rare obtenu sur Gisements de mithril.",
+    "coordinates": [
+      "661.145.2",
+      "1000.212.2",
+      "1016.355.2"
+    ]
+  },
+  {
+    "name": "Gisements d'or",
+    "quantity": 1,
+    "source": "Minerai",
+    "zone": [
+      "Stoneheim"
+    ],
+    "dropRate": "Common",
+    "description": "Gisement de minerai. Peut donner du Rhodite (Rare).",
+    "coordinates": [
+      "1527.378.2",
+      "1643.490.2",
+      "1758.639.2"
+    ]
+  },
+  {
+    "name": "Rhodite",
+    "quantity": 1,
+    "source": "Minerai",
+    "zone": [
+      "Stoneheim"
+    ],
+    "dropRate": "Rare",
+    "description": "Minerai rare obtenu sur Gisements d'or.",
+    "coordinates": [
+      "1527.378.2",
+      "1643.490.2",
+      "1758.639.2"
+    ]
+  },
+  {
+    "name": "Gisements d'Adamantite",
+    "quantity": 1,
+    "source": "Minerai",
+    "zone": [
+      "Stoneheim"
+    ],
+    "dropRate": "Common",
+    "description": "Gisement de minerai. Peut donner du Tourmaline (Rare). Peut donner du Freibergite (Spécial).",
     "coordinates": [
       "2170.340.2",
       "2350.337.2",
@@ -60,18 +236,66 @@
     ]
   },
   {
-    "name": "Minerais d'or",
+    "name": "Tourmaline",
     "quantity": 1,
-    "source": "Matériau",
+    "source": "Minerai",
+    "zone": [
+      "Stoneheim"
+    ],
+    "dropRate": "Rare",
+    "description": "Minerai rare obtenu sur Gisements d'Adamantite.",
     "coordinates": [
-      "1527.378.2",
-      "1643.490.2"
+      "2170.340.2",
+      "2350.337.2",
+      "2010.440.2"
     ]
   },
   {
-    "name": "Minerais de métrolite",
+    "name": "Freibergite",
     "quantity": 1,
-    "source": "Matériau",
+    "source": "Minerai",
+    "zone": [
+      "Stoneheim"
+    ],
+    "dropRate": "Special",
+    "description": "Minerai spécial obtenu sur Gisements d'Adamantite.",
+    "coordinates": [
+      "2170.340.2",
+      "2350.337.2",
+      "2010.440.2"
+    ]
+  },
+  {
+    "name": "Gisements de Saphir",
+    "quantity": 1,
+    "source": "Minerai",
+    "zone": [
+      "Stoneheim"
+    ],
+    "dropRate": "Common",
+    "description": "Gisement de minerai. Peut donner du Azurite (Rare).",
+    "coordinates": []
+  },
+  {
+    "name": "Azurite",
+    "quantity": 1,
+    "source": "Minerai",
+    "zone": [
+      "Stoneheim"
+    ],
+    "dropRate": "Rare",
+    "description": "Minerai rare obtenu sur Gisements de Saphir.",
+    "coordinates": []
+  },
+  {
+    "name": "Gisements de Métrolite",
+    "quantity": 1,
+    "source": "Minerai",
+    "zone": [
+      "Stoneheim"
+    ],
+    "dropRate": "Common",
+    "description": "Gisement de minerai. Peut donner du Obsidienne (Rare).",
     "coordinates": [
       "963.322.0",
       "2025.982.2",
@@ -81,68 +305,16 @@
     ]
   },
   {
-    "name": "Minerais de saphir",
+    "name": "Obsidienne",
     "quantity": 1,
-    "source": "Matériau",
+    "source": "Minerai",
+    "zone": [
+      "Stoneheim"
+    ],
+    "dropRate": "Rare",
+    "description": "Minerai rare obtenu sur Gisements de Métrolite.",
     "coordinates": [
-      ""
-    ]
-  },
-  {
-    "name": "Freibergite",
-    "quantity": 1,
-    "source": "Matériau",
-    "coordinates": [
-      "2170.340.2",
-      "2350.337.2",
-      "2010.440.2"
-    ]
-  },
-  {
-    "name": "Minerais de diamant",
-    "quantity": 1,
-    "source": "Matériau",
-    "coordinates": [
-      ""
-    ]
-  },
-  {
-    "name": "Minerais de rubis",
-    "quantity": 1,
-    "source": "Matériau",
-    "coordinates": [
-      ""
-    ]
-  },
-  {
-    "name": "Minerais d'émeraude",
-    "quantity": 1,
-    "source": "Matériau",
-    "coordinates": [
-      ""
-    ]
-  },
-  {
-    "name": "Minerais de titane",
-    "quantity": 1,
-    "source": "Matériau",
-    "coordinates": [
-      ""
-    ]
-  },
-  {
-    "name": "Minerais d'azurite",
-    "quantity": 1,
-    "source": "Matériau",
-    "coordinates": [
-      ""
-    ]
-  },
-  {
-    "name": "Minerais d'obsidienne",
-    "quantity": 1,
-    "source": "Matériau",
-    "coordinates": [
+      "963.322.0",
       "2025.982.2",
       "2095.1147.2",
       "2255.821.2",
@@ -150,41 +322,91 @@
     ]
   },
   {
-    "name": "Minerais d'orichalque",
+    "name": "Gisements de titane",
     "quantity": 1,
-    "source": "Matériau",
-    "coordinates": [
-      "1188.320.2",
-      "1288.131.2",
-      "1292.320.2",
-      "1405.395.2"
-    ]
+    "source": "Minerai",
+    "zone": [
+      "Drake Island"
+    ],
+    "dropRate": "Common",
+    "description": "Gisement de minerai. Peut donner du Sphène (Rare).",
+    "coordinates": []
   },
   {
-    "name": "Minerais de cérusite",
+    "name": "Sphène",
     "quantity": 1,
-    "source": "Matériau",
-    "coordinates": [
-      "267.1149.2",
-      "289.1139.2"
-    ]
+    "source": "Minerai",
+    "zone": [
+      "Drake Island"
+    ],
+    "dropRate": "Rare",
+    "description": "Minerai rare obtenu sur Gisements de titane.",
+    "coordinates": []
   },
   {
-    "name": "Minerais de quartz",
+    "name": "Gisements de diamant",
     "quantity": 1,
-    "source": "Matériau",
-    "coordinates": [
-      ""
-    ]
+    "source": "Minerai",
+    "zone": [
+      "Drake Island"
+    ],
+    "dropRate": "Common",
+    "description": "Gisement de minerai. Peut donner du Quartz (Rare).",
+    "coordinates": []
   },
   {
-    "name": "Minerais de rhodite",
+    "name": "Quartz",
     "quantity": 1,
-    "source": "Matériau",
-    "coordinates": [
-      "1527.378.2",
-      "1643.490.2",
-      "1758.639.2"
-    ]
+    "source": "Minerai",
+    "zone": [
+      "Drake Island"
+    ],
+    "dropRate": "Rare",
+    "description": "Minerai rare obtenu sur Gisements de diamant.",
+    "coordinates": []
+  },
+  {
+    "name": "Gisements d'émeraude",
+    "quantity": 1,
+    "source": "Minerai",
+    "zone": [
+      "Drake Island"
+    ],
+    "dropRate": "Common",
+    "description": "Gisement de minerai. Peut donner du Jade (Rare).",
+    "coordinates": []
+  },
+  {
+    "name": "Jade",
+    "quantity": 1,
+    "source": "Minerai",
+    "zone": [
+      "Drake Island"
+    ],
+    "dropRate": "Rare",
+    "description": "Minerai rare obtenu sur Gisements d'émeraude.",
+    "coordinates": []
+  },
+  {
+    "name": "Gisements de rubis",
+    "quantity": 1,
+    "source": "Minerai",
+    "zone": [
+      "Drake Island"
+    ],
+    "dropRate": "Common",
+    "description": "Gisement de minerai. Peut donner du Cornaline (Rare). Peut donner du Cornaline (Spécial).",
+    "coordinates": []
+  },
+  {
+    "name": "Cornaline",
+    "quantity": 1,
+    "source": "Minerai",
+    "zone": [
+      "Drake Island"
+    ],
+    "dropRate": "Rare",
+    "description": "Minerai rare obtenu sur Gisements de rubis.",
+    "coordinates": []
   }
 ]

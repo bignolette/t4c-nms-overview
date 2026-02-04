@@ -1,42 +1,30 @@
 [
   {
-    "name": "Feuille de Consoude",
+    "name": "Mandragore",
     "quantity": 1,
-    "source": "Divers",
+    "source": "Plante",
+    "zone": [
+      "Arakas"
+    ],
+    "dropRate": "Common",
+    "description": "Temps de repousse: 20 minutes solo, 10 minutes à deux joueurs.",
     "coordinates": [
-      "293.1016.0",
-      "245.420.0",
-      "558.861.0"
+      "2650.181.0",
+      "2566.423.0",
+      "2052.585.0",
+      "2847.732.0",
+      "2831.378.0"
     ]
   },
   {
-    "name": "Fleur d'arnica",
+    "name": "Ciguë",
     "quantity": 1,
-    "source": "Divers",
-    "coordinates": [
-      "2723.1235.0",
-      "2709.830.0",
-      "2551.1182.0",
-      "2559.974.0",
-      "2314.1044.0"
-    ]
-  },
-  {
-    "name": "Racine de ginseng",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": [
-      "1812.1122.0",
-      "1909.1093.0",
-      "2284.1299.0",
-      "2374.1384.0",
-      "2246.1045.0"
-    ]
-  },
-  {
-    "name": "Feuille de ciguë",
-    "quantity": 1,
-    "source": "Divers",
+    "source": "Plante",
+    "zone": [
+      "Arakas"
+    ],
+    "dropRate": "Common",
+    "description": "Temps de repousse: 20 minutes solo, 10 minutes à deux joueurs.",
     "coordinates": [
       "2320.146.0",
       "1492.200.0",
@@ -46,84 +34,31 @@
     ]
   },
   {
-    "name": "Feuille de maté",
+    "name": "Arnica",
     "quantity": 1,
-    "source": "Divers",
+    "source": "Plante",
+    "zone": [
+      "Arakas"
+    ],
+    "dropRate": "Common",
+    "description": "Temps de repousse: 20 minutes solo, 10 minutes à deux joueurs.",
     "coordinates": [
-      "1563.2892.0",
-      "1125.2065.0",
-      "589.2060.0",
-      "1178.2380.0"
+      "2709.830.0",
+      "2559.974.0",
+      "2314.1044.0",
+      "2551.1182.0",
+      "2723.1235.0"
     ]
   },
   {
-    "name": "Feuille de datura",
+    "name": "Charme",
     "quantity": 1,
-    "source": "Divers",
-    "coordinates": [
-      "971.1954.0",
-      "462.1819.0",
-      "645.1506.0",
-      "1047.1831.0"
-    ]
-  },
-  {
-    "name": "Fleur de cactus",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": [
-      "272.2418.0",
-      "318.2479.0",
-      "345.2330.0",
-      "425.2674.0"
-    ]
-  },
-  {
-    "name": "Cerise d'acérola",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": [
-      "1095.1223.0",
-      "465.134.0",
-      "821.896.0"
-    ]
-  },
-  {
-    "name": "Fleur de colchique",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": [
-      "781.525.0",
-      "1132.308.0",
-      "1336.398.0"
-    ]
-  },
-  {
-    "name": "Feuille de boldo",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": [
-      "856.710.0",
-      "1103.147.0",
-      "897.76.0"
-    ]
-  },
-  {
-    "name": "Gerbe de chanvre",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": [
-      "2685.566.0",
-      "2807.650.0",
-      "2705.650.0",
-      "1614.102.0",
-      "2055.877.0"
-    ]
-  },
-  {
-    "name": "Feuille de charme",
-    "quantity": 1,
-    "source": "Divers",
+    "source": "Plante",
+    "zone": [
+      "Arakas"
+    ],
+    "dropRate": "Common",
+    "description": "Temps de repousse: 20 minutes solo, 10 minutes à deux joueurs.",
     "coordinates": [
       "2759.903.0",
       "2223.809.0",
@@ -133,43 +68,216 @@
     ]
   },
   {
-    "name": "Fleur de coton",
+    "name": "Chanvre",
     "quantity": 1,
-    "source": "Arme",
+    "source": "Plante",
+    "zone": [
+      "Arakas"
+    ],
+    "dropRate": "Common",
+    "description": "Temps de repousse: 20 minutes solo, 10 minutes à deux joueurs.",
+    "coordinates": [
+      "2685.566.0",
+      "2705.650.0",
+      "2055.877.0",
+      "1614.102.0",
+      "2807.650.0"
+    ]
+  },
+  {
+    "name": "Ginseng",
+    "quantity": 1,
+    "source": "Plante",
+    "zone": [
+      "Arakas"
+    ],
+    "dropRate": "Common",
+    "description": "Temps de repousse: 20 minutes solo, 10 minutes à deux joueurs.",
+    "coordinates": [
+      "1812.1122.0",
+      "1909.1093.0",
+      "2284.1299.0",
+      "2374.1384.0",
+      "2246.1045.0"
+    ]
+  },
+  {
+    "name": "Coton",
+    "quantity": 1,
+    "source": "Plante",
+    "zone": [
+      "Raven's Dust"
+    ],
+    "dropRate": "Common",
+    "description": "Temps de repousse: 1 hour solo, 30 minutes à deux joueurs.",
     "coordinates": [
       "757.1479.0",
-      "991.2028.0",
+      "817.2209.0",
       "275.1634.0",
-      "817.2209.0"
+      "991.2028.0"
     ]
   },
   {
-    "name": "Violettes sauvages",
+    "name": "Immortelle",
     "quantity": 1,
-    "source": "Divers",
-    "coordinates": "930.150.7"
-  },
-  {
-    "name": "Racine de mandragore",
-    "quantity": 1,
-    "source": "Divers",
+    "source": "Plante",
+    "zone": [
+      "Raven's Dust"
+    ],
+    "dropRate": "Common",
+    "description": "Temps de repousse: 1 hour solo, 30 minutes à deux joueurs.",
     "coordinates": [
-      "2650.181.0",
-      "2566.423.0",
-      "2847.732.0",
-      "2052.585.0",
-      "2831.378.0"
-    ]
-  },
-  {
-    "name": "Fleur d'immortelle",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": [
-      "965.2445.0",
       "1323.2212.0",
-      "61.2518.0",
-      "1281.2609.0"
+      "965.2445.0",
+      "1281.2609.0",
+      "61.2518.0"
+    ]
+  },
+  {
+    "name": "Maté",
+    "quantity": 1,
+    "source": "Plante",
+    "zone": [
+      "Raven's Dust"
+    ],
+    "dropRate": "Common",
+    "description": "Temps de repousse: 1 hour solo, 30 minutes à deux joueurs.",
+    "coordinates": [
+      "1178.2380.0",
+      "1563.2892.0",
+      "1125.2065.0",
+      "589.2060.0"
+    ]
+  },
+  {
+    "name": "Datura",
+    "quantity": 1,
+    "source": "Plante",
+    "zone": [
+      "Raven's Dust"
+    ],
+    "dropRate": "Common",
+    "description": "Temps de repousse: 1 hour solo, 30 minutes à deux joueurs.",
+    "coordinates": [
+      "462.1819.0",
+      "971.1954.0",
+      "645.1506.0",
+      "1047.1831.0"
+    ]
+  },
+  {
+    "name": "Cactus",
+    "quantity": 1,
+    "source": "Plante",
+    "zone": [
+      "Raven's Dust"
+    ],
+    "dropRate": "Common",
+    "description": "Temps de repousse: 1 hour solo, 30 minutes à deux joueurs.",
+    "coordinates": [
+      "272.2418.0",
+      "318.2479.0",
+      "345.2330.0",
+      "425.2674.0"
+    ]
+  },
+  {
+    "name": "Consoude",
+    "quantity": 1,
+    "source": "Plante",
+    "zone": [
+      "Stoneheim"
+    ],
+    "dropRate": "Common",
+    "description": "Temps de repousse: 2 hours solo, 1 hour à deux joueurs.",
+    "coordinates": [
+      "245.420.0",
+      "293.1016.0",
+      "558.861.0"
+    ]
+  },
+  {
+    "name": "Acérola",
+    "quantity": 1,
+    "source": "Plante",
+    "zone": [
+      "Stoneheim"
+    ],
+    "dropRate": "Common",
+    "description": "Temps de repousse: 2 hours solo, 1 hour à deux joueurs.",
+    "coordinates": [
+      "465.134.0",
+      "821.896.0",
+      "1095.1223.0"
+    ]
+  },
+  {
+    "name": "Boldo",
+    "quantity": 1,
+    "source": "Plante",
+    "zone": [
+      "Stoneheim"
+    ],
+    "dropRate": "Common",
+    "description": "Temps de repousse: 2 hours solo, 1 hour à deux joueurs.",
+    "coordinates": [
+      "856.710.0",
+      "1103.147.0",
+      "897.76.0"
+    ]
+  },
+  {
+    "name": "Colchique",
+    "quantity": 1,
+    "source": "Plante",
+    "zone": [
+      "Stoneheim"
+    ],
+    "dropRate": "Common",
+    "description": "Temps de repousse: 2 hours solo, 1 hour à deux joueurs.",
+    "coordinates": [
+      "781.525.0",
+      "1336.398.0",
+      "1132.308.0"
+    ]
+  },
+  {
+    "name": "Absinthe",
+    "quantity": 1,
+    "source": "Plante",
+    "zone": [
+      "Drake Island"
+    ],
+    "dropRate": "Rare",
+    "description": "Temps de repousse: ~1.23 hours solo, 43 minutes à deux joueurs.",
+    "coordinates": [
+      "1070.1270.3"
+    ]
+  },
+  {
+    "name": "Tamaris",
+    "quantity": 1,
+    "source": "Plante",
+    "zone": [
+      "Drake Island"
+    ],
+    "dropRate": "Common",
+    "description": "Temps de repousse: ~1.23 hours solo, 43 minutes à deux joueurs.",
+    "coordinates": [
+      "1205.1135.3"
+    ]
+  },
+  {
+    "name": "Absinthe",
+    "quantity": 1,
+    "source": "Plante",
+    "zone": [
+      "Académie -2"
+    ],
+    "dropRate": "Rare",
+    "description": "Temps de repousse: ~1.23 hours solo, 43 minutes à deux joueurs.",
+    "coordinates": [
+      "465.2380.6"
     ]
   }
 ]

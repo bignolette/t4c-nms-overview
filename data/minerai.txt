@@ -1,0 +1,36 @@
+Minerai
+
+The "Minerai" page lists various ore deposits, their destruction times, and locations, along with information about the required pickaxes and rare/special minerals.
+
+*   **General Information:**
+    *   Ore deposits are found on the four main islands of Althea.
+    *   The pickaxe used must match the island, unless it's a legendary pickaxe.
+    *   **Cailloux (Pebbles):** Sellable to NPCs in crafting districts (AR: 500gp, RD: 1000gp, SH: 1500gp, DI: 2000gp).
+    *   **Minerais spéciaux (Special Ores):** Used in crafting (e.g., Morceau de charbon, Freibergite).
+    *   **Minerais rares (Rare Ores):** Dropped in ~1% of cases, used for legendary pickaxes and other items.
+
+*   **ARAKAS** (Deposit destruction time: 1 minute 45 seconds)
+    *   **Pioche du mineur** (18 force) dropped by Trish Jalnec in Cave D of Righul mountains (870, 2629, 2).
+    *   **Gisements de fer (Iron Deposits):** Cave de LH. Rare ore: Taénite. Special ore: Morceau de charbon (525, 426, 2 / 200, 501, 2).
+    *   **Gisements de plomb (Lead Deposits):** Cave des brigands. Rare ore: Cérusite. Special ore: Morceau de charbon (267, 1149, 2 / 289, 1139, 2).
+    *   **Gisements de platine (Platinum Deposits):** Cave de la Gitane (entrance at 2340, 280, 0) (Christmas event only).
+
+*   **RAVEN DUST**
+    *   **Pioche du mineur expérimenté** (23 force) dropped by Iago Caballero South of RD (813, 2714, 0), respawns every ~40 min.
+    *   **Gisements de cuivre (Copper Deposits):** Cave d'Anrak. Rare ore: Orichalque (1188, 320, 2 / 1288, 131, 2 / 1292, 320, 2 / 1405, 395, 2).
+    *   **Gisements d'argent (Silver Deposits):** Cave Orc level -2. Rare ore: Cobalt (860, 960, 2 / 955, 947, 2 / 986, 1093, 2 / 1070, 1072, 2).
+    *   **Gisements de mithril (Mithril Deposits):** Cave des Profundus. Rare ore: Granite (661, 145, 2 / 1000, 212, 2 / 1016, 355, 2).
+
+*   **STONEHEIM** (Deposit destruction time: 2 minutes 20 seconds)
+    *   **Pioche du mineur expert** (28 force) dropped by "Mineurs Gremlins" in Bois Creux.
+    *   **Gisements d'or (Gold Deposits):** Cave des Centaures. Rare ore: Rhodite (1527, 378, 2 / 1643, 490, 2 / 1758, 639, 2).
+    *   **Gisements d'Adamantite (Adamantite Deposits):** Cave des Abeilles. Rare ore: Tourmaline. Special ore: Freibergite (2170, 340, 2 / 2350, 337, 2 / 2010, 440, 2).
+    *   **Gisements de Saphir (Sapphire Deposits):** Cave Skraugs Verts. Rare ore: Azurite.
+    *   **Gisements de Métrolite (Metrolite Deposits):** Cave des Bois Creux (963, 322, 0). Rare ore: Obsidienne (2025, 982, 2 / 2095, 1147, 2 / 2255, 821, 2 / 2311, 995, 2).
+
+*   **Drake Island** (Deposit respawn time: 30 minutes. Destruction time: 2 minutes 45 seconds)
+    *   **Pioche du mineur reconnu** (33 force) dropped by "Gremlins terreux" in Humterre cave.
+    *   **Gisements de titane (Titanium Deposits):** Cave Humterre DI. Rare ore: Sphène.
+    *   **Gisements de diamant (Diamond Deposits):** Cave Humterre DI. Rare ore: Quartz.
+    *   **Gisements d'émeraude (Emerald Deposits):** Cave Humterre DI. Rare ore: Jade.
+    *   **Gisements de rubis (Ruby Deposits):** Cave du Beholder (DI). Rare ore: Cornaline. Special ore: Cornaline.
