@@ -274,7 +274,20 @@
     ],
     "dropRate": "Common",
     "description": "Gisement de minerai. Peut donner du Azurite (Rare).",
-    "coordinates": []
+    "coordinates": [
+      "2294.1301.2",
+      "2290.1280.2",
+      "2310.1303.2",
+      "2123.1344.2",
+      "2139.1325.2",
+      "2149.1334.2",
+      "2267.1531.2",
+      "2260.1542.2",
+      "2268.1548.2",
+      "2458.1563.2",
+      "2467.1576.2",
+      "2481.1559.2"
+    ]
   },
   {
     "name": "Azurite",
@@ -285,7 +298,20 @@
     ],
     "dropRate": "Rare",
     "description": "Minerai rare obtenu sur Gisements de Saphir.",
-    "coordinates": []
+    "coordinates": [
+      "2294.1301.2",
+      "2290.1280.2",
+      "2310.1303.2",
+      "2123.1344.2",
+      "2139.1325.2",
+      "2149.1334.2",
+      "2267.1531.2",
+      "2260.1542.2",
+      "2268.1548.2",
+      "2458.1563.2",
+      "2467.1576.2",
+      "2481.1559.2"
+    ]
   },
   {
     "name": "Gisements de Métrolite",
@@ -330,7 +356,17 @@
     ],
     "dropRate": "Common",
     "description": "Gisement de minerai. Peut donner du Sphène (Rare).",
-    "coordinates": []
+    "coordinates": [
+      "1979.2274.3",
+      "1987.2288.3",
+      "1996.2281.3",
+      "1927.2351.3",
+      "1936.2358.3",
+      "1921.2374.3",
+      "1943.2533.3",
+      "1942.2547.3",
+      "1946.2555.3"
+    ]
   },
   {
     "name": "Sphène",
@@ -341,7 +377,17 @@
     ],
     "dropRate": "Rare",
     "description": "Minerai rare obtenu sur Gisements de titane.",
-    "coordinates": []
+    "coordinates": [
+      "1979.2274.3",
+      "1987.2288.3",
+      "1996.2281.3",
+      "1927.2351.3",
+      "1936.2358.3",
+      "1921.2374.3",
+      "1943.2533.3",
+      "1942.2547.3",
+      "1946.2555.3"
+    ]
   },
   {
     "name": "Gisements de diamant",
@@ -352,7 +398,17 @@
     ],
     "dropRate": "Common",
     "description": "Gisement de minerai. Peut donner du Quartz (Rare).",
-    "coordinates": []
+    "coordinates": [
+      "1783.2279.3",
+      "1789.2266.3",
+      "1799.2279.3",
+      "1844.2314.3",
+      "1853.2335.3",
+      "1870.2314.3",
+      "1964.2334.3",
+      "1963.2350.3",
+      "1977.2356.3"
+    ]
   },
   {
     "name": "Quartz",
@@ -363,7 +419,17 @@
     ],
     "dropRate": "Rare",
     "description": "Minerai rare obtenu sur Gisements de diamant.",
-    "coordinates": []
+    "coordinates": [
+      "1783.2279.3",
+      "1789.2266.3",
+      "1799.2279.3",
+      "1844.2314.3",
+      "1853.2335.3",
+      "1870.2314.3",
+      "1964.2334.3",
+      "1963.2350.3",
+      "1977.2356.3"
+    ]
   },
   {
     "name": "Gisements d'émeraude",
@@ -374,7 +440,16 @@
     ],
     "dropRate": "Common",
     "description": "Gisement de minerai. Peut donner du Jade (Rare).",
-    "coordinates": []
+    "coordinates": [
+      "1829.2183.3",
+      "1818.2195.3",
+      "1841.2198.3",
+      "1995.2190.3",
+      "2012.2203.3",
+      "1999.2210.3",
+      "2045.2394.3",
+      "2052.2386.3"
+    ]
   },
   {
     "name": "Jade",
@@ -385,7 +460,16 @@
     ],
     "dropRate": "Rare",
     "description": "Minerai rare obtenu sur Gisements d'émeraude.",
-    "coordinates": []
+    "coordinates": [
+      "1829.2183.3",
+      "1818.2195.3",
+      "1841.2198.3",
+      "1995.2190.3",
+      "2012.2203.3",
+      "1999.2210.3",
+      "2045.2394.3",
+      "2052.2386.3"
+    ]
   },
   {
     "name": "Gisements de rubis",
@@ -396,7 +480,17 @@
     ],
     "dropRate": "Common",
     "description": "Gisement de minerai. Peut donner du Cornaline (Rare). Peut donner du Cornaline (Spécial).",
-    "coordinates": []
+    "coordinates": [
+      "1584.2745.3",
+      "1572.2757.3",
+      "1587.2767.3",
+      "1595.2845.3",
+      "1599.2838.3",
+      "1588.2854.3",
+      "1705.2803.3",
+      "1703.2813.3",
+      "1711.2819.3"
+    ]
   },
   {
     "name": "Cornaline",
@@ -407,6 +501,16 @@
     ],
     "dropRate": "Rare",
     "description": "Minerai rare obtenu sur Gisements de rubis.",
-    "coordinates": []
+    "coordinates": [
+      "1584.2745.3",
+      "1572.2757.3",
+      "1587.2767.3",
+      "1595.2845.3",
+      "1599.2838.3",
+      "1588.2854.3",
+      "1705.2803.3",
+      "1703.2813.3",
+      "1711.2819.3"
+    ]
   }
 ]
