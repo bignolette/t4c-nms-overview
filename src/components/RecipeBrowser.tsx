@@ -15,7 +15,6 @@ import {
 } from 'lucide-react';
 import Pagination from './shared/Pagination';
 import StatBadge from './shared/StatBadge';
-import ScrollContainer from './shared/ScrollContainer';
 import { useClipboard } from '../hooks/useClipboard';
 
 interface RecipeBrowserProps {
@@ -318,7 +317,7 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
           
           <div className="relative z-10">
             <h3 className="font-black text-slate-100 group-hover:text-amber-400 transition-colors text-[15px] leading-tight flex items-center gap-2 overflow-hidden min-h-[40px]">
-              <span className="flex-1 truncate">{recipe.name}</span>
+              <span className="flex-1">{recipe.name}</span>
               <button 
                 onClick={(e) => { e.stopPropagation(); copy(recipe.name); }}
                 className="p-1.5 hover:bg-white/10 rounded-lg transition-all shrink-0 bg-slate-900/50 md:bg-transparent"
@@ -471,7 +470,7 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
                 </div>
                 <div>
                   <h3 className="text-2xl font-black text-slate-100 mb-1 flex flex-wrap items-center gap-3">
-                    <span className="truncate">{recipe.name}</span>
+                    <span>{recipe.name}</span>
                     <button 
                       onClick={() => copy(recipe.name)}
                       className="p-2 hover:bg-slate-800 rounded-xl transition-all bg-slate-900 md:bg-transparent text-amber-500/70 md:text-slate-500 md:hover:text-amber-500"
@@ -797,27 +796,25 @@ const NPCGroupedView = ({
           </div>
 
           <div className="lg:col-span-8 flex flex-wrap gap-2 justify-end">
-            <div className="flex bg-slate-900/50 p-1 rounded-2xl border border-slate-800 backdrop-blur-xl">
-              <ScrollContainer className="gap-1 px-1">
-                <div className="flex gap-1">
-                  {PROFESSIONS.map(p => {
-                    const isSelected = selectedProf === p;
-                    return (
-                      <button
-                        key={p}
-                        onClick={() => { onSelectProf(p); setFocusedArtisan(null); }}
-                        className={`px-4 py-2.5 rounded-xl text-[10px] md:text-xs font-black uppercase tracking-wider transition-all flex items-center gap-2 border ${
-                          isSelected 
-                            ? (p === 'Tous' ? 'bg-amber-500 border-amber-400 text-slate-950 shadow-lg' : `${VIBRANT_PROF_COLORS[p] || 'bg-amber-500 text-slate-950'} text-white shadow-lg`) 
-                            : 'bg-slate-950 text-slate-500 border-slate-800 hover:border-slate-600 hover:text-slate-200'
-                        }`}
-                      >
-                        {p}
-                      </button>
-                    );
-                  })}
-                </div>
-              </ScrollContainer>
+            <div className="flex bg-slate-900/50 p-1.5 rounded-2xl border border-slate-800 backdrop-blur-xl">
+              <div className="flex flex-wrap gap-1.5 justify-center md:justify-end">
+                {PROFESSIONS.map(p => {
+                  const isSelected = selectedProf === p;
+                  return (
+                    <button
+                      key={p}
+                      onClick={() => { onSelectProf(p); setFocusedArtisan(null); }}
+                      className={`px-4 py-2.5 rounded-xl text-[10px] md:text-xs font-black uppercase tracking-wider transition-all flex items-center gap-2 border ${
+                        isSelected 
+                          ? (p === 'Tous' ? 'bg-amber-500 border-amber-400 text-slate-950 shadow-lg' : `${VIBRANT_PROF_COLORS[p] || 'bg-amber-500 text-slate-950'} text-white shadow-lg`) 
+                          : 'bg-slate-950 text-slate-500 border-slate-800 hover:border-slate-600 hover:text-slate-200'
+                      }`}
+                    >
+                      {p}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
@@ -957,7 +954,7 @@ const NPCGroupedView = ({
                         <div className="min-w-0">
                           <button 
                             onClick={() => onNavigateToRecipe(recipe.name)}
-                            className="text-sm font-bold text-slate-200 group-hover:text-amber-400 truncate text-left block w-full"
+                            className="text-sm font-bold text-slate-200 group-hover:text-amber-400 text-left block w-full"
                           >
                             {recipe.name}
                           </button>
@@ -1133,16 +1130,15 @@ const ProjectCard = ({ project, recipes, onToggleIngredient, onDelete, onNavigat
                                                 : 'bg-slate-950 border-slate-800 text-slate-400 hover:border-slate-600'
                                         }`}
                                     >
-                                        <div className="flex items-center gap-3 min-w-0">
-                                            <div className={`shrink-0 ${isCollected ? 'text-emerald-500' : 'text-slate-700 group-hover/ing:text-slate-500'}`}>
-                                                {isCollected ? <CheckSquare size={16} /> : <Square size={16} />}
-                                            </div>
-                                            <div className="flex flex-col min-w-0">
-                                                <span className={`text-xs font-bold truncate ${isCollected ? 'line-through opacity-50' : ''}`}>
-                                                    {ing.name}
-                                                </span>
-                                                {ing.isCraftable && !isCollected && (
-                                                    <span className="text-[8px] font-black text-amber-500/50 uppercase tracking-tighter text-left">CRAFTABLE</span>
+                                                                                    <div className="flex items-center gap-3 min-w-0">
+                                                                                        <div className={`shrink-0 ${isCollected ? 'text-emerald-500' : 'text-slate-700 group-hover/ing:text-slate-500'}`}>
+                                                                                            {isCollected ? <CheckSquare size={16} /> : <Square size={16} />}
+                                                                                        </div>
+                                                                                        <div className="flex flex-col min-w-0">
+                                                                                            <span className={`text-xs font-bold ${isCollected ? 'line-through opacity-50' : ''}`}>
+                                                                                                {ing.name}
+                                                                                            </span>
+                                                                                            {ing.isCraftable && !isCollected && (                                                    <span className="text-[8px] font-black text-amber-500/50 uppercase tracking-tighter text-left">CRAFTABLE</span>
                                                 )}
                                             </div>
                                         </div>
@@ -1609,24 +1605,33 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
 
       {viewMode === 'search' ? (
         <>
-          {/* Main Search Bar */}
-          <div className="relative group">
-            <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-amber-500 transition-all duration-300 group-focus-within:scale-110 pointer-events-none" size={20} />
-            <input
-              type="text"
-              placeholder={isItemsPage ? "Rechercher un objet ou un bonus..." : "Rechercher une recette ou un composant..."}
-              value={activeSearchTerm}
-              onChange={(e) => handleSearchChange(e.target.value)}
-              className="w-full bg-slate-900/50 backdrop-blur-xl border-2 border-slate-800 rounded-[20px] py-4 md:py-5 pl-14 pr-12 text-lg text-white focus:border-amber-500 outline-none transition-all shadow-xl placeholder:text-slate-700 font-bold"
-            />
-            {activeSearchTerm && (
-              <button 
-                onClick={() => handleSearchChange('')} 
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 hover:text-white p-2 bg-slate-800/50 rounded-lg transition-all"
-              >
-                <X size={18} />
-              </button>
-            )}
+          <div className="flex flex-col md:flex-row gap-4 items-center">
+            {/* Main Search Bar */}
+            <div className="relative group w-full">
+              <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-amber-500 transition-all duration-300 group-focus-within:scale-110 pointer-events-none" size={20} />
+              <input
+                type="text"
+                placeholder={isItemsPage ? "Rechercher un objet ou un bonus..." : "Rechercher une recette ou un composant..."}
+                value={activeSearchTerm}
+                onChange={(e) => handleSearchChange(e.target.value)}
+                className="w-full bg-slate-900/50 backdrop-blur-xl border-2 border-slate-800 rounded-[20px] py-4 md:py-5 pl-14 pr-12 text-lg text-white focus:border-amber-500 outline-none transition-all shadow-xl placeholder:text-slate-700 font-bold"
+              />
+              {activeSearchTerm && (
+                <button 
+                  onClick={() => handleSearchChange('')} 
+                  className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 hover:text-white p-2 bg-slate-800/50 rounded-lg transition-all"
+                >
+                  <X size={18} />
+                </button>
+              )}
+            </div>
+
+            <div className="flex items-center gap-4 px-6 py-4 bg-slate-900/50 rounded-[20px] border border-slate-800 shadow-inner shrink-0 h-[68px]">
+              <div className="text-slate-400 whitespace-nowrap flex items-center gap-2">
+                <span className="font-black text-amber-500 text-xl">{filteredRecipes.length}</span>
+                <span className="text-[10px] font-black uppercase tracking-widest opacity-60">/ {recipes.length}</span>
+              </div>
+            </div>
           </div>
 
           <div className="bg-slate-900 border border-slate-800 rounded-2xl p-4 md:p-6 shadow-xl relative overflow-hidden">

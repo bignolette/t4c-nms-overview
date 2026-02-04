@@ -42,7 +42,7 @@ export const SkillCard = memo(({ skill }: { skill: Skill }) => {
               </span>
             </div>
             <h3 className="text-xl font-black group-hover:text-emerald-400 transition-colors leading-tight italic tracking-tight text-slate-100 flex items-center gap-2 overflow-hidden">
-              <span className="truncate">{skill.name}</span>
+              <span>{skill.name}</span>
               <button 
                 onClick={() => copy(skill.name)}
                 className="p-1.5 hover:bg-white/10 rounded-lg transition-all shrink-0 bg-slate-900/50 md:bg-transparent"
@@ -233,7 +233,7 @@ const SkillList = ({ skills }: SkillListProps) => {
             <div className="flex items-center gap-4 px-4 py-2 bg-slate-950/50 rounded-xl border border-slate-800 shadow-inner">
               <div className="text-slate-400 whitespace-nowrap flex items-center gap-2">
                 <span className="font-black text-emerald-500 text-lg">{filteredSkills.length}</span>
-                <span className="text-[9px] md:text-[10px] font-black uppercase tracking-widest opacity-60">match</span>
+                <span className="text-[9px] md:text-[10px] font-black uppercase tracking-widest opacity-60">/ {skills.length}</span>
               </div>
             </div>
           </div>

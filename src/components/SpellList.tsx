@@ -11,7 +11,6 @@ import {
 } from 'lucide-react';
 import Pagination from './shared/Pagination';
 import StatBadge from './shared/StatBadge';
-import ScrollContainer from './shared/ScrollContainer';
 import { useClipboard } from '../hooks/useClipboard';
 
 interface SpellListProps {
@@ -100,7 +99,7 @@ export const SpellCard = memo(({ spell, onNavigate }: { spell: Spell, onNavigate
               )}
             </div>
             <h3 className="text-xl font-black group-hover:text-white transition-colors leading-tight italic tracking-tight text-slate-100 flex items-center gap-2 overflow-hidden">
-              <span className="truncate">{spell.name}</span>
+              <span>{spell.name}</span>
               <button 
                 onClick={() => copy(spell.name)}
                 className="p-1.5 hover:bg-white/10 rounded-lg transition-all shrink-0 bg-slate-900/50 md:bg-transparent"
@@ -357,7 +356,7 @@ const SpellList = ({ spells }: SpellListProps) => {
             <div className="flex items-center gap-4 px-4 py-2 bg-slate-950/50 rounded-xl border border-slate-800 shadow-inner">
               <div className="text-slate-400 whitespace-nowrap flex items-center gap-2">
                 <span className="font-black text-blue-500 text-lg">{filteredSpells.length}</span>
-                <span className="text-[9px] md:text-[10px] font-black uppercase tracking-widest opacity-60">match</span>
+                <span className="text-[9px] md:text-[10px] font-black uppercase tracking-widest opacity-60">/ {spells.length}</span>
               </div>
             </div>
           </div>
@@ -369,28 +368,26 @@ const SpellList = ({ spells }: SpellListProps) => {
               <Sparkles size={16} className="text-blue-500/50" />
               <span className="text-[10px] font-black uppercase tracking-[0.2em]">Écoles de Magie</span>
             </div>
-            <ScrollContainer className="pb-1">
-              <div className="flex gap-2 min-w-max">
-                {allSchools.map(school => {
-                  const config = SCHOOL_CONFIG[school];
-                  const isActive = selectedSchool === school;
-                  const Icon = config?.icon || Sparkles;
-                  return (
-                    <button
-                      key={school}
-                      onClick={() => { setSelectedSchool(school); setCurrentPage(1); }}
-                      className={`px-4 py-2.5 rounded-xl text-[10px] font-black uppercase tracking-wider transition-all border flex items-center gap-2 
-                        ${isActive 
-                          ? `${config?.bg || 'bg-blue-600'} ${config?.color || 'text-white'} ${config?.border || 'border-blue-500'} shadow-lg scale-105 z-10` 
-                          : 'bg-slate-900 border-slate-800 text-slate-500 hover:text-slate-200 hover:border-slate-600'}`}
-                    >
-                      <Icon size={14} className={isActive ? '' : 'opacity-50'} />
-                      {school}
-                    </button>
-                  );
-                })}
-              </div>
-            </ScrollContainer>
+            <div className="flex flex-wrap gap-2 justify-start">
+              {allSchools.map(school => {
+                const config = SCHOOL_CONFIG[school];
+                const isActive = selectedSchool === school;
+                const Icon = config?.icon || Sparkles;
+                return (
+                  <button
+                    key={school}
+                    onClick={() => { setSelectedSchool(school); setCurrentPage(1); }}
+                    className={`px-4 py-2.5 rounded-xl text-[10px] font-black uppercase tracking-wider transition-all border flex items-center gap-2 
+                      ${isActive 
+                        ? `${config?.bg || 'bg-blue-600'} ${config?.color || 'text-white'} ${config?.border || 'border-blue-500'} shadow-lg scale-105 z-10` 
+                        : 'bg-slate-900 border-slate-800 text-slate-500 hover:text-slate-200 hover:border-slate-600'}`}
+                  >
+                    <Icon size={14} className={isActive ? '' : 'opacity-50'} />
+                    {school}
+                  </button>
+                );
+              })}
+            </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 relative z-10">

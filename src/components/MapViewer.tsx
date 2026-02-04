@@ -295,6 +295,13 @@ const MapViewer: React.FC = () => {
     }
   };
 
+  const handleMapClick = () => {
+    const coordString = `${coords.gx}.${coords.gy}.${selectedMap.worldId}`;
+    navigator.clipboard.writeText(coordString).then(() => {
+      showNotification(`Coordonnées copiées : ${coordString}`, 'success');
+    });
+  };
+
   const filteredDataLayers = useMemo(() => {
     if (!searchQuery) return dataLayers;
     const query = fastNormalize(searchQuery);
@@ -513,7 +520,7 @@ const MapViewer: React.FC = () => {
                 </div>
 
                 <TransformComponent wrapperStyle={{ width: "100%", height: "100%" }}>
-                  <div onMouseMove={handleMouseMove} className="relative cursor-crosshair">
+                  <div onMouseMove={handleMouseMove} onDoubleClick={handleMapClick} className="relative cursor-crosshair">
                     <img 
                       ref={imgRef} 
                       src={selectedMap.path} 
@@ -539,7 +546,13 @@ const MapViewer: React.FC = () => {
               </>
             )}
           </TransformWrapper>
-          <CoordsOverlay gx={coords.gx} gy={coords.gy} worldId={selectedMap.worldId} isFullscreen={isFullscreen} />
+          <div className="absolute bottom-4 left-4 md:bottom-6 md:right-6 md:left-auto flex flex-col items-start md:items-end gap-2 pointer-events-none z-20">
+            <CoordsOverlay gx={coords.gx} gy={coords.gy} worldId={selectedMap.worldId} isFullscreen={isFullscreen} />
+            <div className="bg-slate-950/50 backdrop-blur-sm px-3 py-1 rounded-full border border-white/10 text-[9px] font-black uppercase tracking-widest text-slate-400 flex items-center gap-2">
+              <div className="w-1 h-1 rounded-full bg-amber-500 animate-pulse" />
+              Double-clic pour copier les coordonnées
+            </div>
+          </div>
         </div>
       </div>
     </div>

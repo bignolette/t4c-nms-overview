@@ -6,7 +6,6 @@ import { fastNormalize } from '../data/utils';
 import type { Monster } from '../data/types';
 import { MapPin, Coins, Skull, Filter, AlertCircle, ExternalLink, RotateCcw, Hammer, Copy, Check, Map as MapIcon, Search, X } from 'lucide-react';
 import Pagination from './shared/Pagination';
-import ScrollContainer from './shared/ScrollContainer';
 import { useClipboard } from '../hooks/useClipboard';
 
 interface BestiaryProps {
@@ -81,7 +80,7 @@ export const MonsterCard = memo(({ monster, showLocation }: { monster: Monster, 
         <div className="flex justify-between items-start mb-3 relative z-10">
           <div className="flex-1 min-w-0 pr-2">
             <h3 className={`text-lg font-black group-hover:text-amber-500 transition-colors leading-tight italic tracking-tight flex items-center gap-2 overflow-hidden ${monster.unique ? 'text-purple-300' : 'text-slate-100'}`}>
-              <span className="truncate">{monster.name}</span>
+              <span>{monster.name}</span>
               <button 
                 onClick={() => copy(monster.name)}
                 className="p-1.5 hover:bg-white/10 rounded-lg transition-all shrink-0 bg-slate-900/50 md:bg-transparent"
@@ -279,7 +278,7 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
             <div className="flex items-center gap-4 px-4 py-2 bg-slate-950/50 rounded-xl border border-slate-800 shadow-inner">
               <div className="text-slate-400 whitespace-nowrap flex items-center gap-2">
                 <span className="font-black text-amber-500 text-lg">{filteredMonsters.length}</span>
-                <span className="text-[9px] font-black uppercase tracking-widest opacity-60">match</span>
+                <span className="text-[9px] font-black uppercase tracking-widest opacity-60">/ {monsters.length}</span>
               </div>
             </div>
           </div>
@@ -290,19 +289,17 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
             <Filter size={16} className="text-amber-500/50" />
             <span className="text-[10px] font-black uppercase tracking-[0.2em]">Zones Géographiques</span>
           </div>
-          <ScrollContainer className="pb-1">
-            <div className="flex gap-2 min-w-max">
-              {baseZones.map(zone => (
-                <button
-                  key={zone}
-                  onClick={() => { setSelectedZone(zone); setCurrentPage(1); }}
-                  className={`px-5 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all border ${selectedZone === zone ? 'bg-amber-500 border-amber-400 text-slate-950 shadow-xl shadow-amber-500/10 scale-105 z-10' : 'bg-slate-900 border-slate-800 text-slate-500 hover:text-slate-200 hover:border-slate-600'}`}
-                >
-                  {zone}
-                </button>
-              ))}
-            </div>
-          </ScrollContainer>
+          <div className="flex flex-wrap gap-2 justify-start">
+            {baseZones.map(zone => (
+              <button
+                key={zone}
+                onClick={() => { setSelectedZone(zone); setCurrentPage(1); }}
+                className={`px-5 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all border ${selectedZone === zone ? 'bg-amber-500 border-amber-400 text-slate-950 shadow-xl shadow-amber-500/10 scale-105 z-10' : 'bg-slate-900 border-slate-800 text-slate-500 hover:text-slate-200 hover:border-slate-600'}`}
+              >
+                {zone}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 

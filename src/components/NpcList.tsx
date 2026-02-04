@@ -59,7 +59,7 @@ const NpcCard = ({ npc }: { npc: NPC }) => {
                                     >
                                         <div className="flex items-center gap-2 overflow-hidden">
                                             <span className="text-[9px] font-black text-amber-500/50 bg-amber-500/10 px-1 rounded shrink-0">LVL {recipe.level}</span>
-                                            <span className="text-xs font-bold text-slate-300 group-hover/u:text-amber-400 truncate">{recipe.name}</span>
+                                            <span className="text-xs font-bold text-slate-300 group-hover/u:text-amber-400">{recipe.name}</span>
                                         </div>
                                         <ArrowRightCircle size={12} className="text-slate-600 group-hover/u:text-amber-500 shrink-0" />
                                     </button>
@@ -118,8 +118,8 @@ const NpcList: React.FC<NpcListProps> = ({ npcs }) => {
 
     return (
         <div className="space-y-8">
-            <div className="flex flex-col md:flex-row gap-4">
-                <div className="relative flex-1 group">
+            <div className="flex flex-col md:flex-row gap-4 items-center">
+                <div className="relative flex-1 group w-full">
                     <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-amber-500 transition-colors" size={18} />
                     <input
                         type="text"
@@ -133,15 +133,24 @@ const NpcList: React.FC<NpcListProps> = ({ npcs }) => {
                     )}
                 </div>
 
-                <select 
-                    value={selectedZone}
-                    onChange={(e) => setSelectedZone(e.target.value)}
-                    className="bg-slate-950/50 border border-slate-800 rounded-2xl px-6 py-4 text-slate-100 font-bold outline-none focus:border-amber-500/50 transition-all cursor-pointer"
-                >
-                    {zones.map(zone => (
-                        <option key={zone} value={zone}>{zone === 'All' ? 'Toutes les zones' : zone}</option>
-                    ))}
-                </select>
+                <div className="flex items-center gap-2 shrink-0 w-full md:w-auto">
+                    <div className="flex items-center gap-4 px-4 py-4 bg-slate-900/50 rounded-2xl border border-slate-800 shadow-inner h-[58px]">
+                        <div className="text-slate-400 whitespace-nowrap flex items-center gap-2">
+                            <span className="font-black text-amber-500 text-lg">{filteredNpcs.length}</span>
+                            <span className="text-[9px] font-black uppercase tracking-widest opacity-60">/ {sourceData.length}</span>
+                        </div>
+                    </div>
+
+                    <select 
+                        value={selectedZone}
+                        onChange={(e) => setSelectedZone(e.target.value)}
+                        className="bg-slate-950/50 border border-slate-800 rounded-2xl px-6 py-4 text-slate-100 font-bold outline-none focus:border-amber-500/50 transition-all cursor-pointer h-[58px]"
+                    >
+                        {zones.map(zone => (
+                            <option key={zone} value={zone}>{zone === 'All' ? 'Toutes les zones' : zone}</option>
+                        ))}
+                    </select>
+                </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

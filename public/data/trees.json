@@ -1,65 +1,153 @@
 [
   {
-    "name": "Branche de noyer",
+    "name": "Orme",
     "quantity": 1,
-    "source": "Divers",
+    "source": "Arbre",
+    "zone": [
+      "Arakas"
+    ],
+    "dropRate": "Common",
+    "description": "Temps de repousse: 10 min.",
     "coordinates": [
-      "1595.2371.0",
-      "1298.2517.0",
-      "1301.2768.0",
-      "1451.2683.0",
-      "853.2792.0"
+      "1793.552.0",
+      "2242.696.0",
+      "1951.754.0",
+      "2956.186.0",
+      "2733.206.0"
     ]
   },
   {
-    "name": "Branche de chêne",
+    "name": "Frêne",
     "quantity": 1,
-    "source": "Divers",
+    "source": "Arbre",
+    "zone": [
+      "Arakas"
+    ],
+    "dropRate": "Common",
+    "description": "Temps de repousse: 10 min.",
     "coordinates": [
-      "500.2672.0",
-      "677.1828.0",
-      "433.1590.0",
+      "2758.1113.0",
+      "2070.1193.0",
+      "1612.1310.0",
+      "2841.885.0",
+      "1833.792.0"
+    ]
+  },
+  {
+    "name": "Arbre féérique",
+    "quantity": 1,
+    "source": "Arbre",
+    "zone": [
+      "Arakas"
+    ],
+    "dropRate": "Rare",
+    "description": "Produit: feuille rose, sève de qualité séculaire, écorce vénérable du centenaire de Mato.",
+    "coordinates": []
+  },
+  {
+    "name": "Noyer",
+    "quantity": 1,
+    "source": "Arbre",
+    "zone": [
+      "Raven's Dust",
+      "Niève"
+    ],
+    "dropRate": "Common",
+    "description": "Temps de repousse: 20 min.",
+    "coordinates": [
+      "853.2792.0",
+      "1451.2683.0",
+      "1298.2517.0",
+      "1595.2371.0",
+      "1301.2768.0"
+    ]
+  },
+  {
+    "name": "Chêne",
+    "quantity": 1,
+    "source": "Arbre",
+    "zone": [
+      "Raven's Dust",
+      "Niève"
+    ],
+    "dropRate": "Rare",
+    "description": "Temps de repousse: 20 min. Ressource rare: Mistletoe branch.",
+    "coordinates": [
       "859.2034.0",
+      "500.2672.0",
+      "433.1590.0",
+      "677.1828.0",
       "811.1519.0"
     ]
   },
   {
-    "name": "Branche de cèdre",
+    "name": "Perceglace",
     "quantity": 1,
-    "source": "Divers",
+    "source": "Arbre",
+    "zone": [
+      "Raven's Dust",
+      "Niève"
+    ],
+    "dropRate": "Common",
+    "description": "Temps de repousse: 20 min.",
     "coordinates": [
-      "712.597.0",
+      "1525.245.4"
+    ]
+  },
+  {
+    "name": "Cèdre",
+    "quantity": 1,
+    "source": "Arbre",
+    "zone": [
+      "Stoneheim"
+    ],
+    "dropRate": "Common",
+    "description": "Temps de repousse: 30 min.",
+    "coordinates": [
       "996.636.0",
-      "492.1156.0"
+      "492.1156.0",
+      "712.597.0"
     ]
   },
   {
-    "name": "Branche d'oxandre",
+    "name": "Oxandre",
     "quantity": 1,
-    "source": "Divers",
+    "source": "Arbre",
+    "zone": [
+      "Stoneheim"
+    ],
+    "dropRate": "Common",
+    "description": "Temps de repousse: 30 min.",
     "coordinates": [
-      "2638.2803.0",
-      "2695.2573.0",
-      "2808.2936.0",
-      "2918.2712.0"
+      "2638.2803.2",
+      "2695.2573.2",
+      "2808.2936.2",
+      "2918.2712.2"
     ]
   },
   {
-    "name": "Branche de frêne",
+    "name": "Noisetier",
     "quantity": 1,
-    "source": "Divers",
+    "source": "Arbre",
+    "zone": [
+      "Stoneheim"
+    ],
+    "dropRate": "Common",
+    "description": "Temps de repousse: 30 min.",
     "coordinates": [
-      "2758.1113.0",
-      "1833.792.0",
-      "2841.885.0",
-      "2070.1193.0",
-      "1612.1310.0"
+      "2035.2730.0",
+      "2555.2630.2"
     ]
   },
   {
-    "name": "Branche de févier épineux",
+    "name": "Févier épineux",
     "quantity": 1,
-    "source": "Divers",
+    "source": "Arbre",
+    "zone": [
+      "Drake Island"
+    ],
+    "dropRate": "Rare",
+    "description": "Temps de repousse: 40 min / Cutting: 2min40. Ressource rare: Forest mushrooms.",
     "coordinates": [
       "520.1300.3",
       "870.1145.3",
@@ -67,9 +155,14 @@
     ]
   },
   {
-    "name": "Branche en mélèze",
+    "name": "Mélèze",
     "quantity": 1,
-    "source": "Divers",
+    "source": "Arbre",
+    "zone": [
+      "Drake Island"
+    ],
+    "dropRate": "Rare",
+    "description": "Temps de repousse: 40 min / Cutting: 2min40. Ressource rare: Fern leaf.",
     "coordinates": [
       "740.1205.3",
       "607.1441.3",
@@ -77,43 +170,42 @@
     ]
   },
   {
-    "name": "Branche de cyprès",
+    "name": "Cyprès",
     "quantity": 1,
-    "source": "Divers",
-    "coordinates": "336.2691.0"
-  },
-  {
-    "name": "Hampe de mélèze",
-    "quantity": 1,
-    "source": "Divers",
+    "source": "Arbre",
+    "zone": [
+      "Académie -2"
+    ],
+    "dropRate": "Rare",
+    "description": "Temps de repousse: 40 min. Ressource rare: Horned branch.",
     "coordinates": [
-      "740.1205.3",
-      "607.1441.3",
-      "816.1424.3"
+      "336.2691.6"
     ]
   },
   {
-    "name": "Branche de Myrte",
+    "name": "Sureau",
     "quantity": 1,
-    "source": "Divers",
-    "coordinates": "910.235.7"
-  },
-  {
-    "name": "Branche de Sureau",
-    "quantity": 1,
-    "source": "Divers",
-    "coordinates": "865.175.7"
-  },
-  {
-    "name": "Branche d'orme",
-    "quantity": 1,
-    "source": "Divers",
+    "source": "Arbre",
+    "zone": [
+      "Urtanar"
+    ],
+    "dropRate": "Rare",
+    "description": "Temps de repousse: 45 min. Ressource rare: Poisonous berries.",
     "coordinates": [
-      "2956.186.0",
-      "2733.206.0",
-      "1793.552.0",
-      "2242.696.0",
-      "1951.754.0"
+      "865.175.7"
+    ]
+  },
+  {
+    "name": "Myrthe",
+    "quantity": 1,
+    "source": "Arbre",
+    "zone": [
+      "Urtanar"
+    ],
+    "dropRate": "Common",
+    "description": "Temps de repousse: 45 min.",
+    "coordinates": [
+      "910.235.7"
     ]
   }
 ]
