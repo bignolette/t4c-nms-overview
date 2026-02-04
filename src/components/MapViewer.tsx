@@ -465,7 +465,20 @@ const MapViewer: React.FC = () => {
             <div className="flex-1 overflow-y-auto p-2 custom-scrollbar space-y-2">
               {Object.entries(filteredDataLayers).map(([cat, items]) => {
                 const isExpanded = expandedCategories.has(cat);
-                const itemsList = Object.keys(items).sort();
+                
+                // Sort items: Available first, then Unavailable, both alphabetically
+                const itemsList = Object.keys(items).sort((a, b) => {
+                  const markersA = items[a];
+                  const markersB = items[b];
+                  const isDummyA = markersA.length === 0 || markersA[0].world === -1 || (markersA[0].gx === 0 && markersA[0].gy === 0);
+                  const isDummyB = markersB.length === 0 || markersB[0].world === -1 || (markersB[0].gx === 0 && markersB[0].gy === 0);
+
+                  if (isDummyA !== isDummyB) {
+                    return isDummyA ? 1 : -1;
+                  }
+                  return a.localeCompare(b);
+                });
+
                 return (
                   <div key={cat} className="space-y-1">
                     <button onClick={() => { const next = new Set(expandedCategories); if (next.has(cat)) next.delete(cat); else next.add(cat); setExpandedCategories(next); }} className="w-full flex items-center justify-between p-2 rounded-lg hover:bg-white/5 transition-colors group">
