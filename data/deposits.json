@@ -1,6 +1,6 @@
 [
   {
-    "name": "Gisements de fer",
+    "name": "Fer",
     "quantity": 1,
     "source": "Minerai",
     "zone": [
@@ -21,7 +21,7 @@
       "Arakas"
     ],
     "dropRate": "Rare",
-    "description": "Minerai rare obtenu sur Gisements de fer.",
+    "description": "Minerai rare obtenu sur fer.",
     "coordinates": [
       "525.426.2",
       "200.501.2"
@@ -35,14 +35,14 @@
       "Arakas"
     ],
     "dropRate": "Special",
-    "description": "Minerai spécial obtenu sur Gisements de fer.",
+    "description": "Minerai spécial obtenu sur fer.",
     "coordinates": [
       "525.426.2",
       "200.501.2"
     ]
   },
   {
-    "name": "Gisements de plomb",
+    "name": "Plomb",
     "quantity": 1,
     "source": "Minerai",
     "zone": [
@@ -63,7 +63,7 @@
       "Arakas"
     ],
     "dropRate": "Rare",
-    "description": "Minerai rare obtenu sur Gisements de plomb.",
+    "description": "Minerai rare obtenu sur plomb.",
     "coordinates": [
       "267.1149.2",
       "289.1139.2"
@@ -77,14 +77,14 @@
       "Arakas"
     ],
     "dropRate": "Special",
-    "description": "Minerai spécial obtenu sur Gisements de plomb.",
+    "description": "Minerai spécial obtenu sur plomb.",
     "coordinates": [
       "267.1149.2",
       "289.1139.2"
     ]
   },
   {
-    "name": "Gisements de platine",
+    "name": "Platine",
     "quantity": 1,
     "source": "Minerai",
     "zone": [
@@ -97,7 +97,7 @@
     ]
   },
   {
-    "name": "Gisements de cuivre",
+    "name": "Cuivre",
     "quantity": 1,
     "source": "Minerai",
     "zone": [
@@ -120,7 +120,7 @@
       "Raven's Dust"
     ],
     "dropRate": "Rare",
-    "description": "Minerai rare obtenu sur Gisements de cuivre.",
+    "description": "Minerai rare obtenu sur cuivre.",
     "coordinates": [
       "1188.320.2",
       "1288.131.2",
@@ -129,7 +129,7 @@
     ]
   },
   {
-    "name": "Gisements d'argent",
+    "name": "Argent",
     "quantity": 1,
     "source": "Minerai",
     "zone": [
@@ -161,7 +161,7 @@
     ]
   },
   {
-    "name": "Gisements de mithril",
+    "name": "Mithril",
     "quantity": 1,
     "source": "Minerai",
     "zone": [
@@ -183,7 +183,7 @@
       "Raven's Dust"
     ],
     "dropRate": "Rare",
-    "description": "Minerai rare obtenu sur Gisements de mithril.",
+    "description": "Minerai rare obtenu sur mithril.",
     "coordinates": [
       "661.145.2",
       "1000.212.2",
@@ -191,7 +191,7 @@
     ]
   },
   {
-    "name": "Gisements d'or",
+    "name": "Or",
     "quantity": 1,
     "source": "Minerai",
     "zone": [
@@ -221,7 +221,7 @@
     ]
   },
   {
-    "name": "Gisements d'Adamantite",
+    "name": "Adamantite",
     "quantity": 1,
     "source": "Minerai",
     "zone": [
@@ -266,7 +266,7 @@
     ]
   },
   {
-    "name": "Gisements de Saphir",
+    "name": "Saphir",
     "quantity": 1,
     "source": "Minerai",
     "zone": [
@@ -297,7 +297,7 @@
       "Stoneheim"
     ],
     "dropRate": "Rare",
-    "description": "Minerai rare obtenu sur Gisements de Saphir.",
+    "description": "Minerai rare obtenu sur Saphir.",
     "coordinates": [
       "2294.1301.2",
       "2290.1280.2",
@@ -314,7 +314,7 @@
     ]
   },
   {
-    "name": "Gisements de Métrolite",
+    "name": "Métrolite",
     "quantity": 1,
     "source": "Minerai",
     "zone": [
@@ -338,7 +338,7 @@
       "Stoneheim"
     ],
     "dropRate": "Rare",
-    "description": "Minerai rare obtenu sur Gisements de Métrolite.",
+    "description": "Minerai rare obtenu sur Métrolite.",
     "coordinates": [
       "963.322.0",
       "2025.982.2",
@@ -348,7 +348,7 @@
     ]
   },
   {
-    "name": "Gisements de titane",
+    "name": "Titane",
     "quantity": 1,
     "source": "Minerai",
     "zone": [
@@ -376,7 +376,7 @@
       "Drake Island"
     ],
     "dropRate": "Rare",
-    "description": "Minerai rare obtenu sur Gisements de titane.",
+    "description": "Minerai rare obtenu sur titane.",
     "coordinates": [
       "1979.2274.3",
       "1987.2288.3",
@@ -390,7 +390,7 @@
     ]
   },
   {
-    "name": "Gisements de diamant",
+    "name": "Diamant",
     "quantity": 1,
     "source": "Minerai",
     "zone": [
@@ -418,7 +418,7 @@
       "Drake Island"
     ],
     "dropRate": "Rare",
-    "description": "Minerai rare obtenu sur Gisements de diamant.",
+    "description": "Minerai rare obtenu sur diamant.",
     "coordinates": [
       "1783.2279.3",
       "1789.2266.3",
@@ -432,7 +432,7 @@
     ]
   },
   {
-    "name": "Gisements d'émeraude",
+    "name": "Emeraude",
     "quantity": 1,
     "source": "Minerai",
     "zone": [
@@ -472,7 +472,7 @@
     ]
   },
   {
-    "name": "Gisements de rubis",
+    "name": "Rubis",
     "quantity": 1,
     "source": "Minerai",
     "zone": [
@@ -500,7 +500,7 @@
       "Drake Island"
     ],
     "dropRate": "Rare",
-    "description": "Minerai rare obtenu sur Gisements de rubis.",
+    "description": "Minerai rare obtenu sur rubis.",
     "coordinates": [
       "1584.2745.3",
       "1572.2757.3",
