@@ -8621,7 +8621,9 @@
     ],
     "exp": "16M",
     "gold": "N/A",
-    "coordinates": []
+    "coordinates": [
+      "180.2715.0"
+    ]
   },
   {
     "name": "Dragon Dasrinn",
@@ -8634,7 +8636,9 @@
     ],
     "exp": "15000",
     "gold": "15000",
-    "coordinates": []
+    "coordinates": [
+      "2800.470.0"
+    ]
   },
   {
     "name": "Dragon Dimith Karjit",
@@ -8646,7 +8650,9 @@
     ],
     "exp": "N/A",
     "gold": "30000",
-    "coordinates": []
+    "coordinates": [
+      "1845.660.0"
+    ]
   },
   {
     "name": "Dragon effrayant",
@@ -8666,7 +8672,9 @@
     ],
     "exp": "284230",
     "gold": "100000",
-    "coordinates": []
+    "coordinates": [
+      "815.1580.0"
+    ]
   },
   {
     "name": "Dragon Livoxdrinn",
@@ -8678,7 +8686,9 @@
     ],
     "exp": "N/A",
     "gold": "N/A",
-    "coordinates": []
+    "coordinates": [
+      "1100.1300.0"
+    ]
   },
   {
     "name": "Dragon Mirev",
@@ -8703,7 +8713,9 @@
     ],
     "exp": "300000",
     "gold": "N/A",
-    "coordinates": []
+    "coordinates": [
+      "2620.2393.0"
+    ]
   },
   {
     "name": "Dragon Zudinm",
@@ -8714,7 +8726,9 @@
     ],
     "exp": "600000",
     "gold": "N/A",
-    "coordinates": []
+    "coordinates": [
+      "985.75.0"
+    ]
   },
   {
     "name": "Dragonnet",
