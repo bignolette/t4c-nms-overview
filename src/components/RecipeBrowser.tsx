@@ -699,7 +699,8 @@ const NPCGroupedView = ({
   onToggleFavs,
   selectedZone,
   onSelectZone,
-  allZones
+  allZones,
+  initialNpcName
 }: { 
   recipes: RecipeItem[], 
   toggleFavorite: (name: string) => void, 
@@ -711,7 +712,8 @@ const NPCGroupedView = ({
   onToggleFavs: () => void,
   selectedZone: string,
   onSelectZone: (z: string) => void,
-  allZones: string[]
+  allZones: string[],
+  initialNpcName?: string | null
 }) => {
   const { npcsData } = useData();
   const [npcSearch, setNpcSearch] = useState('');
@@ -773,6 +775,18 @@ const NPCGroupedView = ({
         return matchesProf && matchesZone && matchesSearch;
     }).sort((a, b) => a.name.localeCompare(b.name));
   }, [recipes, selectedProf, selectedZone, npcSearch, showOnlyFavs, favorites, npcsData]);
+
+  // Handle initial NPC selection
+  useEffect(() => {
+    if (initialNpcName && artisans.length > 0 && !focusedArtisan) {
+        const norm = fastNormalize(initialNpcName);
+        const artisan = artisans.find(a => fastNormalize(a.name).includes(norm));
+        if (artisan) {
+            setFocusedArtisan(artisan.id);
+            setNpcSearch(artisan.name);
+        }
+    }
+  }, [initialNpcName, artisans, focusedArtisan]);
 
   const selectedArtisanData = focusedArtisan ? artisans.find(a => a.id === focusedArtisan) : null;
 
@@ -1168,10 +1182,16 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
 
   const [searchParams, setSearchParams] = useSearchParams();
   const urlSearch = searchParams.get('search') || '';
+  const urlView = searchParams.get('view');
+  const urlNpc = searchParams.get('npc');
 
-  const [viewMode, setViewMode] = useState<'search' | 'npc'>(isItemsPage ? 'search' : 'search');
+  const [viewMode, setViewMode] = useState<'search' | 'npc'>(urlView === 'npc' ? 'npc' : 'search');
   const [currentTab, setCurrentTab] = useState<'recipes' | 'projects'>('recipes');
   const [layoutMode, setLayoutMode] = useState<'list' | 'grid'>('list');
+
+  useEffect(() => {
+    if (urlView === 'npc') setViewMode('npc');
+  }, [urlView]);
 
   const handleProjectAdd = (recipeName: string) => {
     const newProject = {
@@ -1867,6 +1887,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
           selectedZone={selectedZone}
           onSelectZone={setSelectedZone}
           allZones={allZones}
+          initialNpcName={urlNpc}
         />
       )}
       </div>

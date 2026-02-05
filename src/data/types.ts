@@ -83,6 +83,11 @@ export interface RecipeItem {
         effect: string;
         description: string;
     };
+    damage?: {
+        min: string;
+        max: string;
+    };
+    buyPrice?: string;
 }
 
 export interface QuestStep {

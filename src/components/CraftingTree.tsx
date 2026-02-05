@@ -235,7 +235,7 @@ const FarmingPlannerModal = ({ totals, onClose, itemName }: { totals: Record<str
 };
 
 const RecipeCard = memo(({ recipe, hidePlanner }: { recipe: RecipeItem, hidePlanner?: boolean }) => {
-  const { wikiData } = useData();
+  const { wikiData, npcsData } = useData();
   const allRecipes = useMemo(() => wikiData.find(p => p.id === 'metiers')?.recipes || [], [wikiData]);
   const allItems = useMemo(() => wikiData.find(p => p.id === 'items')?.recipes || [], [wikiData]);
 
@@ -253,6 +253,12 @@ const RecipeCard = memo(({ recipe, hidePlanner }: { recipe: RecipeItem, hidePlan
   const [expandedItems, setExpandedItems] = useState<Set<string>>(new Set([recipe.name]));
   const [isPlannerOpen, setIsPlannerOpen] = useState(false);
 
+  const npcInfo = useMemo(() => {
+    if (!recipe.learnedFrom) return null;
+    const norm = fastNormalize(recipe.learnedFrom);
+    return npcsData.find(n => fastNormalize(n.name) === norm);
+  }, [recipe.learnedFrom, npcsData]);
+
   const resolveFullTree = useCallback((item: RecipeItem, depth = 0, seen = new Set<string>()): RecipeItem => {
     if (depth > 10 || seen.has(item.name)) return item;
     
@@ -268,6 +274,8 @@ const RecipeCard = memo(({ recipe, hidePlanner }: { recipe: RecipeItem, hidePlan
       typeSource: item.typeSource || r?.typeSource || itemData?.typeSource,
       locations: item.locations || r?.locations || itemData?.locations,
       sources: item.sources || r?.sources || itemData?.sources,
+      learnedFrom: item.learnedFrom || r?.learnedFrom || itemData?.learnedFrom,
+      coordinates: item.coordinates || r?.coordinates || itemData?.coordinates,
       prerequisites: itemData?.prerequisites,
       bonuses: itemData?.bonuses,
       secondary: itemData?.secondary
@@ -400,10 +408,23 @@ const RecipeCard = memo(({ recipe, hidePlanner }: { recipe: RecipeItem, hidePlan
                   <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider">{item.source}</span>
                 )}
                 {hasIngredients ? (
-                  <div className={`flex items-center gap-1 text-[9px] font-black uppercase tracking-widest ${isNodeExpanded ? 'text-amber-500' : 'text-slate-600'}`}>
+                  <div className="flex flex-wrap items-center gap-1 text-[9px] font-black uppercase tracking-widest text-amber-600">
                     <Hammer size={10} />
                     <span className="px-1.5 py-0.5 rounded bg-amber-500/10 border border-amber-500/20 text-amber-500">CRAFTABLE</span>
-                    <span className="text-[8px] opacity-60 ml-1">{isNodeExpanded ? '(Masquer)' : '(Voir)'}</span>
+                    {item.learnedFrom && (
+                        <div className="flex items-center gap-1 ml-2 text-blue-400/70 lowercase font-bold">
+                            <User size={8} />
+                            <span>chez</span>
+                            <Link 
+                                to={`/wiki/metiers?view=npc&npc=${encodeURIComponent(item.learnedFrom)}`}
+                                onClick={(e) => e.stopPropagation()}
+                                className="hover:text-blue-300 underline decoration-blue-500/30 underline-offset-2"
+                            >
+                                {item.learnedFrom}
+                            </Link>
+                        </div>
+                    )}
+                    <span className="text-[8px] opacity-60 ml-1 italic capitalize">{isNodeExpanded ? '(Masquer)' : '(Voir ingrédients)'}</span>
                   </div>
                 ) : (
                   <div className="flex items-center gap-1 text-[9px] font-black uppercase tracking-widest text-emerald-600">
@@ -445,9 +466,37 @@ const RecipeCard = memo(({ recipe, hidePlanner }: { recipe: RecipeItem, hidePlan
               </div>
               <div>
                 <h3 className="text-2xl font-black text-slate-100 tracking-tighter uppercase italic">{recipe.name}</h3>
-                <div className="flex items-center gap-2 text-slate-500 text-xs font-bold uppercase tracking-widest mt-0.5">
-                  <User size={12} className="text-amber-500/50" />
-                  {recipe.profession || 'Général'} {recipe.level ? `• Niv.${recipe.level}` : ''}
+                <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-slate-500 text-xs font-bold uppercase tracking-widest mt-0.5">
+                  <div className="flex items-center gap-2">
+                    <User size={12} className="text-amber-500/50" />
+                    {recipe.profession || 'Général'} {recipe.level ? `• Niv.${recipe.level}` : ''}
+                  </div>
+                  
+                  {recipe.learnedFrom && (
+                    <div className="flex items-center gap-2">
+                      <span className="opacity-30 hidden md:inline">•</span>
+                      <span className="text-blue-400/80">Maître: </span>
+                      {npcInfo ? (
+                        <Link 
+                          to={`/wiki/metiers?view=npc&npc=${encodeURIComponent(npcInfo.name)}`}
+                          className="text-blue-400 hover:text-amber-500 transition-colors underline decoration-blue-500/30 underline-offset-4"
+                        >
+                          {npcInfo.name}
+                        </Link>
+                      ) : (
+                        <span className="text-blue-400">{recipe.learnedFrom}</span>
+                      )}
+                      {(recipe.coordinates || npcInfo?.coordinates) && (
+                        <Link 
+                          to={`/maps?type=npc&name=${encodeURIComponent(recipe.learnedFrom)}`}
+                          className="flex items-center gap-1 text-amber-500/80 hover:text-amber-400 transition-colors bg-amber-500/5 px-2 py-0.5 rounded border border-amber-500/10 ml-1"
+                        >
+                          <MapPin size={10} className="text-amber-500" />
+                          <span className="font-mono text-[10px]">{recipe.coordinates || npcInfo?.coordinates}</span>
+                        </Link>
+                      )}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>

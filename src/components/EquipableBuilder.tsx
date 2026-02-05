@@ -519,11 +519,41 @@ const ItemCard = ({ item, isBiSMode, idx }: { item: RecipeItem, isBiSMode: boole
       )}
       <div className="flex flex-col sm:flex-row justify-between items-start gap-4 mb-6">
         <div>
-          <span className="text-[10px] font-black text-amber-500/80 uppercase tracking-[0.2em] mb-1 block">{item.source}</span>
+          <div className="flex flex-wrap items-center gap-2 mb-1">
+            <span className="text-[10px] font-black text-amber-500/80 uppercase tracking-[0.2em]">{item.source}</span>
+            {item.buyPrice && (
+              <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest bg-slate-950 px-2 py-0.5 rounded-lg border border-white/5">
+                {parseInt(item.buyPrice).toLocaleString()} G
+              </span>
+            )}
+          </div>
           <h4 className={`text-xl font-black italic uppercase tracking-tight ${isTopBiS ? 'text-emerald-400' : 'text-slate-100'}`}>{item.name}</h4>
         </div>
         <Link to={`/wiki/items?search=${encodeURIComponent(item.name)}`} className="btn-secondary px-4 py-2 text-[10px] uppercase tracking-widest">Détails</Link>
       </div>
+
+      {item.damage && (
+        <div className="mb-6 p-4 bg-rose-500/5 border border-rose-500/10 rounded-2xl flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="p-2 bg-rose-500/20 rounded-lg text-rose-500">
+              <Sword size={16} />
+            </div>
+            <div>
+              <span className="text-[10px] font-black text-rose-500/70 uppercase tracking-widest block">Dégâts Physiques</span>
+              <div className="flex items-baseline gap-1">
+                <span className="text-lg font-black text-slate-100 italic">{item.damage.min}</span>
+                <span className="text-xs font-bold text-slate-500 italic">-</span>
+                <span className="text-lg font-black text-slate-100 italic">{item.damage.max}</span>
+              </div>
+            </div>
+          </div>
+          <div className="text-right">
+             <span className="text-[10px] font-black text-slate-600 uppercase tracking-widest block">Moyenne</span>
+             <span className="text-sm font-black text-slate-400">{( (parseInt(item.damage.min) + parseInt(item.damage.max)) / 2).toFixed(1)}</span>
+          </div>
+        </div>
+      )}
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
           <span className="text-[10px] font-black text-slate-600 uppercase tracking-[0.2em] mb-3 block">Requis</span>

@@ -96,15 +96,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "677"
-    }
-  },
-  {
-    "name": "Epée bâtarde des ancêtres runique",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "677"
-    }
+    },
+    "damage": {
+      "min": "188",
+      "max": "316"
+    },
+    "buyPrice": "388736"
   },
   {
     "name": "Lame des chimères",
@@ -157,38 +154,6 @@
     "source": "Arme",
     "prerequisites": {
       "str": "749"
-    }
-  },
-  {
-    "name": "Cimeterre incrusté d'émeraudes",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "662"
-    }
-  },
-  {
-    "name": "Lame de perdition enchantée",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "372"
-    }
-  },
-  {
-    "name": "Lame de perdition runique",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "372"
-    }
-  },
-  {
-    "name": "Eventreuse",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "372"
     }
   },
   {
@@ -1984,7 +1949,12 @@
     },
     "bonuses": {
       "ca": "+5"
-    }
+    },
+    "damage": {
+      "min": "40",
+      "max": "58"
+    },
+    "otherSource": "Drop"
   },
   {
     "name": "Armure en peau humaine",
@@ -2310,7 +2280,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "213"
-    }
+    },
+    "damage": {
+      "min": "40",
+      "max": "252"
+    },
+    "otherSource": "Quête"
   },
   {
     "name": "Potion de premiers secours",
@@ -2349,7 +2324,12 @@
     },
     "secondary": {
       "Attaque": "+15"
-    }
+    },
+    "damage": {
+      "min": "25",
+      "max": "36"
+    },
+    "otherSource": "Drop"
   },
   {
     "name": "Parchemin vierge",
@@ -2407,7 +2387,12 @@
     },
     "bonuses": {
       "str": "+5"
-    }
+    },
+    "damage": {
+      "min": "41",
+      "max": "57"
+    },
+    "otherSource": "Quête"
   },
   {
     "name": "Clef de Reynen",
@@ -2535,7 +2520,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "111"
-    }
+    },
+    "damage": {
+      "min": "64",
+      "max": "90"
+    },
+    "buyPrice": "283940"
   },
   {
     "name": "Jambières de mailles en mithril",
@@ -2587,7 +2577,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "155"
-    }
+    },
+    "damage": {
+      "min": "106",
+      "max": "137"
+    },
+    "buyPrice": "578210"
   },
   {
     "name": "Glaive de qualité",
@@ -2595,7 +2590,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "213"
-    }
+    },
+    "damage": {
+      "min": "116",
+      "max": "156"
+    },
+    "buyPrice": "113163"
   },
   {
     "name": "Bottes de mailles en mithril",
@@ -2621,7 +2621,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "82"
-    }
+    },
+    "damage": {
+      "min": "44",
+      "max": "63"
+    },
+    "buyPrice": "43587"
   },
   {
     "name": "Épée courte en acier trempé enchantée",
@@ -2629,7 +2634,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "111"
-    }
+    },
+    "damage": {
+      "min": "59",
+      "max": "81"
+    },
+    "buyPrice": "85182"
   },
   {
     "name": "Hachette rouillée enchantée",
@@ -2637,15 +2647,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "39"
-    }
-  },
-  {
-    "name": "Lame vipérine",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "300"
-    }
+    },
+    "damage": {
+      "min": "18",
+      "max": "28"
+    },
+    "buyPrice": "7083"
   },
   {
     "name": "Épée longue en acier trempé runique",
@@ -2653,7 +2660,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "126"
-    }
+    },
+    "damage": {
+      "min": "76",
+      "max": "106"
+    },
+    "buyPrice": "370530"
   },
   {
     "name": "Gantelets de plaques de Nain",
@@ -2684,7 +2696,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "300"
-    }
+    },
+    "damage": {
+      "min": "200",
+      "max": "274"
+    },
+    "buyPrice": "2306910"
   },
   {
     "name": "Épée longue polie",
@@ -2692,7 +2709,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "68"
-    }
+    },
+    "damage": {
+      "min": "31",
+      "max": "43"
+    },
+    "buyPrice": "9323"
   },
   {
     "name": "Épée courte polie",
@@ -2700,7 +2722,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "53"
-    }
+    },
+    "damage": {
+      "min": "22",
+      "max": "31"
+    },
+    "buyPrice": "5266"
   },
   {
     "name": "Épée longue rouillée",
@@ -2708,12 +2735,23 @@
     "source": "Arme",
     "prerequisites": {
       "str": "24"
-    }
+    },
+    "damage": {
+      "min": "6",
+      "max": "11"
+    },
+    "buyPrice": "605"
   },
   {
     "name": "Épée courte rouillée",
     "quantity": 1,
-    "source": "Arme"
+    "source": "Arme",
+    "damage": {
+      "min": "2",
+      "max": "4"
+    },
+    "buyPrice": "29",
+    "prerequisites": {}
   },
   {
     "name": "Épée courte rouillée runique",
@@ -2761,7 +2799,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "459"
-    }
+    },
+    "damage": {
+      "min": "271",
+      "max": "382"
+    },
+    "buyPrice": "5537300"
   },
   {
     "name": "Potion de guérison",
@@ -2844,7 +2887,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "271"
-    }
+    },
+    "damage": {
+      "min": "174",
+      "max": "238"
+    },
+    "buyPrice": "1869130"
   },
   {
     "name": "Glaive poli runique",
@@ -2852,7 +2900,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "82"
-    }
+    },
+    "damage": {
+      "min": "49",
+      "max": "69"
+    },
+    "buyPrice": "145290"
   },
   {
     "name": "Épée courte de qualité enchantée",
@@ -2860,7 +2913,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "184"
-    }
+    },
+    "damage": {
+      "min": "103",
+      "max": "139"
+    },
+    "buyPrice": "249573"
   },
   {
     "name": "Sabre à crosse de nacre",
@@ -2868,7 +2926,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "82"
-    }
+    },
+    "damage": {
+      "min": "54",
+      "max": "78"
+    },
+    "otherSource": "Invoc."
   },
   {
     "name": "Glaive en acier trempé enchanté",
@@ -2876,7 +2939,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "140"
-    }
+    },
+    "damage": {
+      "min": "82",
+      "max": "113"
+    },
+    "buyPrice": "140583"
   },
   {
     "name": "Hachette de qualité enchantée",
@@ -2884,7 +2952,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "242"
-    }
+    },
+    "damage": {
+      "min": "160",
+      "max": "220"
+    },
+    "buyPrice": "443211"
   },
   {
     "name": "Dague de qualité",
@@ -2892,7 +2965,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "126"
-    }
+    },
+    "damage": {
+      "min": "62",
+      "max": "84"
+    },
+    "buyPrice": "37053"
   },
   {
     "name": "Dague en acier trempé",
@@ -2900,7 +2978,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "97"
-    }
+    },
+    "damage": {
+      "min": "46",
+      "max": "63"
+    },
+    "buyPrice": "37053"
   },
   {
     "name": "Hachette de qualité",
@@ -2908,7 +2991,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "242"
-    }
+    },
+    "damage": {
+      "min": "145",
+      "max": "197"
+    },
+    "buyPrice": "147737"
   },
   {
     "name": "Bave de Zart",
@@ -2922,7 +3010,12 @@
     "prerequisites": {
       "wis": "41",
       "str": "40"
-    }
+    },
+    "damage": {
+      "min": "21",
+      "max": "32"
+    },
+    "buyPrice": "5266"
   },
   {
     "name": "Hache de guerre en acier trempé",
@@ -2930,7 +3023,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "184"
-    }
+    },
+    "damage": {
+      "min": "124",
+      "max": "172"
+    },
+    "buyPrice": "83191"
   },
   {
     "name": "Hache en acier trempé",
@@ -2946,7 +3044,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "97"
-    }
+    },
+    "damage": {
+      "min": "53",
+      "max": "75"
+    },
+    "buyPrice": "20887"
   },
   {
     "name": "Hachette rouillée",
@@ -2954,7 +3057,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "39"
-    }
+    },
+    "damage": {
+      "min": "16",
+      "max": "25"
+    },
+    "buyPrice": "2361"
   },
   {
     "name": "Gantelets d'anneaux",
@@ -2968,17 +3076,15 @@
     }
   },
   {
-    "name": "Hache de guerre Baatorienne",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "184"
-    }
-  },
-  {
     "name": "Poignard rouillé",
     "quantity": 1,
-    "source": "Arme"
+    "source": "Arme",
+    "damage": {
+      "min": "1",
+      "max": "4"
+    },
+    "buyPrice": "29",
+    "prerequisites": {}
   },
   {
     "name": "Hyperpotion de rage",
@@ -2991,7 +3097,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "459"
-    }
+    },
+    "damage": {
+      "min": "250",
+      "max": "348"
+    },
+    "buyPrice": "1661190"
   },
   {
     "name": "Dague en acier trempé enchantée",
@@ -2999,7 +3110,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "97"
-    }
+    },
+    "damage": {
+      "min": "50",
+      "max": "70"
+    },
+    "buyPrice": "111159"
   },
   {
     "name": "Bottes ciselées des Haut-Elfes",
@@ -3038,20 +3154,17 @@
     }
   },
   {
-    "name": "Dague d'Obscurantis",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "97"
-    }
-  },
-  {
     "name": "Dague en acier trempé runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
       "str": "97"
-    }
+    },
+    "damage": {
+      "min": "55",
+      "max": "77"
+    },
+    "buyPrice": "370530"
   },
   {
     "name": "Hache en acier trempé enchantée",
@@ -3075,15 +3188,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "68"
-    }
-  },
-  {
-    "name": "Cognée de bucheron",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "39"
-    }
+    },
+    "damage": {
+      "min": "34",
+      "max": "48"
+    },
+    "buyPrice": "27969"
   },
   {
     "name": "Gantelets ciselés des Haut-Elfes",
@@ -3138,7 +3248,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "184"
-    }
+    },
+    "damage": {
+      "min": "100",
+      "max": "135"
+    },
+    "buyPrice": "83191"
   },
   {
     "name": "Épée courte en acier trempé",
@@ -3146,7 +3261,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "111"
-    }
+    },
+    "damage": {
+      "min": "54",
+      "max": "73"
+    },
+    "buyPrice": "28394"
   },
   {
     "name": "Glaive poli",
@@ -3154,7 +3274,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "82"
-    }
+    },
+    "damage": {
+      "min": "40",
+      "max": "56"
+    },
+    "buyPrice": "14529"
   },
   {
     "name": "Hache de guerre en acier trempé runique",
@@ -3162,7 +3287,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "184"
-    }
+    },
+    "damage": {
+      "min": "151",
+      "max": "214"
+    },
+    "buyPrice": "831910"
   },
   {
     "name": "Hachette polie runique",
@@ -3170,15 +3300,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "97"
-    }
-  },
-  {
-    "name": "Dague en ivoire",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "24"
-    }
+    },
+    "damage": {
+      "min": "65",
+      "max": "93"
+    },
+    "buyPrice": "208870"
   },
   {
     "name": "Dague polie",
@@ -3186,17 +3313,34 @@
     "source": "Arme",
     "prerequisites": {
       "str": "68"
-    }
+    },
+    "damage": {
+      "min": "30",
+      "max": "42"
+    },
+    "buyPrice": "9323"
   },
   {
     "name": "Poignard rouillé runique",
     "quantity": 1,
-    "source": "Arme"
+    "source": "Arme",
+    "damage": {
+      "min": "2",
+      "max": "5"
+    },
+    "buyPrice": "290",
+    "prerequisites": {}
   },
   {
     "name": "Épée courte rouillée enchantée",
     "quantity": 1,
-    "source": "Arme"
+    "source": "Arme",
+    "damage": {
+      "min": "2",
+      "max": "5"
+    },
+    "buyPrice": "87",
+    "prerequisites": {}
   },
   {
     "name": "Bottes de mailles elfiques",
@@ -3222,7 +3366,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "97"
-    }
+    },
+    "damage": {
+      "min": "59",
+      "max": "84"
+    },
+    "buyPrice": "62661"
   },
   {
     "name": "Merlin en Acier de Qualité",
@@ -3238,7 +3387,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "140"
-    }
+    },
+    "damage": {
+      "min": "74",
+      "max": "101"
+    },
+    "buyPrice": "46861"
   },
   {
     "name": "Jambières d'écailles",
@@ -3297,7 +3451,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "53"
-    }
+    },
+    "damage": {
+      "min": "24",
+      "max": "35"
+    },
+    "buyPrice": "52660"
   },
   {
     "name": "Dague rouillée runique",
@@ -3305,7 +3464,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "24"
-    }
+    },
+    "damage": {
+      "min": "7",
+      "max": "13"
+    },
+    "buyPrice": "6050"
   },
   {
     "name": "Hache en acier trempé runique",
@@ -3339,7 +3503,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "155"
-    }
+    },
+    "damage": {
+      "min": "89",
+      "max": "115"
+    },
+    "buyPrice": "57861"
   },
   {
     "name": "Dague polie enchantée",
@@ -3347,7 +3516,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "68"
-    }
+    },
+    "damage": {
+      "min": "33",
+      "max": "46"
+    },
+    "buyPrice": "27969"
   },
   {
     "name": "Dague polie runique",
@@ -3355,15 +3529,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "68"
-    }
-  },
-  {
-    "name": "Couteau de cuisine Nain",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "68"
-    }
+    },
+    "damage": {
+      "min": "36",
+      "max": "51"
+    },
+    "buyPrice": "93230"
   },
   {
     "name": "Heaume de mailles elfique",
@@ -3389,12 +3560,23 @@
     "source": "Arme",
     "prerequisites": {
       "str": "198"
-    }
+    },
+    "damage": {
+      "min": "104",
+      "max": "140"
+    },
+    "buyPrice": "97601"
   },
   {
     "name": "Poignard rouillé enchanté",
     "quantity": 1,
-    "source": "Arme"
+    "source": "Arme",
+    "damage": {
+      "min": "2",
+      "max": "4"
+    },
+    "buyPrice": "87",
+    "prerequisites": {}
   },
   {
     "name": "Hache de guerre en acier trempé enchantée",
@@ -3402,7 +3584,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "184"
-    }
+    },
+    "damage": {
+      "min": "142",
+      "max": "197"
+    },
+    "buyPrice": "249573"
   },
   {
     "name": "Cape de la nuit",
@@ -3440,7 +3627,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "39"
-    }
+    },
+    "damage": {
+      "min": "20",
+      "max": "32"
+    },
+    "buyPrice": "23610"
   },
   {
     "name": "Épée bâtarde d'adamantite runique",
@@ -3464,7 +3656,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "53"
-    }
+    },
+    "damage": {
+      "min": "22",
+      "max": "32"
+    },
+    "buyPrice": "15798"
   },
   {
     "name": "Glaive de qualité enchanté",
@@ -3472,7 +3669,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "213"
-    }
+    },
+    "damage": {
+      "min": "127",
+      "max": "174"
+    },
+    "buyPrice": "339489"
   },
   {
     "name": "Épée bâtarde de mithril",
@@ -3488,7 +3690,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "24"
-    }
+    },
+    "damage": {
+      "min": "8",
+      "max": "14"
+    },
+    "buyPrice": "6050"
   },
   {
     "name": "Fléau de qualité",
@@ -3497,7 +3704,12 @@
     "prerequisites": {
       "wis": "116",
       "str": "140"
-    }
+    },
+    "damage": {
+      "min": "103",
+      "max": "144"
+    },
+    "buyPrice": "97601"
   },
   {
     "name": "Cape de la forêt",
@@ -3526,7 +3738,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "198"
-    }
+    },
+    "damage": {
+      "min": "114",
+      "max": "156"
+    },
+    "buyPrice": "292803"
   },
   {
     "name": "Épée courte polie enchantée",
@@ -3534,7 +3751,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "53"
-    }
+    },
+    "damage": {
+      "min": "24",
+      "max": "35"
+    },
+    "buyPrice": "15798"
   },
   {
     "name": "Épée bâtarde de qualité runique",
@@ -3558,7 +3780,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "242"
-    }
+    },
+    "damage": {
+      "min": "195",
+      "max": "274"
+    },
+    "otherSource": "Coffre"
   },
   {
     "name": "Épée bâtarde de qualité enchantée",
@@ -3574,15 +3801,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "271"
-    }
-  },
-  {
-    "name": "Rapière du Bretteur",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "24"
-    }
+    },
+    "damage": {
+      "min": "145",
+      "max": "194"
+    },
+    "buyPrice": "186913"
   },
   {
     "name": "Épée longue en acier trempé enchantée",
@@ -3630,15 +3854,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "140"
-    }
-  },
-  {
-    "name": "Cimeterre du Zéphyr",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "155"
-    }
+    },
+    "damage": {
+      "min": "89",
+      "max": "124"
+    },
+    "buyPrice": "466610"
   },
   {
     "name": "Épée longue polie runique",
@@ -3646,7 +3867,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "68"
-    }
+    },
+    "damage": {
+      "min": "37",
+      "max": "54"
+    },
+    "buyPrice": "93230"
   },
   {
     "name": "Masse en acier trempé",
@@ -3655,7 +3881,12 @@
     "prerequisites": {
       "wis": "79",
       "str": "90"
-    }
+    },
+    "damage": {
+      "min": "59",
+      "max": "83"
+    },
+    "buyPrice": "37053"
   },
   {
     "name": "Casque de cuir elfique",
@@ -3691,20 +3922,17 @@
     }
   },
   {
-    "name": "Dague de jade",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "126"
-    }
-  },
-  {
     "name": "Lame de mithril runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
       "str": "184"
-    }
+    },
+    "damage": {
+      "min": "120",
+      "max": "165"
+    },
+    "buyPrice": "831910"
   },
   {
     "name": "Dague de qualité runique",
@@ -3712,7 +3940,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "126"
-    }
+    },
+    "damage": {
+      "min": "74",
+      "max": "102"
+    },
+    "buyPrice": "370530"
   },
   {
     "name": "Dague de qualité enchantée",
@@ -3720,7 +3953,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "126"
-    }
+    },
+    "damage": {
+      "min": "68",
+      "max": "93"
+    },
+    "buyPrice": "111159"
   },
   {
     "name": "Dague de mithril enchantée",
@@ -3728,7 +3966,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "155"
-    }
+    },
+    "damage": {
+      "min": "85",
+      "max": "110"
+    },
+    "buyPrice": "173463"
   },
   {
     "name": "Dague de mithril runique",
@@ -3736,7 +3979,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "155"
-    }
+    },
+    "damage": {
+      "min": "94",
+      "max": "128"
+    },
+    "buyPrice": "578210"
   },
   {
     "name": "Lame de mithril enchantée",
@@ -3744,7 +3992,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "184"
-    }
+    },
+    "damage": {
+      "min": "110",
+      "max": "150"
+    },
+    "buyPrice": "249573"
   },
   {
     "name": "Lame d'adamantite",
@@ -3752,7 +4005,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "242"
-    }
+    },
+    "damage": {
+      "min": "133",
+      "max": "179"
+    },
+    "buyPrice": "147737"
   },
   {
     "name": "Épée bâtarde ancienne",
@@ -3768,7 +4026,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "459"
-    }
+    },
+    "damage": {
+      "min": "229",
+      "max": "314"
+    },
+    "buyPrice": "553730"
   },
   {
     "name": "Cimeterre en acier trempé enchanté",
@@ -3776,7 +4039,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "155"
-    }
+    },
+    "damage": {
+      "min": "95",
+      "max": "126"
+    },
+    "buyPrice": "173463"
   },
   {
     "name": "Jambières de plaques en adamantite",
@@ -3817,14 +4085,6 @@
     }
   },
   {
-    "name": "Dague de l'Assassin",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "184"
-    }
-  },
-  {
     "name": "Bottes de cuir elfique",
     "quantity": 1,
     "source": "Botte",
@@ -3855,14 +4115,6 @@
     },
     "bonuses": {
       "ca": "+1"
-    }
-  },
-  {
-    "name": "Lame du Héron",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "242"
     }
   },
   {
@@ -3914,20 +4166,17 @@
     }
   },
   {
-    "name": "Claymore en Mithril",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "329"
-    }
-  },
-  {
     "name": "Poignard poli",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
       "str": "53"
-    }
+    },
+    "damage": {
+      "min": "20",
+      "max": "28"
+    },
+    "buyPrice": "5266"
   },
   {
     "name": "Épée courte de qualité",
@@ -3935,7 +4184,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "184"
-    }
+    },
+    "damage": {
+      "min": "94",
+      "max": "126"
+    },
+    "buyPrice": "83191"
   },
   {
     "name": "Épée bâtarde d'adamantite enchantée",
@@ -3951,7 +4205,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "213"
-    }
+    },
+    "damage": {
+      "min": "139",
+      "max": "192"
+    },
+    "buyPrice": "1131630"
   },
   {
     "name": "Épée longue rouillée enchantée",
@@ -3959,7 +4218,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "24"
-    }
+    },
+    "damage": {
+      "min": "7",
+      "max": "12"
+    },
+    "buyPrice": "1815"
   },
   {
     "name": "Masse de qualité",
@@ -3968,7 +4232,12 @@
     "prerequisites": {
       "wis": "94",
       "str": "110"
-    }
+    },
+    "damage": {
+      "min": "74",
+      "max": "103"
+    },
+    "buyPrice": "57821"
   },
   {
     "name": "Cimeterre de qualité enchanté",
@@ -3995,7 +4264,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "358"
-    }
+    },
+    "damage": {
+      "min": "222",
+      "max": "308"
+    },
+    "buyPrice": "3320530"
   },
   {
     "name": "Jambières de plaques de Nain",
@@ -4032,7 +4306,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "372"
-    }
+    },
+    "damage": {
+      "min": "235",
+      "max": "328"
+    },
+    "buyPrice": "3602690"
   },
   {
     "name": "Bottes de plaques de Nain",
@@ -4058,7 +4337,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "184"
-    }
+    },
+    "damage": {
+      "min": "112",
+      "max": "153"
+    },
+    "buyPrice": "831910"
   },
   {
     "name": "Dague de mithril",
@@ -4066,7 +4350,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "155"
-    }
+    },
+    "damage": {
+      "min": "78",
+      "max": "103"
+    },
+    "buyPrice": "57821"
   },
   {
     "name": "Épée longue en acier trempé",
@@ -4074,7 +4363,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "126"
-    }
+    },
+    "damage": {
+      "min": "64",
+      "max": "87"
+    },
+    "buyPrice": "37053"
   },
   {
     "name": "Glaive de mithril",
@@ -4082,7 +4376,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "285"
-    }
+    },
+    "damage": {
+      "min": "158",
+      "max": "213"
+    },
+    "buyPrice": "208226"
   },
   {
     "name": "Fléau d'armes ancien",
@@ -4100,7 +4399,12 @@
     "prerequisites": {
       "wis": "139",
       "str": "170"
-    }
+    },
+    "damage": {
+      "min": "129",
+      "max": "173"
+    },
+    "buyPrice": "147737"
   },
   {
     "name": "Épée longue de qualité runique",
@@ -4108,7 +4412,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "198"
-    }
+    },
+    "damage": {
+      "min": "125",
+      "max": "172"
+    },
+    "buyPrice": "976010"
   },
   {
     "name": "Épée courte polie runique",
@@ -4116,7 +4425,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "53"
-    }
+    },
+    "damage": {
+      "min": "26",
+      "max": "39"
+    },
+    "buyPrice": "52660"
   },
   {
     "name": "Dague rouillée",
@@ -4124,7 +4438,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "24"
-    }
+    },
+    "damage": {
+      "min": "6",
+      "max": "10"
+    },
+    "buyPrice": "605"
   },
   {
     "name": "Robe de mariée",
@@ -4190,7 +4509,12 @@
     "prerequisites": {
       "wis": "56",
       "str": "60"
-    }
+    },
+    "damage": {
+      "min": "36",
+      "max": "52"
+    },
+    "buyPrice": "14529"
   },
   {
     "name": "Casque d'anneaux",
@@ -4234,7 +4558,12 @@
     "prerequisites": {
       "wis": "34",
       "str": "30"
-    }
+    },
+    "damage": {
+      "min": "13",
+      "max": "20"
+    },
+    "buyPrice": "2361"
   },
   {
     "name": "Hache de qualité à deux tranchants",
@@ -4242,7 +4571,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "300"
-    }
+    },
+    "damage": {
+      "min": "258",
+      "max": "362"
+    },
+    "buyPrice": "230691"
   },
   {
     "name": "Potion de tranquillité",
@@ -4627,26 +4961,6 @@
     "source": "Divers"
   },
   {
-    "name": "Lame enchantée de main gauche",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "320",
-      "dex": "40"
-    },
-    "bonuses": {
-      "end": "+25",
-      "str": "+25"
-    },
-    "secondary": {
-      "Résistance Air": "-10",
-      "Résistance Nécro": "-10",
-      "Résistance Terre": "-10",
-      "Résistance Lumière": "-10",
-      "Résistance Eau": "-10"
-    }
-  },
-  {
     "name": "Potion de guérison légère",
     "quantity": 1,
     "source": "Divers"
@@ -4718,7 +5032,12 @@
     "secondary": {
       "Résistance Nécro": "+10",
       "Puissance Lumière": "+10"
-    }
+    },
+    "damage": {
+      "min": "103",
+      "max": "144"
+    },
+    "otherSource": "Drop"
   },
   {
     "name": "Collier de dents de loup",
@@ -4766,7 +5085,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "242"
-    }
+    },
+    "damage": {
+      "min": "175",
+      "max": "243"
+    },
+    "buyPrice": "1477370"
   },
   {
     "name": "Hache de guerre de qualité runique",
@@ -4774,26 +5098,15 @@
     "source": "Arme",
     "prerequisites": {
       "str": "271"
-    }
-  },
-  {
-    "name": "Hache Lormyrienne",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "300"
-    }
+    },
+    "damage": {
+      "min": "227",
+      "max": "319"
+    },
+    "buyPrice": "1869130"
   },
   {
     "name": "Hache à deux tranchants en mithril runique",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "416"
-    }
-  },
-  {
-    "name": "Francisque en Fer Ancien",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
@@ -4811,7 +5124,13 @@
   {
     "name": "Sceptre de bois",
     "quantity": 1,
-    "source": "Arme"
+    "source": "Arme",
+    "damage": {
+      "min": "2",
+      "max": "4"
+    },
+    "buyPrice": "29",
+    "prerequisites": {}
   },
   {
     "name": "Sceptre de bois de puissance",
@@ -4865,7 +5184,12 @@
     "prerequisites": {
       "int": "21",
       "str": "12"
-    }
+    },
+    "damage": {
+      "min": "6",
+      "max": "11"
+    },
+    "buyPrice": "3920"
   },
   {
     "name": "Bâton de combat",
@@ -4928,7 +5252,12 @@
     "prerequisites": {
       "int": "47",
       "str": "15"
-    }
+    },
+    "damage": {
+      "min": "14",
+      "max": "22"
+    },
+    "buyPrice": "3966"
   },
   {
     "name": "Bo magique",
@@ -4951,7 +5280,12 @@
     "prerequisites": {
       "int": "47",
       "str": "15"
-    }
+    },
+    "damage": {
+      "min": "18",
+      "max": "29"
+    },
+    "buyPrice": "39660"
   },
   {
     "name": "Rang-kwan",
@@ -4960,7 +5294,12 @@
     "prerequisites": {
       "int": "56",
       "str": "16"
-    }
+    },
+    "damage": {
+      "min": "17",
+      "max": "27"
+    },
+    "buyPrice": "5985"
   },
   {
     "name": "Rang-kwan magique",
@@ -4978,7 +5317,12 @@
     "prerequisites": {
       "int": "56",
       "str": "16"
-    }
+    },
+    "damage": {
+      "min": "22",
+      "max": "35"
+    },
+    "buyPrice": "59850"
   },
   {
     "name": "Tetsubo",
@@ -4987,7 +5331,12 @@
     "prerequisites": {
       "int": "68",
       "str": "17"
-    }
+    },
+    "damage": {
+      "min": "21",
+      "max": "33"
+    },
+    "buyPrice": "9323"
   },
   {
     "name": "Tetsubo magique",
@@ -5005,15 +5354,15 @@
     "prerequisites": {
       "int": "68",
       "str": "17"
-    }
+    },
+    "damage": {
+      "min": "27",
+      "max": "42"
+    },
+    "buyPrice": "93230"
   },
   {
     "name": "Gourdin sacré",
-    "quantity": 1,
-    "source": "Arme"
-  },
-  {
-    "name": "Gourdin de Gob'",
     "quantity": 1,
     "source": "Arme"
   },
@@ -5029,7 +5378,12 @@
     "prerequisites": {
       "wis": "34",
       "str": "30"
-    }
+    },
+    "damage": {
+      "min": "14",
+      "max": "22"
+    },
+    "buyPrice": "7083"
   },
   {
     "name": "Gourdin renforcé sacré",
@@ -5038,7 +5392,12 @@
     "prerequisites": {
       "wis": "34",
       "str": "30"
-    }
+    },
+    "damage": {
+      "min": "16",
+      "max": "25"
+    },
+    "buyPrice": "23610"
   },
   {
     "name": "Marteau de guerre renforcé béni",
@@ -5047,7 +5406,12 @@
     "prerequisites": {
       "wis": "41",
       "str": "40"
-    }
+    },
+    "damage": {
+      "min": "24",
+      "max": "36"
+    },
+    "buyPrice": "15798"
   },
   {
     "name": "Marteau de guerre renforcé sacré",
@@ -5056,16 +5420,12 @@
     "prerequisites": {
       "wis": "41",
       "str": "40"
-    }
-  },
-  {
-    "name": "Masse des Ogres",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "wis": "41",
-      "str": "40"
-    }
+    },
+    "damage": {
+      "min": "26",
+      "max": "40"
+    },
+    "buyPrice": "52660"
   },
   {
     "name": "Marteau de guerre en acier trempé béni",
@@ -5074,7 +5434,12 @@
     "prerequisites": {
       "wis": "56",
       "str": "60"
-    }
+    },
+    "damage": {
+      "min": "40",
+      "max": "59"
+    },
+    "buyPrice": "43587"
   },
   {
     "name": "Marteau de guerre en acier trempé sacré",
@@ -5083,19 +5448,15 @@
     "prerequisites": {
       "wis": "56",
       "str": "60"
-    }
+    },
+    "damage": {
+      "min": "45",
+      "max": "65"
+    },
+    "buyPrice": "145290"
   },
   {
     "name": "Masse en acier trempé sacrée",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "wis": "79",
-      "str": "90"
-    }
-  },
-  {
-    "name": "Masse à ailettes enchantée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
@@ -5115,7 +5476,12 @@
     "prerequisites": {
       "wis": "94",
       "str": "110"
-    }
+    },
+    "damage": {
+      "min": "82",
+      "max": "116"
+    },
+    "buyPrice": "173463"
   },
   {
     "name": "Masse de qualité sacrée",
@@ -5124,7 +5490,12 @@
     "prerequisites": {
       "wis": "94",
       "str": "110"
-    }
+    },
+    "damage": {
+      "min": "90",
+      "max": "129"
+    },
+    "buyPrice": "578210"
   },
   {
     "name": "Fléau de qualité béni",
@@ -5133,7 +5504,12 @@
     "prerequisites": {
       "wis": "116",
       "str": "140"
-    }
+    },
+    "damage": {
+      "min": "115",
+      "max": "162"
+    },
+    "buyPrice": "292803"
   },
   {
     "name": "Fléau de qualité sacré",
@@ -5142,7 +5518,12 @@
     "prerequisites": {
       "wis": "116",
       "str": "140"
-    }
+    },
+    "damage": {
+      "min": "126",
+      "max": "180"
+    },
+    "buyPrice": "976010"
   },
   {
     "name": "Fléau de Guerre du Roy Theopold",
@@ -5160,7 +5541,12 @@
     "prerequisites": {
       "wis": "139",
       "str": "170"
-    }
+    },
+    "damage": {
+      "min": "143",
+      "max": "192"
+    },
+    "buyPrice": "443211"
   },
   {
     "name": "Fléau de mithril sacré",
@@ -5169,7 +5555,12 @@
     "prerequisites": {
       "wis": "139",
       "str": "170"
-    }
+    },
+    "damage": {
+      "min": "156",
+      "max": "221"
+    },
+    "buyPrice": "1477370"
   },
   {
     "name": "Fléau d'armes en mithril béni",
@@ -5182,15 +5573,6 @@
   },
   {
     "name": "Fléau d'armes en mithril sacré",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "wis": "169",
-      "str": "210"
-    }
-  },
-  {
-    "name": "Etoile de l'Aube",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
@@ -6020,7 +6402,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "155"
-    }
+    },
+    "damage": {
+      "min": "91",
+      "max": "125"
+    },
+    "otherSource": "Drop"
   },
   {
     "name": "Anneau de vraie foi",
@@ -7898,7 +8285,12 @@
     },
     "secondary": {
       "Transpercer l’Armure": "+15"
-    }
+    },
+    "damage": {
+      "min": "149",
+      "max": "201"
+    },
+    "otherSource": "Quête"
   },
   {
     "name": "Oeil du tigre",
@@ -7945,7 +8337,12 @@
       "Coup Paralysant": "+10",
       "Transpercer l’Armure": "+10",
       "Attaque": "+25"
-    }
+    },
+    "damage": {
+      "min": "147",
+      "max": "199"
+    },
+    "otherSource": "Quête"
   },
   {
     "name": "Cape d'Armagueddon",
@@ -7972,7 +8369,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "242"
-    }
+    },
+    "damage": {
+      "min": "146",
+      "max": "199"
+    },
+    "otherSource": "Quête"
   },
   {
     "name": "Lame Assassine",
@@ -7985,7 +8387,12 @@
     },
     "secondary": {
       "Transpercer l’Armure": "+10"
-    }
+    },
+    "damage": {
+      "min": "69",
+      "max": "96"
+    },
+    "otherSource": "Quête"
   },
   {
     "name": "Sinistre lame de guerre",
@@ -8001,7 +8408,12 @@
       "Coup Puissant": "+10",
       "Attaque": "+50",
       "Résistance Nécro": "+10"
-    }
+    },
+    "damage": {
+      "min": "129",
+      "max": "169"
+    },
+    "otherSource": "Quête"
   },
   {
     "name": "Robe des enfers",
@@ -8056,7 +8468,12 @@
     },
     "secondary": {
       "Puissance Nécro": "+5"
-    }
+    },
+    "damage": {
+      "min": "146",
+      "max": "198"
+    },
+    "otherSource": "Quête"
   },
   {
     "name": "Bâton de langueur",
@@ -8418,7 +8835,12 @@
       "wis": "+5",
       "int": "+5",
       "end": "+5"
-    }
+    },
+    "damage": {
+      "min": "105",
+      "max": "141"
+    },
+    "otherSource": "Coffre"
   },
   {
     "name": "Lame prismatique",
@@ -8426,7 +8848,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "126"
-    }
+    },
+    "damage": {
+      "min": "63",
+      "max": "85"
+    },
+    "otherSource": "Coffre"
   },
   {
     "name": "Bâton de Bastet, l'Esprit des Chats",
@@ -8817,7 +9244,12 @@
       "Transpercer l’Armure": "+5",
       "Coup Puissant": "+5",
       "Coup Paralysant": "+5"
-    }
+    },
+    "damage": {
+      "min": "41",
+      "max": "57"
+    },
+    "otherSource": "Drop"
   },
   {
     "name": "Anneau de l'assassin",
@@ -8873,7 +9305,12 @@
       "wis": "-5",
       "int": "-5",
       "str": "+10"
-    }
+    },
+    "damage": {
+      "min": "42",
+      "max": "61"
+    },
+    "otherSource": "Drop"
   },
   {
     "name": "Manteau du Voyeur",
@@ -8931,12 +9368,23 @@
     "prerequisites": {
       "wis": "56",
       "str": "60"
-    }
+    },
+    "damage": {
+      "min": "36",
+      "max": "52"
+    },
+    "otherSource": "Coffre"
   },
   {
     "name": "Gourdin",
     "quantity": 1,
-    "source": "Arme"
+    "source": "Arme",
+    "damage": {
+      "min": "2",
+      "max": "4"
+    },
+    "buyPrice": "29",
+    "prerequisites": {}
   },
   {
     "name": "Couteau de boucher",
@@ -9277,7 +9725,8 @@
     "source": "Arme",
     "prerequisites": {
       "end": "150",
-      "str": "425"
+      "str": "425",
+      "att": "500"
     },
     "secondary": {
       "Coup Puissant": "+10",
@@ -9285,7 +9734,12 @@
     },
     "bonuses": {
       "ca": "+10"
-    }
+    },
+    "damage": {
+      "min": "385",
+      "max": "562"
+    },
+    "otherSource": "Drop"
   },
   {
     "name": "Clef cuivre",
@@ -10270,12 +10724,18 @@
     }
   },
   {
-    "name": "Lame viperine de main gauche",
+    "name": "Lame vipérine de main gauche (dual) (+3)",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
       "str": "300"
-    }
+    },
+    "damage": {
+      "min": "151",
+      "max": "230"
+    },
+    "buyPrice": "0",
+    "otherSource": "Forgeron 60"
   },
   {
     "name": "Faux spectrale",
@@ -10652,26 +11112,6 @@
     "name": "Parchemin d'expérience de 30 minutes",
     "quantity": 1,
     "source": "Divers"
-  },
-  {
-    "name": "Lame enchantée",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "320",
-      "dex": "40"
-    },
-    "bonuses": {
-      "end": "+25",
-      "str": "+25"
-    },
-    "secondary": {
-      "Résistance Air": "-10",
-      "Résistance Nécro": "-10",
-      "Résistance Terre": "-10",
-      "Résistance Lumière": "-10",
-      "Résistance Eau": "-10"
-    }
   },
   {
     "name": "Sceptre des abysses",
@@ -13374,7 +13814,12 @@
     },
     "secondary": {
       "Résistance Air": "+5"
-    }
+    },
+    "damage": {
+      "min": "10",
+      "max": "18"
+    },
+    "otherSource": "Forgeron 7"
   },
   {
     "name": "Flèches empoisonnées",
@@ -13931,23 +14376,6 @@
     "source": "Divers"
   },
   {
-    "name": "Epée à deux mains en titane",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "474",
-      "dex": "85"
-    }
-  },
-  {
-    "name": "Cimeterre en métrolite doré",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "807"
-    }
-  },
-  {
     "name": "Epée une main et demi vibrante",
     "quantity": 1,
     "source": "Arme",
@@ -13961,22 +14389,6 @@
     "source": "Arme",
     "prerequisites": {
       "str": "836"
-    }
-  },
-  {
-    "name": "Cimeterre en métrolite robuste",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "880"
-    }
-  },
-  {
-    "name": "Exterminatrice",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "894"
     }
   },
   {
@@ -15208,14 +15620,6 @@
     "source": "Divers"
   },
   {
-    "name": "Eventreuse de main gauche",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "372"
-    }
-  },
-  {
     "name": "Cimeterre de rubis de main gauche",
     "quantity": 1,
     "source": "Arme",
@@ -15229,7 +15633,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "317"
-    }
+    },
+    "damage": {
+      "min": "127",
+      "max": "178"
+    },
+    "otherSource": "Forgeron 61"
   },
   {
     "name": "Fleuret de défaillance",
@@ -15239,7 +15648,13 @@
       "int": "105",
       "wis": "19",
       "str": "324"
-    }
+    },
+    "damage": {
+      "min": "87",
+      "max": "131"
+    },
+    "buyPrice": "62304",
+    "otherSource": "Forgeron 63"
   },
   {
     "name": "Lame perfide",
@@ -16353,46 +16768,6 @@
     "name": "Bobine de fil spirituel éthéré",
     "quantity": 1,
     "source": "Divers"
-  },
-  {
-    "name": "Glaive terrestre",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "int": "36",
-      "wis": "138",
-      "str": "894"
-    }
-  },
-  {
-    "name": "Glaive virevoltant",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "int": "87",
-      "wis": "87",
-      "str": "894"
-    }
-  },
-  {
-    "name": "Glaive de givre",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "int": "138",
-      "wis": "36",
-      "str": "894"
-    }
-  },
-  {
-    "name": "Glaive flamboyant",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "int": "138",
-      "wis": "36",
-      "str": "894"
-    }
   },
   {
     "name": "Hallebarde flamboyante",
@@ -18143,7 +18518,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "662"
-    }
+    },
+    "damage": {
+      "min": "169",
+      "max": "281"
+    },
+    "buyPrice": "354968"
   },
   {
     "name": "Masque de cancre",
@@ -19014,14 +19394,6 @@
     "source": "Robe"
   },
   {
-    "name": "Cimeterre de rubis",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "459"
-    }
-  },
-  {
     "name": "Cape bleue",
     "quantity": 1,
     "source": "Cape"
@@ -19055,14 +19427,6 @@
     "name": "Cape blanche",
     "quantity": 1,
     "source": "Cape"
-  },
-  {
-    "name": "Hachette d'acier fin",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "155"
-    }
   },
   {
     "name": "Scalpel du chirurgien poli",
@@ -19702,14 +20066,6 @@
     "source": "Divers"
   },
   {
-    "name": "Epée courte d'Orkanis",
-    "quantity": 1,
-    "source": "Arme",
-    "prerequisites": {
-      "str": "53"
-    }
-  },
-  {
     "name": "Dent de Démonicon",
     "quantity": 1,
     "source": "Divers"
@@ -19887,7 +20243,12 @@
     "bonuses": {
       "dex": "+5",
       "str": "+5"
-    }
+    },
+    "damage": {
+      "min": "26",
+      "max": "43"
+    },
+    "otherSource": "Gobelin gardien des glaces"
   },
   {
     "name": "Feuille d'arbre rose",
@@ -19905,7 +20266,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "79"
-    }
+    },
+    "damage": {
+      "min": "36",
+      "max": "50"
+    },
+    "otherSource": "Drop"
   },
   {
     "name": "Lettre du marchand",
@@ -20226,7 +20592,12 @@
     "prerequisites": {
       "int": "21",
       "str": "12"
-    }
+    },
+    "damage": {
+      "min": "5",
+      "max": "9"
+    },
+    "buyPrice": "392"
   },
   {
     "name": "Fleuret",
@@ -20234,7 +20605,13 @@
     "source": "Arme",
     "prerequisites": {
       "str": "53"
-    }
+    },
+    "damage": {
+      "min": "16",
+      "max": "25"
+    },
+    "buyPrice": "1755",
+    "otherSource": "Prolifique (Arakas, île aux Démonicons)"
   },
   {
     "name": "Hache d'argent",
@@ -20242,7 +20619,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "71"
-    }
+    },
+    "damage": {
+      "min": "37",
+      "max": "53"
+    },
+    "buyPrice": "14894 BM*"
   },
   {
     "name": "Lame des ténèbres",
@@ -20267,7 +20649,12 @@
     },
     "secondary": {
       "Attaque": "+10"
-    }
+    },
+    "damage": {
+      "min": "28",
+      "max": "29"
+    },
+    "otherSource": "Drop"
   },
   {
     "name": "Dague perceuse d'armure",
@@ -20281,7 +20668,12 @@
     "secondary": {
       "Attaque": "+10",
       "Transpercer l’Armure": "+10"
-    }
+    },
+    "damage": {
+      "min": "12",
+      "max": "19"
+    },
+    "otherSource": "Drop"
   },
   {
     "name": "Lame de gobelin",
@@ -20289,7 +20681,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "53"
-    }
+    },
+    "damage": {
+      "min": "22",
+      "max": "31"
+    },
+    "otherSource": "Drop"
   },
   {
     "name": "Épée de la nuit",
@@ -20302,7 +20699,12 @@
     },
     "bonuses": {
       "dex": "+10"
-    }
+    },
+    "damage": {
+      "min": "30",
+      "max": "42"
+    },
+    "otherSource": "Quête"
   },
   {
     "name": "Anneau de confiance",
@@ -20391,7 +20793,12 @@
     "source": "Arme",
     "prerequisites": {
       "str": "53"
-    }
+    },
+    "damage": {
+      "min": "7",
+      "max": "48"
+    },
+    "otherSource": "Quête/Drop"
   },
   {
     "name": "Livre de Feylor",
@@ -20475,7 +20882,16 @@
   {
     "name": "Epée vorpale de Drachen",
     "quantity": 1,
-    "source": "Arme"
+    "source": "Arme",
+    "damage": {
+      "min": "116",
+      "max": "150"
+    },
+    "otherSource": "Drop",
+    "prerequisites": {
+      "str": "230",
+      "dex": "60"
+    }
   },
   {
     "name": "Plastron de Drachen",
@@ -20895,7 +21311,16 @@
   {
     "name": "Sinistre épée de guerre",
     "quantity": 1,
-    "source": "Arme"
+    "source": "Arme",
+    "damage": {
+      "min": "155",
+      "max": "214"
+    },
+    "otherSource": "Drop",
+    "prerequisites": {
+      "str": "227",
+      "dex": "83"
+    }
   },
   {
     "name": "Dinde",
@@ -20935,7 +21360,15 @@
   {
     "name": "Lame de perdition",
     "quantity": 1,
-    "source": "Arme"
+    "source": "Arme",
+    "damage": {
+      "min": "122",
+      "max": "190"
+    },
+    "buyPrice": "120089",
+    "prerequisites": {
+      "str": "372"
+    }
   },
   {
     "name": "Fiole de soie d'araignée liquide",
@@ -23594,5 +24027,2452 @@
     "name": "Branche d'orme",
     "quantity": 1,
     "source": "Divers"
+  },
+  {
+    "name": "Gourdin enchanté",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {},
+    "damage": {
+      "min": "2",
+      "max": "5"
+    },
+    "buyPrice": "87"
+  },
+  {
+    "name": "Gourdin runique",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {},
+    "damage": {
+      "min": "2",
+      "max": "5"
+    },
+    "buyPrice": "290"
+  },
+  {
+    "name": "Gourdin du gob' (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {},
+    "damage": {
+      "min": "3",
+      "max": "6"
+    },
+    "otherSource": "Invoc."
+  },
+  {
+    "name": "Sceptre de bois enchanté",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {},
+    "damage": {
+      "min": "2",
+      "max": "5"
+    },
+    "buyPrice": "87"
+  },
+  {
+    "name": "Sceptre en bois de puissance",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {},
+    "damage": {
+      "min": "2",
+      "max": "5"
+    },
+    "buyPrice": "270"
+  },
+  {
+    "name": "Epee courte courte runique",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {},
+    "damage": {
+      "min": "2",
+      "max": "5"
+    },
+    "buyPrice": "290"
+  },
+  {
+    "name": "Baton de soumission",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {},
+    "damage": {
+      "min": "0",
+      "max": "0"
+    },
+    "otherSource": "Quête"
+  },
+  {
+    "name": "Sceptre de pouvoir du Drachen",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "10",
+      "int": "135"
+    },
+    "damage": {
+      "min": "14",
+      "max": "22"
+    },
+    "otherSource": "Drop"
+  },
+  {
+    "name": "Sceptre de fer enchanté",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "12",
+      "int": "21"
+    },
+    "damage": {
+      "min": "5",
+      "max": "10"
+    },
+    "buyPrice": "1176"
+  },
+  {
+    "name": "Dague du crâne",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "12",
+      "int": "43",
+      "wis": "15"
+    },
+    "damage": {
+      "min": "5",
+      "max": "9"
+    },
+    "otherSource": "Quête"
+  },
+  {
+    "name": "Bâton de combat",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "13",
+      "int": "30"
+    },
+    "damage": {
+      "min": "8",
+      "max": "13"
+    },
+    "buyPrice": "1169"
+  },
+  {
+    "name": "Bâton de combat enchanté",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "13",
+      "int": "30"
+    },
+    "damage": {
+      "min": "9",
+      "max": "15"
+    },
+    "buyPrice": "3057"
+  },
+  {
+    "name": "Bâton de combat de puissance",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "13",
+      "int": "30"
+    },
+    "damage": {
+      "min": "10",
+      "max": "17"
+    },
+    "buyPrice": "11690"
+  },
+  {
+    "name": "Sceptre d'épine",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "14",
+      "int": "39"
+    },
+    "damage": {
+      "min": "11",
+      "max": "18"
+    },
+    "buyPrice": "2361"
+  },
+  {
+    "name": "Sceptre d'épine enchanté",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "14",
+      "int": "39"
+    },
+    "damage": {
+      "min": "12",
+      "max": "19"
+    },
+    "buyPrice": "7083"
+  },
+  {
+    "name": "Sceptre d'épine de puissance",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "14",
+      "int": "39"
+    },
+    "damage": {
+      "min": "14",
+      "max": "23"
+    },
+    "buyPrice": "23610"
+  },
+  {
+    "name": "Bô enchanté",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "15",
+      "int": "47"
+    },
+    "damage": {
+      "min": "16",
+      "max": "25"
+    },
+    "buyPrice": "11898"
+  },
+  {
+    "name": "Rang-kwan enchanté",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "16",
+      "int": "56"
+    },
+    "damage": {
+      "min": "19",
+      "max": "31"
+    },
+    "buyPrice": "17955"
+  },
+  {
+    "name": "Tetsubo enchanté",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "17",
+      "int": "68"
+    },
+    "damage": {
+      "min": "24",
+      "max": "37"
+    },
+    "buyPrice": "27969"
+  },
+  {
+    "name": "Bâton de marche tordu",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "17",
+      "int": "68"
+    },
+    "damage": {
+      "min": "21",
+      "max": "33"
+    },
+    "otherSource": "Coffre"
+  },
+  {
+    "name": "Bâton de Bastet, l'esprit des chats",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "20",
+      "int": "73",
+      "wis": "73"
+    },
+    "damage": {
+      "min": "35",
+      "max": "55"
+    },
+    "otherSource": "Coffre"
+  },
+  {
+    "name": "Bâton de langueur",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "20",
+      "int": "83",
+      "wis": "35"
+    },
+    "damage": {
+      "min": "35",
+      "max": "55"
+    },
+    "otherSource": "Quête"
+  },
+  {
+    "name": "Rapière du bretteur (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "24"
+    },
+    "damage": {
+      "min": "9",
+      "max": "16"
+    },
+    "otherSource": "Invoc. | Forgeron 3",
+    "buyPrice": "806"
+  },
+  {
+    "name": "Dague rouillée enchantée",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "24"
+    },
+    "damage": {
+      "min": "6",
+      "max": "12"
+    },
+    "buyPrice": "1815"
+  },
+  {
+    "name": "Dague en ivoire (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "24"
+    },
+    "damage": {
+      "min": "9",
+      "max": "15"
+    },
+    "otherSource": "Invoc. | Gobelin Farfelu, Forgeron 5",
+    "buyPrice": "805"
+  },
+  {
+    "name": "Scalpel du chirurgien",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "30",
+      "int": "30",
+      "wis": "50"
+    },
+    "damage": {
+      "min": "18",
+      "max": "27"
+    },
+    "otherSource": "Quête"
+  },
+  {
+    "name": "Cognée de bucheron (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "39"
+    },
+    "damage": {
+      "min": "20",
+      "max": "33"
+    },
+    "otherSource": "Invoc. | Forgeron 9",
+    "buyPrice": "3148"
+  },
+  {
+    "name": "Masse des ogres (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "40",
+      "wis": "41"
+    },
+    "damage": {
+      "min": "26",
+      "max": "42"
+    },
+    "otherSource": "Invoc. | Forgeron 13",
+    "buyPrice": "7021"
+  },
+  {
+    "name": "Couteau de cuisine nain (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "68"
+    },
+    "damage": {
+      "min": "40",
+      "max": "58"
+    },
+    "otherSource": "Invoc. | Forgeron 17",
+    "buyPrice": "12430"
+  },
+  {
+    "name": "Buveuse de sang",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "68"
+    },
+    "damage": {
+      "min": "30",
+      "max": "42"
+    },
+    "otherSource": "Drop"
+  },
+  {
+    "name": "Sabre a crosse de nacre (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "82"
+    },
+    "damage": {
+      "min": "42",
+      "max": "66"
+    },
+    "otherSource": "Invoc. | Forgeron 19",
+    "buyPrice": "19372"
+  },
+  {
+    "name": "Masse en acier trempé béni",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "90",
+      "wis": "79"
+    },
+    "damage": {
+      "min": "65",
+      "max": "93"
+    },
+    "buyPrice": "111159"
+  },
+  {
+    "name": "Masse en acier trempé sacré",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "90",
+      "wis": "79"
+    },
+    "damage": {
+      "min": "72",
+      "max": "104"
+    },
+    "buyPrice": "370530"
+  },
+  {
+    "name": "Masse à ailettes enchantée (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "90",
+      "wis": "79"
+    },
+    "damage": {
+      "min": "81",
+      "max": "117"
+    },
+    "otherSource": "Invoc."
+  },
+  {
+    "name": "Pourfendeur de gobelin",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "97",
+      "int": "20",
+      "wis": "23"
+    },
+    "damage": {
+      "min": "32",
+      "max": "60"
+    },
+    "otherSource": "Quête"
+  },
+  {
+    "name": "Dague d'obscurantis (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "97"
+    },
+    "damage": {
+      "min": "61",
+      "max": "87"
+    },
+    "otherSource": "Invoc. | Forgeron 27",
+    "buyPrice": "27849"
+  },
+  {
+    "name": "Merlin en acier trempé (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "97"
+    },
+    "damage": {
+      "min": "73",
+      "max": "105"
+    },
+    "otherSource": "Invoc."
+  },
+  {
+    "name": "Bâton d'espérance",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "110",
+      "int": "23",
+      "wis": "131"
+    },
+    "damage": {
+      "min": "90",
+      "max": "129"
+    },
+    "otherSource": "Quête"
+  },
+  {
+    "name": "Epée longue en acier trempé enchanté",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "126"
+    },
+    "damage": {
+      "min": "70",
+      "max": "97"
+    },
+    "buyPrice": "111159"
+  },
+  {
+    "name": "Dague de jade (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "126"
+    },
+    "damage": {
+      "min": "82",
+      "max": "115"
+    },
+    "otherSource": "Invoc. | Forgeron 36",
+    "buyPrice": "49404"
+  },
+  {
+    "name": "Fléau de guerre du roi Theopold (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "140",
+      "wis": "116"
+    },
+    "damage": {
+      "min": "142",
+      "max": "204"
+    },
+    "otherSource": "Invoc."
+  },
+  {
+    "name": "Epée en os de berserk",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "141",
+      "dex": "22",
+      "int": "20",
+      "wis": "25"
+    },
+    "damage": {
+      "min": "71",
+      "max": "95"
+    },
+    "otherSource": "Drop"
+  },
+  {
+    "name": "Hachette en acier trempé",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "155"
+    },
+    "damage": {
+      "min": "90",
+      "max": "123"
+    },
+    "buyPrice": "57861"
+  },
+  {
+    "name": "Hachette en acier trempé enchantée",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "155"
+    },
+    "damage": {
+      "min": "106",
+      "max": "139"
+    },
+    "buyPrice": "173463"
+  },
+  {
+    "name": "Hachette en acier trempé runique",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "155"
+    },
+    "damage": {
+      "min": "113",
+      "max": "151"
+    },
+    "buyPrice": "578210"
+  },
+  {
+    "name": "Cimeterre du Zéphir (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "155"
+    },
+    "damage": {
+      "min": "114",
+      "max": "161"
+    },
+    "otherSource": "Invoc."
+  },
+  {
+    "name": "Hache de guerre Baatorienne (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "184"
+    },
+    "damage": {
+      "min": "170",
+      "max": "242"
+    },
+    "otherSource": "Invoc."
+  },
+  {
+    "name": "Dague de l'assassin (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "184"
+    },
+    "damage": {
+      "min": "133",
+      "max": "186"
+    },
+    "otherSource": "Coffre"
+  },
+  {
+    "name": "Fléau d'armes de mithril",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "210",
+      "wis": "169"
+    },
+    "damage": {
+      "min": "159",
+      "max": "221"
+    },
+    "buyPrice": "230691"
+  },
+  {
+    "name": "Fléau d'armes de mithril béni",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "210",
+      "wis": "169"
+    },
+    "damage": {
+      "min": "177",
+      "max": "249"
+    },
+    "buyPrice": "692073"
+  },
+  {
+    "name": "Fléau d'armes de mithril sacré",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "210",
+      "wis": "169"
+    },
+    "damage": {
+      "min": "195",
+      "max": "276"
+    },
+    "buyPrice": "2306910"
+  },
+  {
+    "name": "Etoile de l'aube (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "210",
+      "wis": "169"
+    },
+    "damage": {
+      "min": "219",
+      "max": "313"
+    },
+    "buyPrice": "9227640"
+  },
+  {
+    "name": "Cimeterre renforcé",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "227"
+    },
+    "damage": {
+      "min": "128",
+      "max": "173"
+    },
+    "buyPrice": "129874"
+  },
+  {
+    "name": "Cimeterre renforcé enchanté",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "227"
+    },
+    "damage": {
+      "min": "141",
+      "max": "193"
+    },
+    "buyPrice": "389622"
+  },
+  {
+    "name": "Cimeterre renforcé runique",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "227"
+    },
+    "damage": {
+      "min": "154",
+      "max": "213"
+    },
+    "buyPrice": "1298740"
+  },
+  {
+    "name": "Lame d'adamantite enchantée",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "242"
+    },
+    "damage": {
+      "min": "146",
+      "max": "199"
+    },
+    "buyPrice": "443211"
+  },
+  {
+    "name": "Lame d'adamantite runique",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "242"
+    },
+    "damage": {
+      "min": "159",
+      "max": "219"
+    },
+    "buyPrice": "1477370"
+  },
+  {
+    "name": "Lame du Héron (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "242"
+    },
+    "damage": {
+      "min": "177",
+      "max": "246"
+    },
+    "buyPrice": "5909480"
+  },
+  {
+    "name": "Epée bâtarde de qualité",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "242"
+    },
+    "damage": {
+      "min": "145",
+      "max": "197"
+    },
+    "buyPrice": "147737"
+  },
+  {
+    "name": "Epée bâtarde de qualité enchantée",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "242"
+    },
+    "damage": {
+      "min": "160",
+      "max": "220"
+    },
+    "buyPrice": "443211"
+  },
+  {
+    "name": "Epée bâtarde de qualité runique",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "242"
+    },
+    "damage": {
+      "min": "175",
+      "max": "243"
+    },
+    "buyPrice": "1477370"
+  },
+  {
+    "name": "Epée de la rose noire (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "242"
+    },
+    "damage": {
+      "min": "195",
+      "max": "274"
+    },
+    "otherSource": "Coffre"
+  },
+  {
+    "name": "Fléau d'armes antique",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "260",
+      "wis": "206"
+    },
+    "damage": {
+      "min": "181",
+      "max": "255"
+    },
+    "buyPrice": "360269"
+  },
+  {
+    "name": "Fléau d'armes antique béni",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "260",
+      "wis": "206"
+    },
+    "damage": {
+      "min": "201",
+      "max": "286"
+    },
+    "buyPrice": "1080807"
+  },
+  {
+    "name": "Fléau d'armes antique sacré",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "260",
+      "wis": "206"
+    },
+    "damage": {
+      "min": "221",
+      "max": "317"
+    },
+    "buyPrice": "3602690"
+  },
+  {
+    "name": "Fléau d'armes antique des hauts elfes (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "260",
+      "wis": "206"
+    },
+    "damage": {
+      "min": "247",
+      "max": "359"
+    },
+    "otherSource": "Drop"
+  },
+  {
+    "name": "Hache de guerre de qualité",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "271"
+    },
+    "damage": {
+      "min": "186",
+      "max": "257"
+    },
+    "buyPrice": "186913"
+  },
+  {
+    "name": "Hache de guerre de qualité enchantée",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "271"
+    },
+    "damage": {
+      "min": "206",
+      "max": "288"
+    },
+    "buyPrice": "560739"
+  },
+  {
+    "name": "Epée longue de mithril enchantée",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "271"
+    },
+    "damage": {
+      "min": "159",
+      "max": "216"
+    },
+    "buyPrice": "560739"
+  },
+  {
+    "name": "Masse skraugbashor",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "280",
+      "dex": "20",
+      "int": "25",
+      "wis": "20"
+    },
+    "damage": {
+      "min": "153",
+      "max": "205"
+    },
+    "otherSource": "Quête"
+  },
+  {
+    "name": "Glaive de mithril enchanté",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "285"
+    },
+    "damage": {
+      "min": "174",
+      "max": "237"
+    },
+    "buyPrice": "624678"
+  },
+  {
+    "name": "Glaive de mithril runique",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "285"
+    },
+    "damage": {
+      "min": "190",
+      "max": "261"
+    },
+    "buyPrice": "2082260"
+  },
+  {
+    "name": "Lame ancienne",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "300"
+    },
+    "damage": {
+      "min": "167",
+      "max": "224"
+    },
+    "buyPrice": "230691"
+  },
+  {
+    "name": "Lame ancienne enchantée",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "300"
+    },
+    "damage": {
+      "min": "183",
+      "max": "249"
+    },
+    "buyPrice": "692073"
+  },
+  {
+    "name": "Lame vipérine (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "300"
+    },
+    "damage": {
+      "min": "222",
+      "max": "308"
+    },
+    "buyPrice": "9227640"
+  },
+  {
+    "name": "Hache de qualité a deux tranchants enchantée",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "300"
+    },
+    "damage": {
+      "min": "288",
+      "max": "407"
+    },
+    "buyPrice": "692073"
+  },
+  {
+    "name": "Hache de qualité a deux tranchants runique",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "300"
+    },
+    "damage": {
+      "min": "318",
+      "max": "453"
+    },
+    "buyPrice": "2306910"
+  },
+  {
+    "name": "Hache lormyrienne (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "300"
+    },
+    "damage": {
+      "min": "359",
+      "max": "515"
+    },
+    "buyPrice": "9227640"
+  },
+  {
+    "name": "Cimeterre de mithril",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "300"
+    },
+    "damage": {
+      "min": "172",
+      "max": "231"
+    },
+    "buyPrice": "230691"
+  },
+  {
+    "name": "Cimeterre de mithril enchanté",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "300"
+    },
+    "damage": {
+      "min": "189",
+      "max": "258"
+    },
+    "buyPrice": "692073"
+  },
+  {
+    "name": "Cimeterre de mithril runique",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "300"
+    },
+    "damage": {
+      "min": "206",
+      "max": "284"
+    },
+    "buyPrice": "2306910"
+  },
+  {
+    "name": "Epée bâtarde de mithril",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "314"
+    },
+    "damage": {
+      "min": "189",
+      "max": "254"
+    },
+    "buyPrice": "254305"
+  },
+  {
+    "name": "Epée bâtarde de mithril enchantée",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "314"
+    },
+    "damage": {
+      "min": "207",
+      "max": "284"
+    },
+    "buyPrice": "762915"
+  },
+  {
+    "name": "Epée bâtarde de mithril runique",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "314"
+    },
+    "damage": {
+      "min": "226",
+      "max": "314"
+    },
+    "buyPrice": "2543050"
+  },
+  {
+    "name": "Epée a 2 mains en mithril",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "329"
+    },
+    "damage": {
+      "min": "219",
+      "max": "303"
+    },
+    "buyPrice": "279071"
+  },
+  {
+    "name": "Epée a 2 mains en mithril enchantée",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "329"
+    },
+    "damage": {
+      "min": "243",
+      "max": "339"
+    },
+    "buyPrice": "837213"
+  },
+  {
+    "name": "Epée a 2 mains en mithril runique",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "329"
+    },
+    "damage": {
+      "min": "266",
+      "max": "375"
+    },
+    "buyPrice": "2790710"
+  },
+  {
+    "name": "Claymore en mithril (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "329"
+    },
+    "damage": {
+      "min": "298",
+      "max": "424"
+    },
+    "buyPrice": "11162840"
+  },
+  {
+    "name": "Glaive d'adamantite",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "358"
+    },
+    "damage": {
+      "min": "186",
+      "max": "252"
+    },
+    "buyPrice": "332053"
+  },
+  {
+    "name": "Glaive d'adamantite enchanté",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "358"
+    },
+    "damage": {
+      "min": "204",
+      "max": "280"
+    },
+    "buyPrice": "996159"
+  },
+  {
+    "name": "Hache de guerre de mithril",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "358"
+    },
+    "damage": {
+      "min": "230",
+      "max": "320"
+    },
+    "buyPrice": "332053"
+  },
+  {
+    "name": "Hache de guerre de mithril enchantée",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "358"
+    },
+    "damage": {
+      "min": "255",
+      "max": "358"
+    },
+    "buyPrice": "996159"
+  },
+  {
+    "name": "Hache de guerre de mithril runique",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "358"
+    },
+    "damage": {
+      "min": "279",
+      "max": "396"
+    },
+    "buyPrice": "3320530"
+  },
+  {
+    "name": "Cimeterre d'adamantite",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "372"
+    },
+    "damage": {
+      "min": "197",
+      "max": "268"
+    },
+    "buyPrice": "360269"
+  },
+  {
+    "name": "Cimeterre d'adamantite enchanté",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "372"
+    },
+    "damage": {
+      "min": "216",
+      "max": "298"
+    },
+    "buyPrice": "1080807"
+  },
+  {
+    "name": "Epée bâtarde d'adamantite",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "387"
+    },
+    "damage": {
+      "min": "214",
+      "max": "294"
+    },
+    "buyPrice": "389637"
+  },
+  {
+    "name": "Epée bâtarde d'adamantite enchantée",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "387"
+    },
+    "damage": {
+      "min": "235",
+      "max": "327"
+    },
+    "buyPrice": "1168911"
+  },
+  {
+    "name": "Epée bâtarde d'adamantite runique",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "387"
+    },
+    "damage": {
+      "min": "256",
+      "max": "360"
+    },
+    "buyPrice": "3869370"
+  },
+  {
+    "name": "Epée à 2 mains d'adamantite",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "401"
+    },
+    "damage": {
+      "min": "248",
+      "max": "347"
+    },
+    "buyPrice": "420154"
+  },
+  {
+    "name": "Epée à 2 mains d'adamantite enchantée",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "401"
+    },
+    "damage": {
+      "min": "274",
+      "max": "388"
+    },
+    "buyPrice": "1260462"
+  },
+  {
+    "name": "Epée à 2 mains d'adamantite runique",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "401"
+    },
+    "damage": {
+      "min": "300",
+      "max": "428"
+    },
+    "buyPrice": "4201540"
+  },
+  {
+    "name": "Epée d'adamantite incrustée de saphir (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "401"
+    },
+    "damage": {
+      "min": "334",
+      "max": "483"
+    },
+    "buyPrice": "16806160"
+  },
+  {
+    "name": "Hache à 2 tranchants de mithril",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "416"
+    },
+    "damage": {
+      "min": "313",
+      "max": "449"
+    },
+    "buyPrice": "451823"
+  },
+  {
+    "name": "Hache à 2 tranchants de mithril enchantée",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "416"
+    },
+    "damage": {
+      "min": "348",
+      "max": "504"
+    },
+    "buyPrice": "1355469"
+  },
+  {
+    "name": "Hache à 2 tranchants de mithril runique",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "416"
+    },
+    "damage": {
+      "min": "383",
+      "max": "560"
+    },
+    "buyPrice": "4518230"
+  },
+  {
+    "name": "Francisque en fer ancien (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "416"
+    },
+    "damage": {
+      "min": "430",
+      "max": "634"
+    },
+    "buyPrice": "18072920"
+  },
+  {
+    "name": "Epée bâtarde ancienne",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "532"
+    },
+    "damage": {
+      "min": "268",
+      "max": "373"
+    },
+    "buyPrice": "746587"
+  },
+  {
+    "name": "Epée bâtarde ancienne enchantée",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "532"
+    },
+    "damage": {
+      "min": "293",
+      "max": "413"
+    },
+    "buyPrice": "2239761"
+  },
+  {
+    "name": "Epée bâtarde ancienne runique",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "532"
+    },
+    "damage": {
+      "min": "318",
+      "max": "454"
+    },
+    "buyPrice": "7465870"
+  },
+  {
+    "name": "Epée à 2 mains ancienne",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "590"
+    },
+    "damage": {
+      "min": "325",
+      "max": "463"
+    },
+    "buyPrice": "921581"
+  },
+  {
+    "name": "Epée à 2 mains ancienne enchantée",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "590"
+    },
+    "damage": {
+      "min": "357",
+      "max": "515"
+    },
+    "buyPrice": "2764743"
+  },
+  {
+    "name": "Epée à 2 mains ancienne runique",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "590"
+    },
+    "damage": {
+      "min": "388",
+      "max": "568"
+    },
+    "buyPrice": "9215810"
+  },
+  {
+    "name": "Epée ancienne des hauts-elfes (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "590"
+    },
+    "damage": {
+      "min": "431",
+      "max": "638"
+    },
+    "otherSource": "Drop"
+  },
+  {
+    "name": "Haches anciennes à 2 tranchants",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "590"
+    },
+    "damage": {
+      "min": "396",
+      "max": "580"
+    },
+    "buyPrice": "921581"
+  },
+  {
+    "name": "Haches anciennes à 2 tranchants enchantée",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "590"
+    },
+    "damage": {
+      "min": "438",
+      "max": "649"
+    },
+    "buyPrice": "2764743"
+  },
+  {
+    "name": "Haches anciennes à 2 tranchants runique",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "590"
+    },
+    "damage": {
+      "min": "480",
+      "max": "719"
+    },
+    "buyPrice": "9215810"
+  },
+  {
+    "name": "Hache ancienne des hauts-elfes (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "590"
+    },
+    "damage": {
+      "min": "537",
+      "max": "813"
+    },
+    "otherSource": "Drop"
+  },
+  {
+    "name": "Gourdin de Gob' (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {},
+    "damage": {
+      "min": "3",
+      "max": "6"
+    },
+    "buyPrice": "38",
+    "otherSource": "Forgeron 1"
+  },
+  {
+    "name": "Epée courte d'Orkanis (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "53"
+    },
+    "damage": {
+      "min": "24",
+      "max": "38"
+    },
+    "otherSource": "Forgeron 15, Prolifique (Arakas, île aux Démonicons)"
+  },
+  {
+    "name": "Epée du froid de main gauche (dual)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "53"
+    },
+    "damage": {
+      "min": "26",
+      "max": "43"
+    },
+    "otherSource": "Gobelin gardien des glaces"
+  },
+  {
+    "name": "Lance d'alourdissement (2 mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "70",
+      "int": "42",
+      "wis": "40"
+    },
+    "damage": {
+      "min": "21",
+      "max": "25"
+    },
+    "otherSource": "Ebéniste 43"
+  },
+  {
+    "name": "Épée d'argent (2 mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "71"
+    },
+    "damage": {
+      "min": "59",
+      "max": "92"
+    },
+    "buyPrice": "11324",
+    "otherSource": "Dragon Freidaclan (RD)"
+  },
+  {
+    "name": "Lance d'alourdissement important (2 mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "80",
+      "int": "56",
+      "wis": "43"
+    },
+    "damage": {
+      "min": "21",
+      "max": "30"
+    },
+    "otherSource": "Ebéniste 67"
+  },
+  {
+    "name": "Dague d'obscurantis de main gauche (dual) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "97"
+    },
+    "damage": {
+      "min": "61",
+      "max": "87"
+    },
+    "buyPrice": "27849",
+    "otherSource": "Forgeron 29"
+  },
+  {
+    "name": "Épée incrustée de glace de main gauche (dual) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "140"
+    },
+    "damage": {
+      "min": "74",
+      "max": "115"
+    },
+    "buyPrice": "19620",
+    "otherSource": "Quête Le Forgeron Durikh"
+  },
+  {
+    "name": "Cimeterre du Zéphyr (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "155"
+    },
+    "damage": {
+      "min": "87",
+      "max": "134"
+    },
+    "buyPrice": "77094",
+    "otherSource": "Forgeron 41"
+  },
+  {
+    "name": "Cimeterre du Zéphyr de main gauche (dual) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "155"
+    },
+    "damage": {
+      "min": "87",
+      "max": "134"
+    },
+    "otherSource": "Forgeron 48"
+  },
+  {
+    "name": "Hachette d'acier fin (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "155"
+    },
+    "damage": {
+      "min": "94",
+      "max": "145"
+    },
+    "otherSource": "Forgeron 49"
+  },
+  {
+    "name": "Hachette d'acier fin de main gauche (dual) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "155"
+    },
+    "damage": {
+      "min": "94",
+      "max": "145"
+    },
+    "otherSource": "Forgeron 51"
+  },
+  {
+    "name": "Poings du pugiliste (2 mains) (+2)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "175",
+      "int": "78",
+      "wis": "39"
+    },
+    "damage": {
+      "min": "92",
+      "max": "141"
+    },
+    "otherSource": "Armurier 78"
+  },
+  {
+    "name": "Dague de l'assassin de main gauche (dual) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "184"
+    },
+    "damage": {
+      "min": "100",
+      "max": "153"
+    },
+    "buyPrice": "0",
+    "otherSource": "Forgeron 53"
+  },
+  {
+    "name": "Hache de guerre Baatorienne (2 mains) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "184"
+    },
+    "damage": {
+      "min": "137",
+      "max": "209"
+    },
+    "buyPrice": "0",
+    "otherSource": "Forgeron 55"
+  },
+  {
+    "name": "Epée de la Rose Noire de main gauche (dual) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "242"
+    },
+    "damage": {
+      "min": "151",
+      "max": "230"
+    },
+    "buyPrice": "49245",
+    "otherSource": "Forgeron 57"
+  },
+  {
+    "name": "Épée de glace incrustée de saphir de main gauche (dual) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "320"
+    },
+    "damage": {
+      "min": "181",
+      "max": "275"
+    },
+    "buyPrice": "115366",
+    "otherSource": "Drop des ZartGax (Niève, RD)"
+  },
+  {
+    "name": "Lame enchantée (+2)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "320",
+      "dex": "40",
+      "att": "800"
+    },
+    "damage": {
+      "min": "142",
+      "max": "228"
+    },
+    "otherSource": "Drop Draconigus invoqué majeur (désert RD), différents coffres de Drake Island"
+  },
+  {
+    "name": "Lame enchantée de main gauche (+2)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "320",
+      "dex": "40",
+      "att": "800"
+    },
+    "damage": {
+      "min": "142",
+      "max": "228"
+    },
+    "otherSource": "Forgeron 65"
+  },
+  {
+    "name": "Lame de perdition enchantée (+1)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "372"
+    },
+    "damage": {
+      "min": "140",
+      "max": "218"
+    },
+    "buyPrice": "240179"
+  },
+  {
+    "name": "Lame de perdition runique (+2)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "372"
+    },
+    "damage": {
+      "min": "158",
+      "max": "247"
+    },
+    "buyPrice": "360269"
+  },
+  {
+    "name": "Eventreuse (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "372"
+    },
+    "damage": {
+      "min": "183",
+      "max": "285"
+    },
+    "buyPrice": "480358"
+  },
+  {
+    "name": "Eventreuse de main gauche (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "372"
+    },
+    "damage": {
+      "min": "183",
+      "max": "285"
+    },
+    "buyPrice": "480358",
+    "otherSource": "Forgeron 67"
+  },
+  {
+    "name": "Épée Batarde d'Adamantium (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "387"
+    },
+    "damage": {
+      "min": "211",
+      "max": "331"
+    },
+    "buyPrice": "224877",
+    "otherSource": "Drop du Dragon LivoxDrinn ( SH )"
+  },
+  {
+    "name": "Cimeterre de Rubis (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "459"
+    },
+    "damage": {
+      "min": "212",
+      "max": "339"
+    },
+    "buyPrice": "298755",
+    "otherSource": "quete de l ile de lune"
+  },
+  {
+    "name": "Cimeterre de Rubis de main gauche (dual) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "459"
+    },
+    "damage": {
+      "min": "212",
+      "max": "339"
+    },
+    "buyPrice": "298755",
+    "otherSource": "Forgeron 72"
+  },
+  {
+    "name": "Epée à deux mains en titane (+2)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "474"
+    },
+    "damage": {
+      "min": "243",
+      "max": "391"
+    },
+    "buyPrice": "196667",
+    "otherSource": "Forgeron 73"
+  },
+  {
+    "name": "Épée de Diamants (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "532"
+    },
+    "damage": {
+      "min": "249",
+      "max": "406"
+    }
+  },
+  {
+    "name": "Épée de Diamants de main gauche (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "532"
+    },
+    "damage": {
+      "min": "249",
+      "max": "406"
+    },
+    "otherSource": "Forgeron 77"
+  },
+  {
+    "name": "Epée de Liridell (2 mains) (+4)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "590"
+    },
+    "damage": {
+      "min": "317",
+      "max": "524"
+    },
+    "otherSource": "Drop du dragon Liridell (Est désert DI)"
+  },
+  {
+    "name": "Hache de Liridell (2 mains) (+4)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "590"
+    },
+    "damage": {
+      "min": "423",
+      "max": "699"
+    },
+    "otherSource": "Drop du dragon Liridell (désert DI)"
+  },
+  {
+    "name": "Cimeterre des Ancêtres Enchanté (+1)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "662"
+    },
+    "damage": {
+      "min": "194",
+      "max": "324"
+    },
+    "buyPrice": "709937"
+  },
+  {
+    "name": "Cimeterre des Ancêtres Runique (+2)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "662"
+    },
+    "damage": {
+      "min": "219",
+      "max": "366"
+    },
+    "buyPrice": "1064906"
+  },
+  {
+    "name": "Cimeterre incrusté d'émeraudes (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "662"
+    },
+    "damage": {
+      "min": "253",
+      "max": "422"
+    },
+    "buyPrice": "1554945"
+  },
+  {
+    "name": "Cimeterre incrusté d'émeraudes de main gauche (dual) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "662"
+    },
+    "damage": {
+      "min": "253",
+      "max": "422"
+    },
+    "buyPrice": "1554945",
+    "otherSource": "Forgeron 79"
+  },
+  {
+    "name": "Epée bâtarde des Ancêtres Enchantée (+1)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "677"
+    },
+    "damage": {
+      "min": "217",
+      "max": "363"
+    },
+    "buyPrice": "777472"
+  },
+  {
+    "name": "Epée bâtarde des Ancêtres Runique (+2)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "677"
+    },
+    "damage": {
+      "min": "245",
+      "max": "411"
+    },
+    "buyPrice": "1166209"
+  },
+  {
+    "name": "Épée des braves (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "677"
+    },
+    "damage": {
+      "min": "286",
+      "max": "481"
+    },
+    "buyPrice": "1554945"
+  },
+  {
+    "name": "Épée des braves de main gauche (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "677"
+    },
+    "damage": {
+      "min": "286",
+      "max": "481"
+    },
+    "buyPrice": "1554945",
+    "otherSource": "Forgeron 81"
+  },
+  {
+    "name": "Épée à deux mains des ancêtres",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "691"
+    },
+    "damage": {
+      "min": "235",
+      "max": "397"
+    },
+    "buyPrice": "442264"
+  },
+  {
+    "name": "Épée à deux mains des ancêtres Enchantée (+1)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "691"
+    },
+    "damage": {
+      "min": "270",
+      "max": "457"
+    },
+    "buyPrice": "884528"
+  },
+  {
+    "name": "Épée à deux mains des ancêtres Runique (+2)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "691"
+    },
+    "damage": {
+      "min": "306",
+      "max": "516"
+    },
+    "buyPrice": "1326793"
+  },
+  {
+    "name": "Lame des Chimères (2 mains) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "706"
+    },
+    "damage": {
+      "min": "353",
+      "max": "596"
+    },
+    "buyPrice": "1696152"
+  },
+  {
+    "name": "Hache large des Ancêtres (2 mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "735"
+    },
+    "damage": {
+      "min": "322",
+      "max": "546"
+    },
+    "buyPrice": "479867"
+  },
+  {
+    "name": "Hache large des Ancêtres Enchantée (2 mains) (+1)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "735"
+    },
+    "damage": {
+      "min": "370",
+      "max": "627"
+    },
+    "buyPrice": "959734"
+  },
+  {
+    "name": "Hache large des Ancêtres Runique (2 mains) (+2)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "735"
+    },
+    "damage": {
+      "min": "418",
+      "max": "709"
+    },
+    "buyPrice": "1439601"
+  },
+  {
+    "name": "Écimeuse (2 mains) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "735"
+    },
+    "damage": {
+      "min": "483",
+      "max": "819"
+    },
+    "buyPrice": "1919468"
+  },
+  {
+    "name": "Écimeuse incrustée d'étoiles (2 mains) (+4)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "735"
+    },
+    "damage": {
+      "min": "651",
+      "max": "818"
+    },
+    "buyPrice": "5000000"
+  },
+  {
+    "name": "Cimeterre en métrolite doré (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "807"
+    },
+    "damage": {
+      "min": "282",
+      "max": "483"
+    },
+    "otherSource": "Forgeron 84"
+  },
+  {
+    "name": "Epée une main et demi vibrante (+3) (lente)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "822"
+    },
+    "damage": {
+      "min": "324",
+      "max": "556"
+    },
+    "otherSource": "Forgeron 85"
+  },
+  {
+    "name": "Lame de l'infatiguable (+3) (bof)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "836"
+    },
+    "damage": {
+      "min": "393",
+      "max": "677"
+    },
+    "otherSource": "Forgeron 87"
+  },
+  {
+    "name": "Cimeterre en métrolite robuste (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "880"
+    },
+    "damage": {
+      "min": "298",
+      "max": "516"
+    },
+    "otherSource": "Forgeron 89"
+  },
+  {
+    "name": "Exterminatrice (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "894"
+    },
+    "damage": {
+      "min": "343",
+      "max": "594"
+    },
+    "otherSource": "Forgeron 91"
+  },
+  {
+    "name": "Glaive terrestre (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "894",
+      "int": "36",
+      "wis": "138"
+    },
+    "damage": {
+      "min": "343",
+      "max": "594"
+    },
+    "otherSource": "Forgeron 97"
+  },
+  {
+    "name": "Glaive de givre (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "894",
+      "int": "138",
+      "wis": "36"
+    },
+    "damage": {
+      "min": "343",
+      "max": "594"
+    },
+    "otherSource": "Forgeron 101"
+  },
+  {
+    "name": "Glaive virevoltant (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "894",
+      "int": "87",
+      "wis": "87"
+    },
+    "damage": {
+      "min": "343",
+      "max": "594"
+    },
+    "otherSource": "Forgeron 99"
+  },
+  {
+    "name": "Glaive flamboyant (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "894",
+      "int": "138",
+      "wis": "36"
+    },
+    "damage": {
+      "min": "343",
+      "max": "594"
+    },
+    "otherSource": "Forgeron 103"
+  },
+  {
+    "name": "Claymore d'extinction (2 mains) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "909"
+    },
+    "damage": {
+      "min": "416",
+      "max": "722"
+    },
+    "otherSource": "Forgeron 93"
+  },
+  {
+    "name": "Claymore d'extinction étoilée (2 mains) (+4)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "909"
+    },
+    "damage": {
+      "min": "416",
+      "max": "722"
+    },
+    "otherSource": "Quête du forgeron Durikh"
+  },
+  {
+    "name": "Hallebarde terrestre (2 mains) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "909",
+      "int": "36",
+      "wis": "138"
+    },
+    "damage": {
+      "min": "416",
+      "max": "722"
+    },
+    "buyPrice": "2582470",
+    "otherSource": "Forgeron 98"
+  },
+  {
+    "name": "Hallebarde de givre (2 mains) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "909",
+      "int": "138",
+      "wis": "36"
+    },
+    "damage": {
+      "min": "416",
+      "max": "722"
+    },
+    "buyPrice": "2582470",
+    "otherSource": "Forgeron 102"
+  },
+  {
+    "name": "Hallebarde virevoltante (2 mains) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "909",
+      "int": "87",
+      "wis": "87"
+    },
+    "damage": {
+      "min": "416",
+      "max": "722"
+    },
+    "buyPrice": "2582470",
+    "otherSource": "Forgeron 100"
+  },
+  {
+    "name": "Hallebarde flamboyante (2 mains) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "909",
+      "int": "138",
+      "wis": "36"
+    },
+    "damage": {
+      "min": "416",
+      "max": "722"
+    },
+    "buyPrice": "2582470",
+    "otherSource": "Forgeron 104"
+  },
+  {
+    "name": "Fauchon en acier frappé (? mains) (+2) (new)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "1025",
+      "int": "36",
+      "wis": "26"
+    },
+    "damage": {
+      "min": "418",
+      "max": "610"
+    }
+  },
+  {
+    "name": "Flamberge ancestrale (2 mains) (+3) (mod)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "1050"
+    },
+    "damage": {
+      "min": "446",
+      "max": "772"
+    },
+    "otherSource": "Forgeron 105 (demande une lame gemme sombre)"
   }
 ]
