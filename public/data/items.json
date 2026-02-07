@@ -30229,7 +30229,9 @@
       "max": "4"
     },
     "buyPrice": "29",
-    "sellPrice": "9"
+    "sellPrice": "9",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30249,7 +30251,9 @@
       "max": "4"
     },
     "buyPrice": "87",
-    "sellPrice": "19"
+    "sellPrice": "19",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30269,7 +30273,9 @@
       "max": "5"
     },
     "buyPrice": "290",
-    "sellPrice": "29"
+    "sellPrice": "29",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30289,7 +30295,9 @@
       "max": "4"
     },
     "buyPrice": "29",
-    "sellPrice": "9"
+    "sellPrice": "9",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30309,7 +30317,9 @@
       "max": "5"
     },
     "buyPrice": "87",
-    "sellPrice": "19"
+    "sellPrice": "19",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30329,7 +30339,9 @@
       "max": "22"
     },
     "buyPrice": "3966",
-    "sellPrice": "1322"
+    "sellPrice": "1322",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30349,7 +30361,9 @@
       "max": "29"
     },
     "buyPrice": "39660",
-    "sellPrice": "3966"
+    "sellPrice": "3966",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30369,7 +30383,9 @@
       "max": "11"
     },
     "buyPrice": "605",
-    "sellPrice": "201"
+    "sellPrice": "201",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30389,7 +30405,9 @@
       "max": "12"
     },
     "buyPrice": "1815",
-    "sellPrice": "403"
+    "sellPrice": "403",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30409,7 +30427,9 @@
       "max": "14"
     },
     "buyPrice": "6050",
-    "sellPrice": "605"
+    "sellPrice": "605",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30429,7 +30449,9 @@
       "max": "48"
     },
     "buyPrice": "Quête/Drop",
-    "sellPrice": "1755"
+    "sellPrice": "1755",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30449,7 +30471,9 @@
       "max": "31"
     },
     "buyPrice": "5266",
-    "sellPrice": "1755"
+    "sellPrice": "1755",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30469,7 +30493,9 @@
       "max": "35"
     },
     "buyPrice": "15798",
-    "sellPrice": "3510"
+    "sellPrice": "3510",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30489,7 +30515,9 @@
       "max": "39"
     },
     "buyPrice": "52660",
-    "sellPrice": "5266"
+    "sellPrice": "5266",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30509,7 +30537,9 @@
       "max": "36"
     },
     "buyPrice": "Drop",
-    "sellPrice": "2521"
+    "sellPrice": "2521",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30529,7 +30559,9 @@
       "max": "52"
     },
     "buyPrice": "Coffre",
-    "sellPrice": "4843"
+    "sellPrice": "4843",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30549,7 +30581,9 @@
       "max": "42"
     },
     "buyPrice": "Quête",
-    "sellPrice": "3370"
+    "sellPrice": "3370",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30569,7 +30603,9 @@
       "max": "43"
     },
     "buyPrice": "9323",
-    "sellPrice": "3107"
+    "sellPrice": "3107",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30589,7 +30625,9 @@
       "max": "48"
     },
     "buyPrice": "27969",
-    "sellPrice": "6215"
+    "sellPrice": "6215",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30609,7 +30647,9 @@
       "max": "54"
     },
     "buyPrice": "93230",
-    "sellPrice": "9323"
+    "sellPrice": "9323",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30629,7 +30669,9 @@
       "max": "50"
     },
     "buyPrice": "Drop",
-    "sellPrice": "4465"
+    "sellPrice": "4465",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30649,7 +30691,9 @@
       "max": "96"
     },
     "buyPrice": "Quête",
-    "sellPrice": "19873"
+    "sellPrice": "19873",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30669,7 +30713,9 @@
       "max": "73"
     },
     "buyPrice": "28394",
-    "sellPrice": "9464"
+    "sellPrice": "9464",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30689,7 +30735,9 @@
       "max": "81"
     },
     "buyPrice": "85182",
-    "sellPrice": "18929"
+    "sellPrice": "18929",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30709,7 +30757,9 @@
       "max": "90"
     },
     "buyPrice": "283940",
-    "sellPrice": "28394"
+    "sellPrice": "28394",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30729,7 +30779,9 @@
       "max": "87"
     },
     "buyPrice": "37053",
-    "sellPrice": "12351"
+    "sellPrice": "12351",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30749,7 +30801,9 @@
       "max": "106"
     },
     "buyPrice": "370530",
-    "sellPrice": "37053"
+    "sellPrice": "37053",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30769,7 +30823,9 @@
       "max": "125"
     },
     "buyPrice": "Drop",
-    "sellPrice": "38747"
+    "sellPrice": "38747",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30789,7 +30845,9 @@
       "max": "126"
     },
     "buyPrice": "83191",
-    "sellPrice": "27730"
+    "sellPrice": "27730",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30809,7 +30867,9 @@
       "max": "139"
     },
     "buyPrice": "249573",
-    "sellPrice": "55460"
+    "sellPrice": "55460",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30829,7 +30889,9 @@
       "max": "153"
     },
     "buyPrice": "831910",
-    "sellPrice": "83191"
+    "sellPrice": "83191",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30849,7 +30911,9 @@
       "max": "135"
     },
     "buyPrice": "83191",
-    "sellPrice": "21063"
+    "sellPrice": "21063",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30869,7 +30933,9 @@
       "max": "140"
     },
     "buyPrice": "97601",
-    "sellPrice": "32553"
+    "sellPrice": "32553",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30889,7 +30955,9 @@
       "max": "156"
     },
     "buyPrice": "292803",
-    "sellPrice": "65067"
+    "sellPrice": "65067",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30909,7 +30977,9 @@
       "max": "172"
     },
     "buyPrice": "976010",
-    "sellPrice": "97601"
+    "sellPrice": "97601",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30929,7 +30999,9 @@
       "max": "150"
     },
     "buyPrice": "Drop",
-    "sellPrice": "0"
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30949,7 +31021,9 @@
       "max": "198"
     },
     "buyPrice": "Quête",
-    "sellPrice": "53995"
+    "sellPrice": "53995",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30969,7 +31043,9 @@
       "max": "201"
     },
     "buyPrice": "Quête",
-    "sellPrice": "77615"
+    "sellPrice": "77615",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -30989,7 +31065,9 @@
       "max": "194"
     },
     "buyPrice": "186913",
-    "sellPrice": "62304"
+    "sellPrice": "62304",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -31009,7 +31087,9 @@
       "max": "238"
     },
     "buyPrice": "1869130",
-    "sellPrice": "186913"
+    "sellPrice": "186913",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
@@ -31029,7 +31109,9 @@
       "max": "362"
     },
     "buyPrice": "230691",
-    "sellPrice": "76897"
+    "sellPrice": "76897",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "quantity": 1,
