@@ -1,0 +1,358 @@
+[
+  {
+    "name": "Onyx focus de pouvoir",
+    "quantity": 1,
+    "source": "Divers",
+    "prerequisites": {
+      "wis": "21",
+      "int": "112"
+    },
+    "secondary": {
+      "Puissance nécromancie": "+25",
+      "Puissance eau": "-15",
+      "Feu": "-10",
+      "Résistance air": "-10",
+      "Terre": "-10",
+      "Eau": "-10"
+    },
+    "obtention": ""
+  },
+  {
+    "name": "Manteau mystique des éléments",
+    "quantity": 1,
+    "source": "Divers",
+    "secondary": {
+      "CA": "+28",
+      "Esquive": "-25",
+      "Coup critique": "+30",
+      "Profusion mana": "+10",
+      "Puissance nécromancie": "-10",
+      "Lumière": "-10",
+      "Résistance nécromancie": "-10",
+      "Puissance terre": "+20",
+      "Eau": "+20",
+      "Feu": "+20",
+      "Air": "+20",
+      "Sagesse": "+40",
+      "Intelligence": "+40"
+    },
+    "obtention": ""
+  },
+  {
+    "name": "Armure du décrépit (Mage de guerre 220 endu)",
+    "quantity": 1,
+    "source": "Divers",
+    "secondary": {
+      "CA": "+12",
+      "Esquive": "-25",
+      "Transpercer armure": "+10",
+      "Parade": "+1",
+      "Coup assommant": "+1",
+      "Coup Puissant": "+10",
+      "Immobilisation": "+1",
+      "Méditation": "+5",
+      "Nécromancie": "+8",
+      "Feu": "+1",
+      "Air": "+1",
+      "Terre": "+1",
+      "Eau": "+1",
+      "Plastron :": "+1",
+      "Compétences : +5 Transpercer armure": "+1",
+      "Puissances : +8 nécromancie": "+1",
+      "Résistances : +5 nécromancie": "+1",
+      "Gants :": "+1",
+      "Puissances : +2 nécromancie": "+1",
+      "Heaume :": "+1",
+      "Jambières :": "+1",
+      "Compétences : +5 Immobilisation": "+1",
+      "CPuiss": "+1",
+      "Puissances : +4 nécromancie": "+1",
+      "Bottes :": "+1",
+      "Ceinture :": "+1",
+      "Compétences : +5 Méditation": "+1",
+      "Bouclier :": "+1",
+      "Puissances : +5 nécromancie": "+1",
+      "Résistances : +2 Air": "+1"
+    },
+    "obtention": "Tout, sauf Bottes et Bouclier : Forteresse des Damnés (Dragonets) Tout, sauf Bouclier : Drake Island (Kraanian Ténébreux) Bouclier : craft Armurier lev 70 (Urtanar)"
+  },
+  {
+    "name": "Armure du trépassé (Mage de guerre 370 endu)",
+    "quantity": 1,
+    "source": "Divers",
+    "secondary": {
+      "CA": "+65",
+      "Esquive": "-80",
+      "Force": "+35",
+      "Intelligence": "+86",
+      "Transpercer armure": "+8",
+      "Parade": "+40",
+      "Coup puissant": "+25",
+      "Immobilisation": "+25",
+      "Guérison rapide": "+20",
+      "Nécromancie": "+50",
+      "Feu": "+1",
+      "Eau": "+1",
+      "Terre": "+5",
+      "Air": "+1",
+      "Plastron :": "+1",
+      "Compétences : +5 Immobilisation": "+1",
+      "Puissances : +15 nécromancie": "+1",
+      "Résistances : +12 nécromancie": "+1",
+      "Gants :": "+1",
+      "Puissances : +4 nécromancie": "+1",
+      "Résistances : +4 nécromancie": "+1",
+      "Heaume :": "+1",
+      "Jambières :": "+1",
+      "Int": "+20",
+      "Compétences : +10 Immobilisation": "+1",
+      "Puissances : +10 nécromancie": "+1",
+      "Résistances : +8 nécromancie": "+1",
+      "Bottes :": "+1",
+      "Boucle :": "+1",
+      "Puissances : +3 nécromancie": "+1",
+      "Bouclier :": "+1",
+      "Attaque": "+0",
+      "Résistances : +10 nécromancie": "+1"
+    },
+    "obtention": "Métier Armurier (Urtanar), recettes entre 112 et 122.:"
+  },
+  {
+    "name": "Arc composite des alizés (+4) (new) – Dextérité 974",
+    "quantity": 1,
+    "source": "Divers",
+    "prerequisites": {
+      "str": "208",
+      "dex": "974"
+    },
+    "weight": "11",
+    "secondary": {
+      "% archerie pure": "+60",
+      "Immobilisation": "+10",
+      "Transpercer Armure": "+1",
+      "Coup Assommant": "+1"
+    },
+    "obtention": "Métier ébéniste (Urtanar)",
+    "damage": {
+      "min": "338",
+      "max": "528"
+    }
+  },
+  {
+    "name": "Arc ensorcelé de la bise noire (+4) (new) – Dextérité 1042",
+    "quantity": 1,
+    "source": "Divers",
+    "prerequisites": {
+      "str": "217",
+      "dex": "1042"
+    },
+    "weight": "11",
+    "secondary": {
+      "% archerie pure": "+60",
+      "Immobilisation": "+10",
+      "Transpercer armure": "+1",
+      "Coup assommant": "+1"
+    },
+    "obtention": "",
+    "damage": {
+      "min": "359",
+      "max": "564"
+    }
+  },
+  {
+    "name": "Bracelet catalyseur de puissance",
+    "quantity": 1,
+    "source": "Divers",
+    "secondary": {
+      "Puissance nécromancie (+8 avant maj)": "-5",
+      "Puissance lumière (+8 avant maj)": "0"
+    }
+  },
+  {
+    "name": "Anneau de combat centaure",
+    "quantity": 1,
+    "source": "Divers",
+    "prerequisites": {
+      "wis": "338",
+      "str": "420"
+    }
+  },
+  {
+    "name": "Ancienne amulette elfe",
+    "quantity": 1,
+    "source": "Divers",
+    "secondary": {
+      "Immobilisation (+10 avant maj)": "+5"
+    }
+  },
+  {
+    "name": "Anneau du sans peur",
+    "quantity": 1,
+    "source": "Divers",
+    "prerequisites": {
+      "str": "1009"
+    }
+  },
+  {
+    "name": "Protège-poignet d'archer",
+    "quantity": 1,
+    "source": "Divers",
+    "prerequisites": {
+      "end": "80",
+      "dex": "780",
+      "int": "27"
+    }
+  },
+  {
+    "name": "Écu du croisé",
+    "quantity": 1,
+    "source": "Divers",
+    "secondary": {
+      "Résistance nécromancie (+10 avant maj)": "-15"
+    }
+  },
+  {
+    "name": "Sceptre de ravage, des arts occultes, de déferlante, de déflagration, de l'ascète",
+    "quantity": 1,
+    "source": "Divers",
+    "weight": "11"
+  },
+  {
+    "name": "Sceptre des abysses",
+    "quantity": 1,
+    "source": "Divers",
+    "weight": "8"
+  },
+  {
+    "name": "Armure triplicite (prêtre ou mage)",
+    "quantity": 1,
+    "source": "Divers"
+  },
+  {
+    "name": "Armure du barbare",
+    "quantity": 1,
+    "source": "Divers"
+  },
+  {
+    "name": "Armure de la dynastie de la lumière",
+    "quantity": 1,
+    "source": "Divers",
+    "secondary": {
+      "Plastron : -3 (+10 avant maj)": "+1",
+      "Jambières : -3 (+10)": "+1",
+      "Gants : -3 (+10)": "+1",
+      "Bottes : -3 (+10)": "+1",
+      "Ceintur": "0"
+    }
+  },
+  {
+    "name": "Jambières de stabilité",
+    "quantity": 1,
+    "source": "Divers"
+  },
+  {
+    "name": "Cape de puissance",
+    "quantity": 1,
+    "source": "Divers",
+    "secondary": {
+      "CA : 42 (52 avant maj": "4",
+      ")": "18"
+    }
+  },
+  {
+    "name": "Arc composite de l'Harmattan étoilé",
+    "quantity": 1,
+    "source": "Divers",
+    "damage": {
+      "min": "245",
+      "max": "448(ancien315–489)"
+    }
+  },
+  {
+    "name": "Arc composite du Notos étoilé",
+    "quantity": 1,
+    "source": "Divers",
+    "damage": {
+      "min": "313",
+      "max": "487(ancien337–528)"
+    }
+  },
+  {
+    "name": "Flamberge ancestrale (2 mains) (+3) – Force 1050",
+    "quantity": 1,
+    "source": "Divers",
+    "prerequisites": {
+      "str": "1050",
+      "wis": "102",
+      "int": "112"
+    },
+    "secondary": {
+      "% attaque": "+50",
+      "Coup puissant": "+10",
+      "Transpercer armure": "+10",
+      "Immobilisation (ancien +10)": "+15"
+    },
+    "damage": {
+      "min": "446",
+      "max": "772(ancien416–722)"
+    }
+  },
+  {
+    "name": "Propriétés",
+    "quantity": 1,
+    "source": "Divers",
+    "secondary": {
+      "Fandom": "+1",
+      "Fanatical": "+1",
+      "GameSpot": "+1",
+      "Metacritic": "+1",
+      "TV Guide": "+1",
+      "Honest Entertainment": "+1"
+    }
+  },
+  {
+    "name": "Nous suivre",
+    "quantity": 1,
+    "source": "Divers"
+  },
+  {
+    "name": "Vue d'ensemble",
+    "quantity": 1,
+    "source": "Divers",
+    "secondary": {
+      "Qu'est-ce que Fandom ?": "+1",
+      "À propos": "+1",
+      "Emplois": "+1",
+      "Presse": "+1",
+      "Contact": "+1",
+      "Conditions utilisation": "+1",
+      "Politique de confidentialité": "+1",
+      "Loi sur les services numériques": "+1",
+      "Plan site global": "+1",
+      "Plan site local": "+1"
+    }
+  },
+  {
+    "name": "Communauté",
+    "quantity": 1,
+    "source": "Divers",
+    "secondary": {
+      "Centre communautés": "+1",
+      "Support": "+1",
+      "Aide": "+1"
+    }
+  },
+  {
+    "name": "Publicité",
+    "quantity": 1,
+    "source": "Divers",
+    "secondary": {
+      "Kit de presse": "+1"
+    }
+  },
+  {
+    "name": "Applications Fandom",
+    "quantity": 1,
+    "source": "Divers"
+  }
+]

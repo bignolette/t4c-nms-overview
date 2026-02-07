@@ -1,0 +1,260 @@
+[
+  {
+    "name": "Bol du dragon",
+    "quantity": 1,
+    "source": "Bouclier",
+    "secondary": {
+      "CA": "+10",
+      "Chance": "+10",
+      "(+10 +level": "+1",
+      ") all stat": "5"
+    },
+    "weight": "5"
+  },
+  {
+    "name": "Targe en frêne",
+    "quantity": 1,
+    "source": "Bouclier",
+    "secondary": {
+      "CA": "+3",
+      "Parade": "+5",
+      "Esquive": "-5"
+    },
+    "prerequisites": {
+      "end": "40"
+    },
+    "weight": "6"
+  },
+  {
+    "name": "Rondache en orme",
+    "quantity": 1,
+    "source": "Bouclier",
+    "secondary": {
+      "CA": "+4",
+      "Coup Assommant": "+5",
+      "Esquive": "-12"
+    },
+    "prerequisites": {
+      "end": "45"
+    },
+    "weight": "6"
+  },
+  {
+    "name": "Bouclier ancien de la garde d'Orkanis",
+    "quantity": 1,
+    "source": "Bouclier",
+    "secondary": {
+      "CA": "+3",
+      "All résist": "+3",
+      "-? Esquive": "+1"
+    },
+    "prerequisites": {
+      "end": "65",
+      "int": "65",
+      "wis": "25"
+    },
+    "weight": "7"
+  },
+  {
+    "name": "Bouclier du Froid",
+    "quantity": 1,
+    "source": "Bouclier",
+    "secondary": {
+      "CA": "+8",
+      "Puissance eau": "+5",
+      "Résistance eau": "+10",
+      "Puissance feu": "-5",
+      "Résistance feu": "-10",
+      "Esquiv": "-17"
+    },
+    "prerequisites": {
+      "end": "120"
+    },
+    "weight": "12"
+  },
+  {
+    "name": "Rondache du froid intense",
+    "quantity": 1,
+    "source": "Bouclier",
+    "secondary": {
+      "CA": "+8",
+      "Puissance eau": "+5",
+      "Résistance eau": "+5",
+      "Puissance feu": "-10",
+      "Résistance feu": "-10",
+      "Esquiv": "-19"
+    },
+    "prerequisites": {
+      "end": "125",
+      "wis": "34",
+      "int": "111"
+    },
+    "weight": "8"
+  },
+  {
+    "name": "Pavois de Serisiss",
+    "quantity": 1,
+    "source": "Bouclier",
+    "secondary": {
+      "CA": "+8",
+      "All caractéristiques": "-10",
+      "Immobilisation": "-5"
+    },
+    "prerequisites": {
+      "end": "140"
+    },
+    "weight": "10"
+  },
+  {
+    "name": "Bouclier des abysses",
+    "quantity": 1,
+    "source": "Bouclier"
+  },
+  {
+    "name": "Bouclier B'Ronkhanique",
+    "quantity": 1,
+    "source": "Bouclier"
+  },
+  {
+    "name": "Bouclier des Hautes Créatures",
+    "quantity": 1,
+    "source": "Bouclier"
+  },
+  {
+    "name": "Bouclier de Liridell (cabossé, de qualité, enchanté)",
+    "quantity": 1,
+    "source": "Bouclier",
+    "secondary": {
+      "Cabossé : +65 CA": "+1",
+      "Coup puissant": "+10",
+      "Parade": "+25",
+      "Esquive": "-200",
+      "De qualité : +52 CA": "+1",
+      "Enchanté : +52 CA": "+1",
+      "Sort météore aléatoire": "+1"
+    }
+  },
+  {
+    "name": "Bouclier Métrolite",
+    "quantity": 1,
+    "source": "Bouclier"
+  },
+  {
+    "name": "Bouclier du preux et Bouclier du preux noir",
+    "quantity": 1,
+    "source": "Bouclier",
+    "secondary": {
+      "CA": "+71",
+      "Esquive": "-85",
+      "Puissance lumière": "+5",
+      "Résist nécromancie": "-10",
+      "Résist lumière": "+5",
+      "Immobilisation": "+5",
+      "Coup Puissant": "+10",
+      "Parade": "+40",
+      "Ndurance": "+50",
+      "All résist": "+5"
+    }
+  },
+  {
+    "name": "Ecu du croisé et Ecu du croisé noir",
+    "quantity": 1,
+    "source": "Bouclier",
+    "secondary": {
+      "CA": "+25",
+      "Esquive": "-55",
+      "Coup Assommant": "+12",
+      "Coup Puissant": "+12",
+      "Parade": "+12",
+      "Transpercer Armure": "+12",
+      "Profusion de mana": "+8",
+      "Puissance lumière": "+10",
+      "Résist air feu eau terre": "+5",
+      "Résist nécromancie (anc +10 maj 4": "-15",
+      ")": "18"
+    }
+  },
+  {
+    "name": "Targe du belluaire et Targe du belluaire noire",
+    "quantity": 1,
+    "source": "Bouclier"
+  },
+  {
+    "name": "Bouclier du pourfendeur de mage",
+    "quantity": 1,
+    "source": "Bouclier"
+  },
+  {
+    "name": "Améthyste focus de pouvoir",
+    "quantity": 1,
+    "source": "Bouclier"
+  },
+  {
+    "name": "Onyx focus de pouvoir (équilibrage)",
+    "quantity": 1,
+    "source": "Bouclier"
+  },
+  {
+    "name": "Pierre étoilée",
+    "quantity": 1,
+    "source": "Bouclier"
+  },
+  {
+    "name": "Propriétés",
+    "quantity": 1,
+    "source": "Bouclier",
+    "secondary": {
+      "Fandom": "+1",
+      "Fanatical": "+1",
+      "GameSpot": "+1",
+      "Metacritic": "+1",
+      "TV Guide": "+1",
+      "Honest Entertainment": "+1"
+    }
+  },
+  {
+    "name": "Nous suivre",
+    "quantity": 1,
+    "source": "Bouclier"
+  },
+  {
+    "name": "Vue d'ensemble",
+    "quantity": 1,
+    "source": "Bouclier",
+    "secondary": {
+      "Qu'est-ce que Fandom ?": "+1",
+      "À propos": "+1",
+      "Emplois": "+1",
+      "Presse": "+1",
+      "Contact": "+1",
+      "Conditions utilisation": "+1",
+      "Politique de confidentialité": "+1",
+      "Loi sur les services numériques": "+1",
+      "Plan site global": "+1",
+      "Plan site local": "+1"
+    }
+  },
+  {
+    "name": "Communauté",
+    "quantity": 1,
+    "source": "Bouclier",
+    "secondary": {
+      "Centre communautés": "+1",
+      "Support": "+1",
+      "Aide": "+1"
+    }
+  },
+  {
+    "name": "Publicité",
+    "quantity": 1,
+    "source": "Bouclier",
+    "secondary": {
+      "Kit de presse": "+1"
+    }
+  },
+  {
+    "name": "Applications Fandom",
+    "quantity": 1,
+    "source": "Bouclier"
+  }
+]

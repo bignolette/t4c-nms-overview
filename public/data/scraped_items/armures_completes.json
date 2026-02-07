@@ -1,0 +1,1785 @@
+[
+  {
+    "name": "Armure de cuir enchanté (Guerrier Berserk 60 endu minimum)",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "Armure : 16 CA": "+1",
+      "Transpercer armure Coup puissant": "+1",
+      "Esquive": "+1%",
+      "Force": "+1%",
+      "Puissance lumière": "-5",
+      "Puissance Terre": "-6",
+      "+ 5 all résist": "+1",
+      "Gants : 5 CA": "+1",
+      "Puissance terre": "-3",
+      "All résist": "+5",
+      "Casque : 6 CA": "+1",
+      "+ 1 Transpercer armure Coup puissant": "+1",
+      "Jambières : 7 CA": "+1",
+      "Bottes : 5 CA": "+1",
+      "Transpercer armure": "+1",
+      "Ceinture : 3 CA": "+1"
+    },
+    "obtention": "Gardiens du coffre (Sud-Ouest DI)"
+  },
+  {
+    "name": "Armure triplicite (prêtre/mage 50 endu)",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "Plastron : 23 CA": "+1",
+      "Puissance terre": "+1",
+      "Air": "+1",
+      "Lumière (prêtre)": "+1",
+      "Puissance nécromancie feu eau (mage)": "+1",
+      "Int": "7",
+      "Sagesse": "+1",
+      "+ 6 all résist sauf lumière": "+1",
+      "Gants : 6 CA": "+1",
+      "All résist sauf lumière": "+5",
+      "Heaume : 6 CA": "+1",
+      "+ 5 all résist sauf lumière": "+1",
+      "Jambières : 7 CA": "+1",
+      "Bottes : 6 CA": "+1",
+      "Ceinture : 5 CA.": "+1",
+      "Bouclier : 20 CA": "+1"
+    },
+    "obtention": "Quête de l'armure triplicite (Redwall, DI)"
+  },
+  {
+    "name": "Armure céleste (100 endu)",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "Plastron : + 16 CA": "+1",
+      "Force": "+8",
+      "Dextérité": "+1",
+      "Endurance": "+1",
+      "Intelligence": "+1",
+      "Sagesse": "+1",
+      "Gantelets : + 4 CA": "+1",
+      "Heaume : + 4 CA": "+1",
+      "Jambières : + 5 CA": "+1",
+      "Bottes : + 4 CA": "+1",
+      "Protecteur : + 3 CA": "+1"
+    },
+    "obtention": "Arbres S'Intelle ( Nord DI)"
+  },
+  {
+    "name": "Armure de plaque incrustée d'émeraudes (140 endu guerrier / jeteur de sorts)",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "( plastron sera remplacé par une robe chez les jeteurs de sorts)": "+1",
+      "Plastron : + 16 CA": "+1",
+      "Esquive": "-9",
+      "+ 20 Force": "+1",
+      "Puissance Air": "+2",
+      "Feu": "+1",
+      "Eau": "+1",
+      "Terre": "+1",
+      "Lumière": "+1",
+      "Nécromancie": "+1",
+      "Gantelets : + 5 CA": "+1",
+      "Heaume : + 5 CA": "+1",
+      "Jambières :+ 5 CA": "+1",
+      "Bottes : + 5 CA": "+1",
+      "Ceinture : + 5 CA": "+1"
+    },
+    "obtention": "Quête de l'armure de plaque incrustée d'émeraudes (SH)"
+  },
+  {
+    "name": "Armure de ciel argent (archer 140 endu)",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "Résistance feu": "8",
+      "Résistance eau": "8",
+      "Résistance air": "8",
+      "Résistance terre": "8",
+      "Résistance lumière": "8",
+      "Résistance nécromancie": "8",
+      "Ceinture : 7 CA.": "+1"
+    },
+    "obtention": "drop Drakes vigrator et terreux (Est DI)"
+  },
+  {
+    "name": "Armure d’Aquilon (archer 200 endu)",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "Résistance feu": "14",
+      "Résistance eau": "14",
+      "Résistance air": "14",
+      "Résistance terre": "14",
+      "Résistance lumière": "14",
+      "Résistance nécromancie": "14",
+      "Ceinture : 12 CA": "+1",
+      "Immobilisation": "+5"
+    },
+    "obtention": "drop du Beholder (cave DI)"
+  },
+  {
+    "name": "Armure de la dynastie de la lumière (paladin 200 endu)",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "CA (sans bouclier) (+65 avant 4": "+68",
+      ")": "18",
+      "Puissance Lumière": "+35",
+      "Puissance Terre (+20 avant 4": "-15",
+      "Sagesse": "+30",
+      "Résist nécromancie (+50 avant 4": "-15",
+      "Résist terre air eau feu": "+25",
+      "Profusion de mana (+15 avant 4": "+0",
+      "Immobilisation.": "+5",
+      "Plastron : 30 CA": "+1",
+      "Esquive": "-6",
+      "Puis lumière": "+12",
+      "Résist nécromancie (anc +10)": "-3",
+      "Puissance terre": "-2",
+      "Air (anc 0) +5 résist Eau Feu Terre Air": "+1",
+      "Gants : 9 CA": "+1",
+      "Puissance lumière": "+4",
+      "Air (anc 0)": "+1",
+      "Résist Eau Feu Terre Air": "+5",
+      "Couronne : +3CA( anc": "0",
+      "Maj": "4",
+      "Puissance Terre (anc +15) air (anc 0)": "-5",
+      "Résist nécromancie (anc +10 maj 4": "-3",
+      "Profusion de mana": "+10",
+      "Jambières : 12 CA": "+1",
+      "Puissance terre (anc +3) air (anc 0)": "-3",
+      "Bottes : 9 CA": "+1",
+      "Puissance Terre (anc +3)": "-2",
+      "Ceinture : 5 CA": "+1",
+      "Immobilisation": "+5"
+    },
+    "obtention": "drop Trolls Érudits (cave DI)"
+  },
+  {
+    "name": "Armure de damnation ?? supprimée !! (antépal Plaqui est supprimé)",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "Plastron : 30 CA": "+1",
+      "Esquive": "-1",
+      "Puissance nécromancie": "+3",
+      "Eau": "+1",
+      "+ 5 Résistance Eau": "+1",
+      "Feu": "+1",
+      "Air": "+1",
+      "Terre": "+1",
+      "Intelligence": "+30",
+      "Gants : 9 CA": "+1",
+      "Puissance Eau": "+2",
+      "Résistance Eau": "+5",
+      "Heaume : -1 Esquive": "+1",
+      "Jambières : 12 CA": "+1",
+      "Bottes : 9 CA": "+1",
+      "Puissance eau": "+1",
+      "Ceinture : 5 CA": "+1",
+      "Immobilisation": "+5",
+      "Profusion de mana": "+5"
+    },
+    "obtention": "drop Chevaliers de la damnation (château du désert)"
+  },
+  {
+    "name": "Armure de métrolite (guerrier 220 endu)",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "Résistance feu": "12",
+      "Résistance eau": "12",
+      "Résistance air": "12",
+      "Résistance terre": "12",
+      "Résistance lumière": "12",
+      "Résistance nécromancie": "12",
+      "Ceinture : 12 CA": "+1",
+      "Immobilisation": "+5"
+    },
+    "obtention": "Quête de l'armure métrolite (DI)"
+  },
+  {
+    "name": "Armure reluisante (chance+, 40 endu)",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "Cotte de maille : +10 Chance": "+1",
+      "Esquive": "-18",
+      "All stat": "-16",
+      "Gants : +3 Chance": "+1",
+      "Jambières : +8 Chance": "+1",
+      "Bottes : +3 Chance": "+1"
+    },
+    "obtention": "Métier armurier 12, 14..."
+  },
+  {
+    "name": "Armure étincelante (chance++, 80 endu)",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "Plastron : +15 Chance": "+1",
+      "Squive -20 all stat": "-20",
+      "Gants : +4 Chance": "+1",
+      "Esquive": "-16",
+      "All stat": "-16",
+      "Jambières : +12 Chance": "+1",
+      "Bottes : +6 Chance": "+1"
+    },
+    "obtention": "Métier armurier 39, 40..."
+  },
+  {
+    "name": "Armure de légèreté (115 endu) (un gadget?)",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "Esquive : 158% capacité encombrement libre": "+1"
+    },
+    "obtention": "Métier armurier 26, 28..."
+  },
+  {
+    "name": "Armure légendaire de Jander (archer haut level 80 endu)",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "CA (56 avant 4": "54",
+      ")": "18",
+      "Transpercer armure": "+5",
+      "All résist": "+3",
+      "Immobilisation": "+5",
+      "Force": "+8",
+      "Se faufiler": "+12",
+      "Se cacher": "3",
+      "Total avec ceinturon : 50 CA (52 avant": "4",
+      "Se faufiler se cacher": "50",
+      "Haubert : +20 CA": "4",
+      "Encombrement": "3",
+      "Gantelets : +5 CA": "2",
+      "Xt": "+10",
+      "Jambières : +6 CA (7 avant": "4",
+      "Bottes : +5 CA ( 6 avant": "4",
+      "Cabasset : +6 CA": "2",
+      "Ceinturon : +6 CA": "3",
+      "Esquive": "-2",
+      "Protecteur : +10 CA": "3",
+      "Résist terre eau feu air": "+4"
+    },
+    "obtention": "Métier armurier 81, 84..."
+  },
+  {
+    "name": "Armure du barbare (guerrier berserk haut level 60 endu)",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "Total avec protecteur : +45 CA": "+1",
+      "All résist": "+5",
+      "Puissance lumière": "-5",
+      "Puissance terre": "-3",
+      "Transpercer armure Coup puissant": "+2",
+      "CC": "+5",
+      "Immobilisation": "+5",
+      "Total avec ceinture : +42 CA": "+1",
+      "Cuirasse : +16 CA": "+1",
+      "Gants : +5 CA": "+1",
+      "Cervelière : +6 CA": "+1",
+      "Jambières : +7 CA": "+1",
+      "Bottes : +5 CA": "+1",
+      "Ceinture : +3 CA": "+1",
+      "CA Coup puissant": "+3",
+      "Protecteur : 6CA": "+1"
+    },
+    "obtention": "Métier armurier 81, 84..."
+  },
+  {
+    "name": "Armure de Liridell (guerrier tank 370 endu)",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "Existe 4 qualités différentes : cabossée": "+1",
+      "Normale": "+1",
+      "De qualité": "+1",
+      "Enchantée": "+1",
+      "Résistance feu": "25",
+      "Résistance eau": "25",
+      "Résistance air": "25",
+      "Résistance terre": "25",
+      "Résistance lumière": "25",
+      "Résistance nécromancie": "25",
+      "Ceinture : 18 CA": "+1",
+      "Ncombrement": "+3"
+    },
+    "obtention": "drop Liridell (désert DI)"
+  },
+  {
+    "name": "Armure du templier (paladin 340 endu)",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "Requis : 340 endurance": "+1",
+      "Sagesse": "445",
+      "Attaque": "+0",
+      "Total : +177CA": "+1",
+      "Esquive": "-80",
+      "Sagesse. Compétences : +18 Transpercer armure": "+50",
+      "Parade Guérison rapide": "+10",
+      "Coup puissant C.Ass": "+8",
+      "Immobilisation": "+20",
+      "Retour à vie. Puissances : +46 Lumière": "+42",
+      "Terre Air": "-3",
+      "Résistances : +34 Terre Eau Air Feu": "+1",
+      "Nécro.": "-12",
+      "Plastron : +47 CA": "+1",
+      "Sagesse. Compétences : +5 Immobilisation": "+30",
+      "Retour à vie Guérison rapide TA. Puissances : +15 Lumière": "+10",
+      "Terre Air. Résistances : -2 nécromancie": "-2",
+      "Air Terre Eau Feu.": "+6",
+      "Gants : +12 CA": "+1",
+      "Squive. Compétences : +3 Retour à vie. Puissances : + 3 Lumière": "-5",
+      "Heaume : +18 CA": "+1",
+      "Compétences :+3 retour à vie. Puissances : +9 Lumière": "+1",
+      "Jambières : +22 CA": "+1",
+      "Sagesse. Compétences : +5 Immobilisation Retour à vie": "+50",
+      "Parade. Puissances : +8 Lumière": "+10",
+      "Résistances : -2 nécromancie": "+1",
+      "+ 6 Terre Eau Air Feu.": "+1",
+      "Bottes : +12 CA": "+1",
+      "Squive. Compétences : +3 Retour à vie. Puissances : +3 Lumière": "-5",
+      "Cordelette : +9 CA": "+1",
+      "Squive. Compétences : +5 Immobilisation GR. Puissances : +2 Lumière": "-5",
+      "Terre Air. Résistances : -2 Nécro.": "-2",
+      "Egide : +57 CA": "+1",
+      "Force": "+35",
+      "Ndu Sagesse. Compétences : +10 Immobilisation": "+86",
+      "Retour à vie": "+15",
+      "Transpercer armure Coup puissant CA.": "+8"
+    }
+  },
+  {
+    "name": "Armure du décrépit (Mage de guerre 220 endu)",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "Plastron : +26 CA": "+1",
+      "- 20 esquive. Compétence : +5 Transpercer armure Immo. Puissances : +8 nécromancie": "+1",
+      "Feu air. Résistances : +5 nécromancie": "-4",
+      "Air Eau Terre Feu.": "+1",
+      "Gants : +7 CA. Puissances : +2 nécromancie": "+1",
+      "Feu. Résistances : +5 nécromancie Air Eau Terre Feu.": "-3",
+      "Heaume : +5 CA": "+1",
+      "Squive. Puissances : +2 nécromancie": "-4",
+      "Feu.": "-3",
+      "Résistances : +5 nécromancie Air Terre Eau Feu.": "+1",
+      "Jambières : + 13 CA": "+1",
+      "Squive. Compétences : +5 Immobilisation CP. Puissances : +4 nécromancie": "-10",
+      "Résistances +5 nécromancie Air Terre Eau": "+1",
+      "Bottes : +7 CA": "+1",
+      "Squive. Puissances :": "-4",
+      "Nécromancie": "+1",
+      "Feu. Résistances : +5 nécromancie Air Terre Eau Feu.": "-3",
+      "Ceinture : +2 CA": "+2",
+      "Squive. Compétences : +5 Méditation. Puissances : +2": "-2",
+      "Bouclier : +12 CA": "+1",
+      "Squive. Compétences : +5 Transpercer armure Parade Coup puissant C. Assommant.": "-25",
+      "Puissances : +5 nécromancie": "+1",
+      "Feu. Résistances : + 2 Air Terre Eau Feu": "+1",
+      "Nécro.": "+8",
+      "Tout": "+1",
+      "Sauf Bottes": "+1",
+      "Bouclier : Forteresse damnés sur Dragonets": "+1",
+      "Sauf Bouclier : DI sur Kraanian Ténébreux": "+1",
+      "Bouclier : craft Armurier (70).": "+1"
+    }
+  },
+  {
+    "name": "Armure du trépassé (Mage de guerre 370 endu)",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "Plastron : +35 CA": "+1",
+      "Esquive": "-80",
+      "Attaque": "+0",
+      "+ 30 Int": "+1",
+      "Compétences. : +5 Immo.": "+1",
+      "Guérison rapide": "+20",
+      "Transpercer armure": "+8",
+      "+ 5 Parade": "+1",
+      "Puissances : +15 nécromancie": "+1",
+      "Puissance Eau Feu": "-8",
+      "Résistances : +12 nécromancie Terre Eau Feu Air.": "+1",
+      "Gants : +8 CA": "+1",
+      "Puissances : +4 nécromancie": "+1",
+      "Puissance eau feu": "-2",
+      "Résistances +4 nécromancie Terre Eau Feu Air.": "+1",
+      "Heaume : +8 CA": "+1",
+      "Jambières : +24 CA": "+1",
+      "Int": "+86",
+      "Compétences : +10 Immobilisation Parade": "+1",
+      "Puissances : +10 nécromancie": "+1",
+      "Feu": "+1",
+      "Résistances : +8 nécromancie Terre Eau Feu Air.": "+1",
+      "Bottes : +8 CA": "+1",
+      "Boucle : +5 CA": "+1",
+      "Puissances : +3 nécromancie": "+1",
+      "Feu.": "-3",
+      "Bouclier : +65 CA": "+1",
+      "Force": "+35",
+      "Compétences : +10 Immobilisation": "+1",
+      "Parade": "+40",
+      "Coup puissant": "+25",
+      "Résistance+10 nécromancie": "+1",
+      "Terre": "+5",
+      "Eau": "+1",
+      "Air.": "+1"
+    }
+  },
+  {
+    "name": "Propriétés",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "Fandom": "+1",
+      "Fanatical": "+1",
+      "GameSpot": "+1",
+      "Metacritic": "+1",
+      "TV Guide": "+1",
+      "Honest Entertainment": "+1"
+    }
+  },
+  {
+    "name": "Nous suivre",
+    "quantity": 1,
+    "source": "Plastron"
+  },
+  {
+    "name": "Vue d'ensemble",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "Qu'est-ce que Fandom ?": "+1",
+      "À propos": "+1",
+      "Emplois": "+1",
+      "Presse": "+1",
+      "Contact": "+1",
+      "Conditions utilisation": "+1",
+      "Politique de confidentialité": "+1",
+      "Loi sur les services numériques": "+1",
+      "Plan site global": "+1",
+      "Plan site local": "+1"
+    }
+  },
+  {
+    "name": "Communauté",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "Centre communautés": "+1",
+      "Support": "+1",
+      "Aide": "+1"
+    }
+  },
+  {
+    "name": "Publicité",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "Kit de presse": "+1"
+    }
+  },
+  {
+    "name": "Applications Fandom",
+    "quantity": 1,
+    "source": "Plastron"
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Armure de cuir enchanté",
+    "prerequisites": {
+      "str": "390",
+      "end": "60",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Armure triplicite (Mage)",
+    "prerequisites": {
+      "str": "0",
+      "end": "50",
+      "dex": "0",
+      "int": "350",
+      "wis": "100",
+      "attack": "0"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Armure triplicite (Prêtre)",
+    "prerequisites": {
+      "str": "0",
+      "end": "50",
+      "dex": "0",
+      "int": "100",
+      "wis": "350",
+      "attack": "0"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Armure céleste",
+    "prerequisites": {
+      "str": "0",
+      "end": "100",
+      "dex": "0",
+      "int": "50",
+      "wis": "50",
+      "attack": "0"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Armure incrustée d'émeraudes",
+    "prerequisites": {
+      "str": "0",
+      "end": "140",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Armure de ciel argent",
+    "prerequisites": {
+      "str": "90",
+      "end": "140",
+      "dex": "370",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Armure d'Aquilon",
+    "prerequisites": {
+      "str": "140",
+      "end": "200",
+      "dex": "450",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Armure de la dynastie de la lumière",
+    "prerequisites": {
+      "str": "250",
+      "end": "200",
+      "dex": "0",
+      "int": "0",
+      "wis": "190",
+      "attack": "0"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Armure de damnation",
+    "prerequisites": {
+      "str": "300",
+      "end": "200",
+      "dex": "0",
+      "int": "220",
+      "wis": "0",
+      "attack": "500"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Armure de métrolite",
+    "prerequisites": {
+      "str": "350",
+      "end": "220",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "800"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Armure reluisante",
+    "prerequisites": {
+      "str": "0",
+      "end": "40",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Armure étincelante",
+    "prerequisites": {
+      "str": "0",
+      "end": "80",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Armure de légèreté",
+    "prerequisites": {
+      "str": "0",
+      "end": "115",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Armure légendaire de Jander",
+    "prerequisites": {
+      "str": "190",
+      "end": "80",
+      "dex": "800",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Armure du barbare",
+    "prerequisites": {
+      "str": "1025",
+      "end": "60",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "800"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Armure du templier",
+    "prerequisites": {
+      "str": "0",
+      "end": "340",
+      "dex": "0",
+      "int": "0",
+      "wis": "445",
+      "attack": "750"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Armure de Liridell",
+    "prerequisites": {
+      "str": "0",
+      "end": "370",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Armure du décrépit",
+    "prerequisites": {
+      "str": "180",
+      "end": "220",
+      "dex": "0",
+      "int": "220",
+      "wis": "0",
+      "attack": "500"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Armure du trépassé",
+    "prerequisites": {
+      "str": "220",
+      "end": "370",
+      "dex": "0",
+      "int": "310",
+      "wis": "0",
+      "attack": "500"
+    }
+  },
+  {
+    "name": "Armure de cuir enchanté (Guerrier Berserk 60 endu minimum) (Armure)",
+    "quantity": 1,
+    "source": "Armure",
+    "secondary": {
+      "CA": "16",
+      "Transpercer armure Coup puissant": "+2",
+      "Esquive": "+5%",
+      "Force": "+5%",
+      "Puissance lumière": "-10",
+      "Puissance Terre": "-6",
+      "+ 5 all résist": "16"
+    }
+  },
+  {
+    "name": "Armure de cuir enchanté (Guerrier Berserk 60 endu minimum) (Gants)",
+    "quantity": 1,
+    "source": "Gants",
+    "secondary": {
+      "CA": "5",
+      "Transpercer armure Coup puissant": "+1",
+      "Esquive": "+1%",
+      "Force": "+1%",
+      "Puissance lumière": "-5",
+      "Puissance terre": "-3",
+      "All résist": "+5"
+    }
+  },
+  {
+    "name": "Armure de cuir enchanté (Guerrier Berserk 60 endu minimum) (Casque)",
+    "quantity": 1,
+    "source": "Casque",
+    "secondary": {
+      "CA": "6",
+      "+ 1 Transpercer armure Coup puissant": "6",
+      "Esquive": "+1%",
+      "Force": "+1%",
+      "Puissance lumière": "-7",
+      "Puissance terre": "-4",
+      "All résist": "+5"
+    }
+  },
+  {
+    "name": "Armure de cuir enchanté (Guerrier Berserk 60 endu minimum) (Jambières)",
+    "quantity": 1,
+    "source": "Jambières",
+    "secondary": {
+      "CA": "7",
+      "Esquive": "+2%",
+      "Force": "+1%",
+      "Puissance lumière": "-7",
+      "Puissance terre": "-4",
+      "All résist": "+5"
+    }
+  },
+  {
+    "name": "Armure de cuir enchanté (Guerrier Berserk 60 endu minimum) (Bottes)",
+    "quantity": 1,
+    "source": "Bottes",
+    "secondary": {
+      "CA": "5",
+      "Transpercer armure": "+1",
+      "Force": "+1%",
+      "Esquive": "+1%",
+      "Puissance lumière": "-5",
+      "Puissance terre": "-3",
+      "All résist": "+5"
+    }
+  },
+  {
+    "name": "Armure de cuir enchanté (Guerrier Berserk 60 endu minimum) (Ceinture)",
+    "quantity": 1,
+    "source": "Ceinture",
+    "secondary": {
+      "CA": "3",
+      "Force": "+1%"
+    }
+  },
+  {
+    "name": "Armure triplicite (prêtre/mage 50 endu) (Gants)",
+    "quantity": 1,
+    "source": "Gants",
+    "secondary": {
+      "CA": "6",
+      "Puissance terre": "+1",
+      "Air": "6",
+      "Lumière (prêtre)": "6",
+      "Puissance nécromancie feu eau (mage)": "+1",
+      "Int": "+7",
+      "Sagesse": "6",
+      "All résist sauf lumière": "+5"
+    }
+  },
+  {
+    "name": "Armure triplicite (prêtre/mage 50 endu) (Heaume)",
+    "quantity": 1,
+    "source": "Heaume",
+    "secondary": {
+      "CA": "6",
+      "Puissance terre": "+1",
+      "Air": "6",
+      "Lumière (prêtre)": "6",
+      "Puissance nécromancie feu eau (mage)": "+1",
+      "Int": "7",
+      "Sagesse": "6",
+      "+ 5 all résist sauf lumière": "6"
+    }
+  },
+  {
+    "name": "Armure triplicite (prêtre/mage 50 endu) (Jambières)",
+    "quantity": 1,
+    "source": "Jambières",
+    "secondary": {
+      "CA": "7",
+      "Puissance terre": "+2",
+      "Air": "7",
+      "Lumière (prêtre)": "7",
+      "Puissance nécromancie feu eau (mage)": "+2",
+      "Int": "7",
+      "Sagesse": "7",
+      "+ 5 all résist sauf lumière": "7"
+    }
+  },
+  {
+    "name": "Armure triplicite (prêtre/mage 50 endu) (Bottes)",
+    "quantity": 1,
+    "source": "Bottes",
+    "secondary": {
+      "CA": "6",
+      "Puissance terre": "+1",
+      "Air": "6",
+      "Lumière (prêtre)": "6",
+      "Puissance nécromancie feu eau (mage)": "+1",
+      "Int": "7",
+      "Sagesse": "6",
+      "+ 5 all résist sauf lumière": "6"
+    }
+  },
+  {
+    "name": "Armure triplicite (prêtre/mage 50 endu) (Ceinture)",
+    "quantity": 1,
+    "source": "Ceinture",
+    "secondary": {
+      "CA.": "5"
+    }
+  },
+  {
+    "name": "Armure triplicite (prêtre/mage 50 endu) (Bouclier)",
+    "quantity": 1,
+    "source": "Bouclier",
+    "secondary": {
+      "CA": "20",
+      "All résist sauf lumière": "+5"
+    }
+  },
+  {
+    "name": "Armure céleste (100 endu) (Gantelets)",
+    "quantity": 1,
+    "source": "Gantelets",
+    "secondary": {
+      "+ 4 CA": "+1",
+      "Force": "+8",
+      "Dextérité": "+1",
+      "Endurance": "+1",
+      "Intelligence": "+1",
+      "Sagesse": "+1"
+    }
+  },
+  {
+    "name": "Armure céleste (100 endu) (Heaume)",
+    "quantity": 1,
+    "source": "Heaume",
+    "secondary": {
+      "+ 4 CA": "+1",
+      "Force": "+8",
+      "Dextérité": "+1",
+      "Endurance": "+1",
+      "Intelligence": "+1",
+      "Sagesse": "+1"
+    }
+  },
+  {
+    "name": "Armure céleste (100 endu) (Jambières)",
+    "quantity": 1,
+    "source": "Jambières",
+    "secondary": {
+      "+ 5 CA": "+1",
+      "Force": "+8",
+      "Dextérité": "+1",
+      "Endurance": "+1",
+      "Intelligence": "+1",
+      "Sagesse": "+1"
+    }
+  },
+  {
+    "name": "Armure céleste (100 endu) (Bottes)",
+    "quantity": 1,
+    "source": "Bottes",
+    "secondary": {
+      "+ 4 CA": "+1",
+      "Force": "+8",
+      "Dextérité": "+1",
+      "Endurance": "+1",
+      "Intelligence": "+1",
+      "Sagesse": "+1"
+    }
+  },
+  {
+    "name": "Armure céleste (100 endu) (Protecteur)",
+    "quantity": 1,
+    "source": "Protecteur",
+    "secondary": {
+      "+ 3 CA": "+1",
+      "Force": "+8",
+      "Dextérité": "+1",
+      "Endurance": "+1",
+      "Intelligence": "+1",
+      "Sagesse": "+1"
+    }
+  },
+  {
+    "name": "Armure de plaque incrustée d'émeraudes (140 endu guerrier / jeteur de sorts) (Gantelets)",
+    "quantity": 1,
+    "source": "Gantelets",
+    "secondary": {
+      "+ 5 CA": "+1",
+      "Esquive": "-8",
+      "Puissance Air": "+2",
+      "Feu": "+1",
+      "Eau": "+1",
+      "Terre": "+1",
+      "Lumière": "+1",
+      "Nécromancie": "+1"
+    }
+  },
+  {
+    "name": "Armure de plaque incrustée d'émeraudes (140 endu guerrier / jeteur de sorts) (Heaume)",
+    "quantity": 1,
+    "source": "Heaume",
+    "secondary": {
+      "+ 5 CA": "+1",
+      "Esquive": "-8",
+      "Puissance Air": "+2",
+      "Feu": "+1",
+      "Eau": "+1",
+      "Terre": "+1",
+      "Lumière": "+1",
+      "Nécromancie": "+1"
+    }
+  },
+  {
+    "name": "Armure de plaque incrustée d'émeraudes (140 endu guerrier / jeteur de sorts) (Jambières)",
+    "quantity": 1,
+    "source": "Jambières",
+    "secondary": {
+      "+ 5 CA": "+1",
+      "Esquive": "-9",
+      "Puissance Air": "+2",
+      "Feu": "+1",
+      "Eau": "+1",
+      "Terre": "+1",
+      "Lumière": "+1",
+      "Nécromancie": "+1"
+    }
+  },
+  {
+    "name": "Armure de plaque incrustée d'émeraudes (140 endu guerrier / jeteur de sorts) (Bottes)",
+    "quantity": 1,
+    "source": "Bottes",
+    "secondary": {
+      "+ 5 CA": "+1",
+      "Esquive": "-9",
+      "Puissance Air": "+2",
+      "Feu": "+1",
+      "Eau": "+1",
+      "Terre": "+1",
+      "Lumière": "+1",
+      "Nécromancie": "+1"
+    }
+  },
+  {
+    "name": "Armure de plaque incrustée d'émeraudes (140 endu guerrier / jeteur de sorts) (Ceinture)",
+    "quantity": 1,
+    "source": "Ceinture",
+    "secondary": {
+      "+ 5 CA": "+1"
+    }
+  },
+  {
+    "name": "Armure de ciel argent (archer 140 endu) (Gants)",
+    "quantity": 1,
+    "source": "Gants",
+    "secondary": {
+      "Résistance feu": "8",
+      "Résistance eau": "8",
+      "Résistance air": "8",
+      "Résistance terre": "8",
+      "Résistance lumière": "8",
+      "Résistance nécromancie": "8"
+    }
+  },
+  {
+    "name": "Armure de ciel argent (archer 140 endu) (Heaume)",
+    "quantity": 1,
+    "source": "Heaume",
+    "secondary": {
+      "Résistance feu": "8",
+      "Résistance eau": "8",
+      "Résistance air": "8",
+      "Résistance terre": "8",
+      "Résistance lumière": "8",
+      "Résistance nécromancie": "8"
+    }
+  },
+  {
+    "name": "Armure de ciel argent (archer 140 endu) (Jambières)",
+    "quantity": 1,
+    "source": "Jambières",
+    "secondary": {
+      "Résistance feu": "9",
+      "Résistance eau": "9",
+      "Résistance air": "9",
+      "Résistance terre": "9",
+      "Résistance lumière": "9",
+      "Résistance nécromancie": "9"
+    }
+  },
+  {
+    "name": "Armure de ciel argent (archer 140 endu) (Bottes)",
+    "quantity": 1,
+    "source": "Bottes",
+    "secondary": {
+      "Résistance feu": "8",
+      "Résistance eau": "8",
+      "Résistance air": "8",
+      "Résistance terre": "8",
+      "Résistance lumière": "8",
+      "Résistance nécromancie": "8"
+    }
+  },
+  {
+    "name": "Armure de ciel argent (archer 140 endu) (Ceinture)",
+    "quantity": 1,
+    "source": "Ceinture",
+    "secondary": {
+      "CA.": "7"
+    }
+  },
+  {
+    "name": "Armure d’Aquilon (archer 200 endu) (Gants)",
+    "quantity": 1,
+    "source": "Gants",
+    "secondary": {
+      "Résistance feu": "12",
+      "Résistance eau": "12",
+      "Résistance air": "12",
+      "Résistance terre": "12",
+      "Résistance lumière": "12",
+      "Résistance nécromancie": "12"
+    }
+  },
+  {
+    "name": "Armure d’Aquilon (archer 200 endu) (Heaume)",
+    "quantity": 1,
+    "source": "Heaume",
+    "secondary": {
+      "Résistance feu": "13",
+      "Résistance eau": "13",
+      "Résistance air": "13",
+      "Résistance terre": "13",
+      "Résistance lumière": "13",
+      "Résistance nécromancie": "13"
+    }
+  },
+  {
+    "name": "Armure d’Aquilon (archer 200 endu) (Jambières)",
+    "quantity": 1,
+    "source": "Jambières",
+    "secondary": {
+      "Résistance feu": "17",
+      "Résistance eau": "17",
+      "Résistance air": "17",
+      "Résistance terre": "17",
+      "Résistance lumière": "17",
+      "Résistance nécromancie": "17"
+    }
+  },
+  {
+    "name": "Armure d’Aquilon (archer 200 endu) (Bottes)",
+    "quantity": 1,
+    "source": "Bottes",
+    "secondary": {
+      "Résistance feu": "14",
+      "Résistance eau": "14",
+      "Résistance air": "14",
+      "Résistance terre": "14",
+      "Résistance lumière": "14",
+      "Résistance nécromancie": "14"
+    }
+  },
+  {
+    "name": "Armure d’Aquilon (archer 200 endu) (Ceinture)",
+    "quantity": 1,
+    "source": "Ceinture",
+    "secondary": {
+      "CA": "12",
+      "Immobilisation": "+5"
+    }
+  },
+  {
+    "name": "Armure de la dynastie de la lumière (paladin 200 endu) (Gants)",
+    "quantity": 1,
+    "source": "Gants",
+    "secondary": {
+      "CA": "9",
+      "Esquive": "-6",
+      "Puissance lumière": "+4",
+      "Puissance terre": "-2",
+      "Air (anc 0)": "9",
+      "Résist nécromancie (anc +10)": "-3",
+      "Résist Eau Feu Terre Air": "+5"
+    }
+  },
+  {
+    "name": "Armure de la dynastie de la lumière (paladin 200 endu) (Couronne)",
+    "quantity": 1,
+    "source": "Couronne",
+    "secondary": {
+      "CA( anc 0": "+3",
+      "Maj": "4",
+      ")": "18",
+      "Puissance lumière": "+10",
+      "Puissance Terre (anc +15) air (anc 0)": "-5",
+      "Sagesse": "+30",
+      "Esquive": "-6",
+      "Résist nécromancie (anc +10 maj 4": "-3",
+      "Résist Eau Feu Terre Air": "+5",
+      "Profusion de mana": "+10"
+    }
+  },
+  {
+    "name": "Armure de la dynastie de la lumière (paladin 200 endu) (Jambières)",
+    "quantity": 1,
+    "source": "Jambières",
+    "secondary": {
+      "CA": "12",
+      "Esquive": "-14",
+      "Puissance lumière": "+5",
+      "Puissance terre (anc +3) air (anc 0)": "-3",
+      "Résist nécromancie (anc +10)": "-3",
+      "Résist Eau Feu Terre Air": "+5"
+    }
+  },
+  {
+    "name": "Armure de la dynastie de la lumière (paladin 200 endu) (Bottes)",
+    "quantity": 1,
+    "source": "Bottes",
+    "secondary": {
+      "CA": "9",
+      "Esquive": "-6",
+      "Puissance lumière": "+4",
+      "Puissance Terre (anc +3)": "-2",
+      "Résist nécromancie (anc +10)": "-3",
+      "Résist Eau Feu Terre Air": "+5"
+    }
+  },
+  {
+    "name": "Armure de la dynastie de la lumière (paladin 200 endu) (Ceinture)",
+    "quantity": 1,
+    "source": "Ceinture",
+    "secondary": {
+      "CA": "5",
+      "Immobilisation": "+5"
+    }
+  },
+  {
+    "name": "Armure de damnation ?? supprimée !! (antépal Plaqui est supprimé) (Gants)",
+    "quantity": 1,
+    "source": "Gants",
+    "secondary": {
+      "CA": "9",
+      "Esquive": "-1",
+      "Puissance nécromancie": "+3",
+      "Puissance Eau": "+2",
+      "Résistance Eau": "+5",
+      "Feu": "9",
+      "Terre": "9",
+      "Air": "9"
+    }
+  },
+  {
+    "name": "Armure de damnation ?? supprimée !! (antépal Plaqui est supprimé) (Heaume)",
+    "quantity": 1,
+    "source": "Heaume",
+    "secondary": {
+      "Esquive": "-1",
+      "Puissance nécromancie": "+10",
+      "Eau": "-1",
+      "Résistance Eau": "+5",
+      "Feu": "-1",
+      "Terre": "-1",
+      "Air": "-1",
+      "Intelligence": "+30"
+    }
+  },
+  {
+    "name": "Armure de damnation ?? supprimée !! (antépal Plaqui est supprimé) (Jambières)",
+    "quantity": 1,
+    "source": "Jambières",
+    "secondary": {
+      "CA": "12",
+      "Esquive": "-18",
+      "Puissance nécromancie": "+4",
+      "Puissance Eau": "+2",
+      "Résistance Eau": "+5",
+      "Feu": "12",
+      "Terre": "12",
+      "Air": "12"
+    }
+  },
+  {
+    "name": "Armure de damnation ?? supprimée !! (antépal Plaqui est supprimé) (Bottes)",
+    "quantity": 1,
+    "source": "Bottes",
+    "secondary": {
+      "CA": "9",
+      "Esquive": "-1",
+      "Puissance nécromancie": "+3",
+      "Puissance eau": "+1",
+      "Résistance Eau": "+5",
+      "Feu": "9",
+      "Terre": "9",
+      "Air": "9"
+    }
+  },
+  {
+    "name": "Armure de damnation ?? supprimée !! (antépal Plaqui est supprimé) (Ceinture)",
+    "quantity": 1,
+    "source": "Ceinture",
+    "secondary": {
+      "CA": "5",
+      "Immobilisation": "+5",
+      "Profusion de mana": "+5"
+    }
+  },
+  {
+    "name": "Armure de métrolite (guerrier 220 endu) (Gants)",
+    "quantity": 1,
+    "source": "Gants",
+    "secondary": {
+      "Résistance feu": "12",
+      "Résistance eau": "12",
+      "Résistance air": "12",
+      "Résistance terre": "12",
+      "Résistance lumière": "12",
+      "Résistance nécromancie": "12"
+    }
+  },
+  {
+    "name": "Armure de métrolite (guerrier 220 endu) (Heaume)",
+    "quantity": 1,
+    "source": "Heaume",
+    "secondary": {
+      "Résistance feu": "12",
+      "Résistance eau": "12",
+      "Résistance air": "12",
+      "Résistance terre": "12",
+      "Résistance lumière": "12",
+      "Résistance nécromancie": "12"
+    }
+  },
+  {
+    "name": "Armure de métrolite (guerrier 220 endu) (Jambières)",
+    "quantity": 1,
+    "source": "Jambières",
+    "secondary": {
+      "Résistance feu": "14",
+      "Résistance eau": "14",
+      "Résistance air": "14",
+      "Résistance terre": "14",
+      "Résistance lumière": "14",
+      "Résistance nécromancie": "14"
+    }
+  },
+  {
+    "name": "Armure de métrolite (guerrier 220 endu) (Bottes)",
+    "quantity": 1,
+    "source": "Bottes",
+    "secondary": {
+      "Résistance feu": "12",
+      "Résistance eau": "12",
+      "Résistance air": "12",
+      "Résistance terre": "12",
+      "Résistance lumière": "12",
+      "Résistance nécromancie": "12"
+    }
+  },
+  {
+    "name": "Armure de métrolite (guerrier 220 endu) (Ceinture)",
+    "quantity": 1,
+    "source": "Ceinture",
+    "secondary": {
+      "CA": "12",
+      "Immobilisation": "+5"
+    }
+  },
+  {
+    "name": "Armure reluisante (chance+, 40 endu) (Cotte de maille)",
+    "quantity": 1,
+    "source": "Cotte de maille",
+    "secondary": {
+      "Chance": "+10",
+      "Esquive": "-20",
+      "All stat": "-10"
+    }
+  },
+  {
+    "name": "Armure reluisante (chance+, 40 endu) (Gants)",
+    "quantity": 1,
+    "source": "Gants",
+    "secondary": {
+      "Chance": "+3",
+      "Esquive": "-13",
+      "All stat": "-3"
+    }
+  },
+  {
+    "name": "Armure reluisante (chance+, 40 endu) (Jambières)",
+    "quantity": 1,
+    "source": "Jambières",
+    "secondary": {
+      "Chance": "+8",
+      "Esquive": "-18",
+      "All stat": "-16"
+    }
+  },
+  {
+    "name": "Armure reluisante (chance+, 40 endu) (Bottes)",
+    "quantity": 1,
+    "source": "Bottes",
+    "secondary": {
+      "Chance": "+3"
+    }
+  },
+  {
+    "name": "Armure étincelante (chance++, 80 endu) (Gants)",
+    "quantity": 1,
+    "source": "Gants",
+    "secondary": {
+      "Chance": "+4",
+      "Esquive": "-13",
+      "All stat": "-6"
+    }
+  },
+  {
+    "name": "Armure étincelante (chance++, 80 endu) (Jambières)",
+    "quantity": 1,
+    "source": "Jambières",
+    "secondary": {
+      "Chance": "+12",
+      "Esquive": "-16",
+      "All stat": "-16"
+    }
+  },
+  {
+    "name": "Armure étincelante (chance++, 80 endu) (Bottes)",
+    "quantity": 1,
+    "source": "Bottes",
+    "secondary": {
+      "Chance": "+6"
+    }
+  },
+  {
+    "name": "Armure légendaire de Jander (archer haut level 80 endu) (Gantelets)",
+    "quantity": 1,
+    "source": "Gantelets",
+    "secondary": {
+      "CA": "+5",
+      "Immobilisation": "+5",
+      "Transpercer armure": "+1",
+      "Force": "+8",
+      "Xt": "+9",
+      "Se faufiler": "+8",
+      "Se cacher": "2",
+      "All résist": "+3",
+      "Encombrement": "2"
+    }
+  },
+  {
+    "name": "Armure légendaire de Jander (archer haut level 80 endu) (Jambières)",
+    "quantity": 1,
+    "source": "Jambières",
+    "secondary": {
+      "CA (7 avant 4": "+6",
+      ")": "18",
+      "Force": "+8",
+      "Xt": "+9",
+      "Transpercer armure": "+2",
+      "Se cacher": "+10",
+      "All résist": "+5",
+      "Encombrement": "3"
+    }
+  },
+  {
+    "name": "Armure légendaire de Jander (archer haut level 80 endu) (Bottes)",
+    "quantity": 1,
+    "source": "Bottes",
+    "secondary": {
+      "CA ( 6 avant 4": "+5",
+      ")": "18",
+      "Transpercer armure": "+1",
+      "Force": "+8",
+      "Xt": "+9",
+      "Se faufiler": "+7",
+      "Se cacher": "2",
+      "All résist": "+3",
+      "Encombrement": "2"
+    }
+  },
+  {
+    "name": "Armure légendaire de Jander (archer haut level 80 endu) (Ceinturon)",
+    "quantity": 1,
+    "source": "Ceinturon",
+    "secondary": {
+      "CA": "+6",
+      "Esquive": "-2",
+      "Transpercer armure": "+5",
+      "Se faufiler": "+12",
+      "Se cacher": "3",
+      "Encombrement": "3"
+    }
+  },
+  {
+    "name": "Armure légendaire de Jander (archer haut level 80 endu) (Protecteur)",
+    "quantity": 1,
+    "source": "Protecteur",
+    "secondary": {
+      "CA": "+10",
+      "Esquive": "-2",
+      "Résist terre eau feu air": "+4",
+      "Encombrement": "3"
+    }
+  },
+  {
+    "name": "Armure du barbare (guerrier berserk haut level 60 endu) (Gants)",
+    "quantity": 1,
+    "source": "Gants",
+    "secondary": {
+      "CA": "+5",
+      "All résist": "+5",
+      "Puissance lumière": "-5",
+      "Puissance terre": "-3",
+      "Transpercer armure Coup puissant": "+2",
+      "CC": "+10",
+      "Immobilisation": "+5"
+    }
+  },
+  {
+    "name": "Armure du barbare (guerrier berserk haut level 60 endu) (Jambières)",
+    "quantity": 1,
+    "source": "Jambières",
+    "secondary": {
+      "CA": "+7",
+      "All résist": "+6",
+      "Puissance lumière": "-7",
+      "Puissance terre": "-4",
+      "Transpercer armure Coup puissant": "+3",
+      "CC": "+20"
+    }
+  },
+  {
+    "name": "Armure du barbare (guerrier berserk haut level 60 endu) (Bottes)",
+    "quantity": 1,
+    "source": "Bottes",
+    "secondary": {
+      "CA": "+5",
+      "All résist": "+5",
+      "Puissance lumière": "-5",
+      "Puissance terre": "-3",
+      "Transpercer armure Coup puissant": "+2",
+      "CC": "+10"
+    }
+  },
+  {
+    "name": "Armure du barbare (guerrier berserk haut level 60 endu) (Ceinture)",
+    "quantity": 1,
+    "source": "Ceinture",
+    "secondary": {
+      "CA": "+3",
+      "CA Coup puissant": "+3"
+    }
+  },
+  {
+    "name": "Armure du barbare (guerrier berserk haut level 60 endu) (Protecteur)",
+    "quantity": 1,
+    "source": "Protecteur",
+    "secondary": {
+      "CA": "6",
+      "All résist": "+5",
+      "CC": "+5"
+    }
+  },
+  {
+    "name": "Armure de Liridell (guerrier tank 370 endu) (Heaume)",
+    "quantity": 1,
+    "source": "Heaume",
+    "secondary": {
+      "Résistance feu": "24",
+      "Résistance eau": "24",
+      "Résistance air": "24",
+      "Résistance terre": "24",
+      "Résistance lumière": "24",
+      "Résistance nécromancie": "24"
+    }
+  },
+  {
+    "name": "Armure de Liridell (guerrier tank 370 endu) (Ceinture)",
+    "quantity": 1,
+    "source": "Ceinture",
+    "secondary": {
+      "CA": "18",
+      "Ncombrement": "+3"
+    }
+  },
+  {
+    "name": "Armure du templier (paladin 340 endu) (Gants)",
+    "quantity": 1,
+    "source": "Gants",
+    "secondary": {
+      "CA": "+12",
+      "Squive. Compétences : +3 Retour à vie. Puissances : + 3 Lumière": "-5",
+      "Terre Air. Résistances : -2 nécromancie": "-2",
+      "Air Terre Eau Feu.": "+6"
+    }
+  },
+  {
+    "name": "Armure du templier (paladin 340 endu) (Heaume)",
+    "quantity": 1,
+    "source": "Heaume",
+    "secondary": {
+      "CA": "+18",
+      "Esquive": "-5",
+      "Compétences :+3 retour à vie. Puissances : +9 Lumière": "+18",
+      "Terre Air. Résistances : -2 nécromancie": "-2",
+      "Air Terre Eau Feu.": "+6"
+    }
+  },
+  {
+    "name": "Armure du templier (paladin 340 endu) (Jambières)",
+    "quantity": 1,
+    "source": "Jambières",
+    "secondary": {
+      "CA": "+22",
+      "Esquive": "-15",
+      "Sagesse. Compétences : +5 Immobilisation Retour à vie": "+50",
+      "Parade. Puissances : +8 Lumière": "+10",
+      "Terre Air": "-3",
+      "Résistances : -2 nécromancie": "+22",
+      "+ 6 Terre Eau Air Feu.": "+22"
+    }
+  },
+  {
+    "name": "Armure du templier (paladin 340 endu) (Bottes)",
+    "quantity": 1,
+    "source": "Bottes",
+    "secondary": {
+      "CA": "+12",
+      "Squive. Compétences : +3 Retour à vie. Puissances : +3 Lumière": "-5",
+      "Terre Air. Résistances : -2 nécromancie": "-2",
+      "Air Terre Eau Feu.": "+6"
+    }
+  },
+  {
+    "name": "Armure du templier (paladin 340 endu) (Cordelette)",
+    "quantity": 1,
+    "source": "Cordelette",
+    "secondary": {
+      "CA": "+9",
+      "Squive. Compétences : +5 Immobilisation GR. Puissances : +2 Lumière": "-5",
+      "Terre Air. Résistances : -2 Nécro.": "-2"
+    }
+  },
+  {
+    "name": "Armure du templier (paladin 340 endu) (Egide)",
+    "quantity": 1,
+    "source": "Egide",
+    "secondary": {
+      "CA": "+57",
+      "Esquive": "-80",
+      "Force": "+35",
+      "Ndu Sagesse. Compétences : +10 Immobilisation": "+86",
+      "Retour à vie": "+15",
+      "Transpercer armure Coup puissant CA.": "+8"
+    }
+  },
+  {
+    "name": "Armure du décrépit (Mage de guerre 220 endu) (Gants)",
+    "quantity": 1,
+    "source": "Gants",
+    "secondary": {
+      "CA. Puissances : +2 nécromancie": "+7",
+      "Feu. Résistances : +5 nécromancie Air Eau Terre Feu.": "-3"
+    }
+  },
+  {
+    "name": "Armure du décrépit (Mage de guerre 220 endu) (Heaume)",
+    "quantity": 1,
+    "source": "Heaume",
+    "secondary": {
+      "CA": "+5",
+      "Squive. Puissances : +2 nécromancie": "-4",
+      "Feu.": "-3",
+      "Résistances : +5 nécromancie Air Terre Eau Feu.": "+1"
+    }
+  },
+  {
+    "name": "Armure du décrépit (Mage de guerre 220 endu) (Jambières)",
+    "quantity": 1,
+    "source": "Jambières",
+    "secondary": {
+      "+ 13 CA": "+1",
+      "Squive. Compétences : +5 Immobilisation CP. Puissances : +4 nécromancie": "-10",
+      "Feu.": "+1",
+      "Résistances +5 nécromancie Air Terre Eau": "+1"
+    }
+  },
+  {
+    "name": "Armure du décrépit (Mage de guerre 220 endu) (Bottes)",
+    "quantity": 1,
+    "source": "Bottes",
+    "secondary": {
+      "CA": "+7",
+      "Squive. Puissances :": "-4",
+      "Nécromancie": "+2",
+      "Feu. Résistances : +5 nécromancie Air Terre Eau Feu.": "-3"
+    }
+  },
+  {
+    "name": "Armure du décrépit (Mage de guerre 220 endu) (Ceinture)",
+    "quantity": 1,
+    "source": "Ceinture",
+    "secondary": {
+      "CA": "+2",
+      "Squive. Compétences : +5 Méditation. Puissances : +2": "-2",
+      "Nécromancie": "+1",
+      "Feu.": "-3"
+    }
+  },
+  {
+    "name": "Armure du décrépit (Mage de guerre 220 endu) (Bouclier)",
+    "quantity": 1,
+    "source": "Bouclier",
+    "secondary": {
+      "CA": "+12",
+      "Squive. Compétences : +5 Transpercer armure Parade Coup puissant C. Assommant.": "-25",
+      "Puissances : +5 nécromancie": "+1",
+      "Feu. Résistances : + 2 Air Terre Eau Feu": "+1",
+      "Nécro.": "+8"
+    }
+  },
+  {
+    "name": "Armure du trépassé (Mage de guerre 370 endu) (Gants)",
+    "quantity": 1,
+    "source": "Gants",
+    "secondary": {
+      "CA": "+8",
+      "Esquive": "-11",
+      "Puissances : +4 nécromancie": "+8",
+      "Puissance eau feu": "-2",
+      "Résistances +4 nécromancie Terre Eau Feu Air.": "+8"
+    }
+  },
+  {
+    "name": "Armure du trépassé (Mage de guerre 370 endu) (Heaume)",
+    "quantity": 1,
+    "source": "Heaume",
+    "secondary": {
+      "CA": "+8",
+      "Esquive": "-11",
+      "Puissances : +4 nécromancie": "+8",
+      "Puissance eau feu": "-2",
+      "Résistances +4 nécromancie Terre Eau Feu Air.": "+8"
+    }
+  },
+  {
+    "name": "Armure du trépassé (Mage de guerre 370 endu) (Jambières)",
+    "quantity": 1,
+    "source": "Jambières",
+    "secondary": {
+      "CA": "+24",
+      "Esquive": "-18",
+      "Int": "+20",
+      "Compétences : +10 Immobilisation Parade": "+24",
+      "Puissances : +10 nécromancie": "+24",
+      "Feu": "+1",
+      "Résistances : +8 nécromancie Terre Eau Feu Air.": "+1"
+    }
+  },
+  {
+    "name": "Armure du trépassé (Mage de guerre 370 endu) (Bottes)",
+    "quantity": 1,
+    "source": "Bottes",
+    "secondary": {
+      "CA": "+8",
+      "Esquive": "-11",
+      "Puissances : +4 nécromancie": "+8",
+      "Puissance eau feu": "-2",
+      "Résistances +4 nécromancie Terre Eau Feu Air.": "+8"
+    }
+  },
+  {
+    "name": "Armure du trépassé (Mage de guerre 370 endu) (Boucle)",
+    "quantity": 1,
+    "source": "Boucle",
+    "secondary": {
+      "CA": "+5",
+      "Esquive": "-3",
+      "Puissances : +3 nécromancie": "+5",
+      "Feu.": "-3"
+    }
+  },
+  {
+    "name": "Armure du trépassé (Mage de guerre 370 endu) (Bouclier)",
+    "quantity": 1,
+    "source": "Bouclier",
+    "secondary": {
+      "CA": "+65",
+      "Esquive": "-80",
+      "Attaque": "+0",
+      "Force": "+35",
+      "Int": "+86",
+      "Compétences : +10 Immobilisation": "+65",
+      "Transpercer armure": "+8",
+      "Parade": "+40",
+      "Coup puissant": "+25",
+      "Puissances : +10 nécromancie": "+65",
+      "Feu": "+65",
+      "Résistance+10 nécromancie": "+65",
+      "Terre": "+5",
+      "Eau": "+65",
+      "Air.": "+65"
+    }
+  }
+]

@@ -1,0 +1,1025 @@
+[
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Armure de cuir gobeline",
+    "prerequisites": {
+      "end": "0",
+      "str": "25",
+      "dex": "17",
+      "int": "18",
+      "wis": "0",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "2.45"
+    },
+    "secondary": {
+      "Esquive": "-4"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Camisole de force",
+    "prerequisites": {
+      "end": "0",
+      "str": "45",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "2.9"
+    },
+    "secondary": {
+      "Force": "+5",
+      "Guérison rapide": "+5",
+      "Méditation": "+5",
+      "Attaque": "-25",
+      "Esquive": "-35"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Cotte de maille bénie",
+    "prerequisites": {
+      "end": "0",
+      "str": "80",
+      "dex": "40",
+      "int": "0",
+      "wis": "53",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "5.95"
+    },
+    "secondary": {
+      "Résistance nécromancie": "+25",
+      "Esquive": "-18"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Plastron de Drachen",
+    "prerequisites": {
+      "end": "0",
+      "str": "185",
+      "dex": "43",
+      "int": "0",
+      "wis": "43",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "16.75"
+    },
+    "secondary": {
+      "Résistance feu": "+10",
+      "Résistance eau": "+10",
+      "Résistance air": "+10",
+      "Résistance terre": "+10",
+      "Résistance lumière": "+10",
+      "Résistance nécromancie": "+10"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Armure ancienne céleste",
+    "prerequisites": {
+      "end": "30",
+      "str": "100",
+      "dex": "30",
+      "int": "30",
+      "wis": "30",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "12"
+    },
+    "secondary": {
+      "Esquive": "-19",
+      "Lance sur porteur lors combats \"Essence de Séraphe\" (": "+1",
+      "CA": "33%",
+      "Redonne pv": "+13",
+      "Pm porteur)": "+13",
+      "Exclusivement pour séraphin. Indroppable.": "+1"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Cuillère d'argent du prophète",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "1"
+    },
+    "secondary": {
+      "Sagesse": "+10",
+      "Lumière permanente": "+10",
+      "Puissance lumière": "+10"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Emeraude focus de pouvoir",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "28",
+      "wis": "65",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "0"
+    },
+    "secondary": {
+      "Puissance terre": "+25",
+      "Résistance eau": "-10",
+      "Feu": "+25",
+      "Terre et": "+25",
+      "Air": "+1",
+      "Puissance air": "-15"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Diamant focus de pouvoir",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "46",
+      "wis": "46",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "0"
+    },
+    "secondary": {
+      "Puissance air": "+25",
+      "Résistance eau": "-10",
+      "Feu": "+25",
+      "Terre": "+25",
+      "Air": "+25",
+      "Puissance terre": "-15"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Saphir focus de pouvoir",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "65",
+      "wis": "28",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "0"
+    },
+    "secondary": {
+      "Puissance eau": "+25",
+      "Résistance eau": "-10",
+      "Feu": "+25",
+      "Terre": "+25",
+      "Air": "+25",
+      "Puissance feu": "-15"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Rubis focus de pouvoir",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "78",
+      "wis": "15",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "0"
+    },
+    "secondary": {
+      "Puissance feu": "+25",
+      "Résistance eau": "-10",
+      "Feu": "+25",
+      "Terre": "+25",
+      "Air": "+25",
+      "Puissance eau": "-15"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Oeil du tigre",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "115",
+      "wis": "113",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "10"
+    },
+    "secondary": {
+      "Lumière permanente": "+1",
+      "Resistance": "+5",
+      "Puissance magique": "+1"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Bouclier en bois",
+    "prerequisites": {
+      "end": "45",
+      "str": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "1.8"
+    },
+    "secondary": {
+      "-": "+1"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Bouclier rond",
+    "prerequisites": {
+      "end": "60",
+      "str": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "2.8"
+    },
+    "secondary": {
+      "-": "+1"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Bouclier de Windhowl",
+    "prerequisites": {
+      "end": "60",
+      "str": "0",
+      "dex": "0",
+      "int": "26",
+      "wis": "23",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "3"
+    },
+    "secondary": {
+      "Esquive": "+19"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Bouclier orque",
+    "prerequisites": {
+      "end": "80",
+      "str": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "4.4"
+    },
+    "secondary": {
+      "-": "+1"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Grand bouclier",
+    "prerequisites": {
+      "end": "100",
+      "str": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "6.2"
+    },
+    "secondary": {
+      "-": "+1"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Bouclier de la tour",
+    "prerequisites": {
+      "end": "125",
+      "str": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "8.8"
+    },
+    "secondary": {
+      "-": "+1"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Ecu de Drachen",
+    "prerequisites": {
+      "end": "125",
+      "str": "40",
+      "dex": "30",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "12.21"
+    },
+    "secondary": {
+      "Attaque": "+50"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Bouclier de Mithril",
+    "prerequisites": {
+      "end": "150",
+      "str": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "12.6"
+    },
+    "secondary": {
+      "-": "+1"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Bouclier du damné",
+    "prerequisites": {
+      "end": "175",
+      "str": "0",
+      "dex": "0",
+      "int": "60",
+      "wis": "60",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "15"
+    },
+    "secondary": {
+      "Resistance magique": "+10",
+      "Puissance lumière": "-25"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Bouclier gothique",
+    "prerequisites": {
+      "end": "180",
+      "str": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "16.4"
+    },
+    "secondary": {
+      "-": "+1"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Bouclier sombrebois",
+    "prerequisites": {
+      "end": "180",
+      "str": "150",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "500"
+    },
+    "bonuses": {
+      "ca": "20"
+    },
+    "secondary": {
+      "Coup puissant": "+25",
+      "Résistance feu": "-10",
+      "Résistance à": "+10",
+      "Eau": "+1"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Bouclier d'adamantite",
+    "prerequisites": {
+      "end": "230",
+      "str": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "26.4"
+    },
+    "secondary": {
+      "-": "+1"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Bouclier des ères",
+    "prerequisites": {
+      "end": "300",
+      "str": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "41.2"
+    },
+    "secondary": {
+      "Parade": "+25"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Diadème de pouvoir arcanique",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "265",
+      "wis": "15",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "0"
+    },
+    "secondary": {
+      "Intelligence": "+100",
+      "Puissance lumière": "-25"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Couronne du bouffon morbide",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "19",
+      "wis": "21",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "2"
+    },
+    "secondary": {
+      "-": "+1"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Couronne du visionnaire",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "47",
+      "wis": "50",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "3"
+    },
+    "secondary": {
+      "Résistance feu": "+5",
+      "Résistance eau": "+5",
+      "Résistance air": "+5",
+      "Résistance terre": "+5",
+      "Résistance lumière": "+5",
+      "Résistance nécromancie": "+5"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Heaume de Drachen",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "70",
+      "wis": "50",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "10"
+    },
+    "secondary": {
+      "Esquive": "+50"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Tiare dorée incrustée d'émeraudes",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "28",
+      "wis": "190",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "0"
+    },
+    "secondary": {
+      "Sagesse": "+50",
+      "Puissance terre": "+25"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Heaume de clairvoyance",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "26",
+      "wis": "54",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "3"
+    },
+    "secondary": {
+      "Sagesse": "+10",
+      "Meditation": "+10"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Bandeau mystique du vent",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "76",
+      "wis": "66",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "0"
+    },
+    "secondary": {
+      "Esquive": "+50",
+      "Puissance air": "+25"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Diadème de malachite couvert de runes",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "98",
+      "wis": "108",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "10"
+    },
+    "secondary": {
+      "Resistance magique": "+10"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Heaume spectral",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "91",
+      "wis": "19",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "3"
+    },
+    "secondary": {
+      "Intelligence": "+20",
+      "Puissance nécromancie": "+10"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Heaume hurlant d'Ogrimar",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "102",
+      "wis": "54",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "2"
+    },
+    "secondary": {
+      "Meditation": "-10",
+      "Puissance eau": "+10",
+      "Air": "-10",
+      "Terre": "-10",
+      "Nécromancie": "-10",
+      "Puissance lumière": "-10"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Chapeau de camouflage de Madrigan",
+    "prerequisites": {
+      "end": "75",
+      "str": "0",
+      "dex": "50",
+      "int": "16",
+      "wis": "16",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "1"
+    },
+    "secondary": {
+      "Esquive": "+10",
+      "Se faufiler": "+10",
+      "Se cacher": "+10"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Heaume perdu du dragon",
+    "prerequisites": {
+      "end": "150",
+      "str": "0",
+      "dex": "0",
+      "int": "30",
+      "wis": "46",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "7.5"
+    },
+    "secondary": {
+      "Esquive": "-20",
+      "Resistance magique": "+5"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Gants du duelliste",
+    "prerequisites": {
+      "end": "45",
+      "str": "0",
+      "dex": "0",
+      "int": "27",
+      "wis": "33",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "1.8"
+    },
+    "secondary": {
+      "Attaque": "+25"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Gantelets de choc",
+    "prerequisites": {
+      "end": "125",
+      "str": "0",
+      "dex": "0",
+      "int": "20",
+      "wis": "25",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "3.6"
+    },
+    "secondary": {
+      "Force": "+10"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Corde du mensonge",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "40",
+      "int": "17",
+      "wis": "16",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "2"
+    },
+    "secondary": {
+      "Vol": "+5",
+      "Se cacher": "+5",
+      "Se faufiler": "+5"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Ceinturon de courage",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "26",
+      "wis": "28",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "1"
+    },
+    "secondary": {
+      "Force": "+5",
+      "Xterité": "+3"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Ceinture de protection instable",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "0"
+    },
+    "secondary": {
+      "Rajoute CA de manière aléatoire entr": "+1",
+      "+(votre": "+1",
+      "Niveau) CA": "+1",
+      "Pendant 10 min après activation gemme": "+1"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Ceinture de sagesse",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "60",
+      "wis": "60",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "5"
+    },
+    "secondary": {
+      "Intelligence": "+25",
+      "Sagesse": "+25"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Boucle passe-partout",
+    "prerequisites": {
+      "end": "25",
+      "str": "0",
+      "dex": "0",
+      "int": "30",
+      "wis": "30",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "1"
+    },
+    "secondary": {
+      "Crochetage de serrure": "+10"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Ceinturon de survie en cuir",
+    "prerequisites": {
+      "end": "25",
+      "str": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "1"
+    },
+    "secondary": {
+      "-": "+1"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Ceinture de force skraug",
+    "prerequisites": {
+      "end": "100",
+      "str": "0",
+      "dex": "0",
+      "int": "20",
+      "wis": "25",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "2"
+    },
+    "secondary": {
+      "Force": "+10"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Protecteur scarabée",
+    "prerequisites": {
+      "end": "100",
+      "str": "0",
+      "dex": "0",
+      "int": "53",
+      "wis": "40",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "1.6"
+    },
+    "secondary": {
+      "Resistance magique": "+5"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Bottes en peau de lézard noir",
+    "prerequisites": {
+      "end": "75",
+      "str": "0",
+      "dex": "0",
+      "int": "30",
+      "wis": "25",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "1.62"
+    },
+    "secondary": {
+      "Xterité": "+5",
+      "Esquive": "+11"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Cape de résistance au feu",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "45",
+      "wis": "35",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "1"
+    },
+    "secondary": {
+      "Résistance feu": "+20"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Cape rouge",
+    "prerequisites": {
+      "end": "25",
+      "str": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "bonuses": {
+      "ca": "0"
+    },
+    "secondary": {
+      "-": "+1"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Plastron",
+    "name": "Cape d'Elemendill",
+    "prerequisites": {
+      "end": "50",
+      "str": "250",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "250"
+    },
+    "bonuses": {
+      "ca": "20"
+    },
+    "secondary": {
+      "Force": "+50",
+      "Endurance": "+50",
+      "Dexterité": "+50",
+      "Intellect et": "-50",
+      "Sagesse": "+1"
+    }
+  }
+]

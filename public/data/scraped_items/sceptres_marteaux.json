@@ -1,0 +1,907 @@
+[
+  {
+    "name": "Bâton du maudit (deux mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "22"
+    },
+    "damage": {
+      "min": "14",
+      "max": "23"
+    },
+    "secondary": {
+      "Intelligence": "+10",
+      "Attaque": "+30%",
+      "Encombrement": "11"
+    },
+    "obtention": "Ebéniste 38"
+  },
+  {
+    "name": "Bâton des ombres (deux mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "22"
+    },
+    "damage": {
+      "min": "16",
+      "max": "25"
+    },
+    "secondary": {
+      "Puissance nécromancie": "+15",
+      "Puissance lumière": "-10",
+      "Résist terre air eau feu": "-5",
+      "Encombrement": "4"
+    },
+    "obtention": "Ebéniste 55"
+  },
+  {
+    "name": "Bâton de dilapidation (deux mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "22"
+    },
+    "damage": {
+      "min": "11",
+      "max": "20"
+    },
+    "secondary": {
+      "Lors un combat": "+1",
+      "Vole parfois 5 à 10% de or de adversaire": "+1",
+      "Encombrement": "4"
+    },
+    "obtention": "Ebéniste 61"
+  },
+  {
+    "name": "Bâton de déprédation (deux mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "24"
+    },
+    "damage": {
+      "min": "16",
+      "max": "35"
+    },
+    "secondary": {
+      "Lors un combat": "+1",
+      "Vole parfois 10 à 15% de or de adversaire": "+1",
+      "Encombrement": "8"
+    },
+    "obtention": "Ebéniste 98"
+  },
+  {
+    "name": "Sceptre thanataire (deux mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "damage": {
+      "min": "??",
+      "max": "??"
+    },
+    "secondary": {
+      "Intelligence": "+20",
+      "Encombrement": "8"
+    },
+    "obtention": "Quête des livres de chance"
+  },
+  {
+    "name": "Sceptre de résistance (2 mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "16"
+    },
+    "damage": {
+      "min": "14",
+      "max": "23"
+    },
+    "secondary": {
+      "CA": "+3",
+      "Résistance terre air eau feu": "+3",
+      "Attaque": "+10%",
+      "Encombrement": "11"
+    },
+    "obtention": "Forgeron lvl 39"
+  },
+  {
+    "name": "Sceptre de sagesse (2 mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "16"
+    },
+    "damage": {
+      "min": "14",
+      "max": "23"
+    },
+    "secondary": {
+      "Sagesse": "+15",
+      "Attaque": "+30%",
+      "Encombrement": "11"
+    },
+    "obtention": "Forgeron lvl 31"
+  },
+  {
+    "name": "Sceptre d'intelligence (2 mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "16"
+    },
+    "damage": {
+      "min": "14",
+      "max": "23"
+    },
+    "secondary": {
+      "Intelligence": "+15",
+      "Méditation": "+10",
+      "Encombrement": "11"
+    },
+    "obtention": "Forgeron lvl 33"
+  },
+  {
+    "name": "Sceptre de drain de mana (2 mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "damage": {
+      "min": "14",
+      "max": "25"
+    },
+    "secondary": {
+      "Ote à adversaire un certain nombre de points de Mana à chaque coup porté": "+1",
+      "Encombrement": "11"
+    },
+    "obtention": "Ebéniste lvl 50"
+  },
+  {
+    "name": "Sceptre de drain de vie (2 mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "26"
+    },
+    "damage": {
+      "min": "14",
+      "max": "25"
+    },
+    "secondary": {
+      "Ote à adversaire un certain nombre de points de Vie à chaque coup porté": "+1",
+      "Encombrement": "11"
+    },
+    "obtention": "Ebéniste lvl 62"
+  },
+  {
+    "name": "Sceptre de luminescence (2 mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "damage": {
+      "min": "16",
+      "max": "25"
+    },
+    "secondary": {
+      "Puissance lumière": "+15",
+      "Rayon (lumière permanente)": "+100",
+      "Malus : -10 Puissance nécromancie": "+1",
+      "Résist terre air eau feu": "-5",
+      "Encombrement": "4"
+    },
+    "obtention": "Ebéniste lvl 52"
+  },
+  {
+    "name": "Sceptre arrondi de Zlüg (une main)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "35"
+    },
+    "damage": {
+      "min": "36",
+      "max": "55"
+    },
+    "secondary": {
+      "Encombrement": "8"
+    },
+    "obtention": "Quête des livres de chance"
+  },
+  {
+    "name": "Sceptre des abysses (2 mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "43"
+    },
+    "damage": {
+      "min": "105",
+      "max": "161"
+    },
+    "secondary": {
+      "CA": "+5",
+      "Puissance nécromancie": "+20",
+      "Résistance nécromancie": "+10",
+      "Intelligence": "+15",
+      "Malus : -20 résist lumière": "+1",
+      "Résist terre": "-10",
+      "Eau": "+1",
+      "Feu": "+1",
+      "Air": "+1",
+      "Encombrement : 8 (4 avant": "4",
+      ")": "12"
+    },
+    "obtention": "Quête du Sceptre des Abysses"
+  },
+  {
+    "name": "Sceptre de Ravage (2 mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "68"
+    },
+    "damage": {
+      "min": "36",
+      "max": "55"
+    },
+    "secondary": {
+      "Puissance Terre": "+30",
+      "Malus : -15 Puissance Eau": "+1",
+      "Résist terre": "-10",
+      "Eau": "+1",
+      "Feu": "+1",
+      "Air": "+1",
+      "Encombrement : 11 (4 avant maj)": "+1"
+    },
+    "obtention": "Ebéniste lvl 89"
+  },
+  {
+    "name": "Sceptre des Arts occultes (2 mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "68"
+    },
+    "damage": {
+      "min": "36",
+      "max": "55"
+    },
+    "secondary": {
+      "Puissance nécromancie": "+30",
+      "Compétence Coup Critique": "+25",
+      "Malus : -10 résist terre": "+1",
+      "Eau": "+1",
+      "Feu": "+1",
+      "Air": "+1",
+      "Encombrement : 11 (4 avant": "4",
+      ")": "18"
+    },
+    "obtention": "Ebéniste lvl 103"
+  },
+  {
+    "name": "Sceptre de Déflagration (2 mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "68"
+    },
+    "damage": {
+      "min": "36",
+      "max": "55"
+    },
+    "secondary": {
+      "Puissance Feu": "+30",
+      "Malus : -15 Puissance Eau": "+1",
+      "Résist terre": "-10",
+      "Eau": "+1",
+      "Feu": "+1",
+      "Air": "+1",
+      "Encombrement : 11 (4 avant maj)": "+1"
+    },
+    "obtention": "Ebéniste 85"
+  },
+  {
+    "name": "Sceptre de Déferlante (2 mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "68"
+    },
+    "damage": {
+      "min": "36",
+      "max": "55"
+    },
+    "secondary": {
+      "Puissance eau": "+30",
+      "Malus : -15 Puissance Terre": "+1",
+      "Résist terre": "-10",
+      "Eau": "+1",
+      "Feu": "+1",
+      "Air": "+1",
+      "Encombrement : 11 (4 avant maj)": "+1"
+    },
+    "obtention": "Ebéniste lvl 86"
+  },
+  {
+    "name": "Sceptre de Rafale (2 mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "damage": {
+      "min": "36",
+      "max": "55"
+    },
+    "secondary": {
+      "Puissance air": "+30",
+      "Malus : -15 Puissance Terre": "+1",
+      "Résist terre": "-10",
+      "Eau": "+1",
+      "Feu": "+1",
+      "Air": "+1",
+      "Encombrement : 11 (4 avant maj)": "+1"
+    },
+    "obtention": "Ebéniste lvl 88"
+  },
+  {
+    "name": "Sceptre de L'ascète (2 mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "69"
+    },
+    "damage": {
+      "min": "36",
+      "max": "55"
+    },
+    "secondary": {
+      "Puissance Lumière": "+30",
+      "Compétence Retour à vie": "+25",
+      "Malus :": "+1",
+      "Résist terre": "-10",
+      "Eau": "-10",
+      "Feu": "-10",
+      "Air": "-10",
+      "Encombrement :11 (4 avant": "4",
+      ")": "18"
+    },
+    "obtention": "Ebéniste lvl 101"
+  },
+  {
+    "name": "Sceptre d'espoir (2 mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "110"
+    },
+    "damage": {
+      "min": "72",
+      "max": "111"
+    },
+    "secondary": {
+      "Attaque": "+30%",
+      "Encombrement": "10"
+    },
+    "obtention": "??"
+  },
+  {
+    "name": "Fléau enchanté",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "270"
+    },
+    "damage": {
+      "min": "204",
+      "max": "319"
+    },
+    "secondary": {
+      "Force Sagesse": "+15",
+      "Puissance Feu": "+10",
+      "Attaque": "+20%",
+      "Ndu": "+25",
+      "Résist nécromancie": "-15",
+      "Lumière": "-15",
+      "Eau": "-15",
+      "Encombrement": "6"
+    },
+    "obtention": "Quête accès HumTerre, coffres caves montagnes DI, Draconigus invoqué majeur (désert RD)"
+  },
+  {
+    "name": "Fléau enchanté de main gauche",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "270"
+    },
+    "damage": {
+      "min": "206",
+      "max": "321"
+    },
+    "secondary": {
+      "Force Sagesse": "+15",
+      "Puissance Feu": "+10",
+      "Attaque": "+20%",
+      "Ndu": "+25",
+      "Résist nécromancie": "-15",
+      "Lumière": "-15",
+      "Eau": "-15",
+      "Encombrement": "6"
+    },
+    "obtention": "Forgeron 75"
+  },
+  {
+    "name": "Fléau en acier poli",
+    "quantity": 1,
+    "source": "Arme",
+    "buyPrice": "518.611 (Nyctos, maison dans RW)",
+    "sellPrice": "172.870",
+    "damage": {
+      "min": "161",
+      "max": "255"
+    }
+  },
+  {
+    "name": "Fléau en acier poli béni (+1)",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Attaque": "+15%"
+    },
+    "buyPrice": "1.555.833 (Regyna à l'est de RW, au-delà les douves)",
+    "sellPrice": "345.740",
+    "damage": {
+      "min": "185",
+      "max": "293"
+    }
+  },
+  {
+    "name": "Fléau en acier poli sacré (+2)",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Attaque": "+30%"
+    },
+    "buyPrice": "5.186.110 (Ayanis, sous-sol RW, au NO)",
+    "sellPrice": "518.611",
+    "damage": {
+      "min": "209",
+      "max": "331"
+    }
+  },
+  {
+    "name": "Fléau d'arme du jugement (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Attaque": "+50%"
+    },
+    "buyPrice": "20.744.440 (Sphodros, montagnes est RW, (900,1400,3))",
+    "sellPrice": "691.481",
+    "damage": {
+      "min": "241",
+      "max": "382"
+    }
+  },
+  {
+    "name": "Fléau en acier forgé",
+    "quantity": 1,
+    "source": "Arme",
+    "buyPrice": "705.714 (Nyctos, maison dans RW)",
+    "sellPrice": "235.238",
+    "damage": {
+      "min": "187",
+      "max": "297"
+    }
+  },
+  {
+    "name": "Fléau en acier forgé béni (+1)",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Attaque": "+15%"
+    },
+    "buyPrice": "2.117.142 (Regyna à l'est de RW, au-delà les douves)",
+    "sellPrice": "470.476",
+    "damage": {
+      "min": "215",
+      "max": "341"
+    }
+  },
+  {
+    "name": "Fléau en acier forgé sacré (+2)",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Attaque": "+30%"
+    },
+    "buyPrice": "7.057.140 (Ayanis, sous-sol RW, au NO)",
+    "sellPrice": "705.714",
+    "damage": {
+      "min": "243",
+      "max": "385"
+    }
+  },
+  {
+    "name": "Fléau d'arme du destin (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Attaque": "+50%"
+    },
+    "buyPrice": "28.228.560 (Sphodros, montagnes est RW, (900,1400,3))",
+    "sellPrice": "940.952",
+    "damage": {
+      "min": "280",
+      "max": "444"
+    }
+  },
+  {
+    "name": "Fléau d'adamantite",
+    "quantity": 1,
+    "source": "Arme",
+    "buyPrice": "921.581 (Nyctos, maison dans RW)",
+    "sellPrice": "30.719",
+    "damage": {
+      "min": "??",
+      "max": "??"
+    },
+    "secondary": {
+      "Encombrement": "7"
+    }
+  },
+  {
+    "name": "Fléau d'adamantite béni (+1)",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Attaque": "+15%",
+      "Encombrement": "7"
+    },
+    "buyPrice": "2.764.743 (Regyna à l'est de RW, au-delà les douves)",
+    "sellPrice": "51.439",
+    "damage": {
+      "min": "??",
+      "max": "??"
+    }
+  },
+  {
+    "name": "Fléau d'adamantite sacré (+2)",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Attaque": "+30%",
+      "Encombrement": "7"
+    },
+    "buyPrice": "9.215.810 (Ayanis, sous-sol RW, au NO)",
+    "sellPrice": "921.581",
+    "damage": {
+      "min": "??",
+      "max": "??"
+    }
+  },
+  {
+    "name": "Fléau d'arme de l'éternité (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "7"
+    },
+    "buyPrice": "36.863.240 (Sphodros, montagnes est RW, (900,1400,3))",
+    "damage": {
+      "min": "305",
+      "max": "485"
+    }
+  },
+  {
+    "name": "Nova (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Puissance lumière": "+10",
+      "+ 50% Attaque": "+10",
+      "Encombrement": "7"
+    },
+    "obtention": "forgeron 96",
+    "damage": {
+      "min": "316",
+      "max": "504"
+    }
+  },
+  {
+    "name": "Fléau du croisé (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "469"
+    },
+    "secondary": {
+      "Puissance lumière": "+10",
+      "Attaque": "+50%",
+      "Encombrement": "6"
+    },
+    "obtention": "forgeron 103",
+    "damage": {
+      "min": "312",
+      "max": "539"
+    }
+  },
+  {
+    "name": "Fléau du preux (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "642"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "6"
+    },
+    "obtention": "forgeron 103",
+    "damage": {
+      "min": "312",
+      "max": "539"
+    }
+  },
+  {
+    "name": "Fléau de la clarté rayonnante (+2)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "520"
+    },
+    "secondary": {
+      "Transpercer": "+5",
+      "Armure": "+1",
+      "Encombrement": "6"
+    },
+    "obtention": "forgeron Urtanar",
+    "damage": {
+      "min": "217",
+      "max": "525"
+    }
+  },
+  {
+    "name": "Maillet du Maudit (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Force": "30",
+      "INT": "29",
+      "Attaque": "+50%"
+    },
+    "obtention": "Quête du Damné / 48.280 (Kerniel, WH, (1660,1220))",
+    "sellPrice": "---",
+    "damage": {
+      "min": "17",
+      "max": "27"
+    }
+  },
+  {
+    "name": "Maillet du Profane (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Force": "60",
+      "INT": "54",
+      "Attaque": "+50%"
+    },
+    "obtention": "Quête du Damné / 187.650 (Kerniel, WH, (1660,1220))",
+    "sellPrice": "---",
+    "damage": {
+      "min": "34",
+      "max": "55"
+    }
+  },
+  {
+    "name": "Maillet du Malin (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Force": "90",
+      "INT": "78",
+      "Attaque": "+50%"
+    },
+    "obtention": "Quête du Damné / 418.990 (Kerniel, WH, (1660,1220))",
+    "sellPrice": "---",
+    "damage": {
+      "min": "51",
+      "max": "85"
+    }
+  },
+  {
+    "name": "Maillet du Damné (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Force": "110",
+      "INT": "94",
+      "Attaque": "+50%"
+    },
+    "obtention": "Quête du Damné / 631.440 (Kerniel, WH, (1660,1220))",
+    "sellPrice": "---",
+    "damage": {
+      "min": "64",
+      "max": "106"
+    }
+  },
+  {
+    "name": "Marteau du Maudit (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Force": "140",
+      "INT": "117",
+      "Attaque": "+50%"
+    },
+    "buyPrice": "3.691.220 (Naadriel, SilverSky (1440,2515))",
+    "damage": {
+      "min": "84",
+      "max": "139"
+    }
+  },
+  {
+    "name": "Marteau du profane (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Force": "170",
+      "INT": "139",
+      "Attaque": "+50%"
+    },
+    "buyPrice": "6.470.010 (Naadriel, SilverSky (1440,2515))",
+    "sellPrice": "---",
+    "damage": {
+      "min": "105",
+      "max": "173"
+    }
+  },
+  {
+    "name": "Marteau du Malin (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Force": "210",
+      "INT": "169",
+      "Attaque": "+50%"
+    },
+    "buyPrice": "9.554.380 (Naadriel, SilverSky (1440,2515))",
+    "sellPrice": "---",
+    "damage": {
+      "min": "134",
+      "max": "223"
+    }
+  },
+  {
+    "name": "Marteau du damné (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Force": "260",
+      "INT": "206",
+      "Attaque": "+50%"
+    },
+    "buyPrice": "12.757.300 (Naadriel, SilverSky (1440,2515))",
+    "sellPrice": "---",
+    "damage": {
+      "min": "174",
+      "max": "289"
+    }
+  },
+  {
+    "name": "Marteau d'armes renforcé du maudit (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Force": "310",
+      "INT": "242",
+      "Attaque": "+50%"
+    },
+    "buyPrice": "---",
+    "damage": {
+      "min": "217",
+      "max": "360"
+    }
+  },
+  {
+    "name": "Marteau d'armes renforcé du profane (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Force": "360",
+      "INT": "277",
+      "Attaque": "+50%"
+    },
+    "buyPrice": "---",
+    "damage": {
+      "min": "??",
+      "max": "??"
+    }
+  },
+  {
+    "name": "Marteau d'armes renforcé du malin (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Force": "400",
+      "INT": "305",
+      "Attaque": "+50%"
+    },
+    "buyPrice": "37.844.325 (Brokyr, sous-sol métiers de RW (1430,590))",
+    "sellPrice": "---",
+    "damage": {
+      "min": "302",
+      "max": "502"
+    }
+  },
+  {
+    "name": "Mjölnir du damné (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Force": "420",
+      "INT": "349",
+      "Attaque": "+50%"
+    },
+    "obtention": "Drop Saaliel (château du désert) / quête Saaliel",
+    "damage": {
+      "min": "312",
+      "max": "513"
+    }
+  },
+  {
+    "name": "Propriétés",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Fandom": "+1",
+      "Fanatical": "+1",
+      "GameSpot": "+1",
+      "Metacritic": "+1",
+      "TV Guide": "+1",
+      "Honest Entertainment": "+1"
+    }
+  },
+  {
+    "name": "Nous suivre",
+    "quantity": 1,
+    "source": "Arme"
+  },
+  {
+    "name": "Vue d'ensemble",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Qu'est-ce que Fandom ?": "+1",
+      "À propos": "+1",
+      "Emplois": "+1",
+      "Presse": "+1",
+      "Contact": "+1",
+      "Conditions utilisation": "+1",
+      "Politique de confidentialité": "+1",
+      "Loi sur les services numériques": "+1",
+      "Plan site global": "+1",
+      "Plan site local": "+1"
+    }
+  },
+  {
+    "name": "Communauté",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Centre communautés": "+1",
+      "Support": "+1",
+      "Aide": "+1"
+    }
+  },
+  {
+    "name": "Publicité",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Kit de presse": "+1"
+    }
+  },
+  {
+    "name": "Applications Fandom",
+    "quantity": 1,
+    "source": "Arme"
+  }
+]

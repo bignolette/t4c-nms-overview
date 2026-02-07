@@ -1,0 +1,646 @@
+[
+  {
+    "name": "Barbute des arènes",
+    "quantity": 1,
+    "source": "Plastron",
+    "prerequisites": {
+      "str": "181"
+    },
+    "secondary": {
+      "CA": "+6",
+      "Coup puissant": "-20",
+      "Ommages": "+30",
+      "Pendant un combat": "+1",
+      "Durant périodes de 12 secondes aléatoires (environ 2X par minute)": "+1",
+      "Augmente de manière variable valeur de Coup Puissant.": "+1"
+    },
+    "obtention": "Armurier 102"
+  },
+  {
+    "name": "Chapeau du nomade d'Arakas",
+    "quantity": 1,
+    "source": "Plastron",
+    "weight": "3",
+    "secondary": {
+      "CA": "+4",
+      "Compétence Chercher": "+10",
+      "Vous téléporte aléatoirement sur Arakas moment ou vous vous couvrez": "+1"
+    },
+    "obtention": "Couturier 24"
+  },
+  {
+    "name": "Chapeau du nomade de Raven's Dust",
+    "quantity": 1,
+    "source": "Plastron",
+    "weight": "3",
+    "secondary": {
+      "CA": "+4",
+      "Compétence Chercher": "+15",
+      "Vous téléporte aléatoirement sur Raven's Dust moment ou vous vous couvrez": "+1"
+    },
+    "obtention": "Couturier 50"
+  },
+  {
+    "name": "Chapeau du nomade de Stoneheim",
+    "quantity": 1,
+    "source": "Plastron",
+    "weight": "3",
+    "secondary": {
+      "CA": "+4",
+      "Compétence Chercher": "+20",
+      "Vous téléporte aléatoirement sur Stoneheim moment ou vous vous couvrez": "+1"
+    },
+    "obtention": "Couturier 74"
+  },
+  {
+    "name": "Chapeau du nomade de Drake Island",
+    "quantity": 1,
+    "source": "Plastron",
+    "weight": "3",
+    "secondary": {
+      "CA": "+4",
+      "+ 25 Compétence Chercher": "+1",
+      "Vous téléporte aléatoirement sur Drake Island moment ou vous vous couvrez": "+1"
+    },
+    "obtention": "Couturier 97"
+  },
+  {
+    "name": "Chapeau du nomade légendaire",
+    "quantity": 1,
+    "source": "Plastron",
+    "weight": "3",
+    "secondary": {
+      "CA": "+4",
+      "+ 25 Compétence Chercher ??": "+1",
+      "Vous téléporte aléatoirement sur Altéa moment ou vous vous couvrez": "+1"
+    },
+    "obtention": "Couturier 108"
+  },
+  {
+    "name": "Masque de loup",
+    "quantity": 1,
+    "source": "Plastron",
+    "prerequisites": {
+      "str": "27"
+    },
+    "secondary": {
+      "CA": "+3",
+      "Attaque": "+100",
+      "Archerie": "+100"
+    },
+    "obtention": "Quête de l'enfant malade"
+  },
+  {
+    "name": "Chapeau du jeune magicien",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "CA": "+2",
+      "Intelligence": "+10",
+      "Sagesse": "+10",
+      "All puissances": "+3"
+    },
+    "buyPrice": "2.632",
+    "obtention": "Dasrinn le Dragon (village des nains AR)"
+  },
+  {
+    "name": "Chapeau à larges bords",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "CA": "+3",
+      "Intelligence": "+10",
+      "Profusion de mana": "+5",
+      "Résist eau": "+5"
+    },
+    "buyPrice": "547",
+    "obtention": "Couturier 15"
+  },
+  {
+    "name": "Chapeau de glace",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "CA": "+5",
+      "Int": "+50",
+      "Puissance Eau": "+10",
+      "Puissance Air": "+5",
+      "Nécromancie": "+5",
+      "Résistance Eau": "+5",
+      "Air": "+5",
+      "Terre": "+1",
+      "Résistance nécromancie": "+3",
+      "- 5 Puissance Feu": "+1"
+    },
+    "buyPrice": "125.923",
+    "obtention": "Zartgax de givre (Niève)"
+  },
+  {
+    "name": "Masque Gobelin",
+    "quantity": 1,
+    "source": "Plastron",
+    "prerequisites": {
+      "end": "30"
+    },
+    "secondary": {
+      "CA": "+1",
+      "Force": "+1"
+    },
+    "obtention": "Gobelin shaman (AR)"
+  },
+  {
+    "name": "Masque de Gobelin glacé",
+    "quantity": 1,
+    "source": "Plastron",
+    "prerequisites": {
+      "end": "45"
+    },
+    "secondary": {
+      "CA": "+3",
+      "Esquive": "-25",
+      "Puissance Eau": "+10",
+      "Résistance Eau": "+10",
+      "Int": "+5"
+    },
+    "buyPrice": "1.852",
+    "obtention": "Gobelin gardien des glaces (Niève)"
+  },
+  {
+    "name": "Diadème volcanique",
+    "quantity": 1,
+    "source": "Plastron",
+    "prerequisites": {
+      "wis": "21"
+    },
+    "secondary": {
+      "CA": "+5",
+      "Intelligence": "+50",
+      "Puissance Feu": "+15",
+      "+ 5 Puissance nécromancie": "+1",
+      "Puissance eau": "-5",
+      "Résistance Feu": "+5",
+      "Résistance Air": "+3",
+      "Terre": "+3",
+      "Nécromancie": "+3",
+      "Résistance Eau": "-5"
+    },
+    "obtention": "Monstres B'Zerillis (DI)"
+  },
+  {
+    "name": "Chapeau en feuilles",
+    "quantity": 1,
+    "source": "Plastron",
+    "prerequisites": {
+      "wis": "68"
+    },
+    "secondary": {
+      "CA": "+5",
+      "Puissance Terre": "+10",
+      "Sagesse": "+25"
+    },
+    "obtention": "Quête des livres de chance"
+  },
+  {
+    "name": "Sombre chapeau",
+    "quantity": 1,
+    "source": "Plastron",
+    "prerequisites": {
+      "wis": "21"
+    },
+    "secondary": {
+      "CA": "+5",
+      "Puissance nécromancie": "+10",
+      "Intelligence": "+25"
+    },
+    "obtention": "Quête des livres de chance"
+  },
+  {
+    "name": "Couvre chef",
+    "quantity": 1,
+    "source": "Plastron",
+    "prerequisites": {
+      "dex": "372"
+    },
+    "secondary": {
+      "CA": "+5",
+      "Esquive": "+50",
+      "Xt": "+40",
+      "Force": "+20",
+      "Immobilisation": "+10",
+      "+(1xNiveau personnage) Archerie": "+1"
+    },
+    "buyPrice": "23.547",
+    "obtention": "Drakes Vigrator (DI)"
+  },
+  {
+    "name": "Bandeau mystique du vent (item standard modifié)",
+    "quantity": 1,
+    "source": "Plastron",
+    "prerequisites": {
+      "wis": "115"
+    },
+    "secondary": {
+      "Esquive": "+50",
+      "Puissance Lumière": "+10",
+      "Puissance Air": "+15"
+    },
+    "obtention": "Coffre Oracle"
+  },
+  {
+    "name": "Couronne de la liche",
+    "quantity": 1,
+    "source": "Plastron",
+    "prerequisites": {
+      "wis": "21"
+    },
+    "secondary": {
+      "CA": "+10",
+      "Profusion de mana": "+12",
+      "Puissance nécromancie": "+10",
+      "Résistance à lumière": "-12",
+      "Résistance à terre": "+2",
+      "Résistance à eau": "+2",
+      "Résistance feu": "+2",
+      "Résistance à air": "+2",
+      "Intelligence": "+50"
+    },
+    "obtention": "Forgeron 101"
+  },
+  {
+    "name": "Etincelle de lumière",
+    "quantity": 1,
+    "source": "Plastron",
+    "prerequisites": {
+      "wis": "583"
+    },
+    "secondary": {
+      "CA": "+5",
+      "Puissance Lumière": "+25",
+      "Sagesse": "+50",
+      "Profusion de mana": "+10",
+      "Retour à vie": "+20"
+    },
+    "obtention": "Clerc Hykal (Abysses DI)"
+  },
+  {
+    "name": "Chapeau Brun",
+    "quantity": 1,
+    "source": "Plastron",
+    "prerequisites": {
+      "wis": "12"
+    },
+    "secondary": {
+      "CA": "+1",
+      "Se faufiler": "+10",
+      "Se dissimuler": "+10",
+      "Esquive": "-2"
+    },
+    "buyPrice": "7.999",
+    "obtention": "Coffre à surprise AR"
+  },
+  {
+    "name": "Casque en frêne",
+    "quantity": 1,
+    "source": "Plastron",
+    "weight": "3",
+    "secondary": {
+      "CA": "+2",
+      "Coup assommant": "+5"
+    },
+    "buyPrice": "547",
+    "obtention": "Ebéniste level 2"
+  },
+  {
+    "name": "Chapeau de Noël",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "Chance": "+3"
+    },
+    "buyPrice": "1.000",
+    "obtention": "Quête de Noël"
+  },
+  {
+    "name": "Ceinture de sagesse (standard  T4C mais très demandée)",
+    "quantity": 1,
+    "source": "Plastron",
+    "obtention": "Drop Mausolée RD, Vicaires Ramiel et Kervian (repop 20 min) (ce sont les deux premiers)"
+  },
+  {
+    "name": "Cordon d'apaisement",
+    "quantity": 1,
+    "source": "Plastron",
+    "obtention": "Couturier level 4"
+  },
+  {
+    "name": "Ceinture de noblesse",
+    "quantity": 1,
+    "source": "Plastron",
+    "obtention": "Donjon 200+ : les bijoux d'Eléonore"
+  },
+  {
+    "name": "Ceinturon d'immunisation aux poisons mineurs",
+    "quantity": 1,
+    "source": "Plastron",
+    "obtention": "Couturier level 20"
+  },
+  {
+    "name": "Ceinturon d'immunisation aux poisons",
+    "quantity": 1,
+    "source": "Plastron",
+    "obtention": "Couturier level 46"
+  },
+  {
+    "name": "Ceinturon d'immunisation aux poisons majeurs",
+    "quantity": 1,
+    "source": "Plastron",
+    "obtention": "Couturier level 72"
+  },
+  {
+    "name": "Bottes de lézard blanc",
+    "quantity": 1,
+    "source": "Plastron",
+    "obtention": "Dragon Yeridaj (sortie de la grotte vers la ville de Niève)"
+  },
+  {
+    "name": "Bottes de la tortue",
+    "quantity": 1,
+    "source": "Plastron",
+    "obtention": ""
+  },
+  {
+    "name": "Bottes de Lutin rouges",
+    "quantity": 1,
+    "source": "Plastron",
+    "obtention": "Quête de Noël"
+  },
+  {
+    "name": "Bottes de Lutin vertes",
+    "quantity": 1,
+    "source": "Plastron",
+    "obtention": "Quête de Noël"
+  },
+  {
+    "name": "Armure de cuir rapiécée",
+    "quantity": 1,
+    "source": "Plastron",
+    "obtention": "donjon 1-30 : Donjon du Gobelet"
+  },
+  {
+    "name": "Armure en lambeaux",
+    "quantity": 1,
+    "source": "Plastron",
+    "obtention": "garde mort-vivant (invocation de Liridell), Sentinelle Morte-vivante"
+  },
+  {
+    "name": "Plastron d'argent",
+    "quantity": 1,
+    "source": "Plastron",
+    "obtention": "Dragon Freidaclan (Ouest entrée crypte RD)"
+  },
+  {
+    "name": "Plastron d'orc en cuir clouté",
+    "quantity": 1,
+    "source": "Plastron",
+    "obtention": "Armurier level 9"
+  },
+  {
+    "name": "Plastron du pommier",
+    "quantity": 1,
+    "source": "Plastron",
+    "obtention": "Armurier level 66"
+  },
+  {
+    "name": "Plastron protecteur de Théopold",
+    "quantity": 1,
+    "source": "Plastron",
+    "obtention": "Armurier level 104"
+  },
+  {
+    "name": "Haubert d'armure légendaire de camouflage",
+    "quantity": 1,
+    "source": "Plastron",
+    "obtention": "Armurier level 105"
+  },
+  {
+    "name": "Plastron de rejet",
+    "quantity": 1,
+    "source": "Plastron",
+    "obtention": "Armurier level 110"
+  },
+  {
+    "name": "Gants d'Orc en cuir clouté",
+    "quantity": 1,
+    "source": "Plastron",
+    "prerequisites": {
+      "end": "60"
+    },
+    "secondary": {
+      "CA": "+1",
+      "All résistances": "+1"
+    },
+    "obtention": "Armurier level 1"
+  },
+  {
+    "name": "Gants du manipulateur d'orage",
+    "quantity": 1,
+    "source": "Plastron",
+    "prerequisites": {
+      "end": "20"
+    },
+    "secondary": {
+      "CA": "+2",
+      "Sort ?": "+2"
+    },
+    "obtention": "Couturier level 42"
+  },
+  {
+    "name": "Gants d'acier des monts de Righul",
+    "quantity": 1,
+    "source": "Plastron",
+    "prerequisites": {
+      "end": "55"
+    },
+    "secondary": {
+      "CA": "+2",
+      "Immobilisation": "+5",
+      "Attaque": "+20",
+      "Force": "+10"
+    },
+    "obtention": "Armurier level 24"
+  },
+  {
+    "name": "Poigne de fer",
+    "quantity": 1,
+    "source": "Plastron",
+    "prerequisites": {
+      "end": "55"
+    },
+    "secondary": {
+      "CA": "+3",
+      "Force": "+10",
+      "Coup Critique": "+50",
+      "Attaque": "+25",
+      "Malus : -25 Esquive.": "+1"
+    },
+    "obtention": "Couturier level 11"
+  },
+  {
+    "name": "Gants d'influence élémentaire",
+    "quantity": 1,
+    "source": "Plastron",
+    "prerequisites": {
+      "end": "20"
+    },
+    "secondary": {
+      "CA": "+2",
+      "Sagesse": "+5",
+      "Intelligence": "+2",
+      "Puissances eau air terre feu pour groupe proche !!": "+3"
+    },
+    "obtention": "Couturier level 19 , Donjon du capitaine Coupe-jarret"
+  },
+  {
+    "name": "Gants de voleur",
+    "quantity": 1,
+    "source": "Plastron",
+    "prerequisites": {
+      "end": "15"
+    },
+    "secondary": {
+      "CA": "+1",
+      "Vol": "+5",
+      "Xtérité": "+7",
+      "Esquive": "+10"
+    },
+    "obtention": "Armurier level 43"
+  },
+  {
+    "name": "Gants de noblesse",
+    "quantity": 1,
+    "source": "Plastron",
+    "prerequisites": {
+      "wis": "25"
+    },
+    "secondary": {
+      "Chance": "+15"
+    },
+    "obtention": "Armurier level 106"
+  },
+  {
+    "name": "Bénard capteur de magie",
+    "quantity": 1,
+    "source": "Plastron",
+    "prerequisites": {
+      "wis": "38"
+    },
+    "secondary": {
+      "CA": "+2",
+      "Méditation": "+10",
+      "Résistances terre air eau feu": "+3",
+      "Esquive": "-25"
+    },
+    "obtention": "Couturier level 10"
+  },
+  {
+    "name": "Braies du don de soi",
+    "quantity": 1,
+    "source": "Plastron",
+    "prerequisites": {
+      "end": "40"
+    },
+    "secondary": {
+      "CA": "+3",
+      "Sagesse": "+15",
+      "Puissance lumière": "+5",
+      "Retour à vie": "+25",
+      "Esquive": "-7"
+    },
+    "obtention": "Couturier level 37"
+  },
+  {
+    "name": "Jambières des alvors",
+    "quantity": 1,
+    "source": "Plastron",
+    "prerequisites": {
+      "end": "150"
+    },
+    "secondary": {
+      "CA": "+6",
+      "Résistances eau terre air feu nécromancie": "+5"
+    },
+    "obtention": "Armurier level 74"
+  },
+  {
+    "name": "Jambières de stabilité",
+    "quantity": 1,
+    "source": "Plastron",
+    "prerequisites": {
+      "end": "125"
+    },
+    "secondary": {
+      "CA": "+4",
+      "Immobilisation": "+10",
+      "Esquive": "+30"
+    },
+    "obtention": "Armurier level 69"
+  },
+  {
+    "name": "Propriétés",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "Fandom": "+1",
+      "Fanatical": "+1",
+      "GameSpot": "+1",
+      "Metacritic": "+1",
+      "TV Guide": "+1",
+      "Honest Entertainment": "+1"
+    }
+  },
+  {
+    "name": "Nous suivre",
+    "quantity": 1,
+    "source": "Plastron"
+  },
+  {
+    "name": "Vue d'ensemble",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "Qu'est-ce que Fandom ?": "+1",
+      "À propos": "+1",
+      "Emplois": "+1",
+      "Presse": "+1",
+      "Contact": "+1",
+      "Conditions utilisation": "+1",
+      "Politique de confidentialité": "+1",
+      "Loi sur les services numériques": "+1",
+      "Plan site global": "+1",
+      "Plan site local": "+1"
+    }
+  },
+  {
+    "name": "Communauté",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "Centre communautés": "+1",
+      "Support": "+1",
+      "Aide": "+1"
+    }
+  },
+  {
+    "name": "Publicité",
+    "quantity": 1,
+    "source": "Plastron",
+    "secondary": {
+      "Kit de presse": "+1"
+    }
+  },
+  {
+    "name": "Applications Fandom",
+    "quantity": 1,
+    "source": "Plastron"
+  }
+]

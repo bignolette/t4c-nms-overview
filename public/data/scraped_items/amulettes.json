@@ -1,0 +1,386 @@
+[
+  {
+    "name": "Amulette ténébreuse",
+    "quantity": 1,
+    "source": "Amulette",
+    "secondary": {
+      "CA": "+10",
+      "Puissance nécromancie": "+10",
+      "Puissance terre": "+10",
+      "Puissance air": "+10",
+      "Puissance feu": "-10",
+      "Puissance eau": "-10",
+      "Résistance lumièr": "-15"
+    },
+    "prerequisites": {
+      "end": "30",
+      "wis": "49",
+      "int": "49"
+    },
+    "obtention": ""
+  },
+  {
+    "name": "Présent des älvors",
+    "quantity": 1,
+    "source": "Amulette",
+    "secondary": {
+      "CA": "+10",
+      "Esquive": "-50",
+      "Coup Puissant": "+10",
+      "Coup Assommant": "+10",
+      "Se Cacher": "+10",
+      "Transpercer Armure": "+10",
+      "Guérison Rapide": "+10",
+      "Attaque": "+50",
+      "Archerie": "+50",
+      "Immobilisation": "+5"
+    },
+    "prerequisites": {
+      "str": "80",
+      "end": "35",
+      "dex": "223",
+      "int": "40",
+      "wis": "40"
+    },
+    "obtention": ""
+  },
+  {
+    "name": "Amulette attractive",
+    "quantity": 1,
+    "source": "Amulette",
+    "secondary": {
+      "Chance": "+10"
+    },
+    "prerequisites": {
+      "wis": "50",
+      "int": "50"
+    },
+    "obtention": ""
+  },
+  {
+    "name": "Amulette de chance",
+    "quantity": 1,
+    "source": "Amulette",
+    "secondary": {
+      "Chance": "+20"
+    },
+    "prerequisites": {
+      "wis": "80",
+      "int": "80"
+    },
+    "obtention": ""
+  },
+  {
+    "name": "Amulette de pyrolyse",
+    "quantity": 1,
+    "source": "Amulette",
+    "secondary": {
+      "CA": "+5",
+      "Intelligence": "+25",
+      "Puissance feu": "+10",
+      "Résistance feu": "+10",
+      "Profusion de mana": "+5",
+      "Résistance eau terre nécromancie air": "-7"
+    },
+    "prerequisites": {
+      "str": "30",
+      "wis": "20",
+      "int": "456"
+    },
+    "obtention": ""
+  },
+  {
+    "name": "Amulette en plumes",
+    "quantity": 1,
+    "source": "Amulette",
+    "secondary": {
+      "CA": "+5",
+      "Puissance nécromancie": "+5",
+      "Puissance Air": "+5",
+      "Puissance Terre": "+5",
+      "Puissance Feu": "+5",
+      "Puissance Eau": "+5",
+      "Esquive +15": "+3",
+      "Esquive": "2"
+    },
+    "prerequisites": {
+      "end": "30",
+      "wis": "110",
+      "int": "146"
+    },
+    "obtention": ""
+  },
+  {
+    "name": "Ancienne amulette elfe",
+    "quantity": 1,
+    "source": "Amulette",
+    "secondary": {
+      "CA": "+15",
+      "Dextérité": "+30",
+      "Coup Assommant": "+20",
+      "Immobilisation +5 ( lieu de +10 maj": "4",
+      ")": "18",
+      "Transpercer Armur": "+30",
+      "Esquive +10% Esquive boostée": "+1"
+    },
+    "prerequisites": {
+      "str": "190",
+      "dex": "850"
+    },
+    "obtention": ""
+  },
+  {
+    "name": "Amulette de fortune",
+    "quantity": 1,
+    "source": "Amulette",
+    "secondary": {
+      "Chance": "+30"
+    },
+    "prerequisites": {
+      "wis": "102",
+      "int": "110"
+    },
+    "obtention": ""
+  },
+  {
+    "name": "Collier en dents d'ours",
+    "quantity": 1,
+    "source": "Amulette",
+    "secondary": {
+      "CA": "+15",
+      "Forc": "+35",
+      "+niveau Esquive": "+15",
+      "Transpercer Armur": "+30",
+      "Coup Critiqu": "+50",
+      "Immobilisation": "+10",
+      "Coup Puissant": "+20",
+      "Coup Assommant": "+20"
+    },
+    "prerequisites": {
+      "str": "850",
+      "dex": "90",
+      "int": "55"
+    },
+    "obtention": ""
+  },
+  {
+    "name": "Sautoir éclatant",
+    "quantity": 1,
+    "source": "Amulette",
+    "secondary": {
+      "CA": "+3",
+      "Vol": "+10",
+      "Chercher": "+10",
+      "Sort aléatoire cas attaque (rare) : multiplie or gagné par deux pendant 5 minutes. (Si groupé": "+1",
+      "Les PJ suivants dans liste groupe bénéficieraient aussi ?)": "+1"
+    },
+    "prerequisites": {
+      "int": "10"
+    },
+    "obtention": ""
+  },
+  {
+    "name": "Echarpe",
+    "quantity": 1,
+    "source": "Amulette",
+    "secondary": {
+      "CA": "+15",
+      "Résistances feu air terre eau +12 (a ete modifier juste les 4 de base maintenant)": "+1"
+    },
+    "prerequisites": {
+      "end": "30",
+      "wis": "123",
+      "int": "132"
+    },
+    "obtention": ""
+  },
+  {
+    "name": "Joyau du brave",
+    "quantity": 1,
+    "source": "Amulette",
+    "secondary": {
+      "CA": "+15",
+      "Attaque": "+50",
+      "Archeri": "+50",
+      "Force": "+10",
+      "Dextérité": "+10",
+      "Endurance": "+20",
+      "Sagess": "+20",
+      "Immobilisation": "+10",
+      "Transpercer Armure": "+15",
+      "Coup Puissant": "+15",
+      "Guérison rapi": "+15",
+      "Coup Assommant": "+20",
+      "Para": "+25"
+    },
+    "prerequisites": {
+      "str": "170",
+      "end": "140",
+      "dex": "83",
+      "wis": "60",
+      "int": "60"
+    },
+    "obtention": ""
+  },
+  {
+    "name": "Col de satin noir",
+    "quantity": 1,
+    "source": "Amulette",
+    "secondary": {
+      "CA": "+1",
+      "Intelligence": "+10"
+    },
+    "prerequisites": {
+      "end": "18",
+      "wis": "24",
+      "int": "56"
+    },
+    "weight": "1",
+    "obtention": ""
+  },
+  {
+    "name": "Protège-nuque en orme",
+    "quantity": 1,
+    "source": "Amulette",
+    "secondary": {
+      "CA": "+2",
+      "Coup Critiqu": "+5",
+      "Attaqu": "+25",
+      "Archeri": "+25"
+    },
+    "prerequisites": {
+      "end": "32",
+      "wis": "24",
+      "int": "24"
+    },
+    "weight": "2",
+    "obtention": ""
+  },
+  {
+    "name": "Amulette du maudit",
+    "quantity": 1,
+    "source": "Amulette",
+    "secondary": {
+      "CA": "+12",
+      "Puissance nécromancie": "+8",
+      "Puissance feu": "+8",
+      "Transpercer Armur": "+15",
+      "Coup Puissant": "+1",
+      "Et Coup Assommant": "+15",
+      "Toutes résistances": "+6"
+    },
+    "prerequisites": {
+      "end": "100",
+      "int": "513",
+      "dex": "93"
+    },
+    "weight": "3",
+    "obtention": ""
+  },
+  {
+    "name": "Amulette du damné",
+    "quantity": 1,
+    "source": "Amulette",
+    "secondary": {
+      "CA": "+15",
+      "Puissance nécromancie et": "+1",
+      "Eau": "+8",
+      "Transpercer Armure": "+20",
+      "Coup Puissant": "+20",
+      "Para": "+15",
+      "Coup Assommant": "+15",
+      "Toutes résistances": "+8"
+    },
+    "prerequisites": {
+      "end": "100",
+      "str": "485",
+      "int": "420",
+      "dex": "98"
+    },
+    "weight": "4",
+    "obtention": ""
+  },
+  {
+    "name": "Talisman du croisé",
+    "quantity": 1,
+    "source": "Amulette",
+    "secondary": {
+      "CA": "+13",
+      "Puissance lumièr": "+15",
+      "Coup Assommant": "+25",
+      "Coup Puissant": "+15",
+      "Transpercer Armur": "+10",
+      "Para": "+25",
+      "Profusion de mana": "+20",
+      "Sagesse": "+40",
+      "Forc": "+40"
+    },
+    "prerequisites": {
+      "end": "120",
+      "wis": "401",
+      "int": "100",
+      "dex": "89",
+      "str": "420"
+    },
+    "weight": "2",
+    "obtention": ""
+  },
+  {
+    "name": "Propriétés",
+    "quantity": 1,
+    "source": "Amulette",
+    "secondary": {
+      "Fandom": "+1",
+      "Fanatical": "+1",
+      "GameSpot": "+1",
+      "Metacritic": "+1",
+      "TV Guide": "+1",
+      "Honest Entertainment": "+1"
+    }
+  },
+  {
+    "name": "Nous suivre",
+    "quantity": 1,
+    "source": "Amulette"
+  },
+  {
+    "name": "Vue d'ensemble",
+    "quantity": 1,
+    "source": "Amulette",
+    "secondary": {
+      "Qu'est-ce que Fandom ?": "+1",
+      "À propos": "+1",
+      "Emplois": "+1",
+      "Presse": "+1",
+      "Contact": "+1",
+      "Conditions utilisation": "+1",
+      "Politique de confidentialité": "+1",
+      "Loi sur les services numériques": "+1",
+      "Plan site global": "+1",
+      "Plan site local": "+1"
+    }
+  },
+  {
+    "name": "Communauté",
+    "quantity": 1,
+    "source": "Amulette",
+    "secondary": {
+      "Centre communautés": "+1",
+      "Support": "+1",
+      "Aide": "+1"
+    }
+  },
+  {
+    "name": "Publicité",
+    "quantity": 1,
+    "source": "Amulette",
+    "secondary": {
+      "Kit de presse": "+1"
+    }
+  },
+  {
+    "name": "Applications Fandom",
+    "quantity": 1,
+    "source": "Amulette"
+  }
+]

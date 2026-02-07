@@ -1,0 +1,699 @@
+[
+  {
+    "name": "Anneau d'Aquilon",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "CA": "+5",
+      "Coup Assommant": "+15",
+      "Transpercer Armur": "+20",
+      "Coup Critiqu": "+30"
+    },
+    "prerequisites": {
+      "str": "132",
+      "end": "60",
+      "dex": "545",
+      "wis": "46",
+      "int": "28"
+    },
+    "weight": "2",
+    "obtention": ""
+  },
+  {
+    "name": "Anneau d'Obéron",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "CA": "+5",
+      "Puissance air": "+12",
+      "Puissance nécromancie": "+5",
+      "Puissance lumièr": "-5",
+      "Résistance feu": "-7",
+      "Résistance air": "+5"
+    },
+    "prerequisites": {
+      "str": "40",
+      "dex": "30",
+      "wis": "423",
+      "int": "423"
+    },
+    "weight": "2",
+    "obtention": ""
+  },
+  {
+    "name": "Bague ténébreuse",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "CA": "+5",
+      "Puissance nécromancie": "+10",
+      "Puissance lumièr": "-10",
+      "Résistance lumièr": "-15",
+      "Sagess": "-10",
+      "Intelligence": "+10"
+    },
+    "prerequisites": {
+      "wis": "49",
+      "int": "49"
+    },
+    "weight": "1",
+    "obtention": ""
+  },
+  {
+    "name": "Anneau de liberté",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "CA": "+10",
+      "Transpercer Armur": "+20",
+      "Coup Puissant": "+15",
+      "Coup Assommant": "+15"
+    },
+    "prerequisites": {
+      "str": "154",
+      "end": "60",
+      "dex": "607",
+      "wis": "53",
+      "int": "31"
+    },
+    "weight": "2",
+    "obtention": ""
+  },
+  {
+    "name": "Anneau de résistance",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "Boosts": "+1",
+      "CA": "+5",
+      "Résistance nécromancie": "+2",
+      "Résistance lumièr": "+2",
+      "Résistance air": "+2",
+      "Résistance terr": "+2",
+      "Résistance feu": "+2",
+      "Résistance eau": "+2"
+    },
+    "obtention": ""
+  },
+  {
+    "name": "Anneau du pilleur",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "Boosts": "+1",
+      "CA": "+2",
+      "Chance": "+3",
+      "Compétence piller": "+15"
+    },
+    "prerequisites": {
+      "str": "50",
+      "end": "32",
+      "wis": "63",
+      "int": "62"
+    },
+    "weight": "1",
+    "obtention": ""
+  },
+  {
+    "name": "Anneau de force",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "Boosts": "+1",
+      "CA": "+1",
+      "Attaqu": "+5%",
+      "Forc": "+15"
+    },
+    "obtention": ""
+  },
+  {
+    "name": "Anneau d'endurance",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "Boosts": "+1",
+      "CA": "+1",
+      "Enduranc": "+15",
+      "Guérison rapi": "+5%"
+    },
+    "obtention": ""
+  },
+  {
+    "name": "Anneau de dextérité",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "Boosts": "+1",
+      "CA": "+1",
+      "Archeri": "+5%",
+      "Dextérité": "+15"
+    },
+    "obtention": ""
+  },
+  {
+    "name": "Anneau de sagesse",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "Boosts": "+1",
+      "CA": "+1",
+      "Sagess": "+15",
+      "Méditation": "+5%"
+    },
+    "obtention": ""
+  },
+  {
+    "name": "Anneau du froid",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "Puissance eau": "+5",
+      "Résistance eau": "+5",
+      "Intelligence": "+5",
+      "Puissance feu": "-5"
+    },
+    "prerequisites": {
+      "wis": "15",
+      "int": "42"
+    },
+    "weight": "2",
+    "obtention": ""
+  },
+  {
+    "name": "Anneau du cimmérien",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "Attaqu": "+130",
+      "Archeri": "+130",
+      "Esquiv": "-30",
+      "Coup Assommant": "+10",
+      "Coup Puissant": "+10",
+      "Transpercer Armur": "+10",
+      "Guérison rapi": "+5",
+      "Forc": "+15",
+      "Dextérité": "+10",
+      "Immobilisation": "+5",
+      "Rage de berserker (augmente parfois force lors un combat)": "+1"
+    },
+    "prerequisites": {
+      "str": "238",
+      "end": "60",
+      "dex": "85",
+      "wis": "30",
+      "int": "30"
+    },
+    "obtention": ""
+  },
+  {
+    "name": "Anneau béni des hauts althéens",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "CA": "+2",
+      "Forc": "+15",
+      "Enduranc": "+15",
+      "Dextérité": "+15",
+      "Sagess": "+15",
+      "Intelligence": "+15",
+      "Lumière permanente": "+1"
+    },
+    "prerequisites": {
+      "wis": "75",
+      "int": "100"
+    },
+    "weight": "1",
+    "obtention": ""
+  },
+  {
+    "name": "Anneau étoilé",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "Boosts": "+1",
+      "CA": "+5",
+      "Sagesse": "+20",
+      "Intelligence": "+20",
+      "Puissance Eau": "+5",
+      "Feu": "+5",
+      "Terre": "+5",
+      "Air": "+5",
+      "Nécromancie": "+5",
+      "Résistance Eau": "+5"
+    },
+    "prerequisites": {
+      "int": "90",
+      "wis": "115"
+    },
+    "weight": "1",
+    "obtention": ""
+  },
+  {
+    "name": "Anneau de cerfeuil",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "Boosts": "+1",
+      "Chance": "+5"
+    },
+    "prerequisites": {
+      "wis": "20",
+      "int": "20"
+    },
+    "obtention": ""
+  },
+  {
+    "name": "Chevalière des héros",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "CA": "+5",
+      "Transpercer Armure": "+20",
+      "Coup Puissant": "+20",
+      "Coup Assommant": "+20",
+      "On ne peut pas porter anneau sans peur avec.": "+1"
+    },
+    "prerequisites": {
+      "str": "650",
+      "end": "200",
+      "dex": "85",
+      "attack": "500"
+    },
+    "weight": "2",
+    "obtention": ""
+  },
+  {
+    "name": "Anneau des séismes",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "CA": "+5",
+      "Esquive": "+5%",
+      "Puissance lumière": "-5",
+      "Puissance terre": "+12",
+      "Résistance terre": "+5",
+      "Résistance air": "-7"
+    },
+    "prerequisites": {
+      "str": "40",
+      "end": "60",
+      "dex": "30",
+      "wis": "623",
+      "int": "101"
+    },
+    "weight": "2",
+    "obtention": ""
+  },
+  {
+    "name": "Anneau de l'endurant",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "CA": "+36",
+      "Esquive": "-25",
+      "Guérison rapide": "+15",
+      "Transpercer armure": "+10",
+      "Parade": "+20",
+      "Coup puissant": "+5",
+      "Coup assommant": "+10",
+      "Sagesse": "+30",
+      "Force": "+30",
+      "Ndurance": "+30",
+      "Immobilisation": "+15"
+    },
+    "prerequisites": {
+      "str": "299",
+      "end": "300",
+      "wis": "351"
+    },
+    "weight": "3",
+    "obtention": ""
+  },
+  {
+    "name": "Anneau climatérique",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "CA": "+5",
+      "Puissance air": "+5",
+      "Puissance eau": "+5",
+      "Puissance feu": "+5",
+      "Puissance terre": "+5",
+      "Puissance lumière": "+5",
+      "Puissance nécromancie": "+5",
+      "Coup Critique": "+10%",
+      "Profusion de mana": "+20"
+    },
+    "prerequisites": {
+      "int": "185",
+      "wis": "120"
+    },
+    "obtention": ""
+  },
+  {
+    "name": "Anneau de feu",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "CA": "+5",
+      "Puissance feu": "+5",
+      "Intelligence": "+20",
+      "Puissance lumière": "-15",
+      "Résistance lumière": "-15",
+      "Puissance eau": "-15",
+      "Résistance eau": "-15"
+    },
+    "prerequisites": {
+      "int": "125",
+      "wis": "60"
+    },
+    "weight": "1",
+    "obtention": ""
+  },
+  {
+    "name": "Anneau du chasseur",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "Se déclenche aléatoirement. Double alors xp obtenue durant 3 minutes (hors quêtes": "+1",
+      "Coffres)": "+1"
+    },
+    "prerequisites": {
+      "int": "10",
+      "wis": "10",
+      "end": "10",
+      "dex": "10",
+      "str": "10"
+    },
+    "weight": "2",
+    "obtention": ""
+  },
+  {
+    "name": "Anneau incendiaire",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "CA": "+5",
+      "Puissance feu": "+12",
+      "Résistance feu": "+5",
+      "Puissance nécromancie": "+5",
+      "Puissance eau": "-5",
+      "Résistance eau": "-7"
+    },
+    "prerequisites": {
+      "int": "574",
+      "wis": "20",
+      "end": "60",
+      "dex": "30",
+      "str": "40"
+    },
+    "weight": "2",
+    "obtention": ""
+  },
+  {
+    "name": "Anneau d'hibernation",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "CA": "+5",
+      "Puissance eau": "+12",
+      "Résistance eau": "+5",
+      "Puissance nécromancie": "+5",
+      "Puissance feu": "-5",
+      "Résistance feu": "-7"
+    },
+    "prerequisites": {
+      "int": "538",
+      "wis": "18",
+      "end": "60",
+      "dex": "30",
+      "str": "40"
+    },
+    "weight": "2",
+    "obtention": ""
+  },
+  {
+    "name": "Anneau de combat Centaure",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "CA": "+12",
+      "Parade": "+5",
+      "Coup Puissant": "+5",
+      "Coup Assommant": "+5",
+      "Transpercer Armure": "+15",
+      "Immobilisation": "+10",
+      "Guérison rapide": "+10",
+      "Force": "+20",
+      "Xtérité": "+15",
+      "Sagesse": "+30"
+    },
+    "prerequisites": {
+      "wis": "338",
+      "end": "100",
+      "dex": "77",
+      "str": "420"
+    },
+    "weight": "2",
+    "obtention": ""
+  },
+  {
+    "name": "Anneau en ivoire d'Agamaoth",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "CA": "+12",
+      "Coup Assommant": "+20",
+      "Coup Critique": "+30",
+      "Coup Puissant": "+20",
+      "Immobilisation": "+10",
+      "Transpercer Armure": "+20",
+      "Force": "+30",
+      "Xtérité": "+30"
+    },
+    "prerequisites": {
+      "dex": "850",
+      "int": "36",
+      "wis": "59",
+      "end": "40",
+      "str": "190"
+    },
+    "weight": "3",
+    "obtention": ""
+  },
+  {
+    "name": "Bague comminatoire",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "CA": "+5",
+      "Transpercer Armure": "+10",
+      "Coup Puissant": "+10"
+    },
+    "prerequisites": {
+      "int": "75",
+      "wis": "70",
+      "dex": "92",
+      "str": "168"
+    },
+    "weight": "2",
+    "obtention": ""
+  },
+  {
+    "name": "Chevalière de Stagnation",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "CA": "+5",
+      "Immobilisation": "+20",
+      "Coup Puissant": "+10"
+    },
+    "prerequisites": {
+      "int": "85",
+      "wis": "80",
+      "dex": "95",
+      "str": "136"
+    },
+    "weight": "2",
+    "obtention": ""
+  },
+  {
+    "name": "Cercle d'obsidienne",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "Sert plus ancient Ante": "+1"
+    },
+    "prerequisites": {
+      "int": "500",
+      "end": "100",
+      "dex": "100",
+      "str": "400"
+    },
+    "weight": "2",
+    "obtention": ""
+  },
+  {
+    "name": "Sceau du Seigneur de Guerre",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "CA": "+10",
+      "Puissance nécromancie": "+3",
+      "Puissance Eau": "+3",
+      "Transpercer Armure": "+20",
+      "Coup Puissant": "+20",
+      "Coup Assommant": "+10",
+      "Intelligence": "+25",
+      "Force": "+25"
+    },
+    "prerequisites": {
+      "int": "400",
+      "end": "100",
+      "dex": "95",
+      "str": "510"
+    },
+    "weight": "2",
+    "obtention": ""
+  },
+  {
+    "name": "Anneau du sans peur",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "CA": "+5",
+      "Esquive": "+50",
+      "Immobilisation": "+5",
+      "Transpercer Armure": "+16",
+      "Coup Puissant": "+16",
+      "Coup Assommant": "+16",
+      "Résist terre eau feu air": "+10",
+      "N'offre aucun bonus si chevaliere héros est équippée": "+1"
+    },
+    "prerequisites": {
+      "str": "1009",
+      "int": "114",
+      "wis": "62",
+      "end": "60",
+      "dex": "95",
+      "attack": "500"
+    },
+    "weight": "2",
+    "obtention": ""
+  },
+  {
+    "name": "Chevalière du croisé",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "CA": "+9",
+      "Esquive": "-10",
+      "Coup Assommant": "+20",
+      "Coup Puissant": "+12",
+      "Transpercer Armure": "+8",
+      "Parade": "+20",
+      "Profusion de mana": "+12",
+      "Puissance Lumière": "+12",
+      "Sagesse": "+25",
+      "Force": "+25"
+    },
+    "prerequisites": {
+      "wis": "417",
+      "int": "110",
+      "end": "100",
+      "dex": "93",
+      "str": "400"
+    },
+    "weight": "1",
+    "obtention": ""
+  },
+  {
+    "name": "Bague en argent ornée de trèfles",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "Chance": "+13"
+    },
+    "obtention": ""
+  },
+  {
+    "name": "Anneau de l'apprenti bijoutier, armurier... (existe pour chaque métier)",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "Augmente taux de réussite recettes métier correspondant": "2%"
+    },
+    "weight": "1",
+    "obtention": "Donjon des Académiciens \"la tour\" (pour 200+) Forgeron : Cadeau de la princesse Delilah (RD)"
+  },
+  {
+    "name": "Anneau du bijoutier, armurier... (existe pour chaque métier)",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "Augmente taux de réussite recettes métier correspondant": "4%",
+      "Non cumulable avec anneau de apprenti": "+1",
+      "(n'équipez donc jamais anneau de apprenti premier)": "+1"
+    },
+    "weight": "1",
+    "obtention": ""
+  },
+  {
+    "name": "Propriétés",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "Fandom": "+1",
+      "Fanatical": "+1",
+      "GameSpot": "+1",
+      "Metacritic": "+1",
+      "TV Guide": "+1",
+      "Honest Entertainment": "+1"
+    }
+  },
+  {
+    "name": "Nous suivre",
+    "quantity": 1,
+    "source": "Anneau"
+  },
+  {
+    "name": "Vue d'ensemble",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "Qu'est-ce que Fandom ?": "+1",
+      "À propos": "+1",
+      "Emplois": "+1",
+      "Presse": "+1",
+      "Contact": "+1",
+      "Conditions utilisation": "+1",
+      "Politique de confidentialité": "+1",
+      "Loi sur les services numériques": "+1",
+      "Plan site global": "+1",
+      "Plan site local": "+1"
+    }
+  },
+  {
+    "name": "Communauté",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "Centre communautés": "+1",
+      "Support": "+1",
+      "Aide": "+1"
+    }
+  },
+  {
+    "name": "Publicité",
+    "quantity": 1,
+    "source": "Anneau",
+    "secondary": {
+      "Kit de presse": "+1"
+    }
+  },
+  {
+    "name": "Applications Fandom",
+    "quantity": 1,
+    "source": "Anneau"
+  }
+]

@@ -1,0 +1,1631 @@
+[
+  {
+    "name": "Gourdin de Gob' (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "damage": {
+      "min": "3",
+      "max": "6"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "8",
+      "Main": "1"
+    },
+    "sellPrice": "38",
+    "obtention": "Forgeron 1"
+  },
+  {
+    "name": "Rapière du bretteur (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "24"
+    },
+    "damage": {
+      "min": "9",
+      "max": "16"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "7",
+      "Main": "1"
+    },
+    "sellPrice": "806",
+    "obtention": "Forgeron 3"
+  },
+  {
+    "name": "Dague en ivoire (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "24"
+    },
+    "damage": {
+      "min": "9",
+      "max": "15"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "4"
+    },
+    "sellPrice": "805",
+    "obtention": "Gobelin Farfelu, Forgeron 5"
+  },
+  {
+    "name": "Cimeterre à pommeau isolant",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "33"
+    },
+    "damage": {
+      "min": "10",
+      "max": "18"
+    },
+    "secondary": {
+      "Force": "+10",
+      "Résist air": "+5",
+      "Encombrement": "7"
+    },
+    "obtention": "Forgeron 7"
+  },
+  {
+    "name": "Cognée de bucheron (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "39"
+    },
+    "damage": {
+      "min": "20",
+      "max": "33"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "10",
+      "Main": "1"
+    },
+    "sellPrice": "3.148",
+    "obtention": "Forgeron 9"
+  },
+  {
+    "name": "Masse des Ogres (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "40"
+    },
+    "damage": {
+      "min": "26",
+      "max": "42"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "9",
+      "Main": "1"
+    },
+    "sellPrice": "7.021",
+    "obtention": "Forgeron 13"
+  },
+  {
+    "name": "Epée courte d'Orkanis (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "53"
+    },
+    "damage": {
+      "min": "24",
+      "max": "38"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "6",
+      "Main": "1"
+    },
+    "obtention": "Forgeron 15, Prolifique (Arakas, île aux Démonicons)"
+  },
+  {
+    "name": "Fleuret",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "53"
+    },
+    "damage": {
+      "min": "16",
+      "max": "25"
+    },
+    "sellPrice": "1.755",
+    "secondary": {
+      "Encombrement": "6",
+      "Main": "1"
+    },
+    "obtention": "Prolifique (Arakas, île aux Démonicons)"
+  },
+  {
+    "name": "Epée du froid",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "53"
+    },
+    "damage": {
+      "min": "26",
+      "max": "43"
+    },
+    "secondary": {
+      "Xt": "+5",
+      "Force": "+5",
+      "Attaque": "+20%",
+      "Lance parfois un sort de glace (type \"gel\")": "+5",
+      "Encombrement": "6",
+      "Main": "1"
+    },
+    "obtention": "Gobelin gardien des glaces"
+  },
+  {
+    "name": "Epée du froid de main gauche (dual)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "53"
+    },
+    "damage": {
+      "min": "26",
+      "max": "43"
+    },
+    "secondary": {
+      "Xt": "+5",
+      "Force": "+5",
+      "Attaque": "+20%",
+      "Lance parfois un sort de glace (type \"gel\")": "+5",
+      "Encombrement": "6",
+      "Main gauche": "+1"
+    },
+    "obtention": "Gobelin gardien des glaces"
+  },
+  {
+    "name": "Couteau de cuisine Nain (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "68"
+    },
+    "damage": {
+      "min": "40",
+      "max": "58"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "4",
+      "Main": "1"
+    },
+    "sellPrice": "12.430",
+    "obtention": "Forgeron 17"
+  },
+  {
+    "name": "Lance d'alourdissement (2 mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "70"
+    },
+    "damage": {
+      "min": "21",
+      "max": "25"
+    },
+    "secondary": {
+      "??": "+1",
+      "Encombrement": "8",
+      "Mains": "2"
+    },
+    "sellPrice": "?",
+    "obtention": "Ebéniste 43"
+  },
+  {
+    "name": "Épée d'argent (2 mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "71"
+    },
+    "damage": {
+      "min": "59",
+      "max": "92"
+    },
+    "sellPrice": "11.324",
+    "secondary": {
+      "Encombrement": "8",
+      "Mains": "2"
+    },
+    "obtention": "Dragon Freidaclan (RD)"
+  },
+  {
+    "name": "Lance d'alourdissement important (2 mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "80"
+    },
+    "damage": {
+      "min": "21",
+      "max": "30"
+    },
+    "secondary": {
+      "??": "+1",
+      "Encombrement": "8",
+      "Mains": "2"
+    },
+    "sellPrice": "?",
+    "obtention": "Ebéniste 67"
+  },
+  {
+    "name": "Sabre à crosse de nacre (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "82"
+    },
+    "damage": {
+      "min": "42",
+      "max": "66"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "8",
+      "Main": "1"
+    },
+    "sellPrice": "19.372",
+    "obtention": "Forgeron 19"
+  },
+  {
+    "name": "Dague d'obscurantis (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "97"
+    },
+    "damage": {
+      "min": "61",
+      "max": "87"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "4",
+      "Main": "1"
+    },
+    "sellPrice": "27.849",
+    "obtention": "Forgeron 27"
+  },
+  {
+    "name": "Dague d'obscurantis de main gauche (dual) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "97"
+    },
+    "damage": {
+      "min": "61",
+      "max": "87"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "4",
+      "Main gauche": "+1"
+    },
+    "sellPrice": "27.849",
+    "obtention": "Forgeron 29"
+  },
+  {
+    "name": "Dague de jade (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "126"
+    },
+    "damage": {
+      "min": "82",
+      "max": "115"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "4",
+      "Main": "1"
+    },
+    "sellPrice": "49.404",
+    "obtention": "Forgeron 36"
+  },
+  {
+    "name": "Épée incrustée de glace de main gauche (dual) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "140"
+    },
+    "damage": {
+      "min": "74",
+      "max": "115"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Une chance de lancer un sort de glace (type \"gel\")": "+50%",
+      "Encombrement": "8",
+      "Main gauche": "+1"
+    },
+    "sellPrice": "19.620",
+    "obtention": "Quête Le Forgeron Durikh"
+  },
+  {
+    "name": "Cimeterre du Zéphyr (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "155"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "8",
+      "Main": "1"
+    },
+    "obtention": "Forgeron 41"
+  },
+  {
+    "name": "Cimeterre du Zéphyr de main gauche (dual) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "155"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "8",
+      "Main gauche": "+1"
+    },
+    "obtention": "Forgeron 48"
+  },
+  {
+    "name": "Hachette d'acier fin (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "155"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "10",
+      "Main": "1"
+    },
+    "obtention": "Forgeron 49"
+  },
+  {
+    "name": "Hachette d'acier fin de main gauche (dual) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "155"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "10",
+      "Main gauche": "+1"
+    },
+    "obtention": "Forgeron 51"
+  },
+  {
+    "name": "Poings du pugiliste (2 mains) (+2)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "175"
+    },
+    "damage": {
+      "min": "92",
+      "max": "141"
+    },
+    "secondary": {
+      "CA": "+6",
+      "Attaque": "+30%",
+      "Encombrement": "8",
+      "Mains": "2"
+    },
+    "obtention": "Armurier 78"
+  },
+  {
+    "name": "Dague de l'assassin de main gauche (dual) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "184"
+    },
+    "damage": {
+      "min": "100",
+      "max": "153"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "5",
+      "Main gauche": "+1"
+    },
+    "sellPrice": "0",
+    "obtention": "Forgeron 53"
+  },
+  {
+    "name": "Hache de guerre Baatorienne (2 mains) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "184"
+    },
+    "damage": {
+      "min": "137",
+      "max": "209"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "13",
+      "Mains": "2"
+    },
+    "sellPrice": "0",
+    "obtention": "Forgeron 55"
+  },
+  {
+    "name": "Epée de la Rose Noire de main gauche (dual) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "242"
+    },
+    "damage": {
+      "min": "151",
+      "max": "230"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "10",
+      "Main gauche": "+1"
+    },
+    "sellPrice": "49.245",
+    "obtention": "Forgeron 57"
+  },
+  {
+    "name": "Lame vipérine de main gauche (dual) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "300"
+    },
+    "damage": {
+      "min": "151",
+      "max": "230"
+    },
+    "secondary": {
+      "Attaque": "+10%",
+      "+??% compétence ambidextrie": "+10%",
+      "Encombrement": "5",
+      "Main gauche": "+1"
+    },
+    "sellPrice": "0",
+    "obtention": "Forgeron 60"
+  },
+  {
+    "name": "Kandjar de destinée",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "317"
+    },
+    "damage": {
+      "min": "127",
+      "max": "178"
+    },
+    "secondary": {
+      "Lance parfois un sort qui téléporte adversaire à son sanctuaire": "+1",
+      "Encombrement": "6",
+      "Main": "1"
+    },
+    "obtention": "Forgeron 61"
+  },
+  {
+    "name": "Épée de glace incrustée de saphir de main gauche (dual) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "320"
+    },
+    "damage": {
+      "min": "181",
+      "max": "275"
+    },
+    "secondary": {
+      "Puissance eau": "+25",
+      "Résistance eau": "+20",
+      "Attaque": "+50%",
+      "Malus : -15 résistance feu": "+1",
+      "Encombrement": "10",
+      "Main gauche": "+1"
+    },
+    "sellPrice": "115.366",
+    "obtention": "Drop des ZartGax (Niève, RD)"
+  },
+  {
+    "name": "Lame enchantée (+2)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "320"
+    },
+    "damage": {
+      "min": "142",
+      "max": "228"
+    },
+    "secondary": {
+      "Force": "+25",
+      "Endurance": "+25",
+      "Une chance de lancer un sort de feu (type \"flamme\")": "+25",
+      "Attaque": "+30%",
+      "Résistance feu": "-10",
+      "Résistance eau": "-10",
+      "Résistance air": "-10",
+      "Résistance terre": "-10",
+      "Résistance lumière": "-10",
+      "Résistance nécromancie": "-10",
+      "Encombrement": "0",
+      "Main": "1"
+    },
+    "obtention": "Drop Draconigus invoqué majeur (désert RD), différents coffres de Drake Island"
+  },
+  {
+    "name": "Lame enchantée de main gauche (+2)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "320"
+    },
+    "damage": {
+      "min": "142",
+      "max": "228"
+    },
+    "secondary": {
+      "Force": "+25",
+      "Endurance": "+25",
+      "Une chance de lancer un sort de feu (type \"flamme\")": "+25",
+      "Attaque": "+30%",
+      "Résistance feu": "-10",
+      "Résistance eau": "-10",
+      "Résistance air": "-10",
+      "Résistance terre": "-10",
+      "Résistance lumière": "-10",
+      "Résistance nécromancie": "-10",
+      "Encombrement": "0",
+      "Main gauche": "+1"
+    },
+    "obtention": "Forgeron 65"
+  },
+  {
+    "name": "Fleuret de défaillance",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "324"
+    },
+    "damage": {
+      "min": "87",
+      "max": "131"
+    },
+    "obtention": "Forgeron 63",
+    "sellPrice": "62.304",
+    "secondary": {
+      "Encombrement": "7",
+      "Main": "1"
+    }
+  },
+  {
+    "name": "Lame de perdition ??",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "372"
+    },
+    "damage": {
+      "min": "122",
+      "max": "190"
+    },
+    "buyPrice": "360.269 (chez ???)",
+    "sellPrice": "120.089",
+    "secondary": {
+      "Encombrement": "5",
+      "Main": "1"
+    }
+  },
+  {
+    "name": "Lame de perdition enchantée (+1)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "372"
+    },
+    "damage": {
+      "min": "140",
+      "max": "218"
+    },
+    "secondary": {
+      "Attaque": "+15%",
+      "Encombrement": "5",
+      "Main": "1"
+    },
+    "buyPrice": "1.080.807 (Regynia, à l'Est des douves de RW)",
+    "sellPrice": "240.179"
+  },
+  {
+    "name": "Lame de perdition runique (+2)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "372"
+    },
+    "secondary": {
+      "Attaque": "+30%",
+      "Encombrement": "5",
+      "Main": "1"
+    },
+    "damage": {
+      "min": "158",
+      "max": "247"
+    },
+    "buyPrice": "3.602.690 (Ayanis, NO sous-sol métier RW)",
+    "sellPrice": "360.269"
+  },
+  {
+    "name": "Eventreuse (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "372"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "5",
+      "Main": "1"
+    },
+    "damage": {
+      "min": "183",
+      "max": "285"
+    },
+    "buyPrice": "14.410.767 (Sphodros, montagnes est RW, (900,1400,3)) (il faut avoir tué une vingtaine de drakes pour qu'il vous parle)",
+    "sellPrice": "480.358"
+  },
+  {
+    "name": "Eventreuse de main gauche (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "372"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "5",
+      "Main gauche": "+1"
+    },
+    "damage": {
+      "min": "183",
+      "max": "285"
+    },
+    "obtention": "Forgeron 67",
+    "sellPrice": "480.358"
+  },
+  {
+    "name": "Éventreuse étoilée (+4) Existe plus",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "372"
+    },
+    "secondary": {
+      "Attaque": "+60%",
+      "Coup puissant Coup assommant Transpercer armure": "+10",
+      "Encombrement": "5",
+      "Main": "1"
+    },
+    "damage": {
+      "min": "235",
+      "max": "286"
+    },
+    "obtention": "??",
+    "sellPrice": "980.353"
+  },
+  {
+    "name": "Épée Batarde d'Adamantium (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "387"
+    },
+    "damage": {
+      "min": "211",
+      "max": "331"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "10",
+      "Main": "1"
+    },
+    "sellPrice": "224.877",
+    "obtention": "Drop du Dragon LivoxDrinn ( SH )"
+  },
+  {
+    "name": "Cimeterre de Rubis (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "459"
+    },
+    "damage": {
+      "min": "212",
+      "max": "339"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "8",
+      "Main": "1"
+    },
+    "sellPrice": "298.755",
+    "obtention": "quete de l ile de lune"
+  },
+  {
+    "name": "Cimeterre de Rubis de main gauche (dual) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "459"
+    },
+    "damage": {
+      "min": "212",
+      "max": "339"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "8",
+      "Main gauche": "+1"
+    },
+    "sellPrice": "298.755",
+    "obtention": "Forgeron 72"
+  },
+  {
+    "name": "Epée à deux mains en titane (+2)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "474"
+    },
+    "damage": {
+      "min": "243",
+      "max": "391"
+    },
+    "secondary": {
+      "Attaque": "+30%",
+      "+??% coup critique": "+30%",
+      "Encombrement": "12",
+      "Mains": "2"
+    },
+    "sellPrice": "196.667",
+    "obtention": "Forgeron 73"
+  },
+  {
+    "name": "Épée de Diamants (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "532"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "10",
+      "Main": "1"
+    },
+    "buyPrice": "29.863.487 (Sphodros, montagnes à l'Est de RW (900,1400,3)) (il faut avoir tué une vingtaine de drakes pour qu'il vous parle)",
+    "sellPrice": "??"
+  },
+  {
+    "name": "Épée de Diamants de main gauche (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "532"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "10",
+      "Main gauche": "+1"
+    },
+    "obtention": "Forgeron 77",
+    "sellPrice": "??"
+  },
+  {
+    "name": "Epée de Liridell (2 mains) (+4)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "590"
+    },
+    "damage": {
+      "min": "317",
+      "max": "524"
+    },
+    "secondary": {
+      "Attaque": "+60%",
+      "Coup puissant Coup assommant Transpercer armure": "+10",
+      "Encombrement": "14",
+      "Mains": "2"
+    },
+    "obtention": "Drop du dragon Liridell (Est désert DI)"
+  },
+  {
+    "name": "Hache de Liridell (2 mains) (+4)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "590"
+    },
+    "damage": {
+      "min": "423",
+      "max": "699"
+    },
+    "secondary": {
+      "Attaque": "+60%",
+      "Immobilisation Coup assommant Transpercer armure": "+10",
+      "Encombrement": "16",
+      "Mains": "2"
+    },
+    "obtention": "Drop du dragon Liridell (désert DI)"
+  },
+  {
+    "name": "Cimeterre des Ancêtres",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "662"
+    },
+    "damage": {
+      "min": "169",
+      "max": "281"
+    },
+    "buyPrice": "1.064.906 (Nyctos, une maison de RW)",
+    "sellPrice": "354.968",
+    "secondary": {
+      "Main": "1"
+    }
+  },
+  {
+    "name": "Cimeterre des Ancêtres Enchanté (+1)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "662"
+    },
+    "secondary": {
+      "Attaque": "+15%",
+      "Main": "1"
+    },
+    "damage": {
+      "min": "194",
+      "max": "324"
+    },
+    "buyPrice": "3.194.718 (Regynia, à l'Est des douves de RW)",
+    "sellPrice": "709.937"
+  },
+  {
+    "name": "Cimeterre des Ancêtres Runique (+2)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "662"
+    },
+    "secondary": {
+      "Attaque": "+30%",
+      "Main": "1"
+    },
+    "damage": {
+      "min": "219",
+      "max": "366"
+    },
+    "buyPrice": "10.649.060 (Ayanis, sous-sol métiers RW, au NO)",
+    "sellPrice": "1.064.906"
+  },
+  {
+    "name": "Cimeterre incrusté d'émeraudes (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "662"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Main": "1"
+    },
+    "damage": {
+      "min": "253",
+      "max": "422"
+    },
+    "buyPrice": "42.596.240 (Sphodros, montagnes à l'Est de RW (900,1400,3)) (il faut avoir tué une vingtaine de drakes pour qu'il vous parle)",
+    "sellPrice": "1.554.945"
+  },
+  {
+    "name": "Cimeterre incrusté d'émeraudes de main gauche (dual) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "662"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Main gauche": "+1"
+    },
+    "damage": {
+      "min": "253",
+      "max": "422"
+    },
+    "obtention": "Forgeron 79",
+    "sellPrice": "1.554.945"
+  },
+  {
+    "name": "Epée bâtarde des Ancêtres",
+    "quantity": 1,
+    "source": "Arme",
+    "damage": {
+      "min": "188",
+      "max": "316"
+    },
+    "buyPrice": "1.166.209 (Nyctos, une maison de RW)",
+    "sellPrice": "388.736",
+    "secondary": {
+      "Encombrement": "10",
+      "Main": "1"
+    }
+  },
+  {
+    "name": "Epée bâtarde des Ancêtres Enchantée (+1)",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Attaque": "+15%",
+      "Encombrement": "10",
+      "Main": "1"
+    },
+    "damage": {
+      "min": "217",
+      "max": "363"
+    },
+    "buyPrice": "3.498.627 (Regynia à l'Est des douves de RW)",
+    "sellPrice": "777.472"
+  },
+  {
+    "name": "Epée bâtarde des Ancêtres Runique (+2)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "677"
+    },
+    "secondary": {
+      "Attaque": "+30%",
+      "Encombrement": "10",
+      "Main": "1"
+    },
+    "damage": {
+      "min": "245",
+      "max": "411"
+    },
+    "buyPrice": "11.662.090 (Ayanis, sous-sol métiers RW, au NO)",
+    "sellPrice": "1.166.209"
+  },
+  {
+    "name": "Épée des braves (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "677"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "10",
+      "Main": "1"
+    },
+    "damage": {
+      "min": "286",
+      "max": "481"
+    },
+    "buyPrice": "46.648.360 (Sphodros, montagnes à l'Est de RW (900,1400,3)) (il faut avoir tué une vingtaine de drakes pour qu'il vous parle) 54.000.000 (Rilouf, SH (780,1080))",
+    "sellPrice": "1.554.945"
+  },
+  {
+    "name": "Épée des braves de main gauche (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "677"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "10",
+      "Main gauche": "+1"
+    },
+    "damage": {
+      "min": "286",
+      "max": "481"
+    },
+    "obtention": "Forgeron 81",
+    "sellPrice": "1.554.945"
+  },
+  {
+    "name": "Épée à deux mains des ancêtres",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "691"
+    },
+    "damage": {
+      "min": "235",
+      "max": "397"
+    },
+    "buyPrice": "1.326.793 (Nyctos, une maison de RW)",
+    "sellPrice": "442.264",
+    "secondary": {
+      "Mains": "2"
+    }
+  },
+  {
+    "name": "Épée à deux mains des ancêtres Enchantée (+1)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "691"
+    },
+    "secondary": {
+      "Attaque": "+15%",
+      "Mains": "2"
+    },
+    "damage": {
+      "min": "270",
+      "max": "457"
+    },
+    "buyPrice": "3.980.379 (Regynia, à l'Est des douves de RW)",
+    "sellPrice": "884.528"
+  },
+  {
+    "name": "Épée à deux mains des ancêtres Runique (+2)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "691"
+    },
+    "secondary": {
+      "Attaque": "+30%",
+      "Mains": "2"
+    },
+    "damage": {
+      "min": "306",
+      "max": "516"
+    },
+    "buyPrice": "13.267.930 (Ayanis, sous-sol métiers RW, au NO)",
+    "sellPrice": "1.326.793"
+  },
+  {
+    "name": "Lame des Chimères (2 mains) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "706"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "12",
+      "Mains": "2"
+    },
+    "damage": {
+      "min": "353",
+      "max": "596"
+    },
+    "buyPrice": "53.071.720 (Sphodros, montagnes à l'Est de RW (900,1400,3)) (il faut avoir tué une vingtaine de drakes pour qu'il vous parle)",
+    "sellPrice": "1.696.152"
+  },
+  {
+    "name": "Hache large des Ancêtres (2 mains)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "735"
+    },
+    "damage": {
+      "min": "322",
+      "max": "546"
+    },
+    "buyPrice": "1.439.601 (Nyctos, une maison de RW)",
+    "sellPrice": "479.867",
+    "secondary": {
+      "Encombrement": "14",
+      "Mains": "2"
+    }
+  },
+  {
+    "name": "Hache large des Ancêtres Enchantée (2 mains) (+1)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "735"
+    },
+    "secondary": {
+      "Attaque": "+15%",
+      "Encombrement": "14",
+      "Mains": "2"
+    },
+    "damage": {
+      "min": "370",
+      "max": "627"
+    },
+    "buyPrice": "4.318.803 (Regynia, à l'Est des douves de RW)",
+    "sellPrice": "959.734"
+  },
+  {
+    "name": "Hache large des Ancêtres Runique (2 mains) (+2)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "735"
+    },
+    "secondary": {
+      "Attaque": "+30%",
+      "Encombrement": "14",
+      "Mains": "2"
+    },
+    "damage": {
+      "min": "418",
+      "max": "709"
+    },
+    "buyPrice": "14.396.010 (Ayanis, sous-sol métiers RW, au NO)",
+    "sellPrice": "1.439.601"
+  },
+  {
+    "name": "Écimeuse (2 mains) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "735"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "14",
+      "Mains": "2"
+    },
+    "damage": {
+      "min": "483",
+      "max": "819"
+    },
+    "buyPrice": "57.584.040 (Sphodros, montagnes à l'Est de RW (900,1400,3)) (il faut avoir tué une vingtaine de drakes pour qu'il vous parle)",
+    "sellPrice": "1.919.468"
+  },
+  {
+    "name": "Écimeuse incrustée d'étoiles (2 mains) (+4)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "735"
+    },
+    "secondary": {
+      "Attaque": "+60%",
+      "Coup puissant": "+10",
+      "Transpercer armure": "+60%",
+      "Immobilisation": "+60%",
+      "Encombrement": "14",
+      "Mains": "2"
+    },
+    "damage": {
+      "min": "651",
+      "max": "818"
+    },
+    "buyPrice": "88.000.000 (Rilouf, SH (780,1080))",
+    "sellPrice": "5.000.000"
+  },
+  {
+    "name": "Cimeterre en métrolite doré (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "807"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "8",
+      "Main": "1"
+    },
+    "damage": {
+      "min": "282",
+      "max": "483"
+    },
+    "obtention": "Forgeron 84"
+  },
+  {
+    "name": "Epée une main et demi vibrante (+3)  (lente)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "822"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "10",
+      "Main": "1"
+    },
+    "damage": {
+      "min": "324",
+      "max": "556"
+    },
+    "obtention": "Forgeron 85"
+  },
+  {
+    "name": "Lame de l'infatiguable (+3) (bof)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "836"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "12",
+      "Main": "1"
+    },
+    "damage": {
+      "min": "393",
+      "max": "677"
+    },
+    "obtention": "Forgeron 87"
+  },
+  {
+    "name": "Cimeterre en métrolite robuste (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "880"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "8",
+      "Main": "1"
+    },
+    "damage": {
+      "min": "298",
+      "max": "516"
+    },
+    "obtention": "Forgeron 89"
+  },
+  {
+    "name": "Exterminatrice (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "894"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "10",
+      "Main": "1"
+    },
+    "damage": {
+      "min": "343",
+      "max": "594"
+    },
+    "obtention": "Forgeron 91"
+  },
+  {
+    "name": "Glaive terrestre (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "894"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Sort de malus Esquive (vert) sur cible (env 18%)": "+1",
+      "Version mauve : Forgeron": "97",
+      "Encombrement": "10",
+      "Main": "1"
+    },
+    "damage": {
+      "min": "343",
+      "max": "594"
+    },
+    "obtention": "Forgeron 97"
+  },
+  {
+    "name": "Glaive de givre (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "894"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Sort de malus attaque": "+1",
+      "Archerie sur cible (env 18%)": "+1",
+      "Version mauve : Forgeron": "101",
+      "Version jaune : Forgeron": "101",
+      "Encombrement": "10",
+      "Main": "1"
+    },
+    "damage": {
+      "min": "343",
+      "max": "594"
+    },
+    "obtention": "Forgeron 101"
+  },
+  {
+    "name": "Glaive virevoltant (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "894"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Sort de ralentissement vitesse de lancement sorts cible (18% environ)": "+1",
+      "Version mauve : Forgeron": "101",
+      "Encombrement": "10",
+      "Main": "1"
+    },
+    "damage": {
+      "min": "343",
+      "max": "594"
+    },
+    "obtention": "Forgeron 99"
+  },
+  {
+    "name": "Glaive flamboyant (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "894"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Sort de malus CA (bleu clair) cible (env 18%)": "+1",
+      "Version mauve : Forgeron": "101",
+      "Encombrement": "10",
+      "Main": "1"
+    },
+    "damage": {
+      "min": "343",
+      "max": "594"
+    },
+    "obtention": "Forgeron 103"
+  },
+  {
+    "name": "Claymore d'extinction (2 mains) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "909"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Encombrement": "12",
+      "Mains": "2"
+    },
+    "damage": {
+      "min": "416",
+      "max": "722"
+    },
+    "obtention": "Forgeron 93"
+  },
+  {
+    "name": "Claymore d'extinction étoilée (2 mains) (+4)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "909"
+    },
+    "secondary": {
+      "Attaque": "+60%",
+      "Immobilisation Coup puissant": "+10",
+      "Transpercer armure": "+60%",
+      "Encombrement": "12",
+      "Mains": "2"
+    },
+    "damage": {
+      "min": "416",
+      "max": "722"
+    },
+    "obtention": "Quête du forgeron Durikh"
+  },
+  {
+    "name": "Hallebarde terrestre (2 mains) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "909"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Immobilisation Coup puissant": "+10",
+      "Transpercer armure": "+50%",
+      "Sort de malus Esquive (vert) sur cible (env 18%)": "+1",
+      "Version mauve : Forgeron": "102",
+      "Encombrement": "12",
+      "Mains": "2"
+    },
+    "damage": {
+      "min": "416",
+      "max": "722"
+    },
+    "obtention": "Forgeron 98",
+    "sellPrice": "2.582.470"
+  },
+  {
+    "name": "Hallebarde de givre (2 mains) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "909"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Immobilisation Coup puissant": "+10",
+      "Transpercer armure": "+50%",
+      "Sort de malus attaque": "+1",
+      "Archerie sur cible (env 18%)": "+1",
+      "Version mauve : Forgeron": "102",
+      "Encombrement": "12",
+      "Mains": "2"
+    },
+    "damage": {
+      "min": "416",
+      "max": "722"
+    },
+    "obtention": "Forgeron 102",
+    "sellPrice": "2.582.470"
+  },
+  {
+    "name": "Hallebarde virevoltante (2 mains) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "909"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Immobilisation Coup puissant": "+10",
+      "Transpercer armure": "+50%",
+      "Sort de ralentissement vitesse de lancement sorts cible (18% environ)": "+1",
+      "Version mauve : Forgeron": "102",
+      "Encombrement": "12",
+      "Mains": "2"
+    },
+    "damage": {
+      "min": "416",
+      "max": "722"
+    },
+    "obtention": "Forgeron 100",
+    "sellPrice": "2.582.470"
+  },
+  {
+    "name": "Hallebarde flamboyante (2 mains) (+3)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "909"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Immobilisation Coup puissant": "+10",
+      "Transpercer armure": "+50%",
+      "Sort de malus CA (bleu clair) cible (env 18%)": "+1",
+      "Version mauve : Forgeron": "102",
+      "Encombrement": "12",
+      "Mains": "2"
+    },
+    "damage": {
+      "min": "416",
+      "max": "722"
+    },
+    "obtention": "Forgeron 104",
+    "sellPrice": "2.582.470"
+  },
+  {
+    "name": "Fauchon en acier frappé (? mains) (+2) (new)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "1025"
+    },
+    "secondary": {
+      "Attaque": "+33%"
+    },
+    "damage": {
+      "min": "418",
+      "max": "610"
+    }
+  },
+  {
+    "name": "Flamberge ancestrale (2 mains) (+3) (mod)",
+    "quantity": 1,
+    "source": "Arme",
+    "prerequisites": {
+      "str": "1050"
+    },
+    "secondary": {
+      "Attaque": "+50%",
+      "Coup puissant": "+10",
+      "Transpercer armure": "+50%",
+      "Immobilisation (old +10)": "+15",
+      "Sort de malus CA (bleu clair) cible (env 18%)": "+1",
+      "Sort de malus Esquive (vert) sur cible (env 18%)": "+1",
+      "Ralentissement vitesse de lancement sorts cible (env 18%)": "+1",
+      "Sort de malus attaque": "+1",
+      "Archerie sur cible (env 18%)": "+1",
+      "Encombrement": "12",
+      "Mains": "2"
+    },
+    "damage": {
+      "min": "446",
+      "max": "772(old416"
+    },
+    "obtention": "Forgeron 105 (demande une lame gemme sombre)"
+  },
+  {
+    "name": "Propriétés",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Fandom": "+1",
+      "Fanatical": "+1",
+      "GameSpot": "+1",
+      "Metacritic": "+1",
+      "TV Guide": "+1",
+      "Honest Entertainment": "+1"
+    }
+  },
+  {
+    "name": "Nous suivre",
+    "quantity": 1,
+    "source": "Arme"
+  },
+  {
+    "name": "Vue d'ensemble",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Qu'est-ce que Fandom ?": "+1",
+      "À propos": "+1",
+      "Emplois": "+1",
+      "Presse": "+1",
+      "Contact": "+1",
+      "Conditions utilisation": "+1",
+      "Politique de confidentialité": "+1",
+      "Loi sur les services numériques": "+1",
+      "Plan site global": "+1",
+      "Plan site local": "+1"
+    }
+  },
+  {
+    "name": "Communauté",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Centre communautés": "+1",
+      "Support": "+1",
+      "Aide": "+1"
+    }
+  },
+  {
+    "name": "Publicité",
+    "quantity": 1,
+    "source": "Arme",
+    "secondary": {
+      "Kit de presse": "+1"
+    }
+  },
+  {
+    "name": "Applications Fandom",
+    "quantity": 1,
+    "source": "Arme"
+  }
+]
