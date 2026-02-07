@@ -1945,7 +1945,10 @@
     "prerequisites": {
       "int": "25",
       "wis": "30",
-      "str": "68"
+      "str": "68",
+      "end": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "bonuses": {
       "ca": "+5"
@@ -1954,7 +1957,11 @@
       "min": "40",
       "max": "58"
     },
-    "otherSource": "Drop"
+    "otherSource": "Drop",
+    "obtention": [],
+    "buyPrice": "Drop",
+    "sellPrice": "5189",
+    "secondary": {}
   },
   {
     "name": "Armure en peau humaine",
@@ -2279,13 +2286,23 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "213"
+      "str": "213",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "40",
       "max": "252"
     },
-    "otherSource": "Quête"
+    "otherSource": "Quête",
+    "obtention": [],
+    "buyPrice": "Quête",
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Potion de premiers secours",
@@ -2383,7 +2400,10 @@
     "prerequisites": {
       "int": "20",
       "wis": "23",
-      "str": "82"
+      "str": "82",
+      "end": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "bonuses": {
       "str": "+5"
@@ -2392,7 +2412,11 @@
       "min": "41",
       "max": "57"
     },
-    "otherSource": "Quête"
+    "otherSource": "Quête",
+    "obtention": [],
+    "buyPrice": "Quête",
+    "sellPrice": "5057",
+    "secondary": {}
   },
   {
     "name": "Clef de Reynen",
@@ -2576,26 +2600,44 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "155"
+      "str": "155",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "106",
       "max": "137"
     },
-    "buyPrice": "578210"
+    "buyPrice": "578210",
+    "obtention": [],
+    "sellPrice": "57821",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Glaive de qualité",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "213"
+      "str": "213",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "116",
       "max": "156"
     },
-    "buyPrice": "113163"
+    "buyPrice": "113163",
+    "obtention": [],
+    "sellPrice": "37721",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Bottes de mailles en mithril",
@@ -2620,13 +2662,22 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "82"
+      "str": "82",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "44",
       "max": "63"
     },
-    "buyPrice": "43587"
+    "buyPrice": "43587",
+    "obtention": [],
+    "sellPrice": "9686",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Épée courte en acier trempé enchantée",
@@ -2646,13 +2697,22 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "39"
+      "str": "39",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "18",
       "max": "28"
     },
-    "buyPrice": "7083"
+    "buyPrice": "7083",
+    "obtention": [],
+    "sellPrice": "1574",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Épée longue en acier trempé runique",
@@ -2695,13 +2755,22 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "300"
+      "str": "300",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "200",
       "max": "274"
     },
-    "buyPrice": "2306910"
+    "buyPrice": "2306910",
+    "obtention": [],
+    "sellPrice": "230691",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Épée longue polie",
@@ -2798,13 +2867,22 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "459"
+      "str": "459",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "271",
       "max": "382"
     },
-    "buyPrice": "5537300"
+    "buyPrice": "5537300",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Potion de guérison",
@@ -2899,13 +2977,22 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "82"
+      "str": "82",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "49",
       "max": "69"
     },
-    "buyPrice": "145290"
+    "buyPrice": "145290",
+    "obtention": [],
+    "sellPrice": "14529",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Épée courte de qualité enchantée",
@@ -2938,65 +3025,110 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "140"
+      "str": "140",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "82",
       "max": "113"
     },
-    "buyPrice": "140583"
+    "buyPrice": "140583",
+    "obtention": [],
+    "sellPrice": "31240",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hachette de qualité enchantée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "242"
+      "str": "242",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "160",
       "max": "220"
     },
-    "buyPrice": "443211"
+    "buyPrice": "443211",
+    "obtention": [],
+    "sellPrice": "98491",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Dague de qualité",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "126"
+      "str": "126",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "62",
       "max": "84"
     },
-    "buyPrice": "37053"
+    "buyPrice": "37053",
+    "obtention": [],
+    "sellPrice": "12351",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Dague en acier trempé",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "97"
+      "str": "97",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "46",
       "max": "63"
     },
-    "buyPrice": "37053"
+    "buyPrice": "37053",
+    "obtention": [],
+    "sellPrice": "12351",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hachette de qualité",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "242"
+      "str": "242",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "145",
       "max": "197"
     },
-    "buyPrice": "147737"
+    "buyPrice": "147737",
+    "obtention": [],
+    "sellPrice": "49245",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Bave de Zart",
@@ -3009,26 +3141,43 @@
     "source": "Arme",
     "prerequisites": {
       "wis": "41",
-      "str": "40"
+      "str": "40",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "21",
       "max": "32"
     },
-    "buyPrice": "5266"
+    "buyPrice": "5266",
+    "obtention": [],
+    "sellPrice": "1755",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hache de guerre en acier trempé",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "184"
+      "str": "184",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "124",
       "max": "172"
     },
-    "buyPrice": "83191"
+    "buyPrice": "83191",
+    "obtention": [],
+    "sellPrice": "27730",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hache en acier trempé",
@@ -3043,26 +3192,44 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "97"
+      "str": "97",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "53",
       "max": "75"
     },
-    "buyPrice": "20887"
+    "buyPrice": "20887",
+    "obtention": [],
+    "sellPrice": "6962",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hachette rouillée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "39"
+      "str": "39",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "16",
       "max": "25"
     },
-    "buyPrice": "2361"
+    "buyPrice": "2361",
+    "obtention": [],
+    "sellPrice": "787",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Gantelets d'anneaux",
@@ -3096,26 +3263,44 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "459"
+      "str": "459",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "250",
       "max": "348"
     },
-    "buyPrice": "1661190"
+    "buyPrice": "1661190",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Dague en acier trempé enchantée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "97"
+      "str": "97",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "50",
       "max": "70"
     },
-    "buyPrice": "111159"
+    "buyPrice": "111159",
+    "obtention": [],
+    "sellPrice": "24702",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Bottes ciselées des Haut-Elfes",
@@ -3158,13 +3343,22 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "97"
+      "str": "97",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "55",
       "max": "77"
     },
-    "buyPrice": "370530"
+    "buyPrice": "370530",
+    "obtention": [],
+    "sellPrice": "37053",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hache en acier trempé enchantée",
@@ -3273,52 +3467,88 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "82"
+      "str": "82",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "40",
       "max": "56"
     },
-    "buyPrice": "14529"
+    "buyPrice": "14529",
+    "obtention": [],
+    "sellPrice": "4843",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hache de guerre en acier trempé runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "184"
+      "str": "184",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "151",
       "max": "214"
     },
-    "buyPrice": "831910"
+    "buyPrice": "831910",
+    "obtention": [],
+    "sellPrice": "83191",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hachette polie runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "97"
+      "str": "97",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "65",
       "max": "93"
     },
-    "buyPrice": "208870"
+    "buyPrice": "208870",
+    "obtention": [],
+    "sellPrice": "20887",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Dague polie",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "68"
+      "str": "68",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "30",
       "max": "42"
     },
-    "buyPrice": "9323"
+    "buyPrice": "9323",
+    "obtention": [],
+    "sellPrice": "3107",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Poignard rouillé runique",
@@ -3365,13 +3595,22 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "97"
+      "str": "97",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "59",
       "max": "84"
     },
-    "buyPrice": "62661"
+    "buyPrice": "62661",
+    "obtention": [],
+    "sellPrice": "13924",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Merlin en Acier de Qualité",
@@ -3386,13 +3625,22 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "140"
+      "str": "140",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "74",
       "max": "101"
     },
-    "buyPrice": "46861"
+    "buyPrice": "46861",
+    "obtention": [],
+    "sellPrice": "15620",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Jambières d'écailles",
@@ -3450,26 +3698,44 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "53"
+      "str": "53",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "24",
       "max": "35"
     },
-    "buyPrice": "52660"
+    "buyPrice": "52660",
+    "obtention": [],
+    "sellPrice": "5266",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Dague rouillée runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "24"
+      "str": "24",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "7",
       "max": "13"
     },
-    "buyPrice": "6050"
+    "buyPrice": "6050",
+    "obtention": [],
+    "sellPrice": "605",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hache en acier trempé runique",
@@ -3502,39 +3768,66 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "155"
+      "str": "155",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "89",
       "max": "115"
     },
-    "buyPrice": "57861"
+    "buyPrice": "57861",
+    "obtention": [],
+    "sellPrice": "19273",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Dague polie enchantée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "68"
+      "str": "68",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "33",
       "max": "46"
     },
-    "buyPrice": "27969"
+    "buyPrice": "27969",
+    "obtention": [],
+    "sellPrice": "6215",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Dague polie runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "68"
+      "str": "68",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "36",
       "max": "51"
     },
-    "buyPrice": "93230"
+    "buyPrice": "93230",
+    "obtention": [],
+    "sellPrice": "9323",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Heaume de mailles elfique",
@@ -3583,13 +3876,22 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "184"
+      "str": "184",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "142",
       "max": "197"
     },
-    "buyPrice": "249573"
+    "buyPrice": "249573",
+    "obtention": [],
+    "sellPrice": "55460",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Cape de la nuit",
@@ -3626,13 +3928,22 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "39"
+      "str": "39",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "20",
       "max": "32"
     },
-    "buyPrice": "23610"
+    "buyPrice": "23610",
+    "obtention": [],
+    "sellPrice": "2361",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Épée bâtarde d'adamantite runique",
@@ -3655,26 +3966,44 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "53"
+      "str": "53",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "22",
       "max": "32"
     },
-    "buyPrice": "15798"
+    "buyPrice": "15798",
+    "obtention": [],
+    "sellPrice": "3510",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Glaive de qualité enchanté",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "213"
+      "str": "213",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "127",
       "max": "174"
     },
-    "buyPrice": "339489"
+    "buyPrice": "339489",
+    "obtention": [],
+    "sellPrice": "75442",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Épée bâtarde de mithril",
@@ -3703,13 +4032,21 @@
     "source": "Arme",
     "prerequisites": {
       "wis": "116",
-      "str": "140"
+      "str": "140",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "103",
       "max": "144"
     },
-    "buyPrice": "97601"
+    "buyPrice": "97601",
+    "obtention": [],
+    "sellPrice": "32533",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Cape de la forêt",
@@ -3853,13 +4190,22 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "140"
+      "str": "140",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "89",
       "max": "124"
     },
-    "buyPrice": "466610"
+    "buyPrice": "466610",
+    "obtention": [],
+    "sellPrice": "46861",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Épée longue polie runique",
@@ -3880,13 +4226,21 @@
     "source": "Arme",
     "prerequisites": {
       "wis": "79",
-      "str": "90"
+      "str": "90",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "59",
       "max": "83"
     },
-    "buyPrice": "37053"
+    "buyPrice": "37053",
+    "obtention": [],
+    "sellPrice": "12351",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Casque de cuir elfique",
@@ -3926,91 +4280,154 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "184"
+      "str": "184",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "120",
       "max": "165"
     },
-    "buyPrice": "831910"
+    "buyPrice": "831910",
+    "obtention": [],
+    "sellPrice": "83191",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Dague de qualité runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "126"
+      "str": "126",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "74",
       "max": "102"
     },
-    "buyPrice": "370530"
+    "buyPrice": "370530",
+    "obtention": [],
+    "sellPrice": "37053",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Dague de qualité enchantée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "126"
+      "str": "126",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "68",
       "max": "93"
     },
-    "buyPrice": "111159"
+    "buyPrice": "111159",
+    "obtention": [],
+    "sellPrice": "24702",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Dague de mithril enchantée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "155"
+      "str": "155",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "85",
       "max": "110"
     },
-    "buyPrice": "173463"
+    "buyPrice": "173463",
+    "obtention": [],
+    "sellPrice": "38547",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Dague de mithril runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "155"
+      "str": "155",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "94",
       "max": "128"
     },
-    "buyPrice": "578210"
+    "buyPrice": "578210",
+    "obtention": [],
+    "sellPrice": "57821",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Lame de mithril enchantée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "184"
+      "str": "184",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "110",
       "max": "150"
     },
-    "buyPrice": "249573"
+    "buyPrice": "249573",
+    "obtention": [],
+    "sellPrice": "42127",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Lame d'adamantite",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "242"
+      "str": "242",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "133",
       "max": "179"
     },
-    "buyPrice": "147737"
+    "buyPrice": "147737",
+    "obtention": [],
+    "sellPrice": "49245",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Épée bâtarde ancienne",
@@ -4025,26 +4442,44 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "459"
+      "str": "459",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "229",
       "max": "314"
     },
-    "buyPrice": "553730"
+    "buyPrice": "553730",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Cimeterre en acier trempé enchanté",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "155"
+      "str": "155",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "95",
       "max": "126"
     },
-    "buyPrice": "173463"
+    "buyPrice": "173463",
+    "obtention": [],
+    "sellPrice": "38547",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Jambières de plaques en adamantite",
@@ -4170,13 +4605,22 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "53"
+      "str": "53",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "20",
       "max": "28"
     },
-    "buyPrice": "5266"
+    "buyPrice": "5266",
+    "obtention": [],
+    "sellPrice": "1755",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Épée courte de qualité",
@@ -4204,13 +4648,22 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "213"
+      "str": "213",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "139",
       "max": "192"
     },
-    "buyPrice": "1131630"
+    "buyPrice": "1131630",
+    "obtention": [],
+    "sellPrice": "113163",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Épée longue rouillée enchantée",
@@ -4231,13 +4684,21 @@
     "source": "Arme",
     "prerequisites": {
       "wis": "94",
-      "str": "110"
+      "str": "110",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "74",
       "max": "103"
     },
-    "buyPrice": "57821"
+    "buyPrice": "57821",
+    "obtention": [],
+    "sellPrice": "19273",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Cimeterre de qualité enchanté",
@@ -4263,13 +4724,22 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "358"
+      "str": "358",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "222",
       "max": "308"
     },
-    "buyPrice": "3320530"
+    "buyPrice": "3320530",
+    "obtention": [],
+    "sellPrice": "332053",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Jambières de plaques de Nain",
@@ -4305,13 +4775,22 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "372"
+      "str": "372",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "235",
       "max": "328"
     },
-    "buyPrice": "3602690"
+    "buyPrice": "3602690",
+    "obtention": [],
+    "sellPrice": "360269",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Bottes de plaques de Nain",
@@ -4349,13 +4828,22 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "155"
+      "str": "155",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "78",
       "max": "103"
     },
-    "buyPrice": "57821"
+    "buyPrice": "57821",
+    "obtention": [],
+    "sellPrice": "19273",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Épée longue en acier trempé",
@@ -4375,13 +4863,22 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "285"
+      "str": "285",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "158",
       "max": "213"
     },
-    "buyPrice": "208226"
+    "buyPrice": "208226",
+    "obtention": [],
+    "sellPrice": "69408",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Fléau d'armes ancien",
@@ -4398,13 +4895,21 @@
     "source": "Arme",
     "prerequisites": {
       "wis": "139",
-      "str": "170"
+      "str": "170",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "129",
       "max": "173"
     },
-    "buyPrice": "147737"
+    "buyPrice": "147737",
+    "obtention": [],
+    "sellPrice": "49245",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Épée longue de qualité runique",
@@ -4437,13 +4942,22 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "24"
+      "str": "24",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "6",
       "max": "10"
     },
-    "buyPrice": "605"
+    "buyPrice": "605",
+    "obtention": [],
+    "sellPrice": "201",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Robe de mariée",
@@ -4508,13 +5022,21 @@
     "source": "Arme",
     "prerequisites": {
       "wis": "56",
-      "str": "60"
+      "str": "60",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "36",
       "max": "52"
     },
-    "buyPrice": "14529"
+    "buyPrice": "14529",
+    "obtention": [],
+    "sellPrice": "4843",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Casque d'anneaux",
@@ -4557,13 +5079,21 @@
     "source": "Arme",
     "prerequisites": {
       "wis": "34",
-      "str": "30"
+      "str": "30",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "13",
       "max": "20"
     },
-    "buyPrice": "2361"
+    "buyPrice": "2361",
+    "obtention": [],
+    "sellPrice": "787",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hache de qualité à deux tranchants",
@@ -5024,7 +5554,11 @@
     "source": "Arme",
     "prerequisites": {
       "wis": "201",
-      "str": "140"
+      "str": "140",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "bonuses": {
       "wis": "+10"
@@ -5037,7 +5571,10 @@
       "min": "103",
       "max": "144"
     },
-    "otherSource": "Drop"
+    "otherSource": "Drop",
+    "obtention": [],
+    "buyPrice": "Drop",
+    "sellPrice": "32533"
   },
   {
     "name": "Collier de dents de loup",
@@ -5084,26 +5621,44 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "242"
+      "str": "242",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "175",
       "max": "243"
     },
-    "buyPrice": "1477370"
+    "buyPrice": "1477370",
+    "obtention": [],
+    "sellPrice": "147737",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hache de guerre de qualité runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "271"
+      "str": "271",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "227",
       "max": "319"
     },
-    "buyPrice": "1869130"
+    "buyPrice": "1869130",
+    "obtention": [],
+    "sellPrice": "186913",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hache à deux tranchants en mithril runique",
@@ -5130,7 +5685,18 @@
       "max": "4"
     },
     "buyPrice": "29",
-    "prerequisites": {}
+    "prerequisites": {
+      "str": "0",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "obtention": [],
+    "sellPrice": "9",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Sceptre de bois de puissance",
@@ -5183,13 +5749,21 @@
     "source": "Arme",
     "prerequisites": {
       "int": "21",
-      "str": "12"
+      "str": "12",
+      "end": "0",
+      "dex": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "6",
       "max": "11"
     },
-    "buyPrice": "3920"
+    "buyPrice": "3920",
+    "obtention": [],
+    "sellPrice": "392",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Bâton de combat",
@@ -5197,8 +5771,21 @@
     "source": "Arme",
     "prerequisites": {
       "int": "30",
-      "str": "13"
-    }
+      "str": "13",
+      "end": "0",
+      "dex": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "obtention": [],
+    "damage": {
+      "min": "8",
+      "max": "13"
+    },
+    "buyPrice": "1169",
+    "sellPrice": "389",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Bâton de combat magique",
@@ -5215,8 +5802,21 @@
     "source": "Arme",
     "prerequisites": {
       "int": "30",
-      "str": "13"
-    }
+      "str": "13",
+      "end": "0",
+      "dex": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "obtention": [],
+    "damage": {
+      "min": "10",
+      "max": "17"
+    },
+    "buyPrice": "11690",
+    "sellPrice": "1169",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Sceptre d'épines",
@@ -5293,13 +5893,21 @@
     "source": "Arme",
     "prerequisites": {
       "int": "56",
-      "str": "16"
+      "str": "16",
+      "end": "0",
+      "dex": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "17",
       "max": "27"
     },
-    "buyPrice": "5985"
+    "buyPrice": "5985",
+    "obtention": [],
+    "sellPrice": "1995",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Rang-kwan magique",
@@ -5316,13 +5924,21 @@
     "source": "Arme",
     "prerequisites": {
       "int": "56",
-      "str": "16"
+      "str": "16",
+      "end": "0",
+      "dex": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "22",
       "max": "35"
     },
-    "buyPrice": "59850"
+    "buyPrice": "59850",
+    "obtention": [],
+    "sellPrice": "5985",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Tetsubo",
@@ -5330,13 +5946,21 @@
     "source": "Arme",
     "prerequisites": {
       "int": "68",
-      "str": "17"
+      "str": "17",
+      "end": "0",
+      "dex": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "21",
       "max": "33"
     },
-    "buyPrice": "9323"
+    "buyPrice": "9323",
+    "obtention": [],
+    "sellPrice": "3107",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Tetsubo magique",
@@ -5353,13 +5977,21 @@
     "source": "Arme",
     "prerequisites": {
       "int": "68",
-      "str": "17"
+      "str": "17",
+      "end": "0",
+      "dex": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "27",
       "max": "42"
     },
-    "buyPrice": "93230"
+    "buyPrice": "93230",
+    "obtention": [],
+    "sellPrice": "9323",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Gourdin sacré",
@@ -5377,13 +6009,21 @@
     "source": "Arme",
     "prerequisites": {
       "wis": "34",
-      "str": "30"
+      "str": "30",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "14",
       "max": "22"
     },
-    "buyPrice": "7083"
+    "buyPrice": "7083",
+    "obtention": [],
+    "sellPrice": "1574",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Gourdin renforcé sacré",
@@ -5391,13 +6031,21 @@
     "source": "Arme",
     "prerequisites": {
       "wis": "34",
-      "str": "30"
+      "str": "30",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "16",
       "max": "25"
     },
-    "buyPrice": "23610"
+    "buyPrice": "23610",
+    "obtention": [],
+    "sellPrice": "2361",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Marteau de guerre renforcé béni",
@@ -5405,13 +6053,21 @@
     "source": "Arme",
     "prerequisites": {
       "wis": "41",
-      "str": "40"
+      "str": "40",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "24",
       "max": "36"
     },
-    "buyPrice": "15798"
+    "buyPrice": "15798",
+    "obtention": [],
+    "sellPrice": "3510",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Marteau de guerre renforcé sacré",
@@ -5419,13 +6075,21 @@
     "source": "Arme",
     "prerequisites": {
       "wis": "41",
-      "str": "40"
+      "str": "40",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "26",
       "max": "40"
     },
-    "buyPrice": "52660"
+    "buyPrice": "52660",
+    "obtention": [],
+    "sellPrice": "5266",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Marteau de guerre en acier trempé béni",
@@ -5433,13 +6097,21 @@
     "source": "Arme",
     "prerequisites": {
       "wis": "56",
-      "str": "60"
+      "str": "60",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "40",
       "max": "59"
     },
-    "buyPrice": "43587"
+    "buyPrice": "43587",
+    "obtention": [],
+    "sellPrice": "9686",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Marteau de guerre en acier trempé sacré",
@@ -5447,13 +6119,21 @@
     "source": "Arme",
     "prerequisites": {
       "wis": "56",
-      "str": "60"
+      "str": "60",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "45",
       "max": "65"
     },
-    "buyPrice": "145290"
+    "buyPrice": "145290",
+    "obtention": [],
+    "sellPrice": "14529",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Masse en acier trempé sacrée",
@@ -5475,13 +6155,21 @@
     "source": "Arme",
     "prerequisites": {
       "wis": "94",
-      "str": "110"
+      "str": "110",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "82",
       "max": "116"
     },
-    "buyPrice": "173463"
+    "buyPrice": "173463",
+    "obtention": [],
+    "sellPrice": "38547",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Masse de qualité sacrée",
@@ -5489,13 +6177,21 @@
     "source": "Arme",
     "prerequisites": {
       "wis": "94",
-      "str": "110"
+      "str": "110",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "90",
       "max": "129"
     },
-    "buyPrice": "578210"
+    "buyPrice": "578210",
+    "obtention": [],
+    "sellPrice": "57821",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Fléau de qualité béni",
@@ -5503,13 +6199,21 @@
     "source": "Arme",
     "prerequisites": {
       "wis": "116",
-      "str": "140"
+      "str": "140",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "115",
       "max": "162"
     },
-    "buyPrice": "292803"
+    "buyPrice": "292803",
+    "obtention": [],
+    "sellPrice": "65067",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Fléau de qualité sacré",
@@ -5517,13 +6221,21 @@
     "source": "Arme",
     "prerequisites": {
       "wis": "116",
-      "str": "140"
+      "str": "140",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "126",
       "max": "180"
     },
-    "buyPrice": "976010"
+    "buyPrice": "976010",
+    "obtention": [],
+    "sellPrice": "97601",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Fléau de Guerre du Roy Theopold",
@@ -5540,13 +6252,21 @@
     "source": "Arme",
     "prerequisites": {
       "wis": "139",
-      "str": "170"
+      "str": "170",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "143",
       "max": "192"
     },
-    "buyPrice": "443211"
+    "buyPrice": "443211",
+    "obtention": [],
+    "sellPrice": "98491",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Fléau de mithril sacré",
@@ -5554,13 +6274,21 @@
     "source": "Arme",
     "prerequisites": {
       "wis": "139",
-      "str": "170"
+      "str": "170",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "156",
       "max": "221"
     },
-    "buyPrice": "1477370"
+    "buyPrice": "1477370",
+    "obtention": [],
+    "sellPrice": "147737",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Fléau d'armes en mithril béni",
@@ -6025,12 +6753,23 @@
     "prerequisites": {
       "int": "43",
       "wis": "15",
-      "str": "12"
+      "str": "12",
+      "end": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "bonuses": {
       "int": "+5",
       "str": "+5"
-    }
+    },
+    "obtention": [],
+    "damage": {
+      "min": "5",
+      "max": "9"
+    },
+    "buyPrice": "Quête",
+    "sellPrice": "415",
+    "secondary": {}
   },
   {
     "name": "Scalpel de chirurgien",
@@ -9147,7 +9886,9 @@
       "int": "25",
       "wis": "25",
       "str": "242",
-      "dex": "43"
+      "dex": "43",
+      "end": "0",
+      "attack": "0"
     },
     "bonuses": {
       "str": "+10"
@@ -9162,7 +9903,10 @@
       "min": "147",
       "max": "199"
     },
-    "otherSource": "Quête"
+    "otherSource": "Quête",
+    "obtention": [],
+    "buyPrice": "Quête",
+    "sellPrice": "55412"
   },
   {
     "name": "Cape d'Armagueddon",
@@ -9188,13 +9932,23 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "242"
+      "str": "242",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "146",
       "max": "199"
     },
-    "otherSource": "Quête"
+    "otherSource": "Quête",
+    "obtention": [],
+    "buyPrice": "Quête",
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Lame Assassine",
@@ -9219,9 +9973,12 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "wis": "35",
+      "wis": "37",
       "str": "266",
-      "dex": "35"
+      "dex": "37",
+      "end": "0",
+      "int": "0",
+      "attack": "0"
     },
     "secondary": {
       "Coup Paralysant": "+10",
@@ -9233,7 +9990,11 @@
       "min": "129",
       "max": "169"
     },
-    "otherSource": "Quête"
+    "otherSource": "Quête",
+    "obtention": [],
+    "buyPrice": "Quête",
+    "sellPrice": "44221",
+    "bonuses": {}
   },
   {
     "name": "Robe des enfers",
@@ -9302,7 +10063,10 @@
     "prerequisites": {
       "int": "83",
       "wis": "35",
-      "str": "20"
+      "str": "20",
+      "end": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "bonuses": {
       "int": "+15"
@@ -9311,7 +10075,14 @@
       "Puissance Nécro": "+10",
       "Puissance Lumière": "-10",
       "Résistance Nécro": "+10"
-    }
+    },
+    "obtention": [],
+    "damage": {
+      "min": "35",
+      "max": "55"
+    },
+    "buyPrice": "Quête",
+    "sellPrice": "5741"
   },
   {
     "name": "Manteau de l'Archer",
@@ -9647,7 +10418,10 @@
     "prerequisites": {
       "int": "40",
       "wis": "43",
-      "str": "198"
+      "str": "198",
+      "end": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "bonuses": {
       "dex": "+5",
@@ -9660,20 +10434,34 @@
       "min": "105",
       "max": "141"
     },
-    "otherSource": "Coffre"
+    "otherSource": "Coffre",
+    "obtention": [],
+    "buyPrice": "Coffre",
+    "sellPrice": "32522",
+    "secondary": {}
   },
   {
     "name": "Lame prismatique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "126"
+      "str": "126",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "63",
       "max": "85"
     },
-    "otherSource": "Coffre"
+    "otherSource": "Coffre",
+    "obtention": [],
+    "buyPrice": "Coffre",
+    "sellPrice": "12351",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Bâton de Bastet, l'Esprit des Chats",
@@ -9994,8 +10782,21 @@
     "source": "Arme",
     "prerequisites": {
       "int": "68",
-      "str": "17"
-    }
+      "str": "17",
+      "end": "0",
+      "dex": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "obtention": [],
+    "damage": {
+      "min": "21",
+      "max": "33"
+    },
+    "buyPrice": "Coffre",
+    "sellPrice": "3107",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Heaume de clairvoyance",
@@ -10051,7 +10852,12 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "82"
+      "str": "82",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "bonuses": {
       "dex": "+5",
@@ -10069,7 +10875,10 @@
       "min": "41",
       "max": "57"
     },
-    "otherSource": "Drop"
+    "otherSource": "Drop",
+    "obtention": [],
+    "buyPrice": "Drop",
+    "sellPrice": "5982"
   },
   {
     "name": "Anneau de l'assassin",
@@ -10119,7 +10928,11 @@
     "source": "Arme",
     "prerequisites": {
       "wis": "56",
-      "str": "60"
+      "str": "60",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "bonuses": {
       "wis": "-5",
@@ -10130,7 +10943,11 @@
       "min": "42",
       "max": "61"
     },
-    "otherSource": "Drop"
+    "otherSource": "Drop",
+    "obtention": [],
+    "buyPrice": "Drop",
+    "sellPrice": "4843",
+    "secondary": {}
   },
   {
     "name": "Manteau du Voyeur",
@@ -10204,7 +11021,18 @@
       "max": "4"
     },
     "buyPrice": "29",
-    "prerequisites": {}
+    "prerequisites": {
+      "str": "0",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "obtention": [],
+    "sellPrice": "9",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Couteau de boucher",
@@ -10546,7 +11374,11 @@
     "prerequisites": {
       "end": "150",
       "str": "425",
-      "att": "500"
+      "att": "500",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "500"
     },
     "secondary": {
       "Coup Puissant": "+10",
@@ -10559,7 +11391,10 @@
       "min": "385",
       "max": "562"
     },
-    "otherSource": "Drop"
+    "otherSource": "Drop",
+    "obtention": [],
+    "buyPrice": "Drop",
+    "sellPrice": "0"
   },
   {
     "name": "Clef cuivre",
@@ -21411,13 +22246,21 @@
     "source": "Arme",
     "prerequisites": {
       "int": "21",
-      "str": "12"
+      "str": "12",
+      "end": "0",
+      "dex": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "5",
       "max": "9"
     },
-    "buyPrice": "392"
+    "buyPrice": "392",
+    "obtention": [],
+    "sellPrice": "130",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Fleuret",
@@ -21438,13 +22281,22 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "71"
+      "str": "71",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "37",
       "max": "53"
     },
-    "buyPrice": "14894 BM*"
+    "buyPrice": "14894 BM*",
+    "obtention": [],
+    "sellPrice": "3424",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Lame des ténèbres",
@@ -21465,7 +22317,11 @@
     "source": "Arme",
     "prerequisites": {
       "wis": "41",
-      "str": "40"
+      "str": "40",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "secondary": {
       "Attaque": "+10"
@@ -21474,7 +22330,11 @@
       "min": "28",
       "max": "29"
     },
-    "otherSource": "Drop"
+    "otherSource": "Drop",
+    "obtention": [],
+    "buyPrice": "Drop",
+    "sellPrice": "1755",
+    "bonuses": {}
   },
   {
     "name": "Dague perceuse d'armure",
@@ -21483,7 +22343,10 @@
     "prerequisites": {
       "int": "19",
       "wis": "21",
-      "str": "39"
+      "str": "39",
+      "end": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "secondary": {
       "Attaque": "+10",
@@ -21493,20 +22356,34 @@
       "min": "12",
       "max": "19"
     },
-    "otherSource": "Drop"
+    "otherSource": "Drop",
+    "obtention": [],
+    "buyPrice": "Drop",
+    "sellPrice": "949",
+    "bonuses": {}
   },
   {
     "name": "Lame de gobelin",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "53"
+      "str": "53",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "22",
       "max": "31"
     },
-    "otherSource": "Drop"
+    "otherSource": "Drop",
+    "obtention": [],
+    "buyPrice": "Drop",
+    "sellPrice": "1755",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Épée de la nuit",
@@ -22155,8 +23032,17 @@
     "otherSource": "Drop",
     "prerequisites": {
       "str": "227",
-      "dex": "83"
-    }
+      "dex": "83",
+      "end": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "obtention": [],
+    "buyPrice": "Drop",
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Dinde",
@@ -24868,78 +25754,157 @@
     "name": "Gourdin enchanté",
     "quantity": 1,
     "source": "Arme",
-    "prerequisites": {},
+    "prerequisites": {
+      "str": "0",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
     "damage": {
       "min": "2",
       "max": "5"
     },
-    "buyPrice": "87"
+    "buyPrice": "87",
+    "obtention": [],
+    "sellPrice": "19",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Gourdin runique",
     "quantity": 1,
     "source": "Arme",
-    "prerequisites": {},
+    "prerequisites": {
+      "str": "0",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
     "damage": {
       "min": "2",
       "max": "5"
     },
-    "buyPrice": "290"
+    "buyPrice": "290",
+    "obtention": [],
+    "sellPrice": "29",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Gourdin du gob' (+3)",
     "quantity": 1,
     "source": "Arme",
-    "prerequisites": {},
+    "prerequisites": {
+      "str": "0",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
     "damage": {
       "min": "3",
       "max": "6"
     },
-    "otherSource": "Invoc."
+    "otherSource": "Invoc.",
+    "obtention": [],
+    "buyPrice": "Invoc.",
+    "sellPrice": "38",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Sceptre de bois enchanté",
     "quantity": 1,
     "source": "Arme",
-    "prerequisites": {},
+    "prerequisites": {
+      "str": "0",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
     "damage": {
       "min": "2",
       "max": "5"
     },
-    "buyPrice": "87"
+    "buyPrice": "87",
+    "obtention": [],
+    "sellPrice": "19",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Sceptre en bois de puissance",
     "quantity": 1,
     "source": "Arme",
-    "prerequisites": {},
+    "prerequisites": {
+      "str": "0",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
     "damage": {
       "min": "2",
       "max": "5"
     },
-    "buyPrice": "270"
+    "buyPrice": "270",
+    "obtention": [],
+    "sellPrice": "29",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epee courte courte runique",
     "quantity": 1,
     "source": "Arme",
-    "prerequisites": {},
+    "prerequisites": {
+      "str": "0",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
     "damage": {
       "min": "2",
       "max": "5"
     },
-    "buyPrice": "290"
+    "buyPrice": "290",
+    "obtention": [],
+    "sellPrice": "29",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Baton de soumission",
     "quantity": 1,
     "source": "Arme",
-    "prerequisites": {},
+    "prerequisites": {
+      "str": "0",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
     "damage": {
       "min": "0",
       "max": "0"
     },
-    "otherSource": "Quête"
+    "otherSource": "Quête",
+    "obtention": [],
+    "buyPrice": "Quête",
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Sceptre de pouvoir du Drachen",
@@ -24947,13 +25912,22 @@
     "source": "Arme",
     "prerequisites": {
       "str": "10",
-      "int": "135"
+      "int": "135",
+      "end": "0",
+      "dex": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "14",
       "max": "22"
     },
-    "otherSource": "Drop"
+    "otherSource": "Drop",
+    "obtention": [],
+    "buyPrice": "Drop",
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Sceptre de fer enchanté",
@@ -24961,13 +25935,21 @@
     "source": "Arme",
     "prerequisites": {
       "str": "12",
-      "int": "21"
+      "int": "21",
+      "end": "0",
+      "dex": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "5",
       "max": "10"
     },
-    "buyPrice": "1176"
+    "buyPrice": "1176",
+    "obtention": [],
+    "sellPrice": "261",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Dague du crâne",
@@ -25004,13 +25986,21 @@
     "source": "Arme",
     "prerequisites": {
       "str": "13",
-      "int": "30"
+      "int": "30",
+      "end": "0",
+      "dex": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "9",
       "max": "15"
     },
-    "buyPrice": "3057"
+    "buyPrice": "3057",
+    "obtention": [],
+    "sellPrice": "779",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Bâton de combat de puissance",
@@ -25032,13 +26022,21 @@
     "source": "Arme",
     "prerequisites": {
       "str": "14",
-      "int": "39"
+      "int": "39",
+      "end": "0",
+      "dex": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "11",
       "max": "18"
     },
-    "buyPrice": "2361"
+    "buyPrice": "2361",
+    "obtention": [],
+    "sellPrice": "787",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Sceptre d'épine enchanté",
@@ -25046,13 +26044,21 @@
     "source": "Arme",
     "prerequisites": {
       "str": "14",
-      "int": "39"
+      "int": "39",
+      "end": "0",
+      "dex": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "12",
       "max": "19"
     },
-    "buyPrice": "7083"
+    "buyPrice": "7083",
+    "obtention": [],
+    "sellPrice": "1574",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Sceptre d'épine de puissance",
@@ -25060,13 +26066,21 @@
     "source": "Arme",
     "prerequisites": {
       "str": "14",
-      "int": "39"
+      "int": "39",
+      "end": "0",
+      "dex": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "14",
       "max": "23"
     },
-    "buyPrice": "23610"
+    "buyPrice": "23610",
+    "obtention": [],
+    "sellPrice": "2361",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Bô enchanté",
@@ -25074,13 +26088,21 @@
     "source": "Arme",
     "prerequisites": {
       "str": "15",
-      "int": "47"
+      "int": "47",
+      "end": "0",
+      "dex": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "16",
       "max": "25"
     },
-    "buyPrice": "11898"
+    "buyPrice": "11898",
+    "obtention": [],
+    "sellPrice": "2644",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Rang-kwan enchanté",
@@ -25088,13 +26110,21 @@
     "source": "Arme",
     "prerequisites": {
       "str": "16",
-      "int": "56"
+      "int": "56",
+      "end": "0",
+      "dex": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "19",
       "max": "31"
     },
-    "buyPrice": "17955"
+    "buyPrice": "17955",
+    "obtention": [],
+    "sellPrice": "3990",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Tetsubo enchanté",
@@ -25102,13 +26132,21 @@
     "source": "Arme",
     "prerequisites": {
       "str": "17",
-      "int": "68"
+      "int": "68",
+      "end": "0",
+      "dex": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "24",
       "max": "37"
     },
-    "buyPrice": "27969"
+    "buyPrice": "27969",
+    "obtention": [],
+    "sellPrice": "6215",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Bâton de marche tordu",
@@ -25131,13 +26169,21 @@
     "prerequisites": {
       "str": "20",
       "int": "73",
-      "wis": "73"
+      "wis": "73",
+      "end": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "35",
       "max": "55"
     },
-    "otherSource": "Coffre"
+    "otherSource": "Coffre",
+    "obtention": [],
+    "buyPrice": "Coffre",
+    "sellPrice": "25664",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Bâton de langueur",
@@ -25159,41 +26205,68 @@
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "24"
+      "str": "24",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "9",
       "max": "16"
     },
     "otherSource": "Invoc. | Forgeron 3",
-    "buyPrice": "806"
+    "buyPrice": "Invoc.",
+    "obtention": [],
+    "sellPrice": "806",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Dague rouillée enchantée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "24"
+      "str": "24",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "6",
       "max": "12"
     },
-    "buyPrice": "1815"
+    "buyPrice": "1815",
+    "obtention": [],
+    "sellPrice": "403",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Dague en ivoire (+3)",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "24"
+      "str": "24",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "9",
       "max": "15"
     },
     "otherSource": "Invoc. | Gobelin Farfelu, Forgeron 5",
-    "buyPrice": "805"
+    "buyPrice": "Invoc.",
+    "obtention": [],
+    "sellPrice": "805",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Scalpel du chirurgien",
@@ -25202,27 +26275,44 @@
     "prerequisites": {
       "str": "30",
       "int": "30",
-      "wis": "50"
+      "wis": "50",
+      "end": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "18",
       "max": "27"
     },
-    "otherSource": "Quête"
+    "otherSource": "Quête",
+    "obtention": [],
+    "buyPrice": "Quête",
+    "sellPrice": "3217",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Cognée de bucheron (+3)",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "39"
+      "str": "39",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
-      "min": "20",
-      "max": "33"
+      "min": "23",
+      "max": "36"
     },
     "otherSource": "Invoc. | Forgeron 9",
-    "buyPrice": "3148"
+    "buyPrice": "Invoc.",
+    "obtention": [],
+    "sellPrice": "3148",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Masse des ogres (+3)",
@@ -25230,55 +26320,91 @@
     "source": "Arme",
     "prerequisites": {
       "str": "40",
-      "wis": "41"
+      "wis": "41",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
-      "min": "26",
-      "max": "42"
+      "min": "30",
+      "max": "46"
     },
     "otherSource": "Invoc. | Forgeron 13",
-    "buyPrice": "7021"
+    "buyPrice": "Invoc.",
+    "obtention": [],
+    "sellPrice": "7021",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Couteau de cuisine nain (+3)",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "68"
+      "str": "68",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "40",
       "max": "58"
     },
     "otherSource": "Invoc. | Forgeron 17",
-    "buyPrice": "12430"
+    "buyPrice": "Invoc.",
+    "obtention": [],
+    "sellPrice": "12430",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Buveuse de sang",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "68"
+      "str": "68",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "30",
       "max": "42"
     },
-    "otherSource": "Drop"
+    "otherSource": "Drop",
+    "obtention": [],
+    "buyPrice": "Drop",
+    "sellPrice": "3107",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Sabre a crosse de nacre (+3)",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "82"
+      "str": "82",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
-      "min": "42",
-      "max": "66"
+      "min": "54",
+      "max": "78"
     },
     "otherSource": "Invoc. | Forgeron 19",
-    "buyPrice": "19372"
+    "buyPrice": "Invoc.",
+    "obtention": [],
+    "sellPrice": "19372",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Masse en acier trempé béni",
@@ -25286,13 +26412,21 @@
     "source": "Arme",
     "prerequisites": {
       "str": "90",
-      "wis": "79"
+      "wis": "79",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "65",
       "max": "93"
     },
-    "buyPrice": "111159"
+    "buyPrice": "111159",
+    "obtention": [],
+    "sellPrice": "24702",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Masse en acier trempé sacré",
@@ -25300,13 +26434,21 @@
     "source": "Arme",
     "prerequisites": {
       "str": "90",
-      "wis": "79"
+      "wis": "79",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "72",
       "max": "104"
     },
-    "buyPrice": "370530"
+    "buyPrice": "370530",
+    "obtention": [],
+    "sellPrice": "37053",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Masse à ailettes enchantée (+3)",
@@ -25314,13 +26456,22 @@
     "source": "Arme",
     "prerequisites": {
       "str": "90",
-      "wis": "79"
+      "wis": "79",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "81",
       "max": "117"
     },
-    "otherSource": "Invoc."
+    "otherSource": "Invoc.",
+    "obtention": [],
+    "buyPrice": "Invoc.",
+    "sellPrice": "49408",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Pourfendeur de gobelin",
@@ -25329,40 +26480,67 @@
     "prerequisites": {
       "str": "97",
       "int": "20",
-      "wis": "23"
+      "wis": "23",
+      "end": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "32",
       "max": "60"
     },
-    "otherSource": "Quête"
+    "otherSource": "Quête",
+    "obtention": [],
+    "buyPrice": "Quête",
+    "sellPrice": "6962",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Dague d'obscurantis (+3)",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "97"
+      "str": "97",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "61",
       "max": "87"
     },
     "otherSource": "Invoc. | Forgeron 27",
-    "buyPrice": "27849"
+    "buyPrice": "Invoc.",
+    "obtention": [],
+    "sellPrice": "27849",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Merlin en acier trempé (+3)",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "97"
+      "str": "97",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "73",
       "max": "105"
     },
-    "otherSource": "Invoc."
+    "otherSource": "Invoc.",
+    "obtention": [],
+    "buyPrice": "Invoc.",
+    "sellPrice": "27849",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Bâton d'espérance",
@@ -25371,40 +26549,66 @@
     "prerequisites": {
       "str": "110",
       "int": "23",
-      "wis": "131"
+      "wis": "131",
+      "end": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "90",
       "max": "129"
     },
-    "otherSource": "Quête"
+    "otherSource": "Quête",
+    "obtention": [],
+    "buyPrice": "Quête",
+    "sellPrice": "59113",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée longue en acier trempé enchanté",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "126"
+      "str": "126",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "70",
       "max": "97"
     },
-    "buyPrice": "111159"
+    "buyPrice": "111159",
+    "obtention": [],
+    "sellPrice": "24702",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Dague de jade (+3)",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "126"
+      "str": "126",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "82",
       "max": "115"
     },
     "otherSource": "Invoc. | Forgeron 36",
-    "buyPrice": "49404"
+    "buyPrice": "Invoc.",
+    "obtention": [],
+    "sellPrice": "49404",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Fléau de guerre du roi Theopold (+3)",
@@ -25412,13 +26616,22 @@
     "source": "Arme",
     "prerequisites": {
       "str": "140",
-      "wis": "116"
+      "wis": "116",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "142",
       "max": "204"
     },
-    "otherSource": "Invoc."
+    "otherSource": "Invoc.",
+    "obtention": [],
+    "buyPrice": "Invoc.",
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée en os de berserk",
@@ -25428,91 +26641,155 @@
       "str": "141",
       "dex": "22",
       "int": "20",
-      "wis": "25"
+      "wis": "25",
+      "end": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "71",
       "max": "95"
     },
-    "otherSource": "Drop"
+    "otherSource": "Drop",
+    "obtention": [],
+    "buyPrice": "Drop",
+    "sellPrice": "12720",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hachette en acier trempé",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "155"
+      "str": "155",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "90",
       "max": "123"
     },
-    "buyPrice": "57861"
+    "buyPrice": "57861",
+    "obtention": [],
+    "sellPrice": "19273",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hachette en acier trempé enchantée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "155"
+      "str": "155",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "106",
       "max": "139"
     },
-    "buyPrice": "173463"
+    "buyPrice": "173463",
+    "obtention": [],
+    "sellPrice": "38547",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hachette en acier trempé runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "155"
+      "str": "155",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "113",
       "max": "151"
     },
-    "buyPrice": "578210"
+    "buyPrice": "578210",
+    "obtention": [],
+    "sellPrice": "57821",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Cimeterre du Zéphir (+3)",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "155"
+      "str": "155",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "114",
       "max": "161"
     },
-    "otherSource": "Invoc."
+    "otherSource": "Invoc.",
+    "obtention": [],
+    "buyPrice": "Invoc.",
+    "sellPrice": "77094",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hache de guerre Baatorienne (+3)",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "184"
+      "str": "184",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "170",
       "max": "242"
     },
-    "otherSource": "Invoc."
+    "otherSource": "Invoc.",
+    "obtention": [],
+    "buyPrice": "Invoc.",
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Dague de l'assassin (+3)",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "184"
+      "str": "184",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "133",
       "max": "186"
     },
-    "otherSource": "Coffre"
+    "otherSource": "Coffre",
+    "obtention": [],
+    "buyPrice": "Coffre",
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Fléau d'armes de mithril",
@@ -25520,13 +26797,21 @@
     "source": "Arme",
     "prerequisites": {
       "str": "210",
-      "wis": "169"
+      "wis": "169",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "159",
       "max": "221"
     },
-    "buyPrice": "230691"
+    "buyPrice": "230691",
+    "obtention": [],
+    "sellPrice": "76897",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Fléau d'armes de mithril béni",
@@ -25534,13 +26819,21 @@
     "source": "Arme",
     "prerequisites": {
       "str": "210",
-      "wis": "169"
+      "wis": "169",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "177",
       "max": "249"
     },
-    "buyPrice": "692073"
+    "buyPrice": "692073",
+    "obtention": [],
+    "sellPrice": "153794",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Fléau d'armes de mithril sacré",
@@ -25548,13 +26841,21 @@
     "source": "Arme",
     "prerequisites": {
       "str": "210",
-      "wis": "169"
+      "wis": "169",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "195",
       "max": "276"
     },
-    "buyPrice": "2306910"
+    "buyPrice": "2306910",
+    "obtention": [],
+    "sellPrice": "230691",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Etoile de l'aube (+3)",
@@ -25562,143 +26863,242 @@
     "source": "Arme",
     "prerequisites": {
       "str": "210",
-      "wis": "169"
+      "wis": "169",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "219",
       "max": "313"
     },
-    "buyPrice": "9227640"
+    "buyPrice": "9227640",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Cimeterre renforcé",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "227"
+      "str": "227",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "128",
       "max": "173"
     },
-    "buyPrice": "129874"
+    "buyPrice": "129874",
+    "obtention": [],
+    "sellPrice": "43291",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Cimeterre renforcé enchanté",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "227"
+      "str": "227",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "141",
       "max": "193"
     },
-    "buyPrice": "389622"
+    "buyPrice": "389622",
+    "obtention": [],
+    "sellPrice": "86582",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Cimeterre renforcé runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "227"
+      "str": "227",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "154",
       "max": "213"
     },
-    "buyPrice": "1298740"
+    "buyPrice": "1298740",
+    "obtention": [],
+    "sellPrice": "129874",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Lame d'adamantite enchantée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "242"
+      "str": "242",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "146",
       "max": "199"
     },
-    "buyPrice": "443211"
+    "buyPrice": "443211",
+    "obtention": [],
+    "sellPrice": "98491",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Lame d'adamantite runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "242"
+      "str": "242",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "159",
       "max": "219"
     },
-    "buyPrice": "1477370"
+    "buyPrice": "1477370",
+    "obtention": [],
+    "sellPrice": "147737",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Lame du Héron (+3)",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "242"
+      "str": "242",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "177",
       "max": "246"
     },
-    "buyPrice": "5909480"
+    "buyPrice": "5909480",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée bâtarde de qualité",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "242"
+      "str": "242",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "145",
       "max": "197"
     },
-    "buyPrice": "147737"
+    "buyPrice": "147737",
+    "obtention": [],
+    "sellPrice": "49245",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée bâtarde de qualité enchantée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "242"
+      "str": "242",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "160",
       "max": "220"
     },
-    "buyPrice": "443211"
+    "buyPrice": "443211",
+    "obtention": [],
+    "sellPrice": "98491",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée bâtarde de qualité runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "242"
+      "str": "242",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "175",
       "max": "243"
     },
-    "buyPrice": "1477370"
+    "buyPrice": "1477370",
+    "obtention": [],
+    "sellPrice": "147737",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée de la rose noire (+3)",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "242"
+      "str": "242",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "195",
       "max": "274"
     },
-    "otherSource": "Coffre"
+    "otherSource": "Coffre",
+    "obtention": [],
+    "buyPrice": "Coffre",
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Fléau d'armes antique",
@@ -25706,13 +27106,21 @@
     "source": "Arme",
     "prerequisites": {
       "str": "260",
-      "wis": "206"
+      "wis": "206",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "181",
       "max": "255"
     },
-    "buyPrice": "360269"
+    "buyPrice": "360269",
+    "obtention": [],
+    "sellPrice": "120089",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Fléau d'armes antique béni",
@@ -25720,13 +27128,21 @@
     "source": "Arme",
     "prerequisites": {
       "str": "260",
-      "wis": "206"
+      "wis": "206",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "201",
       "max": "286"
     },
-    "buyPrice": "1080807"
+    "buyPrice": "1080807",
+    "obtention": [],
+    "sellPrice": "240179",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Fléau d'armes antique sacré",
@@ -25734,13 +27150,21 @@
     "source": "Arme",
     "prerequisites": {
       "str": "260",
-      "wis": "206"
+      "wis": "206",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "221",
       "max": "317"
     },
-    "buyPrice": "3602690"
+    "buyPrice": "3602690",
+    "obtention": [],
+    "sellPrice": "360269",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Fléau d'armes antique des hauts elfes (+3)",
@@ -25748,52 +27172,88 @@
     "source": "Arme",
     "prerequisites": {
       "str": "260",
-      "wis": "206"
+      "wis": "206",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "247",
       "max": "359"
     },
-    "otherSource": "Drop"
+    "otherSource": "Drop",
+    "obtention": [],
+    "buyPrice": "Drop",
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hache de guerre de qualité",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "271"
+      "str": "271",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "186",
       "max": "257"
     },
-    "buyPrice": "186913"
+    "buyPrice": "186913",
+    "obtention": [],
+    "sellPrice": "62304",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hache de guerre de qualité enchantée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "271"
+      "str": "271",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "206",
       "max": "288"
     },
-    "buyPrice": "560739"
+    "buyPrice": "560739",
+    "obtention": [],
+    "sellPrice": "124608",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée longue de mithril enchantée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "271"
+      "str": "271",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "159",
       "max": "216"
     },
-    "buyPrice": "560739"
+    "buyPrice": "560739",
+    "obtention": [],
+    "sellPrice": "124608",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Masse skraugbashor",
@@ -25803,624 +27263,1056 @@
       "str": "280",
       "dex": "20",
       "int": "25",
-      "wis": "20"
+      "wis": "20",
+      "end": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "153",
       "max": "205"
     },
-    "otherSource": "Quête"
+    "otherSource": "Quête",
+    "obtention": [],
+    "buyPrice": "Quête",
+    "sellPrice": "10284",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Glaive de mithril enchanté",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "285"
+      "str": "285",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "174",
       "max": "237"
     },
-    "buyPrice": "624678"
+    "buyPrice": "624678",
+    "obtention": [],
+    "sellPrice": "138817",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Glaive de mithril runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "285"
+      "str": "285",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "190",
       "max": "261"
     },
-    "buyPrice": "2082260"
+    "buyPrice": "2082260",
+    "obtention": [],
+    "sellPrice": "208226",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Lame ancienne",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "300"
+      "str": "300",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "167",
       "max": "224"
     },
-    "buyPrice": "230691"
+    "buyPrice": "230691",
+    "obtention": [],
+    "sellPrice": "76897",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Lame ancienne enchantée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "300"
+      "str": "300",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "183",
       "max": "249"
     },
-    "buyPrice": "692073"
+    "buyPrice": "692073",
+    "obtention": [],
+    "sellPrice": "153794",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Lame vipérine (+3)",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "300"
+      "str": "300",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "222",
       "max": "308"
     },
-    "buyPrice": "9227640"
+    "buyPrice": "9227640",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hache de qualité a deux tranchants enchantée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "300"
+      "str": "300",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "288",
       "max": "407"
     },
-    "buyPrice": "692073"
+    "buyPrice": "692073",
+    "obtention": [],
+    "sellPrice": "153794",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hache de qualité a deux tranchants runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "300"
+      "str": "300",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "318",
       "max": "453"
     },
-    "buyPrice": "2306910"
+    "buyPrice": "2306910",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hache lormyrienne (+3)",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "300"
+      "str": "300",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "359",
       "max": "515"
     },
-    "buyPrice": "9227640"
+    "buyPrice": "9227640",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Cimeterre de mithril",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "300"
+      "str": "300",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "172",
       "max": "231"
     },
-    "buyPrice": "230691"
+    "buyPrice": "230691",
+    "obtention": [],
+    "sellPrice": "76897",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Cimeterre de mithril enchanté",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "300"
+      "str": "300",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "189",
       "max": "258"
     },
-    "buyPrice": "692073"
+    "buyPrice": "692073",
+    "obtention": [],
+    "sellPrice": "153794",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Cimeterre de mithril runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "300"
+      "str": "300",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "206",
       "max": "284"
     },
-    "buyPrice": "2306910"
+    "buyPrice": "2306910",
+    "obtention": [],
+    "sellPrice": "230691",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée bâtarde de mithril",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "314"
+      "str": "314",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "189",
       "max": "254"
     },
-    "buyPrice": "254305"
+    "buyPrice": "254305",
+    "obtention": [],
+    "sellPrice": "84768",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée bâtarde de mithril enchantée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "314"
+      "str": "314",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "207",
       "max": "284"
     },
-    "buyPrice": "762915"
+    "buyPrice": "762915",
+    "obtention": [],
+    "sellPrice": "169536",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée bâtarde de mithril runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "314"
+      "str": "314",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "226",
       "max": "314"
     },
-    "buyPrice": "2543050"
+    "buyPrice": "2543050",
+    "obtention": [],
+    "sellPrice": "254305",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée a 2 mains en mithril",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "329"
+      "str": "329",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "219",
       "max": "303"
     },
-    "buyPrice": "279071"
+    "buyPrice": "279071",
+    "obtention": [],
+    "sellPrice": "93023",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée a 2 mains en mithril enchantée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "329"
+      "str": "329",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "243",
       "max": "339"
     },
-    "buyPrice": "837213"
+    "buyPrice": "837213",
+    "obtention": [],
+    "sellPrice": "186047",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée a 2 mains en mithril runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "329"
+      "str": "329",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "266",
       "max": "375"
     },
-    "buyPrice": "2790710"
+    "buyPrice": "2790710",
+    "obtention": [],
+    "sellPrice": "279071",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Claymore en mithril (+3)",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "329"
+      "str": "329",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "298",
       "max": "424"
     },
-    "buyPrice": "11162840"
+    "buyPrice": "11162840",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Glaive d'adamantite",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "358"
+      "str": "358",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "186",
       "max": "252"
     },
-    "buyPrice": "332053"
+    "buyPrice": "332053",
+    "obtention": [],
+    "sellPrice": "110684",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Glaive d'adamantite enchanté",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "358"
+      "str": "358",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "204",
       "max": "280"
     },
-    "buyPrice": "996159"
+    "buyPrice": "996159",
+    "obtention": [],
+    "sellPrice": "221368",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hache de guerre de mithril",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "358"
+      "str": "358",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "230",
       "max": "320"
     },
-    "buyPrice": "332053"
+    "buyPrice": "332053",
+    "obtention": [],
+    "sellPrice": "110684",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hache de guerre de mithril enchantée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "358"
+      "str": "358",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "255",
       "max": "358"
     },
-    "buyPrice": "996159"
+    "buyPrice": "996159",
+    "obtention": [],
+    "sellPrice": "221368",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hache de guerre de mithril runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "358"
+      "str": "358",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "279",
       "max": "396"
     },
-    "buyPrice": "3320530"
+    "buyPrice": "3320530",
+    "obtention": [],
+    "sellPrice": "332053",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Cimeterre d'adamantite",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "372"
+      "str": "372",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "197",
       "max": "268"
     },
-    "buyPrice": "360269"
+    "buyPrice": "360269",
+    "obtention": [],
+    "sellPrice": "120089",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Cimeterre d'adamantite enchanté",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "372"
+      "str": "372",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "216",
       "max": "298"
     },
-    "buyPrice": "1080807"
+    "buyPrice": "1080807",
+    "obtention": [],
+    "sellPrice": "240179",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée bâtarde d'adamantite",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "387"
+      "str": "387",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "214",
       "max": "294"
     },
-    "buyPrice": "389637"
+    "buyPrice": "389637",
+    "obtention": [],
+    "sellPrice": "129879",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée bâtarde d'adamantite enchantée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "387"
+      "str": "387",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "235",
       "max": "327"
     },
-    "buyPrice": "1168911"
+    "buyPrice": "1168911",
+    "obtention": [],
+    "sellPrice": "259758",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée bâtarde d'adamantite runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "387"
+      "str": "387",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "256",
       "max": "360"
     },
-    "buyPrice": "3869370"
+    "buyPrice": "3869370",
+    "obtention": [],
+    "sellPrice": "389637",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée à 2 mains d'adamantite",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "401"
+      "str": "401",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "248",
       "max": "347"
     },
-    "buyPrice": "420154"
+    "buyPrice": "420154",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée à 2 mains d'adamantite enchantée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "401"
+      "str": "401",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "274",
       "max": "388"
     },
-    "buyPrice": "1260462"
+    "buyPrice": "1260462",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée à 2 mains d'adamantite runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "401"
+      "str": "401",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "300",
       "max": "428"
     },
-    "buyPrice": "4201540"
+    "buyPrice": "4201540",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée d'adamantite incrustée de saphir (+3)",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "401"
+      "str": "401",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "334",
       "max": "483"
     },
-    "buyPrice": "16806160"
+    "buyPrice": "16806160",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hache à 2 tranchants de mithril",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "416"
+      "str": "416",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "313",
       "max": "449"
     },
-    "buyPrice": "451823"
+    "buyPrice": "451823",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hache à 2 tranchants de mithril enchantée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "416"
+      "str": "416",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "348",
       "max": "504"
     },
-    "buyPrice": "1355469"
+    "buyPrice": "1355469",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hache à 2 tranchants de mithril runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "416"
+      "str": "416",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "383",
       "max": "560"
     },
-    "buyPrice": "4518230"
+    "buyPrice": "4518230",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Francisque en fer ancien (+3)",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "416"
+      "str": "416",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "430",
       "max": "634"
     },
-    "buyPrice": "18072920"
+    "buyPrice": "18072920",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée bâtarde ancienne",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "532"
+      "str": "532",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "268",
       "max": "373"
     },
-    "buyPrice": "746587"
+    "buyPrice": "746587",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée bâtarde ancienne enchantée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "532"
+      "str": "532",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "293",
       "max": "413"
     },
-    "buyPrice": "2239761"
+    "buyPrice": "2239761",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée bâtarde ancienne runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "532"
+      "str": "532",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "318",
       "max": "454"
     },
-    "buyPrice": "7465870"
+    "buyPrice": "7465870",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée à 2 mains ancienne",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "590"
+      "str": "590",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "325",
       "max": "463"
     },
-    "buyPrice": "921581"
+    "buyPrice": "921581",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée à 2 mains ancienne enchantée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "590"
+      "str": "590",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "357",
       "max": "515"
     },
-    "buyPrice": "2764743"
+    "buyPrice": "2764743",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée à 2 mains ancienne runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "590"
+      "str": "590",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "388",
       "max": "568"
     },
-    "buyPrice": "9215810"
+    "buyPrice": "9215810",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Epée ancienne des hauts-elfes (+3)",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "590"
+      "str": "590",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "431",
       "max": "638"
     },
-    "otherSource": "Drop"
+    "otherSource": "Drop",
+    "obtention": [],
+    "buyPrice": "Drop",
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Haches anciennes à 2 tranchants",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "590"
+      "str": "590",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "396",
       "max": "580"
     },
-    "buyPrice": "921581"
+    "buyPrice": "921581",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Haches anciennes à 2 tranchants enchantée",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "590"
+      "str": "590",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "438",
       "max": "649"
     },
-    "buyPrice": "2764743"
+    "buyPrice": "2764743",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Haches anciennes à 2 tranchants runique",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "590"
+      "str": "590",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "480",
       "max": "719"
     },
-    "buyPrice": "9215810"
+    "buyPrice": "9215810",
+    "obtention": [],
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Hache ancienne des hauts-elfes (+3)",
     "quantity": 1,
     "source": "Arme",
     "prerequisites": {
-      "str": "590"
+      "str": "590",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "damage": {
       "min": "537",
       "max": "813"
     },
-    "otherSource": "Drop"
+    "otherSource": "Drop",
+    "obtention": [],
+    "buyPrice": "Drop",
+    "sellPrice": "0",
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Gourdin de Gob' (+3)",
@@ -28073,5 +29965,825 @@
     "secondary": {},
     "buyPrice": "1",
     "sellPrice": "0"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Poignard Rouillé",
+    "prerequisites": {
+      "str": "0",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "1",
+      "max": "4"
+    },
+    "buyPrice": "29",
+    "sellPrice": "9"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Poignard Rouillé enchanté",
+    "prerequisites": {
+      "str": "0",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "2",
+      "max": "4"
+    },
+    "buyPrice": "87",
+    "sellPrice": "19"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Poignard Rouillé runique",
+    "prerequisites": {
+      "str": "0",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "2",
+      "max": "5"
+    },
+    "buyPrice": "290",
+    "sellPrice": "29"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée courte rouillée",
+    "prerequisites": {
+      "str": "0",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "2",
+      "max": "4"
+    },
+    "buyPrice": "29",
+    "sellPrice": "9"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée courte rouillée enchantée",
+    "prerequisites": {
+      "str": "0",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "2",
+      "max": "5"
+    },
+    "buyPrice": "87",
+    "sellPrice": "19"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Bô",
+    "prerequisites": {
+      "str": "15",
+      "end": "0",
+      "dex": "0",
+      "int": "47",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "14",
+      "max": "22"
+    },
+    "buyPrice": "3966",
+    "sellPrice": "1322"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Bô de puissance",
+    "prerequisites": {
+      "str": "15",
+      "end": "0",
+      "dex": "0",
+      "int": "47",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "18",
+      "max": "29"
+    },
+    "buyPrice": "39660",
+    "sellPrice": "3966"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée longue rouillée",
+    "prerequisites": {
+      "str": "24",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "6",
+      "max": "11"
+    },
+    "buyPrice": "605",
+    "sellPrice": "201"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée longue rouillée enchantée",
+    "prerequisites": {
+      "str": "24",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "7",
+      "max": "12"
+    },
+    "buyPrice": "1815",
+    "sellPrice": "403"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée longue rouillée runique",
+    "prerequisites": {
+      "str": "24",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "8",
+      "max": "14"
+    },
+    "buyPrice": "6050",
+    "sellPrice": "605"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée du chaos",
+    "prerequisites": {
+      "str": "53",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "7",
+      "max": "48"
+    },
+    "buyPrice": "Quête/Drop",
+    "sellPrice": "1755"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée courte polie",
+    "prerequisites": {
+      "str": "53",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "22",
+      "max": "31"
+    },
+    "buyPrice": "5266",
+    "sellPrice": "1755"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée courte polie enchantée",
+    "prerequisites": {
+      "str": "53",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "24",
+      "max": "35"
+    },
+    "buyPrice": "15798",
+    "sellPrice": "3510"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée courte polie runique",
+    "prerequisites": {
+      "str": "53",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "26",
+      "max": "39"
+    },
+    "buyPrice": "52660",
+    "sellPrice": "5266"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée de fureur",
+    "prerequisites": {
+      "str": "59",
+      "end": "0",
+      "dex": "0",
+      "int": "21",
+      "wis": "24",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "25",
+      "max": "36"
+    },
+    "buyPrice": "Drop",
+    "sellPrice": "2521"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Marteau de révélation",
+    "prerequisites": {
+      "str": "61",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "53",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "36",
+      "max": "52"
+    },
+    "buyPrice": "Coffre",
+    "sellPrice": "4843"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée de la nuit",
+    "prerequisites": {
+      "str": "65",
+      "end": "0",
+      "dex": "0",
+      "int": "30",
+      "wis": "25",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "30",
+      "max": "42"
+    },
+    "buyPrice": "Quête",
+    "sellPrice": "3370"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée longue polie",
+    "prerequisites": {
+      "str": "68",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "31",
+      "max": "43"
+    },
+    "buyPrice": "9323",
+    "sellPrice": "3107"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée longue polie enchantée",
+    "prerequisites": {
+      "str": "68",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "34",
+      "max": "48"
+    },
+    "buyPrice": "27969",
+    "sellPrice": "6215"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée longue polie runique",
+    "prerequisites": {
+      "str": "68",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "37",
+      "max": "54"
+    },
+    "buyPrice": "93230",
+    "sellPrice": "9323"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Gourdin du troll",
+    "prerequisites": {
+      "str": "79",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "36",
+      "max": "50"
+    },
+    "buyPrice": "Drop",
+    "sellPrice": "4465"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Lame assassine",
+    "prerequisites": {
+      "str": "110",
+      "end": "0",
+      "dex": "65",
+      "int": "15",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "69",
+      "max": "96"
+    },
+    "buyPrice": "Quête",
+    "sellPrice": "19873"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée courte en acier trempé",
+    "prerequisites": {
+      "str": "111",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "54",
+      "max": "73"
+    },
+    "buyPrice": "28394",
+    "sellPrice": "9464"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée courte en acier trempé enchantée",
+    "prerequisites": {
+      "str": "111",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "59",
+      "max": "81"
+    },
+    "buyPrice": "85182",
+    "sellPrice": "18929"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée courte en acier trempé runique",
+    "prerequisites": {
+      "str": "111",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "64",
+      "max": "90"
+    },
+    "buyPrice": "283940",
+    "sellPrice": "28394"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée longue en acier trempé",
+    "prerequisites": {
+      "str": "126",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "64",
+      "max": "87"
+    },
+    "buyPrice": "37053",
+    "sellPrice": "12351"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée longue en acier trempé runique",
+    "prerequisites": {
+      "str": "126",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "76",
+      "max": "106"
+    },
+    "buyPrice": "370530",
+    "sellPrice": "37053"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Lame d'heroisme",
+    "prerequisites": {
+      "str": "155",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "91",
+      "max": "125"
+    },
+    "buyPrice": "Drop",
+    "sellPrice": "38747"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée courte de qualité",
+    "prerequisites": {
+      "str": "184",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "94",
+      "max": "126"
+    },
+    "buyPrice": "83191",
+    "sellPrice": "27730"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée courte de qualité enchantée",
+    "prerequisites": {
+      "str": "184",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "103",
+      "max": "139"
+    },
+    "buyPrice": "249573",
+    "sellPrice": "55460"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée courte de qualité runique",
+    "prerequisites": {
+      "str": "184",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "112",
+      "max": "153"
+    },
+    "buyPrice": "831910",
+    "sellPrice": "83191"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Lame de Mithril",
+    "prerequisites": {
+      "str": "184",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "100",
+      "max": "135"
+    },
+    "buyPrice": "83191",
+    "sellPrice": "21063"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée longue de qualité",
+    "prerequisites": {
+      "str": "198",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "104",
+      "max": "140"
+    },
+    "buyPrice": "97601",
+    "sellPrice": "32553"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée longue de qualité enchantée",
+    "prerequisites": {
+      "str": "198",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "114",
+      "max": "156"
+    },
+    "buyPrice": "292803",
+    "sellPrice": "65067"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée longue de qualité runique",
+    "prerequisites": {
+      "str": "198",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "125",
+      "max": "172"
+    },
+    "buyPrice": "976010",
+    "sellPrice": "97601"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée vorpale de drachen",
+    "prerequisites": {
+      "str": "230",
+      "end": "0",
+      "dex": "60",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "116",
+      "max": "150"
+    },
+    "buyPrice": "Drop",
+    "sellPrice": "0"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Lame-gemme sombre",
+    "prerequisites": {
+      "str": "242",
+      "end": "0",
+      "dex": "0",
+      "int": "53",
+      "wis": "43",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "146",
+      "max": "198"
+    },
+    "buyPrice": "Quête",
+    "sellPrice": "53995"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée de puissance de crystal",
+    "prerequisites": {
+      "str": "251",
+      "end": "0",
+      "dex": "21",
+      "int": "53",
+      "wis": "50",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "149",
+      "max": "201"
+    },
+    "buyPrice": "Quête",
+    "sellPrice": "77615"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée longue de mithril",
+    "prerequisites": {
+      "str": "271",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "145",
+      "max": "194"
+    },
+    "buyPrice": "186913",
+    "sellPrice": "62304"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Epée longue de mithril runique",
+    "prerequisites": {
+      "str": "271",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "174",
+      "max": "238"
+    },
+    "buyPrice": "1869130",
+    "sellPrice": "186913"
+  },
+  {
+    "quantity": 1,
+    "source": "Arme",
+    "obtention": [],
+    "name": "Hache de qualité a deux tranchants",
+    "prerequisites": {
+      "str": "300",
+      "end": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "damage": {
+      "min": "258",
+      "max": "362"
+    },
+    "buyPrice": "230691",
+    "sellPrice": "76897"
   }
 ]
