@@ -1944,7 +1944,11 @@
     "source": "Amulette",
     "prerequisites": {
       "int": "27",
-      "wis": "26"
+      "wis": "26",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "secondary": {
       "Attaque": "+10",
@@ -1952,7 +1956,10 @@
     },
     "bonuses": {
       "dex": "+5"
-    }
+    },
+    "obtention": [
+      "Quête accès RD good"
+    ]
   },
   {
     "name": "Défenderesse",
@@ -2007,7 +2014,11 @@
     "source": "Anneau",
     "prerequisites": {
       "int": "37",
-      "wis": "41"
+      "wis": "41",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "bonuses": {
       "dex": "+3",
@@ -2016,7 +2027,12 @@
       "wis": "+3",
       "str": "+3",
       "int": "+3"
-    }
+    },
+    "obtention": [
+      "Quête de l'Anneau de Platine (uniquement la première fois).",
+      "Aloysius Starbolt (RD)"
+    ],
+    "secondary": {}
   },
   {
     "name": "Bouclier de bois",
@@ -5431,11 +5447,20 @@
     "source": "Anneau",
     "prerequisites": {
       "int": "15",
-      "wis": "65"
+      "wis": "65",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "bonuses": {
       "wis": "+20"
-    }
+    },
+    "obtention": [
+      "Quête de l'Anneau",
+      "de foi (RD)"
+    ],
+    "secondary": {}
   },
   {
     "name": "Bottes noires en peau de lézard",
@@ -5501,11 +5526,19 @@
     "source": "Amulette",
     "prerequisites": {
       "int": "75",
-      "wis": "55"
+      "wis": "55",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "secondary": {
       "Esquive": "+100"
-    }
+    },
+    "obtention": [
+      "Quête de l'amulette éthérée (RD)"
+    ],
+    "bonuses": {}
   },
   {
     "name": "Sachet de feuilles de pissenlit",
@@ -5626,7 +5659,10 @@
     "prerequisites": {
       "int": "32",
       "wis": "38",
-      "end": "35"
+      "end": "35",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "secondary": {
       "Attaque": "+10",
@@ -5635,7 +5671,10 @@
     },
     "bonuses": {
       "ca": "+5"
-    }
+    },
+    "obtention": [
+      "Quête du bracelet orque (RD)"
+    ]
   },
   {
     "name": "Cape de résistance au feu",
@@ -5725,7 +5764,11 @@
     "source": "Anneau",
     "prerequisites": {
       "int": "90",
-      "wis": "65"
+      "wis": "65",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "secondary": {
       "Puissance Air": "+10",
@@ -5733,7 +5776,12 @@
       "Puissance Eau": "+10",
       "Puissance Terre": "+10",
       "Puissance Feu": "+10"
-    }
+    },
+    "obtention": [
+      "Grott RD,",
+      "Charwinguhm (Sud de Grott, RD) Gunthrek (Île de Bane)"
+    ],
+    "bonuses": {}
   },
   {
     "name": "Hachette de qualité runique",
@@ -6507,11 +6555,19 @@
     "source": "Bracelet",
     "prerequisites": {
       "int": "40",
-      "wis": "53"
+      "wis": "53",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "bonuses": {
       "str": "+25"
-    }
+    },
+    "obtention": [
+      "Bane Gwengad (RD)"
+    ],
+    "secondary": {}
   },
   {
     "name": "Collier orc rudimentaire",
@@ -6519,7 +6575,11 @@
     "source": "Amulette",
     "prerequisites": {
       "int": "29",
-      "wis": "36"
+      "wis": "36",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "secondary": {
       "Attaque": "+25",
@@ -6527,7 +6587,11 @@
     },
     "bonuses": {
       "ca": "+2"
-    }
+    },
+    "obtention": [
+      "Roshnak Tul",
+      "( camp orc AR)"
+    ]
   },
   {
     "name": "Anneau d'onyx",
@@ -6535,7 +6599,11 @@
     "source": "Anneau",
     "prerequisites": {
       "int": "29",
-      "wis": "31"
+      "wis": "31",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "bonuses": {
       "dex": "+2",
@@ -6544,7 +6612,12 @@
       "str": "+2",
       "wis": "+2",
       "end": "+2"
-    }
+    },
+    "obtention": [
+      "Bane Gwengad (RD)",
+      "Craft bijoutier lev 6"
+    ],
+    "secondary": {}
   },
   {
     "name": "Anneau de pierre de lune",
@@ -6552,12 +6625,20 @@
     "source": "Anneau",
     "prerequisites": {
       "int": "19",
-      "wis": "46"
+      "wis": "46",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "bonuses": {
       "ca": "+2",
       "wis": "+10"
-    }
+    },
+    "obtention": [
+      "Golem de chair (RD)"
+    ],
+    "secondary": {}
   },
   {
     "name": "Anneau de pierre de sang",
@@ -6565,12 +6646,21 @@
     "source": "Anneau",
     "prerequisites": {
       "int": "30",
-      "wis": "18"
+      "wis": "18",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "bonuses": {
       "ca": "+1",
       "int": "+5"
-    }
+    },
+    "obtention": [
+      "Quête de l'Anneau de Pierre de sang (RD)",
+      "Zorglub (SH)"
+    ],
+    "secondary": {}
   },
   {
     "name": "Anneau de précision",
@@ -6578,7 +6668,11 @@
     "source": "Anneau",
     "prerequisites": {
       "int": "29",
-      "wis": "29"
+      "wis": "29",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "secondary": {
       "Attaque": "+15",
@@ -6586,7 +6680,11 @@
     },
     "bonuses": {
       "dex": "+5"
-    }
+    },
+    "obtention": [
+      "Quête de l'Anneau de Précision (RD)",
+      "Quête du Marché Noir (achat) (AR)"
+    ]
   },
   {
     "name": "Collier de pierres de sang",
@@ -6607,7 +6705,11 @@
     "source": "Anneau",
     "prerequisites": {
       "int": "27",
-      "wis": "33"
+      "wis": "33",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "secondary": {
       "Attaque": "+25",
@@ -6615,7 +6717,11 @@
     },
     "bonuses": {
       "ca": "+1"
-    }
+    },
+    "obtention": [
+      "Chef Minotaure et",
+      "Shaman Minotaure (RD)"
+    ]
   },
   {
     "name": "Robe violette",
@@ -6862,7 +6968,22 @@
   {
     "name": "Anneau des ténèbres",
     "quantity": 1,
-    "source": "Anneau"
+    "source": "Anneau",
+    "obtention": [
+      "Quête accès RD evil (AR)",
+      "Coffre des ténèbres (AR)",
+      "Griroesh (AR)"
+    ],
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    },
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Anneau des Initiés",
@@ -7289,11 +7410,19 @@
     "source": "Anneau",
     "prerequisites": {
       "int": "15",
-      "wis": "90"
+      "wis": "90",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "bonuses": {
       "wis": "+30"
-    }
+    },
+    "obtention": [
+      "Quête de l'anneau de vraie foi (SH)"
+    ],
+    "secondary": {}
   },
   {
     "name": "Fiole d'eau bénite",
@@ -7318,11 +7447,22 @@
   {
     "name": "Symbole d'espoir",
     "quantity": 1,
-    "source": "Amulette",
+    "source": "Bijou",
     "prerequisites": {
       "int": "25",
-      "wis": "68"
-    }
+      "wis": "68",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
+    },
+    "obtention": [
+      "Marchand RD (10K).",
+      "Matelot (donjon",
+      "Coupe-jarret RD)"
+    ],
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Perle de la sagesse",
@@ -9823,11 +9963,14 @@
   {
     "name": "Coeur de Jafo",
     "quantity": 1,
-    "source": "Amulette",
+    "source": "Bijou",
     "prerequisites": {
       "int": "95",
       "wis": "110",
-      "end": "10"
+      "end": "10",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "bonuses": {
       "dex": "+10",
@@ -9836,7 +9979,11 @@
       "int": "+10",
       "wis": "+10",
       "end": "+10"
-    }
+    },
+    "obtention": [
+      "Coffre grotte guêpes SH"
+    ],
+    "secondary": {}
   },
   {
     "name": "Anneau du roublard",
@@ -9845,7 +9992,10 @@
     "prerequisites": {
       "int": "52",
       "wis": "41",
-      "dex": "30"
+      "dex": "30",
+      "end": "0",
+      "str": "0",
+      "attack": "0"
     },
     "secondary": {
       "Vol": "+10",
@@ -9854,7 +10004,11 @@
     "bonuses": {
       "dex": "+25",
       "ca": "+2"
-    }
+    },
+    "obtention": [
+      "Arpenteur de la nuit,",
+      "coffres (SH)"
+    ]
   },
   {
     "name": "Bague-araignée",
@@ -9863,7 +10017,10 @@
     "prerequisites": {
       "int": "113",
       "wis": "30",
-      "end": "10"
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "bonuses": {
       "ca": "+5",
@@ -9871,7 +10028,10 @@
     },
     "secondary": {
       "Puissance Nécro": "+10"
-    }
+    },
+    "obtention": [
+      "Coffre Grotte Guêpes (SH)"
+    ]
   },
   {
     "name": "Peau d'antilope",
@@ -9884,14 +10044,21 @@
     "source": "Anneau",
     "prerequisites": {
       "int": "63",
-      "wis": "55"
+      "wis": "55",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "secondary": {
       "Esquive": "+25"
     },
     "bonuses": {
       "dex": "+25"
-    }
+    },
+    "obtention": [
+      "Coffre Grotte guêpes (SH)"
+    ]
   },
   {
     "name": "Sang de dragon",
@@ -9905,13 +10072,20 @@
     "prerequisites": {
       "int": "15",
       "str": "30",
-      "dex": "50"
+      "dex": "50",
+      "end": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "secondary": {
       "Attaque": "+25",
       "Esquive": "+25",
       "Parade": "+10"
-    }
+    },
+    "obtention": [
+      "Coffre Grotte Guêpes (SH)"
+    ],
+    "bonuses": {}
   },
   {
     "name": "Anneau du ranger",
@@ -9920,7 +10094,10 @@
     "prerequisites": {
       "int": "17",
       "wis": "13",
-      "dex": "50"
+      "dex": "50",
+      "end": "0",
+      "str": "0",
+      "attack": "0"
     },
     "secondary": {
       "Archerie": "+25",
@@ -9929,7 +10106,10 @@
     },
     "bonuses": {
       "ca": "+1"
-    }
+    },
+    "obtention": [
+      "Coffre Grotte Guêpes (SH)"
+    ]
   },
   {
     "name": "Scalp de Moon Tug",
@@ -9975,7 +10155,8 @@
       "wis": "25",
       "end": "22",
       "str": "30",
-      "dex": "26"
+      "dex": "26",
+      "attack": "0"
     },
     "bonuses": {
       "str": "+10"
@@ -9987,7 +10168,10 @@
       "Guérison rapide": "+5",
       "Coup Paralysant": "+5",
       "Immobilisation": "+10"
-    }
+    },
+    "obtention": [
+      "Quête de l'Anneau du Lion (SH)"
+    ]
   },
   {
     "name": "Epée de puissance de Crystal",
@@ -10680,12 +10864,22 @@
     "quantity": 1,
     "source": "Anneau",
     "prerequisites": {
-      "wis": "50"
+      "wis": "50",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
     },
     "bonuses": {
       "ca": "+2",
       "wis": "+5"
-    }
+    },
+    "obtention": [
+      "Matelot cambusier (donjon coupe-jarret).",
+      "Vendeur Omar Hald (SC)"
+    ],
+    "secondary": {}
   },
   {
     "name": "Collier d'Athena",
@@ -10705,7 +10899,11 @@
     "source": "Anneau",
     "prerequisites": {
       "int": "14",
-      "wis": "66"
+      "wis": "66",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "bonuses": {
       "ca": "+2",
@@ -10714,7 +10912,11 @@
     "secondary": {
       "Puissance Lumière": "+5",
       "Résistance Nécro": "+5"
-    }
+    },
+    "obtention": [
+      "Matelot contrebandier donjon coupe-jarret RD.",
+      "Vendeur Omar Hald (SC)"
+    ]
   },
   {
     "name": "Crâne de Liridell fendu",
@@ -10727,7 +10929,11 @@
     "source": "Anneau",
     "prerequisites": {
       "int": "20",
-      "wis": "25"
+      "wis": "25",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "bonuses": {
       "str": "+10"
@@ -10736,7 +10942,14 @@
       "Attaque": "+25",
       "Esquive": "-25",
       "Immobilisation": "+5"
-    }
+    },
+    "obtention": [
+      "Fou (Asile , AR)",
+      "Mad Madrigan (Asile AR)",
+      "Coffres (Crypte de SH).",
+      "Plolifique (Donjon des bijoux d'Eléonore DI, RD)",
+      "Craft bijoutier lev 18"
+    ]
   },
   {
     "name": "Plastron d'armure océane",
@@ -11061,6 +11274,19 @@
     },
     "bonuses": {
       "dex": "+10"
+    },
+    "obtention": [
+      "Coffre (L'Asile,",
+      "AR)",
+      "Dérangé (L'Asile, AR)"
+    ],
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     }
   },
   {
@@ -11241,12 +11467,20 @@
     "prerequisites": {
       "int": "15",
       "wis": "15",
-      "dex": "60"
+      "dex": "60",
+      "end": "0",
+      "str": "0",
+      "attack": "0"
     },
     "secondary": {
       "Se Faufiler": "+20",
       "Premiers Soins": "+10"
-    }
+    },
+    "obtention": [
+      "Rat vampire (FNR - RD)",
+      "Coffres (FNR - RD)"
+    ],
+    "bonuses": {}
   },
   {
     "name": "Parchemin de protection",
@@ -11357,16 +11591,37 @@
     "quantity": 1,
     "source": "Anneau",
     "prerequisites": {
-      "wis": "25"
-    }
+      "wis": "25",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
+    },
+    "obtention": [
+      "Marchand Omar Hald (SC)"
+    ],
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Anneau du prêtre",
     "quantity": 1,
     "source": "Anneau",
     "prerequisites": {
-      "wis": "75"
-    }
+      "wis": "75",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "0",
+      "attack": "0"
+    },
+    "obtention": [
+      "Matelot canonnier (donjon coupe-jarret).",
+      "Vendeur Omar Hald (SC)"
+    ],
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Anneau du Gladiateur",
@@ -11396,7 +11651,8 @@
       "wis": "40",
       "end": "35",
       "str": "80",
-      "dex": "63"
+      "dex": "63",
+      "attack": "500"
     },
     "secondary": {
       "Attaque": "+50",
@@ -11410,7 +11666,10 @@
     },
     "bonuses": {
       "ca": "+10"
-    }
+    },
+    "obtention": [
+      "Lord StoneCrest (SH)"
+    ]
   },
   {
     "name": "Cape d'Elemendil",
@@ -11930,7 +12189,11 @@
     "source": "Bracelet",
     "prerequisites": {
       "str": "60",
-      "dex": "50"
+      "dex": "50",
+      "end": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
     },
     "bonuses": {
       "dex": "+25",
@@ -11938,7 +12201,11 @@
     },
     "secondary": {
       "Immobilisation": "+10"
-    }
+    },
+    "obtention": [
+      "Vicaire Vharme",
+      "Vicaire Asgoth (RD)"
+    ]
   },
   {
     "name": "Ceinture de sagesse",
@@ -22124,11 +22391,19 @@
     "source": "Amulette",
     "prerequisites": {
       "int": "28",
-      "wis": "15"
+      "wis": "15",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "bonuses": {
       "int": "+5"
-    }
+    },
+    "obtention": [
+      "Jarko (AR)"
+    ],
+    "secondary": {}
   },
   {
     "name": "Bouclier de Windhowl",
@@ -22370,8 +22645,17 @@
     "source": "Anneau",
     "prerequisites": {
       "int": "17",
-      "wis": "18"
-    }
+      "wis": "18",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
+    },
+    "obtention": [
+      "Partout ! (AR)"
+    ],
+    "bonuses": {},
+    "secondary": {}
   },
   {
     "name": "Anneau d'or",
@@ -22379,12 +22663,20 @@
     "source": "Anneau",
     "prerequisites": {
       "int": "22",
-      "wis": "26"
+      "wis": "26",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "bonuses": {
       "ca": "+1",
       "str": "+5"
-    }
+    },
+    "obtention": [
+      "Quête de Jarko (AR)"
+    ],
+    "secondary": {}
   },
   {
     "name": "Anneau de l'ours",
@@ -22392,11 +22684,21 @@
     "source": "Anneau",
     "prerequisites": {
       "int": "20",
-      "wis": "23"
+      "wis": "23",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "bonuses": {
       "str": "+5"
-    }
+    },
+    "obtention": [
+      "Garde de l'ombre (RD),",
+      "Pillard des dunes (RD),",
+      "nombreux monstres."
+    ],
+    "secondary": {}
   },
   {
     "name": "Epée de Diamant",
@@ -22412,11 +22714,19 @@
     "source": "Anneau",
     "prerequisites": {
       "int": "25",
-      "wis": "25"
+      "wis": "25",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "secondary": {
       "Luminosité": "+100"
-    }
+    },
+    "obtention": [
+      "Nombreux monstres AR et RD."
+    ],
+    "bonuses": {}
   },
   {
     "name": "Anneau de cerfeuil",
@@ -22436,13 +22746,21 @@
     "source": "Bracelet",
     "prerequisites": {
       "int": "21",
-      "wis": "24"
+      "wis": "24",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "bonuses": {
       "dex": "+2",
       "ca": "+1",
       "str": "+2"
-    }
+    },
+    "obtention": [
+      "Chef orc renégat (AR)"
+    ],
+    "secondary": {}
   },
   {
     "name": "Bracelet de puissance",
@@ -22450,7 +22768,11 @@
     "source": "Bracelet",
     "prerequisites": {
       "int": "24",
-      "wis": "29"
+      "wis": "29",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "bonuses": {
       "ca": "+1",
@@ -22458,7 +22780,11 @@
     },
     "secondary": {
       "Attaque": "+5"
-    }
+    },
+    "obtention": [
+      "Griroesh (AR)",
+      "Chef de guerre gobelin (AR)"
+    ]
   },
   {
     "name": "Bracelet de saphir",
@@ -22466,12 +22792,22 @@
     "source": "Bracelet",
     "prerequisites": {
       "int": "33",
-      "wis": "33"
+      "wis": "33",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "bonuses": {
       "wis": "+7",
       "int": "+7"
-    }
+    },
+    "obtention": [
+      "Quête du Livre de Feylor (AR)",
+      "Horreur railleuse",
+      "et coffres (RD)"
+    ],
+    "secondary": {}
   },
   {
     "name": "Collier de diamants",
@@ -22676,7 +23012,11 @@
     "source": "Anneau",
     "prerequisites": {
       "int": "17",
-      "wis": "31"
+      "wis": "31",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "bonuses": {
       "wis": "+5"
@@ -22684,7 +23024,11 @@
     "secondary": {
       "Attaque": "+5",
       "Archerie": "+5"
-    }
+    },
+    "obtention": [
+      "Griroesh (AR)",
+      "Coffres...."
+    ]
   },
   {
     "name": "Clef des ténèbres",
@@ -22745,11 +23089,19 @@
     "source": "Anneau",
     "prerequisites": {
       "int": "53",
-      "wis": "15"
+      "wis": "15",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "bonuses": {
       "int": "+15"
-    }
+    },
+    "obtention": [
+      "Jarko (AR)"
+    ],
+    "secondary": {}
   },
   {
     "name": "Épée du chaos",
@@ -22832,11 +23184,21 @@
     "source": "Amulette",
     "prerequisites": {
       "int": "21",
-      "wis": "19"
+      "wis": "19",
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "attack": "0"
     },
     "secondary": {
       "Esquive": "+10"
-    }
+    },
+    "obtention": [
+      "Desséché (450,160)",
+      "Crypte AR",
+      "(proche RST)"
+    ],
+    "bonuses": {}
   },
   {
     "name": "Sceptre de pouvoir de Drachen",
@@ -32671,6 +33033,219 @@
       "dex": "0",
       "int": "175",
       "wis": "70"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Amulette",
+    "obtention": [
+      "Créature bannie (laby AR), dragon Yeridaj (Niève)"
+    ],
+    "name": "Collier de diamant",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "29",
+      "wis": "29",
+      "attack": "0"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Amulette",
+    "obtention": [
+      "Golem de chair (RD)",
+      "Bane Gwengad (RD)",
+      "Ver tisseur",
+      "(Sud RD)"
+    ],
+    "name": "Collier en pierres de sang",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "44",
+      "wis": "21",
+      "attack": "0"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Bijou",
+    "obtention": [
+      "Purificateur (SH)"
+    ],
+    "name": "Talisman de protection contre le mal",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "40",
+      "wis": "53",
+      "attack": "0"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Anneau",
+    "obtention": [
+      "Craft bijoutier lev 2"
+    ],
+    "name": "Anneau des initiés",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "23",
+      "wis": "25",
+      "attack": "0"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Anneau",
+    "obtention": [
+      "Gardien équestre (SH).",
+      "Géant des plaines (donjon des bijoux d'Eléonore DI, RD)."
+    ],
+    "name": "Anneau du gladiateur",
+    "prerequisites": {
+      "end": "0",
+      "str": "108",
+      "dex": "75",
+      "int": "20",
+      "wis": "25",
+      "attack": "500"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Anneau",
+    "obtention": [
+      "Quête accès Oracle good (SH)"
+    ],
+    "name": "Anneau du séraphin",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Anneau",
+    "obtention": [
+      "Quête de la bague",
+      "feu-follet (RD)"
+    ],
+    "name": "Bague Feu-follet",
+    "prerequisites": {
+      "end": "0",
+      "str": "0",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "0"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Bracelet",
+    "obtention": [
+      "Assassin obsidien (SH)"
+    ],
+    "name": "Bracelet d'hypogriffe doré",
+    "prerequisites": {
+      "end": "50",
+      "str": "100",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "300"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Bracelet",
+    "obtention": [
+      "Protecteur temporel (ZO)"
+    ],
+    "name": "Bracelet de feuilles",
+    "prerequisites": {
+      "end": "50",
+      "str": "100",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "300"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Bracelet",
+    "obtention": [
+      "Gecko sulfureux (SH)"
+    ],
+    "name": "Bracelet de fierté",
+    "prerequisites": {
+      "end": "50",
+      "str": "100",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "300"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Bracelet",
+    "obtention": [
+      "Coffre (SH)"
+    ],
+    "name": "Bracelet de guerre",
+    "prerequisites": {
+      "end": "0",
+      "str": "25",
+      "dex": "20",
+      "int": "45",
+      "wis": "50",
+      "attack": "0"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Bracelet",
+    "obtention": [
+      "Loup Fenris (SH)"
+    ],
+    "name": "Bracelet de la manticore",
+    "prerequisites": {
+      "end": "50",
+      "str": "100",
+      "dex": "50",
+      "int": "30",
+      "wis": "30",
+      "attack": "400"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Bracelet",
+    "obtention": [
+      "Rejeton du Chaos (SH)"
+    ],
+    "name": "Bracelet de turquoise",
+    "prerequisites": {
+      "end": "50",
+      "str": "100",
+      "dex": "0",
+      "int": "0",
+      "wis": "0",
+      "attack": "300"
     }
   }
 ]
