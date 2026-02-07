@@ -5113,7 +5113,9 @@
     "prerequisites": {
       "int": "25",
       "wis": "155",
-      "end": "25"
+      "end": "25",
+      "str": "0",
+      "dex": "0"
     },
     "bonuses": {
       "ca": "+15",
@@ -5122,7 +5124,8 @@
     },
     "secondary": {
       "Puissance Lumière": "+20"
-    }
+    },
+    "obtention": []
   },
   {
     "name": "Marteau de guerre en acier trempé",
@@ -7416,13 +7419,17 @@
     "prerequisites": {
       "int": "20",
       "wis": "35",
-      "end": "12"
+      "end": "12",
+      "str": "0",
+      "dex": "0"
     },
     "bonuses": {
       "ca": "+2",
       "str": "+5",
       "wis": "+5"
-    }
+    },
+    "obtention": [],
+    "secondary": {}
   },
   {
     "name": "Robe des elfes en soie d'argent",
@@ -7431,7 +7438,9 @@
     "prerequisites": {
       "int": "20",
       "wis": "73",
-      "end": "16"
+      "end": "16",
+      "str": "0",
+      "dex": "0"
     },
     "bonuses": {
       "ca": "+6",
@@ -7440,7 +7449,8 @@
     },
     "secondary": {
       "Résistance Nécro": "+10"
-    }
+    },
+    "obtention": []
   },
   {
     "name": "Robe des âmes purifiées",
@@ -7449,7 +7459,9 @@
     "prerequisites": {
       "int": "15",
       "wis": "103",
-      "end": "18"
+      "end": "18",
+      "str": "0",
+      "dex": "0"
     },
     "bonuses": {
       "ca": "+8",
@@ -7457,7 +7469,8 @@
     },
     "secondary": {
       "Résistance Nécro": "+25"
-    }
+    },
+    "obtention": []
   },
   {
     "name": "Manteau des bénédictions infinies",
@@ -7490,13 +7503,17 @@
     "prerequisites": {
       "int": "28",
       "wis": "28",
-      "end": "12"
+      "end": "14",
+      "str": "0",
+      "dex": "0"
     },
     "bonuses": {
       "ca": "+2",
       "int": "+5",
       "wis": "+5"
-    }
+    },
+    "obtention": [],
+    "secondary": {}
   },
   {
     "name": "Robe de protection ornée de runes",
@@ -7558,12 +7575,16 @@
     "prerequisites": {
       "int": "40",
       "wis": "15",
-      "end": "12"
+      "end": "12",
+      "str": "0",
+      "dex": "0"
     },
     "bonuses": {
       "ca": "+2",
       "int": "+10"
-    }
+    },
+    "obtention": [],
+    "secondary": {}
   },
   {
     "name": "Cape de tromperie",
@@ -7572,7 +7593,9 @@
     "prerequisites": {
       "int": "78",
       "wis": "15",
-      "end": "16"
+      "end": "16",
+      "str": "0",
+      "dex": "0"
     },
     "bonuses": {
       "ca": "+6",
@@ -7580,7 +7603,8 @@
     },
     "secondary": {
       "Puissance Nécro": "+10"
-    }
+    },
+    "obtention": []
   },
   {
     "name": "Costume des morts",
@@ -7589,7 +7613,9 @@
     "prerequisites": {
       "int": "128",
       "wis": "15",
-      "end": "21"
+      "end": "21",
+      "str": "0",
+      "dex": "0"
     },
     "bonuses": {
       "ca": "+11",
@@ -7597,7 +7623,8 @@
     },
     "secondary": {
       "Puissance Nécro": "+25"
-    }
+    },
+    "obtention": []
   },
   {
     "name": "Manteau de la mort",
@@ -7606,7 +7633,9 @@
     "prerequisites": {
       "int": "201",
       "wis": "15",
-      "end": "25"
+      "end": "25",
+      "str": "0",
+      "dex": "0"
     },
     "bonuses": {
       "ca": "+15",
@@ -7614,7 +7643,8 @@
     },
     "secondary": {
       "Puissance Nécro": "+20"
-    }
+    },
+    "obtention": []
   },
   {
     "name": "Manteau des brumes de minuit",
@@ -10135,7 +10165,9 @@
     "prerequisites": {
       "int": "123",
       "wis": "85",
-      "end": "28"
+      "end": "28",
+      "str": "0",
+      "dex": "0"
     },
     "bonuses": {
       "ca": "+18",
@@ -10147,7 +10179,8 @@
       "Résistance Eau": "-15",
       "Puissance Terre": "-15",
       "Puissance Lumière": "-15"
-    }
+    },
+    "obtention": []
   },
   {
     "name": "Arc pourfendeur de centaures",
@@ -10497,7 +10530,9 @@
     "prerequisites": {
       "int": "73",
       "wis": "135",
-      "end": "28"
+      "end": "28",
+      "str": "0",
+      "dex": "0"
     },
     "bonuses": {
       "ca": "+18",
@@ -10509,7 +10544,8 @@
       "Résistance Air": "+10",
       "Résistance Terre": "+10",
       "Résistance Nécro": "+10"
-    }
+    },
+    "obtention": []
   },
   {
     "name": "Document secret",
@@ -22848,7 +22884,17 @@
   {
     "name": "Robe de Drachen",
     "quantity": 1,
-    "source": "Robe"
+    "source": "Robe",
+    "obtention": [],
+    "secondary": {},
+    "prerequisites": {
+      "end": "28",
+      "str": "0",
+      "dex": "0",
+      "int": "98",
+      "wis": "73"
+    },
+    "bonuses": {}
   },
   {
     "name": "Sceptre de capture",
@@ -23083,7 +23129,17 @@
   {
     "name": "Manteau du crâne",
     "quantity": 1,
-    "source": "Robe"
+    "source": "Robe",
+    "obtention": [],
+    "secondary": {},
+    "prerequisites": {
+      "end": "30",
+      "str": "0",
+      "dex": "0",
+      "int": "100",
+      "wis": "50"
+    },
+    "bonuses": {}
   },
   {
     "name": "Bracelet d'argent à Bec de Corbeau",
@@ -32490,5 +32546,131 @@
     "buyPrice": "Drop",
     "sellPrice": "43976",
     "source": "Jambière"
+  },
+  {
+    "quantity": 1,
+    "source": "Robe",
+    "obtention": [],
+    "secondary": {},
+    "name": "Manteau de l'archer",
+    "prerequisites": {
+      "end": "0",
+      "str": "25",
+      "dex": "70",
+      "int": "30",
+      "wis": "40"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Robe",
+    "obtention": [],
+    "secondary": {},
+    "name": "Robe de protection ornée de rune",
+    "prerequisites": {
+      "end": "16",
+      "str": "0",
+      "dex": "0",
+      "int": "43",
+      "wis": "50"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Robe",
+    "obtention": [],
+    "secondary": {},
+    "name": "Manteau de shaman",
+    "prerequisites": {
+      "end": "18",
+      "str": "0",
+      "dex": "0",
+      "int": "50",
+      "wis": "68"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Robe",
+    "obtention": [],
+    "secondary": {},
+    "name": "Manteau de prestidigitateur",
+    "prerequisites": {
+      "end": "20",
+      "str": "0",
+      "dex": "0",
+      "int": "110",
+      "wis": "20"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Robe",
+    "obtention": [],
+    "secondary": {},
+    "name": "Habit de feuille",
+    "prerequisites": {
+      "end": "20",
+      "str": "0",
+      "dex": "0",
+      "int": "15",
+      "wis": "115"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Robe",
+    "obtention": [],
+    "secondary": {},
+    "name": "Manteau de la pluie",
+    "prerequisites": {
+      "end": "20",
+      "str": "0",
+      "dex": "0",
+      "int": "100",
+      "wis": "20"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Robe",
+    "obtention": [],
+    "secondary": {},
+    "name": "Cape de renouveau",
+    "prerequisites": {
+      "end": "25",
+      "str": "0",
+      "dex": "0",
+      "int": "106",
+      "wis": "112"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Robe",
+    "obtention": [],
+    "secondary": {},
+    "name": "Robe de l'archimage",
+    "prerequisites": {
+      "end": "27",
+      "str": "0",
+      "dex": "0",
+      "int": "190",
+      "wis": "15"
+    }
+  },
+  {
+    "quantity": 1,
+    "source": "Robe",
+    "obtention": [],
+    "secondary": {},
+    "name": "Manteau d'Armageddon",
+    "prerequisites": {
+      "end": "37",
+      "str": "0",
+      "dex": "0",
+      "int": "175",
+      "wis": "70"
+    }
   }
 ]
