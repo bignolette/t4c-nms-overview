@@ -1421,7 +1421,6 @@
     },
     "obtention": [],
     "buyPrice": "607",
-    "sellPrice": "202",
     "secondary": {}
   },
   {
@@ -1440,7 +1439,6 @@
     },
     "obtention": [],
     "buyPrice": "4538",
-    "sellPrice": "1513",
     "secondary": {}
   },
   {
@@ -1980,10 +1978,9 @@
       "min": "40",
       "max": "58"
     },
-    "otherSource": "Drop",
-    "obtention": [],
-    "buyPrice": "Drop",
-    "sellPrice": "5189",
+    "obtention": [
+      "Drop"
+    ],
     "secondary": {}
   },
   {
@@ -2165,9 +2162,9 @@
     "bonuses": {
       "ca": "3.645"
     },
-    "obtention": [],
-    "buyPrice": "Drop",
-    "sellPrice": "5676",
+    "obtention": [
+      "Drop"
+    ],
     "secondary": {}
   },
   {
@@ -2195,9 +2192,9 @@
     "bonuses": {
       "ca": "3.51"
     },
-    "obtention": [],
-    "buyPrice": "Drop",
-    "sellPrice": "6289",
+    "obtention": [
+      "Drop"
+    ],
     "secondary": {}
   },
   {
@@ -2214,9 +2211,9 @@
     "bonuses": {
       "ca": "4.05"
     },
-    "obtention": [],
-    "buyPrice": "Drop",
-    "sellPrice": "6595",
+    "obtention": [
+      "Drop"
+    ],
     "secondary": {}
   },
   {
@@ -2281,7 +2278,6 @@
       "ca": "0"
     },
     "buyPrice": "15",
-    "sellPrice": "0",
     "secondary": {}
   },
   {
@@ -2308,7 +2304,6 @@
       "ca": "0"
     },
     "buyPrice": "15",
-    "sellPrice": "0",
     "secondary": {}
   },
   {
@@ -2381,10 +2376,9 @@
       "min": "40",
       "max": "252"
     },
-    "otherSource": "Quête",
-    "obtention": [],
-    "buyPrice": "Quête",
-    "sellPrice": "0",
+    "obtention": [
+      "Quête"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -2430,7 +2424,9 @@
       "min": "25",
       "max": "36"
     },
-    "otherSource": "Drop"
+    "obtention": [
+      "Drop"
+    ]
   },
   {
     "name": "Parchemin vierge",
@@ -2496,10 +2492,9 @@
       "min": "41",
       "max": "57"
     },
-    "otherSource": "Quête",
-    "obtention": [],
-    "buyPrice": "Quête",
-    "sellPrice": "5057",
+    "obtention": [
+      "Quête"
+    ],
     "secondary": {}
   },
   {
@@ -2697,7 +2692,6 @@
     },
     "buyPrice": "578210",
     "obtention": [],
-    "sellPrice": "57821",
     "bonuses": {},
     "secondary": {}
   },
@@ -2719,7 +2713,6 @@
     },
     "buyPrice": "113163",
     "obtention": [],
-    "sellPrice": "37721",
     "bonuses": {},
     "secondary": {}
   },
@@ -2759,7 +2752,6 @@
     },
     "buyPrice": "43587",
     "obtention": [],
-    "sellPrice": "9686",
     "bonuses": {},
     "secondary": {}
   },
@@ -2794,7 +2786,6 @@
     },
     "buyPrice": "7083",
     "obtention": [],
-    "sellPrice": "1574",
     "bonuses": {},
     "secondary": {}
   },
@@ -2852,7 +2843,6 @@
     },
     "buyPrice": "2306910",
     "obtention": [],
-    "sellPrice": "230691",
     "bonuses": {},
     "secondary": {}
   },
@@ -2964,7 +2954,6 @@
     },
     "buyPrice": "5537300",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -3074,7 +3063,6 @@
     },
     "buyPrice": "145290",
     "obtention": [],
-    "sellPrice": "14529",
     "bonuses": {},
     "secondary": {}
   },
@@ -3102,7 +3090,9 @@
       "min": "54",
       "max": "78"
     },
-    "otherSource": "Invoc."
+    "obtention": [
+      "Invoc."
+    ]
   },
   {
     "name": "Glaive en acier trempé enchanté",
@@ -3122,7 +3112,6 @@
     },
     "buyPrice": "140583",
     "obtention": [],
-    "sellPrice": "31240",
     "bonuses": {},
     "secondary": {}
   },
@@ -3144,7 +3133,6 @@
     },
     "buyPrice": "443211",
     "obtention": [],
-    "sellPrice": "98491",
     "bonuses": {},
     "secondary": {}
   },
@@ -3166,7 +3154,6 @@
     },
     "buyPrice": "37053",
     "obtention": [],
-    "sellPrice": "12351",
     "bonuses": {},
     "secondary": {}
   },
@@ -3188,7 +3175,6 @@
     },
     "buyPrice": "37053",
     "obtention": [],
-    "sellPrice": "12351",
     "bonuses": {},
     "secondary": {}
   },
@@ -3210,7 +3196,6 @@
     },
     "buyPrice": "147737",
     "obtention": [],
-    "sellPrice": "49245",
     "bonuses": {},
     "secondary": {}
   },
@@ -3237,7 +3222,6 @@
     },
     "buyPrice": "5266",
     "obtention": [],
-    "sellPrice": "1755",
     "bonuses": {},
     "secondary": {}
   },
@@ -3259,7 +3243,6 @@
     },
     "buyPrice": "83191",
     "obtention": [],
-    "sellPrice": "27730",
     "bonuses": {},
     "secondary": {}
   },
@@ -3289,7 +3272,6 @@
     },
     "buyPrice": "20887",
     "obtention": [],
-    "sellPrice": "6962",
     "bonuses": {},
     "secondary": {}
   },
@@ -3311,7 +3293,6 @@
     },
     "buyPrice": "2361",
     "obtention": [],
-    "sellPrice": "787",
     "bonuses": {},
     "secondary": {}
   },
@@ -3360,7 +3341,6 @@
     },
     "buyPrice": "1661190",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -3382,7 +3362,6 @@
     },
     "buyPrice": "111159",
     "obtention": [],
-    "sellPrice": "24702",
     "bonuses": {},
     "secondary": {}
   },
@@ -3440,7 +3419,6 @@
     },
     "buyPrice": "370530",
     "obtention": [],
-    "sellPrice": "37053",
     "bonuses": {},
     "secondary": {}
   },
@@ -3564,7 +3542,6 @@
     },
     "buyPrice": "14529",
     "obtention": [],
-    "sellPrice": "4843",
     "bonuses": {},
     "secondary": {}
   },
@@ -3586,7 +3563,6 @@
     },
     "buyPrice": "831910",
     "obtention": [],
-    "sellPrice": "83191",
     "bonuses": {},
     "secondary": {}
   },
@@ -3608,7 +3584,6 @@
     },
     "buyPrice": "208870",
     "obtention": [],
-    "sellPrice": "20887",
     "bonuses": {},
     "secondary": {}
   },
@@ -3630,7 +3605,6 @@
     },
     "buyPrice": "9323",
     "obtention": [],
-    "sellPrice": "3107",
     "bonuses": {},
     "secondary": {}
   },
@@ -3692,7 +3666,6 @@
     },
     "buyPrice": "62661",
     "obtention": [],
-    "sellPrice": "13924",
     "bonuses": {},
     "secondary": {}
   },
@@ -3722,7 +3695,6 @@
     },
     "buyPrice": "46861",
     "obtention": [],
-    "sellPrice": "15620",
     "bonuses": {},
     "secondary": {}
   },
@@ -3742,7 +3714,6 @@
     },
     "obtention": [],
     "buyPrice": "11868",
-    "sellPrice": "3596",
     "secondary": {}
   },
   {
@@ -3779,7 +3750,6 @@
     },
     "obtention": [],
     "buyPrice": "10220",
-    "sellPrice": "3407",
     "secondary": {}
   },
   {
@@ -3798,7 +3768,6 @@
     },
     "obtention": [],
     "buyPrice": "11319",
-    "sellPrice": "3773",
     "secondary": {}
   },
   {
@@ -3819,7 +3788,6 @@
     },
     "buyPrice": "52660",
     "obtention": [],
-    "sellPrice": "5266",
     "bonuses": {},
     "secondary": {}
   },
@@ -3841,7 +3809,6 @@
     },
     "buyPrice": "6050",
     "obtention": [],
-    "sellPrice": "605",
     "bonuses": {},
     "secondary": {}
   },
@@ -3889,7 +3856,6 @@
     },
     "buyPrice": "57861",
     "obtention": [],
-    "sellPrice": "19273",
     "bonuses": {},
     "secondary": {}
   },
@@ -3911,7 +3877,6 @@
     },
     "buyPrice": "27969",
     "obtention": [],
-    "sellPrice": "6215",
     "bonuses": {},
     "secondary": {}
   },
@@ -3933,7 +3898,6 @@
     },
     "buyPrice": "93230",
     "obtention": [],
-    "sellPrice": "9323",
     "bonuses": {},
     "secondary": {}
   },
@@ -3997,7 +3961,6 @@
     },
     "buyPrice": "249573",
     "obtention": [],
-    "sellPrice": "55460",
     "bonuses": {},
     "secondary": {}
   },
@@ -4049,7 +4012,6 @@
     },
     "buyPrice": "23610",
     "obtention": [],
-    "sellPrice": "2361",
     "bonuses": {},
     "secondary": {}
   },
@@ -4087,7 +4049,6 @@
     },
     "buyPrice": "15798",
     "obtention": [],
-    "sellPrice": "3510",
     "bonuses": {},
     "secondary": {}
   },
@@ -4109,7 +4070,6 @@
     },
     "buyPrice": "339489",
     "obtention": [],
-    "sellPrice": "75442",
     "bonuses": {},
     "secondary": {}
   },
@@ -4152,7 +4112,6 @@
     },
     "buyPrice": "97601",
     "obtention": [],
-    "sellPrice": "32533",
     "bonuses": {},
     "secondary": {}
   },
@@ -4230,7 +4189,9 @@
       "min": "195",
       "max": "274"
     },
-    "otherSource": "Coffre"
+    "obtention": [
+      "Coffre"
+    ]
   },
   {
     "name": "Épée bâtarde de qualité enchantée",
@@ -4311,7 +4272,6 @@
     },
     "buyPrice": "466610",
     "obtention": [],
-    "sellPrice": "46861",
     "bonuses": {},
     "secondary": {}
   },
@@ -4346,7 +4306,6 @@
     },
     "buyPrice": "37053",
     "obtention": [],
-    "sellPrice": "12351",
     "bonuses": {},
     "secondary": {}
   },
@@ -4401,7 +4360,6 @@
     },
     "buyPrice": "831910",
     "obtention": [],
-    "sellPrice": "83191",
     "bonuses": {},
     "secondary": {}
   },
@@ -4423,7 +4381,6 @@
     },
     "buyPrice": "370530",
     "obtention": [],
-    "sellPrice": "37053",
     "bonuses": {},
     "secondary": {}
   },
@@ -4445,7 +4402,6 @@
     },
     "buyPrice": "111159",
     "obtention": [],
-    "sellPrice": "24702",
     "bonuses": {},
     "secondary": {}
   },
@@ -4467,7 +4423,6 @@
     },
     "buyPrice": "173463",
     "obtention": [],
-    "sellPrice": "38547",
     "bonuses": {},
     "secondary": {}
   },
@@ -4489,7 +4444,6 @@
     },
     "buyPrice": "578210",
     "obtention": [],
-    "sellPrice": "57821",
     "bonuses": {},
     "secondary": {}
   },
@@ -4511,7 +4465,6 @@
     },
     "buyPrice": "249573",
     "obtention": [],
-    "sellPrice": "42127",
     "bonuses": {},
     "secondary": {}
   },
@@ -4533,7 +4486,6 @@
     },
     "buyPrice": "147737",
     "obtention": [],
-    "sellPrice": "49245",
     "bonuses": {},
     "secondary": {}
   },
@@ -4563,7 +4515,6 @@
     },
     "buyPrice": "553730",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -4585,7 +4536,6 @@
     },
     "buyPrice": "173463",
     "obtention": [],
-    "sellPrice": "38547",
     "bonuses": {},
     "secondary": {}
   },
@@ -4654,7 +4604,6 @@
     },
     "obtention": [],
     "buyPrice": "3413",
-    "sellPrice": "1138",
     "secondary": {}
   },
   {
@@ -4673,7 +4622,6 @@
     },
     "obtention": [],
     "buyPrice": "2949",
-    "sellPrice": "983",
     "secondary": {}
   },
   {
@@ -4742,7 +4690,6 @@
     },
     "buyPrice": "5266",
     "obtention": [],
-    "sellPrice": "1755",
     "bonuses": {},
     "secondary": {}
   },
@@ -4785,7 +4732,6 @@
     },
     "buyPrice": "1131630",
     "obtention": [],
-    "sellPrice": "113163",
     "bonuses": {},
     "secondary": {}
   },
@@ -4820,7 +4766,6 @@
     },
     "buyPrice": "57821",
     "obtention": [],
-    "sellPrice": "19273",
     "bonuses": {},
     "secondary": {}
   },
@@ -4861,7 +4806,6 @@
     },
     "buyPrice": "3320530",
     "obtention": [],
-    "sellPrice": "332053",
     "bonuses": {},
     "secondary": {}
   },
@@ -4912,7 +4856,6 @@
     },
     "buyPrice": "3602690",
     "obtention": [],
-    "sellPrice": "360269",
     "bonuses": {},
     "secondary": {}
   },
@@ -4965,7 +4908,6 @@
     },
     "buyPrice": "57821",
     "obtention": [],
-    "sellPrice": "19273",
     "bonuses": {},
     "secondary": {}
   },
@@ -5000,7 +4942,6 @@
     },
     "buyPrice": "208226",
     "obtention": [],
-    "sellPrice": "69408",
     "bonuses": {},
     "secondary": {}
   },
@@ -5031,7 +4972,6 @@
     },
     "buyPrice": "147737",
     "obtention": [],
-    "sellPrice": "49245",
     "bonuses": {},
     "secondary": {}
   },
@@ -5079,7 +5019,6 @@
     },
     "buyPrice": "605",
     "obtention": [],
-    "sellPrice": "201",
     "bonuses": {},
     "secondary": {}
   },
@@ -5161,7 +5100,6 @@
     },
     "buyPrice": "14529",
     "obtention": [],
-    "sellPrice": "4843",
     "bonuses": {},
     "secondary": {}
   },
@@ -5181,7 +5119,6 @@
     },
     "obtention": [],
     "buyPrice": "3258",
-    "sellPrice": "1086",
     "secondary": {}
   },
   {
@@ -5226,7 +5163,6 @@
     },
     "buyPrice": "2361",
     "obtention": [],
-    "sellPrice": "787",
     "bonuses": {},
     "secondary": {}
   },
@@ -5729,10 +5665,9 @@
       "min": "103",
       "max": "144"
     },
-    "otherSource": "Drop",
-    "obtention": [],
-    "buyPrice": "Drop",
-    "sellPrice": "32533"
+    "obtention": [
+      "Drop"
+    ]
   },
   {
     "name": "Collier de dents de loup",
@@ -5801,7 +5736,6 @@
     },
     "buyPrice": "1477370",
     "obtention": [],
-    "sellPrice": "147737",
     "bonuses": {},
     "secondary": {}
   },
@@ -5823,7 +5757,6 @@
     },
     "buyPrice": "1869130",
     "obtention": [],
-    "sellPrice": "186913",
     "bonuses": {},
     "secondary": {}
   },
@@ -5861,7 +5794,6 @@
       "attack": "0"
     },
     "obtention": [],
-    "sellPrice": "9",
     "bonuses": {},
     "secondary": {}
   },
@@ -5928,7 +5860,6 @@
     },
     "buyPrice": "3920",
     "obtention": [],
-    "sellPrice": "392",
     "bonuses": {},
     "secondary": {}
   },
@@ -5950,7 +5881,6 @@
       "max": "13"
     },
     "buyPrice": "1169",
-    "sellPrice": "389",
     "bonuses": {},
     "secondary": {}
   },
@@ -5981,7 +5911,6 @@
       "max": "17"
     },
     "buyPrice": "11690",
-    "sellPrice": "1169",
     "bonuses": {},
     "secondary": {}
   },
@@ -6072,7 +6001,6 @@
     },
     "buyPrice": "5985",
     "obtention": [],
-    "sellPrice": "1995",
     "bonuses": {},
     "secondary": {}
   },
@@ -6103,7 +6031,6 @@
     },
     "buyPrice": "59850",
     "obtention": [],
-    "sellPrice": "5985",
     "bonuses": {},
     "secondary": {}
   },
@@ -6125,7 +6052,6 @@
     },
     "buyPrice": "9323",
     "obtention": [],
-    "sellPrice": "3107",
     "bonuses": {},
     "secondary": {}
   },
@@ -6156,7 +6082,6 @@
     },
     "buyPrice": "93230",
     "obtention": [],
-    "sellPrice": "9323",
     "bonuses": {},
     "secondary": {}
   },
@@ -6188,7 +6113,6 @@
     },
     "buyPrice": "7083",
     "obtention": [],
-    "sellPrice": "1574",
     "bonuses": {},
     "secondary": {}
   },
@@ -6210,7 +6134,6 @@
     },
     "buyPrice": "23610",
     "obtention": [],
-    "sellPrice": "2361",
     "bonuses": {},
     "secondary": {}
   },
@@ -6232,7 +6155,6 @@
     },
     "buyPrice": "15798",
     "obtention": [],
-    "sellPrice": "3510",
     "bonuses": {},
     "secondary": {}
   },
@@ -6254,7 +6176,6 @@
     },
     "buyPrice": "52660",
     "obtention": [],
-    "sellPrice": "5266",
     "bonuses": {},
     "secondary": {}
   },
@@ -6276,7 +6197,6 @@
     },
     "buyPrice": "43587",
     "obtention": [],
-    "sellPrice": "9686",
     "bonuses": {},
     "secondary": {}
   },
@@ -6298,7 +6218,6 @@
     },
     "buyPrice": "145290",
     "obtention": [],
-    "sellPrice": "14529",
     "bonuses": {},
     "secondary": {}
   },
@@ -6334,7 +6253,6 @@
     },
     "buyPrice": "173463",
     "obtention": [],
-    "sellPrice": "38547",
     "bonuses": {},
     "secondary": {}
   },
@@ -6356,7 +6274,6 @@
     },
     "buyPrice": "578210",
     "obtention": [],
-    "sellPrice": "57821",
     "bonuses": {},
     "secondary": {}
   },
@@ -6378,7 +6295,6 @@
     },
     "buyPrice": "292803",
     "obtention": [],
-    "sellPrice": "65067",
     "bonuses": {},
     "secondary": {}
   },
@@ -6400,7 +6316,6 @@
     },
     "buyPrice": "976010",
     "obtention": [],
-    "sellPrice": "97601",
     "bonuses": {},
     "secondary": {}
   },
@@ -6431,7 +6346,6 @@
     },
     "buyPrice": "443211",
     "obtention": [],
-    "sellPrice": "98491",
     "bonuses": {},
     "secondary": {}
   },
@@ -6453,7 +6367,6 @@
     },
     "buyPrice": "1477370",
     "obtention": [],
-    "sellPrice": "147737",
     "bonuses": {},
     "secondary": {}
   },
@@ -6799,7 +6712,6 @@
     },
     "obtention": [],
     "buyPrice": "1086",
-    "sellPrice": "362",
     "secondary": {}
   },
   {
@@ -6818,7 +6730,6 @@
     },
     "obtention": [],
     "buyPrice": "2308",
-    "sellPrice": "769",
     "secondary": {}
   },
   {
@@ -7018,13 +6929,13 @@
       "int": "+5",
       "str": "+5"
     },
-    "obtention": [],
+    "obtention": [
+      "Quête"
+    ],
     "damage": {
       "min": "5",
       "max": "9"
     },
-    "buyPrice": "Quête",
-    "sellPrice": "415",
     "secondary": {}
   },
   {
@@ -7402,7 +7313,9 @@
       "min": "91",
       "max": "125"
     },
-    "otherSource": "Drop"
+    "obtention": [
+      "Drop"
+    ]
   },
   {
     "name": "Anneau de vraie foi",
@@ -7871,7 +7784,6 @@
     },
     "secondary": {},
     "buyPrice": "33",
-    "sellPrice": "100",
     "bonuses": {}
   },
   {
@@ -7908,7 +7820,6 @@
       "max": "3"
     },
     "buyPrice": "29",
-    "sellPrice": "9",
     "bonuses": {},
     "secondary": {}
   },
@@ -7936,7 +7847,6 @@
       "max": "4"
     },
     "buyPrice": "290",
-    "sellPrice": "29",
     "bonuses": {},
     "secondary": {}
   },
@@ -7959,7 +7869,6 @@
       "max": "11"
     },
     "buyPrice": "605",
-    "sellPrice": "201",
     "bonuses": {},
     "secondary": {}
   },
@@ -7991,7 +7900,6 @@
       "max": "13"
     },
     "buyPrice": "6050",
-    "sellPrice": "605",
     "bonuses": {},
     "secondary": {}
   },
@@ -8014,7 +7922,6 @@
       "max": "18"
     },
     "buyPrice": "2631",
-    "sellPrice": "787",
     "bonuses": {},
     "secondary": {}
   },
@@ -8046,7 +7953,6 @@
       "max": "23"
     },
     "buyPrice": "23610",
-    "sellPrice": "2361",
     "bonuses": {},
     "secondary": {}
   },
@@ -8078,7 +7984,6 @@
       "max": "26"
     },
     "buyPrice": "5266",
-    "sellPrice": "1755",
     "bonuses": {},
     "secondary": {}
   },
@@ -8101,7 +8006,6 @@
       "max": "29"
     },
     "buyPrice": "15798",
-    "sellPrice": "3510",
     "bonuses": {},
     "secondary": {}
   },
@@ -8139,7 +8043,6 @@
       "max": "32"
     },
     "buyPrice": "52660",
-    "sellPrice": "5266",
     "bonuses": {},
     "secondary": {}
   },
@@ -8162,7 +8065,6 @@
       "max": "39"
     },
     "buyPrice": "9323",
-    "sellPrice": "3107",
     "bonuses": {},
     "secondary": {}
   },
@@ -8185,7 +8087,6 @@
       "max": "44"
     },
     "buyPrice": "27969",
-    "sellPrice": "6215",
     "bonuses": {},
     "secondary": {}
   },
@@ -8208,7 +8109,6 @@
       "max": "49"
     },
     "buyPrice": "93230",
-    "sellPrice": "9323",
     "bonuses": {},
     "secondary": {}
   },
@@ -8231,7 +8131,6 @@
       "max": "50"
     },
     "buyPrice": "14529",
-    "sellPrice": "4843",
     "bonuses": {},
     "secondary": {}
   },
@@ -8254,7 +8153,6 @@
       "max": "52"
     },
     "buyPrice": "43587",
-    "sellPrice": "9686",
     "bonuses": {},
     "secondary": {}
   },
@@ -8277,7 +8175,6 @@
       "max": "58"
     },
     "buyPrice": "145290",
-    "sellPrice": "14529",
     "bonuses": {},
     "secondary": {}
   },
@@ -8300,7 +8197,6 @@
       "max": "56"
     },
     "buyPrice": "20887",
-    "sellPrice": "6962",
     "bonuses": {},
     "secondary": {}
   },
@@ -8323,7 +8219,6 @@
       "max": "64"
     },
     "buyPrice": "62661",
-    "sellPrice": "13924",
     "bonuses": {},
     "secondary": {}
   },
@@ -8346,7 +8241,6 @@
       "max": "70"
     },
     "buyPrice": "208870",
-    "sellPrice": "20887",
     "bonuses": {},
     "secondary": {}
   },
@@ -8393,7 +8287,6 @@
       "max": "69"
     },
     "buyPrice": "37053",
-    "sellPrice": "12351",
     "bonuses": {},
     "secondary": {}
   },
@@ -8414,7 +8307,6 @@
       "max": "77"
     },
     "buyPrice": "111159",
-    "sellPrice": "24702",
     "bonuses": {},
     "secondary": {}
   },
@@ -8435,7 +8327,6 @@
       "max": "86"
     },
     "buyPrice": "370530",
-    "sellPrice": "37053",
     "bonuses": {},
     "secondary": {}
   },
@@ -8458,7 +8349,6 @@
       "max": "87"
     },
     "buyPrice": "46861",
-    "sellPrice": "15620",
     "bonuses": {},
     "secondary": {}
   },
@@ -8479,7 +8369,6 @@
       "max": "98"
     },
     "buyPrice": "140583",
-    "sellPrice": "31240",
     "bonuses": {},
     "secondary": {}
   },
@@ -8500,7 +8389,6 @@
       "max": "110"
     },
     "buyPrice": "468610",
-    "sellPrice": "46861",
     "bonuses": {},
     "secondary": {}
   },
@@ -8523,7 +8411,6 @@
       "max": "93"
     },
     "buyPrice": "58721",
-    "sellPrice": "19273",
     "bonuses": {},
     "secondary": {}
   },
@@ -8544,7 +8431,6 @@
       "max": "105"
     },
     "buyPrice": "173463",
-    "sellPrice": "38547",
     "bonuses": {},
     "secondary": {}
   },
@@ -8565,7 +8451,6 @@
       "max": "116"
     },
     "buyPrice": "587210",
-    "sellPrice": "58721",
     "bonuses": {},
     "secondary": {}
   },
@@ -8604,7 +8489,6 @@
       "max": "103"
     },
     "buyPrice": "69930",
-    "sellPrice": "23310",
     "bonuses": {},
     "secondary": {}
   },
@@ -8625,7 +8509,6 @@
       "max": "116"
     },
     "buyPrice": "209790",
-    "sellPrice": "46620",
     "bonuses": {},
     "secondary": {}
   },
@@ -8646,7 +8529,6 @@
       "max": "129"
     },
     "buyPrice": "699300",
-    "sellPrice": "69930",
     "bonuses": {},
     "secondary": {}
   },
@@ -8669,7 +8551,6 @@
       "max": "117"
     },
     "buyPrice": "83191",
-    "sellPrice": "27730",
     "bonuses": {},
     "secondary": {}
   },
@@ -8690,7 +8571,6 @@
       "max": "132"
     },
     "buyPrice": "249573",
-    "sellPrice": "55460",
     "bonuses": {},
     "secondary": {}
   },
@@ -8711,7 +8591,6 @@
       "max": "147"
     },
     "buyPrice": "831910",
-    "sellPrice": "83191",
     "bonuses": {},
     "secondary": {}
   },
@@ -8741,7 +8620,6 @@
       "max": "120"
     },
     "buyPrice": "113163",
-    "sellPrice": "37721",
     "bonuses": {},
     "secondary": {}
   },
@@ -8762,7 +8640,6 @@
       "max": "135"
     },
     "buyPrice": "339489",
-    "sellPrice": "75442",
     "bonuses": {},
     "secondary": {}
   },
@@ -8783,7 +8660,6 @@
       "max": "150"
     },
     "buyPrice": "1131630",
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -8819,7 +8695,6 @@
       "max": "145"
     },
     "buyPrice": "129874",
-    "sellPrice": "43291",
     "bonuses": {},
     "secondary": {}
   },
@@ -8840,7 +8715,6 @@
       "max": "163"
     },
     "buyPrice": "389622",
-    "sellPrice": "86582",
     "bonuses": {},
     "secondary": {}
   },
@@ -8861,7 +8735,6 @@
       "max": "181"
     },
     "buyPrice": "1298740",
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -8882,7 +8755,6 @@
       "max": "149"
     },
     "buyPrice": "147737",
-    "sellPrice": "49245",
     "bonuses": {},
     "secondary": {}
   },
@@ -8903,7 +8775,6 @@
       "max": "168"
     },
     "buyPrice": "443211",
-    "sellPrice": "98491",
     "bonuses": {},
     "secondary": {}
   },
@@ -8924,7 +8795,6 @@
       "max": "187"
     },
     "buyPrice": "1477370",
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -8945,7 +8815,6 @@
       "max": "160"
     },
     "buyPrice": "166749",
-    "sellPrice": "55583",
     "bonuses": {},
     "secondary": {}
   },
@@ -8966,7 +8835,6 @@
       "max": "180"
     },
     "buyPrice": "500247",
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -8987,7 +8855,6 @@
       "max": "200"
     },
     "buyPrice": "1667490",
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -9050,7 +8917,6 @@
       "max": "200"
     },
     "buyPrice": "208226",
-    "sellPrice": "69442",
     "bonuses": {},
     "secondary": {}
   },
@@ -9071,7 +8937,6 @@
       "max": "226"
     },
     "buyPrice": "624678",
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -9092,7 +8957,6 @@
       "max": "251"
     },
     "buyPrice": "2082260",
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -9122,7 +8986,6 @@
       "max": "224"
     },
     "buyPrice": "762915",
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -9143,7 +9006,6 @@
       "max": "249"
     },
     "buyPrice": "2543050",
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -9164,7 +9026,6 @@
       "max": "247"
     },
     "buyPrice": "2790710",
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -9185,7 +9046,6 @@
       "max": "229"
     },
     "buyPrice": "914958",
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -9206,7 +9066,6 @@
       "max": "255"
     },
     "buyPrice": "3049860",
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -9245,7 +9104,6 @@
       "max": "241"
     },
     "buyPrice": "360569",
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -9266,7 +9124,6 @@
       "max": "272"
     },
     "buyPrice": "1080807",
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -9308,7 +9165,6 @@
       "max": "302"
     },
     "buyPrice": "3602690",
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -9338,7 +9194,6 @@
       "max": "225"
     },
     "buyPrice": "420154",
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -9359,7 +9214,6 @@
       "max": "280"
     },
     "buyPrice": "4201540",
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -9380,7 +9234,6 @@
       "max": "288"
     },
     "buyPrice": "4518230",
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -9401,7 +9254,6 @@
       "max": "272"
     },
     "buyPrice": "518611",
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -9422,7 +9274,6 @@
       "max": "305"
     },
     "buyPrice": "1555833",
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -9443,7 +9294,6 @@
       "max": "338"
     },
     "buyPrice": "5186110",
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -9473,7 +9323,6 @@
       "max": "296"
     },
     "buyPrice": "1997979",
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -10195,7 +10044,9 @@
       "min": "149",
       "max": "201"
     },
-    "otherSource": "Quête"
+    "obtention": [
+      "Quête"
+    ]
   },
   {
     "name": "Oeil du tigre",
@@ -10249,10 +10100,9 @@
       "min": "147",
       "max": "199"
     },
-    "otherSource": "Quête",
-    "obtention": [],
-    "buyPrice": "Quête",
-    "sellPrice": "55412"
+    "obtention": [
+      "Quête"
+    ]
   },
   {
     "name": "Cape d'Armagueddon",
@@ -10289,10 +10139,9 @@
       "min": "146",
       "max": "199"
     },
-    "otherSource": "Quête",
-    "obtention": [],
-    "buyPrice": "Quête",
-    "sellPrice": "0",
+    "obtention": [
+      "Quête"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -10312,7 +10161,9 @@
       "min": "69",
       "max": "96"
     },
-    "otherSource": "Quête"
+    "obtention": [
+      "Quête"
+    ]
   },
   {
     "name": "Sinistre lame de guerre",
@@ -10336,10 +10187,9 @@
       "min": "129",
       "max": "169"
     },
-    "otherSource": "Quête",
-    "obtention": [],
-    "buyPrice": "Quête",
-    "sellPrice": "44221",
+    "obtention": [
+      "Quête"
+    ],
     "bonuses": {}
   },
   {
@@ -10403,7 +10253,9 @@
       "min": "146",
       "max": "198"
     },
-    "otherSource": "Quête"
+    "obtention": [
+      "Quête"
+    ]
   },
   {
     "name": "Bâton de langueur",
@@ -10425,13 +10277,13 @@
       "Puissance Lumière": "-10",
       "Résistance Nécro": "+10"
     },
-    "obtention": [],
+    "obtention": [
+      "Quête"
+    ],
     "damage": {
       "min": "35",
       "max": "55"
-    },
-    "buyPrice": "Quête",
-    "sellPrice": "5741"
+    }
   },
   {
     "name": "Manteau de l'Archer",
@@ -10786,10 +10638,9 @@
       "min": "105",
       "max": "141"
     },
-    "otherSource": "Coffre",
-    "obtention": [],
-    "buyPrice": "Coffre",
-    "sellPrice": "32522",
+    "obtention": [
+      "Coffre"
+    ],
     "secondary": {}
   },
   {
@@ -10808,10 +10659,9 @@
       "min": "63",
       "max": "85"
     },
-    "otherSource": "Coffre",
-    "obtention": [],
-    "buyPrice": "Coffre",
-    "sellPrice": "12351",
+    "obtention": [
+      "Coffre"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -11169,13 +11019,13 @@
       "wis": "0",
       "attack": "0"
     },
-    "obtention": [],
+    "obtention": [
+      "Coffre"
+    ],
     "damage": {
       "min": "21",
       "max": "33"
     },
-    "buyPrice": "Coffre",
-    "sellPrice": "3107",
     "bonuses": {},
     "secondary": {}
   },
@@ -11256,10 +11106,9 @@
       "min": "41",
       "max": "57"
     },
-    "otherSource": "Drop",
-    "obtention": [],
-    "buyPrice": "Drop",
-    "sellPrice": "5982"
+    "obtention": [
+      "Drop"
+    ]
   },
   {
     "name": "Anneau de l'assassin",
@@ -11337,10 +11186,9 @@
       "min": "42",
       "max": "61"
     },
-    "otherSource": "Drop",
-    "obtention": [],
-    "buyPrice": "Drop",
-    "sellPrice": "4843",
+    "obtention": [
+      "Drop"
+    ],
     "secondary": {}
   },
   {
@@ -11377,9 +11225,9 @@
       "Esquive": "-25",
       "Attaque": "-25"
     },
-    "obtention": [],
-    "buyPrice": "Drop",
-    "sellPrice": "0"
+    "obtention": [
+      "Drop"
+    ]
   },
   {
     "name": "Chapeau de camouflage de Madrigan",
@@ -11411,7 +11259,9 @@
       "min": "36",
       "max": "52"
     },
-    "otherSource": "Coffre"
+    "obtention": [
+      "Coffre"
+    ]
   },
   {
     "name": "Gourdin",
@@ -11431,7 +11281,6 @@
       "attack": "0"
     },
     "obtention": [],
-    "sellPrice": "9",
     "bonuses": {},
     "secondary": {}
   },
@@ -11825,10 +11674,9 @@
       "min": "385",
       "max": "562"
     },
-    "otherSource": "Drop",
-    "obtention": [],
-    "buyPrice": "Drop",
-    "sellPrice": "0"
+    "obtention": [
+      "Drop"
+    ]
   },
   {
     "name": "Clef cuivre",
@@ -12832,7 +12680,9 @@
       "max": "230"
     },
     "buyPrice": "0",
-    "otherSource": "Forgeron 60"
+    "obtention": [
+      "Forgeron 60"
+    ]
   },
   {
     "name": "Faux spectrale",
@@ -15916,7 +15766,9 @@
       "min": "10",
       "max": "18"
     },
-    "otherSource": "Forgeron 7"
+    "obtention": [
+      "Forgeron 7"
+    ]
   },
   {
     "name": "Flèches empoisonnées",
@@ -17735,7 +17587,9 @@
       "min": "127",
       "max": "178"
     },
-    "otherSource": "Forgeron 61"
+    "obtention": [
+      "Forgeron 61"
+    ]
   },
   {
     "name": "Fleuret de défaillance",
@@ -17751,7 +17605,9 @@
       "max": "131"
     },
     "buyPrice": "62304",
-    "otherSource": "Forgeron 63"
+    "obtention": [
+      "Forgeron 63"
+    ]
   },
   {
     "name": "Lame perfide",
@@ -22345,7 +22201,9 @@
       "min": "26",
       "max": "43"
     },
-    "otherSource": "Gobelin gardien des glaces"
+    "obtention": [
+      "Gobelin gardien des glaces"
+    ]
   },
   {
     "name": "Feuille d'arbre rose",
@@ -22368,7 +22226,9 @@
       "min": "36",
       "max": "50"
     },
-    "otherSource": "Drop"
+    "obtention": [
+      "Drop"
+    ]
   },
   {
     "name": "Lettre du marchand",
@@ -22437,7 +22297,6 @@
       "ca": "0.39"
     },
     "buyPrice": "261",
-    "sellPrice": "87",
     "secondary": {}
   },
   {
@@ -22456,7 +22315,6 @@
       "ca": "0.405"
     },
     "buyPrice": "248",
-    "sellPrice": "83",
     "secondary": {}
   },
   {
@@ -22475,7 +22333,6 @@
       "ca": "0.45"
     },
     "buyPrice": "269",
-    "sellPrice": "90",
     "secondary": {}
   },
   {
@@ -22494,7 +22351,6 @@
       "ca": "0.405"
     },
     "buyPrice": "245",
-    "sellPrice": "82",
     "secondary": {}
   },
   {
@@ -22524,7 +22380,6 @@
     },
     "obtention": [],
     "buyPrice": "1510",
-    "sellPrice": "503",
     "secondary": {}
   },
   {
@@ -22543,7 +22398,6 @@
     },
     "obtention": [],
     "buyPrice": "1402",
-    "sellPrice": "467",
     "secondary": {}
   },
   {
@@ -22579,7 +22433,6 @@
     },
     "obtention": [],
     "buyPrice": "1579",
-    "sellPrice": "526",
     "secondary": {}
   },
   {
@@ -22598,7 +22451,6 @@
     },
     "obtention": [],
     "buyPrice": "1372",
-    "sellPrice": "457",
     "secondary": {}
   },
   {
@@ -22617,7 +22469,6 @@
     },
     "obtention": [],
     "buyPrice": "20777",
-    "sellPrice": "6926",
     "secondary": {}
   },
   {
@@ -22636,7 +22487,6 @@
     },
     "obtention": [],
     "buyPrice": "10039",
-    "sellPrice": "3346",
     "secondary": {}
   },
   {
@@ -22861,7 +22711,6 @@
     },
     "buyPrice": "392",
     "obtention": [],
-    "sellPrice": "130",
     "bonuses": {},
     "secondary": {}
   },
@@ -22877,7 +22726,9 @@
       "max": "25"
     },
     "buyPrice": "1755",
-    "otherSource": "Prolifique (Arakas, île aux Démonicons)"
+    "obtention": [
+      "Prolifique (Arakas, île aux Démonicons)"
+    ]
   },
   {
     "name": "Hache d'argent",
@@ -22895,9 +22746,9 @@
       "min": "37",
       "max": "53"
     },
-    "buyPrice": "14894 BM*",
-    "obtention": [],
-    "sellPrice": "3424",
+    "obtention": [
+      "14894 BM*"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -22933,10 +22784,9 @@
       "min": "28",
       "max": "29"
     },
-    "otherSource": "Drop",
-    "obtention": [],
-    "buyPrice": "Drop",
-    "sellPrice": "1755",
+    "obtention": [
+      "Drop"
+    ],
     "bonuses": {}
   },
   {
@@ -22959,10 +22809,9 @@
       "min": "12",
       "max": "19"
     },
-    "otherSource": "Drop",
-    "obtention": [],
-    "buyPrice": "Drop",
-    "sellPrice": "949",
+    "obtention": [
+      "Drop"
+    ],
     "bonuses": {}
   },
   {
@@ -22981,10 +22830,9 @@
       "min": "22",
       "max": "31"
     },
-    "otherSource": "Drop",
-    "obtention": [],
-    "buyPrice": "Drop",
-    "sellPrice": "1755",
+    "obtention": [
+      "Drop"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -23004,7 +22852,9 @@
       "min": "30",
       "max": "42"
     },
-    "otherSource": "Quête"
+    "obtention": [
+      "Quête"
+    ]
   },
   {
     "name": "Anneau de confiance",
@@ -23114,7 +22964,9 @@
       "min": "7",
       "max": "48"
     },
-    "otherSource": "Quête/Drop"
+    "obtention": [
+      "Quête/Drop"
+    ]
   },
   {
     "name": "Livre de Feylor",
@@ -23213,17 +23065,21 @@
       "min": "116",
       "max": "150"
     },
-    "otherSource": "Drop",
     "prerequisites": {
       "str": "230",
       "dex": "60"
-    }
+    },
+    "obtention": [
+      "Drop"
+    ]
   },
   {
     "name": "Plastron de Drachen",
     "quantity": 1,
     "source": "Plastron",
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "prerequisites": {
       "end": "185",
       "str": "0",
@@ -23234,8 +23090,6 @@
     "bonuses": {
       "ca": "16.75"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "0",
     "secondary": {}
   },
   {
@@ -23647,7 +23501,9 @@
     "name": "Arc des arachnides",
     "quantity": 1,
     "source": "Arc",
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "prerequisites": {
       "dex": "184",
       "str": "35",
@@ -23659,8 +23515,6 @@
       "min": "86",
       "max": "115"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -23692,7 +23546,6 @@
       "min": "155",
       "max": "214"
     },
-    "otherSource": "Drop",
     "prerequisites": {
       "str": "227",
       "dex": "83",
@@ -23701,9 +23554,9 @@
       "wis": "0",
       "attack": "0"
     },
-    "obtention": [],
-    "buyPrice": "Drop",
-    "sellPrice": "0",
+    "obtention": [
+      "Drop"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -26431,7 +26284,6 @@
     },
     "buyPrice": "87",
     "obtention": [],
-    "sellPrice": "19",
     "bonuses": {},
     "secondary": {}
   },
@@ -26453,7 +26305,6 @@
     },
     "buyPrice": "290",
     "obtention": [],
-    "sellPrice": "29",
     "bonuses": {},
     "secondary": {}
   },
@@ -26473,10 +26324,9 @@
       "min": "3",
       "max": "6"
     },
-    "otherSource": "Invoc.",
-    "obtention": [],
-    "buyPrice": "Invoc.",
-    "sellPrice": "38",
+    "obtention": [
+      "Invoc."
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -26498,7 +26348,6 @@
     },
     "buyPrice": "87",
     "obtention": [],
-    "sellPrice": "19",
     "bonuses": {},
     "secondary": {}
   },
@@ -26520,7 +26369,6 @@
     },
     "buyPrice": "270",
     "obtention": [],
-    "sellPrice": "29",
     "bonuses": {},
     "secondary": {}
   },
@@ -26542,7 +26390,6 @@
     },
     "buyPrice": "290",
     "obtention": [],
-    "sellPrice": "29",
     "bonuses": {},
     "secondary": {}
   },
@@ -26562,10 +26409,9 @@
       "min": "0",
       "max": "0"
     },
-    "otherSource": "Quête",
-    "obtention": [],
-    "buyPrice": "Quête",
-    "sellPrice": "0",
+    "obtention": [
+      "Quête"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -26585,10 +26431,9 @@
       "min": "14",
       "max": "22"
     },
-    "otherSource": "Drop",
-    "obtention": [],
-    "buyPrice": "Drop",
-    "sellPrice": "0",
+    "obtention": [
+      "Drop"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -26610,7 +26455,6 @@
     },
     "buyPrice": "1176",
     "obtention": [],
-    "sellPrice": "261",
     "bonuses": {},
     "secondary": {}
   },
@@ -26627,7 +26471,9 @@
       "min": "5",
       "max": "9"
     },
-    "otherSource": "Quête"
+    "obtention": [
+      "Quête"
+    ]
   },
   {
     "name": "Bâton de combat",
@@ -26661,7 +26507,6 @@
     },
     "buyPrice": "3057",
     "obtention": [],
-    "sellPrice": "779",
     "bonuses": {},
     "secondary": {}
   },
@@ -26697,7 +26542,6 @@
     },
     "buyPrice": "2361",
     "obtention": [],
-    "sellPrice": "787",
     "bonuses": {},
     "secondary": {}
   },
@@ -26719,7 +26563,6 @@
     },
     "buyPrice": "7083",
     "obtention": [],
-    "sellPrice": "1574",
     "bonuses": {},
     "secondary": {}
   },
@@ -26741,7 +26584,6 @@
     },
     "buyPrice": "23610",
     "obtention": [],
-    "sellPrice": "2361",
     "bonuses": {},
     "secondary": {}
   },
@@ -26763,7 +26605,6 @@
     },
     "buyPrice": "11898",
     "obtention": [],
-    "sellPrice": "2644",
     "bonuses": {},
     "secondary": {}
   },
@@ -26785,7 +26626,6 @@
     },
     "buyPrice": "17955",
     "obtention": [],
-    "sellPrice": "3990",
     "bonuses": {},
     "secondary": {}
   },
@@ -26807,7 +26647,6 @@
     },
     "buyPrice": "27969",
     "obtention": [],
-    "sellPrice": "6215",
     "bonuses": {},
     "secondary": {}
   },
@@ -26823,7 +26662,9 @@
       "min": "21",
       "max": "33"
     },
-    "otherSource": "Coffre"
+    "obtention": [
+      "Coffre"
+    ]
   },
   {
     "name": "Bâton de Bastet, l'esprit des chats",
@@ -26841,10 +26682,9 @@
       "min": "35",
       "max": "55"
     },
-    "otherSource": "Coffre",
-    "obtention": [],
-    "buyPrice": "Coffre",
-    "sellPrice": "25664",
+    "obtention": [
+      "Coffre"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -26861,7 +26701,9 @@
       "min": "35",
       "max": "55"
     },
-    "otherSource": "Quête"
+    "obtention": [
+      "Quête"
+    ]
   },
   {
     "name": "Rapière du bretteur (+3)",
@@ -26879,10 +26721,10 @@
       "min": "9",
       "max": "16"
     },
-    "otherSource": "Invoc. | Forgeron 3",
-    "buyPrice": "Invoc.",
-    "obtention": [],
-    "sellPrice": "806",
+    "obtention": [
+      "Invoc.",
+      "Invoc. | Forgeron 3"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -26904,7 +26746,6 @@
     },
     "buyPrice": "1815",
     "obtention": [],
-    "sellPrice": "403",
     "bonuses": {},
     "secondary": {}
   },
@@ -26924,10 +26765,10 @@
       "min": "9",
       "max": "15"
     },
-    "otherSource": "Invoc. | Gobelin Farfelu, Forgeron 5",
-    "buyPrice": "Invoc.",
-    "obtention": [],
-    "sellPrice": "805",
+    "obtention": [
+      "Invoc.",
+      "Invoc. | Gobelin Farfelu, Forgeron 5"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -26947,10 +26788,9 @@
       "min": "18",
       "max": "27"
     },
-    "otherSource": "Quête",
-    "obtention": [],
-    "buyPrice": "Quête",
-    "sellPrice": "3217",
+    "obtention": [
+      "Quête"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -26970,10 +26810,10 @@
       "min": "23",
       "max": "36"
     },
-    "otherSource": "Invoc. | Forgeron 9",
-    "buyPrice": "Invoc.",
-    "obtention": [],
-    "sellPrice": "3148",
+    "obtention": [
+      "Invoc.",
+      "Invoc. | Forgeron 9"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -26993,10 +26833,10 @@
       "min": "30",
       "max": "46"
     },
-    "otherSource": "Invoc. | Forgeron 13",
-    "buyPrice": "Invoc.",
-    "obtention": [],
-    "sellPrice": "7021",
+    "obtention": [
+      "Invoc.",
+      "Invoc. | Forgeron 13"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -27016,10 +26856,10 @@
       "min": "40",
       "max": "58"
     },
-    "otherSource": "Invoc. | Forgeron 17",
-    "buyPrice": "Invoc.",
-    "obtention": [],
-    "sellPrice": "12430",
+    "obtention": [
+      "Invoc.",
+      "Invoc. | Forgeron 17"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -27039,10 +26879,9 @@
       "min": "30",
       "max": "42"
     },
-    "otherSource": "Drop",
-    "obtention": [],
-    "buyPrice": "Drop",
-    "sellPrice": "3107",
+    "obtention": [
+      "Drop"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -27062,10 +26901,10 @@
       "min": "54",
       "max": "78"
     },
-    "otherSource": "Invoc. | Forgeron 19",
-    "buyPrice": "Invoc.",
-    "obtention": [],
-    "sellPrice": "19372",
+    "obtention": [
+      "Invoc.",
+      "Invoc. | Forgeron 19"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -27087,7 +26926,6 @@
     },
     "buyPrice": "111159",
     "obtention": [],
-    "sellPrice": "24702",
     "bonuses": {},
     "secondary": {}
   },
@@ -27109,7 +26947,6 @@
     },
     "buyPrice": "370530",
     "obtention": [],
-    "sellPrice": "37053",
     "bonuses": {},
     "secondary": {}
   },
@@ -27129,10 +26966,9 @@
       "min": "81",
       "max": "117"
     },
-    "otherSource": "Invoc.",
-    "obtention": [],
-    "buyPrice": "Invoc.",
-    "sellPrice": "49408",
+    "obtention": [
+      "Invoc."
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -27152,10 +26988,9 @@
       "min": "32",
       "max": "60"
     },
-    "otherSource": "Quête",
-    "obtention": [],
-    "buyPrice": "Quête",
-    "sellPrice": "6962",
+    "obtention": [
+      "Quête"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -27175,10 +27010,10 @@
       "min": "61",
       "max": "87"
     },
-    "otherSource": "Invoc. | Forgeron 27",
-    "buyPrice": "Invoc.",
-    "obtention": [],
-    "sellPrice": "27849",
+    "obtention": [
+      "Invoc.",
+      "Invoc. | Forgeron 27"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -27198,10 +27033,9 @@
       "min": "73",
       "max": "105"
     },
-    "otherSource": "Invoc.",
-    "obtention": [],
-    "buyPrice": "Invoc.",
-    "sellPrice": "27849",
+    "obtention": [
+      "Invoc."
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -27221,10 +27055,9 @@
       "min": "90",
       "max": "129"
     },
-    "otherSource": "Quête",
-    "obtention": [],
-    "buyPrice": "Quête",
-    "sellPrice": "59113",
+    "obtention": [
+      "Quête"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -27246,7 +27079,6 @@
     },
     "buyPrice": "111159",
     "obtention": [],
-    "sellPrice": "24702",
     "bonuses": {},
     "secondary": {}
   },
@@ -27266,10 +27098,10 @@
       "min": "82",
       "max": "115"
     },
-    "otherSource": "Invoc. | Forgeron 36",
-    "buyPrice": "Invoc.",
-    "obtention": [],
-    "sellPrice": "49404",
+    "obtention": [
+      "Invoc.",
+      "Invoc. | Forgeron 36"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -27289,10 +27121,9 @@
       "min": "142",
       "max": "204"
     },
-    "otherSource": "Invoc.",
-    "obtention": [],
-    "buyPrice": "Invoc.",
-    "sellPrice": "0",
+    "obtention": [
+      "Invoc."
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -27312,10 +27143,9 @@
       "min": "71",
       "max": "95"
     },
-    "otherSource": "Drop",
-    "obtention": [],
-    "buyPrice": "Drop",
-    "sellPrice": "12720",
+    "obtention": [
+      "Drop"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -27337,7 +27167,6 @@
     },
     "buyPrice": "57861",
     "obtention": [],
-    "sellPrice": "19273",
     "bonuses": {},
     "secondary": {}
   },
@@ -27359,7 +27188,6 @@
     },
     "buyPrice": "173463",
     "obtention": [],
-    "sellPrice": "38547",
     "bonuses": {},
     "secondary": {}
   },
@@ -27381,7 +27209,6 @@
     },
     "buyPrice": "578210",
     "obtention": [],
-    "sellPrice": "57821",
     "bonuses": {},
     "secondary": {}
   },
@@ -27401,10 +27228,9 @@
       "min": "114",
       "max": "161"
     },
-    "otherSource": "Invoc.",
-    "obtention": [],
-    "buyPrice": "Invoc.",
-    "sellPrice": "77094",
+    "obtention": [
+      "Invoc."
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -27424,10 +27250,9 @@
       "min": "170",
       "max": "242"
     },
-    "otherSource": "Invoc.",
-    "obtention": [],
-    "buyPrice": "Invoc.",
-    "sellPrice": "0",
+    "obtention": [
+      "Invoc."
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -27447,10 +27272,9 @@
       "min": "133",
       "max": "186"
     },
-    "otherSource": "Coffre",
-    "obtention": [],
-    "buyPrice": "Coffre",
-    "sellPrice": "0",
+    "obtention": [
+      "Coffre"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -27472,7 +27296,6 @@
     },
     "buyPrice": "230691",
     "obtention": [],
-    "sellPrice": "76897",
     "bonuses": {},
     "secondary": {}
   },
@@ -27494,7 +27317,6 @@
     },
     "buyPrice": "692073",
     "obtention": [],
-    "sellPrice": "153794",
     "bonuses": {},
     "secondary": {}
   },
@@ -27516,7 +27338,6 @@
     },
     "buyPrice": "2306910",
     "obtention": [],
-    "sellPrice": "230691",
     "bonuses": {},
     "secondary": {}
   },
@@ -27538,7 +27359,6 @@
     },
     "buyPrice": "9227640",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -27560,7 +27380,6 @@
     },
     "buyPrice": "129874",
     "obtention": [],
-    "sellPrice": "43291",
     "bonuses": {},
     "secondary": {}
   },
@@ -27582,7 +27401,6 @@
     },
     "buyPrice": "389622",
     "obtention": [],
-    "sellPrice": "86582",
     "bonuses": {},
     "secondary": {}
   },
@@ -27604,7 +27422,6 @@
     },
     "buyPrice": "1298740",
     "obtention": [],
-    "sellPrice": "129874",
     "bonuses": {},
     "secondary": {}
   },
@@ -27626,7 +27443,6 @@
     },
     "buyPrice": "443211",
     "obtention": [],
-    "sellPrice": "98491",
     "bonuses": {},
     "secondary": {}
   },
@@ -27648,7 +27464,6 @@
     },
     "buyPrice": "1477370",
     "obtention": [],
-    "sellPrice": "147737",
     "bonuses": {},
     "secondary": {}
   },
@@ -27670,7 +27485,6 @@
     },
     "buyPrice": "5909480",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -27692,7 +27506,6 @@
     },
     "buyPrice": "147737",
     "obtention": [],
-    "sellPrice": "49245",
     "bonuses": {},
     "secondary": {}
   },
@@ -27714,7 +27527,6 @@
     },
     "buyPrice": "443211",
     "obtention": [],
-    "sellPrice": "98491",
     "bonuses": {},
     "secondary": {}
   },
@@ -27736,7 +27548,6 @@
     },
     "buyPrice": "1477370",
     "obtention": [],
-    "sellPrice": "147737",
     "bonuses": {},
     "secondary": {}
   },
@@ -27756,10 +27567,9 @@
       "min": "195",
       "max": "274"
     },
-    "otherSource": "Coffre",
-    "obtention": [],
-    "buyPrice": "Coffre",
-    "sellPrice": "0",
+    "obtention": [
+      "Coffre"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -27781,7 +27591,6 @@
     },
     "buyPrice": "360269",
     "obtention": [],
-    "sellPrice": "120089",
     "bonuses": {},
     "secondary": {}
   },
@@ -27803,7 +27612,6 @@
     },
     "buyPrice": "1080807",
     "obtention": [],
-    "sellPrice": "240179",
     "bonuses": {},
     "secondary": {}
   },
@@ -27825,7 +27633,6 @@
     },
     "buyPrice": "3602690",
     "obtention": [],
-    "sellPrice": "360269",
     "bonuses": {},
     "secondary": {}
   },
@@ -27845,10 +27652,9 @@
       "min": "247",
       "max": "359"
     },
-    "otherSource": "Drop",
-    "obtention": [],
-    "buyPrice": "Drop",
-    "sellPrice": "0",
+    "obtention": [
+      "Drop"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -27870,7 +27676,6 @@
     },
     "buyPrice": "186913",
     "obtention": [],
-    "sellPrice": "62304",
     "bonuses": {},
     "secondary": {}
   },
@@ -27892,7 +27697,6 @@
     },
     "buyPrice": "560739",
     "obtention": [],
-    "sellPrice": "124608",
     "bonuses": {},
     "secondary": {}
   },
@@ -27914,7 +27718,6 @@
     },
     "buyPrice": "560739",
     "obtention": [],
-    "sellPrice": "124608",
     "bonuses": {},
     "secondary": {}
   },
@@ -27934,10 +27737,9 @@
       "min": "153",
       "max": "205"
     },
-    "otherSource": "Quête",
-    "obtention": [],
-    "buyPrice": "Quête",
-    "sellPrice": "10284",
+    "obtention": [
+      "Quête"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -27959,7 +27761,6 @@
     },
     "buyPrice": "624678",
     "obtention": [],
-    "sellPrice": "138817",
     "bonuses": {},
     "secondary": {}
   },
@@ -27981,7 +27782,6 @@
     },
     "buyPrice": "2082260",
     "obtention": [],
-    "sellPrice": "208226",
     "bonuses": {},
     "secondary": {}
   },
@@ -28003,7 +27803,6 @@
     },
     "buyPrice": "230691",
     "obtention": [],
-    "sellPrice": "76897",
     "bonuses": {},
     "secondary": {}
   },
@@ -28025,7 +27824,6 @@
     },
     "buyPrice": "692073",
     "obtention": [],
-    "sellPrice": "153794",
     "bonuses": {},
     "secondary": {}
   },
@@ -28047,7 +27845,6 @@
     },
     "buyPrice": "9227640",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -28069,7 +27866,6 @@
     },
     "buyPrice": "692073",
     "obtention": [],
-    "sellPrice": "153794",
     "bonuses": {},
     "secondary": {}
   },
@@ -28091,7 +27887,6 @@
     },
     "buyPrice": "2306910",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -28113,7 +27908,6 @@
     },
     "buyPrice": "9227640",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -28135,7 +27929,6 @@
     },
     "buyPrice": "230691",
     "obtention": [],
-    "sellPrice": "76897",
     "bonuses": {},
     "secondary": {}
   },
@@ -28157,7 +27950,6 @@
     },
     "buyPrice": "692073",
     "obtention": [],
-    "sellPrice": "153794",
     "bonuses": {},
     "secondary": {}
   },
@@ -28179,7 +27971,6 @@
     },
     "buyPrice": "2306910",
     "obtention": [],
-    "sellPrice": "230691",
     "bonuses": {},
     "secondary": {}
   },
@@ -28201,7 +27992,6 @@
     },
     "buyPrice": "254305",
     "obtention": [],
-    "sellPrice": "84768",
     "bonuses": {},
     "secondary": {}
   },
@@ -28223,7 +28013,6 @@
     },
     "buyPrice": "762915",
     "obtention": [],
-    "sellPrice": "169536",
     "bonuses": {},
     "secondary": {}
   },
@@ -28245,7 +28034,6 @@
     },
     "buyPrice": "2543050",
     "obtention": [],
-    "sellPrice": "254305",
     "bonuses": {},
     "secondary": {}
   },
@@ -28267,7 +28055,6 @@
     },
     "buyPrice": "279071",
     "obtention": [],
-    "sellPrice": "93023",
     "bonuses": {},
     "secondary": {}
   },
@@ -28289,7 +28076,6 @@
     },
     "buyPrice": "837213",
     "obtention": [],
-    "sellPrice": "186047",
     "bonuses": {},
     "secondary": {}
   },
@@ -28311,7 +28097,6 @@
     },
     "buyPrice": "2790710",
     "obtention": [],
-    "sellPrice": "279071",
     "bonuses": {},
     "secondary": {}
   },
@@ -28333,7 +28118,6 @@
     },
     "buyPrice": "11162840",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -28355,7 +28139,6 @@
     },
     "buyPrice": "332053",
     "obtention": [],
-    "sellPrice": "110684",
     "bonuses": {},
     "secondary": {}
   },
@@ -28377,7 +28160,6 @@
     },
     "buyPrice": "996159",
     "obtention": [],
-    "sellPrice": "221368",
     "bonuses": {},
     "secondary": {}
   },
@@ -28399,7 +28181,6 @@
     },
     "buyPrice": "332053",
     "obtention": [],
-    "sellPrice": "110684",
     "bonuses": {},
     "secondary": {}
   },
@@ -28421,7 +28202,6 @@
     },
     "buyPrice": "996159",
     "obtention": [],
-    "sellPrice": "221368",
     "bonuses": {},
     "secondary": {}
   },
@@ -28443,7 +28223,6 @@
     },
     "buyPrice": "3320530",
     "obtention": [],
-    "sellPrice": "332053",
     "bonuses": {},
     "secondary": {}
   },
@@ -28465,7 +28244,6 @@
     },
     "buyPrice": "360269",
     "obtention": [],
-    "sellPrice": "120089",
     "bonuses": {},
     "secondary": {}
   },
@@ -28487,7 +28265,6 @@
     },
     "buyPrice": "1080807",
     "obtention": [],
-    "sellPrice": "240179",
     "bonuses": {},
     "secondary": {}
   },
@@ -28509,7 +28286,6 @@
     },
     "buyPrice": "389637",
     "obtention": [],
-    "sellPrice": "129879",
     "bonuses": {},
     "secondary": {}
   },
@@ -28531,7 +28307,6 @@
     },
     "buyPrice": "1168911",
     "obtention": [],
-    "sellPrice": "259758",
     "bonuses": {},
     "secondary": {}
   },
@@ -28553,7 +28328,6 @@
     },
     "buyPrice": "3869370",
     "obtention": [],
-    "sellPrice": "389637",
     "bonuses": {},
     "secondary": {}
   },
@@ -28575,7 +28349,6 @@
     },
     "buyPrice": "420154",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -28597,7 +28370,6 @@
     },
     "buyPrice": "1260462",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -28619,7 +28391,6 @@
     },
     "buyPrice": "4201540",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -28641,7 +28412,6 @@
     },
     "buyPrice": "16806160",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -28663,7 +28433,6 @@
     },
     "buyPrice": "451823",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -28685,7 +28454,6 @@
     },
     "buyPrice": "1355469",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -28707,7 +28475,6 @@
     },
     "buyPrice": "4518230",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -28729,7 +28496,6 @@
     },
     "buyPrice": "18072920",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -28751,7 +28517,6 @@
     },
     "buyPrice": "746587",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -28773,7 +28538,6 @@
     },
     "buyPrice": "2239761",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -28795,7 +28559,6 @@
     },
     "buyPrice": "7465870",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -28817,7 +28580,6 @@
     },
     "buyPrice": "921581",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -28839,7 +28601,6 @@
     },
     "buyPrice": "2764743",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -28861,7 +28622,6 @@
     },
     "buyPrice": "9215810",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -28881,10 +28641,9 @@
       "min": "431",
       "max": "638"
     },
-    "otherSource": "Drop",
-    "obtention": [],
-    "buyPrice": "Drop",
-    "sellPrice": "0",
+    "obtention": [
+      "Drop"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -28906,7 +28665,6 @@
     },
     "buyPrice": "921581",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -28928,7 +28686,6 @@
     },
     "buyPrice": "2764743",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -28950,7 +28707,6 @@
     },
     "buyPrice": "9215810",
     "obtention": [],
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
@@ -28970,10 +28726,9 @@
       "min": "537",
       "max": "813"
     },
-    "otherSource": "Drop",
-    "obtention": [],
-    "buyPrice": "Drop",
-    "sellPrice": "0",
+    "obtention": [
+      "Drop"
+    ],
     "bonuses": {},
     "secondary": {}
   },
@@ -28987,7 +28742,9 @@
       "max": "6"
     },
     "buyPrice": "38",
-    "otherSource": "Forgeron 1"
+    "obtention": [
+      "Forgeron 1"
+    ]
   },
   {
     "name": "Epée courte d'Orkanis (+3)",
@@ -29000,7 +28757,9 @@
       "min": "24",
       "max": "38"
     },
-    "otherSource": "Forgeron 15, Prolifique (Arakas, île aux Démonicons)"
+    "obtention": [
+      "Forgeron 15, Prolifique (Arakas, île aux Démonicons)"
+    ]
   },
   {
     "name": "Epée du froid de main gauche (dual)",
@@ -29013,7 +28772,9 @@
       "min": "26",
       "max": "43"
     },
-    "otherSource": "Gobelin gardien des glaces"
+    "obtention": [
+      "Gobelin gardien des glaces"
+    ]
   },
   {
     "name": "Lance d'alourdissement (2 mains)",
@@ -29028,7 +28789,9 @@
       "min": "21",
       "max": "25"
     },
-    "otherSource": "Ebéniste 43"
+    "obtention": [
+      "Ebéniste 43"
+    ]
   },
   {
     "name": "Épée d'argent (2 mains)",
@@ -29042,7 +28805,9 @@
       "max": "92"
     },
     "buyPrice": "11324",
-    "otherSource": "Dragon Freidaclan (RD)"
+    "obtention": [
+      "Dragon Freidaclan (RD)"
+    ]
   },
   {
     "name": "Lance d'alourdissement important (2 mains)",
@@ -29057,7 +28822,9 @@
       "min": "21",
       "max": "30"
     },
-    "otherSource": "Ebéniste 67"
+    "obtention": [
+      "Ebéniste 67"
+    ]
   },
   {
     "name": "Dague d'obscurantis de main gauche (dual) (+3)",
@@ -29071,7 +28838,9 @@
       "max": "87"
     },
     "buyPrice": "27849",
-    "otherSource": "Forgeron 29"
+    "obtention": [
+      "Forgeron 29"
+    ]
   },
   {
     "name": "Épée incrustée de glace de main gauche (dual) (+3)",
@@ -29085,7 +28854,9 @@
       "max": "115"
     },
     "buyPrice": "19620",
-    "otherSource": "Quête Le Forgeron Durikh"
+    "obtention": [
+      "Quête Le Forgeron Durikh"
+    ]
   },
   {
     "name": "Cimeterre du Zéphyr (+3)",
@@ -29099,7 +28870,9 @@
       "max": "134"
     },
     "buyPrice": "77094",
-    "otherSource": "Forgeron 41"
+    "obtention": [
+      "Forgeron 41"
+    ]
   },
   {
     "name": "Cimeterre du Zéphyr de main gauche (dual) (+3)",
@@ -29112,7 +28885,9 @@
       "min": "87",
       "max": "134"
     },
-    "otherSource": "Forgeron 48"
+    "obtention": [
+      "Forgeron 48"
+    ]
   },
   {
     "name": "Hachette d'acier fin (+3)",
@@ -29125,7 +28900,9 @@
       "min": "94",
       "max": "145"
     },
-    "otherSource": "Forgeron 49"
+    "obtention": [
+      "Forgeron 49"
+    ]
   },
   {
     "name": "Hachette d'acier fin de main gauche (dual) (+3)",
@@ -29138,7 +28915,9 @@
       "min": "94",
       "max": "145"
     },
-    "otherSource": "Forgeron 51"
+    "obtention": [
+      "Forgeron 51"
+    ]
   },
   {
     "name": "Poings du pugiliste (2 mains) (+2)",
@@ -29153,7 +28932,9 @@
       "min": "92",
       "max": "141"
     },
-    "otherSource": "Armurier 78"
+    "obtention": [
+      "Armurier 78"
+    ]
   },
   {
     "name": "Dague de l'assassin de main gauche (dual) (+3)",
@@ -29167,7 +28948,9 @@
       "max": "153"
     },
     "buyPrice": "0",
-    "otherSource": "Forgeron 53"
+    "obtention": [
+      "Forgeron 53"
+    ]
   },
   {
     "name": "Hache de guerre Baatorienne (2 mains) (+3)",
@@ -29181,7 +28964,9 @@
       "max": "209"
     },
     "buyPrice": "0",
-    "otherSource": "Forgeron 55"
+    "obtention": [
+      "Forgeron 55"
+    ]
   },
   {
     "name": "Epée de la Rose Noire de main gauche (dual) (+3)",
@@ -29195,7 +28980,9 @@
       "max": "230"
     },
     "buyPrice": "49245",
-    "otherSource": "Forgeron 57"
+    "obtention": [
+      "Forgeron 57"
+    ]
   },
   {
     "name": "Épée de glace incrustée de saphir de main gauche (dual) (+3)",
@@ -29209,7 +28996,9 @@
       "max": "275"
     },
     "buyPrice": "115366",
-    "otherSource": "Drop des ZartGax (Niève, RD)"
+    "obtention": [
+      "Drop des ZartGax (Niève, RD)"
+    ]
   },
   {
     "name": "Lame enchantée (+2)",
@@ -29224,7 +29013,9 @@
       "min": "142",
       "max": "228"
     },
-    "otherSource": "Drop Draconigus invoqué majeur (désert RD), différents coffres de Drake Island"
+    "obtention": [
+      "Drop Draconigus invoqué majeur (désert RD), différents coffres de Drake Island"
+    ]
   },
   {
     "name": "Lame enchantée de main gauche (+2)",
@@ -29239,7 +29030,9 @@
       "min": "142",
       "max": "228"
     },
-    "otherSource": "Forgeron 65"
+    "obtention": [
+      "Forgeron 65"
+    ]
   },
   {
     "name": "Lame de perdition enchantée (+1)",
@@ -29292,7 +29085,9 @@
       "max": "285"
     },
     "buyPrice": "480358",
-    "otherSource": "Forgeron 67"
+    "obtention": [
+      "Forgeron 67"
+    ]
   },
   {
     "name": "Épée Batarde d'Adamantium (+3)",
@@ -29306,7 +29101,9 @@
       "max": "331"
     },
     "buyPrice": "224877",
-    "otherSource": "Drop du Dragon LivoxDrinn ( SH )"
+    "obtention": [
+      "Drop du Dragon LivoxDrinn ( SH )"
+    ]
   },
   {
     "name": "Cimeterre de Rubis (+3)",
@@ -29320,7 +29117,9 @@
       "max": "339"
     },
     "buyPrice": "298755",
-    "otherSource": "quete de l ile de lune"
+    "obtention": [
+      "quete de l ile de lune"
+    ]
   },
   {
     "name": "Cimeterre de Rubis de main gauche (dual) (+3)",
@@ -29334,7 +29133,9 @@
       "max": "339"
     },
     "buyPrice": "298755",
-    "otherSource": "Forgeron 72"
+    "obtention": [
+      "Forgeron 72"
+    ]
   },
   {
     "name": "Epée à deux mains en titane (+2)",
@@ -29348,7 +29149,9 @@
       "max": "391"
     },
     "buyPrice": "196667",
-    "otherSource": "Forgeron 73"
+    "obtention": [
+      "Forgeron 73"
+    ]
   },
   {
     "name": "Épée de Diamants (+3)",
@@ -29373,7 +29176,9 @@
       "min": "249",
       "max": "406"
     },
-    "otherSource": "Forgeron 77"
+    "obtention": [
+      "Forgeron 77"
+    ]
   },
   {
     "name": "Epée de Liridell (2 mains) (+4)",
@@ -29386,7 +29191,9 @@
       "min": "317",
       "max": "524"
     },
-    "otherSource": "Drop du dragon Liridell (Est désert DI)"
+    "obtention": [
+      "Drop du dragon Liridell (Est désert DI)"
+    ]
   },
   {
     "name": "Hache de Liridell (2 mains) (+4)",
@@ -29399,7 +29206,9 @@
       "min": "423",
       "max": "699"
     },
-    "otherSource": "Drop du dragon Liridell (désert DI)"
+    "obtention": [
+      "Drop du dragon Liridell (désert DI)"
+    ]
   },
   {
     "name": "Cimeterre des Ancêtres Enchanté (+1)",
@@ -29452,7 +29261,9 @@
       "max": "422"
     },
     "buyPrice": "1554945",
-    "otherSource": "Forgeron 79"
+    "obtention": [
+      "Forgeron 79"
+    ]
   },
   {
     "name": "Epée bâtarde des Ancêtres Enchantée (+1)",
@@ -29505,7 +29316,9 @@
       "max": "481"
     },
     "buyPrice": "1554945",
-    "otherSource": "Forgeron 81"
+    "obtention": [
+      "Forgeron 81"
+    ]
   },
   {
     "name": "Épée à deux mains des ancêtres",
@@ -29635,7 +29448,9 @@
       "min": "282",
       "max": "483"
     },
-    "otherSource": "Forgeron 84"
+    "obtention": [
+      "Forgeron 84"
+    ]
   },
   {
     "name": "Epée une main et demi vibrante (+3) (lente)",
@@ -29648,7 +29463,9 @@
       "min": "324",
       "max": "556"
     },
-    "otherSource": "Forgeron 85"
+    "obtention": [
+      "Forgeron 85"
+    ]
   },
   {
     "name": "Lame de l'infatiguable (+3) (bof)",
@@ -29661,7 +29478,9 @@
       "min": "393",
       "max": "677"
     },
-    "otherSource": "Forgeron 87"
+    "obtention": [
+      "Forgeron 87"
+    ]
   },
   {
     "name": "Cimeterre en métrolite robuste (+3)",
@@ -29674,7 +29493,9 @@
       "min": "298",
       "max": "516"
     },
-    "otherSource": "Forgeron 89"
+    "obtention": [
+      "Forgeron 89"
+    ]
   },
   {
     "name": "Exterminatrice (+3)",
@@ -29687,7 +29508,9 @@
       "min": "343",
       "max": "594"
     },
-    "otherSource": "Forgeron 91"
+    "obtention": [
+      "Forgeron 91"
+    ]
   },
   {
     "name": "Glaive terrestre (+3)",
@@ -29702,7 +29525,9 @@
       "min": "343",
       "max": "594"
     },
-    "otherSource": "Forgeron 97"
+    "obtention": [
+      "Forgeron 97"
+    ]
   },
   {
     "name": "Glaive de givre (+3)",
@@ -29717,7 +29542,9 @@
       "min": "343",
       "max": "594"
     },
-    "otherSource": "Forgeron 101"
+    "obtention": [
+      "Forgeron 101"
+    ]
   },
   {
     "name": "Glaive virevoltant (+3)",
@@ -29732,7 +29559,9 @@
       "min": "343",
       "max": "594"
     },
-    "otherSource": "Forgeron 99"
+    "obtention": [
+      "Forgeron 99"
+    ]
   },
   {
     "name": "Glaive flamboyant (+3)",
@@ -29747,7 +29576,9 @@
       "min": "343",
       "max": "594"
     },
-    "otherSource": "Forgeron 103"
+    "obtention": [
+      "Forgeron 103"
+    ]
   },
   {
     "name": "Claymore d'extinction (2 mains) (+3)",
@@ -29760,7 +29591,9 @@
       "min": "416",
       "max": "722"
     },
-    "otherSource": "Forgeron 93"
+    "obtention": [
+      "Forgeron 93"
+    ]
   },
   {
     "name": "Claymore d'extinction étoilée (2 mains) (+4)",
@@ -29773,7 +29606,9 @@
       "min": "416",
       "max": "722"
     },
-    "otherSource": "Quête du forgeron Durikh"
+    "obtention": [
+      "Quête du forgeron Durikh"
+    ]
   },
   {
     "name": "Hallebarde terrestre (2 mains) (+3)",
@@ -29789,7 +29624,9 @@
       "max": "722"
     },
     "buyPrice": "2582470",
-    "otherSource": "Forgeron 98"
+    "obtention": [
+      "Forgeron 98"
+    ]
   },
   {
     "name": "Hallebarde de givre (2 mains) (+3)",
@@ -29805,7 +29642,9 @@
       "max": "722"
     },
     "buyPrice": "2582470",
-    "otherSource": "Forgeron 102"
+    "obtention": [
+      "Forgeron 102"
+    ]
   },
   {
     "name": "Hallebarde virevoltante (2 mains) (+3)",
@@ -29821,7 +29660,9 @@
       "max": "722"
     },
     "buyPrice": "2582470",
-    "otherSource": "Forgeron 100"
+    "obtention": [
+      "Forgeron 100"
+    ]
   },
   {
     "name": "Hallebarde flamboyante (2 mains) (+3)",
@@ -29837,7 +29678,9 @@
       "max": "722"
     },
     "buyPrice": "2582470",
-    "otherSource": "Forgeron 104"
+    "obtention": [
+      "Forgeron 104"
+    ]
   },
   {
     "name": "Fauchon en acier frappé (? mains) (+2) (new)",
@@ -29864,7 +29707,9 @@
       "min": "446",
       "max": "772"
     },
-    "otherSource": "Forgeron 105 (demande une lame gemme sombre)"
+    "obtention": [
+      "Forgeron 105 (demande une lame gemme sombre)"
+    ]
   },
   {
     "quantity": 1,
@@ -29884,8 +29729,7 @@
       "min": "1",
       "max": "3"
     },
-    "buyPrice": "87",
-    "sellPrice": "19"
+    "buyPrice": "87"
   },
   {
     "quantity": 1,
@@ -29905,8 +29749,7 @@
       "min": "5",
       "max": "11"
     },
-    "buyPrice": "1815",
-    "sellPrice": "403"
+    "buyPrice": "1815"
   },
   {
     "quantity": 1,
@@ -29926,14 +29769,14 @@
       "min": "13",
       "max": "21"
     },
-    "buyPrice": "7083",
-    "sellPrice": "1574"
+    "buyPrice": "7083"
   },
   {
     "quantity": 1,
     "source": "Arc",
     "obtention": [
-      "Ebéniste 9"
+      "Ebéniste 9",
+      "Métiers"
     ],
     "name": "Arc en os du désert (+3)",
     "prerequisites": {
@@ -29946,15 +29789,14 @@
     "damage": {
       "min": "17",
       "max": "27"
-    },
-    "buyPrice": "Métiers",
-    "sellPrice": "3148"
+    }
   },
   {
     "quantity": 1,
     "source": "Arme",
     "obtention": [
-      "Ebéniste 21"
+      "Ebéniste 21",
+      "Métiers"
     ],
     "name": "Vibrevent (+3)",
     "prerequisites": {
@@ -29967,14 +29809,14 @@
     "damage": {
       "min": "57",
       "max": "80"
-    },
-    "buyPrice": "Métiers",
-    "sellPrice": "27849"
+    }
   },
   {
     "quantity": 1,
     "source": "Arc",
-    "obtention": [],
+    "obtention": [
+      "Quête"
+    ],
     "name": "Arc pourfendeur des centaures",
     "prerequisites": {
       "dex": "140",
@@ -29986,14 +29828,14 @@
     "damage": {
       "min": "64",
       "max": "87"
-    },
-    "buyPrice": "Quête",
-    "sellPrice": "15620"
+    }
   },
   {
     "quantity": 1,
     "source": "Arc",
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Arc primitif Skraug",
     "prerequisites": {
       "dex": "169",
@@ -30005,15 +29847,14 @@
     "damage": {
       "min": "78",
       "max": "104"
-    },
-    "buyPrice": "Drop",
-    "sellPrice": "23310"
+    }
   },
   {
     "quantity": 1,
     "source": "Arme",
     "obtention": [
-      "Ebéniste 33"
+      "Ebéniste 33",
+      "Métiers"
     ],
     "name": "Porteveuve (+3)",
     "prerequisites": {
@@ -30026,9 +29867,7 @@
     "damage": {
       "min": "122",
       "max": "167"
-    },
-    "buyPrice": "Métiers",
-    "sellPrice": "0"
+    }
   },
   {
     "quantity": 1,
@@ -30046,8 +29885,7 @@
       "min": "132",
       "max": "177"
     },
-    "buyPrice": "186913",
-    "sellPrice": "62304"
+    "buyPrice": "186913"
   },
   {
     "quantity": 1,
@@ -30065,8 +29903,7 @@
       "min": "148",
       "max": "199"
     },
-    "buyPrice": "560739",
-    "sellPrice": "0"
+    "buyPrice": "560739"
   },
   {
     "quantity": 1,
@@ -30084,13 +29921,14 @@
       "min": "163",
       "max": "220"
     },
-    "buyPrice": "1869130",
-    "sellPrice": "0"
+    "buyPrice": "1869130"
   },
   {
     "quantity": 1,
     "source": "Arme",
-    "obtention": [],
+    "obtention": [
+      "Invocation"
+    ],
     "name": "Zéphyr bleuté (+3)",
     "prerequisites": {
       "dex": "285",
@@ -30102,9 +29940,7 @@
     "damage": {
       "min": "210",
       "max": "285"
-    },
-    "buyPrice": "Invocation",
-    "sellPrice": "0"
+    }
   },
   {
     "quantity": 1,
@@ -30122,8 +29958,7 @@
       "min": "149",
       "max": "199"
     },
-    "buyPrice": "254304",
-    "sellPrice": "84768"
+    "buyPrice": "254304"
   },
   {
     "quantity": 1,
@@ -30141,8 +29976,7 @@
       "min": "148",
       "max": "197"
     },
-    "buyPrice": "279071",
-    "sellPrice": "93023"
+    "buyPrice": "279071"
   },
   {
     "quantity": 1,
@@ -30160,8 +29994,7 @@
       "min": "165",
       "max": "222"
     },
-    "buyPrice": "837213",
-    "sellPrice": "0"
+    "buyPrice": "837213"
   },
   {
     "quantity": 1,
@@ -30179,8 +30012,7 @@
       "min": "153",
       "max": "204"
     },
-    "buyPrice": "304986",
-    "sellPrice": "0"
+    "buyPrice": "304986"
   },
   {
     "quantity": 1,
@@ -30198,8 +30030,7 @@
       "min": "164",
       "max": "219"
     },
-    "buyPrice": "332053",
-    "sellPrice": "0"
+    "buyPrice": "332053"
   },
   {
     "quantity": 1,
@@ -30217,8 +30048,7 @@
       "min": "182",
       "max": "246"
     },
-    "buyPrice": "996159",
-    "sellPrice": "0"
+    "buyPrice": "996159"
   },
   {
     "quantity": 1,
@@ -30236,8 +30066,7 @@
       "min": "201",
       "max": "273"
     },
-    "buyPrice": "3320530",
-    "sellPrice": "0"
+    "buyPrice": "3320530"
   },
   {
     "quantity": 1,
@@ -30255,8 +30084,7 @@
       "min": "249",
       "max": "342"
     },
-    "buyPrice": "14410760",
-    "sellPrice": "0"
+    "buyPrice": "14410760"
   },
   {
     "quantity": 1,
@@ -30274,8 +30102,7 @@
       "min": "186",
       "max": "252"
     },
-    "buyPrice": "1260462",
-    "sellPrice": "0"
+    "buyPrice": "1260462"
   },
   {
     "quantity": 1,
@@ -30293,8 +30120,7 @@
       "min": "172",
       "max": "232"
     },
-    "buyPrice": "451823",
-    "sellPrice": "0"
+    "buyPrice": "451823"
   },
   {
     "quantity": 1,
@@ -30312,8 +30138,7 @@
       "min": "191",
       "max": "260"
     },
-    "buyPrice": "1355469",
-    "sellPrice": "0"
+    "buyPrice": "1355469"
   },
   {
     "quantity": 1,
@@ -30331,8 +30156,7 @@
       "min": "184",
       "max": "248"
     },
-    "buyPrice": "484641",
-    "sellPrice": "0"
+    "buyPrice": "484641"
   },
   {
     "quantity": 1,
@@ -30350,8 +30174,7 @@
       "min": "204",
       "max": "277"
     },
-    "buyPrice": "1453923",
-    "sellPrice": "0"
+    "buyPrice": "1453923"
   },
   {
     "quantity": 1,
@@ -30369,8 +30192,7 @@
       "min": "224",
       "max": "307"
     },
-    "buyPrice": "4846410",
-    "sellPrice": "0"
+    "buyPrice": "4846410"
   },
   {
     "quantity": 1,
@@ -30388,8 +30210,7 @@
       "min": "276",
       "max": "382"
     },
-    "buyPrice": "20744440",
-    "sellPrice": "0"
+    "buyPrice": "20744440"
   },
   {
     "quantity": 1,
@@ -30407,8 +30228,7 @@
       "min": "195",
       "max": "265"
     },
-    "buyPrice": "665933",
-    "sellPrice": "0"
+    "buyPrice": "665933"
   },
   {
     "quantity": 1,
@@ -30426,8 +30246,7 @@
       "min": "238",
       "max": "328"
     },
-    "buyPrice": "6659930",
-    "sellPrice": "0"
+    "buyPrice": "6659930"
   },
   {
     "quantity": 1,
@@ -30445,8 +30264,7 @@
       "min": "216",
       "max": "293"
     },
-    "buyPrice": "788609",
-    "sellPrice": "0"
+    "buyPrice": "788609"
   },
   {
     "quantity": 1,
@@ -30464,8 +30282,7 @@
       "min": "239",
       "max": "328"
     },
-    "buyPrice": "2365827",
-    "sellPrice": "0"
+    "buyPrice": "2365827"
   },
   {
     "quantity": 1,
@@ -30483,8 +30300,7 @@
       "min": "262",
       "max": "363"
     },
-    "buyPrice": "7886090",
-    "sellPrice": "0"
+    "buyPrice": "7886090"
   },
   {
     "quantity": 1,
@@ -30502,8 +30318,7 @@
       "min": "244",
       "max": "334"
     },
-    "buyPrice": "921581",
-    "sellPrice": "0"
+    "buyPrice": "921581"
   },
   {
     "quantity": 1,
@@ -30521,8 +30336,7 @@
       "min": "270",
       "max": "373"
     },
-    "buyPrice": "2764743",
-    "sellPrice": "0"
+    "buyPrice": "2764743"
   },
   {
     "quantity": 1,
@@ -30540,13 +30354,14 @@
       "min": "296",
       "max": "413"
     },
-    "buyPrice": "9215810",
-    "sellPrice": "0"
+    "buyPrice": "9215810"
   },
   {
     "quantity": 1,
     "source": "Arc",
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Arc composite des Haut-Elfes (+3)",
     "prerequisites": {
       "dex": "590",
@@ -30558,9 +30373,7 @@
     "damage": {
       "min": "331",
       "max": "466"
-    },
-    "buyPrice": "Drop",
-    "sellPrice": "0"
+    }
   },
   {
     "quantity": 1,
@@ -30572,8 +30385,7 @@
       "str": "0"
     },
     "secondary": {},
-    "buyPrice": "500",
-    "sellPrice": "1500"
+    "buyPrice": "500"
   },
   {
     "quantity": 1,
@@ -30585,8 +30397,7 @@
       "str": "0"
     },
     "secondary": {},
-    "buyPrice": "5000",
-    "sellPrice": "15000"
+    "buyPrice": "5000"
   },
   {
     "quantity": 1,
@@ -30598,8 +30409,7 @@
       "str": "0"
     },
     "secondary": {},
-    "buyPrice": "25000",
-    "sellPrice": "75000"
+    "buyPrice": "25000"
   },
   {
     "quantity": 1,
@@ -30611,8 +30421,7 @@
       "str": "20"
     },
     "secondary": {},
-    "buyPrice": "1",
-    "sellPrice": "0"
+    "buyPrice": "1"
   },
   {
     "quantity": 1,
@@ -30626,8 +30435,7 @@
       "str": "30"
     },
     "secondary": {},
-    "buyPrice": "1",
-    "sellPrice": "0"
+    "buyPrice": "1"
   },
   {
     "quantity": 1,
@@ -30647,7 +30455,6 @@
       "max": "4"
     },
     "buyPrice": "29",
-    "sellPrice": "9",
     "bonuses": {},
     "secondary": {}
   },
@@ -30669,7 +30476,6 @@
       "max": "4"
     },
     "buyPrice": "87",
-    "sellPrice": "19",
     "bonuses": {},
     "secondary": {}
   },
@@ -30691,7 +30497,6 @@
       "max": "5"
     },
     "buyPrice": "290",
-    "sellPrice": "29",
     "bonuses": {},
     "secondary": {}
   },
@@ -30713,7 +30518,6 @@
       "max": "4"
     },
     "buyPrice": "29",
-    "sellPrice": "9",
     "bonuses": {},
     "secondary": {}
   },
@@ -30735,7 +30539,6 @@
       "max": "5"
     },
     "buyPrice": "87",
-    "sellPrice": "19",
     "bonuses": {},
     "secondary": {}
   },
@@ -30757,7 +30560,6 @@
       "max": "22"
     },
     "buyPrice": "3966",
-    "sellPrice": "1322",
     "bonuses": {},
     "secondary": {}
   },
@@ -30779,7 +30581,6 @@
       "max": "29"
     },
     "buyPrice": "39660",
-    "sellPrice": "3966",
     "bonuses": {},
     "secondary": {}
   },
@@ -30801,7 +30602,6 @@
       "max": "11"
     },
     "buyPrice": "605",
-    "sellPrice": "201",
     "bonuses": {},
     "secondary": {}
   },
@@ -30823,7 +30623,6 @@
       "max": "12"
     },
     "buyPrice": "1815",
-    "sellPrice": "403",
     "bonuses": {},
     "secondary": {}
   },
@@ -30845,14 +30644,15 @@
       "max": "14"
     },
     "buyPrice": "6050",
-    "sellPrice": "605",
     "bonuses": {},
     "secondary": {}
   },
   {
     "quantity": 1,
     "source": "Arme",
-    "obtention": [],
+    "obtention": [
+      "Quête/Drop"
+    ],
     "name": "Epée du chaos",
     "prerequisites": {
       "str": "53",
@@ -30866,8 +30666,6 @@
       "min": "7",
       "max": "48"
     },
-    "buyPrice": "Quête/Drop",
-    "sellPrice": "1755",
     "bonuses": {},
     "secondary": {}
   },
@@ -30889,7 +30687,6 @@
       "max": "31"
     },
     "buyPrice": "5266",
-    "sellPrice": "1755",
     "bonuses": {},
     "secondary": {}
   },
@@ -30911,7 +30708,6 @@
       "max": "35"
     },
     "buyPrice": "15798",
-    "sellPrice": "3510",
     "bonuses": {},
     "secondary": {}
   },
@@ -30933,14 +30729,15 @@
       "max": "39"
     },
     "buyPrice": "52660",
-    "sellPrice": "5266",
     "bonuses": {},
     "secondary": {}
   },
   {
     "quantity": 1,
     "source": "Arme",
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Epée de fureur",
     "prerequisites": {
       "str": "59",
@@ -30954,15 +30751,15 @@
       "min": "25",
       "max": "36"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "2521",
     "bonuses": {},
     "secondary": {}
   },
   {
     "quantity": 1,
     "source": "Arme",
-    "obtention": [],
+    "obtention": [
+      "Coffre"
+    ],
     "name": "Marteau de révélation",
     "prerequisites": {
       "str": "61",
@@ -30976,15 +30773,15 @@
       "min": "36",
       "max": "52"
     },
-    "buyPrice": "Coffre",
-    "sellPrice": "4843",
     "bonuses": {},
     "secondary": {}
   },
   {
     "quantity": 1,
     "source": "Arme",
-    "obtention": [],
+    "obtention": [
+      "Quête"
+    ],
     "name": "Epée de la nuit",
     "prerequisites": {
       "str": "65",
@@ -30998,8 +30795,6 @@
       "min": "30",
       "max": "42"
     },
-    "buyPrice": "Quête",
-    "sellPrice": "3370",
     "bonuses": {},
     "secondary": {}
   },
@@ -31021,7 +30816,6 @@
       "max": "43"
     },
     "buyPrice": "9323",
-    "sellPrice": "3107",
     "bonuses": {},
     "secondary": {}
   },
@@ -31043,7 +30837,6 @@
       "max": "48"
     },
     "buyPrice": "27969",
-    "sellPrice": "6215",
     "bonuses": {},
     "secondary": {}
   },
@@ -31065,14 +30858,15 @@
       "max": "54"
     },
     "buyPrice": "93230",
-    "sellPrice": "9323",
     "bonuses": {},
     "secondary": {}
   },
   {
     "quantity": 1,
     "source": "Arme",
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Gourdin du troll",
     "prerequisites": {
       "str": "79",
@@ -31086,15 +30880,15 @@
       "min": "36",
       "max": "50"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "4465",
     "bonuses": {},
     "secondary": {}
   },
   {
     "quantity": 1,
     "source": "Arme",
-    "obtention": [],
+    "obtention": [
+      "Quête"
+    ],
     "name": "Lame assassine",
     "prerequisites": {
       "str": "110",
@@ -31108,8 +30902,6 @@
       "min": "69",
       "max": "96"
     },
-    "buyPrice": "Quête",
-    "sellPrice": "19873",
     "bonuses": {},
     "secondary": {}
   },
@@ -31131,7 +30923,6 @@
       "max": "73"
     },
     "buyPrice": "28394",
-    "sellPrice": "9464",
     "bonuses": {},
     "secondary": {}
   },
@@ -31153,7 +30944,6 @@
       "max": "81"
     },
     "buyPrice": "85182",
-    "sellPrice": "18929",
     "bonuses": {},
     "secondary": {}
   },
@@ -31175,7 +30965,6 @@
       "max": "90"
     },
     "buyPrice": "283940",
-    "sellPrice": "28394",
     "bonuses": {},
     "secondary": {}
   },
@@ -31197,7 +30986,6 @@
       "max": "87"
     },
     "buyPrice": "37053",
-    "sellPrice": "12351",
     "bonuses": {},
     "secondary": {}
   },
@@ -31219,14 +31007,15 @@
       "max": "106"
     },
     "buyPrice": "370530",
-    "sellPrice": "37053",
     "bonuses": {},
     "secondary": {}
   },
   {
     "quantity": 1,
     "source": "Arme",
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Lame d'heroisme",
     "prerequisites": {
       "str": "155",
@@ -31240,8 +31029,6 @@
       "min": "91",
       "max": "125"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "38747",
     "bonuses": {},
     "secondary": {}
   },
@@ -31263,7 +31050,6 @@
       "max": "126"
     },
     "buyPrice": "83191",
-    "sellPrice": "27730",
     "bonuses": {},
     "secondary": {}
   },
@@ -31285,7 +31071,6 @@
       "max": "139"
     },
     "buyPrice": "249573",
-    "sellPrice": "55460",
     "bonuses": {},
     "secondary": {}
   },
@@ -31307,7 +31092,6 @@
       "max": "153"
     },
     "buyPrice": "831910",
-    "sellPrice": "83191",
     "bonuses": {},
     "secondary": {}
   },
@@ -31329,7 +31113,6 @@
       "max": "135"
     },
     "buyPrice": "83191",
-    "sellPrice": "21063",
     "bonuses": {},
     "secondary": {}
   },
@@ -31351,7 +31134,6 @@
       "max": "140"
     },
     "buyPrice": "97601",
-    "sellPrice": "32553",
     "bonuses": {},
     "secondary": {}
   },
@@ -31373,7 +31155,6 @@
       "max": "156"
     },
     "buyPrice": "292803",
-    "sellPrice": "65067",
     "bonuses": {},
     "secondary": {}
   },
@@ -31395,14 +31176,15 @@
       "max": "172"
     },
     "buyPrice": "976010",
-    "sellPrice": "97601",
     "bonuses": {},
     "secondary": {}
   },
   {
     "quantity": 1,
     "source": "Arme",
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Epée vorpale de drachen",
     "prerequisites": {
       "str": "230",
@@ -31416,15 +31198,15 @@
       "min": "116",
       "max": "150"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "0",
     "bonuses": {},
     "secondary": {}
   },
   {
     "quantity": 1,
     "source": "Arme",
-    "obtention": [],
+    "obtention": [
+      "Quête"
+    ],
     "name": "Lame-gemme sombre",
     "prerequisites": {
       "str": "242",
@@ -31438,15 +31220,15 @@
       "min": "146",
       "max": "198"
     },
-    "buyPrice": "Quête",
-    "sellPrice": "53995",
     "bonuses": {},
     "secondary": {}
   },
   {
     "quantity": 1,
     "source": "Arme",
-    "obtention": [],
+    "obtention": [
+      "Quête"
+    ],
     "name": "Epée de puissance de crystal",
     "prerequisites": {
       "str": "251",
@@ -31460,8 +31242,6 @@
       "min": "149",
       "max": "201"
     },
-    "buyPrice": "Quête",
-    "sellPrice": "77615",
     "bonuses": {},
     "secondary": {}
   },
@@ -31483,7 +31263,6 @@
       "max": "194"
     },
     "buyPrice": "186913",
-    "sellPrice": "62304",
     "bonuses": {},
     "secondary": {}
   },
@@ -31505,7 +31284,6 @@
       "max": "238"
     },
     "buyPrice": "1869130",
-    "sellPrice": "186913",
     "bonuses": {},
     "secondary": {}
   },
@@ -31527,7 +31305,6 @@
       "max": "362"
     },
     "buyPrice": "230691",
-    "sellPrice": "76897",
     "bonuses": {},
     "secondary": {}
   },
@@ -31772,12 +31549,13 @@
       "ca": "0.3"
     },
     "buyPrice": "212",
-    "sellPrice": "70",
     "source": "Ceinture"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Armure de cuir gobeline",
     "prerequisites": {
       "end": "25",
@@ -31789,8 +31567,6 @@
     "bonuses": {
       "ca": "2.45"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "364",
     "source": "Plastron"
   },
   {
@@ -31808,12 +31584,13 @@
       "ca": "1.215"
     },
     "buyPrice": "3015",
-    "sellPrice": "1005",
     "source": "Gant"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Armure de cuir Elfique",
     "prerequisites": {
       "end": "75",
@@ -31825,13 +31602,13 @@
     "bonuses": {
       "ca": "5.5"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "5909",
     "source": "Plastron"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Ceinturon de cuir Elfique",
     "prerequisites": {
       "end": "75",
@@ -31843,13 +31620,13 @@
     "bonuses": {
       "ca": "1.2"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "1339",
     "source": "Ceinture"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Bottes de cuir Elfique",
     "prerequisites": {
       "end": "75",
@@ -31861,13 +31638,13 @@
     "bonuses": {
       "ca": "1.62"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "1718",
     "source": "Botte"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Gants de cuir Elfique",
     "prerequisites": {
       "end": "75",
@@ -31879,13 +31656,13 @@
     "bonuses": {
       "ca": "1.62"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "1757",
     "source": "Gant"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Casque de cuir Elfique",
     "prerequisites": {
       "end": "75",
@@ -31897,13 +31674,13 @@
     "bonuses": {
       "ca": "1.56"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "1900",
     "source": "Heaume"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Jambières de cuir Elfique",
     "prerequisites": {
       "end": "75",
@@ -31915,8 +31692,6 @@
     "bonuses": {
       "ca": "1.8"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "1992",
     "source": "Jambière"
   },
   {
@@ -31934,7 +31709,6 @@
       "ca": "1.755"
     },
     "buyPrice": "6072",
-    "sellPrice": "2009",
     "source": "Botte"
   },
   {
@@ -31952,7 +31726,6 @@
       "ca": "1.755"
     },
     "buyPrice": "6165",
-    "sellPrice": "2055",
     "source": "Gant"
   },
   {
@@ -31970,7 +31743,6 @@
       "ca": "1.3"
     },
     "buyPrice": "4694",
-    "sellPrice": "1564",
     "source": "Plastron"
   },
   {
@@ -31988,7 +31760,6 @@
       "ca": "1.69"
     },
     "buyPrice": "6670",
-    "sellPrice": "2223",
     "source": "Heaume"
   },
   {
@@ -32006,12 +31777,13 @@
       "ca": "1.95"
     },
     "buyPrice": "6992",
-    "sellPrice": "2331",
     "source": "Jambière"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Quête"
+    ],
     "name": "Cotte de maille bénie",
     "prerequisites": {
       "end": "80",
@@ -32023,8 +31795,6 @@
     "bonuses": {
       "ca": "5.95"
     },
-    "buyPrice": "Quête",
-    "sellPrice": "9331",
     "source": "Plastron"
   },
   {
@@ -32042,7 +31812,6 @@
       "ca": "8.65"
     },
     "buyPrice": "35404",
-    "sellPrice": "11801",
     "source": "Plastron"
   },
   {
@@ -32060,7 +31829,6 @@
       "ca": "2.565"
     },
     "buyPrice": "10456",
-    "sellPrice": "3485",
     "source": "Gant"
   },
   {
@@ -32078,12 +31846,13 @@
       "ca": "1.9"
     },
     "buyPrice": "7945",
-    "sellPrice": "2648",
     "source": "Plastron"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Quête"
+    ],
     "name": "Armure ancienne céleste",
     "prerequisites": {
       "end": "100",
@@ -32095,13 +31864,13 @@
     "bonuses": {
       "ca": "12"
     },
-    "buyPrice": "Quête",
-    "sellPrice": "0",
     "source": "Plastron"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Cotte de maille Elfique",
     "prerequisites": {
       "end": "110",
@@ -32113,13 +31882,13 @@
     "bonuses": {
       "ca": "10"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "14725",
     "source": "Plastron"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Bottes de maille Elfique",
     "prerequisites": {
       "end": "110",
@@ -32131,13 +31900,13 @@
     "bonuses": {
       "ca": "2.97"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "4245",
     "source": "Botte"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Gants de maille Elfique",
     "prerequisites": {
       "end": "110",
@@ -32149,13 +31918,13 @@
     "bonuses": {
       "ca": "2.97"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "4343",
     "source": "Gant"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Heaume de maille Elfique",
     "prerequisites": {
       "end": "110",
@@ -32167,13 +31936,13 @@
     "bonuses": {
       "ca": "2.86"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "4702",
     "source": "Heaume"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Jambières de maille Elfique",
     "prerequisites": {
       "end": "110",
@@ -32185,13 +31954,13 @@
     "bonuses": {
       "ca": "3.3"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "4931",
     "source": "Jambière"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Ceinturon de maille Elfique",
     "prerequisites": {
       "end": "110",
@@ -32203,13 +31972,13 @@
     "bonuses": {
       "ca": "2"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "3298",
     "source": "Ceinture"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Plastron de plaques",
     "prerequisites": {
       "end": "125",
@@ -32221,13 +31990,13 @@
     "bonuses": {
       "ca": "12.25"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "19719",
     "source": "Plastron"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Gants de plaques",
     "prerequisites": {
       "end": "125",
@@ -32239,13 +32008,13 @@
     "bonuses": {
       "ca": "3.645"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "5808",
     "source": "Gant"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Protecteur de plaques",
     "prerequisites": {
       "end": "125",
@@ -32257,13 +32026,13 @@
     "bonuses": {
       "ca": "2.7"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "4407",
     "source": "Plastron"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Plastron de plaques Océane",
     "prerequisites": {
       "end": "125",
@@ -32275,13 +32044,13 @@
     "bonuses": {
       "ca": "12.25"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "0",
     "source": "Plastron"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Gants de plaques Océane",
     "prerequisites": {
       "end": "125",
@@ -32293,13 +32062,13 @@
     "bonuses": {
       "ca": "3.645"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "0",
     "source": "Gant"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Protecteur de plaques Océane",
     "prerequisites": {
       "end": "125",
@@ -32311,13 +32080,13 @@
     "bonuses": {
       "ca": "2.7"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "0",
     "source": "Plastron"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Heaume de plaques Océane",
     "prerequisites": {
       "end": "125",
@@ -32329,13 +32098,13 @@
     "bonuses": {
       "ca": "3.51"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "0",
     "source": "Heaume"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Jambières de plaques Océane",
     "prerequisites": {
       "end": "125",
@@ -32347,13 +32116,13 @@
     "bonuses": {
       "ca": "4.05"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "0",
     "source": "Jambière"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Bottes de plaques Océane",
     "prerequisites": {
       "end": "125",
@@ -32365,13 +32134,13 @@
     "bonuses": {
       "ca": "3.645"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "0",
     "source": "Botte"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Cotte de mailles de Mithril",
     "prerequisites": {
       "end": "150",
@@ -32383,13 +32152,13 @@
     "bonuses": {
       "ca": "16.75"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "29662",
     "source": "Plastron"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Bottes de mailles de Mithril",
     "prerequisites": {
       "end": "150",
@@ -32401,13 +32170,13 @@
     "bonuses": {
       "ca": "4.995"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "8527",
     "source": "Botte"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Gants de mailles de Mithril",
     "prerequisites": {
       "end": "150",
@@ -32419,13 +32188,13 @@
     "bonuses": {
       "ca": "4.995"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "8724",
     "source": "Gant"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Casque de mailles de Mithril",
     "prerequisites": {
       "end": "150",
@@ -32437,13 +32206,13 @@
     "bonuses": {
       "ca": "4.81"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "9449",
     "source": "Heaume"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Jambières de mailles de Mithril",
     "prerequisites": {
       "end": "150",
@@ -32455,13 +32224,13 @@
     "bonuses": {
       "ca": "5.55"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "9910",
     "source": "Jambière"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Protecteur de mailles de Mithril",
     "prerequisites": {
       "end": "150",
@@ -32473,13 +32242,13 @@
     "bonuses": {
       "ca": "3.7"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "6617",
     "source": "Plastron"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Plastron de plaques Naines",
     "prerequisites": {
       "end": "160",
@@ -32491,13 +32260,13 @@
     "bonuses": {
       "ca": "19"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "34207",
     "source": "Plastron"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Bottes de plaques Naines",
     "prerequisites": {
       "end": "160",
@@ -32509,13 +32278,13 @@
     "bonuses": {
       "ca": "5.67"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "9830",
     "source": "Botte"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Gants de plaques Naines",
     "prerequisites": {
       "end": "160",
@@ -32527,13 +32296,13 @@
     "bonuses": {
       "ca": "5.67"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "10058",
     "source": "Gant"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Heaume de plaques Naines",
     "prerequisites": {
       "end": "160",
@@ -32545,13 +32314,13 @@
     "bonuses": {
       "ca": "5.46"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "10893",
     "source": "Heaume"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Jambières de plaques Naine",
     "prerequisites": {
       "end": "160",
@@ -32563,13 +32332,13 @@
     "bonuses": {
       "ca": "6.3"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "11424",
     "source": "Jambière"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Protecteur de plaques Naine",
     "prerequisites": {
       "end": "160",
@@ -32581,13 +32350,13 @@
     "bonuses": {
       "ca": "4.2"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "7627",
     "source": "Plastron"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Armure d'écailles du dragon",
     "prerequisites": {
       "end": "180",
@@ -32599,13 +32368,13 @@
     "bonuses": {
       "ca": "23"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "89693",
     "source": "Plastron"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Bottes d'écailles du dragon",
     "prerequisites": {
       "end": "180",
@@ -32617,13 +32386,13 @@
     "bonuses": {
       "ca": "6.885"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "25735",
     "source": "Botte"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Gants d'écailles du dragon",
     "prerequisites": {
       "end": "180",
@@ -32635,13 +32404,13 @@
     "bonuses": {
       "ca": "6.885"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "26333",
     "source": "Gant"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Heaume d'écailles du dragon",
     "prerequisites": {
       "end": "180",
@@ -32653,13 +32422,13 @@
     "bonuses": {
       "ca": "6.63"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "28525",
     "source": "Heaume"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Jambières d'écailles du dragon",
     "prerequisites": {
       "end": "180",
@@ -32671,13 +32440,13 @@
     "bonuses": {
       "ca": "7.65"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "29920",
     "source": "Jambière"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Protecteur d'écailles du dragon",
     "prerequisites": {
       "end": "180",
@@ -32689,8 +32458,6 @@
     "bonuses": {
       "ca": "5.1"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "9863",
     "source": "Plastron"
   },
   {
@@ -32708,7 +32475,6 @@
       "ca": "35.65"
     },
     "buyPrice": "225282",
-    "sellPrice": "75094",
     "source": "Plastron"
   },
   {
@@ -32726,7 +32492,6 @@
       "ca": "10.665"
     },
     "buyPrice": "64652",
-    "sellPrice": "21551",
     "source": "Botte"
   },
   {
@@ -32744,7 +32509,6 @@
       "ca": "10.665"
     },
     "buyPrice": "66153",
-    "sellPrice": "22051",
     "source": "Gant"
   },
   {
@@ -32762,7 +32526,6 @@
       "ca": "7.9"
     },
     "buyPrice": "50144",
-    "sellPrice": "16713",
     "source": "Plastron"
   },
   {
@@ -32780,7 +32543,6 @@
       "ca": "10.27"
     },
     "buyPrice": "71658",
-    "sellPrice": "23886",
     "source": "Heaume"
   },
   {
@@ -32798,12 +32560,13 @@
       "ca": "11.85"
     },
     "buyPrice": "75160",
-    "sellPrice": "25053",
     "source": "Jambière"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Plastron ciselé des Hauts Elfes",
     "prerequisites": {
       "end": "300",
@@ -32815,13 +32578,13 @@
     "bonuses": {
       "ca": "57.25"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "0",
     "source": "Plastron"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Bottes ciselées des Hauts Elfes",
     "prerequisites": {
       "end": "300",
@@ -32833,13 +32596,13 @@
     "bonuses": {
       "ca": "17.145"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "37824",
     "source": "Botte"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Gants ciselés des Hauts Elfes",
     "prerequisites": {
       "end": "300",
@@ -32851,13 +32614,13 @@
     "bonuses": {
       "ca": "17.145"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "38703",
     "source": "Gant"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Protecteur ciselé des Hauts Elfes",
     "prerequisites": {
       "end": "300",
@@ -32869,13 +32632,13 @@
     "bonuses": {
       "ca": "12.7"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "29328",
     "source": "Plastron"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Heaume ciselé des Hauts Elfes",
     "prerequisites": {
       "end": "300",
@@ -32887,13 +32650,13 @@
     "bonuses": {
       "ca": "16.51"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "41926",
     "source": "Heaume"
   },
   {
     "quantity": 1,
-    "obtention": [],
+    "obtention": [
+      "Drop"
+    ],
     "name": "Jambières ciselé des Hauts Elfes",
     "prerequisites": {
       "end": "300",
@@ -32905,8 +32668,6 @@
     "bonuses": {
       "ca": "19.05"
     },
-    "buyPrice": "Drop",
-    "sellPrice": "43976",
     "source": "Jambière"
   },
   {
