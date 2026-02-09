@@ -2006,7 +2006,7 @@
       "int": "+3"
     },
     "obtention": [
-      "Quête de l'Anneau de Platine (uniquement la première fois).",
+      "Quête de l'Anneau de Platine (uniquement la première fois)",
       "Aloysius Starbolt (RD)"
     ],
     "secondary": {},
@@ -5331,8 +5331,9 @@
       "Puissance Feu": "+10"
     },
     "obtention": [
-      "Grott RD,",
-      "Charwinguhm (Sud de Grott, RD) Gunthrek (Île de Bane)"
+      "Grott RD",
+      "Charwinguhm (Sud de Grott, RD)",
+      "Gunthrek (Île de Bane)"
     ],
     "bonuses": {},
     "type": "Anneau"
@@ -6839,7 +6840,7 @@
       "wis": "68"
     },
     "obtention": [
-      "Marchand RD (10K).",
+      "Marchand RD (10K)",
       "Matelot (donjon",
       "Coupe-jarret RD)"
     ],
@@ -7838,7 +7839,7 @@
       "dex": "169"
     },
     "obtention": [
-      "Rhodar Pyras (SS),",
+      "Rhodar Pyras (SS)",
       "Chapardeur, Arpenteur de la nuit"
     ],
     "damage": {
@@ -9101,7 +9102,7 @@
       "ca": "+2"
     },
     "obtention": [
-      "Arpenteur de la nuit,",
+      "Arpenteur de la nuit",
       "coffres (SH)"
     ],
     "type": "Anneau"
@@ -9927,7 +9928,7 @@
       "wis": "+5"
     },
     "obtention": [
-      "Matelot cambusier (donjon coupe-jarret).",
+      "Matelot cambusier (donjon coupe-jarret)",
       "Vendeur Omar Hald (SC)"
     ],
     "secondary": {},
@@ -9961,7 +9962,7 @@
       "Résistance Nécro": "+5"
     },
     "obtention": [
-      "Matelot contrebandier donjon coupe-jarret RD.",
+      "Matelot contrebandier donjon coupe-jarret RD",
       "Vendeur Omar Hald (SC)"
     ],
     "type": "Anneau"
@@ -9989,7 +9990,7 @@
     "obtention": [
       "Fou (Asile , AR)",
       "Mad Madrigan (Asile AR)",
-      "Coffres (Crypte de SH).",
+      "Coffres (Crypte de SH)",
       "Plolifique (Donjon des bijoux d'Eléonore DI, RD)",
       "Craft bijoutier lev 18"
     ],
@@ -10309,8 +10310,7 @@
       "dex": "+10"
     },
     "obtention": [
-      "Coffre (L'Asile,",
-      "AR)",
+      "Coffre (L'Asile, AR)",
       "Dérangé (L'Asile, AR)"
     ],
     "type": "Anneau"
@@ -10613,7 +10613,7 @@
       "wis": "75"
     },
     "obtention": [
-      "Matelot canonnier (donjon coupe-jarret).",
+      "Matelot canonnier (donjon coupe-jarret)",
       "Vendeur Omar Hald (SC)"
     ],
     "bonuses": {},
@@ -21628,9 +21628,9 @@
       "str": "+5"
     },
     "obtention": [
-      "Garde de l'ombre (RD),",
-      "Pillard des dunes (RD),",
-      "nombreux monstres."
+      "Garde de l'ombre (RD)",
+      "Pillard des dunes (RD)",
+      "Nombreux monstres"
     ],
     "secondary": {},
     "type": "Anneau"
@@ -25644,7 +25644,7 @@
       "max": "16"
     },
     "obtention": [
-      "Invoc.",
+      "Invoc",
       "Invoc. | Forgeron 3"
     ],
     "bonuses": {},
@@ -25678,7 +25678,7 @@
       "max": "15"
     },
     "obtention": [
-      "Invoc.",
+      "Invoc",
       "Invoc. | Gobelin Farfelu, Forgeron 5"
     ],
     "bonuses": {},
@@ -25715,7 +25715,7 @@
       "max": "36"
     },
     "obtention": [
-      "Invoc.",
+      "Invoc",
       "Invoc. | Forgeron 9"
     ],
     "bonuses": {},
@@ -25734,7 +25734,7 @@
       "max": "46"
     },
     "obtention": [
-      "Invoc.",
+      "Invoc",
       "Invoc. | Forgeron 13"
     ],
     "bonuses": {},
@@ -25752,7 +25752,7 @@
       "max": "58"
     },
     "obtention": [
-      "Invoc.",
+      "Invoc",
       "Invoc. | Forgeron 17"
     ],
     "bonuses": {},
@@ -25787,7 +25787,7 @@
       "max": "78"
     },
     "obtention": [
-      "Invoc.",
+      "Invoc",
       "Invoc. | Forgeron 19"
     ],
     "bonuses": {},
@@ -25876,7 +25876,7 @@
       "max": "87"
     },
     "obtention": [
-      "Invoc.",
+      "Invoc",
       "Invoc. | Forgeron 27"
     ],
     "bonuses": {},
@@ -25946,7 +25946,7 @@
       "max": "115"
     },
     "obtention": [
-      "Invoc.",
+      "Invoc",
       "Invoc. | Forgeron 36"
     ],
     "bonuses": {},
@@ -29494,7 +29494,7 @@
   {
     "quantity": 1,
     "obtention": [
-      "AR,",
+      "AR",
       "Marchand WH / RD, Marchand SS"
     ],
     "prerequisites": {
@@ -29527,7 +29527,7 @@
   {
     "quantity": 1,
     "obtention": [
-      "AR,",
+      "AR",
       "Marchand WH / RD, Marchand SS"
     ],
     "prerequisites": {
@@ -30743,8 +30743,8 @@
   {
     "quantity": 1,
     "obtention": [
-      "Gardien équestre (SH).",
-      "Géant des plaines (donjon des bijoux d'Eléonore DI, RD)."
+      "Gardien équestre (SH)",
+      "Géant des plaines (donjon des bijoux d'Eléonore DI, RD)"
     ],
     "name": "Anneau du gladiateur",
     "prerequisites": {
