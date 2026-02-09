@@ -2082,8 +2082,7 @@
       ]
     },
     "source": "NMS",
-    "type": "mental",
-    "prerequisitesStats": {}
+    "type": "mental"
   },
   {
     "name": "Inondation",

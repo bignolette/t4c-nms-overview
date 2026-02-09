@@ -2,7 +2,6 @@
   {
     "name": "Mandragore",
     "quantity": 1,
-    "source": "Plante",
     "zone": [
       "Arakas"
     ],
@@ -14,12 +13,12 @@
       "2052.585.0",
       "2847.732.0",
       "2831.378.0"
-    ]
+    ],
+    "type": "Plante"
   },
   {
     "name": "Ciguë",
     "quantity": 1,
-    "source": "Plante",
     "zone": [
       "Arakas"
     ],
@@ -31,12 +30,12 @@
       "1910.806.0",
       "2196.638.0",
       "1853.578.0"
-    ]
+    ],
+    "type": "Plante"
   },
   {
     "name": "Arnica",
     "quantity": 1,
-    "source": "Plante",
     "zone": [
       "Arakas"
     ],
@@ -48,12 +47,12 @@
       "2314.1044.0",
       "2551.1182.0",
       "2723.1235.0"
-    ]
+    ],
+    "type": "Plante"
   },
   {
     "name": "Charme",
     "quantity": 1,
-    "source": "Plante",
     "zone": [
       "Arakas"
     ],
@@ -65,12 +64,12 @@
       "1789.989.0",
       "2179.445.0",
       "2899.692.0"
-    ]
+    ],
+    "type": "Plante"
   },
   {
     "name": "Chanvre",
     "quantity": 1,
-    "source": "Plante",
     "zone": [
       "Arakas"
     ],
@@ -82,12 +81,12 @@
       "2055.877.0",
       "1614.102.0",
       "2807.650.0"
-    ]
+    ],
+    "type": "Plante"
   },
   {
     "name": "Ginseng",
     "quantity": 1,
-    "source": "Plante",
     "zone": [
       "Arakas"
     ],
@@ -99,12 +98,12 @@
       "2284.1299.0",
       "2374.1384.0",
       "2246.1045.0"
-    ]
+    ],
+    "type": "Plante"
   },
   {
     "name": "Coton",
     "quantity": 1,
-    "source": "Plante",
     "zone": [
       "Raven's Dust"
     ],
@@ -115,12 +114,12 @@
       "817.2209.0",
       "275.1634.0",
       "991.2028.0"
-    ]
+    ],
+    "type": "Plante"
   },
   {
     "name": "Immortelle",
     "quantity": 1,
-    "source": "Plante",
     "zone": [
       "Raven's Dust"
     ],
@@ -131,12 +130,12 @@
       "965.2445.0",
       "1281.2609.0",
       "61.2518.0"
-    ]
+    ],
+    "type": "Plante"
   },
   {
     "name": "Maté",
     "quantity": 1,
-    "source": "Plante",
     "zone": [
       "Raven's Dust"
     ],
@@ -147,12 +146,12 @@
       "1563.2892.0",
       "1125.2065.0",
       "589.2060.0"
-    ]
+    ],
+    "type": "Plante"
   },
   {
     "name": "Datura",
     "quantity": 1,
-    "source": "Plante",
     "zone": [
       "Raven's Dust"
     ],
@@ -163,12 +162,12 @@
       "971.1954.0",
       "645.1506.0",
       "1047.1831.0"
-    ]
+    ],
+    "type": "Plante"
   },
   {
     "name": "Cactus",
     "quantity": 1,
-    "source": "Plante",
     "zone": [
       "Raven's Dust"
     ],
@@ -179,12 +178,12 @@
       "318.2479.0",
       "345.2330.0",
       "425.2674.0"
-    ]
+    ],
+    "type": "Plante"
   },
   {
     "name": "Consoude",
     "quantity": 1,
-    "source": "Plante",
     "zone": [
       "Stoneheim"
     ],
@@ -194,12 +193,12 @@
       "245.420.0",
       "293.1016.0",
       "558.861.0"
-    ]
+    ],
+    "type": "Plante"
   },
   {
     "name": "Acérola",
     "quantity": 1,
-    "source": "Plante",
     "zone": [
       "Stoneheim"
     ],
@@ -209,12 +208,12 @@
       "465.134.0",
       "821.896.0",
       "1095.1223.0"
-    ]
+    ],
+    "type": "Plante"
   },
   {
     "name": "Boldo",
     "quantity": 1,
-    "source": "Plante",
     "zone": [
       "Stoneheim"
     ],
@@ -224,12 +223,12 @@
       "856.710.0",
       "1103.147.0",
       "897.76.0"
-    ]
+    ],
+    "type": "Plante"
   },
   {
     "name": "Colchique",
     "quantity": 1,
-    "source": "Plante",
     "zone": [
       "Stoneheim"
     ],
@@ -239,12 +238,12 @@
       "781.525.0",
       "1336.398.0",
       "1132.308.0"
-    ]
+    ],
+    "type": "Plante"
   },
   {
     "name": "Absinthe",
     "quantity": 1,
-    "source": "Plante",
     "zone": [
       "Drake Island"
     ],
@@ -252,12 +251,12 @@
     "description": "Temps de repousse: ~1.23 heures solo, 43 minutes à deux joueurs.",
     "coordinates": [
       "1070.1270.3"
-    ]
+    ],
+    "type": "Plante"
   },
   {
     "name": "Tamaris",
     "quantity": 1,
-    "source": "Plante",
     "zone": [
       "Drake Island"
     ],
@@ -265,12 +264,12 @@
     "description": "Temps de repousse: ~1.23 heures solo, 43 minutes à deux joueurs.",
     "coordinates": [
       "1205.1135.3"
-    ]
+    ],
+    "type": "Plante"
   },
   {
     "name": "Absinthe",
     "quantity": 1,
-    "source": "Plante",
     "zone": [
       "Académie -2"
     ],
@@ -278,6 +277,7 @@
     "description": "Temps de repousse: ~1.23 heures solo, 43 minutes à deux joueurs.",
     "coordinates": [
       "465.2380.6"
-    ]
+    ],
+    "type": "Plante"
   }
 ]

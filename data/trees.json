@@ -2,7 +2,6 @@
   {
     "name": "Orme",
     "quantity": 1,
-    "source": "Arbre",
     "zone": [
       "Arakas"
     ],
@@ -14,12 +13,12 @@
       "1951.754.0",
       "2956.186.0",
       "2733.206.0"
-    ]
+    ],
+    "type": "Arbre"
   },
   {
     "name": "Frêne",
     "quantity": 1,
-    "source": "Arbre",
     "zone": [
       "Arakas"
     ],
@@ -31,23 +30,23 @@
       "1612.1310.0",
       "2841.885.0",
       "1833.792.0"
-    ]
+    ],
+    "type": "Arbre"
   },
   {
     "name": "Arbre féérique",
     "quantity": 1,
-    "source": "Arbre",
     "zone": [
       "Arakas"
     ],
     "dropRate": "Rare",
     "description": "Produit: feuille rose, sève de qualité séculaire, écorce vénérable du centenaire de Mato.",
-    "coordinates": []
+    "coordinates": [],
+    "type": "Arbre"
   },
   {
     "name": "Noyer",
     "quantity": 1,
-    "source": "Arbre",
     "zone": [
       "Raven's Dust",
       "Niève"
@@ -60,12 +59,12 @@
       "1298.2517.0",
       "1595.2371.0",
       "1301.2768.0"
-    ]
+    ],
+    "type": "Arbre"
   },
   {
     "name": "Chêne",
     "quantity": 1,
-    "source": "Arbre",
     "zone": [
       "Raven's Dust",
       "Niève"
@@ -78,12 +77,12 @@
       "433.1590.0",
       "677.1828.0",
       "811.1519.0"
-    ]
+    ],
+    "type": "Arbre"
   },
   {
     "name": "Perceglace",
     "quantity": 1,
-    "source": "Arbre",
     "zone": [
       "Raven's Dust",
       "Niève"
@@ -92,12 +91,12 @@
     "description": "Temps de repousse: 20 min.",
     "coordinates": [
       "1525.245.4"
-    ]
+    ],
+    "type": "Arbre"
   },
   {
     "name": "Cèdre",
     "quantity": 1,
-    "source": "Arbre",
     "zone": [
       "Stoneheim"
     ],
@@ -107,12 +106,12 @@
       "996.636.0",
       "492.1156.0",
       "712.597.0"
-    ]
+    ],
+    "type": "Arbre"
   },
   {
     "name": "Oxandre",
     "quantity": 1,
-    "source": "Arbre",
     "zone": [
       "Stoneheim"
     ],
@@ -123,12 +122,12 @@
       "2695.2573.2",
       "2808.2936.2",
       "2918.2712.2"
-    ]
+    ],
+    "type": "Arbre"
   },
   {
     "name": "Noisetier",
     "quantity": 1,
-    "source": "Arbre",
     "zone": [
       "Stoneheim"
     ],
@@ -137,12 +136,12 @@
     "coordinates": [
       "2035.2730.0",
       "2555.2630.2"
-    ]
+    ],
+    "type": "Arbre"
   },
   {
     "name": "Févier épineux",
     "quantity": 1,
-    "source": "Arbre",
     "zone": [
       "Drake Island"
     ],
@@ -152,12 +151,12 @@
       "520.1300.3",
       "870.1145.3",
       "1040.1265.3"
-    ]
+    ],
+    "type": "Arbre"
   },
   {
     "name": "Mélèze",
     "quantity": 1,
-    "source": "Arbre",
     "zone": [
       "Drake Island"
     ],
@@ -167,12 +166,12 @@
       "740.1205.3",
       "607.1441.3",
       "816.1424.3"
-    ]
+    ],
+    "type": "Arbre"
   },
   {
     "name": "Cyprès",
     "quantity": 1,
-    "source": "Arbre",
     "zone": [
       "Académie -2"
     ],
@@ -180,12 +179,12 @@
     "description": "Temps de repousse: 40 min. Ressource rare: Horned branch.",
     "coordinates": [
       "336.2691.6"
-    ]
+    ],
+    "type": "Arbre"
   },
   {
     "name": "Sureau",
     "quantity": 1,
-    "source": "Arbre",
     "zone": [
       "Urtanar"
     ],
@@ -193,12 +192,12 @@
     "description": "Temps de repousse: 45 min. Ressource rare: Poisonous berries.",
     "coordinates": [
       "865.175.7"
-    ]
+    ],
+    "type": "Arbre"
   },
   {
     "name": "Myrthe",
     "quantity": 1,
-    "source": "Arbre",
     "zone": [
       "Urtanar"
     ],
@@ -206,6 +205,7 @@
     "description": "Temps de repousse: 45 min.",
     "coordinates": [
       "910.235.7"
-    ]
+    ],
+    "type": "Arbre"
   }
 ]
