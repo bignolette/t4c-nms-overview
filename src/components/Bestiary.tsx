@@ -2,7 +2,7 @@ import { useState, useMemo, memo, useEffect } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useData } from '../context/DataContext';
-import { fastNormalize } from '../data/utils';
+import { fastNormalize, formatGold } from '../data/utils';
 import type { Monster } from '../data/types';
 import { MapPin, Coins, Skull, Filter, AlertCircle, ExternalLink, RotateCcw, Hammer, Copy, Check, Map as MapIcon, Search, X } from 'lucide-react';
 import Pagination from './shared/Pagination';
@@ -147,7 +147,7 @@ export const MonsterCard = memo(({ monster, showLocation }: { monster: Monster, 
           <div className="flex items-center gap-2 text-slate-400">
             <Coins size={14} className="text-amber-600/80" />
             <span className="font-bold">Or:</span>
-            <span className="text-slate-200 font-mono">{monster.gold}</span>
+            <span className="text-slate-200 font-mono">{formatGold(monster.gold)}</span>
           </div>
         </div>
       </div>

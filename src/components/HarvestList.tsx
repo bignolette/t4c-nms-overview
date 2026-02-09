@@ -24,7 +24,7 @@ const ResourceCard = memo(({ resource }: { resource: any }) => {
   const [showAllCoords, setShowAllCoords] = useState(false);
   const coords = Array.isArray(resource.coordinates) ? resource.coordinates : [];
   const zones = Array.isArray(resource.zone) ? resource.zone : [resource.zone];
-  const isTree = resource.source === 'Arbre';
+  const isTree = resource.type === 'Arbre';
   
   return (
     <motion.div 
@@ -38,7 +38,7 @@ const ResourceCard = memo(({ resource }: { resource: any }) => {
           <div className="flex-1 min-w-0 pr-2">
             <div className="flex items-center gap-2 mb-1 flex-wrap">
               <span className={`px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-tighter shrink-0 border ${isTree ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30' : 'bg-green-500/10 text-green-400 border-green-500/30'}`}>
-                {resource.source}
+                {resource.type}
               </span>
               {resource.dropRate && (
                 <span className={`px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-tighter shrink-0 border ${DROP_RATE_COLORS[resource.dropRate] || 'bg-slate-500/10 text-slate-400 border-slate-500/20'}`}>
@@ -166,7 +166,7 @@ const HarvestList = ({ resources }: HarvestListProps) => {
     const query = fastNormalize(activeSearchTerm);
     return resources.filter(r => {
       const matchesSearch = !query || fastNormalize(r.name).includes(query);
-      const matchesType = selectedType === 'Tous' || r.source === selectedType;
+      const matchesType = selectedType === 'Tous' || r.type === selectedType;
       const zones = Array.isArray(r.zone) ? r.zone : [r.zone];
       const matchesZone = selectedZone === 'Toutes' || zones.includes(selectedZone);
       const matchesRarity = selectedRarity === 'Toutes' || r.dropRate === selectedRarity;

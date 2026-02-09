@@ -2,7 +2,6 @@
   {
     "name": "Fer",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Arakas"
     ],
@@ -11,12 +10,12 @@
     "coordinates": [
       "525.426.2",
       "200.501.2"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Taénite",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Arakas"
     ],
@@ -25,12 +24,12 @@
     "coordinates": [
       "525.426.2",
       "200.501.2"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Morceau de charbon",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Arakas"
     ],
@@ -39,12 +38,12 @@
     "coordinates": [
       "525.426.2",
       "200.501.2"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Plomb",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Arakas"
     ],
@@ -53,12 +52,12 @@
     "coordinates": [
       "267.1149.2",
       "289.1139.2"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Cérusite",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Arakas"
     ],
@@ -67,12 +66,12 @@
     "coordinates": [
       "267.1149.2",
       "289.1139.2"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Morceau de charbon",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Arakas"
     ],
@@ -81,12 +80,12 @@
     "coordinates": [
       "267.1149.2",
       "289.1139.2"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Platine",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Arakas"
     ],
@@ -94,12 +93,12 @@
     "description": "Gisement de minerai.",
     "coordinates": [
       "2340.280.0"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Cuivre",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Raven's Dust"
     ],
@@ -110,12 +109,12 @@
       "1288.131.2",
       "1292.320.2",
       "1405.395.2"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Orichalque",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Raven's Dust"
     ],
@@ -126,12 +125,12 @@
       "1288.131.2",
       "1292.320.2",
       "1405.395.2"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Argent",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Raven's Dust"
     ],
@@ -142,12 +141,12 @@
       "955.947.2",
       "986.1093.2",
       "1070.1072.2"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Cobalt",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Raven's Dust"
     ],
@@ -158,12 +157,12 @@
       "955.947.2",
       "986.1093.2",
       "1070.1072.2"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Mithril",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Raven's Dust"
     ],
@@ -173,12 +172,12 @@
       "661.145.2",
       "1000.212.2",
       "1016.355.2"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Granite",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Raven's Dust"
     ],
@@ -188,12 +187,12 @@
       "661.145.2",
       "1000.212.2",
       "1016.355.2"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Or",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Stoneheim"
     ],
@@ -203,12 +202,12 @@
       "1527.378.2",
       "1643.490.2",
       "1758.639.2"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Rhodite",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Stoneheim"
     ],
@@ -218,12 +217,12 @@
       "1527.378.2",
       "1643.490.2",
       "1758.639.2"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Adamantite",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Stoneheim"
     ],
@@ -233,12 +232,12 @@
       "2170.340.2",
       "2350.337.2",
       "2010.440.2"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Tourmaline",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Stoneheim"
     ],
@@ -248,12 +247,12 @@
       "2170.340.2",
       "2350.337.2",
       "2010.440.2"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Freibergite",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Stoneheim"
     ],
@@ -263,12 +262,12 @@
       "2170.340.2",
       "2350.337.2",
       "2010.440.2"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Saphir",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Stoneheim"
     ],
@@ -287,12 +286,12 @@
       "2458.1563.2",
       "2467.1576.2",
       "2481.1559.2"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Azurite",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Stoneheim"
     ],
@@ -311,12 +310,12 @@
       "2458.1563.2",
       "2467.1576.2",
       "2481.1559.2"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Métrolite",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Stoneheim"
     ],
@@ -328,12 +327,12 @@
       "2095.1147.2",
       "2255.821.2",
       "2311.995.2"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Obsidienne",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Stoneheim"
     ],
@@ -345,12 +344,12 @@
       "2095.1147.2",
       "2255.821.2",
       "2311.995.2"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Titane",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Drake Island"
     ],
@@ -366,12 +365,12 @@
       "1943.2533.3",
       "1942.2547.3",
       "1946.2555.3"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Sphène",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Drake Island"
     ],
@@ -387,12 +386,12 @@
       "1943.2533.3",
       "1942.2547.3",
       "1946.2555.3"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Diamant",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Drake Island"
     ],
@@ -408,12 +407,12 @@
       "1964.2334.3",
       "1963.2350.3",
       "1977.2356.3"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Quartz",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Drake Island"
     ],
@@ -429,12 +428,12 @@
       "1964.2334.3",
       "1963.2350.3",
       "1977.2356.3"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Emeraude",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Drake Island"
     ],
@@ -449,12 +448,12 @@
       "1999.2210.3",
       "2045.2394.3",
       "2052.2386.3"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Jade",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Drake Island"
     ],
@@ -469,12 +468,12 @@
       "1999.2210.3",
       "2045.2394.3",
       "2052.2386.3"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Rubis",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Drake Island"
     ],
@@ -490,12 +489,12 @@
       "1705.2803.3",
       "1703.2813.3",
       "1711.2819.3"
-    ]
+    ],
+    "type": "Minerai"
   },
   {
     "name": "Cornaline",
     "quantity": 1,
-    "source": "Minerai",
     "zone": [
       "Drake Island"
     ],
@@ -511,6 +510,7 @@
       "1705.2803.3",
       "1703.2813.3",
       "1711.2819.3"
-    ]
+    ],
+    "type": "Minerai"
   }
 ]

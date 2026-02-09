@@ -43,7 +43,7 @@ export interface SavedCharacter {
     updatedAt: number;
 }
 
-export type ItemSource =
+export type ItemType =
     | 'Amulette' | 'Anneau' | 'Arc' | 'Arme' | 'Botte' | 'Bouclier' | 'Bracelet'
     | 'Cape' | 'Ceinture' | 'Flèches' | 'Focus' | 'Gant' | 'Heaume' | 'Jambière'
     | 'Orbe' | 'Plastron' | 'Robe' | 'Matériau' | 'Divers' | 'Récolte' | 'Mine'
@@ -66,7 +66,7 @@ export interface RecipeItem {
     level?: number;
     icon?: string;
     ingredients?: RecipeItem[];
-    source?: ItemSource;
+    type?: ItemType;
     typeSource?: string;
     locations?: ItemLocation[];
     sources?: MaterialSource[];

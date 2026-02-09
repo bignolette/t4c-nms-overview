@@ -37,7 +37,7 @@ const DepositCard = memo(({ deposit }: { deposit: any }) => {
           <div className="flex-1 min-w-0 pr-2">
             <div className="flex items-center gap-2 mb-1 flex-wrap">
               <span className="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-tighter shrink-0 border bg-amber-500/10 text-amber-400 border-amber-500/30">
-                {deposit.source || 'Gisement'}
+                {deposit.type || 'Gisement'}
               </span>
               {deposit.dropRate && (
                 <span className={`px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-tighter shrink-0 border ${DROP_RATE_COLORS[deposit.dropRate] || 'bg-slate-500/10 text-slate-400 border-slate-500/20'}`}>

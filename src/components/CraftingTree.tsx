@@ -11,9 +11,9 @@ import { useState, useMemo, memo, useCallback } from 'react';
 import { createPortal } from 'react-dom';
 import { useClipboard } from '../hooks/useClipboard';
 
-const getSourceIcon = (source: string | undefined) => {
-  if (!source) return Package;
-  switch (source) {
+const getSourceIcon = (type: string | undefined) => {
+  if (!type) return Package;
+  switch (type) {
     case 'Heaume': return Crown;
     case 'Amulette': return Medal;
     case 'Bracelet': return Link2;
@@ -270,7 +270,7 @@ const RecipeCard = memo(({ recipe, hidePlanner }: { recipe: RecipeItem, hidePlan
     
     const enrichedItem = {
       ...item,
-      source: item.source || r?.source || itemData?.source,
+      type: item.type || r?.type || itemData?.type,
       typeSource: item.typeSource || r?.typeSource || itemData?.typeSource,
       locations: item.locations || r?.locations || itemData?.locations,
       sources: item.sources || r?.sources || itemData?.sources,
@@ -353,7 +353,7 @@ const RecipeCard = memo(({ recipe, hidePlanner }: { recipe: RecipeItem, hidePlan
   const TreeNode = memo(({ item, multiplier = 1, depth = 0 }: { item: RecipeItem, multiplier?: number, depth?: number }) => {
     const hasIngredients = item.ingredients && item.ingredients.length > 0;
     const isNodeExpanded = expandedItems.has(item.name);
-    const Icon = getSourceIcon(item.source);
+    const Icon = getSourceIcon(item.type);
     const { copied, copy } = useClipboard();
     
     return (
@@ -404,8 +404,8 @@ const RecipeCard = memo(({ recipe, hidePlanner }: { recipe: RecipeItem, hidePlan
               </div>
               
               <div className="flex items-center gap-2 mt-1">
-                {item.source && (
-                  <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider">{item.source}</span>
+                {item.type && (
+                  <span className="text-[9px] font-bold text-slate-500 uppercase tracking-wider">{item.type}</span>
                 )}
                 {hasIngredients ? (
                   <div className="flex flex-wrap items-center gap-1 text-[9px] font-black uppercase tracking-widest text-amber-600">

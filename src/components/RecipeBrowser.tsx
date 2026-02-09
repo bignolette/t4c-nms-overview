@@ -2,7 +2,7 @@ import { useState, useMemo, useEffect, memo, useCallback } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useData } from '../context/DataContext';
-import { fastNormalize, formatStatValue } from '../data/utils';
+import { fastNormalize, formatStatValue, formatGold } from '../data/utils';
 import type { RecipeItem } from '../data/types';
 import CraftingTree from './CraftingTree';
 import { createPortal } from 'react-dom';
@@ -75,16 +75,16 @@ const useSourceIcon = () => {
     const { wikiData } = useData();
     const allItems = useMemo(() => wikiData.find(p => p.id === 'items')?.recipes || [], [wikiData]);
 
-    const getSourceIcon = useCallback((source: string | undefined, name?: string) => {
-        let resolvedSource = source;
-        if (!resolvedSource && name) {
+    const getSourceIcon = useCallback((type: string | undefined, name?: string) => {
+        let resolvedType = type;
+        if (!resolvedType && name) {
             const normalized = fastNormalize(name);
             const item = allItems.find(i => fastNormalize(i.name) === normalized);
-            resolvedSource = item?.source;
+            resolvedType = item?.type;
         }
         
-        if (!resolvedSource) return Package;
-        switch (resolvedSource) {
+        if (!resolvedType) return Package;
+        switch (resolvedType) {
             case 'Heaume': return Crown;
             case 'Amulette': return Medal;
             case 'Bracelet': return Link2;
@@ -202,13 +202,13 @@ const ItemDetailModal = ({ recipe, onClose, toggleFavorite, favorites, navigateT
           <div className="flex items-center gap-3">
             <div className="p-2 bg-slate-800 rounded-xl text-amber-500 border border-slate-700/50">
               {(() => {
-                const Icon = getSourceIcon(recipe.source, recipe.name);
+                const Icon = getSourceIcon(recipe.type, recipe.name);
                 return <Icon size={24} />;
               })()}
             </div>
             <div>
               <h3 className="text-xl font-black text-slate-100 uppercase tracking-tighter italic">{recipe.name}</h3>
-              <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">{recipe.source || recipe.typeSource || 'Objet'}</p>
+              <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">{recipe.type || recipe.typeSource || 'Objet'}</p>
             </div>
           </div>
           <div className="flex items-center gap-2">
@@ -303,7 +303,7 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
           <div className="flex items-start justify-between relative z-10">
             <div className="p-3 bg-slate-950/80 rounded-2xl text-amber-500 border border-slate-800 shadow-inner group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all duration-500">
               {(() => {
-                const Icon = getSourceIcon(recipe.source, recipe.name);
+                const Icon = getSourceIcon(recipe.type, recipe.name);
                 return <Icon size={20} />;
               })()}
             </div>
@@ -337,10 +337,26 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
                   <Tag size={10} />
                   <span>{recipe.typeSource} {recipe.locations?.[0] ? `• ${recipe.locations[0].label}` : ''}</span>
                 </div>
-              ) : recipe.source && (
+              ) : recipe.type && (
                 <div className="flex items-center gap-1.5 text-[10px] text-slate-500 uppercase font-black tracking-widest bg-slate-950 px-2 py-1 rounded-lg w-fit border border-slate-800">
                   <Tag size={10} className="text-slate-600" />
-                  <span>{recipe.source}</span>
+                  <span>{recipe.type}</span>
+                </div>
+              )}
+
+              {recipe.buyPrice && (
+                <div className="flex items-center gap-1.5 text-[10px] text-amber-500 uppercase font-black tracking-widest bg-amber-500/5 px-2 py-1 rounded-lg w-fit border border-amber-500/10">
+                  <span>{formatGold(recipe.buyPrice)}</span>
+                </div>
+              )}
+
+              {recipe.obtention && recipe.obtention.length > 0 && (
+                <div className="flex flex-wrap gap-1 mt-1">
+                  {recipe.obtention.map((source: string, sidx: number) => (
+                    <div key={sidx} className="flex items-center gap-1.5 text-[9px] text-emerald-400 uppercase font-black tracking-widest bg-emerald-500/5 px-1.5 py-0.5 rounded border border-emerald-500/10">
+                      <span>{source}</span>
+                    </div>
+                  ))}
                 </div>
               )}
 
@@ -444,9 +460,9 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
                 <Tag size={10} className="opacity-70" /> {s.typeSource}
               </span>
             ))
-          ) : (recipe.typeSource || recipe.source) && (
-            <span className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter border shadow-lg ${recipe.typeSource ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20' : (TYPE_COLORS[recipe.source as string] || 'bg-slate-800 text-slate-400')}`}>
-              <Tag size={10} className="opacity-70" /> {recipe.typeSource || recipe.source}
+          ) : (recipe.typeSource || recipe.type) && (
+            <span className={`flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter border shadow-lg ${recipe.typeSource ? 'bg-emerald-500/10 text-emerald-400 border-emerald-500/20' : (TYPE_COLORS[recipe.type as string] || 'bg-slate-800 text-slate-400')}`}>
+              <Tag size={10} className="opacity-70" /> {recipe.typeSource || recipe.type}
             </span>
           ))}
           {!isItemsPage && recipe.profession && (
@@ -464,7 +480,7 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
               <div className="flex items-center gap-3 border-b border-slate-800 pb-4">
                 <div className="p-2 bg-slate-800 rounded-xl text-amber-500 border border-slate-700/50">
                   {(() => {
-                    const Icon = getSourceIcon(recipe.source, recipe.name);
+                    const Icon = getSourceIcon(recipe.type, recipe.name);
                     return <Icon size={24} />;
                   })()}
                 </div>
@@ -522,10 +538,24 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
                         <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-tighter">{recipe.typeSource}</span>
                       </div>
                     ) : null}
-                    {recipe.source && !recipe.sources && (
+                    {recipe.type && !recipe.sources && (
                       <div className="flex items-center gap-1.5 px-2 py-0.5 rounded bg-slate-800 border border-slate-700 w-fit">
                         <Tag size={10} className="text-slate-500" />
-                        <span className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">{recipe.source}</span>
+                        <span className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">{recipe.type}</span>
+                      </div>
+                    )}
+                    {recipe.buyPrice && (
+                      <div className="flex items-center gap-1.5 px-2 py-0.5 rounded bg-amber-500/10 border border-amber-500/20 w-fit">
+                        <span className="text-[10px] font-bold text-amber-500 uppercase tracking-tighter">{formatGold(recipe.buyPrice)}</span>
+                      </div>
+                    )}
+                    {recipe.obtention && recipe.obtention.length > 0 && (
+                      <div className="flex flex-wrap gap-2">
+                        {recipe.obtention.map((source: string, sidx: number) => (
+                          <div key={sidx} className="flex items-center gap-1.5 px-2 py-0.5 rounded bg-emerald-500/10 border border-emerald-500/20 w-fit">
+                            <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-tighter">{source}</span>
+                          </div>
+                        ))}
                       </div>
                     )}
                   </div>
@@ -549,11 +579,11 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
                     <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest block">Prérequis</span>
                     {recipe.prerequisites && Object.values(recipe.prerequisites).some(v => v) ? (
                       <div className="flex flex-wrap gap-2">
-                        {recipe.prerequisites.str && <StatBadge label="FOR" value={formatStatValue(recipe.prerequisites.str)} type="str" />}
-                        {recipe.prerequisites.end && <StatBadge label="END" value={formatStatValue(recipe.prerequisites.end)} type="end" />}
-                        {recipe.prerequisites.dex && <StatBadge label="DEX" value={formatStatValue(recipe.prerequisites.dex)} type="dex" />}
-                        {recipe.prerequisites.int && <StatBadge label="INT" value={formatStatValue(recipe.prerequisites.int)} type="int" />}
-                        {recipe.prerequisites.wis && <StatBadge label="SAG" value={formatStatValue(recipe.prerequisites.wis)} type="wis" />}
+                        {recipe.prerequisites.str && <StatBadge label="FOR" value={recipe.prerequisites.str} type="str" />}
+                        {recipe.prerequisites.end && <StatBadge label="END" value={recipe.prerequisites.end} type="end" />}
+                        {recipe.prerequisites.dex && <StatBadge label="DEX" value={recipe.prerequisites.dex} type="dex" />}
+                        {recipe.prerequisites.int && <StatBadge label="INT" value={recipe.prerequisites.int} type="int" />}
+                        {recipe.prerequisites.wis && <StatBadge label="SAG" value={recipe.prerequisites.wis} type="wis" />}
                       </div>
                     ) : (
                       <span className="text-xs text-slate-600 italic">Pas de pré-requis</span>
@@ -972,7 +1002,7 @@ const NPCGroupedView = ({
                           >
                             {recipe.name}
                           </button>
-                          <div className="text-[10px] text-slate-600 font-bold uppercase">{recipe.source || 'Objet'}</div>
+                          <div className="text-[10px] text-slate-600 font-bold uppercase">{recipe.type || 'Objet'}</div>
                         </div>
                       </div>
                       <div className="flex items-center gap-1 shrink-0 ml-4">
@@ -1174,10 +1204,10 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
   const { wikiData, recipesData, favRecipes: favorites, setFavRecipes: setFavorites, craftingProjects, setCraftingProjects, showNotification } = useData();
   const allItems = useMemo(() => wikiData.find(p => p.id === 'items')?.recipes || [], [wikiData]);
   
-  const findItemSource = useCallback((name: string) => {
+  const findItemType = useCallback((name: string) => {
     const normalized = fastNormalize(name);
     const item = allItems.find(i => fastNormalize(i.name) === normalized);
-    return item?.source;
+    return item?.type;
   }, [allItems]);
 
   const [searchParams, setSearchParams] = useSearchParams();
@@ -1385,7 +1415,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
     const normalizedSearch = fastNormalize(activeSearchTerm);
     
     const result = recipes.filter(recipe => {
-      const resolvedType = recipe.source || findItemSource(recipe.name);
+      const resolvedType = recipe.type || findItemType(recipe.name);
       const matchesType = selectedType === 'Tous' || resolvedType === selectedType;
 
       // Stat Filter
@@ -1458,7 +1488,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
       }
     });
     return result;
-  }, [recipes, activeSearchTerm, selectedProf, selectedType, selectedZone, selectedStats, levelRange, sortBy, sortOrder, showOnlyFavs, displayMode, favorites, isItemsPage, viewMode, isExactSearch, findItemSource]);
+  }, [recipes, activeSearchTerm, selectedProf, selectedType, selectedZone, selectedStats, levelRange, sortBy, sortOrder, showOnlyFavs, displayMode, favorites, isItemsPage, viewMode, isExactSearch, findItemType]);
 
   const getMatchingIngredients = (recipe: RecipeItem, search: string) => {
     if (!search || isItemsPage || isExactSearch) return [];

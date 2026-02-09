@@ -37,9 +37,9 @@ export const fastNormalize = (text: string): string => {
 /**
  * Common Slot mapping for equipment
  */
-export const mapSourceToSlot = (source: string | undefined): string | null => {
-  if (!source) return null;
-  switch (source) {
+export const mapTypeToSlot = (type: string | undefined): string | null => {
+  if (!type) return null;
+  switch (type) {
     case 'Heaume': return 'Tete';
     case 'Amulette': return 'Amulette';
     case 'Bracelet': return 'Bracelet';
@@ -73,6 +73,20 @@ export const formatStatValue = (value: string | number | undefined): string => {
   if (s.startsWith('+') || s.startsWith('-')) return s;
   if (/^\d/.test(s)) return `+${s}`;
   return s;
+};
+
+/**
+ * Formats gold value: "1 234 567 pièce(s) d'or"
+ */
+export const formatGold = (value: string | number | undefined): string => {
+  if (value === undefined || value === null || value === "") return "";
+  const numStr = String(value).replace(/[^0-9]/g, '');
+  const num = parseInt(numStr);
+  if (isNaN(num)) return String(value);
+  
+  // Use a regex to insert non-breaking spaces every 3 digits for better visibility
+  const formatted = num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, "\u00A0");
+  return `${formatted} pièce(s) d'or`;
 };
 
 /**

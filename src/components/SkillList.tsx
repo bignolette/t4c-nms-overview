@@ -1,7 +1,7 @@
 import { useState, useMemo, memo, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { fastNormalize } from '../data/utils';
+import { fastNormalize, formatGold } from '../data/utils';
 import type { Skill } from '../data/types';
 import {
   Filter, AlertCircle, RotateCcw,
@@ -91,7 +91,7 @@ export const SkillCard = memo(({ skill }: { skill: Skill }) => {
         <div className="mt-auto space-y-4 pt-4 border-t border-slate-700/30">
           <div className="flex items-center justify-between">
             <div className="text-[9px] font-black text-slate-500 uppercase tracking-widest">Coût d'entraînement</div>
-            <div className="text-[10px] font-mono text-emerald-400">{skill.trainingCost}</div>
+            <div className="text-[10px] font-mono text-emerald-400">{formatGold(skill.trainingCost)}</div>
           </div>
           
           <div className="bg-slate-950/40 p-3 rounded-xl border border-slate-800/50">

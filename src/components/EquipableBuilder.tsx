@@ -2,7 +2,7 @@ import { useState, useMemo, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useData } from '../context/DataContext';
 import type { RecipeItem, SavedCharacter, Stats } from '../data/types';
-import { mapSourceToSlot, fastNormalize, formatStatValue } from '../data/utils';
+import { mapTypeToSlot, fastNormalize, formatStatValue, formatGold } from '../data/utils';
 import { Search, Sword, Package, Zap, Trophy, Sparkles, ChevronUp, ChevronDown } from 'lucide-react';
 import RuneIcon from './ui/RuneIcon';
 
@@ -70,7 +70,7 @@ const EquipableBuilder = () => {
   const itemsBySlot = useMemo(() => {
     const map: Record<string, RecipeItem[]> = {};
     itemsData.forEach(item => {
-      const slot = mapSourceToSlot(item.source);
+      const slot = mapTypeToSlot(item.type);
       if (slot) {
         if (!map[slot]) map[slot] = [];
         map[slot].push(item);
@@ -204,8 +204,8 @@ const EquipableBuilder = () => {
           const r = i.prerequisites || {};
           baseScore += parseInt(r.str || '0') + parseInt(r.end || '0') + parseInt(r.dex || '0') + parseInt(r.int || '0') + parseInt(r.wis || '0');
           if (selectedSlot.id === 'Arme') {
-             if (mainStat === 'dex' && i.source !== 'Arc') baseScore -= 10000000;
-             if (mainStat === 'str' && i.source !== 'Arme') baseScore -= 10000000;
+             if (mainStat === 'dex' && i.type !== 'Arc') baseScore -= 10000000;
+             if (mainStat === 'str' && i.type !== 'Arme') baseScore -= 10000000;
           }
           return baseScore;
         };
@@ -298,7 +298,7 @@ const EquipableBuilder = () => {
                     <div className="flex justify-between items-start mb-4">
                       <div className="flex flex-col">
                         <span className={`text-[10px] font-black uppercase tracking-widest mb-1 ${isSpell ? 'text-blue-400' : (isSkill ? 'text-emerald-400' : 'text-amber-500')}`}>
-                          {isSpell ? 'SORT' : (isSkill ? 'COMPÉTENCE' : entry.source)}
+                          {isSpell ? 'SORT' : (isSkill ? 'COMPÉTENCE' : entry.type)}
                         </span>
                         <h3 className="text-sm font-bold text-slate-100 group-hover/item:text-white transition-colors line-clamp-1">{name}</h3>
                       </div>
@@ -520,11 +520,20 @@ const ItemCard = ({ item, isBiSMode, idx }: { item: RecipeItem, isBiSMode: boole
       <div className="flex flex-col sm:flex-row justify-between items-start gap-4 mb-6">
         <div>
           <div className="flex flex-wrap items-center gap-2 mb-1">
-            <span className="text-[10px] font-black text-amber-500/80 uppercase tracking-[0.2em]">{item.source}</span>
+            <span className="text-[10px] font-black text-amber-500/80 uppercase tracking-[0.2em]">{item.type}</span>
             {item.buyPrice && (
               <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest bg-slate-950 px-2 py-0.5 rounded-lg border border-white/5">
-                {parseInt(item.buyPrice).toLocaleString()} G
+                {formatGold(item.buyPrice)}
               </span>
+            )}
+            {item.obtention && item.obtention.length > 0 && (
+              <div className="flex flex-wrap gap-1">
+                {item.obtention.map((source: string, sidx: number) => (
+                  <span key={sidx} className="text-[10px] font-black text-emerald-500 uppercase tracking-widest bg-emerald-500/10 px-2 py-0.5 rounded-lg border border-emerald-500/20">
+                    {source}
+                  </span>
+                ))}
+              </div>
             )}
           </div>
           <h4 className={`text-xl font-black italic uppercase tracking-tight ${isTopBiS ? 'text-emerald-400' : 'text-slate-100'}`}>{item.name}</h4>
