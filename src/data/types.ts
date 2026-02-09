@@ -88,6 +88,7 @@ export interface RecipeItem {
         max: string;
     };
     buyPrice?: string;
+    obtention?: string[];
 }
 
 export interface QuestStep {
