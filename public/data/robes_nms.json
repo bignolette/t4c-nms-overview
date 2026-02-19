@@ -910,5 +910,35 @@
       "1000 fèves d'argent au Salon de Jeux"
     ],
     "type": "Robe"
+  },
+  {
+    "name": "Manteau mystique des éléments",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "38",
+      "int": "538",
+      "wis": "432"
+    },
+    "secondary": {
+      "Coup Critique": "+30",
+      "Profusion de mana": "+10"
+    },
+    "bonuses": {
+      "ca": "+28",
+      "Sagesse": "+40",
+      "Intelligence": "+40",
+      "Puissance terre": "+20",
+      "Puissance eau": "+20",
+      "Puissance feu": "+20",
+      "Puissance air": "+20",
+      "Puissance nécro": "-10",
+      "Puissance lumière": "-10",
+      "Résistance nécro": "-10",
+      "Esquive": "-25"
+    },
+    "obtention": [
+      "Liche ancestrale (DI)"
+    ],
+    "type": "Robe"
   }
 ]

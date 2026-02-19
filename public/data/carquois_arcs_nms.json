@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Arc composite des alizés (+4)",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "208",
+      "dex": "974",
+      "encombrement": "11"
+    },
+    "secondary": {
+      "Archerie": "+60% (niveau)",
+      "Immobilisation": "+10",
+      "Transpercer l'Armure": "oui",
+      "Coup Assommant": "oui"
+    },
+    "bonuses": {
+      "Force": "+22",
+      "Dextérité": "+22",
+      "Dommages": "338-528"
+    },
+    "obtention": [
+      "Ébéniste Urtanar (Métier, niveau haut)"
+    ],
+    "type": "Arc"
+  },
+  {
+    "name": "Arc ensorcelé de la bise noire (+4)",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "217",
+      "dex": "1042",
+      "encombrement": "11"
+    },
+    "secondary": {
+      "Archerie": "+60% (niveau)",
+      "Immobilisation": "+10",
+      "Transpercer l'Armure": "oui",
+      "Coup Assommant": "oui"
+    },
+    "bonuses": {
+      "Force": "+22",
+      "Dextérité": "+22",
+      "Dommages": "359-564"
+    },
+    "obtention": [
+      "Ébéniste Urtanar (Métier, niveau haut)"
+    ],
+    "type": "Arc"
+  }
+]
