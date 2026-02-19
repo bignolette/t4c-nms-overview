@@ -14,6 +14,7 @@ L'outil ultime pour sculpter votre personnage :
 ### 🔨 Métiers & Artisanat (Crafting)
 L'outil de craft le plus complet pour T4C NMS :
 *   **Arbre de Dépendances Interactif** : Visualisez l'intégralité de la chaîne de fabrication pour les objets complexes.
+*   **Suivi de Projets** : Créez des listes de craft, cochez vos composants collectés et suivez votre progression en temps réel.
 *   **Calculateur de Ressources Brutes** : Identifiez instantanément le total cumulé des composants de base nécessaires.
 *   **Géolocalisation des Recettes** : Localisation précise des PNJ formateurs et descriptions des lieux.
 
@@ -22,6 +23,21 @@ Planifiez votre progression d'équipement :
 *   **Roadmap de Progression** : L'application détecte automatiquement les prochains objets que vous pourrez équiper selon vos stats actuelles.
 *   **Filtrage Intelligent (BiS Mode)** : Trouvez les meilleurs objets pour une statistique donnée (Puissances, Résistances, Chance).
 *   **Bibliothèque de Sorts & Compétences** : Consultez les pré-requis et effets de l'intégralité du grimoire NMS.
+
+## 📚 Base de Données (Items)
+
+L'application intègre une base de données exhaustive de **3 171 objets**, dont **409 entrées exclusives au contenu NMS**.
+
+### Statistiques par Type d'Objet :
+*   ⚔️ **Armes & Combat** : 688 Armes, 165 Arcs, 42 types de Flèches, 18 Fléaux, 16 Sceptres, 12 Marteaux.
+*   🛡️ **Armures & Protection** : 118 Heaumes, 101 Plastrons, 71 Boucliers, 63 Jambières, 59 Bottes, 65 Gants, 52 Ceintures.
+*   ✨ **Magie & Bijoux** : 176 Robes, 166 Capes & Orbes, 99 Anneaux, 49 Amulettes, 40 Bracelets, 10 Focus.
+*   📦 **Artisanat & Divers** : 36 Matériaux, 1 112 Objets divers et composants.
+
+### Ampleur des Prérequis :
+L'application couvre l'intégralité de la progression, avec des prérequis allant jusqu'à :
+*   **Force** : 1 050 | **Endurance** : 370 | **Dextérité** : 1 042
+*   **Intelligence & Sagesse** : Support complet jusqu'au niveau maximum.
 
 ## 🎨 Expérience Visuelle & UX
 
