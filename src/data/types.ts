@@ -87,6 +87,8 @@ export interface RecipeItem {
         min: string;
         max: string;
     };
+    degats?: string;
+    mains?: string;
     buyPrice?: string;
     obtention?: string[];
 }

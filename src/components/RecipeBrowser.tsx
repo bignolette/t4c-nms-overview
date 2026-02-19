@@ -340,7 +340,7 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
               ) : recipe.type && (
                 <div className="flex items-center gap-1.5 text-[10px] text-slate-500 uppercase font-black tracking-widest bg-slate-950 px-2 py-1 rounded-lg w-fit border border-slate-800">
                   <Tag size={10} className="text-slate-600" />
-                  <span>{recipe.type}</span>
+                  <span>{recipe.type} {recipe.mains ? `(${recipe.mains})` : ''}</span>
                 </div>
               )}
 
@@ -380,6 +380,27 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
               })()}
             </div>
           </div>
+
+          {(recipe.damage || recipe.degats) && (
+            <div className="flex items-center justify-between px-2 py-1 bg-rose-500/10 rounded-lg border border-rose-500/20 relative z-10">
+              <div className="flex items-center gap-1.5">
+                <Sword size={10} className="text-rose-500" />
+                <span className="text-[10px] font-black text-slate-100 italic">
+                  {recipe.damage ? `${recipe.damage.min}-${recipe.damage.max}` : recipe.degats}
+                </span>
+              </div>
+              <span className="text-[9px] font-bold text-rose-500/70">
+                Avg: {(() => {
+                  if (recipe.damage) return ((parseInt(recipe.damage.min) + parseInt(recipe.damage.max)) / 2).toFixed(1);
+                  if (recipe.degats && recipe.degats.includes('-')) {
+                    const [min, max] = recipe.degats.split('-').map((v: string) => parseInt(v.trim()));
+                    if (!isNaN(min) && !isNaN(max)) return ((min + max) / 2).toFixed(1);
+                  }
+                  return "N/A";
+                })()}
+              </span>
+            </div>
+          )}
 
           <div className="flex flex-wrap gap-1.5 mt-auto relative z-10">
             {recipe.bonuses?.ca && <StatBadge label="CA" value={formatStatValue(recipe.bonuses.ca)} type="ca" />}
@@ -541,7 +562,9 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
                     {recipe.type && !recipe.sources && (
                       <div className="flex items-center gap-1.5 px-2 py-0.5 rounded bg-slate-800 border border-slate-700 w-fit">
                         <Tag size={10} className="text-slate-500" />
-                        <span className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">{recipe.type}</span>
+                        <span className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">
+                          {recipe.type} {recipe.mains ? `(${recipe.mains})` : ''}
+                        </span>
                       </div>
                     )}
                     {recipe.buyPrice && (
@@ -561,6 +584,45 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
                   </div>
                 </div>
               </div>
+
+              {(recipe.damage || recipe.degats) && (
+                <div className="mb-6 p-4 bg-rose-500/5 border border-rose-500/10 rounded-2xl flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div className="p-2 bg-rose-500/20 rounded-lg text-rose-500">
+                      <Sword size={16} />
+                    </div>
+                    <div>
+                      <span className="text-[10px] font-black text-rose-500/70 uppercase tracking-widest block">Dégâts Physiques</span>
+                      <div className="flex items-baseline gap-1">
+                        {recipe.damage ? (
+                          <>
+                            <span className="text-lg font-black text-slate-100 italic">{recipe.damage.min}</span>
+                            <span className="text-xs font-bold text-slate-500 italic">-</span>
+                            <span className="text-lg font-black text-slate-100 italic">{recipe.damage.max}</span>
+                          </>
+                        ) : (
+                          <span className="text-lg font-black text-slate-100 italic">{recipe.degats}</span>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="text-right">
+                    <span className="text-[10px] font-black text-slate-600 uppercase tracking-widest block">Moyenne</span>
+                    <span className="text-sm font-black text-slate-400">
+                      {(() => {
+                        if (recipe.damage) {
+                          return ((parseInt(recipe.damage.min) + parseInt(recipe.damage.max)) / 2).toFixed(1);
+                        }
+                        if (recipe.degats && recipe.degats.includes('-')) {
+                          const [min, max] = recipe.degats.split('-').map((v: string) => parseInt(v.trim()));
+                          if (!isNaN(min) && !isNaN(max)) return ((min + max) / 2).toFixed(1);
+                        }
+                        return "N/A";
+                      })()}
+                    </span>
+                  </div>
+                </div>
+              )}
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="space-y-6">

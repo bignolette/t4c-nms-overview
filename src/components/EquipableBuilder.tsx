@@ -521,6 +521,11 @@ const ItemCard = ({ item, isBiSMode, idx }: { item: RecipeItem, isBiSMode: boole
         <div>
           <div className="flex flex-wrap items-center gap-2 mb-1">
             <span className="text-[10px] font-black text-amber-500/80 uppercase tracking-[0.2em]">{item.type}</span>
+            {item.mains && (
+              <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest bg-slate-950 px-2 py-0.5 rounded-lg border border-white/5">
+                {item.mains}
+              </span>
+            )}
             {item.buyPrice && (
               <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest bg-slate-950 px-2 py-0.5 rounded-lg border border-white/5">
                 {formatGold(item.buyPrice)}
@@ -541,7 +546,7 @@ const ItemCard = ({ item, isBiSMode, idx }: { item: RecipeItem, isBiSMode: boole
         <Link to={`/wiki/items?search=${encodeURIComponent(item.name)}`} className="btn-secondary px-4 py-2 text-[10px] uppercase tracking-widest">Détails</Link>
       </div>
 
-      {item.damage && (
+      { (item.damage || item.degats) && (
         <div className="mb-6 p-4 bg-rose-500/5 border border-rose-500/10 rounded-2xl flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="p-2 bg-rose-500/20 rounded-lg text-rose-500">
@@ -550,15 +555,32 @@ const ItemCard = ({ item, isBiSMode, idx }: { item: RecipeItem, isBiSMode: boole
             <div>
               <span className="text-[10px] font-black text-rose-500/70 uppercase tracking-widest block">Dégâts Physiques</span>
               <div className="flex items-baseline gap-1">
-                <span className="text-lg font-black text-slate-100 italic">{item.damage.min}</span>
-                <span className="text-xs font-bold text-slate-500 italic">-</span>
-                <span className="text-lg font-black text-slate-100 italic">{item.damage.max}</span>
+                {item.damage ? (
+                  <>
+                    <span className="text-lg font-black text-slate-100 italic">{item.damage.min}</span>
+                    <span className="text-xs font-bold text-slate-500 italic">-</span>
+                    <span className="text-lg font-black text-slate-100 italic">{item.damage.max}</span>
+                  </>
+                ) : (
+                  <span className="text-lg font-black text-slate-100 italic">{item.degats}</span>
+                )}
               </div>
             </div>
           </div>
           <div className="text-right">
              <span className="text-[10px] font-black text-slate-600 uppercase tracking-widest block">Moyenne</span>
-             <span className="text-sm font-black text-slate-400">{( (parseInt(item.damage.min) + parseInt(item.damage.max)) / 2).toFixed(1)}</span>
+             <span className="text-sm font-black text-slate-400">
+               {(() => {
+                 if (item.damage) {
+                   return ((parseInt(item.damage.min) + parseInt(item.damage.max)) / 2).toFixed(1);
+                 }
+                 if (item.degats && item.degats.includes('-')) {
+                   const [min, max] = item.degats.split('-').map(v => parseInt(v.trim()));
+                   if (!isNaN(min) && !isNaN(max)) return ((min + max) / 2).toFixed(1);
+                 }
+                 return "N/A";
+               })()}
+             </span>
           </div>
         </div>
       )}
