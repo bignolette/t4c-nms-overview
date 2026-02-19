@@ -1,0 +1,1044 @@
+[
+  {
+    "name": "Flèches en frêne",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "19",
+      "dex": "28"
+    },
+    "obtention": [
+      "Ebéniste lvl 5"
+    ],
+    "degats": "2-3",
+    "encombrement": ""
+  },
+  {
+    "name": "Flèches de l'éclaireur",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "21",
+      "dex": "35"
+    },
+    "obtention": [
+      "Ebéniste lvl 8 (par lot de 20)"
+    ],
+    "degats": "1-2",
+    "encombrement": ""
+  },
+  {
+    "name": "Flèches de puanteur",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "23",
+      "dex": "39",
+      "wis": "17",
+      "int": "26"
+    },
+    "obtention": [
+      "Ebéniste lvl 17 (par lot de 999)"
+    ],
+    "degats": "1-2",
+    "encombrement": "3"
+  },
+  {
+    "name": "Flèches paralysantes",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "27",
+      "dex": "41",
+      "wis": "31",
+      "int": "33"
+    },
+    "secondary": {
+      "Immobilisation": "+5"
+    },
+    "obtention": [
+      "Ebéniste lvl 20 (par lot de 999)"
+    ],
+    "degats": "2-3",
+    "encombrement": "3"
+  },
+  {
+    "name": "Flèches en noyer",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "21",
+      "dex": "67"
+    },
+    "obtention": [
+      "Ebéniste lvl 29"
+    ],
+    "degats": "3-5",
+    "encombrement": ""
+  },
+  {
+    "name": "Flèches à pointes d'acier",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "21",
+      "dex": "84"
+    },
+    "secondary": {
+      "Transpercer l'Armure": "+3"
+    },
+    "obtention": [
+      "Ebéniste lvl 32"
+    ],
+    "degats": "3-5",
+    "encombrement": ""
+  },
+  {
+    "name": "Flèches en chêne",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "22",
+      "dex": "95"
+    },
+    "obtention": [
+      "Ebéniste lvl 41"
+    ],
+    "degats": "6-10",
+    "encombrement": ""
+  },
+  {
+    "name": "Flèches puissamment empoisonnées",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "47",
+      "dex": "161"
+    },
+    "secondary": {
+      "Poison": "aléatoire"
+    },
+    "obtention": [
+      "Forgeron lvl 45"
+    ],
+    "degats": "2-4",
+    "encombrement": ""
+  },
+  {
+    "name": "Flèches lumineuses",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "31",
+      "dex": "184",
+      "wis": "72",
+      "int": "17"
+    },
+    "secondary": {
+      "Sort de lumière": "aléatoire"
+    },
+    "obtention": [
+      "Drop des B'Zérillis (DI)"
+    ],
+    "degats": "3-12",
+    "encombrement": ""
+  },
+  {
+    "name": "Flèches de la terre",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "94",
+      "dex": "184",
+      "wis": "102",
+      "int": "38"
+    },
+    "bonuses": {
+      "dex": "+25",
+      "str": "+20"
+    },
+    "secondary": {
+      "Puissance Terre": "+10",
+      "Sort d'enchevêtrement": "aléatoire"
+    },
+    "obtention": [
+      "Quête des livres de chance (DI)"
+    ],
+    "degats": "variable (~5-14)",
+    "encombrement": ""
+  },
+  {
+    "name": "Flèches du vent",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "31",
+      "dex": "184",
+      "wis": "69",
+      "int": "71"
+    },
+    "bonuses": {
+      "dex": "+25",
+      "str": "+20"
+    },
+    "secondary": {
+      "Puissance Air": "+10",
+      "Sort d'air": "aléatoire"
+    },
+    "obtention": [
+      "Drake Akaïstes (DI)"
+    ],
+    "degats": "variable (~4-13)",
+    "encombrement": ""
+  },
+  {
+    "name": "Flèches perceuses d'armure",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "89",
+      "dex": "349"
+    },
+    "secondary": {
+      "Transpercer l'Armure": "+15"
+    },
+    "obtention": [
+      "Ebéniste lvl 74"
+    ],
+    "degats": "1-10",
+    "encombrement": "3"
+  },
+  {
+    "name": "Flèches assommantes",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "89",
+      "dex": "349"
+    },
+    "secondary": {
+      "Coup Assommant": "+10"
+    },
+    "obtention": [
+      "Ebéniste lvl 56"
+    ],
+    "degats": "1-10",
+    "encombrement": "3"
+  },
+  {
+    "name": "Flèches naines",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "94",
+      "dex": "372"
+    },
+    "bonuses": {
+      "str": "+22",
+      "dex": "+22"
+    },
+    "obtention": [
+      "Ebéniste lvl 44"
+    ],
+    "degats": "9-16",
+    "encombrement": "5"
+  },
+  {
+    "name": "Flèches sifflantes",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "94",
+      "dex": "372"
+    },
+    "bonuses": {
+      "ca": "+5"
+    },
+    "secondary": {
+      "Coup critique": "+150"
+    },
+    "obtention": [
+      "Ebéniste lvl 53"
+    ],
+    "degats": "11-20",
+    "encombrement": "5"
+  },
+  {
+    "name": "Flèches de feu",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "94",
+      "dex": "372",
+      "wis": "15",
+      "int": "125"
+    },
+    "bonuses": {
+      "dex": "+25",
+      "str": "+20"
+    },
+    "secondary": {
+      "Puissance Feu": "+10",
+      "Sort de feu offensif": "aléatoire"
+    },
+    "obtention": [
+      "Coffres de DI"
+    ],
+    "degats": "variable (~4-13)",
+    "encombrement": ""
+  },
+  {
+    "name": "Flèches de glace",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "94",
+      "dex": "372",
+      "wis": "31",
+      "int": "109"
+    },
+    "bonuses": {
+      "dex": "+25",
+      "str": "+20"
+    },
+    "secondary": {
+      "Puissance Eau": "+10",
+      "Sort d'eau offensif": "aléatoire"
+    },
+    "obtention": [
+      "Zartgax (Niève)"
+    ],
+    "degats": "variable (~4-13)",
+    "encombrement": "3"
+  },
+  {
+    "name": "Flèches elfiques",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "94",
+      "dex": "372"
+    },
+    "bonuses": {
+      "ca": "+2"
+    },
+    "obtention": [
+      "Ebéniste lvl 65"
+    ],
+    "degats": "13-24",
+    "encombrement": "3"
+  },
+  {
+    "name": "Flèches de rejet",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "94",
+      "dex": "372",
+      "wis": "75",
+      "int": "75",
+      "end": "40"
+    },
+    "bonuses": {
+      "ca": "+1",
+      "dex": "+10"
+    },
+    "secondary": {
+      "Débuff bénédiction cible": "actif"
+    },
+    "obtention": [
+      "Ebéniste lvl 68"
+    ],
+    "degats": "?-?",
+    "encombrement": "3"
+  },
+  {
+    "name": "Flèches de certitude",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "94",
+      "dex": "372",
+      "end": "40",
+      "int": "80",
+      "wis": "80"
+    },
+    "secondary": {
+      "Chance": "+15"
+    },
+    "obtention": [
+      "Ebéniste lvl 92"
+    ],
+    "degats": "9-18",
+    "encombrement": "3"
+  },
+  {
+    "name": "Flèches d'ébonite",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "109",
+      "dex": "445"
+    },
+    "bonuses": {
+      "ca": "+2"
+    },
+    "obtention": [
+      "Ebéniste lvl 73"
+    ],
+    "degats": "15-28",
+    "encombrement": "3"
+  },
+  {
+    "name": "Flèches terrestres",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "138",
+      "dex": "610",
+      "wis": "26",
+      "int": "103",
+      "end": "40"
+    },
+    "bonuses": {
+      "str": "+22",
+      "dex": "+22"
+    },
+    "secondary": {
+      "Archerie": "+ZZ%"
+    },
+    "obtention": [
+      "Ebéniste lvl 76"
+    ],
+    "degats": "18-25",
+    "encombrement": "3"
+  },
+  {
+    "name": "Flèches glacées",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "138",
+      "dex": "610",
+      "wis": "26",
+      "int": "103",
+      "end": "40"
+    },
+    "bonuses": {
+      "str": "+22",
+      "dex": "+22"
+    },
+    "secondary": {
+      "Archerie": "+ZZ%"
+    },
+    "obtention": [
+      "Ebéniste lvl 77"
+    ],
+    "degats": "20-30",
+    "encombrement": "3"
+  },
+  {
+    "name": "Flèches de décharge",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "138",
+      "dex": "610",
+      "wis": "26",
+      "int": "103",
+      "end": "40"
+    },
+    "bonuses": {
+      "str": "+22",
+      "dex": "+22"
+    },
+    "secondary": {
+      "Archerie": "+ZZ%"
+    },
+    "obtention": [
+      "Ebéniste lvl 79"
+    ],
+    "degats": "20-30",
+    "encombrement": "3"
+  },
+  {
+    "name": "Flèches incendiaires",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "138",
+      "dex": "610",
+      "wis": "26",
+      "int": "103",
+      "end": "40"
+    },
+    "bonuses": {
+      "str": "+22",
+      "dex": "+22"
+    },
+    "secondary": {
+      "Archerie": "+ZZ%"
+    },
+    "obtention": [
+      "Ebéniste lvl 80"
+    ],
+    "degats": "20-30",
+    "encombrement": "3"
+  },
+  {
+    "name": "Flèches pestilentielles",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "138",
+      "dex": "610",
+      "end": "40",
+      "int": "112",
+      "wis": "15"
+    },
+    "bonuses": {
+      "str": "+22",
+      "dex": "+22"
+    },
+    "secondary": {
+      "Sort de peste": "aléatoire",
+      "Archerie": "+level/2"
+    },
+    "obtention": [
+      "Ebéniste lvl 91"
+    ],
+    "degats": "22-32",
+    "encombrement": "3"
+  },
+  {
+    "name": "Flèches à pointes de verre",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "138",
+      "dex": "649",
+      "end": "200"
+    },
+    "bonuses": {
+      "str": "+25",
+      "dex": "+25"
+    },
+    "obtention": [
+      "Ebéniste lvl 100"
+    ],
+    "degats": "??",
+    "encombrement": ""
+  },
+  {
+    "name": "Flèches à pointe de diamant",
+    "quantity": 1,
+    "type": "Flèches",
+    "prerequisites": {
+      "str": "178",
+      "dex": "840",
+      "end": "60"
+    },
+    "bonuses": {
+      "str": "+28",
+      "dex": "+56"
+    },
+    "secondary": {
+      "Esquive": "+6%",
+      "Archerie": "+10%",
+      "Coup critique": "+10%",
+      "Transpercer l'Armure": "+5",
+      "ca": "+5",
+      "Coup Puissant": "+5",
+      "Immobilisation": "+10"
+    },
+    "obtention": [
+      "Ebéniste lvl 104"
+    ],
+    "degats": "13-24",
+    "encombrement": ""
+  },
+  {
+    "name": "Arc en os du désert (+3)",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "17",
+      "dex": "39"
+    },
+    "secondary": {
+      "Archerie": "+50%"
+    },
+    "obtention": [
+      "Ebéniste lvl 9"
+    ],
+    "degats": "16-26",
+    "encombrement": "8"
+  },
+  {
+    "name": "Vibrevent (+3)",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "29",
+      "dex": "97"
+    },
+    "secondary": {
+      "Archerie": "+50%"
+    },
+    "obtention": [
+      "Ebéniste lvl 21"
+    ],
+    "degats": "49-72",
+    "encombrement": "8"
+  },
+  {
+    "name": "Porteveuve (+3)",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "49",
+      "dex": "184"
+    },
+    "secondary": {
+      "Archerie": "+50%"
+    },
+    "obtention": [
+      "Ebéniste lvl 33",
+      "Donjon du Capitaine Coupe-jarret"
+    ],
+    "degats": "103-148",
+    "encombrement": "10"
+  },
+  {
+    "name": "Arc de glace enchanté (+3)",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "118",
+      "dex": "282"
+    },
+    "secondary": {
+      "Puissance Eau": "+25",
+      "Résistance Eau": "+20",
+      "Résistance Feu": "-15",
+      "Archerie": "+50%"
+    },
+    "obtention": [
+      "ZartGax (Niève, l'île de glace)"
+    ],
+    "degats": "181-254",
+    "encombrement": "14"
+  },
+  {
+    "name": "Zéphyr bleuté (+3)",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "77",
+      "dex": "285"
+    },
+    "secondary": {
+      "Archerie": "+50%"
+    },
+    "obtention": [
+      "Ebéniste lvl 45"
+    ],
+    "degats": "185-255",
+    "encombrement": "11"
+  },
+  {
+    "name": "Vipère Argentée (+3)",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "94",
+      "dex": "372"
+    },
+    "secondary": {
+      "Archerie": "+50%"
+    },
+    "obtention": [
+      "Une ombre (SH) - 14.410.760 po",
+      "Ebéniste lvl 57"
+    ],
+    "degats": "206-299",
+    "encombrement": "11"
+  },
+  {
+    "name": "Lune Etoilé (Vipère Argentée +4)",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "94",
+      "dex": "372"
+    },
+    "secondary": {
+      "Sort d'eau": "aléatoire",
+      "Archerie": "+60%",
+      "Immobilisation": "+10",
+      "Transpercer l'Armure": "+10",
+      "Coup Assommant": "+10"
+    },
+    "obtention": [
+      "Quête des Items étoilés de l'île Lune"
+    ],
+    "degats": "206-299",
+    "encombrement": "11"
+  },
+  {
+    "name": "Arc Long des Etoiles (+3)",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "109",
+      "dex": "445"
+    },
+    "secondary": {
+      "Archerie": "+50%"
+    },
+    "obtention": [
+      "Une ombre (SH) - 20.744.440 po",
+      "10k Fève de Bronze au Salon de jeux",
+      "Ebéniste lvl 69"
+    ],
+    "degats": "225-331",
+    "encombrement": "11"
+  },
+  {
+    "name": "Arc Long des Maîtres Etoilés (Long des Étoiles +4)",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "109",
+      "dex": "445"
+    },
+    "secondary": {
+      "Archerie": "+60%",
+      "Immobilisation": "+10",
+      "Transpercer l'Armure": "+10",
+      "Coup Assommant": "+10"
+    },
+    "obtention": [
+      "Quête du Forgeron Durikh (RedWall)"
+    ],
+    "degats": "225-331",
+    "encombrement": "11"
+  },
+  {
+    "name": "Arc de Liridell (Arc HE +4)",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "138",
+      "dex": "590"
+    },
+    "secondary": {
+      "Archerie": "+60%",
+      "Immobilisation": "+10",
+      "Transpercer l'Armure": "+10",
+      "Coup Assommant": "+10"
+    },
+    "obtention": [
+      "Drop du dragon Liridell",
+      "Ebéniste lvl 81"
+    ],
+    "degats": "262-397",
+    "encombrement": "11"
+  },
+  {
+    "name": "Arc recourbé en mélèze",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "116",
+      "dex": "677"
+    },
+    "obtention": [
+      "Nyctos (maison de RedWall) - 1.114.983 po"
+    ],
+    "degats": "162-248",
+    "encombrement": ""
+  },
+  {
+    "name": "Arc recourbé en mélèze d'Angélus (+1)",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "116",
+      "dex": "677"
+    },
+    "secondary": {
+      "Archerie": "+15%"
+    },
+    "obtention": [
+      "Regynia (à l'Est des douves de RedWall) - 3.344.949 po"
+    ],
+    "degats": "187-285",
+    "encombrement": ""
+  },
+  {
+    "name": "Arc recourbé en mélèze féerique (+2)",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "116",
+      "dex": "677"
+    },
+    "secondary": {
+      "Archerie": "+30%"
+    },
+    "obtention": [
+      "Ayanis (NO sous-sol métiers RedWall) - 11.149.830 po"
+    ],
+    "degats": "211-323",
+    "encombrement": ""
+  },
+  {
+    "name": "Arc recourbé Catabatique (+3)",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "116",
+      "dex": "677"
+    },
+    "secondary": {
+      "Archerie": "+50%"
+    },
+    "obtention": [
+      "Sphodros (montagnes Est RedWall) - 44.599.320 po"
+    ],
+    "degats": "244-372",
+    "encombrement": "8"
+  },
+  {
+    "name": "Arc à poulie en mélèze",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "138",
+      "dex": "691"
+    },
+    "obtention": [
+      "Nyctos (maison de RedWall) - 1.272.114 po"
+    ],
+    "degats": "177-271",
+    "encombrement": "10"
+  },
+  {
+    "name": "Arc à poulie en mélèze d'angélus (+1)",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "138",
+      "dex": "691"
+    },
+    "secondary": {
+      "Archerie": "+15%"
+    },
+    "obtention": [
+      "Regynia (à l'Est des douves de RedWall) - 3.816.342 po"
+    ],
+    "degats": "203-312",
+    "encombrement": "10"
+  },
+  {
+    "name": "Arc à poulie en mélèze féerique (+2)",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "138",
+      "dex": "691"
+    },
+    "secondary": {
+      "Archerie": "+30%"
+    },
+    "obtention": [
+      "Ayanis (NO sous-sol métiers RedWall) - 12.721.140 po"
+    ],
+    "degats": "230-353",
+    "encombrement": "10"
+  },
+  {
+    "name": "Arc à poulie du Joran (+3)",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "138",
+      "dex": "691"
+    },
+    "secondary": {
+      "Archerie": "+50%"
+    },
+    "obtention": [
+      "Sphodros (montagnes Est RedWall) - 50.884.560 po"
+    ],
+    "degats": "265-407",
+    "encombrement": "10"
+  },
+  {
+    "name": "Arc composite en mélèze",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "161",
+      "dex": "706"
+    },
+    "obtention": [
+      "Nyctos (maison de RedWall) - 1.439.601 po"
+    ],
+    "degats": "200-308",
+    "encombrement": "11"
+  },
+  {
+    "name": "Arc composite en mélèze d'Angélus (+1)",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "161",
+      "dex": "706"
+    },
+    "secondary": {
+      "Archerie": "+15%"
+    },
+    "obtention": [
+      "Regynia (à l'Est des douves de RedWall) - 4.318.803 po"
+    ],
+    "degats": "230-355",
+    "encombrement": "11"
+  },
+  {
+    "name": "Arc composite en mélèze féerique (+2)",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "161",
+      "dex": "706"
+    },
+    "secondary": {
+      "Archerie": "+30%"
+    },
+    "obtention": [
+      "Ayanis (NO sous-sol métiers RedWall) - 14.396.010 po"
+    ],
+    "degats": "260-401",
+    "encombrement": "11"
+  },
+  {
+    "name": "Arc composite du Foehn (+3)",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "161",
+      "dex": "706"
+    },
+    "secondary": {
+      "Archerie": "+50%"
+    },
+    "obtention": [
+      "Sphodros (montagnes Est RedWall) - 57.584.040 po"
+    ],
+    "degats": "282-435",
+    "encombrement": "11"
+  },
+  {
+    "name": "Arc composite du Foehn étoilé (+4)",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "161",
+      "dex": "706"
+    },
+    "secondary": {
+      "Archerie": "+60%",
+      "Immobilisation": "+10",
+      "Transpercer l'Armure": "+10",
+      "Coup Assommant": "+10"
+    },
+    "obtention": [
+      "Quête de Durikh le forgeron",
+      "Rilouf (SH 780,1080) - 82.500.000 po"
+    ],
+    "degats": "282-435",
+    "encombrement": "11"
+  },
+  {
+    "name": "Arc composite de l'Harmattan étoilé (+4)",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "178",
+      "dex": "793"
+    },
+    "secondary": {
+      "Archerie": "+60%",
+      "Immobilisation": "+10",
+      "Transpercer l'Armure": "+10",
+      "Coup Assommant": "+10"
+    },
+    "obtention": [
+      "Ebéniste lvl 93"
+    ],
+    "degats": "285-448",
+    "encombrement": "11"
+  },
+  {
+    "name": "Arc composite du Notos étoilé (+4)",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "196",
+      "dex": "880"
+    },
+    "secondary": {
+      "Archerie": "+60%",
+      "Immobilisation": "+10",
+      "Transpercer l'Armure": "+10",
+      "Coup Assommant": "+10"
+    },
+    "obtention": [
+      "Ebéniste lvl 105"
+    ],
+    "degats": "313-487",
+    "encombrement": "11"
+  },
+  {
+    "name": "Arc composite des alizés (+4)",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "208",
+      "dex": "974"
+    },
+    "secondary": {
+      "Archerie": "+60%",
+      "Immobilisation": "+10",
+      "Transpercer l'Armure": "+10",
+      "Coup Assommant": "+10"
+    },
+    "obtention": [
+      "Ebéniste Urtanar : Hothien Ardiel (recette lvl 129)"
+    ],
+    "degats": "338-528",
+    "encombrement": "11"
+  },
+  {
+    "name": "Arc ensorcelé de la bise noire (+4)",
+    "quantity": 1,
+    "type": "Arc",
+    "prerequisites": {
+      "str": "217",
+      "dex": "1042"
+    },
+    "secondary": {
+      "Archerie": "+60%",
+      "Immobilisation": "+10",
+      "Transpercer l'Armure": "+10",
+      "Coup Assommant": "+10"
+    },
+    "obtention": [
+      "Ebéniste Urtanar : Hothien Ardiel (recette lvl 132)"
+    ],
+    "degats": "359-564",
+    "encombrement": "11"
+  }
+]
