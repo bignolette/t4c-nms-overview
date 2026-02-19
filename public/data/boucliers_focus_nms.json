@@ -1,0 +1,525 @@
+[
+  {
+    "name": "Bol du dragon",
+    "quantity": 1,
+    "prerequisites": {
+      "encombrement": "5"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+10",
+      "Chance": "+10",
+      "Toutes statistiques": "+10 + level/5"
+    },
+    "obtention": [
+      "Quête 'La chasse aux dragons'"
+    ],
+    "type": "Bouclier"
+  },
+  {
+    "name": "Targe en frêne",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "40",
+      "encombrement": "6"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+3",
+      "Parade": "+5",
+      "Esquive": "-5"
+    },
+    "obtention": [
+      "Ebéniste lvl 7"
+    ],
+    "type": "Bouclier"
+  },
+  {
+    "name": "Rondache en orme",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "45",
+      "encombrement": "6"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+4",
+      "Coup Assommant": "+5",
+      "Esquive": "-12"
+    },
+    "obtention": [
+      "Ebéniste lvl 16"
+    ],
+    "type": "Bouclier"
+  },
+  {
+    "name": "Bouclier ancien de la garde d'Orkanis",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "65",
+      "int": "65",
+      "wis": "25",
+      "encombrement": "7"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+3",
+      "Résistances (toutes)": "+3",
+      "Esquive": "-?"
+    },
+    "obtention": [
+      "Armurier lvl 22"
+    ],
+    "type": "Bouclier"
+  },
+  {
+    "name": "Bouclier du Froid",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "120",
+      "encombrement": "12"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+8",
+      "Puissance eau": "+5",
+      "Résistance eau": "+10",
+      "Puissance feu": "-5",
+      "Résistance feu": "-10",
+      "Esquive": "-17"
+    },
+    "obtention": [
+      "Quête 'Le Forgeron de Niève'"
+    ],
+    "type": "Bouclier"
+  },
+  {
+    "name": "Rondache du froid intense",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "125",
+      "wis": "34",
+      "int": "111",
+      "encombrement": "8"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+8",
+      "Puissance eau": "+5",
+      "Résistance eau": "+5",
+      "Puissance feu": "-10",
+      "Résistance feu": "-10",
+      "Esquive": "-19"
+    },
+    "obtention": [
+      "Armurier lvl 49"
+    ],
+    "type": "Bouclier"
+  },
+  {
+    "name": "Pavois de Serisiss",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "140",
+      "encombrement": "10"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+8",
+      "Toutes caractéristiques": "-10",
+      "Immobilisation": "-5"
+    },
+    "obtention": [
+      "Armurier lvl 70"
+    ],
+    "type": "Bouclier"
+  },
+  {
+    "name": "Bouclier des abysses",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "80",
+      "wis": "45",
+      "int": "45"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+20",
+      "Puissance terre": "+10",
+      "Puissance nécro": "+10",
+      "Résistance terre": "+10",
+      "Résistance nécro": "+10",
+      "Puissance feu": "-10",
+      "Puissance lumière": "-10",
+      "Résistance feu": "-10",
+      "Résistance lumière": "-10"
+    },
+    "obtention": [
+      "Beholder des Abysses (DI)"
+    ],
+    "type": "Bouclier"
+  },
+  {
+    "name": "Bouclier B'Ronkhanique",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "350",
+      "end": "220",
+      "attack": "800"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+28",
+      "Coup Assommant": "+15",
+      "Coup Puissant": "+15",
+      "Parade": "+15",
+      "Transpercer Armure": "+5"
+    },
+    "obtention": [
+      "Drakes B'Ronkhan, cave Humterre (DI)"
+    ],
+    "type": "Bouclier"
+  },
+  {
+    "name": "Bouclier des Hautes Créatures",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "240",
+      "end": "300",
+      "dex": "80",
+      "attack": "1000"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+41",
+      "Parade": "+25",
+      "Coup Puissant": "+5",
+      "Coup Assommant": "+5"
+    },
+    "obtention": [
+      "Skraugs bleus, île Lune"
+    ],
+    "type": "Bouclier"
+  },
+  {
+    "name": "Bouclier de Liridell (cabossé)",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "370"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+65",
+      "Coup Puissant": "+10",
+      "Parade": "+10",
+      "Esquive": "-200"
+    },
+    "obtention": [
+      "Dragon Liridell (DI)"
+    ],
+    "type": "Bouclier"
+  },
+  {
+    "name": "Bouclier de Liridell (de qualité)",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "370"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+52",
+      "Parade": "+25",
+      "Coup Puissant": "+10"
+    },
+    "obtention": [
+      "Dragon Liridell (DI)"
+    ],
+    "type": "Bouclier"
+  },
+  {
+    "name": "Bouclier de Liridell (enchanté)",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "370"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+52",
+      "Parade": "+25",
+      "Coup Puissant": "+10",
+      "Sort météore": "aléatoire"
+    },
+    "obtention": [
+      "Dragon Liridell (DI)"
+    ],
+    "type": "Bouclier"
+  },
+  {
+    "name": "Bouclier Métrolite",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "350",
+      "end": "220",
+      "attack": "800"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+28",
+      "Coup Assommant": "+15",
+      "Coup Puissant": "+15",
+      "Parade": "+15",
+      "Transpercer Armure": "+5"
+    },
+    "obtention": [
+      "Quête d'Eiden (Armure Métrolite)"
+    ],
+    "type": "Bouclier"
+  },
+  {
+    "name": "Bouclier du preux",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "400",
+      "end": "340",
+      "dex": "80",
+      "wis": "300",
+      "encombrement": "14"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+71",
+      "Esquive": "-85",
+      "Puissance lumière": "+5",
+      "Résistance nécro": "-10",
+      "Résistance lumière": "+5",
+      "Immobilisation": "+5",
+      "Coup Puissant": "+10",
+      "Parade": "+40",
+      "Endurance": "+50",
+      "Résistances (toutes)": "+5"
+    },
+    "obtention": [
+      "Armurier lvl 100"
+    ],
+    "type": "Bouclier"
+  },
+  {
+    "name": "Bouclier du preux noir",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "400",
+      "end": "340",
+      "dex": "80",
+      "wis": "300",
+      "encombrement": "14"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+71",
+      "Esquive": "-85",
+      "Puissance lumière": "+5",
+      "Résistance nécro": "-10",
+      "Résistance lumière": "+5",
+      "Immobilisation": "+5",
+      "Coup Puissant": "+10",
+      "Parade": "+40",
+      "Endurance": "+50",
+      "Résistances (toutes)": "+5"
+    },
+    "obtention": [
+      "Armurier lvl 100 (version noire)"
+    ],
+    "type": "Bouclier"
+  },
+  {
+    "name": "Ecu du croisé",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "469",
+      "end": "220",
+      "dex": "95",
+      "int": "120",
+      "wis": "350",
+      "encombrement": "4"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+25",
+      "Esquive": "-55",
+      "Coup Assommant": "+12",
+      "Coup Puissant": "+12",
+      "Parade": "+12",
+      "Transpercer Armure": "+12",
+      "Profusion de mana": "+8",
+      "Puissance lumière": "+10",
+      "Résistance air": "+5",
+      "Résistance feu": "+5",
+      "Résistance eau": "+5",
+      "Résistance terre": "+5",
+      "Résistance nécro": "-15"
+    },
+    "obtention": [
+      "Armurier lvl 100"
+    ],
+    "type": "Bouclier"
+  },
+  {
+    "name": "Ecu du croisé noir",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "469",
+      "end": "220",
+      "dex": "95",
+      "int": "120",
+      "wis": "350",
+      "encombrement": "4"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+25",
+      "Esquive": "-55",
+      "Coup Assommant": "+12",
+      "Coup Puissant": "+12",
+      "Parade": "+12",
+      "Transpercer Armure": "+12",
+      "Profusion de mana": "+8",
+      "Puissance lumière": "+10",
+      "Résistance air": "+5",
+      "Résistance feu": "+5",
+      "Résistance eau": "+5",
+      "Résistance terre": "+5",
+      "Résistance nécro": "-15"
+    },
+    "obtention": [
+      "Armurier lvl 100 (version noire)"
+    ],
+    "type": "Bouclier"
+  },
+  {
+    "name": "Targe du belluaire",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "736",
+      "end": "340",
+      "encombrement": "11"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+48",
+      "Coup Assommant": "+15",
+      "Coup Puissant": "+20",
+      "Parade": "+30"
+    },
+    "obtention": [
+      "Armurier lvl 108"
+    ],
+    "type": "Bouclier"
+  },
+  {
+    "name": "Targe du belluaire noire",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "736",
+      "end": "340",
+      "encombrement": "11"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+48",
+      "Coup Assommant": "+15",
+      "Coup Puissant": "+20",
+      "Parade": "+30"
+    },
+    "obtention": [
+      "Armurier lvl 108 (version noire)"
+    ],
+    "type": "Bouclier"
+  },
+  {
+    "name": "Bouclier du pourfendeur de mage",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "500",
+      "attack": "800",
+      "end": "100",
+      "int": "156",
+      "wis": "34",
+      "dex": "97",
+      "encombrement": "6"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+17",
+      "Coup Assommant": "+15",
+      "Coup Puissant": "+15",
+      "Transpercer Armure": "+15",
+      "Force": "+45",
+      "Résistances (toutes)": "+12"
+    },
+    "obtention": [
+      "Armurier lvl 108"
+    ],
+    "type": "Bouclier"
+  },
+  {
+    "name": "Améthyste focus de pouvoir",
+    "quantity": 1,
+    "prerequisites": {
+      "wis": "97",
+      "int": "28"
+    },
+    "secondary": {},
+    "bonuses": {
+      "Puissance lumière": "+25",
+      "Puissance nécro": "-15",
+      "Résistance nécro": "-10",
+      "Résistance terre": "-10",
+      "Résistance eau": "-10",
+      "Résistance feu": "-10",
+      "Retour à la vie": "+20"
+    },
+    "obtention": [
+      "Liridell (DI)"
+    ],
+    "type": "Focus"
+  },
+  {
+    "name": "Onyx focus de pouvoir",
+    "quantity": 1,
+    "prerequisites": {
+      "wis": "21",
+      "int": "112"
+    },
+    "secondary": {},
+    "bonuses": {
+      "Puissance nécro": "+25",
+      "Puissance eau": "-15",
+      "Puissance feu": "-15",
+      "Résistance air": "-10",
+      "Résistance terre": "-10",
+      "Résistance eau": "-10",
+      "Résistance feu": "-10"
+    },
+    "obtention": [
+      "Liche ancestrale"
+    ],
+    "type": "Focus"
+  },
+  {
+    "name": "Pierre étoilée",
+    "quantity": 1,
+    "prerequisites": {
+      "wis": "60",
+      "int": "60"
+    },
+    "secondary": {},
+    "bonuses": {
+      "Puissances (toutes)": "+18",
+      "Résistances (toutes)": "-10"
+    },
+    "obtention": [
+      "Quête des items étoilés de l'île Lune"
+    ],
+    "type": "Focus"
+  }
+]

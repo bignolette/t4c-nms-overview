@@ -1,0 +1,399 @@
+[
+  {
+    "name": "Amulette ténébreuse",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "30",
+      "wis": "49",
+      "int": "49"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+10",
+      "Puissance nécro": "+10",
+      "Puissance terre": "+10",
+      "Puissance air": "+10",
+      "Puissance feu": "-10",
+      "Puissance eau": "-10",
+      "Résistance lumière": "-15"
+    },
+    "obtention": [
+      "Coffre Abysses DI",
+      "Kranians Ténébreux (Abysses DI)"
+    ],
+    "type": "Amulette"
+  },
+  {
+    "name": "Présent des älvors",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "80",
+      "end": "35",
+      "dex": "223",
+      "int": "40",
+      "wis": "40"
+    },
+    "secondary": {
+      "Attaque": "+50",
+      "Archerie": "+50",
+      "Coup Puissant": "+10",
+      "Coup Assommant": "+10",
+      "Se Cacher": "+10",
+      "Transpercer Armure": "+10",
+      "Guérison Rapide": "+10",
+      "Immobilisation": "+5",
+      "Esquive": "-50"
+    },
+    "bonuses": {
+      "ca": "+10"
+    },
+    "obtention": [
+      "Quête du présent des Alvors"
+    ],
+    "type": "Amulette"
+  },
+  {
+    "name": "Amulette attractive",
+    "quantity": 1,
+    "prerequisites": {
+      "wis": "50",
+      "int": "50"
+    },
+    "secondary": {},
+    "bonuses": {
+      "Chance": "+10"
+    },
+    "obtention": [
+      "Bijoutier 14"
+    ],
+    "type": "Amulette"
+  },
+  {
+    "name": "Amulette de chance",
+    "quantity": 1,
+    "prerequisites": {
+      "wis": "80",
+      "int": "80"
+    },
+    "secondary": {},
+    "bonuses": {
+      "Chance": "+20"
+    },
+    "obtention": [
+      "Quête des livres de chance de Drake Island",
+      "Bijoutier 28"
+    ],
+    "type": "Amulette"
+  },
+  {
+    "name": "Amulette de pyrolyse",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "30",
+      "wis": "20",
+      "int": "456"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+5",
+      "Intelligence": "+25",
+      "Puissance feu": "+10",
+      "Résistance feu": "+10",
+      "Profusion de mana": "+5",
+      "Résistance eau": "-7",
+      "Résistance terre": "-7",
+      "Résistance nécro": "-7",
+      "Résistance air": "-7"
+    },
+    "obtention": [
+      "Bijoutier 46"
+    ],
+    "type": "Amulette"
+  },
+  {
+    "name": "Amulette en plumes",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "30",
+      "wis": "110",
+      "int": "146"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+5",
+      "Puissance nécro": "+5",
+      "Puissance air": "+5",
+      "Puissance terre": "+5",
+      "Puissance feu": "+5",
+      "Puissance eau": "+5",
+      "Esquive": "+15 +3/2 esquive"
+    },
+    "obtention": [
+      "Drop Squelette Équestre (cave aveugle RD)"
+    ],
+    "type": "Amulette"
+  },
+  {
+    "name": "Ancienne amulette elfe",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "190",
+      "dex": "850"
+    },
+    "secondary": {
+      "Coup Assommant": "+20",
+      "Transpercer Armure": "+30",
+      "Immobilisation": "+5",
+      "Esquive": "+10% esquive boostée"
+    },
+    "bonuses": {
+      "ca": "+15",
+      "Dextérité": "+30"
+    },
+    "obtention": [
+      "Bijoutier 64"
+    ],
+    "type": "Amulette"
+  },
+  {
+    "name": "Amulette de fortune",
+    "quantity": 1,
+    "prerequisites": {
+      "wis": "102",
+      "int": "110"
+    },
+    "secondary": {},
+    "bonuses": {
+      "Chance": "+30"
+    },
+    "obtention": [
+      "Bijoutier 82"
+    ],
+    "type": "Amulette"
+  },
+  {
+    "name": "Collier en dents d'ours",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "850",
+      "dex": "90",
+      "int": "55"
+    },
+    "secondary": {
+      "Transpercer Armure": "+30",
+      "Coup Critique": "+50",
+      "Immobilisation": "+10",
+      "Coup Puissant": "+20",
+      "Coup Assommant": "+20",
+      "Esquive": "+15+niveau"
+    },
+    "bonuses": {
+      "ca": "+15",
+      "Force": "+35"
+    },
+    "obtention": [
+      "Bijoutier 84"
+    ],
+    "type": "Amulette"
+  },
+  {
+    "name": "Sautoir éclatant",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "10",
+      "end": "10",
+      "dex": "10",
+      "wis": "10",
+      "int": "10"
+    },
+    "secondary": {
+      "Vol": "+10",
+      "Chercher": "+10"
+    },
+    "bonuses": {
+      "ca": "+3",
+      "Effet spécial": "Sort aléatoire en cas d'attaque (rare) : multiplie l'or gagné par deux pendant 5 minutes"
+    },
+    "obtention": [
+      "Bijoutier 96"
+    ],
+    "type": "Amulette"
+  },
+  {
+    "name": "Echarpe",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "30",
+      "wis": "123",
+      "int": "132"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+15",
+      "Résistance feu": "+12",
+      "Résistance air": "+12",
+      "Résistance terre": "+12",
+      "Résistance eau": "+12"
+    },
+    "obtention": [
+      "Couturier 101"
+    ],
+    "type": "Amulette"
+  },
+  {
+    "name": "Joyau du brave",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "170",
+      "end": "140",
+      "dex": "83",
+      "wis": "60",
+      "int": "60",
+      "attack": "500"
+    },
+    "secondary": {
+      "Attaque": "+50",
+      "Archerie": "+50",
+      "Immobilisation": "+10",
+      "Transpercer Armure": "+15",
+      "Coup Puissant": "+15",
+      "Guérison rapide": "+15",
+      "Coup Assommant": "+20",
+      "Parade": "+25"
+    },
+    "bonuses": {
+      "ca": "+15",
+      "Force": "+10",
+      "Dextérité": "+10",
+      "Endurance": "+20",
+      "Sagesse": "+20"
+    },
+    "obtention": [
+      "Bijoutier 76"
+    ],
+    "type": "Amulette"
+  },
+  {
+    "name": "Col de satin noir",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "18",
+      "wis": "24",
+      "int": "56",
+      "encombrement": "1"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+1",
+      "Intelligence": "+10"
+    },
+    "obtention": [
+      "Couturier 14"
+    ],
+    "type": "Amulette"
+  },
+  {
+    "name": "Protège-nuque en orme",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "32",
+      "wis": "24",
+      "int": "24",
+      "encombrement": "2"
+    },
+    "secondary": {
+      "Attaque": "+25",
+      "Archerie": "+25",
+      "Coup Critique": "+5"
+    },
+    "bonuses": {
+      "ca": "+2"
+    },
+    "obtention": [
+      "Ebéniste 13"
+    ],
+    "type": "Amulette"
+  },
+  {
+    "name": "Amulette du maudit",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "100",
+      "str": "390",
+      "int": "513",
+      "dex": "93",
+      "encombrement": "3"
+    },
+    "secondary": {
+      "Transpercer Armure": "+15",
+      "Coup Puissant": "+15",
+      "Coup Assommant": "+15"
+    },
+    "bonuses": {
+      "ca": "+12",
+      "Puissance nécro": "+8",
+      "Puissance feu": "+8",
+      "Toutes résistances": "+6"
+    },
+    "obtention": [
+      "Drop des Chevaliers de la Damnation"
+    ],
+    "type": "Amulette"
+  },
+  {
+    "name": "Amulette du damné",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "100",
+      "str": "485",
+      "int": "420",
+      "dex": "98",
+      "encombrement": "4"
+    },
+    "secondary": {
+      "Transpercer Armure": "+20",
+      "Coup Puissant": "+20",
+      "Parade": "+15",
+      "Coup Assommant": "+15"
+    },
+    "bonuses": {
+      "ca": "+15",
+      "Puissance nécro": "+8",
+      "Puissance eau": "+8",
+      "Toutes résistances": "+8"
+    },
+    "obtention": [
+      "Bijoutier 80"
+    ],
+    "type": "Amulette"
+  },
+  {
+    "name": "Talisman du croisé",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "120",
+      "wis": "401",
+      "int": "100",
+      "dex": "89",
+      "str": "420",
+      "encombrement": "2"
+    },
+    "secondary": {
+      "Coup Assommant": "+25",
+      "Coup Puissant": "+15",
+      "Transpercer Armure": "+10",
+      "Parade": "+25",
+      "Profusion de mana": "+20"
+    },
+    "bonuses": {
+      "ca": "+13",
+      "Puissance lumière": "+15",
+      "Sagesse": "+40",
+      "Force": "+40"
+    },
+    "obtention": [
+      "Bijoutier 90"
+    ],
+    "type": "Amulette"
+  }
+]

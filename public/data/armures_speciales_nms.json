@@ -1,0 +1,1030 @@
+[
+  {
+    "name": "Barbute des arènes",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "181",
+      "end": "120",
+      "dex": "93",
+      "attack": "500"
+    },
+    "secondary": {
+      "Coup Puissant": "-20"
+    },
+    "bonuses": {
+      "ca": "+6",
+      "Dommages": "+30",
+      "Coup Puissant dynamique": "augmentation variable ~2x/min pendant 12s",
+      "encombrement": "8"
+    },
+    "obtention": [
+      "Armurier lvl 102"
+    ],
+    "type": "Heaume"
+  },
+  {
+    "name": "Chapeau du nomade d'Arakas",
+    "quantity": 1,
+    "prerequisites": {},
+    "secondary": {
+      "Chercher": "+10"
+    },
+    "bonuses": {
+      "ca": "+4",
+      "Téléportation": "Arakas (aléatoire à l'équipement)",
+      "encombrement": "3"
+    },
+    "obtention": [
+      "Couturier lvl 24"
+    ],
+    "type": "Heaume"
+  },
+  {
+    "name": "Chapeau du nomade de Raven's Dust",
+    "quantity": 1,
+    "prerequisites": {},
+    "secondary": {
+      "Chercher": "+15"
+    },
+    "bonuses": {
+      "ca": "+4",
+      "Téléportation": "Raven's Dust (aléatoire à l'équipement)",
+      "encombrement": "3"
+    },
+    "obtention": [
+      "Couturier lvl 50"
+    ],
+    "type": "Heaume"
+  },
+  {
+    "name": "Chapeau du nomade de Stoneheim",
+    "quantity": 1,
+    "prerequisites": {},
+    "secondary": {
+      "Chercher": "+20"
+    },
+    "bonuses": {
+      "ca": "+4",
+      "Téléportation": "Stoneheim (aléatoire à l'équipement)",
+      "encombrement": "3"
+    },
+    "obtention": [
+      "Couturier lvl 74"
+    ],
+    "type": "Heaume"
+  },
+  {
+    "name": "Chapeau du nomade de Drake Island",
+    "quantity": 1,
+    "prerequisites": {},
+    "secondary": {
+      "Chercher": "+25"
+    },
+    "bonuses": {
+      "ca": "+4",
+      "Téléportation": "Drake Island (aléatoire à l'équipement)",
+      "encombrement": "3"
+    },
+    "obtention": [
+      "Couturier lvl 97"
+    ],
+    "type": "Heaume"
+  },
+  {
+    "name": "Chapeau du nomade légendaire",
+    "quantity": 1,
+    "prerequisites": {},
+    "secondary": {
+      "Chercher": "+25"
+    },
+    "bonuses": {
+      "ca": "+4",
+      "Téléportation": "Altéa (aléatoire à l'équipement)",
+      "encombrement": "3"
+    },
+    "obtention": [
+      "Couturier lvl 108"
+    ],
+    "type": "Heaume"
+  },
+  {
+    "name": "Masque de loup",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "27",
+      "dex": "41"
+    },
+    "secondary": {
+      "Attaque": "+100",
+      "Archerie": "+100"
+    },
+    "bonuses": {
+      "ca": "+3",
+      "encombrement": "1"
+    },
+    "obtention": [
+      "Quête de l'enfant malade (Niève)"
+    ],
+    "type": "Heaume"
+  },
+  {
+    "name": "Chapeau du jeune magicien",
+    "quantity": 1,
+    "prerequisites": {
+      "int": "30",
+      "wis": "25"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+2",
+      "Intelligence": "+10",
+      "Sagesse": "+10",
+      "Puissance (toutes)": "+3",
+      "encombrement": "1"
+    },
+    "obtention": [
+      "Dasrinn le Dragon (village des nains, AR)"
+    ],
+    "type": "Heaume"
+  },
+  {
+    "name": "Chapeau à larges bords",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "18",
+      "int": "49",
+      "wis": "33"
+    },
+    "secondary": {
+      "Profusion de mana": "+5"
+    },
+    "bonuses": {
+      "ca": "+3",
+      "Intelligence": "+10",
+      "Résistance eau": "+5",
+      "encombrement": "2"
+    },
+    "obtention": [
+      "Couturier lvl 15"
+    ],
+    "type": "Heaume"
+  },
+  {
+    "name": "Chapeau de glace",
+    "quantity": 1,
+    "prerequisites": {
+      "int": "603",
+      "wis": "21"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+5",
+      "Intelligence": "+50",
+      "Puissance eau": "+10",
+      "Puissance air": "+5",
+      "Puissance nécromancie": "+5",
+      "Résistance eau": "+5",
+      "Résistance air": "+5",
+      "Résistance terre": "+5",
+      "Résistance nécromancie": "+3",
+      "Puissance feu": "-5",
+      "Puissance terre": "-5",
+      "encombrement": "4"
+    },
+    "obtention": [
+      "Zartgax de givre (Niève)"
+    ],
+    "type": "Heaume"
+  },
+  {
+    "name": "Masque Gobelin",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "30"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+1",
+      "Force": "+1",
+      "encombrement": "0"
+    },
+    "obtention": [
+      "Gobelin shaman (AR)"
+    ],
+    "type": "Heaume"
+  },
+  {
+    "name": "Masque de Gobelin glacé",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "45"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+3",
+      "Esquive": "-25",
+      "Puissance eau": "+10",
+      "Résistance eau": "+10",
+      "Intelligence": "+5",
+      "encombrement": "2"
+    },
+    "obtention": [
+      "Gobelin gardien des glaces (Niève)"
+    ],
+    "type": "Heaume"
+  },
+  {
+    "name": "Diadème volcanique",
+    "quantity": 1,
+    "prerequisites": {
+      "int": "603",
+      "wis": "21"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+5",
+      "Intelligence": "+50",
+      "Puissance feu": "+15",
+      "Puissance nécromancie": "+5",
+      "Puissance eau": "-5",
+      "Résistance feu": "+5",
+      "Résistance air": "+3",
+      "Résistance terre": "+3",
+      "Résistance nécromancie": "+3",
+      "Résistance eau": "-5"
+    },
+    "obtention": [
+      "Monstres B'Zerillis (DI)"
+    ],
+    "type": "Heaume"
+  },
+  {
+    "name": "Chapeau en feuilles",
+    "quantity": 1,
+    "prerequisites": {
+      "int": "41",
+      "wis": "68"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+5",
+      "Puissance terre": "+10",
+      "Sagesse": "+25"
+    },
+    "obtention": [
+      "Quête des livres de chance (DI)"
+    ],
+    "type": "Heaume"
+  },
+  {
+    "name": "Sombre chapeau",
+    "quantity": 1,
+    "prerequisites": {
+      "int": "120",
+      "wis": "21"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+5",
+      "Puissance nécromancie": "+10",
+      "Intelligence": "+25"
+    },
+    "obtention": [
+      "Quête des livres de chance (DI)"
+    ],
+    "type": "Heaume"
+  },
+  {
+    "name": "Couvre chef",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "94",
+      "end": "15",
+      "dex": "372"
+    },
+    "secondary": {
+      "Immobilisation": "+10",
+      "Archerie": "+(1 x niveau du personnage)"
+    },
+    "bonuses": {
+      "ca": "+5",
+      "Esquive": "+50",
+      "Dextérité": "+40",
+      "Force": "+20"
+    },
+    "obtention": [
+      "Drakes Vigrator (DI)"
+    ],
+    "type": "Heaume"
+  },
+  {
+    "name": "Bandeau mystique du vent",
+    "quantity": 1,
+    "prerequisites": {
+      "int": "76",
+      "wis": "115"
+    },
+    "secondary": {},
+    "bonuses": {
+      "Esquive": "+50",
+      "Puissance lumière": "+10",
+      "Puissance air": "+15",
+      "encombrement": "3"
+    },
+    "obtention": [
+      "Coffre Oracle"
+    ],
+    "type": "Heaume"
+  },
+  {
+    "name": "Couronne de la liche",
+    "quantity": 1,
+    "prerequisites": {
+      "int": "920",
+      "wis": "21"
+    },
+    "secondary": {
+      "Profusion de mana": "+12"
+    },
+    "bonuses": {
+      "ca": "+10",
+      "Puissance nécromancie": "+10",
+      "Résistance lumière": "-12",
+      "Résistance terre": "+2",
+      "Résistance eau": "+2",
+      "Résistance feu": "+2",
+      "Résistance air": "+2",
+      "Intelligence": "+50"
+    },
+    "obtention": [
+      "Forgeron lvl 101"
+    ],
+    "type": "Heaume"
+  },
+  {
+    "name": "Etincelle de lumière",
+    "quantity": 1,
+    "prerequisites": {
+      "int": "48",
+      "wis": "583"
+    },
+    "secondary": {
+      "Profusion de mana": "+10",
+      "Retour à la vie": "+20"
+    },
+    "bonuses": {
+      "ca": "+5",
+      "Puissance lumière": "+25",
+      "Sagesse": "+50",
+      "encombrement": "3"
+    },
+    "obtention": [
+      "Clerc Hykal (Abysses, DI)"
+    ],
+    "type": "Heaume"
+  },
+  {
+    "name": "Chapeau Brun",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "75",
+      "dex": "50",
+      "int": "16",
+      "wis": "12"
+    },
+    "secondary": {
+      "Se faufiler": "+10",
+      "Dissimulation": "+10"
+    },
+    "bonuses": {
+      "ca": "+1",
+      "Esquive": "-2"
+    },
+    "obtention": [
+      "Coffre à surprise AR"
+    ],
+    "type": "Heaume"
+  },
+  {
+    "name": "Casque en frêne",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "30"
+    },
+    "secondary": {
+      "Coup Assommant": "+5"
+    },
+    "bonuses": {
+      "ca": "+2",
+      "encombrement": "3"
+    },
+    "obtention": [
+      "Ebéniste lvl 2"
+    ],
+    "type": "Heaume"
+  },
+  {
+    "name": "Chapeau de Noël",
+    "quantity": 1,
+    "prerequisites": {},
+    "secondary": {},
+    "bonuses": {
+      "Chance": "+3"
+    },
+    "obtention": [
+      "Quête de Noël"
+    ],
+    "type": "Heaume"
+  },
+  {
+    "name": "Ceinture de sagesse",
+    "quantity": 1,
+    "prerequisites": {
+      "int": "60",
+      "wis": "60"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+5",
+      "Sagesse": "+25",
+      "Intelligence": "+25",
+      "encombrement": "0"
+    },
+    "obtention": [
+      "Drop Mausolée RD",
+      "Vicaire Ramiel (RD)",
+      "Vicaire Kervian (RD)"
+    ],
+    "type": "Ceinture"
+  },
+  {
+    "name": "Cordon d'apaisement",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "20",
+      "int": "14",
+      "wis": "33"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+1",
+      "Esquive": "-2",
+      "Puissance lumière": "+3",
+      "Sagesse": "+5",
+      "encombrement": "1"
+    },
+    "obtention": [
+      "Couturier lvl 4"
+    ],
+    "type": "Ceinture"
+  },
+  {
+    "name": "Ceinture de noblesse",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "25",
+      "int": "25",
+      "wis": "25"
+    },
+    "secondary": {},
+    "bonuses": {
+      "Chance": "+10",
+      "encombrement": "6"
+    },
+    "obtention": [
+      "Donjon des bijoux d'Eléonore (200+)"
+    ],
+    "type": "Ceinture"
+  },
+  {
+    "name": "Ceinturon d'immunisation aux poisons mineurs",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "35",
+      "int": "73",
+      "wis": "66"
+    },
+    "secondary": {
+      "Premiers soins": "+10"
+    },
+    "bonuses": {
+      "ca": "+2",
+      "Esquive": "-15",
+      "Endurance": "-30",
+      "Résistance (toutes)": "-5",
+      "encombrement": "1"
+    },
+    "obtention": [
+      "Couturier lvl 20"
+    ],
+    "type": "Ceinture"
+  },
+  {
+    "name": "Ceinturon d'immunisation aux poisons",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "40",
+      "int": "96",
+      "wis": "78"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+2",
+      "Endurance": "-40",
+      "Résistance (toutes)": "-10",
+      "encombrement": "1"
+    },
+    "obtention": [
+      "Couturier lvl 46"
+    ],
+    "type": "Ceinture"
+  },
+  {
+    "name": "Ceinturon d'immunisation aux poisons majeurs",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "45",
+      "int": "136",
+      "wis": "109"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+2",
+      "Endurance": "-50",
+      "Résistance (toutes)": "-15",
+      "encombrement": "1"
+    },
+    "obtention": [
+      "Couturier lvl 72"
+    ],
+    "type": "Ceinture"
+  },
+  {
+    "name": "Bottes de lézard blanc",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "60",
+      "int": "130",
+      "wis": "18"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+5",
+      "Puissance eau": "+5",
+      "Résistance feu": "+10",
+      "Puissance feu": "-5",
+      "encombrement": "6"
+    },
+    "obtention": [
+      "Dragon Yeridaj (sortie de la grotte vers la ville de Niève)"
+    ],
+    "type": "Bottes"
+  },
+  {
+    "name": "Bottes de la tortue",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "60"
+    },
+    "secondary": {
+      "Se faufiler": "+20",
+      "Dissimulation": "+20"
+    },
+    "bonuses": {
+      "ca": "+1",
+      "Esquive": "-2",
+      "encombrement": "6"
+    },
+    "obtention": [],
+    "type": "Bottes"
+  },
+  {
+    "name": "Bottes de Lutin rouges",
+    "quantity": 1,
+    "prerequisites": {},
+    "secondary": {},
+    "bonuses": {
+      "Chance": "+5",
+      "encombrement": "2"
+    },
+    "obtention": [
+      "Quête de Noël"
+    ],
+    "type": "Bottes"
+  },
+  {
+    "name": "Bottes de Lutin vertes",
+    "quantity": 1,
+    "prerequisites": {},
+    "secondary": {},
+    "bonuses": {
+      "Chance": "+3",
+      "encombrement": "1"
+    },
+    "obtention": [
+      "Quête de Noël"
+    ],
+    "type": "Bottes"
+  },
+  {
+    "name": "Armure de cuir rapiécée",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "30"
+    },
+    "secondary": {
+      "Attaque": "+25",
+      "Archerie": "+25"
+    },
+    "bonuses": {
+      "ca": "+5",
+      "Esquive": "-15",
+      "Force": "+5",
+      "encombrement": "3"
+    },
+    "obtention": [
+      "Donjon du Gobelet (1-30)"
+    ],
+    "type": "Plastron"
+  },
+  {
+    "name": "Armure en lambeaux",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "80",
+      "end": "140",
+      "int": "60",
+      "wis": "60"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+16",
+      "Résistance nécromancie": "+10",
+      "Force": "+15",
+      "Endurance": "+15",
+      "Dextérité": "+15",
+      "Intelligence": "+15",
+      "Sagesse": "+15"
+    },
+    "obtention": [
+      "Garde mort-vivant (invocation de Liridell)",
+      "Sentinelle Morte-vivante"
+    ],
+    "type": "Plastron"
+  },
+  {
+    "name": "Plastron d'argent",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "160"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+21",
+      "Puissance (toutes)": "+5",
+      "encombrement": "12"
+    },
+    "obtention": [
+      "Dragon Freidaclan (ouest entrée crypte, RD)"
+    ],
+    "type": "Plastron"
+  },
+  {
+    "name": "Plastron d'orc en cuir clouté",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "60"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+3",
+      "Résistance (toutes)": "+2",
+      "encombrement": "9"
+    },
+    "obtention": [
+      "Armurier lvl 9"
+    ],
+    "type": "Plastron"
+  },
+  {
+    "name": "Plastron du pommier",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "105",
+      "int": "66",
+      "wis": "66"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+5",
+      "Effet spécial": "Fait apparaître des pommes dans l'inventaire adverse au corps à corps",
+      "encombrement": "8"
+    },
+    "obtention": [
+      "Armurier lvl 66"
+    ],
+    "type": "Plastron"
+  },
+  {
+    "name": "Plastron protecteur de Théopold",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "340",
+      "int": "139",
+      "wis": "142"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+21",
+      "Effet spécial": "Lance parfois un sort de groupe : +50 CA et +20 all résist pendant 3 min",
+      "encombrement": "14"
+    },
+    "obtention": [
+      "Armurier lvl 104"
+    ],
+    "type": "Plastron"
+  },
+  {
+    "name": "Haubert d'armure légendaire de camouflage",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "190",
+      "end": "80",
+      "dex": "800"
+    },
+    "secondary": {
+      "Coup Critique": "+1",
+      "Immobilisation": "+10",
+      "Archerie": "+% (niveau)",
+      "Transpercer l'Armure": "+5",
+      "Se faufiler": "+13",
+      "Dissimulation": "+13"
+    },
+    "bonuses": {
+      "ca": "+19",
+      "Résistance nécromancie": "+5",
+      "Résistance lumière": "+5",
+      "Résistance feu": "+5",
+      "Résistance eau": "+5",
+      "Résistance air": "+5",
+      "Résistance terre": "+5",
+      "Dextérité": "+% (niveau)",
+      "Force": "+% (niveau)",
+      "Chance": "+5"
+    },
+    "obtention": [
+      "Armurier lvl 105"
+    ],
+    "type": "Plastron"
+  },
+  {
+    "name": "Plastron de rejet",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "340",
+      "int": "95"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+79",
+      "Esquive": "-21",
+      "Résistance (toutes)": "+12",
+      "Effet spécial": "Repousse parfois l'ennemi lors d'un combat",
+      "encombrement": "14"
+    },
+    "obtention": [
+      "Armurier lvl 110"
+    ],
+    "type": "Plastron"
+  },
+  {
+    "name": "Gants d'Orc en cuir clouté",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "60"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+1",
+      "Résistance (toutes)": "+1",
+      "encombrement": "4"
+    },
+    "obtention": [
+      "Armurier lvl 1"
+    ],
+    "type": "Gants"
+  },
+  {
+    "name": "Gants du manipulateur d'orage",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "20",
+      "int": "38",
+      "wis": "35"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+2",
+      "Sort": "?",
+      "encombrement": "3"
+    },
+    "obtention": [
+      "Couturier lvl 42"
+    ],
+    "type": "Gants"
+  },
+  {
+    "name": "Gants d'acier des monts de Righul",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "60",
+      "end": "55"
+    },
+    "secondary": {
+      "Immobilisation": "+5",
+      "Attaque": "+20"
+    },
+    "bonuses": {
+      "ca": "+2",
+      "Force": "+10",
+      "encombrement": "4"
+    },
+    "obtention": [
+      "Armurier lvl 24"
+    ],
+    "type": "Gants"
+  },
+  {
+    "name": "Poigne de fer",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "42",
+      "end": "55"
+    },
+    "secondary": {
+      "Coup Critique": "+50",
+      "Attaque": "+25"
+    },
+    "bonuses": {
+      "ca": "+3",
+      "Force": "+10",
+      "Esquive": "-25",
+      "encombrement": "5"
+    },
+    "obtention": [
+      "Couturier lvl 11"
+    ],
+    "type": "Gants"
+  },
+  {
+    "name": "Gants d'influence élémentaire",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "20",
+      "int": "38",
+      "wis": "35"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+2",
+      "Sagesse": "+5",
+      "Intelligence": "+5",
+      "Puissance eau (groupe)": "+3",
+      "Puissance air (groupe)": "+3",
+      "Puissance terre (groupe)": "+3",
+      "Puissance feu (groupe)": "+3",
+      "encombrement": "3"
+    },
+    "obtention": [
+      "Couturier lvl 19",
+      "Donjon du capitaine Coupe-jarret"
+    ],
+    "type": "Gants"
+  },
+  {
+    "name": "Gants de voleur",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "15",
+      "int": "30"
+    },
+    "secondary": {
+      "Vol": "+5"
+    },
+    "bonuses": {
+      "ca": "+1",
+      "Dextérité": "+7",
+      "Esquive": "+10",
+      "encombrement": "3"
+    },
+    "obtention": [
+      "Armurier lvl 43"
+    ],
+    "type": "Gants"
+  },
+  {
+    "name": "Gants de noblesse",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "25",
+      "int": "25",
+      "wis": "25"
+    },
+    "secondary": {},
+    "bonuses": {
+      "Chance": "+15",
+      "encombrement": "6"
+    },
+    "obtention": [
+      "Armurier lvl 106"
+    ],
+    "type": "Gants"
+  },
+  {
+    "name": "Bénard capteur de magie",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "20",
+      "int": "35",
+      "wis": "38"
+    },
+    "secondary": {
+      "Méditation": "+10"
+    },
+    "bonuses": {
+      "ca": "+2",
+      "Résistance terre": "+3",
+      "Résistance air": "+3",
+      "Résistance eau": "+3",
+      "Résistance feu": "+3",
+      "Esquive": "-25",
+      "encombrement": "4"
+    },
+    "obtention": [
+      "Couturier lvl 10"
+    ],
+    "type": "Jambières"
+  },
+  {
+    "name": "Braies du don de soi",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "40",
+      "wis": "71"
+    },
+    "secondary": {
+      "Retour à la vie": "+25"
+    },
+    "bonuses": {
+      "ca": "+3",
+      "Sagesse": "+15",
+      "Puissance lumière": "+5",
+      "Esquive": "-7",
+      "encombrement": "5"
+    },
+    "obtention": [
+      "Couturier lvl 37"
+    ],
+    "type": "Jambières"
+  },
+  {
+    "name": "Jambières des alvors",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "150"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+6",
+      "Résistance eau": "+5",
+      "Résistance terre": "+5",
+      "Résistance air": "+5",
+      "Résistance feu": "+5",
+      "Résistance nécromancie": "+5"
+    },
+    "obtention": [
+      "Armurier lvl 74"
+    ],
+    "type": "Jambières"
+  },
+  {
+    "name": "Jambières de stabilité",
+    "quantity": 1,
+    "prerequisites": {
+      "end": "125",
+      "attack": "800"
+    },
+    "secondary": {
+      "Immobilisation": "+10"
+    },
+    "bonuses": {
+      "ca": "+4",
+      "Esquive": "+30",
+      "encombrement": "12"
+    },
+    "obtention": [
+      "Armurier lvl 69"
+    ],
+    "type": "Jambières"
+  }
+]

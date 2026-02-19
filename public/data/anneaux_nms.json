@@ -1,0 +1,779 @@
+[
+  {
+    "name": "Anneau d'Aquilon",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "132",
+      "end": "60",
+      "dex": "545",
+      "wis": "46",
+      "int": "28",
+      "encombrement": "2"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+5",
+      "Coup Assommant": "+15",
+      "Transpercer Armure": "+20",
+      "Coup Critique": "+30"
+    },
+    "obtention": [
+      "Bijoutier lvl 58"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau d'Obéron",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "40",
+      "dex": "30",
+      "wis": "423",
+      "int": "423",
+      "encombrement": "2"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+5",
+      "Puissance air": "+12",
+      "Puissance nécro": "+5",
+      "Puissance lumière": "-5",
+      "Résistance feu": "-7",
+      "Résistance air": "+5"
+    },
+    "obtention": [
+      "Bijoutier lvl 50"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Bague ténébreuse",
+    "quantity": 1,
+    "prerequisites": {
+      "wis": "49",
+      "int": "49",
+      "encombrement": "1"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+5",
+      "Puissance nécro": "+10",
+      "Puissance lumière": "-10",
+      "Résistance lumière": "-15",
+      "Sagesse": "-10",
+      "Intelligence": "+10"
+    },
+    "obtention": [
+      "Coffre Abysses (DI)",
+      "Kraanian ténébreux (DI)"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau de liberté",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "154",
+      "end": "60",
+      "dex": "607",
+      "wis": "53",
+      "int": "31",
+      "encombrement": "2"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+10",
+      "Transpercer Armure": "+20",
+      "Coup Puissant": "+15",
+      "Coup Assommant": "+15"
+    },
+    "obtention": [
+      "Bijoutier lvl 62"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau de résistance",
+    "quantity": 1,
+    "prerequisites": {},
+    "secondary": {},
+    "bonuses": {
+      "ca": "+5",
+      "Résistance nécro": "+2",
+      "Résistance lumière": "+2",
+      "Résistance air": "+2",
+      "Résistance terre": "+2",
+      "Résistance feu": "+2",
+      "Résistance eau": "+2"
+    },
+    "obtention": [
+      "Quête du colis de Franc 'le débutant' sur Arakas"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau du pilleur",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "50",
+      "dex": "65",
+      "end": "32",
+      "wis": "63",
+      "int": "62",
+      "encombrement": "1"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+2",
+      "Chance": "+3",
+      "Compétence piller": "+15"
+    },
+    "obtention": [
+      "Pilleur de tombe, sous-sol cimetière LH"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau de force",
+    "quantity": 1,
+    "prerequisites": {},
+    "secondary": {},
+    "bonuses": {
+      "ca": "+1",
+      "Attaque": "+5%",
+      "Force": "+15"
+    },
+    "obtention": [
+      "Quête du colis de Franc 'le débutant' sur Arakas"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau d'endurance",
+    "quantity": 1,
+    "prerequisites": {},
+    "secondary": {},
+    "bonuses": {
+      "ca": "+1",
+      "Endurance": "+15",
+      "Guérison rapide": "+5%"
+    },
+    "obtention": [
+      "Quête du colis de Franc 'le débutant' sur Arakas"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau de dextérité",
+    "quantity": 1,
+    "prerequisites": {},
+    "secondary": {},
+    "bonuses": {
+      "ca": "+1",
+      "Archerie": "+5%",
+      "Dextérité": "+15"
+    },
+    "obtention": [
+      "Quête du colis de Franc 'le débutant' sur Arakas"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau de sagesse",
+    "quantity": 1,
+    "prerequisites": {},
+    "secondary": {},
+    "bonuses": {
+      "ca": "+1",
+      "Sagesse": "+15",
+      "Méditation": "+5%"
+    },
+    "obtention": [
+      "Quête du colis de Franc 'le débutant' sur Arakas"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau du froid",
+    "quantity": 1,
+    "prerequisites": {
+      "wis": "15",
+      "int": "42",
+      "encombrement": "2"
+    },
+    "secondary": {},
+    "bonuses": {
+      "Puissance eau": "+5",
+      "Résistance eau": "+5",
+      "Intelligence": "+5",
+      "Puissance feu": "-5"
+    },
+    "obtention": [
+      "Quête du forgeron de Niève"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau du cimmérien",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "238",
+      "end": "60",
+      "dex": "85",
+      "wis": "30",
+      "int": "30"
+    },
+    "secondary": {},
+    "bonuses": {
+      "Attaque": "+130",
+      "Archerie": "+130",
+      "Esquive": "-30",
+      "Coup Assommant": "+10",
+      "Coup Puissant": "+10",
+      "Transpercer Armure": "+10",
+      "Guérison rapide": "+5",
+      "Force": "+15",
+      "Dextérité": "+10",
+      "Immobilisation": "+5",
+      "Rage de berserker": "passif"
+    },
+    "obtention": [
+      "Draconigus Majeur Invoqué (désert RD)"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau béni des hauts althéens",
+    "quantity": 1,
+    "prerequisites": {
+      "wis": "75",
+      "int": "100",
+      "encombrement": "1"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+2",
+      "Force": "+15",
+      "Endurance": "+15",
+      "Dextérité": "+15",
+      "Sagesse": "+15",
+      "Intelligence": "+15",
+      "Lumière permanente": "oui"
+    },
+    "obtention": [
+      "Quête des livres de chance",
+      "Bijoutier lvl 20"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau étoilé",
+    "quantity": 1,
+    "prerequisites": {
+      "int": "90",
+      "wis": "115",
+      "encombrement": "1"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+5",
+      "Sagesse": "+20",
+      "Intelligence": "+20",
+      "Puissance Eau": "+5",
+      "Puissance Feu": "+5",
+      "Puissance Terre": "+5",
+      "Puissance Air": "+5",
+      "Puissance Nécro": "+5",
+      "Résistance Eau": "+5",
+      "Résistance Feu": "+5",
+      "Résistance Terre": "+5",
+      "Résistance Air": "+5",
+      "Résistance Nécro": "+5"
+    },
+    "obtention": [
+      "Quête des items étoilé de l'île Lune"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau de cerfeuil",
+    "quantity": 1,
+    "prerequisites": {
+      "wis": "20",
+      "int": "20"
+    },
+    "secondary": {},
+    "bonuses": {
+      "Chance": "+5"
+    },
+    "obtention": [
+      "Démonicons (AR)",
+      "Salon de jeu (SH)"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Chevalière des héros",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "650",
+      "end": "200",
+      "dex": "85",
+      "attack": "500",
+      "encombrement": "2"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+5",
+      "Transpercer Armure": "+20",
+      "Coup Puissant": "+20",
+      "Coup Assommant": "+20"
+    },
+    "obtention": [
+      "Bijoutier lvl 36"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau des séismes",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "40",
+      "end": "60",
+      "dex": "30",
+      "wis": "623",
+      "int": "101",
+      "encombrement": "2"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+5",
+      "Esquive": "+5%",
+      "Puissance lumière": "-5",
+      "Puissance terre": "+12",
+      "Résistance terre": "+5",
+      "Résistance air": "-7"
+    },
+    "obtention": [
+      "Bijoutier lvl 54"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau de l'endurant",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "299",
+      "end": "300",
+      "wis": "351",
+      "encombrement": "3"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+36",
+      "Esquive": "-25",
+      "Guérison rapide": "+15",
+      "Transpercer l'armure": "+10",
+      "Parade": "+20",
+      "Coup puissant": "+5",
+      "Coup assommant": "+10",
+      "Sagesse": "+30",
+      "Force": "+30",
+      "Endurance": "+30",
+      "Immobilisation": "+15"
+    },
+    "obtention": [
+      "Bijoutier lvl 72"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau climatérique (Coup Critique)",
+    "quantity": 1,
+    "prerequisites": {
+      "int": "185",
+      "wis": "120"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+5",
+      "Puissance air": "+5",
+      "Puissance eau": "+5",
+      "Puissance feu": "+5",
+      "Puissance terre": "+5",
+      "Puissance lumière": "+5",
+      "Puissance nécromancie": "+5",
+      "Coup Critique": "+10%",
+      "Profusion de mana": "+20"
+    },
+    "obtention": [
+      "Rejeton du Cerberus"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau de feu",
+    "quantity": 1,
+    "prerequisites": {
+      "int": "125",
+      "wis": "60",
+      "encombrement": "1"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+5",
+      "Puissance feu": "+5",
+      "Intelligence": "+20",
+      "Puissance lumière": "-15",
+      "Résistance lumière": "-15",
+      "Puissance eau": "-15",
+      "Résistance eau": "-15"
+    },
+    "obtention": [
+      "Coffres DI",
+      "Draconigus Invoqué Majeur (désert RD)"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau du chasseur",
+    "quantity": 1,
+    "prerequisites": {
+      "int": "10",
+      "wis": "10",
+      "end": "10",
+      "dex": "10",
+      "str": "10",
+      "encombrement": "2"
+    },
+    "secondary": {},
+    "bonuses": {
+      "XP x2": "3 minutes aléatoire (hors quêtes et coffres)"
+    },
+    "obtention": [
+      "Bijoutier lvl 102"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau incendiaire",
+    "quantity": 1,
+    "prerequisites": {
+      "int": "574",
+      "wis": "20",
+      "end": "60",
+      "dex": "30",
+      "str": "40",
+      "encombrement": "2"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+5",
+      "Puissance feu": "+12",
+      "Résistance feu": "+5",
+      "Puissance nécro": "+5",
+      "Puissance eau": "-5",
+      "Résistance eau": "-7"
+    },
+    "obtention": [
+      "Bijoutier lvl 78"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau d'hibernation",
+    "quantity": 1,
+    "prerequisites": {
+      "int": "538",
+      "wis": "18",
+      "end": "60",
+      "dex": "30",
+      "str": "40",
+      "encombrement": "2"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+5",
+      "Puissance eau": "+12",
+      "Résistance eau": "+5",
+      "Puissance nécro": "+5",
+      "Puissance feu": "-5",
+      "Résistance feu": "-7"
+    },
+    "obtention": [
+      "Bijoutier lvl 44"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau de combat Centaure",
+    "quantity": 1,
+    "prerequisites": {
+      "wis": "338",
+      "end": "100",
+      "dex": "77",
+      "str": "420",
+      "encombrement": "2"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+12",
+      "Parade": "+5",
+      "Coup Puissant": "+5",
+      "Coup Assommant": "+5",
+      "Transpercer Armure": "+15",
+      "Immobilisation": "+10",
+      "Guérison rapide": "+10",
+      "Force": "+20",
+      "Dextérité": "+15",
+      "Sagesse": "+30"
+    },
+    "obtention": [
+      "Bijoutier lvl 66"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau en ivoire d'Agamaoth",
+    "quantity": 1,
+    "prerequisites": {
+      "dex": "850",
+      "int": "36",
+      "wis": "59",
+      "end": "40",
+      "str": "190",
+      "encombrement": "3"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+12",
+      "Coup Assommant": "+20",
+      "Coup Critique": "+30",
+      "Coup Puissant": "+20",
+      "Immobilisation": "+10",
+      "Transpercer Armure": "+20",
+      "Force": "+30",
+      "Dextérité": "+30"
+    },
+    "obtention": [
+      "Bijoutier lvl 86"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Bague comminatoire",
+    "quantity": 1,
+    "prerequisites": {
+      "int": "75",
+      "wis": "70",
+      "dex": "92",
+      "str": "168",
+      "encombrement": "2"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+5",
+      "Transpercer Armure": "+10",
+      "Coup Puissant": "+10"
+    },
+    "obtention": [
+      "Drake Dixtor Supérieur (cave village Skraugs rouges SH)"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Chevalière de Stagnation",
+    "quantity": 1,
+    "prerequisites": {
+      "int": "85",
+      "wis": "80",
+      "dex": "95",
+      "str": "136",
+      "encombrement": "2"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+5",
+      "Immobilisation": "+20",
+      "Coup Puissant": "+10"
+    },
+    "obtention": [
+      "Les deux coffres ivoire du -4"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau climatérique",
+    "quantity": 1,
+    "prerequisites": {
+      "int": "185",
+      "wis": "120",
+      "encombrement": "2"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+5",
+      "Puissance Air": "+5",
+      "Puissance Feu": "+5",
+      "Puissance Eau": "+5",
+      "Puissance Terre": "+5",
+      "Puissance Lumière": "+5",
+      "Puissance Nécro": "+5"
+    },
+    "obtention": [
+      "Rejeton du Cerberus (Académie -4)"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Cercle d'obsidienne",
+    "quantity": 1,
+    "prerequisites": {
+      "int": "500",
+      "end": "100",
+      "dex": "100",
+      "str": "400",
+      "encombrement": "2"
+    },
+    "secondary": {},
+    "bonuses": {
+      "note": "Sert plus ancient Ante"
+    },
+    "obtention": [
+      "Chevalier de la damnation",
+      "Saalyel (Forteresse des Damnés, désert DI)"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Sceau du Seigneur de Guerre",
+    "quantity": 1,
+    "prerequisites": {
+      "int": "400",
+      "end": "100",
+      "dex": "95",
+      "str": "510",
+      "encombrement": "2"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+10",
+      "Puissance Nécro": "+3",
+      "Puissance Eau": "+3",
+      "Transpercer Armure": "+20",
+      "Coup Puissant": "+20",
+      "Coup Assommant": "+10",
+      "Intelligence": "+25",
+      "Force": "+25"
+    },
+    "obtention": [
+      "Bijoutier lvl 86"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau du sans peur",
+    "quantity": 1,
+    "prerequisites": {
+      "str": "1009",
+      "int": "114",
+      "wis": "62",
+      "end": "60",
+      "dex": "95",
+      "attack": "500",
+      "encombrement": "2"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+5",
+      "Esquive": "+50",
+      "Immobilisation": "+5",
+      "Transpercer Armure": "+16",
+      "Coup Puissant": "+16",
+      "Coup Assommant": "+16",
+      "Résistance terre": "+10",
+      "Résistance eau": "+10",
+      "Résistance feu": "+10",
+      "Résistance air": "+10"
+    },
+    "obtention": [
+      "Bijoutier lvl 96"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Chevalière du croisé",
+    "quantity": 1,
+    "prerequisites": {
+      "wis": "417",
+      "int": "110",
+      "end": "100",
+      "dex": "93",
+      "str": "400",
+      "encombrement": "1"
+    },
+    "secondary": {},
+    "bonuses": {
+      "ca": "+9",
+      "Esquive": "-10",
+      "Coup Assommant": "+20",
+      "Coup Puissant": "+12",
+      "Transpercer Armure": "+8",
+      "Parade": "+20",
+      "Profusion de mana": "+12",
+      "Puissance Lumière": "+12",
+      "Sagesse": "+25",
+      "Force": "+25"
+    },
+    "obtention": [
+      "Bijoutier lvl 92"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Bague en argent ornée de trèfles",
+    "quantity": 1,
+    "prerequisites": {},
+    "secondary": {},
+    "bonuses": {
+      "Chance": "+13"
+    },
+    "obtention": [
+      "Quête des livres de chance (DI)",
+      "Donjon les bijoux d'Eléonore"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau de l'apprenti (métier)",
+    "quantity": 1,
+    "prerequisites": {
+      "encombrement": "1"
+    },
+    "secondary": {},
+    "bonuses": {
+      "Taux de réussite du métier": "+2%"
+    },
+    "obtention": [
+      "Donjon des Académiciens 'la tour' (pour 200+)",
+      "Forgeron : Cadeau de la princesse Delilah (RD)"
+    ],
+    "type": "Anneau"
+  },
+  {
+    "name": "Anneau du (métier)",
+    "quantity": 1,
+    "prerequisites": {
+      "encombrement": "1"
+    },
+    "secondary": {},
+    "bonuses": {
+      "Taux de réussite du métier": "+4%",
+      "note": "Non cumulable avec l'anneau de l'apprenti"
+    },
+    "obtention": [
+      "Donjon les bijoux d'Eléonore"
+    ],
+    "type": "Anneau"
+  }
+]
