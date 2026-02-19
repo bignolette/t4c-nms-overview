@@ -48,6 +48,7 @@ const EquipableBuilder = () => {
   const { itemsData, spellsData, skillsData, savedCharacters, activeStats: stats, setActiveStats: setStats } = useData();
 
   const [hideNoReqs, setHideNoReqs] = useState(true);
+  const [showOnlyNms, setShowOnlyNms] = useState(false);
   const [isBiSMode, setIsBiSMode] = useState(false);
   const [bisFocus, setBisFocus] = useState('');
   const [selectedSlot, setSelectedSlot] = useState(SLOTS[0]);
@@ -116,6 +117,7 @@ const EquipableBuilder = () => {
     if (selectedSlot.id === 'Spells') {
       spellsData.forEach((spell) => {
         if (normalizedSearch && !fastNormalize(spell.name).includes(normalizedSearch)) return;
+        if (showOnlyNms && spell.source !== 'NMS') return;
         
         const isLearnable = stats.int >= spell.int && stats.wis >= spell.wis;
         
@@ -129,6 +131,7 @@ const EquipableBuilder = () => {
     } else if (selectedSlot.id === 'Skills') {
       skillsData.forEach((skill) => {
         if (normalizedSearch && !fastNormalize(skill.name).includes(normalizedSearch)) return;
+        // Skills don't currently have a clear NMS marker in the provided data structure but let's be safe
         
         // Extract requirements from string
         const lvlMatch = skill.requirements.match(/Niv\s*(\d+)/i);
@@ -164,6 +167,8 @@ const EquipableBuilder = () => {
       const itemsInSlot = itemsBySlot[selectedSlot.id] || [];
       itemsInSlot.forEach((item) => {
         if (normalizedSearch && !fastNormalize(item.name).includes(normalizedSearch)) return;
+        if (showOnlyNms && item.content !== 'NMS') return;
+        
         const reqs = item.prerequisites || {};
         const sReq = parseInt(reqs.str || '0');
         const eReq = parseInt(reqs.end || '0');
@@ -222,7 +227,7 @@ const EquipableBuilder = () => {
     };
 
     return { availableItems: canEquip.sort(sortFn), upcomingItems: comingSoon.sort(sortFn).slice(0, 5) };
-  }, [stats, selectedSlot, searchTerm, hideNoReqs, itemsBySlot, spellsData, isBiSMode, bisFocus]);
+  }, [stats, selectedSlot, searchTerm, hideNoReqs, showOnlyNms, itemsBySlot, spellsData, isBiSMode, bisFocus]);
 
   return (
     <div className="space-y-10 animate-in fade-in duration-700">
@@ -424,11 +429,22 @@ const EquipableBuilder = () => {
           <div className="p-8 border-b border-white/5 bg-white/[0.02]">
             <div className="flex items-center justify-between mb-8">
               <h3 className="text-2xl font-black text-white uppercase tracking-tight italic">{selectedSlot.label}</h3>
-              <label className="flex items-center gap-3 cursor-pointer">
-                <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Masquer sans req.</span>
-                <input type="checkbox" className="sr-only" checked={hideNoReqs} onChange={(e) => setHideNoReqs(e.target.checked)} />
-                <div className={`w-10 h-5 rounded-full transition-colors ${hideNoReqs ? 'bg-amber-500' : 'bg-slate-800'}`}></div>
-              </label>
+              <div className="flex flex-wrap items-center gap-6">
+                <label className="flex items-center gap-3 cursor-pointer group">
+                  <span className="text-[10px] font-black text-slate-500 group-hover:text-amber-500 transition-colors uppercase tracking-widest">NMS Uniquement</span>
+                  <input type="checkbox" className="sr-only" checked={showOnlyNms} onChange={(e) => setShowOnlyNms(e.target.checked)} />
+                  <div className={`w-10 h-5 rounded-full transition-colors relative ${showOnlyNms ? 'bg-amber-500' : 'bg-slate-800'}`}>
+                    <div className={`absolute top-1 left-1 w-3 h-3 rounded-full bg-white transition-transform ${showOnlyNms ? 'translate-x-5' : ''}`}></div>
+                  </div>
+                </label>
+                <label className="flex items-center gap-3 cursor-pointer group">
+                  <span className="text-[10px] font-black text-slate-500 group-hover:text-amber-500 transition-colors uppercase tracking-widest">Masquer sans req.</span>
+                  <input type="checkbox" className="sr-only" checked={hideNoReqs} onChange={(e) => setHideNoReqs(e.target.checked)} />
+                  <div className={`w-10 h-5 rounded-full transition-colors relative ${hideNoReqs ? 'bg-amber-500' : 'bg-slate-800'}`}>
+                    <div className={`absolute top-1 left-1 w-3 h-3 rounded-full bg-white transition-transform ${hideNoReqs ? 'translate-x-5' : ''}`}></div>
+                  </div>
+                </label>
+              </div>
             </div>
             <div className="space-y-6">
               <div className="relative">
@@ -521,6 +537,11 @@ const ItemCard = ({ item, isBiSMode, idx }: { item: RecipeItem, isBiSMode: boole
         <div>
           <div className="flex flex-wrap items-center gap-2 mb-1">
             <span className="text-[10px] font-black text-amber-500/80 uppercase tracking-[0.2em]">{item.type}</span>
+            {item.content === 'NMS' && (
+              <span className="text-[10px] font-black text-white uppercase tracking-widest bg-rose-600 px-2 py-0.5 rounded-lg border border-rose-500 shadow-[0_0_10px_rgba(225,29,72,0.3)] animate-pulse">
+                NMS
+              </span>
+            )}
             {item.mains && (
               <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest bg-slate-950 px-2 py-0.5 rounded-lg border border-white/5">
                 {item.mains}
@@ -618,6 +639,9 @@ const SkillCard = ({ skill }: { skill: any }) => {
           <div className="flex items-center gap-2 mb-1">
             <span className="px-2 py-0.5 rounded bg-amber-500 text-slate-950 text-[9px] font-black uppercase tracking-tighter">LVL {skill.parsedReqs.lvl}</span>
             <span className="text-[10px] font-black text-emerald-400 uppercase tracking-[0.2em]">Compétence</span>
+            {skill.content === 'NMS' && (
+              <span className="text-[10px] font-black text-white bg-rose-600 px-2 py-0.5 rounded-lg border border-rose-500 shadow-[0_0_15px_rgba(225,29,72,0.3)] animate-pulse uppercase tracking-widest">NMS</span>
+            )}
           </div>
           <h4 className="text-xl font-black italic uppercase tracking-tight text-slate-100">{skill.name}</h4>
         </div>
@@ -651,6 +675,9 @@ const SpellCard = ({ spell }: { spell: any }) => {
           <div className="flex items-center gap-2 mb-1">
             <span className="px-2 py-0.5 rounded bg-amber-500 text-slate-950 text-[9px] font-black uppercase tracking-tighter">LVL {spell.level}</span>
             <span className="text-[10px] font-black text-blue-400 uppercase tracking-[0.2em]">{spell.source}</span>
+            {spell.source === 'NMS' && (
+              <span className="text-[10px] font-black text-white bg-rose-600 px-2 py-0.5 rounded-lg border border-rose-500 shadow-[0_0_15px_rgba(225,29,72,0.3)] animate-pulse uppercase tracking-widest">NMS</span>
+            )}
           </div>
           <h4 className="text-xl font-black italic uppercase tracking-tight text-slate-100">{spell.name}</h4>
         </div>

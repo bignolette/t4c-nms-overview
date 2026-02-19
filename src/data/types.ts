@@ -91,6 +91,7 @@ export interface RecipeItem {
     mains?: string;
     buyPrice?: string;
     obtention?: string[];
+    content?: string;
 }
 
 export interface QuestStep {
@@ -162,6 +163,7 @@ export interface Spell {
     npc: Record<string, string[]>;
     type?: string;
     source: 'Standard' | 'NMS';
+    content?: string;
     prerequisitesStats?: ItemStats;
 }
 
@@ -179,6 +181,7 @@ export interface Skill {
     description: string;
     trainingTeachers: Record<string, string[]>;
     trainingCost: string;
+    content?: string;
 }
 
 

@@ -11,7 +11,7 @@ import {
   Shield, Sword, Crown, Shirt, Footprints, Hand, Circle, Link2, GripHorizontal, Columns2, Medal,
   ArrowUpRight, ArrowRight, Wind, Users, ArrowRightCircle, User, LayoutGrid, List, ChevronDown, ChevronUp, Tag,
   Skull, Info, Sparkles, Filter, Hammer, Plus, Trash2, ClipboardList, Square, CheckSquare, Check, ExternalLink,
-  Copy
+  Copy, Zap
 } from 'lucide-react';
 import Pagination from './shared/Pagination';
 import StatBadge from './shared/StatBadge';
@@ -301,11 +301,16 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
           </div>
 
           <div className="flex items-start justify-between relative z-10">
-            <div className="p-3 bg-slate-950/80 rounded-2xl text-amber-500 border border-slate-800 shadow-inner group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all duration-500">
-              {(() => {
-                const Icon = getSourceIcon(recipe.type, recipe.name);
-                return <Icon size={20} />;
-              })()}
+            <div className="flex flex-col gap-2">
+              <div className="p-3 bg-slate-950/80 rounded-2xl text-amber-500 border border-slate-800 shadow-inner group-hover:scale-110 group-hover:bg-amber-500 group-hover:text-slate-950 transition-all duration-500">
+                {(() => {
+                  const Icon = getSourceIcon(recipe.type, recipe.name);
+                  return <Icon size={20} />;
+                })()}
+              </div>
+              {recipe.content === 'NMS' && (
+                <span className="text-[8px] font-black text-white bg-rose-600 px-1.5 py-0.5 rounded border border-rose-500 text-center shadow-[0_0_10px_rgba(225,29,72,0.2)]">NMS</span>
+              )}
             </div>
             <button 
               onClick={(e) => { e.stopPropagation(); toggleFavorite(recipe.name); }}
@@ -508,6 +513,9 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
                 <div>
                   <h3 className="text-2xl font-black text-slate-100 mb-1 flex flex-wrap items-center gap-3">
                     <span>{recipe.name}</span>
+                    {recipe.content === 'NMS' && (
+                      <span className="text-[10px] font-black text-white bg-rose-600 px-2 py-0.5 rounded-lg border border-rose-500 shadow-[0_0_15px_rgba(225,29,72,0.3)] animate-pulse uppercase tracking-widest">NMS</span>
+                    )}
                     <button 
                       onClick={() => copy(recipe.name)}
                       className="p-2 hover:bg-slate-800 rounded-xl transition-all bg-slate-900 md:bg-transparent text-amber-500/70 md:text-slate-500 md:hover:text-amber-500"
@@ -1403,6 +1411,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
   const [sortBy, setSortBy] = useState<string>(isItemsPage ? 'name' : 'level');
   const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('asc');
   const [showOnlyFavs, setShowOnlyFavs] = useState(false);
+  const [showOnlyNms, setShowOnlyNms] = useState(false);
   const [displayMode, setDisplayMode] = useState<'all' | 'recipes' | 'components'>('recipes');
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage, setItemsPerPage] = useState(isItemsPage ? 24 : 12);
@@ -1466,6 +1475,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
     setSortBy(isItemsPage ? 'name' : 'level');
     setSortOrder('asc');
     setShowOnlyFavs(false);
+    setShowOnlyNms(false);
     setDisplayMode('recipes');
     setCurrentPage(1);
     setSearchParams(new URLSearchParams());
@@ -1492,13 +1502,15 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
 
       if (isItemsPage) {
         const matchesSearch = normalizedSearch === '' || fastNormalize(recipe.name).includes(normalizedSearch);
-        return matchesType && matchesSearch && matchesStats;
+        const matchesNms = !showOnlyNms || recipe.content === 'NMS';
+        return matchesType && matchesSearch && matchesStats && matchesNms;
       }
 
       const isBaseComponent = !recipe.ingredients || recipe.ingredients.length === 0;
       const matchesProf = selectedProf === 'Tous' || recipe.profession === selectedProf;
       const matchesLevel = (recipe.level || 0) >= levelRange[0] && (recipe.level || 0) <= levelRange[1];
       const matchesFav = !showOnlyFavs || favorites.includes(recipe.name);
+      const matchesNms = !showOnlyNms || recipe.content === 'NMS';
       const matchesZone = selectedZone === 'Toutes' || (recipe.zones && recipe.zones.includes(selectedZone));
       
       let matchesDisplayMode = true;
@@ -1507,7 +1519,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
           else if (displayMode === 'components') matchesDisplayMode = isBaseComponent;
       }
       
-      if (!matchesProf || !matchesLevel || !matchesFav || !matchesDisplayMode || !matchesType || !matchesZone || !matchesStats) return false;
+      if (!matchesProf || !matchesLevel || !matchesFav || !matchesDisplayMode || !matchesType || !matchesZone || !matchesStats || !matchesNms) return false;
       if (normalizedSearch === '') return true;
 
       if (isExactSearch) return fastNormalize(recipe.name) === normalizedSearch;
@@ -1550,7 +1562,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
       }
     });
     return result;
-  }, [recipes, activeSearchTerm, selectedProf, selectedType, selectedZone, selectedStats, levelRange, sortBy, sortOrder, showOnlyFavs, displayMode, favorites, isItemsPage, viewMode, isExactSearch, findItemType]);
+  }, [recipes, activeSearchTerm, selectedProf, selectedType, selectedZone, selectedStats, levelRange, sortBy, sortOrder, showOnlyFavs, showOnlyNms, displayMode, favorites, isItemsPage, viewMode, isExactSearch, findItemType]);
 
   const getMatchingIngredients = (recipe: RecipeItem, search: string) => {
     if (!search || isItemsPage || isExactSearch) return [];
@@ -1884,6 +1896,20 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
                 <ArrowUpDown size={12} /> Nom {sortBy === 'name' && (sortOrder === 'asc' ? '↑' : '↓')}
               </button>
 
+              {isItemsPage && (
+                <button 
+                  onClick={() => {setShowOnlyNms(!showOnlyNms); setCurrentPage(1);}}
+                  className={`flex items-center gap-2 px-4 py-2 rounded-full text-[11px] font-bold border transition-all ${
+                    showOnlyNms 
+                      ? 'bg-rose-600 border-rose-500 text-white shadow-[0_0_15px_rgba(225,29,72,0.4)] scale-105' 
+                      : 'bg-slate-800 text-slate-400 border-slate-700 hover:border-rose-500/50'
+                  }`}
+                >
+                  <Zap size={12} fill={showOnlyNms ? 'currentColor' : 'none'} />
+                  NMS
+                </button>
+              )}
+
               {isItemsPage && STAT_FILTERS.map(stat => (
                 <button 
                   key={stat.key}
@@ -1896,6 +1922,18 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
               
               {!isItemsPage && (
                 <>
+                  <button 
+                    onClick={() => {setShowOnlyNms(!showOnlyNms); setCurrentPage(1);}}
+                    className={`flex items-center gap-2 px-4 py-2 rounded-full text-[11px] font-bold border transition-all ${
+                      showOnlyNms 
+                        ? 'bg-rose-600 border-rose-500 text-white shadow-[0_0_15px_rgba(225,29,72,0.4)] scale-105' 
+                        : 'bg-slate-800 text-slate-400 border-slate-700 hover:border-rose-500/50'
+                    }`}
+                  >
+                    <Zap size={12} fill={showOnlyNms ? 'currentColor' : 'none'} />
+                    NMS Uniquement
+                  </button>
+
                   <button onClick={() => {setShowOnlyFavs(!showOnlyFavs); setCurrentPage(1);}} className={`flex items-center gap-2 px-4 py-2 rounded-full text-[11px] font-bold border transition-all ${showOnlyFavs ? 'bg-yellow-500 text-slate-950' : 'bg-slate-800 text-slate-400 border-slate-700'}`}>
                     <Star size={12} fill={showOnlyFavs ? 'currentColor' : 'none'} /> Favoris ({favorites.length})
                   </button>
