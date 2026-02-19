@@ -2,80 +2,81 @@
   {
     "name": "Bracelet d'or",
     "quantity": 1,
+    "type": "Bracelet",
     "prerequisites": {
       "wis": "24",
       "int": "21",
       "encombrement": "1"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+1",
-      "Dextérité": "+2",
-      "Force": "+2"
+      "dex": "+2",
+      "str": "+2"
     },
     "obtention": [
       "Bijoutier lvl 4"
-    ],
-    "type": "Bracelet"
+    ]
   },
   {
     "name": "Bracelet en pépins de citrouilles",
     "quantity": 1,
+    "type": "Bracelet",
     "prerequisites": {
       "encombrement": "2"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Chance": "+5",
-      "Résistance terre": "-3",
-      "Résistance air": "-3",
-      "Résistance eau": "-3",
-      "Résistance feu": "-3",
-      "Résistance nécro": "-3"
+      "Résistance Terre": "-3",
+      "Résistance Air": "-3",
+      "Résistance Eau": "-3",
+      "Résistance Feu": "-3",
+      "Résistance Nécro": "-3"
     },
     "obtention": [
       "Halloween : Le repaire des sorcières"
-    ],
-    "type": "Bracelet"
+    ]
   },
   {
     "name": "Bracelet en peau de troll",
     "quantity": 1,
+    "type": "Bracelet",
     "prerequisites": {
       "wis": "37",
       "int": "39",
       "end": "68",
       "encombrement": "1"
     },
-    "secondary": {},
     "bonuses": {
-      "ca": "+5",
+      "ca": "+5"
+    },
+    "secondary": {
       "Guérison rapide": "+30",
       "Méditation": "+30"
     },
     "obtention": [
       "Couturier lvl 17"
-    ],
-    "type": "Bracelet"
+    ]
   },
   {
     "name": "Canon de maille de fureur Berserker",
     "quantity": 1,
+    "type": "Bracelet",
     "prerequisites": {
       "str": "238",
       "encombrement": "2"
     },
-    "secondary": {},
     "bonuses": {
-      "ca": "+2",
+      "ca": "+2"
+    },
+    "secondary": {
       "Fureur Berserker": "passif"
     },
-    "obtention": [],
-    "type": "Bracelet"
+    "obtention": []
   },
   {
     "name": "Bracelet des sables",
     "quantity": 1,
+    "type": "Bracelet",
     "prerequisites": {
       "str": "360",
       "end": "54",
@@ -84,71 +85,74 @@
       "int": "63",
       "attack": "800"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+5",
+      "str": "+16",
+      "int": "+10",
+      "wis": "+10"
+    },
+    "secondary": {
       "Attaque": "100 + (Niveau*3)",
       "Esquive": "-10",
       "Immobilisation": "+15",
-      "Force": "+16",
-      "Intelligence": "+10",
-      "Sagesse": "+10",
-      "Puissance terre": "+10",
-      "Puissance feu": "-10",
-      "Résistance nécro": "-20",
-      "Résistance air": "+20",
-      "Résistance terre": "+10",
-      "Résistance feu": "-10",
-      "Résistance eau": "-5"
+      "Puissance Terre": "+10",
+      "Puissance Feu": "-10",
+      "Résistance Nécro": "-20",
+      "Résistance Air": "+20",
+      "Résistance Terre": "+10",
+      "Résistance Feu": "-10",
+      "Résistance Eau": "-5"
     },
     "obtention": [
       "Beholder",
       "Coffres dans la cave des Trolls Erudits de Drake Island",
       "Gardiens du désert"
-    ],
-    "type": "Bracelet"
+    ]
   },
   {
     "name": "Bracelet Humterre",
     "quantity": 1,
+    "type": "Bracelet",
     "prerequisites": {
       "str": "50",
       "end": "100",
       "wis": "75",
       "int": "75"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+15",
-      "Force": "+30",
-      "Endurance": "+20",
-      "Dextérité": "+20",
-      "Intelligence": "+20",
-      "Sagesse": "+20",
-      "Résistance nécro": "+10",
-      "Résistance air": "+10",
-      "Résistance terre": "+10",
-      "Résistance eau": "-20"
+      "str": "+30",
+      "end": "+20",
+      "dex": "+20",
+      "int": "+20",
+      "wis": "+20"
+    },
+    "secondary": {
+      "Résistance Nécro": "+10",
+      "Résistance Air": "+10",
+      "Résistance Terre": "+10",
+      "Résistance Eau": "-20"
     },
     "obtention": [
       "Coffre sud de DI",
       "Séraphin intrus (cave Humterre)",
       "Néphilim intrus (cave Humterre)",
       "Démon terreux (cave Humterre)"
-    ],
-    "type": "Bracelet"
+    ]
   },
   {
     "name": "Bracelet de Puissance",
     "quantity": 1,
+    "type": "Bracelet",
     "prerequisites": {
       "wis": "29",
       "int": "24"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+1",
-      "Force": "+5",
+      "str": "+5"
+    },
+    "secondary": {
       "Attaque": "+5"
     },
     "obtention": [
@@ -156,12 +160,12 @@
       "Chef de guerre gobelin",
       "Griroesh (cave Jarko)",
       "Bugar Sakkor"
-    ],
-    "type": "Bracelet"
+    ]
   },
   {
     "name": "Bracelet Volcanique",
     "quantity": 1,
+    "type": "Bracelet",
     "prerequisites": {
       "str": "20",
       "end": "100",
@@ -169,24 +173,25 @@
       "int": "497",
       "encombrement": "3"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+2",
+      "int": "+25"
+    },
+    "secondary": {
       "Esquive": "-2",
-      "Intelligence": "+25",
-      "Résistance eau": "-10",
-      "Puissance feu": "+10",
-      "Résistance feu": "+15",
-      "Puissance eau": "-5"
+      "Résistance Eau": "-10",
+      "Puissance Feu": "+10",
+      "Résistance Feu": "+15",
+      "Puissance Eau": "-5"
     },
     "obtention": [
       "Bijoutier lvl 40"
-    ],
-    "type": "Bracelet"
+    ]
   },
   {
     "name": "Bracelet d'Hibernation",
     "quantity": 1,
+    "type": "Bracelet",
     "prerequisites": {
       "str": "30",
       "end": "100",
@@ -194,24 +199,25 @@
       "int": "473",
       "encombrement": "3"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+5",
+      "int": "+25"
+    },
+    "secondary": {
       "Esquive": "-2",
-      "Intelligence": "+25",
-      "Résistance terre": "-10",
-      "Puissance feu": "-5",
-      "Résistance eau": "+15",
-      "Puissance eau": "+10"
+      "Résistance Terre": "-10",
+      "Puissance Feu": "-5",
+      "Résistance Eau": "+15",
+      "Puissance Eau": "+10"
     },
     "obtention": [
       "Bijoutier lvl 36"
-    ],
-    "type": "Bracelet"
+    ]
   },
   {
     "name": "Bracelet de Subsolanus",
     "quantity": 1,
+    "type": "Bracelet",
     "prerequisites": {
       "str": "20",
       "end": "100",
@@ -219,26 +225,27 @@
       "wis": "284",
       "encombrement": "3"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+5",
+      "int": "+16",
+      "wis": "+16"
+    },
+    "secondary": {
       "Esquive": "-2",
-      "Puissance air": "+10",
-      "Intelligence": "+16",
-      "Sagesse": "+16",
-      "Résistance feu": "-10",
-      "Puissance lumière": "-5",
-      "Résistance air": "+15",
-      "Coup Critique": "+20"
+      "Puissance Air": "+10",
+      "Résistance Feu": "-10",
+      "Puissance Lumière": "-5",
+      "Résistance Air": "+15",
+      "Coup critique": "+20"
     },
     "obtention": [
       "Bijoutier lvl 40"
-    ],
-    "type": "Bracelet"
+    ]
   },
   {
     "name": "Protège poignet d'archer",
     "quantity": 1,
+    "type": "Bracelet",
     "prerequisites": {
       "str": "160",
       "end": "80",
@@ -246,25 +253,26 @@
       "int": "27",
       "wis": "14"
     },
-    "secondary": {},
     "bonuses": {
-      "ca": "+5",
+      "ca": "+5"
+    },
+    "secondary": {
       "Archerie": "+15%",
-      "Coup puissant": "+12",
-      "Résistance terre": "+3",
-      "Résistance eau": "+3",
-      "Résistance feu": "+3",
-      "Résistance air": "+3",
-      "Résistance nécro": "+3"
+      "Coup Puissant": "+12",
+      "Résistance Terre": "+3",
+      "Résistance Eau": "+3",
+      "Résistance Feu": "+3",
+      "Résistance Air": "+3",
+      "Résistance Nécro": "+3"
     },
     "obtention": [
       "Couturier lvl 100"
-    ],
-    "type": "Bracelet"
+    ]
   },
   {
     "name": "Bracelet en or pur",
     "quantity": 1,
+    "type": "Bracelet",
     "prerequisites": {
       "str": "400",
       "end": "100",
@@ -272,26 +280,27 @@
       "int": "176",
       "encombrement": "3"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+20",
+      "wis": "+20",
+      "str": "+20"
+    },
+    "secondary": {
       "Esquive": "-30",
-      "Sagesse": "+20",
-      "Force": "+20",
-      "Puissance lumière": "+15",
-      "Résistance terre": "+7",
-      "Résistance eau": "+7",
-      "Résistance feu": "+7",
-      "Résistance nécro": "+7"
+      "Puissance Lumière": "+15",
+      "Résistance Terre": "+7",
+      "Résistance Eau": "+7",
+      "Résistance Feu": "+7",
+      "Résistance Nécro": "+7"
     },
     "obtention": [
       "Bijoutier lvl 48"
-    ],
-    "type": "Bracelet"
+    ]
   },
   {
     "name": "Bracelet de terre sacrée",
     "quantity": 1,
+    "type": "Bracelet",
     "prerequisites": {
       "str": "20",
       "end": "100",
@@ -299,24 +308,25 @@
       "int": "123",
       "encombrement": "3"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+5",
-      "Sagesse": "+25",
-      "Puissance terre": "+10",
-      "Puissance lumière": "-5",
-      "Résistance terre": "+15",
-      "Résistance air": "-10",
-      "Coup Critique": "+20"
+      "wis": "+25"
+    },
+    "secondary": {
+      "Puissance Terre": "+10",
+      "Puissance Lumière": "-5",
+      "Résistance Terre": "+15",
+      "Résistance Air": "-10",
+      "Coup critique": "+20"
     },
     "obtention": [
       "Bijoutier lvl 80"
-    ],
-    "type": "Bracelet"
+    ]
   },
   {
     "name": "Bracelet en ivoire incrusté de perles",
     "quantity": 1,
+    "type": "Bracelet",
     "prerequisites": {
       "str": "30",
       "end": "100",
@@ -324,45 +334,45 @@
       "int": "29",
       "encombrement": "3"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+5",
-      "Puissance lumière": "+10",
-      "Puissance air": "-5",
+      "wis": "+30"
+    },
+    "secondary": {
+      "Puissance Lumière": "+10",
+      "Puissance Air": "-5",
       "Esquive": "+50",
-      "Sagesse": "+30",
-      "Résistance terre": "+5",
-      "Résistance air": "+5",
-      "Résistance eau": "+5",
-      "Résistance feu": "+5",
-      "Résistance nécro": "-5"
+      "Résistance Terre": "+5",
+      "Résistance Air": "+5",
+      "Résistance Eau": "+5",
+      "Résistance Feu": "+5",
+      "Résistance Nécro": "-5"
     },
     "obtention": [
       "Bijoutier lvl 90"
-    ],
-    "type": "Bracelet"
+    ]
   },
   {
     "name": "Bracelet d'obsidienne",
     "quantity": 1,
+    "type": "Bracelet",
     "prerequisites": {
       "str": "333",
       "end": "100",
       "dex": "85",
       "int": "300"
     },
-    "secondary": {},
-    "bonuses": {
-      "note": "Sert plus ancient item ante"
+    "secondary": {
+      "Note": "Sert plus ancient item ante"
     },
     "obtention": [
       "Drop des Chevaliers de la Damnation (Château du désert DI)"
-    ],
-    "type": "Bracelet"
+    ]
   },
   {
     "name": "Bracelet incrusté d'ampélites",
     "quantity": 1,
+    "type": "Bracelet",
     "prerequisites": {
       "str": "30",
       "end": "100",
@@ -370,24 +380,25 @@
       "int": "823",
       "encombrement": "3"
     },
-    "secondary": {},
     "bonuses": {
-      "ca": "+5",
-      "Puissance nécro": "+12",
-      "Résistance nécro": "+15",
-      "Résistance terre": "-5",
-      "Résistance air": "-5",
-      "Résistance eau": "-5",
-      "Résistance feu": "-5"
+      "ca": "+5"
+    },
+    "secondary": {
+      "Puissance Nécro": "+12",
+      "Résistance Nécro": "+15",
+      "Résistance Terre": "-5",
+      "Résistance Air": "-5",
+      "Résistance Eau": "-5",
+      "Résistance Feu": "-5"
     },
     "obtention": [
       "Bijoutier lvl 94"
-    ],
-    "type": "Bracelet"
+    ]
   },
   {
     "name": "Bracelet du preux",
     "quantity": 1,
+    "type": "Bracelet",
     "prerequisites": {
       "end": "340",
       "str": "430",
@@ -396,28 +407,29 @@
       "wis": "86",
       "encombrement": "3"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+12",
+      "str": "+30",
+      "wis": "+30"
+    },
+    "secondary": {
       "Immobilisation": "+10",
       "Coup Assommant": "+12",
       "Parade": "+8",
-      "Force": "+30",
-      "Sagesse": "+30",
-      "Résistance terre": "+8",
-      "Résistance eau": "+8",
-      "Résistance air": "+8",
-      "Résistance feu": "+8",
+      "Résistance Terre": "+8",
+      "Résistance Eau": "+8",
+      "Résistance Air": "+8",
+      "Résistance Feu": "+8",
       "Esquive": "-8"
     },
     "obtention": [
       "Bijoutier lvl 90"
-    ],
-    "type": "Bracelet"
+    ]
   },
   {
     "name": "Bracelet Catalyseur de puissance",
     "quantity": 1,
+    "type": "Bracelet",
     "prerequisites": {
       "str": "83",
       "end": "110",
@@ -426,61 +438,61 @@
       "dex": "50",
       "encombrement": "3"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+8",
-      "Intelligence": "+24",
-      "Sagesse": "+24",
+      "int": "+24",
+      "wis": "+24"
+    },
+    "secondary": {
       "Profusion de mana": "+15",
-      "Puissance terre": "+8",
-      "Puissance eau": "+8",
-      "Puissance feu": "+8",
-      "Puissance air": "+8",
-      "Puissance nécro": "-5",
-      "Puissance lumière": "0"
+      "Puissance Terre": "+8",
+      "Puissance Eau": "+8",
+      "Puissance Feu": "+8",
+      "Puissance Air": "+8",
+      "Puissance Nécro": "-5",
+      "Puissance Lumière": "0"
     },
     "obtention": [
       "Bijoutier lvl 96"
-    ],
-    "type": "Bracelet"
+    ]
   },
   {
     "name": "Bracelet des gens heureux",
     "quantity": 1,
+    "type": "Bracelet",
     "prerequisites": {
       "encombrement": "2"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Chance": "+15",
-      "Résistance air": "-10",
-      "Résistance eau": "-10",
-      "Résistance feu": "-10",
-      "Résistance terre": "-10"
+      "Résistance Air": "-10",
+      "Résistance Eau": "-10",
+      "Résistance Feu": "-10",
+      "Résistance Terre": "-10"
     },
     "obtention": [
       "Donjon de la chapelle enfouie"
-    ],
-    "type": "Bracelet"
+    ]
   },
   {
     "name": "Bracelet Gobelin",
     "quantity": 1,
+    "type": "Bracelet",
     "prerequisites": {
       "end": "24",
       "wis": "10",
       "int": "43",
       "encombrement": "1"
     },
-    "secondary": {},
     "bonuses": {
-      "ca": "+5",
-      "Guérison Rapide": "+30",
+      "ca": "+5"
+    },
+    "secondary": {
+      "Guérison rapide": "+30",
       "Méditation": "+30"
     },
     "obtention": [
       "Gobelin (source inconnue)"
-    ],
-    "type": "Bracelet"
+    ]
   }
 ]

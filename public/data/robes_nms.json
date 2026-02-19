@@ -2,886 +2,882 @@
   {
     "name": "Robe de couleur (bleutée / rose / brunie / jaune / orangée / ensoleillée)",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "12",
       "int": "28",
       "wis": "28"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+2",
-      "Sagesse": "+5",
-      "Intelligence": "+5",
-      "Esquive": "-25",
-      "encombrement": "5"
+      "wis": "+5",
+      "int": "+5"
+    },
+    "secondary": {
+      "Esquive": "-25"
     },
     "obtention": [
       "Quête d'Audrey la couturière (AR)"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Robe Triplicite du Mage - Rouge",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "50",
       "int": "350",
       "wis": "100"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+23",
-      "Intelligence": "+10",
-      "Sagesse": "+10",
-      "Puissance feu": "+10",
-      "Puissance eau": "+10",
-      "Puissance nécromancie": "+10",
-      "Résistance air": "+6",
-      "Résistance nécromancie": "+6",
-      "Résistance terre": "+6",
-      "Résistance feu": "+6",
-      "Résistance eau": "+6",
-      "encombrement": "6"
+      "int": "+10",
+      "wis": "+10"
+    },
+    "secondary": {
+      "Puissance Feu": "+10",
+      "Puissance Eau": "+10",
+      "Puissance Nécro": "+10",
+      "Résistance Air": "+6",
+      "Résistance Nécro": "+6",
+      "Résistance Terre": "+6",
+      "Résistance Feu": "+6",
+      "Résistance Eau": "+6"
     },
     "obtention": [
       "Quête de l'armure triplicite (DI)",
       "Quête armure triplicite : échange (3 pièces contre 1)"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Robe Triplicite du Prêtre - Rouge",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "50",
       "int": "100",
       "wis": "350"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+23",
-      "Intelligence": "+10",
-      "Sagesse": "+10",
-      "Puissance terre": "+10",
-      "Puissance lumière": "+10",
-      "Résistance air": "+6",
-      "Résistance terre": "+6",
-      "Résistance feu": "+6",
-      "Résistance eau": "+6",
-      "Résistance nécromancie": "+6",
-      "encombrement": "6"
+      "int": "+10",
+      "wis": "+10"
+    },
+    "secondary": {
+      "Puissance Terre": "+10",
+      "Puissance Lumière": "+10",
+      "Résistance Air": "+6",
+      "Résistance Terre": "+6",
+      "Résistance Feu": "+6",
+      "Résistance Eau": "+6",
+      "Résistance Nécro": "+6"
     },
     "obtention": [
       "Quête de l'armure triplicite (DI)",
       "Quête armure triplicite : échange (3 pièces contre 1)"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Robe Stochastique - noire",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "35",
       "int": "168",
       "wis": "143"
     },
-    "secondary": {
-      "Profusion de mana": "+50"
-    },
     "bonuses": {
-      "ca": "+16",
+      "ca": "+16"
+    },
+    "secondary": {
       "Puissance (toutes)": "+5",
       "Esquive": "-25",
-      "encombrement": "5"
+      "Profusion de mana": "+50"
     },
     "obtention": [
       "Couturier lvl 60"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Manteau des Eléments - Rouge",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "75",
       "int": "297",
       "wis": "238"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+18",
-      "Intelligence": "+20",
-      "Sagesse": "+20",
-      "Puissance air": "+15",
-      "Puissance terre": "+15",
-      "Puissance feu": "+15",
-      "Puissance eau": "+15",
-      "Esquive": "-25",
-      "encombrement": "5"
+      "int": "+20",
+      "wis": "+20"
+    },
+    "secondary": {
+      "Puissance Air": "+15",
+      "Puissance Terre": "+15",
+      "Puissance Feu": "+15",
+      "Puissance Eau": "+15",
+      "Esquive": "-25"
     },
     "obtention": [
       "Quête du vendeur étrange (DI)",
       "Couturier lvl 86 (version finement tissée)"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Robe Tellurique rapiécée - Brune",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "int": "18",
       "wis": "18"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+3",
-      "Sagesse": "+5",
-      "Intelligence": "+5",
-      "Force": "+5",
-      "Puissance terre": "+5",
-      "Esquive": "-15",
-      "encombrement": "3"
+      "wis": "+5",
+      "int": "+5",
+      "str": "+5"
+    },
+    "secondary": {
+      "Puissance Terre": "+5",
+      "Esquive": "-15"
     },
     "obtention": [
       "Coffre du donjon du Gobelet"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Robe Terreuse - Brune",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "27",
       "int": "20",
       "wis": "185"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+17",
-      "Sagesse": "+50",
-      "Puissance terre": "+20",
-      "Esquive": "-25",
-      "encombrement": "5"
+      "wis": "+50"
+    },
+    "secondary": {
+      "Puissance Terre": "+20",
+      "Esquive": "-25"
     },
     "obtention": [
       "Couturier lvl 54"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Robe en Humus - Beige",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "31",
       "int": "29",
       "wis": "321"
     },
-    "secondary": {
-      "Coup Critique": "+30",
-      "Profusion de mana": "+10"
-    },
     "bonuses": {
       "ca": "+21",
-      "Sagesse": "+50",
-      "Puissance terre": "+25",
-      "Résistance terre": "+10",
+      "wis": "+50"
+    },
+    "secondary": {
+      "Puissance Terre": "+25",
+      "Résistance Terre": "+10",
       "Esquive": "-30",
-      "Résistance air": "-5",
-      "Puissance lumière": "-15",
-      "encombrement": "5"
+      "Résistance Air": "-5",
+      "Puissance Lumière": "-15",
+      "Coup critique": "+30",
+      "Profusion de mana": "+10"
     },
     "obtention": [
       "Drop de Liridell (Est désert, DI)",
       "Drop du Golem de Pierre (SH 480,1170,0)",
       "Couturier lvl 84 (version finement tissée)"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Robe de sève mystique - Brune",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "38",
       "int": "23",
       "wis": "697"
     },
-    "secondary": {
-      "Coup Critique": "+50",
-      "Profusion de mana": "+15"
-    },
     "bonuses": {
       "ca": "+28",
-      "Sagesse": "+8% (pure)",
-      "Puissance terre": "+30",
-      "Résistance terre": "+15",
+      "wis": "+8% (pure)"
+    },
+    "secondary": {
+      "Puissance Terre": "+30",
+      "Résistance Terre": "+15",
       "Esquive": "-40",
-      "Puissance lumière": "-20",
-      "Résistance air": "-10",
+      "Puissance Lumière": "-20",
+      "Résistance Air": "-10",
       "Chance (version en soie)": "+5",
-      "encombrement": "6"
+      "Coup critique": "+50",
+      "Profusion de mana": "+15"
     },
     "obtention": [
       "Couturier lvl 104",
       "Quête de Sarah - SH (version brodée)",
       "Couturier lvl 104 chez Avana (version en soie - vert pomme)"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Houppelande légendaire de ??? - Prêtre Terre (à venir)",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "49",
       "int": "27",
       "wis": "1150"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+33",
-      "Sagesse": "+??% (pure)",
-      "Puissance terre": "+??",
-      "Résistance terre": "+??",
+      "wis": "+??% (pure)"
+    },
+    "secondary": {
+      "Puissance Terre": "+??",
+      "Résistance Terre": "+??",
       "Profusion de mana": "+??",
-      "Coup Critique": "+??",
+      "Coup critique": "+??",
       "Esquive": "-100"
     },
     "obtention": [
       "Couturier lvl ?? (à venir)"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Robe scintillante rapiécée - Blanche",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "int": "18",
       "wis": "18"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+3",
-      "Sagesse": "+5",
-      "Intelligence": "+5",
-      "Force": "+5",
-      "Puissance lumière": "+5",
-      "Esquive": "-15",
-      "encombrement": "3"
+      "wis": "+5",
+      "int": "+5",
+      "str": "+5"
+    },
+    "secondary": {
+      "Puissance Lumière": "+5",
+      "Esquive": "-15"
     },
     "obtention": [
       "Coffre du donjon du Gobelet"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Robe Lumineuse - Blanche",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "13",
       "int": "29",
       "wis": "43"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+3",
-      "Puissance lumière": "+5",
-      "Sagesse": "+5",
-      "Force": "+5",
+      "wis": "+5",
+      "str": "+5"
+    },
+    "secondary": {
+      "Puissance Lumière": "+5",
       "Rayon": "+100",
-      "Esquive": "-25",
-      "encombrement": "5"
+      "Esquive": "-25"
     },
     "obtention": [
       "Couturier lvl 7"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Manteau de Bonne Foi - Blanc",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "27",
       "int": "15",
       "wis": "190"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+17",
-      "Puissance lumière": "+20",
-      "Sagesse": "+50",
-      "Esquive": "-25",
-      "encombrement": "5"
+      "wis": "+50"
+    },
+    "secondary": {
+      "Puissance Lumière": "+20",
+      "Esquive": "-25"
     },
     "obtention": [
       "Couturier lvl 71"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Manteau des Bénédictions Infinies - Blanc",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "31",
       "int": "17",
       "wis": "347"
     },
-    "secondary": {
-      "Retour à la vie": "+10"
-    },
     "bonuses": {
       "ca": "+21",
-      "Sagesse": "+50",
-      "Puissance lumière": "+25",
-      "Résistance eau": "+5",
-      "Résistance air": "+5",
-      "Résistance terre": "+5",
-      "Résistance feu": "+5",
+      "wis": "+50"
+    },
+    "secondary": {
+      "Puissance Lumière": "+25",
+      "Résistance Eau": "+5",
+      "Résistance Air": "+5",
+      "Résistance Terre": "+5",
+      "Résistance Feu": "+5",
       "Effet spécial": "Mini-bénédiction lancée aléatoirement quand attaqué",
       "Esquive": "-30",
-      "Puissance terre": "-15",
-      "Résistance nécromancie": "-5",
-      "encombrement": "5"
+      "Puissance Terre": "-15",
+      "Résistance Nécro": "-5",
+      "Retour à la vie": "+10"
     },
     "obtention": [
       "Drop des Trolls érudits, Grotte du Beholder",
       "Drop des sentinelles mortes-vivantes (Zone Oracle)",
       "Couturier lvl 90 (version finement tissée)"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Suaire du Phoenix - Blanc",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "38",
       "int": "23",
       "wis": "697"
     },
-    "secondary": {
-      "Retour à la vie": "+20",
-      "Profusion de mana": "+10"
-    },
     "bonuses": {
       "ca": "+28",
-      "Sagesse": "+8% (pure)",
-      "Puissance lumière": "+30",
-      "Résistance eau": "+10",
-      "Résistance air": "+10",
-      "Résistance terre": "+10",
-      "Résistance feu": "+10",
+      "wis": "+8% (pure)"
+    },
+    "secondary": {
+      "Puissance Lumière": "+30",
+      "Résistance Eau": "+10",
+      "Résistance Air": "+10",
+      "Résistance Terre": "+10",
+      "Résistance Feu": "+10",
       "Esquive": "-40",
-      "Puissance terre": "-20",
-      "Résistance nécromancie": "-10",
-      "encombrement": "6"
+      "Puissance Terre": "-20",
+      "Résistance Nécro": "-10",
+      "Retour à la vie": "+20",
+      "Profusion de mana": "+10"
     },
     "obtention": [
       "Couturier lvl 95",
       "Quête de Sarah - SH (version brodée)",
       "Couturier lvl 95 chez Avana (version en soie - jaune clair)"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Pèlerine de l'éclat lunaire (à venir)",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "49",
       "int": "57",
       "wis": "1152"
     },
+    "bonuses": {
+      "ca": "+33",
+      "wis": "+??% (pure)"
+    },
     "secondary": {
+      "Puissance Lumière": "+40",
+      "Résistance Eau": "+10",
+      "Résistance Air": "+10",
+      "Résistance Terre": "+10",
+      "Résistance Feu": "+10",
+      "Esquive": "-100",
+      "Puissance Terre": "-20",
+      "Résistance Nécro": "-10",
       "Retour à la vie": "+20",
       "Profusion de mana": "+20"
     },
-    "bonuses": {
-      "ca": "+33",
-      "Sagesse": "+??% (pure)",
-      "Puissance lumière": "+40",
-      "Résistance eau": "+10",
-      "Résistance air": "+10",
-      "Résistance terre": "+10",
-      "Résistance feu": "+10",
-      "Esquive": "-100",
-      "Puissance terre": "-20",
-      "Résistance nécromancie": "-10"
-    },
     "obtention": [
       "Couturier lvl ?? (à venir)"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Robe du Zéphyr rapiécée - jaune",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "int": "18",
       "wis": "18"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+3",
-      "Sagesse": "+5",
-      "Intelligence": "+5",
-      "Force": "+5",
-      "Puissance air": "+5",
-      "Esquive": "-15",
-      "encombrement": "3"
+      "wis": "+5",
+      "int": "+5",
+      "str": "+5"
+    },
+    "secondary": {
+      "Puissance Air": "+5",
+      "Esquive": "-15"
     },
     "obtention": [
       "Coffre du donjon du Gobelet"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Robe des Orages - Blanche",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "27",
       "int": "103",
       "wis": "102"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+17",
-      "Puissance air": "+20",
-      "Sagesse": "+25",
-      "Intelligence": "+25",
-      "Esquive": "-25",
-      "encombrement": "5"
+      "wis": "+25",
+      "int": "+25"
+    },
+    "secondary": {
+      "Puissance Air": "+20",
+      "Esquive": "-25"
     },
     "obtention": [
       "Couturier lvl 56"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Robe Tressée par le Vent - Jaune",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "31",
       "int": "175",
       "wis": "175"
     },
-    "secondary": {
-      "Coup Critique": "+30"
-    },
     "bonuses": {
       "ca": "+21",
-      "Puissance air": "+25",
-      "Sagesse": "+25",
-      "Intelligence": "+25",
-      "Résistance air": "+10",
-      "Résistance feu": "-5",
-      "Puissance lumière": "-5",
-      "encombrement": "5"
+      "wis": "+25",
+      "int": "+25"
+    },
+    "secondary": {
+      "Puissance Air": "+25",
+      "Résistance Air": "+10",
+      "Résistance Feu": "-5",
+      "Puissance Lumière": "-5",
+      "Coup critique": "+30"
     },
     "obtention": [
       "Drop du Golem soufflant (SH 200,1170,0)",
       "Couturier lvl 83 (version finement tissée)"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Manteau du Khamsin - Jaune",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "38",
       "int": "360",
       "wis": "360"
     },
-    "secondary": {
-      "Coup Critique": "+50",
-      "Profusion de mana": "+15"
-    },
     "bonuses": {
-      "ca": "+28",
-      "Puissance air": "+30",
+      "ca": "+28"
+    },
+    "secondary": {
+      "Puissance Air": "+30",
       "Esquive": "-40",
-      "Puissance lumière": "-10",
-      "Résistance feu": "-10",
+      "Puissance Lumière": "-10",
+      "Résistance Feu": "-10",
       "Chance (version en soie)": "+5",
-      "encombrement": "6"
+      "Coup critique": "+50",
+      "Profusion de mana": "+15"
     },
     "obtention": [
       "Couturier lvl 102",
       "Quête de Sarah - SH (version brodée)",
       "Couturier lvl 102 chez Avana (version en soie - bleu pâle)"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Houppelande légendaire de ??? - Mage Air (à venir)",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "49"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+33",
-      "Sagesse": "+??% (pure)",
-      "Intelligence": "+??% (pure)",
-      "Puissance air": "+??",
-      "Résistance air": "+??",
+      "wis": "+??% (pure)",
+      "int": "+??% (pure)"
+    },
+    "secondary": {
+      "Puissance Air": "+??",
+      "Résistance Air": "+??",
       "Profusion de mana": "+??",
-      "Coup Critique": "+??",
+      "Coup critique": "+??",
       "Esquive": "-100"
     },
     "obtention": [
       "Couturier lvl ?? (à venir)"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Robe de la rosée rapiécée - bleue",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "int": "18",
       "wis": "18"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+3",
-      "Puissance eau": "+5",
-      "Sagesse": "+5",
-      "Intelligence": "+5",
-      "Force": "+5",
-      "Esquive": "-15",
-      "encombrement": "3"
+      "wis": "+5",
+      "int": "+5",
+      "str": "+5"
+    },
+    "secondary": {
+      "Puissance Eau": "+5",
+      "Esquive": "-15"
     },
     "obtention": [
       "Coffre du donjon du Gobelet"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Manteau de la Bruine - bleue",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "27",
       "int": "190",
       "wis": "15"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+17",
-      "Puissance eau": "+20",
-      "Intelligence": "+50",
-      "Esquive": "-5",
-      "encombrement": "5"
+      "int": "+50"
+    },
+    "secondary": {
+      "Puissance Eau": "+20",
+      "Esquive": "-5"
     },
     "obtention": [
       "Couturier lvl 66"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Robe du Grand Froid - bleue",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "31",
       "int": "331",
       "wis": "19"
     },
-    "secondary": {
-      "Coup Critique": "+30",
-      "Profusion de mana": "+10"
-    },
     "bonuses": {
       "ca": "+21",
-      "Intelligence": "+50",
-      "Puissance eau": "+25",
-      "Résistance eau": "+10",
-      "Puissance feu": "-15",
-      "Résistance terre": "-5",
-      "encombrement": "5"
+      "int": "+50"
+    },
+    "secondary": {
+      "Puissance Eau": "+25",
+      "Résistance Eau": "+10",
+      "Puissance Feu": "-15",
+      "Résistance Terre": "-5",
+      "Coup critique": "+30",
+      "Profusion de mana": "+10"
     },
     "obtention": [
       "Drop du dragon Yeridaj (sortie grotte vers ville de Niève)",
       "Couturier lvl 78 (version finement tissée)"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Manteau d'Inlandsis - Bleu clair",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "38",
       "int": "697",
       "wis": "23"
     },
-    "secondary": {
-      "Coup Critique": "+80",
-      "Profusion de mana": "+15"
-    },
     "bonuses": {
       "ca": "+28",
-      "Intelligence": "+??",
-      "Puissance eau": "+25",
-      "Résistance eau": "+15",
+      "int": "+??"
+    },
+    "secondary": {
+      "Puissance Eau": "+25",
+      "Résistance Eau": "+15",
       "Esquive": "-40",
-      "Puissance feu": "-20",
-      "Résistance terre": "-10",
-      "encombrement": "6"
+      "Puissance Feu": "-20",
+      "Résistance Terre": "-10",
+      "Coup critique": "+80",
+      "Profusion de mana": "+15"
     },
     "obtention": [
       "Couturier lvl 100",
       "Quête de Sarah - SH (version brodée)",
       "Couturier lvl 100 chez Avana (version en soie - violette)"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Houppelande légendaire de ??? - Mage Eau (à venir)",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "49"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+33",
-      "Intelligence": "+??% (pure)",
-      "Puissance eau": "+??",
-      "Résistance eau": "+??",
+      "int": "+??% (pure)"
+    },
+    "secondary": {
+      "Puissance Eau": "+??",
+      "Résistance Eau": "+??",
       "Profusion de mana": "+??",
-      "Coup Critique": "+??",
+      "Coup critique": "+??",
       "Esquive": "-100"
     },
     "obtention": [
       "Couturier lvl ?? (à venir)"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Robe flamboyante rapiécée - rouge",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "int": "18",
       "wis": "18"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+3",
-      "Puissance feu": "+5",
-      "Sagesse": "+5",
-      "Intelligence": "+5",
-      "Force": "+5",
-      "Esquive": "-15",
-      "encombrement": "3"
+      "wis": "+5",
+      "int": "+5",
+      "str": "+5"
+    },
+    "secondary": {
+      "Puissance Feu": "+5",
+      "Esquive": "-15"
     },
     "obtention": [
       "Coffre du donjon du Gobelet"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Robe de l'Archimage - finement tissée",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "27",
       "int": "190",
       "wis": "15"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+17",
-      "Puissance feu": "+20",
-      "Intelligence": "+50",
-      "Esquive": "-25",
-      "encombrement": "5"
+      "int": "+50"
+    },
+    "secondary": {
+      "Puissance Feu": "+20",
+      "Esquive": "-25"
     },
     "obtention": [
       "Couturier lvl 62"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Robe des Fournaises - Rouge",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "31",
       "int": "331",
       "wis": "19"
     },
-    "secondary": {
-      "Coup Critique": "+30",
-      "Profusion de mana": "+10"
-    },
     "bonuses": {
       "ca": "+21",
-      "Intelligence": "+50",
-      "Puissance feu": "+25",
-      "Résistance feu": "+10",
+      "int": "+50"
+    },
+    "secondary": {
+      "Puissance Feu": "+25",
+      "Résistance Feu": "+10",
       "Esquive": "-30",
-      "Puissance eau": "-15",
+      "Puissance Eau": "-15",
       "Résistance feu malus": "-5",
-      "encombrement": "5"
+      "Coup critique": "+30",
+      "Profusion de mana": "+10"
     },
     "obtention": [
       "Drop du golem embrasé (Désert DI)",
       "Quête de Sarah - SH (version brodée)"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Robe des Flammes Ardentes - Rouge",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "38",
       "int": "697",
       "wis": "23"
     },
-    "secondary": {
-      "Coup Critique": "+50",
-      "Profusion de mana": "+15"
-    },
     "bonuses": {
       "ca": "+28",
-      "Intelligence": "+??% (pure)",
-      "Puissance feu": "+30",
-      "Résistance feu": "+15",
+      "int": "+??% (pure)"
+    },
+    "secondary": {
+      "Puissance Feu": "+30",
+      "Résistance Feu": "+15",
       "Esquive": "-30",
-      "Puissance eau": "-20",
-      "Résistance eau": "-10",
-      "encombrement": "6"
+      "Puissance Eau": "-20",
+      "Résistance Eau": "-10",
+      "Coup critique": "+50",
+      "Profusion de mana": "+15"
     },
     "obtention": [
       "Couturier lvl 106",
       "Quête de Sarah - SH (version brodée)",
       "Couturier lvl 106 chez Avana (version en soie - orangée)"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Houppelande légendaire de ??? - Mage Feu (à venir)",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "49"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+33",
-      "Intelligence": "+??% (pure)",
-      "Puissance feu": "+??",
-      "Résistance feu": "+??",
+      "int": "+??% (pure)"
+    },
+    "secondary": {
+      "Puissance Feu": "+??",
+      "Résistance Feu": "+??",
       "Profusion de mana": "+??",
-      "Coup Critique": "+??",
+      "Coup critique": "+??",
       "Esquive": "-100"
     },
     "obtention": [
       "Couturier lvl ?? (à venir)"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Robe des abîmes rapiécée - noire",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "int": "18",
       "wis": "18"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+3",
-      "Sagesse": "+5",
-      "Intelligence": "+5",
-      "Force": "+5",
-      "Puissance nécromancie": "+5",
-      "Esquive": "-15",
-      "encombrement": "3"
+      "wis": "+5",
+      "int": "+5",
+      "str": "+5"
+    },
+    "secondary": {
+      "Puissance Nécro": "+5",
+      "Esquive": "-15"
     },
     "obtention": [
       "Coffre du donjon du Gobelet"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Manteau des abysses - Brun",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "int": "350",
       "wis": "80"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+37",
-      "Intelligence": "+30",
-      "Puissance nécromancie": "+30",
-      "Résistance lumière": "-15",
-      "Résistance eau": "-5",
-      "Résistance terre": "-8",
-      "Puissance feu": "-10",
-      "Puissance eau": "-10",
-      "encombrement": "5"
+      "int": "+30"
+    },
+    "secondary": {
+      "Puissance Nécro": "+30",
+      "Résistance Lumière": "-15",
+      "Résistance Eau": "-5",
+      "Résistance Terre": "-8",
+      "Puissance Feu": "-10",
+      "Puissance Eau": "-10"
     },
     "obtention": [
       "Drop du Beholder (Grotte du Beholder, DI)"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Manteau des Brumes de Minuit - Noir",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "59",
       "int": "750",
       "wis": "22"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+25",
-      "Intelligence": "+50",
-      "Puissance nécromancie": "+50",
-      "Esquive": "-25",
-      "encombrement": "5"
+      "int": "+50"
+    },
+    "secondary": {
+      "Puissance Nécro": "+50",
+      "Esquive": "-25"
     },
     "obtention": [
       "Gardien du coffre (Sud de DI)",
       "Couturier lvl 89 (version finement tissée)",
       "Version en soie grise (recette NMS non trouvée)"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Pèlerine des cendres funestes (à venir)",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "49"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+33",
-      "Intelligence": "+??% (pure)",
-      "Puissance nécromancie": "+??",
-      "Résistance nécromancie": "+??",
+      "int": "+??% (pure)"
+    },
+    "secondary": {
+      "Puissance Nécro": "+??",
+      "Résistance Nécro": "+??",
       "Profusion de mana": "+??",
-      "Coup Critique": "+??",
+      "Coup critique": "+??",
       "Esquive": "-100"
     },
     "obtention": [
       "Couturier lvl ?? (à venir)"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Robe rapiécée archer/guerrier - ??",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "encombrement": "3"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+??",
-      "Sagesse": "+??",
-      "Intelligence": "+??",
+      "wis": "+??",
+      "int": "+??"
+    },
+    "secondary": {
       "Esquive": "-15"
     },
     "obtention": [
       "Coffre du donjon du Gobelet"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Robe d'Elentir - Grise",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "str": "50",
       "end": "20",
@@ -889,56 +885,54 @@
       "int": "60",
       "wis": "80"
     },
+    "bonuses": {
+      "ca": "+15",
+      "dex": "+50"
+    },
     "secondary": {
+      "Esquive": "+50",
+      "Résistance Terre": "+4",
+      "Résistance Feu": "+4",
+      "Résistance Eau": "+4",
+      "Résistance Nécro": "+4",
       "Archerie": "+100",
       "Immobilisation": "+10",
       "Se cacher": "+15",
       "Se faufiler": "+15"
     },
-    "bonuses": {
-      "ca": "+15",
-      "Esquive": "+50",
-      "Dextérité": "+50",
-      "Résistance terre": "+4",
-      "Résistance feu": "+4",
-      "Résistance eau": "+4",
-      "Résistance nécromancie": "+4",
-      "encombrement": "5"
-    },
     "obtention": [
       "Quête d'Elentir (robe d'archer)",
       "1000 fèves d'argent au Salon de Jeux"
-    ],
-    "type": "Robe"
+    ]
   },
   {
     "name": "Manteau mystique des éléments",
     "quantity": 1,
+    "type": "Robe",
     "prerequisites": {
       "end": "38",
       "int": "538",
       "wis": "432"
     },
-    "secondary": {
-      "Coup Critique": "+30",
-      "Profusion de mana": "+10"
-    },
     "bonuses": {
       "ca": "+28",
-      "Sagesse": "+40",
-      "Intelligence": "+40",
-      "Puissance terre": "+20",
-      "Puissance eau": "+20",
-      "Puissance feu": "+20",
-      "Puissance air": "+20",
-      "Puissance nécro": "-10",
-      "Puissance lumière": "-10",
-      "Résistance nécro": "-10",
-      "Esquive": "-25"
+      "wis": "+40",
+      "int": "+40"
+    },
+    "secondary": {
+      "Puissance Terre": "+20",
+      "Puissance Eau": "+20",
+      "Puissance Feu": "+20",
+      "Puissance Air": "+20",
+      "Puissance Nécro": "-10",
+      "Puissance Lumière": "-10",
+      "Résistance Nécro": "-10",
+      "Esquive": "-25",
+      "Coup critique": "+30",
+      "Profusion de mana": "+10"
     },
     "obtention": [
       "Liche ancestrale (DI)"
-    ],
-    "type": "Robe"
+    ]
   }
 ]

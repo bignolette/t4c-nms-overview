@@ -2,111 +2,103 @@
   {
     "name": "Cape rouge",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "end": "25"
-    },
-    "secondary": {},
-    "bonuses": {
-      "encombrement": "4"
     },
     "obtention": [
       "Marchand Rolph (LH)",
       "Fataliste (RD)",
       "Sorcier squelette (RD)",
       "Divers mobs"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Cape de l'écorché",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "end": "25"
     },
-    "secondary": {},
     "bonuses": {
-      "ca": "+3",
-      "encombrement": "4"
+      "ca": "+3"
     },
     "obtention": [
       "Dasrinn (Dragon blanc) - Cité des nains après labyrinthe d'Arakas"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Cape de la forêt",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "end": "35",
       "int": "80",
       "wis": "80"
     },
-    "secondary": {},
     "bonuses": {
-      "ca": "+15",
-      "Puissance feu": "+5",
-      "Puissance eau": "+5",
-      "Puissance air": "+5",
-      "Puissance terre": "+5",
-      "Puissance lumière": "+5",
-      "Puissance nécromancie": "+5",
+      "ca": "+15"
+    },
+    "secondary": {
+      "Puissance Feu": "+5",
+      "Puissance Eau": "+5",
+      "Puissance Air": "+5",
+      "Puissance Terre": "+5",
+      "Puissance Lumière": "+5",
+      "Puissance Nécro": "+5",
       "Sagesse (bonus niveau)": "+7% du niveau si ≥156 sag",
-      "Intelligence (bonus niveau)": "+7% du niveau si ≥156 int",
-      "encombrement": "4"
+      "Intelligence (bonus niveau)": "+7% du niveau si ≥156 int"
     },
     "obtention": [
       "Shamans skraugs de l'île Lune (rare)",
       "Bijoutier lvl 32 (orbe)"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Cape ornée de runes",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "end": "50"
     },
-    "secondary": {},
     "bonuses": {
-      "ca": "+8",
-      "encombrement": "4"
+      "ca": "+8"
     },
     "obtention": [
       "Dragon Dimith (nord du lac kraanian)",
       "Bijoutier lvl 20 (orbe)"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Cape de la nuit",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "end": "60",
       "dex": "225"
     },
+    "bonuses": {
+      "ca": "+20"
+    },
     "secondary": {
+      "Esquive": "+60",
+      "Résistance Feu": "+20",
+      "Résistance Nécro": "+20",
+      "Résistance Lumière": "-15",
+      "Dextérité (bonus niveau)": "+10% du niveau",
       "Immobilisation": "+5",
       "Archerie": "+15%"
-    },
-    "bonuses": {
-      "ca": "+20",
-      "Esquive": "+60",
-      "Résistance feu": "+20",
-      "Résistance nécromancie": "+20",
-      "Résistance lumière": "-15",
-      "Dextérité (bonus niveau)": "+10% du niveau",
-      "encombrement": "4"
     },
     "obtention": [
       "Drop sur l'île Lune",
       "Couturier lvl 59 - finement tissée (cape)",
       "Bijoutier lvl 30 (orbe)"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Cape de fortification",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "str": "90",
       "end": "110",
@@ -114,25 +106,24 @@
       "int": "50",
       "wis": "50"
     },
-    "secondary": {
-      "Immobilisation": "+10"
-    },
     "bonuses": {
       "ca": "+30",
-      "Force": "+10",
+      "str": "+10"
+    },
+    "secondary": {
       "Puissance (toutes)": "+4",
       "Résistance (toutes)": "+4",
-      "encombrement": "4"
+      "Immobilisation": "+10"
     },
     "obtention": [
       "Draconigus majeur (ouest du désert de RD)",
       "Bijoutier lvl 32 (orbe)"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Cape de puissance",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "str": "130",
       "end": "220",
@@ -140,101 +131,99 @@
       "int": "75",
       "wis": "75"
     },
-    "secondary": {
-      "Immobilisation": "+5"
-    },
     "bonuses": {
       "ca": "+42",
+      "str": "+7",
+      "end": "+20"
+    },
+    "secondary": {
       "Puissance (toutes)": "+7",
       "Résistance (toutes)": "+7",
-      "Force": "+7",
-      "Endurance": "+20",
       "Esquive": "+5%",
-      "encombrement": "+4"
+      "Immobilisation": "+5"
     },
     "obtention": [
       "Drop île Lune (fréquent)",
       "Bijoutier lvl 30 (orbe)"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Cape dorée",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "str": "140",
       "end": "100",
       "int": "75",
       "wis": "75"
     },
-    "secondary": {
-      "Retour à la vie": "+10"
-    },
     "bonuses": {
       "ca": "+26",
+      "str": "+25",
+      "end": "+25",
+      "dex": "+25",
+      "int": "+25",
+      "wis": "+25"
+    },
+    "secondary": {
       "Esquive": "-10",
-      "Puissance lumière": "+10",
-      "Résistance nécromancie": "-10",
-      "Résistance lumière": "+25",
-      "Puissance terre": "-5",
-      "Force": "+25",
-      "Endurance": "+25",
-      "Dextérité": "+25",
-      "Intelligence": "+25",
-      "Sagesse": "+25"
+      "Puissance Lumière": "+10",
+      "Résistance Nécro": "-10",
+      "Résistance Lumière": "+25",
+      "Puissance Terre": "-5",
+      "Retour à la vie": "+10"
     },
     "obtention": [
       "Drop des Bzérilis (sud-est de RedWall, DI)",
       "Bijoutier lvl 60 (orbe)"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Cape des voyelles",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "int": "70",
       "wis": "70"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+10",
-      "Sagesse": "+30",
-      "Intelligence": "+30",
-      "Puissance nécromancie": "+5",
-      "Résistance nécromancie": "+10",
-      "Puissance eau": "-2",
-      "Puissance feu": "-2",
-      "encombrement": "+4"
+      "wis": "+30",
+      "int": "+30"
+    },
+    "secondary": {
+      "Puissance Nécro": "+5",
+      "Résistance Nécro": "+10",
+      "Puissance Eau": "-2",
+      "Puissance Feu": "-2"
     },
     "obtention": [
       "Quête du livre de chance",
       "Bijoutier lvl 38 (orbe)"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Cape du bouffon",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "str": "70",
       "dex": "70"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+10",
-      "Force": "+30",
-      "Dextérité": "+30"
+      "str": "+30",
+      "dex": "+30"
     },
     "obtention": [
       "Quête du livre de chance",
       "Bijoutier lvl 38 (orbe)"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Cape Humterre",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "str": "50",
       "end": "100",
@@ -242,45 +231,47 @@
       "int": "50",
       "wis": "50"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+25",
-      "Endurance": "+10",
-      "Dextérité": "+25",
-      "Sagesse": "+20",
-      "Intelligence": "+20",
-      "Puissance terre": "+5",
-      "Puissance air": "+5",
-      "Force": "-10",
-      "Puissance nécromancie": "-10",
-      "Résistance lumière": "-25"
+      "end": "+10",
+      "dex": "+25",
+      "wis": "+20",
+      "int": "+20",
+      "str": "-10"
+    },
+    "secondary": {
+      "Puissance Terre": "+5",
+      "Puissance Air": "+5",
+      "Puissance Nécro": "-10",
+      "Résistance Lumière": "-25"
     },
     "obtention": [
       "Drop des intrus (Cave Humterre, DI)",
       "Bijoutier lvl 34 (orbe)"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Cape du Bourgeois",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "end": "50"
     },
-    "secondary": {},
     "bonuses": {
-      "ca": "+5",
+      "ca": "+5"
+    },
+    "secondary": {
       "Chance": "+10"
     },
     "obtention": [
       "Quête des fèves",
       "Bijoutier lvl 42 (orbe)"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Cape de mauvaise augure",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "str": "190",
       "end": "80",
@@ -288,27 +279,26 @@
       "int": "75",
       "wis": "75"
     },
+    "bonuses": {
+      "ca": "+20",
+      "str": "+20",
+      "dex": "+45"
+    },
     "secondary": {
       "Coup Assommant": "+10",
       "Transpercer l'Armure": "+10",
       "Immobilisation": "+10",
-      "Coup Critique": "+?%"
-    },
-    "bonuses": {
-      "ca": "+20",
-      "Force": "+20",
-      "Dextérité": "+45",
-      "encombrement": "4"
+      "Coup critique": "+?%"
     },
     "obtention": [
       "Couturier lvl 96 (cape)",
       "Bijoutier lvl 74 (orbe)"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Manteau du croisé",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "str": "420",
       "end": "100",
@@ -316,89 +306,87 @@
       "int": "100",
       "wis": "463"
     },
+    "bonuses": {
+      "ca": "+26",
+      "str": "+35",
+      "wis": "+35"
+    },
     "secondary": {
+      "Esquive": "-20",
+      "Puissance Lumière": "+8",
+      "Résistance Nécro": "+8",
+      "Résistance Terre": "+4",
+      "Résistance Eau": "+4",
+      "Résistance Feu": "+4",
+      "Résistance Air": "+4",
       "Profusion de mana": "+10",
       "Coup Assommant": "+10",
       "Coup Puissant": "+10",
       "Parade": "+10",
       "Transpercer l'Armure": "+8"
     },
-    "bonuses": {
-      "ca": "+26",
-      "Esquive": "-20",
-      "Force": "+35",
-      "Sagesse": "+35",
-      "Puissance lumière": "+8",
-      "Résistance nécromancie": "+8",
-      "Résistance terre": "+4",
-      "Résistance eau": "+4",
-      "Résistance feu": "+4",
-      "Résistance air": "+4",
-      "encombrement": "4"
-    },
     "obtention": [
       "Couturier lvl 104 (cape)",
       "Bijoutier lvl 99 (orbe)"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Cape de Mystification",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "str": "452",
       "end": "35",
       "dex": "274"
     },
+    "bonuses": {
+      "ca": "+24"
+    },
     "secondary": {
+      "Esquive": "+100",
       "Se faufiler": "+15",
       "Dissimulation": "+15",
       "Attaque": "-200",
       "Archerie": "-200"
     },
-    "bonuses": {
-      "ca": "+24",
-      "Esquive": "+100"
-    },
     "obtention": [
       "Couturier lvl 107 (cape)",
       "Bijoutier lvl 100 (orbe)"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Cape de l'Invocateur",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "end": "32",
       "int": "55",
       "wis": "55"
     },
+    "bonuses": {
+      "ca": "+8"
+    },
     "secondary": {
+      "Puissance Air": "+5",
+      "Puissance Feu": "+5",
+      "Puissance Terre": "+5",
+      "Puissance Lumière": "+5",
+      "Puissance Eau": "+5",
+      "Puissance Nécro": "+5",
       "Profusion de mana": "+25",
       "Dissimulation": "+15",
       "Attaque": "-200",
       "Archerie": "-200"
     },
-    "bonuses": {
-      "ca": "+8",
-      "Puissance air": "+5",
-      "Puissance feu": "+5",
-      "Puissance terre": "+5",
-      "Puissance lumière": "+5",
-      "Puissance eau": "+5",
-      "Puissance nécromancie": "+5",
-      "encombrement": "4"
-    },
     "obtention": [
       "Couturier lvl 36 (cape)",
       "Bijoutier lvl 24 (orbe)"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Cape des âmes oubliées",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "str": "30",
       "end": "60",
@@ -406,357 +394,353 @@
       "wis": "926"
     },
     "secondary": {
+      "Puissance Lumière": "+15",
+      "Résistance Nécro": "-15",
+      "Puissance Terre": "-15",
+      "Puissance Air": "-15",
+      "Résistance Terre": "+7",
+      "Résistance Air": "+7",
+      "Résistance Eau": "+7",
+      "Résistance Feu": "+7",
+      "Sagesse (bonus niveau)": "+20 à +65 selon sag pure",
+      "Esquive": "+5%",
       "Profusion de mana": "+5",
       "Retour à la vie": "+15",
       "Méditation": "+15"
     },
-    "bonuses": {
-      "Puissance lumière": "+15",
-      "Résistance nécromancie": "-15",
-      "Puissance terre": "-15",
-      "Puissance air": "-15",
-      "Résistance terre": "+7",
-      "Résistance air": "+7",
-      "Résistance eau": "+7",
-      "Résistance feu": "+7",
-      "Sagesse (bonus niveau)": "+20 à +65 selon sag pure",
-      "Esquive": "+5%",
-      "encombrement": "4"
-    },
     "obtention": [
       "Couturier lvl 105 (cape)",
       "Bijoutier lvl 98 (orbe)"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Cape de résistance au feu (T4C)",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "int": "45",
       "wis": "35"
     },
-    "secondary": {},
     "bonuses": {
-      "ca": "+1",
-      "Résistance feu": "+20",
-      "encombrement": "4"
+      "ca": "+1"
+    },
+    "secondary": {
+      "Résistance Feu": "+20"
     },
     "obtention": [
       "Balzak (île au nord du camp des skraug vert)",
       "Bijoutier lvl 16 (orbe)"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Cape d'Elemendil (T4C)",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "str": "250",
       "end": "50",
       "attack": "250"
     },
-    "secondary": {
-      "Immobilisation": "+5"
-    },
     "bonuses": {
       "ca": "+20",
-      "Force": "+50",
-      "Dextérité": "+50",
-      "Endurance": "+50",
-      "Intelligence": "-50",
-      "Sagesse": "-50",
-      "encombrement": "1"
+      "str": "+50",
+      "dex": "+50",
+      "end": "+50",
+      "int": "-50",
+      "wis": "-50"
+    },
+    "secondary": {
+      "Immobilisation": "+5"
     },
     "obtention": [
       "Gardien squelette du Lord Stonecrest",
       "Bijoutier lvl 26 (orbe)"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Cape du trépas",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "str": "40",
       "end": "60",
       "int": "906",
       "wis": "29"
     },
-    "secondary": {
-      "Profusion de mana": "+5"
-    },
     "bonuses": {
-      "ca": "+26",
-      "Puissance nécromancie": "+15",
-      "Puissance eau": "-5",
-      "Puissance feu": "-5",
-      "Résistance eau": "+5",
-      "Résistance feu": "+5",
-      "Résistance air": "+5",
-      "Résistance terre": "-10",
-      "encombrement": "4"
+      "ca": "+26"
+    },
+    "secondary": {
+      "Puissance Nécro": "+15",
+      "Puissance Eau": "-5",
+      "Puissance Feu": "-5",
+      "Résistance Eau": "+5",
+      "Résistance Feu": "+5",
+      "Résistance Air": "+5",
+      "Résistance Terre": "-10",
+      "Profusion de mana": "+5"
     },
     "obtention": [
       "Couturier lvl 91 (cape)",
       "Bijoutier lvl 68 (orbe)"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Cape des flammèches",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "end": "60",
       "int": "756",
       "wis": "34"
     },
-    "secondary": {
-      "Profusion de mana": "+15"
-    },
     "bonuses": {
       "ca": "+26",
-      "Intelligence": "+30",
-      "Puissance feu": "+10",
-      "Résistance feu": "+10",
-      "Résistance terre": "+5",
-      "Résistance air": "+5",
-      "Résistance nécromancie": "+5",
-      "Puissance eau": "-10",
-      "Résistance eau": "-10",
-      "encombrement": "4"
+      "int": "+30"
+    },
+    "secondary": {
+      "Puissance Feu": "+10",
+      "Résistance Feu": "+10",
+      "Résistance Terre": "+5",
+      "Résistance Air": "+5",
+      "Résistance Nécro": "+5",
+      "Puissance Eau": "-10",
+      "Résistance Eau": "-10",
+      "Profusion de mana": "+15"
     },
     "obtention": [
       "Couturier lvl 80 (cape)",
       "Bijoutier lvl 52 (orbe)"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Cape des sables",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "end": "60",
       "int": "34",
       "wis": "756"
     },
-    "secondary": {
-      "Profusion de mana": "+15"
-    },
     "bonuses": {
       "ca": "+26",
-      "Sagesse": "+30",
-      "Puissance terre": "+10",
-      "Résistance terre": "+10",
-      "Résistance feu": "+5",
-      "Résistance eau": "+5",
-      "Résistance nécromancie": "+5",
-      "Puissance lumière": "-10",
-      "Résistance air": "-10",
-      "encombrement": "4"
+      "wis": "+30"
+    },
+    "secondary": {
+      "Puissance Terre": "+10",
+      "Résistance Terre": "+10",
+      "Résistance Feu": "+5",
+      "Résistance Eau": "+5",
+      "Résistance Nécro": "+5",
+      "Puissance Lumière": "-10",
+      "Résistance Air": "-10",
+      "Profusion de mana": "+15"
     },
     "obtention": [
       "Couturier lvl 94 (cape)",
       "Bijoutier lvl 70 (orbe)"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Cape du levant",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "end": "60",
       "int": "403",
       "wis": "403"
     },
-    "secondary": {
-      "Profusion de mana": "+15"
-    },
     "bonuses": {
       "ca": "+26",
-      "Puissance air": "+10",
-      "Résistance air": "+10",
-      "Résistance nécromancie": "+5",
-      "Résistance terre": "+5",
-      "Résistance eau": "+5",
-      "Sagesse": "+15",
-      "Intelligence": "+15",
-      "Résistance feu": "-10",
-      "Puissance nécromancie": "-5",
-      "Puissance lumière": "-5",
-      "encombrement": "4"
+      "wis": "+15",
+      "int": "+15"
+    },
+    "secondary": {
+      "Puissance Air": "+10",
+      "Résistance Air": "+10",
+      "Résistance Nécro": "+5",
+      "Résistance Terre": "+5",
+      "Résistance Eau": "+5",
+      "Résistance Feu": "-10",
+      "Puissance Nécro": "-5",
+      "Puissance Lumière": "-5",
+      "Profusion de mana": "+15"
     },
     "obtention": [
       "Couturier lvl 103 (cape)",
       "Bijoutier lvl 92 (orbe)"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Cape du loup blanc",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "str": "875",
       "end": "60",
       "attack": "500"
     },
+    "bonuses": {
+      "ca": "+20",
+      "str": "+60",
+      "end": "+60",
+      "dex": "+60",
+      "wis": "-20",
+      "int": "-20"
+    },
     "secondary": {
+      "Résistance Nécro": "-2",
+      "Résistance Terre": "-2",
+      "Résistance Feu": "-2",
+      "Résistance Eau": "-2",
+      "Résistance Air": "-2",
       "Coup Puissant": "+15",
       "Immobilisation": "+15",
       "Coup Assommant": "+10",
       "Transpercer l'Armure": "+10"
     },
-    "bonuses": {
-      "ca": "+20",
-      "Force": "+60",
-      "Endurance": "+60",
-      "Dextérité": "+60",
-      "Sagesse": "-20",
-      "Intelligence": "-20",
-      "Résistance nécromancie": "-2",
-      "Résistance terre": "-2",
-      "Résistance feu": "-2",
-      "Résistance eau": "-2",
-      "Résistance air": "-2"
-    },
     "obtention": [
       "Couturier lvl 99 (cape)",
       "Bijoutier lvl 88 (orbe)"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Cape de tromperie",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "end": "16",
       "int": "78",
       "wis": "15"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+6",
-      "Intelligence": "+15",
-      "Puissance nécromancie": "+10",
-      "encombrement": "5"
+      "int": "+15"
+    },
+    "secondary": {
+      "Puissance Nécro": "+10"
     },
     "obtention": [
       "Wooden chest"
-    ],
-    "type": "Cape"
+    ]
   },
   {
     "name": "Orbe / Cape d'Armagueddon",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "dex": "37",
       "int": "175",
       "wis": "70"
     },
-    "secondary": {},
     "bonuses": {
-      "ca": "+5",
+      "ca": "+5"
+    },
+    "secondary": {
       "Chance": "+10"
     },
-    "obtention": [],
-    "type": "Cape"
+    "obtention": []
   },
   {
     "name": "Orbe / Cape givrée",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "end": "60",
       "int": "756",
       "wis": "34"
     },
-    "secondary": {},
     "bonuses": {
-      "ca": "+5",
+      "ca": "+5"
+    },
+    "secondary": {
       "Chance": "+10"
     },
-    "obtention": [],
-    "type": "Cape"
+    "obtention": []
   },
   {
     "name": "Cape de protection contre la terre",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "end": "30",
       "int": "45",
       "wis": "45"
     },
-    "secondary": {},
     "bonuses": {
-      "ca": "+5",
+      "ca": "+5"
+    },
+    "secondary": {
       "Chance": "+10"
     },
-    "obtention": [],
-    "type": "Cape"
+    "obtention": []
   },
   {
     "name": "Cape de protection contre l'eau",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "end": "30",
       "int": "45",
       "wis": "45"
     },
-    "secondary": {},
     "bonuses": {
-      "ca": "+5",
+      "ca": "+5"
+    },
+    "secondary": {
       "Chance": "+10"
     },
-    "obtention": [],
-    "type": "Cape"
+    "obtention": []
   },
   {
     "name": "Cape de protection contre l'air",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "end": "30",
       "int": "45",
       "wis": "45"
     },
-    "secondary": {},
     "bonuses": {
-      "ca": "+5",
+      "ca": "+5"
+    },
+    "secondary": {
       "Chance": "+10"
     },
-    "obtention": [],
-    "type": "Cape"
+    "obtention": []
   },
   {
     "name": "Voile de la faucheuse",
     "quantity": 1,
+    "type": "Cape",
     "prerequisites": {
       "str": "456",
       "end": "200",
       "int": "502"
     },
+    "bonuses": {
+      "ca": "+30",
+      "str": "+50",
+      "int": "+50"
+    },
     "secondary": {
-      "Coup Critique": "+10",
+      "Esquive": "-25",
+      "Puissance Nécro": "+8",
+      "Puissance Eau": "-6",
+      "Puissance Feu": "-6",
+      "Résistance Nécro": "+10",
+      "Résistance Eau": "+5",
+      "Résistance Terre": "+5",
+      "Résistance Feu": "+5",
+      "Résistance Air": "+5",
+      "Coup critique": "+10",
       "Transpercer l'Armure": "+10",
       "Coup Puissant": "+10",
       "Coup Assommant": "+10",
       "Immobilisation": "+5"
     },
-    "bonuses": {
-      "ca": "+30",
-      "Esquive": "-25",
-      "Force": "+50",
-      "Intelligence": "+50",
-      "Puissance nécromancie": "+8",
-      "Puissance eau": "-6",
-      "Puissance feu": "-6",
-      "Résistance nécromancie": "+10",
-      "Résistance eau": "+5",
-      "Résistance terre": "+5",
-      "Résistance feu": "+5",
-      "Résistance air": "+5"
-    },
     "obtention": [
       "Métier Couture Urtanar"
-    ],
-    "type": "Cape"
+    ]
   }
 ]

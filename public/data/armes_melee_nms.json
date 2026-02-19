@@ -2,1530 +2,1449 @@
   {
     "name": "Gourdin de Gob' (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "0"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "3-6",
-    "encombrement": "8",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 1"
     ],
-    "type": "Arme"
+    "degats": "3-6",
+    "encombrement": "8",
+    "mains": "1 main"
   },
   {
     "name": "Rapière du bretteur (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "24"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "9-16",
-    "encombrement": "7",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 3"
     ],
-    "type": "Arme"
+    "degats": "9-16",
+    "encombrement": "7",
+    "mains": "1 main"
   },
   {
     "name": "Dague en ivoire (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "24"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "9-15",
-    "encombrement": "4",
-    "mains": "1 main",
     "obtention": [
       "Gobelin Farfelu",
       "Forgeron lvl 5"
     ],
-    "type": "Arme"
+    "degats": "9-15",
+    "encombrement": "4",
+    "mains": "1 main"
   },
   {
     "name": "Cimeterre à pommeau isolant",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "33"
     },
-    "secondary": {},
     "bonuses": {
-      "Force": "+10",
-      "Résistance air": "+5"
+      "str": "+10"
     },
-    "degats": "10-18",
-    "encombrement": "7",
-    "mains": "1 main",
+    "secondary": {
+      "Résistance Air": "+5"
+    },
     "obtention": [
       "Forgeron lvl 7"
     ],
-    "type": "Arme"
+    "degats": "10-18",
+    "encombrement": "7",
+    "mains": "1 main"
   },
   {
     "name": "Cognée de bucheron (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "39"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "20-33",
-    "encombrement": "10",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 9"
     ],
-    "type": "Arme"
+    "degats": "20-33",
+    "encombrement": "10",
+    "mains": "1 main"
   },
   {
     "name": "Masse des Ogres (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "40",
       "wis": "41"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "26-42",
-    "encombrement": "9",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 13"
     ],
-    "type": "Arme"
+    "degats": "26-42",
+    "encombrement": "9",
+    "mains": "1 main"
   },
   {
     "name": "Epée courte d'Orkanis (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "53"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "24-38",
-    "encombrement": "6",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 15",
       "Prolifique (Arakas, île aux Démonicons)"
     ],
-    "type": "Arme"
+    "degats": "24-38",
+    "encombrement": "6",
+    "mains": "1 main"
   },
   {
     "name": "Fleuret",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "53"
     },
-    "secondary": {},
-    "bonuses": {},
-    "degats": "16-25",
-    "encombrement": "6",
-    "mains": "1 main",
     "obtention": [
       "Prolifique (Arakas, île aux Démonicons)"
     ],
-    "type": "Arme"
+    "degats": "16-25",
+    "encombrement": "6",
+    "mains": "1 main"
   },
   {
     "name": "Epée du froid",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "53"
     },
-    "secondary": {},
     "bonuses": {
-      "Dextérité": "+5",
-      "Force": "+5",
+      "dex": "+5",
+      "str": "+5"
+    },
+    "secondary": {
       "Attaque": "+20%",
       "Sort de glace": "aléatoire (type gel)"
     },
-    "degats": "26-43",
-    "encombrement": "6",
-    "mains": "1 main",
     "obtention": [
       "Gobelin gardien des glaces"
     ],
-    "type": "Arme"
+    "degats": "26-43",
+    "encombrement": "6",
+    "mains": "1 main"
   },
   {
     "name": "Epée du froid de main gauche (dual)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "53"
     },
-    "secondary": {},
     "bonuses": {
-      "Dextérité": "+5",
-      "Force": "+5",
+      "dex": "+5",
+      "str": "+5"
+    },
+    "secondary": {
       "Attaque": "+20%",
       "Sort de glace": "aléatoire (type gel)"
     },
-    "degats": "26-43",
-    "encombrement": "6",
-    "mains": "Main gauche",
     "obtention": [
       "Gobelin gardien des glaces"
     ],
-    "type": "Arme"
+    "degats": "26-43",
+    "encombrement": "6",
+    "mains": "Main gauche"
   },
   {
     "name": "Couteau de cuisine Nain (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "68"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "40-58",
-    "encombrement": "4",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 17"
     ],
-    "type": "Arme"
+    "degats": "40-58",
+    "encombrement": "4",
+    "mains": "1 main"
   },
   {
     "name": "Lance d'alourdissement (2 mains)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "70",
       "wis": "40",
       "int": "42"
     },
-    "secondary": {},
-    "bonuses": {},
-    "degats": "21-25",
-    "encombrement": "8",
-    "mains": "2 mains",
     "obtention": [
       "Ebéniste lvl 43"
     ],
-    "type": "Arme"
+    "degats": "21-25",
+    "encombrement": "8",
+    "mains": "2 mains"
   },
   {
     "name": "Épée d'argent (2 mains)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "71"
     },
-    "secondary": {},
-    "bonuses": {},
-    "degats": "59-92",
-    "encombrement": "8",
-    "mains": "2 mains",
     "obtention": [
       "Dragon Freidaclan (RD)"
     ],
-    "type": "Arme"
+    "degats": "59-92",
+    "encombrement": "8",
+    "mains": "2 mains"
   },
   {
     "name": "Lance d'alourdissement important (2 mains)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "80",
       "wis": "43",
       "int": "56"
     },
-    "secondary": {},
-    "bonuses": {},
-    "degats": "21-30",
-    "encombrement": "8",
-    "mains": "2 mains",
     "obtention": [
       "Ebéniste lvl 67"
     ],
-    "type": "Arme"
+    "degats": "21-30",
+    "encombrement": "8",
+    "mains": "2 mains"
   },
   {
     "name": "Sabre à crosse de nacre (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "82"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "42-66",
-    "encombrement": "8",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 19"
     ],
-    "type": "Arme"
+    "degats": "42-66",
+    "encombrement": "8",
+    "mains": "1 main"
   },
   {
     "name": "Dague d'obscurantis (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "97"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "61-87",
-    "encombrement": "4",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 27"
     ],
-    "type": "Arme"
+    "degats": "61-87",
+    "encombrement": "4",
+    "mains": "1 main"
   },
   {
     "name": "Dague d'obscurantis de main gauche (dual) (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "97"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "61-87",
-    "encombrement": "4",
-    "mains": "Main gauche",
     "obtention": [
       "Forgeron lvl 29"
     ],
-    "type": "Arme"
+    "degats": "61-87",
+    "encombrement": "4",
+    "mains": "Main gauche"
   },
   {
     "name": "Dague de jade (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "126"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "82-115",
-    "encombrement": "4",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 36"
     ],
-    "type": "Arme"
+    "degats": "82-115",
+    "encombrement": "4",
+    "mains": "1 main"
   },
   {
     "name": "Épée incrustée de glace de main gauche (dual) (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "140"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%",
       "Sort de glace": "aléatoire (type gel)"
     },
-    "degats": "74-115",
-    "encombrement": "8",
-    "mains": "Main gauche",
     "obtention": [
       "Quête du Forgeron Durikh"
     ],
-    "type": "Arme"
+    "degats": "74-115",
+    "encombrement": "8",
+    "mains": "Main gauche"
   },
   {
     "name": "Cimeterre du Zéphyr (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "155"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "87-134",
-    "encombrement": "8",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 41"
     ],
-    "type": "Arme"
+    "degats": "87-134",
+    "encombrement": "8",
+    "mains": "1 main"
   },
   {
     "name": "Cimeterre du Zéphyr de main gauche (dual) (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "155"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "87-134",
-    "encombrement": "8",
-    "mains": "Main gauche",
     "obtention": [
       "Forgeron lvl 48"
     ],
-    "type": "Arme"
+    "degats": "87-134",
+    "encombrement": "8",
+    "mains": "Main gauche"
   },
   {
     "name": "Hachette d'acier fin (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "155"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "94-145",
-    "encombrement": "10",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 49"
     ],
-    "type": "Arme"
+    "degats": "94-145",
+    "encombrement": "10",
+    "mains": "1 main"
   },
   {
     "name": "Hachette d'acier fin de main gauche (dual) (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "155"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "94-145",
-    "encombrement": "10",
-    "mains": "Main gauche",
     "obtention": [
       "Forgeron lvl 51"
     ],
-    "type": "Arme"
+    "degats": "94-145",
+    "encombrement": "10",
+    "mains": "Main gauche"
   },
   {
     "name": "Poings du pugiliste (2 mains) (+2)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "175",
       "wis": "39",
       "int": "78"
     },
-    "secondary": {},
     "bonuses": {
-      "ca": "+6",
+      "ca": "+6"
+    },
+    "secondary": {
       "Attaque": "+30%"
     },
-    "degats": "92-141",
-    "encombrement": "8",
-    "mains": "2 mains",
     "obtention": [
       "Armurier lvl 78"
     ],
-    "type": "Arme"
+    "degats": "92-141",
+    "encombrement": "8",
+    "mains": "2 mains"
   },
   {
     "name": "Dague de l'assassin de main gauche (dual) (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "184"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "100-153",
-    "encombrement": "5",
-    "mains": "Main gauche",
     "obtention": [
       "Forgeron lvl 53"
     ],
-    "type": "Arme"
+    "degats": "100-153",
+    "encombrement": "5",
+    "mains": "Main gauche"
   },
   {
     "name": "Hache de guerre Baatorienne (2 mains) (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "184"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "137-209",
-    "encombrement": "13",
-    "mains": "2 mains",
     "obtention": [
       "Forgeron lvl 55"
     ],
-    "type": "Arme"
+    "degats": "137-209",
+    "encombrement": "13",
+    "mains": "2 mains"
   },
   {
     "name": "Epée de la Rose Noire de main gauche (dual) (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "242"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "151-230",
-    "encombrement": "10",
-    "mains": "Main gauche",
     "obtention": [
       "Forgeron lvl 57"
     ],
-    "type": "Arme"
+    "degats": "151-230",
+    "encombrement": "10",
+    "mains": "Main gauche"
   },
   {
     "name": "Lame vipérine de main gauche (dual) (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "300"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+10%",
       "Ambidextrie": "+?%"
     },
-    "degats": "151-230",
-    "encombrement": "5",
-    "mains": "Main gauche",
     "obtention": [
       "Forgeron lvl 60"
     ],
-    "type": "Arme"
+    "degats": "151-230",
+    "encombrement": "5",
+    "mains": "Main gauche"
   },
   {
     "name": "Kandjar de destinée",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "317"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Sort téléportation adverse": "aléatoire"
     },
-    "degats": "127-178",
-    "encombrement": "6",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 61"
     ],
-    "type": "Arme"
+    "degats": "127-178",
+    "encombrement": "6",
+    "mains": "1 main"
   },
   {
     "name": "Épée de glace incrustée de saphir de main gauche (dual) (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "320"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%",
-      "Puissance eau": "+25",
-      "Résistance eau": "+20",
-      "Résistance feu": "-15"
+      "Puissance Eau": "+25",
+      "Résistance Eau": "+20",
+      "Résistance Feu": "-15"
     },
-    "degats": "181-275",
-    "encombrement": "10",
-    "mains": "Main gauche",
     "obtention": [
       "Drop des ZartGax (Niève, RD)"
     ],
-    "type": "Arme"
+    "degats": "181-275",
+    "encombrement": "10",
+    "mains": "Main gauche"
   },
   {
     "name": "Lame enchantée (+2)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "320",
       "dex": "40",
       "attack": "800"
     },
-    "secondary": {},
     "bonuses": {
+      "str": "+25",
+      "end": "+25"
+    },
+    "secondary": {
       "Attaque": "+30%",
-      "Force": "+25",
-      "Endurance": "+25",
       "Sort de feu": "aléatoire (type flamme)",
       "Résistances (sauf feu)": "-10"
     },
-    "degats": "142-228",
-    "encombrement": "0",
-    "mains": "1 main",
     "obtention": [
       "Drop Draconigus invoqué majeur (désert RD)",
       "Différents coffres de Drake Island"
     ],
-    "type": "Arme"
+    "degats": "142-228",
+    "encombrement": "0",
+    "mains": "1 main"
   },
   {
     "name": "Lame enchantée de main gauche (+2)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "320",
       "dex": "40",
       "attack": "800"
     },
-    "secondary": {},
     "bonuses": {
+      "str": "+25",
+      "end": "+25"
+    },
+    "secondary": {
       "Attaque": "+30%",
-      "Force": "+25",
-      "Endurance": "+25",
       "Sort de feu": "aléatoire (type flamme)",
       "Résistances (sauf feu)": "-10"
     },
-    "degats": "142-228",
-    "encombrement": "0",
-    "mains": "Main gauche",
     "obtention": [
       "Forgeron lvl 65"
     ],
-    "type": "Arme"
+    "degats": "142-228",
+    "encombrement": "0",
+    "mains": "Main gauche"
   },
   {
     "name": "Fleuret de défaillance",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "324",
       "int": "105",
       "wis": "19"
     },
-    "secondary": {},
-    "bonuses": {},
-    "degats": "87-131",
-    "encombrement": "7",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 63"
     ],
-    "type": "Arme"
+    "degats": "87-131",
+    "encombrement": "7",
+    "mains": "1 main"
   },
   {
     "name": "Lame de perdition",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "372"
     },
-    "secondary": {},
-    "bonuses": {},
-    "degats": "122-190",
-    "encombrement": "5",
-    "mains": "1 main",
     "obtention": [
       "Nyctos (maison de RW) - 360.269 po"
     ],
-    "type": "Arme"
+    "degats": "122-190",
+    "encombrement": "5",
+    "mains": "1 main"
   },
   {
     "name": "Lame de perdition enchantée (+1)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "372"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+15%"
     },
-    "degats": "140-218",
-    "encombrement": "5",
-    "mains": "1 main",
     "obtention": [
       "Regynia (à l'Est des douves de RW) - 1.080.807 po"
     ],
-    "type": "Arme"
+    "degats": "140-218",
+    "encombrement": "5",
+    "mains": "1 main"
   },
   {
     "name": "Lame de perdition runique (+2)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "372"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+30%"
     },
-    "degats": "158-247",
-    "encombrement": "5",
-    "mains": "1 main",
     "obtention": [
       "Ayanis (NO sous-sol métier RW) - 3.602.690 po"
     ],
-    "type": "Arme"
+    "degats": "158-247",
+    "encombrement": "5",
+    "mains": "1 main"
   },
   {
     "name": "Eventreuse (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "372"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "183-285",
-    "encombrement": "5",
-    "mains": "1 main",
     "obtention": [
       "Sphodros (montagnes Est RW) - 14.410.767 po"
     ],
-    "type": "Arme"
+    "degats": "183-285",
+    "encombrement": "5",
+    "mains": "1 main"
   },
   {
     "name": "Eventreuse de main gauche (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "372"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "183-285",
-    "encombrement": "5",
-    "mains": "Main gauche",
     "obtention": [
       "Forgeron lvl 67"
     ],
-    "type": "Arme"
+    "degats": "183-285",
+    "encombrement": "5",
+    "mains": "Main gauche"
   },
   {
     "name": "Éventreuse étoilée (+4) [obsolète]",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "372"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+60%",
       "Coup Puissant": "+10",
       "Coup Assommant": "+10",
-      "Transpercer Armure": "+10"
+      "Transpercer l'Armure": "+10"
     },
-    "degats": "235-286",
-    "encombrement": "5",
-    "mains": "1 main",
     "obtention": [
       "N'existe plus depuis la Maj de l'or"
     ],
-    "type": "Arme"
+    "degats": "235-286",
+    "encombrement": "5",
+    "mains": "1 main"
   },
   {
     "name": "Épée Batarde d'Adamantium (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "387"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "211-331",
-    "encombrement": "10",
-    "mains": "1 main",
     "obtention": [
       "Drop du Dragon LivoxDrinn (SH)"
     ],
-    "type": "Arme"
+    "degats": "211-331",
+    "encombrement": "10",
+    "mains": "1 main"
   },
   {
     "name": "Cimeterre de Rubis (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "459"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "212-339",
-    "encombrement": "8",
-    "mains": "1 main",
     "obtention": [
       "Quête de l'île de lune"
     ],
-    "type": "Arme"
+    "degats": "212-339",
+    "encombrement": "8",
+    "mains": "1 main"
   },
   {
     "name": "Cimeterre de Rubis de main gauche (dual) (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "459"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "212-339",
-    "encombrement": "8",
-    "mains": "Main gauche",
     "obtention": [
       "Forgeron lvl 72"
     ],
-    "type": "Arme"
+    "degats": "212-339",
+    "encombrement": "8",
+    "mains": "Main gauche"
   },
   {
     "name": "Epée à deux mains en titane (+2)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "474"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+30%",
-      "Coup Critique": "+?%"
+      "Coup critique": "+?%"
     },
-    "degats": "243-391",
-    "encombrement": "12",
-    "mains": "2 mains",
     "obtention": [
       "Forgeron lvl 73"
     ],
-    "type": "Arme"
+    "degats": "243-391",
+    "encombrement": "12",
+    "mains": "2 mains"
   },
   {
     "name": "Épée de Diamants (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "532"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "249-406",
-    "encombrement": "10",
-    "mains": "1 main",
     "obtention": [
       "Sphodros (montagnes Est RW) - 29.863.487 po"
     ],
-    "type": "Arme"
+    "degats": "249-406",
+    "encombrement": "10",
+    "mains": "1 main"
   },
   {
     "name": "Épée de Diamants de main gauche (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "532"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "249-406",
-    "encombrement": "10",
-    "mains": "Main gauche",
     "obtention": [
       "Forgeron lvl 77"
     ],
-    "type": "Arme"
+    "degats": "249-406",
+    "encombrement": "10",
+    "mains": "Main gauche"
   },
   {
     "name": "Epée de Liridell (2 mains) (+4)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "590"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+60%",
       "Coup Puissant": "+10",
       "Coup Assommant": "+10",
-      "Transpercer Armure": "+10"
+      "Transpercer l'Armure": "+10"
     },
-    "degats": "317-524",
-    "encombrement": "14",
-    "mains": "2 mains",
     "obtention": [
       "Drop du dragon Liridell (Est désert DI)"
     ],
-    "type": "Arme"
+    "degats": "317-524",
+    "encombrement": "14",
+    "mains": "2 mains"
   },
   {
     "name": "Hache de Liridell (2 mains) (+4)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "590"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+60%",
       "Immobilisation": "+10",
       "Coup Assommant": "+10",
-      "Transpercer Armure": "+10"
+      "Transpercer l'Armure": "+10"
     },
-    "degats": "423-699",
-    "encombrement": "16",
-    "mains": "2 mains",
     "obtention": [
       "Drop du dragon Liridell (désert DI)"
     ],
-    "type": "Arme"
+    "degats": "423-699",
+    "encombrement": "16",
+    "mains": "2 mains"
   },
   {
     "name": "Cimeterre des Ancêtres",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "662"
     },
-    "secondary": {},
-    "bonuses": {},
-    "degats": "169-281",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Nyctos (maison de RW) - 1.064.906 po"
     ],
-    "type": "Arme"
+    "degats": "169-281",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Cimeterre des Ancêtres Enchanté (+1)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "662"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+15%"
     },
-    "degats": "194-324",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Regynia (à l'Est des douves de RW) - 3.194.718 po"
     ],
-    "type": "Arme"
+    "degats": "194-324",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Cimeterre des Ancêtres Runique (+2)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "662"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+30%"
     },
-    "degats": "219-366",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Ayanis (sous-sol métiers RW, NO) - 10.649.060 po"
     ],
-    "type": "Arme"
+    "degats": "219-366",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Cimeterre incrusté d'émeraudes (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "662"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "253-422",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Sphodros (montagnes Est RW) - 42.596.240 po"
     ],
-    "type": "Arme"
+    "degats": "253-422",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Cimeterre incrusté d'émeraudes de main gauche (dual) (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "662"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "253-422",
-    "encombrement": "",
-    "mains": "Main gauche",
     "obtention": [
       "Forgeron lvl 79"
     ],
-    "type": "Arme"
+    "degats": "253-422",
+    "encombrement": "",
+    "mains": "Main gauche"
   },
   {
     "name": "Epée bâtarde des Ancêtres",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "677"
     },
-    "secondary": {},
-    "bonuses": {},
-    "degats": "188-316",
-    "encombrement": "10",
-    "mains": "1 main",
     "obtention": [
       "Nyctos (maison de RW) - 1.166.209 po"
     ],
-    "type": "Arme"
+    "degats": "188-316",
+    "encombrement": "10",
+    "mains": "1 main"
   },
   {
     "name": "Epée bâtarde des Ancêtres Enchantée (+1)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "677"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+15%"
     },
-    "degats": "217-363",
-    "encombrement": "10",
-    "mains": "1 main",
     "obtention": [
       "Regynia (à l'Est des douves de RW) - 3.498.627 po"
     ],
-    "type": "Arme"
+    "degats": "217-363",
+    "encombrement": "10",
+    "mains": "1 main"
   },
   {
     "name": "Epée bâtarde des Ancêtres Runique (+2)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "677"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+30%"
     },
-    "degats": "245-411",
-    "encombrement": "10",
-    "mains": "1 main",
     "obtention": [
       "Ayanis (sous-sol métiers RW, NO) - 11.662.090 po"
     ],
-    "type": "Arme"
+    "degats": "245-411",
+    "encombrement": "10",
+    "mains": "1 main"
   },
   {
     "name": "Épée des braves (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "677"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "286-481",
-    "encombrement": "10",
-    "mains": "1 main",
     "obtention": [
       "Sphodros (montagnes Est RW) - 46.648.360 po",
       "Rilouf (SH 780,1080) - 54.000.000 po"
     ],
-    "type": "Arme"
+    "degats": "286-481",
+    "encombrement": "10",
+    "mains": "1 main"
   },
   {
     "name": "Épée des braves de main gauche (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "677"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "286-481",
-    "encombrement": "10",
-    "mains": "Main gauche",
     "obtention": [
       "Forgeron lvl 81"
     ],
-    "type": "Arme"
+    "degats": "286-481",
+    "encombrement": "10",
+    "mains": "Main gauche"
   },
   {
     "name": "Épée à deux mains des ancêtres",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "691"
     },
-    "secondary": {},
-    "bonuses": {},
-    "degats": "235-397",
-    "encombrement": "",
-    "mains": "2 mains",
     "obtention": [
       "Nyctos (maison de RW) - 1.326.793 po"
     ],
-    "type": "Arme"
+    "degats": "235-397",
+    "encombrement": "",
+    "mains": "2 mains"
   },
   {
     "name": "Épée à deux mains des ancêtres Enchantée (+1)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "691"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+15%"
     },
-    "degats": "270-457",
-    "encombrement": "",
-    "mains": "2 mains",
     "obtention": [
       "Regynia (à l'Est des douves de RW) - 3.980.379 po"
     ],
-    "type": "Arme"
+    "degats": "270-457",
+    "encombrement": "",
+    "mains": "2 mains"
   },
   {
     "name": "Épée à deux mains des ancêtres Runique (+2)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "691"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+30%"
     },
-    "degats": "306-516",
-    "encombrement": "",
-    "mains": "2 mains",
     "obtention": [
       "Ayanis (sous-sol métiers RW, NO) - 13.267.930 po"
     ],
-    "type": "Arme"
+    "degats": "306-516",
+    "encombrement": "",
+    "mains": "2 mains"
   },
   {
     "name": "Lame des Chimères (2 mains) (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "706"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "353-596",
-    "encombrement": "12",
-    "mains": "2 mains",
     "obtention": [
       "Sphodros (montagnes Est RW) - 53.071.720 po"
     ],
-    "type": "Arme"
+    "degats": "353-596",
+    "encombrement": "12",
+    "mains": "2 mains"
   },
   {
     "name": "Hache large des Ancêtres (2 mains)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "735"
     },
-    "secondary": {},
-    "bonuses": {},
-    "degats": "322-546",
-    "encombrement": "14",
-    "mains": "2 mains",
     "obtention": [
       "Nyctos (maison de RW) - 1.439.601 po"
     ],
-    "type": "Arme"
+    "degats": "322-546",
+    "encombrement": "14",
+    "mains": "2 mains"
   },
   {
     "name": "Hache large des Ancêtres Enchantée (2 mains) (+1)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "735"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+15%"
     },
-    "degats": "370-627",
-    "encombrement": "14",
-    "mains": "2 mains",
     "obtention": [
       "Regynia (à l'Est des douves de RW) - 4.318.803 po"
     ],
-    "type": "Arme"
+    "degats": "370-627",
+    "encombrement": "14",
+    "mains": "2 mains"
   },
   {
     "name": "Hache large des Ancêtres Runique (2 mains) (+2)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "735"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+30%"
     },
-    "degats": "418-709",
-    "encombrement": "14",
-    "mains": "2 mains",
     "obtention": [
       "Ayanis (sous-sol métiers RW, NO) - 14.396.010 po"
     ],
-    "type": "Arme"
+    "degats": "418-709",
+    "encombrement": "14",
+    "mains": "2 mains"
   },
   {
     "name": "Écimeuse (2 mains) (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "735"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "483-819",
-    "encombrement": "14",
-    "mains": "2 mains",
     "obtention": [
       "Sphodros (montagnes Est RW) - 57.584.040 po"
     ],
-    "type": "Arme"
+    "degats": "483-819",
+    "encombrement": "14",
+    "mains": "2 mains"
   },
   {
     "name": "Écimeuse incrustée d'étoiles (2 mains) (+4)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "735"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+60%",
       "Coup Puissant": "+10",
-      "Transpercer Armure": "+10",
+      "Transpercer l'Armure": "+10",
       "Immobilisation": "+10"
     },
-    "degats": "651-818",
-    "encombrement": "14",
-    "mains": "2 mains",
     "obtention": [
       "Rilouf (SH 780,1080) - 88.000.000 po"
     ],
-    "type": "Arme"
+    "degats": "651-818",
+    "encombrement": "14",
+    "mains": "2 mains"
   },
   {
     "name": "Cimeterre en métrolite doré (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "807"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "282-483",
-    "encombrement": "8",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 84"
     ],
-    "type": "Arme"
+    "degats": "282-483",
+    "encombrement": "8",
+    "mains": "1 main"
   },
   {
     "name": "Epée une main et demi vibrante (+3) (lente)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "822"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "324-556",
-    "encombrement": "10",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 85"
     ],
-    "type": "Arme"
+    "degats": "324-556",
+    "encombrement": "10",
+    "mains": "1 main"
   },
   {
     "name": "Lame de l'infatiguable (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "836"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "393-677",
-    "encombrement": "12",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 87"
     ],
-    "type": "Arme"
+    "degats": "393-677",
+    "encombrement": "12",
+    "mains": "1 main"
   },
   {
     "name": "Cimeterre en métrolite robuste (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "880"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "298-516",
-    "encombrement": "8",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 89"
     ],
-    "type": "Arme"
+    "degats": "298-516",
+    "encombrement": "8",
+    "mains": "1 main"
   },
   {
     "name": "Exterminatrice (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "894"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "343-594",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 91"
     ],
-    "type": "Arme"
+    "degats": "343-594",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Glaive terrestre (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "894"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%",
-      "Puissance terre": "bonus"
+      "Puissance Terre": "bonus"
     },
-    "degats": "",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 91"
     ],
-    "type": "Arme"
+    "degats": "",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Glaive de givre (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "894"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%",
-      "Puissance eau": "bonus"
+      "Puissance Eau": "bonus"
     },
-    "degats": "",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 91"
     ],
-    "type": "Arme"
+    "degats": "",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Glaive virevoltant (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "894"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%",
-      "Puissance air": "bonus"
+      "Puissance Air": "bonus"
     },
-    "degats": "",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 91"
     ],
-    "type": "Arme"
+    "degats": "",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Glaive flamboyant (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "894"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%",
-      "Puissance feu": "bonus"
+      "Puissance Feu": "bonus"
     },
-    "degats": "",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 91"
     ],
-    "type": "Arme"
+    "degats": "",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Claymore d'extinction (2 mains) (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "909"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "",
-    "encombrement": "",
-    "mains": "2 mains",
     "obtention": [
       "Forgeron lvl 93"
     ],
-    "type": "Arme"
+    "degats": "",
+    "encombrement": "",
+    "mains": "2 mains"
   },
   {
     "name": "Claymore d'extinction étoilée (2 mains) (+4)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "909"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+60%"
     },
-    "degats": "",
-    "encombrement": "",
-    "mains": "2 mains",
     "obtention": [
       "Forgeron lvl 93"
     ],
-    "type": "Arme"
+    "degats": "",
+    "encombrement": "",
+    "mains": "2 mains"
   },
   {
     "name": "Hallebarde terrestre (2 mains) (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "909"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%",
-      "Puissance terre": "bonus"
+      "Puissance Terre": "bonus"
     },
-    "degats": "",
-    "encombrement": "",
-    "mains": "2 mains",
     "obtention": [
       "Forgeron lvl 93"
     ],
-    "type": "Arme"
+    "degats": "",
+    "encombrement": "",
+    "mains": "2 mains"
   },
   {
     "name": "Hallebarde de givre (2 mains) (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "909"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%",
-      "Puissance eau": "bonus"
+      "Puissance Eau": "bonus"
     },
-    "degats": "",
-    "encombrement": "",
-    "mains": "2 mains",
     "obtention": [
       "Forgeron lvl 93"
     ],
-    "type": "Arme"
+    "degats": "",
+    "encombrement": "",
+    "mains": "2 mains"
   },
   {
     "name": "Hallebarde virevoltante (2 mains) (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "909"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%",
-      "Puissance air": "bonus"
+      "Puissance Air": "bonus"
     },
-    "degats": "",
-    "encombrement": "",
-    "mains": "2 mains",
     "obtention": [
       "Forgeron lvl 93"
     ],
-    "type": "Arme"
+    "degats": "",
+    "encombrement": "",
+    "mains": "2 mains"
   },
   {
     "name": "Hallebarde flamboyante (2 mains) (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "909"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%",
-      "Puissance feu": "bonus"
+      "Puissance Feu": "bonus"
     },
-    "degats": "",
-    "encombrement": "",
-    "mains": "2 mains",
     "obtention": [
       "Forgeron lvl 93"
     ],
-    "type": "Arme"
+    "degats": "",
+    "encombrement": "",
+    "mains": "2 mains"
   },
   {
     "name": "Fauchon en acier frappé (+2)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "1025"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+30%"
     },
+    "obtention": [],
     "degats": "",
     "encombrement": "",
-    "mains": "? mains",
-    "obtention": [],
-    "type": "Arme"
+    "mains": "? mains"
   },
   {
     "name": "Flamberge ancestrale (2 mains) (+3)",
     "quantity": 1,
+    "type": "Arme",
     "prerequisites": {
       "str": "1050"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
+    "obtention": [],
     "degats": "",
     "encombrement": "",
-    "mains": "2 mains",
-    "obtention": [],
-    "type": "Arme"
+    "mains": "2 mains"
   }
 ]

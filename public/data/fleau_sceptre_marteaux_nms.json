@@ -2,1056 +2,1013 @@
   {
     "name": "Bâton du maudit (deux mains)",
     "quantity": 1,
+    "type": "Bâton",
     "prerequisites": {
       "str": "22",
       "int": "72",
       "wis": "18"
     },
-    "secondary": {},
     "bonuses": {
-      "Intelligence": "+10",
+      "int": "+10"
+    },
+    "secondary": {
       "Attaque": "+30%"
     },
-    "degats": "14-23",
-    "encombrement": "11",
-    "mains": "2 mains",
     "obtention": [
       "Ebéniste lvl 38"
     ],
-    "type": "Bâton"
+    "degats": "14-23",
+    "encombrement": "11",
+    "mains": "2 mains"
   },
   {
     "name": "Bâton des ombres (deux mains)",
     "quantity": 1,
+    "type": "Bâton",
     "prerequisites": {
       "str": "22",
       "int": "62",
       "wis": "13"
     },
-    "secondary": {},
-    "bonuses": {
-      "Puissance nécro": "+15",
-      "Puissance lumière": "-10",
-      "Résistance terre": "-5",
-      "Résistance air": "-5",
-      "Résistance eau": "-5",
-      "Résistance feu": "-5"
+    "secondary": {
+      "Puissance Nécro": "+15",
+      "Puissance Lumière": "-10",
+      "Résistance Terre": "-5",
+      "Résistance Air": "-5",
+      "Résistance Eau": "-5",
+      "Résistance Feu": "-5"
     },
-    "degats": "16-25",
-    "encombrement": "4",
-    "mains": "2 mains",
     "obtention": [
       "Ebéniste lvl 55"
     ],
-    "type": "Bâton"
+    "degats": "16-25",
+    "encombrement": "4",
+    "mains": "2 mains"
   },
   {
     "name": "Bâton de dilapidation (deux mains)",
     "quantity": 1,
+    "type": "Bâton",
     "prerequisites": {
       "str": "22",
       "int": "58",
       "wis": "39",
       "dex": "34"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Vol d'or adverse": "5 à 10% aléatoire"
     },
-    "degats": "11-20",
-    "encombrement": "4",
-    "mains": "2 mains",
     "obtention": [
       "Ebéniste lvl 61"
     ],
-    "type": "Bâton"
+    "degats": "11-20",
+    "encombrement": "4",
+    "mains": "2 mains"
   },
   {
     "name": "Bâton de déprédation (deux mains)",
     "quantity": 1,
+    "type": "Bâton",
     "prerequisites": {
       "str": "24",
       "int": "65",
       "wis": "52",
       "dex": "43"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Vol d'or adverse": "10 à 15% aléatoire"
     },
-    "degats": "16-35",
-    "encombrement": "8",
-    "mains": "2 mains",
     "obtention": [
       "Ebéniste lvl 98"
     ],
-    "type": "Bâton"
+    "degats": "16-35",
+    "encombrement": "8",
+    "mains": "2 mains"
   },
   {
     "name": "Sceptre thanataire (deux mains)",
     "quantity": 1,
+    "type": "Sceptre",
     "prerequisites": {},
-    "secondary": {},
     "bonuses": {
-      "Intelligence": "+20"
+      "int": "+20"
     },
-    "degats": "??",
-    "encombrement": "8",
-    "mains": "2 mains",
     "obtention": [
       "Quête des livres de chance"
     ],
-    "type": "Sceptre"
+    "degats": "??",
+    "encombrement": "8",
+    "mains": "2 mains"
   },
   {
     "name": "Sceptre de résistance (2 mains)",
     "quantity": 1,
+    "type": "Sceptre",
     "prerequisites": {
       "str": "16",
       "wis": "39",
       "int": "39"
     },
-    "secondary": {},
     "bonuses": {
-      "ca": "+3",
-      "Résistance terre": "+3",
-      "Résistance air": "+3",
-      "Résistance eau": "+3",
-      "Résistance feu": "+3",
+      "ca": "+3"
+    },
+    "secondary": {
+      "Résistance Terre": "+3",
+      "Résistance Air": "+3",
+      "Résistance Eau": "+3",
+      "Résistance Feu": "+3",
       "Attaque": "+10%"
     },
-    "degats": "14-23",
-    "encombrement": "11",
-    "mains": "2 mains",
     "obtention": [
       "Forgeron lvl 39"
     ],
-    "type": "Sceptre"
+    "degats": "14-23",
+    "encombrement": "11",
+    "mains": "2 mains"
   },
   {
     "name": "Sceptre de sagesse (2 mains)",
     "quantity": 1,
+    "type": "Sceptre",
     "prerequisites": {
       "str": "16",
       "wis": "48"
     },
-    "secondary": {},
     "bonuses": {
-      "Sagesse": "+15",
+      "wis": "+15"
+    },
+    "secondary": {
       "Attaque": "+30%"
     },
-    "degats": "14-23",
-    "encombrement": "11",
-    "mains": "2 mains",
     "obtention": [
       "Forgeron lvl 31"
     ],
-    "type": "Sceptre"
+    "degats": "14-23",
+    "encombrement": "11",
+    "mains": "2 mains"
   },
   {
     "name": "Sceptre d'intelligence (2 mains)",
     "quantity": 1,
+    "type": "Sceptre",
     "prerequisites": {
       "str": "16",
       "int": "48"
     },
-    "secondary": {},
     "bonuses": {
-      "Intelligence": "+15",
+      "int": "+15"
+    },
+    "secondary": {
       "Méditation": "+10"
     },
-    "degats": "14-23",
-    "encombrement": "11",
-    "mains": "2 mains",
     "obtention": [
       "Forgeron lvl 33"
     ],
-    "type": "Sceptre"
+    "degats": "14-23",
+    "encombrement": "11",
+    "mains": "2 mains"
   },
   {
     "name": "Sceptre de drain de mana (2 mains)",
     "quantity": 1,
+    "type": "Sceptre",
     "prerequisites": {
       "str": "26",
       "end": "47",
       "int": "87",
       "wis": "62"
     },
-    "secondary": {},
-    "bonuses": {
-      "Puissance nécro": "+6",
+    "secondary": {
+      "Puissance Nécro": "+6",
       "Drain de mana": "aléatoire"
     },
-    "degats": "14-25",
-    "encombrement": "11",
-    "mains": "2 mains",
     "obtention": [
       "Ebéniste lvl 50"
     ],
-    "type": "Sceptre"
+    "degats": "14-25",
+    "encombrement": "11",
+    "mains": "2 mains"
   },
   {
     "name": "Sceptre de drain de vie (2 mains)",
     "quantity": 1,
+    "type": "Sceptre",
     "prerequisites": {
       "str": "26",
       "end": "47",
       "int": "134",
       "wis": "15"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+30%",
       "Drain de vie": "aléatoire"
     },
-    "degats": "14-25",
-    "encombrement": "11",
-    "mains": "2 mains",
     "obtention": [
       "Ebéniste lvl 62"
     ],
-    "type": "Sceptre"
+    "degats": "14-25",
+    "encombrement": "11",
+    "mains": "2 mains"
   },
   {
     "name": "Sceptre de luminescence (2 mains)",
     "quantity": 1,
+    "type": "Sceptre",
     "prerequisites": {
       "str": "28",
       "end": "47",
       "int": "13",
       "wis": "62"
     },
-    "secondary": {},
-    "bonuses": {
-      "Puissance lumière": "+15",
+    "secondary": {
+      "Puissance Lumière": "+15",
       "Rayon (lumière permanente)": "+100",
-      "Puissance nécro": "-10",
-      "Résistance terre": "-5",
-      "Résistance air": "-5",
-      "Résistance eau": "-5",
-      "Résistance feu": "-5"
+      "Puissance Nécro": "-10",
+      "Résistance Terre": "-5",
+      "Résistance Air": "-5",
+      "Résistance Eau": "-5",
+      "Résistance Feu": "-5"
     },
-    "degats": "16-25",
-    "encombrement": "4",
-    "mains": "2 mains",
     "obtention": [
       "Ebéniste lvl 52"
     ],
-    "type": "Sceptre"
+    "degats": "16-25",
+    "encombrement": "4",
+    "mains": "2 mains"
   },
   {
     "name": "Sceptre arrondi de Zlüg (une main)",
     "quantity": 1,
+    "type": "Sceptre",
     "prerequisites": {
       "str": "35",
       "end": "55",
       "wis": "60",
       "int": "60"
     },
-    "secondary": {},
-    "bonuses": {},
-    "degats": "36-55",
-    "encombrement": "8",
-    "mains": "1 main",
     "obtention": [
       "Quête des livres de chance"
     ],
-    "type": "Sceptre"
+    "degats": "36-55",
+    "encombrement": "8",
+    "mains": "1 main"
   },
   {
     "name": "Sceptre des abysses (2 mains)",
     "quantity": 1,
+    "type": "Sceptre",
     "prerequisites": {
       "str": "43",
       "wis": "60",
       "int": "329"
     },
-    "secondary": {},
     "bonuses": {
       "ca": "+5",
-      "Puissance nécro": "+20",
-      "Résistance nécro": "+10",
-      "Intelligence": "+15",
-      "Résistance lumière": "-20",
-      "Résistance terre": "-10",
-      "Résistance eau": "-10",
-      "Résistance feu": "-10",
-      "Résistance air": "-10"
+      "int": "+15"
     },
-    "degats": "105-161",
-    "encombrement": "8",
-    "mains": "2 mains",
+    "secondary": {
+      "Puissance Nécro": "+20",
+      "Résistance Nécro": "+10",
+      "Résistance Lumière": "-20",
+      "Résistance Terre": "-10",
+      "Résistance Eau": "-10",
+      "Résistance Feu": "-10",
+      "Résistance Air": "-10"
+    },
     "obtention": [
       "Quête du Sceptre des Abysses"
     ],
-    "type": "Sceptre"
+    "degats": "105-161",
+    "encombrement": "8",
+    "mains": "2 mains"
   },
   {
     "name": "Sceptre de Ravage (2 mains)",
     "quantity": 1,
+    "type": "Sceptre",
     "prerequisites": {
       "str": "68",
       "wis": "603",
       "int": "21"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Puissance Terre": "+30",
       "Puissance Eau": "-15",
-      "Résistance terre": "-10",
-      "Résistance eau": "-10",
-      "Résistance feu": "-10",
-      "Résistance air": "-10"
+      "Résistance Terre": "-10",
+      "Résistance Eau": "-10",
+      "Résistance Feu": "-10",
+      "Résistance Air": "-10"
     },
-    "degats": "36-55",
-    "encombrement": "11",
-    "mains": "2 mains",
     "obtention": [
       "Ebéniste lvl 89"
     ],
-    "type": "Sceptre"
+    "degats": "36-55",
+    "encombrement": "11",
+    "mains": "2 mains"
   },
   {
     "name": "Sceptre des Arts occultes (2 mains)",
     "quantity": 1,
+    "type": "Sceptre",
     "prerequisites": {
       "str": "68",
       "wis": "23",
       "int": "715"
     },
     "secondary": {
-      "Coup Critique": "+25"
-    },
-    "bonuses": {
       "Puissance Nécro": "+30",
-      "Résistance terre": "-10",
-      "Résistance eau": "-10",
-      "Résistance feu": "-10",
-      "Résistance air": "-10"
+      "Résistance Terre": "-10",
+      "Résistance Eau": "-10",
+      "Résistance Feu": "-10",
+      "Résistance Air": "-10",
+      "Coup critique": "+25"
     },
-    "degats": "36-55",
-    "encombrement": "11",
-    "mains": "2 mains",
     "obtention": [
       "Ebéniste lvl 103"
     ],
-    "type": "Sceptre"
+    "degats": "36-55",
+    "encombrement": "11",
+    "mains": "2 mains"
   },
   {
     "name": "Sceptre de Déflagration (2 mains)",
     "quantity": 1,
+    "type": "Sceptre",
     "prerequisites": {
       "str": "68",
       "wis": "21",
       "int": "603"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Puissance Feu": "+30",
       "Puissance Eau": "-15",
-      "Résistance terre": "-10",
-      "Résistance eau": "-10",
-      "Résistance feu": "-10",
-      "Résistance air": "-10"
+      "Résistance Terre": "-10",
+      "Résistance Eau": "-10",
+      "Résistance Feu": "-10",
+      "Résistance Air": "-10"
     },
-    "degats": "36-55",
-    "encombrement": "11",
-    "mains": "2 mains",
     "obtention": [
       "Ebéniste lvl 85"
     ],
-    "type": "Sceptre"
+    "degats": "36-55",
+    "encombrement": "11",
+    "mains": "2 mains"
   },
   {
     "name": "Sceptre de Déferlante (2 mains)",
     "quantity": 1,
+    "type": "Sceptre",
     "prerequisites": {
       "str": "68",
       "wis": "21",
       "int": "603"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Puissance Eau": "+30",
       "Puissance Terre": "-15",
-      "Résistance terre": "-10",
-      "Résistance eau": "-10",
-      "Résistance feu": "-10",
-      "Résistance air": "-10"
+      "Résistance Terre": "-10",
+      "Résistance Eau": "-10",
+      "Résistance Feu": "-10",
+      "Résistance Air": "-10"
     },
-    "degats": "36-55",
-    "encombrement": "11",
-    "mains": "2 mains",
     "obtention": [
       "Ebéniste lvl 86"
     ],
-    "type": "Sceptre"
+    "degats": "36-55",
+    "encombrement": "11",
+    "mains": "2 mains"
   },
   {
     "name": "Sceptre de Rafale (2 mains)",
     "quantity": 1,
+    "type": "Sceptre",
     "prerequisites": {
       "str": "68",
       "wis": "314",
       "int": "310"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Puissance Air": "+30",
       "Puissance Terre": "-15",
-      "Résistance terre": "-10",
-      "Résistance eau": "-10",
-      "Résistance feu": "-10",
-      "Résistance air": "-10"
+      "Résistance Terre": "-10",
+      "Résistance Eau": "-10",
+      "Résistance Feu": "-10",
+      "Résistance Air": "-10"
     },
-    "degats": "36-55",
-    "encombrement": "11",
-    "mains": "2 mains",
     "obtention": [
       "Ebéniste lvl 88"
     ],
-    "type": "Sceptre"
+    "degats": "36-55",
+    "encombrement": "11",
+    "mains": "2 mains"
   },
   {
     "name": "Sceptre de L'ascète (2 mains)",
     "quantity": 1,
+    "type": "Sceptre",
     "prerequisites": {
       "str": "69",
       "wis": "715",
       "int": "23"
     },
     "secondary": {
+      "Puissance Lumière": "+30",
+      "Résistance Terre": "-10",
+      "Résistance Eau": "-10",
+      "Résistance Feu": "-10",
+      "Résistance Air": "-10",
       "Retour à la vie": "+25"
     },
-    "bonuses": {
-      "Puissance Lumière": "+30",
-      "Résistance terre": "-10",
-      "Résistance eau": "-10",
-      "Résistance feu": "-10",
-      "Résistance air": "-10"
-    },
-    "degats": "36-55",
-    "encombrement": "11",
-    "mains": "2 mains",
     "obtention": [
       "Ebéniste lvl 101"
     ],
-    "type": "Sceptre"
+    "degats": "36-55",
+    "encombrement": "11",
+    "mains": "2 mains"
   },
   {
     "name": "Sceptre d'espoir (2 mains)",
     "quantity": 1,
+    "type": "Sceptre",
     "prerequisites": {
       "str": "110",
       "wis": "131",
       "int": "23"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Puissance Lumière": "+20",
       "Attaque": "+30%"
     },
+    "obtention": [],
     "degats": "72-111",
     "encombrement": "10",
-    "mains": "2 mains",
-    "obtention": [],
-    "type": "Sceptre"
+    "mains": "2 mains"
   },
   {
     "name": "Fléau enchanté",
     "quantity": 1,
+    "type": "Fléau",
     "prerequisites": {
       "str": "270",
       "dex": "40",
       "wis": "248",
       "attack": "500"
     },
-    "secondary": {},
     "bonuses": {
-      "Force": "+15",
-      "Sagesse": "+15",
+      "str": "+15",
+      "wis": "+15",
+      "end": "+25"
+    },
+    "secondary": {
       "Puissance Feu": "+10",
       "Attaque": "+20%",
-      "Endurance": "+25",
-      "Résistance nécro": "-15",
-      "Résistance lumière": "-15",
-      "Résistance eau": "-15"
+      "Résistance Nécro": "-15",
+      "Résistance Lumière": "-15",
+      "Résistance Eau": "-15"
     },
-    "degats": "204-319",
-    "encombrement": "6",
-    "mains": "1 main",
     "obtention": [
       "Quête accès HumTerre",
       "Coffres caves montagnes DI",
       "Draconigus invoqué majeur (désert RD)"
     ],
-    "type": "Fléau"
+    "degats": "204-319",
+    "encombrement": "6",
+    "mains": "1 main"
   },
   {
     "name": "Fléau enchanté de main gauche",
     "quantity": 1,
+    "type": "Fléau",
     "prerequisites": {
       "str": "270",
       "dex": "40",
       "wis": "248",
       "attack": "500"
     },
-    "secondary": {},
     "bonuses": {
-      "Force": "+15",
-      "Sagesse": "+15",
+      "str": "+15",
+      "wis": "+15",
+      "end": "+25"
+    },
+    "secondary": {
       "Puissance Feu": "+10",
       "Attaque": "+20%",
-      "Endurance": "+25",
-      "Résistance nécro": "-15",
-      "Résistance lumière": "-15",
-      "Résistance eau": "-15"
+      "Résistance Nécro": "-15",
+      "Résistance Lumière": "-15",
+      "Résistance Eau": "-15"
     },
-    "degats": "206-321",
-    "encombrement": "6",
-    "mains": "Main gauche",
     "obtention": [
       "Forgeron lvl 75"
     ],
-    "type": "Fléau"
+    "degats": "206-321",
+    "encombrement": "6",
+    "mains": "Main gauche"
   },
   {
     "name": "Fléau en acier poli",
     "quantity": 1,
+    "type": "Fléau",
     "prerequisites": {
       "str": "310",
       "wis": "238"
     },
-    "secondary": {},
-    "bonuses": {},
-    "degats": "161-255",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Nyctos (maison dans RW) - 518.611 po"
     ],
-    "type": "Fléau"
+    "degats": "161-255",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Fléau en acier poli béni (+1)",
     "quantity": 1,
+    "type": "Fléau",
     "prerequisites": {
       "str": "310",
       "wis": "238"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+15%"
     },
-    "degats": "185-293",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Regynia (à l'Est des douves de RW) - 1.555.833 po"
     ],
-    "type": "Fléau"
+    "degats": "185-293",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Fléau en acier poli sacré (+2)",
     "quantity": 1,
+    "type": "Fléau",
     "prerequisites": {
       "str": "310",
       "wis": "238"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+30%"
     },
-    "degats": "209-331",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Ayanis (sous-sol RW, NO) - 5.186.110 po"
     ],
-    "type": "Fléau"
+    "degats": "209-331",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Fléau d'arme du jugement (+3)",
     "quantity": 1,
+    "type": "Fléau",
     "prerequisites": {
       "str": "310",
       "wis": "238"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "241-382",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Sphodros (montagnes Est RW) - 20.744.440 po"
     ],
-    "type": "Fléau"
+    "degats": "241-382",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Fléau en acier forgé",
     "quantity": 1,
+    "type": "Fléau",
     "prerequisites": {
       "str": "360",
       "wis": "272"
     },
-    "secondary": {},
-    "bonuses": {},
-    "degats": "187-297",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Nyctos (maison dans RW) - 705.714 po"
     ],
-    "type": "Fléau"
+    "degats": "187-297",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Fléau en acier forgé béni (+1)",
     "quantity": 1,
+    "type": "Fléau",
     "prerequisites": {
       "str": "360",
       "wis": "272"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+15%"
     },
-    "degats": "215-341",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Regynia (à l'Est des douves de RW) - 2.117.142 po"
     ],
-    "type": "Fléau"
+    "degats": "215-341",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Fléau en acier forgé sacré (+2)",
     "quantity": 1,
+    "type": "Fléau",
     "prerequisites": {
       "str": "360",
       "wis": "272"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+30%"
     },
-    "degats": "243-385",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Ayanis (sous-sol RW, NO) - 7.057.140 po"
     ],
-    "type": "Fléau"
+    "degats": "243-385",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Fléau d'arme du destin (+3)",
     "quantity": 1,
+    "type": "Fléau",
     "prerequisites": {
       "str": "360",
       "wis": "272"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "280-444",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Sphodros (montagnes Est RW) - 28.228.560 po"
     ],
-    "type": "Fléau"
+    "degats": "280-444",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Fléau d'adamantite",
     "quantity": 1,
+    "type": "Fléau",
     "prerequisites": {
       "str": "400",
       "wis": "299"
     },
-    "secondary": {},
-    "bonuses": {},
-    "degats": "??",
-    "encombrement": "7",
-    "mains": "1 main",
     "obtention": [
       "Nyctos (maison dans RW) - 921.581 po"
     ],
-    "type": "Fléau"
+    "degats": "??",
+    "encombrement": "7",
+    "mains": "1 main"
   },
   {
     "name": "Fléau d'adamantite béni (+1)",
     "quantity": 1,
+    "type": "Fléau",
     "prerequisites": {
       "str": "400",
       "wis": "299"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+15%"
     },
-    "degats": "??",
-    "encombrement": "7",
-    "mains": "1 main",
     "obtention": [
       "Regynia (à l'Est des douves de RW) - 2.764.743 po"
     ],
-    "type": "Fléau"
+    "degats": "??",
+    "encombrement": "7",
+    "mains": "1 main"
   },
   {
     "name": "Fléau d'adamantite sacré (+2)",
     "quantity": 1,
+    "type": "Fléau",
     "prerequisites": {
       "str": "400",
       "wis": "299"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+30%"
     },
-    "degats": "??",
-    "encombrement": "7",
-    "mains": "1 main",
     "obtention": [
       "Ayanis (sous-sol RW, NO) - 9.215.810 po"
     ],
-    "type": "Fléau"
+    "degats": "??",
+    "encombrement": "7",
+    "mains": "1 main"
   },
   {
     "name": "Fléau d'arme de l'éternité (+3)",
     "quantity": 1,
+    "type": "Fléau",
     "prerequisites": {
       "str": "400",
       "wis": "299"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "305-485",
-    "encombrement": "7",
-    "mains": "1 main",
     "obtention": [
       "Sphodros (montagnes Est RW) - 36.863.240 po"
     ],
-    "type": "Fléau"
+    "degats": "305-485",
+    "encombrement": "7",
+    "mains": "1 main"
   },
   {
     "name": "Nova (+3)",
     "quantity": 1,
+    "type": "Fléau",
     "prerequisites": {
       "str": "420",
       "wis": "342"
     },
-    "secondary": {},
-    "bonuses": {
-      "Puissance lumière": "+10",
+    "secondary": {
+      "Puissance Lumière": "+10",
       "Attaque": "+50%"
     },
-    "degats": "316-504",
-    "encombrement": "7",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 96"
     ],
-    "type": "Fléau"
+    "degats": "316-504",
+    "encombrement": "7",
+    "mains": "1 main"
   },
   {
     "name": "Fléau du croisé (+3)",
     "quantity": 1,
+    "type": "Fléau",
     "prerequisites": {
       "str": "469",
       "wis": "483"
     },
-    "secondary": {},
-    "bonuses": {
-      "Puissance lumière": "+10",
+    "secondary": {
+      "Puissance Lumière": "+10",
       "Attaque": "+50%"
     },
-    "degats": "312-539",
-    "encombrement": "6",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 103"
     ],
-    "type": "Fléau"
+    "degats": "312-539",
+    "encombrement": "6",
+    "mains": "1 main"
   },
   {
     "name": "Fléau du preux (+3)",
     "quantity": 1,
+    "type": "Fléau",
     "prerequisites": {
       "str": "642",
       "wis": "340",
       "dex": "98"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "312-539",
-    "encombrement": "6",
-    "mains": "1 main",
     "obtention": [
       "Forgeron lvl 103"
     ],
-    "type": "Fléau"
+    "degats": "312-539",
+    "encombrement": "6",
+    "mains": "1 main"
   },
   {
     "name": "Fléau de la clarté rayonnante (+2)",
     "quantity": 1,
+    "type": "Fléau",
     "prerequisites": {
       "str": "520",
       "wis": "322"
     },
     "secondary": {
+      "Puissance Lumière": "+10",
+      "Attaque": "+40%",
       "Immobilisation": "bonus",
       "Coup Assommant": "bonus",
       "Transpercer l'Armure": "+5"
     },
-    "bonuses": {
-      "Puissance lumière": "+10",
-      "Attaque": "+40%"
-    },
-    "degats": "217-525",
-    "encombrement": "6",
-    "mains": "1 main",
     "obtention": [
       "Forgeron Urtanar"
     ],
-    "type": "Fléau"
+    "degats": "217-525",
+    "encombrement": "6",
+    "mains": "1 main"
   },
   {
     "name": "Maillet du Maudit (+3)",
     "quantity": 1,
+    "type": "Marteau",
     "prerequisites": {
       "str": "30",
       "int": "29"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "17-27",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Quête du Damné",
       "Kerniel (WH 1660,1220) - 48.280 po"
     ],
-    "type": "Marteau"
+    "degats": "17-27",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Maillet du Profane (+3)",
     "quantity": 1,
+    "type": "Marteau",
     "prerequisites": {
       "str": "60",
       "int": "54"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "34-55",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Quête du Damné",
       "Kerniel (WH 1660,1220) - 187.650 po"
     ],
-    "type": "Marteau"
+    "degats": "34-55",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Maillet du Malin (+3)",
     "quantity": 1,
+    "type": "Marteau",
     "prerequisites": {
       "str": "90",
       "int": "78"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "51-85",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Quête du Damné",
       "Kerniel (WH 1660,1220) - 418.990 po"
     ],
-    "type": "Marteau"
+    "degats": "51-85",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Maillet du Damné (+3)",
     "quantity": 1,
+    "type": "Marteau",
     "prerequisites": {
       "str": "110",
       "int": "94"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "64-106",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Quête du Damné",
       "Kerniel (WH 1660,1220) - 631.440 po"
     ],
-    "type": "Marteau"
+    "degats": "64-106",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Marteau du Maudit (+3)",
     "quantity": 1,
+    "type": "Marteau",
     "prerequisites": {
       "str": "140",
       "int": "117"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "84-139",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Naadriel (SilverSky 1440,2515) - 3.691.220 po"
     ],
-    "type": "Marteau"
+    "degats": "84-139",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Marteau du profane (+3)",
     "quantity": 1,
+    "type": "Marteau",
     "prerequisites": {
       "str": "170",
       "int": "139"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "105-173",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Naadriel (SilverSky 1440,2515) - 6.470.010 po"
     ],
-    "type": "Marteau"
+    "degats": "105-173",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Marteau du Malin (+3)",
     "quantity": 1,
+    "type": "Marteau",
     "prerequisites": {
       "str": "210",
       "int": "169"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "134-223",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Naadriel (SilverSky 1440,2515) - 9.554.380 po"
     ],
-    "type": "Marteau"
+    "degats": "134-223",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Marteau du damné (+3)",
     "quantity": 1,
+    "type": "Marteau",
     "prerequisites": {
       "str": "260",
       "int": "206"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "174-289",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Naadriel (SilverSky 1440,2515) - 12.757.300 po"
     ],
-    "type": "Marteau"
+    "degats": "174-289",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Marteau d'armes renforcé du maudit (+3)",
     "quantity": 1,
+    "type": "Marteau",
     "prerequisites": {
       "str": "310",
       "int": "242"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "217-360",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Brokyr (sous-sol métiers RW 1430,590) - 20.671.555 po"
     ],
-    "type": "Marteau"
+    "degats": "217-360",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Marteau d'armes renforcé du profane (+3)",
     "quantity": 1,
+    "type": "Marteau",
     "prerequisites": {
       "str": "360",
       "int": "277"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "??",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Brokyr (sous-sol métiers RW 1430,590) - 27.911.074 po"
     ],
-    "type": "Marteau"
+    "degats": "??",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Marteau d'armes renforcé du malin (+3)",
     "quantity": 1,
+    "type": "Marteau",
     "prerequisites": {
       "str": "400",
       "int": "305"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "302-502",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Brokyr (sous-sol métiers RW 1430,590) - 37.844.325 po"
     ],
-    "type": "Marteau"
+    "degats": "302-502",
+    "encombrement": "",
+    "mains": "1 main"
   },
   {
     "name": "Mjölnir du damné (+3)",
     "quantity": 1,
+    "type": "Marteau",
     "prerequisites": {
       "str": "420",
       "int": "349"
     },
-    "secondary": {},
-    "bonuses": {
+    "secondary": {
       "Attaque": "+50%"
     },
-    "degats": "312-513",
-    "encombrement": "",
-    "mains": "1 main",
     "obtention": [
       "Drop Saaliel (château du désert)",
       "Quête Saaliel"
     ],
-    "type": "Marteau"
+    "degats": "312-513",
+    "encombrement": "",
+    "mains": "1 main"
   }
 ]
