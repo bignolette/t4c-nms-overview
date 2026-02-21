@@ -5,6 +5,7 @@ import { useData } from '../context/DataContext';
 import { fastNormalize, formatStatValue, formatGold } from '../data/utils';
 import type { RecipeItem } from '../data/types';
 import CraftingTree from './CraftingTree';
+import EmptyState from './shared/EmptyState';
 import { createPortal } from 'react-dom';
 import { 
   Search, ArrowUpDown, Star, X, RotateCcw, Package, MapPin,
@@ -1104,10 +1105,13 @@ const NPCGroupedView = ({
         </AnimatePresence>
 
         {artisans.length === 0 && (
-          <div className="lg:col-span-12 py-20 text-center glass-card rounded-[40px] border border-dashed border-slate-800">
-            <Users size={64} className="mx-auto text-slate-800 mb-6" />
-            <h3 className="text-2xl font-black text-slate-500 uppercase italic tracking-tighter">Aucun maître artisan ne correspond à ces critères</h3>
-            <button onClick={() => { setNpcSearch(''); onSelectProf('Tous'); onSelectZone('Toutes'); }} className="mt-6 text-amber-500 font-black uppercase text-xs hover:underline underline-offset-8">Réinitialiser tous les filtres</button>
+          <div className="lg:col-span-12">
+            <EmptyState
+              icon={Users}
+              title="Aucun maître artisan ne correspond"
+              actionLabel="Réinitialiser les filtres"
+              onAction={() => { setNpcSearch(''); onSelectProf('Tous'); onSelectZone('Toutes'); }}
+            />
           </div>
         )}
       </div>
@@ -1659,11 +1663,11 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
       {currentTab === 'projects' ? (
         <div className="grid grid-cols-1 gap-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
             {craftingProjects.length === 0 ? (
-                <div className="py-20 text-center bg-slate-900/30 rounded-2xl border border-dashed border-slate-800">
-                    <ClipboardList size={48} className="mx-auto text-slate-700 mb-4" />
-                    <p className="text-slate-500 font-bold uppercase tracking-widest">Aucun projet en cours</p>
-                    <p className="text-slate-600 text-sm mt-2">Ajoutez des recettes depuis l'onglet "Recettes" pour les suivre ici.</p>
-                </div>
+                <EmptyState
+                    icon={ClipboardList}
+                    title="Aucun projet en cours"
+                    subtitle={`Ajoutez des recettes depuis l'onglet "Recettes".`}
+                />
             ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
                     {craftingProjects.map(project => (
@@ -1988,10 +1992,11 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
           </motion.div>
 
           {filteredRecipes.length === 0 && (
-            <div className="text-center py-20 bg-slate-900/30 rounded-2xl border border-dashed border-slate-800">
-              <Search size={48} className="mx-auto text-slate-700 mb-4" />
-              <p className="text-slate-500 font-medium">Aucun résultat pour cette sélection.</p>
-            </div>
+            <EmptyState
+              icon={Search}
+              title="Aucun résultat pour cette sélection"
+              subtitle="Essayez de modifier vos filtres ou votre recherche."
+            />
           )}
 
           <Pagination 

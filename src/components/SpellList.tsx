@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import Pagination from './shared/Pagination';
 import StatBadge from './shared/StatBadge';
+import EmptyState from './shared/EmptyState';
 import { useClipboard } from '../hooks/useClipboard';
 
 interface SpellListProps {
@@ -473,11 +474,11 @@ const SpellList = ({ spells }: SpellListProps) => {
       />
 
       {filteredSpells.length === 0 && (
-        <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-16 text-center">
-          <AlertCircle size={48} className="text-slate-700 mx-auto mb-4" />
-          <h3 className="text-xl font-bold text-slate-300">Aucun sort trouvé</h3>
-          <p className="text-slate-500 mt-2">Essayez de modifier vos filtres ou votre recherche.</p>
-        </div>
+        <EmptyState
+          icon={AlertCircle}
+          title="Aucun sort trouvé"
+          subtitle="Essayez une autre école de magie ou modifiez votre recherche."
+        />
       )}
     </div>
   );

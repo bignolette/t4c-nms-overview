@@ -1,4 +1,4 @@
-import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './pages/Home';
 import WikiPage from './pages/WikiPage';
@@ -14,14 +14,42 @@ import { DataProvider, useData } from './context/DataContext';
 
 const AppContent: React.FC = () => {
   const { bestiaryData, recipesData, spellsData, skillsData, loading } = useData();
-  const location = useLocation();
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-[#0a0a0c] flex items-center justify-center">
-        <div className="flex flex-col items-center gap-4">
-          <div className="w-12 h-12 border-4 border-blue-500/20 border-t-blue-500 rounded-full animate-spin"></div>
-          <p className="text-slate-400 font-medium animate-pulse">Chargement de la base de données...</p>
+      <div className="min-h-screen bg-[#0a0a0c] flex">
+        {/* Sidebar skeleton (hidden on mobile) */}
+        <div className="hidden md:flex flex-col w-64 border-r border-slate-800/50 p-6 gap-6">
+          <div className="w-10 h-10 rounded-xl bg-slate-800 animate-pulse" />
+          <div className="flex flex-col gap-3">
+            {[...Array(6)].map((_, i) => (
+              <div key={i} className="h-8 rounded-lg bg-slate-800 animate-pulse" style={{ width: `${70 + (i % 3) * 10}%` }} />
+            ))}
+          </div>
+        </div>
+
+        {/* Main content skeleton */}
+        <div className="flex-1 flex flex-col p-6 md:p-10 gap-8 overflow-hidden">
+          {/* Header bar */}
+          <div className="flex justify-end">
+            <div className="h-8 w-48 rounded-full bg-slate-800 animate-pulse" />
+          </div>
+
+          {/* Hero */}
+          <div className="h-48 rounded-[40px] bg-slate-800 animate-pulse" />
+
+          {/* Cards grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[...Array(4)].map((_, i) => (
+              <div key={i} className="h-32 rounded-2xl bg-slate-800 animate-pulse" />
+            ))}
+          </div>
+
+          {/* Loading indicator */}
+          <div className="flex flex-col items-center gap-3 mt-auto pb-10">
+            <div className="w-8 h-8 border-3 border-amber-500/20 border-t-amber-500 rounded-full animate-spin" />
+            <p className="text-slate-500 text-sm font-fantasy animate-pulse">Chargement...</p>
+          </div>
         </div>
       </div>
     );
@@ -29,7 +57,7 @@ const AppContent: React.FC = () => {
 
   return (
     <Layout>
-      <Routes key={location.pathname}>
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/bestiary" element={<Bestiary monsters={bestiaryData} />} />
         <Route path="/equipable" element={<EquipablePage />} />

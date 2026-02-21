@@ -5,6 +5,7 @@ import { fastNormalize } from '../data/utils';
 import type { NPC } from '../data/types';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
+import EmptyState from './shared/EmptyState';
 
 const NpcCard = ({ npc }: { npc: NPC }) => {
     const navigate = useNavigate();
@@ -162,10 +163,11 @@ const NpcList: React.FC<NpcListProps> = ({ npcs }) => {
             </div>
 
             {filteredNpcs.length === 0 && (
-                <div className="text-center py-20 glass-card rounded-[40px] border border-dashed border-slate-800">
-                    <MapPin size={64} className="mx-auto text-slate-800 mb-6" />
-                    <h3 className="text-2xl font-bold text-slate-400 uppercase tracking-tighter">Aucun PNJ trouvé</h3>
-                </div>
+                <EmptyState
+                    icon={MapPin}
+                    title="Aucun PNJ trouvé"
+                    subtitle="Essayez de modifier votre recherche."
+                />
             )}
         </div>
     );

@@ -6,6 +6,7 @@ import {
   Search, MapPin, Leaf, RotateCcw, Info, ExternalLink, Tag, Map as MapIcon, X, Filter, BarChart3
 } from 'lucide-react';
 import Pagination from './shared/Pagination';
+import EmptyState from './shared/EmptyState';
 
 interface HarvestListProps {
   resources: any[]; // Using any to accommodate the specific JSON structure
@@ -292,11 +293,11 @@ const HarvestList = ({ resources }: HarvestListProps) => {
       />
 
       {filteredResources.length === 0 && (
-        <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-16 text-center">
-          <X size={48} className="text-slate-700 mx-auto mb-4" />
-          <h3 className="text-xl font-bold text-slate-300">Aucune ressource trouvée</h3>
-          <p className="text-slate-500 mt-2">Essayez de modifier votre recherche.</p>
-        </div>
+        <EmptyState
+          icon={Leaf}
+          title="Aucune ressource trouvée"
+          subtitle="Essayez de modifier votre recherche."
+        />
       )}
     </div>
   );

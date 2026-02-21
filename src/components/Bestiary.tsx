@@ -6,6 +6,7 @@ import { fastNormalize, formatGold } from '../data/utils';
 import type { Monster } from '../data/types';
 import { MapPin, Coins, Skull, Filter, AlertCircle, ExternalLink, RotateCcw, Hammer, Copy, Check, Map as MapIcon, Search, X } from 'lucide-react';
 import Pagination from './shared/Pagination';
+import EmptyState from './shared/EmptyState';
 import { useClipboard } from '../hooks/useClipboard';
 
 interface BestiaryProps {
@@ -351,11 +352,11 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
       />
 
       {filteredMonsters.length === 0 && (
-        <div className="bg-slate-900/50 border border-slate-800 rounded-2xl p-16 text-center">
-          <AlertCircle size={48} className="text-slate-700 mx-auto mb-4" />
-          <h3 className="text-xl font-bold text-slate-300">Aucun monstre trouvé</h3>
-          <p className="text-slate-500 mt-2">Essayez de modifier vos filtres ou votre recherche.</p>
-        </div>
+        <EmptyState
+          icon={AlertCircle}
+          title="Aucun monstre trouvé"
+          subtitle="Essayez de modifier vos filtres ou chercher un butin spécifique."
+        />
       )}
     </div>
   );
