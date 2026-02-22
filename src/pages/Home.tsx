@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ExternalLink, Calculator, BookOpen, User, Map, Package, Skull, Sparkles, Hammer } from 'lucide-react';
+import { ExternalLink, Calculator, BookOpen, User, Map, Package, Skull, Sparkles, Hammer, Scroll } from 'lucide-react';
 import { useData } from '../context/DataContext';
 import OrnamentDivider from '../components/ui/OrnamentDivider';
 
@@ -32,7 +32,7 @@ const StatCounter = ({ label, value, icon: Icon }: { label: string; value: numbe
 };
 
 const Home = () => {
-  const { itemsData, bestiaryData, spellsData, recipesData } = useData();
+  const { itemsData, bestiaryData, spellsData, recipesData, questsData } = useData();
 
   return (
     <div className="space-y-12 pb-20">
@@ -55,11 +55,12 @@ const Home = () => {
       <OrnamentDivider />
 
       {/* Stat Counters */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
         <StatCounter label="Objets" value={itemsData.length} icon={Package} />
         <StatCounter label="Monstres" value={bestiaryData.length} icon={Skull} />
         <StatCounter label="Sorts" value={spellsData.length} icon={Sparkles} />
         <StatCounter label="Recettes" value={recipesData.length} icon={Hammer} />
+        <StatCounter label="Quêtes" value={questsData.length} icon={Scroll} />
       </div>
 
       <OrnamentDivider />

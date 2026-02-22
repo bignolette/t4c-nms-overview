@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, User, ShieldCheck, Calculator, PanelLeftClose, PanelLeftOpen, BookOpen, Map } from 'lucide-react';
+import { Menu, X, Home, User, ShieldCheck, Calculator, PanelLeftClose, PanelLeftOpen, BookOpen, Map, Scroll } from 'lucide-react';
 import RuneIcon from './ui/RuneIcon';
 
 interface SidebarProps {
@@ -32,6 +32,7 @@ const Sidebar = ({ isOpen = true, onToggle }: SidebarProps) => {
     { name: 'Simulateur', icon: Calculator, path: '/planner' },
     { name: 'Cartographie', icon: Map, path: '/maps' },
     { name: 'Personnage', icon: User, path: '/equipable' },
+    { name: 'Quêtes', icon: Scroll, path: '/quests' },
     { name: 'Mentions Légales', icon: ShieldCheck, path: '/legal' },
   ];
 

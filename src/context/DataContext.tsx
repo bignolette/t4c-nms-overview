@@ -42,6 +42,7 @@ interface DataContextType {
     bestiaryData: Monster[];
     recipesData: RecipeItem[];
     npcsData: NPC[];
+    questsData: any[];
     spellsData: Spell[];
     skillsData: Skill[];
     wikiData: PageContent[];
@@ -78,6 +79,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         bestiary: Monster[];
         recipes: RecipeItem[];
         npcs: NPC[];
+        quests: any[];
         spells: Spell[];
         skills: Skill[];
     }>({ 
@@ -88,6 +90,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         bestiary: [], 
         recipes: [], 
         npcs: [],
+        quests: [],
         spells: [], 
         skills: [] 
     });
@@ -142,7 +145,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         const loadData = async () => {
             try {
                 const baseUrl = import.meta.env.BASE_URL || '/';
-                const [items, plants, trees, deposits, bestiary, recipes, npcs, spells, skills] = await Promise.all([
+                const [items, plants, trees, deposits, bestiary, recipes, npcs, quests, spells, skills] = await Promise.all([
                     fetch(`${baseUrl}data/items.json`).then(res => res.json()),
                     fetch(`${baseUrl}data/plants.json`).then(res => res.json()),
                     fetch(`${baseUrl}data/trees.json`).then(res => res.json()),
@@ -150,11 +153,12 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
                     fetch(`${baseUrl}data/bestiary.json`).then(res => res.json()),
                     fetch(`${baseUrl}data/recipes.json`).then(res => res.json()),
                     fetch(`${baseUrl}data/npcs.json`).then(res => res.json()),
+                    fetch(`${baseUrl}data/quests.json`).then(res => res.json()),
                     fetch(`${baseUrl}data/spells.json`).then(res => res.json()),
                     fetch(`${baseUrl}data/skills.json`).then(res => res.json()),
                 ]);
 
-                setData({ items, plants, trees, deposits, bestiary, recipes, npcs, spells, skills });
+                setData({ items, plants, trees, deposits, bestiary, recipes, npcs, quests, spells, skills });
                 setLoading(false);
             } catch (err) {
                 console.error("Failed to load data:", err);
@@ -347,6 +351,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         bestiaryData: data.bestiary,
         recipesData: data.recipes,
         npcsData: data.npcs,
+        questsData: data.quests,
         npcRecipesMap: maps.npcRecipesMap,
         spellsData: data.spells,
         skillsData: data.skills,

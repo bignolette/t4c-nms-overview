@@ -10,6 +10,7 @@ import SkillList from './components/SkillList';
 import PlannerPage from './pages/PlannerPage';
 import MapViewer from './components/MapViewer';
 import Legal from './pages/Legal';
+import QuestsPage from './pages/QuestsPage';
 import { DataProvider, useData } from './context/DataContext';
 
 const AppContent: React.FC = () => {
@@ -68,6 +69,7 @@ const AppContent: React.FC = () => {
         <Route path="/maps" element={<MapViewer />} />
         <Route path="/wiki" element={<WikiPage />} />
         <Route path="/wiki/:slug" element={<WikiPage />} />
+        <Route path="/quests" element={<QuestsPage />} />
         <Route path="/legal" element={<Legal />} />
       </Routes>
     </Layout>
