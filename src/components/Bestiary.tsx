@@ -70,7 +70,7 @@ export const MonsterCard = memo(({ monster, showLocation }: { monster: Monster, 
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       className={`
-        group relative bg-slate-800/40 border rounded-2xl overflow-hidden transition-all duration-300 shadow-xl hover:shadow-amber-500/10
+        card-hover-glow group relative bg-slate-800/40 border rounded-2xl overflow-hidden transition-all duration-300 shadow-xl hover:shadow-amber-500/10
         ${monster.unique ? 'border-purple-500/50 shadow-[0_0_20px_rgba(168,85,247,0.1)]' : 'border-slate-700/50 hover:border-amber-500/50'}
       `}
     >
@@ -295,7 +295,7 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
               <button
                 key={zone}
                 onClick={() => { setSelectedZone(zone); setCurrentPage(1); }}
-                className={`px-5 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all border ${selectedZone === zone ? 'bg-amber-500 border-amber-400 text-slate-950 shadow-xl shadow-amber-500/10 scale-105 z-10' : 'bg-slate-900 border-slate-800 text-slate-500 hover:text-slate-200 hover:border-slate-600'}`}
+                className={`px-5 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all border active:scale-95 ${selectedZone === zone ? 'bg-amber-500 border-amber-400 text-slate-950 shadow-xl shadow-amber-500/10 scale-105 z-10' : 'bg-slate-900 border-slate-800 text-slate-500 hover:text-slate-200 hover:border-slate-600'}`}
               >
                 {zone}
               </button>

@@ -21,7 +21,7 @@ const NpcCard = ({ npc }: { npc: NPC }) => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.9 }}
-            className="group glass-card rounded-2xl p-5 border border-slate-800 hover:border-amber-500/40 transition-all duration-300 relative overflow-hidden"
+            className="card-hover-glow group glass-card rounded-2xl p-5 border border-slate-800 hover:border-amber-500/40 transition-all duration-300 relative overflow-hidden"
         >
             <div className="absolute top-0 right-0 p-3 opacity-10 group-hover:opacity-20 transition-opacity">
                 <MapPin size={48} className="text-amber-500" />

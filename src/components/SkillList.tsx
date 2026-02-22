@@ -32,7 +32,7 @@ export const SkillCard = memo(({ skill }: { skill: Skill }) => {
       layout
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
-      className="group relative bg-slate-800/40 border border-slate-700/50 rounded-2xl overflow-hidden transition-all duration-300 shadow-xl hover:shadow-emerald-500/10 hover:border-emerald-500/50 flex flex-col"
+      className="card-hover-glow group relative bg-slate-800/40 border border-slate-700/50 rounded-2xl overflow-hidden transition-all duration-300 shadow-xl hover:shadow-emerald-500/10 hover:border-emerald-500/50 flex flex-col"
     >
       <div className="p-5 bg-slate-900/40 border-b border-slate-700/50 relative overflow-hidden">
         <div className="flex justify-between items-start mb-4 relative z-10">
@@ -251,9 +251,9 @@ const SkillList = ({ skills }: SkillListProps) => {
                 <button
                   key={type}
                   onClick={() => { setSelectedType(type as any); setCurrentPage(1); }}
-                  className={`px-5 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all border 
-                    ${selectedType === type 
-                      ? 'bg-emerald-600 border-emerald-500 text-white shadow-lg scale-105 z-10' 
+                  className={`px-5 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all border active:scale-95
+                    ${selectedType === type
+                      ? 'bg-emerald-600 border-emerald-500 text-white shadow-lg scale-105 z-10'
                       : 'bg-slate-900 border-slate-800 text-slate-500 hover:text-slate-200 hover:border-slate-600'}`}
                 >
                   {type}

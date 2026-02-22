@@ -28,6 +28,7 @@ const WikiPage = () => {
   });
 
   const harvestData = useMemo(() => [...treesData, ...plantsData], [treesData, plantsData]);
+  const allItemsData = useMemo(() => [...itemsData, ...plantsData, ...treesData, ...depositsData], [itemsData, plantsData, treesData, depositsData]);
 
   // Sync URL search to local state
   useEffect(() => {
@@ -99,7 +100,7 @@ const WikiPage = () => {
       </div>
 
       <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
-        {currentTab === 'items' && <RecipeBrowser key="items" recipes={itemsData} isItemsPage={true} />}
+        {currentTab === 'items' && <RecipeBrowser key="items" recipes={allItemsData} isItemsPage={true} />}
         {currentTab === 'metiers' && <RecipeBrowser key="metiers" recipes={recipesData} isItemsPage={false} />}
         {currentTab === 'harvest' && <HarvestList key="harvest" resources={harvestData} />}
         {currentTab === 'deposits' && <DepositList key="deposits" deposits={depositsData} />}

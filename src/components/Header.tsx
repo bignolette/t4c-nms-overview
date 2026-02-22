@@ -102,7 +102,7 @@ const Header = () => {
       {modal.show && (
         <div className="fixed inset-0 z-[200] flex items-center justify-center p-4">
           <div className="absolute inset-0 bg-slate-950/90 backdrop-blur-md" onClick={() => setModal(prev => ({ ...prev, show: false }))}></div>
-          <div className="glass-card w-full max-w-sm rounded-3xl relative overflow-hidden animate-in zoom-in-95 duration-200 text-left border-white/10">
+          <div className="glass-card parchment-bg w-full max-w-sm rounded-3xl relative overflow-hidden animate-in zoom-in-95 duration-200 text-left border-white/10">
             <div className={`h-2 w-full ${modal.type === 'confirm' ? 'bg-amber-500' : 'bg-emerald-500'}`} />
             <div className="p-8 text-center">
               <div className={`w-16 h-16 rounded-2xl mx-auto mb-6 flex items-center justify-center ${modal.type === 'confirm' ? 'bg-amber-500/10 text-amber-500' : 'bg-emerald-500/10 text-emerald-500'} border border-white/5`}>

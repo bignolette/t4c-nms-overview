@@ -46,7 +46,7 @@ const Pagination = ({
         <button
           key={i}
           onClick={() => handlePageChange(i)}
-          className={`w-8 h-8 md:w-10 md:h-10 rounded-lg md:rounded-xl font-bold text-[11px] md:text-sm transition-all ${
+          className={`min-w-[44px] min-h-[44px] md:w-10 md:h-10 rounded-lg md:rounded-xl font-bold text-[11px] md:text-sm transition-all ${
             currentPage === i 
               ? 'bg-amber-500 text-slate-950 shadow-lg shadow-amber-500/20 scale-110 z-10' 
               : 'bg-slate-800 text-slate-400 hover:bg-slate-700 hover:text-slate-200'
@@ -99,7 +99,7 @@ const Pagination = ({
           <button
             onClick={() => handlePageChange(1)}
             disabled={currentPage === 1}
-            className="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-slate-900 border border-slate-800 text-slate-500 hover:text-amber-500 disabled:opacity-20 transition-all shrink-0"
+            className="p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg md:rounded-xl bg-slate-900 border border-slate-800 text-slate-500 hover:text-amber-500 disabled:opacity-20 transition-all shrink-0"
             title="Première page"
           >
             <ChevronsLeft size={16} className="md:w-[18px] md:h-[18px]" />
@@ -108,7 +108,7 @@ const Pagination = ({
           <button
             onClick={() => handlePageChange(currentPage - 1)}
             disabled={currentPage === 1}
-            className="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-slate-900 border border-slate-800 text-slate-500 hover:text-amber-500 disabled:opacity-20 transition-all shrink-0"
+            className="p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg md:rounded-xl bg-slate-900 border border-slate-800 text-slate-500 hover:text-amber-500 disabled:opacity-20 transition-all shrink-0"
             title="Page précédente"
           >
             <ChevronLeft size={16} className="md:w-[18px] md:h-[18px]" />
@@ -121,7 +121,7 @@ const Pagination = ({
           <button
             onClick={() => handlePageChange(currentPage + 1)}
             disabled={currentPage === totalPages}
-            className="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-slate-900 border border-slate-800 text-slate-500 hover:text-amber-500 disabled:opacity-20 transition-all shrink-0"
+            className="p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg md:rounded-xl bg-slate-900 border border-slate-800 text-slate-500 hover:text-amber-500 disabled:opacity-20 transition-all shrink-0"
             title="Page suivante"
           >
             <ChevronRight size={16} className="md:w-[18px] md:h-[18px]" />
@@ -130,7 +130,7 @@ const Pagination = ({
           <button
             onClick={() => handlePageChange(totalPages)}
             disabled={currentPage === totalPages}
-            className="p-1.5 md:p-2.5 rounded-lg md:rounded-xl bg-slate-900 border border-slate-800 text-slate-500 hover:text-amber-500 disabled:opacity-20 transition-all shrink-0"
+            className="p-2.5 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg md:rounded-xl bg-slate-900 border border-slate-800 text-slate-500 hover:text-amber-500 disabled:opacity-20 transition-all shrink-0"
             title="Dernière page"
           >
             <ChevronsRight size={16} className="md:w-[18px] md:h-[18px]" />

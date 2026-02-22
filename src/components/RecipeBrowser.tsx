@@ -291,7 +291,7 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
           animate={{ opacity: 1, scale: 1 }}
           whileHover={{ y: -5, scale: 1.02 }}
           onClick={() => setIsModalOpen(true)}
-          className="glass-card rounded-2xl p-4 flex flex-col gap-3 hover:border-amber-500/40 transition-all duration-300 group cursor-pointer relative overflow-hidden h-full"
+          className="card-hover-glow glass-card rounded-2xl p-4 flex flex-col gap-3 hover:border-amber-500/40 transition-all duration-300 group cursor-pointer relative overflow-hidden h-full"
         >
           <div className="absolute inset-0 bg-gradient-to-br from-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
           
@@ -919,9 +919,9 @@ const NPCGroupedView = ({
                     <button
                       key={p}
                       onClick={() => { onSelectProf(p); setFocusedArtisan(null); }}
-                      className={`px-4 py-2.5 rounded-xl text-[10px] md:text-xs font-black uppercase tracking-wider transition-all flex items-center gap-2 border ${
-                        isSelected 
-                          ? (p === 'Tous' ? 'bg-amber-500 border-amber-400 text-slate-950 shadow-lg' : `${VIBRANT_PROF_COLORS[p] || 'bg-amber-500 text-slate-950'} text-white shadow-lg`) 
+                      className={`px-4 py-2.5 rounded-xl text-[10px] md:text-xs font-black uppercase tracking-wider transition-all flex items-center gap-2 border active:scale-95 ${
+                        isSelected
+                          ? (p === 'Tous' ? 'bg-amber-500 border-amber-400 text-slate-950 shadow-lg' : `${VIBRANT_PROF_COLORS[p] || 'bg-amber-500 text-slate-950'} text-white shadow-lg`)
                           : 'bg-slate-950 text-slate-500 border-slate-800 hover:border-slate-600 hover:text-slate-200'
                       }`}
                     >
@@ -1778,7 +1778,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
                           <button
                             key={t}
                             onClick={() => {setSelectedType(t); setCurrentPage(1);}}
-                            className={`px-4 py-2 rounded-xl text-xs font-bold border transition-all flex items-center gap-2 ${selectedType === t ? (TYPE_COLORS[t] || 'bg-amber-500 text-slate-950 border-amber-500 shadow-md') : 'bg-slate-950 text-slate-500 border-slate-800 hover:border-slate-600'}`}
+                            className={`px-4 py-2 rounded-xl text-xs font-bold border transition-all flex items-center gap-2 active:scale-95 ${selectedType === t ? (TYPE_COLORS[t] || 'bg-amber-500 text-slate-950 border-amber-500 shadow-md') : 'bg-slate-950 text-slate-500 border-slate-800 hover:border-slate-600'}`}
                           >
                             <span className={`w-1.5 h-1.5 rounded-full ${TYPE_COLORS[t]?.split(' ')[0] || 'bg-slate-500'}`} />
                             {t}
@@ -1796,7 +1796,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
                           <button
                             key={stat.key}
                             onClick={() => toggleStatFilter(stat.key)}
-                            className={`px-4 py-2 rounded-xl text-xs font-black uppercase tracking-tighter border transition-all flex items-center gap-2 ${selectedStats.includes(stat.key) ? 'bg-slate-100 text-slate-950 border-white shadow-lg' : 'bg-slate-950 text-slate-500 border-slate-800 hover:border-slate-600'}`}
+                            className={`px-4 py-2 rounded-xl text-xs font-black uppercase tracking-tighter border transition-all flex items-center gap-2 active:scale-95 ${selectedStats.includes(stat.key) ? 'bg-slate-100 text-slate-950 border-white shadow-lg' : 'bg-slate-950 text-slate-500 border-slate-800 hover:border-slate-600'}`}
                           >
                             <div className={`w-2 h-2 rounded-full ${stat.color.replace('text-', 'bg-')}`} />
                             {stat.label}

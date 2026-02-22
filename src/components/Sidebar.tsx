@@ -46,7 +46,7 @@ const Sidebar = ({ isOpen = true, onToggle }: SidebarProps) => {
       {!isFullscreen && (
         <button 
           onClick={() => setIsMobileOpen(!isMobileOpen)}
-          className="fixed top-4 left-4 z-50 p-2 bg-slate-800 rounded-xl md:hidden text-white border border-slate-700 shadow-2xl"
+          className="fixed top-4 left-4 z-50 p-3 bg-slate-800 rounded-xl md:hidden text-white border border-slate-700 shadow-2xl"
         >
           {isMobileOpen ? <X size={24} /> : <Menu size={24} />}
         </button>

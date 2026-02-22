@@ -14,7 +14,26 @@ export default {
         amber: {
           450: '#fbbf24', // Gold accent
         }
-      }
+      },
+      borderRadius: {
+        card: '16px',
+        panel: '24px',
+        hero: '40px',
+      },
+      transitionDuration: {
+        fast: '150ms',
+        normal: '300ms',
+        slow: '500ms',
+      },
+      keyframes: {
+        'glow-pulse': {
+          '0%, 100%': { opacity: '0.4' },
+          '50%': { opacity: '1' },
+        },
+      },
+      animation: {
+        'glow-pulse': 'glow-pulse 2s ease-in-out infinite',
+      },
     },
   },
   plugins: [],

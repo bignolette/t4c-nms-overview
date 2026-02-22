@@ -32,7 +32,7 @@ const ResourceCard = memo(({ resource }: { resource: any }) => {
       layout
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
-      className={`group relative bg-slate-800/40 border ${isTree ? 'border-emerald-500/30' : 'border-green-500/30'} rounded-2xl overflow-hidden transition-all duration-300 shadow-xl hover:shadow-emerald-500/10 hover:border-emerald-500/50 flex flex-col`}
+      className={`card-hover-glow group relative bg-slate-800/40 border ${isTree ? 'border-emerald-500/30' : 'border-green-500/30'} rounded-2xl overflow-hidden transition-all duration-300 shadow-xl hover:shadow-emerald-500/10 hover:border-emerald-500/50 flex flex-col`}
     >
       <div className="p-5 bg-slate-900/40 border-b border-slate-700/50 relative overflow-hidden">
         <div className="flex justify-between items-start mb-4 relative z-10">

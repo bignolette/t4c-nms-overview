@@ -6,6 +6,8 @@ import Header from './Header';
 import Background3D from './Background3D';
 import Footer from './Footer';
 import NotificationToast from './ui/NotificationToast';
+import ScrollProgress from './ui/ScrollProgress';
+import BackToTop from './ui/BackToTop';
 import Breadcrumb from './shared/Breadcrumb';
 
 interface LayoutProps {
@@ -34,10 +36,11 @@ const Layout = ({ children }: LayoutProps) => {
       <Header />
       <NotificationToast />
       
-      <main 
+      <main
         ref={mainRef}
         className="flex-1 overflow-y-auto h-full scroll-smooth relative w-full"
       >
+        <ScrollProgress scrollRef={mainRef as React.RefObject<HTMLDivElement>} />
         <div className="container mx-auto px-4 pt-20 md:pt-24 pb-20 md:pb-32 max-w-6xl flex flex-col min-h-full">
           <Breadcrumb />
           <div className="flex-1">
@@ -56,6 +59,7 @@ const Layout = ({ children }: LayoutProps) => {
           <Footer />
         </div>
       </main>
+      <BackToTop scrollRef={mainRef as React.RefObject<HTMLDivElement>} />
     </div>
   );
 };

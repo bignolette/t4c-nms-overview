@@ -26716,37 +26716,6 @@
     "type": "Arme"
   },
   {
-    "name": "Dague du crâne",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "12",
-      "int": "43",
-      "wis": "15"
-    },
-    "damage": {
-      "min": "5",
-      "max": "9"
-    },
-    "obtention": [
-      "Quête"
-    ],
-    "type": "Arme"
-  },
-  {
-    "name": "Bâton de combat",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "13",
-      "int": "30"
-    },
-    "damage": {
-      "min": "8",
-      "max": "13"
-    },
-    "buyPrice": "1169",
-    "type": "Arme"
-  },
-  {
     "name": "Bâton de combat enchanté",
     "quantity": 1,
     "prerequisites": {
@@ -26761,20 +26730,6 @@
     "obtention": [],
     "bonuses": {},
     "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "name": "Bâton de combat de puissance",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "13",
-      "int": "30"
-    },
-    "damage": {
-      "min": "10",
-      "max": "17"
-    },
-    "buyPrice": "11690",
     "type": "Arme"
   },
   {
@@ -26880,22 +26835,6 @@
     "type": "Arme"
   },
   {
-    "name": "Bâton de marche tordu",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "17",
-      "int": "68"
-    },
-    "damage": {
-      "min": "21",
-      "max": "33"
-    },
-    "obtention": [
-      "Coffre"
-    ],
-    "type": "Arme"
-  },
-  {
     "name": "Bâton de Bastet, l'esprit des chats",
     "quantity": 1,
     "prerequisites": {
@@ -26912,23 +26851,6 @@
     ],
     "bonuses": {},
     "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "name": "Bâton de langueur",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "20",
-      "int": "83",
-      "wis": "35"
-    },
-    "damage": {
-      "min": "35",
-      "max": "55"
-    },
-    "obtention": [
-      "Quête"
-    ],
     "type": "Arme"
   },
   {

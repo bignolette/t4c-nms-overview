@@ -61,6 +61,31 @@
   .btn-secondary {
     @apply bg-slate-900/80 hover:bg-slate-800 text-slate-300 px-6 py-2.5 rounded-xl font-bold transition-all border border-slate-700/50 backdrop-blur-sm flex items-center justify-center gap-2 hover:border-amber-500/30 hover:text-amber-400;
   }
+
+  .card-hover-glow {
+    @apply transition-all;
+  }
+  .card-hover-glow:hover {
+    box-shadow: 0 0 25px rgba(245,158,11,0.08), 0 0 10px rgba(245,158,11,0.04),
+                inset 0 1px 0 rgba(245,158,11,0.06);
+    border-color: rgba(245,158,11,0.3);
+  }
+
+  .btn-filter {
+    @apply px-4 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider
+           transition-all border bg-slate-900 border-slate-800 text-slate-500
+           hover:text-slate-200 hover:border-slate-600 active:scale-95 min-h-[44px];
+  }
+  .btn-filter-active {
+    @apply bg-amber-500 border-amber-400 text-slate-950 shadow-xl
+           shadow-amber-500/10 scale-105 z-10;
+  }
+
+  .parchment-bg {
+    background: linear-gradient(180deg, rgba(30,20,10,0.03) 0%, rgba(30,20,10,0.08) 100%),
+                url('https://grainy-gradients.vercel.app/noise.svg');
+    background-blend-mode: multiply;
+  }
 }
 
 @layer utilities {

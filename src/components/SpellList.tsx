@@ -74,7 +74,7 @@ export const SpellCard = memo(({ spell, onNavigate }: { spell: Spell, onNavigate
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       className={`
-        group relative bg-slate-800/40 border rounded-2xl overflow-hidden transition-all duration-300 shadow-xl hover:shadow-2xl
+        card-hover-glow group relative bg-slate-800/40 border rounded-2xl overflow-hidden transition-all duration-300 shadow-xl hover:shadow-2xl
         ${config.border} hover:border-opacity-100 hover:shadow-blue-500/10
       `}
     >
@@ -378,9 +378,9 @@ const SpellList = ({ spells }: SpellListProps) => {
                   <button
                     key={school}
                     onClick={() => { setSelectedSchool(school); setCurrentPage(1); }}
-                    className={`px-4 py-2.5 rounded-xl text-[10px] font-black uppercase tracking-wider transition-all border flex items-center gap-2 
-                      ${isActive 
-                        ? `${config?.bg || 'bg-blue-600'} ${config?.color || 'text-white'} ${config?.border || 'border-blue-500'} shadow-lg scale-105 z-10` 
+                    className={`px-4 py-2.5 rounded-xl text-[10px] font-black uppercase tracking-wider transition-all border flex items-center gap-2 active:scale-95
+                      ${isActive
+                        ? `${config?.bg || 'bg-blue-600'} ${config?.color || 'text-white'} ${config?.border || 'border-blue-500'} shadow-lg scale-105 z-10`
                         : 'bg-slate-900 border-slate-800 text-slate-500 hover:text-slate-200 hover:border-slate-600'}`}
                   >
                     <Icon size={14} className={isActive ? '' : 'opacity-50'} />
@@ -402,7 +402,7 @@ const SpellList = ({ spells }: SpellListProps) => {
                   <button
                     key={source}
                     onClick={() => { setSelectedSource(source); setCurrentPage(1); }}
-                    className={`px-5 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all border ${selectedSource === source ? 'bg-indigo-600 border-indigo-500 text-white shadow-xl scale-105 z-10' : 'bg-slate-900 border-slate-800 text-slate-500 hover:text-slate-200 hover:border-slate-600'}`}
+                    className={`px-5 py-2.5 rounded-xl text-xs font-black uppercase tracking-wider transition-all border active:scale-95 ${selectedSource === source ? 'bg-indigo-600 border-indigo-500 text-white shadow-xl scale-105 z-10' : 'bg-slate-900 border-slate-800 text-slate-500 hover:text-slate-200 hover:border-slate-600'}`}
                   >
                     {source}
                   </button>
