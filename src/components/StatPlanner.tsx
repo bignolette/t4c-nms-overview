@@ -511,22 +511,22 @@ const StatPlanner = () => {
                    <RuneIcon stat="magic" size={22} color="#10b981" />
                    <h2 className="text-sm font-black text-slate-100 uppercase tracking-widest font-fantasy">Puissances Magiques</h2>
                 </div>
-                <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="p-4 sm:p-6 grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
                    {SERAPH_ELEMENTS.map(el => {
                      const cur = seraphPowers[el.key] || 0;
                      return (
-                       <div key={el.key} className="flex items-center justify-between bg-slate-950/40 p-4 rounded-2xl border border-slate-800/50 hover:border-emerald-500/30 transition-all group">
-                          <div className="flex items-center gap-4 min-w-0">
+                       <div key={el.key} className="flex items-center justify-between gap-2 bg-slate-950/40 p-3 sm:p-4 rounded-2xl border border-slate-800/50 hover:border-emerald-500/30 transition-all group">
+                          <div className="flex items-center gap-3 sm:gap-4 min-w-0 overflow-hidden">
                             <div className="w-1.5 h-10 bg-emerald-500/20 rounded-full group-hover:bg-emerald-500/50 transition-colors shrink-0" />
                             <div className="min-w-0">
                               <span className="text-[10px] font-black text-slate-500 uppercase tracking-[0.15em] block mb-1 truncate">{el.label}</span>
-                              <span className="text-2xl font-black text-emerald-400 leading-none drop-shadow-md">{finalMagic.powers[el.label]}</span>
+                              <span className="text-lg sm:text-2xl font-black text-emerald-400 leading-none drop-shadow-md">{finalMagic.powers[el.label]}</span>
                             </div>
                           </div>
-                          <div className="flex items-center gap-2 bg-slate-900/80 p-1.5 rounded-2xl border border-slate-800 shadow-inner shrink-0">
-                             <button onClick={() => updateSeraphStat('power', el.key, -1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all shadow-sm disabled:opacity-20" disabled={cur <= 0}>-</button>
-                             <div className="w-8 text-center text-xs font-black text-amber-500/70">{getCumulativeCost(cur)}</div>
-                             <button onClick={() => updateSeraphStat('power', el.key, 1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all shadow-sm disabled:opacity-20" disabled={remainingSeraphPoints < (cur + 1)}>+</button>
+                          <div className="flex items-center gap-1 sm:gap-2 bg-slate-900/80 p-1 sm:p-1.5 rounded-2xl border border-slate-800 shadow-inner shrink-0">
+                             <button onClick={() => updateSeraphStat('power', el.key, -1)} className="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all shadow-sm disabled:opacity-20" disabled={cur <= 0}>-</button>
+                             <div className="w-7 sm:w-8 text-center text-xs font-black text-amber-500/70">{getCumulativeCost(cur)}</div>
+                             <button onClick={() => updateSeraphStat('power', el.key, 1)} className="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all shadow-sm disabled:opacity-20" disabled={remainingSeraphPoints < (cur + 1)}>+</button>
                           </div>
                        </div>
                      );
@@ -538,23 +538,23 @@ const StatPlanner = () => {
                    <RuneIcon stat="shield" size={22} color="#3b82f6" />
                    <h2 className="text-sm font-black text-slate-100 uppercase tracking-widest font-fantasy">Résistances Magiques</h2>
                 </div>
-                <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="p-4 sm:p-6 grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
                    {SERAPH_ELEMENTS.map(el => {
                      const cur = seraphResists[el.key] || 0;
                      const nextCost = 2;
                      return (
-                       <div key={el.key} className="flex items-center justify-between bg-slate-950/40 p-4 rounded-2xl border border-slate-800/50 hover:border-blue-500/30 transition-all group">
-                          <div className="flex items-center gap-4 min-w-0">
+                       <div key={el.key} className="flex items-center justify-between gap-2 bg-slate-950/40 p-3 sm:p-4 rounded-2xl border border-slate-800/50 hover:border-blue-500/30 transition-all group">
+                          <div className="flex items-center gap-3 sm:gap-4 min-w-0 overflow-hidden">
                             <div className="w-1.5 h-10 bg-blue-500/20 rounded-full group-hover:bg-blue-500/50 transition-colors shrink-0" />
                             <div className="min-w-0">
                               <span className="text-[10px] font-black text-slate-500 uppercase tracking-[0.15em] block mb-1 truncate">{el.label}</span>
-                              <span className="text-2xl font-black text-blue-400 leading-none drop-shadow-md">{finalMagic.resists[el.label]}</span>
+                              <span className="text-lg sm:text-2xl font-black text-blue-400 leading-none drop-shadow-md">{finalMagic.resists[el.label]}</span>
                             </div>
                           </div>
-                          <div className="flex items-center gap-2 bg-slate-900/80 p-1.5 rounded-2xl border border-slate-800 shadow-inner shrink-0">
-                             <button onClick={() => updateSeraphStat('resist', el.key, -1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all shadow-sm disabled:opacity-20" disabled={cur <= 0}>-</button>
-                             <div className="w-8 text-center text-xs font-black text-amber-500/70">{cur * 2}</div>
-                             <button onClick={() => updateSeraphStat('resist', el.key, 1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all shadow-sm disabled:opacity-20" disabled={remainingSeraphPoints < nextCost}>+</button>
+                          <div className="flex items-center gap-1 sm:gap-2 bg-slate-900/80 p-1 sm:p-1.5 rounded-2xl border border-slate-800 shadow-inner shrink-0">
+                             <button onClick={() => updateSeraphStat('resist', el.key, -1)} className="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all shadow-sm disabled:opacity-20" disabled={cur <= 0}>-</button>
+                             <div className="w-7 sm:w-8 text-center text-xs font-black text-amber-500/70">{cur * 2}</div>
+                             <button onClick={() => updateSeraphStat('resist', el.key, 1)} className="w-8 h-8 sm:w-9 sm:h-9 flex items-center justify-center rounded-xl bg-slate-800 text-slate-400 hover:text-white hover:bg-slate-700 transition-all shadow-sm disabled:opacity-20" disabled={remainingSeraphPoints < nextCost}>+</button>
                           </div>
                        </div>
                      );
