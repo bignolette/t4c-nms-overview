@@ -117,7 +117,7 @@ const QuickCard = ({ title, description, icon: Icon, to, color, accent }: any) =
     <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-8 border transition-transform duration-500 group-hover:scale-110 ${color}`}>
       <Icon size={32} />
     </div>
-    <h3 className="text-3xl font-black text-slate-100 mb-4 tracking-tight uppercase italic group-hover:text-amber-500 transition-colors">{title}</h3>
+    <h3 className="text-xl font-black text-slate-100 mb-4 tracking-tight uppercase italic group-hover:text-amber-500 transition-colors">{title}</h3>
     <p className="text-slate-400 leading-relaxed font-medium mb-8 group-hover:text-slate-300 transition-colors">{description}</p>
     <div className="flex items-center text-xs font-black text-slate-600 group-hover:text-amber-500 uppercase tracking-[0.2em] transition-colors">
       Explorer l'outil <ExternalLink size={14} className="ml-2" />
