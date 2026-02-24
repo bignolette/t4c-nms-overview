@@ -113,12 +113,12 @@ const Home = () => {
 };
 
 const QuickCard = ({ title, description, icon: Icon, to, color, accent }: any) => (
-  <Link to={to} className={`group relative p-10 rounded-[40px] bg-slate-900/40 border border-slate-800 transition-all duration-500 hover:-translate-y-2 overflow-hidden shadow-xl ${accent}`}>
-    <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-8 border transition-transform duration-500 group-hover:scale-110 ${color}`}>
-      <Icon size={32} />
+  <Link to={to} className={`group relative p-6 xl:p-5 rounded-[40px] bg-slate-900/40 border border-slate-800 transition-all duration-500 hover:-translate-y-2 overflow-hidden shadow-xl ${accent}`}>
+    <div className={`w-12 h-12 xl:w-10 xl:h-10 rounded-2xl flex items-center justify-center mb-5 border transition-transform duration-500 group-hover:scale-110 ${color}`}>
+      <Icon size={24} />
     </div>
-    <h3 className="text-xl font-black text-slate-100 mb-4 tracking-tight uppercase italic group-hover:text-amber-500 transition-colors">{title}</h3>
-    <p className="text-slate-400 leading-relaxed font-medium mb-8 group-hover:text-slate-300 transition-colors">{description}</p>
+    <h3 className="text-base font-black text-slate-100 mb-3 tracking-tight uppercase italic group-hover:text-amber-500 transition-colors">{title}</h3>
+    <p className="text-slate-400 text-sm leading-relaxed font-medium mb-6 group-hover:text-slate-300 transition-colors">{description}</p>
     <div className="flex items-center text-xs font-black text-slate-600 group-hover:text-amber-500 uppercase tracking-[0.2em] transition-colors">
       Explorer l'outil <ExternalLink size={14} className="ml-2" />
     </div>
