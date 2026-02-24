@@ -218,7 +218,6 @@ const QuestListView = ({ quests, onSelect }: { quests: Quest[]; onSelect: (q: Qu
     setSelectedLevelRange('Tous');
     setGroupFilter('Tous');
     setShowBossOnly(false);
-    setShowWithPrereqs(false);
     setSortBy('name');
   };
 
