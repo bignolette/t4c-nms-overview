@@ -156,7 +156,7 @@ const QuestListView = ({ quests, onSelect }: { quests: Quest[]; onSelect: (q: Qu
   const [selectedLevelRange, setSelectedLevelRange] = useState('Tous');
   const [groupFilter, setGroupFilter] = useState('Tous');
   const [showBossOnly, setShowBossOnly] = useState(false);
-  const [showWithPrereqs, setShowWithPrereqs] = useState(false);
+
   const [sortBy, setSortBy] = useState('name'); // 'name' | 'level_asc' | 'level_desc'
 
   const islands = ['Tous', 'Arakas', "Raven's Dust", 'Stoneheim', 'Drake Island', 'Niève', 'Académie', 'Multi-îles', 'Autre'];
@@ -197,8 +197,6 @@ const QuestListView = ({ quests, onSelect }: { quests: Quest[]; onSelect: (q: Qu
       // Boss Filter
       if (showBossOnly && !q.boss_fight) return false;
 
-      // Prereqs Filter
-      if (showWithPrereqs && (!q.prerequisites || q.prerequisites.length === 0)) return false;
 
       return true;
     });
@@ -212,7 +210,7 @@ const QuestListView = ({ quests, onSelect }: { quests: Quest[]; onSelect: (q: Qu
     });
 
     return result;
-  }, [quests, searchTerm, selectedIsland, selectedLevelRange, groupFilter, showBossOnly, showWithPrereqs, sortBy]);
+  }, [quests, searchTerm, selectedIsland, selectedLevelRange, groupFilter, showBossOnly, sortBy]);
 
   const resetFilters = () => {
     setSearchTerm('');
@@ -340,12 +338,7 @@ const QuestListView = ({ quests, onSelect }: { quests: Quest[]; onSelect: (q: Qu
                 icon={Skull}
                 label="Boss"
               />
-              <FilterChip
-                active={showWithPrereqs}
-                onClick={() => setShowWithPrereqs(!showWithPrereqs)}
-                icon={Key}
-                label="Prérequis"
-              />
+
             </div>
 
             <button
