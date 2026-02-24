@@ -2529,395 +2529,1408 @@
     "id": "acces_oracle_good",
     "name": "Accès Oracle Good",
     "zone": "Stoneheim",
-    "level_required": null,
-    "alignment_required": "Good",
+    "level_required": 75,
+    "level_recommended": "75-80 (camper les objets en avance)",
+    "alignment": "Bon",
     "group_recommended": false,
-    "description": "Quête d'accès à l'Oracle en alignement Good. Elle comporte 4 parties : l'Allégeance à Artherk, le Cœur d'Artherk, l'Âme d'Artherk, puis l'Esprit d'Artherk. Une fois en possession de votre clé, il vous restera la Traversée de l'Oracle pour renaître.",
-    "prerequisites": [
-      "Être d'alignement Good",
-      "Avoir accès à Stoneheim"
+    "description": "Combattez aux côtés d'Artherk ! Rassemblez les 3 parties de la Clef d'Artherk (Cœur, Âme, Esprit) pour accéder à la Zone Oracle et devenir Séraphin d'Artherk. Quête longue et fastidieuse — anticipez en campant les objets dès le niveau 75-80.",
+    "tips": [
+      "Anticipez votre renaissance : campez les objets avec un personnage de haut niveau.",
+      "Au niveau 75-80, campez en avance le prochain accès, voire les deux prochains.",
+      "Profitez-en pour camper vos futures quêtes Beyond the Kingdom et votre accès pour Les ruines d'Anwynn."
     ],
-    "structure_note": "Vous devez commencer par l'Allégeance à Artherk, puis obtenir le Cœur d'Artherk. L'Âme d'Artherk peut être menée en parallèle du Cœur. Mais vous devez posséder le Cœur ET l'Âme avant de débuter l'Esprit d'Artherk.",
     "rewards": {
-      "access": "Accès à l'Oracle (renaissance Good)",
-      "note": "Après les 4 parties, il reste la Traversée de l'Oracle pour renaître."
+      "experience": "750 000 XP au total (250 000 par partie de la clef)",
+      "title": "Séraphin d'Artherk",
+      "access": "Zone Oracle",
+      "intermediate_rewards": [
+        "250 000 XP — Remise du Cœur d'Artherk à Mithanna Snowraven",
+        "250 000 XP — Remise de l'Âme d'Artherk à Nissus Talandra",
+        "250 000 XP — Invocation de l'Esprit d'Artherk par Glaenshenmilandira"
+      ]
     },
+    "npcs": [
+      {
+        "name": "Nissus Talandra",
+        "role": "Prêtre — point de départ + Âme d'Artherk + Crocs de vérité",
+        "location": "Temple de Stonecrest",
+        "interactions": [
+          {
+            "keyword": "conseils → Beltigan",
+            "purpose": "Démarrer la quête — être orienté vers Sir Beltigan"
+          },
+          {
+            "keyword": "Âme d'Artherk",
+            "purpose": "Lancer la quête de l'Âme d'Artherk"
+          },
+          {
+            "keyword": "Croc de vérité de sir resol → Mithanna Snowraven",
+            "purpose": "Fabriquer les Crocs de vérité (1 croc de dragon rubis + 2 chandelles d'éternité par croc, 5 min d'attente chacun)"
+          }
+        ]
+      },
+      {
+        "name": "Sir Beltigan",
+        "role": "Chevalier — allégeance + assemblage final",
+        "location": "Château au Sud-Est de Stonecrest",
+        "interactions": [
+          {
+            "keyword": "Artherk → Je suis prêt à devenir un Porteur de Lumière → oui → (répéter) → tâche → vaincre → place forte → oracle → Clef d'Artherk → Coeur du Destin → forteresse → Chambre de Providence → assemblées → éléments",
+            "purpose": "Prêter allégeance et recevoir les objectifs des 3 parties"
+          },
+          {
+            "keyword": "Ame d'Artherk / Coeur d'Artherk / Esprit d'Artherk",
+            "purpose": "Recevoir les instructions pour chaque partie"
+          },
+          {
+            "keyword": "Esprit d'Artherk",
+            "purpose": "Être orienté vers Aedenas le roi des Centaures"
+          },
+          {
+            "keyword": "Clef d'Artherk → combiner → oui",
+            "purpose": "Assembler la Clef d'Artherk finale (une fois les 3 parties obtenues)"
+          }
+        ]
+      },
+      {
+        "name": "Mithanna Snowraven",
+        "role": "Gardienne du Cœur d'Artherk",
+        "location": "Ouest du cercle de Stonecrest",
+        "interactions": [
+          {
+            "keyword": "Coeur d'Artherk",
+            "purpose": "Lancer la quête puis remettre les objets pour obtenir le Cœur (2 Pierres de Courage + 4 Volumes de Bravoure + 3 Épées de Majesté)"
+          },
+          {
+            "keyword": "Croc de vérité de sir resol",
+            "purpose": "Apporter les yeux de tarentule + anneau de jade pour être envoyé vers Nissus"
+          }
+        ],
+        "note": "Ne vous parle que lorsqu'il fait JOUR en jeu !"
+      },
+      {
+        "name": "Omar Hald",
+        "role": "Artisan — Pierres de Courage",
+        "location": "Sous la banque de Stonecrest",
+        "interactions": [
+          {
+            "keyword": "cristal brut",
+            "purpose": "Échange 9 Cristaux Bruts + 50 000 Po → 1 Pierre de Courage (×2)"
+          }
+        ]
+      },
+      {
+        "name": "Liurn Clar",
+        "role": "Mage — Volumes de Bravoure",
+        "location": "Tour des mages de Windhowl",
+        "interactions": [
+          {
+            "keyword": "volume de bravoure",
+            "purpose": "Échange 1 Tome magique vierge + 1 Nécessaire à écriture magique + 1 Clef du Chaos → 1 Volume de Bravoure (1h de confection par volume)"
+          }
+        ]
+      },
+      {
+        "name": "Un mage errant",
+        "role": "Vendeur de nécessaires à écriture magique",
+        "location": "Devant la fontaine de Stonecrest",
+        "interactions": [
+          {
+            "keyword": "Nécessaire à écriture magique",
+            "purpose": "Acheter les nécessaires à écriture magique"
+          }
+        ]
+      },
+      {
+        "name": "Un forgeron occupé (Thor Glarefire)",
+        "role": "Forgeron — Épées de Majesté + Marteaux du Destin",
+        "location": "Ville Centaure",
+        "interactions": [
+          {
+            "keyword": "épées de majesté",
+            "purpose": "Échange 5 Livres de sorts rouges + 3 Lames d'héroïsme → 1 Épée de Majesté (×3)"
+          },
+          {
+            "keyword": "Marteaux du Destin",
+            "purpose": "Reçoit la lettre pour Lance Silversmith"
+          }
+        ]
+      },
+      {
+        "name": "Frère Thorkas",
+        "role": "Prêtre — Anneaux de foi",
+        "location": "Temple de Silversky",
+        "interactions": [
+          {
+            "keyword": "calice d'or",
+            "purpose": "Échange 1 Calice d'or → 1 Anneau de foi (×3)"
+          }
+        ]
+      },
+      {
+        "name": "Theoran Feizdir",
+        "role": "Artisan — Fioles d'eau bénite + Anneaux de vraie foi",
+        "location": "Maison à l'extérieur de Stonecrest, direction est/sud-est (565, 916)",
+        "interactions": [
+          {
+            "keyword": "fioles d' eau bénite",
+            "purpose": "Transforme les Fioles d'eau cristalline en Fioles d'eau bénite. ATTENTION : espace après l'apostrophe !"
+          },
+          {
+            "keyword": "anneau de vraie foi",
+            "purpose": "Échange 1 Anneau de foi + 1 Graal de pureté + 2 Fioles d'eau bénite → 1 Anneau de vraie foi (×3)"
+          }
+        ]
+      },
+      {
+        "name": "Chryseida Yolangda",
+        "role": "Vendeuse de potions — Symboles d'espoir",
+        "location": "Stonecrest",
+        "interactions": [
+          {
+            "purpose": "Acheter les Symboles d'espoir (10 000 Po par symbole, ×10)"
+          }
+        ]
+      },
+      {
+        "name": "Dionysus",
+        "role": "Prêtre — Bâtons d'espérance",
+        "location": "Temple de la ville Centaure",
+        "interactions": [
+          {
+            "keyword": "Bâton d'Espérance",
+            "purpose": "Échange 2 Piles de bois d'arbre démoniaque + 5 Symboles d'espoir → 1 Bâton d'espérance (×2)"
+          }
+        ]
+      },
+      {
+        "name": "Annithea Goueladenn",
+        "role": "Vendeuse — Perles en forme de larme",
+        "location": "Sous la banque de Stonecrest (à côté d'Omar Hald)",
+        "interactions": [
+          {
+            "keyword": "perle en forme de larme",
+            "purpose": "Acheter les Perles en forme de larme (×2)"
+          }
+        ]
+      },
+      {
+        "name": "Moonrock",
+        "role": "Artisan — Perles de sagesse",
+        "location": "Temple de Lighthaven",
+        "interactions": [
+          {
+            "purpose": "Échange 1 jeu de pages des Cantiques perdus d'Artherk + 1 Perle en forme de larme → 1 Perle de sagesse (×2)"
+          }
+        ]
+      },
+      {
+        "name": "Aedenas",
+        "role": "Roi des Centaures — Esprit d'Artherk",
+        "location": "Château au sud-est de la ville Centaure",
+        "interactions": [
+          {
+            "keyword": "Esprit d' Artherk",
+            "purpose": "Lancer la quête de l'Esprit. ATTENTION : espace entre d' et Artherk !"
+          },
+          {
+            "keyword": "talismans de contrôle-spirituel",
+            "purpose": "Recevoir le bâton de soumission pour tuer les centaures aux yeux rouges"
+          },
+          {
+            "keyword": "talismans de contrôle-spirituel → lien → Marteaux du Destin",
+            "purpose": "Valider les centaures puis lancer la quête des Marteaux"
+          },
+          {
+            "keyword": "marteau du destin",
+            "purpose": "Remettre les marteaux, puis dire Anrak pour continuer"
+          },
+          {
+            "keyword": "Esprit d' artherk",
+            "purpose": "Remettre tous les objets finaux pour recevoir la clé d'accès aux Îles Éthérées"
+          }
+        ]
+      },
+      {
+        "name": "Samuel",
+        "role": "Artisan — Chandelles d'éternité",
+        "location": "Château de Silversky (rez-de-chaussée)",
+        "interactions": [
+          {
+            "keyword": "bougies éternelles → oui",
+            "purpose": "Échange 5 Cires de guêpe + 5 000 Po → 1 Chandelle d'éternité (×8)"
+          }
+        ]
+      },
+      {
+        "name": "DarkFang",
+        "role": "Dragon — Crocs de dragon rubis",
+        "location": "Lighthaven",
+        "interactions": [
+          {
+            "keyword": "dragon rubis → Carmin → souvenirs → Croc de Dragon Rubis",
+            "purpose": "Obtenir 1 Croc de dragon rubis (un seul à la fois, nécessite la quête du Pilleur de tombes)"
+          }
+        ],
+        "note": "N'en donne un nouveau qu'une fois le précédent utilisé."
+      },
+      {
+        "name": "Lance Silversmith",
+        "role": "Forgeron — Marteaux du Destin",
+        "location": "Maison à l'est du camp gobelin sur Arakas (2570, 700, 0)",
+        "interactions": [
+          {
+            "keyword": "Marteaux du destin → faire un marteau du destin",
+            "purpose": "Fabrique 1 Marteau du destin contre 1 Marteau de guerre en acier trempé + 1 Parchemin d'enchantement + 4 000 Po (×3)"
+          }
+        ]
+      },
+      {
+        "name": "Anrak",
+        "role": "Artisan — Tambours du destin",
+        "location": "Sous-sols d'une maison à l'est du lac tarentules, Raven's Dust",
+        "interactions": [
+          {
+            "keyword": "tambour du destin",
+            "purpose": "Fabrique 2 Tambours du destin (4 Sabliers essentiels + 4 Pierres Immortelles + 1 Tambour finement ciselé + 60 000 Po par tambour)"
+          }
+        ]
+      },
+      {
+        "name": "Menark",
+        "role": "Échangeur — Sabliers essentiels",
+        "location": "2ème étage du château de Silversky, rempart nord",
+        "interactions": [
+          {
+            "keyword": "sabliers essentiel",
+            "purpose": "Échange une potion/parchemin courant → 1 Sablier essentiel (×8). Objets acceptés : potion de guérison, potion de guérison légère, potion de mana, élixir de mana, fiole d'eau cristalline, potion de fureur, parchemin de rappel."
+          }
+        ]
+      },
+      {
+        "name": "Glaenshenmilandira",
+        "role": "Invocatrice de l'Esprit d'Artherk",
+        "location": "Zone Éthérée (portail mobile entre la cave araignée et le village des skraugs verts)",
+        "interactions": [
+          {
+            "purpose": "Invoque l'Esprit d'Artherk et donne 250 000 XP"
+          }
+        ],
+        "note": "N'attaquez PAS les Purificateurs en route, sinon tâche supplémentaire !"
+      }
+    ],
     "items_required_overview": {
-      "liste_complete": [
-        {
-          "name": "Pièces d'or",
-          "quantity": "500 000",
-          "obtention": "Tout moyen honnête est autorisé (partout)"
-        },
+      "drops_a_farmer": [
         {
           "name": "Cristal Brut",
           "quantity": 18,
-          "obtention": "Skraugs verts (SH)"
+          "obtention": "Skraugs verts",
+          "usage": "Pierres de Courage"
         },
         {
           "name": "Tome magique vierge",
           "quantity": 4,
-          "obtention": "Shamans Skraugs (SH)"
+          "obtention": "Skraug chaman",
+          "usage": "Volumes de Bravoure"
         },
         {
-          "name": "Nécessaire à écriture magique",
+          "name": "Clef du Chaos",
           "quantity": 4,
-          "obtention": "Un mage errant (dans StoneCrest, à l'Est)"
-        },
-        {
-          "name": "Clef du chaos",
-          "quantity": 4,
-          "obtention": "Rejetons du chaos (SH)"
+          "obtention": "Rejetons du chaos (après les loups au Nord-Est de Stonecrest)",
+          "usage": "Volumes de Bravoure"
         },
         {
           "name": "Livre de sorts rouge",
           "quantity": 15,
-          "obtention": "Shamans Skraugs (spot : murs village Skraug roses SH)"
+          "obtention": "Skraug shamans (verts ou rouges) ou Quête des livres de sorts rouge",
+          "usage": "Épées de Majesté"
         },
         {
-          "name": "Lame d'Héroïsme",
+          "name": "Lame d'héroïsme",
           "quantity": 9,
-          "obtention": "Skraugs / Centaures (SH)"
-        },
-        {
-          "name": "Graal de pureté",
-          "quantity": 3,
-          "obtention": "Vengeurs Centaures (SH, entrée ville centaure)"
-        },
-        {
-          "name": "Fiole d'eau cristalline",
-          "quantity": 6,
-          "obtention": "Grott et ses 2 clones, Pillards du désert (RD) / Arpenteurs de la nuit, Chapardeurs (extérieur Est SC)"
+          "obtention": "Skraugs (verts ou rouges) / Centaures",
+          "usage": "Épées de Majesté"
         },
         {
           "name": "Calice d'or",
           "quantity": 3,
-          "obtention": "Disciples de l'ombre, mages rôdeurs (SH) / Golem de neige (Niève)"
+          "obtention": "Disciple de l'ombre (Raven's Dust)",
+          "usage": "Anneaux de vraie foi"
         },
         {
-          "name": "Pile de bois d'arbres démoniaque",
+          "name": "Graal de pureté",
+          "quantity": 3,
+          "obtention": "Vengeurs centaures",
+          "usage": "Anneaux de vraie foi"
+        },
+        {
+          "name": "Fiole d'eau cristalline",
+          "quantity": 6,
+          "obtention": "Arpenteurs de la nuit / Grott / Pillards des dunes (Raven's Dust)",
+          "usage": "Anneaux de vraie foi (transformées en Fioles d'eau bénite)"
+        },
+        {
+          "name": "Pile de bois d'arbre démoniaque",
           "quantity": 4,
-          "obtention": "Arbres démoniaques (RD)"
+          "obtention": "Arbres démoniaques (Raven's Dust)",
+          "usage": "Bâtons d'espérance"
         },
         {
-          "name": "Symbole d'espoir",
-          "quantity": 10,
-          "obtention": "Marchand de potions de Stonecrest (SH)"
-        },
-        {
-          "name": "Cantiques perdus d'Artherk p.1",
-          "quantity": 2,
-          "obtention": "Chapardeurs (SH extérieur sortie Est de SC)"
-        },
-        {
-          "name": "Cantiques perdus d'Artherk p.2",
-          "quantity": 2,
-          "obtention": "Chapardeurs"
-        },
-        {
-          "name": "Cantiques perdus d'Artherk p.3",
-          "quantity": 2,
-          "obtention": "Chapardeurs"
-        },
-        {
-          "name": "Cantiques perdus d'Artherk p.4",
-          "quantity": 2,
-          "obtention": "Chapardeurs"
-        },
-        {
-          "name": "Cantiques perdus d'Artherk p.5",
-          "quantity": 2,
-          "obtention": "Chapardeurs"
-        },
-        {
-          "name": "Perle en forme de larme",
-          "quantity": 2,
-          "obtention": "Annithea Teardrop (marchande à SC)"
+          "name": "Cantiques perdus d'Artherk (volumes 1 à 5)",
+          "quantity": "2 de chaque volume (10 pages total)",
+          "obtention": "Chapardeurs",
+          "usage": "Perles de sagesse"
         },
         {
           "name": "Yeux de tarentule",
           "quantity": 6,
-          "obtention": "Tarentules (RD) / Tarentules nemesis (SH)"
+          "obtention": "Tarentules (Raven's Dust) / Tarentules nemesis (Stoneheim)",
+          "usage": "Crocs de vérité"
         },
         {
-          "name": "Anneau de sorcellerie de jade",
+          "name": "Anneau de sorcellerie en jade",
           "quantity": 1,
-          "obtention": "Grott et ses 2 clones (Bane et carrefour SO de SS, RD) / Dragon Ashardalon (sortie Ouest du connecteur RD)"
+          "obtention": "Grott le Troll (Raven's Dust)",
+          "usage": "Crocs de vérité"
         },
         {
           "name": "Cire de guêpe",
           "quantity": 40,
-          "obtention": "Guêpes (spots : île de Bane ou Nexus du camp Orc, RD)"
+          "obtention": "Guêpes / Abeilles (sauf Stoneheim)",
+          "usage": "Chandelles d'éternité"
         },
         {
-          "name": "Talisman de contrôle-spirituel",
-          "quantity": 12,
-          "obtention": "4 Centaures aux yeux rouges (ville Centaure, SH)"
-        },
-        {
-          "name": "Marteau de guerre en acier trempé",
-          "quantity": 3,
-          "obtention": "Marchand d'armes (Mark Ttayh à WH)"
-        },
-        {
-          "name": "Parchemin d'enchantement",
-          "quantity": 3,
-          "obtention": "Quête du parchemin d'enchantement"
-        },
-        {
-          "name": "Sablier essentiel",
+          "name": "Pierre Immortelle",
           "quantity": 8,
-          "obtention": "Aléatoirement : potions diverses, parchemin de rappel..."
-        },
-        {
-          "name": "Pierre immortelle",
-          "quantity": 8,
-          "obtention": "Seigneurs ténébreux de la guerre (Ssol Mordenthal SH)"
+          "obtention": "Seigneur ténébreux de la guerre (donjon de Mordenthal)",
+          "usage": "Tambours du destin"
         },
         {
           "name": "Tambour finement ciselé",
           "quantity": 2,
-          "obtention": "Coffre des voleurs (cave des voleurs de SC, SH) — Repop 50 min seul, sinon 40 min"
+          "obtention": "Coffre au repaire des Voleurs (Stoneheim)",
+          "usage": "Tambours du destin"
+        }
+      ],
+      "achats": [
+        {
+          "name": "Pièces d'or",
+          "quantity": "500 000+ Po au total",
+          "detail": "100 000 (Pierres de Courage) + 100 000 (Symboles d'espoir) + 40 000 (Chandelles) + 12 000 (Marteaux Silversmith) + 45 000 (Marteaux acier trempé) + 120 000 (Tambours) + divers"
+        },
+        {
+          "name": "Nécessaire à écriture magique",
+          "quantity": 4,
+          "obtention": "Un mage errant (Stonecrest)",
+          "usage": "Volumes de Bravoure"
+        },
+        {
+          "name": "Symbole d'espoir",
+          "quantity": 10,
+          "obtention": "Chryseida Yolangda (Stonecrest) — 10 000 Po chacun",
+          "usage": "Bâtons d'espérance"
+        },
+        {
+          "name": "Perle en forme de larme",
+          "quantity": 2,
+          "obtention": "Annithea Goueladenn (sous la banque de Stonecrest)",
+          "usage": "Perles de sagesse"
+        },
+        {
+          "name": "Marteau de guerre en acier trempé",
+          "quantity": 3,
+          "obtention": "Marchand d'armes de Windhowl (1732, 1200, 0) — 15 000 Po chacun",
+          "usage": "Marteaux du destin"
+        },
+        {
+          "name": "Parchemin d'enchantement",
+          "quantity": 3,
+          "obtention": "Quête du parchemin d'enchantement (Arakas)",
+          "usage": "Marteaux du destin"
+        }
+      ],
+      "objets_intermediaires_quete": [
+        {
+          "name": "Pierre de Courage",
+          "quantity": 2,
+          "obtention": "Omar Hald (9 Cristaux Bruts + 50 000 Po chacune)"
+        },
+        {
+          "name": "Volume de Bravoure (Tome de courage)",
+          "quantity": 4,
+          "obtention": "Liurn Clar (1 Tome vierge + 1 Nécessaire écriture + 1 Clef du Chaos — 1h chacun)"
+        },
+        {
+          "name": "Épée de Majesté",
+          "quantity": 3,
+          "obtention": "Un forgeron occupé (5 Livres sorts rouges + 3 Lames d'héroïsme chacune)"
+        },
+        {
+          "name": "Anneau de foi",
+          "quantity": 3,
+          "obtention": "Frère Thorkas (1 Calice d'or chacun)"
+        },
+        {
+          "name": "Fiole d'eau bénite",
+          "quantity": 6,
+          "obtention": "Theoran Feizdir (transformation des Fioles d'eau cristalline)"
+        },
+        {
+          "name": "Anneau de vraie foi",
+          "quantity": 3,
+          "obtention": "Theoran Feizdir (1 Anneau de foi + 1 Graal de pureté + 2 Fioles d'eau bénite)"
+        },
+        {
+          "name": "Bâton d'espérance",
+          "quantity": 2,
+          "obtention": "Dionysus (2 Piles de bois + 5 Symboles d'espoir chacun)"
+        },
+        {
+          "name": "Perle de sagesse",
+          "quantity": 2,
+          "obtention": "Moonrock (1 jeu de Cantiques + 1 Perle en forme de larme)"
+        },
+        {
+          "name": "Chandelle d'éternité",
+          "quantity": 8,
+          "obtention": "Samuel (5 Cires de guêpe + 5 000 Po chacune)"
+        },
+        {
+          "name": "Croc de dragon rubis",
+          "quantity": 4,
+          "obtention": "DarkFang (nécessite quête du Pilleur de tombes — un seul à la fois)"
+        },
+        {
+          "name": "Croc de vérité de Sir Resol",
+          "quantity": 4,
+          "obtention": "Nissus Talandra (1 Croc de dragon rubis + 2 Chandelles d'éternité — 5 min chacun)"
+        },
+        {
+          "name": "Talisman de contrôle-spirituel",
+          "quantity": 12,
+          "obtention": "Drop des Centaures aux yeux rouges (tués avec le bâton de soumission)"
+        },
+        {
+          "name": "Marteau du destin",
+          "quantity": 3,
+          "obtention": "Lance Silversmith (1 Marteau acier trempé + 1 Parchemin d'enchantement + 4 000 Po)"
+        },
+        {
+          "name": "Sablier essentiel",
+          "quantity": 8,
+          "obtention": "Menark (échange contre potions/parchemins courants)"
+        },
+        {
+          "name": "Tambour du destin",
+          "quantity": 2,
+          "obtention": "Anrak (4 Sabliers + 4 Pierres Immortelles + 1 Tambour ciselé + 60 000 Po chacun)"
         }
       ]
     },
     "steps": [
       {
         "step_number": 1,
-        "name": "Allégeance à Artherk",
+        "name": "L'Allégeance à Artherk",
         "type": "dialogue",
         "difficulty": "facile",
         "group_required": false,
-        "location": "Stoneheim",
-        "objective": "Faire allégeance au dieu Artherk pour débloquer les parties suivantes.",
+        "location": "Temple de Stonecrest → Château Sud-Est de Stonecrest",
+        "objective": "Prêter allégeance à Artherk et recevoir la mission de rassembler les 3 parties de la Clef.",
         "instructions": [
-          "Rendez-vous auprès du PNJ d'allégeance à Artherk à Stoneheim.",
-          "Suivez le dialogue pour prêter allégeance.",
-          "Cette étape est obligatoire avant toutes les autres."
-        ]
+          "Trouvez Nissus Talandra au temple de Stonecrest.",
+          "Dites-lui : conseils puis Beltigan.",
+          "Trouvez Sir Beltigan dans le château au Sud-Est de Stonecrest.",
+          "Dites-lui : Artherk.",
+          "Enchaînez les mots-clés : Je suis prêt à devenir un Porteur de Lumière → oui → Je suis prêt à devenir un Porteur de Lumière → tâche → vaincre → place forte → oracle → Clef d'Artherk → Coeur du Destin → forteresse → Chambre de Providence → assemblées → éléments.",
+          "Il vous demandera de rassembler les 3 parties : Cœur, Âme, et Esprit d'Artherk."
+        ],
+        "rewards_step": "Déblocage des 3 branches de quête"
       },
       {
         "step_number": 2,
         "name": "Le Cœur d'Artherk",
-        "type": "collecte_dialogue",
+        "type": "collecte_multi_etapes",
         "difficulty": "moyen",
         "group_required": false,
-        "location": "Stoneheim / Raven's Dust",
-        "objective": "Obtenir le Cœur d'Artherk en collectant les items nécessaires et en suivant les dialogues.",
-        "instructions": [
-          "Collectez les items requis pour cette partie (cristaux bruts, tomes, livres de sorts, etc.).",
-          "Suivez les dialogues des PNJ concernés.",
-          "Le Cœur d'Artherk vous sera remis une fois les conditions remplies."
+        "location": "Stonecrest / Windhowl / Ville Centaure",
+        "objective": "Obtenir 2 Pierres de Courage + 4 Volumes de Bravoure + 3 Épées de Majesté, puis les remettre à Mithanna Snowraven.",
+        "sub_steps": [
+          {
+            "name": "2a — Les 2 Pierres de Courage",
+            "objective": "Farmer 18 Cristaux Bruts et les échanger chez Omar Hald.",
+            "instructions": [
+              "Farmez 18 Cristaux Bruts sur les Skraugs verts.",
+              "Préparez 100 000 Po.",
+              "Allez voir Omar Hald sous la banque de Stonecrest.",
+              "Dites-lui : cristal brut.",
+              "Il échange 9 Cristaux Bruts + 50 000 Po → 1 Pierre de Courage.",
+              "Répétez pour la 2ème Pierre de Courage."
+            ]
+          },
+          {
+            "name": "2b — Les 4 Volumes de Bravoure",
+            "objective": "Farmer les composants et les faire confectionner par Liurn Clar.",
+            "instructions": [
+              "Farmez 4 Tomes magiques vierges sur les Skraug chaman.",
+              "Achetez 4 Nécessaires à écriture magique auprès d'Un mage errant devant la fontaine de Stonecrest (mot-clé : Nécessaire à écriture magique).",
+              "Farmez 4 Clefs du Chaos sur les Rejetons du chaos (après les loups, Nord-Est de Stonecrest).",
+              "Allez voir Liurn Clar dans la tour des mages de Windhowl.",
+              "Dites-lui : volume de bravoure.",
+              "Il fabrique 1 Volume contre 1 Tome + 1 Nécessaire + 1 Clef du Chaos.",
+              "Comptez 1 heure de confection par volume."
+            ]
+          },
+          {
+            "name": "2c — Les 3 Épées de Majesté",
+            "objective": "Farmer les composants et les faire forger.",
+            "instructions": [
+              "Farmez 15 Livres de sorts rouges sur les Skraug shamans (verts ou rouges), ou via la Quête des livres de sorts rouge.",
+              "Farmez 9 Lames d'héroïsme sur les Skraugs (verts ou rouges) ou les Centaures.",
+              "Allez voir Un forgeron occupé à la ville Centaure.",
+              "Dites-lui : épées de majesté.",
+              "Il forge 1 Épée contre 5 Livres de sorts rouges + 3 Lames d'héroïsme."
+            ]
+          },
+          {
+            "name": "2d — Remise du Cœur d'Artherk",
+            "instructions": [
+              "Muni des 2 Pierres de Courage, 4 Volumes de Bravoure et 3 Épées de Majesté, retournez voir Mithanna Snowraven.",
+              "Dites-lui : Coeur d'Artherk.",
+              "Vous recevez le Cœur d'Artherk et 250 000 XP."
+            ]
+          }
         ],
+        "rewards_step": "Cœur d'Artherk + 250 000 XP",
         "warnings": [
-          "Certains drops sont rares, prévoyez du temps de farm."
+          "Mithanna Snowraven ne parle que lorsqu'il fait JOUR en jeu !"
         ]
       },
       {
         "step_number": 3,
         "name": "L'Âme d'Artherk",
-        "type": "collecte_dialogue",
+        "type": "collecte_multi_etapes",
         "difficulty": "moyen",
         "group_required": false,
-        "location": "Stoneheim / Raven's Dust",
-        "objective": "Obtenir l'Âme d'Artherk. Peut être menée en parallèle du Cœur.",
-        "instructions": [
-          "Collectez les items requis pour cette partie.",
-          "Suivez les dialogues des PNJ concernés.",
-          "L'Âme d'Artherk vous sera remise une fois les conditions remplies."
+        "location": "Stonecrest / Silversky / Raven's Dust / Lighthaven / Ville Centaure",
+        "objective": "Obtenir 3 Anneaux de vraie foi + 2 Bâtons d'espérance + 2 Perles de sagesse, puis les remettre à Nissus Talandra.",
+        "sub_steps": [
+          {
+            "name": "3a — Les 3 Anneaux de vraie foi",
+            "objective": "Fabriquer les anneaux en plusieurs sous-étapes.",
+            "instructions": [
+              "Farmez 3 Calices d'or sur les Disciples de l'ombre (Raven's Dust).",
+              "Farmez 3 Graals de pureté sur les Vengeurs centaures.",
+              "Farmez 6 Fioles d'eau cristalline sur les Arpenteurs / Pillards des dunes (Raven's Dust).",
+              "Allez au temple de Silversky, parlez à Frère Thorkas.",
+              "Dites-lui : calice d'or → échangez 3 Calices contre 3 Anneaux de foi.",
+              "Allez voir Theoran Feizdir à l'extérieur de Stonecrest (565, 916).",
+              "Dites-lui plusieurs fois : fioles d' eau bénite (AVEC l'espace après l'apostrophe) pour transformer vos 6 Fioles d'eau cristalline en 6 Fioles d'eau bénite.",
+              "Dites-lui ensuite : anneau de vraie foi.",
+              "Il échange 1 Anneau de foi + 1 Graal de pureté + 2 Fioles d'eau bénite → 1 Anneau de vraie foi (×3)."
+            ],
+            "warnings": [
+              "Le mot-clé 'fioles d' eau bénite' a un espace après l'apostrophe — c'est important !"
+            ]
+          },
+          {
+            "name": "3b — Les 2 Bâtons d'espérance",
+            "objective": "Rassembler les composants et les faire fabriquer par Dionysus.",
+            "instructions": [
+              "Farmez 4 Piles de bois d'arbre démoniaque sur les arbres démoniaques de Raven's Dust.",
+              "Préparez 100 000 Po.",
+              "Achetez 10 Symboles d'espoir chez Chryseida Yolangda (vendeuse de potions de Stonecrest) — 10 000 Po par symbole.",
+              "Allez voir Dionysus, le prêtre dans le temple de la ville Centaure.",
+              "Dites-lui : Bâton d'Espérance.",
+              "Il échange 2 Piles de bois + 5 Symboles d'espoir → 1 Bâton d'espérance (×2)."
+            ]
+          },
+          {
+            "name": "3c — Les 2 Perles de sagesse",
+            "objective": "Collecter les Cantiques et les échanger chez Moonrock.",
+            "instructions": [
+              "Farmez les Cantiques perdus d'Artherk (volumes 1 à 5, en double) sur les Chapardeurs.",
+              "Achetez 2 Perles en forme de larme chez Annithea Goueladenn (sous la banque de Stonecrest, mot-clé : perle en forme de larme).",
+              "Allez voir Moonrock au temple de Lighthaven.",
+              "Elle échange 1 jeu de pages des Cantiques + 1 Perle en forme de larme → 1 Perle de sagesse (×2)."
+            ]
+          },
+          {
+            "name": "3d — Remise de l'Âme d'Artherk",
+            "instructions": [
+              "Muni des 3 Anneaux de vraie foi, 2 Bâtons d'espérance et 2 Perles de sagesse, retournez voir Nissus Talandra au temple de Stonecrest.",
+              "Vous recevez l'Âme d'Artherk et 250 000 XP."
+            ]
+          }
         ],
-        "warnings": [
-          "Peut être faite en parallèle du Cœur d'Artherk."
-        ]
+        "rewards_step": "Âme d'Artherk + 250 000 XP"
       },
       {
         "step_number": 4,
         "name": "L'Esprit d'Artherk",
-        "type": "collecte_dialogue",
+        "type": "multi_etapes_complexe",
         "difficulty": "difficile",
         "group_required": false,
-        "location": "Stoneheim",
-        "objective": "Obtenir l'Esprit d'Artherk. Nécessite d'avoir le Cœur ET l'Âme d'Artherk.",
-        "instructions": [
-          "Assurez-vous de posséder le Cœur et l'Âme d'Artherk.",
-          "Collectez les items restants nécessaires.",
-          "Suivez les dialogues pour obtenir l'Esprit d'Artherk et votre clé d'accès à l'Oracle."
+        "group_recommended": true,
+        "prerequisites": [
+          "Cœur d'Artherk obtenu (étape 2)",
+          "Âme d'Artherk obtenue (étape 3)",
+          "Quête du Pilleur de tombes accomplie (pour les crocs de dragon rubis)"
         ],
-        "warnings": [
-          "Impossible de commencer sans le Cœur ET l'Âme d'Artherk."
-        ]
+        "location": "Ville Centaure / Raven's Dust / Silversky / Lighthaven / Arakas / Zone Éthérée",
+        "objective": "Accomplir les tâches d'Aedenas : Crocs de vérité, Centaures aux yeux rouges, Marteaux du destin, Tambours du destin, puis se rendre en Zone Éthérée.",
+        "sub_steps": [
+          {
+            "name": "4a — Les 4 Crocs de vérité de Sir Resol",
+            "objective": "Fabriquer 4 Crocs de vérité en plusieurs allers-retours.",
+            "instructions": [
+              "Allez dire Esprit d'Artherk à Sir Beltigan, qui vous envoie vers Aedenas.",
+              "Allez voir Aedenas, le roi des Centaures (château au sud-est de la ville).",
+              "Dites-lui : Esprit d' Artherk (AVEC l'espace après d').",
+              "Farmez 6 Yeux de tarentule sur les tarentules (Raven's Dust).",
+              "Farmez 1 Anneau de sorcellerie en jade sur Grott le Troll (Raven's Dust).",
+              "Apportez-les à Mithanna Snowraven, dites : Croc de vérité de sir resol.",
+              "Elle vous envoie voir Nissus Talandra au temple de Stonecrest.",
+              "Dites à Nissus : Croc de vérité de sir resol → Mithanna Snowraven.",
+              "Il vous demandera 1 Croc de dragon rubis + 2 Chandelles d'éternité par Croc de vérité.",
+              "--- Préparer les chandelles ---",
+              "Farmez 40 Cires de guêpe sur les guêpes/abeilles (sauf Stoneheim).",
+              "Allez voir Samuel au château de Silversky (RDC), dites : bougies éternelles → oui.",
+              "Il fabrique 1 Chandelle contre 5 Cires de guêpe + 5 000 Po (×8 au total).",
+              "--- Préparer les crocs de dragon rubis ---",
+              "Allez voir DarkFang à Lighthaven, dites : dragon rubis → Carmin → souvenirs → Croc de Dragon Rubis.",
+              "Il n'en donne qu'un à la fois, et il faut avoir fait la quête du Pilleur de tombes.",
+              "--- Fabrication ---",
+              "Retournez voir Nissus avec 1 Croc de dragon rubis + 2 Chandelles d'éternité.",
+              "Il fabrique 1 Croc de vérité en 5 minutes.",
+              "Répétez l'opération 4 fois au total."
+            ],
+            "warnings": [
+              "DarkFang ne donne qu'un croc à la fois — il faut revenir après chaque utilisation.",
+              "Nécessite la quête du Pilleur de tombes."
+            ]
+          },
+          {
+            "name": "4b — Les 12 Centaures aux yeux rouges",
+            "objective": "Tuer 12 centaures aux yeux rouges avec le bâton de soumission.",
+            "instructions": [
+              "Retournez voir Aedenas, dites : Esprit d' Artherk.",
+              "Il vous donne une nouvelle quête au mot : talismans de contrôle-spirituel.",
+              "ÉQUIPEZ le bâton de soumission qu'il vous donne.",
+              "Tuez 12 centaures aux yeux rouges avec ce bâton : 1 dans le bâtiment Sud de la ville centaure, 2 au Nord-Est au-dessus du temple (les autres sont dispersés).",
+              "Une fois les 12 tués, remettez le bâton dans votre inventaire.",
+              "Retournez voir Aedenas, dites : talismans de contrôle-spirituel → lien → Marteaux du Destin."
+            ]
+          },
+          {
+            "name": "4c — Les 3 Marteaux du destin",
+            "objective": "Faire forger 3 Marteaux du destin par Lance Silversmith.",
+            "instructions": [
+              "Allez voir Un forgeron occupé (Thor Glarefire) à la ville Centaure.",
+              "Dites-lui : Marteaux du Destin. Il vous donne une lettre pour Lance Silversmith.",
+              "Trouvez Lance Silversmith dans une maison à l'est du camp gobelin sur Arakas (2570, 700, 0).",
+              "Dites-lui : Marteaux du destin puis faire un marteau du destin.",
+              "Préparez : 12 000 Po + 3 Marteaux de guerre en acier trempé (15 000 Po chacun chez le marchand d'armes de Windhowl) + 3 Parchemins d'enchantement (quête d'Arakas).",
+              "Retournez voir Lance Silversmith avec tous les objets pour fabriquer les 3 Marteaux.",
+              "Retournez voir Aedenas, dites : marteau du destin.",
+              "Il vous propose la quête optionnelle de l'anneau du séraphin (Roen Greenleaf).",
+              "Dites-lui : Anrak pour continuer la quête principale."
+            ]
+          },
+          {
+            "name": "4d — Les 2 Tambours du destin",
+            "objective": "Faire fabriquer 2 Tambours du destin par Anrak.",
+            "instructions": [
+              "Trouvez Anrak dans les sous-sols d'une maison à l'est du lac tarentules (Raven's Dust).",
+              "Dites-lui : tambour du destin.",
+              "Préparez : 8 Sabliers essentiels + 8 Pierres Immortelles + 2 Tambours finement ciselés + 120 000 Po.",
+              "--- Sabliers essentiels ---",
+              "Allez voir Menark au 2ème étage du château de Silversky (rempart nord).",
+              "Dites : sabliers essentiel. Échangez 8 potions/parchemins courants (guérison, mana, rappel, etc.).",
+              "--- Pierres Immortelles ---",
+              "Farmez 8 Pierres Immortelles sur les Seigneur ténébreux de la guerre (donjon de Mordenthal).",
+              "--- Tambours finement ciselés ---",
+              "Trouvez 2 Tambours finement ciselés dans un coffre au repaire des Voleurs (Stoneheim).",
+              "Retournez voir Anrak avec tous les composants."
+            ]
+          },
+          {
+            "name": "4e — Remise finale et Zone Éthérée",
+            "instructions": [
+              "Retournez voir Aedenas (le roi Centaure).",
+              "Dites-lui : Esprit d' artherk.",
+              "Il vous donne la clé d'accès aux Îles Éthérées.",
+              "Rendez-vous en Zone Éthérée (le portail bouge — cherchez entre la cave araignée et le village des skraugs verts).",
+              "Trouvez Glaenshenmilandira.",
+              "IMPORTANT : N'attaquez PAS les Purificateurs en route, sinon tâche supplémentaire.",
+              "Elle invoque l'Esprit d'Artherk. Vous recevez 250 000 XP."
+            ],
+            "warnings": [
+              "Le portail de la Zone Éthérée bouge régulièrement — consultez la carte de Stoneheim."
+            ]
+          }
+        ],
+        "rewards_step": "Esprit d'Artherk + 250 000 XP"
       },
       {
         "step_number": 5,
-        "name": "La Traversée de l'Oracle",
-        "type": "exploration",
-        "difficulty": "difficile",
+        "name": "Assemblage de la Clef d'Artherk et accès à la Zone Oracle",
+        "type": "finale",
+        "difficulty": "facile",
         "group_required": false,
-        "location": "Zone Oracle (SH)",
-        "objective": "Traverser l'Oracle pour renaître en Good.",
+        "location": "Château de Stonecrest → Forêt des gremlins → Zone Oracle",
+        "objective": "Assembler la Clef d'Artherk et pénétrer dans la Zone Oracle.",
         "instructions": [
-          "Muni de votre clé, rendez-vous à l'Oracle.",
-          "Effectuez la traversée de l'Oracle.",
-          "Vous renaîtrez en Good à l'issue de la traversée."
+          "Rendez-vous chez Sir Beltigan avec les 3 parties (Cœur, Âme, Esprit).",
+          "Dites-lui : Clef d'Artherk → combiner → oui.",
+          "Vous obtenez la Clef d'Artherk.",
+          "Rendez-vous dans la forêt des gremlins.",
+          "Longez la côte nord (qui tourne vers l'ouest).",
+          "Trouvez les 2 obélisques — un pont invisible se trouve en face.",
+          "Empruntez le pont invisible.",
+          "Rendez-vous au centre du Cœur du Destin.",
+          "Entrez dans le tourbillon.",
+          "Vous pénétrez dans la Zone Oracle.",
+          "Résolvez les énigmes pour devenir Séraphin d'Artherk !"
         ],
-        "warnings": [
-          "La traversée est une épreuve à part entière, préparez-vous."
-        ]
+        "rewards_step": "Accès à la Zone Oracle — Titre de Séraphin d'Artherk"
       }
     ]
   },
   {
     "id": "acces_oracle_evil",
     "name": "Accès Oracle Evil",
-    "zone": "Stoneheim",
-    "level_required": null,
-    "alignment_required": "Evil",
+    "zone": "Stoneheim / Raven's Dust",
+    "level_required": 75,
+    "level_recommended": "75-80 (camper les objets en avance)",
+    "alignment": "Mauvais",
     "group_recommended": false,
-    "description": "Quête d'accès à l'Oracle en alignement Evil. Elle comporte 4 parties : l'Allégeance à Ogrimar, le Crâne d'Ogrimar, le Sang d'Ogrimar, puis les Os d'Ogrimar. Une fois en possession de votre clé, il vous restera la Traversée de l'Oracle pour renaître.",
-    "prerequisites": [
-      "Être d'alignement Evil",
-      "Avoir accès à Stoneheim"
+    "description": "Ralliez les forces d'Ogrimar ! Rassemblez les 3 parties de la Clef d'Ogrimar (Crâne, Sang, Os) pour accéder à la Zone Oracle et devenir Néphilim d'Ogrimar. Quête longue et fastidieuse — anticipez en campant les objets dès le niveau 75-80.",
+    "tips": [
+      "Anticipez votre renaissance : campez les objets avec un personnage de haut niveau.",
+      "Au niveau 75-80, campez en avance le prochain accès, voire les deux prochains.",
+      "Profitez-en pour camper vos futures quêtes Beyond the Kingdom et votre accès pour Les ruines d'Anwynn.",
+      "Les joueurs habitués peuvent consulter la version rapide sur le wiki."
     ],
-    "structure_note": "Vous devez commencer par l'Allégeance à Ogrimar, puis obtenir le Crâne d'Ogrimar. Le Sang d'Ogrimar peut être mené en parallèle du Crâne. Mais vous devez posséder le Crâne ET le Sang avant de débuter les Os d'Ogrimar.",
     "rewards": {
-      "access": "Accès à l'Oracle (renaissance Evil)",
-      "note": "Après les 4 parties, il reste la Traversée de l'Oracle pour renaître."
+      "title": "Néphilim d'Ogrimar",
+      "access": "Zone Oracle"
     },
+    "npcs": [
+      {
+        "name": "Julian",
+        "role": "Contact principal — orientations + Venins néphiliens",
+        "location": "Près du temple de Stonecrest (ou salle des coffres)",
+        "interactions": [
+          {
+            "keyword": "travail → maître",
+            "purpose": "Démarrer la quête — être orienté vers Sir Mordenthal"
+          },
+          {
+            "keyword": "Sang d'Ogrimar",
+            "purpose": "Lancer la quête du Sang d'Ogrimar — être envoyé vers Vargus"
+          },
+          {
+            "keyword": "os d'Ogrimar → oui → caverne → entrée",
+            "purpose": "Lancer la quête des Os d'Ogrimar"
+          },
+          {
+            "keyword": "venin araignée néphilien",
+            "purpose": "Fabrique 5 venins néphiliens (PAS de 'd' devant araignée !). Coût : 1 croc tarentule + 3 venins d'araignée + 20 000 Po par venin."
+          }
+        ]
+      },
+      {
+        "name": "Sir Mordenthal",
+        "role": "Seigneur ténébreux — allégeance + assemblage final",
+        "location": "Château dans les montagnes au Nord-Ouest de Stonecrest",
+        "interactions": [
+          {
+            "keyword": "travail → chevalier ténébreux → ogrimar → diminué → autre → sombre → Makrsh P'Tangh → dieux → alliés → devenir allié → oui → je veux m'allier avec Ogrimar → oui → vaincre → place forte → oracle → clef d'ogrimar → coeur du Destin → forteresse → chambre de providence → parties → éléments → crâne d'ogrimar → sang d'ogrimar → assistant → os d'ogrimar",
+            "purpose": "Prêter allégeance et recevoir les 3 objectifs"
+          },
+          {
+            "keyword": "os d'Ogrimar",
+            "purpose": "Lancer la quête des Os (après Crâne et Sang obtenus)"
+          },
+          {
+            "keyword": "anneau ancestral → Donnez moi les os (×plusieurs) → Xanth → Donnez moi les os",
+            "purpose": "Obtenir les Os d'Ogrimar"
+          },
+          {
+            "keyword": "clef d'Ogrimar",
+            "purpose": "Assembler la Clef d'Ogrimar (une fois les 3 parties obtenues)"
+          }
+        ]
+      },
+      {
+        "name": "Zion Cœur-de-tonnerre",
+        "role": "Artisan — Crâne d'Ogrimar",
+        "location": "Ville des Centaures (925, 1152, 0)",
+        "interactions": [
+          {
+            "keyword": "Crâne d'Ogrimar → Sir Mordenthal → Crâne d'Ogrimar → coûter",
+            "purpose": "Lancer la fabrication — demande 1 Crâne du Mal + 1 Couronne de Corruption + 2 Liber Arcanum"
+          },
+          {
+            "purpose": "Après avoir remis tous les objets, il vous envoie vers le coffre de Vargus (575, 237, 0)"
+          }
+        ]
+      },
+      {
+        "name": "Shaman Weethgwotha",
+        "role": "Skraug — Parchemins de Haine + Nécessaire d'alchimie",
+        "location": "Camp des Skraugs verts (1183, 496, 0), nord de Stoneheim",
+        "interactions": [
+          {
+            "keyword": "oui",
+            "purpose": "Échange 5 Mandragores + 15 000 Po → 1 Parchemin de Haine (×2)"
+          },
+          {
+            "keyword": "nécessaire d'alchimie → oui",
+            "purpose": "Acheter 1 Nécessaire d'alchimie pour 15 000 Po"
+          }
+        ]
+      },
+      {
+        "name": "Oogla Thraaglurh",
+        "role": "Skraug rouge — Crâne du Mal",
+        "location": "Caves reculées du camp Skraug rouge (entrée : 855, 95, 0 → PNJ : 2240, 85, 2)",
+        "interactions": [
+          {
+            "purpose": "Échange 2 Crânes de malfrat + 2 Parchemins de Haine + 15 000 Po → 1 Crâne du Mal"
+          }
+        ]
+      },
+      {
+        "name": "Meltar Goanvach",
+        "role": "Voleur — Couronne de Corruption",
+        "location": "Sous Stonecrest (183, 1548, 1)",
+        "interactions": [
+          {
+            "keyword": "couronne de corruption → insignifiantes → mériter → possède → réputation → améliorer",
+            "purpose": "Lancer l'échange de gemmes"
+          },
+          {
+            "keyword": "gemmes",
+            "purpose": "Remettre des gemmes (écrire 'gemmes oui' et rappeler avec Ctrl+↑). 100-200 gemmes nécessaires."
+          },
+          {
+            "keyword": "couronne de corruption",
+            "purpose": "Vérifier de temps en temps si la Couronne est prête"
+          }
+        ],
+        "note": "NE PAS l'insulter, sinon le nombre de gemmes requises augmente considérablement !"
+      },
+      {
+        "name": "Zhakar",
+        "role": "Sorcier — Liber Arcanum",
+        "location": "Dernier étage de la Tour de Zhakar (Raven's Dust)",
+        "interactions": [
+          {
+            "keyword": "Nettoyeur",
+            "purpose": "Invoque des rats nettoyeurs dans sa tour — tuez-les pour obtenir 40 Parchemins d'arcanes"
+          },
+          {
+            "keyword": "créer",
+            "purpose": "Fabrique 1 Liber Arcanum contre 20 Parchemins d'arcanes + 35 000 Po (15 min de fabrication). ×2 au total."
+          }
+        ]
+      },
+      {
+        "name": "Vargus",
+        "role": "Prêtre d'Ogrimar — Sang d'Ogrimar",
+        "location": "Temple d'Ogrimar (575, 237, 0)",
+        "interactions": [
+          {
+            "keyword": "Sang d'Ogrimar → Objets de choix",
+            "purpose": "Demande 3 Sangs de démon + 2 Potions fétides + 5 Venins néphiliens"
+          },
+          {
+            "purpose": "Remettre les 3 sangs + 2 potions + 5 venins → obtenir le Sang d'Ogrimar"
+          }
+        ],
+        "note": "NE PAS parler à Vargus après avoir donné les objets à Zion pour le Crâne ! Il cacherait le crâne."
+      },
+      {
+        "name": "Kwarlgloth",
+        "role": "Skraug rose — Fioles de sang démoniaque",
+        "location": "Première grotte du camp Skraug (entrée : 773, 113, 0 → PNJ : 2154, 100, 2)",
+        "interactions": [
+          {
+            "keyword": "sang démoniaque → oui",
+            "purpose": "Échange 3 Dagues du sacrifice + 4 Anneaux de pierre de sang + 20 000 Po → 1 Fiole de sang démoniaque (×3)"
+          }
+        ]
+      },
+      {
+        "name": "Araknor",
+        "role": "Nécromancien — Parchemins nécromantiques",
+        "location": "Lighthaven (2984, 1035, 0)",
+        "interactions": [
+          {
+            "keyword": "parchemin nécromantique → oui → 4",
+            "purpose": "Acheter 4 Parchemins nécromantiques (10 000 Po + 5 min chacun)"
+          }
+        ]
+      },
+      {
+        "name": "Un aveugle",
+        "role": "Alchimiste — Potions fétides + Anneau ancestral",
+        "location": "Cavernes des montagnes du nord-ouest de Raven's Dust (684, 1618, 2)",
+        "interactions": [
+          {
+            "keyword": "potions fétides → oui",
+            "purpose": "Fabrique 1 Potion fétide contre 1 Fluide visqueux de Zorglub + 2 Parchemins nécromantiques + 25 000 Po (×2)"
+          },
+          {
+            "keyword": "anneau ancestral → oui → anneau ancestral",
+            "purpose": "Pour la quête des Os — Échange 1 Fluide visqueux + 1 Anneau de pierre de sang → révélation sur le voleur"
+          }
+        ],
+        "note": "ATTENTION : il prend TOUS vos anneaux de pierre de sang et fluides visqueux en inventaire !"
+      },
+      {
+        "name": "Une bête effrayante",
+        "role": "Monstre — Anneau ancestral",
+        "location": "Cave secrète près du puits du vieillard (forêt des Gremlins) (2339, 550, 2)",
+        "interactions": [
+          {
+            "keyword": "imprégnation → Os d' Ogrimar → objet → anneau",
+            "purpose": "Obtenir l'anneau ancestral (d'abord le tuer, sortir, revenir, il vous le donne)"
+          }
+        ],
+        "note": "Espace avant Ogrimar dans 'Os d' Ogrimar' !"
+      },
+      {
+        "name": "Drardos",
+        "role": "Joaillier",
+        "location": "Maison au sud-est du marchand de potions de Silversky (1596, 2569, 0)",
+        "interactions": [
+          {
+            "keyword": "anneau ancestral → oui → maitre joaillier",
+            "purpose": "Examiner l'anneau (ne pas utiliser la souris, c'est buggé). Vous envoie vers Frère Thorkas puis vers Un aveugle."
+          }
+        ]
+      },
+      {
+        "name": "Frère Thorkas",
+        "role": "Prêtre",
+        "location": "Temple de Silversky (1554, 2404, 0)",
+        "interactions": [
+          {
+            "keyword": "anneau ancestral",
+            "purpose": "Étape intermédiaire pour la quête des Os d'Ogrimar"
+          }
+        ]
+      }
+    ],
     "items_required_overview": {
-      "liste_complete": [
-        {
-          "name": "Pièces d'or",
-          "quantity": "400 000",
-          "obtention": "Tous les moyens sont permis !!"
-        },
+      "drops_a_farmer": [
         {
           "name": "Mandragore",
           "quantity": 10,
-          "obtention": "Marchande de potions SC"
+          "obtention": "Marchande de potions de Stonecrest",
+          "usage": "Parchemins de Haine"
         },
         {
           "name": "Crâne de Malfrat",
           "quantity": 2,
-          "obtention": "Chapardeurs / Arpenteurs de la nuit (sortie Est de SC)"
+          "obtention": "Chapardeurs / Arpenteurs de la nuit (sortie Est de Stonecrest)",
+          "usage": "Crâne du Mal"
         },
         {
-          "name": "Gemmes",
-          "quantity": "80 à 400 selon qualité",
-          "obtention": "Nombreux monstres de SH (spot : loups à l'Est de SC)"
+          "name": "Gemme",
+          "quantity": "100 à 200",
+          "obtention": "Drop commun des monstres de Stoneheim",
+          "usage": "Couronne de Corruption"
         },
         {
-          "name": "Dague de sacrifice",
+          "name": "Dague du sacrifice sanglante",
           "quantity": 9,
-          "obtention": "Chapardeurs / Arpenteurs de la nuit"
+          "obtention": "Chapardeurs / Arpenteurs de la nuit (sortie Est de Stonecrest)",
+          "usage": "Fioles de sang démoniaque"
         },
         {
-          "name": "Anneau de Pierre de Sang",
+          "name": "Anneau de pierre de sang",
           "quantity": 13,
-          "obtention": "Zorglub / Quête de l'anneau de pierre de sang (RD)"
+          "obtention": "Zorglub (drop en inventaire) ou quête de l'anneau de pierre de sang (Raven's Dust)",
+          "usage": "Fioles de sang démoniaque (12) + Quête des Os (1)"
         },
         {
-          "name": "Fluide visqueux de Zorglub",
+          "name": "Fluide visqueux essentiel de Zorglub",
           "quantity": 3,
-          "obtention": "Zorglub"
+          "obtention": "Zorglub (drop en inventaire)",
+          "usage": "Potions fétides (2) + Quête des Os (1)"
         },
         {
           "name": "Croc de tarentule",
           "quantity": 5,
-          "obtention": "Tarentules Némésis"
+          "obtention": "Tarentules Némésis de Stoneheim",
+          "usage": "Venins néphiliens"
         },
         {
           "name": "Venin d'araignée",
           "quantity": 15,
-          "obtention": "Arachnides nécrites (et veuves noires géantes ?)"
+          "obtention": "Arachnides nécrites de Stoneheim (PAS les fioles de venin d'araignée d'Arakas !)",
+          "usage": "Venins néphiliens"
+        }
+      ],
+      "achats": [
+        {
+          "name": "Pièces d'or",
+          "quantity": "350 000+ Po au total",
+          "detail": "30 000 (Parchemins Haine) + 15 000 (Crâne du Mal) + 70 000 (Liber Arcanum) + 60 000 (Sangs démon) + 40 000 (Parchemins nécro) + 50 000 (Potions fétides) + 15 000 (Nécessaire alchimie) + 100 000 (Venins néphiliens)"
+        },
+        {
+          "name": "Nécessaire d'alchimie",
+          "quantity": 1,
+          "obtention": "Chaman Weethgwotha (15 000 Po)",
+          "usage": "Venins néphiliens (réutilisable)"
+        }
+      ],
+      "objets_intermediaires_quete": [
+        {
+          "name": "Parchemin de Haine",
+          "quantity": 2,
+          "obtention": "Shaman Weethgwotha (5 Mandragores + 15 000 Po chacun)"
+        },
+        {
+          "name": "Crâne du Mal",
+          "quantity": 1,
+          "obtention": "Oogla Thraaglurh (2 Crânes de malfrat + 2 Parchemins de Haine + 15 000 Po)"
+        },
+        {
+          "name": "Couronne de Corruption",
+          "quantity": 1,
+          "obtention": "Meltar Goanvach (100-200 gemmes)"
+        },
+        {
+          "name": "Parchemin d'arcane",
+          "quantity": 40,
+          "obtention": "Rats nettoyeurs invoqués par Zhakar"
+        },
+        {
+          "name": "Liber Arcanum",
+          "quantity": 2,
+          "obtention": "Zhakar (20 Parchemins d'arcanes + 35 000 Po + 15 min chacun)"
+        },
+        {
+          "name": "Fiole de sang démoniaque",
+          "quantity": 3,
+          "obtention": "Kwarlgloth (3 Dagues + 4 Anneaux de pierre de sang + 20 000 Po chacune)"
+        },
+        {
+          "name": "Parchemin nécromantique",
+          "quantity": 4,
+          "obtention": "Araknor (10 000 Po + 5 min chacun)"
+        },
+        {
+          "name": "Potion fétide",
+          "quantity": 2,
+          "obtention": "Un aveugle (1 Fluide visqueux + 2 Parchemins nécro + 25 000 Po chacune)"
+        },
+        {
+          "name": "Venin néphilien",
+          "quantity": 5,
+          "obtention": "Julian (1 Croc tarentule + 3 Venins d'araignée + 20 000 Po chacun — nécessaire d'alchimie réutilisable)"
+        },
+        {
+          "name": "Anneau ancestral",
+          "quantity": 1,
+          "obtention": "Une bête effrayante (quête des Os d'Ogrimar)"
         }
       ]
     },
     "steps": [
       {
         "step_number": 1,
-        "name": "Allégeance à Ogrimar",
+        "name": "L'Allégeance à Ogrimar",
         "type": "dialogue",
         "difficulty": "facile",
         "group_required": false,
-        "location": "Stoneheim",
-        "objective": "Faire allégeance au dieu Ogrimar pour débloquer les parties suivantes.",
+        "location": "Temple de Stonecrest → Château de Mordenthal (Nord-Ouest de Stonecrest)",
+        "objective": "Prêter allégeance à Ogrimar et recevoir la mission de rassembler les 3 parties de la Clef.",
         "instructions": [
-          "Rendez-vous auprès du PNJ d'allégeance à Ogrimar à Stoneheim.",
-          "Suivez le dialogue pour prêter allégeance.",
-          "Cette étape est obligatoire avant toutes les autres."
-        ]
+          "Allez voir Julian, situé près du temple de Stonecrest.",
+          "Dites-lui : travail → maître.",
+          "Il vous envoie voir Sir Mordenthal.",
+          "Rendez-vous au château de Mordenthal dans les montagnes au Nord-Ouest de Stonecrest.",
+          "Enchaînez les mots-clés : travail → chevalier ténébreux → ogrimar → diminué → autre → sombre → Makrsh P'Tangh → dieux → alliés → devenir allié → oui → je veux m'allier avec Ogrimar → oui → vaincre → place forte → oracle → clef d'ogrimar → coeur du Destin → forteresse → chambre de providence → parties → éléments → crâne d'ogrimar → sang d'ogrimar → assistant → os d'ogrimar.",
+          "Il vous demandera de rassembler les 3 parties : Crâne, Sang et Os d'Ogrimar."
+        ],
+        "rewards_step": "Déblocage des 3 branches de quête"
       },
       {
         "step_number": 2,
         "name": "Le Crâne d'Ogrimar",
-        "type": "collecte_dialogue",
+        "type": "collecte_multi_etapes",
         "difficulty": "moyen",
         "group_required": false,
-        "location": "Stoneheim / Raven's Dust",
-        "objective": "Obtenir le Crâne d'Ogrimar en collectant les items nécessaires.",
-        "instructions": [
-          "Collectez les items requis pour cette partie (mandragores, crânes de malfrat, gemmes, etc.).",
-          "Suivez les dialogues des PNJ concernés.",
-          "Le Crâne d'Ogrimar vous sera remis une fois les conditions remplies."
+        "location": "Stonecrest / Ville Centaure / Camp Skraugs / Raven's Dust",
+        "objective": "Obtenir 1 Crâne du Mal + 1 Couronne de Corruption + 2 Liber Arcanum, puis les remettre à Zion Cœur-de-tonnerre.",
+        "sub_steps": [
+          {
+            "name": "2a — Lancement auprès de Zion Cœur-de-tonnerre",
+            "instructions": [
+              "Allez voir Zion Cœur-de-tonnerre (925, 1152, 0) dans la ville des Centaures.",
+              "Dites-lui : Crâne d'Ogrimar → Sir Mordenthal → Crâne d'Ogrimar → coûter.",
+              "Il vous demande : 1 Crâne du Mal, 1 Couronne de Corruption, et 2 Liber Arcanum."
+            ]
+          },
+          {
+            "name": "2b — Les 2 Parchemins de Haine",
+            "objective": "Acheter les parchemins chez les Skraugs verts.",
+            "instructions": [
+              "Procurez-vous 10 Mandragores chez la marchande de potions de Stonecrest.",
+              "Préparez 30 000 Po.",
+              "Allez voir Shaman Weethgwotha au camp des Skraugs verts (1183, 496, 0).",
+              "Dites : oui. Il échange 5 Mandragores + 15 000 Po → 1 Parchemin de Haine (×2)."
+            ]
+          },
+          {
+            "name": "2c — Le Crâne du Mal",
+            "objective": "Échanger les composants chez les Skraugs rouges.",
+            "instructions": [
+              "Farmez 2 Crânes de malfrat sur les Chapardeurs / Arpenteurs de la nuit (sortie Est de Stonecrest).",
+              "Préparez 15 000 Po.",
+              "Allez voir Oogla Thraaglurh dans les caves reculées du camp Skraug rouge (entrée : 855, 95, 0 → PNJ : 2240, 85, 2).",
+              "Amenez-lui les 2 Crânes de malfrat + 2 Parchemins de Haine + 15 000 Po.",
+              "Il vous remet le Crâne du Mal."
+            ]
+          },
+          {
+            "name": "2d — La Couronne de Corruption",
+            "objective": "Échanger des gemmes chez Meltar Goanvach.",
+            "instructions": [
+              "Farmez 100 à 200 gemmes (drop commun des monstres de Stoneheim — ne pas confondre avec les cristaux bruts).",
+              "Allez voir Meltar Goanvach, le voleur sous Stonecrest (183, 1548, 1).",
+              "Dites : couronne de corruption → insignifiantes → mériter → possède → réputation → améliorer.",
+              "Échangez vos gemmes au mot-clé : gemmes (écrire 'gemmes oui' et rappeler avec Ctrl+↑).",
+              "Vérifiez de temps en temps en disant : couronne de corruption.",
+              "Il finira par vous remettre la Couronne de Corruption."
+            ],
+            "warnings": [
+              "NE L'INSULTEZ PAS ! Sinon la quantité de gemmes requise augmente énormément."
+            ]
+          },
+          {
+            "name": "2e — Les 2 Liber Arcanum",
+            "objective": "Obtenir les livres via la tour de Zhakar.",
+            "instructions": [
+              "Préparez 70 000 Po.",
+              "Rendez-vous au dernier étage de la Tour de Zhakar sur Raven's Dust.",
+              "Dites à Zhakar : Nettoyeur.",
+              "Il invoque des rats nettoyeurs sur chaque étage de sa tour.",
+              "Tuez ces rats et ramassez les Parchemins d'arcanes (40 au total nécessaires).",
+              "Si pas assez de parchemins après avoir tué tous les rats, dites à nouveau : Nettoyeur.",
+              "Retournez voir Zhakar, dites : créer.",
+              "Il fabrique 1 Liber Arcanum contre 20 Parchemins d'arcanes + 35 000 Po (15 min de fabrication).",
+              "Répétez pour le 2ème Liber Arcanum."
+            ]
+          },
+          {
+            "name": "2f — Récupération du Crâne d'Ogrimar",
+            "instructions": [
+              "Retournez voir Zion Cœur-de-tonnerre avec le Crâne du Mal + la Couronne de Corruption + les 2 Liber Arcanum.",
+              "Il vous indique que le Crâne d'Ogrimar se trouve dans un coffre à côté du lit de Vargus (575, 237, 0).",
+              "Allez récupérer le Crâne d'Ogrimar dans le coffre."
+            ],
+            "warnings": [
+              "NE PARLEZ SURTOUT PAS À VARGUS après avoir donné les objets à Zion !",
+              "Si vous lui parlez, il cachera le crâne. Zion vous donnera une 2ème chance.",
+              "Si vous parlez à Vargus une 2ème fois avant de récupérer le crâne → QUÊTE INACHEVABLE !"
+            ]
+          }
         ],
-        "warnings": [
-          "Les gemmes nécessaires varient de 80 à 400 selon leur qualité."
-        ]
+        "rewards_step": "Crâne d'Ogrimar"
       },
       {
         "step_number": 3,
         "name": "Le Sang d'Ogrimar",
-        "type": "collecte_dialogue",
-        "difficulty": "moyen",
+        "type": "collecte_multi_etapes",
+        "difficulty": "difficile",
         "group_required": false,
-        "location": "Stoneheim / Raven's Dust",
-        "objective": "Obtenir le Sang d'Ogrimar. Peut être mené en parallèle du Crâne.",
-        "instructions": [
-          "Collectez les items requis pour cette partie (dagues de sacrifice, anneaux de pierre de sang, etc.).",
-          "Suivez les dialogues des PNJ concernés.",
-          "Le Sang d'Ogrimar vous sera remis une fois les conditions remplies."
+        "location": "Stonecrest / Camp Skraugs / Lighthaven / Raven's Dust",
+        "objective": "Obtenir 3 Sangs de démon + 2 Potions fétides + 5 Venins néphiliens et les remettre à Vargus.",
+        "sub_steps": [
+          {
+            "name": "3a — Lancement auprès de Vargus",
+            "instructions": [
+              "Allez voir Julian (Stonecrest), dites : Sang d'Ogrimar. Il vous envoie vers Vargus.",
+              "Allez voir Vargus (575, 237, 0) au temple d'Ogrimar.",
+              "Dites : Sang d'Ogrimar → Objets de choix.",
+              "Il vous demande : 3 Sangs de démon, 2 Potions fétides, 5 Venins néphiliens."
+            ]
+          },
+          {
+            "name": "3b — Les 3 Fioles de sang démoniaque",
+            "objective": "Échanger les composants chez Kwarlgloth.",
+            "instructions": [
+              "Farmez 9 Dagues du sacrifice sanglantes sur les Chapardeurs / Arpenteurs de la nuit (sortie Est de Stonecrest).",
+              "Farmez 12 Anneaux de pierre de sang sur Zorglub (drop en inventaire). Profitez-en pour farmer aussi les Fluides visqueux pour l'étape suivante.",
+              "Préparez 60 000 Po.",
+              "Allez voir Kwarlgloth, un skraug rose (entrée : 773, 113, 0 → PNJ : 2154, 100, 2).",
+              "Dites : sang démoniaque → oui.",
+              "Il échange 3 Dagues + 4 Anneaux de pierre de sang + 20 000 Po → 1 Fiole de sang démoniaque.",
+              "Répétez 3 fois au total."
+            ]
+          },
+          {
+            "name": "3c — Les 4 Parchemins nécromantiques",
+            "objective": "Acheter les parchemins chez Araknor.",
+            "instructions": [
+              "Préparez 40 000 Po.",
+              "Allez voir Araknor, le nécromancien de Lighthaven (2984, 1035, 0).",
+              "Dites : parchemin nécromantique → oui → 4.",
+              "Il fabrique 4 Parchemins nécromantiques (10 000 Po + 5 min chacun)."
+            ]
+          },
+          {
+            "name": "3d — Les 2 Potions fétides",
+            "objective": "Faire fabriquer les potions par Un aveugle.",
+            "instructions": [
+              "Farmez 2 Fluides visqueux essentiels de Zorglub sur Zorglub (drop en inventaire).",
+              "Préparez 50 000 Po.",
+              "Allez voir Un aveugle dans les cavernes du nord-ouest de Raven's Dust (684, 1618, 2).",
+              "Dites : potions fétides → oui.",
+              "Il fabrique 1 Potion fétide contre 1 Fluide visqueux + 2 Parchemins nécromantiques + 25 000 Po.",
+              "Répétez pour la 2ème Potion fétide."
+            ]
+          },
+          {
+            "name": "3e — Les 5 Venins néphiliens",
+            "objective": "Faire fabriquer les venins par Julian.",
+            "instructions": [
+              "Farmez 5 Crocs de tarentule sur les Tarentules Némésis de Stoneheim.",
+              "Farmez 15 Venins d'araignée sur les Arachnides nécrites de Stoneheim (PAS les fioles de venin d'araignée d'Arakas !).",
+              "Achetez 1 Nécessaire d'alchimie chez Chaman Weethgwotha (1183, 496, 0) : dites nécessaire d'alchimie → oui (15 000 Po).",
+              "Préparez 100 000 Po.",
+              "Retournez voir Julian (Stonecrest).",
+              "Dites : venin araignée néphilien (PAS de 'd' devant araignée !).",
+              "Il fabrique 1 Venin néphilien contre 1 Croc + 3 Venins d'araignée + 20 000 Po.",
+              "Le nécessaire d'alchimie est réutilisable — répétez 5 fois."
+            ],
+            "warnings": [
+              "Le mot-clé est 'venin araignée néphilien' sans le 'd' — attention à la syntaxe !"
+            ]
+          },
+          {
+            "name": "3f — Remise du Sang d'Ogrimar",
+            "instructions": [
+              "Retournez voir Vargus (575, 237, 0) au temple d'Ogrimar.",
+              "Amenez-lui : 3 Fioles de sang démoniaque + 2 Potions fétides + 5 Venins néphiliens.",
+              "Il vous remet le Sang d'Ogrimar."
+            ]
+          }
         ],
-        "warnings": [
-          "Peut être fait en parallèle du Crâne d'Ogrimar.",
-          "Les anneaux de pierre de sang sont obtenables via Zorglub ou via une quête dédiée à RD."
-        ]
+        "rewards_step": "Sang d'Ogrimar"
       },
       {
         "step_number": 4,
         "name": "Les Os d'Ogrimar",
-        "type": "collecte_dialogue",
-        "difficulty": "difficile",
+        "type": "exploration_dialogue",
+        "difficulty": "moyen",
         "group_required": false,
-        "location": "Stoneheim",
-        "objective": "Obtenir les Os d'Ogrimar. Nécessite d'avoir le Crâne ET le Sang d'Ogrimar.",
-        "instructions": [
-          "Assurez-vous de posséder le Crâne et le Sang d'Ogrimar.",
-          "Collectez les items restants (crocs de tarentule, venin d'araignée, etc.).",
-          "Suivez les dialogues pour obtenir les Os d'Ogrimar et votre clé d'accès à l'Oracle."
+        "prerequisites": [
+          "Crâne d'Ogrimar obtenu (étape 2)",
+          "Sang d'Ogrimar obtenu (étape 3)"
         ],
-        "warnings": [
-          "Impossible de commencer sans le Crâne ET le Sang d'Ogrimar."
-        ]
+        "location": "Stonecrest / Forêt des Gremlins / Silversky / Raven's Dust / Mordenthal",
+        "objective": "Retrouver les Os d'Ogrimar en suivant une enquête passant par plusieurs PNJ.",
+        "sub_steps": [
+          {
+            "name": "4a — Lancement",
+            "instructions": [
+              "Retournez voir Mordenthal.",
+              "Dites : os d'Ogrimar.",
+              "Allez voir Julian (Stonecrest), dites : os d'Ogrimar → oui → caverne → entrée."
+            ]
+          },
+          {
+            "name": "4b — La bête effrayante",
+            "objective": "Trouver la cave secrète et obtenir l'anneau ancestral.",
+            "instructions": [
+              "Allez voir Un vieillard en bonne santé (1110, 265, 0) dans sa maison en forêt des Gremlins (le mage des vortex).",
+              "Trouvez le puits derrière sa maison (à gauche).",
+              "Placez-vous juste à gauche du puits.",
+              "Faites 10 pas vers la gauche, puis 20 pas vers le haut.",
+              "Vous verrez un petit rocher — marchez dessus (arriver en dessous du rocher).",
+              "Vous entrez dans une cave avec des escaliers — descendez-les.",
+              "Allez à l'Est, trouvez d'autres escaliers, descendez.",
+              "Continuez vers l'Est jusqu'au pont menant à une petite île.",
+              "Trouvez 'Une bête effrayante' (2339, 550, 2).",
+              "Dites : imprégnation → Os d' Ogrimar (AVEC l'espace avant Ogrimar) → objet → anneau.",
+              "Il refuse de donner l'anneau.",
+              "Tuez-le, sortez de son champ de vision, puis revenez.",
+              "Il sera de retour et vous donnera l'anneau ancestral."
+            ]
+          },
+          {
+            "name": "4c — L'enquête de l'anneau ancestral",
+            "objective": "Suivre la piste de l'anneau à travers plusieurs PNJ.",
+            "instructions": [
+              "Allez voir Mordenthal, parlez-lui de l'anneau.",
+              "Allez voir Drardos (1596, 2569, 0) à Silversky.",
+              "Dites : anneau ancestral → oui → maitre joaillier (NE PAS utiliser la souris — c'est buggé).",
+              "Il vous envoie voir Frère Thorkas.",
+              "Allez voir Frère Thorkas (1554, 2404, 0) au temple de Silversky.",
+              "Dites : anneau ancestral.",
+              "Retournez voir Drardos — il vous envoie voir Un aveugle sur Raven's Dust."
+            ]
+          },
+          {
+            "name": "4d — Révélation de l'aveugle",
+            "objective": "Découvrir l'identité du voleur.",
+            "instructions": [
+              "Préparez exactement 1 Fluide visqueux de Zorglub + 1 Anneau de pierre de sang.",
+              "ATTENTION : l'aveugle prend TOUS les anneaux de pierre de sang et fluides visqueux de votre inventaire ! Ne gardez que le strict nécessaire.",
+              "Allez voir Un aveugle (684, 1618, 2) sur Raven's Dust.",
+              "Dites : anneau ancestral → oui → anneau ancestral.",
+              "Il révèle que le voleur est Mordenthal."
+            ],
+            "warnings": [
+              "Videz votre inventaire de tout surplus d'anneaux de pierre de sang et fluides visqueux AVANT d'aller voir l'aveugle !"
+            ]
+          },
+          {
+            "name": "4e — Confrontation avec Mordenthal",
+            "instructions": [
+              "Retournez voir Mordenthal (l'anneau ancestral peut être utilisé pour se téléporter chez lui — une seule charge).",
+              "Dites : anneau ancestral.",
+              "Dites plusieurs fois : Donnez moi les os.",
+              "Quand il demande qui l'a dénoncé, dites : Xanth.",
+              "Redites : Donnez moi les os.",
+              "Il vous remet les Os d'Ogrimar."
+            ]
+          }
+        ],
+        "rewards_step": "Os d'Ogrimar"
       },
       {
         "step_number": 5,
-        "name": "La Traversée de l'Oracle",
-        "type": "exploration",
-        "difficulty": "difficile",
+        "name": "Assemblage de la Clef d'Ogrimar et accès à la Zone Oracle",
+        "type": "finale",
+        "difficulty": "facile",
         "group_required": false,
-        "location": "Zone Oracle (SH)",
-        "objective": "Traverser l'Oracle pour renaître en Evil.",
+        "location": "Château de Mordenthal → Forêt des gremlins → Zone Oracle",
+        "objective": "Assembler la Clef d'Ogrimar et pénétrer dans la Zone Oracle.",
         "instructions": [
-          "Muni de votre clé, rendez-vous à l'Oracle.",
-          "Effectuez la traversée de l'Oracle.",
-          "Vous renaîtrez en Evil à l'issue de la traversée."
+          "Rendez-vous chez Sir Mordenthal avec les 3 parties (Crâne, Sang, Os).",
+          "Dites-lui : clef d'Ogrimar.",
+          "Il assemble la Clef d'Ogrimar.",
+          "Rendez-vous dans la forêt des gremlins.",
+          "Longez la côte nord (qui tourne vers l'ouest).",
+          "Trouvez les 2 obélisques — un pont invisible se trouve en face.",
+          "Empruntez le pont invisible.",
+          "Rendez-vous au centre du Cœur du Destin.",
+          "Entrez dans le tourbillon.",
+          "Vous pénétrez dans la Zone Oracle.",
+          "Résolvez les énigmes pour devenir Néphilim d'Ogrimar !"
         ],
-        "warnings": [
-          "La traversée est une épreuve à part entière, préparez-vous."
-        ]
+        "rewards_step": "Accès à la Zone Oracle — Titre de Néphilim d'Ogrimar"
       }
     ]
-  },
+  },  
   {
     "id": "acces_ravens_dust_dechu",
     "name": "Accès Déchu à Raven's Dust",

@@ -97,10 +97,37 @@ const StatPlanner = () => {
     return 1 + Math.ceil(totalLevelPointsSpent / POINTS_PER_LEVEL);
   }, [totalLevelPointsSpent, POINTS_PER_LEVEL]);
 
-  const derivedStats = useMemo(() => ({
-    hp: Math.floor(30 + (requiredLevel * (finalStats.end * 0.04884 + 7.065))),
-    mana: Math.floor(10 + (requiredLevel * ( (finalStats.int * 0.0249) + (finalStats.wis * 0.0155) )))
-  }), [finalStats, requiredLevel]);
+  const derivedStats = useMemo(() => {
+    const isHighRen = renaissance >= 6;
+    const PALIER = 160;
+    
+    // HP END Contribution
+    let hpEndGain = 0;
+    if (isHighRen) {
+      if (finalStats.end <= PALIER) {
+        hpEndGain = finalStats.end * 0.0487 + 7.243;
+      } else {
+        hpEndGain = PALIER * 0.0487 + 7.243 + (finalStats.end - PALIER) * 0.034;
+      }
+    } else {
+      hpEndGain = finalStats.end * 0.075 + 6.75;
+    }
+
+    // Mana WIS Contribution (Diminishing returns after 160)
+    let manaWisPart = 0;
+    if (finalStats.wis <= PALIER) {
+      manaWisPart = finalStats.wis * 0.08415;
+    } else {
+      manaWisPart = (PALIER * 0.08415) + (finalStats.wis - PALIER) * 0.001926;
+    }
+    
+    const manaGain = (finalStats.int * 0.01587) + manaWisPart;
+
+    return {
+      hp: Math.floor(51 + (requiredLevel * hpEndGain)),
+      mana: Math.floor(37 + (requiredLevel * manaGain))
+    };
+  }, [finalStats, requiredLevel, renaissance]);
 
   const magicTiers = useMemo(() => {
     const intRank = spellPowerConfig.simulation.calculateBaseRank(finalStats.int, 0);

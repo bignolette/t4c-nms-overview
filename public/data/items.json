@@ -209,12 +209,12 @@
     "type": "Arme"
   },
   {
-    "name": "Epée de diamants",
     "quantity": 1,
     "prerequisites": {
       "str": "532"
     },
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Epée de diamants"
   },
   {
     "name": "Arc de glace enchanté",
@@ -1480,7 +1480,6 @@
     "type": "Heaume"
   },
   {
-    "name": "Armure de cuir",
     "quantity": 1,
     "prerequisites": {
       "end": "25"
@@ -1488,13 +1487,15 @@
     "bonuses": {
       "ca": "1.45"
     },
-    "obtention": [],
+    "obtention": [
+      "AR, Marchand LH / WH"
+    ],
     "buyPrice": "607",
-    "secondary": {},
-    "type": "Plastron"
+    "type": "Plastron",
+    "weight": "24",
+    "name": "Armure de cuir"
   },
   {
-    "name": "Armure de cuir clouté",
     "quantity": 1,
     "prerequisites": {
       "end": "45"
@@ -1502,13 +1503,15 @@
     "bonuses": {
       "ca": "2.8"
     },
-    "obtention": [],
+    "obtention": [
+      "AR, Marchand LH / WH"
+    ],
     "buyPrice": "4538",
-    "secondary": {},
-    "type": "Plastron"
+    "type": "Plastron",
+    "weight": "30",
+    "name": "Armure de cuir clouté"
   },
   {
-    "name": "Armure d'écailles",
     "quantity": 1,
     "prerequisites": {
       "end": "100"
@@ -1516,7 +1519,12 @@
     "bonuses": {
       "ca": "+9"
     },
-    "type": "Plastron"
+    "type": "Plastron",
+    "obtention": [
+      "SH, Marchand SC"
+    ],
+    "weight": "30",
+    "name": "Armure d'écailles"
   },
   {
     "name": "Bouclier triplicite du mage",
@@ -1611,7 +1619,6 @@
     "type": "Bouclier"
   },
   {
-    "name": "Bouclier de Liridell de qualité",
     "quantity": 1,
     "prerequisites": {
       "end": "370"
@@ -1623,7 +1630,12 @@
     "bonuses": {
       "ca": "+52"
     },
-    "type": "Bouclier"
+    "type": "Bouclier",
+    "obtention": [
+      "Dragon Liridell (DI)"
+    ],
+    "content": "NMS",
+    "name": "Bouclier de Liridell (de qualité)"
   },
   {
     "name": "Bouclier cabossé de Liridell",
@@ -1710,7 +1722,6 @@
     ]
   },
   {
-    "name": "Ecu du croisé",
     "quantity": 1,
     "prerequisites": {
       "int": "120",
@@ -1734,7 +1745,8 @@
       "Résistance Nécro": "-15",
       "Esquive": "-55",
       "Coup Assommant": "+12",
-      "Transpercer l'Armure": "+12"
+      "Transpercer l'Armure": "+12",
+      "Note": "Résistance nécro passée de +10 à -15 lors de la maj 4/4/18. Version noire disponible."
     },
     "bonuses": {
       "ca": "+25"
@@ -1742,8 +1754,10 @@
     "type": "Bouclier",
     "content": "NMS",
     "obtention": [
-      "Armurier lvl 100"
-    ]
+      "Armurier lvl 100",
+      "Version noire : Armurier lvl 100 (recette différente)"
+    ],
+    "name": "Écu du croisé"
   },
   {
     "name": "Bouclier des abysses",
@@ -2232,7 +2246,6 @@
     "type": "Amulette"
   },
   {
-    "name": "Manteau du chaman",
     "quantity": 1,
     "prerequisites": {
       "int": "50",
@@ -2245,18 +2258,20 @@
       "wis": "+15",
       "int": "+10"
     },
-    "type": "Robe"
+    "type": "Robe",
+    "name": "Manteau du chaman"
   },
   {
-    "name": "Bottes de mailles",
     "quantity": 1,
     "prerequisites": {
       "end": "80"
     },
     "bonuses": {
-      "ca": "+2"
+      "ca": "1.755"
     },
-    "type": "Botte"
+    "type": "Botte",
+    "buyPrice": "6072",
+    "name": "Bottes de maille"
   },
   {
     "name": "Gantelets de mailles",
@@ -2281,15 +2296,16 @@
     "type": "Heaume"
   },
   {
-    "name": "Jambières de mailles",
     "quantity": 1,
     "prerequisites": {
       "end": "80"
     },
     "bonuses": {
-      "ca": "+2"
+      "ca": "1.95"
     },
-    "type": "Jambière"
+    "type": "Jambière",
+    "buyPrice": "6992",
+    "name": "Jambières de maille"
   },
   {
     "name": "Bottes de plaques",
@@ -2307,15 +2323,18 @@
     "type": "Botte"
   },
   {
-    "name": "Gantelets de plaques",
     "quantity": 1,
     "prerequisites": {
       "end": "125"
     },
     "bonuses": {
-      "ca": "+4"
+      "ca": "3.645"
     },
-    "type": "Gant"
+    "type": "Gant",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Gants de plaques"
   },
   {
     "name": "Heaume de plaques",
@@ -2353,7 +2372,6 @@
     "type": "Divers"
   },
   {
-    "name": "Armure de plaques",
     "quantity": 1,
     "prerequisites": {
       "end": "125"
@@ -2361,7 +2379,12 @@
     "bonuses": {
       "ca": "+12"
     },
-    "type": "Plastron"
+    "type": "Plastron",
+    "obtention": [
+      "SH, Drop des Skraugs"
+    ],
+    "weight": "57",
+    "name": "Armure de plaques"
   },
   {
     "name": "Robe de sorcier",
@@ -2528,7 +2551,6 @@
     "type": "Bouclier"
   },
   {
-    "name": "Épée de fureur",
     "quantity": 1,
     "prerequisites": {
       "int": "21",
@@ -2545,7 +2567,8 @@
     "obtention": [
       "Drop"
     ],
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée de fureur"
   },
   {
     "name": "Parchemin vierge",
@@ -2636,7 +2659,6 @@
     "type": "Divers"
   },
   {
-    "name": "Pourfendeur de Gobelins",
     "quantity": 1,
     "prerequisites": {
       "int": "20",
@@ -2646,7 +2668,15 @@
     "bonuses": {
       "str": "+5"
     },
-    "type": "Arme"
+    "type": "Arme",
+    "damage": {
+      "min": "32",
+      "max": "60"
+    },
+    "obtention": [
+      "Quête"
+    ],
+    "name": "Pourfendeur de Gobelins"
   },
   {
     "name": "Livre de l'Art de la guerre",
@@ -2662,7 +2692,6 @@
     "type": "Cape"
   },
   {
-    "name": "Cotte de mailles en mithril",
     "quantity": 1,
     "prerequisites": {
       "end": "150"
@@ -2675,9 +2704,15 @@
       "Résistance Eau": "+3"
     },
     "bonuses": {
-      "ca": "+17"
+      "ca": "16.75"
     },
-    "type": "Plastron"
+    "type": "Plastron",
+    "obtention": [
+      "SH, Drop des Centaures et divers coffres.",
+      "Drop"
+    ],
+    "weight": "36",
+    "name": "Cotte de Mailles de Mithril"
   },
   {
     "name": "Heaume de mailles en mithril",
@@ -2698,7 +2733,6 @@
     "type": "Heaume"
   },
   {
-    "name": "Heaume de plaques de Nain",
     "quantity": 1,
     "prerequisites": {
       "end": "160"
@@ -2713,10 +2747,13 @@
     "bonuses": {
       "ca": "+5"
     },
-    "type": "Heaume"
+    "type": "Heaume",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Heaume de plaques de Nain"
   },
   {
-    "name": "Armure de plaques de Nain",
     "quantity": 1,
     "prerequisites": {
       "end": "160"
@@ -2731,10 +2768,14 @@
     "bonuses": {
       "ca": "+19"
     },
-    "type": "Plastron"
+    "type": "Plastron",
+    "obtention": [
+      "SH, Drop des Guerrier Hérétique"
+    ],
+    "weight": "57",
+    "name": "Armure de Plaques Naines"
   },
   {
-    "name": "Épée courte en acier trempé runique",
     "quantity": 1,
     "prerequisites": {
       "str": "111"
@@ -2744,10 +2785,10 @@
       "max": "90"
     },
     "buyPrice": "283940",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée courte en acier trempé runique"
   },
   {
-    "name": "Jambières de mailles en mithril",
     "quantity": 1,
     "prerequisites": {
       "end": "150"
@@ -2760,12 +2801,15 @@
       "Résistance Eau": "+3"
     },
     "bonuses": {
-      "ca": "+6"
+      "ca": "5.55"
     },
-    "type": "Jambière"
+    "type": "Jambière",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Jambières de mailles en mithril"
   },
   {
-    "name": "Gantelets de mailles en mithril",
     "quantity": 1,
     "prerequisites": {
       "end": "150"
@@ -2778,9 +2822,13 @@
       "Résistance Eau": "+3"
     },
     "bonuses": {
-      "ca": "+5"
+      "ca": "4.995"
     },
-    "type": "Gant"
+    "type": "Gant",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Gantelets de mailles en mithril"
   },
   {
     "name": "Red cape",
@@ -2823,7 +2871,6 @@
     "type": "Arme"
   },
   {
-    "name": "Bottes de mailles en mithril",
     "quantity": 1,
     "prerequisites": {
       "end": "150"
@@ -2836,9 +2883,13 @@
       "Résistance Eau": "+3"
     },
     "bonuses": {
-      "ca": "+5"
+      "ca": "4.995"
     },
-    "type": "Botte"
+    "type": "Botte",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Bottes de mailles en mithril"
   },
   {
     "name": "Glaive poli enchanté",
@@ -2857,7 +2908,6 @@
     "type": "Arme"
   },
   {
-    "name": "Épée courte en acier trempé enchantée",
     "quantity": 1,
     "prerequisites": {
       "str": "111"
@@ -2867,7 +2917,8 @@
       "max": "81"
     },
     "buyPrice": "85182",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée courte en acier trempé enchantée"
   },
   {
     "name": "Hachette rouillée enchantée",
@@ -2886,7 +2937,6 @@
     "type": "Arme"
   },
   {
-    "name": "Épée longue en acier trempé runique",
     "quantity": 1,
     "prerequisites": {
       "str": "126"
@@ -2896,7 +2946,8 @@
       "max": "106"
     },
     "buyPrice": "370530",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée longue en acier trempé runique"
   },
   {
     "name": "Gantelets de plaques de Nain",
@@ -2938,7 +2989,6 @@
     "type": "Arme"
   },
   {
-    "name": "Épée longue polie",
     "quantity": 1,
     "prerequisites": {
       "str": "68"
@@ -2948,10 +2998,10 @@
       "max": "43"
     },
     "buyPrice": "9323",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée longue polie"
   },
   {
-    "name": "Épée courte polie",
     "quantity": 1,
     "prerequisites": {
       "str": "53"
@@ -2961,10 +3011,10 @@
       "max": "31"
     },
     "buyPrice": "5266",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée courte polie"
   },
   {
-    "name": "Épée longue rouillée",
     "quantity": 1,
     "prerequisites": {
       "str": "24"
@@ -2974,17 +3024,18 @@
       "max": "11"
     },
     "buyPrice": "605",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée longue rouillée"
   },
   {
-    "name": "Épée courte rouillée",
     "quantity": 1,
     "damage": {
       "min": "2",
       "max": "4"
     },
     "buyPrice": "29",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée courte rouillée"
   },
   {
     "name": "Épée courte rouillée runique",
@@ -3019,12 +3070,17 @@
     "type": "Divers"
   },
   {
-    "name": "Épée bâtarde ancienne enchantée",
     "quantity": 1,
     "prerequisites": {
       "str": "532"
     },
-    "type": "Arme"
+    "type": "Arme",
+    "damage": {
+      "min": "293",
+      "max": "413"
+    },
+    "buyPrice": "2239761",
+    "name": "Épée bâtarde ancienne enchantée"
   },
   {
     "name": "Cimeterre ancien runique",
@@ -3078,12 +3134,17 @@
     "type": "Bouclier"
   },
   {
-    "name": "Épée bâtarde ancienne runique",
     "quantity": 1,
     "prerequisites": {
       "str": "532"
     },
-    "type": "Arme"
+    "type": "Arme",
+    "damage": {
+      "min": "318",
+      "max": "454"
+    },
+    "buyPrice": "7465870",
+    "name": "Épée bâtarde ancienne runique"
   },
   {
     "name": "Pierre de mana",
@@ -3102,23 +3163,32 @@
     "type": "Bouclier"
   },
   {
-    "name": "Épée bâtarde de mithril runique",
     "quantity": 1,
     "prerequisites": {
       "str": "314"
     },
-    "type": "Arme"
+    "type": "Arme",
+    "damage": {
+      "min": "226",
+      "max": "314"
+    },
+    "buyPrice": "2543050",
+    "name": "Épée bâtarde de mithril runique"
   },
   {
-    "name": "Épée bâtarde de mithril enchantée",
     "quantity": 1,
     "prerequisites": {
       "str": "314"
     },
-    "type": "Arme"
+    "type": "Arme",
+    "damage": {
+      "min": "207",
+      "max": "284"
+    },
+    "buyPrice": "762915",
+    "name": "Épée bâtarde de mithril enchantée"
   },
   {
-    "name": "Épée longue de mithril runique",
     "quantity": 1,
     "prerequisites": {
       "str": "271"
@@ -3128,7 +3198,8 @@
       "max": "238"
     },
     "buyPrice": "1869130",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée longue de mithril runique"
   },
   {
     "name": "Glaive poli runique",
@@ -3147,7 +3218,6 @@
     "type": "Arme"
   },
   {
-    "name": "Épée courte de qualité enchantée",
     "quantity": 1,
     "prerequisites": {
       "str": "184"
@@ -3157,7 +3227,8 @@
       "max": "139"
     },
     "buyPrice": "249573",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée courte de qualité enchantée"
   },
   {
     "name": "Sabre à crosse de nacre",
@@ -3333,7 +3404,6 @@
     "type": "Arme"
   },
   {
-    "name": "Gantelets d'anneaux",
     "quantity": 1,
     "prerequisites": {
       "end": "60"
@@ -3341,17 +3411,19 @@
     "bonuses": {
       "ca": "+1"
     },
-    "type": "Gant"
+    "type": "Gant",
+    "buyPrice": "3015",
+    "name": "Gants d'anneaux"
   },
   {
-    "name": "Poignard rouillé",
     "quantity": 1,
     "damage": {
       "min": "1",
       "max": "4"
     },
     "buyPrice": "29",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Poignard rouillé"
   },
   {
     "name": "Hyperpotion de rage",
@@ -3391,7 +3463,6 @@
     "type": "Arme"
   },
   {
-    "name": "Bottes ciselées des Haut-Elfes",
     "quantity": 1,
     "prerequisites": {
       "end": "300"
@@ -3406,10 +3477,13 @@
     "bonuses": {
       "ca": "+17"
     },
-    "type": "Botte"
+    "type": "Botte",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Bottes ciselées des Haut-Elfes"
   },
   {
-    "name": "Jambières ciselées des Haut-Elfes",
     "quantity": 1,
     "prerequisites": {
       "end": "300"
@@ -3424,7 +3498,11 @@
     "bonuses": {
       "ca": "+19"
     },
-    "type": "Jambière"
+    "type": "Jambière",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Jambières ciselées des Haut-Elfes"
   },
   {
     "name": "Dague en acier trempé runique",
@@ -3451,15 +3529,19 @@
     "type": "Arme"
   },
   {
-    "name": "Épée bâtarde de qualité",
     "quantity": 1,
     "prerequisites": {
       "str": "242"
     },
-    "type": "Arme"
+    "type": "Arme",
+    "damage": {
+      "min": "145",
+      "max": "197"
+    },
+    "buyPrice": "147737",
+    "name": "Épée bâtarde de qualité"
   },
   {
-    "name": "Épée longue polie enchantée",
     "quantity": 1,
     "prerequisites": {
       "str": "68"
@@ -3469,10 +3551,10 @@
       "max": "48"
     },
     "buyPrice": "27969",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée longue polie enchantée"
   },
   {
-    "name": "Gantelets ciselés des Haut-Elfes",
     "quantity": 1,
     "prerequisites": {
       "end": "300"
@@ -3487,10 +3569,13 @@
     "bonuses": {
       "ca": "+17"
     },
-    "type": "Gant"
+    "type": "Gant",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Gantelets ciselés des Haut-Elfes"
   },
   {
-    "name": "Plastron ciselé des Haut-Elfes",
     "quantity": 1,
     "prerequisites": {
       "end": "300"
@@ -3505,7 +3590,11 @@
     "bonuses": {
       "ca": "+57"
     },
-    "type": "Plastron"
+    "type": "Plastron",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Plastron ciselé des Haut-Elfes"
   },
   {
     "name": "Bottes de plaques en adamantite",
@@ -3519,7 +3608,6 @@
     "type": "Botte"
   },
   {
-    "name": "Lame de mithril",
     "quantity": 1,
     "prerequisites": {
       "str": "184"
@@ -3529,10 +3617,10 @@
       "max": "135"
     },
     "buyPrice": "83191",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Lame de mithril"
   },
   {
-    "name": "Épée courte en acier trempé",
     "quantity": 1,
     "prerequisites": {
       "str": "111"
@@ -3542,7 +3630,8 @@
       "max": "73"
     },
     "buyPrice": "28394",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée courte en acier trempé"
   },
   {
     "name": "Glaive poli",
@@ -3609,27 +3698,26 @@
     "type": "Arme"
   },
   {
-    "name": "Poignard rouillé runique",
     "quantity": 1,
     "damage": {
       "min": "2",
       "max": "5"
     },
     "buyPrice": "290",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Poignard rouillé runique"
   },
   {
-    "name": "Épée courte rouillée enchantée",
     "quantity": 1,
     "damage": {
       "min": "2",
       "max": "5"
     },
     "buyPrice": "87",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée courte rouillée enchantée"
   },
   {
-    "name": "Bottes de mailles elfiques",
     "quantity": 1,
     "prerequisites": {
       "end": "110"
@@ -3642,9 +3730,13 @@
       "Résistance Eau": "+2"
     },
     "bonuses": {
-      "ca": "+3"
+      "ca": "2.97"
     },
-    "type": "Botte"
+    "type": "Botte",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Bottes de mailles elfiques"
   },
   {
     "name": "Hachette polie enchantée",
@@ -3701,7 +3793,6 @@
     "type": "Jambière"
   },
   {
-    "name": "Gantelets de mailles elfiques",
     "quantity": 1,
     "prerequisites": {
       "end": "110"
@@ -3714,9 +3805,13 @@
       "Résistance Eau": "+2"
     },
     "bonuses": {
-      "ca": "+3"
+      "ca": "2.97"
     },
-    "type": "Gant"
+    "type": "Gant",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Gantelets de mailles elfiques"
   },
   {
     "name": "Bottes d'écailles",
@@ -3787,7 +3882,6 @@
     "type": "Arme"
   },
   {
-    "name": "Heaume ciselé des Haut-Elfes",
     "quantity": 1,
     "prerequisites": {
       "end": "300"
@@ -3800,9 +3894,13 @@
       "Résistance Eau": "+10"
     },
     "bonuses": {
-      "ca": "+17"
+      "ca": "16.51"
     },
-    "type": "Heaume"
+    "type": "Heaume",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Heaume ciselé des Haut-Elfes"
   },
   {
     "name": "Cimeterre en acier trempé",
@@ -3853,7 +3951,6 @@
     "type": "Arme"
   },
   {
-    "name": "Heaume de mailles elfique",
     "quantity": 1,
     "prerequisites": {
       "end": "110"
@@ -3866,12 +3963,15 @@
       "Résistance Eau": "+2"
     },
     "bonuses": {
-      "ca": "+3"
+      "ca": "2.86"
     },
-    "type": "Heaume"
+    "type": "Heaume",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Heaume de mailles elfique"
   },
   {
-    "name": "Épée longue de qualité",
     "quantity": 1,
     "prerequisites": {
       "str": "198"
@@ -3881,17 +3981,18 @@
       "max": "140"
     },
     "buyPrice": "97601",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée longue de qualité"
   },
   {
-    "name": "Poignard rouillé enchanté",
     "quantity": 1,
     "damage": {
       "min": "2",
       "max": "4"
     },
     "buyPrice": "87",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Poignard rouillé enchanté"
   },
   {
     "name": "Hache de guerre en acier trempé enchantée",
@@ -3956,12 +4057,17 @@
     "type": "Arme"
   },
   {
-    "name": "Épée bâtarde d'adamantite runique",
     "quantity": 1,
     "prerequisites": {
       "str": "387"
     },
-    "type": "Arme"
+    "type": "Arme",
+    "damage": {
+      "min": "256",
+      "max": "360"
+    },
+    "buyPrice": "3869370",
+    "name": "Épée bâtarde d'adamantite runique"
   },
   {
     "name": "Épée d'adamantite à deux mains runique",
@@ -4004,15 +4110,19 @@
     "type": "Arme"
   },
   {
-    "name": "Épée bâtarde de mithril",
     "quantity": 1,
     "prerequisites": {
       "str": "314"
     },
-    "type": "Arme"
+    "type": "Arme",
+    "damage": {
+      "min": "189",
+      "max": "254"
+    },
+    "buyPrice": "254305",
+    "name": "Épée bâtarde de mithril"
   },
   {
-    "name": "Épée longue rouillée runique",
     "quantity": 1,
     "prerequisites": {
       "str": "24"
@@ -4022,7 +4132,8 @@
       "max": "14"
     },
     "buyPrice": "6050",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée longue rouillée runique"
   },
   {
     "name": "Fléau de qualité",
@@ -4063,7 +4174,6 @@
     "type": "Cape"
   },
   {
-    "name": "Épée longue de qualité enchantée",
     "quantity": 1,
     "prerequisites": {
       "str": "198"
@@ -4073,10 +4183,10 @@
       "max": "156"
     },
     "buyPrice": "292803",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée longue de qualité enchantée"
   },
   {
-    "name": "Épée courte polie enchantée",
     "quantity": 1,
     "prerequisites": {
       "str": "53"
@@ -4086,15 +4196,21 @@
       "max": "35"
     },
     "buyPrice": "15798",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée courte polie enchantée"
   },
   {
-    "name": "Épée bâtarde de qualité runique",
     "quantity": 1,
     "prerequisites": {
       "str": "242"
     },
-    "type": "Arme"
+    "type": "Arme",
+    "damage": {
+      "min": "175",
+      "max": "243"
+    },
+    "buyPrice": "1477370",
+    "name": "Épée bâtarde de qualité runique"
   },
   {
     "name": "Cimeterre de qualité runique",
@@ -4120,15 +4236,19 @@
     "type": "Arme"
   },
   {
-    "name": "Épée bâtarde de qualité enchantée",
     "quantity": 1,
     "prerequisites": {
       "str": "242"
     },
-    "type": "Arme"
+    "type": "Arme",
+    "damage": {
+      "min": "160",
+      "max": "220"
+    },
+    "buyPrice": "443211",
+    "name": "Épée bâtarde de qualité enchantée"
   },
   {
-    "name": "Épée longue de mithril",
     "quantity": 1,
     "prerequisites": {
       "str": "271"
@@ -4138,15 +4258,21 @@
       "max": "194"
     },
     "buyPrice": "186913",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée longue de mithril"
   },
   {
-    "name": "Épée longue en acier trempé enchantée",
     "quantity": 1,
     "prerequisites": {
       "str": "126"
     },
-    "type": "Arme"
+    "type": "Arme",
+    "damage": {
+      "min": "70",
+      "max": "97"
+    },
+    "buyPrice": "111159",
+    "name": "Épée longue en acier trempé enchantée"
   },
   {
     "name": "Cape de puissance",
@@ -4197,7 +4323,6 @@
     "type": "Arme"
   },
   {
-    "name": "Épée longue polie runique",
     "quantity": 1,
     "prerequisites": {
       "str": "68"
@@ -4207,7 +4332,8 @@
       "max": "54"
     },
     "buyPrice": "93230",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée longue polie runique"
   },
   {
     "name": "Masse en acier trempé",
@@ -4227,37 +4353,48 @@
     "type": "Arme"
   },
   {
-    "name": "Casque de cuir elfique",
     "quantity": 1,
     "prerequisites": {
       "end": "75"
     },
     "bonuses": {
-      "ca": "+2"
+      "ca": "1.56"
     },
-    "type": "Heaume"
+    "type": "Heaume",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Casque de cuir elfique"
   },
   {
-    "name": "Armure de cuir elfique",
     "quantity": 1,
     "prerequisites": {
       "end": "75"
     },
     "bonuses": {
-      "ca": "+6"
+      "ca": "5.5"
     },
-    "type": "Plastron"
+    "type": "Plastron",
+    "obtention": [
+      "SH, Drop des Chapardeurs",
+      "Drop"
+    ],
+    "weight": "24",
+    "name": "Armure de cuir elfique"
   },
   {
-    "name": "Gants de cuir elfique",
     "quantity": 1,
     "prerequisites": {
       "end": "75"
     },
     "bonuses": {
-      "ca": "+2"
+      "ca": "1.62"
     },
-    "type": "Gant"
+    "type": "Gant",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Gants de cuir elfique"
   },
   {
     "name": "Lame de mithril runique",
@@ -4372,12 +4509,17 @@
     "type": "Arme"
   },
   {
-    "name": "Épée bâtarde ancienne",
     "quantity": 1,
     "prerequisites": {
       "str": "532"
     },
-    "type": "Arme"
+    "type": "Arme",
+    "damage": {
+      "min": "268",
+      "max": "373"
+    },
+    "buyPrice": "746587",
+    "name": "Épée bâtarde ancienne"
   },
   {
     "name": "Cimeterre ancien",
@@ -4450,15 +4592,18 @@
     "type": "Arme"
   },
   {
-    "name": "Bottes de cuir elfique",
     "quantity": 1,
     "prerequisites": {
       "end": "75"
     },
     "bonuses": {
-      "ca": "+2"
+      "ca": "1.62"
     },
-    "type": "Botte"
+    "type": "Botte",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Bottes de cuir elfique"
   },
   {
     "name": "Jambières d'anneaux",
@@ -4489,15 +4634,16 @@
     "type": "Botte"
   },
   {
-    "name": "Gantelets d'écailles",
     "quantity": 1,
     "prerequisites": {
       "end": "100"
     },
     "bonuses": {
-      "ca": "+3"
+      "ca": "2.565"
     },
-    "type": "Gant"
+    "type": "Gant",
+    "buyPrice": "10456",
+    "name": "Gants d'écailles"
   },
   {
     "name": "Anneau étoilé",
@@ -4531,15 +4677,18 @@
     ]
   },
   {
-    "name": "Jambières de cuir elfique",
     "quantity": 1,
     "prerequisites": {
       "end": "75"
     },
     "bonuses": {
-      "ca": "+2"
+      "ca": "1.8"
     },
-    "type": "Jambière"
+    "type": "Jambière",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Jambières de cuir elfique"
   },
   {
     "name": "Poignard poli",
@@ -4558,7 +4707,6 @@
     "type": "Arme"
   },
   {
-    "name": "Épée courte de qualité",
     "quantity": 1,
     "prerequisites": {
       "str": "184"
@@ -4568,15 +4716,21 @@
       "max": "126"
     },
     "buyPrice": "83191",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée courte de qualité"
   },
   {
-    "name": "Épée bâtarde d'adamantite enchantée",
     "quantity": 1,
     "prerequisites": {
       "str": "387"
     },
-    "type": "Arme"
+    "type": "Arme",
+    "damage": {
+      "min": "235",
+      "max": "327"
+    },
+    "buyPrice": "1168911",
+    "name": "Épée bâtarde d'adamantite enchantée"
   },
   {
     "name": "Glaive de qualité runique",
@@ -4595,7 +4749,6 @@
     "type": "Arme"
   },
   {
-    "name": "Épée longue rouillée enchantée",
     "quantity": 1,
     "prerequisites": {
       "str": "24"
@@ -4605,7 +4758,8 @@
       "max": "12"
     },
     "buyPrice": "1815",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée longue rouillée enchantée"
   },
   {
     "name": "Masse de qualité",
@@ -4660,7 +4814,6 @@
     "type": "Arme"
   },
   {
-    "name": "Jambières de plaques de Nain",
     "quantity": 1,
     "prerequisites": {
       "end": "160"
@@ -4675,7 +4828,11 @@
     "bonuses": {
       "ca": "+6"
     },
-    "type": "Jambière"
+    "type": "Jambière",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Jambières de plaques de Nain"
   },
   {
     "name": "Armure de plaques en adamantite",
@@ -4705,7 +4862,6 @@
     "type": "Arme"
   },
   {
-    "name": "Bottes de plaques de Nain",
     "quantity": 1,
     "prerequisites": {
       "end": "160"
@@ -4718,12 +4874,15 @@
       "Résistance Eau": "+4"
     },
     "bonuses": {
-      "ca": "+6"
+      "ca": "5.67"
     },
-    "type": "Botte"
+    "type": "Botte",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Bottes de plaques de Nain"
   },
   {
-    "name": "Épée courte de qualité runique",
     "quantity": 1,
     "prerequisites": {
       "str": "184"
@@ -4733,7 +4892,8 @@
       "max": "153"
     },
     "buyPrice": "831910",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée courte de qualité runique"
   },
   {
     "name": "Dague de mithril",
@@ -4752,7 +4912,6 @@
     "type": "Arme"
   },
   {
-    "name": "Épée longue en acier trempé",
     "quantity": 1,
     "prerequisites": {
       "str": "126"
@@ -4762,7 +4921,8 @@
       "max": "87"
     },
     "buyPrice": "37053",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée longue en acier trempé"
   },
   {
     "name": "Glaive de mithril",
@@ -4807,7 +4967,6 @@
     "type": "Arme"
   },
   {
-    "name": "Épée longue de qualité runique",
     "quantity": 1,
     "prerequisites": {
       "str": "198"
@@ -4817,10 +4976,10 @@
       "max": "172"
     },
     "buyPrice": "976010",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée longue de qualité runique"
   },
   {
-    "name": "Épée courte polie runique",
     "quantity": 1,
     "prerequisites": {
       "str": "53"
@@ -4830,7 +4989,8 @@
       "max": "39"
     },
     "buyPrice": "52660",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée courte polie runique"
   },
   {
     "name": "Dague rouillée",
@@ -4874,7 +5034,6 @@
     "type": "Divers"
   },
   {
-    "name": "Habits de feuilles",
     "quantity": 1,
     "prerequisites": {
       "int": "15",
@@ -4885,7 +5044,8 @@
       "ca": "+10",
       "wis": "+40"
     },
-    "type": "Robe"
+    "type": "Robe",
+    "name": "Habits de feuilles"
   },
   {
     "name": "Robe de grand prêtre",
@@ -4979,7 +5139,6 @@
     "type": "Arme"
   },
   {
-    "name": "Hache de qualité à deux tranchants",
     "quantity": 1,
     "prerequisites": {
       "str": "300"
@@ -4989,7 +5148,8 @@
       "max": "362"
     },
     "buyPrice": "230691",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Hache de qualité à deux tranchants"
   },
   {
     "name": "Potion de tranquillité",
@@ -5032,7 +5192,6 @@
     "type": "Divers"
   },
   {
-    "name": "Armure d'écailles de Dragon",
     "quantity": 1,
     "prerequisites": {
       "end": "180"
@@ -5047,10 +5206,15 @@
     "bonuses": {
       "ca": "+23"
     },
-    "type": "Plastron"
+    "type": "Plastron",
+    "obtention": [
+      "Coffres Oracle",
+      "Drop"
+    ],
+    "weight": "36",
+    "name": "Armure d'écailles du dragon"
   },
   {
-    "name": "Heaume d'écailles de Dragon",
     "quantity": 1,
     "prerequisites": {
       "end": "180"
@@ -5063,12 +5227,15 @@
       "Résistance Eau": "+5"
     },
     "bonuses": {
-      "ca": "+7"
+      "ca": "6.63"
     },
-    "type": "Heaume"
+    "type": "Heaume",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Heaume d'écailles de Dragon"
   },
   {
-    "name": "Jambières d'écailles de Dragon",
     "quantity": 1,
     "prerequisites": {
       "end": "180"
@@ -5081,12 +5248,15 @@
       "Résistance Eau": "+5"
     },
     "bonuses": {
-      "ca": "+8"
+      "ca": "7.65"
     },
-    "type": "Jambière"
+    "type": "Jambière",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Jambières d'écailles de Dragon"
   },
   {
-    "name": "Gantelets d'écailles de Dragon",
     "quantity": 1,
     "prerequisites": {
       "end": "180"
@@ -5099,9 +5269,13 @@
       "Résistance Eau": "+5"
     },
     "bonuses": {
-      "ca": "+7"
+      "ca": "6.885"
     },
-    "type": "Gant"
+    "type": "Gant",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Gantelets d'écailles de Dragon"
   },
   {
     "name": "Armure en Lambeaux",
@@ -5131,7 +5305,6 @@
     ]
   },
   {
-    "name": "Bottes d'écailles de Dragon",
     "quantity": 1,
     "prerequisites": {
       "end": "180"
@@ -5144,9 +5317,13 @@
       "Résistance Eau": "+5"
     },
     "bonuses": {
-      "ca": "+7"
+      "ca": "6.885"
     },
-    "type": "Botte"
+    "type": "Botte",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Bottes d'écailles de Dragon"
   },
   {
     "name": "Bouclier de corail",
@@ -5588,9 +5765,14 @@
     "type": "Arme"
   },
   {
-    "name": "Sceptre de bois de puissance",
     "quantity": 1,
-    "type": "Arme"
+    "type": "Arme",
+    "damage": {
+      "min": "2",
+      "max": "5"
+    },
+    "buyPrice": "270",
+    "name": "Sceptre en bois de puissance"
   },
   {
     "name": "Cape humterre",
@@ -5693,13 +5875,18 @@
     "type": "Arme"
   },
   {
-    "name": "Sceptre d'épines",
     "quantity": 1,
     "prerequisites": {
       "int": "39",
       "str": "14"
     },
-    "type": "Arme"
+    "type": "Arme",
+    "damage": {
+      "min": "11",
+      "max": "18"
+    },
+    "buyPrice": "2361",
+    "name": "Sceptre d'épine"
   },
   {
     "name": "Sceptre d'épines magique",
@@ -5711,16 +5898,20 @@
     "type": "Arme"
   },
   {
-    "name": "Sceptre d'épines de puissance",
     "quantity": 1,
     "prerequisites": {
       "int": "39",
       "str": "14"
     },
-    "type": "Arme"
+    "type": "Arme",
+    "damage": {
+      "min": "14",
+      "max": "23"
+    },
+    "buyPrice": "23610",
+    "name": "Sceptre d'épine de puissance"
   },
   {
-    "name": "Bo",
     "quantity": 1,
     "prerequisites": {
       "int": "47",
@@ -5731,7 +5922,8 @@
       "max": "22"
     },
     "buyPrice": "3966",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Bô"
   },
   {
     "name": "Bo magique",
@@ -5748,7 +5940,6 @@
     "type": "Robe"
   },
   {
-    "name": "Bo de puissance",
     "quantity": 1,
     "prerequisites": {
       "int": "47",
@@ -5759,7 +5950,8 @@
       "max": "29"
     },
     "buyPrice": "39660",
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Bô de puissance"
   },
   {
     "name": "Rang-kwan",
@@ -5960,18 +6152,33 @@
     "type": "Arme"
   },
   {
-    "name": "Masse en acier trempé sacrée",
     "quantity": 1,
     "prerequisites": {
       "wis": "79",
       "str": "90"
     },
-    "type": "Arme"
+    "type": "Arme",
+    "damage": {
+      "min": "72",
+      "max": "104"
+    },
+    "buyPrice": "370530",
+    "name": "Masse en acier trempé sacré"
   },
   {
-    "name": "Robe bleue",
     "quantity": 1,
-    "type": "Robe"
+    "type": "Robe",
+    "prerequisites": {
+      "int": "28",
+      "wis": "28",
+      "end": "12"
+    },
+    "bonuses": {
+      "ca": "+2",
+      "int": "+5",
+      "wis": "+5"
+    },
+    "name": "Robe Bleutée"
   },
   {
     "name": "Masse de qualité bénie",
@@ -6085,22 +6292,32 @@
     "type": "Arme"
   },
   {
-    "name": "Fléau d'armes en mithril béni",
     "quantity": 1,
     "prerequisites": {
       "wis": "169",
       "str": "210"
     },
-    "type": "Arme"
+    "type": "Arme",
+    "damage": {
+      "min": "177",
+      "max": "249"
+    },
+    "buyPrice": "692073",
+    "name": "Fléau d'armes de mithril béni"
   },
   {
-    "name": "Fléau d'armes en mithril sacré",
     "quantity": 1,
     "prerequisites": {
       "wis": "169",
       "str": "210"
     },
-    "type": "Arme"
+    "type": "Arme",
+    "damage": {
+      "min": "195",
+      "max": "276"
+    },
+    "buyPrice": "2306910",
+    "name": "Fléau d'armes de mithril sacré"
   },
   {
     "name": "Fléau d'armes ancien sacré",
@@ -6290,7 +6507,6 @@
     "type": "Anneau"
   },
   {
-    "name": "Collier de pierres de sang",
     "quantity": 1,
     "prerequisites": {
       "int": "44",
@@ -6300,7 +6516,14 @@
       "ca": "+2",
       "int": "+10"
     },
-    "type": "Amulette"
+    "type": "Amulette",
+    "obtention": [
+      "Golem de chair (RD)",
+      "Bane Gwengad (RD)",
+      "Ver tisseur",
+      "(Sud RD)"
+    ],
+    "name": "Collier de pierres de sang"
   },
   {
     "name": "Anneau du clan des minotaures",
@@ -6328,7 +6551,6 @@
     "type": "Robe"
   },
   {
-    "name": "Talisman de protection contre le Mal",
     "quantity": 1,
     "prerequisites": {
       "int": "40",
@@ -6340,7 +6562,11 @@
     "bonuses": {
       "ca": "+1"
     },
-    "type": "Amulette"
+    "type": "Amulette",
+    "obtention": [
+      "Purificateur (SH)"
+    ],
+    "name": "Talisman de protection contre le Mal"
   },
   {
     "name": "Ceinture de survie en cuir",
@@ -6375,12 +6601,16 @@
     "type": "Divers"
   },
   {
-    "name": "Ceinture de cuir",
     "quantity": 1,
     "prerequisites": {
       "end": "25"
     },
-    "type": "Ceinture"
+    "type": "Ceinture",
+    "bonuses": {
+      "ca": "0.3"
+    },
+    "buyPrice": "212",
+    "name": "Ceinturon de cuir"
   },
   {
     "name": "Ceinturon de cuir clouté",
@@ -6411,7 +6641,6 @@
     "type": "Ceinture"
   },
   {
-    "name": "Ceinture de cuir elfique",
     "quantity": 1,
     "prerequisites": {
       "end": "75"
@@ -6419,7 +6648,11 @@
     "bonuses": {
       "ca": "+1"
     },
-    "type": "Ceinture"
+    "type": "Ceinture",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Ceinturon de cuir Elfique"
   },
   {
     "name": "Robe rose",
@@ -6449,15 +6682,19 @@
     "type": "Ceinture"
   },
   {
-    "name": "Ceinturon de mailles elfique",
     "quantity": 1,
     "prerequisites": {
-      "end": "110"
+      "end": "110",
+      "wis": "2"
     },
     "bonuses": {
       "ca": "+2"
     },
-    "type": "Ceinture"
+    "type": "Ceinture",
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Ceinturon de maille Elfique"
   },
   {
     "name": "Protecteur en plaques",
@@ -6539,7 +6776,6 @@
     "type": "Robe"
   },
   {
-    "name": "Cotte de mailles bénie",
     "quantity": 1,
     "prerequisites": {
       "int": "40",
@@ -6550,9 +6786,13 @@
       "Résistance Nécro": "+25"
     },
     "bonuses": {
-      "ca": "+6"
+      "ca": "5.95"
     },
-    "type": "Plastron"
+    "type": "Plastron",
+    "obtention": [
+      "Quête"
+    ],
+    "name": "Cotte de mailles bénie"
   },
   {
     "name": "Anneau des ténèbres",
@@ -6567,7 +6807,6 @@
     "type": "Anneau"
   },
   {
-    "name": "Anneau des Initiés",
     "quantity": 1,
     "prerequisites": {
       "int": "23",
@@ -6581,7 +6820,11 @@
       "wis": "+1",
       "str": "+1"
     },
-    "type": "Anneau"
+    "type": "Anneau",
+    "obtention": [
+      "Craft bijoutier lev 2"
+    ],
+    "name": "Anneau des Initiés"
   },
   {
     "name": "Dague du crâne",
@@ -6606,7 +6849,6 @@
     "type": "Arme"
   },
   {
-    "name": "Scalpel de chirurgien",
     "quantity": 1,
     "prerequisites": {
       "int": "30",
@@ -6616,7 +6858,15 @@
     "secondary": {
       "Résistance Nécro": "+15"
     },
-    "type": "Arme"
+    "type": "Arme",
+    "damage": {
+      "min": "18",
+      "max": "27"
+    },
+    "obtention": [
+      "Quête"
+    ],
+    "name": "Scalpel de chirurgien"
   },
   {
     "name": "Acanthe",
@@ -6644,9 +6894,19 @@
     "type": "Divers"
   },
   {
-    "name": "Robe orange",
     "quantity": 1,
-    "type": "Robe"
+    "type": "Robe",
+    "prerequisites": {
+      "int": "28",
+      "wis": "28",
+      "end": "12"
+    },
+    "bonuses": {
+      "ca": "+2",
+      "int": "+5",
+      "wis": "+5"
+    },
+    "name": "Robe Orangée"
   },
   {
     "name": "Copal",
@@ -6977,7 +7237,6 @@
     "type": "Arme"
   },
   {
-    "name": "Lame d'héroïsme",
     "quantity": 1,
     "prerequisites": {
       "str": "155"
@@ -6989,7 +7248,8 @@
     "obtention": [
       "Drop"
     ],
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Lame d'héroïsme"
   },
   {
     "name": "Anneau de vraie foi",
@@ -7243,7 +7503,6 @@
     "type": "Robe"
   },
   {
-    "name": "Robe de protection ornée de runes",
     "quantity": 1,
     "prerequisites": {
       "int": "43",
@@ -7256,7 +7515,8 @@
       "int": "+5",
       "wis": "+5"
     },
-    "type": "Robe"
+    "type": "Robe",
+    "name": "Robe de protection ornée de runes"
   },
   {
     "name": "Amulette Ténébreuse",
@@ -7388,7 +7648,6 @@
     "type": "Robe"
   },
   {
-    "name": "Manteau du prestidigitateur",
     "quantity": 1,
     "prerequisites": {
       "int": "110",
@@ -7403,7 +7662,8 @@
       "Puissance Feu": "+10",
       "Puissance Eau": "+10"
     },
-    "type": "Robe"
+    "type": "Robe",
+    "name": "Manteau du prestidigitateur"
   },
   {
     "name": "Manteau des éléments",
@@ -7454,9 +7714,10 @@
     "type": "Flèche"
   },
   {
-    "name": "Flèches d'ébène",
     "quantity": 1,
-    "type": "Flèche"
+    "type": "Flèche",
+    "buyPrice": "500",
+    "name": "Flèches d'ébène"
   },
   {
     "name": "Flèches en os",
@@ -7484,9 +7745,17 @@
     "type": "Arc"
   },
   {
-    "name": "Arc droit en frêne d'Angélus",
     "quantity": 1,
-    "type": "Arc"
+    "type": "Arc",
+    "obtention": [
+      "Un commis voyageur"
+    ],
+    "damage": {
+      "min": "1",
+      "max": "3"
+    },
+    "buyPrice": "87",
+    "name": "Arc droit en frêne d'Angélus"
   },
   {
     "name": "Arc droit en frêne féerique",
@@ -7523,13 +7792,21 @@
     "type": "Arc"
   },
   {
-    "name": "Grand arc en frêne d'Angélus",
     "quantity": 1,
     "prerequisites": {
       "str": "13",
       "dex": "24"
     },
-    "type": "Arc"
+    "type": "Arc",
+    "obtention": [
+      "Un commis voyageur"
+    ],
+    "damage": {
+      "min": "5",
+      "max": "11"
+    },
+    "buyPrice": "1815",
+    "name": "Grand arc en frêne d'Angélus"
   },
   {
     "name": "Grand arc en frêne féerique",
@@ -7570,13 +7847,21 @@
     "type": "Arc"
   },
   {
-    "name": "Arc courbé en frêne d'Angélus",
     "quantity": 1,
     "prerequisites": {
       "str": "17",
       "dex": "39"
     },
-    "type": "Arc"
+    "type": "Arc",
+    "obtention": [
+      "Un commis voyageur"
+    ],
+    "damage": {
+      "min": "13",
+      "max": "21"
+    },
+    "buyPrice": "7083",
+    "name": "Arc courbé en frêne d'Angélus"
   },
   {
     "name": "Arc courbé en frêne féerique",
@@ -7643,21 +7928,6 @@
     "bonuses": {},
     "secondary": {},
     "type": "Arc"
-  },
-  {
-    "name": "Robe Orangée",
-    "quantity": 1,
-    "prerequisites": {
-      "int": "28",
-      "wis": "28",
-      "end": "12"
-    },
-    "bonuses": {
-      "ca": "+2",
-      "int": "+5",
-      "wis": "+5"
-    },
-    "type": "Robe"
   },
   {
     "name": "Arc droit en orme féerique",
@@ -7848,21 +8118,6 @@
     "bonuses": {},
     "secondary": {},
     "type": "Arc"
-  },
-  {
-    "name": "Robe Bleutée",
-    "quantity": 1,
-    "prerequisites": {
-      "int": "28",
-      "wis": "28",
-      "end": "12"
-    },
-    "bonuses": {
-      "ca": "+2",
-      "int": "+5",
-      "wis": "+5"
-    },
-    "type": "Robe"
   },
   {
     "name": "Vibrevent",
@@ -8570,22 +8825,32 @@
     "type": "Arc"
   },
   {
-    "name": "Arc à poulies en cèdre",
     "quantity": 1,
     "prerequisites": {
       "str": "80",
       "dex": "358"
     },
-    "type": "Arc"
+    "type": "Arc",
+    "damage": {
+      "min": "164",
+      "max": "219"
+    },
+    "buyPrice": "332053",
+    "name": "Arc à poulie en cèdre"
   },
   {
-    "name": "Arc à poulies en cèdre féerique",
     "quantity": 1,
     "prerequisites": {
       "str": "80",
       "dex": "358"
     },
-    "type": "Arc"
+    "type": "Arc",
+    "damage": {
+      "min": "201",
+      "max": "273"
+    },
+    "buyPrice": "3320530",
+    "name": "Arc à poulie en cèdre féerique"
   },
   {
     "name": "Arc composite en cèdre",
@@ -8808,22 +9073,32 @@
     "type": "Arc"
   },
   {
-    "name": "Arc à poulies en févier épineux",
     "quantity": 1,
     "prerequisites": {
       "str": "113",
       "dex": "546"
     },
-    "type": "Arc"
+    "type": "Arc",
+    "damage": {
+      "min": "216",
+      "max": "293"
+    },
+    "buyPrice": "788609",
+    "name": "Arc à poulie en févier épineux"
   },
   {
-    "name": "Arc à poulies en févier épineux féerique",
     "quantity": 1,
     "prerequisites": {
       "str": "113",
       "dex": "546"
     },
-    "type": "Arc"
+    "type": "Arc",
+    "damage": {
+      "min": "262",
+      "max": "363"
+    },
+    "buyPrice": "7886090",
+    "name": "Arc à poulie en févier épineux féerique"
   },
   {
     "name": "Arc composite des Hauts-Elfes",
@@ -9499,7 +9774,6 @@
     "type": "Anneau"
   },
   {
-    "name": "Epée de puissance de Crystal",
     "quantity": 1,
     "prerequisites": {
       "int": "53",
@@ -9522,7 +9796,8 @@
     "obtention": [
       "Quête"
     ],
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Epée de puissance de Crystal"
   },
   {
     "name": "Oeil du tigre",
@@ -9615,7 +9890,6 @@
     "type": "Arme"
   },
   {
-    "name": "Lame Assassine",
     "quantity": 1,
     "prerequisites": {
       "int": "15",
@@ -9632,7 +9906,8 @@
     "obtention": [
       "Quête"
     ],
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Lame Assassine"
   },
   {
     "name": "Sinistre lame de guerre",
@@ -9681,13 +9956,20 @@
     "type": "Robe"
   },
   {
-    "name": "Arc pourfendeur de centaures",
     "quantity": 1,
     "prerequisites": {
       "str": "27",
       "dex": "140"
     },
-    "type": "Arc"
+    "type": "Arc",
+    "obtention": [
+      "Quête"
+    ],
+    "damage": {
+      "min": "64",
+      "max": "87"
+    },
+    "name": "Arc pourfendeur des centaures"
   },
   {
     "name": "Gemme Sombre",
@@ -9695,7 +9977,6 @@
     "type": "Divers"
   },
   {
-    "name": "Lame-Gemme Sombre",
     "quantity": 1,
     "prerequisites": {
       "int": "53",
@@ -9719,7 +10000,8 @@
     "obtention": [
       "Quête"
     ],
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Lame-Gemme Sombre"
   },
   {
     "name": "Bâton de langueur",
@@ -9747,7 +10029,6 @@
     "type": "Arme"
   },
   {
-    "name": "Manteau de l'Archer",
     "quantity": 1,
     "prerequisites": {
       "int": "30",
@@ -9762,7 +10043,8 @@
     "bonuses": {
       "ca": "+10"
     },
-    "type": "Robe"
+    "type": "Robe",
+    "name": "Manteau de l'Archer"
   },
   {
     "name": "Anneau de révélation",
@@ -9931,7 +10213,6 @@
     "type": "Robe"
   },
   {
-    "name": "Bracelets de Guerre",
     "quantity": 1,
     "prerequisites": {
       "int": "45",
@@ -9948,7 +10229,11 @@
       "Attaque": "+25",
       "Archerie": "+25"
     },
-    "type": "Bracelet"
+    "type": "Bracelet",
+    "obtention": [
+      "Coffre (SH)"
+    ],
+    "name": "Bracelets de Guerre"
   },
   {
     "name": "Gantelets de choc",
@@ -10122,7 +10407,6 @@
     "type": "Arme"
   },
   {
-    "name": "Bâton de Bastet, l'Esprit des Chats",
     "quantity": 1,
     "prerequisites": {
       "int": "73",
@@ -10138,7 +10422,15 @@
       "Puissance Terre": "+10",
       "Puissance Air": "+10"
     },
-    "type": "Arme"
+    "type": "Arme",
+    "damage": {
+      "min": "35",
+      "max": "55"
+    },
+    "obtention": [
+      "Coffre"
+    ],
+    "name": "Bâton de Bastet, l'Esprit des Chats"
   },
   {
     "name": "Clef de métal brillant",
@@ -10417,9 +10709,9 @@
     "type": "Divers"
   },
   {
-    "name": "Balais",
     "quantity": 1,
-    "type": "Divers"
+    "type": "Divers",
+    "name": "Balais"
   },
   {
     "name": "Bougie",
@@ -10432,9 +10724,9 @@
     "type": "Divers"
   },
   {
-    "name": "Cuillère",
     "quantity": 1,
-    "type": "Bouclier"
+    "type": "Bouclier",
+    "name": "Cuillère"
   },
   {
     "name": "Rouleau à pâtisserie",
@@ -10594,12 +10886,19 @@
     "type": "Heaume"
   },
   {
-    "name": "Buveur de sang",
     "quantity": 1,
     "prerequisites": {
       "str": "68"
     },
-    "type": "Arme"
+    "type": "Arme",
+    "damage": {
+      "min": "30",
+      "max": "42"
+    },
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Buveuse de sang"
   },
   {
     "name": "Casse-tête",
@@ -10676,7 +10975,6 @@
     "type": "Heaume"
   },
   {
-    "name": "Marteau de Révélation",
     "quantity": 1,
     "prerequisites": {
       "wis": "56",
@@ -10689,7 +10987,8 @@
     "obtention": [
       "Coffre"
     ],
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Marteau de Révélation"
   },
   {
     "name": "Gourdin",
@@ -10880,13 +11179,13 @@
     "type": "Anneau"
   },
   {
-    "name": "Anneau du Gladiateur",
     "quantity": 1,
     "prerequisites": {
       "int": "20",
       "wis": "25",
       "str": "108",
-      "dex": "75"
+      "dex": "75",
+      "attack": "500"
     },
     "secondary": {
       "Attaque": "+100",
@@ -10896,7 +11195,12 @@
     "bonuses": {
       "ca": "+5"
     },
-    "type": "Anneau"
+    "type": "Anneau",
+    "obtention": [
+      "Gardien équestre (SH)",
+      "Géant des plaines (donjon des bijoux d'Eléonore DI, RD)"
+    ],
+    "name": "Anneau du Gladiateur"
   },
   {
     "name": "Amulette de Héros",
@@ -10948,14 +11252,14 @@
     "type": "Cape"
   },
   {
-    "name": "Bracelet de la Manticore",
     "quantity": 1,
     "prerequisites": {
       "int": "30",
       "wis": "30",
       "end": "50",
       "str": "100",
-      "dex": "50"
+      "dex": "50",
+      "attack": "400"
     },
     "secondary": {
       "Résistance Feu": "+10",
@@ -10968,14 +11272,18 @@
     "bonuses": {
       "ca": "+10"
     },
-    "type": "Bracelet"
+    "type": "Bracelet",
+    "obtention": [
+      "Loup Fenris (SH)"
+    ],
+    "name": "Bracelet de la Manticore"
   },
   {
-    "name": "Bracelet de Fierté",
     "quantity": 1,
     "prerequisites": {
       "end": "50",
-      "str": "100"
+      "str": "100",
+      "attack": "300"
     },
     "secondary": {
       "Résistance Feu": "+30",
@@ -10985,14 +11293,18 @@
     "bonuses": {
       "ca": "+10"
     },
-    "type": "Bracelet"
+    "type": "Bracelet",
+    "obtention": [
+      "Gecko sulfureux (SH)"
+    ],
+    "name": "Bracelet de Fierté"
   },
   {
-    "name": "Bracelet de Turquoise",
     "quantity": 1,
     "prerequisites": {
       "end": "50",
-      "str": "100"
+      "str": "100",
+      "attack": "300"
     },
     "secondary": {
       "Résistance Eau": "+30",
@@ -11002,14 +11314,18 @@
     "bonuses": {
       "ca": "+10"
     },
-    "type": "Bracelet"
+    "type": "Bracelet",
+    "obtention": [
+      "Rejeton du Chaos (SH)"
+    ],
+    "name": "Bracelet de Turquoise"
   },
   {
-    "name": "Bracelet d'Hypogriffe doré",
     "quantity": 1,
     "prerequisites": {
       "end": "50",
-      "str": "100"
+      "str": "100",
+      "attack": "300"
     },
     "secondary": {
       "Résistance Air": "+30",
@@ -11019,14 +11335,18 @@
     "bonuses": {
       "ca": "+10"
     },
-    "type": "Bracelet"
+    "type": "Bracelet",
+    "obtention": [
+      "Assassin obsidien (SH)"
+    ],
+    "name": "Bracelet d'Hypogriffe doré"
   },
   {
-    "name": "Bracelet de Feuilles",
     "quantity": 1,
     "prerequisites": {
       "end": "50",
-      "str": "100"
+      "str": "100",
+      "attack": "300"
     },
     "secondary": {
       "Résistance Terre": "+30",
@@ -11036,7 +11356,11 @@
     "bonuses": {
       "ca": "+10"
     },
-    "type": "Bracelet"
+    "type": "Bracelet",
+    "obtention": [
+      "Protecteur temporel (ZO)"
+    ],
+    "name": "Bracelet de Feuilles"
   },
   {
     "name": "Bouclier de Sombrebois",
@@ -12999,9 +13323,9 @@
     "type": "Bouclier"
   },
   {
-    "name": "Aile de gargouille",
     "quantity": 1,
-    "type": "Divers"
+    "type": "Divers",
+    "name": "Aile de gargouille"
   },
   {
     "name": "Flèches de puanteur",
@@ -14182,9 +14506,9 @@
     "type": "Divers"
   },
   {
-    "name": "Parchemin de dissipation de la résistance terre",
     "quantity": 1,
-    "type": "Divers"
+    "type": "Divers",
+    "name": "Parchemin de dissipation de la résistance à la terre"
   },
   {
     "name": "Parchemin de dissipation de la résistance à l'eau",
@@ -14218,11 +14542,6 @@
   },
   {
     "name": "Extrait d'énergie pure",
-    "quantity": 1,
-    "type": "Divers"
-  },
-  {
-    "name": "Ailes de gargouille",
     "quantity": 1,
     "type": "Divers"
   },
@@ -18869,7 +19188,6 @@
     "type": "Cape"
   },
   {
-    "name": "Présent des Alvors",
     "quantity": 1,
     "prerequisites": {
       "int": "40",
@@ -18886,12 +19204,21 @@
       "Dissimulation": "+10",
       "Attaque": "+50",
       "Archerie": "+50",
-      "Immobilisation": "+5"
+      "Immobilisation": "+5",
+      "Coup Assommant": "+10",
+      "Se Cacher": "+10",
+      "Transpercer l'Armure": "+10",
+      "Esquive": "-50"
     },
     "bonuses": {
       "ca": "+10"
     },
-    "type": "Amulette"
+    "type": "Amulette",
+    "obtention": [
+      "Quête du présent des Alvors"
+    ],
+    "content": "NMS",
+    "name": "Présent des älvors"
   },
   {
     "name": "Tégument du Cerberus",
@@ -19555,11 +19882,6 @@
     "type": "Arme"
   },
   {
-    "name": "Balai",
-    "quantity": 1,
-    "type": "Divers"
-  },
-  {
     "name": "Eprouvette",
     "quantity": 1,
     "type": "Divers"
@@ -19583,11 +19905,6 @@
     "name": "Couteau",
     "quantity": 1,
     "type": "Divers"
-  },
-  {
-    "name": "Cuiller",
-    "quantity": 1,
-    "type": "Bouclier"
   },
   {
     "name": "Miroir",
@@ -19934,7 +20251,6 @@
     ]
   },
   {
-    "name": "Bracelet d'obsidiennne",
     "quantity": 1,
     "prerequisites": {
       "int": "300",
@@ -19954,9 +20270,15 @@
       "Résistance Eau": "+5",
       "Résistance Terre": "+5",
       "Résistance Lumière": "+5",
-      "Résistance Nécro": "+5"
+      "Résistance Nécro": "+5",
+      "Note": "Sert plus ancient item ante"
     },
-    "type": "Bracelet"
+    "type": "Bracelet",
+    "obtention": [
+      "Drop des Chevaliers de la Damnation (Château du désert DI)"
+    ],
+    "content": "NMS",
+    "name": "Bracelet d'obsidienne"
   },
   {
     "name": "Rondache des damnés",
@@ -21365,12 +21687,17 @@
     "type": "Jambière"
   },
   {
-    "name": "Epée bâtarde d'adamantium",
     "quantity": 1,
     "prerequisites": {
       "str": "387"
     },
-    "type": "Arme"
+    "type": "Arme",
+    "damage": {
+      "min": "214",
+      "max": "294"
+    },
+    "buyPrice": "389637",
+    "name": "Epée bâtarde d'adamantite"
   },
   {
     "name": "Jambières violettes",
@@ -21627,7 +21954,6 @@
     "type": "Robe"
   },
   {
-    "name": "Robe de l'Archimage finement tissée",
     "quantity": 1,
     "prerequisites": {
       "int": "190",
@@ -21639,9 +21965,15 @@
       "int": "+50"
     },
     "secondary": {
-      "Puissance Feu": "+20"
+      "Puissance Feu": "+20",
+      "Esquive": "-25"
     },
-    "type": "Robe"
+    "type": "Robe",
+    "obtention": [
+      "Couturier lvl 62"
+    ],
+    "content": "NMS",
+    "name": "Robe de l'Archimage - finement tissée"
   },
   {
     "name": "Manteau des bénédictions infinies finement tissé",
@@ -22434,7 +22766,6 @@
     "type": "Divers"
   },
   {
-    "name": "Gourdin du Troll",
     "quantity": 1,
     "prerequisites": {
       "str": "79"
@@ -22446,7 +22777,8 @@
     "obtention": [
       "Drop"
     ],
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Gourdin du Troll"
   },
   {
     "name": "Lettre du marchand",
@@ -22641,7 +22973,6 @@
     "type": "Botte"
   },
   {
-    "name": "Cotte de maille",
     "quantity": 1,
     "prerequisites": {
       "end": "80"
@@ -22649,13 +22980,16 @@
     "bonuses": {
       "ca": "5.95"
     },
-    "obtention": [],
+    "obtention": [
+      "AR",
+      "Marchand WH / RD, Marchand SS"
+    ],
     "buyPrice": "20777",
-    "secondary": {},
-    "type": "Plastron"
+    "type": "Plastron",
+    "weight": "43",
+    "name": "Cotte de Mailles"
   },
   {
-    "name": "Cotte d'anneaux",
     "quantity": 1,
     "prerequisites": {
       "end": "60"
@@ -22663,10 +22997,14 @@
     "bonuses": {
       "ca": "4.15"
     },
-    "obtention": [],
+    "obtention": [
+      "AR",
+      "Marchand WH / RD, Marchand SS"
+    ],
     "buyPrice": "10039",
-    "secondary": {},
-    "type": "Plastron"
+    "type": "Plastron",
+    "weight": "43",
+    "name": "Cotte d'anneaux"
   },
   {
     "name": "Anneau de fer",
@@ -22716,14 +23054,6 @@
     ],
     "secondary": {},
     "type": "Anneau"
-  },
-  {
-    "name": "Epée de Diamant",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "532"
-    },
-    "type": "Arme"
   },
   {
     "name": "Anneau de lumière",
@@ -22824,7 +23154,6 @@
     "type": "Bracelet"
   },
   {
-    "name": "Collier de diamants",
     "quantity": 1,
     "prerequisites": {
       "int": "29",
@@ -22835,7 +23164,11 @@
       "wis": "+5",
       "int": "+5"
     },
-    "type": "Amulette"
+    "type": "Amulette",
+    "obtention": [
+      "Créature bannie (laby AR), dragon Yeridaj (Niève)"
+    ],
+    "name": "Collier de diamants"
   },
   {
     "name": "Gri-gri Yjglinien",
@@ -22984,7 +23317,6 @@
     "type": "Arme"
   },
   {
-    "name": "Épée de la nuit",
     "quantity": 1,
     "prerequisites": {
       "int": "30",
@@ -23001,7 +23333,8 @@
     "obtention": [
       "Quête"
     ],
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée de la nuit"
   },
   {
     "name": "Anneau de confiance",
@@ -23097,7 +23430,6 @@
     "type": "Anneau"
   },
   {
-    "name": "Épée du chaos",
     "quantity": 1,
     "prerequisites": {
       "str": "53"
@@ -23109,7 +23441,8 @@
     "obtention": [
       "Quête/Drop"
     ],
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Épée du chaos"
   },
   {
     "name": "Livre de Feylor",
@@ -23192,12 +23525,22 @@
     "type": "Amulette"
   },
   {
-    "name": "Sceptre de pouvoir de Drachen",
     "quantity": 1,
-    "type": "Arme"
+    "type": "Arme",
+    "prerequisites": {
+      "str": "10",
+      "int": "135"
+    },
+    "damage": {
+      "min": "14",
+      "max": "22"
+    },
+    "obtention": [
+      "Drop"
+    ],
+    "name": "Sceptre de pouvoir du Drachen"
   },
   {
-    "name": "Epée vorpale de Drachen",
     "quantity": 1,
     "damage": {
       "min": "116",
@@ -23210,7 +23553,8 @@
     "obtention": [
       "Drop"
     ],
-    "type": "Arme"
+    "type": "Arme",
+    "name": "Epée vorpale de Drachen"
   },
   {
     "name": "Plastron de Drachen",
@@ -23268,9 +23612,14 @@
     "type": "Divers"
   },
   {
-    "name": "Manteau de pluie",
     "quantity": 1,
-    "type": "Robe"
+    "type": "Robe",
+    "prerequisites": {
+      "end": "20",
+      "int": "100",
+      "wis": "20"
+    },
+    "name": "Manteau de pluie"
   },
   {
     "name": "Flèches de feu",
@@ -23338,9 +23687,17 @@
     "type": "Divers"
   },
   {
-    "name": "Hache de guerre en mithril",
     "quantity": 1,
-    "type": "Arme"
+    "type": "Arme",
+    "prerequisites": {
+      "str": "358"
+    },
+    "damage": {
+      "min": "230",
+      "max": "320"
+    },
+    "buyPrice": "332053",
+    "name": "Hache de guerre de mithril"
   },
   {
     "name": "Passe-Partout Démoniaque",
@@ -23526,9 +23883,9 @@
     "type": "Divers"
   },
   {
-    "name": "Cendres sanctifiées",
     "quantity": 1,
-    "type": "Divers"
+    "type": "Divers",
+    "name": "Cendres sanctifiées"
   },
   {
     "name": "Anneau d'Ogrimar",
@@ -23812,9 +24169,9 @@
     "type": "Divers"
   },
   {
-    "name": "Ame spectrale",
     "quantity": 1,
-    "type": "Divers"
+    "type": "Divers",
+    "name": "Ame spectrale"
   },
   {
     "name": "Attente du forgeron Kazador",
@@ -23842,9 +24199,9 @@
     "type": "Divers"
   },
   {
-    "name": "Brumes des ombres",
     "quantity": 1,
-    "type": "Divers"
+    "type": "Divers",
+    "name": "Brumes des ombres"
   },
   {
     "name": "Caillasse éruptive",
@@ -23927,9 +24284,9 @@
     "type": "Divers"
   },
   {
-    "name": "Fétiche Scélérat",
     "quantity": 1,
-    "type": "Divers"
+    "type": "Divers",
+    "name": "Fétiche Scélérat"
   },
   {
     "name": "Flacon du repos délétère",
@@ -24042,9 +24399,9 @@
     "type": "Divers"
   },
   {
-    "name": "Œuf de Charognard volant",
     "quantity": 1,
-    "type": "Divers"
+    "type": "Divers",
+    "name": "Œuf de Charognard volant"
   },
   {
     "name": "Patagium Cristallin",
@@ -24082,14 +24439,9 @@
     "type": "Divers"
   },
   {
-    "name": "Rameau de gui",
     "quantity": 1,
-    "type": "Divers"
-  },
-  {
-    "name": "Rameaux de gui",
-    "quantity": 1,
-    "type": "Divers"
+    "type": "Divers",
+    "name": "Rameau de gui"
   },
   {
     "name": "Relique d'Amaëlle",
@@ -24187,9 +24539,9 @@
     "type": "Divers"
   },
   {
-    "name": "Anneau en hématite",
     "quantity": 1,
-    "type": "Divers"
+    "type": "Divers",
+    "name": "Anneau en hématite"
   },
   {
     "name": "Anneau en titane",
@@ -24203,11 +24555,6 @@
   },
   {
     "name": "Thériaque Méphitique",
-    "quantity": 1,
-    "type": "Divers"
-  },
-  {
-    "name": "Oeuf de charognard volant",
     "quantity": 1,
     "type": "Divers"
   },
@@ -24262,11 +24609,6 @@
     "type": "Divers"
   },
   {
-    "name": "Ame spectral",
-    "quantity": 1,
-    "type": "Divers"
-  },
-  {
     "name": "Fléau de la clarté rayonnante",
     "quantity": 1,
     "type": "Divers"
@@ -24277,9 +24619,9 @@
     "type": "Divers"
   },
   {
-    "name": "Galon doré soyeux",
     "quantity": 1,
-    "type": "Divers"
+    "type": "Divers",
+    "name": "Galon doré soyeux"
   },
   {
     "name": "Hache de cruauté",
@@ -24292,9 +24634,9 @@
     "type": "Divers"
   },
   {
-    "name": "Hampes en mélèze",
     "quantity": 1,
-    "type": "Divers"
+    "type": "Divers",
+    "name": "Hampes en mélèze"
   },
   {
     "name": "Haubert d'armure légendaire de camouflage",
@@ -24343,11 +24685,6 @@
       "Esquive": "-100"
     },
     "type": "Robe"
-  },
-  {
-    "name": "Fétiche scélérate",
-    "quantity": 1,
-    "type": "Divers"
   },
   {
     "name": "Houppelande légendaire de Thavasthar",
@@ -24407,9 +24744,9 @@
     "type": "Divers"
   },
   {
-    "name": "Jade poli",
     "quantity": 1,
-    "type": "Divers"
+    "type": "Divers",
+    "name": "Jade poli"
   },
   {
     "name": "Lanière d'Elfe corrompu",
@@ -24422,9 +24759,9 @@
     "type": "Divers"
   },
   {
-    "name": "Lanière en peau de gnôme des forêts",
     "quantity": 1,
-    "type": "Divers"
+    "type": "Divers",
+    "name": "Lanière en peau de gnôme des forêts"
   },
   {
     "name": "Lingot de rose des neiges",
@@ -24499,11 +24836,6 @@
   },
   {
     "name": "Silice du maudit",
-    "quantity": 1,
-    "type": "Divers"
-  },
-  {
-    "name": "Brume des ombres",
     "quantity": 1,
     "type": "Divers"
   },
@@ -24627,9 +24959,9 @@
     "type": "Divers"
   },
   {
-    "name": "Escarbouche Destructrice",
     "quantity": 1,
-    "type": "Divers"
+    "type": "Divers",
+    "name": "Escarbouche Destructrice"
   },
   {
     "name": "Feuille de fougère",
@@ -24696,11 +25028,6 @@
     "type": "Divers"
   },
   {
-    "name": "Escarboucle destructrice",
-    "quantity": 1,
-    "type": "Divers"
-  },
-  {
     "name": "Bouclier du preux noir",
     "quantity": 1,
     "type": "Bouclier",
@@ -24731,14 +25058,9 @@
     ]
   },
   {
-    "name": "Boule à pointes en titane",
     "quantity": 1,
-    "type": "Divers"
-  },
-  {
-    "name": "Cendre sanctifiée",
-    "quantity": 1,
-    "type": "Divers"
+    "type": "Divers",
+    "name": "Boule à pointes en titane"
   },
   {
     "name": "Bulbe de bourreau impitoyable",
@@ -24928,11 +25250,6 @@
   },
   {
     "name": "Orbe ornée de runes",
-    "quantity": 1,
-    "type": "Divers"
-  },
-  {
-    "name": "Parchemin de dissipation de la résistance à la terre",
     "quantity": 1,
     "type": "Divers"
   },
@@ -26243,11 +26560,6 @@
     "type": "Divers"
   },
   {
-    "name": "Anneaux en hématite",
-    "quantity": 1,
-    "type": "Divers"
-  },
-  {
     "name": "Quete du Forgeron de DI Durikk",
     "quantity": 1,
     "type": "Divers"
@@ -26258,32 +26570,12 @@
     "type": "Divers"
   },
   {
-    "name": "Jade polie",
-    "quantity": 1,
-    "type": "Divers"
-  },
-  {
     "name": "Chair d'elfe corrompu",
     "quantity": 1,
     "type": "Divers"
   },
   {
     "name": "Sphène polie",
-    "quantity": 1,
-    "type": "Divers"
-  },
-  {
-    "name": "Lanières en peau de gnome des forêts",
-    "quantity": 1,
-    "type": "Divers"
-  },
-  {
-    "name": "Galons dorés soyeux",
-    "quantity": 1,
-    "type": "Divers"
-  },
-  {
-    "name": "Boule a pointe en titane",
     "quantity": 1,
     "type": "Divers"
   },
@@ -26568,11 +26860,6 @@
     "type": "Divers"
   },
   {
-    "name": "Hampe de mélèze",
-    "quantity": 1,
-    "type": "Divers"
-  },
-  {
     "name": "Branche de Myrte",
     "quantity": 1,
     "type": "Divers"
@@ -26614,18 +26901,25 @@
     "type": "Arme"
   },
   {
-    "name": "Gourdin du gob' (+3)",
     "quantity": 1,
-    "damage": {
-      "min": "3",
-      "max": "6"
-    },
     "obtention": [
-      "Invoc."
+      "Invoc.",
+      "Forgeron 1",
+      "Forgeron lvl 1"
     ],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
+    "secondary": {
+      "Attaque": "+50%"
+    },
+    "type": "Arme",
+    "buyPrice": "38",
+    "content": "NMS",
+    "prerequisites": {
+      "str": "0"
+    },
+    "degats": "3-6",
+    "encombrement": "8",
+    "mains": "1 main",
+    "name": "Gourdin de Gob' (+3)"
   },
   {
     "name": "Sceptre de bois enchanté",
@@ -26635,19 +26929,6 @@
       "max": "5"
     },
     "buyPrice": "87",
-    "obtention": [],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "name": "Sceptre en bois de puissance",
-    "quantity": 1,
-    "damage": {
-      "min": "2",
-      "max": "5"
-    },
-    "buyPrice": "270",
     "obtention": [],
     "bonuses": {},
     "secondary": {},
@@ -26675,24 +26956,6 @@
     },
     "obtention": [
       "Quête"
-    ],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "name": "Sceptre de pouvoir du Drachen",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "10",
-      "int": "135"
-    },
-    "damage": {
-      "min": "14",
-      "max": "22"
-    },
-    "obtention": [
-      "Drop"
     ],
     "bonuses": {},
     "secondary": {},
@@ -26733,23 +26996,6 @@
     "type": "Arme"
   },
   {
-    "name": "Sceptre d'épine",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "14",
-      "int": "39"
-    },
-    "damage": {
-      "min": "11",
-      "max": "18"
-    },
-    "buyPrice": "2361",
-    "obtention": [],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
     "name": "Sceptre d'épine enchanté",
     "quantity": 1,
     "prerequisites": {
@@ -26761,23 +27007,6 @@
       "max": "19"
     },
     "buyPrice": "7083",
-    "obtention": [],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "name": "Sceptre d'épine de puissance",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "14",
-      "int": "39"
-    },
-    "damage": {
-      "min": "14",
-      "max": "23"
-    },
-    "buyPrice": "23610",
     "obtention": [],
     "bonuses": {},
     "secondary": {},
@@ -26830,25 +27059,6 @@
     },
     "buyPrice": "27969",
     "obtention": [],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "name": "Bâton de Bastet, l'esprit des chats",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "20",
-      "int": "73",
-      "wis": "73"
-    },
-    "damage": {
-      "min": "35",
-      "max": "55"
-    },
-    "obtention": [
-      "Coffre"
-    ],
     "bonuses": {},
     "secondary": {},
     "type": "Arme"
@@ -26919,25 +27129,6 @@
     "degats": "9-15",
     "encombrement": "4",
     "mains": "1 main"
-  },
-  {
-    "name": "Scalpel du chirurgien",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "30",
-      "int": "30",
-      "wis": "50"
-    },
-    "damage": {
-      "min": "18",
-      "max": "27"
-    },
-    "obtention": [
-      "Quête"
-    ],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
   },
   {
     "name": "Cognée de bucheron (+3)",
@@ -27016,39 +27207,24 @@
     "mains": "1 main"
   },
   {
-    "name": "Buveuse de sang",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "68"
-    },
-    "damage": {
-      "min": "30",
-      "max": "42"
-    },
-    "obtention": [
-      "Drop"
-    ],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "name": "Sabre a crosse de nacre (+3)",
     "quantity": 1,
     "prerequisites": {
       "str": "82"
     },
-    "damage": {
-      "min": "54",
-      "max": "78"
-    },
     "obtention": [
       "Invoc",
-      "Invoc. | Forgeron 19"
+      "Invoc. | Forgeron 19",
+      "Forgeron lvl 19"
     ],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
+    "secondary": {
+      "Attaque": "+50%"
+    },
+    "type": "Arme",
+    "degats": "42-66",
+    "encombrement": "8",
+    "mains": "1 main",
+    "content": "NMS",
+    "name": "Sabre à crosse de nacre (+3)"
   },
   {
     "name": "Masse en acier trempé béni",
@@ -27068,23 +27244,6 @@
     "type": "Arme"
   },
   {
-    "name": "Masse en acier trempé sacré",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "90",
-      "wis": "79"
-    },
-    "damage": {
-      "min": "72",
-      "max": "104"
-    },
-    "buyPrice": "370530",
-    "obtention": [],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
     "name": "Masse à ailettes enchantée (+3)",
     "quantity": 1,
     "prerequisites": {
@@ -27097,25 +27256,6 @@
     },
     "obtention": [
       "Invoc."
-    ],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "name": "Pourfendeur de gobelin",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "97",
-      "int": "20",
-      "wis": "23"
-    },
-    "damage": {
-      "min": "32",
-      "max": "60"
-    },
-    "obtention": [
-      "Quête"
     ],
     "bonuses": {},
     "secondary": {},
@@ -27178,22 +27318,6 @@
     "obtention": [
       "Quête"
     ],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "name": "Epée longue en acier trempé enchanté",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "126"
-    },
-    "damage": {
-      "min": "70",
-      "max": "97"
-    },
-    "buyPrice": "111159",
-    "obtention": [],
     "bonuses": {},
     "secondary": {},
     "type": "Arme"
@@ -27310,21 +27434,25 @@
     "type": "Arme"
   },
   {
-    "name": "Cimeterre du Zéphir (+3)",
     "quantity": 1,
     "prerequisites": {
       "str": "155"
     },
-    "damage": {
-      "min": "114",
-      "max": "161"
-    },
     "obtention": [
-      "Invoc."
+      "Invoc.",
+      "Forgeron 41",
+      "Forgeron lvl 41"
     ],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
+    "secondary": {
+      "Attaque": "+50%"
+    },
+    "type": "Arme",
+    "buyPrice": "77094",
+    "content": "NMS",
+    "degats": "87-134",
+    "encombrement": "8",
+    "mains": "1 main",
+    "name": "Cimeterre du Zéphyr (+3)"
   },
   {
     "name": "Hache de guerre Baatorienne (+3)",
@@ -27372,40 +27500,6 @@
       "max": "221"
     },
     "buyPrice": "230691",
-    "obtention": [],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "name": "Fléau d'armes de mithril béni",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "210",
-      "wis": "169"
-    },
-    "damage": {
-      "min": "177",
-      "max": "249"
-    },
-    "buyPrice": "692073",
-    "obtention": [],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "name": "Fléau d'armes de mithril sacré",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "210",
-      "wis": "169"
-    },
-    "damage": {
-      "min": "195",
-      "max": "276"
-    },
-    "buyPrice": "2306910",
     "obtention": [],
     "bonuses": {},
     "secondary": {},
@@ -27519,54 +27613,6 @@
       "max": "246"
     },
     "buyPrice": "5909480",
-    "obtention": [],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "name": "Epée bâtarde de qualité",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "242"
-    },
-    "damage": {
-      "min": "145",
-      "max": "197"
-    },
-    "buyPrice": "147737",
-    "obtention": [],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "name": "Epée bâtarde de qualité enchantée",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "242"
-    },
-    "damage": {
-      "min": "160",
-      "max": "220"
-    },
-    "buyPrice": "443211",
-    "obtention": [],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "name": "Epée bâtarde de qualité runique",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "242"
-    },
-    "damage": {
-      "min": "175",
-      "max": "243"
-    },
-    "buyPrice": "1477370",
     "obtention": [],
     "bonuses": {},
     "secondary": {},
@@ -27903,54 +27949,6 @@
     "type": "Arme"
   },
   {
-    "name": "Epée bâtarde de mithril",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "314"
-    },
-    "damage": {
-      "min": "189",
-      "max": "254"
-    },
-    "buyPrice": "254305",
-    "obtention": [],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "name": "Epée bâtarde de mithril enchantée",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "314"
-    },
-    "damage": {
-      "min": "207",
-      "max": "284"
-    },
-    "buyPrice": "762915",
-    "obtention": [],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "name": "Epée bâtarde de mithril runique",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "314"
-    },
-    "damage": {
-      "min": "226",
-      "max": "314"
-    },
-    "buyPrice": "2543050",
-    "obtention": [],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
     "name": "Epée a 2 mains en mithril",
     "quantity": 1,
     "prerequisites": {
@@ -28047,22 +28045,6 @@
     "type": "Arme"
   },
   {
-    "name": "Hache de guerre de mithril",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "358"
-    },
-    "damage": {
-      "min": "230",
-      "max": "320"
-    },
-    "buyPrice": "332053",
-    "obtention": [],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
     "name": "Hache de guerre de mithril enchantée",
     "quantity": 1,
     "prerequisites": {
@@ -28121,54 +28103,6 @@
       "max": "298"
     },
     "buyPrice": "1080807",
-    "obtention": [],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "name": "Epée bâtarde d'adamantite",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "387"
-    },
-    "damage": {
-      "min": "214",
-      "max": "294"
-    },
-    "buyPrice": "389637",
-    "obtention": [],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "name": "Epée bâtarde d'adamantite enchantée",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "387"
-    },
-    "damage": {
-      "min": "235",
-      "max": "327"
-    },
-    "buyPrice": "1168911",
-    "obtention": [],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "name": "Epée bâtarde d'adamantite runique",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "387"
-    },
-    "damage": {
-      "min": "256",
-      "max": "360"
-    },
-    "buyPrice": "3869370",
     "obtention": [],
     "bonuses": {},
     "secondary": {},
@@ -28303,54 +28237,6 @@
     "type": "Arme"
   },
   {
-    "name": "Epée bâtarde ancienne",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "532"
-    },
-    "damage": {
-      "min": "268",
-      "max": "373"
-    },
-    "buyPrice": "746587",
-    "obtention": [],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "name": "Epée bâtarde ancienne enchantée",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "532"
-    },
-    "damage": {
-      "min": "293",
-      "max": "413"
-    },
-    "buyPrice": "2239761",
-    "obtention": [],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "name": "Epée bâtarde ancienne runique",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "532"
-    },
-    "damage": {
-      "min": "318",
-      "max": "454"
-    },
-    "buyPrice": "7465870",
-    "obtention": [],
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
     "name": "Epée à 2 mains ancienne",
     "quantity": 1,
     "prerequisites": {
@@ -28479,30 +28365,6 @@
     "bonuses": {},
     "secondary": {},
     "type": "Arme"
-  },
-  {
-    "name": "Gourdin de Gob' (+3)",
-    "quantity": 1,
-    "damage": {
-      "min": "3",
-      "max": "6"
-    },
-    "buyPrice": "38",
-    "obtention": [
-      "Forgeron 1",
-      "Forgeron lvl 1"
-    ],
-    "type": "Arme",
-    "content": "NMS",
-    "prerequisites": {
-      "str": "0"
-    },
-    "secondary": {
-      "Attaque": "+50%"
-    },
-    "degats": "3-6",
-    "encombrement": "8",
-    "mains": "1 main"
   },
   {
     "name": "Epée courte d'Orkanis (+3)",
@@ -28667,30 +28529,6 @@
     "degats": "74-115",
     "encombrement": "8",
     "mains": "Main gauche"
-  },
-  {
-    "name": "Cimeterre du Zéphyr (+3)",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "155"
-    },
-    "damage": {
-      "min": "87",
-      "max": "134"
-    },
-    "buyPrice": "77094",
-    "obtention": [
-      "Forgeron 41",
-      "Forgeron lvl 41"
-    ],
-    "type": "Arme",
-    "content": "NMS",
-    "secondary": {
-      "Attaque": "+50%"
-    },
-    "degats": "87-134",
-    "encombrement": "8",
-    "mains": "1 main"
   },
   {
     "name": "Cimeterre du Zéphyr de main gauche (dual) (+3)",
@@ -29675,19 +29513,23 @@
     "mains": "1 main"
   },
   {
-    "name": "Lame de l'infatiguable (+3) (bof)",
     "quantity": 1,
     "prerequisites": {
       "str": "836"
     },
-    "damage": {
-      "min": "393",
-      "max": "677"
-    },
     "obtention": [
-      "Forgeron 87"
+      "Forgeron 87",
+      "Forgeron lvl 87"
     ],
-    "type": "Arme"
+    "type": "Arme",
+    "secondary": {
+      "Attaque": "+50%"
+    },
+    "degats": "393-677",
+    "encombrement": "12",
+    "mains": "1 main",
+    "content": "NMS",
+    "name": "Lame de l'infatiguable (+3)"
   },
   {
     "name": "Cimeterre en métrolite robuste (+3)",
@@ -30008,66 +29850,21 @@
     "type": "Arme"
   },
   {
-    "name": "Flamberge ancestrale (2 mains) (+3) (mod)",
     "quantity": 1,
     "prerequisites": {
       "str": "1050"
     },
-    "damage": {
-      "min": "446",
-      "max": "772"
-    },
     "obtention": [
       "Forgeron 105 (demande une lame gemme sombre)"
     ],
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Un commis voyageur"
-    ],
-    "name": "Arc droit en frêne d'Angelus",
-    "damage": {
-      "min": "1",
-      "max": "3"
+    "type": "Arme",
+    "secondary": {
+      "Attaque": "+50%"
     },
-    "buyPrice": "87",
-    "type": "Arc"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Un commis voyageur"
-    ],
-    "name": "Grand arc en frêne d'Angelus",
-    "prerequisites": {
-      "dex": "24",
-      "str": "13"
-    },
-    "damage": {
-      "min": "5",
-      "max": "11"
-    },
-    "buyPrice": "1815",
-    "type": "Arc"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Un commis voyageur"
-    ],
-    "name": "Arc courbé en frêne d'Angelus",
-    "prerequisites": {
-      "dex": "39",
-      "str": "17"
-    },
-    "damage": {
-      "min": "13",
-      "max": "21"
-    },
-    "buyPrice": "7083",
-    "type": "Arc"
+    "degats": "",
+    "mains": "2 mains",
+    "content": "NMS",
+    "name": "Flamberge ancestrale (2 mains) (+3)"
   },
   {
     "quantity": 1,
@@ -30116,22 +29913,6 @@
     },
     "degats": "49-72",
     "encombrement": "8"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Quête"
-    ],
-    "name": "Arc pourfendeur des centaures",
-    "prerequisites": {
-      "dex": "140",
-      "str": "28"
-    },
-    "damage": {
-      "min": "64",
-      "max": "87"
-    },
-    "type": "Arc"
   },
   {
     "quantity": 1,
@@ -30308,21 +30089,6 @@
   {
     "quantity": 1,
     "obtention": [],
-    "name": "Arc à poulie en cèdre",
-    "prerequisites": {
-      "dex": "358",
-      "str": "80"
-    },
-    "damage": {
-      "min": "164",
-      "max": "219"
-    },
-    "buyPrice": "332053",
-    "type": "Arc"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
     "name": "Arc à poulie en cèdre d'Angélus",
     "prerequisites": {
       "dex": "358",
@@ -30333,21 +30099,6 @@
       "max": "246"
     },
     "buyPrice": "996159",
-    "type": "Arc"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Arc à poulie en cèdre féerique",
-    "prerequisites": {
-      "dex": "358",
-      "str": "80"
-    },
-    "damage": {
-      "min": "201",
-      "max": "273"
-    },
-    "buyPrice": "3320530",
     "type": "Arc"
   },
   {
@@ -30466,18 +30217,24 @@
   },
   {
     "quantity": 1,
-    "obtention": [],
-    "name": "Arc long des étoiles (+3)",
+    "obtention": [
+      "Une ombre (SH) - 20.744.440 po",
+      "10k Fève de Bronze au Salon de jeux",
+      "Ebéniste lvl 69"
+    ],
     "prerequisites": {
       "dex": "445",
       "str": "109"
     },
-    "damage": {
-      "min": "276",
-      "max": "382"
-    },
     "buyPrice": "20744440",
-    "type": "Arc"
+    "type": "Arc",
+    "secondary": {
+      "Archerie": "+50%"
+    },
+    "degats": "225-331",
+    "encombrement": "11",
+    "content": "NMS",
+    "name": "Arc long des étoiles (+3)"
   },
   {
     "quantity": 1,
@@ -30512,21 +30269,6 @@
   {
     "quantity": 1,
     "obtention": [],
-    "name": "Arc à poulie en févier épineux",
-    "prerequisites": {
-      "dex": "546",
-      "str": "113"
-    },
-    "damage": {
-      "min": "216",
-      "max": "293"
-    },
-    "buyPrice": "788609",
-    "type": "Arc"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
     "name": "Arc à poulie en févier épineux d'Angélus",
     "prerequisites": {
       "dex": "546",
@@ -30537,21 +30279,6 @@
       "max": "328"
     },
     "buyPrice": "2365827",
-    "type": "Arc"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Arc à poulie en févier épineux féerique",
-    "prerequisites": {
-      "dex": "546",
-      "str": "113"
-    },
-    "damage": {
-      "min": "262",
-      "max": "363"
-    },
-    "buyPrice": "7886090",
     "type": "Arc"
   },
   {
@@ -30618,14 +30345,6 @@
   {
     "quantity": 1,
     "obtention": [],
-    "name": "Flèches d'ebène",
-    "secondary": {},
-    "buyPrice": "500",
-    "type": "Flèche"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
     "name": "Pointes de flèche en os",
     "secondary": {},
     "buyPrice": "5000",
@@ -30667,799 +30386,19 @@
   },
   {
     "quantity": 1,
-    "obtention": [],
-    "name": "Poignard Rouillé",
-    "damage": {
-      "min": "1",
-      "max": "4"
-    },
-    "buyPrice": "29",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Poignard Rouillé enchanté",
-    "damage": {
-      "min": "2",
-      "max": "4"
-    },
-    "buyPrice": "87",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Poignard Rouillé runique",
-    "damage": {
-      "min": "2",
-      "max": "5"
-    },
-    "buyPrice": "290",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Epée courte rouillée",
-    "damage": {
-      "min": "2",
-      "max": "4"
-    },
-    "buyPrice": "29",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Epée courte rouillée enchantée",
-    "damage": {
-      "min": "2",
-      "max": "5"
-    },
-    "buyPrice": "87",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Bô",
-    "prerequisites": {
-      "str": "15",
-      "int": "47"
-    },
-    "damage": {
-      "min": "14",
-      "max": "22"
-    },
-    "buyPrice": "3966",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Bô de puissance",
-    "prerequisites": {
-      "str": "15",
-      "int": "47"
-    },
-    "damage": {
-      "min": "18",
-      "max": "29"
-    },
-    "buyPrice": "39660",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Epée longue rouillée",
-    "prerequisites": {
-      "str": "24"
-    },
-    "damage": {
-      "min": "6",
-      "max": "11"
-    },
-    "buyPrice": "605",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Epée longue rouillée enchantée",
-    "prerequisites": {
-      "str": "24"
-    },
-    "damage": {
-      "min": "7",
-      "max": "12"
-    },
-    "buyPrice": "1815",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Epée longue rouillée runique",
-    "prerequisites": {
-      "str": "24"
-    },
-    "damage": {
-      "min": "8",
-      "max": "14"
-    },
-    "buyPrice": "6050",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
     "obtention": [
-      "Quête/Drop"
-    ],
-    "name": "Epée du chaos",
-    "prerequisites": {
-      "str": "53"
-    },
-    "damage": {
-      "min": "7",
-      "max": "48"
-    },
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Epée courte polie",
-    "prerequisites": {
-      "str": "53"
-    },
-    "damage": {
-      "min": "22",
-      "max": "31"
-    },
-    "buyPrice": "5266",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Epée courte polie enchantée",
-    "prerequisites": {
-      "str": "53"
-    },
-    "damage": {
-      "min": "24",
-      "max": "35"
-    },
-    "buyPrice": "15798",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Epée courte polie runique",
-    "prerequisites": {
-      "str": "53"
-    },
-    "damage": {
-      "min": "26",
-      "max": "39"
-    },
-    "buyPrice": "52660",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
+      "SH, Coffres",
       "Drop"
-    ],
-    "name": "Epée de fureur",
-    "prerequisites": {
-      "str": "59",
-      "int": "21",
-      "wis": "24"
-    },
-    "damage": {
-      "min": "25",
-      "max": "36"
-    },
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Coffre"
-    ],
-    "name": "Marteau de révélation",
-    "prerequisites": {
-      "str": "61",
-      "wis": "53"
-    },
-    "damage": {
-      "min": "36",
-      "max": "52"
-    },
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Quête"
-    ],
-    "name": "Epée de la nuit",
-    "prerequisites": {
-      "str": "65",
-      "int": "30",
-      "wis": "25"
-    },
-    "damage": {
-      "min": "30",
-      "max": "42"
-    },
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Epée longue polie",
-    "prerequisites": {
-      "str": "68"
-    },
-    "damage": {
-      "min": "31",
-      "max": "43"
-    },
-    "buyPrice": "9323",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Epée longue polie enchantée",
-    "prerequisites": {
-      "str": "68"
-    },
-    "damage": {
-      "min": "34",
-      "max": "48"
-    },
-    "buyPrice": "27969",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Epée longue polie runique",
-    "prerequisites": {
-      "str": "68"
-    },
-    "damage": {
-      "min": "37",
-      "max": "54"
-    },
-    "buyPrice": "93230",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Gourdin du troll",
-    "prerequisites": {
-      "str": "79"
-    },
-    "damage": {
-      "min": "36",
-      "max": "50"
-    },
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Quête"
-    ],
-    "name": "Lame assassine",
-    "prerequisites": {
-      "str": "110",
-      "dex": "65",
-      "int": "15"
-    },
-    "damage": {
-      "min": "69",
-      "max": "96"
-    },
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Epée courte en acier trempé",
-    "prerequisites": {
-      "str": "111"
-    },
-    "damage": {
-      "min": "54",
-      "max": "73"
-    },
-    "buyPrice": "28394",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Epée courte en acier trempé enchantée",
-    "prerequisites": {
-      "str": "111"
-    },
-    "damage": {
-      "min": "59",
-      "max": "81"
-    },
-    "buyPrice": "85182",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Epée courte en acier trempé runique",
-    "prerequisites": {
-      "str": "111"
-    },
-    "damage": {
-      "min": "64",
-      "max": "90"
-    },
-    "buyPrice": "283940",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Epée longue en acier trempé",
-    "prerequisites": {
-      "str": "126"
-    },
-    "damage": {
-      "min": "64",
-      "max": "87"
-    },
-    "buyPrice": "37053",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Epée longue en acier trempé runique",
-    "prerequisites": {
-      "str": "126"
-    },
-    "damage": {
-      "min": "76",
-      "max": "106"
-    },
-    "buyPrice": "370530",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Lame d'heroisme",
-    "prerequisites": {
-      "str": "155"
-    },
-    "damage": {
-      "min": "91",
-      "max": "125"
-    },
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Epée courte de qualité",
-    "prerequisites": {
-      "str": "184"
-    },
-    "damage": {
-      "min": "94",
-      "max": "126"
-    },
-    "buyPrice": "83191",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Epée courte de qualité enchantée",
-    "prerequisites": {
-      "str": "184"
-    },
-    "damage": {
-      "min": "103",
-      "max": "139"
-    },
-    "buyPrice": "249573",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Epée courte de qualité runique",
-    "prerequisites": {
-      "str": "184"
-    },
-    "damage": {
-      "min": "112",
-      "max": "153"
-    },
-    "buyPrice": "831910",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Lame de Mithril",
-    "prerequisites": {
-      "str": "184"
-    },
-    "damage": {
-      "min": "100",
-      "max": "135"
-    },
-    "buyPrice": "83191",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Epée longue de qualité",
-    "prerequisites": {
-      "str": "198"
-    },
-    "damage": {
-      "min": "104",
-      "max": "140"
-    },
-    "buyPrice": "97601",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Epée longue de qualité enchantée",
-    "prerequisites": {
-      "str": "198"
-    },
-    "damage": {
-      "min": "114",
-      "max": "156"
-    },
-    "buyPrice": "292803",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Epée longue de qualité runique",
-    "prerequisites": {
-      "str": "198"
-    },
-    "damage": {
-      "min": "125",
-      "max": "172"
-    },
-    "buyPrice": "976010",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Epée vorpale de drachen",
-    "prerequisites": {
-      "str": "230",
-      "dex": "60"
-    },
-    "damage": {
-      "min": "116",
-      "max": "150"
-    },
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Quête"
-    ],
-    "name": "Lame-gemme sombre",
-    "prerequisites": {
-      "str": "242",
-      "int": "53",
-      "wis": "43"
-    },
-    "damage": {
-      "min": "146",
-      "max": "198"
-    },
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Quête"
-    ],
-    "name": "Epée de puissance de crystal",
-    "prerequisites": {
-      "str": "251",
-      "dex": "21",
-      "int": "53",
-      "wis": "50"
-    },
-    "damage": {
-      "min": "149",
-      "max": "201"
-    },
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Epée longue de mithril",
-    "prerequisites": {
-      "str": "271"
-    },
-    "damage": {
-      "min": "145",
-      "max": "194"
-    },
-    "buyPrice": "186913",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Epée longue de mithril runique",
-    "prerequisites": {
-      "str": "271"
-    },
-    "damage": {
-      "min": "174",
-      "max": "238"
-    },
-    "buyPrice": "1869130",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Hache de qualité a deux tranchants",
-    "prerequisites": {
-      "str": "300"
-    },
-    "damage": {
-      "min": "258",
-      "max": "362"
-    },
-    "buyPrice": "230691",
-    "bonuses": {},
-    "secondary": {},
-    "type": "Arme"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "AR, Marchand LH / WH"
-    ],
-    "prerequisites": {
-      "end": "25"
-    },
-    "name": "Armure de Cuir",
-    "bonuses": {
-      "ca": "3.4"
-    },
-    "secondary": {},
-    "weight": "24",
-    "type": "Plastron"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "AR, Marchand LH / WH"
-    ],
-    "prerequisites": {
-      "end": "45"
-    },
-    "name": "Armure de Cuir Clouté",
-    "bonuses": {
-      "ca": "6.7, +1.8"
-    },
-    "secondary": {},
-    "weight": "30",
-    "type": "Plastron"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "AR",
-      "Marchand WH / RD, Marchand SS"
-    ],
-    "prerequisites": {
-      "end": "60"
-    },
-    "name": "Cotte d'Anneaux",
-    "bonuses": {
-      "ca": "10, +2.8"
-    },
-    "secondary": {},
-    "weight": "43",
-    "type": "Plastron"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "SH, Drop des Chapardeurs"
-    ],
-    "prerequisites": {
-      "end": "75"
-    },
-    "name": "Armure de Cuir Elfique",
-    "bonuses": {
-      "ca": "13.3"
-    },
-    "secondary": {},
-    "weight": "24",
-    "type": "Plastron"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "AR",
-      "Marchand WH / RD, Marchand SS"
-    ],
-    "prerequisites": {
-      "end": "80"
-    },
-    "name": "Cotte de Mailles",
-    "bonuses": {
-      "ca": "14.1, +4.4"
-    },
-    "secondary": {},
-    "weight": "43",
-    "type": "Plastron"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "SH, Marchand SC"
-    ],
-    "prerequisites": {
-      "end": "100"
-    },
-    "name": "Armure d'Ecailles",
-    "bonuses": {
-      "ca": "21, +6.4"
-    },
-    "secondary": {},
-    "weight": "30",
-    "type": "Plastron"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "SH, Coffres"
     ],
     "prerequisites": {
       "end": "110"
     },
-    "name": "Cotte de Mailles Elfique",
     "bonuses": {
-      "ca": "24.3"
+      "ca": "10"
     },
-    "secondary": {},
     "weight": "37",
-    "type": "Plastron"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "SH, Drop des Skraugs"
-    ],
-    "prerequisites": {
-      "end": "125"
-    },
-    "name": "Armure de Plaques",
-    "bonuses": {
-      "ca": "29.8, +8.8"
-    },
-    "secondary": {},
-    "weight": "57",
-    "type": "Plastron"
+    "type": "Plastron",
+    "name": "Cotte de Mailles Elfique"
   },
   {
     "quantity": 1,
@@ -31475,54 +30414,6 @@
     },
     "secondary": {},
     "weight": "21",
-    "type": "Plastron"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "SH, Drop des Centaures et divers coffres."
-    ],
-    "prerequisites": {
-      "end": "150"
-    },
-    "name": "Cotte de Mailles de Mithril",
-    "bonuses": {
-      "ca": "40.8, +12.6"
-    },
-    "secondary": {},
-    "weight": "36",
-    "type": "Plastron"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "SH, Drop des Guerrier Hérétique"
-    ],
-    "prerequisites": {
-      "end": "160"
-    },
-    "name": "Armure de Plaques Naines",
-    "bonuses": {
-      "ca": "46.3"
-    },
-    "secondary": {},
-    "weight": "57",
-    "type": "Plastron"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Coffres Oracle"
-    ],
-    "prerequisites": {
-      "end": "180"
-    },
-    "name": "Armure d'Ecailles du Dragon",
-    "bonuses": {
-      "ca": "56.2, +16.4"
-    },
-    "secondary": {},
-    "weight": "36",
     "type": "Plastron"
   },
   {
@@ -31559,19 +30450,6 @@
   },
   {
     "quantity": 1,
-    "obtention": [],
-    "name": "Ceinturon de cuir",
-    "prerequisites": {
-      "end": "25"
-    },
-    "bonuses": {
-      "ca": "0.3"
-    },
-    "buyPrice": "212",
-    "type": "Ceinture"
-  },
-  {
-    "quantity": 1,
     "obtention": [
       "Drop"
     ],
@@ -31585,116 +30463,6 @@
       "ca": "2.45"
     },
     "type": "Plastron"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Gants d'anneaux",
-    "prerequisites": {
-      "end": "60"
-    },
-    "bonuses": {
-      "ca": "1.215"
-    },
-    "buyPrice": "3015",
-    "type": "Gant"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Armure de cuir Elfique",
-    "prerequisites": {
-      "end": "75"
-    },
-    "bonuses": {
-      "ca": "5.5"
-    },
-    "type": "Plastron"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Ceinturon de cuir Elfique",
-    "prerequisites": {
-      "end": "75"
-    },
-    "bonuses": {
-      "ca": "1.2"
-    },
-    "type": "Ceinture"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Bottes de cuir Elfique",
-    "prerequisites": {
-      "end": "75"
-    },
-    "bonuses": {
-      "ca": "1.62"
-    },
-    "type": "Botte"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Gants de cuir Elfique",
-    "prerequisites": {
-      "end": "75"
-    },
-    "bonuses": {
-      "ca": "1.62"
-    },
-    "type": "Gant"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Casque de cuir Elfique",
-    "prerequisites": {
-      "end": "75"
-    },
-    "bonuses": {
-      "ca": "1.56"
-    },
-    "type": "Heaume"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Jambières de cuir Elfique",
-    "prerequisites": {
-      "end": "75"
-    },
-    "bonuses": {
-      "ca": "1.8"
-    },
-    "type": "Jambière"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Bottes de maille",
-    "prerequisites": {
-      "end": "80"
-    },
-    "bonuses": {
-      "ca": "1.755"
-    },
-    "buyPrice": "6072",
-    "type": "Botte"
   },
   {
     "quantity": 1,
@@ -31738,35 +30506,6 @@
   {
     "quantity": 1,
     "obtention": [],
-    "name": "Jambières de maille",
-    "prerequisites": {
-      "end": "80"
-    },
-    "bonuses": {
-      "ca": "1.95"
-    },
-    "buyPrice": "6992",
-    "type": "Jambière"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Quête"
-    ],
-    "name": "Cotte de maille bénie",
-    "prerequisites": {
-      "end": "80",
-      "int": "40",
-      "wis": "53"
-    },
-    "bonuses": {
-      "ca": "5.95"
-    },
-    "type": "Plastron"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
     "name": "Cotte d'écailles",
     "prerequisites": {
       "end": "100"
@@ -31776,19 +30515,6 @@
     },
     "buyPrice": "35404",
     "type": "Plastron"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "name": "Gants d'écailles",
-    "prerequisites": {
-      "end": "100"
-    },
-    "bonuses": {
-      "ca": "2.565"
-    },
-    "buyPrice": "10456",
-    "type": "Gant"
   },
   {
     "quantity": 1,
@@ -31826,62 +30552,6 @@
     "obtention": [
       "Drop"
     ],
-    "name": "Cotte de maille Elfique",
-    "prerequisites": {
-      "end": "110"
-    },
-    "bonuses": {
-      "ca": "10"
-    },
-    "type": "Plastron"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Bottes de maille Elfique",
-    "prerequisites": {
-      "end": "110"
-    },
-    "bonuses": {
-      "ca": "2.97"
-    },
-    "type": "Botte"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Gants de maille Elfique",
-    "prerequisites": {
-      "end": "110"
-    },
-    "bonuses": {
-      "ca": "2.97"
-    },
-    "type": "Gant"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Heaume de maille Elfique",
-    "prerequisites": {
-      "end": "110"
-    },
-    "bonuses": {
-      "ca": "2.86"
-    },
-    "type": "Heaume"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
     "name": "Jambières de maille Elfique",
     "prerequisites": {
       "end": "110"
@@ -31896,21 +30566,6 @@
     "obtention": [
       "Drop"
     ],
-    "name": "Ceinturon de maille Elfique",
-    "prerequisites": {
-      "end": "110",
-      "wis": "2"
-    },
-    "bonuses": {
-      "ca": "2"
-    },
-    "type": "Ceinture"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
     "name": "Plastron de plaques",
     "prerequisites": {
       "end": "125"
@@ -31919,20 +30574,6 @@
       "ca": "12.25"
     },
     "type": "Plastron"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Gants de plaques",
-    "prerequisites": {
-      "end": "125"
-    },
-    "bonuses": {
-      "ca": "3.645"
-    },
-    "type": "Gant"
   },
   {
     "quantity": 1,
@@ -32043,48 +30684,6 @@
     "obtention": [
       "Drop"
     ],
-    "name": "Cotte de mailles de Mithril",
-    "prerequisites": {
-      "end": "150"
-    },
-    "bonuses": {
-      "ca": "16.75"
-    },
-    "type": "Plastron"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Bottes de mailles de Mithril",
-    "prerequisites": {
-      "end": "150"
-    },
-    "bonuses": {
-      "ca": "4.995"
-    },
-    "type": "Botte"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Gants de mailles de Mithril",
-    "prerequisites": {
-      "end": "150"
-    },
-    "bonuses": {
-      "ca": "4.995"
-    },
-    "type": "Gant"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
     "name": "Casque de mailles de Mithril",
     "prerequisites": {
       "end": "150"
@@ -32093,20 +30692,6 @@
       "ca": "4.81"
     },
     "type": "Heaume"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Jambières de mailles de Mithril",
-    "prerequisites": {
-      "end": "150"
-    },
-    "bonuses": {
-      "ca": "5.55"
-    },
-    "type": "Jambière"
   },
   {
     "quantity": 1,
@@ -32141,20 +30726,6 @@
     "obtention": [
       "Drop"
     ],
-    "name": "Bottes de plaques Naines",
-    "prerequisites": {
-      "end": "160"
-    },
-    "bonuses": {
-      "ca": "5.67"
-    },
-    "type": "Botte"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
     "name": "Gants de plaques Naines",
     "prerequisites": {
       "end": "160"
@@ -32169,34 +30740,6 @@
     "obtention": [
       "Drop"
     ],
-    "name": "Heaume de plaques Naines",
-    "prerequisites": {
-      "end": "160"
-    },
-    "bonuses": {
-      "ca": "5.46"
-    },
-    "type": "Heaume"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Jambières de plaques Naine",
-    "prerequisites": {
-      "end": "160"
-    },
-    "bonuses": {
-      "ca": "6.3"
-    },
-    "type": "Jambière"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
     "name": "Protecteur de plaques Naine",
     "prerequisites": {
       "end": "160"
@@ -32205,76 +30748,6 @@
       "ca": "4.2"
     },
     "type": "Plastron"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Armure d'écailles du dragon",
-    "prerequisites": {
-      "end": "180"
-    },
-    "bonuses": {
-      "ca": "23"
-    },
-    "type": "Plastron"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Bottes d'écailles du dragon",
-    "prerequisites": {
-      "end": "180"
-    },
-    "bonuses": {
-      "ca": "6.885"
-    },
-    "type": "Botte"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Gants d'écailles du dragon",
-    "prerequisites": {
-      "end": "180"
-    },
-    "bonuses": {
-      "ca": "6.885"
-    },
-    "type": "Gant"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Heaume d'écailles du dragon",
-    "prerequisites": {
-      "end": "180"
-    },
-    "bonuses": {
-      "ca": "6.63"
-    },
-    "type": "Heaume"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Jambières d'écailles du dragon",
-    "prerequisites": {
-      "end": "180"
-    },
-    "bonuses": {
-      "ca": "7.65"
-    },
-    "type": "Jambière"
   },
   {
     "quantity": 1,
@@ -32373,48 +30846,6 @@
     "obtention": [
       "Drop"
     ],
-    "name": "Plastron ciselé des Hauts Elfes",
-    "prerequisites": {
-      "end": "300"
-    },
-    "bonuses": {
-      "ca": "57.25"
-    },
-    "type": "Plastron"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Bottes ciselées des Hauts Elfes",
-    "prerequisites": {
-      "end": "300"
-    },
-    "bonuses": {
-      "ca": "17.145"
-    },
-    "type": "Botte"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Gants ciselés des Hauts Elfes",
-    "prerequisites": {
-      "end": "300"
-    },
-    "bonuses": {
-      "ca": "17.145"
-    },
-    "type": "Gant"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
     "name": "Protecteur ciselé des Hauts Elfes",
     "prerequisites": {
       "end": "300"
@@ -32423,107 +30854,6 @@
       "ca": "12.7"
     },
     "type": "Plastron"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Heaume ciselé des Hauts Elfes",
-    "prerequisites": {
-      "end": "300"
-    },
-    "bonuses": {
-      "ca": "16.51"
-    },
-    "type": "Heaume"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Drop"
-    ],
-    "name": "Jambières ciselé des Hauts Elfes",
-    "prerequisites": {
-      "end": "300"
-    },
-    "bonuses": {
-      "ca": "19.05"
-    },
-    "type": "Jambière"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "secondary": {},
-    "name": "Manteau de l'archer",
-    "prerequisites": {
-      "str": "25",
-      "dex": "70",
-      "int": "30",
-      "wis": "40"
-    },
-    "type": "Robe"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "secondary": {},
-    "name": "Robe de protection ornée de rune",
-    "prerequisites": {
-      "end": "16",
-      "int": "43",
-      "wis": "50"
-    },
-    "type": "Robe"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "secondary": {},
-    "name": "Manteau de shaman",
-    "prerequisites": {
-      "end": "18",
-      "int": "50",
-      "wis": "68"
-    },
-    "type": "Robe"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "secondary": {},
-    "name": "Manteau de prestidigitateur",
-    "prerequisites": {
-      "end": "20",
-      "int": "110",
-      "wis": "20"
-    },
-    "type": "Robe"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "secondary": {},
-    "name": "Habit de feuille",
-    "prerequisites": {
-      "end": "20",
-      "int": "15",
-      "wis": "115"
-    },
-    "type": "Robe"
-  },
-  {
-    "quantity": 1,
-    "obtention": [],
-    "secondary": {},
-    "name": "Manteau de la pluie",
-    "prerequisites": {
-      "end": "20",
-      "int": "100",
-      "wis": "20"
-    },
-    "type": "Robe"
   },
   {
     "quantity": 1,
@@ -32564,73 +30894,6 @@
   {
     "quantity": 1,
     "obtention": [
-      "Créature bannie (laby AR), dragon Yeridaj (Niève)"
-    ],
-    "name": "Collier de diamant",
-    "prerequisites": {
-      "int": "29",
-      "wis": "29"
-    },
-    "type": "Amulette"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Golem de chair (RD)",
-      "Bane Gwengad (RD)",
-      "Ver tisseur",
-      "(Sud RD)"
-    ],
-    "name": "Collier en pierres de sang",
-    "prerequisites": {
-      "int": "44",
-      "wis": "21"
-    },
-    "type": "Amulette"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Purificateur (SH)"
-    ],
-    "name": "Talisman de protection contre le mal",
-    "prerequisites": {
-      "int": "40",
-      "wis": "53"
-    },
-    "type": "Bijou"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Craft bijoutier lev 2"
-    ],
-    "name": "Anneau des initiés",
-    "prerequisites": {
-      "int": "23",
-      "wis": "25"
-    },
-    "type": "Anneau"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Gardien équestre (SH)",
-      "Géant des plaines (donjon des bijoux d'Eléonore DI, RD)"
-    ],
-    "name": "Anneau du gladiateur",
-    "prerequisites": {
-      "str": "108",
-      "dex": "75",
-      "int": "20",
-      "wis": "25",
-      "attack": "500"
-    },
-    "type": "Anneau"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
       "Quête accès Oracle good (SH)"
     ],
     "name": "Anneau du séraphin",
@@ -32644,118 +30907,6 @@
     ],
     "name": "Bague Feu-follet",
     "type": "Anneau"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Assassin obsidien (SH)"
-    ],
-    "name": "Bracelet d'hypogriffe doré",
-    "prerequisites": {
-      "end": "50",
-      "str": "100",
-      "attack": "300"
-    },
-    "type": "Bracelet"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Protecteur temporel (ZO)"
-    ],
-    "name": "Bracelet de feuilles",
-    "prerequisites": {
-      "end": "50",
-      "str": "100",
-      "attack": "300"
-    },
-    "type": "Bracelet"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Gecko sulfureux (SH)"
-    ],
-    "name": "Bracelet de fierté",
-    "prerequisites": {
-      "end": "50",
-      "str": "100",
-      "attack": "300"
-    },
-    "type": "Bracelet"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Coffre (SH)"
-    ],
-    "name": "Bracelet de guerre",
-    "prerequisites": {
-      "str": "25",
-      "dex": "20",
-      "int": "45",
-      "wis": "50"
-    },
-    "type": "Bracelet"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Loup Fenris (SH)"
-    ],
-    "name": "Bracelet de la manticore",
-    "prerequisites": {
-      "end": "50",
-      "str": "100",
-      "dex": "50",
-      "int": "30",
-      "wis": "30",
-      "attack": "400"
-    },
-    "type": "Bracelet"
-  },
-  {
-    "quantity": 1,
-    "obtention": [
-      "Rejeton du Chaos (SH)"
-    ],
-    "name": "Bracelet de turquoise",
-    "prerequisites": {
-      "end": "50",
-      "str": "100",
-      "attack": "300"
-    },
-    "type": "Bracelet"
-  },
-  {
-    "name": "Présent des älvors",
-    "quantity": 1,
-    "type": "Amulette",
-    "prerequisites": {
-      "str": "80",
-      "end": "35",
-      "dex": "223",
-      "int": "40",
-      "wis": "40"
-    },
-    "bonuses": {
-      "ca": "+10"
-    },
-    "secondary": {
-      "Attaque": "+50",
-      "Archerie": "+50",
-      "Coup Puissant": "+10",
-      "Coup Assommant": "+10",
-      "Se Cacher": "+10",
-      "Transpercer l'Armure": "+10",
-      "Guérison rapide": "+10",
-      "Immobilisation": "+5",
-      "Esquive": "-50"
-    },
-    "obtention": [
-      "Quête du présent des Alvors"
-    ],
-    "content": "NMS"
   },
   {
     "name": "Anneau climatérique (Coup Critique)",
@@ -32816,24 +30967,6 @@
     "content": "NMS"
   },
   {
-    "name": "Sabre à crosse de nacre (+3)",
-    "quantity": 1,
-    "type": "Arme",
-    "prerequisites": {
-      "str": "82"
-    },
-    "secondary": {
-      "Attaque": "+50%"
-    },
-    "obtention": [
-      "Forgeron lvl 19"
-    ],
-    "degats": "42-66",
-    "encombrement": "8",
-    "mains": "1 main",
-    "content": "NMS"
-  },
-  {
     "name": "Éventreuse étoilée (+4) [obsolète]",
     "quantity": 1,
     "type": "Arme",
@@ -32855,24 +30988,6 @@
     "content": "NMS"
   },
   {
-    "name": "Lame de l'infatiguable (+3)",
-    "quantity": 1,
-    "type": "Arme",
-    "prerequisites": {
-      "str": "836"
-    },
-    "secondary": {
-      "Attaque": "+50%"
-    },
-    "obtention": [
-      "Forgeron lvl 87"
-    ],
-    "degats": "393-677",
-    "encombrement": "12",
-    "mains": "1 main",
-    "content": "NMS"
-  },
-  {
     "name": "Fauchon en acier frappé (+2)",
     "quantity": 1,
     "type": "Arme",
@@ -32886,22 +31001,6 @@
     "degats": "",
     "encombrement": "",
     "mains": "? mains",
-    "content": "NMS"
-  },
-  {
-    "name": "Flamberge ancestrale (2 mains) (+3)",
-    "quantity": 1,
-    "type": "Arme",
-    "prerequisites": {
-      "str": "1050"
-    },
-    "secondary": {
-      "Attaque": "+50%"
-    },
-    "obtention": [],
-    "degats": "",
-    "encombrement": "",
-    "mains": "2 mains",
     "content": "NMS"
   },
   {
@@ -33081,25 +31180,6 @@
     "content": "NMS"
   },
   {
-    "name": "Bouclier de Liridell (de qualité)",
-    "quantity": 1,
-    "type": "Bouclier",
-    "prerequisites": {
-      "end": "370"
-    },
-    "bonuses": {
-      "ca": "+52"
-    },
-    "secondary": {
-      "Parade": "+25",
-      "Coup Puissant": "+10"
-    },
-    "obtention": [
-      "Dragon Liridell (DI)"
-    ],
-    "content": "NMS"
-  },
-  {
     "name": "Bouclier de Liridell (enchanté)",
     "quantity": 1,
     "type": "Bouclier",
@@ -33159,24 +31239,6 @@
     },
     "obtention": [
       "Halloween : Le repaire des sorcières"
-    ],
-    "content": "NMS"
-  },
-  {
-    "name": "Bracelet d'obsidienne",
-    "quantity": 1,
-    "type": "Bracelet",
-    "prerequisites": {
-      "str": "333",
-      "end": "100",
-      "dex": "85",
-      "int": "300"
-    },
-    "secondary": {
-      "Note": "Sert plus ancient item ante"
-    },
-    "obtention": [
-      "Drop des Chevaliers de la Damnation (Château du désert DI)"
     ],
     "content": "NMS"
   },
@@ -34025,26 +32087,6 @@
       "Quête des Items étoilés de l'île Lune"
     ],
     "degats": "206-299",
-    "encombrement": "11",
-    "content": "NMS"
-  },
-  {
-    "name": "Arc Long des Etoiles (+3)",
-    "quantity": 1,
-    "type": "Arc",
-    "prerequisites": {
-      "str": "109",
-      "dex": "445"
-    },
-    "secondary": {
-      "Archerie": "+50%"
-    },
-    "obtention": [
-      "Une ombre (SH) - 20.744.440 po",
-      "10k Fève de Bronze au Salon de jeux",
-      "Ebéniste lvl 69"
-    ],
-    "degats": "225-331",
     "encombrement": "11",
     "content": "NMS"
   },
@@ -35300,41 +33342,6 @@
     "content": "NMS"
   },
   {
-    "name": "Écu du croisé",
-    "quantity": 1,
-    "type": "Bouclier",
-    "prerequisites": {
-      "str": "469",
-      "end": "220",
-      "dex": "95",
-      "int": "120",
-      "wis": "350"
-    },
-    "bonuses": {
-      "ca": "+25"
-    },
-    "secondary": {
-      "Puissance Lumière": "+10",
-      "Résistance Air": "+5",
-      "Résistance Feu": "+5",
-      "Résistance Eau": "+5",
-      "Résistance Terre": "+5",
-      "Résistance Nécro": "-15",
-      "Esquive": "-55",
-      "Note": "Résistance nécro passée de +10 à -15 lors de la maj 4/4/18. Version noire disponible.",
-      "Coup Assommant": "+12",
-      "Coup Puissant": "+12",
-      "Parade": "+12",
-      "Transpercer l'Armure": "+12",
-      "Profusion de mana": "+8"
-    },
-    "obtention": [
-      "Armurier lvl 100",
-      "Version noire : Armurier lvl 100 (recette différente)"
-    ],
-    "content": "NMS"
-  },
-  {
     "name": "Robe de couleur (bleutée / rose / brunie / jaune / orangée / ensoleillée)",
     "quantity": 1,
     "type": "Robe",
@@ -36025,28 +34032,6 @@
     },
     "obtention": [
       "Coffre du donjon du Gobelet"
-    ],
-    "content": "NMS"
-  },
-  {
-    "name": "Robe de l'Archimage - finement tissée",
-    "quantity": 1,
-    "type": "Robe",
-    "prerequisites": {
-      "end": "27",
-      "int": "190",
-      "wis": "15"
-    },
-    "bonuses": {
-      "ca": "+17",
-      "int": "+50"
-    },
-    "secondary": {
-      "Puissance Feu": "+20",
-      "Esquive": "-25"
-    },
-    "obtention": [
-      "Couturier lvl 62"
     ],
     "content": "NMS"
   },
