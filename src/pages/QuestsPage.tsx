@@ -714,7 +714,7 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
                   <FlaskConical size={10} /> Potions (Evalcian)
                 </p>
                 <ul className="space-y-2">
-                  {quest.items_required_overview!.potions_evalcian!.map((pot, i) => (
+                  {quest.items_required_overview?.potions_evalcian?.map((pot, i) => (
                     <li key={i} className="p-2.5 bg-slate-800/40 rounded-lg border border-slate-700/30">
                       <p className="text-xs font-bold text-purple-300">{pot.name}</p>
                       <p className="text-[11px] text-slate-400">{pot.usage}</p>
@@ -731,7 +731,7 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
                   <Key size={10} /> Objets spéciaux
                 </p>
                 <ul className="space-y-2">
-                  {quest.items_required_overview!.items_speciaux!.map((item, i) => (
+                  {quest.items_required_overview?.items_speciaux?.map((item, i) => (
                     <li key={i} className="p-2.5 bg-slate-800/40 rounded-lg border border-slate-700/30">
                       <p className="text-xs font-bold text-amber-300">{item.name}</p>
                       <p className="text-[11px] text-slate-400">Usage : {item.usage}</p>
@@ -903,7 +903,7 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
                                   <FlaskConical size={10} /> Potions requises
                                 </p>
                                 <ul className="space-y-1">
-                                  {step.potions_required!.map((pot, i) => (
+                                  {step.potions_required?.map((pot, i) => (
                                     <li key={i} className="text-xs text-slate-300 flex items-center gap-2">
                                       <span className="w-1.5 h-1.5 rounded-full bg-purple-400" />
                                       {pot}
@@ -918,7 +918,7 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
                                   <Package size={10} /> Objets requis
                                 </p>
                                 <ul className="space-y-1">
-                                  {step.items_required!.map((item, i) => (
+                                  {step.items_required?.map((item, i) => (
                                     <li key={i} className="text-xs text-slate-300 flex items-center gap-2">
                                       <span className="w-1.5 h-1.5 rounded-full bg-blue-400" />
                                       {item}
@@ -951,7 +951,7 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
                                 <AlertTriangle size={10} /> Avertissements
                               </p>
                               <ul className="space-y-1.5">
-                                {step.warnings!.map((warn, i) => (
+                                {step.warnings?.map((warn, i) => (
                                   <li key={i} className="text-xs text-red-300/80 flex items-start gap-2">
                                     <AlertTriangle size={12} className="shrink-0 mt-0.5 text-red-400/60" />
                                     {warn}
@@ -1011,7 +1011,7 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
                 <div className="p-4 bg-red-500/5 rounded-xl border border-red-500/20">
                   <p className="text-[10px] text-red-400 uppercase tracking-wider font-bold mb-2 flex items-center gap-1.5"><AlertTriangle size={10} /> Capacités</p>
                   <ul className="space-y-1.5">
-                    {quest.boss_fight.abilities.map((ab, i) => (
+                    {quest.boss_fight.abilities?.map((ab, i) => (
                       <li key={i} className="text-xs text-red-300/80 flex items-start gap-2">
                         <span className="w-1.5 h-1.5 rounded-full bg-red-400 mt-1.5 shrink-0" />{ab}
                       </li>
@@ -1023,7 +1023,7 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
                 <div className="p-4 bg-emerald-500/5 rounded-xl border border-emerald-500/20">
                   <p className="text-[10px] text-emerald-400 uppercase tracking-wider font-bold mb-2 flex items-center gap-1.5"><Info size={10} /> Conseils</p>
                   <ul className="space-y-1.5">
-                    {quest.boss_fight.tips.map((tip, i) => (
+                    {quest.boss_fight.tips?.map((tip, i) => (
                       <li key={i} className="text-xs text-emerald-300/80 flex items-start gap-2">
                         <CheckCircle2 size={12} className="shrink-0 mt-0.5 text-emerald-400/60" />{tip}
                       </li>
@@ -1059,7 +1059,7 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
             <div className="p-4 bg-slate-800/30 rounded-xl border border-slate-700/30">
               <p className="text-xs font-bold text-amber-400 mb-2">Clefs conservées</p>
               <div className="flex flex-wrap gap-1.5">
-                {quest.post_completion.keys_remaining.map((key, i) => (
+                {quest.post_completion.keys_remaining?.map((key, i) => (
                   <span key={i} className="px-2 py-1 rounded-lg text-[11px] font-bold bg-amber-500/10 text-amber-400 border border-amber-500/20">{key}</span>
                 ))}
               </div>
@@ -1072,7 +1072,7 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
             <div className="p-4 bg-slate-800/30 rounded-xl border border-slate-700/30">
               <p className="text-xs font-bold text-purple-400 mb-2">Zones verrouillées</p>
               <div className="flex flex-wrap gap-1.5">
-                {quest.post_completion.locked_areas.map((area, i) => (
+                {quest.post_completion.locked_areas?.map((area, i) => (
                   <span key={i} className="px-2 py-1 rounded-lg text-[11px] bg-purple-500/10 text-purple-300 border border-purple-500/20">{area}</span>
                 ))}
               </div>
