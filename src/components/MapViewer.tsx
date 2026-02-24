@@ -112,7 +112,7 @@ const Minimap = memo(({
 
   return (
     <div
-      className={`hidden md:block absolute z-20 bg-slate-950/80 backdrop-blur-md border border-slate-700/50 rounded-xl overflow-hidden shadow-2xl cursor-pointer hover:border-amber-500/30 transition-colors ${isFullscreen ? 'bottom-24 right-6' : 'bottom-20 right-4'}`}
+      className={`hidden md:block absolute z-20 bg-slate-950/80 backdrop-blur-md border border-slate-700/50 rounded-xl overflow-hidden shadow-2xl cursor-pointer hover:border-amber-500/30 transition-colors ${isFullscreen ? 'bottom-8 right-6' : 'bottom-4 right-4'}`}
       style={{ width: MINIMAP_W, height: minimapH }}
       onClick={handleClick}
     >

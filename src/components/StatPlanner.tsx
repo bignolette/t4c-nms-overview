@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect, useRef } from 'react';
-import { Zap, ChevronUp, ChevronDown, RotateCcw, Award, Heart, Sparkles, Star, Save, HelpCircle, Info, X, BookOpen, Bell } from 'lucide-react';
+import { Zap, ChevronUp, ChevronDown, RotateCcw, Award, Heart, Sparkles, Star, Save, HelpCircle, Info, X, Bell } from 'lucide-react';
 import CharacterNameVisual from './CharacterNameVisual';
 import SpiderChart from './SpiderChart';
 import LiquidBar from './ui/LiquidBar';
@@ -48,6 +48,7 @@ const StatPlanner = () => {
     { show: false, title: '', message: '', type: 'info' }
   );
   const [notification, setNotification] = useState<{ message: string, type: 'success' | 'error' } | null>(null);
+  const [showPalierGuide, setShowPalierGuide] = useState(false);
   const prevLevelRef = useRef<number>(1);
 
   const POINTS_PER_LEVEL = 5;
@@ -401,6 +402,74 @@ const StatPlanner = () => {
                  </div>
               </div>
 
+              {/* Paliers de puissance - compact */}
+              <div className="px-4 py-3 border-b border-white/5 bg-amber-500/5">
+                <div className="flex items-center justify-between mb-2">
+                  <span className="text-[9px] font-black text-amber-500/70 uppercase tracking-widest flex items-center gap-1.5">
+                    <Sparkles size={10} /> Paliers de puissance
+                  </span>
+                  <div className="flex items-center gap-2">
+                    <div className="flex items-center gap-3 text-[9px] font-black uppercase tracking-wider">
+                      <span className="text-blue-400">INT R{magicTiers.int.rank} <span className="text-slate-600">→ -{magicTiers.int.needed}</span></span>
+                      <span className="text-purple-400">SAG R{magicTiers.wis.rank} <span className="text-slate-600">→ -{magicTiers.wis.needed}</span></span>
+                    </div>
+                    <button
+                      onClick={() => setShowPalierGuide(!showPalierGuide)}
+                      className={`p-1 rounded-md transition-all ${showPalierGuide ? 'bg-amber-500/20 text-amber-400' : 'text-slate-600 hover:text-amber-400'}`}
+                      title="Guide des paliers"
+                    >
+                      <Info size={12} />
+                    </button>
+                  </div>
+                </div>
+                <div className="flex gap-1">
+                  {spellPowerConfig.paliers.map(p => {
+                    const intReached = magicTiers.int.rank >= p.rank;
+                    const wisReached = magicTiers.wis.rank >= p.rank;
+                    const reached = intReached || wisReached;
+                    return (
+                      <div
+                        key={p.rank}
+                        className={`flex-1 text-center py-1 rounded-md text-[9px] font-black border transition-all ${
+                          reached
+                            ? 'bg-amber-500/20 border-amber-500/40 text-amber-400 shadow-[0_0_8px_rgba(245,158,11,0.1)]'
+                            : 'bg-slate-950/60 border-slate-800/50 text-slate-600'
+                        }`}
+                        title={`Rang ${p.rank} : ${p.threshold} pts${intReached ? ' (INT ✓)' : ''}${wisReached ? ' (SAG ✓)' : ''}`}
+                      >
+                        R{p.rank}
+                        <div className={`text-[7px] font-bold ${reached ? 'text-amber-500/60' : 'text-slate-700'}`}>{p.threshold}</div>
+                      </div>
+                    );
+                  })}
+                </div>
+                <AnimatePresence>
+                  {showPalierGuide && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: 'auto', opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.2 }}
+                      className="overflow-hidden"
+                    >
+                      <div className="mt-3 pt-3 border-t border-amber-500/10 space-y-2">
+                        <p className="text-[10px] text-slate-400 leading-relaxed">{spellPowerConfig.guide.summary}</p>
+                        <ul className="space-y-1">
+                          {spellPowerConfig.guide.tips.map((tip, i) => (
+                            <li key={i} className="flex gap-1.5 text-[10px] text-slate-400 leading-relaxed">
+                              <span className="text-amber-500 font-bold shrink-0">•</span>{tip}
+                            </li>
+                          ))}
+                        </ul>
+                        <div className="p-2 rounded-lg bg-blue-500/5 border border-blue-500/10 text-[10px] text-blue-400 leading-relaxed italic">
+                          <Info size={10} className="inline mr-1 mb-0.5" />{spellPowerConfig.guide.stagnation}
+                        </div>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+
               {/* LISTE DES ATTRIBUTS - Format Compact Vertical */}
               <div className="divide-y divide-white/5">
                 {(['str', 'end', 'dex', 'int', 'wis'] as (keyof Stats)[]).map((k) => {
@@ -563,47 +632,6 @@ const StatPlanner = () => {
              </div>
           </div>
 
-          {/* RÉCAPITULATIF PUISSANCE MAGIQUE */}
-          <div className="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden shadow-xl mt-6">
-            <div className="p-4 border-b border-slate-800 bg-amber-500/5 flex items-center gap-2">
-                <BookOpen className="text-amber-500" size={18} />
-                <h2 className="text-xs font-black text-slate-100 uppercase tracking-widest">Comprendre la Puissance Magique</h2>
-            </div>
-            <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div>
-                    <h3 className="text-sm font-bold text-slate-300 mb-3 uppercase tracking-tight">Paliers de Puissance Brute</h3>
-                    <p className="text-xs text-slate-400 leading-relaxed mb-4">
-                        {spellPowerConfig.guide.summary}
-                    </p>
-                    <div className="flex flex-wrap gap-2">
-                        {spellPowerConfig.paliers.map(p => (
-                            <div key={p.rank} className={`px-2.5 py-1.5 rounded-lg border text-[10px] font-black transition-all ${
-                                (magicTiers.int.rank >= p.rank || magicTiers.wis.rank >= p.rank)
-                                ? 'bg-amber-500/20 border-amber-500 text-amber-400 shadow-[0_0_10px_rgba(245,158,11,0.1)]'
-                                : 'bg-slate-950 border-slate-800 text-slate-600'
-                            }`}>
-                                R{p.rank} : {p.threshold}
-                            </div>
-                        ))}
-                    </div>
-                </div>
-                <div className="space-y-4">
-                    <h3 className="text-sm font-bold text-slate-300 uppercase tracking-tight">Conseils & Optimisation</h3>
-                    <ul className="space-y-2">
-                        {spellPowerConfig.guide.tips.map((tip, i) => (
-                            <li key={i} className="flex gap-2 text-xs text-slate-400 leading-relaxed">
-                                <span className="text-amber-500 font-bold">•</span>
-                                {tip}
-                            </li>
-                        ))}
-                    </ul>
-                    <div className="p-3 rounded-xl bg-blue-500/5 border border-blue-500/10 text-[10px] text-blue-400 leading-relaxed italic">
-                        <Info size={12} className="inline mr-1 mb-0.5" />
-                        {spellPowerConfig.guide.stagnation}
-                    </div>
-                </div>
-            </div>
-          </div>
         </div>
       </div>
 
