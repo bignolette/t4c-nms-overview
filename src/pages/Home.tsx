@@ -66,7 +66,7 @@ const Home = () => {
       <OrnamentDivider />
 
       {/* Main Tools Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-8">
         <QuickCard
           title="Encyclopédie"
           description="Explorez la base de données complète des objets, monstres et métiers d'Althéa."
@@ -98,6 +98,14 @@ const Home = () => {
           to="/equipable"
           color="bg-emerald-500/10 text-emerald-400 border-emerald-500/20"
           accent="group-hover:border-emerald-500/50"
+        />
+        <QuickCard
+          title="Quêtes"
+          description="Guides détaillés de toutes les quêtes, accès aux îles et donjons d'Althéa."
+          icon={Scroll}
+          to="/quests"
+          color="bg-rose-500/10 text-rose-400 border-rose-500/20"
+          accent="group-hover:border-rose-500/50"
         />
       </div>
     </div>
