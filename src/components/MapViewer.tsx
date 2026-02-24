@@ -1,4 +1,4 @@
-import React, { useState, useRef, memo, useEffect, useMemo } from 'react';
+import React, { useState, useRef, memo, useEffect, useMemo, useCallback } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { Maximize, ZoomIn, ZoomOut, MousePointer2, Loader2, MapPin, Layers, ChevronRight, ChevronDown, Eye, RotateCcw, Search, X, Menu, Fullscreen, Minimize, RotateCw, EyeOff } from 'lucide-react';
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
@@ -74,16 +74,61 @@ const MapMarker = memo(({ x, y, items }: { x: number, y: number, items: { label:
 });
 
 const CoordsOverlay = memo(({ gx, gy, worldId, isFullscreen }: { gx: number, gy: number, worldId: number, isFullscreen: boolean }) => (
-  <div className={`absolute bottom-4 left-4 md:bottom-6 md:right-6 md:left-auto flex flex-col items-start md:items-end gap-3 pointer-events-none z-20 ${isFullscreen ? 'pl-safe pb-safe' : ''}`}> 
-    <div className="bg-slate-900/90 backdrop-blur-md border border-amber-500/20 p-2.5 md:p-4 rounded-xl md:rounded-2xl shadow-2xl flex items-center gap-3 md:gap-4 border-l-4 border-l-amber-500 scale-90 md:scale-100">
-      <div className="p-1.5 md:p-2.5 bg-amber-500/10 rounded-lg md:rounded-xl text-amber-500 shadow-inner"><MousePointer2 size={14} className="md:w-[18px] md:h-[18px]" /></div>
-      <div>
-        <div className="text-[7px] md:text-[10px] text-amber-500/60 font-black uppercase tracking-widest mb-0.5">Position</div>
-        <div className="text-sm md:text-2xl font-mono font-black text-white tracking-tighter">{gx}.{gy}.{worldId}</div>
-      </div>
+  <div className={`absolute bottom-3 left-3 flex flex-col items-start gap-1.5 pointer-events-none z-20 ${isFullscreen ? 'pl-safe pb-safe' : ''}`}>
+    <div className="bg-slate-900/90 backdrop-blur-md border border-amber-500/20 px-2.5 py-1.5 rounded-lg shadow-xl flex items-center gap-2 border-l-2 border-l-amber-500">
+      <MousePointer2 size={12} className="text-amber-500" />
+      <span className="text-xs font-mono font-black text-white tracking-tighter">{gx}.{gy}.{worldId}</span>
+    </div>
+    <div className="bg-slate-950/50 backdrop-blur-sm px-2 py-0.5 rounded-full border border-white/10 text-[8px] font-bold text-slate-500 flex items-center gap-1.5">
+      <div className="w-1 h-1 rounded-full bg-amber-500 animate-pulse" />
+      Double-clic copier · Flèches/+/-/0
     </div>
   </div>
 ));
+
+const MINIMAP_W = 160;
+
+const Minimap = memo(({
+  mapPath, scale, positionX, positionY, viewportW, viewportH, imageW, imageH, onNavigate, isFullscreen,
+}: {
+  mapPath: string; scale: number; positionX: number; positionY: number;
+  viewportW: number; viewportH: number; imageW: number; imageH: number;
+  onNavigate: (imgX: number, imgY: number) => void; isFullscreen: boolean;
+}) => {
+  if (imageW === 0 || imageH === 0) return null;
+
+  const minimapScale = MINIMAP_W / imageW;
+  const minimapH = Math.min(imageH * minimapScale, 120);
+
+  const rectX = (-positionX / scale) * minimapScale;
+  const rectY = (-positionY / scale) * minimapScale;
+  const rectW = (viewportW / scale) * minimapScale;
+  const rectH = (viewportH / scale) * minimapScale;
+
+  const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    onNavigate((e.clientX - rect.left) / minimapScale, (e.clientY - rect.top) / minimapScale);
+  };
+
+  return (
+    <div
+      className={`hidden md:block absolute z-20 bg-slate-950/80 backdrop-blur-md border border-slate-700/50 rounded-xl overflow-hidden shadow-2xl cursor-pointer hover:border-amber-500/30 transition-colors ${isFullscreen ? 'bottom-24 right-6' : 'bottom-20 right-4'}`}
+      style={{ width: MINIMAP_W, height: minimapH }}
+      onClick={handleClick}
+    >
+      <img src={mapPath} alt="" className="w-full h-full object-cover pointer-events-none opacity-60" draggable={false} />
+      <div
+        className="absolute border-2 border-amber-500/80 bg-amber-500/15 rounded-sm pointer-events-none"
+        style={{
+          left: Math.max(0, Math.min(rectX, MINIMAP_W)) + 'px',
+          top: Math.max(0, Math.min(rectY, minimapH)) + 'px',
+          width: Math.max(4, Math.min(rectW, MINIMAP_W - Math.max(0, rectX))) + 'px',
+          height: Math.max(4, Math.min(rectH, minimapH - Math.max(0, rectY))) + 'px',
+        }}
+      />
+    </div>
+  );
+});
 
 const MapViewer: React.FC = () => {
   const { bestiaryData, plantsData, treesData, depositsData, npcsData, showNotification } = useData();
@@ -107,6 +152,9 @@ const MapViewer: React.FC = () => {
   const transformWrapperRef = useRef<any>(null);
   const initialCenteringDone = useRef(false);
   const [coords, setCoords] = useState({ x: 0, y: 0, gx: 0, gy: 0 });
+  const transformStateRef = useRef({ scale: 0.1, positionX: 0, positionY: 0 });
+  const [transformState, setTransformState] = useState({ scale: 0.1, positionX: 0, positionY: 0 });
+  const rafId = useRef(0);
 
   const fitToView = (instance: any) => {
     if (imgRef.current && mapViewportRef.current) {
@@ -186,6 +234,60 @@ const MapViewer: React.FC = () => {
         window.removeEventListener('resize', checkOrientation);
         window.removeEventListener('orientationchange', handleLegacyOrientationChange);
     };
+  }, []);
+
+  // Keyboard navigation
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (!transformWrapperRef.current) return;
+      if (e.target instanceof HTMLInputElement || e.target instanceof HTMLTextAreaElement) return;
+
+      const PAN_STEP = 120;
+      const { positionX, positionY, scale } = transformStateRef.current;
+
+      switch (e.key) {
+        case 'ArrowUp':
+          e.preventDefault();
+          transformWrapperRef.current.setTransform(positionX, positionY + PAN_STEP, scale, 150, 'easeOut');
+          break;
+        case 'ArrowDown':
+          e.preventDefault();
+          transformWrapperRef.current.setTransform(positionX, positionY - PAN_STEP, scale, 150, 'easeOut');
+          break;
+        case 'ArrowLeft':
+          e.preventDefault();
+          transformWrapperRef.current.setTransform(positionX + PAN_STEP, positionY, scale, 150, 'easeOut');
+          break;
+        case 'ArrowRight':
+          e.preventDefault();
+          transformWrapperRef.current.setTransform(positionX - PAN_STEP, positionY, scale, 150, 'easeOut');
+          break;
+        case '+':
+        case '=':
+          e.preventDefault();
+          transformWrapperRef.current.zoomIn();
+          break;
+        case '-':
+          e.preventDefault();
+          transformWrapperRef.current.zoomOut();
+          break;
+        case '0':
+          e.preventDefault();
+          fitToView(transformWrapperRef.current);
+          break;
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
+  const handleMinimapNavigate = useCallback((imgX: number, imgY: number) => {
+    if (!transformWrapperRef.current || !mapViewportRef.current) return;
+    const { scale } = transformStateRef.current;
+    const x = mapViewportRef.current.offsetWidth / 2 - imgX * scale;
+    const y = mapViewportRef.current.offsetHeight / 2 - imgY * scale;
+    transformWrapperRef.current.setTransform(x, y, scale, 300, 'easeOut');
   }, []);
 
   const dataLayers = useMemo(() => {
@@ -560,9 +662,22 @@ const MapViewer: React.FC = () => {
               <Loader2 size={24} className="md:w-12 md:h-12 text-amber-500 animate-spin mb-2 md:mb-4" /><p className="text-slate-400 font-black uppercase tracking-widest animate-pulse text-[8px] md:text-xs">Chargement...</p>
             </div>
           )}
-          <TransformWrapper 
+          <TransformWrapper
             key={`${isFullscreen}-${selectedMap.id}`}
-            initialScale={0.1} minScale={0.01} maxScale={4} doubleClick={{ disabled: true }} limitToBounds={false} centerZoomedOut={true} ref={transformWrapperRef}>
+            initialScale={0.1}
+            minScale={0.05}
+            maxScale={3}
+            doubleClick={{ disabled: true }}
+            limitToBounds={true}
+            centerZoomedOut={true}
+            wheel={{ step: 0.08 }}
+            velocityAnimation={{ sensitivity: 1, animationTime: 300, animationType: 'easeOut' }}
+            onTransformed={(_ref, state) => {
+              transformStateRef.current = state;
+              cancelAnimationFrame(rafId.current);
+              rafId.current = requestAnimationFrame(() => setTransformState({ ...state }));
+            }}
+            ref={transformWrapperRef}>
             {(instance) => (
               <>
                 <div className={`absolute top-2 right-2 md:top-4 md:right-4 z-20 flex flex-col gap-1 md:gap-2 ${isFullscreen ? 'pr-safe pt-safe' : ''}`}> 
@@ -605,13 +720,21 @@ const MapViewer: React.FC = () => {
               </>
             )}
           </TransformWrapper>
-          <div className="absolute bottom-4 left-4 md:bottom-6 md:right-6 md:left-auto flex flex-col items-start md:items-end gap-2 pointer-events-none z-20">
-            <CoordsOverlay gx={coords.gx} gy={coords.gy} worldId={selectedMap.worldId} isFullscreen={isFullscreen} />
-            <div className="bg-slate-950/50 backdrop-blur-sm px-3 py-1 rounded-full border border-white/10 text-[9px] font-black uppercase tracking-widest text-slate-400 flex items-center gap-2">
-              <div className="w-1 h-1 rounded-full bg-amber-500 animate-pulse" />
-              Double-clic pour copier les coordonnées
-            </div>
-          </div>
+          {!isLoading && (
+            <Minimap
+              mapPath={selectedMap.path}
+              scale={transformState.scale}
+              positionX={transformState.positionX}
+              positionY={transformState.positionY}
+              viewportW={mapViewportRef.current?.offsetWidth ?? 0}
+              viewportH={mapViewportRef.current?.offsetHeight ?? 0}
+              imageW={imgRef.current?.naturalWidth ?? 0}
+              imageH={imgRef.current?.naturalHeight ?? 0}
+              onNavigate={handleMinimapNavigate}
+              isFullscreen={isFullscreen}
+            />
+          )}
+          <CoordsOverlay gx={coords.gx} gy={coords.gy} worldId={selectedMap.worldId} isFullscreen={isFullscreen} />
         </div>
       </div>
     </div>
