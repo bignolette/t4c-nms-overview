@@ -2,7 +2,9 @@
   {
     "id": "donjon_cerberus",
     "name": "Donjon du Cerberus — Les 22 Clefs",
-    "zone": "Académie — Niveau -4",
+    "zone": [
+      "Académie — Niveau -4"
+    ],
     "level_required": 200,
     "group_recommended": true,
     "group_size_recommended": "3 à 5 joueurs",
@@ -823,7 +825,9 @@
   {
     "id": "acces_asile_dechu",
     "name": "Accès à l'Asile — Quête de la Fiole de Magie (Déchu)",
-    "zone": "Raven's Dust",
+    "zone": [
+      "Raven's Dust"
+    ],
     "level_required": null,
     "alignment_required": "Déchu",
     "group_recommended": false,
@@ -917,7 +921,10 @@
   {
     "id": "acces_fnr_dechu",
     "name": "Accès à la Forêt de Non-Retour — Fin de la quête de la Fiole de Puissance (Déchu)",
-    "zone": "Raven's Dust / Forêt de Non-Retour",
+    "zone": [
+      "Raven's Dust",
+      "Forêt de Non-Retour"
+    ],
     "level_required": null,
     "alignment_required": "Déchu",
     "group_recommended": true,
@@ -1058,7 +1065,10 @@
   {
     "id": "acces_fnr_seraph",
     "name": "Accès à la Forêt de Non-Retour (Séraphin)",
-    "zone": "Raven's Dust / Forêt de Non-Retour",
+    "zone": [
+      "Raven's Dust",
+      "Forêt de Non-Retour"
+    ],
     "level_required": null,
     "alignment_required": "Séraphin d'Artherk ou d'Ogrimar",
     "group_recommended": true,
@@ -1161,7 +1171,9 @@
   {
     "id": "acces_stoneheim_good",
     "name": "Accès à Stoneheim (Bénéfique / Good)",
-    "zone": "Raven's Dust → Stoneheim",
+    "zone": [
+      "Raven's Dust → Stoneheim"
+    ],
     "level_required": 30,
     "alignment_required": "Bénéfique (Good) — Karma minimum 170 recommandé",
     "group_recommended": false,
@@ -1654,7 +1666,9 @@
   {
     "id": "acces_drake_island",
     "name": "Accès à Drake Island — La 4ème Île",
-    "zone": "Stoneheim → Drake Island",
+    "zone": [
+      "Stoneheim → Drake Island"
+    ],
     "level_required": 80,
     "group_recommended": false,
     "description": "Quête d'accès à Drake Island via Rosalia Moonshadow. Préparez une potion volcanique, une poignée de plumes et une poudre de diamants, puis traversez le labyrinthe invisible.",
@@ -1850,7 +1864,9 @@
   {
     "id": "acces_cave_humterre",
     "name": "Accès à la Cave Humterre",
-    "zone": "Drake Island",
+    "zone": [
+      "Drake Island"
+    ],
     "level_required": null,
     "group_recommended": false,
     "description": "Quête d'accès à la Cave Humterre sur Drake Island. Le parcours diffère selon votre race : humain/déchu ou séraphin/néphilim.",
@@ -1976,7 +1992,9 @@
   {
     "id": "acces_ile_lune",
     "name": "Accès à l'Île de Lune",
-    "zone": "Stoneheim",
+    "zone": [
+      "Stoneheim"
+    ],
     "level_required": null,
     "group_recommended": false,
     "description": "Quête d'accès à l'Île de Lune via Constelle, la femme papillon. Collectez les pierres, tessons et bracelets pour obtenir l'accès à volonté.",
@@ -2079,7 +2097,9 @@
   {
     "id": "acces_nieve",
     "name": "Accès à Niève — L'Île de Glace",
-    "zone": "Raven's Dust → Niève",
+    "zone": [
+      "Raven's Dust → Niève"
+    ],
     "level_required": null,
     "group_recommended": false,
     "description": "Accès à la ville de Niève, l'île de glace. Plusieurs solutions existent pour y accéder.",
@@ -2124,7 +2144,9 @@
   {
     "id": "acces_forteresse_damnes",
     "name": "Accès à la Forteresse des Damnés — Désert de Drake Island",
-    "zone": "Drake Island",
+    "zone": [
+      "Drake Island"
+    ],
     "level_required": 200,
     "group_recommended": true,
     "group_size_recommended": "2-3 joueurs minimum",
@@ -2307,7 +2329,9 @@
   {
     "id": "acces_niveaux_academie",
     "name": "Accès aux Niveaux -2, -3, -4 de l'Académie",
-    "zone": "Académie",
+    "zone": [
+      "Académie"
+    ],
     "level_required": 175,
     "group_recommended": true,
     "group_size_recommended": "Petit groupe solide",
@@ -2528,7 +2552,9 @@
   {
     "id": "acces_oracle_good",
     "name": "Accès Oracle Good",
-    "zone": "Stoneheim",
+    "zone": [
+      "Stoneheim"
+    ],
     "level_required": 75,
     "level_recommended": "75-80 (camper les objets en avance)",
     "alignment": "Bon",
@@ -3299,7 +3325,10 @@
   {
     "id": "acces_oracle_evil",
     "name": "Accès Oracle Evil",
-    "zone": "Stoneheim / Raven's Dust",
+    "zone": [
+      "Stoneheim",
+      "Raven's Dust"
+    ],
     "level_required": 75,
     "level_recommended": "75-80 (camper les objets en avance)",
     "alignment": "Mauvais",
@@ -3934,7 +3963,9 @@
   {
     "id": "acces_ravens_dust_dechu",
     "name": "Accès Déchu à Raven's Dust",
-    "zone": "Arakas → Raven's Dust",
+    "zone": [
+      "Arakas → Raven's Dust"
+    ],
     "level_required": 25,
     "alignment_required": "Déchu",
     "group_recommended": false,
@@ -4129,7 +4160,9 @@
   {
     "id": "acces_stoneheim_dechu",
     "name": "Accès Déchu à Stoneheim",
-    "zone": "Raven's Dust → Stoneheim",
+    "zone": [
+      "Raven's Dust → Stoneheim"
+    ],
     "level_required": null,
     "alignment_required": "Déchu",
     "group_recommended": false,
@@ -4274,7 +4307,9 @@
   {
     "id": "armure_plaque_emeraudes",
     "name": "Armure de Plaque Incrustée d'Émeraudes",
-    "zone": "Stoneheim",
+    "zone": [
+      "Stoneheim"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": true,
@@ -4363,7 +4398,9 @@
   {
     "id": "armure_metrolite",
     "name": "Armure et Bouclier Métrolite",
-    "zone": "Drake Island",
+    "zone": [
+      "Drake Island"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": true,
@@ -4496,7 +4533,12 @@
   {
     "id": "armure_triplicite",
     "name": "Fabrication de l'Armure Triplicite",
-    "zone": "Arakas / Stoneheim / Drake Island / Niève",
+    "zone": [
+      "Arakas",
+      "Stoneheim",
+      "Drake Island",
+      "Niève"
+    ],
     "level_required": 50,
     "group_recommended": false,
     "repeatable": true,
@@ -4660,7 +4702,9 @@
   {
     "id": "audrey_couturiere",
     "name": "La Quête d'Audrey la Couturière (Robe de couleur)",
-    "zone": "Arakas",
+    "zone": [
+      "Arakas"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": false,
@@ -4792,7 +4836,9 @@
   {
     "id": "camping_academie_3",
     "name": "Camping à l'Académie -3",
-    "zone": "Académie — Niveau -3",
+    "zone": [
+      "Académie — Niveau -3"
+    ],
     "level_required": null,
     "group_recommended": true,
     "group_size_recommended": "Variable selon le boss",
@@ -5189,7 +5235,9 @@
   {
     "id": "camping_araknor",
     "name": "Camping Super Boss — Korès (Araknor) et les 4 Super-Boss",
-    "zone": "Académie — Niveau -3",
+    "zone": [
+      "Académie — Niveau -3"
+    ],
     "level_required": null,
     "group_recommended": true,
     "group_size_recommended": "8+ joueurs (2 groupes) pour Korès",
@@ -5400,7 +5448,9 @@
   {
     "id": "capture_de_drapeau",
     "name": "Les Arènes — Capture de Drapeau (PVP)",
-    "zone": "Arènes PVP (Forteresse de Delmar / Marais de Vaal'Nyr / Désert de Scorpiax)",
+    "zone": [
+      "Arènes PVP (Forteresse de Delmar / Marais de Vaal'Nyr / Désert de Scorpiax)"
+    ],
     "level_required": null,
     "group_recommended": true,
     "group_size_recommended": "4 joueurs minimum",
@@ -5506,7 +5556,9 @@
   {
     "id": "coffres_drake_island",
     "name": "Les Coffres de Drake Island",
-    "zone": "Drake Island",
+    "zone": [
+      "Drake Island"
+    ],
     "level_required": null,
     "group_recommended": false,
     "description": "Trois emplacements de coffres à Drake Island contenant des items variés et parfois rares. Le respawn est de 4 heures pour deux personnages différents, mais de 8 heures pour le même personnage.",
@@ -5627,7 +5679,9 @@
   {
     "id": "coffres_academie",
     "name": "Les Coffres de l'Académie",
-    "zone": "Académie — Niveaux -1, -2 et -4",
+    "zone": [
+      "Académie — Niveaux -1, -2 et -4"
+    ],
     "level_required": null,
     "group_recommended": false,
     "description": "Guide des coffres disponibles aux différents niveaux de l'Académie. Le niveau -1 contient les coffres nécessaires pour la quête d'accès au -2, le -2 contient un coffre aux embaumés, et le -4 contient les coffres iridium et ivoire.",
@@ -5727,7 +5781,9 @@
   {
     "id": "coffres_ile_lune",
     "name": "Les Coffres de l'Île Lune",
-    "zone": "Île Lune",
+    "zone": [
+      "Île Lune"
+    ],
     "level_required": null,
     "group_recommended": false,
     "description": "Deux coffres disponibles sur l'Île Lune avec un respawn d'une heure. L'un au nord dans le village, l'autre au sud sur la plage.",
@@ -5809,7 +5865,9 @@
   {
     "id": "coffres_iridium",
     "name": "Les 5 Coffres Iridium — Académie -4",
-    "zone": "Académie — Niveau -4 (Îles Obsidiennes)",
+    "zone": [
+      "Académie — Niveau -4 (Îles Obsidiennes)"
+    ],
     "level_required": 200,
     "group_recommended": false,
     "description": "Cinq coffres iridium accessibles à l'Académie -4. Chaque coffre nécessite d'activer une combinaison spécifique de dalles bleues et vertes sur les îles obsidiennes. Chaque coffre drope un lingot d'iridium, un item secret ou une potion.",
@@ -5856,9 +5914,9 @@
         "b1": "GGGG depuis première île (île obsidienne)",
         "b2": "Salle des dalles (DD GGGG D)",
         "b3": "D G DD (salle des dalles petit côté, bas)",
-        "b4ToB7": "Salle des dalles (DD GGGG D)",
+        "b4tob7": "Salle des dalles (DD GGGG D)",
         "b8": "DD GGGG (île obsidienne)",
-        "v1V2": "Salle des dalles (DD GGGG D)",
+        "v1v2": "Salle des dalles (DD GGGG D)",
         "v3": "D G DD (salle des dalles petit côté, haut)",
         "v4": "D G D (île obsidienne)"
       },
@@ -6037,7 +6095,9 @@
   {
     "id": "coffres_ivoire",
     "name": "Les 2 Coffres Ivoire — Académie -4",
-    "zone": "Académie — Niveau -4",
+    "zone": [
+      "Académie — Niveau -4"
+    ],
     "level_required": 200,
     "group_recommended": false,
     "description": "Deux coffres ivoire au niveau -4 de l'Académie. Nécessitent les clés de chair jusqu'à la clé 14 et des clés de rosée pour être ouverts. Chaque coffre a un profil de drops différent (archer / guerrier).",
@@ -6269,7 +6329,9 @@
   {
     "id": "crypte_stonecrest",
     "name": "La Crypte du Lord Stonecrest",
-    "zone": "Stoneheim — Crypte de Stonecrest",
+    "zone": [
+      "Stoneheim — Crypte de Stonecrest"
+    ],
     "level_required": null,
     "group_recommended": true,
     "group_size_recommended": "2 à 5 joueurs",
@@ -6426,7 +6488,9 @@
   {
     "id": "donjon_gobelet",
     "name": "Le Donjon du Gobelet (Niveaux 1–30)",
-    "zone": "Arakas — Nord du pont gobelin",
+    "zone": [
+      "Arakas — Nord du pont gobelin"
+    ],
     "level_required": 1,
     "level_recommended": "18-20",
     "group_recommended": true,
@@ -6586,7 +6650,9 @@
   {
     "id": "donjon_academiciens",
     "name": "Donjon de la Tour des Académiciens (200+)",
-    "zone": "Raven's Dust — RST, près de Iago Caballero",
+    "zone": [
+      "Raven's Dust — RST, près de Iago Caballero"
+    ],
     "level_required": 200,
     "group_recommended": true,
     "group_size_recommended": "5 à 6 joueurs minimum (avec un bon soigneur)",
@@ -6908,7 +6974,9 @@
   {
     "id": "benediction_zelina",
     "name": "La Bénédiction de Zélina",
-    "zone": "Arakas — Lighthaven",
+    "zone": [
+      "Arakas — Lighthaven"
+    ],
     "level_required": 1,
     "level_max": 25,
     "group_recommended": false,
@@ -6965,7 +7033,9 @@
   {
     "id": "ame_de_nilhem",
     "name": "L'Âme de Nilhem",
-    "zone": "Arakas — Nord du Pont Gobelin",
+    "zone": [
+      "Arakas — Nord du Pont Gobelin"
+    ],
     "level_required": 1,
     "group_recommended": false,
     "repeatable": true,
@@ -7094,7 +7164,9 @@
   {
     "id": "forgeron_nieve",
     "name": "Quête du Forgeron de Niève",
-    "zone": "Niève",
+    "zone": [
+      "Niève"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": false,
@@ -7206,7 +7278,9 @@
   {
     "id": "enfant_malade",
     "name": "Quête de l'Enfant Malade",
-    "zone": "Niève",
+    "zone": [
+      "Niève"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": false,
@@ -7352,7 +7426,10 @@
   {
     "id": "potion_necromant",
     "name": "La Potion du Nécromant",
-    "zone": "Multi-îles (Arakas, Stoneheim)",
+    "zone": [
+      "Arakas",
+      "Stoneheim"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": true,
@@ -7479,7 +7556,12 @@
   {
     "id": "hache_legendaire",
     "name": "La Hache Légendaire",
-    "zone": "Multi-îles (Arakas, Raven's Dust, Stoneheim, Drake Island)",
+    "zone": [
+      "Arakas",
+      "Raven's Dust",
+      "Stoneheim",
+      "Drake Island"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": false,
@@ -7612,7 +7694,12 @@
   {
     "id": "pioche_legendaire",
     "name": "La Pioche Légendaire",
-    "zone": "Multi-îles (toutes les îles)",
+    "zone": [
+      "Arakas",
+      "Raven's Dust",
+      "Stoneheim",
+      "Drake Island"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": false,
@@ -7814,7 +7901,13 @@
   {
     "id": "chasse_aux_dragons",
     "name": "La Chasse aux Dragons",
-    "zone": "Multi-îles (Arakas, Raven's Dust, Niève, Stoneheim, Drake Island)",
+    "zone": [
+      "Arakas",
+      "Raven's Dust",
+      "Niève",
+      "Stoneheim",
+      "Drake Island"
+    ],
     "level_required": 10,
     "group_recommended": true,
     "repeatable": true,
@@ -7896,7 +7989,9 @@
     "dragons": [
       {
         "name": "Dasrinn",
-        "zone": "Arakas",
+        "zone": [
+          "Arakas"
+        ],
         "location": "Centre de la cité perdue, de l'autre côté du Labyrinthe (2800, 470, 0). Entrée grotte : (2310, 900, 0)",
         "color": "Blanc/Gris",
         "level_recommended": 10,
@@ -7918,7 +8013,9 @@
       },
       {
         "name": "Dimith Karjit",
-        "zone": "Arakas",
+        "zone": [
+          "Arakas"
+        ],
         "location": "Nord-Ouest de l'entrée de la cave des Kraanians (1845, 660, 0)",
         "color": "Vert",
         "level_recommended": 15,
@@ -7939,7 +8036,9 @@
       },
       {
         "name": "Ashardalonn",
-        "zone": "Raven's Dust",
+        "zone": [
+          "Raven's Dust"
+        ],
         "location": "Entrée ouest de la cave des illusionnistes (180, 2715, 0). Via désert : sortie (1120, 585, 2)",
         "color": "Rouge",
         "level_recommended": 60,
@@ -7961,7 +8060,9 @@
       },
       {
         "name": "Freidaclan",
-        "zone": "Raven's Dust",
+        "zone": [
+          "Raven's Dust"
+        ],
         "location": "Ouest de l'entrée de la crypte de RD (815, 1580, 0)",
         "color": "Blanc/Gris",
         "level_recommended": 80,
@@ -7982,7 +8083,9 @@
       },
       {
         "name": "Yeridaj",
-        "zone": "Niève",
+        "zone": [
+          "Niève"
+        ],
         "location": "Entrée de la ville de Niève, sortie de la grotte (2620, 2393, 0)",
         "color": "Blanc/Gris",
         "level_recommended": 80,
@@ -8004,7 +8107,9 @@
       },
       {
         "name": "Livoxdrinn",
-        "zone": "Stoneheim",
+        "zone": [
+          "Stoneheim"
+        ],
         "location": "Sud-Est de la ville centaure (1100, 1300, 0)",
         "color": "Orangé",
         "level_recommended": 60,
@@ -8025,7 +8130,9 @@
       },
       {
         "name": "Zudinm",
-        "zone": "Stoneheim",
+        "zone": [
+          "Stoneheim"
+        ],
         "location": "Au-dessus du pont invisible menant à la Zone Oracle (985, 75, 0)",
         "color": "Doré",
         "level_recommended": 70,
@@ -8047,7 +8154,9 @@
       },
       {
         "name": "Liridell Mirev",
-        "zone": "Drake Island",
+        "zone": [
+          "Drake Island"
+        ],
         "location": "Désert de Drake Island",
         "color": "Noir",
         "level_recommended": 100,
@@ -8261,7 +8370,9 @@
   {
     "id": "lettre_crimsonscale",
     "name": "La Lettre de Crimsonscale",
-    "zone": "Multi-îles (Arakas → Raven's Dust → Arakas)",
+    "zone": [
+      "Arakas → Raven's Dust → Arakas"
+    ],
     "level_required": 1,
     "level_recommended": 100,
     "group_recommended": true,
@@ -8797,7 +8908,9 @@
   {
     "id": "donjon_abimes",
     "name": "Le Donjon des Abîmes",
-    "zone": "Stoneheim — Cave des Assassins Obsidiens (Montagnes de Mordenthal)",
+    "zone": [
+      "Stoneheim — Cave des Assassins Obsidiens (Montagnes de Mordenthal)"
+    ],
     "level_required": 80,
     "level_max": 120,
     "group_recommended": true,
@@ -9049,7 +9162,9 @@
   {
     "id": "donjon_galinettes",
     "name": "Le Donjon des Galinettes",
-    "zone": "Stoneheim — Grotte des Skraugs rouges",
+    "zone": [
+      "Stoneheim — Grotte des Skraugs rouges"
+    ],
     "level_required": 50,
     "level_max": 80,
     "group_recommended": true,
@@ -9266,7 +9381,9 @@
   {
     "id": "donjon_coupe_jarret",
     "name": "Le Donjon du Capitaine Coupe-Jarret",
-    "zone": "Raven's Dust — Quais de Silversky",
+    "zone": [
+      "Raven's Dust — Quais de Silversky"
+    ],
     "level_required": 25,
     "level_max": 50,
     "group_recommended": true,
@@ -9573,7 +9690,9 @@
   {
     "id": "quete_forgeron_durikh",
     "name": "Quête du Forgeron Durikh (armes +4)",
-    "zone": "Drake Island — Redwall + DI",
+    "zone": [
+      "Drake Island — Redwall + DI"
+    ],
     "level_required": null,
     "group_recommended": false,
     "group_size_recommended": "Solo possible",
@@ -9773,7 +9892,9 @@
   {
     "id": "quete_gardien_yeux_tarentules",
     "name": "Quête du Gardien et des Yeux de Tarentules",
-    "zone": "Arakas — Camp des Druides",
+    "zone": [
+      "Arakas — Camp des Druides"
+    ],
     "level_required": null,
     "group_recommended": false,
     "group_size_recommended": "Solo ou duo (duo recommandé)",
@@ -9860,7 +9981,9 @@
   {
     "id": "guide_karma",
     "name": "Le Karma — Guide complet",
-    "zone": "Toutes les îles",
+    "zone": [
+      "Toutes les îles"
+    ],
     "level_required": null,
     "group_recommended": false,
     "group_size_recommended": "Solo",
@@ -10134,7 +10257,9 @@
   {
     "id": "quete_sceptre_abysses",
     "name": "Le Sceptre des Abysses",
-    "zone": "Drake Island — Redwall + Windhowl",
+    "zone": [
+      "Drake Island — Redwall + Windhowl"
+    ],
     "level_required": null,
     "level_required_note": "Accès à Drake Island nécessaire",
     "group_recommended": true,
@@ -10291,7 +10416,9 @@
   {
     "id": "quetes_arakas_bonifiees",
     "name": "Les Quêtes d'Arakas Bonifiées",
-    "zone": "Arakas",
+    "zone": [
+      "Arakas"
+    ],
     "level_required": null,
     "group_recommended": false,
     "description": "Collection de quêtes revalorisées sur Arakas : rats bruns, ailes de chauve-souris, pilleur de tombes, écriture runique, parchemin d'enchantement, cotte de mailles bénie, Jarko, fiole de liquide bleuté, et l'Âme de Nilhem.",
@@ -10881,7 +11008,11 @@
   {
     "id": "quetes_125",
     "name": "Les Autres Quêtes 1.25",
-    "zone": "Multi-zones (Arakas, Raven's Dust, Stoneheim)",
+    "zone": [
+      "Arakas",
+      "Raven's Dust",
+      "Stoneheim"
+    ],
     "level_required": null,
     "group_recommended": false,
     "description": "Collection de quêtes importantes de la version 1.25 : Chef des Mercenaires, Livre de la Connaissance Arcane (ceinture instable), Faucheur de Vie (bracelet immortels), Voyage entre les plans (interplan), et l'Ancienne Plaque Céleste.",
@@ -10889,7 +11020,9 @@
       {
         "id": "quete_chef_mercenaires",
         "name": "Le Chef des Mercenaires",
-        "zone": "Arakas — Lighthaven",
+        "zone": [
+          "Arakas — Lighthaven"
+        ],
         "repeatable": true,
         "level_required": null,
         "npcs": [
@@ -10952,7 +11085,9 @@
       {
         "id": "quete_livre_connaissance_arcane",
         "name": "Le Livre de la Connaissance Arcane (Ceinture Instable)",
-        "zone": "Raven's Dust + Stoneheim",
+        "zone": [
+          "Raven's Dust + Stoneheim"
+        ],
         "repeatable": true,
         "level_required": null,
         "npcs": [
@@ -11023,7 +11158,9 @@
       {
         "id": "quete_faucheur_vie",
         "name": "Le Faucheur de Vie (Bracelet et Gemme des Immortels)",
-        "zone": "Arakas + Raven's Dust + Stoneheim",
+        "zone": [
+          "Arakas + Raven's Dust + Stoneheim"
+        ],
         "repeatable": false,
         "repeatable_note": "La récompense de la sentinelle est unique par renaissance",
         "level_required": 50,
@@ -11160,7 +11297,9 @@
       {
         "id": "quete_voyage_plans",
         "name": "Voyage entre les Plans (Interplan)",
-        "zone": "Toutes les îles",
+        "zone": [
+          "Toutes les îles"
+        ],
         "repeatable": true,
         "repeatable_note": "Perdu à chaque renaissance, refaisable au lvl 50",
         "level_required": 50,
@@ -11196,7 +11335,9 @@
       {
         "id": "quete_plaque_celeste",
         "name": "L'Ancienne Plaque Céleste",
-        "zone": "Stoneheim — Stonecrest",
+        "zone": [
+          "Stoneheim — Stonecrest"
+        ],
         "repeatable": false,
         "level_required": null,
         "level_required_note": "Réservé aux Séraphes",
@@ -11258,7 +11399,11 @@
   {
     "id": "quete_kertius_alim",
     "name": "La Quête de Kertius Alim — Robes en Soie (+5 Chance)",
-    "zone": "Raven's Dust / Académie / Drake Island",
+    "zone": [
+      "Raven's Dust",
+      "Académie",
+      "Drake Island"
+    ],
     "level_required": null,
     "group_recommended": false,
     "group_size_recommended": "Solo (sauf combat Korès : 12 à 16 joueurs)",
@@ -11628,7 +11773,9 @@
   {
     "id": "quete_paques_olphens",
     "name": "La Quête de Pâques — Les Olphens",
-    "zone": "Arakas (villes)",
+    "zone": [
+      "Arakas (villes)"
+    ],
     "level_required": null,
     "group_recommended": false,
     "group_size_recommended": "Solo (accessible à tous niveaux)",
@@ -12026,7 +12173,9 @@
   {
     "id": "la_teinturiere",
     "name": "La Teinturière — Elysse de Lighthaven",
-    "zone": "Lighthaven — Maison à l'est de la taverne",
+    "zone": [
+      "Lighthaven — Maison à l'est de la taverne"
+    ],
     "level_required": null,
     "group_recommended": false,
     "group_size_recommended": "Solo",
@@ -12280,7 +12429,9 @@
   {
     "id": "asile_madrigan",
     "name": "L'Asile de Madrigan",
-    "zone": "Stoneheim — Asile de Madrigan",
+    "zone": [
+      "Stoneheim — Asile de Madrigan"
+    ],
     "level_required": null,
     "group_recommended": true,
     "group_size_recommended": "2 à 3 joueurs",
@@ -12647,7 +12798,9 @@
   {
     "id": "cadeau_princesse",
     "name": "Le Cadeau de la Princesse",
-    "zone": "Château de Stoneheim",
+    "zone": [
+      "Château de Stoneheim"
+    ],
     "level_required": null,
     "group_recommended": false,
     "group_size_recommended": "Solo",
@@ -12862,7 +13015,9 @@
   {
     "id": "traversee_oracle",
     "name": "La Traversée de l'Oracle — Renaissance",
-    "zone": "Royaume de l'Oracle (Stoneheim)",
+    "zone": [
+      "Royaume de l'Oracle (Stoneheim)"
+    ],
     "level_required": null,
     "alignment": "Good (Séraphin d'Artherk) ou Evil (Néphilim d'Ogrimar)",
     "group_recommended": true,
@@ -13556,7 +13711,11 @@
   {
     "id": "chapeau_de_chance",
     "name": "Le Chapeau de Chance — Quête de rentrée",
-    "zone": "Windhowl / Lighthaven / Arakas",
+    "zone": [
+      "Windhowl",
+      "Lighthaven",
+      "Arakas"
+    ],
     "level_required": 1,
     "level_maximum": null,
     "group_recommended": false,
@@ -13954,7 +14113,13 @@
     "sub_quest": {
       "id": "toge_chance_bibliothecaire",
       "name": "Toge du Bibliothécaire — Bibliothécaire d'Althéa",
-      "zone": "Raven's Dust / Arakas / Stoneheim / Drake Island / Académie",
+      "zone": [
+        "Raven's Dust",
+        "Arakas",
+        "Stoneheim",
+        "Drake Island",
+        "Académie"
+      ],
       "level_required": 50,
       "group_recommended": true,
       "group_size_recommended": "Demander l'aide de joueurs haut niveau pour 2-3 items",
@@ -14167,7 +14332,10 @@
   {
     "id": "le_debutant_colis_de_franc",
     "name": "Le Débutant — Le Colis de Franc",
-    "zone": "Lighthaven / Îlot de Franc",
+    "zone": [
+      "Lighthaven",
+      "Îlot de Franc"
+    ],
     "level_required": 1,
     "level_maximum": 10,
     "group_recommended": false,
@@ -14549,7 +14717,10 @@
   {
     "id": "le_debutant",
     "name": "Le Débutant — Le Colis de Franc",
-    "zone": "Arakas — Île de Franc / Caves",
+    "zone": [
+      "Arakas — Île de Franc",
+      "Caves"
+    ],
     "level_required": 1,
     "level_maximum": 10,
     "group_recommended": false,
@@ -14935,7 +15106,9 @@
   {
     "id": "donjon_eternelle_agonie",
     "name": "Donjon du Marécage de l'Éternelle Agonie",
-    "zone": "Marécage — Nord de Redwall",
+    "zone": [
+      "Marécage — Nord de Redwall"
+    ],
     "level_required": "150–175",
     "group_recommended": true,
     "group_size_recommended": "3 à 4 joueurs",
@@ -15242,7 +15415,9 @@
   {
     "id": "donjon_chapelle_enfouie",
     "name": "Donjon de la Chapelle Enfouie",
-    "zone": "Puits à l'ouest de Redwall (~640, 1420)",
+    "zone": [
+      "Puits à l'ouest de Redwall (~640, 1420)"
+    ],
     "level_required": "175–200",
     "group_recommended": true,
     "group_size_recommended": "3 joueurs minimum (dont 1 soigneur)",
@@ -15726,7 +15901,10 @@
   {
     "id": "le_karma",
     "name": "Le Karma",
-    "zone": "Multi-zones (Arakas, Raven's Dust)",
+    "zone": [
+      "Arakas",
+      "Raven's Dust"
+    ],
     "level_required": 1,
     "group_recommended": false,
     "group_size_recommended": "Solo",
@@ -16062,7 +16240,9 @@
   {
     "id": "chef_mercenaires",
     "name": "Le Chef des Mercenaires",
-    "zone": "Arakas",
+    "zone": [
+      "Arakas"
+    ],
     "level_required": null,
     "group_recommended": true,
     "group_size_recommended": "1 à 3 joueurs",
@@ -16229,7 +16409,10 @@
   {
     "id": "livre_connaissance_arcane",
     "name": "Le Livre de la Connaissance Arcane (Ceinture Instable)",
-    "zone": "Raven's Dust / Stoneheim",
+    "zone": [
+      "Raven's Dust",
+      "Stoneheim"
+    ],
     "level_required": null,
     "group_recommended": false,
     "group_size_recommended": "1 joueur (aide possible pour le combat)",
@@ -16358,7 +16541,11 @@
   {
     "id": "faucheur_de_vie",
     "name": "Le Faucheur de Vie (Bracelet et Gemme des Immortels)",
-    "zone": "Arakas / Raven's Dust / Stoneheim",
+    "zone": [
+      "Arakas",
+      "Raven's Dust",
+      "Stoneheim"
+    ],
     "level_required": 50,
     "group_recommended": true,
     "group_size_recommended": "1 à 2 joueurs",
@@ -16652,7 +16839,11 @@
   {
     "id": "voyage_entre_les_plans",
     "name": "Voyage entre les plans (Interplan / Planewalking)",
-    "zone": "Arakas / Raven's Dust / Stoneheim",
+    "zone": [
+      "Arakas",
+      "Raven's Dust",
+      "Stoneheim"
+    ],
     "level_required": 50,
     "alignment_required": "Séraphe ou Néphilim",
     "group_recommended": false,
@@ -16784,7 +16975,9 @@
   {
     "id": "ancienne_plaque_celeste",
     "name": "L'Ancienne Plaque Céleste",
-    "zone": "Stoneheim",
+    "zone": [
+      "Stoneheim"
+    ],
     "level_required": null,
     "alignment_required": "Séraphe uniquement",
     "group_recommended": true,
@@ -16935,7 +17128,9 @@
   {
     "id": "sceptre_des_abysses",
     "name": "Le Sceptre des Abysses",
-    "zone": "Drake Island",
+    "zone": [
+      "Drake Island"
+    ],
     "level_required": null,
     "group_recommended": true,
     "group_size_recommended": "2 joueurs minimum",
@@ -17114,7 +17309,10 @@
   {
     "id": "puissance_ancestrale_humterre",
     "name": "Puissance Ancestrale Humterre — L'Aura réservée aux Humains",
-    "zone": "Drake Island — Cave Humterre / Raven's Dust",
+    "zone": [
+      "Drake Island — Cave Humterre",
+      "Raven's Dust"
+    ],
     "level_required": null,
     "race_required": "Humain uniquement",
     "group_recommended": false,
@@ -17372,7 +17570,9 @@
   {
     "id": "oscoor_kayle_coup_puiss_ass",
     "name": "Oscoor Kayle — Coup Puissant & Coup Assommant à 105",
-    "zone": "Drake Island — Nord-Ouest",
+    "zone": [
+      "Drake Island — Nord-Ouest"
+    ],
     "level_required": null,
     "group_recommended": false,
     "group_size_recommended": "Solo",
@@ -17483,7 +17683,9 @@
   {
     "id": "noel_quete1_bottes_canne_chapeau",
     "name": "Quêtes de Noël — Quête 1 : Bottes de lutin, Canne et Chapeau de Noël",
-    "zone": "Île du Bonhomme de Neige (via sous-sol taverne de LH)",
+    "zone": [
+      "Île du Bonhomme de Neige (via sous-sol taverne de LH)"
+    ],
     "level_required": null,
     "group_recommended": false,
     "group_size_recommended": "Solo",
@@ -17722,7 +17924,9 @@
   {
     "id": "noel_quete2_chapeau_festif",
     "name": "Quêtes de Noël — Quête 2 : Chapeau Festif",
-    "zone": "Lighthal (LH) — Fontaine + village métiers",
+    "zone": [
+      "Lighthal (LH) — Fontaine + village métiers"
+    ],
     "level_required": null,
     "group_recommended": false,
     "group_size_recommended": "Solo",
@@ -17930,7 +18134,9 @@
   {
     "id": "noel_quete3_journaliere",
     "name": "Quêtes de Noël — Quête 3 : Les quêtes journalières de l'Avent",
-    "zone": "Arakas — Lighthal (LH), Windhill (WH) et alentours",
+    "zone": [
+      "Arakas — Lighthal (LH), Windhill (WH) et alentours"
+    ],
     "level_required": null,
     "group_recommended": false,
     "group_size_recommended": "Solo",
@@ -19610,7 +19816,9 @@
   {
     "id": "dragon_darkfang",
     "name": "Le Dragon Darkfang — Pièces d'or faciles",
-    "zone": "Arakas — Lighthaven",
+    "zone": [
+      "Arakas — Lighthaven"
+    ],
     "level_required": 1,
     "group_recommended": false,
     "group_size_recommended": "Solo",
@@ -19702,7 +19910,9 @@
   {
     "id": "quete_des_rats",
     "name": "La Quête des Rats — Or et Poils de Rats",
-    "zone": "Arakas — Lighthaven et alentours",
+    "zone": [
+      "Arakas — Lighthaven et alentours"
+    ],
     "level_required": 1,
     "group_recommended": false,
     "group_size_recommended": "Solo",
@@ -19840,7 +20050,9 @@
   {
     "id": "defenses_ogre",
     "name": "Les Défenses d'Ogre — Revenu avancé",
-    "zone": "Arakas — Sud-Ouest de Lighthaven",
+    "zone": [
+      "Arakas — Sud-Ouest de Lighthaven"
+    ],
     "level_required": null,
     "level_note": "Nécessite d'être suffisamment fort pour tuer des ogres",
     "group_recommended": false,
@@ -19957,7 +20169,9 @@
   {
     "id": "acces_academie",
     "name": "Quête d'accès à l'Académie — La Chasse de Pelkor",
-    "zone": "Multi-îles (Arakas → Raven's Dust → Stoneheim → Drake Island)",
+    "zone": [
+      "Arakas → Raven's Dust → Stoneheim → Drake Island"
+    ],
     "level_required": null,
     "level_recommended": 120,
     "group_recommended": true,
@@ -20594,7 +20808,11 @@
   {
     "id": "quete_lahor",
     "name": "Quête de Lahor — Le Forgeron",
-    "zone": "Multi-îles (Drake Island, Stoneheim, Arakas)",
+    "zone": [
+      "Drake Island",
+      "Stoneheim",
+      "Arakas"
+    ],
     "level_required": null,
     "level_recommended": null,
     "group_recommended": false,
@@ -20790,7 +21008,9 @@
   {
     "id": "quete_sarah_robes_brodees",
     "name": "Quête de Sarah — Les Robes Brodées",
-    "zone": "Stoneheim — Temple de Stonecrest (sous-sol 1)",
+    "zone": [
+      "Stoneheim — Temple de Stonecrest (sous-sol 1)"
+    ],
     "level_required": null,
     "group_recommended": false,
     "group_size_recommended": "Solo",
@@ -21182,7 +21402,9 @@
   {
     "id": "quete_nirtelle",
     "name": "Quête de Nirtelle — L'Institut de Beauté",
-    "zone": "Lighthaven — Arakas",
+    "zone": [
+      "Lighthaven — Arakas"
+    ],
     "level_required": null,
     "group_recommended": false,
     "group_size_recommended": "Solo",
@@ -21385,7 +21607,9 @@
   {
     "id": "essences_de_bzu",
     "name": "Quête des Essences de Bzu",
-    "zone": "Arakas — Redwall",
+    "zone": [
+      "Arakas — Redwall"
+    ],
     "level_required": null,
     "group_recommended": false,
     "group_size_recommended": "Solo",
@@ -21512,7 +21736,9 @@
   {
     "id": "livres_de_chance",
     "name": "Quête des Livres de Chance",
-    "zone": "Drake Island",
+    "zone": [
+      "Drake Island"
+    ],
     "level_required": null,
     "group_recommended": false,
     "group_size_recommended": "Solo",
@@ -21739,7 +21965,9 @@
   {
     "id": "quete_des_ornements",
     "name": "Quête des Ornements",
-    "zone": "Académie — Niveau -2",
+    "zone": [
+      "Académie — Niveau -2"
+    ],
     "level_required": 200,
     "group_recommended": false,
     "group_size_recommended": "Solo",
@@ -21897,7 +22125,12 @@
   {
     "id": "quete_present_des_alvors",
     "name": "Quête du Présent des Alvors",
-    "zone": "Stoneheim / Raven's Dust / Lighthaven -3 / Académie -2",
+    "zone": [
+      "Stoneheim",
+      "Raven's Dust",
+      "Lighthaven -3",
+      "Académie -2"
+    ],
     "level_required": null,
     "group_recommended": false,
     "group_size_recommended": "Solo",
@@ -22122,7 +22355,11 @@
   {
     "id": "quete_initiale_sigfried",
     "name": "Quête initiale des métiers — La quête de Sigfried",
-    "zone": "Arakas — LightHaven / WindHowl / Monts de Righul",
+    "zone": [
+      "Arakas — LightHaven",
+      "WindHowl",
+      "Monts de Righul"
+    ],
     "level_required": null,
     "group_recommended": false,
     "group_size_recommended": "Solo",
@@ -22511,7 +22748,12 @@
   {
     "id": "quete_du_prisonnier",
     "name": "Quête du prisonnier — La Clef de la prison RP",
-    "zone": "LightHaven — Prison (via portail à la fontaine) / Drake Island / Stoneheim / Arakas",
+    "zone": [
+      "LightHaven — Prison (via portail à la fontaine)",
+      "Drake Island",
+      "Stoneheim",
+      "Arakas"
+    ],
     "level_required": null,
     "group_recommended": false,
     "group_size_recommended": "Solo",
@@ -22702,7 +22944,10 @@
   {
     "id": "lettre_marchand",
     "name": "La lettre du marchand",
-    "zone": "Arakas — Lighthaven / Windhowl",
+    "zone": [
+      "Arakas — Lighthaven",
+      "Windhowl"
+    ],
     "level_required": 5,
     "alignment": "bon",
     "group_recommended": false,
@@ -22853,7 +23098,10 @@
   {
     "id": "epee_du_chaos",
     "name": "La quête de l'épée du chaos",
-    "zone": "Arakas — Lighthaven / Windhowl",
+    "zone": [
+      "Arakas — Lighthaven",
+      "Windhowl"
+    ],
     "level_required": null,
     "alignment": "bon",
     "group_recommended": false,
@@ -22954,7 +23202,9 @@
   {
     "id": "quete_diamant",
     "name": "La quête du diamant",
-    "zone": "Arakas — Windhowl",
+    "zone": [
+      "Arakas — Windhowl"
+    ],
     "level_required": null,
     "alignment": "bon",
     "group_recommended": false,
@@ -23040,7 +23290,10 @@
   {
     "id": "acces_ravens_dust_bon",
     "name": "Accès à Raven's Dust — Voie du Bien",
-    "zone": "Arakas — Lighthaven / Windhowl → Raven's Dust",
+    "zone": [
+      "Arakas — Lighthaven",
+      "Windhowl → Raven's Dust"
+    ],
     "level_required": 25,
     "alignment": "bon",
     "group_recommended": false,
@@ -23349,7 +23602,9 @@
   {
     "id": "acces_rd_malefique",
     "name": "Accès Raven's Dust — Voie Maléfique",
-    "zone": "Arakas",
+    "zone": [
+      "Arakas"
+    ],
     "level_required": 5,
     "level_recommended": 25,
     "group_recommended": false,
@@ -23973,7 +24228,10 @@
   {
     "id": "lame_demoniaque",
     "name": "La quête de la lame démoniaque",
-    "zone": "Arakas / Raven's Dust",
+    "zone": [
+      "Arakas",
+      "Raven's Dust"
+    ],
     "level_required": 16,
     "group_recommended": false,
     "group_size_recommended": "Solo",
@@ -24112,7 +24370,9 @@
   {
     "id": "quete_or_du_dragon",
     "name": "La quête de l'or du dragon",
-    "zone": "Arakas — Lighthaven",
+    "zone": [
+      "Arakas — Lighthaven"
+    ],
     "level_required": 1,
     "level_recommended": "1-5",
     "group_recommended": false,
@@ -24166,7 +24426,9 @@
   {
     "id": "quete_pilleur_de_tombe",
     "name": "La quête du pilleur de tombe",
-    "zone": "Arakas — Lighthaven",
+    "zone": [
+      "Arakas — Lighthaven"
+    ],
     "level_required": 1,
     "level_recommended": "5-10",
     "group_recommended": false,
@@ -24246,7 +24508,9 @@
   {
     "id": "quete_ailes_chauve_souris",
     "name": "La quête des ailes de chauve-souris",
-    "zone": "Arakas — Lighthaven",
+    "zone": [
+      "Arakas — Lighthaven"
+    ],
     "level_required": 1,
     "level_recommended": "5-12",
     "group_recommended": false,
@@ -24359,7 +24623,10 @@
   {
     "id": "quete_dorken_le_putride",
     "name": "La quête de Dorken le putride",
-    "zone": "Arakas — Lighthaven / Windhowl",
+    "zone": [
+      "Arakas — Lighthaven",
+      "Windhowl"
+    ],
     "level_required": 1,
     "level_recommended": "15-20",
     "group_recommended": false,
@@ -24553,7 +24820,11 @@
   {
     "id": "quete_livre_de_feylor",
     "name": "La quête du livre de Feylor (bracelet de saphir)",
-    "zone": "Arakas — Druides / Labyrinthe / Cité perdue",
+    "zone": [
+      "Arakas — Druides",
+      "Labyrinthe",
+      "Cité perdue"
+    ],
     "level_required": 1,
     "level_recommended": "15-25",
     "group_recommended": false,
@@ -24653,7 +24924,11 @@
   {
     "id": "quete_fiole_liquide_bleute",
     "name": "La quête de la fiole de liquide bleuté",
-    "zone": "Arakas — Druides / Camp orc / Lighthaven",
+    "zone": [
+      "Arakas — Druides",
+      "Camp orc",
+      "Lighthaven"
+    ],
     "level_required": 1,
     "level_recommended": "15-25",
     "group_recommended": false,
@@ -24775,7 +25050,11 @@
   {
     "id": "quete_pierre_de_vie",
     "name": "La quête de la pierre de vie (scalpel du chirurgien ou lame des ténèbres)",
-    "zone": "Arakas — Druides / Jarko / Ville des voleurs",
+    "zone": [
+      "Arakas — Druides",
+      "Jarko",
+      "Ville des voleurs"
+    ],
     "level_required": 1,
     "level_recommended": "20-35",
     "group_recommended": false,
@@ -24988,7 +25267,10 @@
   {
     "id": "quete_bouclier_windhowl",
     "name": "La quête du bouclier de Windhowl",
-    "zone": "Arakas — Windhowl / Montagne de Jarko",
+    "zone": [
+      "Arakas — Windhowl",
+      "Montagne de Jarko"
+    ],
     "level_required": 1,
     "level_recommended": "10-20",
     "group_recommended": false,
@@ -25080,7 +25362,10 @@
   {
     "id": "quete_sachet_poudre_jaune",
     "name": "La quête du sachet de poudre jaune",
-    "zone": "Arakas — Lighthaven / Camp orc",
+    "zone": [
+      "Arakas — Lighthaven",
+      "Camp orc"
+    ],
     "level_required": 1,
     "level_recommended": "15-25",
     "group_recommended": false,
@@ -25162,7 +25447,11 @@
   {
     "id": "quete_necessaire_ecriture_runique",
     "name": "La quête du nécessaire à écriture runique",
-    "zone": "Arakas — Tour des mages / Camp orc / Druides",
+    "zone": [
+      "Arakas — Tour des mages",
+      "Camp orc",
+      "Druides"
+    ],
     "level_required": 1,
     "level_recommended": "18-30",
     "group_recommended": false,
@@ -25283,7 +25572,10 @@
   {
     "id": "quete_parchemin_enchantement",
     "name": "La quête du parchemin d'enchantement",
-    "zone": "Arakas — Lighthaven / Windhowl",
+    "zone": [
+      "Arakas — Lighthaven",
+      "Windhowl"
+    ],
     "level_required": 1,
     "level_recommended": "18-30",
     "group_recommended": false,
@@ -25435,7 +25727,10 @@
   {
     "id": "quete_cotte_mailles_benie",
     "name": "La quête de la cotte de mailles bénie",
-    "zone": "Arakas — Camp gobelins / Raven's Dust",
+    "zone": [
+      "Arakas — Camp gobelins",
+      "Raven's Dust"
+    ],
     "level_required": 16,
     "level_recommended": "20-35",
     "group_recommended": false,
@@ -25552,7 +25847,11 @@
   {
     "id": "quete_grimoire_jarko",
     "name": "La quête du grimoire de Jarko",
-    "zone": "Arakas — Windhowl / Grotte de Jarko / Lighthaven",
+    "zone": [
+      "Arakas — Windhowl",
+      "Grotte de Jarko",
+      "Lighthaven"
+    ],
     "level_required": 1,
     "level_recommended": "15-30",
     "group_recommended": false,
@@ -25696,7 +25995,9 @@
   {
     "id": "audience_roi",
     "name": "L'audience au Roi",
-    "zone": "Raven's Dust — Château de Silversky",
+    "zone": [
+      "Raven's Dust — Château de Silversky"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": false,
@@ -25786,7 +26087,9 @@
   {
     "id": "lame_acuite",
     "name": "La lame d'acuité",
-    "zone": "Raven's Dust — Château de Silversky",
+    "zone": [
+      "Raven's Dust — Château de Silversky"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": true,
@@ -25869,7 +26172,9 @@
   {
     "id": "bouffon_morbide",
     "name": "Le Bouffon Morbide",
-    "zone": "Raven's Dust — Château de Silversky",
+    "zone": [
+      "Raven's Dust — Château de Silversky"
+    ],
     "level_required": null,
     "level_recommended": 30,
     "group_recommended": false,
@@ -25960,7 +26265,10 @@
   {
     "id": "alliance",
     "name": "L'alliance",
-    "zone": "Raven's Dust — Silversky / Camp Orque",
+    "zone": [
+      "Raven's Dust — Silversky",
+      "Camp Orque"
+    ],
     "level_required": 28,
     "group_recommended": false,
     "repeatable": true,
@@ -26104,7 +26412,9 @@
   {
     "id": "pourfendeur_gobelins",
     "name": "Le pourfendeur de gobelins",
-    "zone": "Raven's Dust — Silversky",
+    "zone": [
+      "Raven's Dust — Silversky"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": true,
@@ -26173,7 +26483,9 @@
   {
     "id": "marteau_rhodar",
     "name": "Le marteau de Rhodar",
-    "zone": "Raven's Dust — Extérieur de Silversky",
+    "zone": [
+      "Raven's Dust — Extérieur de Silversky"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": true,
@@ -26252,7 +26564,9 @@
   {
     "id": "yeux_tarentules",
     "name": "Les yeux de tarentules",
-    "zone": "Raven's Dust — Château de Silversky",
+    "zone": [
+      "Raven's Dust — Château de Silversky"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": true,
@@ -26316,7 +26630,9 @@
   {
     "id": "sauvez_petit_arbre",
     "name": "Sauvez le Petit Arbre (fioles cristallines)",
-    "zone": "Raven's Dust — Camp des Druides",
+    "zone": [
+      "Raven's Dust — Camp des Druides"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": true,
@@ -26400,7 +26716,9 @@
   {
     "id": "anneau_feu_follet",
     "name": "Anneau Feu Follet (la nuit)",
-    "zone": "Raven's Dust — Lac Tarentules",
+    "zone": [
+      "Raven's Dust — Lac Tarentules"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": true,
@@ -26486,7 +26804,9 @@
   {
     "id": "habit_feuilles",
     "name": "L'habit de feuilles (les 4 pierres)",
-    "zone": "Raven's Dust — Camp des Druides",
+    "zone": [
+      "Raven's Dust — Camp des Druides"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": false,
@@ -26590,7 +26910,9 @@
   {
     "id": "anneau_foi",
     "name": "L'anneau de foi",
-    "zone": "Raven's Dust — Temple de Silversky",
+    "zone": [
+      "Raven's Dust — Temple de Silversky"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": true,
@@ -26660,7 +26982,10 @@
   {
     "id": "bracelet_orque",
     "name": "Le bracelet orque (peaux d'antilope et yeux de tarentules)",
-    "zone": "Raven's Dust — Lac Tarentules / Camp Orque",
+    "zone": [
+      "Raven's Dust — Lac Tarentules",
+      "Camp Orque"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": true,
@@ -26755,7 +27080,10 @@
   {
     "id": "pied_humain",
     "name": "Le pied humain",
-    "zone": "Raven's Dust — Camp Orque / Caves orques",
+    "zone": [
+      "Raven's Dust — Camp Orque",
+      "Caves orques"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": true,
@@ -26833,7 +27161,10 @@
   {
     "id": "recrutement_mordrick",
     "name": "Le recrutement par Mordrick Mansel — Le bouclier tour",
-    "zone": "Raven's Dust — Silversky / Camp Orque",
+    "zone": [
+      "Raven's Dust — Silversky",
+      "Camp Orque"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": true,
@@ -26972,7 +27303,10 @@
   {
     "id": "orque_archimage",
     "name": "L'orque Archimage",
-    "zone": "Raven's Dust — Château de Silversky / Camp Orque",
+    "zone": [
+      "Raven's Dust — Château de Silversky",
+      "Camp Orque"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": true,
@@ -27064,7 +27398,9 @@
   {
     "id": "bottes_peau_lezard",
     "name": "Les bottes en peau de lézard",
-    "zone": "Raven's Dust — Silversky",
+    "zone": [
+      "Raven's Dust — Silversky"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": true,
@@ -27163,7 +27499,9 @@
   {
     "id": "anneau_pierre_sang",
     "name": "L'anneau de pierre de sang (douces-amères et gingembre)",
-    "zone": "Raven's Dust — Lac Tarentules",
+    "zone": [
+      "Raven's Dust — Lac Tarentules"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": true,
@@ -27276,7 +27614,9 @@
   {
     "id": "anneau_precision",
     "name": "L'anneau de précision",
-    "zone": "Raven's Dust — Camp Orque",
+    "zone": [
+      "Raven's Dust — Camp Orque"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": true,
@@ -27350,7 +27690,9 @@
   {
     "id": "potion_guerison_importante",
     "name": "La potion de guérison importante",
-    "zone": "Raven's Dust — Château de Silversky",
+    "zone": [
+      "Raven's Dust — Château de Silversky"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": true,
@@ -27438,7 +27780,9 @@
   {
     "id": "amulette_etheree",
     "name": "L'amulette éthérée (quête longue)",
-    "zone": "Raven's Dust — Tour de Zakhar",
+    "zone": [
+      "Raven's Dust — Tour de Zakhar"
+    ],
     "level_required": 30,
     "level_recommended": 35,
     "group_recommended": false,
@@ -27569,7 +27913,9 @@
   {
     "id": "audience_bane_gwengad",
     "name": "Audience à Bane Gwengad",
-    "zone": "Raven's Dust — Château de Bane Gwengad",
+    "zone": [
+      "Raven's Dust — Château de Bane Gwengad"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": true,
@@ -27648,7 +27994,10 @@
   {
     "id": "dague_sang",
     "name": "La dague de sang et cape de résistance au feu",
-    "zone": "Raven's Dust — Château de Bane Gwengad / Silversky",
+    "zone": [
+      "Raven's Dust — Château de Bane Gwengad",
+      "Silversky"
+    ],
     "level_required": null,
     "group_recommended": false,
     "repeatable": true,
@@ -27778,7 +28127,9 @@
   {
     "id": "vendeur_etrange",
     "name": "Quête du Vendeur Étrange",
-    "zone": "Arakas — Redwall",
+    "zone": [
+      "Arakas — Redwall"
+    ],
     "level_required": null,
     "group_recommended": false,
     "group_size_recommended": "Solo",
@@ -27948,7 +28299,9 @@
   {
     "id": "rst_drake_island",
     "name": "R.S.T. (Runed Stone Tablet) — Drake Island",
-    "zone": "Stoneheim — Plages et montagnes",
+    "zone": [
+      "Stoneheim — Plages et montagnes"
+    ],
     "level_required": null,
     "group_recommended": false,
     "group_size_recommended": "Solo",
@@ -28204,7 +28557,13 @@
   {
     "id": "renaissance_dechu",
     "name": "Renaissance Déchu",
-    "zone": "Stoneheim — Multi-zones (Arakas, Raven's Dust, Niève, Stoneheim, Drake Island)",
+    "zone": [
+      "Arakas",
+      "Raven's Dust",
+      "Niève",
+      "Stoneheim",
+      "Drake Island"
+    ],
     "level_required": 100,
     "rebirth_required": "5x",
     "group_recommended": false,
@@ -28866,7 +29225,9 @@
   {
     "id": "cranes_de_malfrats",
     "name": "Les crânes de malfrats",
-    "zone": "Stoneheim — Sortie Est",
+    "zone": [
+      "Stoneheim — Sortie Est"
+    ],
     "alignment": "neutre",
     "level_required": null,
     "group_recommended": false,
@@ -28983,7 +29344,9 @@
   {
     "id": "les_gemmes",
     "name": "Les gemmes",
-    "zone": "Stoneheim — Ville des Voleurs",
+    "zone": [
+      "Stoneheim — Ville des Voleurs"
+    ],
     "alignment": "neutre",
     "level_required": null,
     "group_recommended": false,
@@ -29213,7 +29576,11 @@
   {
     "id": "collectionneur_scalps",
     "name": "La quête du collectionneur de scalps",
-    "zone": "Stoneheim — Villages Skraugs / Stonecrest / Ville des Centaures",
+    "zone": [
+      "Stoneheim — Villages Skraugs",
+      "Stonecrest",
+      "Ville des Centaures"
+    ],
     "alignment": "bénéfique et maléfique",
     "level_required": null,
     "group_recommended": false,
@@ -29469,7 +29836,9 @@
   {
     "id": "anneau_vraie_foi",
     "name": "L'anneau de vraie foi",
-    "zone": "Stoneheim — Plaine sud-est de Stonecrest",
+    "zone": [
+      "Stoneheim — Plaine sud-est de Stonecrest"
+    ],
     "alignment": "bénéfique",
     "level_required": null,
     "group_recommended": false,
@@ -29602,7 +29971,10 @@
   {
     "id": "parchemin_amitie_chevaux",
     "name": "Le parchemin d'amitié des chevaux",
-    "zone": "Stoneheim — Ville des Centaures / Donjon de Mordenthal",
+    "zone": [
+      "Stoneheim — Ville des Centaures",
+      "Donjon de Mordenthal"
+    ],
     "alignment": "neutre",
     "level_required": null,
     "group_recommended": false,
@@ -29803,7 +30175,9 @@
   {
     "id": "lame_perdue_dragon",
     "name": "La lame perdue du Dragon",
-    "zone": "Stoneheim — Stonecrest",
+    "zone": [
+      "Stoneheim — Stonecrest"
+    ],
     "alignment": "neutre",
     "level_required": null,
     "group_recommended": false,
@@ -29925,7 +30299,9 @@
   {
     "id": "heaume_perdu_dragon",
     "name": "Le heaume perdu du Dragon",
-    "zone": "Stoneheim — Stonecrest",
+    "zone": [
+      "Stoneheim — Stonecrest"
+    ],
     "alignment": "neutre",
     "level_required": null,
     "group_recommended": true,
@@ -30118,7 +30494,9 @@
   {
     "id": "sceptre_espoir",
     "name": "Sceptre d'espoir",
-    "zone": "Stoneheim — Ville des Centaures",
+    "zone": [
+      "Stoneheim — Ville des Centaures"
+    ],
     "alignment": "bénéfique",
     "level_required": null,
     "group_recommended": false,
@@ -30230,7 +30608,9 @@
   {
     "id": "cle_etheree",
     "name": "La clé éthérée",
-    "zone": "Stoneheim — Château de Sir Beltigan",
+    "zone": [
+      "Stoneheim — Château de Sir Beltigan"
+    ],
     "alignment": "neutre",
     "level_required": null,
     "group_recommended": false,
@@ -30339,7 +30719,10 @@
   {
     "id": "luth_de_paix",
     "name": "Le luth de Paix",
-    "zone": "Stoneheim — Ville des Centaures / Îles Éthérées",
+    "zone": [
+      "Stoneheim — Ville des Centaures",
+      "Îles Éthérées"
+    ],
     "alignment": "neutre",
     "level_required": null,
     "group_recommended": false,
@@ -30464,7 +30847,9 @@
   {
     "id": "quete_mordenthal",
     "name": "Quête de Mordenthal",
-    "zone": "Stoneheim — Château de Mordenthal",
+    "zone": [
+      "Stoneheim — Château de Mordenthal"
+    ],
     "alignment": "maléfique",
     "level_required": null,
     "group_recommended": false,

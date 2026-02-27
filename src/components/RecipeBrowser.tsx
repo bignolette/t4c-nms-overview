@@ -847,7 +847,7 @@ const NPCGroupedView = ({
             const found = npcsData.find(n => fastNormalize(n.name) === norm);
             if (found) {
                 npcName = found.name;
-                officialZone = found.zone;
+                officialZone = found.zone.join(' / ');
                 officialCoords = found.coordinates || officialCoords;
             }
         }
@@ -872,7 +872,7 @@ const NPCGroupedView = ({
 
     return Object.values(map).filter(a => {
         const matchesProf = selectedProf === 'Tous' || a.profession === selectedProf;
-        const matchesZone = selectedZone === 'Toutes' || a.zone === selectedZone;
+        const matchesZone = selectedZone === 'Toutes' || a.zone.split(' / ').includes(selectedZone);
         const matchesSearch = !npcSearch || fastNormalize(a.name).includes(fastNormalize(npcSearch));
         return matchesProf && matchesZone && matchesSearch;
     }).sort((a, b) => a.name.localeCompare(b.name));

@@ -92,7 +92,7 @@ export const MonsterCard = memo(({ monster, showLocation }: { monster: Monster, 
             </h3>
             <div className="flex flex-col gap-1.5 mt-2">
               {showLocation && (
-                <div className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">{monster.location}</div>
+                <div className="text-[10px] text-slate-500 font-bold uppercase tracking-wider">{monster.location.join(' / ')}</div>
               )}
               {coordsArray.length > 0 && (
                 <div className="space-y-1">
@@ -203,7 +203,7 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
   const getBaseZone = (location: string) => location.split('(')[0].trim();
 
   const baseZones = useMemo(() => {
-    const zones = new Set(monsters.map(m => getBaseZone(m.location)));
+    const zones = new Set(monsters.flatMap(m => m.location.map(getBaseZone)));
     return ['Toutes', ...Array.from(zones).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }))];
   }, [monsters]);
 
@@ -223,7 +223,7 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
         const matchesSearch = !query || 
           fastNormalize(m.name).includes(query) || 
           m.drops.some(d => fastNormalize(d).includes(query));
-        const matchesZone = selectedZone === 'Toutes' || getBaseZone(m.location) === selectedZone;
+        const matchesZone = selectedZone === 'Toutes' || m.location.some(loc => getBaseZone(loc) === selectedZone);
         return matchesSearch && matchesZone;
       })
       .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
@@ -232,9 +232,13 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
   // 2. Grouping
   const monstersByZone = useMemo(() => {
     const grouped = filteredMonsters.reduce((acc, monster) => {
-      const zone = selectedZone === 'Toutes' ? getBaseZone(monster.location) : monster.location;
-      if (!acc[zone]) acc[zone] = [];
-      acc[zone].push(monster);
+      const zones = selectedZone === 'Toutes'
+        ? monster.location.map(getBaseZone)
+        : monster.location;
+      for (const zone of zones) {
+        if (!acc[zone]) acc[zone] = [];
+        acc[zone].push(monster);
+      }
       return acc;
     }, {} as Record<string, Monster[]>);
 

@@ -15,7 +15,7 @@ import { useData } from '../context/DataContext';
 interface Quest {
   id: string;
   name: string;
-  zone: string;
+  zone: string[];
   level_required: number | null;
   alignment_required?: string;
   group_recommended: boolean;
@@ -131,17 +131,22 @@ const typeIcon: Record<string, React.ReactNode> = {
 
 /* ─── Helpers ─── */
 
-const getMainIsland = (zone: string | null | undefined): string => {
-  if (!zone) return 'Autre';
-  const z = zone.toLowerCase();
-  if (z.includes('académie') || z.includes('academie')) return 'Académie';
-  if (z.includes('arakas')) return 'Arakas';
-  if (z.includes('stoneheim')) return 'Stoneheim';
-  if (z.includes("raven's dust") || z.includes('raven')) return "Raven's Dust";
-  if (z.includes('drake')) return 'Drake Island';
-  if (z.includes('niève') || z.includes('nieve')) return 'Niève';
-  if (z.includes('multi')) return 'Multi-îles';
-  return 'Autre';
+const getMainIslands = (zone: string[] | null | undefined): string[] => {
+  if (!zone || zone.length === 0) return ['Autre'];
+  const result = new Set<string>();
+  for (const z of zone) {
+    const lc = z.toLowerCase();
+    if (lc.includes('académie') || lc.includes('academie')) result.add('Académie');
+    else if (lc.includes('arakas')) result.add('Arakas');
+    else if (lc.includes('stoneheim')) result.add('Stoneheim');
+    else if (lc.includes("raven's dust") || lc.includes('raven')) result.add("Raven's Dust");
+    else if (lc.includes('drake')) result.add('Drake Island');
+    else if (lc.includes('niève') || lc.includes('nieve')) result.add('Niève');
+    else if (lc.includes('multi')) result.add('Multi-îles');
+    else result.add('Autre');
+  }
+  if (result.size > 1) return ['Multi-îles'];
+  return [...result];
 };
 
 const getStepNumber = (step: QuestStep): number => step.key_number ?? step.step_number ?? 0;
@@ -169,7 +174,7 @@ const QuestListView = ({ quests, onSelect }: { quests: Quest[]; onSelect: (q: Qu
         const normalizedSearch = fastNormalize(searchTerm);
         const searchPool = [
           q.name,
-          q.zone,
+          ...q.zone,
           q.description,
           q.boss_fight?.name || '',
           ...(q.npcs?.map(n => n.name) || [])
@@ -179,7 +184,7 @@ const QuestListView = ({ quests, onSelect }: { quests: Quest[]; onSelect: (q: Qu
       }
 
       // Island Filter
-      if (selectedIsland !== 'Tous' && getMainIsland(q.zone) !== selectedIsland) return false;
+      if (selectedIsland !== 'Tous' && !getMainIslands(q.zone).includes(selectedIsland)) return false;
 
       // Level Filter
       if (selectedLevelRange !== 'Tous') {
@@ -440,7 +445,7 @@ const QuestCard = ({ quest, onClick, index }: { quest: Quest; onClick: () => voi
             )}
           </div>
           <p className="text-xs text-slate-500 flex items-center gap-1.5 mt-1.5">
-            <MapPin size={11} className="shrink-0" /> {quest.zone}
+            <MapPin size={11} className="shrink-0" /> {quest.zone.join(' / ')}
           </p>
         </div>
       </div>
@@ -540,7 +545,7 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
                 {quest.name}
               </h1>
               <p className="text-slate-400 text-sm mt-1 flex flex-wrap items-center gap-3">
-                <span className="flex items-center gap-1.5"><MapPin size={14} /> {quest.zone}</span>
+                <span className="flex items-center gap-1.5"><MapPin size={14} /> {quest.zone.join(' / ')}</span>
                 {quest.level_required && <span className="flex items-center gap-1.5"><ShieldAlert size={14} /> Niveau {quest.level_required}+</span>}
                 {quest.alignment_required && <span className="flex items-center gap-1.5"><Shield size={14} /> {quest.alignment_required}</span>}
                 {quest.group_size_recommended && <span className="flex items-center gap-1.5"><Users size={14} /> {quest.group_size_recommended}</span>}

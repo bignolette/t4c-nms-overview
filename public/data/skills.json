@@ -46,7 +46,7 @@
       "silversky": [
         "Baldric Iraelis"
       ],
-      "ravensDust": [
+      "ravensdust": [
         "Morindin Tenglow (bois de RD)"
       ],
       "stonecrest": [
@@ -78,7 +78,7 @@
         "Doremas",
         "Baldric Iraelis"
       ],
-      "ravensDust": [
+      "ravensdust": [
         "Morindin Tenglow (bois de RD)"
       ],
       "stonecrest": [
@@ -148,7 +148,7 @@
       "silversky": [
         "Doremas"
       ],
-      "ravensDust": [
+      "ravensdust": [
         "Morindin Tenglow (Bois de RD)"
       ]
     },
@@ -184,7 +184,7 @@
     "requirements": "Niv 12, 20 en intelligence et en sagesse. 1 point de compétences minimum.",
     "description": "Permet de soigner certaines blessures condition d'avoir des bandelettes de momie dans l'inventaire. La russite n'est pas systématique, la tentative peut parfois aggraver la blessure. Tip : Inutile et inefficace.",
     "trainingTeachers": {
-      "ravensDust": [
+      "ravensdust": [
         "Morindin Tenglow (Bois de RD)"
       ],
       "stoneheim": [
@@ -220,7 +220,7 @@
     "requirements": "Niv 13, 34 en dextérité, 20 en intelligence. 1 point de compétences minimum.",
     "description": "Cette compétence rend parfois invisible à condition de rester immobile. Doit être utilisée conjointement à Se faufiler pour pouvoir se déplacer discrètement (peu efficace). Influencée par la dextérité. Tip : Inutile. Autrefois utilisé par les archers pour faire discrètement un coup critique.",
     "trainingTeachers": {
-      "ravensDust": [
+      "ravensdust": [
         "Morindin Tenglow"
       ],
       "stoneheim": [

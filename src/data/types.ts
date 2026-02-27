@@ -1,6 +1,6 @@
 export interface Monster {
     name: string;
-    location: string;
+    location: string[];
     coordinates?: string[];
     drops: string[];
     exp: string;
@@ -120,7 +120,7 @@ export interface CraftingProject {
 export interface NPC {
     name: string;
     locationPrecision?: string;
-    zone: string;
+    zone: string[];
     coordinates?: string;
 }
 

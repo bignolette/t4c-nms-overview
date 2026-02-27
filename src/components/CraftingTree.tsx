@@ -122,11 +122,12 @@ const FarmingPlannerModal = ({ totals, onClose, itemName }: { totals: Record<str
 
       const itemZones = new Set<string>();
       monsters.forEach(m => {
-        if (m.location.includes("Arakas")) itemZones.add("Arakas");
-        else if (m.location.includes("Raven's Dust") || m.location.includes("Silversky")) itemZones.add("Raven's Dust");
-        else if (m.location.includes("Stoneheim") || m.location.includes("Stonecrest")) itemZones.add("Stoneheim");
-        else if (m.location.includes("Drake Island") || m.location.includes("Redwall")) itemZones.add("Drake Island");
-        else if (m.location.includes("Urtanar")) itemZones.add("Urtanar");
+        const locs = m.location.join(' ');
+        if (locs.includes("Arakas")) itemZones.add("Arakas");
+        else if (locs.includes("Raven's Dust") || locs.includes("Silversky")) itemZones.add("Raven's Dust");
+        else if (locs.includes("Stoneheim") || locs.includes("Stonecrest")) itemZones.add("Stoneheim");
+        else if (locs.includes("Drake Island") || locs.includes("Redwall")) itemZones.add("Drake Island");
+        else if (locs.includes("Urtanar")) itemZones.add("Urtanar");
       });
 
       if (itemInfo.harvests.length > 0 || itemInfo.sources.length > 0) {

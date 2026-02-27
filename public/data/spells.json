@@ -340,7 +340,7 @@
     "mana": "5",
     "description": "Contre les Morts-Vivants seulement. Très dépendant de la sagesse. (RD temple)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Frère Thorkas"
       ]
     },
@@ -406,7 +406,7 @@
     "mana": "10",
     "description": "Augmente la CA (2x la CA de protection). Durée 2 mn (RD druides)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Kederic Steriad"
       ]
     },
@@ -472,7 +472,7 @@
     "mana": "6",
     "description": "Evolution d'absorption de vie mineure, très lent (RD cave aveugle)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Un aveugle"
       ]
     },
@@ -494,7 +494,7 @@
     "mana": "30",
     "description": "Augmente la force de la cible. Permet de porter plus. Utile à tous. Durée 5 mn (RD temple)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Frère Giamas"
       ]
     },
@@ -516,7 +516,7 @@
     "mana": "6",
     "description": "+25% Esquive, +33% Attaque et Archerie pures de la cible. Durée 1 mn (RD, maison S-E du temple)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Elysana Blackrose"
       ]
     },
@@ -626,7 +626,7 @@
     "mana": "21",
     "description": "Augmente de +25% l'intelligence pure du lanceur. Durée 3 mn (RD druides)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Kederic Steriad"
       ]
     },
@@ -648,7 +648,7 @@
     "mana": "14",
     "description": "+33% sur toutes les résistances magiques de la cible sauf lumière. Durée 3 mn (RD forêt ouest)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Etheanan"
       ]
     },
@@ -670,7 +670,7 @@
     "mana": "7",
     "description": "Agit sur toute une zone autour de la cible. Efficace contre les volants et les Drakes. (RD tour de sorcellerie)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Zhakar"
       ]
     },
@@ -714,7 +714,7 @@
     "mana": "8",
     "description": "Très rapide (2 coups par sec), Uniquement influencé par intelligence boostée (RD, maison S-E temple)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Elysana Blackrose"
       ]
     },
@@ -736,7 +736,7 @@
     "mana": "40",
     "description": "NMS : Réduit de 25% les PV purs mais bonus (béné...) inchangés, et de 25% la puissance lumière pure de la cible. Inflige régulièrement des dégâts (jusqu'au nouveau max PV en PVP (PVP et gros mobs). Durée 5mn. (RD cave aveugle)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Un aveugle"
       ]
     },
@@ -758,7 +758,7 @@
     "mana": "90",
     "description": "Permet de voir les personnes ayant utilisé \"se cacher\". Durée 10 mn. (RD château, 1er étage, coursive droite)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Aloysius Starbolt"
       ]
     },
@@ -780,7 +780,7 @@
     "mana": "45",
     "description": "Augmente la CA du lanceur (2X la CA de barrière). Durée 5 mn. (RD temple)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Frère Giamas"
       ]
     },
@@ -802,7 +802,7 @@
     "mana": "45",
     "description": "+33% à la sagesse pure du lanceur. Durée 5 mn (RD temple)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Frère Thorkas"
       ]
     },
@@ -824,7 +824,7 @@
     "mana": "10",
     "description": "Attaque toutes les cibles proches de plusieurs BDF. (RD château, 1er étage, coursive droite )",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Aloysius Starbolt"
       ]
     },
@@ -846,7 +846,7 @@
     "mana": "10",
     "description": "Lance un éclair sur la cible. (RD tour)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Zhakar"
       ]
     },
@@ -868,7 +868,7 @@
     "mana": "10",
     "description": "Sort de nécro. Retire les PV de la cible pour les donner au lanceur. (RD cave de l'aveugle) Il faut avoir fait la quête du grimoire pour l'apprendre (quête Arakas)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Un aveugle"
       ]
     },
@@ -890,7 +890,7 @@
     "mana": "10",
     "description": "+100 de résistance feu au lanceur. Durée 1 mn. (RD druides)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Celestina Avel"
       ]
     },
@@ -912,7 +912,7 @@
     "mana": "11",
     "description": "+50% à l'esquive pure et +25% à la dextérité pure du lanceur. Durée 1 mn (RD tour)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Zhakar"
       ]
     },
@@ -934,7 +934,7 @@
     "mana": "11",
     "description": "Sort skin gel à petit effet zone (RD druides)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Celestina Avel"
       ]
     },
@@ -956,7 +956,7 @@
     "mana": "11",
     "description": "+100 de résistance à l'eau au lanceur. Durée 1 mn (RD château, 1er étage, coursive droite)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Aloysius Starbolt"
       ]
     },
@@ -978,7 +978,7 @@
     "mana": "11",
     "description": "Sort d'attaque à large effet zone sur les cibles alentour (RD temple)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Frère Giamas"
       ]
     },
@@ -1000,7 +1000,7 @@
     "mana": "22",
     "description": "Renvoie une petite boule de feu à chaque attaque reçue. Durée 2 mn (RD forêt ouest lac Tata)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Etheanan"
       ]
     },
@@ -1022,7 +1022,7 @@
     "mana": "24",
     "description": "Renvoie un éclair à chaque attaque reçue. Durée 2 mn (RD forêt ouest)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Etheanan"
       ]
     },
@@ -1044,7 +1044,7 @@
     "mana": "60",
     "description": "Détection des objets, joueurs et PNJ invisibles. Durée 5mn (RD château, 1er étage, coursive droite)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Aloysius Starbolt"
       ]
     },
@@ -1066,7 +1066,7 @@
     "mana": "120",
     "description": "Protège pendant 1 minute des attaques PVM uniquement ! Pendant la minute suivante tous les sorts sont bloqués (RD château, 3ème étage)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Evêque Crowbanner"
       ]
     },
@@ -1088,7 +1088,7 @@
     "mana": "12",
     "description": "Explosion de Feu. Très bon sort de zone. (RD forêt ouest)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Etheanan"
       ]
     },
@@ -1110,7 +1110,7 @@
     "mana": "39",
     "description": "NMS :+30% dans toutes les puissances de la cible (T4C standard :+33% de puissance Lumière, Air, Glace, Terre, Feu et +25% de puissance Nécro à la cible. Durée 3 mn (RD forêt ouest) (voir aussi sorts NMS)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Etheanan"
       ]
     },
@@ -1132,7 +1132,7 @@
     "mana": "13",
     "description": "Dégâts d'eau sur la cible (RD forêt ouest)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Etheanan"
       ]
     },
@@ -1154,7 +1154,7 @@
     "mana": "13",
     "description": "Dernier sort de soin individuel standard (RD château)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Evêque Crowbanner"
       ]
     },
@@ -1462,7 +1462,7 @@
     "mana": "18",
     "description": "Sort de feu jetant des flammes sur tout ce qui bouge. Très bon sort de feu pour tuer en masse. (RD bibliothèque)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Filandrius"
       ]
     },
@@ -1484,7 +1484,7 @@
     "mana": "18",
     "description": "Enveloppe la cible. Large effet de zone. Puissant mais lent. (RD bibliothèque)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Filandrius"
       ]
     },
@@ -1506,7 +1506,7 @@
     "mana": "19",
     "description": "Lance avalanche de neige et de glace sur la cible. Effet de zone. (RD bibliothèque)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Filandrius"
       ]
     },
@@ -1528,7 +1528,7 @@
     "mana": "19",
     "description": "Recouvre la cible de feu (RD bibliothèque)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Filandrius"
       ]
     },
@@ -1550,7 +1550,7 @@
     "mana": "100",
     "description": "Bouclier offensif qui contre-attaque chaque coup par un nuage de glace. Durée 2 mn. (RD bibliothèque)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Filandrius"
       ]
     },
@@ -1572,7 +1572,7 @@
     "mana": "20",
     "description": "Attaque la cible de violentes tornades. Effet de zone. (RD bibliothèque)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Filandrius"
       ]
     },
@@ -1594,7 +1594,7 @@
     "mana": "0",
     "description": "Invoque un portail pouvant téléporter le lanceur et ceux qui suivent. (RD bibliothèque)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Filandrius"
       ]
     },
@@ -1616,7 +1616,7 @@
     "mana": "22",
     "description": "Meilleur sort d'eau en PVP. (RD bibliothèque)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Filandrius"
       ]
     },
@@ -1638,7 +1638,7 @@
     "mana": "23",
     "description": "Une météorite s'abat sur la cible (RD bibliothèque)",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Filandrius"
       ]
     },
@@ -1658,7 +1658,7 @@
     "price": "360",
     "description": "Augmente l'attaque de 1000, CAss de 30, CP de 25, TA de 35, Force de 400-500 +20% de la force du lanceur. Diminue la CA de 200, les résist air eau feu et nécro de 100, l'esquive de 1500 et Parade de 50.Dissipe les sorts Enchevêtrement et Racines Vénéneuses.Durée : 7 secondes.Le sort ne peut être lancé qu'une fois par minute, seulement sur soi-même et n'est pas cumulable avec \"Cri de Puissance\".",
     "npc": {
-      "drakeIsland": [
+      "drakeisland": [
         "Un puissant guerrier, Est du désert de DI"
       ]
     },
@@ -1678,7 +1678,7 @@
     "price": "89.115",
     "description": "Sort de Terre - Augmente la résistance à l'air du lanceur.Durée 1 minutes",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Kalezit, renfoncement montagneux \nau sud de l'entrée du territoire des railleuses de RD (640, 2315, 0)"
       ]
     },
@@ -1718,7 +1718,7 @@
     "price": "107.028",
     "description": "",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Etheanan (Une maison au nord-ouest du lac des tarentules, RD)"
       ]
     },
@@ -1798,7 +1798,7 @@
     "price": "175.700",
     "description": "sort d'air - Téléporte le lanceur après 10 secondes vers Niève. Inflige des dégâts mentaux retirant presque tous les points de vie du lanceur.",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Kalezit, renfoncement montagneux \nau sud de l'entrée du territoire des railleuses de RD (640, 2315, 0)"
       ]
     },
@@ -1818,7 +1818,7 @@
     "price": "175.700",
     "description": "sort d'air - Téléporte le lanceur après 10 secondes vers Drake Island.",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Kalezit, renfoncement montagneux \nau sud de l'entrée du territoire des railleuses de RD (640, 2315, 0)"
       ]
     },
@@ -2077,7 +2077,7 @@
     "price": "",
     "description": "Augmente l'attaque de 1000, CAss CP et TA de 10, la résistance terre de 200, la force de 200/250 plus 10% de la force du lanceur.Diminue la CA de 200, les résistances eau feu air nécro de 100, l'esquive de 1500 et Parade de 50.Dissipe les sorts Enchevêtrement et racines vénéneuses.Durée 7 secondes.",
     "npc": {
-      "drakeIsland": [
+      "drakeisland": [
         "Oscoor Kayle, maison au Nord-Ouest de DI, (754,1143,3)"
       ]
     },
@@ -2093,7 +2093,7 @@
     "price": "377.728",
     "description": "",
     "npc": {
-      "drakeIsland": [
+      "drakeisland": [
         "Cassandre, ilot à l'Est-Nord-Est de DI"
       ]
     },
@@ -2233,7 +2233,7 @@
     "price": "549.108",
     "description": "Sort d'Air mental",
     "npc": {
-      "ravensDust": [
+      "ravensdust": [
         "Kalezit, renfoncement montagneux au sud de l'entrée du territoire des railleuses de RD (640, 2315, 0)"
       ]
     },

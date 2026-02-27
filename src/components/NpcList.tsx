@@ -37,10 +37,12 @@ const NpcCard = ({ npc }: { npc: NPC }) => {
                     </div>
 
                     <div className="flex flex-wrap gap-2 mt-4">
-                        <div className="flex items-center gap-1.5 px-3 py-1 bg-slate-900 border border-slate-800 rounded-lg">
-                            <Compass size={12} className="text-amber-500" />
-                            <span className="text-[10px] font-black uppercase tracking-wider text-slate-400">{npc.zone}</span>
-                        </div>
+                        {npc.zone.map((z) => (
+                            <div key={z} className="flex items-center gap-1.5 px-3 py-1 bg-slate-900 border border-slate-800 rounded-lg">
+                                <Compass size={12} className="text-amber-500" />
+                                <span className="text-[10px] font-black uppercase tracking-wider text-slate-400">{z}</span>
+                            </div>
+                        ))}
                     </div>
 
                     <p className="mt-4 text-slate-400 text-sm leading-relaxed min-h-[3rem]">
@@ -98,7 +100,7 @@ const NpcList: React.FC<NpcListProps> = ({ npcs }) => {
     const [itemsPerPage, setItemsPerPage] = useState(24);
 
     const zones = useMemo(() => {
-        const uniqueZones = new Set(sourceData.map(n => n.zone));
+        const uniqueZones = new Set(sourceData.flatMap(n => n.zone));
         return ['All', ...Array.from(uniqueZones).sort()];
     }, [sourceData]);
 
@@ -106,7 +108,7 @@ const NpcList: React.FC<NpcListProps> = ({ npcs }) => {
         let results = sourceData;
 
         if (selectedZone !== 'All') {
-            results = results.filter(n => n.zone === selectedZone);
+            results = results.filter(n => n.zone.includes(selectedZone));
         }
 
         if (searchQuery) {
