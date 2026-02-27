@@ -1,7 +1,9 @@
 [
   {
     "name": "Terreur des écuries",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -9,7 +11,9 @@
   },
   {
     "name": "Abeille tueuse",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "521.1520.0",
       "527.1522.0",
@@ -101,7 +105,9 @@
   },
   {
     "name": "Abominable skraug",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -109,7 +115,9 @@
   },
   {
     "name": "Abomination momifiée",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "130.2774.1",
       "139.2764.1",
@@ -180,7 +188,9 @@
   },
   {
     "name": "Acolyte",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "144.2768.1",
       "131.2740.1",
@@ -255,7 +265,9 @@
   },
   {
     "name": "Acolytes",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -266,7 +278,9 @@
   },
   {
     "name": "Adepte corrompu",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Potion de guérison légère",
       "Butin de la corruption"
@@ -304,7 +318,9 @@
   },
   {
     "name": "Adorateur",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [],
     "exp": "4062",
     "gold": "N/A",
@@ -334,7 +350,9 @@
   },
   {
     "name": "Aelys",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -342,7 +360,9 @@
   },
   {
     "name": "Agrenarok",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Glande nauséabonde"
@@ -352,7 +372,9 @@
   },
   {
     "name": "Al Owinn",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "2717.2179.1"
     ],
@@ -364,7 +386,9 @@
   },
   {
     "name": "Alanara'ak",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "drops": [
       "Viscères du profane",
       "Orbe de pureté",
@@ -376,7 +400,9 @@
   },
   {
     "name": "Aleydd",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -384,7 +410,9 @@
   },
   {
     "name": "Alfrid Bécher",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -392,7 +420,9 @@
   },
   {
     "name": "Amalgame de chair",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Essence de regret",
@@ -403,7 +433,9 @@
   },
   {
     "name": "Amalrik",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -411,7 +443,9 @@
   },
   {
     "name": "Ame damnée",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -424,7 +458,9 @@
   },
   {
     "name": "Ame en perdition",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "2304.1526.1",
       "2316.1538.1",
@@ -450,7 +486,9 @@
   },
   {
     "name": "Ame errante",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -462,7 +500,9 @@
   },
   {
     "name": "Amyre",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -470,7 +510,9 @@
   },
   {
     "name": "Ancien chef",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -478,7 +520,9 @@
   },
   {
     "name": "Answald",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -486,7 +530,9 @@
   },
   {
     "name": "Anthropophage",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "478.1757.1",
       "454.1767.1",
@@ -540,7 +586,9 @@
   },
   {
     "name": "Antilope",
-    "location": "Partout",
+    "location": [
+      "Partout"
+    ],
     "coordinates": [
       "2743.156.0",
       "2817.170.0",
@@ -733,7 +781,9 @@
   },
   {
     "name": "Apocalypse des sables",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "1123.1187.3",
       "1130.1237.3",
@@ -810,7 +860,9 @@
   },
   {
     "name": "Apparition",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1996.1935.1",
       "1954.1940.1",
@@ -842,7 +894,9 @@
   },
   {
     "name": "Apparition de mana instable",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "2767.1504.1",
       "2751.1521.1",
@@ -900,7 +954,9 @@
   },
   {
     "name": "Arachnide nécrite",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1929.82.2",
       "1872.83.2",
@@ -1067,7 +1123,9 @@
   },
   {
     "name": "Arachnide nemesis",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1929.82.2",
       "1872.83.2",
@@ -1235,7 +1293,9 @@
   },
   {
     "name": "Araf'Kul",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "2654.565.0"
     ],
@@ -1250,7 +1310,9 @@
   },
   {
     "name": "Araignée",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "451.1158.5",
       "464.1166.5",
@@ -1307,7 +1369,9 @@
   },
   {
     "name": "Araignée Charognarde",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "2235.470.5",
       "2248.483.5",
@@ -1350,7 +1414,9 @@
   },
   {
     "name": "Araignée géante",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Soie d'araignée",
       "Potion de guérison légère",
@@ -1383,7 +1449,9 @@
   },
   {
     "name": "Araignée noire",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "720.76.1",
       "783.77.1",
@@ -1424,7 +1492,9 @@
   },
   {
     "name": "Araignée Sabre",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "2235.470.5",
       "2248.483.5",
@@ -1467,7 +1537,9 @@
   },
   {
     "name": "Araignée sabres",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "104 629",
@@ -1475,7 +1547,9 @@
   },
   {
     "name": "Araignée spectrale",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "2490.2103.1",
       "2502.2091.1",
@@ -1516,7 +1590,9 @@
   },
   {
     "name": "Araignée Tourmenteuse",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "2235.470.5",
       "2248.483.5",
@@ -1559,7 +1635,9 @@
   },
   {
     "name": "Araignée venimeuse",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Cape de la forêt",
@@ -1573,7 +1651,9 @@
   },
   {
     "name": "Araignée voleuse de vie",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "2729.1913.0",
       "2789.1917.0",
@@ -1626,7 +1706,9 @@
   },
   {
     "name": "Arbre démoniaque",
-    "location": "Partout",
+    "location": [
+      "Partout"
+    ],
     "coordinates": [
       "1433.122.2",
       "1445.128.2",
@@ -1984,7 +2066,9 @@
   },
   {
     "name": "Arbre faiblard monster",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [],
     "drops": [
       "Plastron d'armure céleste",
@@ -2003,7 +2087,9 @@
   },
   {
     "name": "Arbre Maléfique",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de guérison légère",
@@ -2015,7 +2101,9 @@
   },
   {
     "name": "Arbre Sintelle",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "476.1413.3",
       "554.1434.3",
@@ -2120,7 +2208,9 @@
   },
   {
     "name": "Arbre tombé",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -2128,7 +2218,9 @@
   },
   {
     "name": "Archer aux yeux rouges",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -2136,7 +2228,9 @@
   },
   {
     "name": "Archer centaure",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [],
     "drops": [
       "Poil de Centaure"
@@ -2146,7 +2240,9 @@
   },
   {
     "name": "Archer de l'empire",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -2154,7 +2250,9 @@
   },
   {
     "name": "Archer du royaume",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -2162,7 +2260,9 @@
   },
   {
     "name": "Archer Royal",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -2170,7 +2270,9 @@
   },
   {
     "name": "Archi Draconigus",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Cape de fortification",
@@ -2187,7 +2289,9 @@
   },
   {
     "name": "Archi-Drake",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -2195,7 +2299,9 @@
   },
   {
     "name": "Arpenteur caverneux",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "2591.110.2",
       "2712.129.2",
@@ -2335,7 +2441,9 @@
   },
   {
     "name": "Arpenteur de la nuit",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "269.519.0",
       "280.531.0",
@@ -2431,7 +2539,9 @@
   },
   {
     "name": "Arpenteur des Cryptes",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "144.2768.1",
       "131.2740.1",
@@ -2501,7 +2611,9 @@
   },
   {
     "name": "Arpenteur des ombres",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Cantiques perdu d'Artherk p.2"
     ],
@@ -2511,7 +2623,9 @@
   },
   {
     "name": "Arpenteur forestier",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "2846.1902.0",
       "2710.1905.0",
@@ -2588,7 +2702,9 @@
   },
   {
     "name": "Arsène",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -2596,7 +2712,9 @@
   },
   {
     "name": "Artherkienne capturée",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "2330.1962.0",
       "2283.1966.0",
@@ -2609,7 +2727,9 @@
   },
   {
     "name": "Artisan Orc",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [
       "Rune de la terre"
@@ -2619,7 +2739,9 @@
   },
   {
     "name": "Assassin",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "247.1104.2",
       "1788.994.0",
@@ -2686,7 +2808,9 @@
   },
   {
     "name": "Assassin masqué de Shadeen",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Cimeterre en acier"
     ],
@@ -2696,7 +2820,9 @@
   },
   {
     "name": "Assassin obsidien",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1115.2574.2",
       "1095.2603.2",
@@ -2732,7 +2858,9 @@
   },
   {
     "name": "Atrax",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -2743,7 +2871,9 @@
   },
   {
     "name": "Atrocité",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Potion de guérison légère",
       "Clé de fer"
@@ -2832,7 +2962,9 @@
   },
   {
     "name": "Atrocité affamée",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Clef solide en or"
@@ -2842,7 +2974,9 @@
   },
   {
     "name": "Atrocité mutante",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "561.2576.6"
     ],
@@ -2852,7 +2986,9 @@
   },
   {
     "name": "Aubépine",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -2860,7 +2996,9 @@
   },
   {
     "name": "Automate gardien en métrolite",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de guérison critique",
@@ -2874,7 +3012,9 @@
   },
   {
     "name": "B'Rokals'Tank",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Pierre de mana",
@@ -2887,7 +3027,9 @@
   },
   {
     "name": "B'Ronkhan",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "1932.2393.3",
       "1943.2403.3",
@@ -2961,7 +3103,9 @@
   },
   {
     "name": "B'thastan",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "2800.2428.2",
       "2792.2436.2",
@@ -3025,7 +3169,9 @@
   },
   {
     "name": "B'thonian",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "2808.2436.2",
       "2804.2440.2",
@@ -3045,7 +3191,9 @@
   },
   {
     "name": "B'thurkhan",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "2752.2484.2",
       "2744.2492.2",
@@ -3060,7 +3208,9 @@
   },
   {
     "name": "B'Zerillis",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "892.1385.3",
       "908.1372.3",
@@ -3127,7 +3277,9 @@
   },
   {
     "name": "B'Zerillis énervé",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -3135,7 +3287,9 @@
   },
   {
     "name": "B'Zurkhan",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "486.1426.3",
       "553.1461.3",
@@ -3232,7 +3386,9 @@
   },
   {
     "name": "B'Zurkhan énervé",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -3240,7 +3396,9 @@
   },
   {
     "name": "Baarak Houdaa",
-    "location": "Partout",
+    "location": [
+      "Partout"
+    ],
     "coordinates": [
       "950.294.5",
       "750.522.5"
@@ -3251,7 +3409,9 @@
   },
   {
     "name": "Bâfreur de chair",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "drops": [
       "Parchemin de scellement",
       "Breuvage énergisant"
@@ -3262,7 +3422,9 @@
   },
   {
     "name": "Bâfreur de chair fraîche",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "1532.850.5",
       "1532.860.5",
@@ -3287,7 +3449,9 @@
   },
   {
     "name": "Balor",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "30 486 360",
@@ -3295,7 +3459,9 @@
   },
   {
     "name": "Balork",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Potion de guérison légère",
       "Robe noire flottante",
@@ -3309,7 +3475,9 @@
   },
   {
     "name": "Bane Gwengad",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Anneau d'onyx",
       "Bracelet de force d'ogre",
@@ -3325,7 +3493,9 @@
   },
   {
     "name": "Barde de Guerre",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Épée longue rouillée",
       "Armure de cuir",
@@ -3338,7 +3508,9 @@
   },
   {
     "name": "Barjot",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Autorisation D4",
       "Autorisation H2",
@@ -3350,7 +3522,9 @@
   },
   {
     "name": "Barricade",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -3358,7 +3532,9 @@
   },
   {
     "name": "Bave d'Amnet",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "2646.1703.3",
       "2626.1692.3",
@@ -3435,7 +3611,9 @@
   },
   {
     "name": "Beholder des abysses",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "drops": [
       "Hyperpotion d'esprit clair",
       "Hyperpotion de courage",
@@ -3462,7 +3640,9 @@
   },
   {
     "name": "Bend Hayjes le pourri",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "456.1909.1"
     ],
@@ -3476,7 +3656,9 @@
   },
   {
     "name": "Bergénie",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -3484,7 +3666,9 @@
   },
   {
     "name": "Berserker aux yeux rouges",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -3492,7 +3676,9 @@
   },
   {
     "name": "Bête putride",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1242.2569.2",
       "1300.2579.2",
@@ -3544,7 +3730,9 @@
   },
   {
     "name": "Beuhark",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -3552,7 +3740,9 @@
   },
   {
     "name": "Biche",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "2542.2672.0",
       "2567.2680.0",
@@ -3578,7 +3768,9 @@
   },
   {
     "name": "Blaarg Pedista",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "926.1041.2"
     ],
@@ -3593,7 +3785,9 @@
   },
   {
     "name": "Blob",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Substance acide"
     ],
@@ -3603,7 +3797,9 @@
   },
   {
     "name": "Blobby blop",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "1489.135.0",
       "1513.140.0",
@@ -3660,7 +3856,9 @@
   },
   {
     "name": "Bonhomme de neige maléfique",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "2895.1036.0",
       "2877.1052.0",
@@ -3741,7 +3939,9 @@
   },
   {
     "name": "Boue fétide",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1742.517.2",
       "1697.531.2",
@@ -3791,7 +3991,9 @@
   },
   {
     "name": "Boue rampante",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1742.517.2",
       "1697.531.2",
@@ -3841,7 +4043,9 @@
   },
   {
     "name": "Bouffon morbide",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "105.2310.1"
     ],
@@ -3861,7 +4065,9 @@
   },
   {
     "name": "Bouniak",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "6 400",
@@ -3869,7 +4075,9 @@
   },
   {
     "name": "Bourgeois",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -3877,7 +4085,9 @@
   },
   {
     "name": "Bourgeoise",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -3885,7 +4095,9 @@
   },
   {
     "name": "Brath le Fétide",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "941.1048.2"
     ],
@@ -3901,7 +4113,9 @@
   },
   {
     "name": "Brigand",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "247.1104.2",
       "1788.994.0",
@@ -4158,7 +4372,9 @@
   },
   {
     "name": "Bugar Sakkor",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "1232.2256.0"
     ],
@@ -4172,7 +4388,9 @@
   },
   {
     "name": "Bulldoza",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "375.987.1"
     ],
@@ -4187,7 +4405,9 @@
   },
   {
     "name": "Cadavre animé",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Anneau de confiance",
       "Os de squelette",
@@ -4407,7 +4627,9 @@
   },
   {
     "name": "Cadavre embaumé",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Clef d'Ascension",
       "Costume des morts",
@@ -4423,7 +4645,9 @@
   },
   {
     "name": "Cadavre réanimé",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -4431,7 +4655,9 @@
   },
   {
     "name": "Cadavre rôdant",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "1254.2173.1",
       "1264.2185.1",
@@ -4519,7 +4745,9 @@
   },
   {
     "name": "Calyssandre",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -4527,7 +4755,9 @@
   },
   {
     "name": "Caporal de l'armée impériale",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -4535,7 +4765,9 @@
   },
   {
     "name": "Caporal de l'armée royale",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -4543,7 +4775,9 @@
   },
   {
     "name": "Capucine",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -4551,7 +4785,9 @@
   },
   {
     "name": "Carcasse animée",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "117.668.5"
     ],
@@ -4564,7 +4800,9 @@
   },
   {
     "name": "Carnassier putride",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "812",
@@ -4572,7 +4810,9 @@
   },
   {
     "name": "Cassetête",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "338.623.1"
     ],
@@ -4589,7 +4829,9 @@
   },
   {
     "name": "Cécidomyie",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana"
@@ -4599,7 +4841,9 @@
   },
   {
     "name": "Celleniem",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Boyaux d'horreur railleuse"
@@ -4609,7 +4853,9 @@
   },
   {
     "name": "Cemen",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
@@ -4621,7 +4867,9 @@
   },
   {
     "name": "Centaure du Manoir",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "2416.2280.1",
       "2400.2266.1",
@@ -4663,7 +4911,9 @@
   },
   {
     "name": "Cerberus",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "drops": [
       "Côte de Cerberus",
       "Ligaments de Cerberus",
@@ -4680,7 +4930,9 @@
   },
   {
     "name": "Chaman centaure",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [],
     "drops": [
       "Poil de Centaure"
@@ -4690,7 +4942,9 @@
   },
   {
     "name": "Chaman minotaure",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "441.714.1",
       "401.717.1",
@@ -4765,7 +5019,9 @@
   },
   {
     "name": "Chaman orc",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "847.966.2",
       "857.966.2",
@@ -4845,7 +5101,9 @@
   },
   {
     "name": "Champion centaure",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Anneau du Gladiateur",
       "Bouclier de mithril",
@@ -4863,7 +5121,9 @@
   },
   {
     "name": "Chanteclair",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -4871,7 +5131,9 @@
   },
   {
     "name": "Chapardeur",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "269.519.0",
       "280.531.0",
@@ -4966,7 +5228,9 @@
   },
   {
     "name": "Charognard rampant",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "648.376.1",
       "502.405.1",
@@ -5007,7 +5271,9 @@
   },
   {
     "name": "Charwinguhm",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "1290.2799.0"
     ],
@@ -5025,7 +5291,9 @@
   },
   {
     "name": "Chasse-nuit",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "773.938.1",
       "774.938.1",
@@ -5164,7 +5432,9 @@
   },
   {
     "name": "Chasseur de la nuit",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Source d'obscurité"
     ],
@@ -5174,7 +5444,9 @@
   },
   {
     "name": "Chat",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "501.767.5",
       "442.796.5",
@@ -5197,7 +5469,9 @@
   },
   {
     "name": "Chat blanc",
-    "location": "Partout",
+    "location": [
+      "Partout"
+    ],
     "coordinates": [
       "809.493.4"
     ],
@@ -5207,7 +5481,9 @@
   },
   {
     "name": "Chat domestique",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "1830.1628.0",
       "1860.1635.0",
@@ -5233,7 +5509,9 @@
   },
   {
     "name": "Chat noir",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "2858.1472.2",
       "346.818.5",
@@ -5257,7 +5535,9 @@
   },
   {
     "name": "Chat Peau",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -5265,7 +5545,9 @@
   },
   {
     "name": "Chat sauvage",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -5273,7 +5555,9 @@
   },
   {
     "name": "Chat tigré",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "376.715.5",
       "379.692.5",
@@ -5294,7 +5578,9 @@
   },
   {
     "name": "Chaton enragé",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -5302,7 +5588,9 @@
   },
   {
     "name": "Chaudron",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -5310,7 +5598,9 @@
   },
   {
     "name": "Chaudron nauséabon",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -5318,7 +5608,9 @@
   },
   {
     "name": "Chauve-souris",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Torche",
       "Potion de guérison légère"
@@ -5351,7 +5643,9 @@
   },
   {
     "name": "Chauve-souris charognarde",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "496.208.1",
       "548.216.1",
@@ -5381,7 +5675,9 @@
   },
   {
     "name": "Chauve-souris des cavernes",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Torche"
     ],
@@ -5391,7 +5687,9 @@
   },
   {
     "name": "Chauve-souris farceuse",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 563",
@@ -5399,7 +5697,9 @@
   },
   {
     "name": "Chauve-souris géante",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "330.60.1",
       "309.66.1",
@@ -5710,7 +6010,9 @@
   },
   {
     "name": "Chauve-souris mort-vivante",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "300.21.1",
       "292.31.1",
@@ -5730,7 +6032,9 @@
   },
   {
     "name": "Chauve-souris Necrophage",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "130.2774.1",
       "139.2764.1",
@@ -5801,7 +6105,9 @@
   },
   {
     "name": "Chauve-souris spectrale",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "646.337.1",
       "637.350.1",
@@ -5841,7 +6147,9 @@
   },
   {
     "name": "Chauve-souris translucide",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "2591.110.2",
       "2712.129.2",
@@ -5976,7 +6284,9 @@
   },
   {
     "name": "Chauve-souris vampire",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "803.1421.2",
       "834.1435.2",
@@ -6034,7 +6344,9 @@
   },
   {
     "name": "Chauves-souris des cryptes",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "260",
@@ -6042,7 +6354,9 @@
   },
   {
     "name": "Chauves-souris géantes",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Torche",
@@ -6053,7 +6367,9 @@
   },
   {
     "name": "Chef de guerre gobelin",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "1069.91.1",
       "1106.111.1",
@@ -6191,7 +6507,9 @@
   },
   {
     "name": "Chef de guerre Kobold",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Chroniques de Ruikuk l'éclaireur"
@@ -6201,7 +6519,9 @@
   },
   {
     "name": "Chef de la garde Ardens",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -6209,7 +6529,9 @@
   },
   {
     "name": "Chef gobelin",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "1054.93.1",
       "1042.108.1",
@@ -6255,7 +6577,9 @@
   },
   {
     "name": "Chef minotaure",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "433.737.1",
       "390.740.1",
@@ -6339,7 +6663,9 @@
   },
   {
     "name": "Chef orc renégat",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Anneau d'or",
       "Bouclier rond",
@@ -6355,7 +6681,9 @@
   },
   {
     "name": "Chêne Centenaire",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -6363,7 +6691,10 @@
   },
   {
     "name": "Cheval en fuite",
-    "location": "Ile de Bane, Raven's Dust",
+    "location": [
+      "Ile de Bane",
+      "Raven's Dust"
+    ],
     "coordinates": [
       "204.1863.0",
       "233.1822.0",
@@ -6379,7 +6710,9 @@
   },
   {
     "name": "Cheval sauvage",
-    "location": "Partout",
+    "location": [
+      "Partout"
+    ],
     "coordinates": [
       "1074.105.0",
       "2766.121.0",
@@ -6707,7 +7040,9 @@
   },
   {
     "name": "Chevalier",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -6715,7 +7050,9 @@
   },
   {
     "name": "Chevalier Draconis",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1668.1931.1",
       "1660.1939.1",
@@ -6772,7 +7109,9 @@
   },
   {
     "name": "Chevalier du Soleil",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Epée de Lumière",
       "Pierre de mana",
@@ -6785,7 +7124,9 @@
   },
   {
     "name": "Chevalier spectral",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "258.93.0",
       "282.98.0",
@@ -6852,7 +7193,9 @@
   },
   {
     "name": "Chevalier ténébreux",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "drops": [
       "Essence spectrale",
       "Eclat d'âme factice",
@@ -6866,7 +7209,9 @@
   },
   {
     "name": "Chien de sang",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "750.952.1",
       "751.952.1",
@@ -7033,7 +7378,9 @@
   },
   {
     "name": "Chien-loup",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "361.383.0",
       "498.460.0",
@@ -7086,7 +7433,9 @@
   },
   {
     "name": "Clerc des ombres",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Emeraude brute",
       "Heaume hurlant d'Ogrimar",
@@ -7101,7 +7450,9 @@
   },
   {
     "name": "Clerc Hykal",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "677.1905.3",
       "590.1818.3",
@@ -7124,7 +7475,9 @@
   },
   {
     "name": "Cloriande de Bollour",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -7132,7 +7485,9 @@
   },
   {
     "name": "Cobra",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Exuvie de Cobra"
     ],
@@ -7142,7 +7497,9 @@
   },
   {
     "name": "Cobra céleste",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Clef d'Ascension",
       "Emeraude brute",
@@ -7155,7 +7512,9 @@
   },
   {
     "name": "Cobra royal de Jade",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "2754.1940.0",
       "2816.1949.0",
@@ -7191,7 +7550,9 @@
   },
   {
     "name": "Cochon",
-    "location": "Partout",
+    "location": [
+      "Partout"
+    ],
     "coordinates": [
       "640.704.4",
       "644.708.4",
@@ -7205,7 +7566,9 @@
   },
   {
     "name": "Combattant de la foi",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Epée de Lumière",
       "Potion de guérison légère",
@@ -7219,7 +7582,9 @@
   },
   {
     "name": "Comte Hémogobelin",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "371.2523.2"
     ],
@@ -7238,7 +7603,9 @@
   },
   {
     "name": "Corps enrubanné",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "320",
@@ -7246,7 +7613,9 @@
   },
   {
     "name": "Corps rôdant",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "883.2247.1",
       "1360.2284.1",
@@ -7374,7 +7743,9 @@
   },
   {
     "name": "Corsaire mort-vivant",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Aigue-marine finement taillée",
@@ -7386,7 +7757,9 @@
   },
   {
     "name": "Crache Flamme",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -7399,7 +7772,9 @@
   },
   {
     "name": "Crânefeu",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "553.2117.1"
     ],
@@ -7416,7 +7791,9 @@
   },
   {
     "name": "Créature bannie",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "496.208.1",
       "548.216.1",
@@ -7477,7 +7854,9 @@
   },
   {
     "name": "Creature infernale",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Énergie infernale"
@@ -7487,7 +7866,9 @@
   },
   {
     "name": "Croc Blanc",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "drops": [
       "Peau de loup solitaire",
       "Patte baladeuse"
@@ -7498,7 +7879,9 @@
   },
   {
     "name": "Crotale",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Bouclier démoniaque",
@@ -7510,7 +7893,9 @@
   },
   {
     "name": "Crupellaire",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -7521,7 +7906,12 @@
   },
   {
     "name": "Cupidonitos",
-    "location": "ARAKAS / RAVEN'S DUST / STONEHEIM / DRAKE ISLAND",
+    "location": [
+      "ARAKAS",
+      "RAVEN'S DUST",
+      "STONEHEIM",
+      "DRAKE ISLAND"
+    ],
     "coordinates": [
       "2860.1190.0",
       "2780.880.0",
@@ -7566,7 +7956,9 @@
   },
   {
     "name": "Cupidonitos transformé",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Parchemin d'expérience de dix minutes"
@@ -7576,7 +7968,9 @@
   },
   {
     "name": "Daghild",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -7584,7 +7978,9 @@
   },
   {
     "name": "Dalle 1",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -7592,7 +7988,9 @@
   },
   {
     "name": "Dalle 2",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -7600,7 +7998,9 @@
   },
   {
     "name": "Dalle 3",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -7608,7 +8008,9 @@
   },
   {
     "name": "Dalle Bavarde",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -7616,7 +8018,9 @@
   },
   {
     "name": "Dalle Eboulement",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -7624,7 +8028,9 @@
   },
   {
     "name": "Dalle Ench",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -7632,7 +8038,9 @@
   },
   {
     "name": "Dalle étrange",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "2727.451.0",
       "555.1324.3",
@@ -7651,7 +8059,9 @@
   },
   {
     "name": "Dalle Explosive",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -7659,7 +8069,9 @@
   },
   {
     "name": "Dalle Mob Pioche",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -7667,7 +8079,9 @@
   },
   {
     "name": "Dalle Piégée",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -7675,7 +8089,9 @@
   },
   {
     "name": "Dalle Poison",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -7683,7 +8099,9 @@
   },
   {
     "name": "Dalle Trou",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -7691,7 +8109,9 @@
   },
   {
     "name": "Dayvor Thou",
-    "location": "Partout",
+    "location": [
+      "Partout"
+    ],
     "coordinates": [
       "1382.324.5"
     ],
@@ -7701,7 +8121,9 @@
   },
   {
     "name": "Déchet organique",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Fiole d'éther"
@@ -7711,7 +8133,9 @@
   },
   {
     "name": "Déchets organiques",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "419.462.2",
       "215.482.2",
@@ -7728,7 +8152,9 @@
   },
   {
     "name": "Défenseur de ruche",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "2278.317.2",
       "2330.337.2",
@@ -7834,7 +8260,9 @@
   },
   {
     "name": "Delwobble l'invocateur fou",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Anneau de lumière",
       "Potion de mana",
@@ -7848,7 +8276,9 @@
   },
   {
     "name": "Démon",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "200 000",
@@ -7856,7 +8286,9 @@
   },
   {
     "name": "Demon berserker fou",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Bouclier de mithril",
       "Grenat brut",
@@ -7872,7 +8304,9 @@
   },
   {
     "name": "Démon d'ossements",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "258.93.0",
       "282.98.0",
@@ -7943,7 +8377,9 @@
   },
   {
     "name": "Démon de la terreur",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1477.1793.1"
     ],
@@ -7955,7 +8391,9 @@
   },
   {
     "name": "Démon des Ombres",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1438.2730.2"
     ],
@@ -7970,7 +8408,9 @@
   },
   {
     "name": "Démon des ténèbres",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1475.1514.1"
     ],
@@ -7982,7 +8422,9 @@
   },
   {
     "name": "Démon du chaos",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1755.1794.1"
     ],
@@ -7994,7 +8436,9 @@
   },
   {
     "name": "Démon Ignoble",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Pierre de mana",
@@ -8008,7 +8452,9 @@
   },
   {
     "name": "Démon Inculte",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "601.1345.3",
       "642.1401.3",
@@ -8060,7 +8506,9 @@
   },
   {
     "name": "Demon inculte",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "601.1345.3",
       "642.1401.3",
@@ -8112,7 +8560,9 @@
   },
   {
     "name": "Démon Protecteur",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de guérison critique",
@@ -8127,7 +8577,9 @@
   },
   {
     "name": "Démon Putréfié",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -8135,7 +8587,9 @@
   },
   {
     "name": "Demon Skull",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Yeux de tarentule",
@@ -8147,7 +8601,9 @@
   },
   {
     "name": "Démon terreux",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "1906.2206.3",
       "1920.2355.3",
@@ -8180,7 +8636,9 @@
   },
   {
     "name": "Demonicon",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "2431.545.0",
       "2417.554.0",
@@ -8208,7 +8666,9 @@
   },
   {
     "name": "Demonicon Féroce",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Dent de Démonicon"
@@ -8218,7 +8678,9 @@
   },
   {
     "name": "Dérangé",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Autorisation C5",
@@ -8229,7 +8691,9 @@
   },
   {
     "name": "Désespéré",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Bandelettes de momie",
       "Armes de Ciel d'Argent"
@@ -8240,7 +8704,9 @@
   },
   {
     "name": "Desséché",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "442.164.1"
     ],
@@ -8257,7 +8723,9 @@
   },
   {
     "name": "Diablotin",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1542.372.2"
     ],
@@ -8276,7 +8744,9 @@
   },
   {
     "name": "Diacre infâme",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -8287,7 +8757,9 @@
   },
   {
     "name": "Dinde sauvage",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [],
     "drops": [
       "Dinde"
@@ -8297,7 +8769,9 @@
   },
   {
     "name": "Disciple de l'ombre",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "1434.54.1",
       "1455.63.1",
@@ -8501,7 +8975,9 @@
   },
   {
     "name": "Disciple du sombre",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -8509,7 +8985,9 @@
   },
   {
     "name": "Doktor Vertebrus",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Casse-tête",
       "Pierre de mana",
@@ -8523,7 +9001,9 @@
   },
   {
     "name": "Dorken le Putride",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Anneau d'or",
       "Bouclier rond",
@@ -8538,7 +9018,9 @@
   },
   {
     "name": "Dr. Van Pyre",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Buveur de sang",
       "Costume des morts",
@@ -8553,7 +9035,9 @@
   },
   {
     "name": "Draco",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "104 629",
@@ -8561,7 +9045,9 @@
   },
   {
     "name": "Draco 1",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "69 792",
@@ -8569,7 +9055,9 @@
   },
   {
     "name": "Draco 2",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "87 205",
@@ -8577,7 +9065,9 @@
   },
   {
     "name": "Draco guerrier",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "1 802 386",
@@ -8585,7 +9075,9 @@
   },
   {
     "name": "Draco lieutenant",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "7 515 239",
@@ -8593,7 +9085,9 @@
   },
   {
     "name": "Draco lieutenant 1",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "6 262 610",
@@ -8601,7 +9095,9 @@
   },
   {
     "name": "Draconigus invoqué",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Pierre de mana",
@@ -8616,7 +9112,9 @@
   },
   {
     "name": "Draconigus Invoqué Majeur",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "1926.990.4"
     ],
@@ -8636,7 +9134,9 @@
   },
   {
     "name": "Dragon Ardalonn",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "1610.1935.2"
     ],
@@ -8646,7 +9146,9 @@
   },
   {
     "name": "Dragon Ashardalonn",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Robe d'ArchMagi",
       "Épée d'argent",
@@ -8661,7 +9163,9 @@
   },
   {
     "name": "Dragon Dasrinn",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Chapeau du jeune magicien",
       "Cape de l'écorché",
@@ -8676,7 +9180,9 @@
   },
   {
     "name": "Dragon Dimith Karjit",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Cape ornée de runes",
       "Dent de Dimith",
@@ -8690,7 +9196,9 @@
   },
   {
     "name": "Dragon effrayant",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -8698,7 +9206,9 @@
   },
   {
     "name": "Dragon Freidaclan",
-    "location": "Raven's Dust (Boss)",
+    "location": [
+      "Raven's Dust (Boss)"
+    ],
     "drops": [
       "Épée d'argent",
       "Griffe argentée",
@@ -8712,7 +9222,9 @@
   },
   {
     "name": "Dragon Livoxdrinn",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Griffe de Livoxdrinn",
       "Epée bâtarde d'adamantium",
@@ -8726,7 +9238,9 @@
   },
   {
     "name": "Dragon Liridell Mirev",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "1123.961.3"
     ],
@@ -8736,7 +9250,9 @@
   },
   {
     "name": "Dragon Yeridaj",
-    "location": "Nieve",
+    "location": [
+      "Nieve"
+    ],
     "drops": [
       "Bottes en peau de lézard blanc",
       "Collier de diamants",
@@ -8750,7 +9266,9 @@
   },
   {
     "name": "Dragon Zudinm",
-    "location": "Stoneheim (Boss)",
+    "location": [
+      "Stoneheim (Boss)"
+    ],
     "drops": [
       "Dent de Zudinm",
       "Tiare dorée d'émeraudes"
@@ -8763,7 +9281,9 @@
   },
   {
     "name": "Dragonnet",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "2477.2618.1",
       "2480.2619.1",
@@ -8869,7 +9389,9 @@
   },
   {
     "name": "Drake Akaïste",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "941.1024.3",
       "944.1016.3",
@@ -8937,7 +9459,9 @@
   },
   {
     "name": "Drake akaiste",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "941.1024.3",
       "944.1016.3",
@@ -9005,7 +9529,9 @@
   },
   {
     "name": "Drake Arkel",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "1840.1170.4",
       "1833.1154.4",
@@ -9032,7 +9558,9 @@
   },
   {
     "name": "Drake B'zurkhan",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "drops": [
       "Essence de B'zurkhan",
       "Oeuf de B'Zurkhan",
@@ -9045,7 +9573,9 @@
   },
   {
     "name": "Drake Dixtor",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Fiole d'eau cristalline",
       "Pierre de mana",
@@ -9057,7 +9587,9 @@
   },
   {
     "name": "Drake Dixtor Supérieur",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "1767.1086.4",
       "1932.1129.4",
@@ -9079,7 +9611,9 @@
   },
   {
     "name": "Drake Envahisseur",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Pierre de mana",
@@ -9095,7 +9629,9 @@
   },
   {
     "name": "Drake Funeste",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -9103,7 +9639,9 @@
   },
   {
     "name": "Drake inférieur",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -9111,7 +9649,9 @@
   },
   {
     "name": "Drake K'raztor",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "1840.1170.4",
       "1833.1154.4",
@@ -9138,7 +9678,9 @@
   },
   {
     "name": "Drake supérieur",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -9146,7 +9688,9 @@
   },
   {
     "name": "Drake terreux",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "1949.2304.3",
       "1970.2334.3",
@@ -9177,7 +9721,9 @@
   },
   {
     "name": "Drake Vigrator",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "520.1309.3",
       "520.1401.3",
@@ -9263,7 +9809,9 @@
   },
   {
     "name": "Dromadaire",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Pelote de laine angora"
@@ -9273,7 +9821,9 @@
   },
   {
     "name": "Druide malefique",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -9281,7 +9831,9 @@
   },
   {
     "name": "Druide maléfique",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -9289,7 +9841,9 @@
   },
   {
     "name": "Dwarthon Lithin",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Cimeterre en acier trempé"
     ],
@@ -9299,7 +9853,9 @@
   },
   {
     "name": "Dworkin",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -9307,7 +9863,9 @@
   },
   {
     "name": "Ecaille Brillante",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
@@ -9320,7 +9878,9 @@
   },
   {
     "name": "Ecaille viciée",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "1264.1841.1",
       "1052.1850.1",
@@ -9381,7 +9941,9 @@
   },
   {
     "name": "Echalas de vertèbres",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "130.2774.1",
       "139.2764.1",
@@ -9452,7 +10014,9 @@
   },
   {
     "name": "Eclaireur aux yeux rouges",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -9460,7 +10024,9 @@
   },
   {
     "name": "Éclaireur gobelin",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "1259.1938.2",
       "1279.1950.2",
@@ -9942,7 +10508,9 @@
   },
   {
     "name": "Eclaireur Gobelin de l'Oeil",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -9950,7 +10518,9 @@
   },
   {
     "name": "Eclaireur Olphen",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "10 001",
@@ -9958,7 +10528,9 @@
   },
   {
     "name": "Éclaireur orc",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "847.966.2",
       "857.966.2",
@@ -10022,7 +10594,9 @@
   },
   {
     "name": "Ecumeur mort-vivant",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Diamant brut",
@@ -10034,7 +10608,9 @@
   },
   {
     "name": "Edgar",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Clé de fer",
       "Torche"
@@ -10045,7 +10621,9 @@
   },
   {
     "name": "Edgar le malheureux",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "10 000",
@@ -10053,7 +10631,9 @@
   },
   {
     "name": "Egéus",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -10061,7 +10641,9 @@
   },
   {
     "name": "Elémental du Temps",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "2816.2200.2",
       "2828.2204.2",
@@ -10088,7 +10670,9 @@
   },
   {
     "name": "Eliot",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -10096,7 +10680,9 @@
   },
   {
     "name": "Elladora",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -10104,7 +10690,9 @@
   },
   {
     "name": "Elséar",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -10112,7 +10700,9 @@
   },
   {
     "name": "Embaumé",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "469.2622.6",
       "463.2630.6",
@@ -10159,7 +10749,9 @@
   },
   {
     "name": "Embrasiff",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Roche magmatique"
@@ -10169,7 +10761,9 @@
   },
   {
     "name": "Empereur Olphen",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "200 001",
@@ -10177,7 +10771,9 @@
   },
   {
     "name": "Ennemi des Ombres",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1598.451.2",
       "1588.456.2",
@@ -10231,7 +10827,9 @@
   },
   {
     "name": "Ent aux yeux rouges",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -10239,7 +10837,9 @@
   },
   {
     "name": "Ent Elemac",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "1844.1172.4",
       "1829.1166.4",
@@ -10295,7 +10895,9 @@
   },
   {
     "name": "Ent furieu",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Parchemin d'Astoriel",
@@ -10313,7 +10915,9 @@
   },
   {
     "name": "Ent léthifère",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -10325,7 +10929,9 @@
   },
   {
     "name": "Ent maléfique",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de guérison légère",
@@ -10336,7 +10942,9 @@
   },
   {
     "name": "Ent méprisable",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -10344,7 +10952,9 @@
   },
   {
     "name": "Ent Pernicieux",
-    "location": "Urtanar",
+    "location": [
+      "Urtanar"
+    ],
     "drops": [
       "Flacon renfermant des lucioles"
     ],
@@ -10354,7 +10964,9 @@
   },
   {
     "name": "Ent poisseux",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -10365,7 +10977,9 @@
   },
   {
     "name": "Envoyé de Sir Al Owinn",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Parchemin d'expérience de dix minutes",
@@ -10376,7 +10990,9 @@
   },
   {
     "name": "Epeire",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Morceau de calcaire brut",
@@ -10388,7 +11004,9 @@
   },
   {
     "name": "Epeire des bois",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Malachite brute",
@@ -10400,7 +11018,9 @@
   },
   {
     "name": "Epeire ténébreuse",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -10411,7 +11031,9 @@
   },
   {
     "name": "Epeire venimeuse",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Morceau de calcaire brut",
@@ -10423,7 +11045,9 @@
   },
   {
     "name": "Erehrt de Quaerere",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -10431,7 +11055,9 @@
   },
   {
     "name": "Esclavagiste de l'Oeil",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -10439,7 +11065,9 @@
   },
   {
     "name": "Esclave démoniaque",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -10447,7 +11075,9 @@
   },
   {
     "name": "Esclave Gobelin",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "2 344",
@@ -10455,7 +11085,9 @@
   },
   {
     "name": "Esprit frappeur",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Sachet de Damiana"
@@ -10465,7 +11097,9 @@
   },
   {
     "name": "Esprit malicieux",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -10473,7 +11107,9 @@
   },
   {
     "name": "Esprit rédempteur",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -10481,7 +11117,9 @@
   },
   {
     "name": "Essence de regret",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "drops": [
       "Essence de regret",
       "Glande de l'enragé"
@@ -10492,7 +11130,9 @@
   },
   {
     "name": "Ethana",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "drops": [
       "Bourrasque déchainée"
     ],
@@ -10502,7 +11142,9 @@
   },
   {
     "name": "Ethoan",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "drops": [
       "Opuscule du Châtiment Amoureux"
     ],
@@ -10512,7 +11154,9 @@
   },
   {
     "name": "Eugénie",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -10520,7 +11164,9 @@
   },
   {
     "name": "Evangelie",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -10528,7 +11174,9 @@
   },
   {
     "name": "Eventreur Kraanian",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Tesson de cristal jaune"
     ],
@@ -10542,7 +11190,9 @@
   },
   {
     "name": "Expérience ratée",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "169.2597.6",
       "179.2597.6",
@@ -10660,7 +11310,9 @@
   },
   {
     "name": "Ezalielle",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -10668,7 +11320,9 @@
   },
   {
     "name": "Facteur",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -10676,7 +11330,9 @@
   },
   {
     "name": "Fahire",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -10684,7 +11340,9 @@
   },
   {
     "name": "Fantassin Gobelin de l'Oeil",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -10692,7 +11350,9 @@
   },
   {
     "name": "Fantôme",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "481.1203.5",
       "478.1179.5",
@@ -10704,7 +11364,9 @@
   },
   {
     "name": "Fantôme maléfique",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "2895.1036.0",
       "2877.1052.0",
@@ -10785,7 +11447,9 @@
   },
   {
     "name": "Farfadet Farceur",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "50 001",
@@ -10793,7 +11457,9 @@
   },
   {
     "name": "Fataliste",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "977.1588.2",
       "973.1606.2",
@@ -10855,7 +11521,9 @@
   },
   {
     "name": "Faucheur",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1638.498.2"
     ],
@@ -10874,7 +11542,9 @@
   },
   {
     "name": "Faucheur Noctris",
-    "location": "Île de Lune",
+    "location": [
+      "Île de Lune"
+    ],
     "drops": [
       "Scalp de Moon Tug",
       "Bouclier des Hautes Créatures",
@@ -10889,7 +11559,9 @@
   },
   {
     "name": "Feuillu fangeux",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -10900,7 +11572,9 @@
   },
   {
     "name": "Fidèle corrompu",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Potion de guérison légère",
       "Butin de la corruption"
@@ -10932,7 +11606,9 @@
   },
   {
     "name": "Fidèle d'Alanara'ak",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Bobine de fil spirituel",
@@ -10943,7 +11619,9 @@
   },
   {
     "name": "Fidèle de Jander",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
@@ -10955,7 +11633,9 @@
   },
   {
     "name": "Fillette Noel",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -10963,7 +11643,9 @@
   },
   {
     "name": "Fine lame Noctris",
-    "location": "Île de Lune",
+    "location": [
+      "Île de Lune"
+    ],
     "drops": [
       "Scalp de Moon Tug",
       "Armure de plaques",
@@ -10977,7 +11659,9 @@
   },
   {
     "name": "Flamboyant",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "2538.1419.1",
       "2536.1431.1",
@@ -11044,7 +11728,9 @@
   },
   {
     "name": "Florentin",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -11052,7 +11738,9 @@
   },
   {
     "name": "Fou",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Anneau du berserker",
       "Autorisation C2",
@@ -11068,7 +11756,9 @@
   },
   {
     "name": "Fourche Langue",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -11081,7 +11771,9 @@
   },
   {
     "name": "Fracasseur",
-    "location": "Stoneheim (Minotaures)",
+    "location": [
+      "Stoneheim (Minotaures)"
+    ],
     "drops": [
       "Fémur de minotaure"
     ],
@@ -11091,7 +11783,9 @@
   },
   {
     "name": "Frelon perfide",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Cire de guêpe",
@@ -11102,7 +11796,9 @@
   },
   {
     "name": "Fugar le puant",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "640.2225.2"
     ],
@@ -11122,7 +11818,9 @@
   },
   {
     "name": "Furonclus",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "2498.1780.1",
       "2502.1784.1",
@@ -11196,7 +11894,9 @@
   },
   {
     "name": "Galinette",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de guérison critique",
@@ -11211,7 +11911,9 @@
   },
   {
     "name": "Galinette cendrée",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de guérison critique",
@@ -11226,7 +11928,9 @@
   },
   {
     "name": "Gamin",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -11234,7 +11938,9 @@
   },
   {
     "name": "Garde Ardens",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "2493.2274.4",
       "2528.2231.4"
@@ -11245,7 +11951,9 @@
   },
   {
     "name": "Garde d'Olin Haad",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "2961.1312.0",
       "2982.1312.0",
@@ -11274,7 +11982,9 @@
   },
   {
     "name": "Garde de l'Apocalypse",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "334.604.1",
       "330.617.1",
@@ -11344,7 +12054,9 @@
   },
   {
     "name": "Garde de l'île",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -11352,7 +12064,9 @@
   },
   {
     "name": "Garde de l'ombre",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "1487.41.1",
       "1511.51.1",
@@ -11649,7 +12363,9 @@
   },
   {
     "name": "Garde de Lighthaven",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "2726.1130.0",
       "2732.1138.0",
@@ -11666,7 +12382,9 @@
   },
   {
     "name": "Garde de Niève",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -11674,7 +12392,9 @@
   },
   {
     "name": "Garde éborgné",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -11682,7 +12402,9 @@
   },
   {
     "name": "Garde mort-vivant",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -11690,7 +12412,9 @@
   },
   {
     "name": "Garde privé d'Olin Haad",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "2 662",
@@ -11698,7 +12422,9 @@
   },
   {
     "name": "Garde qui met en prison",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [],
     "drops": [
       "Épée de fureur",
@@ -11712,7 +12438,9 @@
   },
   {
     "name": "Garde Royal",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -11720,7 +12448,9 @@
   },
   {
     "name": "Garde Wheatergate",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -11728,7 +12458,9 @@
   },
   {
     "name": "Garde Wheathergate",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -11736,7 +12468,9 @@
   },
   {
     "name": "Gardien centaure",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -11744,7 +12478,9 @@
   },
   {
     "name": "Gardien de la crypte",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "1625.602.2",
       "1626.610.2",
@@ -11779,7 +12515,9 @@
   },
   {
     "name": "Gardien de la terre",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [],
     "drops": [
       "Livre de chance"
@@ -11789,7 +12527,9 @@
   },
   {
     "name": "Gardien de prison baraqué",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "778.517.1",
       "255.2358.1",
@@ -11807,7 +12547,9 @@
   },
   {
     "name": "Gardien démoniaque",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "190 000",
@@ -11815,7 +12557,9 @@
   },
   {
     "name": "Gardien des abysses",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "606.1751.3",
       "609.1800.3",
@@ -11851,7 +12595,9 @@
   },
   {
     "name": "Gardien du Coffre",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "506.1460.3",
       "509.1467.3",
@@ -11885,7 +12631,9 @@
   },
   {
     "name": "Gardien du Désert",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "894.1010.3",
       "908.1014.3",
@@ -11937,7 +12685,9 @@
   },
   {
     "name": "Gardien du Portail",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [],
     "drops": [
       "Bonbon gélatineux"
@@ -11947,7 +12697,9 @@
   },
   {
     "name": "Gardien du portail de l'Oracle",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "2796.2184.2",
       "2788.2192.2",
@@ -11972,7 +12724,9 @@
   },
   {
     "name": "Gardien Équestre",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "965.1037.0",
       "943.1060.0",
@@ -11996,7 +12750,9 @@
   },
   {
     "name": "Gardien éthéré",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "2848.2224.2",
       "2836.2236.2",
@@ -12024,7 +12780,9 @@
   },
   {
     "name": "Gardien gobelin",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [
       "Armure gobeline en cuir",
@@ -12041,7 +12799,9 @@
   },
   {
     "name": "Gardien mort-vivant",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -12049,7 +12809,9 @@
   },
   {
     "name": "Gardien orc",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Potion de guérison légère",
       "Potion de mana",
@@ -12068,7 +12830,9 @@
   },
   {
     "name": "Gardien sombre",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "2722.1907.0",
       "2822.1909.0",
@@ -12118,7 +12882,9 @@
   },
   {
     "name": "Gardien squelette",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "447.166.1",
       "456.180.1",
@@ -12159,7 +12925,9 @@
   },
   {
     "name": "Gardien temporel",
-    "location": "Zone Oracle",
+    "location": [
+      "Zone Oracle"
+    ],
     "coordinates": [
       "2856.2244.2",
       "2868.2256.2",
@@ -12184,7 +12952,9 @@
   },
   {
     "name": "Gargouille",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "2228.1462.1",
       "2232.1475.1",
@@ -12255,7 +13025,9 @@
   },
   {
     "name": "Gargouille animée",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Bonbon gélatineux"
@@ -12265,7 +13037,9 @@
   },
   {
     "name": "Gargouille éthérée",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "2024.1374.4",
       "2029.1358.4",
@@ -12467,7 +13241,9 @@
   },
   {
     "name": "Gargouille infernale",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -12475,7 +13251,9 @@
   },
   {
     "name": "Gaspard",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -12483,7 +13261,9 @@
   },
   {
     "name": "Gaugaub",
-    "location": "Partout",
+    "location": [
+      "Partout"
+    ],
     "coordinates": [
       "883.254.5",
       "884.255.5"
@@ -12494,7 +13274,9 @@
   },
   {
     "name": "Géant des plaines",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -12506,7 +13288,9 @@
   },
   {
     "name": "Géant Miteux",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Hyperpotion d'esprit clair",
@@ -12525,7 +13309,9 @@
   },
   {
     "name": "Gecko Sulfureux",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Bracelet de Fierté",
       "Clef d'Ascension",
@@ -12543,7 +13329,9 @@
   },
   {
     "name": "Gehenna Reaver",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [],
     "exp": "4063",
     "gold": "N/A",
@@ -12551,7 +13339,9 @@
   },
   {
     "name": "Général gobelin",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "1054.93.1",
       "1042.108.1",
@@ -12601,7 +13391,9 @@
   },
   {
     "name": "Gerlinde",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -12609,7 +13401,9 @@
   },
   {
     "name": "Ghoul",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "130.2774.1",
       "139.2764.1",
@@ -12680,7 +13474,9 @@
   },
   {
     "name": "Ghundarg Garak",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Anneau de confiance",
       "Bouclier orc",
@@ -12696,7 +13492,9 @@
   },
   {
     "name": "Gildric Moray",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -12704,7 +13502,9 @@
   },
   {
     "name": "Girflet Kirhn",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -12712,7 +13512,9 @@
   },
   {
     "name": "Gluant des Cryptes",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "144.2768.1",
       "131.2740.1",
@@ -12782,7 +13584,9 @@
   },
   {
     "name": "Gnome des forêts",
-    "location": "Urtanar",
+    "location": [
+      "Urtanar"
+    ],
     "drops": [
       "Morceau de peau de gnôme des forêts",
       "Os de gnome des forêt"
@@ -12793,7 +13597,9 @@
   },
   {
     "name": "Gnôme des marécages",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -12804,7 +13610,9 @@
   },
   {
     "name": "Gnôme exité",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de guérison critique",
@@ -12815,7 +13623,9 @@
   },
   {
     "name": "Gobelet",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Épée de fureur",
@@ -12826,7 +13636,9 @@
   },
   {
     "name": "Gobelin",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "74.257.1",
       "93.272.1",
@@ -12950,7 +13762,9 @@
   },
   {
     "name": "Gobelin blanc",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -12958,7 +13772,9 @@
   },
   {
     "name": "Gobelin bleu",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -12966,7 +13782,9 @@
   },
   {
     "name": "Gobelin Bomberman",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "2697.871.0",
       "2700.895.0",
@@ -12993,7 +13811,9 @@
   },
   {
     "name": "Gobelin corrompu",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "1065.1494.1",
       "1117.1496.1",
@@ -13076,7 +13896,9 @@
   },
   {
     "name": "Gobelin cruel",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "4 832",
@@ -13084,7 +13906,9 @@
   },
   {
     "name": "Gobelin cyan",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -13092,7 +13916,9 @@
   },
   {
     "name": "Gobelin de Noël",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "28 643",
@@ -13100,7 +13926,9 @@
   },
   {
     "name": "Gobelin des glaces",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -13108,7 +13936,9 @@
   },
   {
     "name": "Gobelin Farfelu",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "2468.791.0",
       "2467.792.0",
@@ -13144,7 +13974,9 @@
   },
   {
     "name": "Gobelin Gardien des glaces",
-    "location": "Nieve",
+    "location": [
+      "Nieve"
+    ],
     "coordinates": [
       "2077.2806.2",
       "2087.2823.2",
@@ -13284,7 +14116,9 @@
   },
   {
     "name": "Gobelin jaune",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -13292,7 +14126,9 @@
   },
   {
     "name": "Gobelin noir",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -13300,7 +14136,9 @@
   },
   {
     "name": "Gobelin réanimé",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "116",
@@ -13308,7 +14146,9 @@
   },
   {
     "name": "Gobelin rouge",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -13316,7 +14156,9 @@
   },
   {
     "name": "Gobelin saboteur",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Corne de Gobelin",
       "Potion de guérison"
@@ -13327,7 +14169,9 @@
   },
   {
     "name": "Gobelin Shaman",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "2482.765.0",
       "2244.524.0",
@@ -13358,7 +14202,9 @@
   },
   {
     "name": "Gobelin Taciturne",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -13366,7 +14212,9 @@
   },
   {
     "name": "Gobelin transformé",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -13374,7 +14222,9 @@
   },
   {
     "name": "Gobelin vert",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -13382,7 +14232,9 @@
   },
   {
     "name": "Gobelin violet",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -13390,7 +14242,9 @@
   },
   {
     "name": "Goblin",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Armure gobeline en cuir",
@@ -13403,7 +14257,9 @@
   },
   {
     "name": "Goblin corrompu",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Potion de mana"
     ],
@@ -13413,7 +14269,9 @@
   },
   {
     "name": "Goblin Hargneux",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "640.125.1",
       "641.122.1",
@@ -13446,7 +14304,9 @@
   },
   {
     "name": "Golem",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de guérison légère",
@@ -13457,7 +14317,9 @@
   },
   {
     "name": "Golem d'Émeraude",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Emeraude focus de pouvoir",
       "Emeraude reluisante",
@@ -13471,7 +14333,9 @@
   },
   {
     "name": "Golem de chair",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Anneau de lumière",
       "Anneau de pierre de lune",
@@ -13488,7 +14352,9 @@
   },
   {
     "name": "Golem de feu",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -13496,7 +14362,9 @@
   },
   {
     "name": "Golem de glace",
-    "location": "Nieve",
+    "location": [
+      "Nieve"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -13504,7 +14372,9 @@
   },
   {
     "name": "Golem de Neige",
-    "location": "Nieve",
+    "location": [
+      "Nieve"
+    ],
     "coordinates": [
       "2264.2820.2",
       "2203.2820.2",
@@ -13531,7 +14401,9 @@
   },
   {
     "name": "Golem de pierre",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "drops": [
       "Gravillons d'énergie",
       "Fragment rocailleux",
@@ -13544,7 +14416,9 @@
   },
   {
     "name": "Golem de terre",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -13552,7 +14426,9 @@
   },
   {
     "name": "Golem embrasé",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "drops": [
       "Braises animées",
       "Braises démoniaques",
@@ -13566,7 +14442,9 @@
   },
   {
     "name": "Golem en colère",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "105 410",
@@ -13574,7 +14452,9 @@
   },
   {
     "name": "Golem Feu",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de guérison légère",
@@ -13585,7 +14465,9 @@
   },
   {
     "name": "Golem glacial",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "drops": [
       "Givre rocheux",
       "Orbe givrée"
@@ -13596,7 +14478,9 @@
   },
   {
     "name": "Golem incrusté d'émeraudes",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1299.359.0",
       "1336.403.0",
@@ -13625,7 +14509,9 @@
   },
   {
     "name": "Golem Neige",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de guérison légère",
@@ -13636,7 +14522,9 @@
   },
   {
     "name": "Golem Rocailleux",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de guérison légère",
@@ -13651,7 +14539,9 @@
   },
   {
     "name": "Golem terrifiant",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -13659,7 +14549,9 @@
   },
   {
     "name": "Gorben le fou",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "2010.429.0"
     ],
@@ -13676,7 +14568,9 @@
   },
   {
     "name": "Goryn",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -13684,7 +14578,9 @@
   },
   {
     "name": "Goule sauvage",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "640",
@@ -13692,7 +14588,9 @@
   },
   {
     "name": "Graax",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "315.464.2"
     ],
@@ -13709,7 +14607,9 @@
   },
   {
     "name": "Grand shaman Orque",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "2428.420.0",
       "2499.484.0",
@@ -13740,7 +14640,9 @@
   },
   {
     "name": "Grand Skraug",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [],
     "drops": [
       "Cape de fortification",
@@ -13757,7 +14659,9 @@
   },
   {
     "name": "Graykko Darastrix",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de guérison critique",
@@ -13769,7 +14673,9 @@
   },
   {
     "name": "Gremlin",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "2660.127.2",
       "2661.127.2",
@@ -14047,7 +14953,9 @@
   },
   {
     "name": "Gremlin de Rez",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "12 644",
@@ -14055,7 +14963,9 @@
   },
   {
     "name": "Gremlin Mineur",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Opale brute",
       "Rubis brut",
@@ -14068,7 +14978,9 @@
   },
   {
     "name": "Gremlin terreux",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "2014.2491.3",
       "2021.2484.3",
@@ -14091,7 +15003,9 @@
   },
   {
     "name": "GreyLeaf l'arbre démoniaque",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Feuille d'arbre démoniaque",
       "Baies de belladone"
@@ -14104,7 +15018,9 @@
   },
   {
     "name": "Griffe Tranchante",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
@@ -14117,7 +15033,9 @@
   },
   {
     "name": "Griroesh",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Anneau de confiance",
       "Anneau de fer",
@@ -14137,7 +15055,9 @@
   },
   {
     "name": "Grorah",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -14145,7 +15065,9 @@
   },
   {
     "name": "Grosse araignée",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "7 515 239",
@@ -14153,7 +15075,9 @@
   },
   {
     "name": "Grosse larve",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "1 802 386",
@@ -14161,7 +15085,9 @@
   },
   {
     "name": "Grott",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "1058.2431.0"
     ],
@@ -14179,7 +15105,9 @@
   },
   {
     "name": "Grudish Auricula",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "864.1196.2"
     ],
@@ -14194,7 +15122,9 @@
   },
   {
     "name": "Guêpe",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -14202,7 +15132,9 @@
   },
   {
     "name": "Guêpe drone",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "2153.305.2",
       "2175.306.2",
@@ -14385,7 +15317,9 @@
   },
   {
     "name": "Guêpe géante",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "2371.127.0",
       "2354.134.0",
@@ -14563,7 +15497,9 @@
   },
   {
     "name": "Guêpe titanesque commandant",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Nectar de guêpe titanesque"
     ],
@@ -14573,7 +15509,9 @@
   },
   {
     "name": "Guêpe titanesque dévastatrice",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Yeux dévastateurs",
       "Nectar de guêpe titanesque"
@@ -14584,7 +15522,9 @@
   },
   {
     "name": "Guêpe titanesque éclaireur",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Nectar de guêpe titanesque"
     ],
@@ -14594,7 +15534,9 @@
   },
   {
     "name": "Guêpe titanesque guerrière",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Nectar de guêpe titanesque"
     ],
@@ -14604,7 +15546,9 @@
   },
   {
     "name": "Guêpe titanesque nourrice",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Yeux de Nourrice",
       "Nectar de guêpe titanesque"
@@ -14615,7 +15559,9 @@
   },
   {
     "name": "Guêpe titanesque soldate",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Nectar de guêpe titanesque"
     ],
@@ -14625,7 +15571,9 @@
   },
   {
     "name": "Guerrier aux yeux rouges",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -14633,7 +15581,9 @@
   },
   {
     "name": "Guerrier centaure",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [],
     "drops": [
       "Poil de Centaure"
@@ -14643,7 +15593,9 @@
   },
   {
     "name": "Guerrier déchu",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "810.1495.1",
       "810.1500.1",
@@ -14666,7 +15618,9 @@
   },
   {
     "name": "Guerrier gobelin",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "1069.91.1",
       "1106.111.1",
@@ -15036,7 +15990,9 @@
   },
   {
     "name": "Guerrier Gobelin de l'Oeil",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -15044,7 +16000,9 @@
   },
   {
     "name": "Guerrier hérétique",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Agate brute",
       "Armure de plaques de Nain",
@@ -15063,7 +16021,9 @@
   },
   {
     "name": "Guerrier minotaure",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "433.737.1",
       "390.740.1",
@@ -15147,7 +16107,9 @@
   },
   {
     "name": "Guerrier Olphen",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "30 001",
@@ -15155,7 +16117,9 @@
   },
   {
     "name": "Guerrier orc",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "847.966.2",
       "857.966.2",
@@ -15222,7 +16186,9 @@
   },
   {
     "name": "Guerrier squelette",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "1050.143.1",
       "1105.164.1",
@@ -15443,7 +16409,9 @@
   },
   {
     "name": "Guerrier-mage orc",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "932.967.2",
       "1032.1012.2",
@@ -15648,7 +16616,9 @@
   },
   {
     "name": "Guimauve",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -15656,7 +16626,9 @@
   },
   {
     "name": "Gunthrek",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "434.1702.0"
     ],
@@ -15674,7 +16646,9 @@
   },
   {
     "name": "Guurk",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "210.621.2"
     ],
@@ -15690,7 +16664,9 @@
   },
   {
     "name": "Haarm",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -15698,7 +16674,9 @@
   },
   {
     "name": "Hache des ténèbres",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "1359.273.1"
     ],
@@ -15717,7 +16695,9 @@
   },
   {
     "name": "Haden",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Hachette de qualité"
     ],
@@ -15729,7 +16709,9 @@
   },
   {
     "name": "Hallucination adorable",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -15737,7 +16719,9 @@
   },
   {
     "name": "Haure Enje",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -15745,7 +16729,9 @@
   },
   {
     "name": "Hémoglobine d'Amnet",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "2644.1704.3",
       "2615.1708.3",
@@ -15793,7 +16779,9 @@
   },
   {
     "name": "Hesk Ymo",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "67.119.6"
     ],
@@ -15803,7 +16791,9 @@
   },
   {
     "name": "Homme Lézard",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "drops": [
       "Peau de lézard",
       "Boyau de Lézard"
@@ -15814,7 +16804,9 @@
   },
   {
     "name": "Homme Lezard",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [],
     "drops": [
       "Peau de lézard",
@@ -15826,7 +16818,9 @@
   },
   {
     "name": "Homme Lézard Mage",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "drops": [
       "Fiole d'enlisement",
       "Prisme énigmatique"
@@ -15837,7 +16831,9 @@
   },
   {
     "name": "Horreur enrubannée",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "513.1713.1",
       "525.1718.1",
@@ -15897,7 +16893,9 @@
   },
   {
     "name": "Horreur hurlante",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "594.2029.1",
       "606.2033.1",
@@ -15960,7 +16958,9 @@
   },
   {
     "name": "Horreur railleuse",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "451.1830.0",
       "454.1842.0",
@@ -16135,7 +17135,9 @@
   },
   {
     "name": "Huine",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
@@ -16147,7 +17149,9 @@
   },
   {
     "name": "Humanoïde grotesque",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "drops": [
       "Reste d'étoffe",
       "Gants primitifs"
@@ -16158,7 +17162,9 @@
   },
   {
     "name": "Hurbag Digitus",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "1257.1811.0"
     ],
@@ -16173,7 +17179,9 @@
   },
   {
     "name": "Hysope",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -16181,7 +17189,9 @@
   },
   {
     "name": "Iago Caballero",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Épée longue polie"
     ],
@@ -16191,7 +17201,9 @@
   },
   {
     "name": "Illusion des abîmes",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de guérison critique",
@@ -16202,7 +17214,9 @@
   },
   {
     "name": "Illusionniste",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Baguette tordue"
     ],
@@ -16212,7 +17226,9 @@
   },
   {
     "name": "Infirmière",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -16220,7 +17236,9 @@
   },
   {
     "name": "Infirmière psychotique",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Autorisation A3",
       "Autorisation B1",
@@ -16240,7 +17258,9 @@
   },
   {
     "name": "Innocent",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Armure gobeline en cuir",
@@ -16253,7 +17273,9 @@
   },
   {
     "name": "Intendant",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -16261,7 +17283,9 @@
   },
   {
     "name": "Invocation ratée",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Reste d'étoffe"
     ],
@@ -16271,7 +17295,9 @@
   },
   {
     "name": "ISIDORE",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -16279,7 +17305,9 @@
   },
   {
     "name": "Jabimot",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -16287,7 +17315,9 @@
   },
   {
     "name": "Jarko le nécromancien",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Amulette de Jarko",
       "Anneau du sorcier",
@@ -16304,7 +17334,9 @@
   },
   {
     "name": "Jehan Vaire",
-    "location": "Partout",
+    "location": [
+      "Partout"
+    ],
     "coordinates": [
       "933.277.5"
     ],
@@ -16314,7 +17346,9 @@
   },
   {
     "name": "Jorfer",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -16322,7 +17356,9 @@
   },
   {
     "name": "Jument Sauvage",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Crin de jument"
@@ -16332,7 +17368,9 @@
   },
   {
     "name": "Kass Brik",
-    "location": "Partout",
+    "location": [
+      "Partout"
+    ],
     "coordinates": [
       "1362.290.5"
     ],
@@ -16342,7 +17380,9 @@
   },
   {
     "name": "Kaub Hold",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -16350,7 +17390,9 @@
   },
   {
     "name": "Kobold",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "7 134 503",
@@ -16358,7 +17400,9 @@
   },
   {
     "name": "Kobold grincheux",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -16366,7 +17410,9 @@
   },
   {
     "name": "Kobold Hargneux",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "1677.974.0",
       "1688.966.0",
@@ -16399,7 +17445,9 @@
   },
   {
     "name": "Kraanian à mille-pattes",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "488.1206.2",
       "544.1230.2",
@@ -16503,7 +17551,9 @@
   },
   {
     "name": "Kraanian de Glace",
-    "location": "Nieve",
+    "location": [
+      "Nieve"
+    ],
     "coordinates": [
       "1654.212.4",
       "1549.226.4",
@@ -16523,7 +17573,9 @@
   },
   {
     "name": "Kraanian Dévoreur",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [
       "Parchemin de rappel",
@@ -16537,7 +17589,9 @@
   },
   {
     "name": "Kraanian glacé",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "1568.555.4",
       "1565.559.4",
@@ -16786,7 +17840,9 @@
   },
   {
     "name": "Kraanian piétineur",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Tesson de cristal jaune"
     ],
@@ -16803,7 +17859,9 @@
   },
   {
     "name": "Kraanian ténébreux",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "835.1421.3",
       "2510.1956.6",
@@ -16823,7 +17881,9 @@
   },
   {
     "name": "Kraanian ténébreux lieutenant",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "344.1644.3",
       "366.1743.3",
@@ -16850,7 +17910,9 @@
   },
   {
     "name": "Kraanian ténébreux lourd",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [
       "Parchemin de rappel",
@@ -16870,7 +17932,9 @@
   },
   {
     "name": "Kraanian volant",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "389.1191.2",
       "336.1198.2",
@@ -16970,7 +18034,9 @@
   },
   {
     "name": "Kraanian volant gelé",
-    "location": "Nieve",
+    "location": [
+      "Nieve"
+    ],
     "coordinates": [
       "1643.707.4",
       "1686.663.4",
@@ -17114,7 +18180,9 @@
   },
   {
     "name": "Kraanien géant",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -17122,7 +18190,9 @@
   },
   {
     "name": "Kraanien mille-pattes",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -17130,7 +18200,9 @@
   },
   {
     "name": "Kraanien ouvrier",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -17138,7 +18210,9 @@
   },
   {
     "name": "Kraanien volant",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -17146,7 +18220,9 @@
   },
   {
     "name": "Kri Nas",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
@@ -17158,7 +18234,9 @@
   },
   {
     "name": "Kro Nas",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
@@ -17169,7 +18247,9 @@
   },
   {
     "name": "Labaumynablaumdeynaije",
-    "location": "Partout",
+    "location": [
+      "Partout"
+    ],
     "coordinates": [
       "733.499.5"
     ],
@@ -17179,7 +18259,9 @@
   },
   {
     "name": "Lahor",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -17187,7 +18269,9 @@
   },
   {
     "name": "Laizz Haar",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "85.122.6"
     ],
@@ -17197,7 +18281,9 @@
   },
   {
     "name": "Lame des ténêbres",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -17209,7 +18295,9 @@
   },
   {
     "name": "Larve d'élite",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -17226,7 +18314,9 @@
   },
   {
     "name": "Larve de Veuve Noire",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Venin d'araignée",
       "Amethyste brute",
@@ -17240,7 +18330,9 @@
   },
   {
     "name": "Larve sanglante",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "2359.1544.1",
       "2337.1538.1",
@@ -17262,7 +18354,9 @@
   },
   {
     "name": "Larve toxique",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "2491.1706.1",
       "2489.1710.1",
@@ -17292,7 +18386,9 @@
   },
   {
     "name": "Le déchu",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "917.1411.2",
       "895.1436.2",
@@ -17327,7 +18423,9 @@
   },
   {
     "name": "Leprechaun",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "2660.127.2",
       "2661.127.2",
@@ -17608,7 +18706,9 @@
   },
   {
     "name": "Lérot mutant",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "2464.1572.1",
       "2472.1588.1",
@@ -17630,7 +18730,9 @@
   },
   {
     "name": "Leynn",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Pied de Leynn"
@@ -17640,7 +18742,9 @@
   },
   {
     "name": "Lézard monstrueux",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -17648,7 +18752,9 @@
   },
   {
     "name": "Lich",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -17656,7 +18762,9 @@
   },
   {
     "name": "Liche",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -17664,7 +18772,9 @@
   },
   {
     "name": "Liche ancestrale",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "drops": [
       "Guide du mentor"
     ],
@@ -17674,7 +18784,9 @@
   },
   {
     "name": "Licorne",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -17682,7 +18794,9 @@
   },
   {
     "name": "Liedric Guergue",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "495.1624.0"
     ],
@@ -17698,7 +18812,9 @@
   },
   {
     "name": "Lieutenant gobelin",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "989.174.1",
       "1059.179.1",
@@ -17795,7 +18911,9 @@
   },
   {
     "name": "Lilielle",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -17803,7 +18921,9 @@
   },
   {
     "name": "Lombric scrofuleux",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -17814,7 +18934,9 @@
   },
   {
     "name": "Lord Stonecrest",
-    "location": "Stoneheim (Boss)",
+    "location": [
+      "Stoneheim (Boss)"
+    ],
     "drops": [
       "Amulette de Héros",
       "Anneau de Stonecrest",
@@ -17834,7 +18956,9 @@
   },
   {
     "name": "Loup",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "477.1185.5",
       "455.1160.5",
@@ -17846,7 +18970,9 @@
   },
   {
     "name": "Loup Blanc",
-    "location": "Nieve",
+    "location": [
+      "Nieve"
+    ],
     "coordinates": [
       "1424.711.4",
       "1428.713.4",
@@ -17923,7 +19049,9 @@
   },
   {
     "name": "Loup de la meute",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "352.355.0",
       "340.357.0",
@@ -18160,7 +19288,9 @@
   },
   {
     "name": "Loup domestique",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18168,7 +19298,9 @@
   },
   {
     "name": "Loup enragé",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Livre de chance"
@@ -18178,7 +19310,9 @@
   },
   {
     "name": "Loup Fenris",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "811.536.0",
       "826.864.0",
@@ -18199,7 +19333,9 @@
   },
   {
     "name": "Loup géant",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "354.379.0",
       "809.519.0",
@@ -18232,7 +19368,9 @@
   },
   {
     "name": "Loup hargneux",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18240,7 +19378,9 @@
   },
   {
     "name": "Loup noir",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "2865.1647.0"
     ],
@@ -18250,7 +19390,9 @@
   },
   {
     "name": "Loup Pestiféré",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Pierre de lune brute",
@@ -18262,7 +19404,9 @@
   },
   {
     "name": "Ludrès",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18270,7 +19414,9 @@
   },
   {
     "name": "Lunatique délirant",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Autorisation G4",
       "Autorisation I4",
@@ -18286,7 +19432,9 @@
   },
   {
     "name": "Machine A Sous R",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18294,7 +19442,9 @@
   },
   {
     "name": "Mad Madrigan",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Anneau du berserker",
       "Armure de cuir elfique",
@@ -18317,7 +19467,9 @@
   },
   {
     "name": "Mage aux yeux rouges",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18325,7 +19477,9 @@
   },
   {
     "name": "Mage de combat gobelin",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "201 019",
@@ -18333,7 +19487,9 @@
   },
   {
     "name": "Mage Draconien",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18341,7 +19497,9 @@
   },
   {
     "name": "Mage Draconis",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1681.1951.1",
       "1697.1975.1",
@@ -18404,7 +19562,9 @@
   },
   {
     "name": "Mage minotaur",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18412,7 +19572,9 @@
   },
   {
     "name": "Mage rôdeur",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "1487.41.1",
       "1511.51.1",
@@ -18712,7 +19874,9 @@
   },
   {
     "name": "Maitre-Gourdin Gobelin de l'Oeil",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18720,7 +19884,9 @@
   },
   {
     "name": "Makrsh P'Tangh",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Arc composite des Hauts-Elfes",
       "Bottes ciselées des Haut-Elfes",
@@ -18741,7 +19907,9 @@
   },
   {
     "name": "Makut",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18749,7 +19917,9 @@
   },
   {
     "name": "Malch Haraan",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18757,7 +19927,9 @@
   },
   {
     "name": "Malénie",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18765,7 +19937,9 @@
   },
   {
     "name": "Malherb",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Oeil de Malherb"
@@ -18775,7 +19949,9 @@
   },
   {
     "name": "Marcie Trouille",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18783,7 +19959,9 @@
   },
   {
     "name": "Marlu",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18791,7 +19969,9 @@
   },
   {
     "name": "Matelot mort-vivant",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Rubis brut",
@@ -18803,7 +19983,9 @@
   },
   {
     "name": "Méduline",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18811,7 +19993,9 @@
   },
   {
     "name": "Méduse blanche",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18819,7 +20003,9 @@
   },
   {
     "name": "Méduse bleue",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18827,7 +20013,9 @@
   },
   {
     "name": "Méduse cyan",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18835,7 +20023,9 @@
   },
   {
     "name": "Méduse jaune",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18843,7 +20033,9 @@
   },
   {
     "name": "Méduse noire",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18851,7 +20043,9 @@
   },
   {
     "name": "Méduse rouge",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18859,7 +20053,9 @@
   },
   {
     "name": "Méduse verte",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18867,7 +20063,9 @@
   },
   {
     "name": "Méduse violette",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18875,7 +20073,9 @@
   },
   {
     "name": "Melinda",
-    "location": "Partout",
+    "location": [
+      "Partout"
+    ],
     "coordinates": [
       "910.212.5"
     ],
@@ -18885,7 +20085,9 @@
   },
   {
     "name": "Melkilem",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18893,7 +20095,9 @@
   },
   {
     "name": "Mémé",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18901,7 +20105,9 @@
   },
   {
     "name": "Meylia",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18909,7 +20115,9 @@
   },
   {
     "name": "Mhorgwloth le troll",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Gourdin du Troll",
       "Potion de mana",
@@ -18923,7 +20131,9 @@
   },
   {
     "name": "Miaouw",
-    "location": "Partout",
+    "location": [
+      "Partout"
+    ],
     "coordinates": [
       "725.533.5",
       "706.515.5",
@@ -18935,7 +20145,9 @@
   },
   {
     "name": "Migale noire",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -18947,7 +20159,9 @@
   },
   {
     "name": "Millefeuille",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18955,7 +20169,9 @@
   },
   {
     "name": "Millepertuis",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18963,7 +20179,9 @@
   },
   {
     "name": "Mimi Krakra",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "68.120.6"
     ],
@@ -18973,7 +20191,9 @@
   },
   {
     "name": "Mineur",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -18981,7 +20201,9 @@
   },
   {
     "name": "Mineur Gremlin",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1997.1016.2",
       "2005.974.2",
@@ -19033,7 +20255,9 @@
   },
   {
     "name": "Minion de la fange",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1092.2545.2",
       "1052.2558.2",
@@ -19094,7 +20318,9 @@
   },
   {
     "name": "Mob Rune",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -19102,7 +20328,9 @@
   },
   {
     "name": "Moine étrange",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Potion de guérison légère",
       "Ceinture blanche de moine",
@@ -19115,7 +20343,9 @@
   },
   {
     "name": "Momie",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "548.230.1",
       "416.235.1",
@@ -19154,7 +20384,9 @@
   },
   {
     "name": "Momie contagieuse",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -19162,7 +20394,9 @@
   },
   {
     "name": "Momie du Manoir",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "2279.2091.1",
       "2284.2075.1",
@@ -19201,7 +20435,9 @@
   },
   {
     "name": "Momie rampante",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "2717.2589.1",
       "2713.2594.1",
@@ -19242,7 +20478,9 @@
   },
   {
     "name": "Momie royale",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "758.898.1",
       "759.898.1",
@@ -19444,7 +20682,9 @@
   },
   {
     "name": "Mommie Paresseuse",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Pierre de mana",
@@ -19459,7 +20699,9 @@
   },
   {
     "name": "Monster",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -19467,7 +20709,9 @@
   },
   {
     "name": "Monstre éthéré",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -19475,7 +20719,9 @@
   },
   {
     "name": "Moradinne",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -19483,7 +20729,9 @@
   },
   {
     "name": "Morlokk",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Opale brute",
       "Grenat brut",
@@ -19499,7 +20747,9 @@
   },
   {
     "name": "Mortdart",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "851.1707.2"
     ],
@@ -19514,7 +20764,9 @@
   },
   {
     "name": "Mrish Jalnec",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "864.2421.2"
     ],
@@ -19536,7 +20788,9 @@
   },
   {
     "name": "Mwatapetwa",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "66.119.6"
     ],
@@ -19546,7 +20800,9 @@
   },
   {
     "name": "Mygale effroyable",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "415.2400.6",
       "409.2434.6",
@@ -19603,7 +20859,9 @@
   },
   {
     "name": "Myrte Rose",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -19611,7 +20869,9 @@
   },
   {
     "name": "Mystique",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "2823.1886.0",
       "2779.1889.0",
@@ -19662,7 +20922,9 @@
   },
   {
     "name": "Naga vipère",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "110 780",
@@ -19670,7 +20932,9 @@
   },
   {
     "name": "Nare",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
@@ -19682,7 +20946,9 @@
   },
   {
     "name": "Naunosse",
-    "location": "Partout",
+    "location": [
+      "Partout"
+    ],
     "coordinates": [
       "1351.321.5"
     ],
@@ -19692,7 +20958,9 @@
   },
   {
     "name": "Nécromancien impérial",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -19700,7 +20968,9 @@
   },
   {
     "name": "Neige",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -19708,7 +20978,9 @@
   },
   {
     "name": "Nemesia Caementaria",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -19719,7 +20991,9 @@
   },
   {
     "name": "Nemesis",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1684.164.2",
       "1702.172.2",
@@ -19772,7 +21046,9 @@
   },
   {
     "name": "Nen",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -19784,7 +21060,9 @@
   },
   {
     "name": "Nephilienne obscure",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "376.2310.3",
       "381.2309.3",
@@ -19809,7 +21087,9 @@
   },
   {
     "name": "Néphilim",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "drops": [
       "Plume passe-partout"
     ],
@@ -19819,7 +21099,9 @@
   },
   {
     "name": "Néphilim intrus",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "1190.2282.3",
       "1896.2345.3",
@@ -19856,7 +21138,9 @@
   },
   {
     "name": "Nephilim intrus",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "1190.2282.3",
       "1896.2345.3",
@@ -19893,7 +21177,9 @@
   },
   {
     "name": "Nephilim obscur",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "376.2310.3",
       "381.2309.3",
@@ -19918,7 +21204,9 @@
   },
   {
     "name": "Neuneuil",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "77.958.5"
     ],
@@ -19928,7 +21216,9 @@
   },
   {
     "name": "Nexus",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -19936,7 +21226,9 @@
   },
   {
     "name": "Nid de Kraanians Gelés",
-    "location": "Nieve",
+    "location": [
+      "Nieve"
+    ],
     "coordinates": [
       "1791.364.4",
       "1549.789.4",
@@ -19950,7 +21242,9 @@
   },
   {
     "name": "Nightmare",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -19958,7 +21252,9 @@
   },
   {
     "name": "Nightounet",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -19966,7 +21262,9 @@
   },
   {
     "name": "Nirtelle",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -19974,7 +21272,9 @@
   },
   {
     "name": "Noble des ombres",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Armure de plaques",
       "Bottes de plaques",
@@ -19993,7 +21293,9 @@
   },
   {
     "name": "Noctris Dézéthoill",
-    "location": "Île de Lune",
+    "location": [
+      "Île de Lune"
+    ],
     "coordinates": [
       "866.1100.4",
       "879.1110.4",
@@ -20013,7 +21315,9 @@
   },
   {
     "name": "Noctris Fumdaiherb",
-    "location": "Île de Lune",
+    "location": [
+      "Île de Lune"
+    ],
     "coordinates": [
       "844.1116.4",
       "851.1053.4",
@@ -20040,7 +21344,9 @@
   },
   {
     "name": "Noctris Kaastapyp",
-    "location": "Île de Lune",
+    "location": [
+      "Île de Lune"
+    ],
     "coordinates": [
       "779.1025.4",
       "766.1014.4",
@@ -20073,7 +21379,9 @@
   },
   {
     "name": "Noctris l'Éthinsselant",
-    "location": "Île de Lune",
+    "location": [
+      "Île de Lune"
+    ],
     "drops": [
       "Bracelet d'argent à Bec de Corbeau",
       "Épine Sacrificielle"
@@ -20084,7 +21392,9 @@
   },
   {
     "name": "Noctris Shaman",
-    "location": "Île de Lune",
+    "location": [
+      "Île de Lune"
+    ],
     "drops": [
       "Livre des sorts rouges",
       "Cape de la forêt",
@@ -20099,7 +21409,9 @@
   },
   {
     "name": "Noctris Trenchdanltaa",
-    "location": "Île de Lune",
+    "location": [
+      "Île de Lune"
+    ],
     "coordinates": [
       "820.929.4",
       "796.996.4",
@@ -20156,7 +21468,9 @@
   },
   {
     "name": "Nonausse",
-    "location": "Partout",
+    "location": [
+      "Partout"
+    ],
     "coordinates": [
       "1367.330.5"
     ],
@@ -20166,7 +21480,9 @@
   },
   {
     "name": "Norauld",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -20174,7 +21490,9 @@
   },
   {
     "name": "Nyctère",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Cocon de soie"
@@ -20184,7 +21502,9 @@
   },
   {
     "name": "Octrael",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "drops": [
       "Crâne fêlé",
       "Cendres sanctifiées"
@@ -20195,7 +21515,9 @@
   },
   {
     "name": "Ogre",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de guérison",
@@ -20209,7 +21531,9 @@
   },
   {
     "name": "Ogre des collines",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "50 022",
@@ -20217,7 +21541,9 @@
   },
   {
     "name": "Ogre Ignoble",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "527.586.2",
       "518.586.2",
@@ -20271,7 +21597,9 @@
   },
   {
     "name": "Ogrimar",
-    "location": "Raven's Dust (Boss - Château)",
+    "location": [
+      "Raven's Dust (Boss - Château)"
+    ],
     "drops": [
       "Anneau d'Ogrimar",
       "Cape de l'ombre",
@@ -20283,7 +21611,9 @@
   },
   {
     "name": "Okea Nas",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
@@ -20294,7 +21624,9 @@
   },
   {
     "name": "Olphen",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "2895.1036.0",
       "2877.1052.0",
@@ -20394,7 +21726,9 @@
   },
   {
     "name": "Ombre assassine",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -20402,7 +21736,9 @@
   },
   {
     "name": "Ombre démoniaque",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -20413,7 +21749,9 @@
   },
   {
     "name": "Ombre des abîmes",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de guérison critique",
@@ -20424,7 +21762,9 @@
   },
   {
     "name": "Orc archemage",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Élixir de mana"
     ],
@@ -20434,7 +21774,9 @@
   },
   {
     "name": "Orc berserker",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "932.967.2",
       "1032.1012.2",
@@ -20642,7 +21984,9 @@
   },
   {
     "name": "Orc de Rez",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "874 500",
@@ -20650,7 +21994,9 @@
   },
   {
     "name": "Orc des glaces",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de guérison des blessures graves",
@@ -20662,7 +22008,9 @@
   },
   {
     "name": "Orc déserteur",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "1069.1917.0",
       "1037.1934.0",
@@ -20691,7 +22039,9 @@
   },
   {
     "name": "Orc errant",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "189.805.2",
       "204.820.2",
@@ -20773,7 +22123,9 @@
   },
   {
     "name": "Orc menaçant",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -20781,7 +22133,9 @@
   },
   {
     "name": "Orc solitaire",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "1710.1008.0",
       "1733.1002.0",
@@ -20809,7 +22163,9 @@
   },
   {
     "name": "Orque Solitaire",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "1710.1008.0",
       "1733.1002.0",
@@ -20837,7 +22193,9 @@
   },
   {
     "name": "Osselet animé",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "320",
@@ -20845,7 +22203,9 @@
   },
   {
     "name": "Ouahtter",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -20853,7 +22213,9 @@
   },
   {
     "name": "Ouvrier kraanian",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "523.1202.2",
       "518.1204.2",
@@ -20984,7 +22346,9 @@
   },
   {
     "name": "Ouvrière de la colonie",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Diamant brut",
@@ -20996,7 +22360,9 @@
   },
   {
     "name": "Paladin",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Epée de Lumière",
       "Potion de guérison",
@@ -21009,7 +22375,9 @@
   },
   {
     "name": "Pantin Obscur",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "30.2957.3",
       "60.2971.3",
@@ -21052,7 +22420,9 @@
   },
   {
     "name": "Pâquerette",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -21060,7 +22430,9 @@
   },
   {
     "name": "Parsi Chepterre monster",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -21068,7 +22440,9 @@
   },
   {
     "name": "Patient en fuite",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Autorisation J4",
       "Balais",
@@ -21080,7 +22454,9 @@
   },
   {
     "name": "Patient fou",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Autorisation A3",
       "Autorisation E5",
@@ -21093,7 +22469,9 @@
   },
   {
     "name": "Pépé",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -21101,7 +22479,9 @@
   },
   {
     "name": "Père Philidas",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -21109,7 +22489,9 @@
   },
   {
     "name": "Peste Kraanian",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Sécrétions putrides"
     ],
@@ -21133,7 +22515,9 @@
   },
   {
     "name": "Phildor",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -21141,7 +22525,9 @@
   },
   {
     "name": "Philéas",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -21149,7 +22535,9 @@
   },
   {
     "name": "Piege",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -21157,7 +22545,9 @@
   },
   {
     "name": "Pile de livre du chateau SS",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -21165,7 +22555,9 @@
   },
   {
     "name": "Pile de livre range bibliotheque",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -21173,7 +22565,9 @@
   },
   {
     "name": "Pillard",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "247.1104.2",
       "1788.994.0",
@@ -21244,7 +22638,9 @@
   },
   {
     "name": "Pillard des dunes",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "233.2406.0",
       "199.2410.0",
@@ -21318,7 +22714,9 @@
   },
   {
     "name": "Pilleur de tombe",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "1121.129.1",
       "428.204.1",
@@ -21340,7 +22738,9 @@
   },
   {
     "name": "Pilleur de tombe (crypte)",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "1121.129.1",
       "428.204.1",
@@ -21362,7 +22762,9 @@
   },
   {
     "name": "Pisteur de la crypte",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "1114.2231.1",
       "1124.2235.1",
@@ -21419,7 +22821,9 @@
   },
   {
     "name": "Plindeu Neij",
-    "location": "Partout",
+    "location": [
+      "Partout"
+    ],
     "coordinates": [
       "743.553.5",
       "702.518.5"
@@ -21430,7 +22834,9 @@
   },
   {
     "name": "Point de controle de l'Empire",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -21438,7 +22844,9 @@
   },
   {
     "name": "Point de controle du royaume",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -21446,7 +22854,9 @@
   },
   {
     "name": "Pomme Deschamps",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -21454,7 +22864,9 @@
   },
   {
     "name": "Portail vers la salle de jeu",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -21462,7 +22874,9 @@
   },
   {
     "name": "Porte",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -21470,7 +22884,9 @@
   },
   {
     "name": "Porte cassable",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -21478,7 +22894,9 @@
   },
   {
     "name": "Porte en bois",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -21486,7 +22904,9 @@
   },
   {
     "name": "Porte-gangrène",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1092.2545.2",
       "1052.2558.2",
@@ -21547,7 +22967,9 @@
   },
   {
     "name": "Porte-Peste",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Torche",
@@ -21558,7 +22980,9 @@
   },
   {
     "name": "Pouh Laih",
-    "location": "Partout",
+    "location": [
+      "Partout"
+    ],
     "coordinates": [
       "882.246.5",
       "884.248.5",
@@ -21570,7 +22994,9 @@
   },
   {
     "name": "Pourfendeur des Preux",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1242.2569.2",
       "1300.2579.2",
@@ -21625,7 +23051,9 @@
   },
   {
     "name": "Pousse corrompu",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -21633,7 +23061,9 @@
   },
   {
     "name": "Prédicateur décrépit",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -21644,7 +23074,9 @@
   },
   {
     "name": "Prêtre de Guerre",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Masse de force",
       "Anneau du soigneur",
@@ -21658,7 +23090,9 @@
   },
   {
     "name": "Pretre obscur",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
@@ -21671,7 +23105,9 @@
   },
   {
     "name": "Prisonnier",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "2359.1610.3",
       "2354.1606.3",
@@ -22535,7 +23971,9 @@
   },
   {
     "name": "Prisonnier désespéré",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "787.498.1",
       "754.515.1",
@@ -22629,7 +24067,9 @@
   },
   {
     "name": "Profilique",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "2474.562.0"
     ],
@@ -22649,7 +24089,9 @@
   },
   {
     "name": "Profilique Général",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Anneau d'or",
@@ -22668,7 +24110,9 @@
   },
   {
     "name": "Profilique Lieutenant",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Anneau d'or",
@@ -22685,7 +24129,9 @@
   },
   {
     "name": "Profundus",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "723.109.2",
       "733.123.2",
@@ -22741,7 +24187,9 @@
   },
   {
     "name": "Profundus supremus",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Potion de fureur"
     ],
@@ -22751,7 +24199,9 @@
   },
   {
     "name": "Prolifique (Unique)",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Armure d'anneaux",
       "Anneau d'or",
@@ -22764,7 +24214,9 @@
   },
   {
     "name": "Protecteur de la forêt",
-    "location": "Partout",
+    "location": [
+      "Partout"
+    ],
     "coordinates": [
       "2727.181.0",
       "2722.189.0",
@@ -22801,7 +24253,9 @@
   },
   {
     "name": "Protecteur Elite",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Robe de l'hiver éternel",
@@ -22814,7 +24268,9 @@
   },
   {
     "name": "Protecteur temporel",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "2698.2141.2",
       "2754.2148.2",
@@ -22853,7 +24309,9 @@
   },
   {
     "name": "Puits",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "61 343",
@@ -22861,7 +24319,9 @@
   },
   {
     "name": "Puppet Master",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "501",
@@ -22869,7 +24329,9 @@
   },
   {
     "name": "Puppet Sparte",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -22877,7 +24339,9 @@
   },
   {
     "name": "Purificateur",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "drops": [
       "Mojo de purification"
     ],
@@ -22887,7 +24351,9 @@
   },
   {
     "name": "Puss Thule",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -22895,7 +24361,9 @@
   },
   {
     "name": "Quardos le borgne",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "879.2441.0"
     ],
@@ -22908,7 +24376,9 @@
   },
   {
     "name": "Quelet Hon l'assoiffé",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Os de squelette",
       "Élixir de mana"
@@ -22919,7 +24389,9 @@
   },
   {
     "name": "Quentin Tarantula",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Agate brute",
       "Diamant brut",
@@ -22935,7 +24407,9 @@
   },
   {
     "name": "Rampant",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1691.1486.1",
       "1691.1492.1",
@@ -22986,7 +24460,9 @@
   },
   {
     "name": "Rampant des Cryptes",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "144.2768.1",
       "131.2740.1",
@@ -23056,7 +24532,9 @@
   },
   {
     "name": "Rampilios",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Enduit de Rampilios",
@@ -23067,7 +24545,9 @@
   },
   {
     "name": "Rampilius",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "27 634",
@@ -23075,7 +24555,9 @@
   },
   {
     "name": "Rat",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "431.1122.5",
       "437.1129.5",
@@ -23092,7 +24574,9 @@
   },
   {
     "name": "Rat berserk",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1524.385.2",
       "1556.387.2",
@@ -23123,7 +24607,9 @@
   },
   {
     "name": "Rat brun",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "223.435.6",
       "229.432.6",
@@ -23510,7 +24996,9 @@
   },
   {
     "name": "Rat de Laboratoire",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de guérison critique"
@@ -23520,7 +25008,9 @@
   },
   {
     "name": "Rat des cavernes",
-    "location": "Urtanar (Grotte)",
+    "location": [
+      "Urtanar (Grotte)"
+    ],
     "drops": [
       "Cadavre de rat"
     ],
@@ -23530,7 +25020,9 @@
   },
   {
     "name": "Rat enragé",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de guérison critique"
@@ -23540,7 +25032,9 @@
   },
   {
     "name": "Rat géant",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Cadavre de rat",
       "Potion de guérison légère",
@@ -23604,7 +25098,9 @@
   },
   {
     "name": "Rat Necrophage",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "130.2774.1",
       "139.2764.1",
@@ -23675,7 +25171,9 @@
   },
   {
     "name": "Rat noir",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -23683,7 +25181,9 @@
   },
   {
     "name": "Rat pestiféré",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "442.194.1",
       "443.210.1",
@@ -23731,7 +25231,9 @@
   },
   {
     "name": "Rat vampire",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "2797.1939.0",
       "2727.1951.0",
@@ -23769,7 +25271,9 @@
   },
   {
     "name": "Rat-garou",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "327.611.1",
       "350.618.1",
@@ -23961,7 +25465,9 @@
   },
   {
     "name": "Ratsputin le rat-garou",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "963.581.2"
     ],
@@ -23974,7 +25480,9 @@
   },
   {
     "name": "Razek le balafré",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "2242.1498.0"
     ],
@@ -23993,7 +25501,9 @@
   },
   {
     "name": "Reine de la colonie",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Diamant brut",
@@ -24005,7 +25515,9 @@
   },
   {
     "name": "Rejet du monde",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Fluide de démolécularisation",
@@ -24016,7 +25528,9 @@
   },
   {
     "name": "Rejeton du Cerberus",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "265.390.6",
       "252.381.6",
@@ -24039,7 +25553,9 @@
   },
   {
     "name": "Rejeton du chaos",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "689.414.0",
       "722.418.0",
@@ -24073,7 +25589,9 @@
   },
   {
     "name": "Rejeton furtif",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "273.407.6",
       "280.410.6",
@@ -24099,7 +25617,9 @@
   },
   {
     "name": "Rejeton sordide",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -24107,7 +25627,9 @@
   },
   {
     "name": "Rejettons d'Amnet",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "2485.1717.3",
       "2492.1739.3",
@@ -24132,7 +25654,9 @@
   },
   {
     "name": "Rémi Façolle",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -24140,7 +25664,9 @@
   },
   {
     "name": "Rétiaire",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -24151,7 +25677,9 @@
   },
   {
     "name": "Riath Brasir",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -24159,7 +25687,9 @@
   },
   {
     "name": "Ricine",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -24167,7 +25697,9 @@
   },
   {
     "name": "Robin des bois",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Grand arc en chêne"
     ],
@@ -24177,7 +25709,9 @@
   },
   {
     "name": "Rocailleux",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Opale finement taillée",
@@ -24194,7 +25728,9 @@
   },
   {
     "name": "Rongeur affamé",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "1 110",
@@ -24202,7 +25738,9 @@
   },
   {
     "name": "Rongeur en putrefaction",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "260",
@@ -24210,7 +25748,9 @@
   },
   {
     "name": "Rongeur hurlant",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Clef d'Ascension",
       "Emeraude brute",
@@ -24224,7 +25764,9 @@
   },
   {
     "name": "Roshnak Tul",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "2652.531.0"
     ],
@@ -24244,7 +25786,9 @@
   },
   {
     "name": "Roy centaure",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [],
     "drops": [
       "Poil de Centaure"
@@ -24254,7 +25798,9 @@
   },
   {
     "name": "Ruk le mineur",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "193.2639.2"
     ],
@@ -24269,7 +25815,9 @@
   },
   {
     "name": "S'craugh",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "75.157.6"
     ],
@@ -24279,7 +25827,9 @@
   },
   {
     "name": "Sabotcasseur",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "407.813.1"
     ],
@@ -24296,7 +25846,9 @@
   },
   {
     "name": "Sac d'os",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Soie d'araignée",
@@ -24308,7 +25860,9 @@
   },
   {
     "name": "Sagestria Mutante",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "51 000",
@@ -24316,7 +25870,9 @@
   },
   {
     "name": "Sanavaldo Carne",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -24329,7 +25885,9 @@
   },
   {
     "name": "Sang Thor",
-    "location": "Partout",
+    "location": [
+      "Partout"
+    ],
     "coordinates": [
       "889.231.5"
     ],
@@ -24339,7 +25897,9 @@
   },
   {
     "name": "Sapin",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -24347,7 +25907,9 @@
   },
   {
     "name": "Sarah",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -24355,7 +25917,9 @@
   },
   {
     "name": "Saules protecteur",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -24363,7 +25927,9 @@
   },
   {
     "name": "Sceau d'Eberywun",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de guérison des blessures graves",
@@ -24374,7 +25940,9 @@
   },
   {
     "name": "Scélérat",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "1469.41.1",
       "1451.56.1",
@@ -24663,7 +26231,9 @@
   },
   {
     "name": "Scolopendre",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "2348.1692.1",
       "2329.1689.1",
@@ -24698,7 +26268,9 @@
   },
   {
     "name": "Scorpion",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -24706,7 +26278,9 @@
   },
   {
     "name": "Scorpion géant",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "809.1520.0",
       "870.1533.0",
@@ -24784,7 +26358,9 @@
   },
   {
     "name": "Scorpion méfiant",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "2216.1786.1",
       "2230.1780.1",
@@ -24819,7 +26395,9 @@
   },
   {
     "name": "Scorpion terrifiant",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -24827,7 +26405,9 @@
   },
   {
     "name": "Seigneur des sables",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "266.2400.0",
       "116.410.5"
@@ -24840,7 +26420,9 @@
   },
   {
     "name": "Seigneur Elfe",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "931",
@@ -24848,7 +26430,9 @@
   },
   {
     "name": "Seigneur ténébreux de la Guerre",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "502.470.1",
       "491.494.1",
@@ -24879,7 +26463,9 @@
   },
   {
     "name": "Sentinelle centaure",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Arc recourbé en noyer blanc",
       "Grenat brut",
@@ -24893,7 +26479,9 @@
   },
   {
     "name": "Sentinelle d'Olin Haad",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "349.478.2",
       "351.473.2",
@@ -24908,7 +26496,9 @@
   },
   {
     "name": "Sentinelle de la colonie",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "2278.317.2",
       "2330.337.2",
@@ -25016,7 +26606,9 @@
   },
   {
     "name": "Sentinelle des abysses",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "566.1794.3",
       "604.1830.3",
@@ -25046,7 +26638,9 @@
   },
   {
     "name": "Sentinelle mort-vivante",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -25054,7 +26648,9 @@
   },
   {
     "name": "Sérac",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Eclats de glace",
@@ -25065,7 +26661,9 @@
   },
   {
     "name": "Séraphin",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "drops": [
       "Plume passe-partout"
     ],
@@ -25075,7 +26673,9 @@
   },
   {
     "name": "Séraphin corrompu",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "376.2310.3",
       "381.2309.3",
@@ -25100,7 +26700,9 @@
   },
   {
     "name": "Séraphin intrus",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "1190.2282.3",
       "1896.2345.3",
@@ -25137,7 +26739,9 @@
   },
   {
     "name": "Séraphine corrompue",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "376.2310.3",
       "381.2309.3",
@@ -25164,7 +26768,9 @@
   },
   {
     "name": "Serpent",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "481.1199.5",
       "466.1172.5",
@@ -25177,7 +26783,9 @@
   },
   {
     "name": "Serpent venimeux",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "2371.127.0",
       "2354.134.0",
@@ -25355,7 +26963,9 @@
   },
   {
     "name": "Serviteur momifié",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "700",
@@ -25363,7 +26973,9 @@
   },
   {
     "name": "Shaluzard",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -25371,7 +26983,9 @@
   },
   {
     "name": "Shaman centaure",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -25379,7 +26993,9 @@
   },
   {
     "name": "Shaman Orc",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -25387,7 +27003,9 @@
   },
   {
     "name": "Shonir",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -25395,7 +27013,9 @@
   },
   {
     "name": "Sigfrid",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -25403,7 +27023,9 @@
   },
   {
     "name": "Sighild",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -25411,7 +27033,9 @@
   },
   {
     "name": "Skeleton 01",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -25419,7 +27043,9 @@
   },
   {
     "name": "Skeleton King",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -25427,7 +27053,9 @@
   },
   {
     "name": "Skeleton Servant 1",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -25435,7 +27063,9 @@
   },
   {
     "name": "Skeleton Servant 2",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -25443,7 +27073,9 @@
   },
   {
     "name": "Skraug Assassin",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -25451,7 +27083,9 @@
   },
   {
     "name": "Skraug bigbruddalbashah",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Armure de plaques",
       "Bottes de plaques",
@@ -25472,7 +27106,9 @@
   },
   {
     "name": "Skraug bigworviktor",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Aigue-marine brute",
       "Amethyste brute",
@@ -25493,7 +27129,9 @@
   },
   {
     "name": "Skraug bludfightor",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Aigue-marine brute",
       "Amethyste brute",
@@ -25515,7 +27153,9 @@
   },
   {
     "name": "Skraug clangbangah",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Armure de plaques",
       "Bottes de plaques",
@@ -25537,7 +27177,9 @@
   },
   {
     "name": "Skraug Dextrator",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [],
     "drops": [
       "Plastron de ciel argent",
@@ -25562,7 +27204,9 @@
   },
   {
     "name": "Skraug grubbringah",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Armure de plaques",
       "Bottes de plaques",
@@ -25585,7 +27229,9 @@
   },
   {
     "name": "Skraug Guerrier",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -25593,7 +27239,9 @@
   },
   {
     "name": "Skraug madlimbmanglor",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Armure de plaques",
       "Bottes de plaques",
@@ -25614,7 +27262,9 @@
   },
   {
     "name": "Skraug meanheaddrummah",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Agate brute",
       "Agate finement taillée",
@@ -25638,7 +27288,9 @@
   },
   {
     "name": "Skraug moonfiredansah",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Agate brute",
       "Diamant brut",
@@ -25656,7 +27308,9 @@
   },
   {
     "name": "Skraug munchhuntor",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Aigue-marine brute",
       "Aigue-marine finement taillée",
@@ -25676,7 +27330,9 @@
   },
   {
     "name": "Skraug Peon",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -25684,7 +27340,9 @@
   },
   {
     "name": "Skraug Peon 2",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -25692,7 +27350,9 @@
   },
   {
     "name": "Skraug protekterritor",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Arc skraug primitif",
       "Armure de plaques",
@@ -25716,7 +27376,9 @@
   },
   {
     "name": "Skraug Shaman",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -25724,7 +27386,9 @@
   },
   {
     "name": "Skraug Shaman 2",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -25732,7 +27396,9 @@
   },
   {
     "name": "Skraug skavenger",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -25740,7 +27406,9 @@
   },
   {
     "name": "Skraug Skavenger 2",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -25748,7 +27416,9 @@
   },
   {
     "name": "Skraug standanbonkah",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Agate brute",
       "Arc skraug primitif",
@@ -25772,7 +27442,9 @@
   },
   {
     "name": "Skraug totemherbdoktor",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Cristal brut",
       "Emeraude brute",
@@ -25792,7 +27464,9 @@
   },
   {
     "name": "Skraug vert peon",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [],
     "drops": [
       "Livre de chance"
@@ -25802,7 +27476,9 @@
   },
   {
     "name": "Skraug vert shaman",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [],
     "drops": [
       "Dictionnaire de langue humaine"
@@ -25812,7 +27488,9 @@
   },
   {
     "name": "Skraug vert skavenger",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [],
     "drops": [
       "Alliage de confection skraug"
@@ -25822,7 +27500,9 @@
   },
   {
     "name": "Skraug warrior",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -25830,7 +27510,9 @@
   },
   {
     "name": "Skraug Warrior 2",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -25838,7 +27520,9 @@
   },
   {
     "name": "Skrull",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "949.1704.0"
     ],
@@ -25856,7 +27540,9 @@
   },
   {
     "name": "Soldat d'Olin Haad",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "2973.239.0",
       "2965.241.0",
@@ -25871,7 +27557,9 @@
   },
   {
     "name": "Soldat d'outre-tombe",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "2408.1607.1",
       "2400.1620.1",
@@ -25893,7 +27581,9 @@
   },
   {
     "name": "Soldat de l'empire",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -25901,7 +27591,9 @@
   },
   {
     "name": "Soldat disparu",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "81 208",
@@ -25909,7 +27601,9 @@
   },
   {
     "name": "Soldat du Lihongard",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "655.2875.0",
       "655.2891.0",
@@ -25924,7 +27618,9 @@
   },
   {
     "name": "Soldat du Royaume",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -25932,7 +27628,9 @@
   },
   {
     "name": "Soldat égaré",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Épée longue rouillée",
       "Potion de fureur"
@@ -25943,7 +27641,9 @@
   },
   {
     "name": "Sombre fantassin",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -25951,7 +27651,9 @@
   },
   {
     "name": "Sorcier momifié",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "447.166.1",
       "456.180.1",
@@ -25988,7 +27690,9 @@
   },
   {
     "name": "Sorcier Olphen",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "30 001",
@@ -25996,7 +27700,9 @@
   },
   {
     "name": "Sorcier squelette",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "488.2056.1",
       "465.2076.1",
@@ -26089,7 +27795,9 @@
   },
   {
     "name": "Sorcière au nez crochu",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "105 000",
@@ -26097,7 +27805,9 @@
   },
   {
     "name": "Sornette",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de guérison critique",
@@ -26110,7 +27820,9 @@
   },
   {
     "name": "Souffle de la mort",
-    "location": "Urtanar (Grotte)",
+    "location": [
+      "Urtanar (Grotte)"
+    ],
     "drops": [
       "Crane du souffle de la mort",
       "Sceau des ombres"
@@ -26121,7 +27833,9 @@
   },
   {
     "name": "Souilleur",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "1028.1841.1",
       "1020.1844.1",
@@ -26156,7 +27870,9 @@
   },
   {
     "name": "Spaille Deurr",
-    "location": "Partout",
+    "location": [
+      "Partout"
+    ],
     "coordinates": [
       "714.477.5"
     ],
@@ -26166,7 +27882,9 @@
   },
   {
     "name": "Spectre des marais",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
@@ -26178,7 +27896,9 @@
   },
   {
     "name": "Spectre Fumant",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
@@ -26191,7 +27911,9 @@
   },
   {
     "name": "Spectre MakrshP'tangh",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "3 536 890",
@@ -26199,7 +27921,9 @@
   },
   {
     "name": "Spectre menaçant",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Faux spectrale"
@@ -26209,7 +27933,9 @@
   },
   {
     "name": "Squelette",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "469.140.1",
       "464.154.1",
@@ -26252,7 +27978,9 @@
   },
   {
     "name": "Squelette bleu",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -26260,7 +27988,9 @@
   },
   {
     "name": "Squelette centaure",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "504.426.1",
       "496.447.1",
@@ -26290,7 +28020,9 @@
   },
   {
     "name": "Squelette dansant",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "65 000",
@@ -26298,7 +28030,9 @@
   },
   {
     "name": "Squelette de Sir Al Owinn",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "2791.2032.1",
       "2795.2019.1",
@@ -26316,7 +28050,9 @@
   },
   {
     "name": "Squelette dément",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Clef en os"
@@ -26326,7 +28062,9 @@
   },
   {
     "name": "Squelette du Manoir",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "2791.1998.1",
       "2776.2010.1",
@@ -26356,7 +28094,9 @@
   },
   {
     "name": "Squelette équestre",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "drops": [
       "Sceau d'éternité",
       "Os humain",
@@ -26368,7 +28108,9 @@
   },
   {
     "name": "Squelette Géant",
-    "location": "Nieve",
+    "location": [
+      "Nieve"
+    ],
     "coordinates": [
       "1757.218.4"
     ],
@@ -26382,7 +28124,9 @@
   },
   {
     "name": "Squelette rouge",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -26390,7 +28134,9 @@
   },
   {
     "name": "Squelette Sinistre",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -26398,7 +28144,9 @@
   },
   {
     "name": "Syrtash",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -26406,7 +28154,9 @@
   },
   {
     "name": "T-Bone",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "189.2975.2"
     ],
@@ -26426,7 +28176,9 @@
   },
   {
     "name": "Tadauss",
-    "location": "Partout",
+    "location": [
+      "Partout"
+    ],
     "coordinates": [
       "1370.286.5"
     ],
@@ -26436,7 +28188,9 @@
   },
   {
     "name": "Tarantule Géante",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Yeux de tarentule",
@@ -26448,7 +28202,9 @@
   },
   {
     "name": "Tarantule nécrosée",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -26456,7 +28212,9 @@
   },
   {
     "name": "Tarantule PT",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Yeux de tarentule"
@@ -26466,7 +28224,9 @@
   },
   {
     "name": "Tarentule",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "650.1578.0",
       "637.1585.0",
@@ -26600,7 +28360,9 @@
   },
   {
     "name": "Tarmur",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Prisme de mana",
@@ -26613,7 +28375,9 @@
   },
   {
     "name": "Tarnian",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
@@ -26625,7 +28389,9 @@
   },
   {
     "name": "Ted Demort",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Balai volant",
@@ -26636,7 +28402,9 @@
   },
   {
     "name": "Tégénaires Méphitiques",
-    "location": "Urtanar (Grotte)",
+    "location": [
+      "Urtanar (Grotte)"
+    ],
     "drops": [
       "Venin méphitique"
     ],
@@ -26646,7 +28414,9 @@
   },
   {
     "name": "Templier",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "drops": [
       "Anneau du templier",
       "Épée courte polie",
@@ -26658,7 +28428,9 @@
   },
   {
     "name": "Terreur des Neiges",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Venin d'araignée"
@@ -26668,7 +28440,9 @@
   },
   {
     "name": "Terreur hurlante",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "758.898.1",
       "759.898.1",
@@ -26868,7 +28642,9 @@
   },
   {
     "name": "Tetra-Grammaton",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -26876,7 +28652,9 @@
   },
   {
     "name": "Thadoss le ronchonneur",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "432.2118.1"
     ],
@@ -26889,7 +28667,9 @@
   },
   {
     "name": "Tisseur de mana centaure",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Emeraude brute",
       "Livre des sorts rouges",
@@ -26906,7 +28686,9 @@
   },
   {
     "name": "Tito",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -26914,7 +28696,9 @@
   },
   {
     "name": "Tombeau",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -26922,7 +28706,9 @@
   },
   {
     "name": "Tonar Mastard",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -26930,7 +28716,9 @@
   },
   {
     "name": "Traqueur centaure",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Agate brute",
       "Arc courbé en noyer blanc",
@@ -26947,7 +28735,9 @@
   },
   {
     "name": "Trish Jalnec",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "863.2615.2"
     ],
@@ -26968,7 +28758,9 @@
   },
   {
     "name": "Troll",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -26976,7 +28768,9 @@
   },
   {
     "name": "Troll des collines",
-    "location": "Urtanar",
+    "location": [
+      "Urtanar"
+    ],
     "drops": [
       "Fémur de troll des collines",
       "Morceau de peau de troll des collines",
@@ -26988,7 +28782,9 @@
   },
   {
     "name": "Troll des ponts",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "1905.2711.0",
       "1912.2718.0",
@@ -27019,7 +28815,9 @@
   },
   {
     "name": "Troll érudit",
-    "location": "Drake Island",
+    "location": [
+      "Drake Island"
+    ],
     "coordinates": [
       "330.1649.3",
       "330.1719.3",
@@ -27098,7 +28896,9 @@
   },
   {
     "name": "Troll hargnieux",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -27106,7 +28906,9 @@
   },
   {
     "name": "Troll sanguinaire",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -27114,7 +28916,9 @@
   },
   {
     "name": "Twiglee",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "105.935.5",
       "103.936.5"
@@ -27129,7 +28933,9 @@
   },
   {
     "name": "Ulgère",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -27137,7 +28943,9 @@
   },
   {
     "name": "Un arbre qui marche",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Feuille d'arbre démoniaque"
     ],
@@ -27147,7 +28955,9 @@
   },
   {
     "name": "Un garde mort-vivant",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "2265.195.1",
       "2165.295.1",
@@ -27174,7 +28984,9 @@
   },
   {
     "name": "Un garde skraug",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Armure de plaques",
       "Bottes de plaques",
@@ -27193,7 +29005,9 @@
   },
   {
     "name": "Un gardien mort-vivant",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Sceau d'éternité"
     ],
@@ -27203,7 +29017,9 @@
   },
   {
     "name": "Un homme mystérieux",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -27211,7 +29027,9 @@
   },
   {
     "name": "Un homme noyé",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -27219,7 +29037,9 @@
   },
   {
     "name": "Un livre usé",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -27227,7 +29047,9 @@
   },
   {
     "name": "Un marchand mystérieux",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -27235,7 +29057,9 @@
   },
   {
     "name": "Un Portail Magique",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -27243,7 +29067,9 @@
   },
   {
     "name": "Un puissant chasseur",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Grand arc en chêne"
     ],
@@ -27259,7 +29085,9 @@
   },
   {
     "name": "Un puit",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -27267,7 +29095,9 @@
   },
   {
     "name": "Un trebuchet",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -27275,7 +29105,9 @@
   },
   {
     "name": "Une archère mystérieuse",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -27283,7 +29115,9 @@
   },
   {
     "name": "Une catapulte",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Pile de bois"
@@ -27293,7 +29127,9 @@
   },
   {
     "name": "Une femme mystérieuse",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -27301,7 +29137,9 @@
   },
   {
     "name": "une porte",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -27309,7 +29147,9 @@
   },
   {
     "name": "Une sentinelle",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Armure de plaques",
       "Bottes de plaques",
@@ -27331,7 +29171,9 @@
   },
   {
     "name": "Une sentinelle mort-vivante",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "2774.102.1",
       "2749.105.1",
@@ -27587,7 +29429,9 @@
   },
   {
     "name": "Urigan",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -27595,7 +29439,9 @@
   },
   {
     "name": "Urthel",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -27603,7 +29449,9 @@
   },
   {
     "name": "Vase",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "116",
@@ -27611,7 +29459,9 @@
   },
   {
     "name": "Vayh Kramay Issy",
-    "location": "Partout",
+    "location": [
+      "Partout"
+    ],
     "coordinates": [
       "1354.295.5"
     ],
@@ -27621,7 +29471,9 @@
   },
   {
     "name": "Vengeur centaure",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Aigue-marine brute",
       "Amethyste brute",
@@ -27642,7 +29494,9 @@
   },
   {
     "name": "Ver Charognard",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "48",
@@ -27650,7 +29504,9 @@
   },
   {
     "name": "Ver d'acier",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "drops": [
       "Mucus de l'intouchable",
       "Pièce d'acier renforcé"
@@ -27661,7 +29517,9 @@
   },
   {
     "name": "Ver de Yoggoth",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Agate brute",
       "Diamant brut",
@@ -27673,7 +29531,9 @@
   },
   {
     "name": "Ver enfoui",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "1542.805.5",
       "1542.813.5",
@@ -27702,7 +29562,9 @@
   },
   {
     "name": "Ver géant",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -27710,7 +29572,9 @@
   },
   {
     "name": "Ver géant des sables",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "255.2385.0",
       "325.2400.0",
@@ -27763,7 +29627,9 @@
   },
   {
     "name": "Ver Tisseur",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "drops": [
       "Anneau de pierre de sang",
       "Livre des sorts rouges",
@@ -27776,7 +29642,9 @@
   },
   {
     "name": "Vert-de-vase",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "247.39.1",
       "235.41.1",
@@ -27842,7 +29710,9 @@
   },
   {
     "name": "Vert-de-vase poisseux",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -27850,7 +29720,9 @@
   },
   {
     "name": "Veuve noire géante",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Aigue-marine brute",
       "Amethyste brute",
@@ -27863,7 +29735,9 @@
   },
   {
     "name": "Vieille souche",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -27871,7 +29745,9 @@
   },
   {
     "name": "Villageois en putréfaction",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "460",
@@ -27879,7 +29755,9 @@
   },
   {
     "name": "Villageois réanimé",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "660",
@@ -27887,7 +29765,9 @@
   },
   {
     "name": "Vipère terrifiante",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "542.2588.6",
       "591.2594.6",
@@ -27933,7 +29813,9 @@
   },
   {
     "name": "Warg",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "806.533.0",
       "819.541.0",
@@ -27952,7 +29834,9 @@
   },
   {
     "name": "Wheende",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -27960,7 +29844,9 @@
   },
   {
     "name": "Whydah Gally",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Aigue-marine finement taillée",
@@ -27972,7 +29858,9 @@
   },
   {
     "name": "Wilma",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Potion de Guérison Extrême",
@@ -27984,7 +29872,9 @@
   },
   {
     "name": "Woogly",
-    "location": "Raven's Dust",
+    "location": [
+      "Raven's Dust"
+    ],
     "coordinates": [
       "928.2871.0"
     ],
@@ -27999,7 +29889,9 @@
   },
   {
     "name": "Xarion",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -28007,7 +29899,9 @@
   },
   {
     "name": "Yeah Tea",
-    "location": "Partout",
+    "location": [
+      "Partout"
+    ],
     "coordinates": [
       "750.522.5"
     ],
@@ -28017,7 +29911,9 @@
   },
   {
     "name": "Yéti",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "5 001",
@@ -28025,7 +29921,9 @@
   },
   {
     "name": "Yéti adulte",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Flocon ambré des sommets"
@@ -28035,7 +29933,9 @@
   },
   {
     "name": "Yéti de la serre",
-    "location": "Académie",
+    "location": [
+      "Académie"
+    ],
     "coordinates": [
       "611.2752.6",
       "605.2756.6",
@@ -28158,7 +30058,9 @@
   },
   {
     "name": "Yeti de Nicolaï",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -28166,7 +30068,9 @@
   },
   {
     "name": "Yeti des montagnes",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -28174,7 +30078,9 @@
   },
   {
     "name": "Yeti des Neiges",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Cotte d'anneaux",
@@ -28186,7 +30092,9 @@
   },
   {
     "name": "Yéti féroce",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Dent de Yéti",
       "Larme de sang"
@@ -28197,7 +30105,9 @@
   },
   {
     "name": "Yoggoth",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [
       "Amethyste brute",
@@ -28213,7 +30123,9 @@
   },
   {
     "name": "Yrsath",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -28221,7 +30133,9 @@
   },
   {
     "name": "Ysaline",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -28229,7 +30143,9 @@
   },
   {
     "name": "Zaelke",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -28237,7 +30153,9 @@
   },
   {
     "name": "ZartGax",
-    "location": "Nieve",
+    "location": [
+      "Nieve"
+    ],
     "drops": [
       "Chapeau de glace",
       "Arc de glace enchanté",
@@ -28251,7 +30169,9 @@
   },
   {
     "name": "Zartgax de givre",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "1796.253.4",
       "1833.217.4",
@@ -28273,7 +30193,9 @@
   },
   {
     "name": "Zélina",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "0",
@@ -28281,7 +30203,9 @@
   },
   {
     "name": "Zombie acide",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "coordinates": [
       "258.93.0",
       "282.98.0",
@@ -28351,7 +30275,9 @@
   },
   {
     "name": "Zombie au crâne dégarni",
-    "location": "Inconnu",
+    "location": [
+      "Inconnu"
+    ],
     "coordinates": [],
     "drops": [],
     "exp": "52 000",
@@ -28359,7 +30285,9 @@
   },
   {
     "name": "Zombie putride",
-    "location": "Arakas",
+    "location": [
+      "Arakas"
+    ],
     "coordinates": [
       "469.140.1",
       "464.154.1",
@@ -28421,7 +30349,9 @@
   },
   {
     "name": "Zorglub",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Fluide visqueux essentiel de Zorglub"
     ],
@@ -28431,7 +30361,9 @@
   },
   {
     "name": "Zuwarah",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [
       "Potion de guérison des blessures graves",
       "Fiole de sang de Zuwarah",
@@ -28443,7 +30375,9 @@
   },
   {
     "name": "Zzartgax",
-    "location": "Stoneheim",
+    "location": [
+      "Stoneheim"
+    ],
     "drops": [],
     "exp": "16K",
     "gold": "400",
