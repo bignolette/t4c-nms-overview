@@ -1,0 +1,823 @@
+[
+  {
+    "id": "donjon_cerberus",
+    "name": "Donjon du Cerberus — Les 22 Clefs",
+    "zone": "Académie — Niveau -4",
+    "level_required": 200,
+    "group_recommended": true,
+    "group_size_recommended": "3 à 5 joueurs",
+    "description": "Obtenez les 22 clefs de chair durcie pour accéder à la salle du boss ultime Cerberus, puis capturez-le avec le sceptre de capture pour terminer la quête de l'Académie.",
+    "rewards": {
+      "experience": "10G XP",
+      "items": [
+        {
+          "name": "Parchemin d'XP doublée (1 heure)",
+          "quantity": 10
+        }
+      ],
+      "boss_drops": "Items divers très intéressants (drops aléatoires du Cerberus)",
+      "note": "Rendez la capture à Pelkor Zirus au salon de jeux. N'oubliez pas d'enlever le sceptre pour qu'il le reprenne."
+    },
+    "npcs": [
+      {
+        "name": "Evalcian",
+        "role": "Marchand de potions du donjon",
+        "location": "Donjon du Cerberus, entrée du -4",
+        "interactions": [
+          {
+            "keyword": "trésor",
+            "purpose": "Obtenir la clef de chair #7 (nécessite clef #6 + anneau de cerfeuil)"
+          }
+        ],
+        "sells": [
+          "Potion d'immunisation au glas (mineure / standard / majeure)",
+          "Potion de dissipation du glas",
+          "Potion d'inertie (mineure / standard / majeure)",
+          "Potion de dissipation du saturnisme",
+          "Potion de guérison extrême"
+        ]
+      },
+      {
+        "name": "Pelkor Zirus",
+        "role": "Récepteur de captures",
+        "location": "Salon de jeux",
+        "interactions": [
+          {
+            "purpose": "Rendre la capture du Cerberus pour obtenir la récompense finale"
+          }
+        ]
+      }
+    ],
+    "items_required_overview": {
+      "potions_evalcian": [
+        {
+          "name": "Potion d'inertie (standard ou majeure)",
+          "usage": "Immunité téléportation — obligatoire pour les salles clés #10, #12, #13, #14, #16, #17",
+          "duration": "Standard = 30 min, Majeure = 60 min"
+        },
+        {
+          "name": "Potion d'immunisation au glas (standard ou majeure)",
+          "usage": "Immunité mort — obligatoire pour les salles clés #11, #15, #16 (corail #3)",
+          "duration": "Standard = 30 min, Majeure = 60 min"
+        },
+        {
+          "name": "Potion de dissipation du saturnisme",
+          "usage": "Guérit le saturnisme — nécessaire pour clé corail #2 et clés #18/#19"
+        },
+        {
+          "name": "Potion de dissipation du glas",
+          "usage": "Secours en cas d'oubli de potion d'immunisation au glas (10 secondes pour agir)"
+        }
+      ],
+      "items_speciaux": [
+        {
+          "name": "Anneau de cerfeuil",
+          "usage": "Clef #7",
+          "obtention": [
+            "Drop des Démonicons (île au-dessus du camp gob d'Arakas)",
+            "Craft bijoutier level 18",
+            "3000 fèves de bronze au salon de jeu"
+          ]
+        },
+        {
+          "name": "Clef tordue",
+          "usage": "Clef #14",
+          "obtention": "Drop des Seigneurs ténébreux de la guerre (cave du Château de Mordenthal, nord de Stoneheim)"
+        },
+        {
+          "name": "Clef de pierre",
+          "usage": "Clef #14",
+          "obtention": "Drop de divers morts-vivants de Raven's Dust"
+        },
+        {
+          "name": "Clef de fer noircie",
+          "usage": "Clef #14",
+          "obtention": "Drop de divers monstres de la crypte de Lord Stonecrest (Stoneheim)"
+        },
+        {
+          "name": "Clef d'os poli",
+          "usage": "Clef #14",
+          "obtention": "Drop de divers monstres de la crypte Centaures à l'est de la ville Centaure (Stoneheim)"
+        },
+        {
+          "name": "1,5M pièces d'or",
+          "usage": "Clef corail #1 (clé #16)",
+          "obtention": "À jeter dans le puits. Poser le surplus au sol avant de cliquer."
+        },
+        {
+          "name": "Fiole de protection contre la terreur",
+          "usage": "Clef #17 (optionnel mais très recommandé)",
+          "obtention": "Craft",
+          "duration": "30 minutes"
+        },
+        {
+          "name": "Sceptre de capture",
+          "usage": "Combat final contre le Cerberus",
+          "obtention": "Quête de l'Académie (Pelkor Zirus)"
+        }
+      ]
+    },
+    "potion_durations": {
+      "mineure": "60 secondes",
+      "standard": "30 minutes",
+      "majeure": "60 minutes"
+    },
+    "steps": [
+      {
+        "key_number": 1,
+        "name": "Clef de chair durcie #1",
+        "type": "combat",
+        "difficulty": "moyen",
+        "group_required": false,
+        "group_recommended": true,
+        "location": "Entrée du donjon — Salle des baffreurs",
+        "objective": "Tuer les baffreurs jusqu'à obtenir la clef #1 au sol.",
+        "instructions": [
+          "Juste après l'entrée du donjon, vous trouverez des baffreurs (archers très puissants).",
+          "Tuez-les jusqu'à obtenir la clef #1.",
+          "Attention : ils sont forts, se multiplient vite. De l'aide est recommandée."
+        ],
+        "drop_method": "sol",
+        "warnings": [
+          "Les baffreurs tirent des flèches très douloureuses et se multiplient rapidement."
+        ]
+      },
+      {
+        "key_number": 2,
+        "name": "Clef de chair durcie #2",
+        "type": "puzzle_deplacement",
+        "difficulty": "moyen",
+        "group_required": false,
+        "group_recommended": false,
+        "location": "Salle au SE des baffreurs",
+        "objective": "Atteindre le coffre en utilisant le pavé numérique pour se déplacer.",
+        "instructions": [
+          "Entrez dans la salle au SE des baffreurs. Passez juste la porte sans avancer plus.",
+          "Activez le mode déplacement sur le pavé numérique (touche 'Verr Num' / 'Num Lock').",
+          "Tapez la combinaison : 9 - 8 - 9 pour atteindre le coffre.",
+          "Une fois à côté du coffre, NE BOUGEZ PLUS. Cliquez dessus.",
+          "La clef #2 (ou une potion) tombera au sol."
+        ],
+        "drop_method": "sol",
+        "respawn": {
+          "solo": "20 minutes",
+          "group": "10 minutes"
+        },
+        "warnings": [
+          "Bien se positionner au départ sinon vous retombez chez les baffreurs.",
+          "Le coffre ne donne pas toujours la clef, parfois une potion."
+        ]
+      },
+      {
+        "key_number": 3,
+        "name": "Clef de chair durcie #3",
+        "type": "puzzle_deplacement",
+        "difficulty": "difficile",
+        "group_required": false,
+        "group_recommended": true,
+        "location": "Salle au NO des baffreurs",
+        "objective": "Ouvrir 7 coffres dans le bon ordre en suivant un chemin précis.",
+        "instructions": [
+          "Entrez dans la salle au NO des baffreurs.",
+          "Ouvrez les 7 coffres dans l'ordre (1 à 7) en suivant les chemins marqués en rouge sur la carte.",
+          "Un éclair apparaît si vous avez ouvert le bon coffre.",
+          "La clef #3 tombe directement dans votre inventaire après le 7ème coffre.",
+          "Déplacez-vous toujours contre le mur en périphérie de la pièce.",
+          "Attention : piège en haut à gauche de la salle."
+        ],
+        "drop_method": "inventaire",
+        "warnings": [
+          "Si vous déviez du chemin, vous retombez chez les baffreurs.",
+          "Quasi impossible en solo. Prévoyez vos protections."
+        ]
+      },
+      {
+        "key_number": 4,
+        "name": "Clef de chair durcie #4",
+        "type": "puzzle_portails",
+        "difficulty": "facile",
+        "group_required": false,
+        "group_recommended": false,
+        "location": "Salle des portails",
+        "objective": "Cliquer sur 5 portails dans le bon ordre.",
+        "instructions": [
+          "Cliquez sur les portails dans cet ordre :",
+          "1 — Portail sous les rochers",
+          "2 — Portail au nord-est",
+          "3 — Portail le plus à l'ouest",
+          "4 — Portail en face de la porte d'arrivée (depuis clef #3)",
+          "5 — Portail au sud-est du premier",
+          "Si erreur : reprenez au portail que vous avez loupé (pas besoin de recommencer)."
+        ],
+        "drop_method": "inventaire",
+        "warnings": [
+          "Le portail N°1 au mauvais moment vous téléporte à votre sanctuaire.",
+          "Certains portails sont piégés (sort de feu)."
+        ]
+      },
+      {
+        "key_number": 5,
+        "name": "Clef de chair durcie #5",
+        "type": "combat",
+        "difficulty": "moyen",
+        "group_required": false,
+        "group_recommended": true,
+        "location": "Salle au SE (via salle clé #2)",
+        "objective": "Tuer des vers enfouis À DISTANCE pour récupérer la clef #5.",
+        "instructions": [
+          "Depuis la salle de la clé #2, entrez légèrement puis dirigez-vous vers la salle au SE.",
+          "Combinaison pavé numérique : 1-7-7-2-6 ou 4-7-7-2-6 selon position initiale.",
+          "Tuez les vers enfouis À DISTANCE (ils explosent au corps-à-corps).",
+          "La clef #5 tombe au sol."
+        ],
+        "drop_method": "sol",
+        "warnings": [
+          "Les vers explosent si vous les tuez au corps-à-corps !",
+          "Aide obligatoire pour les classes CAC sans attaque à distance."
+        ]
+      },
+      {
+        "key_number": 6,
+        "name": "Clef de chair durcie #6",
+        "type": "combat",
+        "difficulty": "moyen",
+        "group_required": false,
+        "group_recommended": true,
+        "location": "Salle au NO (via salle clé #3, longer les murs côté nord)",
+        "objective": "Tuer des vers enfouis AU CORPS-À-CORPS pour récupérer la clef #6.",
+        "instructions": [
+          "Depuis la salle clé #3, longez les murs côté nord pour rejoindre la salle au NO.",
+          "Tuez les vers enfouis AU CORPS-À-CORPS cette fois.",
+          "Astuce repop : sortez de la salle, switchez de perso, reswitchez. Attendez derrière la porte que les vers se regroupent avant d'entrer.",
+          "La clef #6 tombe au sol."
+        ],
+        "drop_method": "sol",
+        "warnings": [
+          "Restez bien collé au mur en traversant sinon vous retombez chez les baffreurs.",
+          "Les vers peuvent exploser si vous les approchez mal."
+        ]
+      },
+      {
+        "key_number": 7,
+        "name": "Clef de chair durcie #7",
+        "type": "dialogue_pnj",
+        "difficulty": "facile (si vous avez l'anneau)",
+        "group_required": false,
+        "group_recommended": false,
+        "items_required": [
+          "Clef de chair durcie #6",
+          "Anneau de cerfeuil"
+        ],
+        "location": "Auprès d'Evalcian",
+        "objective": "Parler à Evalcian avec la clef #6 et un anneau de cerfeuil.",
+        "instructions": [
+          "Procurez-vous un anneau de cerfeuil (Démonicons / bijoutier lvl 18 / 3000 fèves de bronze).",
+          "Parlez à Evalcian.",
+          "Mot-clef : « trésor ».",
+          "Vous obtenez la clef #7."
+        ],
+        "drop_method": "inventaire",
+        "warnings": [
+          "L'anneau de cerfeuil est très rare en drop sur les Démonicons.",
+          "3000 fèves de bronze au salon de jeu est une alternative coûteuse."
+        ]
+      },
+      {
+        "key_number": 8,
+        "name": "Clef de chair durcie #8",
+        "type": "puzzle_collaboratif",
+        "difficulty": "moyen",
+        "group_required": true,
+        "group_recommended": true,
+        "group_size_minimum": 3,
+        "location": "Première salle aux 3 leviers",
+        "objective": "Activer les 3 leviers puis ouvrir le coffre.",
+        "instructions": [
+          "Cliquez d'abord sur le coffre.",
+          "Chaque joueur active un levier (un levier par joueur).",
+          "Messages possibles :",
+          "  • « Le levier semble bloqué... » → Attendre 1h IG ou autre joueur.",
+          "  • « Vous actionnez le levier mais rien ne se produit » → Levier activé, mais pas tous.",
+          "  • « ...enclencher un mécanisme » → 3ème levier activé, c'est bon !",
+          "Recliquez sur le coffre pour obtenir la clef #8."
+        ],
+        "drop_method": "inventaire",
+        "respawn": {
+          "levier_cooldown": "1 heure IG par joueur"
+        },
+        "warnings": [
+          "IMPORTANT : Les salles #8 et #9 sont connectées. Activer un levier dans l'une en désactive un dans l'autre.",
+          "Le cooldown d'1h IG est partagé entre les deux salles."
+        ]
+      },
+      {
+        "key_number": 9,
+        "name": "Clef de chair durcie #9",
+        "type": "puzzle_collaboratif",
+        "difficulty": "moyen",
+        "group_required": true,
+        "group_recommended": true,
+        "group_size_minimum": 3,
+        "location": "Deuxième salle aux 3 leviers",
+        "objective": "Activer les 3 leviers puis ouvrir le coffre (même principe que #8).",
+        "instructions": [
+          "Même fonctionnement que la clef #8.",
+          "Cliquez d'abord sur le coffre.",
+          "3 joueurs activent chacun un levier.",
+          "Recliquez sur le coffre pour obtenir la clef #9."
+        ],
+        "drop_method": "inventaire",
+        "respawn": {
+          "levier_cooldown": "1 heure IG par joueur (partagé avec salle #8)"
+        },
+        "warnings": [
+          "Si vous venez d'activer un levier pour la clé #8, il faut attendre 1h IG même pour la clé #9."
+        ]
+      },
+      {
+        "key_number": 10,
+        "name": "Clef de chair durcie #10",
+        "type": "camping_coffres",
+        "difficulty": "moyen",
+        "group_required": false,
+        "group_recommended": true,
+        "potions_required": [
+          "Potion d'inertie (standard ou majeure)"
+        ],
+        "location": "Salle au NO de la salle aux 3 leviers de la clé #8",
+        "objective": "Camper 3 petits coffres pour obtenir 3 clefs rouillées, puis ouvrir le gros coffre.",
+        "instructions": [
+          "BUVEZ UNE POTION D'INERTIE avant d'entrer (sinon téléporté à l'entrée du -4).",
+          "Campez les 3 petits coffres pour obtenir les clefs rouillées du donjon #1, #2, #3.",
+          "Ouvrez le gros coffre au milieu avec les 3 clefs rouillées.",
+          "La clef #10 tombe au sol (avec un peu de chance)."
+        ],
+        "drop_method": "sol",
+        "respawn": {
+          "petits_coffres": "10 minutes",
+          "gros_coffre_solo": "20 minutes",
+          "gros_coffre_group": "10 minutes"
+        },
+        "warnings": [
+          "Sans potion d'inertie → téléportation à l'entrée du -4 après 10 secondes.",
+          "Pour boire une 2ème potion identique, attendez que la précédente soit terminée. Quittez la salle un instant."
+        ]
+      },
+      {
+        "key_number": 11,
+        "name": "Clef de chair durcie #11",
+        "type": "camping_coffres",
+        "difficulty": "moyen",
+        "group_required": false,
+        "group_recommended": true,
+        "potions_required": [
+          "Potion d'immunisation au glas (standard ou majeure)"
+        ],
+        "location": "Salle au SE de la salle aux 3 leviers de la clef #9",
+        "objective": "Camper 3 petits coffres pour obtenir 3 clefs rouillées, puis ouvrir le gros coffre.",
+        "instructions": [
+          "BUVEZ UNE POTION D'IMMUNISATION AU GLAS avant d'entrer (sinon vous mourrez et droppez !).",
+          "En cas d'oubli : vous avez quelques secondes pour recall ou boire la potion.",
+          "Campez les 3 petits coffres pour obtenir les clefs rouillées du donjon #4, #5, #6.",
+          "Ouvrez le gros coffre au milieu pour obtenir la clef #11."
+        ],
+        "drop_method": "sol",
+        "respawn": {
+          "petits_coffres": "10 minutes",
+          "gros_coffre_solo": "20 minutes",
+          "gros_coffre_group": "10 minutes"
+        },
+        "warnings": [
+          "DANGER DE MORT sans potion d'immunisation au glas !",
+          "Pour boire une 2ème potion identique, attendez que la précédente soit terminée. Quittez la salle un instant."
+        ]
+      },
+      {
+        "key_number": 12,
+        "name": "Clef de chair durcie #12",
+        "type": "exploration_iles_obsidiennes",
+        "difficulty": "très difficile",
+        "group_required": false,
+        "group_recommended": true,
+        "potions_required": [
+          "Potion d'inertie (standard ou majeure)"
+        ],
+        "location": "Îles obsidiennes (accès via salle aux 4 tourbillons, au nord de salle clé #10)",
+        "objective": "Obtenir les 19 clefs obsidiennes en séquence, puis récupérer la clef de chair #12.",
+        "instructions": [
+          "Accédez à la salle aux 4 tourbillons (au nord de la salle clé #10, ouverte par clé #11).",
+          "Prenez le tourbillon sud caché par le mur → arrivée sur l'île de départ.",
+          "Parcourez les îles obsidiennes en suivant l'enchaînement D (droite) / G (gauche) pour obtenir les clés obs #1 à #19 :",
+          "  Clef obs 1 : milieu",
+          "  Clef obs 2 : G - D - GG - D",
+          "  Clef obs 3 : G - D - G - DD - G",
+          "  Clef obs 4 : DD - G - DD",
+          "  Clef obs 5 : G - DD - G",
+          "  Clef obs 6 : DD puis sortir aux baffreurs par GGG",
+          "  Clef obs 7 : milieu et G",
+          "  Clef obs 8 : D - GGGGG puis sortir par D (salle dalles grand côté) puis tourbillon nord",
+          "  Clef obs 9 : D",
+          "  Clef obs 10 : G - D puis sortir par D (salle dalles petit côté) puis tourbillon",
+          "  Clef obs 11 : GGGG puis sortir par G aux baffreurs",
+          "  Clef obs 12 : GG puis sortir par GGG aux baffreurs",
+          "  Clef obs 13 : salle des 4 tourbillons, coffre nord-ouest",
+          "  Clef obs 14 : DD - GGG",
+          "  Clef obs 15 : D - G - D",
+          "  Clef obs 16 : GGG - DD puis sortir par DGD (salle dalles) puis tourbillon nord",
+          "  Clef obs 17 : salle des 4 tourbillons, coffre nord-est",
+          "  Clef obs 18 : DD - G puis sortir par DDGD aux baffreurs",
+          "  Clef obs 19 : salle des 4 tourbillons, coffre sud-est",
+          "Avec la clé obs #19, cheminement final : DGDD → salle des dalles petit côté.",
+          "Ouvrez le coffre pour la clef de chair #12.",
+          "Descendez dans le tourbillon → retour aux baffreurs."
+        ],
+        "drop_method": "sol (coffre)",
+        "warnings": [
+          "Si vous perdez une clé obsidienne suite à une erreur → RECOMMENCER DEPUIS LE DÉBUT.",
+          "Potion d'inertie obligatoire pour traverser la salle clé #10."
+        ]
+      },
+      {
+        "key_number": 13,
+        "name": "Clef de chair durcie #13",
+        "type": "puzzle_dalles",
+        "difficulty": "très difficile",
+        "group_required": false,
+        "group_recommended": true,
+        "potions_required": [
+          "Potion d'inertie (standard ou majeure)"
+        ],
+        "location": "Grande salle des dalles (grand côté) + îles obsidiennes",
+        "objective": "Activer les dalles bleues 1 à 10 dans l'ordre puis ouvrir le coffre central.",
+        "instructions": [
+          "Potion d'inertie obligatoire.",
+          "Depuis le tourbillon sud (îles obsidiennes), suivre cet enchaînement :",
+          "  Dalle 1 : GGGG, marcher sur la dalle bleue côté droit, sortir côté gauche",
+          "  Dalle 2 : DD GGGG D → salle dalles grand côté, dalle bleue 2, sortir tourbillon nord",
+          "  Dalle 3 : D G DD → salle dalles petit côté, dalle bleue 3, sortir tourbillon",
+          "  Dalles 4-5-6-7 : DD GGGG D → salle dalles grand côté, dalles 4/5/6/7, sortir",
+          "  Dalle 8 : DD GGGG, dalle bleue, sortir",
+          "  Dalles 9-10 : DD GGGG D → salle dalles grand côté, dalles 9/10",
+          "Cliquer sur le coffre central → clef #13 dans l'inventaire."
+        ],
+        "drop_method": "inventaire",
+        "warnings": [
+          "Marcher sur une MAUVAISE dalle = recommencer depuis le début.",
+          "Vous pouvez marcher deux fois sur la même dalle bleue sans problème."
+        ]
+      },
+      {
+        "key_number": 14,
+        "name": "Clef de chair durcie #14",
+        "type": "exploration_complexe",
+        "difficulty": "extrême",
+        "group_required": false,
+        "group_recommended": true,
+        "potions_required": [
+          "Potion d'inertie (standard ou majeure)"
+        ],
+        "items_required": [
+          "Clefs obsidiennes #19, #11, #8, #4 (à refaire plusieurs fois)",
+          "Clef tordue (drop Seigneurs ténébreux, Château Mordenthal, SH)",
+          "Clef de pierre (drop morts-vivants, RD)",
+          "Clef de fer noircie (drop crypte Lord Stonecrest, SH)",
+          "Clef d'os poli (drop crypte Centaures, SH)"
+        ],
+        "location": "Salle aux 10 dalles bleues (NO de la salle clé #10) + île des tourbillons",
+        "objective": "Activer les dalles bleues par paliers et récupérer les clefs rouillées #7 à #10, puis la clef #14.",
+        "instructions": [
+          "Refaire les clés obsidiennes jusqu'à la #19, puis #11, puis #8, puis #4.",
+          "Se procurer les 4 clefs spéciales (tordue, pierre, fer noircie, os poli).",
+          "Aller dans la salle aux 10 dalles bleues (NO de salle clé #10).",
+          "Activer dalles 1-2 → tourbillon milieu (salle 4 tourbillons) → coffre gauche → clef rouillée #7. Recall.",
+          "Activer dalles 1-4 → tourbillon milieu → autre coffre gauche → clef rouillée #8. Recall.",
+          "Activer dalles 1-6 → tourbillon milieu → coffre centre droit → clef rouillée #9. Recall.",
+          "Activer dalles 1-8 → tourbillon milieu → coffre le plus à droite → clef rouillée #10. Recall.",
+          "Activer dalles 1-10 → coffre au centre de la salle aux dalles bleues → clef de chair #14."
+        ],
+        "drop_method": "sol/inventaire",
+        "warnings": [
+          "C'est la clef la plus longue de toute la quête. Beaucoup de marche.",
+          "Les 4 clefs spéciales sont des drops à farmer dans différentes zones du monde."
+        ]
+      },
+      {
+        "key_number": 15,
+        "name": "Clef de chair durcie #15",
+        "type": "camping_coffres",
+        "difficulty": "moyen",
+        "group_required": false,
+        "group_recommended": true,
+        "potions_required": [
+          "Potion d'immunisation au glas (standard ou majeure)"
+        ],
+        "location": "Salle aux 11 tourbillons (NE de la salle clé #11)",
+        "objective": "Tuer 2 gargouilles puis camper le coffre à l'est.",
+        "instructions": [
+          "BUVEZ UNE POTION D'IMMUNISATION AU GLAS avant d'entrer.",
+          "Traversez jusqu'à la salle aux 11 tourbillons.",
+          "Tuez les 2 gargouilles pour passer.",
+          "Campez le petit coffre situé à l'est pour la clef #15."
+        ],
+        "drop_method": "sol (coffre)",
+        "respawn": {
+          "solo": "20 minutes",
+          "group": "10 minutes"
+        },
+        "warnings": [
+          "Les gargouilles lancent un sort qui fait marcher dans toutes les directions !",
+          "Attention à ne pas tomber dans un tourbillon pendant le combat."
+        ]
+      },
+      {
+        "key_number": 16,
+        "name": "Clef de chair durcie #16",
+        "type": "multi_etapes",
+        "difficulty": "difficile",
+        "group_required": false,
+        "group_recommended": true,
+        "potions_required": [
+          "Potion d'inertie (standard ou majeure)",
+          "Potion d'immunisation au glas (standard ou majeure)"
+        ],
+        "items_required": [
+          "1,5M pièces d'or"
+        ],
+        "location": "Multiples salles",
+        "objective": "Obtenir les clefs corail #1 et #3, puis ouvrir le coffre central de l'île.",
+        "sub_steps": [
+          {
+            "name": "Clef corail #1 — Le puits",
+            "instructions": [
+              "Buvez potion d'inertie.",
+              "Allez cliquer sur le puits (salle NO de salle clé #14, passez par le labyrinthe).",
+              "Jetez 1,5M de pièces d'or au mot « jetées ».",
+              "ATTENTION : le puits prend TOUTES vos pièces d'or. Posez le surplus au sol avant.",
+              "Si pas de clef au 1er coup, réessayez avec 100 ou 200k d'or.",
+              "Respawn du puits : 20 minutes."
+            ]
+          },
+          {
+            "name": "Clef corail #3 — Salle aux 100 coffres",
+            "instructions": [
+              "Buvez potion d'immunisation au glas.",
+              "Allez dans la salle aux 11 tourbillons, prenez le tourbillon du milieu de l'avant-dernier rang.",
+              "Vous tombez dans la salle aux 100 coffres.",
+              "Cliquez rapidement sur 5 coffres à la suite (~30 secondes).",
+              "Utilisez la carte pour les positions exactes.",
+              "Prenez le portail de sortie → téléporté à l'entrée du -4."
+            ]
+          },
+          {
+            "name": "Clef de chair #16 — Coffre final",
+            "instructions": [
+              "Avec les clefs corail #1 et #3, allez au gros coffre au centre de l'île des clefs rouillées (celle de la clef #14).",
+              "N'oubliez pas la potion d'inertie."
+            ]
+          }
+        ],
+        "drop_method": "sol (coffre)",
+        "respawn": {
+          "solo": "20 minutes",
+          "group": "10 minutes"
+        },
+        "warnings": [
+          "Le puits prend TOUTES vos pièces d'or !",
+          "Le timing aux 100 coffres est serré (~30 secondes). Entraînez-vous."
+        ]
+      },
+      {
+        "key_number": 17,
+        "name": "Clef de chair durcie #17",
+        "type": "multi_etapes",
+        "difficulty": "très difficile",
+        "group_required": true,
+        "group_recommended": true,
+        "potions_required": [
+          "Potion d'inertie (standard ou majeure)",
+          "Potion de dissipation du saturnisme",
+          "Fiole de protection contre la terreur (recommandé, craft, 30 min)"
+        ],
+        "location": "Salle des gargouilles + tourbillons",
+        "objective": "Obtenir les clefs corail #2, #4, #5, #6, #7 puis atteindre le coffre de l'escargot.",
+        "sub_steps": [
+          {
+            "name": "Clef corail #2 — Le puits au saturnisme",
+            "instructions": [
+              "Buvez potion d'inertie + préparez potion de dissipation du saturnisme.",
+              "Rendez-vous salle des dalles grand côté (DD GGGG D).",
+              "Allez à droite vers la dalle bleue 10, entrez dans la salle cachée à droite.",
+              "Cliquez sur le puits, dites « boire ».",
+              "Buvez IMMÉDIATEMENT votre potion de dissipation du saturnisme.",
+              "Vous obtenez la clef corail #2."
+            ]
+          },
+          {
+            "name": "Clef corail #4",
+            "instructions": [
+              "Salle des gargouilles → Tourbillon N°1 (au nord).",
+              "Récupérez la clef corail #4 dans le coffre. Recall."
+            ]
+          },
+          {
+            "name": "Clef corail #5",
+            "instructions": [
+              "Salle des gargouilles → Tourbillon N°2 (à l'est).",
+              "Récupérez la clef corail #5 dans le coffre. Recall."
+            ]
+          },
+          {
+            "name": "Clef corail #6",
+            "instructions": [
+              "Salle des gargouilles → Tourbillon N°3 (à l'ouest).",
+              "Récupérez la clef corail #6 dans le coffre. Recall."
+            ]
+          },
+          {
+            "name": "Clef corail #7",
+            "instructions": [
+              "Salle des gargouilles → Tourbillon N°4 (caché au sud).",
+              "Récupérez la clef corail #7 dans le coffre. Recall."
+            ]
+          },
+          {
+            "name": "Clef de chair #17 — L'escargot",
+            "instructions": [
+              "Salle des gargouilles → Tourbillon N°5 (l'escargot).",
+              "Parcourez la grande spirale en groupe (ou prêtre full lumière).",
+              "Atteignez le coffre au milieu de la spirale.",
+              "Récupérez la clef de chair #17.",
+              "Légende : étoile verte = départ, point jaune = tourbillon de retour au début."
+            ]
+          }
+        ],
+        "drop_method": "sol (coffre)",
+        "respawn": {
+          "coffres_corail_solo": "20 minutes",
+          "coffres_corail_group": "immédiat",
+          "coffre_clef_17": "pas de repop"
+        },
+        "warnings": [
+          "Les clefs corail sont à usage unique !",
+          "La fiole de protection contre la terreur supprime l'effet des gargouilles (30 min).",
+          "Sans fiole, c'est la clé la plus difficile du donjon."
+        ]
+      },
+      {
+        "key_number": 18,
+        "name": "Clef de chair durcie #18",
+        "type": "puzzle_dalles_collaboratif",
+        "difficulty": "moyen",
+        "group_required": true,
+        "group_recommended": true,
+        "group_size_minimum": 3,
+        "potions_required": [
+          "Potion de dissipation du saturnisme (pour celui qui marche sur la bleue)"
+        ],
+        "items_required": [
+          "Clef de chair #17 (pour ouvrir la salle)"
+        ],
+        "location": "Salle derrière les gargouilles",
+        "objective": "Actionner 3 dalles de couleur dans l'ordre avec 3 joueurs.",
+        "instructions": [
+          "Avec la clef #17, ouvrez la salle derrière les gargouilles.",
+          "3 joueurs marchent chacun sur une dalle dans cet ordre :",
+          "  1. Dalle JAUNE",
+          "  2. Dalle BLEUE (rend malade : saturnisme pendant 1 heure)",
+          "  3. Dalle VERTE",
+          "Le joueur qui marche sur la bleue NE PEUT PAS ouvrir le coffre tant qu'il est malade.",
+          "Achetez une potion de dissipation du saturnisme chez Evalcian pour se soigner."
+        ],
+        "drop_method": "inventaire (coffre)",
+        "warnings": [
+          "Le joueur sur la dalle bleue est malade pendant 1 heure sans potion de dissipation."
+        ]
+      },
+      {
+        "key_number": 19,
+        "name": "Clef de chair durcie #19",
+        "type": "puzzle_dalles_collaboratif",
+        "difficulty": "moyen",
+        "group_required": true,
+        "group_recommended": true,
+        "group_size_minimum": 3,
+        "potions_required": [
+          "Potion de dissipation du saturnisme"
+        ],
+        "location": "Salle à l'opposé de la clé #18 (traverser 3 salles avec rejetons ou tour par salle aux 4 tourbillons)",
+        "objective": "Même principe que la #18 : 3 dalles dans l'ordre jaune → bleue → verte.",
+        "instructions": [
+          "Traversez les 3 salles avec rejetons OU faites le tour par la salle aux 4 tourbillons.",
+          "3 joueurs marchent sur les dalles dans l'ordre : JAUNE → BLEUE → VERTE.",
+          "Positions exactes :",
+          "  Jaune : 216, 344, 6",
+          "  Bleue : 232, 338, 6",
+          "  Verte : 222, 339, 6",
+          "ATTENTION : dalles piégées dans cette salle, ça peut faire très mal."
+        ],
+        "drop_method": "inventaire (coffre)",
+        "warnings": [
+          "Des dalles piégées sont présentes dans cette salle.",
+          "Même restriction de saturnisme que la clé #18."
+        ]
+      },
+      {
+        "key_number": 20,
+        "name": "Clef de chair durcie #20",
+        "type": "combat",
+        "difficulty": "difficile",
+        "group_required": true,
+        "group_recommended": true,
+        "location": "Salles des rejetons",
+        "objective": "Tuer des rejetons furtifs en groupe jusqu'au drop de la clef #20.",
+        "instructions": [
+          "Tuez en groupe des rejetons furtifs.",
+          "La clef #20 finira par droper."
+        ],
+        "drop_method": "sol",
+        "warnings": [
+          "Les rejetons furtifs sont dangereux, venez en groupe."
+        ]
+      },
+      {
+        "key_number": 21,
+        "name": "Clef de chair durcie #21",
+        "type": "combat",
+        "difficulty": "difficile",
+        "group_required": true,
+        "group_recommended": true,
+        "location": "Salles des rejetons",
+        "objective": "Tuer des rejetons furtifs en groupe jusqu'au drop de la clef #21.",
+        "instructions": [
+          "Tuez en groupe des rejetons furtifs.",
+          "La clef #21 finira par droper."
+        ],
+        "drop_method": "sol",
+        "warnings": [
+          "Les rejetons furtifs sont dangereux, venez en groupe."
+        ]
+      },
+      {
+        "key_number": 22,
+        "name": "Clef de chair durcie #22",
+        "type": "combat",
+        "difficulty": "très difficile",
+        "group_required": true,
+        "group_recommended": true,
+        "items_required": [
+          "Sceptre de capture (pour le combat final)"
+        ],
+        "location": "Salle des rejetons du Cerberus",
+        "objective": "Tuer des rejetons du Cerberus en groupe jusqu'au drop de la clef #22, puis accéder au boss.",
+        "instructions": [
+          "Tuez en groupe des rejetons du Cerberus.",
+          "La clef #22 finira par droper.",
+          "Une fois les 22 clefs obtenues, passez le portail (mot-clé : « entrer »).",
+          "Vous arrivez dans l'antre du Cerberus."
+        ],
+        "drop_method": "sol",
+        "warnings": [
+          "Les rejetons du Cerberus sont plus puissants que les rejetons furtifs."
+        ]
+      }
+    ],
+    "boss_fight": {
+      "name": "Cerberus",
+      "title": "Le boss à 3 têtes",
+      "location": "Antre du Cerberus (après le portail, mot-clé « entrer »)",
+      "group_recommended": "Groupe de 5 joueurs recommandé",
+      "kill_method": "Tuer avec le sceptre de capture pour compléter la quête",
+      "abilities": [
+        "Retire toutes vos magies actives (dispel complet)",
+        "Invoque des rejetons (attention à leur nécro) quand il est de mauvaise humeur"
+      ],
+      "tips": [
+        "Combattez en groupe bien coordonné.",
+        "Prévoyez de rebuff rapidement après ses dispels.",
+        "Gérez les rejetons invoqués en priorité (surtout leur nécro)."
+      ],
+      "post_kill": {
+        "action": "Rendre la capture à Pelkor Zirus au salon de jeux",
+        "note": "N'oubliez pas d'enlever le sceptre pour qu'il le reprenne."
+      }
+    },
+    "post_completion": {
+      "keys_remaining": [
+        "#3",
+        "#6",
+        "#21",
+        "#22"
+      ],
+      "keys_lost": "Toutes les autres clefs de chair sont perdues en passant le portail pour la première fois.",
+      "return_access": "Vous pouvez retourner au Cerberus en ligne droite via les clefs restantes (#3, #6, #21, #22).",
+      "locked_areas": [
+        "Coffres iridium",
+        "Coffres ivoire",
+        "Vers enfouis",
+        "Gargouilles éthérées"
+      ],
+      "reaccess_tip": "Pour accéder aux zones verrouillées, il faut refaire les clefs correspondantes.",
+      "duplication_tip": "Vous pouvez faire en double à l'avance les clés qui tombent AU SOL, mais PAS celles qui tombent directement dans l'inventaire."
+    }
+  },
+  
