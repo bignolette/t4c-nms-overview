@@ -5517,18 +5517,6 @@
     "type": "Divers"
   },
   {
-    "name": "Epée du froid de main gauche",
-    "quantity": 1,
-    "prerequisites": {
-      "str": "53"
-    },
-    "bonuses": {
-      "dex": "+5",
-      "str": "+5"
-    },
-    "type": "Arme"
-  },
-  {
     "name": "Potion de résistance partielle à l'air",
     "quantity": 1,
     "type": "Divers"
@@ -9716,17 +9704,6 @@
     "name": "Scalp de Moon Tug",
     "quantity": 1,
     "type": "Divers"
-  },
-  {
-    "name": "masse de Skraugbashor",
-    "quantity": 1,
-    "prerequisites": {
-      "int": "20",
-      "wis": "25",
-      "str": "280",
-      "dex": "25"
-    },
-    "type": "Arme"
   },
   {
     "name": "Ceinture de force skraug",
@@ -17183,16 +17160,6 @@
     "type": "Arme"
   },
   {
-    "name": "Lance d'alourdissement important",
-    "quantity": 1,
-    "prerequisites": {
-      "int": "56",
-      "wis": "43",
-      "str": "80"
-    },
-    "type": "Arme"
-  },
-  {
     "name": "Bâton des ombres",
     "quantity": 1,
     "prerequisites": {
@@ -22882,17 +22849,6 @@
     "buyPrice": "245",
     "secondary": {},
     "type": "Botte"
-  },
-  {
-    "name": "Armure de cuir enchantée",
-    "quantity": 1,
-    "prerequisites": {
-      "end": "25"
-    },
-    "bonuses": {
-      "ca": "+1"
-    },
-    "type": "Plastron"
   },
   {
     "name": "Casque de cuir clouté",
