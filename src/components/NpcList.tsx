@@ -6,17 +6,18 @@ import type { NPC } from '../data/types';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 import EmptyState from './shared/EmptyState';
+import Pagination from './shared/Pagination';
 
 const NpcCard = ({ npc }: { npc: NPC }) => {
     const navigate = useNavigate();
     const { npcRecipesMap } = useData();
-    
+
     const taughtRecipes = useMemo(() => {
         return npcRecipesMap[fastNormalize(npc.name)] || [];
     }, [npc.name, npcRecipesMap]);
-    
+
     return (
-        <motion.div 
+        <motion.div
             layout
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -34,7 +35,7 @@ const NpcCard = ({ npc }: { npc: NPC }) => {
                             {npc.name}
                         </h3>
                     </div>
-                    
+
                     <div className="flex flex-wrap gap-2 mt-4">
                         <div className="flex items-center gap-1.5 px-3 py-1 bg-slate-900 border border-slate-800 rounded-lg">
                             <Compass size={12} className="text-amber-500" />
@@ -71,7 +72,7 @@ const NpcCard = ({ npc }: { npc: NPC }) => {
                 </div>
 
                 {npc.coordinates && (
-                    <button 
+                    <button
                         onClick={() => navigate(`/maps?type=npc&name=${encodeURIComponent(npc.name)}`)}
                         className="w-full flex items-center justify-center gap-2 py-3 bg-amber-500/10 hover:bg-amber-500 text-amber-500 hover:text-slate-950 border border-amber-500/20 rounded-xl transition-all font-black uppercase tracking-widest text-[10px]"
                     >
@@ -93,6 +94,8 @@ const NpcList: React.FC<NpcListProps> = ({ npcs }) => {
     const sourceData = npcs || npcsData;
     const [searchQuery, setSearchQuery] = useState('');
     const [selectedZone, setSelectedZone] = useState<string>('All');
+    const [currentPage, setCurrentPage] = useState(1);
+    const [itemsPerPage, setItemsPerPage] = useState(24);
 
     const zones = useMemo(() => {
         const uniqueZones = new Set(sourceData.map(n => n.zone));
@@ -101,21 +104,32 @@ const NpcList: React.FC<NpcListProps> = ({ npcs }) => {
 
     const filteredNpcs = useMemo(() => {
         let results = sourceData;
-        
+
         if (selectedZone !== 'All') {
             results = results.filter(n => n.zone === selectedZone);
         }
-        
+
         if (searchQuery) {
             const query = fastNormalize(searchQuery);
-            results = results.filter(n => 
-                fastNormalize(n.name).includes(query) || 
+            results = results.filter(n =>
+                fastNormalize(n.name).includes(query) ||
                 (n.locationPrecision && fastNormalize(n.locationPrecision).includes(query))
             );
         }
-        
+
         return results.sort((a, b) => a.name.localeCompare(b.name));
     }, [sourceData, searchQuery, selectedZone]);
+
+    // Reset to page 1 when filters change
+    useMemo(() => {
+        setCurrentPage(1);
+    }, [searchQuery, selectedZone]);
+
+    const paginatedNpcs = useMemo(() => {
+        return filteredNpcs.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
+    }, [filteredNpcs, currentPage, itemsPerPage]);
+
+    const totalPages = Math.ceil(filteredNpcs.length / itemsPerPage);
 
     return (
         <div className="space-y-8">
@@ -142,7 +156,7 @@ const NpcList: React.FC<NpcListProps> = ({ npcs }) => {
                         </div>
                     </div>
 
-                    <select 
+                    <select
                         value={selectedZone}
                         onChange={(e) => setSelectedZone(e.target.value)}
                         className="bg-slate-950/50 border border-slate-800 rounded-2xl px-6 py-4 text-slate-100 font-bold outline-none focus:border-amber-500/50 transition-all cursor-pointer h-[58px]"
@@ -156,11 +170,21 @@ const NpcList: React.FC<NpcListProps> = ({ npcs }) => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <AnimatePresence mode="popLayout">
-                    {filteredNpcs.map((npc, idx) => (
+                    {paginatedNpcs.map((npc, idx) => (
                         <NpcCard key={npc.name + idx} npc={npc} />
                     ))}
                 </AnimatePresence>
             </div>
+
+            <Pagination
+                currentPage={currentPage}
+                totalPages={totalPages}
+                onPageChange={setCurrentPage}
+                itemsPerPage={itemsPerPage}
+                onItemsPerPageChange={(newSize) => { setItemsPerPage(newSize); setCurrentPage(1); }}
+                totalItems={filteredNpcs.length}
+                pageSizeOptions={[12, 24, 48]}
+            />
 
             {filteredNpcs.length === 0 && (
                 <EmptyState

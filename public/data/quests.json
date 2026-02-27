@@ -3930,7 +3930,7 @@
         "rewards_step": "Accès à la Zone Oracle — Titre de Néphilim d'Ogrimar"
       }
     ]
-  },  
+  },
   {
     "id": "acces_ravens_dust_dechu",
     "name": "Accès Déchu à Raven's Dust",
@@ -5853,14 +5853,14 @@
       "access_point": "Salle aux quatre tourbillons (au-dessus de la salle 'clé 10'), prendre le tourbillon caché par le mur du bas.",
       "tile_system": "Dalles numérotées : Bleues (B1 à B8) et Vertes (V1 à V5). Il faut les activer dans l'ordre pour chaque couleur.",
       "tile_locations": {
-        "B1": "GGGG depuis première île (île obsidienne)",
-        "B2": "Salle des dalles (DD GGGG D)",
-        "B3": "D G DD (salle des dalles petit côté, bas)",
-        "B4_to_B7": "Salle des dalles (DD GGGG D)",
-        "B8": "DD GGGG (île obsidienne)",
-        "V1_V2": "Salle des dalles (DD GGGG D)",
-        "V3": "D G DD (salle des dalles petit côté, haut)",
-        "V4": "D G D (île obsidienne)"
+        "b1": "GGGG depuis première île (île obsidienne)",
+        "b2": "Salle des dalles (DD GGGG D)",
+        "b3": "D G DD (salle des dalles petit côté, bas)",
+        "b4ToB7": "Salle des dalles (DD GGGG D)",
+        "b8": "DD GGGG (île obsidienne)",
+        "v1V2": "Salle des dalles (DD GGGG D)",
+        "v3": "D G DD (salle des dalles petit côté, haut)",
+        "v4": "D G D (île obsidienne)"
       },
       "important_rules": [
         "Pour chaque couleur, suivez l'ordre des dalles strictement.",

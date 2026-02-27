@@ -1,6 +1,5 @@
-import React, { createContext, useContext, useState, useEffect, useMemo } from 'react';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 import type { Monster, RecipeItem, PageContent, SavedCharacter, Stats, SeraphElement, CraftingProject, Spell, Skill, NPC } from '../data/types';
-import { fastNormalize } from '../data/utils';
 
 // Helper to migrate old save format (with accents/French keys) to technical format
 const migrateSaveData = (data: any): any => {
@@ -82,19 +81,37 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         quests: any[];
         spells: Spell[];
         skills: Skill[];
-    }>({ 
-        items: [], 
-        plants: [], 
-        trees: [], 
-        deposits: [], 
-        bestiary: [], 
-        recipes: [], 
+    }>({
+        items: [],
+        plants: [],
+        trees: [],
+        deposits: [],
+        bestiary: [],
+        recipes: [],
         npcs: [],
         quests: [],
-        spells: [], 
-        skills: [] 
+        spells: [],
+        skills: []
     });
-    
+
+    const [maps, setMaps] = useState<{
+        ingredientProfessionMap: Record<string, Set<string>>;
+        itemMonsterMap: Record<string, Monster[]>;
+        npcRecipesMap: Record<string, RecipeItem[]>;
+        itemUsageMap: Record<string, RecipeItem[]>;
+        spellMap: Record<string, Spell>;
+        spellPrerequisiteMap: Record<string, Spell[]>;
+        wikiData: PageContent[];
+    }>({
+        ingredientProfessionMap: {},
+        itemMonsterMap: {},
+        npcRecipesMap: {},
+        itemUsageMap: {},
+        spellMap: {},
+        spellPrerequisiteMap: {},
+        wikiData: []
+    });
+
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
@@ -141,33 +158,52 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         setTimeout(() => setNotification(null), 3000);
     };
 
+    // Web Worker for data fetching and map building
     useEffect(() => {
-        const loadData = async () => {
-            try {
-                const baseUrl = import.meta.env.BASE_URL || '/';
-                const [items, plants, trees, deposits, bestiary, recipes, npcs, quests, spells, skills] = await Promise.all([
-                    fetch(`${baseUrl}data/items.json`).then(res => res.json()),
-                    fetch(`${baseUrl}data/plants.json`).then(res => res.json()),
-                    fetch(`${baseUrl}data/trees.json`).then(res => res.json()),
-                    fetch(`${baseUrl}data/deposits.json`).then(res => res.json()),
-                    fetch(`${baseUrl}data/bestiary.json`).then(res => res.json()),
-                    fetch(`${baseUrl}data/recipes.json`).then(res => res.json()),
-                    fetch(`${baseUrl}data/npcs.json`).then(res => res.json()),
-                    fetch(`${baseUrl}data/quests.json`).then(res => res.json()),
-                    fetch(`${baseUrl}data/spells.json`).then(res => res.json()),
-                    fetch(`${baseUrl}data/skills.json`).then(res => res.json()),
-                ]);
+        const worker = new Worker(
+            new URL('../workers/dataWorker.ts', import.meta.url),
+            { type: 'module' }
+        );
 
-                setData({ items, plants, trees, deposits, bestiary, recipes, npcs, quests, spells, skills });
+        worker.onmessage = (e: MessageEvent) => {
+            const msg = e.data;
+            if (msg.type === 'success') {
+                setData(msg.data);
+
+                // Convert string[] back to Set<string> for ingredientProfessionMap
+                const convertedIngMap: Record<string, Set<string>> = {};
+                for (const [key, arr] of Object.entries(msg.maps.ingredientProfessionMap)) {
+                    convertedIngMap[key] = new Set(arr as string[]);
+                }
+
+                setMaps({
+                    ingredientProfessionMap: convertedIngMap,
+                    itemMonsterMap: msg.maps.itemMonsterMap,
+                    npcRecipesMap: msg.maps.npcRecipesMap,
+                    itemUsageMap: msg.maps.itemUsageMap,
+                    spellMap: msg.maps.spellMap,
+                    spellPrerequisiteMap: msg.maps.spellPrerequisiteMap,
+                    wikiData: msg.maps.wikiData,
+                });
+
                 setLoading(false);
-            } catch (err) {
-                console.error("Failed to load data:", err);
+            } else if (msg.type === 'error') {
+                console.error("Worker error:", msg.error);
                 setError("Erreur lors du chargement des données.");
                 setLoading(false);
             }
         };
 
-        loadData();
+        worker.onerror = (err) => {
+            console.error("Worker fatal error:", err);
+            setError("Erreur lors du chargement des données.");
+            setLoading(false);
+        };
+
+        const baseUrl = import.meta.env.BASE_URL || '/';
+        worker.postMessage({ baseUrl });
+
+        return () => worker.terminate();
     }, []);
 
     // File Persistence Logic
@@ -180,7 +216,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
             activeStats: activeStats,
             favRecipes: favRecipes
         };
-        
+
         const blob = new Blob([JSON.stringify(dataToSave, null, 2)], { type: 'application/json' });
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
@@ -215,133 +251,6 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
             reader.readAsText(file);
         });
     };
-
-    const maps = useMemo(() => {
-        if (loading || !data.items.length) return {
-            ingredientProfessionMap: {},
-            itemMonsterMap: {},
-            npcRecipesMap: {},
-            itemUsageMap: {},
-            spellMap: {},
-            spellPrerequisiteMap: {},
-            wikiData: []
-        };
-
-        const ingredientProfessionMap: Record<string, Set<string>> = {};
-        const itemMonsterMap: Record<string, Monster[]> = {};
-        const npcRecipesMap: Record<string, RecipeItem[]> = {};
-        const itemUsageMap: Record<string, RecipeItem[]> = {};
-        const spellMap: Record<string, Spell> = {};
-        const spellPrerequisiteMap: Record<string, Spell[]> = {};
-
-        // Index NPCs by recipes they teach
-        data.recipes.forEach(recipe => {
-            if (recipe.learnedFrom) {
-                const normL = fastNormalize(recipe.learnedFrom);
-                const officialNpc = data.npcs.find(n => fastNormalize(n.name) === normL);
-                const npcKey = officialNpc ? fastNormalize(officialNpc.name) : normL;
-                
-                if (!npcRecipesMap[npcKey]) npcRecipesMap[npcKey] = [];
-                npcRecipesMap[npcKey].push(recipe);
-            }
-        });
-
-        // Index Spells
-        data.spells.forEach(spell => {
-            spellMap[fastNormalize(spell.name)] = spell;
-        });
-
-        // Build Spell Prerequisite Map
-        data.spells.forEach(spell => {
-            if (spell.prerequisites) {
-                const normalizedPrereq = fastNormalize(spell.prerequisites);
-                Object.keys(spellMap).forEach(knownSpellName => {
-                    if (normalizedPrereq.includes(knownSpellName)) {
-                        if (!spellPrerequisiteMap[knownSpellName]) spellPrerequisiteMap[knownSpellName] = [];
-                        spellPrerequisiteMap[knownSpellName].push(spell);
-                    }
-                });
-            }
-        });
-
-        // Index Monsters by Drop
-        data.bestiary.forEach(monster => {
-            monster.drops.forEach(drop => {
-                const normalizedDrop = fastNormalize(drop);
-                if (!itemMonsterMap[normalizedDrop]) itemMonsterMap[normalizedDrop] = [];
-                itemMonsterMap[normalizedDrop].push(monster);
-            });
-        });
-
-        const walk = (item: RecipeItem, profession: string, parentRecipe: RecipeItem) => {
-            const normalizedName = fastNormalize(item.name);
-            if (!ingredientProfessionMap[normalizedName]) ingredientProfessionMap[normalizedName] = new Set();
-            if (profession) ingredientProfessionMap[normalizedName].add(profession);
-            if (parentRecipe && fastNormalize(parentRecipe.name) !== normalizedName) {
-                if (!itemUsageMap[normalizedName]) itemUsageMap[normalizedName] = [];
-                if (!itemUsageMap[normalizedName].some(r => r.name === parentRecipe.name)) itemUsageMap[normalizedName].push(parentRecipe);
-            }
-            if (item.ingredients) item.ingredients.forEach(ing => walk(ing, profession || item.profession || "", parentRecipe));
-        };
-
-        data.recipes.forEach(recipe => {
-            const normalizedName = fastNormalize(recipe.name);
-            if (recipe.profession) {
-                if (!ingredientProfessionMap[normalizedName]) ingredientProfessionMap[normalizedName] = new Set();
-                ingredientProfessionMap[normalizedName].add(recipe.profession);
-            }
-            recipe.ingredients?.forEach(ing => walk(ing, recipe.profession || "", recipe));
-        });
-
-        const combinedItems = [...data.items, ...data.plants, ...data.trees, ...data.deposits];
-
-        const wikiData: PageContent[] = [
-            {
-                id: 'bestiary',
-                title: 'Bestiaire',
-                category: 'bestiary',
-                description: "Retrouvez ici les informations sur les créatures peuplant les contrées d'Althéa.",
-                monsters: data.bestiary
-            },
-            {
-                id: 'npcs',
-                title: 'PNJs',
-                category: 'npc',
-                description: "Liste des personnages non-joueurs d'Althéa.",
-                npcs: data.npcs
-            },
-            {
-                id: 'metiers',
-                title: 'Artisanat',
-                category: 'profession',
-                description: "L'intégralité des recettes d'artisanat de T4C NMS.",
-                recipes: data.recipes
-            },
-            {
-                id: 'items',
-                title: 'Objets',
-                category: 'items',
-                description: "Retrouvez ici la liste complète des équipements, armes et composants d'Althéa.",
-                recipes: combinedItems
-            },
-            {
-                id: 'spells',
-                title: 'Sorts',
-                category: 'spell',
-                description: "La bibliothèque complète des sorts standards et NMS.",
-                spells: data.spells
-            },
-            {
-                id: 'skills',
-                title: 'Compétences',
-                category: 'skill',
-                description: "Toutes les compétences physiques et utilitaires d'Althéa.",
-                skills: data.skills
-            }
-        ];
-
-        return { ingredientProfessionMap, itemMonsterMap, npcRecipesMap, itemUsageMap, spellMap, spellPrerequisiteMap, wikiData };
-    }, [data, loading]);
 
     const value = {
         itemsData: data.items,

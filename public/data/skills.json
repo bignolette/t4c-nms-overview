@@ -5,23 +5,23 @@
     "requirements": "Niv 1",
     "description": "Passive.Capacité à toucher sa cible avec une arme de mêlée. Demande un grand investissement en points de compétences. Tip : Indispensable à tout utilisateur d'arme de mêlée.",
     "trainingTeachers": {
-      "Lighthaven": [
+      "lighthaven": [
         "Ortanalas",
         "Murmuntag"
       ],
-      "Windhowl": [
+      "windhowl": [
         "Karl",
         "Garnir"
       ],
-      "Silversky": [
+      "silversky": [
         "Darren Ironstrife",
         "Doremas (SO fontaine)"
       ],
-      "Stonecrest": [
+      "stonecrest": [
         "Eldrig",
         "Steelblade Delnar"
       ],
-      "Redwall": [
+      "redwall": [
         "Zaeron Kayle"
       ]
     },
@@ -36,24 +36,24 @@
     "requirements": "Niv 1",
     "description": "Capacité à atteindre sa cible avec une arme de jet. Demande un grand investissement en points de compétences. Tip : Indispensable à tout utilisateur d'arme de jet.",
     "trainingTeachers": {
-      "Lighthaven": [
+      "lighthaven": [
         "Ortanalas (en face du temple)",
         "Kalastor (maison nord-est fontaine)"
       ],
-      "Windhowl": [
+      "windhowl": [
         "Karl"
       ],
-      "Silversky": [
+      "silversky": [
         "Baldric Iraelis"
       ],
-      "Raven's Dust": [
+      "ravensDust": [
         "Morindin Tenglow (bois de RD)"
       ],
-      "Stonecrest": [
+      "stonecrest": [
         "Mirymwen Baldrën",
         "Steelblade Delnar"
       ],
-      "Redwall": [
+      "redwall": [
         "Zaeron Kayle"
       ]
     },
@@ -68,20 +68,20 @@
     "requirements": "Niv 1",
     "description": "Passive.Capacité à éviter d'être atteint par une attaque physique. Demande un grand investissement en points de compétences. Tip : Utile à tous. Indispensable en PVP.",
     "trainingTeachers": {
-      "Lighthaven": [
+      "lighthaven": [
         "Kalastor (maison nord-est fontaine)"
       ],
-      "Windhowl": [
+      "windhowl": [
         "Le Fouineur"
       ],
-      "Silversky": [
+      "silversky": [
         "Doremas",
         "Baldric Iraelis"
       ],
-      "Raven's Dust": [
+      "ravensDust": [
         "Morindin Tenglow (bois de RD)"
       ],
-      "Stonecrest": [
+      "stonecrest": [
         "Mirymwen Baldrën",
         "Steelblade Delnar"
       ]
@@ -97,10 +97,10 @@
     "requirements": "Niv 3, 25 en force, 20 en dextérité. 1 point de compétences minimum.",
     "description": "Possibilité d'immobiliser sa cible un court instant à chaque coup réussi d'une attaque physique. Influencée par la dextérité. Ralentit donc la fréquence des attaques adverses.Tip : Indispensable aux tapeurs et archers.",
     "trainingTeachers": {
-      "Lighthaven": [
+      "lighthaven": [
         "Ortanalas"
       ],
-      "Windhowl": [
+      "windhowl": [
         "Garnir"
       ]
     },
@@ -117,16 +117,16 @@
     "requirements": "Niv 5, 30 en Dex. 1 point de compétences minimum.",
     "description": "Permet de regarder dans l'inventaire des voisins. Influencée par la dextérité et la différence de niveaux entre la cible et le lanceur. Tip : Pour archers curieux.",
     "trainingTeachers": {
-      "Lighthaven": [
+      "lighthaven": [
         "Kalastor (maison nord-est fontaine)"
       ],
-      "Windhowl": [
+      "windhowl": [
         "Le Fouineur"
       ],
-      "Arakas": [
+      "arakas": [
         "Lyria (Ville des voleurs)"
       ],
-      "Silversky": [
+      "silversky": [
         "Baldric Iraelis"
       ]
     },
@@ -142,13 +142,13 @@
     "requirements": "Niv 10, 30 en dextérité, 20 en intelligence. 1 point de compétences minimum.",
     "description": "Capacité à parer une attaque physique à l'aide de son arme et/ou son bouclier. Influencée par la dextérité et la taille de l'arme (plus celle-ci est grande, plus la compétence est efficace). Le port d'un bouclier améliore cette compétence. Tip : Très utile pour les tapeurs. Moins efficace chez les archers.",
     "trainingTeachers": {
-      "Windhowl": [
+      "windhowl": [
         "Garnir"
       ],
-      "Silversky": [
+      "silversky": [
         "Doremas"
       ],
-      "Raven's Dust": [
+      "ravensDust": [
         "Morindin Tenglow (Bois de RD)"
       ]
     },
@@ -165,10 +165,10 @@
     "requirements": "Niv 12, 40 en dextérité. 1 point de compétences minimum.",
     "description": "Capacité à ouvrir un coffre, une porte ou tout objet verrouillé. Influencée par la dextérité. Tip : Inutile en PVM/PVP. De plus inutilisable sur les coffres de quêtes (ex: coffre de Reynen). Principalement utilisé en RP.",
     "trainingTeachers": {
-      "Arakas": [
+      "arakas": [
         "Lyria (Ville des voleurs)"
       ],
-      "Windhowl": [
+      "windhowl": [
         "Le Fouineur"
       ]
     },
@@ -184,10 +184,10 @@
     "requirements": "Niv 12, 20 en intelligence et en sagesse. 1 point de compétences minimum.",
     "description": "Permet de soigner certaines blessures condition d'avoir des bandelettes de momie dans l'inventaire. La russite n'est pas systématique, la tentative peut parfois aggraver la blessure. Tip : Inutile et inefficace.",
     "trainingTeachers": {
-      "Raven's Dust": [
+      "ravensDust": [
         "Morindin Tenglow (Bois de RD)"
       ],
-      "Stoneheim": [
+      "stoneheim": [
         "Roen Greenleaf"
       ]
     },
@@ -204,7 +204,7 @@
     "requirements": "Niv 12, 38 en force. 1 point de compétences minimum.",
     "description": "Permet d'agréger toutes les cibles d'une zone. Influence par ? Tip : Peut être remplacé économiquement par dard de feu.",
     "trainingTeachers": {
-      "Windhowl": [
+      "windhowl": [
         "Serje Fortepee (Sud-Est de la ville en 1700,1360,0)"
       ]
     },
@@ -220,10 +220,10 @@
     "requirements": "Niv 13, 34 en dextérité, 20 en intelligence. 1 point de compétences minimum.",
     "description": "Cette compétence rend parfois invisible à condition de rester immobile. Doit être utilisée conjointement à Se faufiler pour pouvoir se déplacer discrètement (peu efficace). Influencée par la dextérité. Tip : Inutile. Autrefois utilisé par les archers pour faire discrètement un coup critique.",
     "trainingTeachers": {
-      "Raven's Dust": [
+      "ravensDust": [
         "Morindin Tenglow"
       ],
-      "Stoneheim": [
+      "stoneheim": [
         "Roen Greenleaf"
       ]
     },
@@ -240,10 +240,10 @@
     "requirements": "Niv 15, 50 en force, 30 en dextérité. 1 point de compétences minimum.",
     "description": "Rend chaque attaque physique réussie plus puissante (20 à 30%). Influencée par la dextérité et la force. Tip : Indispensable aux tapeurs et archers",
     "trainingTeachers": {
-      "Lighthaven": [
+      "lighthaven": [
         "Ortanalas"
       ],
-      "Windhowl": [
+      "windhowl": [
         "Garnir"
       ]
     },
@@ -260,10 +260,10 @@
     "requirements": "Niv 16, 30 en intelligence, 30 en sagesse. 1 point de compétences minimum.",
     "description": "Augmente la vitesse de récupération de mana.(mais il faut rester immobile sans lancer aucun sort). Influencée par la sagesse et l'intelligence (50/50) par paliers de 160. Tip : Inutile sauf peut-être en humain. Du gâchis en séraph (prismes de mana!)",
     "trainingTeachers": {
-      "Arakas": [
+      "arakas": [
         "Rainmist Lantalir"
       ],
-      "Stonecrest": [
+      "stonecrest": [
         "Elandor (un mage errant)"
       ]
     },
@@ -280,7 +280,7 @@
     "requirements": "Niv 17, 50 en sagesse. 1 point de compétences minimum.",
     "description": "Permet de ramener à la vie le joueur mort ciblé. L'efficacité de la compétence dépend de la sagesse de l'utilisateur et de celle de la cible. Influencée aussi par la différence de niveaux entre la cible et l'utilisateur. Tip : Indispensable à tout prêtre qui se respecte. Fonctionnel (avec un faible nombre de points (1 seul?) mais dans ce cas le taux de réussite est mauvais.",
     "trainingTeachers": {
-      "Windhowl": [
+      "windhowl": [
         "Nalya",
         "jardins de la cathédrale (1674,1130,0)"
       ]
@@ -297,7 +297,7 @@
     "requirements": "Niv 17, 50 en dextérité. 1 point de compétences minimum.",
     "description": "Permet de piller la tombe d'un jouer mort avec une chance d'avoir un de ses items au hasard. Il faut faire une quête chez Riguel, récupérer \"un anneau d'une rare beauté. Il était serti de gemmes, c'était l'oeuvre d'un maître joaillier certainement\". \"Le pilleur de tombe\" (cimetière de Lighthaven et niveau de Jarko) l'aurait en sa possession. Influencée par la différence de niveau. Tip :",
     "trainingTeachers": {
-      "Arakas": [
+      "arakas": [
         "Riguel",
         "ville des voleurs au sous-sol. (2031,2800,1). Entrée du sous-sol en (2200,1270,0)"
       ]
@@ -314,10 +314,10 @@
     "requirements": "Niv 17, 50 en dextérité, 25 en Coup d'oeil. 1 point de compétences minimum.",
     "description": "Permet de voler dans l'inventaire d'un joueur proche. Influence par la dextérité et la différence de niveaux entre la cible et l'utilisateur. Tip : Pour archers voleurs. Convient bien aussi à une utilisation RP.",
     "trainingTeachers": {
-      "Silversky": [
+      "silversky": [
         "Baldric Iraelis"
       ],
-      "Stonecrest": [
+      "stonecrest": [
         "Lightfoot Daran"
       ]
     },
@@ -333,7 +333,7 @@
     "requirements": "Niv 20, 25 en intelligence. 1 point de compétences minimum.",
     "description": "Permet de détecter les objets et personnes cachés. Influence par la sagesse et l'intelligence hauteur de 50/50. Tip : Inutile",
     "trainingTeachers": {
-      "Stonecrest": [
+      "stonecrest": [
         "Chryseida Yolangda"
       ]
     },
@@ -349,7 +349,7 @@
     "requirements": "Niv 24, 75 en dextérité. 1 point de compétences minimum.",
     "description": "Utilisé conjointement Se cacher, permet de se déplacer sans être repéré. Influence par la sagesse et l'intelligence à hauteur de 50/50 et par le milieu extérieur. Tip : Inutile et inefficace.",
     "trainingTeachers": {
-      "Stonecrest": [
+      "stonecrest": [
         "Dantalir le Barde (Repaire des voleurs)"
       ]
     },
@@ -365,10 +365,10 @@
     "requirements": "Niv 25, 75 en force, 40 en dextérité, 30 en intelligence. 1 point de compétences minimum.",
     "description": "La CA de la cible est moins prise en compte lors du calcul des dégâts infligés par une attaque physique. Influence par la dextérité et la force. Tip : Indispensable aux tapeurs et archers. Utile en PVM surtout à partir de SH.",
     "trainingTeachers": {
-      "Silversky": [
+      "silversky": [
         "Adriana (salle d'entraînement)"
       ],
-      "Stonecrest": [
+      "stonecrest": [
         "Rablek Blivtaor (Repaire des voleurs)"
       ]
     },
@@ -386,7 +386,7 @@
     "requirements": "Niv 26, 75 en force, 40 en dextérité et 30 en intelligence. 1 point de compétences minimum.",
     "description": "Permet d'utiliser simultanément une arme dans chaque main. Influencée par ? Tip : Augmente les dégâts PVM de 30% environ. Utile aussi en PVP.",
     "trainingTeachers": {
-      "Silversky": [
+      "silversky": [
         "Adriana (salle d'entraînement)"
       ]
     },
@@ -404,10 +404,10 @@
     "requirements": "Niv 30, 80 en endurance. 1 point de compétences minimum.",
     "description": "Augmente la vitesse de récupération des points de vie. Influencée par l'endurance par paliers de 160. Tip : Très peu efficace.",
     "trainingTeachers": {
-      "Arakas": [
+      "arakas": [
         "Mhorgwloth le Troll"
       ],
-      "Stoneheim": [
+      "stoneheim": [
         "Worgwolth Trugg (Camp skraug vert)"
       ]
     },
@@ -423,7 +423,7 @@
     "requirements": "Niv 35, 150 en intelligence, 75 en sagesse. 1 point de compétences minimum.",
     "description": "Augmente aléatoirement la puissance de lancement de certains sorts. Influencée par ? Tip : Utile à tous les lanceurs de sorts.",
     "trainingTeachers": {
-      "Silversky": [
+      "silversky": [
         "Erfule Norduls 1er étage du château de SilverSky",
         "couloir extérieur au Sud (2850,300,4)"
       ]
@@ -441,7 +441,7 @@
     "requirements": "Niv 51, 56 en force, 47 en dextérité. 1 point de compétences minimum.",
     "description": "Immobilise la cible à distance et réduit l'esquive de 75%.Remplace enchevêtrement/verglas pour les classes ne pouvant apprendre ces sorts (archer, guerrier, paladin et mage de guerre). La réussite est influencée par les bonus fournis par divers items (ces bonus sont indispensables pour que la compétence soit efficace : 175 est une valeur correcte). Tip : Indispensable en PVP et PVM.",
     "trainingTeachers": {
-      "Windhowl": [
+      "windhowl": [
         "Serje Fortepee (Sud-Est de la ville en 1700,1360,0)"
       ]
     },

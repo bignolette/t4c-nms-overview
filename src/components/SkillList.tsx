@@ -2,6 +2,7 @@ import { useState, useMemo, memo, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { fastNormalize, formatGold } from '../data/utils';
+import { getDisplayName } from '../data/displayNames';
 import type { Skill } from '../data/types';
 import {
   Filter, AlertCircle, RotateCcw,
@@ -100,7 +101,7 @@ export const SkillCard = memo(({ skill }: { skill: Skill }) => {
             <div className="space-y-2">
               {Object.entries(skill.trainingTeachers).map(([city, names]) => (
                 <div key={city} className="flex items-start gap-2 border-b border-slate-800/30 last:border-0 pb-1.5 last:pb-0">
-                  <span className="text-[9px] font-black text-slate-500 uppercase w-20 shrink-0">{city}</span>
+                  <span className="text-[9px] font-black text-slate-500 uppercase w-20 shrink-0">{getDisplayName(city)}</span>
                   <p className="text-[10px] font-bold text-slate-300 leading-relaxed">
                     {names.join(', ')}
                   </p>
@@ -275,7 +276,7 @@ const SkillList = ({ skills }: SkillListProps) => {
                 onChange={(e) => { setSelectedZone(e.target.value); setCurrentPage(1); }}
                 className="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-2.5 text-xs font-bold text-slate-300 focus:border-amber-500 outline-none appearance-none truncate"
               >
-                {allZones.map(z => <option key={z} value={z}>{z}</option>)}
+                {allZones.map(z => <option key={z} value={z}>{z === 'Toutes' ? z : getDisplayName(z)}</option>)}
               </select>
               <MapPin size={14} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-600 pointer-events-none" />
             </div>

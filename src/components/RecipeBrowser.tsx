@@ -3,6 +3,7 @@ import { Link, useSearchParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useData } from '../context/DataContext';
 import { fastNormalize, formatStatValue, formatGold } from '../data/utils';
+import { getDisplayName } from '../data/displayNames';
 import type { RecipeItem } from '../data/types';
 import CraftingTree from './CraftingTree';
 import EmptyState from './shared/EmptyState';
@@ -676,7 +677,7 @@ export const RecipeItemRow = memo(({ recipe, activeSearchTerm, isItemsPage, favo
                         {recipe.bonuses?.luck && <StatBadge label="CHA" value={formatStatValue(recipe.bonuses.luck)} type="luck" />}
                         
                         {recipe.secondary && Object.entries(recipe.secondary).map(([label, value]) => (
-                          <StatBadge key={label} label={label} value={formatStatValue(value as string)} type="secondary" />
+                          <StatBadge key={label} label={getDisplayName(label)} value={formatStatValue(value as string)} type="secondary" />
                         ))}
                       </div>
                     </div>
@@ -1498,7 +1499,7 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
       const matchesStats = selectedStats.length === 0 || selectedStats.every(s => {
         if (s === 'luck') {
             return (recipe.bonuses && recipe.bonuses.luck) || 
-                   (recipe.secondary && (recipe.secondary['Chance'] || recipe.secondary['chance']));
+                   (recipe.secondary && recipe.secondary['chance']);
         }
         return (recipe.bonuses && recipe.bonuses[s as keyof typeof recipe.bonuses]) || 
                (recipe.secondary && Object.keys(recipe.secondary).some(k => k.toLowerCase().includes(s)));
@@ -1555,8 +1556,8 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
         let valB = 0;
 
         if (sortBy === 'luck') {
-            valA = parseInt(a.bonuses?.luck || a.secondary?.['Chance'] || a.secondary?.['chance'] || '0');
-            valB = parseInt(b.bonuses?.luck || b.secondary?.['Chance'] || b.secondary?.['chance'] || '0');
+            valA = parseInt(a.bonuses?.luck || a.secondary?.['chance'] || '0');
+            valB = parseInt(b.bonuses?.luck || b.secondary?.['chance'] || '0');
         } else {
             valA = parseInt(a.bonuses?.[sortBy as keyof typeof a.bonuses] || '0');
             valB = parseInt(b.bonuses?.[sortBy as keyof typeof b.bonuses] || '0');

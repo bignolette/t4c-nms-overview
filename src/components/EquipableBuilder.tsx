@@ -1,10 +1,12 @@
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useData } from '../context/DataContext';
 import type { RecipeItem, SavedCharacter, Stats } from '../data/types';
 import { mapTypeToSlot, fastNormalize, formatStatValue, formatGold } from '../data/utils';
+import { getDisplayName } from '../data/displayNames';
 import { Search, Sword, Package, Zap, Trophy, Sparkles, ChevronUp, ChevronDown } from 'lucide-react';
 import RuneIcon from './ui/RuneIcon';
+import { useVirtualizer } from '@tanstack/react-virtual';
 
 const StatBadge = ({ label, value, type }: { label: string, value: string | number, type: 'str' | 'end' | 'dex' | 'int' | 'wis' | 'ca' | 'secondary' }) => {
   const configs = {
@@ -94,7 +96,7 @@ const EquipableBuilder = () => {
     itemsData.forEach(item => {
       if (item.secondary) {
         Object.keys(item.secondary).forEach(k => {
-          if (k.startsWith('Puissance') || k.startsWith('Résistance') || k === 'Chance') {
+          if (k.startsWith('puissance') || k.startsWith('resistance') || k === 'chance') {
             options.add(k);
           }
         });
@@ -228,6 +230,15 @@ const EquipableBuilder = () => {
 
     return { availableItems: canEquip.sort(sortFn), upcomingItems: comingSoon.sort(sortFn).slice(0, 5) };
   }, [stats, selectedSlot, searchTerm, hideNoReqs, showOnlyNms, itemsBySlot, spellsData, isBiSMode, bisFocus]);
+
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const virtualizer = useVirtualizer({
+    count: availableItems.length,
+    getScrollElement: () => scrollContainerRef.current,
+    estimateSize: () => 220,
+    overscan: 5,
+    gap: 24,
+  });
 
   return (
     <div className="space-y-10 animate-in fade-in duration-700">
@@ -460,18 +471,47 @@ const EquipableBuilder = () => {
                 {isBiSMode && (
                   <select value={bisFocus} onChange={(e) => setBisFocus(e.target.value)} className="flex-1 bg-slate-950 border border-white/5 rounded-xl py-2 px-4 text-[10px] font-black uppercase text-emerald-200 focus:outline-none appearance-none cursor-pointer">
                     <option value="">Choisir stat...</option>
-                    {bisOptions.map(opt => <option key={opt} value={opt}>{opt}</option>)}
+                    {bisOptions.map(opt => <option key={opt} value={opt}>{getDisplayName(opt)}</option>)}
                   </select>
                 )}
               </div>
             </div>
           </div>
-          <div className="flex-1 overflow-y-auto p-8 space-y-6 custom-scrollbar">
-            {availableItems.map((entry, idx) => {
-              if (entry.type === 'spell') return <SpellCard key={idx} spell={entry} />;
-              if (entry.type === 'skill') return <SkillCard key={idx} skill={entry} />;
-              return <ItemCard key={idx} item={entry} isBiSMode={isBiSMode} idx={idx} />;
-            })}
+          <div ref={scrollContainerRef} className="flex-1 overflow-y-auto p-8 custom-scrollbar">
+            <div
+              style={{
+                height: `${virtualizer.getTotalSize()}px`,
+                width: '100%',
+                position: 'relative',
+              }}
+            >
+              {virtualizer.getVirtualItems().map((virtualItem) => {
+                const entry = availableItems[virtualItem.index];
+                const idx = virtualItem.index;
+                return (
+                  <div
+                    key={virtualItem.key}
+                    style={{
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      width: '100%',
+                      transform: `translateY(${virtualItem.start}px)`,
+                    }}
+                    data-index={virtualItem.index}
+                    ref={virtualizer.measureElement}
+                  >
+                    {entry.type === 'spell' ? (
+                      <SpellCard spell={entry} />
+                    ) : entry.type === 'skill' ? (
+                      <SkillCard skill={entry} />
+                    ) : (
+                      <ItemCard item={entry} isBiSMode={isBiSMode} idx={idx} />
+                    )}
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
@@ -622,7 +662,7 @@ const ItemCard = ({ item, isBiSMode, idx }: { item: RecipeItem, isBiSMode: boole
             <span className="text-[10px] font-black text-emerald-500/50 uppercase tracking-[0.2em] mb-3 block">Bonus</span>
             <div className="flex flex-wrap gap-2">
               {item.bonuses && Object.entries(item.bonuses).map(([k, v]) => <StatBadge key={k} label={k.toUpperCase()} value={formatStatValue(v)} type={k as any} />)}
-              {item.secondary && Object.entries(item.secondary).map(([k, v]) => <StatBadge key={k} label={k} value={formatStatValue(v)} type="secondary" />)}
+              {item.secondary && Object.entries(item.secondary).map(([k, v]) => <StatBadge key={k} label={getDisplayName(k)} value={formatStatValue(v)} type="secondary" />)}
             </div>
           </div>
         )}
