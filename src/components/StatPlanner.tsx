@@ -1,5 +1,5 @@
 import { useState, useMemo, useEffect, useRef } from 'react';
-import { Zap, ChevronUp, ChevronDown, RotateCcw, Award, Heart, Sparkles, Star, Save, HelpCircle, Info, X, Bell } from 'lucide-react';
+import { Zap, ChevronUp, ChevronDown, RotateCcw, Award, Heart, Sparkles, Star, Save, HelpCircle, Info, X, Bell, BookOpen, Search as SearchIcon } from 'lucide-react';
 import CharacterNameVisual from './CharacterNameVisual';
 import SpiderChart from './SpiderChart';
 import LiquidBar from './ui/LiquidBar';
@@ -7,6 +7,7 @@ import RuneIcon from './ui/RuneIcon';
 import SparkButton from './ui/SparkButton';
 import { motion, AnimatePresence } from 'framer-motion';
 import { spellPowerConfig } from '../data/spell_power';
+import { xpTable, formatXp } from '../data/levelData';
 import { useData } from '../context/DataContext';
 import type { Stats, SavedCharacter, SeraphElement } from '../data/types';
 
@@ -26,6 +27,96 @@ const normalizeName = (name: string) => {
     .toUpperCase()
     .replace(/[^A-Z0-9]/g, "")
     .slice(0, 15);
+};
+
+/* ─── XP Table Section ─── */
+const XpTableSection = ({ requiredLevel }: { requiredLevel: number }) => {
+  const [xpSearch, setXpSearch] = useState('');
+  const [showXp, setShowXp] = useState(false);
+
+  const filteredXp = useMemo(() => {
+    if (!xpSearch) return xpTable;
+    const num = parseInt(xpSearch, 10);
+    if (isNaN(num)) return xpTable;
+    return xpTable.filter(e => e.level === num || Math.abs(e.level - num) <= 5);
+  }, [xpSearch]);
+
+  const currentXpEntry = useMemo(() => xpTable.find(e => e.level === requiredLevel), [requiredLevel]);
+
+  if (!showXp) {
+    return (
+      <button
+        onClick={() => setShowXp(true)}
+        className="w-full glass-card rounded-2xl p-4 flex items-center justify-center gap-3 text-slate-500 hover:text-amber-400 hover:border-amber-500/30 transition-all group border border-white/5"
+      >
+        <BookOpen size={18} className="group-hover:text-amber-500 transition-colors" />
+        <span className="text-xs font-black uppercase tracking-widest">XP par Niveau</span>
+      </button>
+    );
+  }
+
+  return (
+    <div className="glass-card rounded-2xl overflow-hidden border border-white/5">
+      <div className="p-4 border-b border-white/5 bg-slate-800/30 flex items-center justify-between">
+        <div className="flex items-center gap-3">
+          <BookOpen size={18} className="text-amber-500" />
+          <h2 className="text-sm font-black text-slate-200 uppercase tracking-tight font-fantasy">XP par Niveau</h2>
+        </div>
+        <button onClick={() => setShowXp(false)} className="p-1.5 text-slate-600 hover:text-white transition-colors"><X size={16} /></button>
+      </div>
+
+      <div className="p-4">
+        {currentXpEntry && (
+          <div className="flex flex-wrap gap-3 mb-4">
+            <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-amber-500/10 border border-amber-500/20">
+              <Award size={14} className="text-amber-500" />
+              <span className="text-[10px] font-black text-slate-400 uppercase tracking-wider">Votre niveau :</span>
+              <span className="text-sm font-black text-amber-400 font-fantasy">{requiredLevel}</span>
+            </div>
+            <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-800/50 border border-white/5">
+              <span className="text-[10px] font-black text-slate-400 uppercase tracking-wider">XP prochain :</span>
+              <span className="text-sm font-black text-slate-200 font-mono">{formatXp(currentXpEntry.xpRequired)}</span>
+            </div>
+            <div className="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-800/50 border border-white/5">
+              <span className="text-[10px] font-black text-slate-400 uppercase tracking-wider">XP Total :</span>
+              <span className="text-sm font-black text-slate-200 font-mono">{formatXp(currentXpEntry.xpCumulative)}</span>
+            </div>
+          </div>
+        )}
+        <div className="relative mb-3">
+          <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-600" size={14} />
+          <input
+            type="text" placeholder="Chercher un niveau..." value={xpSearch}
+            onChange={(e) => setXpSearch(e.target.value)}
+            className="w-full bg-slate-950/50 border border-slate-800 rounded-xl py-2.5 pl-9 pr-4 text-sm text-slate-100 placeholder:text-slate-600 focus:border-amber-500/50 outline-none transition-all font-bold"
+          />
+        </div>
+        <div className="max-h-[400px] overflow-y-auto rounded-xl border border-white/5 scrollbar-thin">
+          <table className="w-full text-[11px]">
+            <thead className="sticky top-0 bg-slate-900 z-10">
+              <tr className="border-b border-white/10">
+                <th className="text-left px-3 py-2 font-black text-slate-500 uppercase tracking-wider">Niv.</th>
+                <th className="text-right px-3 py-2 font-black text-slate-500 uppercase tracking-wider">XP Requis</th>
+                <th className="text-right px-3 py-2 font-black text-slate-500 uppercase tracking-wider">XP Cumulé</th>
+              </tr>
+            </thead>
+            <tbody>
+              {filteredXp.map((entry) => {
+                const isActive = entry.level === requiredLevel;
+                return (
+                  <tr key={entry.level} className={`border-b border-white/5 transition-colors ${isActive ? 'bg-amber-500/10' : 'hover:bg-white/[0.02]'}`}>
+                    <td className={`px-3 py-1.5 font-black ${isActive ? 'text-amber-400' : 'text-slate-300'}`}>{entry.level}</td>
+                    <td className={`px-3 py-1.5 text-right font-mono ${isActive ? 'text-amber-400' : 'text-slate-400'}`}>{formatXp(entry.xpRequired)}</td>
+                    <td className={`px-3 py-1.5 text-right font-mono ${isActive ? 'text-amber-400' : 'text-slate-500'}`}>{formatXp(entry.xpCumulative)}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 const StatPlanner = () => {
@@ -661,6 +752,8 @@ const StatPlanner = () => {
 
         </div>
       </div>
+
+      <XpTableSection requiredLevel={requiredLevel} />
 
       {modal.show && (
         <div className="fixed inset-0 z-[200] flex items-center justify-center p-4">
