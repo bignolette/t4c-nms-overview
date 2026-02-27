@@ -4,8 +4,9 @@ import {
   Scroll, Users, Swords, MapPin, AlertTriangle, ChevronDown, ChevronUp,
   Crown, Package, FlaskConical, ShieldAlert, Target, Key, Skull,
   CheckCircle2, Clock, Info, Gift, MessageSquare, ArrowLeft, Shield,
-  Search, X, RotateCcw, SlidersHorizontal
+  Search, X, RotateCcw, SlidersHorizontal, Map as MapIcon
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { fastNormalize } from '../data/utils';
 import EmptyState from '../components/shared/EmptyState';
 import { useData } from '../context/DataContext';
@@ -74,6 +75,7 @@ interface QuestStep {
   potions_required?: string[];
   items_required?: string[];
   location: string;
+  coordinates?: string;
   objective: string;
   instructions?: string[];
   sub_steps?: { name: string; instructions: string[] }[];
@@ -174,7 +176,7 @@ const QuestListView = ({ quests, onSelect }: { quests: Quest[]; onSelect: (q: Qu
         const normalizedSearch = fastNormalize(searchTerm);
         const searchPool = [
           q.name,
-          ...q.zone,
+          ...(q.zone || []),
           q.description,
           q.boss_fight?.name || '',
           ...(q.npcs?.map(n => n.name) || [])
@@ -184,7 +186,7 @@ const QuestListView = ({ quests, onSelect }: { quests: Quest[]; onSelect: (q: Qu
       }
 
       // Island Filter
-      if (selectedIsland !== 'Tous' && !getMainIslands(q.zone).includes(selectedIsland)) return false;
+      if (selectedIsland !== 'Tous' && !getMainIslands(q.zone || []).includes(selectedIsland)) return false;
 
       // Level Filter
       if (selectedLevelRange !== 'Tous') {
@@ -445,7 +447,7 @@ const QuestCard = ({ quest, onClick, index }: { quest: Quest; onClick: () => voi
             )}
           </div>
           <p className="text-xs text-slate-500 flex items-center gap-1.5 mt-1.5">
-            <MapPin size={11} className="shrink-0" /> {quest.zone.join(' / ')}
+            <MapPin size={11} className="shrink-0" /> {quest.zone?.join(' / ') || 'Inconnue'}
           </p>
         </div>
       </div>
@@ -545,7 +547,7 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
                 {quest.name}
               </h1>
               <p className="text-slate-400 text-sm mt-1 flex flex-wrap items-center gap-3">
-                <span className="flex items-center gap-1.5"><MapPin size={14} /> {quest.zone.join(' / ')}</span>
+                <span className="flex items-center gap-1.5"><MapPin size={14} /> {quest.zone?.join(' / ') || 'Inconnue'}</span>
                 {quest.level_required && <span className="flex items-center gap-1.5"><ShieldAlert size={14} /> Niveau {quest.level_required}+</span>}
                 {quest.alignment_required && <span className="flex items-center gap-1.5"><Shield size={14} /> {quest.alignment_required}</span>}
                 {quest.group_size_recommended && <span className="flex items-center gap-1.5"><Users size={14} /> {quest.group_size_recommended}</span>}
@@ -826,9 +828,21 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
                           )}
                         </div>
                       </div>
-                      <p className="text-xs text-slate-400 flex items-center gap-1.5 mt-1">
-                        <MapPin size={12} className="shrink-0" /> {step.location}
-                      </p>
+                      <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1">
+                        <p className="text-xs text-slate-400 flex items-center gap-1.5">
+                          <MapPin size={12} className="shrink-0" /> {step.location}
+                        </p>
+                        {step.coordinates && (
+                          <Link
+                            to={`/maps?coordinates=${encodeURIComponent(step.coordinates)}`}
+                            onClick={(e) => e.stopPropagation()}
+                            className="flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-bold text-rose-300 bg-rose-500/10 border border-rose-500/20 hover:bg-rose-500/20 hover:border-rose-500/50 transition-all"
+                          >
+                            <MapIcon size={10} className="text-rose-500" />
+                            {step.coordinates}
+                          </Link>
+                        )}
+                      </div>
                       <div className="flex items-center justify-between mt-2">
                         <p className="text-xs text-slate-500">{step.objective}</p>
                         <div className="shrink-0 ml-2 text-slate-500 group-hover:text-amber-400 transition-colors">
