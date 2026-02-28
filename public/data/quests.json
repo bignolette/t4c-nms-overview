@@ -1170,9 +1170,9 @@
   },
   {
     "id": "acces_stoneheim_good",
-    "name": "Accès à Stoneheim (Bénéfique / Good)",
+    "name": "Accès Bénéfique à Stoneheim",
     "zone": [
-      "Raven's Dust → Stoneheim"
+      "Raven's Dust"
     ],
     "level_required": 30,
     "alignment_required": "Bénéfique (Good) — Karma minimum 170 recommandé",
