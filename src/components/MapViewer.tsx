@@ -140,16 +140,35 @@ const MapViewer: React.FC = () => {
   const transformStateRef = useRef({ scale: 0.1, positionX: 0, positionY: 0 });
   const [transformState, setTransformState] = useState({ scale: 0.1, positionX: 0, positionY: 0 });
   const rafId = useRef(0);
+  const [coverScale, setCoverScale] = useState(0.5);
+
+  const updateCoverScale = useCallback(() => {
+    if (imgRef.current && mapViewportRef.current) {
+      const vw = mapViewportRef.current.offsetWidth;
+      const vh = mapViewportRef.current.offsetHeight;
+      const iw = imgRef.current.naturalWidth;
+      const ih = imgRef.current.naturalHeight;
+      if (iw > 0 && ih > 0) {
+        setCoverScale(Math.max(vw / iw, vh / ih));
+      }
+    }
+  }, []);
+
+  useEffect(() => {
+    const el = mapViewportRef.current;
+    if (!el) return;
+    const ro = new ResizeObserver(() => updateCoverScale());
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [updateCoverScale]);
 
   const fitToView = (instance: any) => {
     if (imgRef.current && mapViewportRef.current) {
-      const containerW = mapViewportRef.current.offsetWidth;
-      const containerH = mapViewportRef.current.offsetHeight;
-      const scaleX = (containerW - 40) / imgRef.current.naturalWidth;
-      const scaleY = (containerH - 40) / imgRef.current.naturalHeight;
-      const scale = Math.min(scaleX, scaleY, 1);
-      const x = (containerW - imgRef.current.naturalWidth * scale) / 2;
-      const y = (containerH - imgRef.current.naturalHeight * scale) / 2;
+      const vw = mapViewportRef.current.offsetWidth;
+      const vh = mapViewportRef.current.offsetHeight;
+      const scale = Math.max(vw / imgRef.current.naturalWidth, vh / imgRef.current.naturalHeight);
+      const x = (vw - imgRef.current.naturalWidth * scale) / 2;
+      const y = (vh - imgRef.current.naturalHeight * scale) / 2;
       instance.setTransform(x, y, scale, 400, "easeOut");
     }
   };
@@ -159,7 +178,7 @@ const MapViewer: React.FC = () => {
     if (imgRef.current && mapViewportRef.current) {
       const px = gx * 2;
       const py = gy;
-      const scale = window.innerWidth < 768 ? 2 : 1.2;
+      const scale = Math.max(window.innerWidth < 768 ? 2 : 1.2, coverScale);
       const x = (mapViewportRef.current.offsetWidth / 2) - (px * scale);
       const y = (mapViewportRef.current.offsetHeight / 2) - (py * scale);
       instance.setTransform(x, y, scale, 600, "easeOut");
@@ -662,13 +681,13 @@ const MapViewer: React.FC = () => {
             </div>
           )}
           <TransformWrapper
-            key={`${isFullscreen}-${selectedMap.id}`}
-            initialScale={0.1}
-            minScale={0.05}
+            key={`${isFullscreen}-${selectedMap.id}-${coverScale}`}
+            initialScale={coverScale}
+            minScale={coverScale}
             maxScale={3}
             doubleClick={{ disabled: true }}
             limitToBounds={true}
-            centerZoomedOut={true}
+            centerZoomedOut={false}
             wheel={{ step: 0.08 }}
             velocityAnimation={{ sensitivity: 1, animationTime: 300, animationType: 'easeOut' }}
             onTransformed={(_ref, state) => {
@@ -692,8 +711,9 @@ const MapViewer: React.FC = () => {
                       src={selectedMap.path} 
                       alt={selectedMap.name} 
                       className="max-w-none" 
-                      onLoad={() => { 
-                        setIsLoading(false); 
+                      onLoad={() => {
+                        setIsLoading(false);
+                        updateCoverScale();
                         setTimeout(() => {
                           if (transformWrapperRef.current) {
                             if (visibleMarkers.length > 0) {
