@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Nexus - Camp Démonicons",
+    "locationPrecision": "Camp Démonicons - attention ils font très mal",
+    "zone": [
+      "Arakas"
+    ],
+    "coordinates": "2471.556.0"
+  },
+  {
+    "name": "Nexus - Kraanians",
+    "locationPrecision": "Kraanians",
+    "zone": [
+      "Arakas"
+    ],
+    "coordinates": "2196.750.0"
+  },
+  {
+    "name": "Nexus - Camp kobold",
+    "locationPrecision": "Camp kobold",
+    "zone": [
+      "Arakas"
+    ],
+    "coordinates": "1677.979.0"
+  },
+  {
+    "name": "Nexus - Nord Caverne des Brigands",
+    "locationPrecision": "Nord Caverne des Brigands",
+    "zone": [
+      "Arakas"
+    ],
+    "coordinates": "2118.1144.0"
+  },
+  {
+    "name": "Nexus - Pointe Sud d'Arakas",
+    "locationPrecision": "Pointe Sud d'Arakas",
+    "zone": [
+      "Arakas"
+    ],
+    "coordinates": "2150.1694.0"
+  },
+  {
+    "name": "Nexus - Lac des Tarentules",
+    "locationPrecision": "Lac des Tarentules",
+    "zone": [
+      "Raven's Dust"
+    ],
+    "coordinates": "779.2053.0"
+  },
+  {
+    "name": "Nexus - Oasis du Désert de Raven's Dust",
+    "locationPrecision": "Oasis du Désert de Raven's Dust",
+    "zone": [
+      "Raven's Dust"
+    ],
+    "coordinates": "268.2521.0"
+  }
+]
