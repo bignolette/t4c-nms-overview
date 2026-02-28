@@ -4,7 +4,8 @@ import {
   Scroll, Users, Swords, MapPin, AlertTriangle, ChevronDown, ChevronUp,
   Crown, Package, FlaskConical, ShieldAlert, Target, Key, Skull,
   CheckCircle2, Clock, Info, Gift, MessageSquare, ArrowLeft, Shield,
-  Search, X, RotateCcw, SlidersHorizontal, Map as MapIcon
+  Search, X, RotateCcw, SlidersHorizontal, Map as MapIcon,
+  LayoutGrid, List
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { fastNormalize } from '../data/utils';
@@ -164,8 +165,17 @@ const QuestListView = ({ quests, onSelect }: { quests: Quest[]; onSelect: (q: Qu
   const [selectedLevelRange, setSelectedLevelRange] = useState('Tous');
   const [groupFilter, setGroupFilter] = useState('Tous');
   const [showBossOnly, setShowBossOnly] = useState(false);
+  const [viewMode, setViewMode] = useState<'cards' | 'list'>(() => {
+    return (localStorage.getItem('t4c-quest-view-mode') as 'cards' | 'list') || 'list';
+  });
 
-  const [sortBy, setSortBy] = useState('name'); // 'name' | 'level_asc' | 'level_desc'
+  const [sortBy, setSortBy] = useState<'name' | 'level' | 'steps' | 'zone'>('name');
+  const [sortDir, setSortDir] = useState<'asc' | 'desc'>('asc');
+
+  const toggleSort = (col: 'name' | 'level' | 'steps' | 'zone') => {
+    if (sortBy === col) setSortDir(d => d === 'asc' ? 'desc' : 'asc');
+    else { setSortBy(col); setSortDir(col === 'level' || col === 'steps' ? 'desc' : 'asc'); }
+  };
 
   const islands = ['Tous', 'Arakas', "Raven's Dust", 'Stoneheim', 'Drake Island', 'Niève', 'Académie', 'Multi-îles', 'Autre'];
   const levelRanges = ['Tous', '1-25', '26-80', '81-200', '200+'];
@@ -210,15 +220,17 @@ const QuestListView = ({ quests, onSelect }: { quests: Quest[]; onSelect: (q: Qu
     });
 
     // Sorting
+    const dir = sortDir === 'asc' ? 1 : -1;
     result.sort((a, b) => {
-      if (sortBy === 'name') return a.name.localeCompare(b.name);
-      if (sortBy === 'level_asc') return (a.level_required || 0) - (b.level_required || 0);
-      if (sortBy === 'level_desc') return (b.level_required || 0) - (a.level_required || 0);
+      if (sortBy === 'name') return dir * a.name.localeCompare(b.name);
+      if (sortBy === 'level') return dir * ((a.level_required || 0) - (b.level_required || 0));
+      if (sortBy === 'steps') return dir * ((a.steps?.length || 0) - (b.steps?.length || 0));
+      if (sortBy === 'zone') return dir * ((a.zone?.[0] || '').localeCompare(b.zone?.[0] || ''));
       return 0;
     });
 
     return result;
-  }, [quests, searchTerm, selectedIsland, selectedLevelRange, groupFilter, showBossOnly, sortBy]);
+  }, [quests, searchTerm, selectedIsland, selectedLevelRange, groupFilter, showBossOnly, sortBy, sortDir]);
 
   const resetFilters = () => {
     setSearchTerm('');
@@ -227,6 +239,7 @@ const QuestListView = ({ quests, onSelect }: { quests: Quest[]; onSelect: (q: Qu
     setGroupFilter('Tous');
     setShowBossOnly(false);
     setSortBy('name');
+    setSortDir('asc');
   };
 
   return (
@@ -278,14 +291,37 @@ const QuestListView = ({ quests, onSelect }: { quests: Quest[]; onSelect: (q: Qu
               <SlidersHorizontal size={14} className="text-amber-500/60" />
               <span className="text-xs font-bold text-amber-500/80 uppercase tracking-wider">Trier par</span>
               <select
-                value={sortBy}
-                onChange={(e) => setSortBy(e.target.value)}
+                value={`${sortBy}_${sortDir}`}
+                onChange={(e) => {
+                  const [col, dir] = e.target.value.split('_') as ['name' | 'level' | 'steps' | 'zone', 'asc' | 'desc'];
+                  setSortBy(col);
+                  setSortDir(dir);
+                }}
                 className="bg-transparent text-xs font-bold text-slate-200 focus:outline-none cursor-pointer"
               >
-                <option value="name" className="bg-slate-900">Nom (A-Z)</option>
+                <option value="name_asc" className="bg-slate-900">Nom (A-Z)</option>
+                <option value="name_desc" className="bg-slate-900">Nom (Z-A)</option>
                 <option value="level_asc" className="bg-slate-900">Niveau (Croissant)</option>
                 <option value="level_desc" className="bg-slate-900">Niveau (Décroissant)</option>
+                <option value="steps_desc" className="bg-slate-900">Étapes (Décroissant)</option>
+                <option value="steps_asc" className="bg-slate-900">Étapes (Croissant)</option>
               </select>
+            </div>
+            <div className="flex items-center bg-slate-900/40 p-1 rounded-xl border border-slate-800">
+              <button
+                onClick={() => { setViewMode('cards'); localStorage.setItem('t4c-quest-view-mode', 'cards'); }}
+                className={`p-2 rounded-lg transition-all ${viewMode === 'cards' ? 'bg-slate-800 text-amber-500' : 'text-slate-500 hover:text-slate-300'}`}
+                title="Vue cartes"
+              >
+                <LayoutGrid size={14} />
+              </button>
+              <button
+                onClick={() => { setViewMode('list'); localStorage.setItem('t4c-quest-view-mode', 'list'); }}
+                className={`p-2 rounded-lg transition-all ${viewMode === 'list' ? 'bg-slate-800 text-amber-500' : 'text-slate-500 hover:text-slate-300'}`}
+                title="Vue liste"
+              >
+                <List size={14} />
+              </button>
             </div>
           </div>
         </div>
@@ -362,15 +398,113 @@ const QuestListView = ({ quests, onSelect }: { quests: Quest[]; onSelect: (q: Qu
         </div>
       </div>
 
-      {/* Quest Cards Grid */}
+      {/* Quest Display */}
       {filteredQuests.length > 0 ? (
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-          <AnimatePresence mode="popLayout">
-            {filteredQuests.map((quest, i) => (
-              <QuestCard key={quest.id} quest={quest} onClick={() => onSelect(quest)} index={i} />
-            ))}
-          </AnimatePresence>
-        </div>
+        viewMode === 'cards' ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+            <AnimatePresence mode="popLayout">
+              {filteredQuests.map((quest, i) => (
+                <QuestCard key={quest.id} quest={quest} onClick={() => onSelect(quest)} index={i} />
+              ))}
+            </AnimatePresence>
+          </div>
+        ) : (
+          <div className="glass-card rounded-2xl border border-slate-800/50 overflow-hidden">
+            <table className="w-full">
+              <thead>
+                <tr className="border-b border-slate-800 bg-slate-900/60">
+                  <th className="text-left px-4 py-3 text-[10px] font-black uppercase tracking-widest cursor-pointer select-none hover:text-amber-400 transition-colors" onClick={() => toggleSort('name')}>
+                    <span className={`flex items-center gap-1 ${sortBy === 'name' ? 'text-amber-500' : 'text-slate-500'}`}>
+                      Quête {sortBy === 'name' && (sortDir === 'asc' ? <ChevronUp size={10} /> : <ChevronDown size={10} />)}
+                    </span>
+                  </th>
+                  <th className="text-left px-4 py-3 text-[10px] font-black uppercase tracking-widest hidden md:table-cell cursor-pointer select-none hover:text-amber-400 transition-colors" onClick={() => toggleSort('zone')}>
+                    <span className={`flex items-center gap-1 ${sortBy === 'zone' ? 'text-amber-500' : 'text-slate-500'}`}>
+                      Zone {sortBy === 'zone' && (sortDir === 'asc' ? <ChevronUp size={10} /> : <ChevronDown size={10} />)}
+                    </span>
+                  </th>
+                  <th className="text-center px-4 py-3 text-[10px] font-black uppercase tracking-widest w-20 cursor-pointer select-none hover:text-amber-400 transition-colors" onClick={() => toggleSort('level')}>
+                    <span className={`flex items-center justify-center gap-1 ${sortBy === 'level' ? 'text-amber-500' : 'text-slate-500'}`}>
+                      Niveau {sortBy === 'level' && (sortDir === 'asc' ? <ChevronUp size={10} /> : <ChevronDown size={10} />)}
+                    </span>
+                  </th>
+                  <th className="text-center px-4 py-3 text-[10px] font-black uppercase tracking-widest w-20 hidden sm:table-cell cursor-pointer select-none hover:text-amber-400 transition-colors" onClick={() => toggleSort('steps')}>
+                    <span className={`flex items-center justify-center gap-1 ${sortBy === 'steps' ? 'text-amber-500' : 'text-slate-500'}`}>
+                      Étapes {sortBy === 'steps' && (sortDir === 'asc' ? <ChevronUp size={10} /> : <ChevronDown size={10} />)}
+                    </span>
+                  </th>
+                  <th className="text-center px-4 py-3 text-[10px] font-black text-slate-500 uppercase tracking-widest w-24 hidden lg:table-cell">Tags</th>
+                  <th className="text-center px-4 py-3 text-[10px] font-black text-slate-500 uppercase tracking-widest w-20 hidden sm:table-cell">Progrès</th>
+                </tr>
+              </thead>
+              <tbody>
+                {filteredQuests.map((quest) => {
+                  const saved = localStorage.getItem(getProgressKey(quest.id));
+                  let progress = 0;
+                  let isCompleted = false;
+                  if (saved) {
+                    try {
+                      const cs = JSON.parse(saved);
+                      if (Array.isArray(cs) && quest.steps?.length) {
+                        progress = (cs.length / quest.steps.length) * 100;
+                        isCompleted = cs.length === quest.steps.length;
+                      }
+                    } catch {}
+                  }
+                  return (
+                    <tr
+                      key={quest.id}
+                      onClick={() => onSelect(quest)}
+                      className="border-b border-slate-800/30 hover:bg-amber-500/5 cursor-pointer transition-colors group"
+                    >
+                      <td className="px-4 py-3">
+                        <div className="flex items-center gap-3">
+                          <div className={`p-1.5 rounded-lg border shrink-0 ${isCompleted ? 'bg-emerald-500/10 border-emerald-500/20' : 'bg-amber-500/10 border-amber-500/20'}`}>
+                            {isCompleted ? <CheckCircle2 size={14} className="text-emerald-400" /> : <Scroll size={14} className="text-amber-500" />}
+                          </div>
+                          <span className={`text-sm font-bold transition-colors ${isCompleted ? 'text-emerald-400' : 'text-slate-200 group-hover:text-amber-400'}`}>
+                            {quest.name}
+                          </span>
+                        </div>
+                      </td>
+                      <td className="px-4 py-3 hidden md:table-cell">
+                        <span className="text-xs text-slate-500">{quest.zone?.join(' / ') || '—'}</span>
+                      </td>
+                      <td className="px-4 py-3 text-center">
+                        {quest.level_required ? (
+                          <span className="text-xs font-bold text-amber-400">{quest.level_required}+</span>
+                        ) : (
+                          <span className="text-xs text-slate-600">—</span>
+                        )}
+                      </td>
+                      <td className="px-4 py-3 text-center hidden sm:table-cell">
+                        <span className="text-xs font-bold text-slate-400">{quest.steps?.length ?? 0}</span>
+                      </td>
+                      <td className="px-4 py-3 hidden lg:table-cell">
+                        <div className="flex items-center justify-center gap-1.5">
+                          {quest.group_recommended && <span title="Groupe"><Users size={12} className="text-sky-400" /></span>}
+                          {quest.boss_fight && <span title="Boss"><Skull size={12} className="text-red-400" /></span>}
+                        </div>
+                      </td>
+                      <td className="px-4 py-3 hidden sm:table-cell">
+                        {progress > 0 ? (
+                          <div className="flex items-center gap-2 justify-center">
+                            <div className="w-16 h-1.5 bg-slate-800 rounded-full overflow-hidden">
+                              <div className={`h-full rounded-full ${isCompleted ? 'bg-emerald-500' : 'bg-amber-500'}`} style={{ width: `${progress}%` }} />
+                            </div>
+                            <span className={`text-[10px] font-bold ${isCompleted ? 'text-emerald-400' : 'text-slate-500'}`}>{Math.round(progress)}%</span>
+                          </div>
+                        ) : (
+                          <span className="text-[10px] text-slate-700">—</span>
+                        )}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        )
       ) : (
         <EmptyState
           icon={Search}
@@ -438,7 +572,7 @@ const QuestCard = ({ quest, onClick, index }: { quest: Quest; onClick: () => voi
         </div>
         <div className="min-w-0 flex-1">
           <div className="flex items-center justify-between gap-2">
-            <h3 className={`font-bold text-sm transition-colors leading-tight line-clamp-1 ${
+            <h3 className={`font-bold text-sm transition-colors leading-tight ${
               isCompleted ? 'text-emerald-400' : 'text-slate-200 group-hover:text-amber-400'
             }`}>
               {quest.name}
@@ -656,11 +790,8 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
             {quest.rewards.items?.map((item, i) => (
               <li key={i} className="flex items-start gap-3">
                 <Package size={16} className="text-blue-400 mt-0.5 shrink-0" />
-                <span className="text-slate-300 text-sm flex items-center gap-1.5">
+                <span className="text-slate-300 text-sm">
                   {item.name} <span className="text-amber-400 font-bold">x{item.quantity}</span>
-                  {entityLocationMap.has(fastNormalize(item.name)) && (
-                    <button onClick={() => openMapForEntity(item.name)} className="p-0.5 hover:bg-emerald-500/20 rounded text-emerald-400/50 hover:text-emerald-400 transition-all" title="Voir sur la carte"><MapIcon size={12} /></button>
-                  )}
                   {item.note && <span className="text-slate-500 text-xs block">{item.note}</span>}
                 </span>
               </li>
@@ -768,12 +899,7 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
                 <ul className="space-y-2">
                   {quest.items_required_overview?.potions_evalcian?.map((pot, i) => (
                     <li key={i} className="p-2.5 bg-slate-800/40 rounded-lg border border-slate-700/30">
-                      <p className="text-xs font-bold text-purple-300 flex items-center gap-1.5">
-                        {pot.name}
-                        {entityLocationMap.has(fastNormalize(pot.name)) && (
-                          <button onClick={() => openMapForEntity(pot.name)} className="p-0.5 hover:bg-purple-500/20 rounded text-purple-400/50 hover:text-purple-400 transition-all" title="Voir sur la carte"><MapIcon size={12} /></button>
-                        )}
-                      </p>
+                      <p className="text-xs font-bold text-purple-300">{pot.name}</p>
                       <p className="text-[11px] text-slate-400">{pot.usage}</p>
                       {pot.duration && <p className="text-[10px] text-slate-500 mt-0.5"><Clock size={10} className="inline mr-1" />{pot.duration}</p>}
                     </li>
@@ -790,12 +916,7 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
                 <ul className="space-y-2">
                   {quest.items_required_overview?.items_speciaux?.map((item, i) => (
                     <li key={i} className="p-2.5 bg-slate-800/40 rounded-lg border border-slate-700/30">
-                      <p className="text-xs font-bold text-amber-300 flex items-center gap-1.5">
-                        {item.name}
-                        {entityLocationMap.has(fastNormalize(item.name)) && (
-                          <button onClick={() => openMapForEntity(item.name)} className="p-0.5 hover:bg-amber-500/20 rounded text-amber-400/50 hover:text-amber-400 transition-all" title="Voir sur la carte"><MapIcon size={12} /></button>
-                        )}
-                      </p>
+                      <p className="text-xs font-bold text-amber-300">{item.name}</p>
                       <p className="text-[11px] text-slate-400">Usage : {item.usage}</p>
                       <p className="text-[10px] text-slate-500 mt-0.5">
                         {Array.isArray(item.obtention) ? item.obtention.join(' / ') : item.obtention}
@@ -996,9 +1117,6 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
                                     <li key={i} className="text-xs text-slate-300 flex items-center gap-2">
                                       <span className="w-1.5 h-1.5 rounded-full bg-blue-400" />
                                       {item}
-                                      {entityLocationMap.has(fastNormalize(item)) && (
-                                        <button onClick={() => openMapForEntity(item)} className="p-0.5 hover:bg-blue-500/20 rounded text-blue-400/50 hover:text-blue-400 transition-all" title="Voir sur la carte"><MapIcon size={12} /></button>
-                                      )}
                                     </li>
                                   ))}
                                 </ul>
