@@ -10,6 +10,7 @@ import { Link } from 'react-router-dom';
 import { fastNormalize } from '../data/utils';
 import EmptyState from '../components/shared/EmptyState';
 import { useData } from '../context/DataContext';
+import NpcMapModal from '../components/NpcMapModal';
 
 /* ─── Types ─── */
 
@@ -491,11 +492,49 @@ const QuestCard = ({ quest, onClick, index }: { quest: Quest; onClick: () => voi
 /* ─── Quest Detail View ─── */
 
 const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }) => {
+  const { npcsData, bestiaryData, plantsData, treesData, depositsData } = useData();
   const [expandedStep, setExpandedStep] = useState<number | null>(null);
   const [completedSteps, setCompletedSteps] = useState<Set<number>>(() => {
     const saved = localStorage.getItem(getProgressKey(quest.id));
     return saved ? new Set(JSON.parse(saved)) : new Set();
   });
+  const [mapModal, setMapModal] = useState<{ name: string; coordinates: string[]; category: string } | null>(null);
+
+  const entityLocationMap = useMemo(() => {
+    const map = new Map<string, { coordinates: string[]; category: string }>();
+
+    npcsData.forEach(npc => {
+      const rawCoords = Array.isArray(npc.coordinates) ? npc.coordinates : (npc.coordinates ? [npc.coordinates] : []);
+      const valid = rawCoords.filter(c => {
+        if (!c || typeof c !== 'string' || !c.trim()) return false;
+        const p = c.replace(/,/g, '.').split('.').map(Number);
+        return p.length >= 3 && !isNaN(p[2]) && p[2] !== -1;
+      });
+      if (valid.length > 0) map.set(fastNormalize(npc.name), { coordinates: valid, category: 'PNJs' });
+    });
+
+    bestiaryData.forEach(m => {
+      const rawCoords = (Array.isArray(m.coordinates) ? m.coordinates : (m.coordinates ? [m.coordinates] : [])).filter(Boolean);
+      const valid = rawCoords.filter(c => { const p = c.split('.').map(Number); return p.length >= 3 && !isNaN(p[2]) && p[2] !== -1; });
+      if (valid.length > 0) map.set(fastNormalize(m.name), { coordinates: valid, category: 'Monstres' });
+    });
+
+    [plantsData, treesData, depositsData].forEach((list, i) => {
+      const cat = ['Plantes', 'Arbres', 'Gisements'][i];
+      list.forEach(item => {
+        const rawCoords = (Array.isArray(item.coordinates) ? item.coordinates : (item.coordinates ? [item.coordinates] : [])).filter(Boolean);
+        const valid = rawCoords.filter(c => { const p = c.split('.').map(Number); return p.length >= 3 && !isNaN(p[2]) && p[2] !== -1; });
+        if (valid.length > 0) map.set(fastNormalize(item.name), { coordinates: valid, category: cat });
+      });
+    });
+
+    return map;
+  }, [npcsData, bestiaryData, plantsData, treesData, depositsData]);
+
+  const openMapForEntity = (name: string) => {
+    const entry = entityLocationMap.get(fastNormalize(name));
+    if (entry) setMapModal({ name, ...entry });
+  };
 
   useEffect(() => {
     localStorage.setItem(getProgressKey(quest.id), JSON.stringify([...completedSteps]));
@@ -617,8 +656,11 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
             {quest.rewards.items?.map((item, i) => (
               <li key={i} className="flex items-start gap-3">
                 <Package size={16} className="text-blue-400 mt-0.5 shrink-0" />
-                <span className="text-slate-300 text-sm">
+                <span className="text-slate-300 text-sm flex items-center gap-1.5">
                   {item.name} <span className="text-amber-400 font-bold">x{item.quantity}</span>
+                  {entityLocationMap.has(fastNormalize(item.name)) && (
+                    <button onClick={() => openMapForEntity(item.name)} className="p-0.5 hover:bg-emerald-500/20 rounded text-emerald-400/50 hover:text-emerald-400 transition-all" title="Voir sur la carte"><MapIcon size={12} /></button>
+                  )}
                   {item.note && <span className="text-slate-500 text-xs block">{item.note}</span>}
                 </span>
               </li>
@@ -663,7 +705,18 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
             <div className="space-y-4">
               {quest.npcs.map((npc, i) => (
                 <div key={i} className="p-3 bg-slate-800/40 rounded-xl border border-slate-700/30">
-                  <h3 className="font-bold text-slate-200 text-sm">{npc.name}</h3>
+                  <div className="flex items-center gap-2">
+                    <h3 className="font-bold text-slate-200 text-sm">{npc.name}</h3>
+                    {entityLocationMap.has(fastNormalize(npc.name)) && (
+                      <button
+                        onClick={() => openMapForEntity(npc.name)}
+                        className="p-1 hover:bg-blue-500/20 rounded-md text-blue-400/60 hover:text-blue-400 transition-all"
+                        title="Voir sur la carte"
+                      >
+                        <MapIcon size={14} />
+                      </button>
+                    )}
+                  </div>
                   <p className="text-xs text-blue-400 mb-2">{npc.role}{npc.location ? ` — ${npc.location}` : ''}</p>
                   {npc.interactions?.map((inter, j) => (
                     <p key={j} className="text-xs text-slate-400 flex items-start gap-2">
@@ -715,7 +768,12 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
                 <ul className="space-y-2">
                   {quest.items_required_overview?.potions_evalcian?.map((pot, i) => (
                     <li key={i} className="p-2.5 bg-slate-800/40 rounded-lg border border-slate-700/30">
-                      <p className="text-xs font-bold text-purple-300">{pot.name}</p>
+                      <p className="text-xs font-bold text-purple-300 flex items-center gap-1.5">
+                        {pot.name}
+                        {entityLocationMap.has(fastNormalize(pot.name)) && (
+                          <button onClick={() => openMapForEntity(pot.name)} className="p-0.5 hover:bg-purple-500/20 rounded text-purple-400/50 hover:text-purple-400 transition-all" title="Voir sur la carte"><MapIcon size={12} /></button>
+                        )}
+                      </p>
                       <p className="text-[11px] text-slate-400">{pot.usage}</p>
                       {pot.duration && <p className="text-[10px] text-slate-500 mt-0.5"><Clock size={10} className="inline mr-1" />{pot.duration}</p>}
                     </li>
@@ -732,7 +790,12 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
                 <ul className="space-y-2">
                   {quest.items_required_overview?.items_speciaux?.map((item, i) => (
                     <li key={i} className="p-2.5 bg-slate-800/40 rounded-lg border border-slate-700/30">
-                      <p className="text-xs font-bold text-amber-300">{item.name}</p>
+                      <p className="text-xs font-bold text-amber-300 flex items-center gap-1.5">
+                        {item.name}
+                        {entityLocationMap.has(fastNormalize(item.name)) && (
+                          <button onClick={() => openMapForEntity(item.name)} className="p-0.5 hover:bg-amber-500/20 rounded text-amber-400/50 hover:text-amber-400 transition-all" title="Voir sur la carte"><MapIcon size={12} /></button>
+                        )}
+                      </p>
                       <p className="text-[11px] text-slate-400">Usage : {item.usage}</p>
                       <p className="text-[10px] text-slate-500 mt-0.5">
                         {Array.isArray(item.obtention) ? item.obtention.join(' / ') : item.obtention}
@@ -933,6 +996,9 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
                                     <li key={i} className="text-xs text-slate-300 flex items-center gap-2">
                                       <span className="w-1.5 h-1.5 rounded-full bg-blue-400" />
                                       {item}
+                                      {entityLocationMap.has(fastNormalize(item)) && (
+                                        <button onClick={() => openMapForEntity(item)} className="p-0.5 hover:bg-blue-500/20 rounded text-blue-400/50 hover:text-blue-400 transition-all" title="Voir sur la carte"><MapIcon size={12} /></button>
+                                      )}
                                     </li>
                                   ))}
                                 </ul>
@@ -1096,6 +1162,15 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
           </div>
         </motion.div>
       )}
+
+      <NpcMapModal
+        isOpen={!!mapModal}
+        onClose={() => setMapModal(null)}
+        entityName={mapModal?.name ?? ''}
+        coordinates={mapModal?.coordinates[0] ?? ''}
+        allCoordinates={mapModal?.coordinates}
+        category={mapModal?.category}
+      />
     </div>
   );
 };
