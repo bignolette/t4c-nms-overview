@@ -24,6 +24,7 @@ const getCategoryColor = (cat: string) => {
     case 'Plantes': return 'text-emerald-500';
     case 'Arbres': return 'text-amber-800';
     case 'Gisements': return 'text-amber-500';
+    case 'Nexus': return 'text-purple-500';
     default: return 'text-slate-400';
   }
 };
@@ -115,7 +116,7 @@ const Minimap = memo(({
 });
 
 const MapViewer: React.FC = () => {
-  const { bestiaryData, plantsData, treesData, depositsData, npcsData, showNotification } = useData();
+  const { bestiaryData, plantsData, treesData, depositsData, npcsData, nexusData, showNotification } = useData();
   const [searchParams, setSearchParams] = useSearchParams();
   const targetName = searchParams.get('name');
 
@@ -275,7 +276,7 @@ const MapViewer: React.FC = () => {
   }, []);
 
   const dataLayers = useMemo(() => {
-    const categories: Record<string, Record<string, MarkerData[]>> = { 'Monstres': {}, 'PNJs': {}, 'Plantes': {}, 'Arbres': {}, 'Gisements': {} };
+    const categories: Record<string, Record<string, MarkerData[]>> = { 'Monstres': {}, 'PNJs': {}, 'Nexus': {}, 'Plantes': {}, 'Arbres': {}, 'Gisements': {} };
     
     bestiaryData.forEach(m => {
       const rawCoords = Array.isArray(m.coordinates) ? m.coordinates : (m.coordinates ? [m.coordinates] : []);
@@ -300,9 +301,23 @@ const MapViewer: React.FC = () => {
           return { gx: parts[0], gy: parts[1], world: parts[2], label: npc.name, category: 'PNJs' };
         }).filter((marker: MarkerData) => !isNaN(marker.world) && marker.world !== -1);
 
-      categories['PNJs'][npc.name] = validMarkers.length > 0 
-        ? validMarkers 
+      categories['PNJs'][npc.name] = validMarkers.length > 0
+        ? validMarkers
         : [{ gx: 0, gy: 0, world: -1, label: npc.name, category: 'PNJs' }];
+    });
+
+    nexusData.forEach(nex => {
+      const rawCoords = Array.isArray(nex.coordinates) ? nex.coordinates : (nex.coordinates ? [nex.coordinates] : []);
+      const validMarkers = rawCoords
+        .filter(c => c && typeof c === 'string' && c.trim() !== '')
+        .map(coord => {
+          const parts = coord.replace(/,/g, '.').split('.').map(Number);
+          return { gx: parts[0], gy: parts[1], world: parts[2], label: nex.name, category: 'Nexus' };
+        }).filter((marker: MarkerData) => !isNaN(marker.world) && marker.world !== -1);
+
+      categories['Nexus'][nex.name] = validMarkers.length > 0
+        ? validMarkers
+        : [{ gx: 0, gy: 0, world: -1, label: nex.name, category: 'Nexus' }];
     });
 
     const processStaticList = (list: RecipeItem[], cat: string) => {
@@ -325,7 +340,7 @@ const MapViewer: React.FC = () => {
     processStaticList(treesData, 'Arbres');
     processStaticList(depositsData, 'Gisements');
     return categories;
-  }, [bestiaryData, npcsData, plantsData, treesData, depositsData]);
+  }, [bestiaryData, npcsData, nexusData, plantsData, treesData, depositsData]);
 
   const visibleMarkers = useMemo(() => {
     const markers: MarkerData[] = [];

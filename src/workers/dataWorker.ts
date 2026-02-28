@@ -87,7 +87,7 @@ self.onmessage = async (e: MessageEvent) => {
   const { baseUrl } = e.data;
 
   try {
-    const [items, plants, trees, deposits, bestiary, recipes, npcs, quests, spells, skills] = await Promise.all([
+    const [items, plants, trees, deposits, bestiary, recipes, npcs, quests, spells, skills, nexus] = await Promise.all([
       fetch(`${baseUrl}data/items.json`).then(res => res.json()),
       fetch(`${baseUrl}data/plants.json`).then(res => res.json()),
       fetch(`${baseUrl}data/trees.json`).then(res => res.json()),
@@ -98,6 +98,7 @@ self.onmessage = async (e: MessageEvent) => {
       fetch(`${baseUrl}data/quests.json`).then(res => res.json()),
       fetch(`${baseUrl}data/spells.json`).then(res => res.json()),
       fetch(`${baseUrl}data/skills.json`).then(res => res.json()),
+      fetch(`${baseUrl}data/nexus.json`).then(res => res.json()),
     ]);
 
     // Build derived maps
@@ -223,7 +224,7 @@ self.onmessage = async (e: MessageEvent) => {
 
     self.postMessage({
       type: 'success',
-      data: { items, plants, trees, deposits, bestiary, recipes, npcs, quests, spells, skills },
+      data: { items, plants, trees, deposits, bestiary, recipes, npcs, quests, spells, skills, nexus },
       maps: {
         ingredientProfessionMap,
         itemMonsterMap,

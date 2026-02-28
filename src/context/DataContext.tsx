@@ -41,6 +41,7 @@ interface DataContextType {
     bestiaryData: Monster[];
     recipesData: RecipeItem[];
     npcsData: NPC[];
+    nexusData: NPC[];
     questsData: any[];
     spellsData: Spell[];
     skillsData: Skill[];
@@ -78,6 +79,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         bestiary: Monster[];
         recipes: RecipeItem[];
         npcs: NPC[];
+        nexus: NPC[];
         quests: any[];
         spells: Spell[];
         skills: Skill[];
@@ -89,6 +91,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         bestiary: [],
         recipes: [],
         npcs: [],
+        nexus: [],
         quests: [],
         spells: [],
         skills: []
@@ -260,6 +263,7 @@ export const DataProvider: React.FC<{ children: React.ReactNode }> = ({ children
         bestiaryData: data.bestiary,
         recipesData: data.recipes,
         npcsData: data.npcs,
+        nexusData: data.nexus,
         questsData: data.quests,
         npcRecipesMap: maps.npcRecipesMap,
         spellsData: data.spells,
