@@ -4158,6 +4158,896 @@
     ]
   },
   {
+    "id": "acces_malefique_sh",
+    "name": "Accès maléfique à Stoneheim (Evil)",
+    "zone": [
+      "Raven's Dust"
+    ],
+    "level_required": null,
+    "group_recommended": false,
+    "group_size_recommended": "1 joueur (+ 1 ami pour les Chroniques)",
+    "description": "Ligne de quêtes maléfiques permettant d'accéder à Stoneheim. Vous devrez empoisonner l'évêque Crowbanner, voler les Chroniques de l'Apocalypse avec l'aide d'un complice, assassiner Shadeen, puis accomplir le rituel de Zhakar pour être téléporté à Stoneheim.",
+    "rewards": {
+      "experience": "5 000 XP (plume argentée) + 10 000 XP pour l'ami (Chroniques)",
+      "items": [
+        {
+          "name": "Plume argentée",
+          "quantity": 1
+        },
+        {
+          "name": "Accès à Stoneheim",
+          "quantity": 1
+        }
+      ],
+      "note": "La plume argentée est nécessaire pour le rituel final de Zhakar. L'ami qui ouvre le coffre reçoit 10 000 XP et entre 3 000 et 5 500 pièces d'or."
+    },
+    "npcs": [
+      {
+        "name": "Shadeen",
+        "role": "Donneuse de quête principale",
+        "location": "Donjon du château de Bane Gwengad (île de Bane, via le désert et le connecteur) — petite pièce à l'est, après le fou",
+        "interactions": [
+          {
+            "keyword": "Kalastor",
+            "purpose": "Lancer la quête de la pomme empoisonnée"
+          },
+          {
+            "keyword": "Mission",
+            "purpose": "Obtenir le parchemin de mauvaise action (après pomme empoisonnée)"
+          },
+          {
+            "keyword": "oui / récompense",
+            "purpose": "Recevoir la plume argentée et 5 000 XP (après les Chroniques)"
+          }
+        ],
+        "notes": "Shadeen ne parle que si l'évêque Crowbanner est en bonne santé. Si personne ne le guérit, il change d'état toutes les 3 heures."
+      },
+      {
+        "name": "Elysana Blackrose",
+        "role": "Alchimiste — prépare la pomme empoisonnée",
+        "location": "Silversky, sud-est du temple",
+        "interactions": [
+          {
+            "keyword": "Poison",
+            "purpose": "Lancer la fabrication de la pomme empoisonnée"
+          },
+          {
+            "keyword": "Pierre de saphir",
+            "purpose": "Indique que le Roi Théodore possède un saphir"
+          },
+          {
+            "keyword": "pomme de cire",
+            "purpose": "Envoie vers Samuel"
+          },
+          {
+            "keyword": "yeux de kraanian",
+            "purpose": "Envoie vers Zhakar"
+          }
+        ]
+      },
+      {
+        "name": "Roi Théodore",
+        "role": "Échange peau tannée contre saphir",
+        "location": "Château de Silversky, 3ème étage",
+        "interactions": [
+          {
+            "keyword": "Pierre de saphir",
+            "purpose": "Demande une peau d'antilope tannée en échange du saphir"
+          }
+        ],
+        "notes": "Attention : le roi prend TOUTES les peaux d'antilope tannées que vous portez."
+      },
+      {
+        "name": "Samuel",
+        "role": "Tanneur / Fabricant de pomme de cire",
+        "location": "Château de Silversky, 2ème étage, près du trône",
+        "interactions": [
+          {
+            "keyword": "tannée",
+            "purpose": "Envoie vers Drardos pour le tannage"
+          },
+          {
+            "keyword": "pomme de cire",
+            "purpose": "Fabrique la pomme de cire (10 cires de guêpes + 1 000 po)"
+          }
+        ]
+      },
+      {
+        "name": "Drardos",
+        "role": "Tanneur de peaux",
+        "location": "Maison vers (1590, 2575), près de l'entraîneur Transpercer Armure",
+        "interactions": [
+          {
+            "keyword": "tannée",
+            "purpose": "Tanne une peau d'antilope pour 1 400 po (peut rater)"
+          }
+        ]
+      },
+      {
+        "name": "Zhakar",
+        "role": "Sorcier — vend yeux de Kraanian / lance le rituel final",
+        "location": "Tour des Sorciers",
+        "interactions": [
+          {
+            "keyword": "yeux de kraanian",
+            "purpose": "Envoie vers Bane Gwengad pour les acheter"
+          },
+          {
+            "keyword": "Rituel",
+            "purpose": "Lance le rituel final pour accéder à Stoneheim"
+          }
+        ]
+      },
+      {
+        "name": "Bane Gwengad",
+        "role": "Seigneur de l'île de Bane — vend les yeux de Kraanian",
+        "location": "Château de Bane, île de Bane",
+        "interactions": [
+          {
+            "keyword": "yeux de kraanian",
+            "purpose": "Vend les yeux de Kraanian pour 5 000 po"
+          }
+        ],
+        "notes": "Nécessite d'avoir fait la quête d'audience à Bane Gwengad au préalable."
+      },
+      {
+        "name": "Évêque Crowbanner",
+        "role": "Cible de l'empoisonnement",
+        "location": "Château de Silversky, près du trône",
+        "interactions": [
+          {
+            "keyword": "donner pomme",
+            "purpose": "Empoisonner l'évêque (-23 karma)"
+          }
+        ]
+      },
+      {
+        "name": "Thorbin Kaloneg",
+        "role": "Tavernier — vend la chope de bière vide",
+        "location": "Taverne de Silversky",
+        "interactions": [
+          {
+            "purpose": "Acheter une chope de bière vide pour 10 po"
+          }
+        ]
+      },
+      {
+        "name": "Sigfried",
+        "role": "Marchand d'armes — donne la dent de tigre",
+        "location": "Lighthaven",
+        "interactions": [
+          {
+            "keyword": "dent / défaire / oui",
+            "purpose": "Vend une « dent de dragon » (fausse) pour 200 po"
+          },
+          {
+            "keyword": "dent de dragon",
+            "purpose": "Avoue la supercherie et donne une dent de tigre"
+          }
+        ]
+      },
+      {
+        "name": "Nafuhr Morzhol",
+        "role": "Marchand d'armures",
+        "location": "Silversky, près du château (1455, 2470)",
+        "interactions": [
+          {
+            "keyword": "dent de dragon",
+            "purpose": "Révèle que la dent est fausse"
+          },
+          {
+            "keyword": "Visiteur",
+            "purpose": "(Tâche 1 — Mort de Shadeen) Envoie vers Boreas"
+          }
+        ]
+      },
+      {
+        "name": "Doremas",
+        "role": "Informateur — donne les noms des PNJ pour la combinaison",
+        "location": "Ouest de la fontaine de Silversky",
+        "interactions": [
+          {
+            "purpose": "Indique les PNJ complices pour ouvrir le coffre (pour l'ami)"
+          }
+        ]
+      },
+      {
+        "name": "Rondy",
+        "role": "Complice — donne le 1er chiffre de la combinaison",
+        "location": "Maison vers (1590, 2500), près des champs de Silversky",
+        "interactions": [
+          {
+            "keyword": "combinaison / deviner XX",
+            "purpose": "Jeu de devinettes (1 à 50). Chaque essai coûte 1 000 po."
+          }
+        ]
+      },
+      {
+        "name": "Geram",
+        "role": "Complice — donne le 2ème chiffre de la combinaison",
+        "location": "Taverne de Silversky",
+        "interactions": [
+          {
+            "keyword": "Combinaison",
+            "purpose": "Échange la chope de bière vide contre le 2ème chiffre"
+          }
+        ]
+      },
+      {
+        "name": "Talon Dirsell",
+        "role": "Banquier / Complice — donne le 3ème chiffre de la combinaison",
+        "location": "Château de Silversky, 1er étage gauche (près du coffre)",
+        "interactions": [
+          {
+            "keyword": "combinaison",
+            "purpose": "Échange la dent de tigre contre le 3ème chiffre"
+          }
+        ]
+      },
+      {
+        "name": "Menark",
+        "role": "Détenteur des Chroniques de l'Apocalypse",
+        "location": "Château de Silversky, 1er étage, coursive nord",
+        "interactions": [
+          {
+            "keyword": "chronique de l'apocalypse",
+            "purpose": "Force Menark à donner les Chroniques (pendant que les gardes sont distraits)"
+          }
+        ],
+        "notes": "Pas de « s » à « chronique ». Cliquer rapidement dès que l'ami a ouvert le coffre."
+      },
+      {
+        "name": "Monseigneur Damien",
+        "role": "Donneur de quête — Mort de Shadeen",
+        "location": "Ouest du pont menant aux caves orques (1025, 2100)",
+        "interactions": [
+          {
+            "keyword": "Shadeen / Non",
+            "purpose": "Fait apparaître des Assassins masqués à tuer"
+          },
+          {
+            "keyword": "aide / oui / cadeau / preuve / abandon",
+            "purpose": "Donne le parchemin bien enroulé et les 3 tâches (négocie de 50 000 à 25 000 po)"
+          },
+          {
+            "keyword": "Shadeen / aide / Stoneheim",
+            "purpose": "(Après meurtre de Shadeen) Envoie vers Zhakar pour le rituel"
+          }
+        ]
+      },
+      {
+        "name": "Taliron",
+        "role": "Marchand d'armures (Tâche 1)",
+        "location": "Silversky, à côté du magasin de potions",
+        "interactions": [
+          {
+            "keyword": "visiteur",
+            "purpose": "Envoie vers Belagan"
+          }
+        ]
+      },
+      {
+        "name": "Belagan",
+        "role": "Assistant d'Adriana (Tâche 1)",
+        "location": "Salle d'entraînement (maison d'Adriana)",
+        "interactions": [
+          {
+            "keyword": "visiteur (x2)",
+            "purpose": "Envoie vers Nafuhr Morzhol"
+          }
+        ]
+      },
+      {
+        "name": "Boreas",
+        "role": "Marchand de potions (Tâche 1)",
+        "location": "Silversky",
+        "interactions": [
+          {
+            "keyword": "visiteur",
+            "purpose": "Envoie vers Kiadus"
+          }
+        ]
+      },
+      {
+        "name": "Kiadus",
+        "role": "Marchand d'armes (Tâche 1)",
+        "location": "Château de Silversky, 1er étage",
+        "interactions": [
+          {
+            "keyword": "visiteur / soeur",
+            "purpose": "Révèle le nom d'Amandra (2 000 po)"
+          },
+          {
+            "keyword": "épée (x3)",
+            "purpose": "Vend la Lame de Destruction pour 25 000 po (marchander !)"
+          }
+        ]
+      },
+      {
+        "name": "Amandra",
+        "role": "Sœur du visiteur (Tâche 1)",
+        "location": "Maison d'Adriana, salle d'entraînement (1588, 2530)",
+        "interactions": [
+          {
+            "keyword": "visiteur",
+            "purpose": "Conseille d'acheter la Lame puis révèle qu'elle est fausse"
+          }
+        ]
+      },
+      {
+        "name": "Haden",
+        "role": "Mini-boss — Frère d'Amandra (Tâche 1)",
+        "location": "Maison à l'ouest de la tour des sorciers, au sud vers la mer (76, 2637, 0)",
+        "interactions": [
+          {
+            "keyword": "lame de destruction",
+            "purpose": "Vous attaque. Tuez-le pour obtenir la vraie Lame de Destruction."
+          }
+        ]
+      },
+      {
+        "name": "L'Aveugle (Xanth)",
+        "role": "Enchanteur d'armes (Tâche 2)",
+        "location": "Broken One cave (700, 1600, 2)",
+        "interactions": [
+          {
+            "keyword": "Xanth / montant",
+            "purpose": "Enchante la Lame de Destruction en Pourfendeur d'elfes"
+          }
+        ]
+      },
+      {
+        "name": "Iago Caballero",
+        "role": "Mini-boss optionnel",
+        "location": "Sud-ouest de Silversky",
+        "interactions": [
+          {
+            "purpose": "Parfois Shadeen demande de le tuer avant de donner la récompense. Revenez vite car il réapparaît."
+          }
+        ]
+      }
+    ],
+    "items_required_overview": {
+      "chapitre_1_pomme_empoisonnee": [
+        {
+          "name": "Peau d'antilope",
+          "usage": "Faire tanner par Drardos → échanger contre le saphir chez le Roi Théodore",
+          "obtention": "Drop sur les antilopes"
+        },
+        {
+          "name": "1 400 pièces d'or",
+          "usage": "Payer Drardos pour le tannage de la peau"
+        },
+        {
+          "name": "10 cires de guêpes",
+          "usage": "Fabrication de la pomme de cire par Samuel",
+          "obtention": "Drop sur les guêpes"
+        },
+        {
+          "name": "1 000 pièces d'or",
+          "usage": "Payer Samuel pour la pomme de cire"
+        },
+        {
+          "name": "5 000 pièces d'or",
+          "usage": "Acheter les yeux de Kraanian à Bane Gwengad"
+        }
+      ],
+      "chapitre_2_chroniques_apocalypse": [
+        {
+          "name": "Parchemin de mauvaise action",
+          "usage": "Item nécessaire pour les Chroniques (donné à l'ami)",
+          "obtention": "Donné par Shadeen (mot-clé : Mission)"
+        },
+        {
+          "name": "Chope de bière vide",
+          "usage": "Échange contre le 2ème chiffre de la combinaison (Geram)",
+          "obtention": "Achetée chez Thorbin Kaloneg (taverne Silversky) pour 10 po"
+        },
+        {
+          "name": "Dent de tigre",
+          "usage": "Échange contre le 3ème chiffre de la combinaison (Talon Dirsell)",
+          "obtention": "Obtenue via Sigfried (Lighthaven) après la ruse de la dent de dragon"
+        },
+        {
+          "name": "~10 000 pièces d'or",
+          "usage": "Jeu de devinettes avec Rondy (1 000 po par essai) + frais divers"
+        }
+      ],
+      "chapitre_3_mort_de_shadeen": [
+        {
+          "name": "25 000 à 50 000 pièces d'or",
+          "usage": "Payer Damien (négociable : 50 000 → 25 000 po)"
+        },
+        {
+          "name": "2 000 pièces d'or",
+          "usage": "Payer Kiadus pour le nom de la sœur du visiteur"
+        },
+        {
+          "name": "25 000 pièces d'or",
+          "usage": "Acheter la (fausse) Lame de Destruction à Kiadus"
+        }
+      ],
+      "chapitre_4_rituel_zhakar": [
+        {
+          "name": "Os de squelette",
+          "usage": "Ingrédient du rituel de Zhakar",
+          "obtention": "Drop des Sorciers squelettes"
+        },
+        {
+          "name": "Fiole de sang gobelin",
+          "usage": "Ingrédient du rituel de Zhakar",
+          "obtention": "Drop des gobelins"
+        },
+        {
+          "name": "Fiole d'eau cristalline",
+          "usage": "Ingrédient du rituel de Zhakar",
+          "obtention": "Drop des Pillards des dunes ou Grott..."
+        },
+        {
+          "name": "Baies de belladone",
+          "usage": "Ingrédient du rituel de Zhakar",
+          "obtention": "Drop de Greyleaf"
+        },
+        {
+          "name": "Plume argentée",
+          "usage": "Ingrédient du rituel de Zhakar",
+          "obtention": "Récompense de la quête des Chroniques (Shadeen)"
+        },
+        {
+          "name": "5 000 pièces d'or",
+          "usage": "Payer Zhakar pour le rituel"
+        }
+      ]
+    },
+    "steps": [
+      {
+        "step_number": 1,
+        "name": "La pomme empoisonnée — Parler à Shadeen",
+        "type": "dialogue_pnj",
+        "difficulty": "facile",
+        "group_required": false,
+        "group_recommended": false,
+        "location": "Donjon du château de Bane Gwengad (île de Bane)",
+        "objective": "Trouver Shadeen dans le donjon et lancer la quête d'empoisonnement.",
+        "instructions": [
+          "Rendez-vous au château de Bane Gwengad sur l'île de Bane (via le désert et le connecteur).",
+          "Descendez dans le donjon du château.",
+          "Trouvez Shadeen dans la petite pièce à l'est, après le fou (tuez le fou pour passer).",
+          "Parlez à Shadeen et dites « Kalastor ».",
+          "Elle vous demandera d'empoisonner l'évêque et mentionne Elysana Blackrose.",
+          "Allez voir Elysana même si Shadeen ne parle que de l'évêque."
+        ],
+        "warnings": [
+          "Shadeen ne vous parle QUE si l'évêque Crowbanner est en bonne santé.",
+          "Si personne ne le guérit, il change d'état toutes les 3 heures. Surveillez-le."
+        ]
+      },
+      {
+        "step_number": 2,
+        "name": "La pomme empoisonnée — Parler à Elysana et réunir les ingrédients",
+        "type": "dialogue_pnj",
+        "difficulty": "moyen",
+        "group_required": false,
+        "group_recommended": false,
+        "location": "Silversky (divers PNJ)",
+        "objective": "Obtenir les 3 ingrédients : saphir, pomme de cire et yeux de Kraanian.",
+        "instructions": [
+          "Allez voir Elysana Blackrose à Silversky (sud-est du temple).",
+          "Dites « Poison », puis « oui ».",
+          "Elle demande : des yeux de Kraanian, une pomme cirée et un saphir.",
+          "Dites « Pierre de saphir » → direction le Roi Théodore.",
+          "Dites « pomme de cire » → direction Samuel.",
+          "Dites « yeux de kraanian » → direction Zhakar."
+        ],
+        "sub_steps": [
+          {
+            "name": "Obtenir le saphir",
+            "instructions": [
+              "Allez voir le Roi Théodore (château, 3ème étage). Dites « Pierre de saphir ».",
+              "Il demande une peau d'antilope tannée. Dites « tannée ».",
+              "Il vous envoie vers Samuel. Dites « tannée » à Samuel.",
+              "Samuel vous envoie vers Drardos (maison vers 1590, 2575).",
+              "Procurez-vous une peau d'antilope (drop sur les antilopes).",
+              "Dites « tannée » à Drardos. Il demande 1 400 po. Répondez « oui ».",
+              "Il peut rater le tannage — recommencez si nécessaire.",
+              "Retournez voir le Roi Théodore. Dites « Pierre de saphir », « oui ».",
+              "Vous obtenez le saphir."
+            ],
+            "warnings": [
+              "Le roi prend TOUTES les peaux d'antilope tannées que vous portez ! N'en gardez qu'une seule."
+            ]
+          },
+          {
+            "name": "Obtenir la pomme de cire",
+            "instructions": [
+              "Allez voir Samuel (château, 2ème étage). Dites « pomme de cire ».",
+              "Il faut avoir terminé la quête du Bouffon Morbide si ce n'est pas déjà fait.",
+              "Samuel demande 10 cires de guêpes + 1 000 po.",
+              "Farmez les cires de guêpes sur les guêpes.",
+              "Retournez voir Samuel. Dites « pomme de cire », « oui ».",
+              "Vous obtenez la pomme de cire."
+            ]
+          },
+          {
+            "name": "Obtenir les yeux de Kraanian",
+            "instructions": [
+              "Allez voir Zhakar (Tour des Sorciers). Dites « yeux de kraanian ».",
+              "Zhakar vous envoie vers Bane Gwengad.",
+              "Prérequis : avoir fait la quête d'audience à Bane Gwengad.",
+              "Allez voir Bane dans son château. Dites « yeux de kraanian ».",
+              "Achetez-les pour 5 000 po."
+            ]
+          }
+        ]
+      },
+      {
+        "step_number": 3,
+        "name": "La pomme empoisonnée — Récupérer et utiliser le poison",
+        "type": "dialogue_pnj",
+        "difficulty": "facile",
+        "group_required": false,
+        "group_recommended": false,
+        "items_required": [
+          "Saphir",
+          "Pomme de cire",
+          "Yeux de Kraanian"
+        ],
+        "location": "Silversky",
+        "objective": "Récupérer la pomme empoisonnée et l'utiliser sur l'évêque Crowbanner.",
+        "instructions": [
+          "Retournez voir Elysana Blackrose avec les 3 ingrédients.",
+          "Dites « Poison ».",
+          "Elle vous demande d'attendre 1 heure IRL.",
+          "Après l'attente, revenez et dites à nouveau « Poison ».",
+          "Vous recevez la pomme empoisonnée.",
+          "Allez voir l'évêque Crowbanner (château de Silversky, près du trône).",
+          "Dites « donner pomme ».",
+          "L'évêque est empoisonné. Vous perdez 23 karma."
+        ],
+        "karma_impact": "-23 karma",
+        "warnings": [
+          "Cette quête est répétable à volonté.",
+          "Shadeen ne parlera ensuite que si l'évêque est de nouveau en bonne santé."
+        ]
+      },
+      {
+        "step_number": 4,
+        "name": "Les Chroniques de l'Apocalypse — Préparation des items",
+        "type": "collecte_items",
+        "difficulty": "moyen",
+        "group_required": true,
+        "group_recommended": true,
+        "group_size_minimum": 2,
+        "location": "Raven's Dust (divers PNJ)",
+        "objective": "Réunir les 4 items nécessaires et les donner à votre ami complice.",
+        "instructions": [
+          "Retournez voir Shadeen. Dites « Mission », « oui ».",
+          "Vous recevez un parchemin de mauvaise action.",
+          "Réunissez les 4 items suivants :",
+          "  1. Parchemin de mauvaise action — déjà obtenu.",
+          "  2. Chope de bière vide — achetée à Thorbin Kaloneg (taverne Silversky) pour 10 po.",
+          "  3. Dent de tigre — voir sous-étape ci-dessous.",
+          "  4. ~10 000 pièces d'or pour le jeu de devinettes.",
+          "Donnez TOUS ces items à votre ami complice."
+        ],
+        "sub_steps": [
+          {
+            "name": "Obtenir la dent de tigre",
+            "instructions": [
+              "Allez voir Sigfried (marchand d'armes, Lighthaven).",
+              "Dites « dent », « défaire », « oui ».",
+              "Il vous vend une « dent de dragon » pour 200 po.",
+              "Allez voir Nafuhr Morzhol (marchand d'armures, Silversky).",
+              "Dites « dent de dragon ». Il révèle que la dent est fausse.",
+              "Retournez voir Sigfried à Lighthaven.",
+              "Dites « dent de dragon ». Il admet la supercherie.",
+              "Il vous donne une dent de tigre pour se faire pardonner."
+            ]
+          }
+        ],
+        "warnings": [
+          "Si vous perdez le parchemin de mauvaise action, retournez voir Shadeen pour en obtenir un nouveau.",
+          "Ne mettez PAS le parchemin au coffre en avance — il ne sera plus valide."
+        ]
+      },
+      {
+        "step_number": 5,
+        "name": "Les Chroniques de l'Apocalypse — L'ami obtient la combinaison",
+        "type": "puzzle_collaboratif",
+        "difficulty": "moyen",
+        "group_required": true,
+        "group_recommended": true,
+        "group_size_minimum": 2,
+        "location": "Silversky (PNJ divers)",
+        "objective": "Votre ami doit obtenir les 3 chiffres de la combinaison du coffre.",
+        "instructions": [
+          "Votre ami parle à Doremas (ouest de la fontaine de Silversky).",
+          "Doremas indique les noms des 3 PNJ complices.",
+          "L'ami doit dire « Combinaison » à chacun d'eux :"
+        ],
+        "sub_steps": [
+          {
+            "name": "1er chiffre — Rondy",
+            "instructions": [
+              "L'ami va voir Rondy (maison vers 1590, 2500).",
+              "Dites « combinaison ».",
+              "Rondy lance un jeu : trouver un nombre entre 1 et 50.",
+              "Dites « deviner XX » (XX = votre nombre).",
+              "Il répond GRAND ou PETIT. Chaque essai coûte 1 000 po.",
+              "Continuez jusqu'à trouver le bon nombre → 1er chiffre."
+            ]
+          },
+          {
+            "name": "2ème chiffre — Geram",
+            "instructions": [
+              "L'ami va voir Geram (taverne de Silversky).",
+              "Dites « oui » (il demande 1 po), puis « Combinaison ».",
+              "Il demande la chope de bière vide. Dites « oui ».",
+              "Vous obtenez le 2ème chiffre."
+            ]
+          },
+          {
+            "name": "3ème chiffre — Talon Dirsell",
+            "instructions": [
+              "L'ami va voir Talon Dirsell (château, 1er étage gauche).",
+              "Dites « combinaison ».",
+              "Il demande la dent de tigre. Dites « oui ».",
+              "Vous obtenez le 3ème chiffre."
+            ]
+          }
+        ]
+      },
+      {
+        "step_number": 6,
+        "name": "Les Chroniques de l'Apocalypse — Le vol du coffre et Menark",
+        "type": "puzzle_collaboratif",
+        "difficulty": "difficile",
+        "group_required": true,
+        "group_recommended": true,
+        "group_size_minimum": 2,
+        "location": "Château de Silversky, 1er étage",
+        "objective": "L'ami ouvre le coffre pendant que vous extorquez les Chroniques à Menark.",
+        "instructions": [
+          "POSITIONNEMENT :",
+          "  → L'ami se place près du coffre (1er étage du château, gauche).",
+          "  → VOUS vous placez à côté de Menark (1er étage, coursive nord).",
+          "",
+          "OUVERTURE DU COFFRE PAR L'AMI :",
+          "  Exemple de combinaison : 1 DROITE, 20 GAUCHE, 10 DROITE.",
+          "  1. Cliquer sur le coffre.",
+          "  2. Taper « DROITE 1 » (en majuscules).",
+          "  3. Recliquer sur le coffre.",
+          "  4. Taper « GAUCHE 20 ».",
+          "  5. Recliquer sur le coffre.",
+          "  6. Taper « DROITE 10 ».",
+          "  Attention aux majuscules ! Toujours écrire GAUCHE ou DROITE avant le nombre.",
+          "",
+          "DÈS QUE LE COFFRE EST OUVERT :",
+          "  → L'ami vous prévient immédiatement.",
+          "  → Cliquez rapidement sur Menark.",
+          "  → Dites « chronique de l'apocalypse » (sans « s » à chronique !).",
+          "  → Il demande si vous le menacez. Répondez « oui ».",
+          "  → Les gardes sont distraits par votre ami : Menark vous donne les Chroniques."
+        ],
+        "warnings": [
+          "Le timing est crucial : cliquez sur Menark dès que votre ami a ouvert le coffre.",
+          "Pas de « s » à « chronique » dans le mot-clé !",
+          "L'ami reçoit 10 000 XP et entre 3 000 et 5 500 po."
+        ]
+      },
+      {
+        "step_number": 7,
+        "name": "Les Chroniques de l'Apocalypse — La plume argentée",
+        "type": "dialogue_pnj",
+        "difficulty": "facile",
+        "group_required": false,
+        "group_recommended": false,
+        "location": "Donjon du château de Bane Gwengad",
+        "objective": "Rendre les Chroniques à Shadeen pour obtenir la plume argentée.",
+        "instructions": [
+          "Retournez voir Shadeen dans le donjon de Bane Gwengad.",
+          "Dites « oui », puis « récompense ».",
+          "Vous recevez la plume argentée et 5 000 XP."
+        ],
+        "warnings": [
+          "Shadeen peut d'abord demander de tuer Iago Caballero (sud-ouest de Silversky).",
+          "Si c'est le cas, tuez-le et revenez vite : s'il réapparaît, il faut le retuer !"
+        ]
+      },
+      {
+        "step_number": 8,
+        "name": "La Mort de Shadeen — Rencontre avec Damien",
+        "type": "dialogue_pnj_combat",
+        "difficulty": "moyen",
+        "group_required": false,
+        "group_recommended": false,
+        "items_required": [
+          "Plume argentée",
+          "50 000 pièces d'or (négociable à 25 000)"
+        ],
+        "location": "Ouest du pont menant aux caves orques (1025, 2100)",
+        "objective": "Rencontrer Damien, survivre à son embuscade et négocier les conditions.",
+        "instructions": [
+          "Munissez-vous de la plume argentée et de 50 000 po.",
+          "Rendez-vous chez Monseigneur Damien (1025, 2100).",
+          "Dites « Shadeen », puis « Non ».",
+          "Il fait apparaître des Assassins masqués. Tuez-les.",
+          "Reparlez à Damien.",
+          "Dites « aide », « oui ».",
+          "Dites « cadeau », « preuve », « abandon ».",
+          "Il demande 50 000 po. Répondez « non ».",
+          "Il descend à 25 000 po. Dites « oui ».",
+          "Dites « comment ».",
+          "Vous recevez un parchemin bien enroulé et les 3 tâches à accomplir."
+        ],
+        "warnings": [
+          "Si bloqué : au moment des 50 000 po, dites « oui » puis « je veux m'allier avec Ogrimar », « preuve » et « comment »."
+        ]
+      },
+      {
+        "step_number": 9,
+        "name": "La Mort de Shadeen — Tâche 1 : La Lame de Destruction",
+        "type": "dialogue_pnj_chaine",
+        "difficulty": "moyen",
+        "group_required": false,
+        "group_recommended": false,
+        "items_required": [
+          "~27 000 pièces d'or (2 000 + 25 000)"
+        ],
+        "location": "Silversky (divers PNJ) → Maison d'Haden",
+        "objective": "Suivre la chaîne de PNJ pour obtenir la vraie Lame de Destruction.",
+        "instructions": [
+          "Parlez aux PNJ suivants dans l'ordre :",
+          "",
+          "1. TALIRON (marchand d'armures, à côté des potions) → dites « visiteur ».",
+          "   → Envoie vers Belagan.",
+          "",
+          "2. BELAGAN (salle d'entraînement d'Adriana) → dites « visiteur » deux fois.",
+          "   → Envoie vers Nafuhr Morzhol.",
+          "",
+          "3. NAFUHR MORZHOL (1455, 2470) → dites « Visiteur ».",
+          "   → Envoie vers Boreas. S'il reste muet, allez directement à Boreas.",
+          "",
+          "4. BOREAS (marchand de potions) → dites « visiteur ».",
+          "   → Envoie vers Kiadus.",
+          "",
+          "5. KIADUS (château, 1er étage) → dites « visiteur » puis « soeur ».",
+          "   → Il demande 2 000 po. Dites « oui », « soeur ».",
+          "   → Révèle que la sœur est Amandra.",
+          "",
+          "6. AMANDRA (1588, 2530) → dites « visiteur ».",
+          "   → Conseille d'acheter la Lame de Destruction à Kiadus.",
+          "",
+          "7. Retournez voir KIADUS → dites « épée » deux fois.",
+          "   → Il demande 100 milliards. Dites encore « épée » → descend à 25 000 po.",
+          "   → Achetez la Lame de Destruction.",
+          "",
+          "8. Retournez voir AMANDRA → dites « visiteur ».",
+          "   → L'épée est fausse ! Il faut chercher son frère Haden.",
+          "",
+          "9. Allez chez HADEN (76, 2637, 0) — ouest de la Tour des Sorciers, puis sud vers la mer.",
+          "   → Dites « lame de destruction ». Il vous attaque.",
+          "   → Tuez-le. Vous recevez la vraie Lame de Destruction."
+        ],
+        "warnings": [
+          "Vérifiez que vous avez assez d'or à chaque étape.",
+          "Nafuhr Morzhol peut rester muet — dans ce cas passez à Boreas."
+        ]
+      },
+      {
+        "step_number": 10,
+        "name": "La Mort de Shadeen — Tâche 2 : Enchanter la lame",
+        "type": "dialogue_pnj",
+        "difficulty": "facile",
+        "group_required": false,
+        "group_recommended": false,
+        "items_required": [
+          "Lame de Destruction (vraie)"
+        ],
+        "location": "Broken One cave (700, 1600, 2)",
+        "objective": "Faire enchanter la Lame de Destruction par l'Aveugle.",
+        "instructions": [
+          "Allez voir l'Aveugle dans la Broken One cave (700, 1600, 2).",
+          "Dites « Xanth », puis « montant ».",
+          "L'Aveugle enchante votre Lame de Destruction.",
+          "Elle devient un « Pourfendeur d'elfes »."
+        ]
+      },
+      {
+        "step_number": 11,
+        "name": "La Mort de Shadeen — Tâche 3 : Tuer Shadeen",
+        "type": "combat",
+        "difficulty": "moyen",
+        "group_required": false,
+        "group_recommended": false,
+        "items_required": [
+          "Pourfendeur d'elfes (équipé)"
+        ],
+        "location": "Donjon du château de Bane Gwengad",
+        "objective": "Tuer Shadeen avec le Pourfendeur d'elfes et récupérer ses boucles d'oreilles.",
+        "instructions": [
+          "Équipez le Pourfendeur d'elfes.",
+          "Retournez voir Shadeen dans le donjon de Bane Gwengad.",
+          "Tuez-la.",
+          "Vous trouvez les « Boucles d'oreilles de Shadeen » dans votre inventaire."
+        ]
+      },
+      {
+        "step_number": 12,
+        "name": "La Mort de Shadeen — Retour à Damien",
+        "type": "dialogue_pnj",
+        "difficulty": "facile",
+        "group_required": false,
+        "group_recommended": false,
+        "items_required": [
+          "Boucles d'oreilles de Shadeen"
+        ],
+        "location": "Ouest du pont menant aux caves orques (1025, 2100)",
+        "objective": "Rendre les boucles d'oreilles à Damien et obtenir l'accès au rituel.",
+        "instructions": [
+          "Retournez voir Monseigneur Damien.",
+          "Dites « Shadeen », puis « aide », puis « Stoneheim ».",
+          "Il vous envoie voir Zhakar pour le rituel final."
+        ]
+      },
+      {
+        "step_number": 13,
+        "name": "Le Rituel de Zhakar — Accès à Stoneheim",
+        "type": "dialogue_pnj",
+        "difficulty": "facile",
+        "group_required": false,
+        "group_recommended": false,
+        "items_required": [
+          "Os de squelette (drop Sorciers squelettes)",
+          "Fiole de sang gobelin (drop gobelins)",
+          "Fiole d'eau cristalline (drop Pillards des dunes ou Grott...)",
+          "Baies de belladone (drop Greyleaf)",
+          "Plume argentée (obtenue étape 7)",
+          "5 000 pièces d'or"
+        ],
+        "location": "Tour des Sorciers (Zhakar)",
+        "objective": "Donner tous les ingrédients à Zhakar pour le rituel de téléportation vers Stoneheim.",
+        "instructions": [
+          "Assurez-vous d'avoir les 5 items + 5 000 po.",
+          "Allez voir Zhakar dans sa tour.",
+          "Dites « Rituel ».",
+          "Il prend les ingrédients et lance le rituel.",
+          "ATTENDEZ 1 HEURE EN TEMPS RÉEL.",
+          "Revenez parler à Zhakar.",
+          "Il vous téléporte à Stoneheim."
+        ],
+        "warnings": [
+          "Zhakar retire les clefs restantes de votre inventaire au moment de la téléportation.",
+          "L'attente d'une heure IRL est obligatoire — pas de raccourci."
+        ]
+      }
+    ],
+    "quest_chain_summary": {
+      "chapter_1": {
+        "name": "La Pomme Empoisonnée",
+        "steps": [1, 2, 3],
+        "karma_impact": "-23 karma",
+        "result": "L'évêque Crowbanner est empoisonné"
+      },
+      "chapter_2": {
+        "name": "Les Chroniques de l'Apocalypse",
+        "steps": [4, 5, 6, 7],
+        "requires_ally": true,
+        "result": "Plume argentée obtenue + 5 000 XP"
+      },
+      "chapter_3": {
+        "name": "La Mort de Shadeen",
+        "steps": [8, 9, 10, 11, 12],
+        "result": "Boucles d'oreilles de Shadeen → Damien envoie vers Zhakar"
+      },
+      "chapter_4": {
+        "name": "Le Rituel de Zhakar",
+        "steps": [13],
+        "result": "Téléportation à Stoneheim"
+      }
+    }
+  },
+  {
     "id": "acces_stoneheim_dechu",
     "name": "Accès Déchu à Stoneheim",
     "zone": [
