@@ -15,6 +15,27 @@ import NpcMapModal from '../components/NpcMapModal';
 
 /* ─── Types ─── */
 
+interface RewardExtra {
+  label: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  data: any;
+}
+
+interface ItemOverviewEntry {
+  name: string;
+  usage?: string;
+  obtention?: string[];
+  duration?: string;
+  quantity?: number | string;
+  note?: string;
+}
+
+interface ItemOverviewCategory {
+  category: string;
+  items: ItemOverviewEntry[];
+  note?: string;
+}
+
 interface Quest {
   id: string;
   name: string;
@@ -24,6 +45,7 @@ interface Quest {
   group_recommended: boolean;
   group_size_recommended?: string | null;
   description: string;
+  bonified_xp?: boolean;
   prerequisites: string[];
   rewards: {
     experience: string[];
@@ -33,6 +55,7 @@ interface Quest {
     bonus?: string;
     note?: string;
     gold?: number | null;
+    extras: RewardExtra[];
   };
   npcs: {
     name: string;
@@ -43,7 +66,8 @@ interface Quest {
     sells?: { name: string; price?: string }[];
     note?: string;
   }[];
-  items_required_overview?: Record<string, { name: string; usage?: string; obtention?: string | string[]; duration?: string; quantity?: number | string }[]>;
+  enemies?: Record<string, unknown>[];
+  items_required_overview: ItemOverviewCategory[];
   steps: QuestStep[];
   boss_fight?: {
     name: string;
@@ -63,6 +87,8 @@ interface Quest {
     reaccess_tip?: string;
     duplication_tip?: string;
   };
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  details?: Record<string, any>;
 }
 
 interface QuestStep {
@@ -685,9 +711,7 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
 
   const progress = quest.steps?.length ? (completedSteps.size / quest.steps.length) * 100 : 0;
 
-  const hasDetailedItems = quest.items_required_overview &&
-    ((quest.items_required_overview.potions_evalcian?.length ?? 0) > 0 ||
-     (quest.items_required_overview.items_speciaux?.length ?? 0) > 0);
+  const hasDetailedItems = quest.items_required_overview.length > 0;
 
   const recapCount = 1 + (quest.npcs && quest.npcs.length > 0 ? 1 : 0) + (hasDetailedItems ? 1 : 0);
   const recapCols = recapCount >= 3 ? 'lg:grid-cols-3' : recapCount === 2 ? 'lg:grid-cols-2' : '';
@@ -892,41 +916,28 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
               <h2 className="text-lg font-black text-purple-400 font-fantasy uppercase tracking-wider">Objets Requis</h2>
             </div>
 
-            {(quest.items_required_overview?.potions_evalcian?.length ?? 0) > 0 && (
-              <div className="mb-4">
+            {quest.items_required_overview.map((cat, ci) => (
+              <div key={ci} className={ci < quest.items_required_overview.length - 1 ? 'mb-4' : ''}>
                 <p className="text-[10px] text-slate-500 uppercase tracking-wider font-bold mb-2 flex items-center gap-1.5">
-                  <FlaskConical size={10} /> Potions (Evalcian)
+                  <Key size={10} /> {cat.category}
                 </p>
-                <ul className="space-y-2">
-                  {quest.items_required_overview?.potions_evalcian?.map((pot, i) => (
-                    <li key={i} className="p-2.5 bg-slate-800/40 rounded-lg border border-slate-700/30">
-                      <p className="text-xs font-bold text-purple-300">{pot.name}</p>
-                      <p className="text-[11px] text-slate-400">{pot.usage}</p>
-                      {pot.duration && <p className="text-[10px] text-slate-500 mt-0.5"><Clock size={10} className="inline mr-1" />{pot.duration}</p>}
-                    </li>
-                  ))}
-                </ul>
+                {cat.note && <p className="text-xs text-slate-400 mb-2">{cat.note}</p>}
+                {cat.items.length > 0 && (
+                  <ul className="space-y-2">
+                    {cat.items.map((item, i) => (
+                      <li key={i} className="p-2.5 bg-slate-800/40 rounded-lg border border-slate-700/30">
+                        <p className="text-xs font-bold text-purple-300">{item.name}</p>
+                        {item.usage && <p className="text-[11px] text-slate-400">{item.usage}</p>}
+                        {item.obtention && item.obtention.length > 0 && (
+                          <p className="text-[10px] text-slate-500 mt-0.5">{item.obtention.join(' / ')}</p>
+                        )}
+                        {item.duration && <p className="text-[10px] text-slate-500 mt-0.5"><Clock size={10} className="inline mr-1" />{item.duration}</p>}
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </div>
-            )}
-
-            {(quest.items_required_overview?.items_speciaux?.length ?? 0) > 0 && (
-              <div>
-                <p className="text-[10px] text-slate-500 uppercase tracking-wider font-bold mb-2 flex items-center gap-1.5">
-                  <Key size={10} /> Objets spéciaux
-                </p>
-                <ul className="space-y-2">
-                  {quest.items_required_overview?.items_speciaux?.map((item, i) => (
-                    <li key={i} className="p-2.5 bg-slate-800/40 rounded-lg border border-slate-700/30">
-                      <p className="text-xs font-bold text-amber-300">{item.name}</p>
-                      <p className="text-[11px] text-slate-400">Usage : {item.usage}</p>
-                      <p className="text-[10px] text-slate-500 mt-0.5">
-                        {Array.isArray(item.obtention) ? item.obtention.join(' / ') : item.obtention}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
+            ))}
           </motion.div>
         )}
       </div>
