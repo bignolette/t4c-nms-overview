@@ -26,9 +26,9 @@ interface Quest {
   description: string;
   prerequisites?: string[];
   rewards: {
-    experience?: string | { condition: string; xp: string }[] | null;
+    experience?: string | { condition: string; xp: string }[] | Record<string, string> | null;
     items?: { name: string; quantity: number; note?: string }[];
-    boss_drops?: string;
+    boss_drops?: string | string[];
     access?: string;
     bonus?: string;
     note?: string;
@@ -783,11 +783,18 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
                     <span className="text-slate-300 text-sm"><span className="text-amber-400 font-bold">{exp.xp}</span> — {exp.condition}</span>
                   </li>
                 ))
-              ) : (
+              ) : typeof quest.rewards.experience === 'string' ? (
                 <li className="flex items-start gap-3">
                   <Crown size={16} className="text-amber-400 mt-0.5 shrink-0" />
                   <span className="text-slate-300 text-sm"><span className="text-amber-400 font-bold">{quest.rewards.experience}</span> d'expérience</span>
                 </li>
+              ) : (
+                Object.entries(quest.rewards.experience).map(([key, val]) => (
+                  <li key={key} className="flex items-start gap-3">
+                    <Crown size={16} className="text-amber-400 mt-0.5 shrink-0" />
+                    <span className="text-slate-300 text-sm"><span className="text-amber-400 font-bold">{val}</span> — {key.replace(/_/g, ' ')}</span>
+                  </li>
+                ))
               )
             )}
             {quest.rewards.access && (
@@ -806,10 +813,19 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
               </li>
             ))}
             {quest.rewards.boss_drops && (
-              <li className="flex items-start gap-3">
-                <Skull size={16} className="text-red-400 mt-0.5 shrink-0" />
-                <span className="text-slate-300 text-sm">{quest.rewards.boss_drops}</span>
-              </li>
+              Array.isArray(quest.rewards.boss_drops) ? (
+                quest.rewards.boss_drops.map((drop, i) => (
+                  <li key={`drop-${i}`} className="flex items-start gap-3">
+                    <Skull size={16} className="text-red-400 mt-0.5 shrink-0" />
+                    <span className="text-slate-300 text-sm">{drop}</span>
+                  </li>
+                ))
+              ) : (
+                <li className="flex items-start gap-3">
+                  <Skull size={16} className="text-red-400 mt-0.5 shrink-0" />
+                  <span className="text-slate-300 text-sm">{quest.rewards.boss_drops}</span>
+                </li>
+              )
             )}
             {quest.rewards.bonus && (
               <li className="flex items-start gap-3">
