@@ -38,7 +38,7 @@ interface Quest {
     role: string;
     location: string;
     interactions?: { keyword: string | null; purpose: string }[];
-    sells?: string[];
+    sells?: (string | { name: string; price: string })[];
   }[];
   items_required_overview?: {
     potions_evalcian?: { name: string; usage: string; duration?: string }[];
@@ -889,7 +889,7 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
                         {npc.sells.map((item, k) => (
                           <li key={k} className="text-xs text-slate-400 flex items-center gap-1.5">
                             <FlaskConical size={10} className="text-purple-400 shrink-0" />
-                            {item}
+                            {typeof item === 'string' ? item : `${item.name} (${item.price})`}
                           </li>
                         ))}
                       </ul>
