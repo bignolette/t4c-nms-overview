@@ -1,17 +1,19 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
   Scroll, Users, Swords, MapPin, AlertTriangle, ChevronDown, ChevronUp,
   Crown, Package, FlaskConical, ShieldAlert, Target, Key, Skull,
   CheckCircle2, Clock, Info, Gift, MessageSquare, ArrowLeft, Shield,
   Search, X, RotateCcw, SlidersHorizontal, Map as MapIcon,
-  LayoutGrid, List
+  LayoutGrid, List, ChevronLeft, ChevronRight, Gamepad2, BookOpen,
+  Square, CheckSquare
 } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { fastNormalize } from '../data/utils';
 import EmptyState from '../components/shared/EmptyState';
 import { useData } from '../context/DataContext';
 import NpcMapModal from '../components/NpcMapModal';
+import QuestMagicEffects from '../components/QuestMagicEffects';
 
 /* ─── Types ─── */
 
@@ -650,9 +652,528 @@ const QuestCard = ({ quest, onClick, index }: { quest: Quest; onClick: () => voi
   );
 };
 
+/* ─── Interactive Quest View ─── */
+
+const getCheckedKey = (questId: string) => `t4c-quest-checked-${questId}`;
+
+const QuestInteractiveView = ({ quest, onBack, onSwitchMode }: { quest: Quest; onBack: () => void; onSwitchMode: () => void }) => {
+  const steps = quest.steps ?? [];
+  const [currentStepIdx, setCurrentStepIdx] = useState(0);
+  const [burstTrigger, setBurstTrigger] = useState(0);
+  const [completedSteps, setCompletedSteps] = useState<Set<number>>(() => {
+    const saved = localStorage.getItem(getProgressKey(quest.id));
+    return saved ? new Set(JSON.parse(saved)) : new Set();
+  });
+  const [checkedInstructions, setCheckedInstructions] = useState<Record<number, Set<number>>>(() => {
+    const saved = localStorage.getItem(getCheckedKey(quest.id));
+    if (!saved) return {};
+    try {
+      const parsed = JSON.parse(saved);
+      const result: Record<number, Set<number>> = {};
+      for (const [k, v] of Object.entries(parsed)) {
+        result[Number(k)] = new Set(v as number[]);
+      }
+      return result;
+    } catch { return {}; }
+  });
+
+  const step = steps[currentStepIdx];
+  const stepNum = step ? getStepNumber(step) : 0;
+  const totalSteps = steps.length;
+
+  // Persist
+  useEffect(() => {
+    localStorage.setItem(getProgressKey(quest.id), JSON.stringify([...completedSteps]));
+  }, [completedSteps, quest.id]);
+
+  useEffect(() => {
+    const serializable: Record<number, number[]> = {};
+    for (const [k, v] of Object.entries(checkedInstructions)) {
+      serializable[Number(k)] = [...v];
+    }
+    localStorage.setItem(getCheckedKey(quest.id), JSON.stringify(serializable));
+  }, [checkedInstructions, quest.id]);
+
+  // Navigation
+  const goTo = useCallback((idx: number) => {
+    if (idx >= 0 && idx < totalSteps) setCurrentStepIdx(idx);
+  }, [totalSteps]);
+
+  const goNext = useCallback(() => goTo(currentStepIdx + 1), [currentStepIdx, goTo]);
+  const goPrev = useCallback(() => goTo(currentStepIdx - 1), [currentStepIdx, goTo]);
+
+  // Keyboard navigation
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') { e.preventDefault(); goNext(); }
+      if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') { e.preventDefault(); goPrev(); }
+    };
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
+  }, [goNext, goPrev]);
+
+  // Instruction checking
+  const toggleInstruction = (stepIdx: number, instrIdx: number) => {
+    setCheckedInstructions(prev => {
+      const stepChecked = new Set(prev[stepIdx] || []);
+      if (stepChecked.has(instrIdx)) stepChecked.delete(instrIdx);
+      else stepChecked.add(instrIdx);
+      return { ...prev, [stepIdx]: stepChecked };
+    });
+  };
+
+  const toggleStepComplete = () => {
+    setCompletedSteps(prev => {
+      const next = new Set(prev);
+      if (next.has(stepNum)) {
+        next.delete(stepNum);
+      } else {
+        next.add(stepNum);
+        setBurstTrigger(t => t + 1);
+      }
+      return next;
+    });
+  };
+
+  // Progress calculations
+  const globalProgress = totalSteps > 0 ? (completedSteps.size / totalSteps) * 100 : 0;
+  const stepChecked = checkedInstructions[currentStepIdx] || new Set<number>();
+  const stepInstructionCount = step?.instructions?.length || 0;
+  const stepProgress = stepInstructionCount > 0 ? (stepChecked.size / stepInstructionCount) * 100 : 0;
+  const isStepComplete = completedSteps.has(stepNum);
+
+  // Auto-complete step when all instructions checked
+  useEffect(() => {
+    if (stepInstructionCount > 0 && stepChecked.size === stepInstructionCount && !isStepComplete) {
+      setCompletedSteps(prev => new Set(prev).add(stepNum));
+      setBurstTrigger(t => t + 1);
+    }
+  }, [stepChecked.size, stepInstructionCount, stepNum, isStepComplete]);
+
+  if (!step) return null;
+
+  const diffClass = step.difficulty ? (difficultyColor[step.difficulty] || 'text-slate-400 bg-slate-500/10 border-slate-500/30') : '';
+
+  const isBossStep = currentStepIdx === totalSteps - 1 && !!quest.boss_fight;
+
+  return (
+    <div className="pb-12 space-y-6 relative">
+      {/* WebGL Magic Effects */}
+      <QuestMagicEffects
+        progress={globalProgress}
+        stepComplete={isStepComplete}
+        isBossStep={isBossStep}
+        burstTrigger={burstTrigger}
+      />
+
+      {/* Top Bar */}
+      <div className="flex items-center justify-between gap-4">
+        <button onClick={onBack} className="flex items-center gap-2 text-sm text-slate-400 hover:text-amber-400 transition-colors group">
+          <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
+          Quêtes
+        </button>
+        <div className="flex items-center gap-2">
+          <button
+            onClick={onSwitchMode}
+            className="flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs font-bold text-slate-400 bg-slate-900/60 border border-slate-700/50 hover:border-amber-500/30 hover:text-amber-400 transition-all"
+          >
+            <BookOpen size={14} /> Mode classique
+          </button>
+        </div>
+      </div>
+
+      {/* Quest Title + Global Progress */}
+      <motion.div
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        className="glass-card rounded-2xl p-6 border border-amber-500/20"
+      >
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div>
+            <h1 className="text-2xl font-black text-amber-400 font-fantasy tracking-tight">{quest.name}</h1>
+            <p className="text-sm text-slate-400 mt-1 flex items-center gap-2">
+              <MapPin size={14} /> {quest.zone?.join(' / ') || 'Inconnue'}
+              {quest.level_required && <span className="text-amber-400/70">• Niv. {quest.level_required}+</span>}
+            </p>
+          </div>
+          <div className="flex items-center gap-4">
+            <div className="text-right">
+              <p className="text-xs text-slate-500 uppercase tracking-wider font-bold">Progression</p>
+              <p className="text-lg font-black text-amber-400">{completedSteps.size}/{totalSteps}</p>
+            </div>
+            <div className="relative w-14 h-14">
+              <svg className="w-14 h-14 -rotate-90" viewBox="0 0 56 56">
+                <circle cx="28" cy="28" r="24" fill="none" stroke="currentColor" strokeWidth="4" className="text-slate-800" />
+                <circle cx="28" cy="28" r="24" fill="none" stroke="currentColor" strokeWidth="4"
+                  className="text-amber-500" strokeDasharray={`${globalProgress * 1.508} 150.8`} strokeLinecap="round"
+                />
+              </svg>
+              <span className="absolute inset-0 flex items-center justify-center text-xs font-black text-amber-400">
+                {Math.round(globalProgress)}%
+              </span>
+            </div>
+          </div>
+        </div>
+      </motion.div>
+
+      {/* Step Navigation Dots */}
+      <div className="flex items-center gap-1.5 overflow-x-auto pb-2 px-1 scrollbar-hide">
+        {steps.map((s, i) => {
+          const sNum = getStepNumber(s);
+          const done = completedSteps.has(sNum);
+          const active = i === currentStepIdx;
+          return (
+            <button
+              key={i}
+              onClick={() => goTo(i)}
+              className={`shrink-0 flex items-center justify-center rounded-xl text-[10px] font-black transition-all duration-200 border-2 ${
+                active
+                  ? 'w-10 h-10 bg-amber-500/20 border-amber-500/60 text-amber-400 shadow-[0_0_15px_rgba(245,158,11,0.2)] scale-110'
+                  : done
+                    ? 'w-8 h-8 bg-emerald-500/15 border-emerald-500/40 text-emerald-400'
+                    : 'w-8 h-8 bg-slate-900/60 border-slate-700/40 text-slate-500 hover:border-slate-600 hover:text-slate-300'
+              }`}
+              title={s.name || `Étape ${sNum}`}
+            >
+              {done && !active ? <CheckCircle2 size={14} /> : sNum}
+            </button>
+          );
+        })}
+      </div>
+
+      {/* Main Step Content */}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={currentStepIdx}
+          initial={{ opacity: 0, x: 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -40 }}
+          transition={{ duration: 0.25 }}
+          className="space-y-4"
+        >
+          {/* Step Header */}
+          <div className="glass-card rounded-2xl p-6 border border-slate-700/30">
+            <div className="flex flex-col md:flex-row md:items-start justify-between gap-4">
+              <div className="flex-1">
+                <div className="flex items-center gap-3 mb-2">
+                  <span className={`inline-flex items-center justify-center w-10 h-10 rounded-xl font-black font-fantasy border-2 text-sm ${
+                    isStepComplete
+                      ? 'bg-emerald-500/20 border-emerald-500/50 text-emerald-400'
+                      : 'bg-amber-500/10 border-amber-500/30 text-amber-400'
+                  }`}>
+                    {isStepComplete ? <CheckCircle2 size={20} /> : stepNum}
+                  </span>
+                  <div>
+                    <h2 className="text-xl font-black text-slate-200 font-fantasy">{step.name || `Étape ${stepNum}`}</h2>
+                    <p className="text-sm text-slate-400 flex items-center gap-1.5 mt-0.5">
+                      <MapPin size={12} /> {step.location}
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex flex-wrap gap-2 mt-3">
+                  <span className="inline-flex items-center gap-1 px-2 py-1 rounded-lg text-[10px] font-bold text-slate-400 bg-slate-800/60 border border-slate-700/40">
+                    {typeIcon[step.type] || <Target size={12} />} {typeLabel[step.type] || step.type}
+                  </span>
+                  {step.difficulty && (
+                    <span className={`inline-flex items-center gap-1 px-2 py-1 rounded-lg text-[10px] font-bold border ${diffClass}`}>
+                      {step.difficulty}
+                    </span>
+                  )}
+                  {step.group_required && (
+                    <span className="inline-flex items-center gap-1 px-2 py-1 rounded-lg text-[10px] font-bold text-sky-400 bg-sky-500/10 border border-sky-500/30">
+                      <Users size={10} /> Groupe{step.group_size_minimum ? ` (${step.group_size_minimum}+)` : ''}
+                    </span>
+                  )}
+                  {step.coordinates && (
+                    <Link
+                      to={`/maps?coordinates=${encodeURIComponent(step.coordinates)}`}
+                      className="inline-flex items-center gap-1 px-2 py-1 rounded-lg text-[10px] font-bold text-rose-300 bg-rose-500/10 border border-rose-500/20 hover:bg-rose-500/20 transition-all"
+                    >
+                      <MapIcon size={10} /> {step.coordinates}
+                    </Link>
+                  )}
+                </div>
+
+                <p className="text-sm text-slate-300 mt-4 leading-relaxed">{step.objective}</p>
+              </div>
+
+              {/* Step Progress Ring */}
+              {stepInstructionCount > 0 && (
+                <div className="flex flex-col items-center gap-1 shrink-0">
+                  <div className="relative w-16 h-16">
+                    <svg className="w-16 h-16 -rotate-90" viewBox="0 0 64 64">
+                      <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" strokeWidth="3" className="text-slate-800" />
+                      <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" strokeWidth="3"
+                        className={isStepComplete ? 'text-emerald-500' : 'text-amber-500'}
+                        strokeDasharray={`${stepProgress * 1.759} 175.9`} strokeLinecap="round"
+                      />
+                    </svg>
+                    <span className={`absolute inset-0 flex items-center justify-center text-xs font-black ${isStepComplete ? 'text-emerald-400' : 'text-amber-400'}`}>
+                      {stepChecked.size}/{stepInstructionCount}
+                    </span>
+                  </div>
+                  <span className="text-[9px] text-slate-500 uppercase tracking-wider font-bold">Instructions</span>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Warnings */}
+          {step.warnings.length > 0 && (
+            <div className="p-4 bg-red-500/5 rounded-2xl border border-red-500/20">
+              <p className="text-[10px] text-red-400 uppercase tracking-wider font-bold mb-2 flex items-center gap-1.5">
+                <AlertTriangle size={12} /> Attention
+              </p>
+              <ul className="space-y-2">
+                {step.warnings.map((warn, i) => (
+                  <li key={i} className="text-sm text-red-300/90 flex items-start gap-2">
+                    <AlertTriangle size={14} className="shrink-0 mt-0.5 text-red-400/60" />
+                    {warn}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {/* Instructions Checklist */}
+          {step.instructions.length > 0 && (
+            <div className="glass-card rounded-2xl p-6 border border-amber-500/10">
+              <p className="text-[10px] text-amber-500 uppercase tracking-wider font-bold mb-4 flex items-center gap-1.5">
+                <Scroll size={12} /> Instructions
+              </p>
+              <ol className="space-y-2">
+                {step.instructions.map((inst, i) => {
+                  const checked = stepChecked.has(i);
+                  return (
+                    <li
+                      key={i}
+                      onClick={() => toggleInstruction(currentStepIdx, i)}
+                      className={`flex items-start gap-3 p-3 rounded-xl cursor-pointer transition-all duration-200 border ${
+                        checked
+                          ? 'bg-emerald-500/5 border-emerald-500/20'
+                          : 'bg-slate-900/30 border-slate-800/30 hover:bg-slate-800/40 hover:border-slate-700/50'
+                      }`}
+                    >
+                      <span className="shrink-0 mt-0.5">
+                        {checked
+                          ? <CheckSquare size={18} className="text-emerald-400" />
+                          : <Square size={18} className="text-slate-600" />
+                        }
+                      </span>
+                      <div className="flex items-start gap-3 flex-1">
+                        <span className={`shrink-0 w-6 h-6 rounded-lg text-[11px] font-black flex items-center justify-center mt-0 ${
+                          checked
+                            ? 'bg-emerald-500/20 text-emerald-400 border border-emerald-500/30'
+                            : 'bg-amber-500/10 text-amber-400 border border-amber-500/20'
+                        }`}>
+                          {i + 1}
+                        </span>
+                        <span className={`leading-relaxed text-sm ${checked ? 'text-slate-500 line-through' : 'text-slate-200'}`}>
+                          {inst}
+                        </span>
+                      </div>
+                    </li>
+                  );
+                })}
+              </ol>
+            </div>
+          )}
+
+          {/* Sub-steps */}
+          {step.sub_steps && step.sub_steps.length > 0 && (
+            <div className="space-y-3">
+              {step.sub_steps.map((sub, i) => (
+                <div key={i} className="glass-card rounded-2xl p-5 border border-slate-700/30">
+                  <h4 className="text-sm font-bold text-amber-400 mb-3 flex items-center gap-2">
+                    <span className="w-6 h-6 rounded-lg bg-amber-500/10 border border-amber-500/20 text-[10px] font-black flex items-center justify-center">
+                      {i + 1}
+                    </span>
+                    {sub.name}
+                  </h4>
+                  <ul className="space-y-1.5 ml-8">
+                    {sub.instructions.map((inst, j) => (
+                      <li key={j} className="text-sm text-slate-400 flex items-start gap-2">
+                        <span className="text-slate-600 mt-0.5">•</span>
+                        <span>{inst}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          )}
+
+          {/* Requirements Row */}
+          {(step.potions_required.length > 0 || step.items_required.length > 0 || step.respawn) && (
+            <div className="flex flex-wrap gap-3">
+              {step.potions_required.length > 0 && (
+                <div className="flex-1 min-w-[200px] glass-card rounded-2xl p-4 border border-purple-500/20">
+                  <p className="text-[10px] text-purple-400 uppercase tracking-wider font-bold mb-2 flex items-center gap-1.5">
+                    <FlaskConical size={10} /> Potions requises
+                  </p>
+                  <ul className="space-y-1.5">
+                    {step.potions_required.map((pot, i) => (
+                      <li key={i} className="text-sm text-slate-300 flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-purple-400" /> {pot}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {step.items_required.length > 0 && (
+                <div className="flex-1 min-w-[200px] glass-card rounded-2xl p-4 border border-blue-500/20">
+                  <p className="text-[10px] text-blue-400 uppercase tracking-wider font-bold mb-2 flex items-center gap-1.5">
+                    <Package size={10} /> Objets requis
+                  </p>
+                  <ul className="space-y-1.5">
+                    {step.items_required.map((item, i) => (
+                      <li key={i} className="text-sm text-slate-300 flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-blue-400" /> {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+              {step.respawn && (
+                <div className="flex-1 min-w-[200px] glass-card rounded-2xl p-4 border border-slate-700/30">
+                  <p className="text-[10px] text-slate-400 uppercase tracking-wider font-bold mb-2 flex items-center gap-1.5">
+                    <Clock size={10} /> Respawn
+                  </p>
+                  <ul className="space-y-1.5">
+                    {Object.entries(step.respawn).map(([key, val]) => (
+                      <li key={key} className="text-sm text-slate-400 flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-slate-500" />
+                        <span className="text-slate-500 capitalize">{key.replace(/_/g, ' ')} :</span> {val}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Drop Method */}
+          {step.drop_method && (
+            <p className="text-xs text-slate-500 flex items-center gap-1.5 px-2">
+              <Package size={12} /> Récupération : <span className="text-slate-400 font-medium">{step.drop_method}</span>
+            </p>
+          )}
+        </motion.div>
+      </AnimatePresence>
+
+      {/* Navigation Footer */}
+      <div className="flex items-center justify-between gap-4 pt-4">
+        <button
+          onClick={goPrev}
+          disabled={currentStepIdx === 0}
+          className={`flex items-center gap-2 px-5 py-3 rounded-xl font-bold text-sm transition-all border ${
+            currentStepIdx === 0
+              ? 'text-slate-700 border-slate-800 cursor-not-allowed'
+              : 'text-slate-300 border-slate-700/50 hover:border-amber-500/30 hover:text-amber-400 bg-slate-900/60'
+          }`}
+        >
+          <ChevronLeft size={18} /> Précédent
+        </button>
+
+        <button
+          onClick={toggleStepComplete}
+          className={`flex items-center gap-2 px-6 py-3 rounded-xl font-black text-sm uppercase tracking-wider transition-all border-2 ${
+            isStepComplete
+              ? 'bg-emerald-500/20 border-emerald-500/40 text-emerald-400 hover:bg-emerald-500/30'
+              : 'bg-amber-500/10 border-amber-500/30 text-amber-400 hover:bg-amber-500/20'
+          }`}
+        >
+          {isStepComplete ? <><CheckCircle2 size={18} /> Terminée</> : <><Target size={18} /> Valider</>}
+        </button>
+
+        <button
+          onClick={goNext}
+          disabled={currentStepIdx === totalSteps - 1}
+          className={`flex items-center gap-2 px-5 py-3 rounded-xl font-bold text-sm transition-all border ${
+            currentStepIdx === totalSteps - 1
+              ? 'text-slate-700 border-slate-800 cursor-not-allowed'
+              : 'text-slate-300 border-slate-700/50 hover:border-amber-500/30 hover:text-amber-400 bg-slate-900/60'
+          }`}
+        >
+          Suivant <ChevronRight size={18} />
+        </button>
+      </div>
+
+      {/* Boss Fight (shown after last step) */}
+      {currentStepIdx === totalSteps - 1 && quest.boss_fight && (
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          className="relative overflow-hidden rounded-2xl border border-red-500/30 bg-gradient-to-br from-slate-900/80 via-red-950/10 to-slate-900/80 backdrop-blur-md p-8"
+        >
+          <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03]" />
+          <div className="relative">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="p-3 bg-red-500/10 rounded-xl border border-red-500/20">
+                <Skull size={28} className="text-red-400" />
+              </div>
+              <div>
+                <h2 className="text-2xl font-black text-red-400 font-fantasy uppercase tracking-wider">{quest.boss_fight.name}</h2>
+                <p className="text-sm text-red-400/60">{quest.boss_fight.title}</p>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-4">
+                <div className="p-4 bg-slate-900/40 rounded-xl border border-slate-800/50">
+                  <p className="text-[10px] text-red-400 uppercase tracking-wider font-bold mb-2">Informations</p>
+                  <ul className="space-y-2 text-sm text-slate-300">
+                    <li className="flex items-start gap-2"><MapPin size={14} className="shrink-0 mt-0.5 text-slate-500" /> {quest.boss_fight.location}</li>
+                    <li className="flex items-start gap-2"><Users size={14} className="shrink-0 mt-0.5 text-slate-500" /> {quest.boss_fight.group_recommended}</li>
+                    <li className="flex items-start gap-2"><Swords size={14} className="shrink-0 mt-0.5 text-slate-500" /> {quest.boss_fight.kill_method}</li>
+                  </ul>
+                </div>
+                <div className="p-4 bg-red-500/5 rounded-xl border border-red-500/20">
+                  <p className="text-[10px] text-red-400 uppercase tracking-wider font-bold mb-2 flex items-center gap-1.5"><AlertTriangle size={10} /> Capacités</p>
+                  <ul className="space-y-1.5">
+                    {quest.boss_fight.abilities?.map((ab, i) => (
+                      <li key={i} className="text-xs text-red-300/80 flex items-start gap-2">
+                        <span className="w-1.5 h-1.5 rounded-full bg-red-400 mt-1.5 shrink-0" />{ab}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <div className="p-4 bg-emerald-500/5 rounded-xl border border-emerald-500/20">
+                  <p className="text-[10px] text-emerald-400 uppercase tracking-wider font-bold mb-2 flex items-center gap-1.5"><Info size={10} /> Conseils</p>
+                  <ul className="space-y-1.5">
+                    {quest.boss_fight.tips?.map((tip, i) => (
+                      <li key={i} className="text-xs text-emerald-300/80 flex items-start gap-2">
+                        <CheckCircle2 size={12} className="shrink-0 mt-0.5 text-emerald-400/60" />{tip}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                {quest.boss_fight.post_kill && (
+                  <div className="p-4 bg-amber-500/5 rounded-xl border border-amber-500/20">
+                    <p className="text-[10px] text-amber-400 uppercase tracking-wider font-bold mb-2 flex items-center gap-1.5"><Gift size={10} /> Après le combat</p>
+                    <p className="text-xs text-slate-300">{quest.boss_fight.post_kill.action}</p>
+                    <p className="text-[11px] text-amber-400/70 mt-1">{quest.boss_fight.post_kill.note}</p>
+                  </div>
+                )}
+              </div>
+            </div>
+          </div>
+        </motion.div>
+      )}
+
+      {/* Keyboard Hint */}
+      <p className="text-center text-[10px] text-slate-600 uppercase tracking-widest">
+        ← → pour naviguer • Cliquez sur les instructions pour les cocher
+      </p>
+    </div>
+  );
+};
+
 /* ─── Quest Detail View ─── */
 
-const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }) => {
+const QuestDetailView = ({ quest, onBack, onSwitchMode }: { quest: Quest; onBack: () => void; onSwitchMode: () => void }) => {
   const { npcsData, bestiaryData, plantsData, treesData, depositsData } = useData();
   const [expandedStep, setExpandedStep] = useState<number | null>(null);
   const [completedSteps, setCompletedSteps] = useState<Set<number>>(() => {
@@ -728,13 +1249,21 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
         <div className="absolute top-0 right-0 w-64 h-64 bg-amber-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
 
         <div className="relative">
-          <button
-            onClick={onBack}
-            className="flex items-center gap-2 text-sm text-slate-400 hover:text-amber-400 transition-colors mb-4 group"
-          >
-            <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
-            Toutes les quêtes
-          </button>
+          <div className="flex items-center justify-between mb-4">
+            <button
+              onClick={onBack}
+              className="flex items-center gap-2 text-sm text-slate-400 hover:text-amber-400 transition-colors group"
+            >
+              <ArrowLeft size={16} className="group-hover:-translate-x-1 transition-transform" />
+              Toutes les quêtes
+            </button>
+            <button
+              onClick={onSwitchMode}
+              className="flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs font-bold text-slate-400 bg-slate-900/60 border border-slate-700/50 hover:border-amber-500/30 hover:text-amber-400 transition-all"
+            >
+              <Gamepad2 size={14} /> Mode interactif
+            </button>
+          </div>
 
           <div className="flex items-center gap-3 mb-4">
             <div className="p-3 bg-amber-500/10 rounded-xl border border-amber-500/20">
@@ -1312,6 +1841,17 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
 const QuestsPage = () => {
   const { questsData, loading, error } = useData();
   const [selectedQuest, setSelectedQuest] = useState<Quest | null>(null);
+  const [interactiveMode, setInteractiveMode] = useState<boolean>(() => {
+    return localStorage.getItem('t4c-quest-interactive-mode') === 'true';
+  });
+
+  const toggleMode = useCallback(() => {
+    setInteractiveMode(prev => {
+      const next = !prev;
+      localStorage.setItem('t4c-quest-interactive-mode', String(next));
+      return next;
+    });
+  }, []);
 
   if (loading) {
     return (
@@ -1333,7 +1873,10 @@ const QuestsPage = () => {
   }
 
   if (selectedQuest) {
-    return <QuestDetailView quest={selectedQuest} onBack={() => setSelectedQuest(null)} />;
+    if (interactiveMode) {
+      return <QuestInteractiveView quest={selectedQuest} onBack={() => setSelectedQuest(null)} onSwitchMode={toggleMode} />;
+    }
+    return <QuestDetailView quest={selectedQuest} onBack={() => setSelectedQuest(null)} onSwitchMode={toggleMode} />;
   }
 
   return <QuestListView quests={questsData} onSelect={setSelectedQuest} />;
