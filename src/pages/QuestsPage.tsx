@@ -1237,11 +1237,13 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
                     ))}
                   </ul>
                 </div>
-                <div className="p-4 bg-amber-500/5 rounded-xl border border-amber-500/20">
-                  <p className="text-[10px] text-amber-400 uppercase tracking-wider font-bold mb-2 flex items-center gap-1.5"><Gift size={10} /> Après le combat</p>
-                  <p className="text-xs text-slate-300">{quest.boss_fight.post_kill.action}</p>
-                  <p className="text-[11px] text-amber-400/70 mt-1">{quest.boss_fight.post_kill.note}</p>
-                </div>
+                {quest.boss_fight.post_kill && (
+                  <div className="p-4 bg-amber-500/5 rounded-xl border border-amber-500/20">
+                    <p className="text-[10px] text-amber-400 uppercase tracking-wider font-bold mb-2 flex items-center gap-1.5"><Gift size={10} /> Après le combat</p>
+                    <p className="text-xs text-slate-300">{quest.boss_fight.post_kill.action}</p>
+                    <p className="text-[11px] text-amber-400/70 mt-1">{quest.boss_fight.post_kill.note}</p>
+                  </div>
+                )}
               </div>
             </div>
           </div>
