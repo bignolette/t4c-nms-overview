@@ -20,31 +20,31 @@ interface Quest {
   name: string;
   zone: string[];
   level_required: number | null;
-  alignment_required?: string;
+  alignment_required?: string | null;
   group_recommended: boolean;
-  group_size_recommended: string | null;
+  group_size_recommended?: string | null;
   description: string;
-  prerequisites?: string[];
+  prerequisites: string[];
   rewards: {
-    experience?: string | { condition: string; xp: string }[] | Record<string, string> | null;
-    items?: { name: string; quantity: number; note?: string }[];
-    boss_drops?: string | string[];
+    experience: string[];
+    items: { name: string; quantity?: number | string | null; note?: string; stats?: string; effect?: string }[];
+    boss_drops: string[];
     access?: string;
     bonus?: string;
     note?: string;
+    gold?: number | null;
   };
-  npcs?: {
+  npcs: {
     name: string;
     role: string;
     location: string;
-    interactions?: { keyword: string | null; purpose: string }[];
-    sells?: (string | { name: string; price: string })[];
+    keywords?: string[];
+    interactions?: { keywords: string[]; purpose: string }[];
+    sells?: { name: string; price?: string }[];
+    note?: string;
   }[];
-  items_required_overview?: {
-    potions_evalcian?: { name: string; usage: string; duration?: string }[];
-    items_speciaux?: { name: string; usage: string; obtention: string | string[]; duration?: string }[];
-  };
-  steps?: QuestStep[];
+  items_required_overview?: Record<string, { name: string; usage?: string; obtention?: string | string[]; duration?: string; quantity?: number | string }[]>;
+  steps: QuestStep[];
   boss_fight?: {
     name: string;
     title: string;
@@ -53,37 +53,38 @@ interface Quest {
     kill_method: string;
     abilities: string[];
     tips: string[];
-    post_kill: { action: string; note: string };
+    post_kill?: { action: string; note: string };
   };
   post_completion?: {
-    keys_remaining: string[];
-    keys_lost: string;
-    return_access: string;
-    locked_areas: string[];
-    reaccess_tip: string;
-    duplication_tip: string;
+    keys_remaining?: string[];
+    keys_lost?: string;
+    return_access?: string;
+    locked_areas?: string[];
+    reaccess_tip?: string;
+    duplication_tip?: string;
   };
 }
 
 interface QuestStep {
-  key_number?: number;
-  step_number?: number;
-  name: string;
+  step_number: number;
+  name?: string;
   type: string;
   difficulty?: string;
-  group_required?: boolean;
+  group_required: boolean;
   group_recommended?: boolean;
   group_size_minimum?: number;
-  potions_required?: string[];
-  items_required?: string[];
+  potions_required: string[];
+  items_required: string[];
   location: string;
   coordinates?: string;
+  island?: string;
   objective: string;
-  instructions?: string[];
+  instructions: string[];
   sub_steps?: { name: string; instructions: string[] }[];
   drop_method?: string;
   respawn?: Record<string, string> | null;
-  warnings?: string[];
+  warnings: string[];
+  reward_xp?: string;
 }
 
 /* ─── Constants ─── */
@@ -153,7 +154,7 @@ const getMainIslands = (zone: string[] | null | undefined): string[] => {
   return [...result];
 };
 
-const getStepNumber = (step: QuestStep): number => step.key_number ?? step.step_number ?? 0;
+const getStepNumber = (step: QuestStep): number => step.step_number ?? 0;
 
 const getProgressKey = (questId: string) => `t4c-quest-progress-${questId}`;
 
@@ -775,28 +776,12 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
             <h2 className="text-lg font-black text-emerald-400 font-fantasy uppercase tracking-wider">Récompenses</h2>
           </div>
           <ul className="space-y-3">
-            {quest.rewards.experience && (
-              Array.isArray(quest.rewards.experience) ? (
-                quest.rewards.experience.map((exp, i) => (
-                  <li key={`xp-${i}`} className="flex items-start gap-3">
-                    <Crown size={16} className="text-amber-400 mt-0.5 shrink-0" />
-                    <span className="text-slate-300 text-sm"><span className="text-amber-400 font-bold">{exp.xp}</span> — {exp.condition}</span>
-                  </li>
-                ))
-              ) : typeof quest.rewards.experience === 'string' ? (
-                <li className="flex items-start gap-3">
-                  <Crown size={16} className="text-amber-400 mt-0.5 shrink-0" />
-                  <span className="text-slate-300 text-sm"><span className="text-amber-400 font-bold">{quest.rewards.experience}</span> d'expérience</span>
-                </li>
-              ) : (
-                Object.entries(quest.rewards.experience).map(([key, val]) => (
-                  <li key={key} className="flex items-start gap-3">
-                    <Crown size={16} className="text-amber-400 mt-0.5 shrink-0" />
-                    <span className="text-slate-300 text-sm"><span className="text-amber-400 font-bold">{val}</span> — {key.replace(/_/g, ' ')}</span>
-                  </li>
-                ))
-              )
-            )}
+            {quest.rewards.experience.map((exp, i) => (
+              <li key={`xp-${i}`} className="flex items-start gap-3">
+                <Crown size={16} className="text-amber-400 mt-0.5 shrink-0" />
+                <span className="text-slate-300 text-sm"><span className="text-amber-400 font-bold">{exp}</span></span>
+              </li>
+            ))}
             {quest.rewards.access && (
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="text-sky-400 mt-0.5 shrink-0" />
@@ -807,26 +792,17 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
               <li key={i} className="flex items-start gap-3">
                 <Package size={16} className="text-blue-400 mt-0.5 shrink-0" />
                 <span className="text-slate-300 text-sm">
-                  {item.name} <span className="text-amber-400 font-bold">x{item.quantity}</span>
+                  {item.name}{item.quantity != null && <> <span className="text-amber-400 font-bold">x{item.quantity}</span></>}
                   {item.note && <span className="text-slate-500 text-xs block">{item.note}</span>}
                 </span>
               </li>
             ))}
-            {quest.rewards.boss_drops && (
-              Array.isArray(quest.rewards.boss_drops) ? (
-                quest.rewards.boss_drops.map((drop, i) => (
-                  <li key={`drop-${i}`} className="flex items-start gap-3">
-                    <Skull size={16} className="text-red-400 mt-0.5 shrink-0" />
-                    <span className="text-slate-300 text-sm">{drop}</span>
-                  </li>
-                ))
-              ) : (
-                <li className="flex items-start gap-3">
-                  <Skull size={16} className="text-red-400 mt-0.5 shrink-0" />
-                  <span className="text-slate-300 text-sm">{quest.rewards.boss_drops}</span>
-                </li>
-              )
-            )}
+            {quest.rewards.boss_drops.map((drop, i) => (
+              <li key={`drop-${i}`} className="flex items-start gap-3">
+                <Skull size={16} className="text-red-400 mt-0.5 shrink-0" />
+                <span className="text-slate-300 text-sm">{drop}</span>
+              </li>
+            ))}
             {quest.rewards.bonus && (
               <li className="flex items-start gap-3">
                 <Gift size={16} className="text-purple-400 mt-0.5 shrink-0" />
@@ -878,7 +854,7 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
                     <p key={j} className="text-xs text-slate-400 flex items-start gap-2">
                       <MessageSquare size={12} className="shrink-0 mt-0.5 text-slate-500" />
                       <span>
-                        {inter.keyword && <span className="text-amber-400 font-mono">« {inter.keyword} »</span>}{inter.keyword && ' — '}{inter.purpose}
+                        {inter.keywords?.length > 0 && <span className="text-amber-400 font-mono">« {inter.keywords.join(', ')} »</span>}{inter.keywords?.length > 0 && ' — '}{inter.purpose}
                       </span>
                     </p>
                   ))}
@@ -889,7 +865,7 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
                         {npc.sells.map((item, k) => (
                           <li key={k} className="text-xs text-slate-400 flex items-center gap-1.5">
                             <FlaskConical size={10} className="text-purple-400 shrink-0" />
-                            {typeof item === 'string' ? item : `${item.name} (${item.price})`}
+                            {item.name}{item.price && <span className="text-slate-500"> ({item.price})</span>}
                           </li>
                         ))}
                       </ul>
