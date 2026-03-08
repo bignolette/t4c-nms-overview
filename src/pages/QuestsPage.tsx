@@ -26,7 +26,7 @@ interface Quest {
   description: string;
   prerequisites?: string[];
   rewards: {
-    experience?: string | null;
+    experience?: string | { condition: string; xp: string }[] | null;
     items?: { name: string; quantity: number; note?: string }[];
     boss_drops?: string;
     access?: string;
@@ -776,10 +776,19 @@ const QuestDetailView = ({ quest, onBack }: { quest: Quest; onBack: () => void }
           </div>
           <ul className="space-y-3">
             {quest.rewards.experience && (
-              <li className="flex items-start gap-3">
-                <Crown size={16} className="text-amber-400 mt-0.5 shrink-0" />
-                <span className="text-slate-300 text-sm"><span className="text-amber-400 font-bold">{quest.rewards.experience}</span> d'expérience</span>
-              </li>
+              Array.isArray(quest.rewards.experience) ? (
+                quest.rewards.experience.map((exp, i) => (
+                  <li key={`xp-${i}`} className="flex items-start gap-3">
+                    <Crown size={16} className="text-amber-400 mt-0.5 shrink-0" />
+                    <span className="text-slate-300 text-sm"><span className="text-amber-400 font-bold">{exp.xp}</span> — {exp.condition}</span>
+                  </li>
+                ))
+              ) : (
+                <li className="flex items-start gap-3">
+                  <Crown size={16} className="text-amber-400 mt-0.5 shrink-0" />
+                  <span className="text-slate-300 text-sm"><span className="text-amber-400 font-bold">{quest.rewards.experience}</span> d'expérience</span>
+                </li>
+              )
             )}
             {quest.rewards.access && (
               <li className="flex items-start gap-3">
