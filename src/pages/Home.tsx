@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { ExternalLink, Calculator, BookOpen, User, Map, Package, Skull, Sparkles, Hammer, Scroll } from 'lucide-react';
 import { useData } from '../context/DataContext';
@@ -23,10 +23,45 @@ const useCountUp = (end: number, duration = 1500) => {
 const StatCounter = ({ label, value, icon: Icon }: { label: string; value: number; icon: any }) => {
   const animatedValue = useCountUp(value);
   return (
-    <div className="flex flex-col items-center gap-2 p-4 bg-slate-900/40 rounded-2xl border border-slate-800/50">
-      <Icon size={20} className="text-amber-500" />
+    <div className="flex flex-col items-center gap-2 p-4 bg-slate-900/40 rounded-2xl border border-slate-800/50 transition-all duration-300 hover:border-amber-500/20 hover:bg-slate-900/60 group">
+      <Icon size={20} className="text-amber-500 transition-transform duration-300 group-hover:scale-110" />
       <span className="text-3xl font-black text-amber-500 font-mono">{animatedValue.toLocaleString()}</span>
       <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">{label}</span>
+    </div>
+  );
+};
+
+// 3D Tilt card with mouse tracking
+const TiltCard = ({ children, className = '' }: { children: React.ReactNode; className?: string }) => {
+  const cardRef = useRef<HTMLDivElement>(null);
+  const [transform, setTransform] = useState('perspective(800px) rotateX(0deg) rotateY(0deg)');
+
+  const handleMouseMove = useCallback((e: React.MouseEvent<HTMLDivElement>) => {
+    const card = cardRef.current;
+    if (!card) return;
+    const rect = card.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+    const rotateX = ((y - centerY) / centerY) * -5;
+    const rotateY = ((x - centerX) / centerX) * 5;
+    setTransform(`perspective(800px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`);
+  }, []);
+
+  const handleMouseLeave = useCallback(() => {
+    setTransform('perspective(800px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)');
+  }, []);
+
+  return (
+    <div
+      ref={cardRef}
+      className={className}
+      style={{ transform, transition: 'transform 0.4s cubic-bezier(0.23, 1, 0.32, 1)', transformStyle: 'preserve-3d' }}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+    >
+      {children}
     </div>
   );
 };
@@ -44,15 +79,15 @@ const Home = () => {
 
         <div className="relative z-20 text-center max-w-4xl mx-auto">
           <h1 className="text-6xl md:text-8xl font-black text-white mb-8 tracking-tighter italic uppercase">
-            T4C <span className="text-amber-500">NMS</span>
+            T4C <span className="text-amber-500 text-glow-amber">NMS</span>
           </h1>
-          <p className="text-slate-300 text-xl md:text-2xl font-medium leading-relaxed opacity-80">
+          <p className="text-slate-300 text-xl md:text-2xl font-medium leading-relaxed opacity-80 drop-cap">
               Votre compagnon stratégique ultime pour Althéa.
           </p>
         </div>
       </div>
 
-      <OrnamentDivider />
+      <OrnamentDivider variant="triple" />
 
       {/* Stat Counters */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
@@ -63,7 +98,7 @@ const Home = () => {
         <StatCounter label="Quêtes" value={questsData.length} icon={Scroll} />
       </div>
 
-      <OrnamentDivider />
+      <OrnamentDivider variant="rune" />
 
       {/* Main Tools Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-8">
@@ -74,6 +109,7 @@ const Home = () => {
           to="/wiki"
           color="bg-blue-500/10 text-blue-400 border-blue-500/20"
           accent="group-hover:border-blue-500/50"
+          glowColor="rgba(59, 130, 246, 0.15)"
         />
         <QuickCard
           title="Cartographie"
@@ -82,6 +118,7 @@ const Home = () => {
           to="/maps"
           color="bg-indigo-500/10 text-indigo-400 border-indigo-500/20"
           accent="group-hover:border-indigo-500/50"
+          glowColor="rgba(99, 102, 241, 0.15)"
         />
         <QuickCard
           title="Simulateur"
@@ -90,6 +127,7 @@ const Home = () => {
           to="/planner"
           color="bg-amber-500/10 text-amber-400 border-amber-500/20"
           accent="group-hover:border-amber-500/50"
+          glowColor="rgba(245, 158, 11, 0.15)"
         />
         <QuickCard
           title="Personnage"
@@ -98,6 +136,7 @@ const Home = () => {
           to="/equipable"
           color="bg-emerald-500/10 text-emerald-400 border-emerald-500/20"
           accent="group-hover:border-emerald-500/50"
+          glowColor="rgba(52, 211, 153, 0.15)"
         />
         <QuickCard
           title="Quêtes"
@@ -106,24 +145,33 @@ const Home = () => {
           to="/quests"
           color="bg-rose-500/10 text-rose-400 border-rose-500/20"
           accent="group-hover:border-rose-500/50"
+          glowColor="rgba(244, 63, 94, 0.15)"
         />
       </div>
     </div>
   );
 };
 
-const QuickCard = ({ title, description, icon: Icon, to, color, accent }: any) => (
-  <Link to={to} className={`group relative p-6 xl:p-5 rounded-[40px] bg-slate-900/40 border border-slate-800 transition-all duration-500 hover:-translate-y-2 overflow-hidden shadow-xl ${accent}`}>
-    <div className={`w-12 h-12 xl:w-10 xl:h-10 rounded-2xl flex items-center justify-center mb-5 border transition-transform duration-500 group-hover:scale-110 ${color}`}>
-      <Icon size={24} />
-    </div>
-    <h3 className="text-base font-black text-slate-100 mb-3 tracking-tight uppercase italic group-hover:text-amber-500 transition-colors">{title}</h3>
-    <p className="text-slate-400 text-sm leading-relaxed font-medium mb-6 group-hover:text-slate-300 transition-colors">{description}</p>
-    <div className="flex items-center text-xs font-black text-slate-600 group-hover:text-amber-500 uppercase tracking-[0.2em] transition-colors">
-      Explorer l'outil <ExternalLink size={14} className="ml-2" />
-    </div>
-    <div className="absolute -bottom-12 -right-12 w-32 h-32 bg-white/5 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
-  </Link>
+const QuickCard = ({ title, description, icon: Icon, to, color, accent, glowColor }: any) => (
+  <TiltCard>
+    <Link to={to} className={`group relative p-6 xl:p-5 rounded-[40px] bg-slate-900/40 border border-slate-800 transition-all duration-500 overflow-hidden shadow-xl ${accent} block h-full`}>
+      {/* Hover glow effect */}
+      <div
+        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-[40px] pointer-events-none"
+        style={{ boxShadow: `inset 0 0 60px ${glowColor}, 0 0 30px ${glowColor}` }}
+      />
+
+      <div className={`w-12 h-12 xl:w-10 xl:h-10 rounded-2xl flex items-center justify-center mb-5 border transition-transform duration-500 group-hover:scale-110 ${color} relative z-10`}>
+        <Icon size={24} />
+      </div>
+      <h3 className="text-base font-black text-slate-100 mb-3 tracking-tight uppercase italic group-hover:text-amber-500 transition-colors relative z-10">{title}</h3>
+      <p className="text-slate-400 text-sm leading-relaxed font-medium mb-6 group-hover:text-slate-300 transition-colors relative z-10">{description}</p>
+      <div className="flex items-center text-xs font-black text-slate-600 group-hover:text-amber-500 uppercase tracking-[0.2em] transition-colors relative z-10">
+        Explorer l'outil <ExternalLink size={14} className="ml-2" />
+      </div>
+      <div className="absolute -bottom-12 -right-12 w-32 h-32 bg-white/5 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
+    </Link>
+  </TiltCard>
 );
 
 export default Home;

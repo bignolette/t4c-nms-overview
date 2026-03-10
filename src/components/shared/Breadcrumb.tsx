@@ -1,5 +1,6 @@
 import { Link, useLocation, useSearchParams } from 'react-router-dom';
-import { ChevronRight, Home } from 'lucide-react';
+import { Home, BookOpen, Calculator, Map, User, Scroll, ShieldCheck } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 const WIKI_SLUGS: Record<string, string> = {
   items: 'Objets',
@@ -18,12 +19,31 @@ const ROOT_LABELS: Record<string, string> = {
   maps: 'Cartographie',
   equipable: 'Personnage',
   legal: 'Mentions Légales',
+  quests: 'Quêtes',
+};
+
+const ROOT_ICONS: Record<string, any> = {
+  wiki: BookOpen,
+  planner: Calculator,
+  maps: Map,
+  equipable: User,
+  quests: Scroll,
+  legal: ShieldCheck,
 };
 
 interface Crumb {
   label: string;
   to?: string;
+  icon?: any;
 }
+
+const DiamondSeparator = () => (
+  <span className="mx-1.5 flex items-center">
+    <svg viewBox="0 0 8 8" className="w-1.5 h-1.5 text-amber-500/40" fill="currentColor">
+      <path d="M4 0L8 4L4 8L0 4Z" />
+    </svg>
+  </span>
+);
 
 const Breadcrumb = () => {
   const location = useLocation();
@@ -32,14 +52,16 @@ const Breadcrumb = () => {
   if (location.pathname === '/') return null;
 
   const segments = location.pathname.split('/').filter(Boolean);
-  const crumbs: Crumb[] = [{ label: 'Accueil', to: '/' }];
+  const crumbs: Crumb[] = [{ label: 'Accueil', to: '/', icon: Home }];
 
   if (segments.length > 0) {
     const root = segments[0];
     const rootLabel = ROOT_LABELS[root] || root;
+    const rootIcon = ROOT_ICONS[root];
     crumbs.push({
       label: rootLabel,
       to: segments.length > 1 ? `/${root}` : undefined,
+      icon: rootIcon,
     });
 
     if (root === 'wiki' && segments[1]) {
@@ -56,30 +78,39 @@ const Breadcrumb = () => {
   }
 
   return (
-    <nav className="flex items-center gap-1 text-xs mb-4 flex-wrap">
+    <motion.nav
+      className="flex items-center gap-0.5 text-xs mb-6 flex-wrap py-2 px-3 rounded-xl bg-slate-900/20 border border-slate-800/30 backdrop-blur-sm w-fit"
+      initial={{ opacity: 0, x: -10 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.3, delay: 0.1 }}
+    >
       {crumbs.map((crumb, i) => {
         const isLast = i === crumbs.length - 1;
+        const Icon = crumb.icon;
         return (
-          <span key={i} className="flex items-center gap-1">
-            {i > 0 && <ChevronRight size={12} className="text-slate-700" />}
+          <span key={i} className="flex items-center gap-0.5">
+            {i > 0 && <DiamondSeparator />}
             {crumb.to && !isLast ? (
               <Link
                 to={crumb.to}
-                className="text-slate-500 hover:text-amber-500 transition-colors flex items-center gap-1"
+                className="text-slate-500 hover:text-amber-500 transition-colors flex items-center gap-1.5 px-1.5 py-0.5 rounded-md hover:bg-amber-500/5"
               >
-                {i === 0 && <Home size={12} />}
-                {crumb.label}
+                {Icon && <Icon size={12} className="opacity-60" />}
+                <span>{crumb.label}</span>
               </Link>
             ) : (
-              <span className={isLast ? 'text-slate-400 font-bold' : 'text-slate-500'}>
-                {i === 0 && <Home size={12} className="inline mr-1" />}
-                {crumb.label}
+              <span className={`flex items-center gap-1.5 px-1.5 py-0.5 rounded-md ${isLast ? 'text-amber-400/80 font-bold bg-amber-500/5' : 'text-slate-500'}`}>
+                {Icon && <Icon size={12} className="opacity-60" />}
+                <span>{crumb.label}</span>
               </span>
             )}
           </span>
         );
       })}
-    </nav>
+
+      {/* Decorative trailing dash */}
+      <span className="ml-1 w-4 h-px bg-gradient-to-r from-amber-500/30 to-transparent" />
+    </motion.nav>
   );
 };
 

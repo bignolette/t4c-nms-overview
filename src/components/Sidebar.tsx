@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Home, User, ShieldCheck, Calculator, PanelLeftClose, PanelLeftOpen, BookOpen, Map, Scroll } from 'lucide-react';
+import { Menu, X, Home, User, ShieldCheck, Calculator, PanelLeftClose, PanelLeftOpen, BookOpen, Map, Scroll, Sun, Moon } from 'lucide-react';
+import { motion } from 'framer-motion';
 import RuneIcon from './ui/RuneIcon';
+import { useTheme } from '../context/ThemeContext';
 
 interface SidebarProps {
   isOpen?: boolean;
@@ -12,14 +14,15 @@ const Sidebar = ({ isOpen = true, onToggle }: SidebarProps) => {
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const location = useLocation();
+  const { toggleTheme, isParchment } = useTheme();
 
   useEffect(() => {
     const handleNativeFSChange = () => setIsFullscreen(!!document.fullscreenElement);
     const handleCustomFSChange = (e: any) => setIsFullscreen(e.detail);
-    
+
     document.addEventListener('fullscreenchange', handleNativeFSChange);
     window.addEventListener('t4c-fullscreen-change', handleCustomFSChange);
-    
+
     return () => {
       document.removeEventListener('fullscreenchange', handleNativeFSChange);
       window.removeEventListener('t4c-fullscreen-change', handleCustomFSChange);
@@ -45,7 +48,7 @@ const Sidebar = ({ isOpen = true, onToggle }: SidebarProps) => {
     <>
       {/* Mobile Toggle */}
       {!isFullscreen && (
-        <button 
+        <button
           onClick={() => setIsMobileOpen(!isMobileOpen)}
           className="fixed top-4 left-4 z-50 p-3 bg-slate-800 rounded-xl md:hidden text-white border border-slate-700 shadow-2xl"
         >
@@ -66,7 +69,7 @@ const Sidebar = ({ isOpen = true, onToggle }: SidebarProps) => {
 
       {/* Sidebar Overlay (Mobile) */}
       {isMobileOpen && !isFullscreen && (
-        <div 
+        <div
           className="fixed inset-0 bg-black/60 z-40 md:hidden backdrop-blur-sm animate-fade-in"
           onClick={() => setIsMobileOpen(false)}
         />
@@ -83,8 +86,8 @@ const Sidebar = ({ isOpen = true, onToggle }: SidebarProps) => {
       `}>
         {/* Subtle Background Decoration */}
         <div className="absolute inset-0 bg-gradient-to-b from-amber-500/5 to-transparent pointer-events-none" />
-        
-        {/* Inner Container to prevent content squishing during transition */}
+
+        {/* Inner Container */}
         <div className={`relative flex flex-col h-full w-80 transition-all duration-300 ${isOpen ? 'opacity-100' : 'md:opacity-0 md:translate-x-[-30px]'}`}>
           {/* Header */}
           <div className="py-16 px-10 border-b border-white/5">
@@ -97,7 +100,7 @@ const Sidebar = ({ isOpen = true, onToggle }: SidebarProps) => {
                   T4C NMS
                 </h1>
               </div>
-              
+
               {/* Desktop Close Button */}
               <button
                 onClick={onToggle}
@@ -115,7 +118,7 @@ const Sidebar = ({ isOpen = true, onToggle }: SidebarProps) => {
             <ul className="space-y-4">
               {navItems.map((item) => {
                 const active = isActive(item.path);
-                
+
                 return (
                   <li key={item.path}>
                     <Link
@@ -123,19 +126,35 @@ const Sidebar = ({ isOpen = true, onToggle }: SidebarProps) => {
                       onClick={() => setIsMobileOpen(false)}
                       className={`
                         flex items-center gap-5 px-6 py-5 rounded-[24px] transition-all duration-300 group relative overflow-hidden
-                        ${active 
-                          ? 'bg-amber-500/10 text-amber-500 border border-amber-500/30 shadow-[0_0_40px_rgba(245,158,11,0.15)] scale-[1.02]' 
+                        ${active
+                          ? 'bg-amber-500/10 text-amber-500 border border-amber-500/30 shadow-[0_0_40px_rgba(245,158,11,0.15)] scale-[1.02]'
                           : 'text-slate-400 hover:text-slate-100 hover:bg-white/5 border border-transparent'}
                       `}
                     >
                       {/* Active indicator bar */}
                       {active && <div className="absolute left-0 top-4 bottom-4 w-1.5 bg-amber-500 rounded-full shadow-[0_0_15px_rgba(245,158,11,0.8)]" />}
-                      
-                      <item.icon size={26} className={`shrink-0 transition-transform duration-300 ${active ? 'scale-110 drop-shadow-[0_0_8px_rgba(245,158,11,0.5)]' : 'group-hover:scale-110 group-hover:text-amber-400'}`} />
+
+                      {/* Animated icon for active state */}
+                      {active ? (
+                        <motion.div
+                          animate={{ rotate: [0, 3, -3, 0], scale: [1, 1.1, 1] }}
+                          transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+                          className="shrink-0"
+                        >
+                          <item.icon size={26} className="drop-shadow-[0_0_8px_rgba(245,158,11,0.5)] animate-rune-glow" />
+                        </motion.div>
+                      ) : (
+                        <item.icon size={26} className="shrink-0 transition-transform duration-300 group-hover:scale-110 group-hover:text-amber-400" />
+                      )}
+
                       <span className={`font-black text-[15px] uppercase tracking-wider font-fantasy ${active ? 'text-amber-400' : ''}`}>{item.name}</span>
-                      
+
                       {active && (
-                        <div className="ml-auto w-2 h-2 rounded-full bg-amber-500 animate-pulse shadow-[0_0_12px_rgba(245,158,11,1)]" />
+                        <motion.div
+                          className="ml-auto w-2 h-2 rounded-full bg-amber-500 shadow-[0_0_12px_rgba(245,158,11,1)]"
+                          animate={{ scale: [1, 1.4, 1], opacity: [1, 0.6, 1] }}
+                          transition={{ duration: 2, repeat: Infinity, ease: 'easeInOut' }}
+                        />
                       )}
                     </Link>
                   </li>
@@ -144,8 +163,29 @@ const Sidebar = ({ isOpen = true, onToggle }: SidebarProps) => {
             </ul>
           </nav>
 
-          {/* Footer Info */}
+          {/* Footer with Theme Toggle */}
           <div className="p-6 border-t border-slate-800/50 bg-slate-950/50 backdrop-blur-sm">
+              {/* Theme Toggle */}
+              <button
+                onClick={toggleTheme}
+                className="w-full flex items-center justify-center gap-3 px-4 py-3 mb-4 rounded-2xl bg-slate-900/60 border border-slate-800/50 hover:border-amber-500/30 transition-all group"
+                title={isParchment ? 'Thème Classique' : 'Thème Parchemin'}
+              >
+                <motion.div
+                  animate={{ rotate: isParchment ? 180 : 0 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  {isParchment ? (
+                    <Moon size={16} className="text-amber-400" />
+                  ) : (
+                    <Sun size={16} className="text-slate-400 group-hover:text-amber-400 transition-colors" />
+                  )}
+                </motion.div>
+                <span className="text-[10px] font-black uppercase tracking-widest text-slate-500 group-hover:text-slate-300 transition-colors font-fantasy">
+                  {isParchment ? 'Parchemin' : 'Classique'}
+                </span>
+              </button>
+
               <p className="text-[10px] text-slate-500 text-center leading-relaxed font-medium">
                 Données : <br/>
                 <a href="https://t4c.fandom.com/fr/wiki/The_4th_Coming" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-amber-500 transition-colors underline decoration-slate-700 underline-offset-4">Wiki T4C NMS</a> & <a href="https://nmsrevolution.com" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-amber-500 transition-colors underline decoration-slate-700 underline-offset-4">T4C NMS Révolution</a>
