@@ -54,5 +54,45 @@
       "Raven's Dust"
     ],
     "coordinates": "268.2521.0"
+  },
+  {
+    "name": "Nexus - Caverne de l'aveugle",
+    "locationPrecision": "Caverne de l'aveugle",
+    "zone": [
+      "Raven's Dust"
+    ],
+    "coordinates": "841.1415.0"
+  },
+  {
+    "name": "Nexus - Camp des Assassins",
+    "locationPrecision": "Camp des Assassins",
+    "zone": [
+      "Raven's Dust"
+    ],
+    "coordinates": "895.2754.0"
+  },
+  {
+    "name": "Nexus - Caverne orc",
+    "locationPrecision": "Caverne orc",
+    "zone": [
+      "Raven's Dust"
+    ],
+    "coordinates": "1430.1750.0"
+  },
+  {
+    "name": "Nexus - Camp des druides de Raven's Dust",
+    "locationPrecision": "Camp des druides de Raven's Dust",
+    "zone": [
+      "Raven's Dust"
+    ],
+    "coordinates": "1571.2915.0"
+  },
+  {
+    "name": "Nexus - Cercle des druides de Raven's Dust (Zhakar)",
+    "locationPrecision": "Cercle des druides de Raven's Dust (Zhakar)",
+    "zone": [
+      "Raven's Dust"
+    ],
+    "coordinates": "225.2182.0"
   }
 ]
