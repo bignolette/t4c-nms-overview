@@ -34,7 +34,7 @@ const MapMarker = memo(({ x, y, items }: { x: number, y: number, items: { label:
   const color = getCategoryColor(firstCategory);
   
   return (
-    <div className="absolute z-30 pointer-events-auto cursor-help" style={{ left: x, top: y, transform: 'translate(-50%, -100%)' }}>
+    <div className="absolute z-30 pointer-events-auto cursor-help" style={{ left: x, top: y, transform: 'translate(-50%, -100%)', animation: 'markerPopIn 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) both' }}>
       <div className="relative flex flex-col items-center group/marker">
         {items.length > 0 && (
           <div className="absolute bottom-full mb-2 px-3 py-1.5 bg-slate-950/95 border border-white/20 rounded-lg text-[11px] font-black text-white whitespace-nowrap shadow-[0_0_20px_rgba(0,0,0,0.5)] opacity-0 group-hover/marker:opacity-100 transition-all duration-200 translate-y-1 group-hover/marker:translate-y-0 pointer-events-none z-50">
@@ -584,8 +584,8 @@ const MapViewer: React.FC = () => {
               </div>
             </div>
             <div className="px-3 pt-3 pb-1">
-              <div className="relative group">
-                <Search size={14} className="absolute left-3 top-2.5 text-slate-500 group-focus-within:text-amber-500" />
+              <div className="relative search-input-glow rounded-xl">
+                <Search size={14} className="absolute left-3 top-2.5 text-slate-500 transition-all duration-300 search-icon" />
                 <input type="text" placeholder="Rechercher..." value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} className="w-full bg-slate-950 border border-slate-800 rounded-xl py-2 pl-9 pr-8 text-[11px] font-bold text-slate-200 focus:border-amber-500 outline-none transition-all" />
                 {searchQuery && <button onClick={() => setSearchQuery('')} className="absolute right-2 top-2.5 text-slate-500 hover:text-white"><X size={14} /></button>}
               </div>

@@ -261,9 +261,9 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
       {/* Controls Header */}
       <div className="flex flex-col gap-6 bg-slate-800/30 p-4 md:p-6 rounded-2xl border border-slate-700/50">
         <div className="flex flex-col md:flex-row gap-4">
-          <div className="flex-1 relative group">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-amber-500 transition-colors" size={18} />
-            <input 
+          <div className="flex-1 relative group search-input-glow rounded-xl">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 transition-all duration-300 search-icon" size={18} />
+            <input
               type="text"
               placeholder="Rechercher une créature ou un butin..."
               value={activeSearchTerm}
@@ -271,7 +271,7 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
               className="w-full bg-slate-950/50 border border-slate-800 rounded-xl py-3.5 pl-12 pr-12 text-slate-100 focus:border-amber-500/50 outline-none transition-all font-bold"
             />
             {activeSearchTerm && (
-              <button onClick={() => handleSearchChange('')} className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 hover:text-white transition-all"><X size={18} /></button>
+              <button onClick={() => handleSearchChange('')} className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 hover:text-white transition-all hover:rotate-90 duration-200"><X size={18} /></button>
             )}
           </div>
 
@@ -330,13 +330,14 @@ const Bestiary = ({ monsters }: BestiaryProps) => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 stagger-grid">
                 {displayMonsters.map((monster, index) => (
-                  <MonsterCard 
-                    key={`${monster.name}-${index}`} 
-                    monster={monster} 
-                    showLocation={selectedZone === 'Toutes'} 
-                  />
+                  <div key={`${monster.name}-${index}`} style={{ animationDelay: `${Math.min(index * 40, 400)}ms` }}>
+                    <MonsterCard
+                      monster={monster}
+                      showLocation={selectedZone === 'Toutes'}
+                    />
+                  </div>
                 ))}
               </div>
             </section>

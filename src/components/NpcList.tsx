@@ -136,8 +136,8 @@ const NpcList: React.FC<NpcListProps> = ({ npcs }) => {
     return (
         <div className="space-y-8">
             <div className="flex flex-col md:flex-row gap-4 items-center">
-                <div className="relative flex-1 group w-full">
-                    <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-amber-500 transition-colors" size={18} />
+                <div className="relative flex-1 group w-full search-input-glow rounded-2xl">
+                    <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 transition-all duration-300 search-icon" size={18} />
                     <input
                         type="text"
                         placeholder="Rechercher un PNJ ou un lieu..."
@@ -146,7 +146,7 @@ const NpcList: React.FC<NpcListProps> = ({ npcs }) => {
                         className="w-full bg-slate-950/50 border border-slate-800 rounded-2xl py-4 pl-12 pr-12 text-slate-100 focus:border-amber-500/50 outline-none transition-all font-bold"
                     />
                     {searchQuery && (
-                        <button onClick={() => setSearchQuery('')} className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 hover:text-white transition-all"><X size={18} /></button>
+                        <button onClick={() => setSearchQuery('')} className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 hover:text-white transition-all hover:rotate-90 duration-200"><X size={18} /></button>
                     )}
                 </div>
 

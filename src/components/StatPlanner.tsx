@@ -599,7 +599,7 @@ const StatPlanner = () => {
                   const color = hexColors[k];
 
                   return (
-                      <div key={k} className="px-4 py-4 flex flex-col gap-4 hover:bg-white/[0.02] transition-colors group/stat">
+                      <div key={k} className="px-4 py-4 flex flex-col gap-4 hover:bg-white/[0.02] transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 group/stat">
                         <div className="flex items-center justify-between">
                           <div className="flex items-center gap-4">
                             <div className="w-12 h-12 rounded-xl bg-slate-900/50 flex items-center justify-center border border-white/10 shadow-lg group-hover/stat:border-white/20 transition-all relative overflow-hidden">
@@ -609,7 +609,7 @@ const StatPlanner = () => {
                             <div>
                               <div className="font-black text-slate-500 text-[10px] uppercase tracking-[0.15em] leading-none mb-1.5 font-fantasy">{labels[k]}</div>
                               <div className="flex items-center gap-2">
-                                  <div className={`text-2xl font-black ${textColors[k]} drop-shadow-md tracking-tighter font-fantasy`}>{finalStats[k]}</div>
+                                  <div className={`text-2xl font-black ${textColors[k]} drop-shadow-md tracking-tighter font-fantasy tabular-nums transition-all duration-300`}>{finalStats[k]}</div>
                                   {magicInfo && (
                                       <div className="flex items-center gap-1.5 px-2 py-0.5 rounded-md bg-amber-500/10 border border-amber-500/20 shadow-sm backdrop-blur-sm" title={`Rang ${magicInfo.rank}`}>
                                           <Sparkles size={10} className="text-amber-400" />
@@ -630,19 +630,19 @@ const StatPlanner = () => {
                         <div className="flex flex-col gap-3">
                           <div className="flex items-center justify-between bg-slate-950/40 p-1.5 rounded-xl border border-white/5 shadow-inner w-full backdrop-blur-sm">
                              <div className="flex gap-1">
-                               <button onClick={() => updateLevelStat(k, -100)} className="w-8 h-8 text-[9px] font-black rounded-lg bg-slate-900/50 border border-white/5 text-slate-500 hover:text-white hover:bg-white/10 transition-all">-100</button>
-                               <button onClick={() => updateLevelStat(k, -10)} className="w-8 h-8 text-[9px] font-black rounded-lg bg-slate-900/50 border border-white/5 text-slate-500 hover:text-white hover:bg-white/10 transition-all">-10</button>
+                               <button onClick={() => updateLevelStat(k, -100)} className="w-8 h-8 text-[9px] font-black rounded-lg bg-slate-900/50 border border-white/5 text-slate-500 hover:text-white hover:bg-white/10 transition-all active:scale-90">-100</button>
+                               <button onClick={() => updateLevelStat(k, -10)} className="w-8 h-8 text-[9px] font-black rounded-lg bg-slate-900/50 border border-white/5 text-slate-500 hover:text-white hover:bg-white/10 transition-all active:scale-90">-10</button>
                              </div>
                              
                              <div className="flex items-center gap-2">
-                               <button onClick={() => updateLevelStat(k, -1)} className="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-800/50 text-slate-400 hover:text-white transition-all shadow-sm" disabled={(levelPoints[k] || 0) <= 0}><ChevronDown size={14}/></button>
+                               <button onClick={() => updateLevelStat(k, -1)} className="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-800/50 text-slate-400 hover:text-white transition-all active:scale-90 shadow-sm" disabled={(levelPoints[k] || 0) <= 0}><ChevronDown size={14}/></button>
                                <span className="w-12 text-center text-lg font-black text-white tabular-nums font-fantasy">{levelPoints[k] || 0}</span>
-                               <SparkButton onClick={() => updateLevelStat(k, 1)} color={color} className="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-800/50 text-slate-400 hover:text-white hover:bg-white/10 transition-all shadow-sm border border-white/5"><ChevronUp size={14}/></SparkButton>
+                               <SparkButton onClick={() => updateLevelStat(k, 1)} color={color} className="w-8 h-8 flex items-center justify-center rounded-lg bg-slate-800/50 text-slate-400 hover:text-white hover:bg-white/10 transition-all active:scale-90 shadow-sm border border-white/5"><ChevronUp size={14}/></SparkButton>
                              </div>
 
                              <div className="flex gap-1">
-                               <SparkButton onClick={() => updateLevelStat(k, 10)} color={color} className="w-8 h-8 text-[9px] font-black rounded-lg bg-slate-900/50 border border-white/5 text-slate-500 hover:text-white hover:bg-white/10 transition-all">+10</SparkButton>
-                               <SparkButton onClick={() => updateLevelStat(k, 100)} color={color} className="w-8 h-8 text-[9px] font-black rounded-lg bg-slate-900/50 border border-white/5 text-slate-500 hover:text-white hover:bg-white/10 transition-all">+100</SparkButton>
+                               <SparkButton onClick={() => updateLevelStat(k, 10)} color={color} className="w-8 h-8 text-[9px] font-black rounded-lg bg-slate-900/50 border border-white/5 text-slate-500 hover:text-white hover:bg-white/10 transition-all active:scale-90">+10</SparkButton>
+                               <SparkButton onClick={() => updateLevelStat(k, 100)} color={color} className="w-8 h-8 text-[9px] font-black rounded-lg bg-slate-900/50 border border-white/5 text-slate-500 hover:text-white hover:bg-white/10 transition-all active:scale-90">+100</SparkButton>
                              </div>
                           </div>
                           
@@ -650,9 +650,9 @@ const StatPlanner = () => {
                             <div className="flex items-center justify-between bg-slate-950/40 p-1.5 rounded-xl border border-amber-500/20 shadow-inner w-full backdrop-blur-sm">
                                <span className="text-[8px] font-black text-amber-600 uppercase tracking-widest ml-2 font-fantasy">PTS RN</span>
                                <div className="flex items-center gap-2">
-                                 <button onClick={() => updateSeraphStat('stat', k, -1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800/50 text-slate-400 hover:text-amber-500 transition-all shadow-sm disabled:opacity-20" disabled={curS <= 0}>-</button>
+                                 <button onClick={() => updateSeraphStat('stat', k, -1)} className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800/50 text-slate-400 hover:text-amber-500 transition-all active:scale-90 shadow-sm disabled:opacity-20" disabled={curS <= 0}>-</button>
                                  <span className="w-8 text-center text-md font-black text-amber-500 tabular-nums font-fantasy">{getCumulativeCost(curS)}</span>
-                                 <SparkButton onClick={() => updateSeraphStat('stat', k, 1)} color="#f59e0b" className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800/50 text-slate-400 hover:text-amber-500 hover:bg-amber-500/10 transition-all shadow-sm disabled:opacity-20" disabled={remainingSeraphPoints < (curS + 1)}>+</SparkButton>
+                                 <SparkButton onClick={() => updateSeraphStat('stat', k, 1)} color="#f59e0b" className="w-9 h-9 flex items-center justify-center rounded-xl bg-slate-800/50 text-slate-400 hover:text-amber-500 hover:bg-amber-500/10 transition-all active:scale-90 shadow-sm disabled:opacity-20" disabled={remainingSeraphPoints < (curS + 1)}>+</SparkButton>
                                </div>
                             </div>
                           )}

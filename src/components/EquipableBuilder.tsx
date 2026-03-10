@@ -389,7 +389,7 @@ const EquipableBuilder = () => {
                 }[key];
                 
                 return (
-                  <div key={key} className="flex flex-col gap-3 p-4 bg-slate-950/40 border border-white/5 rounded-2xl">
+                  <div key={key} className="flex flex-col gap-3 p-4 bg-slate-950/40 border border-white/5 rounded-2xl transition-all duration-300 hover:border-white/10 hover:shadow-lg hover:shadow-black/20 hover:-translate-y-0.5">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-2">
                         <RuneIcon stat={config.rune as any} size={14} color={config.colorHex} />
@@ -427,7 +427,7 @@ const EquipableBuilder = () => {
             </h2>
             <div className="grid grid-cols-3 sm:grid-cols-4 gap-4">
               {SLOTS.map((slot) => (
-                <div key={slot.id} onClick={() => setSelectedSlot(slot)} className={`aspect-square rounded-2xl border-2 flex flex-col items-center justify-center cursor-pointer transition-all ${selectedSlot.id === slot.id ? 'border-amber-500 bg-amber-500/10' : 'border-white/5 bg-slate-950/20 hover:border-white/20'}`}>
+                <div key={slot.id} onClick={() => setSelectedSlot(slot)} className={`aspect-square rounded-2xl border-2 flex flex-col items-center justify-center cursor-pointer transition-all duration-300 ${selectedSlot.id === slot.id ? 'border-amber-500 bg-amber-500/10 scale-105 shadow-[0_0_20px_rgba(245,158,11,0.2)]' : 'border-white/5 bg-slate-950/20 hover:border-white/20 hover:scale-105'}`}>
                   <RuneIcon stat={slot.rune as any} size={24} color={selectedSlot.id === slot.id ? '#f59e0b' : '#475569'} />
                   <span className={`text-[9px] mt-2 font-black uppercase tracking-tighter font-fantasy ${selectedSlot.id === slot.id ? 'text-amber-500' : 'text-slate-600'}`}>{slot.label}</span>
                 </div>
@@ -458,9 +458,9 @@ const EquipableBuilder = () => {
               </div>
             </div>
             <div className="space-y-6">
-              <div className="relative">
-                <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-600" size={20} />
-                <input type="text" placeholder="Rechercher..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} className="w-full bg-slate-950/50 border border-white/5 rounded-2xl pl-12 pr-6 py-4 text-white text-sm" />
+              <div className="relative search-input-glow rounded-2xl">
+                <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-600 transition-all duration-300 search-icon" size={20} />
+                <input type="text" placeholder="Rechercher..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} className="w-full bg-slate-950/50 border border-white/5 rounded-2xl pl-12 pr-6 py-4 text-white text-sm font-bold focus:border-amber-500/50 outline-none transition-all" />
               </div>
               <div className="flex flex-col sm:flex-row items-center gap-4 p-4 bg-emerald-500/5 border border-emerald-500/10 rounded-2xl">
                 <label className="flex items-center gap-3 cursor-pointer">

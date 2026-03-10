@@ -81,7 +81,7 @@ const Home = () => {
           <h1 className="text-6xl md:text-8xl font-black text-white mb-8 tracking-tighter italic uppercase">
             T4C <span className="text-amber-500 text-glow-amber">NMS</span>
           </h1>
-          <p className="text-slate-300 text-xl md:text-2xl font-medium leading-relaxed opacity-80 drop-cap">
+          <p className="text-slate-300 text-xl md:text-2xl font-medium leading-relaxed opacity-80">
               Votre compagnon stratégique ultime pour Althéa.
           </p>
         </div>

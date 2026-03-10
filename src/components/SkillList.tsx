@@ -213,9 +213,9 @@ const SkillList = ({ skills }: SkillListProps) => {
         <div className="absolute top-0 right-0 w-64 h-64 bg-emerald-500/5 blur-3xl rounded-full -mr-32 -mt-32 pointer-events-none"></div>
         
         <div className="flex flex-col md:flex-row gap-4 relative z-10">
-          <div className="flex-1 relative group">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-amber-500 transition-colors" size={18} />
-            <input 
+          <div className="flex-1 relative group search-input-glow rounded-xl">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 transition-all duration-300 search-icon" size={18} />
+            <input
               type="text"
               placeholder="Rechercher une compétence..."
               value={activeSearchTerm}
@@ -223,7 +223,7 @@ const SkillList = ({ skills }: SkillListProps) => {
               className="w-full bg-slate-950/50 border border-slate-800 rounded-xl py-3.5 pl-12 pr-12 text-slate-100 focus:border-amber-500/50 outline-none transition-all font-bold"
             />
             {activeSearchTerm && (
-              <button onClick={() => handleSearchChange('')} className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 hover:text-white transition-all"><X size={18} /></button>
+              <button onClick={() => handleSearchChange('')} className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-500 hover:text-white transition-all hover:rotate-90 duration-200"><X size={18} /></button>
             )}
           </div>
 

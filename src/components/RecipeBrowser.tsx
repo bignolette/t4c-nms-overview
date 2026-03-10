@@ -897,8 +897,8 @@ const NPCGroupedView = ({
       {/* Search & Tabs Toolbar */}
       <div className="flex flex-col gap-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 items-center">
-          <div className="lg:col-span-4 relative group">
-            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-amber-500 transition-colors" size={18} />
+          <div className="lg:col-span-4 relative group search-input-glow rounded-2xl">
+            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 transition-all duration-300 search-icon" size={18} />
             <input
               type="text"
               placeholder="Rechercher un maître artisan..."
@@ -1736,8 +1736,8 @@ const RecipeBrowser = ({ recipes, isItemsPage = false }: RecipeBrowserProps) => 
         <>
           <div className="flex flex-col md:flex-row gap-4 items-center">
             {/* Main Search Bar */}
-            <div className="relative group w-full">
-              <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-500 group-focus-within:text-amber-500 transition-all duration-300 group-focus-within:scale-110 pointer-events-none" size={20} />
+            <div className="relative group w-full search-input-glow rounded-2xl">
+              <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-slate-500 transition-all duration-300 search-icon pointer-events-none" size={20} />
               <input
                 type="text"
                 placeholder={isItemsPage ? "Rechercher un objet ou un bonus..." : "Rechercher une recette ou un composant..."}
